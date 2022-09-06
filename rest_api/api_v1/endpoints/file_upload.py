@@ -10,7 +10,13 @@ router = APIRouter()
 
 @router.post("/")
 async def upload_file(
-        option: str = Query("default", enum=("default", "skip", "overwrite")),
+        # option: str = Query("default", enum=("default", "skip", "overwrite")),
         files: List[UploadFile] = File(description="Multiple files as UploadFile")
 ):
-    return await upload_document(option, files)
+    """
+    This endpoint allows you upload multiple documents to document store \n
+            :param files: a list of DocumentEmbedding dictionaries \n
+            :return: a list of DocumentEmbedding dictionaries with unique hash ID
+    """
+
+    return await upload_document(files)
