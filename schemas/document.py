@@ -10,10 +10,10 @@ class Meta(BaseModel):
     index: str
 
 
-class ModelItem(BaseModel):
+class DocumentEmbedding(BaseModel):
     text: str
     meta: Meta
 
 
-class DocumentInput(BaseModel):
-    __root__: List[ModelItem]
+class ListDocumentEmbedding(BaseModel):
+    __root__: List[DocumentEmbedding]
