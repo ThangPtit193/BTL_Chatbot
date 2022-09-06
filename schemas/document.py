@@ -1,6 +1,8 @@
-from typing import List
+from typing import List, Optional
 
+import pandas as pd
 from pydantic import BaseModel
+from pydantic.dataclasses import dataclass
 
 
 class Meta(BaseModel):
@@ -11,6 +13,7 @@ class Meta(BaseModel):
 
 
 class DocumentEmbedding(BaseModel):
+    id: Optional[str] = None
     text: str
     meta: Meta
 
