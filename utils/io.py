@@ -1,8 +1,13 @@
 import json
+import logging
 from hashlib import md5
-from typing import List, Any, Text, Union, Dict
+from typing import List, Any, Text, Union, Dict, Set
 
-DEFAULT_ENCODING = "utf-8"
+from schemas.document import DocumentEmbedding
+
+from config import DEFAULT_ENCODING
+
+logger = logging.getLogger(__name__)
 
 
 def deep_container_fingerprint(
@@ -71,6 +76,28 @@ def get_list_fingerprint(
 def get_text_hash(text: Text, encoding: Text = DEFAULT_ENCODING) -> Text:
     """Calculate the md5 hash for a text."""
     return md5(text.encode(encoding)).hexdigest()  # noqa
+
+
+def drop_duplicate_documents(documents: List[DocumentEmbedding]) -> List[DocumentEmbedding]:
+    """
+    Drop duplicates documents based on same hash ID
+
+    :param documents: A list of  DocumentHashed objects.
+    :return: A list of DocumentHashed objects.
+    """
+    _hash_ids: Set = set([])
+    _documents: List[DocumentEmbedding] = []
+
+    for document in documents:
+        if document["id"] in _hash_ids:
+            logger.info(
+                f"Duplicate Documents: Document with id '{document['id']}' already exists in index "
+            )
+            continue
+        _documents.append(document)
+        _hash_ids.add(document["id"])
+
+    return _documents
 
 
 if __name__ == "__main__":
