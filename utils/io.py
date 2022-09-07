@@ -78,28 +78,6 @@ def get_text_hash(text: Text, encoding: Text = DEFAULT_ENCODING) -> Text:
     return md5(text.encode(encoding)).hexdigest()  # noqa
 
 
-def drop_duplicate_documents(documents: List[DocumentEmbedding]) -> List[DocumentEmbedding]:
-    """
-    Drop duplicates documents based on same hash ID
-
-    :param documents: A list of  DocumentHashed objects.
-    :return: A list of DocumentHashed objects.
-    """
-    _hash_ids: Set = set([])
-    _documents: List[DocumentEmbedding] = []
-
-    for document in documents:
-        if document["id"] in _hash_ids:
-            logger.info(
-                f"Duplicate Documents: Document with id '{document['id']}' already exists in index "
-            )
-            continue
-        _documents.append(document)
-        _hash_ids.add(document["id"])
-
-    return _documents
-
-
 if __name__ == "__main__":
     doc_test = {
         "text": "Test duplicate",
@@ -110,4 +88,3 @@ if __name__ == "__main__":
             "index": "science"
         }
     }
-    print(deep_container_fingerprint(doc_test))
