@@ -13,7 +13,7 @@ class Handler(ElasticsearchDocumentStore, ABC):
     def __init__(
             self,
             index: Optional[str] = None,
-            duplicate_documents: Optional[bool] = False
+            duplicate_documents: Optional[bool] = True
     ):
         super().__init__()
         self.index = index
@@ -52,23 +52,40 @@ class Handler(ElasticsearchDocumentStore, ABC):
 
         :param documents: A list of DocumentEmbedding objects.
         :param duplicate_documents: Handle duplicates document based on parameter options.
-                                    Parameter options : True or False
+                                    Parameter options : (True, False)
                                     False: (default option): Ignore the duplicates documents
                                     True: Update any existing documents with the same ID when adding documents.
         :param index: Name of the index to get the documents from. If None, the
                       DocumentStore's default index (self.index) will be used.
-        :return: A list of DocumentEmbedding objects without ID duplicated.
+        :return: A list of unique ids
         """
 
         index = index or self.index
         duplicate_documents = duplicate_documents or self.duplicate_documents
         if duplicate_documents:
             documents = self._drop_duplicate_documents(documents)
-            documents_found = self.get_documents_by_id(
-                ids=[doc.id for doc in documents], index=index)
-            ids_exist_in_db: List[str] = [doc.id for doc in documents_found]
 
-            documents = list(
-                filter(lambda doc: doc.id not in ids_exist_in_db, documents))
+        documents_found = self.get_documents_by_id(
+            ids=[doc.id for doc in documents], index=index)
+        ids_exist_in_db: List[str] = [doc.id for doc in documents_found]  # noqa
 
-        return documents
+        # only get document id in DocumentStore
+        # documents = list(
+        #     filter(lambda doc: doc.id not in ids_exist_in_db, documents))
+
+        return ids_exist_in_db
+
+    @staticmethod
+    def is_index_available(index) -> bool:
+        """
+        Check whether index is existing in Document Store or not
+        :param index: Name of the index to get the documents from
+        :return: Status of index True or False
+        """
+        try:
+            es = ElasticsearchDocumentStore()
+            docs = es.get_all_documents(index=index)
+            if docs:
+                return True
+        except:
+            return False
