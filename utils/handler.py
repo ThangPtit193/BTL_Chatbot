@@ -89,4 +89,5 @@ class Handler(ElasticsearchDocumentStore, ABC):
             if docs:
                 return True
         except:
+            logger.info(f"{index} not found in Document Store")
             return False

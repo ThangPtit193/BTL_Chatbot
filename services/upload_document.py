@@ -5,6 +5,7 @@ from typing import List
 
 from iteration_utilities import unique_everseen
 from fastapi import HTTPException, status
+from loguru import logger
 
 from venus.document_store.elasticsearch_store import ElasticsearchDocumentStore
 
@@ -15,7 +16,6 @@ from utils.handler import Handler
 
 CONTENT_TYPE = "application/json"
 
-logger = logging.getLogger(__name__)
 es = ElasticsearchDocumentStore(update_existing_documents=True)
 handler = Handler()
 
@@ -49,7 +49,7 @@ async def upload_document(files):
         )
 
     for index, documents in allowed_documents.items():
-        print(index)
+        logger.info(f"Load {index} from data")
         index_live = Handler.is_index_available(index=index)
 
         if not index_live:

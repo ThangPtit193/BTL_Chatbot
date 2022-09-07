@@ -1,13 +1,8 @@
 import json
-import logging
 from hashlib import md5
 from typing import List, Any, Text, Union, Dict, Set
 
-from schemas.document import DocumentEmbedding
-
 from config import DEFAULT_ENCODING
-
-logger = logging.getLogger(__name__)
 
 
 def deep_container_fingerprint(

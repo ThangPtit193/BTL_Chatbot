@@ -1,12 +1,10 @@
 import json
-import logging
+from loguru import logger
 from typing import Union
 
 from jsonschema import validate, exceptions
 
 from schemas.document import DocumentEmbedding, ListDocumentEmbedding
-
-logger = logging.getLogger(__name__)
 
 
 def validate_json(data: Union[list, dict]) -> bool:
