@@ -16,6 +16,8 @@ from utils.handler import Handler
 CONTENT_TYPE = "application/json"
 
 logger = logging.getLogger(__name__)
+es = ElasticsearchDocumentStore(update_existing_documents=True)
+handler = Handler()
 
 
 async def upload_document(files):
@@ -39,8 +41,6 @@ async def upload_document(files):
                     allowed_documents[index] = list(unique_everseen(allowed_documents[index]))
 
     # register Document objects to document store
-    es = ElasticsearchDocumentStore(update_existing_documents=True)
-    handler = Handler()
 
     if not allowed_documents:
         return HTTPException(
