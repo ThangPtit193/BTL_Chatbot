@@ -1,11 +1,10 @@
 import ast
 import json
-import logging
 from typing import List
+from loguru import logger
 
 from iteration_utilities import unique_everseen
 from fastapi import HTTPException, status
-from loguru import logger
 
 from venus.document_store.elasticsearch_store import ElasticsearchDocumentStore
 
@@ -61,7 +60,7 @@ async def upload_document(files):
                 es.write_documents(index=index, documents=documents)
                 doc_counter += len(documents)
             else:
-                unique_ids: List[str] = handler.handle_duplicate_documents(index=index, documents=documents)
+                unique_ids: List[str] = handler.handle_duplicate_documents(index=index, documents=documents_by_index)
                 _documents: List[dict] = [document for document in documents if document["id"] not in unique_ids]
                 if _documents:
                     es.write_documents(index=index, documents=_documents)
