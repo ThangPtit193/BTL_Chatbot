@@ -3,7 +3,7 @@ from typing import List
 from fastapi import APIRouter, UploadFile, File
 from fastapi.params import Query
 
-from services.store import upload_document
+from services.upload_document import upload_document
 
 router = APIRouter()
 
@@ -14,9 +14,6 @@ async def upload_file(
         files: List[UploadFile] = File(description="Multiple files as UploadFile")
 ):
     """
-    This endpoint allows you upload multiple documents to document store \n
-            :param files: a list of DocumentEmbedding dictionaries \n
-            :return: a list of DocumentEmbedding dictionaries with unique hash ID
+    This endpoint allows you upload multiple documents to document store
     """
-
     return await upload_document(files)
