@@ -15,7 +15,7 @@ reusable_oauth2 = HTTPBearer(
 @router.post("/", dependencies=[Depends(reusable_oauth2)])
 async def upload_file(
         # option: str = Query("default", enum=("default", "skip", "overwrite")),
-        files: List[UploadFile] = File(description="Multiple files as UploadFile")
+        files: List[UploadFile] = File(...)
 ):
     """
     This endpoint allows you upload multiple documents to document store

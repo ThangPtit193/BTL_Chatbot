@@ -30,13 +30,13 @@ class Handler(ElasticsearchDocumentStore, ABC):
         _documents: List[DocumentEmbedding] = []
 
         for document in documents:
-            if document['id'] in _hash_ids:
+            if document.id in _hash_ids:
                 logger.info(
-                    f"Duplicate Documents: Document with id '{document['id']}' already exists in index "
+                    f"Duplicate Documents: Document with id '{document.id}' already exists in index "
                 )
                 continue
             _documents.append(document)
-            _hash_ids.add(document['id'])
+            _hash_ids.add(document.id)
 
         return _documents
 
@@ -65,7 +65,7 @@ class Handler(ElasticsearchDocumentStore, ABC):
         if duplicate_documents:
             documents = self._drop_duplicate_documents(documents)
 
-        ids = [doc['id'] for doc in documents]
+        ids = [doc.id for doc in documents]
 
         documents_found = self.get_documents_by_id(ids, index=index)
         ids_exist_in_db: List[str] = [doc.id for doc in documents_found]  # noqa

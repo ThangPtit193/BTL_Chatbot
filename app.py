@@ -49,7 +49,7 @@ def get_openapi_specs() -> dict:
     Used to autogenerate OpenAPI specs file to use in the documentation.
     See `docs/_src/api/openapi/generate_openapi_specs.py`
     """
-    application = get_application()
+    app = get_application()
     return get_openapi(
         title=app.title,
         version=app.version,
