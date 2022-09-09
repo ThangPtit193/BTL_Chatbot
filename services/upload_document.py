@@ -40,7 +40,6 @@ async def upload_document(files):
                     allowed_documents[index] = list(unique_everseen(allowed_documents[index]))
 
     # register Document objects to document store
-
     if not allowed_documents:
         return HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
