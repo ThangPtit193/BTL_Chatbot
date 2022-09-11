@@ -1,3 +1,4 @@
+import sys
 from http.client import HTTPException
 import uvicorn
 from fastapi import FastAPI, APIRouter
@@ -62,5 +63,6 @@ def get_openapi_specs() -> dict:
 app = get_application()
 
 if __name__ == "__main__":
+    # port = int(sys.argv[1])
     # Use this for debugging purposes only
-    uvicorn.run(app, host="0.0.0.0", port=7601)
+    uvicorn.run("main:app", host="0.0.0.0", port=8891)
