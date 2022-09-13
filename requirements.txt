@@ -3,6 +3,13 @@ venus@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/venus-1.2.3rc0-py3-n
 loguru~=0.6.0
 jsonschema~=3.2.0
 uvicorn>=0.15.0,<0.17.0
-fastapi>=0.68.0,<0.82.0
+fastapi~=0.82.0
 pydantic>=1.8.0,<2.0.0
 iteration_utilities>=0.9.0,<0.11.0
+venus~=1.2.3rc0
+starlette~=0.19.1
+pandas~=1.1.5
+passlib~=1.7.4
+jose~=1.0.0
+numpy~=1.19.5
+deepdiff~=5.7.0
