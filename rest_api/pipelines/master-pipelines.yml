@@ -1,0 +1,8 @@
+upload_services:
+  - type: "upload-document"
+    document_store_type: elasticsearch
+    retriever_type: embedding
+    similarity: "cosine"
+    top_k: 5
+    embedding_dim: 768
+    retriever_pretrained: "fschool-distilbert-multilingual-faq-v2.0.0"

@@ -1,13 +1,14 @@
 from datetime import timedelta
 
+from axiom_client.client import Axiom
 from fastapi import Depends, HTTPException, status, APIRouter
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from loguru import logger
 from passlib.context import CryptContext
 
 from schemas.authenticator import Token
 from services.authenticator import authenticate_user, create_access_token
 from core.config import settings
-
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -30,3 +31,23 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
         data={"sub": user.username}, expires_delta=access_token_expires
     )
     return {"access_token": access_token, "token_type": "bearer"}
+
+
+class ServicesWrapper:
+    def __init__(
+            self,
+            axiom_email: str,
+            axiom_password: str
+    ):
+        self.axiom_email = axiom_email
+        self.axiom_password = axiom_password
+        self.client = Axiom(base_url="https://axiom.dev.ftech.ai")
+
+        if self.axiom_email and self.axiom_password:
+            try:
+                self.client.login(email=self.axiom_email, password=axiom_password)
+                # print(self.client.login(email=self.axiom_email, password=axiom_password))
+            except Exception as e:
+                logger.warning(f"Cannot login axiom: {e}")
+
+

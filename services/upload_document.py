@@ -7,21 +7,27 @@ from iteration_utilities import unique_everseen
 from fastapi import HTTPException, status
 
 from venus.document_store.elasticsearch_store import ElasticsearchDocumentStore
+from venus.pipelines.pipeline import Pipeline
+from venus.retriever import EmbeddingRetriever
+from venus.sentence_embedding import SentenceEmbedding
+from venus.document_store.in_memory_store import InMemoryDocumentStore
 
 from config import DEFAULT_ENCODING
-from utils.helper import validate_json
 from utils.io import deep_container_fingerprint
 from utils.handler import Handler
 
 CONTENT_TYPE = "application/json"
 
-es = ElasticsearchDocumentStore(update_existing_documents=True)
 handler = Handler()
 
 
-async def upload_document(files):
+async def upload_document(ds, retriever, files):
     allowed_documents = {}
     doc_counter = 0
+    if ds == "ElasticsearchStore":
+        document_store = ElasticsearchDocumentStore()
+    else:
+        document_store = InMemoryDocumentStore()
 
     for file in files:
         bytes_str = await file.read()
@@ -51,18 +57,20 @@ async def upload_document(files):
         index_live = Handler.is_index_available(index=index)
 
         if not index_live:
-            es.write_documents(index=index, documents=documents)
+            document_store.write_documents(index=index, documents=documents)
+            retriever = EmbeddingRetriever(document_store=document_store, model_name_or_path="ftech-bert-base")
+            retriever.update_embeddings(index=index)
             doc_counter += len(documents)
         else:
-            documents_by_index = es.get_all_documents(index=index)
+            documents_by_index = document_store.get_all_documents(index=index)
             if not documents_by_index:
-                es.write_documents(index=index, documents=documents)
+                document_store.write_documents(index=index, documents=documents)
                 doc_counter += len(documents)
             else:
                 unique_ids: List[str] = handler.handle_duplicate_documents(index=index, documents=documents_by_index)
                 _documents: List[dict] = [document for document in documents if document["id"] not in unique_ids]
                 if _documents:
-                    es.write_documents(index=index, documents=_documents)
+                    document_store.write_documents(index=index, documents=_documents)
                     doc_counter += len(_documents)
                     logger.info(f'{len(_documents)} will be registered to DocumentStore')
 
@@ -70,3 +78,9 @@ async def upload_document(files):
         status_code=status.HTTP_201_CREATED,
         detail=f'{doc_counter} document(s) were registered to DocumentStore'
     )
+
+
+if __name__ == "__main__":
+    document_store = ElasticsearchDocumentStore()
+    # print(document_store.get_all_documents(index="index_science", return_embedding=True))
+    print(document_store.delete_all_documents(index="index_science"))
