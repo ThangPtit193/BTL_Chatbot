@@ -16,35 +16,37 @@ from venus.retriever import Retriever, EmbeddingRetriever, ElasticsearchRetrieve
 from venus.utils.schema import Document
 from yaml.scanner import ScannerError
 
+from rest_api.constant import (
+    DEFAULT_DOCSTORE_TYPES,
+    DEFAULT_RETRIEVER_TYPES,
+    DOC_STORE_ELASTICSEARCH,
+    RETRIEVER_EMBEDDING,
+    RETRIEVER_ELASTICSEARCH,
+    DOC_STORE_INMEMORY,
+    DEFAULT_FILE_TYPES
+)
 from utils.helper import validate_document
 from utils.io import deep_container_fingerprint
+from utils.decorator import measure_memory, timeit
 
 from fastapi import HTTPException, status
 
-DOC_STORE_INMEMORY = "inmemory"
-DOC_STORE_ELASTICSEARCH = "elasticsearch"
-RETRIEVER_EMBEDDING = "embedding"
-RETRIEVER_ELASTICSEARCH = "elasticsearch"
 
-DEFAULT_DOCSTORE_TYPES = [DOC_STORE_INMEMORY, DOC_STORE_ELASTICSEARCH]
-DEFAULT_RETRIEVER_TYPES = [RETRIEVER_ELASTICSEARCH, RETRIEVER_EMBEDDING]
-DEFAULT_FILE_TYPES = ['md', 'json']
-
-
-class VenusServices:
+class VenusServices(object):
     def __init__(
             self,
             document_supported_types: List[Text] = DEFAULT_DOCSTORE_TYPES,
             retriever_supported_types: List[Text] = DEFAULT_RETRIEVER_TYPES,
             document_store_type: Text = DOC_STORE_ELASTICSEARCH,
             retriever_type: Text = RETRIEVER_EMBEDDING,
-            retriever_pretrained: Text = None,
+            retriever_pretrained: Text = "va-base-distilbert-multilingual-faq-v0.1.0",
             similarity: str = "cosine",
             return_embedding: bool = True,
             top_k: int = 2,
             embedding_dim: int = 768,
             **kwargs
     ):
+
         self.embedding_dim = embedding_dim
         self.retriever_pretrained = retriever_pretrained
         self.document_supported_types = document_supported_types
@@ -71,10 +73,11 @@ class VenusServices:
         if document_store_type == DOC_STORE_INMEMORY:
             document_store = InMemoryDocumentStore()
         elif document_store_type == DOC_STORE_ELASTICSEARCH:
-            assert "host" in kwargs, f"host must be provide for {document_store_type}"
-            assert "port" in kwargs, f"port must be provide for {document_store_type}"
-            host = kwargs["host"]
-            port = kwargs["port"]
+            # assert "host" in kwargs, f"host must be provided for {document_store_type}"
+            # assert "port" in kwargs, f"port must be provided for {document_store_type}"
+            host = kwargs["host"] if "host" in kwargs else "localhost"
+            port = kwargs["port"] if "port" in kwargs else 9200
+
             document_store = ElasticsearchDocumentStore(similarity=self.similarity,
                                                         return_embedding=self.return_embedding,
                                                         embedding_dim=self.embedding_dim,
@@ -172,6 +175,7 @@ class VenusServices:
             else:
                 logger.info(f'No index to update into {self.document_store.__class__.__name__}')
 
+    @timeit
     def run(self, file_paths):
         try:
             index_attachment = []
@@ -185,8 +189,8 @@ class VenusServices:
                 for index_master in documents.keys():
                     for doc in documents[index_master]:
                         new_doc = copy.deepcopy(doc)
-                        index = str(new_doc["meta"]["index"]).split('_')[1]
-                        new_doc["meta"]["index"] = index
+                        index = str(new_doc["meta"]["index"])
+                        # new_doc["meta"]["index"] = index
                         index_attachment.append([index, self.retriever_pretrained])
                         if self._check_duplicate_document(index=index, query=new_doc['text']):
                             self.pipeline.upload(
@@ -204,7 +208,7 @@ class VenusServices:
                 detail="Documents uploaded successfully"
             )
         except:
-            return NotImplementedError
+            return
 
     def _check_duplicate_document(self, index: str, query: str) -> bool:
         """
@@ -226,6 +230,10 @@ class VenusServices:
             logger.info(f"{index} not found in Document Store")
             return True
 
+    @staticmethod
+    def is_index_available(index):
+        pass
+
     def group_index(self, file_paths: Union[
         Path, List[Path], str, List[str], List[Union[Path, str]]]):
         """
@@ -240,17 +248,17 @@ class VenusServices:
                 logger.warning("Document not found")
                 return
             for doc in documents:
-                if validate_document(data=doc):
-                    index_master = str(doc.get("meta").get("index")).split('_')[0]
-                    if index_master not in grouped_documents.keys():
-                        grouped_documents[index_master] = list()
-                    grouped_documents[index_master].append(doc)
-                else:
-                    continue
+                # if validate_document(data=doc):
+                index_master = str(doc.get("meta").get("index")).split('_')[0]
+                if index_master not in grouped_documents.keys():
+                    grouped_documents[index_master] = list()
+                grouped_documents[index_master].append(doc)
+                # else:
+                #     continue
             return grouped_documents
         except:
             logger.error(
-                f'Some issues should be removed to group documents. {file_paths} must be a list of file paths.')
+                f'Some issues should be removed in group documents. {file_paths} must be a list of file paths.')
             return ""
 
     def _load_data_from_files(self, file_paths: Union[
@@ -266,12 +274,16 @@ class VenusServices:
 
         for path in file_paths:
             if self._estimate_extension(Path(path)) in DEFAULT_FILE_TYPES:
-                with open(path, "r") as buffer:
-                    data = json.load(buffer)
-                    if validate_document(data=data):
-                        file_data.append(data)
-                    else:
-                        continue
+                try:
+                    with open(path, "r") as buffer:
+                        data = json.load(buffer)
+                        if validate_document(data=data):
+                            file_data.append(data)
+                        else:
+                            continue
+                except:
+                    logger.error(f"Unexpected lines found in {str(path).split('/')[-1]} document")
+
         if len(file_data) > 0:
             return list(chain.from_iterable(file_data))
         else:
@@ -288,24 +300,49 @@ class VenusServices:
             return extension.lstrip('.')
         except NameError as ne:
             logger.error(
-                f"The type of '{file_path}' could not be guessed, probably because 'python-magic' is not installed. "
-                f"The supported types are {DEFAULT_FILE_TYPES}"
-
+                f"The type of '{file_path}' could not be guessed, probably because 'python-magic' is not installed. The supported types are {DEFAULT_FILE_TYPES}"
             )
             return ""
 
+    @timeit
     def get_all_indices(self):  # type: ignore
-        all_indices = self.document_store.get_all_labels()
-        if len(all_indices) > 0:
-            logger.info(f"Load all indices from {self.document_store.__class__.__name__}")
-            return all_indices
-        else:
+        all_indices = self.document_store.get_all_indices()
+        try:
+            if len(all_indices) > 0:
+                logger.info(f"Load all indices from {self.document_store.__class__.__name__}")
+                return all_indices
+        except:
             logger.info(f"No indices found in {self.document_store.__class__.__name__}")
-            return {"message": "Not found"}
+            return []
 
-    def get_all_document_by_filters(self, **filters):
-        for key, value in filters:
-            print(key)
+    @timeit
+    def delete_all_documents(self, index: str):
+        self.document_store.delete_all_documents(index=index)
+        return {"message": f'Document with {index} deleted'}
+
+    def delete_index(self, index: str, document_store: str):
+        self.document_store.delete_index(index=index)
+        return {"message": f'{index} removed from {document_store} document store'}
+
+    @timeit
+    @measure_memory
+    def get_all_documents_by_index(self, index):
+        return self.document_store.get_all_documents(index=index)
+
+    # def __call__(self, *args, **kwargs):
+    #     for key, value in kwargs.items():
+    #         super(VenusServices, self).__setattr__(self, key, value)
+    #     instance = VenusServices()
+    #     return instance
+
+    @classmethod
+    def init_instance(cls, document_store_type):
+        assert document_store_type is not None, f"{cls.__name__} got an unexpected keyword argument 'document_store_type'"
+        return cls(document_store_type=document_store_type)
+
+    # @timeit
+    def search(self, query, **kwargs):
+        return self.pipeline.search(query=query)
 
 
 class VenusPipeline(BaseStandardPipeline):
@@ -326,7 +363,7 @@ class VenusPipeline(BaseStandardPipeline):
     def search(self,
                query: str,
                filters: Optional[Dict] = None,
-               top_k: Optional[int] = None,
+               top_k: Optional[int] = 2,
                **kwargs
                ):
         output = self.pipeline.run(
@@ -334,7 +371,7 @@ class VenusPipeline(BaseStandardPipeline):
             filters=filters,
             top_k=top_k
         )
-        print(output["documents"])
+        return output
 
     def upload(
             self,
@@ -353,5 +390,3 @@ class VenusPipeline(BaseStandardPipeline):
         # Load embedding sentence
         retriever = EmbeddingRetriever(document_store, model_name_or_path, top_k=top_k)
         retriever.update_embeddings(index=index_name)
-
-
