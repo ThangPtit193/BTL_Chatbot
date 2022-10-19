@@ -10,7 +10,7 @@ from fastapi import APIRouter, UploadFile, File, Depends
 from fastapi.security import HTTPBearer
 
 from test.sample_pipelines import VenusServices
-from rest_api.config import PROJECT_DIR, DocumentStore
+from rest_api.config import PROJECT_DIR, DocumentStoreOption
 
 router = APIRouter()
 
@@ -25,7 +25,7 @@ reusable_oauth2 = HTTPBearer(
 
 @router.post("/upload_file", dependencies=[Depends(reusable_oauth2)])
 async def upload_file(
-        document_store_type: DocumentStore,
+        document_store_type: DocumentStoreOption,
         files: List[UploadFile] = File(...)
 ):
     """
@@ -53,25 +53,25 @@ async def upload_file(
         finally:
             file.file.close()
 
-    return VenusServices.init_instance(document_store_type=document_store_type).run(file_paths=file_paths)
+    return VenusServices.init_instance(document_store_type=document_store_type.name).run(file_paths=file_paths)
 
 
 @router.get("/get_indices")
-async def get_indices(document_store_type: DocumentStore):
+async def get_indices(document_store_type: DocumentStoreOption):
     """
     This endpoint allows you get all indices stored in document store
     """
     # if document_store_type == "inmemory":
     #     return {"message": "Querying index does not support for InMemoryDocumentStore"}
-    return VenusServices.init_instance(document_store_type=document_store_type).get_all_indices()
+    return VenusServices.init_instance(document_store_type=document_store_type.name).get_all_indices()
 
 
 @router.delete("/delete_documents/{index}", dependencies=[Depends(reusable_oauth2)])
 async def delete_documents_by_index(
-        document_store_type: DocumentStore,
+        document_store_type: DocumentStoreOption,
         index: str
 ):
-    venus_services = VenusServices.init_instance(document_store_type=document_store_type)
+    venus_services = VenusServices.init_instance(document_store_type=document_store_type.name)
     indices = venus_services.get_all_indices()
     if len(indices) == 0:
         return {"message": "No index found to delete"}
@@ -80,9 +80,10 @@ async def delete_documents_by_index(
 
 
 @router.get("/get_all_documents_by_index/{index}")
-async def get_all_documents_by_index(document_store_type: DocumentStore, index: str):
+async def get_all_documents_by_index(document_store_type: DocumentStoreOption, index: str):
     try:
-        _documents = VenusServices.init_instance(document_store_type=document_store_type).get_all_documents_by_index(
+        _documents = VenusServices.init_instance(
+            document_store_type=document_store_type.name).get_all_documents_by_index(
             index=index)
         return ast.literal_eval(str(_documents))
     except:
@@ -90,13 +91,12 @@ async def get_all_documents_by_index(document_store_type: DocumentStore, index: 
 
 
 @router.delete("/delete_index/{index}")
-async def delete_index(document_store_type: DocumentStore, index: str):
-    if document_store_type == "inmemory":
+async def delete_index(document_store_type: DocumentStoreOption, index: str):
+    if document_store_type.name == "inmemory":
         return {"message": "Deleting index does not support for InMemoryDocumentStore"}
-    return VenusServices.init_instance(document_store_type=document_store_type).delete_index(index=index,
-                                                                                             document_store=document_store_type)
+    return VenusServices.init_instance(document_store_type=document_store_type.name).delete_index(index=index)
 
 
 @router.get("/get_all_documents")
-async def get_all_documents(document_store_type: DocumentStore):
-    return VenusServices.init_instance(document_store_type=document_store_type).get_all_documents()
+async def get_all_documents(document_store_type: DocumentStoreOption):
+    return VenusServices.init_instance(document_store_type=document_store_type.name).get_all_documents()

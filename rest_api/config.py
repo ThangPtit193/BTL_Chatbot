@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+from enum import auto
+from fastapi_utils.enums import StrEnum
 
 PIPELINE_YAML_PATH = os.getenv(
     "PIPELINE_YAML_PATH", str((Path(__file__).parent / "pipelines" / "master-pipelines.yml").absolute())
@@ -14,3 +16,9 @@ ROOT_PATH = os.getenv("ROOT_PATH", "/")
 
 CONCURRENT_REQUEST_PER_WORKER = int(os.getenv("CONCURRENT_REQUEST_PER_WORKER", "4"))
 
+PROJECT_DIR = os.path.abspath(os.curdir)
+
+
+class DocumentStoreOption(StrEnum):
+    elasticsearch = auto()
+    inmemory = auto()

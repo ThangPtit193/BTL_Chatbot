@@ -14,6 +14,7 @@ from venus.document_store import DocumentStore, ElasticsearchDocumentStore, InMe
 from venus.pipelines.pipeline import Pipeline, BaseStandardPipeline
 from venus.retriever import Retriever, EmbeddingRetriever, ElasticsearchRetriever
 from venus.utils.schema import Document
+from venus.utils.utils import load_json
 from yaml.scanner import ScannerError
 
 from rest_api.constant import (
@@ -32,16 +33,16 @@ from utils.decorator import measure_memory, timeit
 from fastapi import HTTPException, status
 
 
-class VenusServices(object):
+class VenusServices:
     def __init__(
             self,
             document_supported_types: List[Text] = DEFAULT_DOCSTORE_TYPES,
             retriever_supported_types: List[Text] = DEFAULT_RETRIEVER_TYPES,
-            document_store_type: Text = DOC_STORE_ELASTICSEARCH,
-            retriever_type: Text = RETRIEVER_EMBEDDING,
+            document_store_type: Text = DOC_STORE_INMEMORY,
+            retriever_type: Text = RETRIEVER_ELASTICSEARCH,
             retriever_pretrained: Text = "va-base-distilbert-multilingual-faq-v0.1.0",
             similarity: str = "cosine",
-            return_embedding: bool = True,
+            return_embedding: bool = False,
             top_k: int = 2,
             embedding_dim: int = 768,
             **kwargs
@@ -51,6 +52,7 @@ class VenusServices(object):
         self.retriever_pretrained = retriever_pretrained
         self.document_supported_types = document_supported_types
         self.retriever_supported_types = retriever_supported_types
+        # self.document_store_type = document_store_type
         assert document_store_type in self.document_supported_types, \
             f"Files of type {document_store_type} are not supported" \
             f"The supported types are: {self.document_supported_types}"
@@ -68,35 +70,38 @@ class VenusServices(object):
         self.retriever = None
         self.similarity = similarity
         self.return_embedding = return_embedding
-        document_store = None
+        self.document_store = None
 
         if document_store_type == DOC_STORE_INMEMORY:
-            document_store = InMemoryDocumentStore()
+            self.document_store = InMemoryDocumentStore(return_embedding=self.return_embedding)
         elif document_store_type == DOC_STORE_ELASTICSEARCH:
             # assert "host" in kwargs, f"host must be provided for {document_store_type}"
             # assert "port" in kwargs, f"port must be provided for {document_store_type}"
             host = kwargs["host"] if "host" in kwargs else "localhost"
             port = kwargs["port"] if "port" in kwargs else 9200
 
-            document_store = ElasticsearchDocumentStore(similarity=self.similarity,
-                                                        return_embedding=self.return_embedding,
-                                                        embedding_dim=self.embedding_dim,
-                                                        host=host,
-                                                        port=port)
-
-        if retriever_type == RETRIEVER_EMBEDDING:
-            self.retriever = EmbeddingRetriever(
-                document_store=document_store,
-                top_k=top_k,
-                model_name_or_path=self.retriever_pretrained,
-                download_pretrained=True
+            self.document_store = ElasticsearchDocumentStore(
+                index="science_index",
+                similarity=self.similarity,
+                return_embedding=self.return_embedding,
+                embedding_dim=self.embedding_dim,
+                host=host,
+                port=port
             )
-        elif retriever_type == RETRIEVER_ELASTICSEARCH:
-            assert document_store_type == "elasticsearch", \
-                f"Elasticsearch document store is required for elasticsearch retriever"
-            self.retriever = ElasticsearchRetriever(document_store, top_k)
 
-        self.document_store = document_store
+        # if retriever_type == RETRIEVER_EMBEDDING:
+        self.retriever = EmbeddingRetriever(
+            document_store=self.document_store,
+            top_k=top_k,
+            model_name_or_path=self.retriever_pretrained,
+            download_pretrained=True
+        )
+        # elif retriever_type == RETRIEVER_ELASTICSEARCH:
+        #     assert document_store_type == "elasticsearch", \
+        #         f"Elasticsearch document store is required for elasticsearch retriever"
+        #     self.retriever = ElasticsearchRetriever(self.document_store, top_k)
+
+        # self.document_store = document_store
         # self.retriever_pretrained = retriever_pretrained
         self.retriever_type = retriever_type
         self.top_k = top_k
@@ -107,7 +112,7 @@ class VenusServices(object):
         except:
             logger.warning(f'config_path is not found. Initialising with default parameters')
 
-        self.pipeline = VenusPipeline(document_store=self.document_store, retriever=self.retriever)
+        self.pipeline = VenusPipeline(retriever=self.retriever)
 
     @classmethod
     def load_config_params(cls, config_path):
@@ -191,24 +196,30 @@ class VenusServices(object):
                         new_doc = copy.deepcopy(doc)
                         index = str(new_doc["meta"]["index"])
                         # new_doc["meta"]["index"] = index
-                        index_attachment.append([index, self.retriever_pretrained])
+                        # index_attachment.append([index, self.retriever_pretrained])
                         if self._check_duplicate_document(index=index, query=new_doc['text']):
                             self.pipeline.upload(
+                                documents=[new_doc],
                                 document_store=self.document_store,
-                                document_data=[new_doc],
-                                index_name=index,
-                                model_name_or_path=self.retriever_pretrained
+                                index=index
                             )
-                            logger.info(f'Your documents has been uploaded to {self.document_store.__class__.__name__}')
+                        else:
+                            logger.log(
+                                f"{new_doc['text']} is available in {self.document_store.__class__.__name__} Document Store")
+                        logger.info(f'Your documents has been uploaded to {self.document_store.__class__.__name__}')
 
-            # log index with pretrained retriever model
-            self._store_retriever_model_with_index(index_attachment=index_attachment)
+                # log index with pretrained retriever model
+                # self._store_retriever_model_with_index(index_attachment=index_attachment)
             return HTTPException(
                 status_code=status.HTTP_200_OK,
                 detail="Documents uploaded successfully"
             )
         except:
             return
+            # return HTTPException(
+            #     status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            #     detail="Documents has been uploaded unsuccessfully"
+            # )
 
     def _check_duplicate_document(self, index: str, query: str) -> bool:
         """
@@ -283,6 +294,7 @@ class VenusServices(object):
                             continue
                 except:
                     logger.error(f"Unexpected lines found in {str(path).split('/')[-1]} document")
+                    pass
 
         if len(file_data) > 0:
             return list(chain.from_iterable(file_data))
@@ -320,9 +332,9 @@ class VenusServices(object):
         self.document_store.delete_all_documents(index=index)
         return {"message": f'Document with {index} deleted'}
 
-    def delete_index(self, index: str, document_store: str):
+    def delete_index(self, index: str):
         self.document_store.delete_index(index=index)
-        return {"message": f'{index} removed from {document_store} document store'}
+        return {"message": f'{index} has been removed in the {self.document_store.__class__.__name__}'}
 
     @timeit
     @measure_memory
@@ -336,57 +348,80 @@ class VenusServices(object):
     #     return instance
 
     @classmethod
-    def init_instance(cls, document_store_type):
+    def init_instance(cls, document_store_type: str):
         assert document_store_type is not None, f"{cls.__name__} got an unexpected keyword argument 'document_store_type'"
         return cls(document_store_type=document_store_type)
 
-    # @timeit
-    def search(self, query, **kwargs):
-        return self.pipeline.search(query=query)
+    @timeit
+    def search(self, query, top_k, **kwargs):
+        return self.pipeline.run(query=query, top_k_retriever=top_k)
 
 
 class VenusPipeline(BaseStandardPipeline):
-    def __init__(self,
-                 document_store: DocumentStore,
-                 retriever: Retriever
-                 ):
+    def __init__(self, retriever: Retriever):
         """
         Initialize a Pipeline for uploading and indexing document
-        :param document_store:
         :param retriever:
         """
         self.pipeline = Pipeline()
-        # self.pipeline.add_node(component=document_store, name="DocumentStore", inputs=["Query"])
         self.pipeline.add_node(component=retriever, name="Retriever", inputs=["Query"])
-        # self.pipeline.add_node(component=document_store, name="DocumentStore", inputs=["Retriever"])
 
-    def search(self,
-               query: str,
-               filters: Optional[Dict] = None,
-               top_k: Optional[int] = 2,
-               **kwargs
-               ):
-        output = self.pipeline.run(
-            query=query,
-            filters=filters,
-            top_k=top_k
-        )
-        return output
+        self.retriever = retriever
+
+    def run(self, query: str, filters: Optional[Dict] = None,
+            top_k_retriever: Optional[int] = None, **kwargs):
+        output = self.pipeline.run(query=query, filters=filters, top_k_retriever=top_k_retriever,
+                                   **kwargs)
+        documents = output["documents"]
+
+        results: Dict = {"query": query, "answers": []}
+        for doc in documents:
+            cur_answer = {
+                "query": doc.text,
+                "answer": doc.meta["answer"],
+                "document_id": doc.id,
+                "context": doc.meta["answer"],
+                "score": float(doc.score),
+                "probability": float(doc.probability),
+                "offset_start": 0,
+                "offset_end": len(doc.meta["answer"]),
+                "meta": doc.meta,
+            }
+
+            results["answers"].append(cur_answer)
+        return results
 
     def upload(
             self,
-            document_data: Union[Text, Union[List[dict], List[Document]]],
-            document_store: DocumentStore,
-            model_name_or_path: Text,
-            index_name: Text,
-            top_k: Optional[int] = 5,
-            **kwargs
+            documents: Union[Text, Union[List[dict], List[Document]]],
+            document_store,
+            index: Text,
     ):
-        if isinstance(document_data, list):
-            assert len(document_data) > 0, f"No qualified document was found in {document_store}"
+        if isinstance(documents, list):
+            assert len(documents) > 0, f"No qualified document was found in {document_store}"
 
-        document_store.write_documents(document_data, index=index_name)
+        document_store.write_documents(documents=documents, index=index)
+        document_store.update_embeddings(retriever=self.retriever, index=index)
+        document_store.save("./models")
 
-        # Load embedding sentence
-        retriever = EmbeddingRetriever(document_store, model_name_or_path, top_k=top_k)
-        retriever.update_embeddings(index=index_name)
+# if __name__ == "__main__":
+#     sample = [
+#         {
+#             "text": "Tế bào là gì",
+#             "meta": {
+#                 "answer": "utter_science_define {'trigger_slot': 'TE_BAO'}",
+#                 "adjacency_pair": "ask_define/utter_science_define {'trigger_slot': 'TE_BAO'}",
+#                 "domain": "science",
+#                 "index": "science_index"
+#             }
+#         }
+#     ]
+#     es = ElasticsearchDocumentStore(index="test")
+#     # es.write_documents(documents=sample, index="test")
+#     retriever = EmbeddingRetriever(model_name_or_path="va-base-distilbert-multilingual-faq-v0.1.0", document_store=es, top_k=2)
+#     # es.update_embeddings(retriever=retriever, index="test", batch_size=8)
+#     # retriever.save("./test")
+#
+#     p = Pipeline()
+#     p.add_node(component=retriever, name="Retriever", inputs=["Query"])
+#     print(p.run(query="Tế bào"))
