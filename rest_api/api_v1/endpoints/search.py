@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from test.sample_pipelines import VenusServices
+from rest_api.controller import VenusServices
 from rest_api.config import DocumentStoreOption
 
 router = APIRouter()

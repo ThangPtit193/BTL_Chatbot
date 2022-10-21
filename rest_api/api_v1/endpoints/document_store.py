@@ -1,7 +1,6 @@
 import os
 import shutil
 import uuid
-from enum import Enum
 from pathlib import Path
 from typing import List
 import ast
@@ -9,7 +8,7 @@ import ast
 from fastapi import APIRouter, UploadFile, File, Depends
 from fastapi.security import HTTPBearer
 
-from test.sample_pipelines import VenusServices
+from rest_api.controller import VenusServices
 from rest_api.config import PROJECT_DIR, DocumentStoreOption
 
 router = APIRouter()
@@ -17,10 +16,6 @@ router = APIRouter()
 reusable_oauth2 = HTTPBearer(
     scheme_name='Authorization'
 )
-
-
-# class ModelRetriever(str, Enum):
-#     va_base_retriever = "va-base-distilbert-multilingual-faq-v0.1.0"
 
 
 @router.post("/upload_file", dependencies=[Depends(reusable_oauth2)])

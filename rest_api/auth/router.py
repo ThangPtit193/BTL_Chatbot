@@ -1,4 +1,9 @@
+import os
 from datetime import timedelta
+
+import dotenv
+from dotenv import dotenv_values
+from pathlib import Path
 
 from axiom_client.client import Axiom
 from fastapi import Depends, HTTPException, status, APIRouter
@@ -43,11 +48,14 @@ class ServicesWrapper:
         self.axiom_password = axiom_password
         self.client = Axiom(base_url="https://axiom.dev.ftech.ai")
 
+    def auth_axiom(self):
         if self.axiom_email and self.axiom_password:
-            try:
-                self.client.login(email=self.axiom_email, password=axiom_password)
-                # print(self.client.login(email=self.axiom_email, password=axiom_password))
-            except Exception as e:
-                logger.warning(f"Cannot login axiom: {e}")
+            if self.client.login(email=self.axiom_email, password=self.axiom_password):
+                return True
+        return False
 
 
+if __name__ == "__main__":
+    config = dotenv_values(".env")
+    w = ServicesWrapper(axiom_email=config.get("AXIOM_EMAIL"), axiom_password=config.get("AXIOM_PASSWORD"))
+    print(w.auth_axiom())
