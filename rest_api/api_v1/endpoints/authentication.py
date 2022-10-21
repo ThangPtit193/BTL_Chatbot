@@ -1,14 +1,8 @@
-import os
 from datetime import timedelta
-
-import dotenv
-from dotenv import dotenv_values
-from pathlib import Path
 
 from axiom_client.client import Axiom
 from fastapi import Depends, HTTPException, status, APIRouter
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-from loguru import logger
 from passlib.context import CryptContext
 
 from schemas.authenticator import Token

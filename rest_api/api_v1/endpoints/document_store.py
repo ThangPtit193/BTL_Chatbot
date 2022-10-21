@@ -84,7 +84,7 @@ async def get_all_documents_by_index(document_store_type: DocumentStoreOption, i
         return {"message": f"{index} not found"}
 
 
-@router.delete("/delete_index/{index}")
+@router.delete("/delete_index/{index}", dependencies=[Depends(reusable_oauth2)])
 async def delete_index(document_store_type: DocumentStoreOption, index: str):
     if document_store_type.name == "inmemory":
         return {"message": "Deleting index does not support for InMemoryDocumentStore"}
