@@ -12,7 +12,7 @@
 
 Venus Services is a service that enables you to upload document to DocumentStore, semantic document search use case and training
 model (**coming soon**).
-Whether you want to perform Question Answering or semantic document search, you can use the State-of-the-Art NLP models
+Whether you want to perform Question Answering or semantic document search, you can use the SOTA NLP models
 in Venus hub to provide unique search experiences and allow your users to query in natural language.
 
 ## Core Features
