@@ -109,7 +109,8 @@ class VenusServices:
             if kwargs['config_path'] is not None:
                 self.load_config_params(kwargs['config_path'])
         except:
-            logger.warning(f'config_path is not found. Initialising with default parameters')
+            pass
+            # logger.warning(f'config_path is not found. Initialising with default parameters')
 
         self.pipeline = VenusPipeline(retriever=self.retriever)
 
