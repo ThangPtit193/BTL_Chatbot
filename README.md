@@ -46,7 +46,7 @@ pip install - r requirements.txt
 
 **4. Online services**
 
-Note that VPN could be turned on to access this domain in private network.
+Note that VPN could be required to access this domain in private network.
 
 👇 Please click link below
 
