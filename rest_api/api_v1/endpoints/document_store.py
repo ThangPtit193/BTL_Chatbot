@@ -56,8 +56,6 @@ async def get_indices(document_store_type: DocumentStoreOption):
     """
     This endpoint allows you get all indices stored in document store
     """
-    # if document_store_type == "inmemory":
-    #     return {"message": "Querying index does not support for InMemoryDocumentStore"}
     return VenusServices.init_instance(document_store_type=document_store_type.name).get_all_indices()
 
 

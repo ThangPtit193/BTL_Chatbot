@@ -2,7 +2,7 @@ import json
 from hashlib import md5
 from typing import List, Any, Text, Union, Dict, Set
 
-from config import DEFAULT_ENCODING
+from rest_api.constant import DEFAULT_ENCODING
 
 
 def deep_container_fingerprint(

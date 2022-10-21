@@ -194,8 +194,6 @@ class VenusServices:
                     for doc in documents[index_master]:
                         new_doc = copy.deepcopy(doc)
                         index = str(new_doc["meta"]["index"])
-                        # new_doc["meta"]["index"] = index
-                        # index_attachment.append([index, self.retriever_pretrained])
                         if self._check_duplicate_document(index=index, query=new_doc['text']):
                             self.pipeline.upload(
                                 documents=[new_doc],
@@ -207,8 +205,6 @@ class VenusServices:
                                 f"{new_doc['text']} is available in {self.document_store.__class__.__name__} Document Store")
                         logger.info(f'Your documents has been uploaded to {self.document_store.__class__.__name__}')
 
-                # log index with pretrained retriever model
-                # self._store_retriever_model_with_index(index_attachment=index_attachment)
             return HTTPException(
                 status_code=status.HTTP_200_OK,
                 detail="Documents uploaded successfully"

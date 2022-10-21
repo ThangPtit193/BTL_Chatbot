@@ -55,7 +55,7 @@ class ServicesWrapper:
         return False
 
 
-if __name__ == "__main__":
-    config = dotenv_values(".env")
-    w = ServicesWrapper(axiom_email=config.get("AXIOM_EMAIL"), axiom_password=config.get("AXIOM_PASSWORD"))
-    print(w.auth_axiom())
+# if __name__ == "__main__":
+#     config = dotenv_values(".env")
+#     w = ServicesWrapper(axiom_email=config.get("AXIOM_EMAIL"), axiom_password=config.get("AXIOM_PASSWORD"))
+#     print(w.auth_axiom())

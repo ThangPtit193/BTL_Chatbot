@@ -21,5 +21,6 @@ def validate_document(data: Union[list, dict]) -> bool:
         _instance = json.loads(json.dumps(data))
         validate(instance=_instance, schema=_schema)
     except exceptions.ValidationError as err:
+        logger.error(err)
         return False
     return True
