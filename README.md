@@ -29,7 +29,7 @@ in Venus hub to provide unique search experiences and allow your users to query 
 
 **1. Installation**
 
-The following command will install the latest version of Haystack from the main branch.
+The following command will install the latest version of Venus from the main branch.
 
 ```shell
 git clone https://gitlab.ftech.ai/nlp/va/knowledge-retrieval
