@@ -6,7 +6,7 @@ from schemas.document import DocumentStoreOption
 router = APIRouter()
 
 
-@router.post("/retrieve_query/{query}")
+@router.post("/retrieve_query/{index}/{query}")
 async def retrieve(
         document_store_type: DocumentStoreOption,
         index: str = Query("document", enum=(
