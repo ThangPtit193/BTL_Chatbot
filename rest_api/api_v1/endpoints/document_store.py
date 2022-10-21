@@ -8,8 +8,9 @@ import ast
 from fastapi import APIRouter, UploadFile, File, Depends
 from fastapi.security import HTTPBearer
 
-from rest_api.controller import VenusServices
-from rest_api.config import PROJECT_DIR, DocumentStoreOption
+from rest_api.controller.engine import VenusServices
+from rest_api.config import PROJECT_DIR
+from schemas.document import DocumentStoreOption
 
 router = APIRouter()
 
@@ -51,7 +52,7 @@ async def upload_file(
     return VenusServices.init_instance(document_store_type=document_store_type.name).run(file_paths=file_paths)
 
 
-@router.get("/get_indices")
+@router.get("/get_indices/{domain}")
 async def get_indices(document_store_type: DocumentStoreOption):
     """
     This endpoint allows you get all indices stored in document store
@@ -90,6 +91,6 @@ async def delete_index(document_store_type: DocumentStoreOption, index: str):
     return VenusServices.init_instance(document_store_type=document_store_type.name).delete_index(index=index)
 
 
-@router.get("/get_all_documents")
-async def get_all_documents(document_store_type: DocumentStoreOption):
-    return VenusServices.init_instance(document_store_type=document_store_type.name).get_all_documents()
+# @router.get("/get_all_documents")
+# async def get_all_documents(document_store_type: DocumentStoreOption):
+#     return VenusServices.init_instance(document_store_type=document_store_type.name).get_all_documents()

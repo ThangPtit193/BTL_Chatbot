@@ -37,7 +37,7 @@ class VenusServices:
             document_supported_types: List[Text] = DEFAULT_DOCSTORE_TYPES,
             retriever_supported_types: List[Text] = DEFAULT_RETRIEVER_TYPES,
             document_store_type: Text = DOC_STORE_INMEMORY,
-            retriever_type: Text = RETRIEVER_ELASTICSEARCH,
+            retriever_type: Text = RETRIEVER_EMBEDDING,
             retriever_pretrained: Text = "va-base-distilbert-multilingual-faq-v0.1.0",
             similarity: str = "cosine",
             return_embedding: bool = False,
@@ -346,13 +346,12 @@ class VenusServices:
     #     return instance
 
     @classmethod
-    def init_instance(cls, document_store_type: str):
+    def init_instance(cls, document_store_type: str, **kwargs):
         assert document_store_type is not None, f"{cls.__name__} got an unexpected keyword argument 'document_store_type'"
-        return cls(document_store_type=document_store_type)
+        index = kwargs["index"] if "index" in kwargs.keys() else "document"
+        return cls(document_store_type=document_store_type, index=index)
 
     @timeit
     @measure_memory
     def search(self, query, top_k, **kwargs):
         return self.pipeline.run(query=query, top_k_retriever=top_k)
-
-

@@ -1,8 +1,8 @@
 from typing import List, Optional
-
-import pandas as pd
 from pydantic import BaseModel
-from pydantic.dataclasses import dataclass
+
+from enum import auto
+from fastapi_utils.enums import StrEnum
 
 
 class Meta(BaseModel):
@@ -20,3 +20,8 @@ class DocumentEmbedding(BaseModel):
 
 class ListDocumentEmbedding(BaseModel):
     __root__: List[DocumentEmbedding]
+
+
+class DocumentStoreOption(StrEnum):
+    elasticsearch = auto()
+    inmemory = auto()
