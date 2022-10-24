@@ -102,5 +102,4 @@ To store your texts and their meta, you should follow the document format below:
 ]
 ```
 
-**<span style="color:red"> Note that</span>** index for each text should be based on standard format **
-domain_sub-domain_index** that improves the retrieval performance.
+**<span style="color:red"> Note that</span>** index for each text should be based on standard format **domain_sub-domain_index** that improves the retrieval performance.

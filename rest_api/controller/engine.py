@@ -182,8 +182,6 @@ class VenusServices:
 
     @timeit
     def run(self, file_paths):
-        try:
-            index_attachment = []
             documents = self.group_index(file_paths=file_paths)
             if documents is None:
                 return HTTPException(
@@ -202,20 +200,13 @@ class VenusServices:
                                 index=index
                             )
                         else:
-                            logger.log(
-                                f"{new_doc['text']} is available in {self.document_store.__class__.__name__} Document Store")
+                            logger.info(
+                                f"'{new_doc['text']}' is available in {self.document_store.__class__.__name__} Document Store")
                         logger.info(f'Your documents has been uploaded to {self.document_store.__class__.__name__}')
-
             return HTTPException(
                 status_code=status.HTTP_200_OK,
                 detail="Documents uploaded successfully"
             )
-        except:
-            return
-            # return HTTPException(
-            #     status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            #     detail="Documents has been uploaded unsuccessfully"
-            # )
 
     def _check_duplicate_document(self, index: str, query: str) -> bool:
         """
