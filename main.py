@@ -4,12 +4,13 @@ from fastapi import FastAPI, APIRouter
 from fastapi.openapi.utils import get_openapi
 from starlette.middleware.cors import CORSMiddleware
 
+import rest_api
 from core.config import settings
 from rest_api.api_v1.api import api_router
 from rest_api.error.http_error_handler import http_error_handler
 
 try:
-    from utils import __version__ as venus_version
+    venus_version = rest_api.__version__
 except:
     venus_version = "0.0.0"  # only for development
 
