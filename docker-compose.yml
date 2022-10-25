@@ -2,7 +2,7 @@ version: '3.8'
 services:
   application:
     container_name: kr
-    image: venus_services:v0.0.1
+    image: knowledge-retrieval:0.0.1
     networks:
       - es-net
     ports:

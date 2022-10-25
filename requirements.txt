@@ -1,5 +1,5 @@
+axiom_client@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/axiom_client-1.9.4-py3-none-any.whl
 venus@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/venus-1.2.5rc0-py3-none-any.whl
-# axiom-client@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/axiom_client-1.9.4-py3-none-any.whl
 loguru~=0.6.0
 jsonschema~=3.2.0
 uvicorn>=0.15.0,<0.17.0
