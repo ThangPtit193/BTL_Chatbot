@@ -1,3 +1,1 @@
-from venus.document_store.elasticsearch_store import ElasticsearchDocumentStore
 
-es = ElasticsearchDocumentStore(update_existing_documents=True)

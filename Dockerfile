@@ -1,4 +1,4 @@
-FROM quoinedev/python3.7-pandas-alpine
+FROM silverlogic/python3.6
 WORKDIR /knowledge-retrieval
 
 RUN python3 -m pip install -U pip
