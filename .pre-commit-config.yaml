@@ -15,7 +15,24 @@ repos:
       - id: mixed-line-ending  # normalizes line endings
       - id: no-commit-to-branch  # prevents committing to main
 
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [ python ]
+        args:
+          - --fail-under = 7
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: master
+    hooks:
+      - id: commitizen
+      - id: commitizen-branch
+        stages: [ push ]
+
   - repo: https://github.com/pre-commit/mirrors-autopep8
     rev: v2.0.0
     hooks:
-    -   id: autopep8
+      - id: autopep8
