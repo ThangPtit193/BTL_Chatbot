@@ -1,3 +1,5 @@
+import functools
+import inspect
 import tracemalloc
 from functools import wraps
 import time
@@ -34,3 +36,17 @@ def instance(func):
     @wraps(func)
     def instance_wrapper(*args, **kwargs):
         pass
+
+
+def inspect_param(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        try:
+            params = inspect.signature(func).parameters
+        except ValueError:
+            return
+        for k in params:
+            assert k is not None, TypeError(f"{func.__name__}() got an unexpected keyword argument '{k}'")
+        return func(*args, **kwargs)
+
+    return wrapper
