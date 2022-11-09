@@ -1,4 +1,7 @@
 fail_fast: true
+default_stages:
+  - commit
+  - push
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -26,13 +29,10 @@ repos:
           - --fail-under = 7
 
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: master
+    rev: master # automatically updated by Commitizen
     hooks:
       - id: commitizen
       - id: commitizen-branch
-        stages: [ push ]
-
-  - repo: https://github.com/pre-commit/mirrors-autopep8
-    rev: v2.0.0
-    hooks:
-      - id: autopep8
+        stages:
+          - commit
+          - push
