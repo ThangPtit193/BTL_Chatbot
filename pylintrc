@@ -105,7 +105,8 @@ disable=
     # We anticipate #3512 where it will become optional
     fixme,
     cyclic-import,
-    consider-alternative-union-syntax
+    consider-alternative-union-syntax,
+    consider-using-alias
 
 
 [REPORTS]
