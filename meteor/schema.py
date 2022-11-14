@@ -604,7 +604,7 @@ class MultiLabel:
         # taking the id from the document of each label or taking the document_id of each label's answer.
         # We take the former as labels without answers are allowed.
         #
-        # For no_answer cases document_store.add_eval_data() currently adds all documents coming from the SQuAD paragraph's context
+        # For no_answer cases document_stores.add_eval_data() currently adds all documents coming from the SQuAD paragraph's context
         # as separate no_answer labels, and thus with document.id but without answer.document_id.
         # If we do not exclude them from document_ids this would be problematic for retriever evaluation as they do not contain the answer.
         # Hence, we exclude them here as well.
