@@ -45,3 +45,35 @@ class PipelineError(MeteorError):
 
     def __int__(self, message: Optional[str] = None):
         super().__init__(message=message)
+
+
+class PipelineSchemaError(PipelineError):
+    """
+    Exception for issues arising when reading/building the JSON schema of pipelines
+    """
+
+    def __init__(self, message: Optional[str] = "Pipeline Schema Error", docs_link: Optional[str] = None):
+        super().__init__(message=message, docs_link=docs_link)
+
+
+class PipelineConfigError(PipelineError):
+    """
+    Exception for issues within a pipeline config file
+    """
+
+    def __init__(self, message: Optional[str] = "Pipeline Config Error", docs_link: Optional[str] = None):
+        super().__init__(message=message, docs_link=docs_link)
+
+
+class DocumentStoreError(MeteorError):
+    """Exception for issues that occur in a document store"""
+
+    def __init__(self, message: Optional[str] = None):
+        super().__init__(message=message)
+
+
+class DuplicateDocumentError(DocumentStoreError, ValueError):
+    """Exception for Duplicate document"""
+
+    def __init__(self, message: Optional[str] = None):
+        super().__init__(message=message)
