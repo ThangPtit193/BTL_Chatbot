@@ -1,4 +1,7 @@
-from meteor.schema import MultiLabel, Label, Answer, Span, Document
+import pytest
+
+from meteor.pipelines.standard_pipelines import DocumentSearchPipeline
+from meteor.schema import MultiLabel, Label, Answer, Span, Document, EvaluationResult
 
 EVAL_LABELS = [
     MultiLabel(
@@ -32,3 +35,19 @@ EVAL_LABELS = [
         ]
     ),
 ]
+
+
+@pytest.mark.parametrize("retriever_with_docs", ["tfidf"], indirect=True)
+@pytest.mark.parametrize("document_store_with_docs", ["memory"], indirect=True)
+def test_document_search_calculate_metrics(retriever_with_docs):
+    pipeline = DocumentSearchPipeline(retriever=retriever_with_docs)
+    eval_result: EvaluationResult = pipeline.eval(labels=EVAL_LABELS, params={"Retriever": {"top_k": 5}})
+
+    metrics = eval_result.calculate_metrics(document_scope="document_id")
+
+    assert "Retriever" in eval_result
+    assert len(eval_result) == 1
+    retriever_result = eval_result["Retriever"]
+    retriever_berlin = retriever_result[retriever_result["query"] == "Who lives in Berlin?"]
+    retriever_munich = retriever_result[retriever_result["query"] == "Who lives in Munich?"]
+    print(retriever_berlin)
