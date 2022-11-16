@@ -61,7 +61,7 @@ class Document:
             id_hash_keys: Optional[List[str]] = None,
     ):
         """
-        One of the core data classes in Haystack. It's used to represent documents / passages in a standardized way within Haystack.
+        One of the core data classes in Meteor. It's used to represent documents / passages in a standardized way within Meteor.
         Documents are stored in DocumentStores, are returned by Retrievers, are the input for Readers and are used in
         many other places that manipulate or interact with document-level data.
         Note: There can be multiple Documents originating from one file (e.g. PDF), if you split the text
@@ -70,7 +70,7 @@ class Document:
         It's particularly helpful for handling of duplicates and referencing documents in other objects (e.g. Labels)
         There's an easy option to convert from/to dicts via `from_dict()` and `to_dict`.
         :param content: Content of the document. For most cases, this will be text, but it can be a table or image.
-        :param content_type: One of "text", "table", "image" or "audio". Haystack components can use this to adjust their
+        :param content_type: One of "text", "table", "image" or "audio". Meteor components can use this to adjust their
                              handling of Documents and check compatibility.
         :param id: Unique ID for the document. If not supplied by the user, we'll generate one automatically by
                    creating a hash from the supplied text. This behaviour can be further adjusted by `id_hash_keys`.
@@ -139,7 +139,7 @@ class Document:
     def to_dict(self, field_map={}) -> Dict:
         """
         Convert Document to dict. An optional field_map can be supplied to change the names of the keys in the
-        resulting dict. This way you can work with standardized Document objects in Haystack, but adjust the format that
+        resulting dict. This way you can work with standardized Document objects in Meteor, but adjust the format that
         they are serialized / stored in other places (e.g. elasticsearch)
         Example:
         | doc = Document(content="some text", content_type="text")
@@ -156,21 +156,21 @@ class Document:
             # Exclude internal fields (Pydantic, ...) fields from the conversion process
             if k.startswith("__"):
                 continue
-            if k == "content":
-                # Convert pd.DataFrame to list of rows for serialization
-                if self.content_type == "table" and isinstance(self.content, pd.DataFrame):
-                    v = [self.content.columns.tolist()] + self.content.values.tolist()
+            # if k == "content":
+            #     # Convert pd.DataFrame to list of rows for serialization
+            #     if self.content_type == "table" and isinstance(self.content, pd.DataFrame):
+            #         v = [self.content.columns.tolist()] + self.content.values.tolist()
             k = k if k not in inv_field_map else inv_field_map[k]
             _doc[k] = v
         return _doc
 
     @classmethod
     def from_dict(
-            cls, doc: Dict[str, Any], field_map: Dict[str, Any] = dict, id_hash_keys: Optional[List[str]] = None
+            cls, doc: Dict[str, Any], field_map: Dict[str, Any] = {}, id_hash_keys: Optional[List[str]] = None
     ) -> Document:
         """
         Create Document from dict. An optional field_map can be supplied to adjust for custom names of the keys in the
-        input dict. This way you can work with standardized Document objects in Haystack, but adjust the format that
+        input dict. This way you can work with standardized Document objects in Meteor, but adjust the format that
         they are serialized / stored in other places (e.g. elasticsearch)
         Example:
         | my_dict = {"custom_content_field": "some text", content_type": "text"}
@@ -253,9 +253,8 @@ class Span:
     start: int
     end: int
     """
-    Defining a sequence of characters (Text span) or cells (Table span) via start and end index.
+    Defining a sequence of characters (Text span) via start and end index.
     For extractive QA: Character where answer starts/ends
-    For TableQA: Cell where the answer starts/ends (counted from top left to bottom right of table)
 
     :param start: Position where the span starts
     :param end:  Position where the span ends
@@ -315,7 +314,7 @@ class Answer:
     meta: Optional[Dict[str, Any]] = None
 
     """
-    The fundamental object in Haystack to represent any type of Answers (e.g. extractive QA, generative QA or TableQA).
+    The fundamental object in Meteor to represent any type of Answers (e.g. extractive QA, generative QA or TableQA).
     For example, it's used within some Nodes like the Reader, but also in the REST API.
 
     :param answer: The answer string. If there's no possible answer (aka "no_answer" or "is_impossible) this will be an empty string.
@@ -415,9 +414,9 @@ class Label:
             filters: Optional[dict] = None,
     ):
         """
-        Object used to represent label/feedback in a standardized way within Haystack.
+        Object used to represent label/feedback in a standardized way within Meteor.
         This includes labels from dataset like SQuAD, annotations from labeling tools,
-        or, user-feedback from the Haystack REST API.
+        or, user-feedback from the Meteor REST API.
 
         :param query: the question (or query) for finding answers.
         :param document:
@@ -1360,7 +1359,7 @@ class EvaluationResult:
             "gold_answers_f1",
             "gold_answers_sas",
             "gold_answers_match",
-            "gold_contexts_similarity",
+            # "gold_contexts_similarity",
             "offsets_in_document",
         ]
         converters = dict.fromkeys(cols_to_convert, ast.literal_eval)
