@@ -43,13 +43,12 @@ from meteor.pipelines.config import (
     VALID_ROOT_NODES,
 )
 from meteor.pipelines.utils import generate_code, print_eval_report
-# from meteor.utils import calculate_context_similarity
+from meteor.utils import calculate_context_similarity
 from meteor.schema import Answer, EvaluationResult, MultiLabel, Document, Span
 from meteor.errors import MeteorError, PipelineError, PipelineConfigError
 from meteor.nodes.base import BaseComponent, RootNode
 from meteor.nodes.retriever.base import BaseRetriever
 from meteor.document_stores.base import BaseDocumentStore
-# from meteor.telemetry import send_event, send_custom_event
 from meteor.utils.tracking import MLflowTrackingHead, Tracker as tracker
 
 logger = logging.getLogger(__name__)
@@ -1446,19 +1445,19 @@ class Pipeline:
                     df_docs.rename(columns={"id": "document_id", "content": "context"}, inplace=True)
                     df_docs["gold_document_ids"] = [gold_document_ids] * len(df_docs)
                     df_docs["gold_contexts"] = [gold_contexts] * len(df_docs)
-                    # df_docs["gold_contexts_similarity"] = df_docs.map_rows(
-                    #     lambda row: [
-                    #         calculate_context_similarity(
-                    #             str(gold_context) if isinstance(gold_context, pd.DataFrame) else gold_context,
-                    #             str(row["context"])
-                    #             if isinstance(row["context"], pd.DataFrame)
-                    #             else row["context"] or "",
-                    #             min_length=context_matching_min_length,
-                    #             boost_split_overlaps=context_matching_boost_split_overlaps,
-                    #         )
-                    #         for gold_context in gold_contexts
-                    #     ]
-                    # )
+                    df_docs["gold_contexts_similarity"] = df_docs.map_rows(
+                        lambda row: [
+                            calculate_context_similarity(
+                                str(gold_context) if isinstance(gold_context, pd.DataFrame) else gold_context,
+                                str(row["context"])
+                                if isinstance(row["context"], pd.DataFrame)
+                                else row["context"] or "",
+                                min_length=context_matching_min_length,
+                                boost_split_overlaps=context_matching_boost_split_overlaps,
+                            )
+                            for gold_context in gold_contexts
+                        ]
+                    )
                     df_docs["gold_documents_id_match"] = df_docs.map_rows(
                         lambda row: [1.0 if row["document_id"] == gold_id else 0.0 for gold_id in gold_document_ids]
                     )
@@ -1998,13 +1997,7 @@ class Pipeline:
             "FAQPipeline": lambda x: {"Docs2Answers"} <= set(x.keys()),
             "ExtractiveQAPipeline": lambda x: {"Reader", "Retriever"} <= set(x.keys()),
             "SearchSummarizationPipeline": lambda x: {"Retriever", "Summarizer"} <= set(x.keys()),
-            "TranslationWrapperPipeline": lambda x: {"InputTranslator", "OutputTranslator"} <= set(x.keys()),
-            "RetrieverQuestionGenerationPipeline": lambda x: {"Retriever", "QuestionGenerator"} <= set(x.keys()),
-            "QuestionAnswerGenerationPipeline": lambda x: {"QuestionGenerator", "Reader"} <= set(x.keys()),
-            "DocumentSearchPipeline": lambda x: {"Retriever"} <= set(x.keys()),
-            "QuestionGenerationPipeline": lambda x: {"QuestionGenerator"} <= set(x.keys()),
-            "MostSimilarDocumentsPipeline": lambda x: len(x.values()) == 1
-                                                      and isinstance(list(x.values())[0], BaseDocumentStore),
+            "DocumentSearchPipeline": lambda x: {"Retriever"} <= set(x.keys())
         }
         retrievers = [type(comp).__name__ for comp in self.components.values() if isinstance(comp, BaseRetriever)]
         doc_stores = [type(comp).__name__ for comp in self.components.values() if isinstance(comp, BaseDocumentStore)]
@@ -2057,7 +2050,7 @@ class Pipeline:
 class _MeteorBeirRetrieverAdapter:
     def __init__(self, index_pipeline: Pipeline, query_pipeline: Pipeline, index_params: dict, query_params: dict):
         """
-        Adapter mimicking a BEIR retriever used by BEIR's EvaluateRetrieval class to run BEIR evaluations on Haystack Pipelines.
+        Adapter mimicking a BEIR retriever used by BEIR's EvaluateRetrieval class to run BEIR evaluations on Meteor Pipelines.
         This has nothing to do with Haystack's retriever classes.
         See https://github.com/beir-cellar/beir/blob/main/beir/retrieval/evaluation.py.
 
