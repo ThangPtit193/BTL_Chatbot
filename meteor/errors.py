@@ -77,3 +77,10 @@ class DuplicateDocumentError(DocumentStoreError, ValueError):
 
     def __init__(self, message: Optional[str] = None):
         super().__init__(message=message)
+
+
+class FilterError(DocumentStoreError):
+    """Exception for issues that occur building complex filters"""
+
+    def __init__(self, message: Optional[str] = None):
+        super().__init__(message=message)
