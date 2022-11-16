@@ -17,9 +17,7 @@ from meteor.nodes.base import BaseComponent, RootNode
 from meteor.nodes._json_schema import inject_definition_in_schema, JSON_SCHEMAS_PATH
 from meteor.errors import PipelineError, PipelineConfigError, PipelineSchemaError
 
-
 logger = logging.getLogger(__name__)
-
 
 VALID_KEY_REGEX = re.compile(r"^[-\w/\\.:*]+$")
 VALID_VALUE_REGEX = re.compile(r"^[-\w/\\.:* \[\]]+$")
@@ -56,7 +54,7 @@ def get_pipeline_definition(pipeline_config: Dict[str, Any], pipeline_name: Opti
 
 
 def get_component_definitions(
-    pipeline_config: Dict[str, Any], overwrite_with_env_variables: bool = True
+        pipeline_config: Dict[str, Any], overwrite_with_env_variables: bool = True
 ) -> Dict[str, Dict[str, Any]]:
     """
     Returns the definitions of all components from a given pipeline config.
@@ -71,7 +69,6 @@ def get_component_definitions(
 
     for raw_component_definition in pipeline_config["components"]:
         name = raw_component_definition["name"]
-        # We perform a shallow copy here because of https://github.com/deepset-ai/haystack/issues/2568
         component_definition = {key: copy(value) for key, value in raw_component_definition.items() if key != "name"}
         component_definitions[name] = component_definition
 
@@ -143,7 +140,7 @@ def validate_config_strings(pipeline_config: Any, is_value: bool = False):
 
 
 def build_component_dependency_graph(
-    pipeline_definition: Dict[str, Any], component_definitions: Dict[str, Any]
+        pipeline_definition: Dict[str, Any], component_definitions: Dict[str, Any]
 ) -> nx.DiGraph:
     """
     Builds a dependency graph between components. Dependencies are:
@@ -160,8 +157,6 @@ def build_component_dependency_graph(
         params = component_definition.get("params", {})
         referenced_components: List[str] = list()
         for param_value in params.values():
-            # Currently we don't do any additional type validation here.
-            # See https://github.com/deepset-ai/haystack/pull/2253#discussion_r815951591.
             if param_value in component_definitions:
                 referenced_components.append(param_value)
         for referenced_component in referenced_components:
@@ -181,10 +176,10 @@ def build_component_dependency_graph(
 
 
 def validate_yaml(
-    path: Path,
-    strict_version_check: bool = False,
-    # overwrite_with_env_variables: bool = True,
-    extras: Optional[str] = None,
+        path: Path,
+        strict_version_check: bool = False,
+        # overwrite_with_env_variables: bool = True,
+        extras: Optional[str] = None,
 ):
     """
     Ensures that the given YAML file can be loaded without issues.
@@ -213,10 +208,10 @@ def validate_yaml(
 
 
 def validate_config(
-    pipeline_config: Dict[str, Any],
-    strict_version_check: bool = False,
-    overwrite_with_env_variables: bool = True,
-    extras: Optional[str] = None,
+        pipeline_config: Dict[str, Any],
+        strict_version_check: bool = False,
+        overwrite_with_env_variables: bool = True,
+        extras: Optional[str] = None,
 ):
     """
     Ensures that the given YAML file can be loaded without issues.
@@ -280,22 +275,18 @@ def validate_schema(pipeline_config: Dict, strict_version_check: bool = False, e
         if strict_version_check:
             raise PipelineConfigError(
                 f"Cannot load pipeline configuration of version {pipeline_version} "
-                f"in Haystack version {__version__}\n"
-                "Please check out the release notes (https://github.com/deepset-ai/haystack/releases/latest), "
-                "the documentation (https://haystack.deepset.ai/components/pipelines#yaml-file-definitions) "
+                f"in Meteor version 0.0.1\n"
                 "and fix your configuration accordingly."
             )
-        ok_to_ignore_version = pipeline_version == "ignore" and "rc" in __version__
+        ok_to_ignore_version = pipeline_version == "ignore" and "rc" in [__version__]
         if not ok_to_ignore_version:
             logging.warning(
-                f"This pipeline is version '{pipeline_version}', but you're using Haystack {__version__}\n"
+                f"This pipeline is version '{pipeline_version}', but you're using Meteor 0.0.1\n"
                 "This might cause bugs and unexpected behaviors."
-                "Please check out the release notes (https://github.com/deepset-ai/haystack/releases/latest), "
-                "the documentation (https://haystack.deepset.ai/components/pipelines#yaml-file-definitions) "
                 "and fix your configuration accordingly."
             )
 
-    with open(JSON_SCHEMAS_PATH / f"haystack-pipeline-main.schema.json", "r") as schema_file:
+    with open(JSON_SCHEMAS_PATH / f"meteor-pipeline-main.schema.json", "r") as schema_file:
         schema = json.load(schema_file)
 
     # Remove the version value from the schema to prevent validation errors on it - a version only have to be present.
@@ -312,7 +303,6 @@ def validate_schema(pipeline_config: Dict, strict_version_check: bool = False, e
             # If the validation comes from an unknown node, try to find it and retry:
             if list(validation.schema_path) == ["properties", "components", "items", "anyOf"]:
                 if validation.instance["type"] not in loaded_custom_nodes:
-
                     logger.info(
                         f"Missing definition for node of type {validation.instance['type']}. Looking into local classes..."
                     )
@@ -394,10 +384,10 @@ def _init_pipeline_graph(root_node_name: Optional[str]) -> nx.DiGraph:
 
 
 def _add_node_to_pipeline_graph(
-    graph: nx.DiGraph,
-    components: Dict[str, Dict[str, Any]],
-    node: Dict[str, Any],
-    instance: Optional[BaseComponent] = None,
+        graph: nx.DiGraph,
+        components: Dict[str, Dict[str, Any]],
+        node: Dict[str, Any],
+        instance: Optional[BaseComponent] = None,
 ) -> nx.DiGraph:
     """
     Adds a single node to the provided graph, performing all necessary validation steps.
