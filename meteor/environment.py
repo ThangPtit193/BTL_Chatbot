@@ -6,7 +6,7 @@ import torch
 import transformers
 
 from meteor import __version__
-from tqdm.autonotebook import get_ipython
+from IPython import get_ipython
 
 METEOR_EXECUTION_CONTEXT = "METEOR_EXECUTION_CONTEXT"
 METEOR_DOCKER_CONTAINER = "METEOR_DOCKER_CONTAINER"
