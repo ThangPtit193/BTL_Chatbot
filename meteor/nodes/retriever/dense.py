@@ -7,6 +7,7 @@ import logging
 from numpy import ndarray
 
 import numpy as np
+from torch import Tensor
 from tqdm.auto import tqdm
 
 import torch
@@ -338,7 +339,7 @@ class EmbeddingRetriever(DenseRetriever):
 
         return documents
 
-    def embed(self, texts: Union[List[List[str]], List[str], str], batch_size=8) -> List[np.ndarray]:
+    def embed(self, texts: Union[List[List[str]], List[str], str], batch_size=8) -> Union[List[Tensor], ndarray, Tensor]:
         """
         Create embeddings for each text in a list of texts using the retrievers model (`self.embedding_model`)
 
@@ -359,7 +360,7 @@ class EmbeddingRetriever(DenseRetriever):
         emb = [r for r in emb]
         return emb
 
-    def embed_queries(self, queries: List[str], batch_size: int = 8) -> List[np.ndarray]:
+    def embed_queries(self, queries: List[str], batch_size: int = 8) -> Union[List[Tensor], ndarray, Tensor]:
         """
         Create embeddings for a list of queries.
 
@@ -369,7 +370,7 @@ class EmbeddingRetriever(DenseRetriever):
         # for backward compatibility: cast pure str input
         return self.embed(queries, batch_size=batch_size)
 
-    def embed_documents(self, documents: List[Document], batch_size: int = 8) -> List[Union[ndarray, ndarray]]:
+    def embed_documents(self, documents: List[Document], batch_size: int = 8) -> Union[List[Tensor], ndarray, Tensor]:
         """
         Create embeddings for a list of documents.
 
@@ -380,7 +381,7 @@ class EmbeddingRetriever(DenseRetriever):
             passages = [[d.meta["name"] if d.meta and "name" in d.meta else "", d.content] for d in
                         documents]
         else:
-            passages = [d.text for d in documents]  # type: ignore
+            passages = [d.content for d in documents]  # type: ignore
         return self.embed(passages, batch_size=batch_size)
 
     def save(self, model_directory, download_pretrained=True):

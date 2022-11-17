@@ -146,6 +146,36 @@ class MockDocumentStore(BaseDocumentStore):
 @pytest.fixture
 def docs_all_formats() -> List[Union[Document, Dict[str, Any]]]:
     return [
+        {
+            "content": "Cảnh báo được gửi đến các tư lệnh Lục quân và Hải quân Hoa Kỳ tại Hawaii nhưng tin tức này không được nhận đúng lúc vì lỗi của bộ máy hành chính."
+        },
+        {
+            "content": "Văn hóa Canada rút ra từ những ảnh hưởng của các dân tộc thành phần"
+        },
+        {
+            "content": "Các tỉnh khác không có ngôn ngữ chính thức như vậy"
+        },
+        {
+            "content": "Paris nằm ở điểm gặp nhau của các hành trình thương mại đường bộ và đường sông, và là trung tâm của một vùng nông nghiệp giàu có"
+        },
+        {
+            "content": "Chultem phân biệt ba kiểu kiến trúc truyền thống Mông Cổ: Mông Cổ, Tây Tạng và Trung Quốc và kiểu kết hợp."
+        },
+        {
+            "content": "'Người đồng sáng lập tập đoàn Microsoft Paul Allen qua đời ở tuổi 65'",
+        },
+        {
+            "content": "Sinh ra tại Seattle, tiểu bang Washington, Paul Allen trở thành người bạn thân thiết từ thuở niên thiếu của Bill Gates. Chính ông là người đã thuyết phục Bill Gates bỏ Đại học Harvard để cùng nhau thành lập Tập đoàn Microsoft vào năm 1975.",
+        },
+        {
+            "content": "Chính ông là người đã thuyết phục Bill Gates bỏ Đại học Harvard để cùng nhau thành lập Tập đoàn Microsoft vào năm 1975.",
+        },
+        {
+            "content": "Paris nằm ở điểm gặp nhau của các hành trình thương mại đường bộ và đường sông, và là trung tâm của một vùng nông nghiệp giàu có"
+        },
+        {
+            "content": "Chultem phân biệt ba kiểu kiến trúc truyền thống Mông Cổ: Mông Cổ, Tây Tạng và Trung Quốc và kiểu kết hợp."
+        },
         # metafield at the top level for backward compatibility
         {
             "content": "My name is Paul and I live in New York",
@@ -278,8 +308,9 @@ def get_retriever(retriever_type, document_store):
         retriever = TfidfRetriever(document_store=document_store)
     elif retriever_type == "embedding":
         retriever = EmbeddingRetriever(
-            document_store=document_store, embedding_model="deepset/sentence_bert", use_gpu=False
+            document_store=document_store, embedding_model="ms-viquad-bi-encoder-phobert-base", use_gpu=False
         )
+        retriever.update_embeddings()
     else:
         raise Exception(f"No retriever fixture for '{retriever_type}'")
 
