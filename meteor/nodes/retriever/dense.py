@@ -1,6 +1,6 @@
 import os
 from abc import abstractmethod
-from typing import List, Dict, Union, Optional
+from typing import List, Dict, Union, Optional, Text
 
 import logging
 
@@ -13,7 +13,9 @@ import torch
 
 from meteor.errors import MeteorError
 from meteor.schema import Document
-from meteor.document_stores import BaseDocumentStore, InMemoryDocumentStore
+from meteor.document_stores import BaseDocumentStore
+from meteor.document_stores import InMemoryDocumentStore
+# from meteor.document_stores.memory import InMemoryDocumentStore
 from meteor.nodes.retriever.base import BaseRetriever
 from meteor.nodes.retriever.sentence_embedding import SentenceEmbedding
 from meteor.modelling.utils import initialize_device_settings
@@ -375,7 +377,7 @@ class EmbeddingRetriever(DenseRetriever):
         :return: Embeddings, one per input document, shape: (docs, embedding_dim)
         """
         if self.embedding_model:
-            passages = [[d.meta["name"] if d.meta and "name" in d.meta else "", d.text] for d in
+            passages = [[d.meta["name"] if d.meta and "name" in d.meta else "", d.content] for d in
                         documents]
         else:
             passages = [d.text for d in documents]  # type: ignore
@@ -402,3 +404,6 @@ class EmbeddingRetriever(DenseRetriever):
 
         if isinstance(self.document_store, InMemoryDocumentStore):
             self.document_store.load(retriever_dir)
+
+    def update_embeddings(self, index: Text = None, batch_size=8):
+        self.document_store.update_embeddings(self, index=index, batch_size=batch_size)

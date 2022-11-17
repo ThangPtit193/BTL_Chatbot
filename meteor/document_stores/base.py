@@ -16,13 +16,13 @@ from meteor.errors import DuplicateDocumentError, DocumentStoreError
 from meteor.document_stores.utils import eval_data_from_json, eval_data_from_jsonl, squad_json_to_jsonl
 from meteor.utils.labels import aggregate_labels
 
-
 logger = logging.getLogger(__name__)
 
 try:
     from numba import njit  # pylint: disable=import-error
 except (ImportError, ModuleNotFoundError):
     logger.debug("Numba not found, replacing njit() with no-op implementation. Enable it with 'pip install numba'.")
+
 
     def njit(f):
         return f
@@ -40,7 +40,8 @@ class BaseKnowledgeGraph(BaseComponent):
 
     outgoing_edges = 1
 
-    def run(self, sparql_query: str, index: Optional[str] = None, headers: Optional[Dict[str, str]] = None):  # type: ignore
+    def run(self, sparql_query: str, index: Optional[str] = None,
+            headers: Optional[Dict[str, str]] = None):  # type: ignore
         result = self.query(sparql_query=sparql_query, index=index, headers=headers)
         output = {"sparql_result": result}
         return output, "output_1"
@@ -68,12 +69,12 @@ class BaseDocumentStore(BaseComponent):
 
     @abstractmethod
     def write_documents(
-        self,
-        documents: Union[List[dict], List[Document]],
-        index: Optional[str] = None,
-        batch_size: int = 10_000,
-        duplicate_documents: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            documents: Union[List[dict], List[Document]],
+            index: Optional[str] = None,
+            batch_size: int = 10_000,
+            duplicate_documents: Optional[str] = None,
+            headers: Optional[Dict[str, str]] = None,
     ):
         """
         Indexes documents for later queries.
@@ -100,12 +101,12 @@ class BaseDocumentStore(BaseComponent):
 
     @abstractmethod
     def get_all_documents(
-        self,
-        index: Optional[str] = None,
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        return_embedding: Optional[bool] = None,
-        batch_size: int = 10_000,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            index: Optional[str] = None,
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            return_embedding: Optional[bool] = None,
+            batch_size: int = 10_000,
+            headers: Optional[Dict[str, str]] = None,
     ) -> List[Document]:
         """
         Get documents from the document store.
@@ -148,12 +149,12 @@ class BaseDocumentStore(BaseComponent):
 
     @abstractmethod
     def get_all_documents_generator(
-        self,
-        index: Optional[str] = None,
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        return_embedding: Optional[bool] = None,
-        batch_size: int = 10_000,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            index: Optional[str] = None,
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            return_embedding: Optional[bool] = None,
+            batch_size: int = 10_000,
+            headers: Optional[Dict[str, str]] = None,
     ) -> Generator[Document, None, None]:
         """
         Get documents from the document store. Under-the-hood, documents are fetched in batches from the
@@ -211,22 +212,22 @@ class BaseDocumentStore(BaseComponent):
 
     @abstractmethod
     def get_all_labels(
-        self,
-        index: Optional[str] = None,
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            index: Optional[str] = None,
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            headers: Optional[Dict[str, str]] = None,
     ) -> List[Label]:
         pass
 
     def get_all_labels_aggregated(
-        self,
-        index: Optional[str] = None,
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        open_domain: bool = True,
-        drop_negative_labels: bool = False,
-        drop_no_answers: bool = False,
-        aggregate_by_meta: Optional[Union[str, list]] = None,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            index: Optional[str] = None,
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            open_domain: bool = True,
+            drop_negative_labels: bool = False,
+            drop_no_answers: bool = False,
+            aggregate_by_meta: Optional[Union[str, list]] = None,
+            headers: Optional[Dict[str, str]] = None,
     ) -> List[MultiLabel]:
         """
         Return all labels in the DocumentStore, aggregated into MultiLabel objects.
@@ -293,17 +294,17 @@ class BaseDocumentStore(BaseComponent):
 
     @abstractmethod
     def get_document_by_id(
-        self, id: str, index: Optional[str] = None, headers: Optional[Dict[str, str]] = None
+            self, id: str, index: Optional[str] = None, headers: Optional[Dict[str, str]] = None
     ) -> Optional[Document]:
         pass
 
     @abstractmethod
     def get_document_count(
-        self,
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        index: Optional[str] = None,
-        only_documents_without_embedding: bool = False,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            index: Optional[str] = None,
+            only_documents_without_embedding: bool = False,
+            headers: Optional[Dict[str, str]] = None,
     ) -> int:
         pass
 
@@ -346,14 +347,14 @@ class BaseDocumentStore(BaseComponent):
 
     @abstractmethod
     def query_by_embedding(
-        self,
-        query_emb: np.ndarray,
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        top_k: int = 10,
-        index: Optional[str] = None,
-        return_embedding: Optional[bool] = None,
-        headers: Optional[Dict[str, str]] = None,
-        scale_score: bool = True,
+            self,
+            query_emb: np.ndarray,
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            top_k: int = 10,
+            index: Optional[str] = None,
+            return_embedding: Optional[bool] = None,
+            headers: Optional[Dict[str, str]] = None,
+            scale_score: bool = True,
     ) -> List[Document]:
         pass
 
@@ -363,22 +364,22 @@ class BaseDocumentStore(BaseComponent):
 
     @abstractmethod
     def write_labels(
-        self,
-        labels: Union[List[Label], List[dict]],
-        index: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            labels: Union[List[Label], List[dict]],
+            index: Optional[str] = None,
+            headers: Optional[Dict[str, str]] = None,
     ):
         pass
 
     def add_eval_data(
-        self,
-        filename: str,
-        doc_index: str = "eval_document",
-        label_index: str = "label",
-        batch_size: Optional[int] = None,
-        max_docs: Optional[Union[int, bool]] = None,
-        open_domain: bool = False,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            filename: str,
+            doc_index: str = "eval_document",
+            label_index: str = "label",
+            batch_size: Optional[int] = None,
+            max_docs: Optional[Union[int, bool]] = None,
+            open_domain: bool = False,
+            headers: Optional[Dict[str, str]] = None,
     ):
         """
         Adds a SQuAD-formatted file to the DocumentStore in order to be able to perform evaluation on it.
@@ -419,7 +420,7 @@ class BaseDocumentStore(BaseComponent):
 
         elif file_path.suffix == ".jsonl":
             for docs, labels in eval_data_from_jsonl(
-                filename, batch_size, max_docs=max_docs, open_domain=open_domain
+                    filename, batch_size, max_docs=max_docs, open_domain=open_domain
             ):
                 if docs:
                     self.write_documents(docs, index=doc_index, headers=headers)
@@ -430,30 +431,30 @@ class BaseDocumentStore(BaseComponent):
             logger.error("File needs to be in json or jsonl format.")
 
     def delete_all_documents(
-        self,
-        index: Optional[str] = None,
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            index: Optional[str] = None,
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            headers: Optional[Dict[str, str]] = None,
     ):
         pass
 
     @abstractmethod
     def delete_documents(
-        self,
-        index: Optional[str] = None,
-        ids: Optional[List[str]] = None,
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            index: Optional[str] = None,
+            ids: Optional[List[str]] = None,
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            headers: Optional[Dict[str, str]] = None,
     ):
         pass
 
     @abstractmethod
     def delete_labels(
-        self,
-        index: Optional[str] = None,
-        ids: Optional[List[str]] = None,
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            index: Optional[str] = None,
+            ids: Optional[List[str]] = None,
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            headers: Optional[Dict[str, str]] = None,
     ):
         pass
 
@@ -472,11 +473,11 @@ class BaseDocumentStore(BaseComponent):
         pass
 
     def run(  # type: ignore
-        self,
-        documents: List[Union[dict, Document]],
-        index: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
-        id_hash_keys: Optional[List[str]] = None,
+            self,
+            documents: List[Union[dict, Document]],
+            index: Optional[str] = None,
+            headers: Optional[Dict[str, str]] = None,
+            id_hash_keys: Optional[List[str]] = None,
     ):
         """
         Run requests of document stores
@@ -501,11 +502,11 @@ class BaseDocumentStore(BaseComponent):
         return {}, "output_1"
 
     def run_batch(  # type: ignore
-        self,
-        documents: List[Union[dict, Document]],
-        index: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
-        id_hash_keys: Optional[List[str]] = None,
+            self,
+            documents: List[Union[dict, Document]],
+            index: Optional[str] = None,
+            headers: Optional[Dict[str, str]] = None,
+            id_hash_keys: Optional[List[str]] = None,
     ):
         return self.run(documents=documents, index=index, headers=headers, id_hash_keys=id_hash_keys)
 
@@ -529,16 +530,20 @@ class BaseDocumentStore(BaseComponent):
 
     @abstractmethod
     def get_documents_by_id(
-        self,
-        ids: List[str],
-        index: Optional[str] = None,
-        batch_size: int = 10_000,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            ids: List[str],
+            index: Optional[str] = None,
+            batch_size: int = 10_000,
+            headers: Optional[Dict[str, str]] = None,
     ) -> List[Document]:
         pass
 
     @abstractmethod
     def update_document_meta(self, id: str, meta: Dict[str, Any], index: Optional[str] = None):
+        pass
+
+    @abstractmethod
+    def update_embedding(self, *args, **kwargs):
         pass
 
     def _drop_duplicate_documents(self, documents: List[Document], index: Optional[str] = None) -> List[Document]:
@@ -565,11 +570,11 @@ class BaseDocumentStore(BaseComponent):
         return _documents
 
     def _handle_duplicate_documents(
-        self,
-        documents: List[Document],
-        index: Optional[str] = None,
-        duplicate_documents: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
+            self,
+            documents: List[Document],
+            index: Optional[str] = None,
+            duplicate_documents: Optional[str] = None,
+            headers: Optional[Dict[str, str]] = None,
     ):
         """
         Checks whether any of the passed documents is already existing in the chosen index and returns a list of
@@ -603,7 +608,7 @@ class BaseDocumentStore(BaseComponent):
         return documents
 
     def _get_duplicate_labels(
-        self, labels: list, index: Optional[str] = None, headers: Optional[Dict[str, str]] = None
+            self, labels: list, index: Optional[str] = None, headers: Optional[Dict[str, str]] = None
     ) -> List[Label]:
         """
         Return all duplicate labels
@@ -656,15 +661,15 @@ class KeywordDocumentStore(BaseDocumentStore):
 
     @abstractmethod
     def query(
-        self,
-        query: Optional[str],
-        filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
-        top_k: int = 10,
-        custom_query: Optional[str] = None,
-        index: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
-        all_terms_must_match: bool = False,
-        scale_score: bool = True,
+            self,
+            query: Optional[str],
+            filters: Optional[Dict[str, Union[Dict, List, str, int, float, bool]]] = None,
+            top_k: int = 10,
+            custom_query: Optional[str] = None,
+            index: Optional[str] = None,
+            headers: Optional[Dict[str, str]] = None,
+            all_terms_must_match: bool = False,
+            scale_score: bool = True,
     ) -> List[Document]:
         """
         Scan through documents in DocumentStore and return a small number of documents
@@ -755,20 +760,20 @@ class KeywordDocumentStore(BaseDocumentStore):
 
     @abstractmethod
     def query_batch(
-        self,
-        queries: List[str],
-        filters: Optional[
-            Union[
-                Dict[str, Union[Dict, List, str, int, float, bool]],
-                List[Dict[str, Union[Dict, List, str, int, float, bool]]],
-            ]
-        ] = None,
-        top_k: int = 10,
-        custom_query: Optional[str] = None,
-        index: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
-        all_terms_must_match: bool = False,
-        scale_score: bool = True,
+            self,
+            queries: List[str],
+            filters: Optional[
+                Union[
+                    Dict[str, Union[Dict, List, str, int, float, bool]],
+                    List[Dict[str, Union[Dict, List, str, int, float, bool]]],
+                ]
+            ] = None,
+            top_k: int = 10,
+            custom_query: Optional[str] = None,
+            index: Optional[str] = None,
+            headers: Optional[Dict[str, str]] = None,
+            all_terms_must_match: bool = False,
+            scale_score: bool = True,
     ) -> List[List[Document]]:
         """
         Scan through documents in DocumentStore and return a small number of documents

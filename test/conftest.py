@@ -15,13 +15,11 @@ import pytest
 from elasticsearch import Elasticsearch
 
 from meteor import BaseComponent
-from meteor.document_stores import (
-    BaseDocumentStore,
-    InMemoryDocumentStore
-)
-from meteor.nodes import TfidfRetriever
+from meteor.document_stores.memory import InMemoryDocumentStore
+from meteor.document_stores.base import BaseDocumentStore
+from meteor.nodes.retriever.sparse import TfidfRetriever
 
-from meteor.nodes.retriever import EmbeddingRetriever
+from meteor.nodes.retriever.dense import EmbeddingRetriever
 from meteor.schema import Document
 
 # To manually run the tests with default PostgreSQL instead of SQLite, switch the lines below
