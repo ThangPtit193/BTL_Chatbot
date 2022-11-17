@@ -1,19 +1,22 @@
 import os
 from abc import abstractmethod
-from typing import List, Dict, Union, Optional
+from typing import List, Dict, Union, Optional, Text
 
 import logging
 
 from numpy import ndarray
 
 import numpy as np
+from torch import Tensor
 from tqdm.auto import tqdm
 
 import torch
 
 from meteor.errors import MeteorError
 from meteor.schema import Document
-from meteor.document_stores import BaseDocumentStore, InMemoryDocumentStore
+from meteor.document_stores import BaseDocumentStore
+from meteor.document_stores import InMemoryDocumentStore
+# from meteor.document_stores.memory import InMemoryDocumentStore
 from meteor.nodes.retriever.base import BaseRetriever
 from meteor.nodes.retriever.sentence_embedding import SentenceEmbedding
 from meteor.modelling.utils import initialize_device_settings
@@ -336,7 +339,7 @@ class EmbeddingRetriever(DenseRetriever):
 
         return documents
 
-    def embed(self, texts: Union[List[List[str]], List[str], str], batch_size=8) -> List[np.ndarray]:
+    def embed(self, texts: Union[List[List[str]], List[str], str], batch_size=8) -> Union[List[Tensor], ndarray, Tensor]:
         """
         Create embeddings for each text in a list of texts using the retrievers model (`self.embedding_model`)
 
@@ -357,7 +360,7 @@ class EmbeddingRetriever(DenseRetriever):
         emb = [r for r in emb]
         return emb
 
-    def embed_queries(self, queries: List[str], batch_size: int = 8) -> List[np.ndarray]:
+    def embed_queries(self, queries: List[str], batch_size: int = 8) -> Union[List[Tensor], ndarray, Tensor]:
         """
         Create embeddings for a list of queries.
 
@@ -367,7 +370,7 @@ class EmbeddingRetriever(DenseRetriever):
         # for backward compatibility: cast pure str input
         return self.embed(queries, batch_size=batch_size)
 
-    def embed_documents(self, documents: List[Document], batch_size: int = 8) -> List[Union[ndarray, ndarray]]:
+    def embed_documents(self, documents: List[Document], batch_size: int = 8) -> Union[List[Tensor], ndarray, Tensor]:
         """
         Create embeddings for a list of documents.
 
@@ -375,10 +378,10 @@ class EmbeddingRetriever(DenseRetriever):
         :return: Embeddings, one per input document, shape: (docs, embedding_dim)
         """
         if self.embedding_model:
-            passages = [[d.meta["name"] if d.meta and "name" in d.meta else "", d.text] for d in
+            passages = [[d.meta["name"] if d.meta and "name" in d.meta else "", d.content] for d in
                         documents]
         else:
-            passages = [d.text for d in documents]  # type: ignore
+            passages = [d.content for d in documents]  # type: ignore
         return self.embed(passages, batch_size=batch_size)
 
     def save(self, model_directory, download_pretrained=True):
@@ -402,3 +405,6 @@ class EmbeddingRetriever(DenseRetriever):
 
         if isinstance(self.document_store, InMemoryDocumentStore):
             self.document_store.load(retriever_dir)
+
+    def update_embeddings(self, index: Text = None, batch_size=8):
+        self.document_store.update_embeddings(self, index=index, batch_size=batch_size)

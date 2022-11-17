@@ -10,7 +10,7 @@ from tqdm import tqdm
 from meteor.schema import Document, MultiLabel
 from meteor.errors import MeteorError, PipelineError
 from meteor.nodes.base import BaseComponent
-from meteor.document_stores.base import BaseDocumentStore, BaseKnowledgeGraph
+from meteor.document_stores import BaseDocumentStore, BaseKnowledgeGraph
 
 
 logger = logging.getLogger(__name__)
@@ -290,7 +290,7 @@ class BaseRetriever(BaseComponent):
             self.query_count += 1
             run_query_timed = self.timing(self.run_query, "query_time")
             output, stream = run_query_timed(
-                query=query, filters=filters, top_k=top_k, index=index, headers=headers, scale_score=scale_score
+                query=query, filters=filters, top_k=top_k, index=index
             )
         elif root_node == "File":
             self.index_count += len(documents) if documents else 0
@@ -340,11 +340,9 @@ class BaseRetriever(BaseComponent):
         filters: Optional[dict] = None,
         top_k: Optional[int] = None,
         index: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
-        scale_score: Optional[bool] = None,
     ):
         documents = self.retrieve(
-            query=query, filters=filters, top_k=top_k, index=index, headers=headers, scale_score=scale_score
+            query=query, filters=filters, top_k=top_k, index=index
         )
         document_ids = [doc.id for doc in documents]
         logger.debug("Retrieved documents with IDs: %s", document_ids)
@@ -358,11 +356,10 @@ class BaseRetriever(BaseComponent):
         filters: Optional[dict] = None,
         top_k: Optional[int] = None,
         index: Optional[str] = None,
-        headers: Optional[Dict[str, str]] = None,
         batch_size: Optional[int] = None,
     ):
         documents = self.retrieve_batch(
-            queries=queries, filters=filters, top_k=top_k, index=index, headers=headers, batch_size=batch_size
+            queries=queries, filters=filters, top_k=top_k, index=index, batch_size=batch_size
         )
         if isinstance(queries, str):
             document_ids = []

@@ -1,4 +1,5 @@
-from typing import Any, Dict, List, Optional, Union, Generator
+from __future__ import annotations
+from typing import Any, Dict, List, Optional, Union, Generator, TYPE_CHECKING
 
 import time
 import logging
@@ -15,7 +16,8 @@ from meteor.document_stores import BaseDocumentStore
 from meteor.document_stores.base import get_batches_from_generator
 from meteor.modelling.utils import initialize_device_settings
 from meteor.document_stores.filter_utils import LogicalFilterClause
-from meteor.nodes.retriever.dense import DenseRetriever
+if TYPE_CHECKING:
+    from meteor.nodes.retriever.dense import DenseRetriever
 
 logger = logging.getLogger(__name__)
 
@@ -90,6 +92,78 @@ class InMemoryDocumentStore(BaseDocumentStore):
             )
 
         self.main_device = self.devices[0]
+
+    def update_embedding(
+            self,
+            retriever: DenseRetriever,
+            index: Optional[str] = None,
+            filters: Optional[Dict[str, Any]] = None,
+            # TODO: Adapt type once we allow extended filters in InMemoryDocStore
+            update_existing_embeddings: bool = True,
+            batch_size: int = 10_000,
+    ):
+        """
+        Updates the embeddings in the document store using the encoding model specified in the retriever.
+        This can be useful if you want to add or change the embeddings for your documents (e.g. after changing the retriever config).
+
+        :param retriever: Retriever to use to get embeddings for text
+        :param index: Index name for which embeddings are to be updated. If set to None, the default self.index is used.
+        :param update_existing_embeddings: Whether to update existing embeddings of the documents. If set to False,
+                                           only documents without embeddings are processed. This mode can be used for
+                                           incremental updating of embeddings, wherein, only newly indexed documents
+                                           get processed.
+        :param filters: Narrow down the scope to documents that match the given filters.
+                        Filters are defined as nested dictionaries. The keys of the dictionaries can be a logical
+                        operator (`"$and"`, `"$or"`, `"$not"`), a comparison operator (`"$eq"`, `"$in"`, `"$gt"`,
+                        `"$gte"`, `"$lt"`, `"$lte"`) or a metadata field name.
+                        Logical operator keys take a dictionary of metadata field names and/or logical operators as
+                        value. Metadata field names take a dictionary of comparison operators as value. Comparison
+                        operator keys take a single value or (in case of `"$in"`) a list of values as value.
+                        If no logical operator is provided, `"$and"` is used as default operation. If no comparison
+                        operator is provided, `"$eq"` (or `"$in"` if the comparison value is a list) is used as default
+                        operation.
+                        Example:
+                            ```python
+                            filters = {
+                                "$and": {
+                                    "type": {"$eq": "article"},
+                                    "date": {"$gte": "2015-01-01", "$lt": "2021-01-01"},
+                                    "rating": {"$gte": 3},
+                                    "$or": {
+                                        "genre": {"$in": ["economy", "politics"]},
+                                        "publisher": {"$eq": "nytimes"}
+                                    }
+                                }
+                            }
+                            ```
+        :param batch_size: When working with large number of documents, batching can help reduce memory footprint.
+        :return: None
+        """
+        if index is None:
+            index = self.index
+
+        if not self.embedding_field:
+            raise RuntimeError("Specify the arg embedding_field when initializing InMemoryDocumentStore()")
+
+        # TODO Index embeddings every X batches to avoid OOM for huge document collections
+        result = self._query(
+            index=index, filters=filters, only_documents_without_embedding=not update_existing_embeddings
+        )
+        logger.info("Updating embeddings for %s docs ...", len(result) if logger.level > logging.DEBUG else 0)
+        batched_documents = get_batches_from_generator(result, batch_size)
+        with tqdm(
+                total=len(result), disable=not self.progress_bar, position=0, unit=" docs", desc="Updating Embedding"
+        ) as progress_bar:
+            for document_batch in batched_documents:
+                embeddings = retriever.embed_documents(document_batch)
+                self._validate_embeddings_shape(
+                    embeddings=embeddings, num_documents=len(document_batch), embedding_dim=self.embedding_dim
+                )
+
+                for doc, emb in zip(document_batch, embeddings):
+                    self.indexes[index][doc.id].embedding = emb
+                progress_bar.set_description_str("Documents Processed")
+                progress_bar.update(batch_size)
 
     def write_documents(
             self,
@@ -460,6 +534,8 @@ class InMemoryDocumentStore(BaseDocumentStore):
         ) as progress_bar:
             for document_batch in batched_documents:
                 embeddings = retriever.embed_documents(document_batch)
+                if isinstance(embeddings, list):
+                    embeddings = np.array(embeddings)
                 self._validate_embeddings_shape(
                     embeddings=embeddings, num_documents=len(document_batch), embedding_dim=self.embedding_dim
                 )
@@ -838,7 +914,3 @@ class InMemoryDocumentStore(BaseDocumentStore):
         for label in labels_to_delete:
             del self.indexes[index][label.id]
 
-
-if __name__ == "__main__":
-    inmem = InMemoryDocumentStore()
-    print(inmem)

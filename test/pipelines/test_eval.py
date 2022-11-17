@@ -1,6 +1,8 @@
 import pytest
 
-from meteor.pipelines.standard_pipelines import DocumentSearchPipeline
+from meteor.document_stores import InMemoryDocumentStore
+from meteor.nodes import EmbeddingRetriever
+from meteor.pipelines.standard_pipelines import DocumentSearchPipeline, SearchSummarizationPipeline
 from meteor.schema import MultiLabel, Label, Answer, Span, Document, EvaluationResult
 
 EVAL_LABELS = [
@@ -26,7 +28,8 @@ EVAL_LABELS = [
                 query="Who lives in Munich?",
                 answer=Answer(answer="Carla", offsets_in_context=[Span(11, 16)]),
                 document=Document(
-                    id="something_else", content_type="text", content="My name is Carla and I live in Munich"
+                    id="something_else", content_type="text",
+                    content="My name is Carla and I live in Munich"
                 ),
                 is_correct_answer=True,
                 is_correct_document=True,
@@ -50,4 +53,14 @@ def test_document_search_calculate_metrics(retriever_with_docs):
     retriever_result = eval_result["Retriever"]
     retriever_berlin = retriever_result[retriever_result["query"] == "Who lives in Berlin?"]
     retriever_munich = retriever_result[retriever_result["query"] == "Who lives in Munich?"]
-    print(retriever_berlin)
+    pipeline.print_eval_report(eval_result=eval_result)
+
+
+@pytest.mark.parametrize("retriever_with_docs", ["embedding"], indirect=True)
+@pytest.mark.parametrize("document_store_with_docs", ["memory"], indirect=True)
+def test_run_retrieval_pipeline(retriever_with_docs):
+    query = "Người sáng lập tập đoàn Microsoft qua đời ở tuổi bao nhiêu"
+    pipeline = SearchSummarizationPipeline(retriever=retriever_with_docs)
+    eval_result = pipeline.run(query=query, params={"Retriever": {"top_k": 5}})
+    print(pipeline.draw(f"test/{pipeline.__class__.__name__}.png"))
+    print(eval_result)
