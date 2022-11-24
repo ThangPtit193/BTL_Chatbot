@@ -1,14 +1,8 @@
 version: ignore
 
 components:
-#  - name: Reader
-#    type: FARMReader
-#    params:
-#      no_ans_boost: -10
-#      model_name_or_path: deepset/bert-medium-squad2-distilled
-#      num_processes: 0
-  - name: ESRetriever
-    type: TfidfRetriever
+  - name: EmbeddingRetriever
+    type: EmbeddingRetriever
     params:
       document_store: DocumentStore
   - name: DocumentStore
@@ -19,8 +13,10 @@ components:
 
 
 pipelines:
-  - name: query_pipeline
+  - name: indexing_pipeline
     nodes:
-      - name: ESRetriever
-        inputs: [ Query ]
+      - name: EmbeddingRetriever
+        inputs: [ File ]
+      - name: DocumentStore
+        inputs: [ EmbeddingRetriever ]
 
