@@ -58,6 +58,26 @@ class SentenceEmbedding(object):
             model = SentenceTransformer(model_name_or_path)
         return cls(model)
 
+    @staticmethod
+    def get_model_embedding_dim(model_name_or_path: Text = None):
+        """
+
+        Args:
+            model_name_or_path: The model name or path. If name provided,
+                                It will be loaded from hugging face hub or from axiom
+        """
+        model = None
+        if os.path.isdir(model_name_or_path):
+            try:
+                model = SentenceTransformer(model_name_or_path)
+            except Exception as e:
+                _logger.error(f"Cannot load pretrained model from {model_name_or_path}, "
+                              f"Because {e}")
+        else:
+            model_name_or_path = axiom_wrapper.fetch_model(model_name_or_path)
+            model = SentenceTransformer(model_name_or_path)
+        return model.get_sentence_embedding_dimension()
+
     @classmethod
     def from_configure(cls, configure: Union[Dict, Text]):
         """

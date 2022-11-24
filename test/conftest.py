@@ -57,92 +57,6 @@ requests_cache.install_cache(urls_expire_after={"huggingface.co": timedelta(hour
 #
 
 
-class MockNode(BaseComponent):
-    outgoing_edges = 1
-
-    def run(self, *a, **k):
-        pass
-
-    def run_batch(self, *a, **k):
-        pass
-
-
-class MockDocumentStore(BaseDocumentStore):
-    outgoing_edges = 1
-
-    def _create_document_field_map(self, *a, **k):
-        pass
-
-    def delete_documents(self, *a, **k):
-        pass
-
-    def delete_labels(self, *a, **k):
-        pass
-
-    def get_all_documents(self, *a, **k):
-        pass
-
-    def get_all_documents_generator(self, *a, **k):
-        pass
-
-    def get_all_labels(self, *a, **k):
-        pass
-
-    def get_document_by_id(self, *a, **k):
-        pass
-
-    def get_document_count(self, *a, **k):
-        pass
-
-    def get_documents_by_id(self, *a, **k):
-        pass
-
-    def get_label_count(self, *a, **k):
-        pass
-
-    def query_by_embedding(self, *a, **k):
-        pass
-
-    def write_documents(self, *a, **k):
-        pass
-
-    def write_labels(self, *a, **k):
-        pass
-
-    def delete_index(self, *a, **k):
-        pass
-
-    def update_document_meta(self, *a, **kw):
-        pass
-
-
-# class MockRetriever(BaseRetriever):
-#     outgoing_edges = 1
-#
-#     def retrieve(self, query: str, top_k: int):
-#         pass
-#
-#     def retrieve_batch(self, queries: List[str], top_k: int):
-#         pass
-
-
-# class MockDenseRetriever(MockRetriever, DenseRetriever):
-#     def __init__(self, document_store: BaseDocumentStore, embedding_dim: int = 768):
-#         self.embedding_dim = embedding_dim
-#         self.document_store = document_store
-#
-#     def embed_queries(self, queries):
-#         return np.random.rand(len(queries), self.embedding_dim)
-#
-#     def embed_documents(self, documents):
-#         return np.random.rand(len(documents), self.embedding_dim)
-
-
-#
-# Document collections
-#
-
-
 @pytest.fixture
 def docs_all_formats() -> List[Union[Document, Dict[str, Any]]]:
     return [
@@ -150,16 +64,16 @@ def docs_all_formats() -> List[Union[Document, Dict[str, Any]]]:
             "content": "Cảnh báo được gửi đến các tư lệnh Lục quân và Hải quân Hoa Kỳ tại Hawaii nhưng tin tức này không được nhận đúng lúc vì lỗi của bộ máy hành chính."
         },
         {
-            "content": "Văn hóa Canada rút ra từ những ảnh hưởng của các dân tộc thành phần"
+            "content": "Có thể hiểu nguyên tử nào ạ"
         },
         {
-            "content": "Các tỉnh khác không có ngôn ngữ chính thức như vậy"
+            "content": "Người đồng sáng lập tập đoàn Microsoft Paul Allen ra đi ở tuổi 65"
         },
         {
             "content": "Paris nằm ở điểm gặp nhau của các hành trình thương mại đường bộ và đường sông, và là trung tâm của một vùng nông nghiệp giàu có"
         },
         {
-            "content": "Chultem phân biệt ba kiểu kiến trúc truyền thống Mông Cổ: Mông Cổ, Tây Tạng và Trung Quốc và kiểu kết hợp."
+            "content": "em ơi mình cần biết giải thích về nguyên tử"
         },
         {
             "content": "'Người đồng sáng lập tập đoàn Microsoft Paul Allen qua đời ở tuổi 65'",
@@ -177,31 +91,31 @@ def docs_all_formats() -> List[Union[Document, Dict[str, Any]]]:
             "content": "Chultem phân biệt ba kiểu kiến trúc truyền thống Mông Cổ: Mông Cổ, Tây Tạng và Trung Quốc và kiểu kết hợp."
         },
         # metafield at the top level for backward compatibility
-        {
-            "content": "My name is Paul and I live in New York",
-            "meta_field": "test2",
-            "name": "filename2",
-            "date_field": "2019-10-01",
-            "numeric_field": 5.0,
-        },
-        # "dict" format
-        {
-            "content": "My name is Carla and I live in Berlin",
-            "meta": {"meta_field": "test1", "name": "filename1", "date_field": "2020-03-01", "numeric_field": 5.5},
-        },
-        # Document object
-        Document(
-            content="My name is Christelle and I live in Paris",
-            meta={"meta_field": "test3", "name": "filename3", "date_field": "2018-10-01", "numeric_field": 4.5},
-        ),
-        Document(
-            content="My name is Camila and I live in Madrid",
-            meta={"meta_field": "test4", "name": "filename4", "date_field": "2021-02-01", "numeric_field": 3.0},
-        ),
-        Document(
-            content="My name is Matteo and I live in Rome",
-            meta={"meta_field": "test5", "name": "filename5", "date_field": "2019-01-01", "numeric_field": 0.0},
-        ),
+        # {
+        #     "content": "My name is Paul and I live in New York",
+        #     "meta_field": "test2",
+        #     "name": "filename2",
+        #     "date_field": "2019-10-01",
+        #     "numeric_field": 5.0,
+        # },
+        # # "dict" format
+        # {
+        #     "content": "My name is Carla and I live in Berlin",
+        #     "meta": {"meta_field": "test1", "name": "filename1", "date_field": "2020-03-01", "numeric_field": 5.5},
+        # },
+        # # Document object
+        # Document(
+        #     content="My name is Christelle and I live in Paris",
+        #     meta={"meta_field": "test3", "name": "filename3", "date_field": "2018-10-01", "numeric_field": 4.5},
+        # ),
+        # Document(
+        #     content="My name is Camila and I live in Madrid",
+        #     meta={"meta_field": "test4", "name": "filename4", "date_field": "2021-02-01", "numeric_field": 3.0},
+        # ),
+        # Document(
+        #     content="My name is Matteo and I live in Rome",
+        #     meta={"meta_field": "test5", "name": "filename5", "date_field": "2019-01-01", "numeric_field": 0.0},
+        # ),
     ]
 
 
@@ -218,7 +132,7 @@ def docs_with_ids(docs) -> List[Document]:
         UUID("20ff1706-cb55-4704-8ae8-a3459774c8dc"),
         UUID("5078722f-07ae-412d-8ccb-b77224c4bacb"),
         UUID("81d8ca45-fad1-4d1c-8028-d818ef33d755"),
-        UUID("f985789f-1673-4d8f-8d5f-2b8d3a9e8e23"),
+        # UUID("f985789f-1673-4d8f-8d5f-2b8d3a9e8e23"),
     ]
     uuids.sort()
     for doc, uuid in zip(docs, uuids):
@@ -262,36 +176,6 @@ def elasticsearch_fixture():
         time.sleep(30)
 
 
-@pytest.fixture
-def deepset_cloud_fixture():
-    if MOCK_DC:
-        responses.add(
-            method=responses.GET,
-            url=f"{DC_API_ENDPOINT}/workspaces/default/indexes/{DC_TEST_INDEX}",
-            match=[responses.matchers.header_matcher({"authorization": f"Bearer {DC_API_KEY}"})],
-            json={"indexing": {"status": "INDEXED", "pending_file_count": 0, "total_file_count": 31}},
-            status=200,
-        )
-        responses.add(
-            method=responses.GET,
-            url=f"{DC_API_ENDPOINT}/workspaces/default/pipelines",
-            match=[responses.matchers.header_matcher({"authorization": f"Bearer {DC_API_KEY}"})],
-            json={
-                "data": [
-                    {
-                        "name": DC_TEST_INDEX,
-                        "status": "DEPLOYED",
-                        "indexing": {"status": "INDEXED", "pending_file_count": 0, "total_file_count": 31},
-                    }
-                ],
-                "has_more": False,
-                "total": 1,
-            },
-        )
-    else:
-        responses.add_passthru(DC_API_ENDPOINT)
-
-
 @pytest.fixture(params=["es_filter_only", "elasticsearch", "dpr", "embedding", "tfidf", "table_text_retriever"])
 def retriever(request, document_store):
     return get_retriever(request.param, document_store)
@@ -310,7 +194,7 @@ def get_retriever(retriever_type, document_store):
         retriever = EmbeddingRetriever(
             document_store=document_store, embedding_model="ms-viquad-bi-encoder-phobert-base", use_gpu=False
         )
-        retriever.update_embeddings()
+        # retriever.update_embeddings()
     else:
         raise Exception(f"No retriever fixture for '{retriever_type}'")
 
@@ -324,6 +208,7 @@ def document_store_with_docs(request, docs, tmp_path, monkeypatch):
         document_store_type=request.param, embedding_dim=embedding_dim.args[0], tmp_path=tmp_path
     )
     document_store.write_documents(docs)
+    document_store.update_embedding(retriever=get_retriever("embedding", document_store=get_document_store("memory")))
     yield document_store
     document_store.delete_index(document_store.index)
 
@@ -340,10 +225,10 @@ def document_store(request, tmp_path, monkeypatch: pytest.MonkeyPatch):
 
 def get_document_store(
         document_store_type,
-        tmp_path,
+        tmp_path=None,
         embedding_dim=768,
         embedding_field="embedding",
-        index="haystack_test",
+        index="meteor_test",
         similarity: str = "cosine",
         recreate_index: bool = True,
 ):  # cosine is default similarity as dot product is not supported by Weaviate

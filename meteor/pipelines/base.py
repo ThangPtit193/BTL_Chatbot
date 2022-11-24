@@ -912,6 +912,7 @@ class Pipeline:
             context_matching_boost_split_overlaps: bool = True,
             context_matching_threshold: float = 65.0,
             use_auth_token: Optional[Union[str, bool]] = None,
+            dynamic_top_k: bool = False
     ) -> EvaluationResult:
         """
         Evaluates the pipeline by running the pipeline once per query in debug mode
@@ -965,6 +966,8 @@ class Pipeline:
                                `transformers-cli login` (stored in ~/.huggingface) will be used.
                                Additional information can be found here
                                https://huggingface.co/transformers/main_classes/model.html#transformers.PreTrainedModel.from_pretrained
+        :param dynamic_top_k: Dynamic top_k that only uses for information retriever in which number of relevant docs equals to that of top_k (apply to MAP score)
+
         """
         eval_result = EvaluationResult()
         if add_isolated_node_eval:
@@ -974,6 +977,9 @@ class Pipeline:
         # if documents is None, set docs_per_label to None for each label
         for docs_per_label, label in zip(documents or [None] * len(labels), labels):  # type: ignore
             params_per_label = copy.deepcopy(params)
+
+            if dynamic_top_k:
+                params_per_label["Retriever"] = {'top_k': len(label.labels)}
             # If the label contains a filter, the filter is applied unless documents are already given
             if label.filters is not None and documents is None:
                 if params_per_label is None:
@@ -981,6 +987,7 @@ class Pipeline:
                 else:
                     # join both filters and overwrite filters in params with filters in labels
                     params_per_label["filters"] = {**params_per_label.get("filters", {}), **label.filters}
+
             predictions = self.run(
                 query=label.query, labels=label, documents=docs_per_label, params=params_per_label, debug=True
             )

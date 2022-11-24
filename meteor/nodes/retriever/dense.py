@@ -339,7 +339,8 @@ class EmbeddingRetriever(DenseRetriever):
 
         return documents
 
-    def embed(self, texts: Union[List[List[str]], List[str], str], batch_size=8) -> Union[List[Tensor], ndarray, Tensor]:
+    def embed(self, texts: Union[List[List[str]], List[str], str], batch_size=8) -> Union[
+        List[Tensor], ndarray, Tensor]:
         """
         Create embeddings for each text in a list of texts using the retrievers model (`self.embedding_model`)
 
@@ -384,27 +385,27 @@ class EmbeddingRetriever(DenseRetriever):
             passages = [d.content for d in documents]  # type: ignore
         return self.embed(passages, batch_size=batch_size)
 
-    def save(self, model_directory, download_pretrained=True):
-        retriever_dir = os.path.join(model_directory, self.__class__.__name__)
-        logger.info(f"Save model of {self.__class__.__name__} to {retriever_dir}")
-
-        if not os.path.isdir(retriever_dir):
-            os.makedirs(retriever_dir)
-
-        if not download_pretrained:
-            self.embedding_encoder.save(retriever_dir)
-        if isinstance(self.document_store, InMemoryDocumentStore):
-            self.document_store.save(retriever_dir)
-
-    def load(self, model_directory: str, download_pretrained: bool = True):
-        retriever_dir = os.path.join(model_directory, self.__class__.__name__)
-        logger.info(f"Loaded model of {self.__class__.__name__} from {retriever_dir}")
-        model_name = retriever_dir if download_pretrained else self.embedding_model
-        if not self.embedding_model:
-            self.embedding_encoder = SentenceEmbedding.from_pretrained(model_name)
-
-        if isinstance(self.document_store, InMemoryDocumentStore):
-            self.document_store.load(retriever_dir)
-
-    def update_embeddings(self, index: Text = None, batch_size=8):
-        self.document_store.update_embeddings(self, index=index, batch_size=batch_size)
+    # def save(self, model_directory, download_pretrained=True):
+    #     retriever_dir = os.path.join(model_directory, self.__class__.__name__)
+    #     logger.info(f"Save model of {self.__class__.__name__} to {retriever_dir}")
+    #
+    #     if not os.path.isdir(retriever_dir):
+    #         os.makedirs(retriever_dir)
+    #
+    #     if not download_pretrained:
+    #         self.embedding_encoder.save(retriever_dir)
+    #     if isinstance(self.document_store, InMemoryDocumentStore):
+    #         self.document_store.save(retriever_dir)
+    #
+    # def load(self, model_directory: str, download_pretrained: bool = True):
+    #     retriever_dir = os.path.join(model_directory, self.__class__.__name__)
+    #     logger.info(f"Loaded model of {self.__class__.__name__} from {retriever_dir}")
+    #     model_name = retriever_dir if download_pretrained else self.embedding_model
+    #     if not self.embedding_model:
+    #         self.embedding_encoder = SentenceEmbedding.from_pretrained(model_name)
+    #
+    #     if isinstance(self.document_store, InMemoryDocumentStore):
+    #         self.document_store.load(retriever_dir)
+    #
+    # def update_embeddings(self, index: Text = None, batch_size=8):
+    #     self.document_store.update_embeddings(self, index=index, batch_size=batch_size)

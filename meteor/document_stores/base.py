@@ -641,6 +641,8 @@ class BaseDocumentStore(BaseComponent):
         :param num_documents: Number of documents the embeddings were generated for
         :param embedding_dim: Number of embedding dimensions to expect
         """
+        if isinstance(embeddings, list):
+            embeddings = np.array(embeddings)
         num_embeddings, embedding_size = embeddings.shape
         if num_embeddings != num_documents:
             raise DocumentStoreError(

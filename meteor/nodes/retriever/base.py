@@ -216,6 +216,7 @@ class BaseRetriever(BaseComponent):
                             break
                 if found_relevant_doc:
                     summed_avg_precision += current_avg_precision / relevant_docs_found
+
         # Option 2: Strict evaluation by document ids that are listed in the labels
         else:
             for (_, question), gold_ids in tqdm(question_label_dict.items()):

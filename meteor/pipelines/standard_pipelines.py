@@ -1,7 +1,6 @@
 import logging
 from abc import ABC
 from copy import deepcopy
-from functools import wraps
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
@@ -11,14 +10,9 @@ except ImportError:
     from typing_extensions import Literal  # type: ignore
 
 from meteor.document_stores.base import BaseDocumentStore
-# from meteor.nodes.answer_generator.base import BaseGenerator
-# from meteor.nodes.other.docs2answers import Docs2Answers
-# from meteor.nodes.other.document_merger import DocumentMerger
-# from meteor.nodes.question_generator.question_generator import QuestionGenerator
-# from meteor.nodes.reader.base import BaseReader
 from meteor.nodes.retriever.base import BaseRetriever
 from meteor.pipelines.base import Pipeline
-from meteor.schema import Document, EvaluationResult, MultiLabel
+from meteor.schema import EvaluationResult, MultiLabel
 
 logger = logging.getLogger(__name__)
 
@@ -117,6 +111,7 @@ class BaseStandardPipeline(ABC):
             context_matching_min_length: int = 100,
             context_matching_boost_split_overlaps: bool = True,
             context_matching_threshold: float = 65.0,
+            dynamic_top_k: bool = False
     ) -> EvaluationResult:
         """
         Evaluates the pipeline by running the pipeline once per query in debug mode
@@ -148,6 +143,7 @@ class BaseStandardPipeline(ABC):
                                  we cut the context on the same side, recalculate the score and take the mean of both.
                                  Thus [AB] <-> [BC] (score ~50) gets recalculated with B <-> B (score ~100) scoring ~75 in total.
         :param context_matching_threshold: Score threshold that candidates must surpass to be included into the result list. Range: [0,100]
+        :param dynamic_top_k: Dynamic top_k that only uses for information retriever in which number of relevant docs equals to that of top_k (apply to MAP score)
         """
         output = self.pipeline.eval(
             labels=labels,
@@ -160,6 +156,7 @@ class BaseStandardPipeline(ABC):
             context_matching_boost_split_overlaps=context_matching_boost_split_overlaps,
             context_matching_min_length=context_matching_min_length,
             context_matching_threshold=context_matching_threshold,
+            dynamic_top_k=dynamic_top_k
         )
         return output
 
@@ -303,36 +300,6 @@ class BaseStandardPipeline(ABC):
         return output
 
 
-# class ExtractiveQAPipeline(BaseStandardPipeline):
-#     """
-#     Pipeline for Extractive Question Answering.
-#     """
-#
-#     def __init__(self, reader: BaseReader, retriever: BaseRetriever):
-#         """
-#         :param reader: Reader instance
-#         :param retriever: Retriever instance
-#         """
-#         self.pipeline = Pipeline()
-#         self.pipeline.add_node(component=retriever, name="Retriever", inputs=["Query"])
-#         self.pipeline.add_node(component=reader, name="Reader", inputs=["Retriever"])
-#         self.metrics_filter = {"Retriever": ["recall_single_hit"]}
-#
-#     def run(self, query: str, params: Optional[dict] = None, debug: Optional[bool] = None):
-#         """
-#         :param query: The search query string.
-#         :param params: Params for the `retriever` and `reader`. For instance,
-#                        params={"Retriever": {"top_k": 10}, "Reader": {"top_k": 5}}
-#         :param debug: Whether the pipeline should instruct nodes to collect debug information
-#                       about their execution. By default, these include the input parameters
-#                       they received and the output they generated.
-#                       All debug information can then be found in the dict returned
-#                       by this method under the key "_debug"
-#         """
-#         output = self.pipeline.run(query=query, params=params, debug=debug)
-#         return output
-
-
 class DocumentSearchPipeline(BaseStandardPipeline):
     """
     Pipeline for semantic document search.
@@ -357,35 +324,6 @@ class DocumentSearchPipeline(BaseStandardPipeline):
         """
         output = self.pipeline.run(query=query, params=params, debug=debug)
         return output
-
-
-# class GenerativeQAPipeline(BaseStandardPipeline):
-#     """
-#     Pipeline for Generative Question Answering.
-#     """
-#
-#     def __init__(self, generator: BaseGenerator, retriever: BaseRetriever):
-#         """
-#         :param generator: Generator instance
-#         :param retriever: Retriever instance
-#         """
-#         self.pipeline = Pipeline()
-#         self.pipeline.add_node(component=retriever, name="Retriever", inputs=["Query"])
-#         self.pipeline.add_node(component=generator, name="Generator", inputs=["Retriever"])
-#
-#     def run(self, query: str, params: Optional[dict] = None, debug: Optional[bool] = None):
-#         """
-#         :param query: the query string.
-#         :param params: params for the `retriever` and `generator`. For instance,
-#                        params={"Retriever": {"top_k": 10}, "Generator": {"top_k": 5}}
-#         :param debug: Whether the pipeline should instruct nodes to collect debug information
-#               about their execution. By default, these include the input parameters
-#               they received and the output they generated.
-#               All debug information can then be found in the dict returned
-#               by this method under the key "_debug"
-#         """
-#         output = self.pipeline.run(query=query, params=params, debug=debug)
-#         return output
 
 
 class SearchSummarizationPipeline(BaseStandardPipeline):
@@ -492,110 +430,6 @@ class SearchSummarizationPipeline(BaseStandardPipeline):
         return results
 
 
-# class FAQPipeline(BaseStandardPipeline):
-#     """
-#     Pipeline for finding similar FAQs using semantic document search.
-#     """
-#
-#     def __init__(self, retriever: BaseRetriever):
-#         """
-#         :param retriever: Retriever instance
-#         """
-#         self.pipeline = Pipeline()
-#         self.pipeline.add_node(component=retriever, name="Retriever", inputs=["Query"])
-#         self.pipeline.add_node(component=Docs2Answers(), name="Docs2Answers", inputs=["Retriever"])
-#
-#     def run(self, query: str, params: Optional[dict] = None, debug: Optional[bool] = None):
-#         """
-#         :param query: the query string.
-#         :param params: params for the `retriever`. For instance, params={"Retriever": {"top_k": 10}}
-#         :param debug: Whether the pipeline should instruct nodes to collect debug information
-#               about their execution. By default, these include the input parameters
-#               they received and the output they generated.
-#               All debug information can then be found in the dict returned
-#               by this method under the key "_debug"
-#         """
-#         output = self.pipeline.run(query=query, params=params, debug=debug)
-#         return output
-
-
-# class QuestionGenerationPipeline(BaseStandardPipeline):
-#     """
-#     A simple pipeline that takes documents as input and generates
-#     questions that it thinks can be answered by the documents.
-#     """
-#
-#     def __init__(self, question_generator: QuestionGenerator):
-#         self.pipeline = Pipeline()
-#         self.pipeline.add_node(component=question_generator, name="QuestionGenerator", inputs=["Query"])
-#
-#     def run(self, documents, params: Optional[dict] = None, debug: Optional[bool] = None):
-#         output = self.pipeline.run(documents=documents, params=params, debug=debug)
-#         return output
-#
-#     def run_batch(  # type: ignore
-#             self,
-#             documents: Union[List[Document], List[List[Document]]],
-#             params: Optional[dict] = None,
-#             debug: Optional[bool] = None,
-#     ):
-#         output = self.pipeline.run_batch(documents=documents, params=params, debug=debug)
-#         return output
-
-
-# class RetrieverQuestionGenerationPipeline(BaseStandardPipeline):
-#     """
-#     A simple pipeline that takes a query as input, performs retrieval, and then generates
-#     questions that it thinks can be answered by the retrieved documents.
-#     """
-#
-#     def __init__(self, retriever: BaseRetriever, question_generator: QuestionGenerator):
-#         self.pipeline = Pipeline()
-#         self.pipeline.add_node(component=retriever, name="Retriever", inputs=["Query"])
-#         self.pipeline.add_node(component=question_generator, name="QuestionGenerator", inputs=["Retriever"])
-#
-#     def run(self, query: str, params: Optional[dict] = None, debug: Optional[bool] = None):
-#         output = self.pipeline.run(query=query, params=params, debug=debug)
-#         return output
-
-
-# class QuestionAnswerGenerationPipeline(BaseStandardPipeline):
-#     """
-#     This is a pipeline which takes a document as input, generates questions that the model thinks can be answered by
-#     this document, and then performs question answering of this questions using that single document.
-#     """
-#
-#     def __init__(self, question_generator: QuestionGenerator, reader: BaseReader):
-#         setattr(question_generator, "run", self.formatting_wrapper(question_generator.run))
-#         # Overwrite reader.run function, so it can handle a batch of questions being passed on by the QuestionGenerator
-#         setattr(reader, "run", reader.run_batch)
-#         self.pipeline = Pipeline()
-#         self.pipeline.add_node(component=question_generator, name="QuestionGenerator", inputs=["Query"])
-#         self.pipeline.add_node(component=reader, name="Reader", inputs=["QuestionGenerator"])
-#
-#     # This is used to format the output of the QuestionGenerator so that its questions are ready to be answered by the reader
-#     def formatting_wrapper(self, fn):
-#         @wraps(fn)
-#         def wrapper(*args, **kwargs):
-#             output, output_stream = fn(*args, **kwargs)
-#             questions = []
-#             documents = []
-#             for generated_questions, doc in zip(output["generated_questions"], output["documents"]):
-#                 questions.extend(generated_questions["questions"])
-#                 documents.extend([[doc]] * len(generated_questions["questions"]))
-#             kwargs["queries"] = questions
-#             kwargs["documents"] = documents
-#             return kwargs, output_stream
-#
-#         return wrapper
-#
-#     def run(
-#             self, documents: List[Document], params: Optional[dict] = None, debug: Optional[bool] = None  # type: ignore
-#     ):
-#         output = self.pipeline.run(documents=documents, params=params, debug=debug)
-#         return output
-
-
 class MostSimilarDocumentsPipeline(BaseStandardPipeline):
     def __init__(self, document_store: BaseDocumentStore):
         """
@@ -654,25 +488,29 @@ class MostSimilarDocumentsPipeline(BaseStandardPipeline):
         return self.run(document_ids=document_ids, filters=filters, top_k=top_k, index=index)
 
 
-# class TextIndexingPipeline(BaseStandardPipeline):
-#     def __init__(
-#             self,
-#             document_store: BaseDocumentStore
-#     ):
-#         """
-#         Initialize a basic Pipeline that converts text files into Documents and indexes them into a DocumentStore.
-#
-#         :param document_store: The DocumentStore to index the Documents into.
-#         # :param text_converter: A TextConverter object to be used in this pipeline for converting the text files into Documents.
-#         # :param preprocessor: A PreProcessor object to be used in this pipeline for preprocessing Documents.
-#         """
-#
-#         self.pipeline = Pipeline()
-#         self.document_store = document_store
-#         self.pipeline.add_node(component=self.document_store, name="DocumentStore", inputs=["File"])
-#
-#     def run(self, file_path):
-#         return self.pipeline.run(file_paths=[file_path])
-#
-#     def run_batch(self, file_paths):
-#         return self.pipeline.run_batch(file_paths=file_paths)
+class IndexingPipeline(BaseStandardPipeline):
+    """
+        Pipeline for evaluating information retriever
+        """
+
+    def __init__(self, retriever: BaseRetriever, document_store: BaseDocumentStore):
+        """
+        :param retriever: Retriever instance
+        :param document_store: Document Store instance with already stored embeddings.
+        """
+        self.pipeline = Pipeline()
+        self.pipeline.add_node(component=document_store, name="DocumentStore", inputs=["Query"])
+        self.document_store = document_store
+
+    def run(self, query: str, params: Optional[dict] = None, debug: Optional[bool] = None):
+        """
+        :param query: the query string.
+        :param params: params for the `retriever` and `reader`. For instance, params={"Retriever": {"top_k": 10}}
+        :param debug: Whether the pipeline should instruct nodes to collect debug information
+              about their execution. By default, these include the input parameters
+              they received and the output they generated.
+              All debug information can then be found in the dict returned
+              by this method under the key "_debug"
+        """
+        output = self.pipeline.run(query=query, params=params, debug=debug)
+        return output

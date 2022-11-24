@@ -4,6 +4,8 @@ import hashlib
 
 from typing import Any, Optional, Dict, List, Union
 
+from deepdiff import DeepHash
+
 try:
     from typing import Literal  # type: ignore
 except ImportError:
@@ -124,16 +126,16 @@ class Document:
         if id_hash_keys is None:
             return "{:02x}".format(mmh3.hash128(str(self.content), signed=False))
 
-        final_hash_key = ""
-        for attr in id_hash_keys:
-            final_hash_key += ":" + str(getattr(self, attr))
-
-        if final_hash_key == "":
-            raise ValueError(
-                f"Can't create 'Document': 'id_hash_keys' must contain at least one of ['content', 'meta']"
-            )
-
-        return "{:02x}".format(mmh3.hash128(final_hash_key, signed=False))
+        # final_hash_key = ""
+        # for attr in id_hash_keys:
+        #     final_hash_key += ":" + str(getattr(self, attr))
+        #
+        # if final_hash_key == "":
+        #     raise ValueError(
+        #         f"Can't create 'Document': 'id_hash_keys' must contain at least one of ['content', 'meta']"
+        #     )
+        #
+        # return "{:02x}".format(mmh3.hash128(final_hash_key, signed=False))
 
     def to_dict(self, field_map={}) -> Dict:
         """
@@ -385,9 +387,9 @@ class Label:
     id: str
     query: str
     document: Document
-    is_correct_answer: bool
-    is_correct_document: bool
-    origin: Literal["user-feedback", "gold-label"]
+    is_correct_answer: Optional[bool] = False
+    is_correct_document: Optional[bool] = False
+    origin: Optional[Literal["user-feedback", "gold-label"]] = "gold-label"
     answer: Optional[Answer] = None
     pipeline_id: Optional[str] = None
     created_at: Optional[str] = None
@@ -401,10 +403,10 @@ class Label:
             self,
             query: str,
             document: Document,
-            is_correct_answer: bool,
-            is_correct_document: bool,
-            origin: Literal["user-feedback", "gold-label"],
-            answer: Optional[Answer],
+            is_correct_answer: Optional[bool] = False,
+            is_correct_document: Optional[bool] = False,
+            origin: Literal["user-feedback", "gold-label"] = "gold-label",
+            answer: Optional[Answer] = None,
             id: Optional[str] = None,
             pipeline_id: Optional[str] = None,
             created_at: Optional[str] = None,
@@ -1359,7 +1361,7 @@ class EvaluationResult:
             "gold_answers_sas",
             "gold_answers_match",
             # "gold_contexts_similarity",
-            "offsets_in_document",
+            # "offsets_in_document",
         ]
         converters = dict.fromkeys(cols_to_convert, ast.literal_eval)
         default_read_csv_kwargs = {"converters": converters, "header": 0}
