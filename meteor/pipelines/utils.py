@@ -249,15 +249,15 @@ def print_eval_report(
         }
 
     pipeline_overview = _format_pipeline_overview(calculated_metrics=calculated_metrics, graph=graph)
-    wrong_examples_report = _format_wrong_examples_report(
-        eval_result=eval_result,
-        n_wrong_examples=n_wrong_examples,
-        document_scope=document_scope,
-        answer_scope=answer_scope,
-        fields=wrong_examples_fields,
-        max_chars=max_characters_per_field,
-    )
-
+    # wrong_examples_report = _format_wrong_examples_report(
+    #     eval_result=eval_result,
+    #     n_wrong_examples=n_wrong_examples,
+    #     document_scope=document_scope,
+    #     answer_scope=answer_scope,
+    #     fields=wrong_examples_fields,
+    #     max_chars=max_characters_per_field,
+    # )
+    wrong_examples_report = "Report created by Meteor"
     print(f"{pipeline_overview}\n" f"{wrong_examples_report}")
 
 
