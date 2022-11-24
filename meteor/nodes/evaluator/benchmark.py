@@ -15,6 +15,7 @@ from time import perf_counter
 from iteration_utilities import unique_everseen
 
 from loguru import logger
+from tqdm import tqdm
 
 from meteor import Document, MultiLabel, Label, EvaluationResult
 from meteor.document_stores import BaseDocumentStore, InMemoryDocumentStore
@@ -270,12 +271,18 @@ class BenchMarker:
         corpus = load_json(self.corpus_name_or_path)
         dataset = load_json(self.dataset_name_or_path)
         labels = []
+        docs = []
 
-        docs = [Document.from_dict(doc) if isinstance(doc, dict) else doc for doc in self._prepare_data(corpus)]
+        logger.info(f"Preparing {len(self._prepare_data(corpus))} to index")
+        for doc in tqdm(self._prepare_data(corpus)):
+            docs.extend([Document.from_dict(doc) if isinstance(doc, dict) else doc])
+
         for data in dataset.keys():
             _dataset = dataset[data]
             _corpus = corpus[data]
-            labels.extend([self.convert_labels(d, _corpus) for d in _dataset])
+            logger.info(f"Preparing {len(_corpus)} docs to query")
+            for d in tqdm(_dataset):
+                labels.extend([self.convert_labels(d, _corpus)])
         return docs, labels
 
     def _prepare_data(self, data) -> List[Union[Document, Dict[str, Any]]]:
@@ -356,5 +363,5 @@ if __name__ == "__main__":
     params, conf_bucket, retriever_models = load_config(
         config_filename="/Users/phongnt/FTECH/knowledge-retrieval/meteor/nodes/evaluator/config.json", ci=True)
     ben = BenchMarker("assets/corpus.json", "assets/dataset.json",
-                      ["ms-viquad-bi-encoder-phobert-base", "paraphrase-multilingual-MiniLM-L12-v2"])
+                      ["fschool-distilbert-multilingual-faq-v8.0.0", "fschool-distilbert-multilingual-faq-v8.0.1"])
     ben.querying(["embedding", "tfidf"], "memory")
