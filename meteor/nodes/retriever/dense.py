@@ -86,9 +86,9 @@ class EmbeddingRetriever(DenseRetriever):
         """
         super().__init__()
 
-        self.devices, _ = initialize_device_settings(devices=devices, use_cuda=use_gpu, multi_gpu=True)
+        self.devices, self.len_devices = initialize_device_settings(devices=devices, use_cuda=use_gpu)
 
-        if batch_size < len(self.devices):
+        if batch_size < self.len_devices:
             logger.warning("Batch size is less than the number of devices.All gpus will not be utilized.")
 
         self.document_store = document_store
@@ -97,10 +97,11 @@ class EmbeddingRetriever(DenseRetriever):
         self.top_k = top_k
         self.progress_bar = progress_bar
         self.embedding_model = embedding_model
-
+        device = self.devices[0]
         logger.info("Init retriever using embeddings of model %s", embedding_model)
+
         if embedding_model:
-            self.embedding_encoder = SentenceEmbedding.from_pretrained(embedding_model)
+                self.embedding_encoder = SentenceEmbedding.from_pretrained(embedding_model, device=device)
         else:
             self.embedding_encoder = None
 
@@ -111,7 +112,7 @@ class EmbeddingRetriever(DenseRetriever):
                 f"This can be set when initializing the DocumentStore"
             )
 
-        if len(self.devices) > 1:
+        if self.len_devices >= 1:
             logger.info(f"You have {self.devices} devices available")
 
     def retrieve(

@@ -30,26 +30,30 @@ def initialize_device_settings(
     if use_cuda is False:  # Note that it could be None, in which case we also want to just skip this step.
         devices_to_use = [torch.device("cpu")]
         n_gpu = 0
-    elif devices:
-        if not isinstance(devices, list):
-            raise ValueError(f"devices must be a list, but got {devices} of type {type(devices)}")
-        if any(isinstance(device, str) for device in devices):
-            torch_devices: List[torch.device] = [torch.device(device) for device in devices]
-            devices_to_use = torch_devices
-        else:
-            devices_to_use = devices
-        n_gpu = sum(1 for device in devices_to_use if "cpu" not in device.type)
-    elif local_rank == -1:
-        if torch.cuda.is_available():
-            if multi_gpu:
-                devices_to_use = [torch.device(device) for device in range(torch.cuda.device_count())]
-                n_gpu = torch.cuda.device_count()
-            else:
-                devices_to_use = [torch.device("cuda:0")]
-                n_gpu = 1
-        else:
-            devices_to_use = [torch.device("cpu")]
-            n_gpu = 0
+        return devices_to_use, n_gpu
+    if devices is None:
+        devices_to_use = [torch.device('cuda')]
+        n_gpu = len(devices_to_use)
+    # elif devices:
+    #     if not isinstance(devices, list):
+    #         raise ValueError(f"devices must be a list, but got {devices} of type {type(devices)}")
+    #     if any(isinstance(device, str) for device in devices):
+    #         torch_devices: List[torch.device] = [torch.device(device) for device in devices]
+    #         devices_to_use = torch_devices
+    #     else:
+    #         devices_to_use = devices
+    #     n_gpu = sum(1 for device in devices_to_use if "cpu" not in device.type)
+    # elif local_rank == -1:
+    #     if torch.cuda.is_available():
+    #         if multi_gpu:
+    #             devices_to_use = [torch.device(device) for device in range(torch.cuda.device_count())]
+    #             n_gpu = torch.cuda.device_count()
+    #         else:
+    #             devices_to_use = [torch.device("cuda:0")]
+    #             n_gpu = 1
+    #     else:
+    #         devices_to_use = [torch.device("cpu")]
+    #         n_gpu = 0
     else:
         devices_to_use = [torch.device("cuda", local_rank)]
         torch.cuda.set_device(devices_to_use[0])
@@ -59,8 +63,8 @@ def initialize_device_settings(
 
     # HF transformers v4.21.2 pipeline object doesn't accept torch.device("cuda"), it has to be an indexed cuda device
     # TODO eventually remove once the limitation is fixed in HF transformers
-    device_to_replace = torch.device("cuda")
-    devices_to_use = [torch.device("cuda:0") if device == device_to_replace else device for device in devices_to_use]
+    # device_to_replace = torch.device("cuda")
+    # devices_to_use = [torch.device("cuda:0") if device == device_to_replace else device for device in devices_to_use]
 
     logger.info(
         "Using devices: %s - Number of GPUs: %s", ", ".join([str(device) for device in devices_to_use]).upper(), n_gpu

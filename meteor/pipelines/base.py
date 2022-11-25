@@ -975,7 +975,7 @@ class Pipeline:
             params["add_isolated_node_eval"] = True
 
         # if documents is None, set docs_per_label to None for each label
-        for docs_per_label, label in zip(documents or [None] * len(labels), labels):  # type: ignore
+        for docs_per_label, label in tqdm(zip(documents or [None] * len(labels), labels), total=len(labels)):  # type: ignore
             params_per_label = copy.deepcopy(params)
 
             if dynamic_top_k:

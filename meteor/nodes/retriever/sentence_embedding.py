@@ -39,23 +39,24 @@ class SentenceEmbedding(object):
         self.word_embedding_layer_dims = None
 
     @classmethod
-    def from_pretrained(cls, model_name_or_path: Text = None):
+    def from_pretrained(cls, model_name_or_path: Text = None, device: str = None):
         """
 
         Args:
             model_name_or_path: The model name or path. If name provided,
                                 It will be loaded from hugging face hub or from axiom
+            device: The device to load the model on. If None, it will be loaded on CPU
         """
         model = None
         if os.path.isdir(model_name_or_path):
             try:
-                model = SentenceTransformer(model_name_or_path)
+                model = SentenceTransformer(model_name_or_path, device=device)
             except Exception as e:
                 _logger.error(f"Cannot load pretrained model from {model_name_or_path}, "
                               f"Because {e}")
         else:
             model_name_or_path = axiom_wrapper.fetch_model(model_name_or_path)
-            model = SentenceTransformer(model_name_or_path)
+            model = SentenceTransformer(model_name_or_path, device=device)
         return cls(model)
 
     @staticmethod

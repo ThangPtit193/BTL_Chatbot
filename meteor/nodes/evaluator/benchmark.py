@@ -173,8 +173,7 @@ class BenchMarker:
         n_queries = len(labels)
 
         try:
-            logger.info("##### Start querying run: %s, %s, %s docs ##### ", retriever_type, doc_store_name,
-                        n_docs)
+            logger.info(f"##### Start querying run: {retriever_type}, {doc_store_name}, {n_docs} docs #####")
             if retriever_type in ["elastic", "embedding"]:
                 similarity = "cosine"
             else:

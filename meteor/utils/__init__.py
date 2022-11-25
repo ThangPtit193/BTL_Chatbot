@@ -1,11 +1,11 @@
 import re
 
 from meteor.utils.reflection import args_to_kwargs
+from rapidfuzz import fuzz
 
 
 def calculate_context_similarity(
-        context: str, candidate: str, min_length: int = 100, boost_split_overlaps: bool = True
-        , fuzz=None) -> float:
+        context: str, candidate: str, min_length: int = 100, boost_split_overlaps: bool = True) -> float:
     """
     Calculates the text similarity score of context and candidate.
     The score's value ranges between 0.0 and 100.0.
