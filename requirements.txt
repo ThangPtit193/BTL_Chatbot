@@ -41,3 +41,4 @@ elasticsearch>=7.9.1
 ipython>=7.31.1
 environs>=9.5.0
 jsbeautifier>=1.14.7
+rapidfuzz~=2.13.2
