@@ -1,6 +1,6 @@
 fairseq==0.10.2
 # axiom_client@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/axiom_client-1.9.4-py3-none-any.whl
-venus@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/venus-1.2.5rc0-py3-none-any.whl
+# venus@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/venus-1.2.5rc0-py3-none-any.whl
 sentence-transformers>=2.2.0
 loguru~=0.6.0
 jsonschema~=3.1.1

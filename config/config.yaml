@@ -1,7 +1,22 @@
+GENERAL:
+  run_mode: inference
+
+EMBEDDER:
+  class: SentenceEmbedder
+  package: meteor.components.embeddings.embedding_models
+
 EVALUATION:
   type: "evaluation_pipeline"
   corpus_name_or_path: "assets/corpus.json"
   query_name_or_path: "assets/query.json"
-  doc_store_name: ["memory"]
-  model_name_or_path: ["fschool-distilbert-multilingual-faq-v8.0.0"]
-  retriever_type: ["embedding"]
+  doc_store_name: [ "memory" ]
+  model_name_or_path: [ "fschool-distilbert-multilingual-faq-v8.0.0" ]
+  retriever_type: [ "embedding" ]
+
+TRAINER:
+  triplets_data_path:
+    - data/triples/triples_10.json
+    - data/triples/triples_20.json
+  batch_size: 32
+  pretrained_model: sentence-transformers/quora-distilbert-multilingual
+  model_save_path: models
