@@ -17,7 +17,6 @@ label_index = "label"
 
 def get_document_store(
         document_store_type,
-        tmp_path=None,
         embedding_dim=768,
         embedding_field="embedding",
         index="meteor_test",
@@ -30,7 +29,7 @@ def get_document_store(
             return_embedding=True,
             embedding_dim=embedding_dim,
             embedding_field=embedding_field,
-            index=doc_index,
+            index=index,
             similarity=similarity,
         )
     else:
@@ -45,14 +44,13 @@ def get_retriever(retriever_type, document_store, model_name_or_path):
         retriever = EmbeddingRetriever(
             document_store=document_store, embedding_model=model_name_or_path, use_gpu=False
         )
-        # retriever.update_embeddings()
     else:
         raise Exception(f"No retriever fixture for '{retriever_type}'")
 
     return retriever
 
 
-def load_config(config_filename, ci):
+def load_from_config(config_filename, ci):
     conf = json.load(open(config_filename))
     if ci:
         params = conf["params"]["ci"]
@@ -105,12 +103,3 @@ def prepare_docs(corpus_dir) -> List[Union[Document, Dict[str, Any]]]:
         dataset[key] = [{"content": content} for content in dataset[key]]
         docs.extend(dataset[key])
     return docs
-
-
-if __name__ == "__main__":
-    print(load_config("/Users/phongnt/FTECH/knowledge-retrieval/meteor/nodes/evaluator/config.json", True))
-    docs = prepare_docs("/Users/phongnt/FTECH/knowledge-retrieval/assets/corpus.json")
-    # doc_store = get_document_store("memory", similarity="cosine")
-    # retriever = get_retriever(retriever_name="embedding", doc_store=doc_store, model_name_or_path="ms-viquad-bi-encoder-phobert-base")
-    # index_to_doc_store(doc_store=doc_store, docs=docs, retriever=retriever)
-    # print(doc_store.get_all_documents())

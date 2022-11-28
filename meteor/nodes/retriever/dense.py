@@ -97,11 +97,11 @@ class EmbeddingRetriever(DenseRetriever):
         self.top_k = top_k
         self.progress_bar = progress_bar
         self.embedding_model = embedding_model
-        device = self.devices[0]
+        device = None
         logger.info("Init retriever using embeddings of model %s", embedding_model)
 
         if embedding_model:
-                self.embedding_encoder = SentenceEmbedding.from_pretrained(embedding_model, device=device)
+            self.embedding_encoder = SentenceEmbedding.from_pretrained(embedding_model, device=device)
         else:
             self.embedding_encoder = None
 
