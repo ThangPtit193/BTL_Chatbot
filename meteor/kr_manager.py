@@ -25,6 +25,7 @@ class KRManager:
             self._embedder = get_module_or_attr(module_name, class_name)(**embedder_config)
         return self._embedder
 
+    @property
     def corpus_docs(self):
         if not self._corpus_docs:
             eval_config = self.config_parser.eval_config()
@@ -69,12 +70,21 @@ class KRManager:
             name = os.path.basename(model_name_or_path)
             self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=model_name_or_path)
             # TODO evaluate
-            for query in self.query_docs:
-                raise NotImplementedError
+            tgt_docs = [doc.text for doc in self.corpus_docs]
+            src_docs = [doc.text for doc in self.query_docs]
+            scores = self.embedder.find_similarity(src_docs, tgt_docs, _return_as_dict=True)
+            # ====== Continue here======
+            #
+            # ==========================
+
+            # TODO Save to eval store and export the results
+            # ======= Continue here =======
+            #
+            # =============================
 
         raise NotImplementedError
 
-    def _load_docs(self, path: str):
+    def _load_docs(self, path: str) -> List[Document]:
         from comet.utilities.utility import convert_unicode
         # TODO load data from path Remember to convert_unicode
         raise NotImplementedError
