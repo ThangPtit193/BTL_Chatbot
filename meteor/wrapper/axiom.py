@@ -270,9 +270,9 @@ class AxiomWrapper:
 if __name__ == "__main__":
     AXIOM_EMAIL = os.getenv('AXIOM_EMAIL', 'phongnt@ftech.ai')
     AXIOM_PASSWORD = os.getenv('AXIOM_PASSWORD', 'b8dJfQFq6DL3')
-    HUB_ID = os.getenv('HUB_ID', 347)
+    HUB_ID = os.getenv('HUB_ID', 369)
     HUB_VERSION = os.getenv('HUB_VERSION', 'v0.1.0')
-    MODELS_ID = os.getenv('MODELS_ID', 289)
+    MODELS_ID = os.getenv('MODELS_ID', 369)
     MODELS_VERSION = os.getenv('MODELS_VERSION', 'v8.0.0')
 
     axiom_wrapper = AxiomWrapper(
@@ -283,6 +283,7 @@ if __name__ == "__main__":
         hub_id=HUB_ID,
         hub_version=HUB_VERSION
     )
+    print(axiom_wrapper.ls_model())
 #
 #
 #     # print(axiom_wrapper.ls_model())

@@ -1,12 +1,11 @@
 import copy
 import itertools
-import os
 import time
 import logging
 import datetime
 import random
 import traceback
-import json
+from pathlib import Path
 from typing import List, Optional, Union, Dict, Any
 
 import mmh3
@@ -17,9 +16,9 @@ from iteration_utilities import unique_everseen
 from loguru import logger
 from tqdm import tqdm
 
+from config.config import read_config_from_yaml
 from meteor import Document, MultiLabel, Label, EvaluationResult
 from meteor.document_stores import BaseDocumentStore, InMemoryDocumentStore
-from meteor.modelling.evaluation.utils import load_config
 from meteor.nodes import TfidfRetriever, EmbeddingRetriever
 from meteor.nodes.retriever.sentence_embedding import SentenceEmbedding
 from meteor.pipelines import DocumentSearchPipeline
@@ -39,13 +38,17 @@ class BenchMarker:
     def __init__(
             self,
             corpus_name_or_path: Optional[Union[str, List]] = None,
-            dataset_name_or_path: Optional[Union[str, List]] = None,
+            query_name_or_path: Optional[Union[str, List]] = None,
             model_name_or_path: Optional[Union[str, List]] = None,
+            retriever_type: Optional[Union[str, List]] = None,
+            doc_store_name: Optional[Union[str, List]] = None
 
     ):
         self.corpus_name_or_path = corpus_name_or_path
-        self.dataset_name_or_path = dataset_name_or_path
+        self.query_name_or_path = query_name_or_path
         self.model_name_or_path = model_name_or_path
+        self.retriever_type = retriever_type
+        self.doc_store_name = doc_store_name
 
     def indexing(
             self,
@@ -102,16 +105,18 @@ class BenchMarker:
             retriever_type: Union[str, List] = None,
             doc_store_name: Union[str, List] = None,
             model_name_or_path: Union[str, List] = None,
-            update_json: bool = False,
             save_markdown: bool = True
     ):
         """Benchmark the time it takes to perform querying. Doc embeddings are loaded from file."""
         retriever_results = []
 
+        if retriever_type is None:
+            retriever_type = self.retriever_type
+            assert retriever_type is not None, f"Retriever type required for computing similarity"
+        if doc_store_name is None:
+            doc_store_name = self.doc_store_name
         if model_name_or_path is None:
             model_name_or_path = self.model_name_or_path
-        else:
-            raise ValueError("Model is required to embed queries and documents")
 
         for kwarg in self.populate_kwargs(retriever_type, doc_store_name, model_name_or_path):
             results = self._querying(**kwarg)
@@ -125,8 +130,6 @@ class BenchMarker:
             md_file = query_results_file.replace(".csv", ".md")
             with open(md_file, "w") as f:
                 f.write(str(retriever_df.to_markdown()))
-        if update_json:
-            self.populate_retriever_json()
 
     def populate_kwargs(self, retriever_types, doc_stores, models) -> List:
         kwargs = []
@@ -268,7 +271,7 @@ class BenchMarker:
 
     def prepare_data(self):
         corpus = load_json(self.corpus_name_or_path)
-        dataset = load_json(self.dataset_name_or_path)
+        dataset = load_json(self.query_name_or_path)
         labels = []
         docs = []
 
@@ -318,10 +321,6 @@ class BenchMarker:
 
         return retriever
 
-    @classmethod
-    def load_config(cls):
-        pass
-
     def download_from_axiom(self):
         pass
 
@@ -357,10 +356,19 @@ class BenchMarker:
             raise Exception(f"No document store fixture for '{document_store_type}'")
         return document_store
 
+    @classmethod
+    def load_from_config(cls, config_path: Union[str, Path]):  # type: ignore
+        conf = read_config_from_yaml(config_path)["EVALUATION"]
+        conf_kwargs = {
+            "corpus_name_or_path": conf.get("corpus_name_or_path"),
+            "query_name_or_path": conf.get("query_name_or_path"),
+            "model_name_or_path": conf.get("model_name_or_path"),
+            "retriever_type": conf.get("retriever_type"),
+            "doc_store_name": conf.get("doc_store_name")
+        }
+        return cls(**conf_kwargs)
+
 
 if __name__ == "__main__":
-    params, conf_bucket, retriever_models = load_config(
-        config_filename="/Users/phongnt/FTECH/knowledge-retrieval/meteor/nodes/evaluator/config.json", ci=True)
-    ben = BenchMarker("assets/corpus.json", "assets/dataset.json",
-                      ["fschool-distilbert-multilingual-faq-v8.0.0", "fschool-distilbert-multilingual-faq-v8.0.1"])
-    ben.querying(["embedding", "tfidf"], "memory")
+    ben = BenchMarker.load_from_config("config/config.yaml")
+    ben.querying()
