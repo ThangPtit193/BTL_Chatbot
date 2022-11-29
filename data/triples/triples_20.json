@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "query": "hello",
+      "pos": "Good evening",
+      "neg": "bee you"
+    },
+    {
+      "query": "hi there",
+      "pos": "hi there",
+      "neg": "negative hi"
+    },
+    {
+      "query": "hi there",
+      "pos": "Good morning",
+      "neg": "negative hi there"
+    },
+    {
+      "query": "hi there",
+      "pos": "Good afternoon",
+      "neg": "negative see you later"
+    },
+    {
+      "query": "hi there",
+      "pos": "Good evening",
+      "neg": "negative see you"
+    },
+    {
+      "query": "Good morning",
+      "pos": "Good morning",
+      "neg": "negative good morning"
+    },
+    {
+      "query": "Good morning",
+      "pos": "Good afternoon",
+      "neg": "negative see you later"
+    },
+    {
+      "query": "Good morning",
+      "pos": "Good evening",
+      "neg": "bee you"
+    },
+    {
+      "query": "Good afternoon",
+      "pos": "Good afternoon",
+      "neg": "negative good afternoon"
+    },
+    {
+      "query": "Good afternoon",
+      "pos": "Good evening",
+      "neg": "negative see you later"
+    }
+  ]
+}

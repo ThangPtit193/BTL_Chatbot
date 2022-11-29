@@ -25,10 +25,10 @@ class ParentComponent(BaseComponent):
 # @pytest.mark.elasticsearch
 def test_to_code_creates_same_pipelines():
     query_pipeline = Pipeline.load_from_yaml(
-        SAMPLES_PATH / "pipeline" / "test.meteor-pipeline.yml", pipeline_name="query_pipeline"
+        SAMPLES_PATH / "pipeline" / "test.meteor-pipeline.yml", pipeline_name="indexing_pipeline"
     )
-    query_pipeline_code = query_pipeline.to_code(pipeline_variable_name="query_pipeline_from_code")
+    query_pipeline_code = query_pipeline.to_code(pipeline_variable_name="indexing_pipeline_from_code")
 
     exec(query_pipeline_code)
-    assert locals()["query_pipeline_from_code"] is not None
-    assert query_pipeline.get_config() == locals()["query_pipeline_from_code"].get_config()
+    assert locals()["indexing_pipeline_from_code"] is not None
+    assert query_pipeline.get_config() == locals()["indexing_pipeline_from_code"].get_config()

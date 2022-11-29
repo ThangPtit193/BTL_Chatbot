@@ -45,3 +45,5 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 .env
+.assets
+.reports

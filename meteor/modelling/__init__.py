@@ -1,1 +1,0 @@
-from meteor.modelling.utils import initialize_device_settings
