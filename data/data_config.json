@@ -1,0 +1,12 @@
+[
+  {
+    "name": "data/triples/triples_10.json",
+    "lines": 10,
+    "weight": 1
+  },
+  {
+    "name": "data/triples/triples_20.json",
+    "lines": 12,
+    "weight": 1
+  }
+]
