@@ -48,20 +48,10 @@ class KRManager:
     def train_embedder(self):
         trainer_config = self.config_parser.trainer_config()
 
-        if "triplets_data_path" not in trainer_config:
-            raise FileNotFoundError("No triplets data path provided in config file")
+        self.embedder.train(trainer_config)
 
-        triplets_data = []
-        triplets_data_path = trainer_config.pop("triplets_data_path")
-
-        if isinstance(triplets_data_path, str):
-            triplets_data_path = [triplets_data_path]
-        for path in triplets_data_path:
-            if not os.path.exists(path):
-                raise FileNotFoundError(f"triplets data path {path} does not exist")
-            triplets_data.extend(file_util.load_json(path)['data'])
-        trainer_config = dict(trainer_config, triplets_data=triplets_data)
-        self.embedder.train(**trainer_config)
+        # TODO save the model and upload it to axiom
+        # Your code here
 
     def evaluate_embedder(self):
         model_name_or_paths = self.config_parser.eval_config()['model_name_or_path']

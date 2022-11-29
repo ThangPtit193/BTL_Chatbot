@@ -1,12 +1,13 @@
 from setuptools import setup, find_packages, __version__
+import os
 
 
-# def package_files(directory):
-#     paths = []
-#     for (path, directories, filenames) in os.walk(directory):
-#         for filename in filenames:
-#             paths.append(os.path.join('..', path, filename))
-#     return paths
+def package_files(directory):
+    paths = []
+    for (path, directories, filenames) in os.walk(directory):
+        for filename in filenames:
+            paths.append(os.path.join('..', path, filename))
+    return paths
 
 
 with open('requirements.txt') as f:
@@ -21,6 +22,9 @@ setup(
     py_modules=['meteor'],
     install_requires=required_packages,
     python_requires='>=3.6.0',
+    package_data={
+        "": []
+    },
     author='phongnt',
     author_email='phongnt@ftech.ai',
 

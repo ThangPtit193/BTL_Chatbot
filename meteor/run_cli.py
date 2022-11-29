@@ -1,5 +1,8 @@
 import click
 from meteor.kr_manager import KRManager
+from comet.lib import logger
+
+logger.configure_logger("DEBUG")
 
 
 @click.group()
