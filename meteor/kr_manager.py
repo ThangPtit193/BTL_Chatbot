@@ -78,17 +78,6 @@ class KRManager:
             similarity_data = self.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
             evaluation_results[name].extend(
                 self._extract_eval_result(self.query_docs, self.corpus_docs, similarity_data))
-
-            # Get tgt_docs after sorted by similarity
-
-            # ====== Continue here======
-            #
-            # ==========================
-
-            # TODO Save to eval store and export the results
-            # ======= Continue here =======
-            #
-            # =============================
             pass
 
         raise NotImplementedError

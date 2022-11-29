@@ -43,7 +43,6 @@ class Document:
         id: Optional[str] = None,
         label: Optional[str] = None,
         num_relevant: Optional[int] = None,
-        embedding: Optional[np.ndarray] = None,
         meta: Dict[str, Any] = None,
     ):
         """
@@ -53,7 +52,6 @@ class Document:
             text: Text of the document
             id: ID used within the DocumentStore
             meta: Meta fields for a document like name, url, or author.
-            embedding: Vector encoding of the text
         """
 
         self.text = text
@@ -66,7 +64,6 @@ class Document:
             self.id = str(uuid4())
 
         self.meta = meta or {}
-        self.embedding = embedding
 
     def to_dict(self, with_embedding: bool = False):
         _doc: Dict[str, str] = {}
