@@ -78,9 +78,11 @@ class KRManager:
             similarity_data = self.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
             evaluation_results[name].extend(
                 self._extract_eval_result(self.query_docs, self.corpus_docs, similarity_data))
-            pass
 
-        raise NotImplementedError
+        # TODO Something for calculating the mean of the results
+
+        # TODO Export the results
+        return evaluation_results
 
     def _extract_eval_result(
         self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
