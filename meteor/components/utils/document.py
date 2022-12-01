@@ -5,8 +5,13 @@ from uuid import uuid4
 
 class EvalResult:
     def __init__(
-        self, query: Text, query_id: Text, rr_score: float = None, ap_score: float = None, top_k_relevant: int = 20,
-        most_relevant_docs: List["Document"] = None
+        self, query: Text,
+            query_id: Text,
+            rr_score: float = None,
+            ap_score: float = None,
+            top_k_relevant: int = 20,
+            golden_docs: List[str] = None,
+            most_relevant_docs: List["Document"] = None
     ):
         self.query = query
         self.query_id = query_id
@@ -14,6 +19,7 @@ class EvalResult:
         self.ap_score = ap_score
         self.top_k_relevant = top_k_relevant
         self.most_relevant_docs = most_relevant_docs
+        self.golden_docs = golden_docs
 
     @classmethod
     def from_dict(cls, data: Dict):
@@ -26,6 +32,7 @@ class EvalResult:
             "query_id": self.top_k_relevant,
             "rr_score": self.rr_score,
             "ap_score": self.ap_score,
+            "golden_docs": self.golden_docs,
             "most_relevant_docs": self.most_relevant_docs,
         }
 

@@ -43,7 +43,7 @@ class NaiveEmbedder(BaseEmbedder):
                 setattr(self, k, val)
 
     def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
-        super(NaiveEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
+        super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
 
     def _train(
         self,
