@@ -62,7 +62,6 @@ class CustomSentenceEmbedding(SentenceEmbedding):
         train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
         # train_loss = losses.MultipleNegativesRankingLoss(model=self.model)
         train_loss = losses.TripletLoss(model=self.model)
-        exit()
 
         # Train the model
         self.model.fit(
