@@ -7,6 +7,7 @@
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Models%20on%20Hub-yellow)](https://huggingface.co/models?filter=keytotext)
 [![AxiomHub](https://img.shields.io/badge/Axiom-Axiom%20Hub-blue)](https://axiom.dev.ftech.ai/ui/home)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Demo-ff69b4)(https://gitlab.ftech.ai/nlp/va/knowledge-retrieval)]
 </p>
 
 
@@ -18,13 +19,15 @@ in Venus hub to provide unique search experiences and allow your users to query 
 
 ## Core Features
 
-- **Latest models**: Utilize all latest transformer-based models (e.g., BERT, RoBERTa, PhoBert) for extractive QA,
+- [x] **Latest models**: Utilize all latest transformer-based models (e.g., BERT, RoBERTa, PhoBert) for extractive QA,
   generative QA, and document retrieval.
-- **Open**: 100% compatible with HuggingFace's model hub and Venus hub *(internal use only)*. Tight interfaces to other
+- [x] **Open**: 100% compatible with HuggingFace's model hub and Venus hub *(internal use only)*. Tight interfaces to other
   frameworks (e.g., Transformers, FARM, sentence-transformers)
-- **Scalable**: Scale to millions of docs via retrievers, production-ready backends like Elasticsearch / FAISS (coming
-  soon), and a fastAPI REST API
-- **End-to-End**: All tooling in one place: training, eval, inference, etc.
+- [x] **Scalable**: Scale to millions of docs via retrievers, production-ready backends like Elasticsearch / FAISS (coming
+  soon)
+- [x] **End-to-End**: All tooling in one place: training, eval, inference, etc.
+- [ ] **RestAPI**: Coming soon ...
+- [ ] **Streamlit**: Coming soon ...
 
 ## 💾 Installation
 
