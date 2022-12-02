@@ -1,28 +1,6 @@
 GENERAL:
   run_mode: inference
 
-#EMBEDDER:
-#  class: SentenceEmbedder
-#  package: meteor.components.embeddings.embedding_models
-#
-#  TRAINER:
-#    triplets_data_path:
-#      - data/triples/triples_10.json
-#      - data/triples/triples_20.json
-#    batch_size: 32
-#    pretrained_model: sentence-transformers/quora-distilbert-multilingual
-#    model_save_path: models
-#    n_samples: 5
-#    batch_size: 128
-#    epochs: 5
-#    warmup_steps: 5000
-#    evaluation_steps: 2000
-#    weight_decay: 0.01
-#    max_grad_norm: 1.0
-#    use_amp: False
-#    save_best_model: True
-#    show_progress_bar: True
-
 EMBEDDER:
   class: NaiveEmbedder
   package: meteor.components.embeddings.embedding_models
@@ -35,7 +13,7 @@ EMBEDDER:
     # Total of steps, it depends on the number of question answering pair that you have
     steps: 1000
     # When reach this step, we will be saved checkpoint
-    save_steps: 10000
+    save_steps: 1000
     # The max length of tokenizer
     max_length: 128
     # Use 20 for cossim, and 1 when you work with un-normalized embeddings with dot product

@@ -8,5 +8,10 @@
     "name": "data/triples/triples_20.json",
     "lines": 12,
     "weight": 1
+  },
+  {
+    "name": "data/triples/triples_30.json",
+    "lines": 12,
+    "weight": 2
   }
 ]

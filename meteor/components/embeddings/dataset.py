@@ -1,5 +1,5 @@
 import random
-import json
+
 from comet.lib import file_util, logger
 
 _logger = logger.get_logger(__name__)
@@ -23,7 +23,6 @@ def data_producer(queue, filepaths, dataset_indices, config):
             is_valid_dataset = False
             while not is_valid_dataset:
                 data_idx = random.choice(dataset_indices)
-                print(data_idx)
                 if batch_format is None:
                     batch_format = num_cols[data_idx]
                     is_valid_dataset = True
@@ -52,7 +51,7 @@ class Dataset:
         self.filepath = filepath
 
     def __iter__(self):
-        max_dataset_size = 10 * 1000 * 1000 # Cache small datasets in memory
+        max_dataset_size = 10 * 1000 * 1000  # Cache small datasets in memory
         dataset = []
         while dataset is None or len(dataset) == 0:
             triplets_data = file_util.load_json(self.filepath)['data']

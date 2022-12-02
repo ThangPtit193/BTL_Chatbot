@@ -1,0 +1,31 @@
+GENERAL:
+  run_mode: inference
+
+EMBEDDER:
+  class: SentenceEmbedder
+  package: meteor.components.embeddings.embedding_models
+
+  TRAINER:
+    triplets_data_path:
+#      - data/triples/triples_10.json
+#      - data/triples/triples_20.json
+      - data/triples/triples_30.json
+    pretrained_model: sentence-transformers/quora-distilbert-multilingual
+    model_save_path: models
+    n_samples: 5
+    batch_size: 128
+    epochs: 50
+    warmup_steps: 5000
+    evaluation_steps: 2000
+    weight_decay: 0.01
+    max_grad_norm: 1.0
+    use_amp: False
+    save_best_model: True
+    show_progress_bar: True
+
+EVALUATION:
+  type: "evaluation_pipeline"
+  corpus_name_or_path: "data/docs/corpus_docs.json"
+  query_name_or_path: "data/docs/query_docs.json"
+  model_name_or_path: [ "fschool-distilbert-multilingual-faq-v8.0.0" ]
+
