@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://gitlab.ftech.ai/nlp/va/knowledge-retrieval"><img src="./images/meteor.svg" alt="Meteor Services"></a>
+  <a href="https://gitlab.ftech.ai/nlp/va/knowledge-retrieval"><img src="./images/Meteor.svg" alt="Meteor Services"></a>
 </p>
 
 <p>
