@@ -7,7 +7,7 @@
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Models%20on%20Hub-yellow)](https://huggingface.co/models?filter=keytotext)
 [![AxiomHub](https://img.shields.io/badge/Axiom-Axiom%20Hub-blue)](https://axiom.dev.ftech.ai/ui/home)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Demo-ff69b4)(https://gitlab.ftech.ai/nlp/va/knowledge-retrieval)]
+[![Streamlit](https://img.shields.io/badge/Streamlit-Demo-ff69b4)](https://gitlab.ftech.ai/nlp/va/knowledge-retrieval)
 </p>
 
 
