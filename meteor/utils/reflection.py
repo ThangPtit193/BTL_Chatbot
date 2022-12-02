@@ -1,6 +1,8 @@
 import inspect
 from typing import Any, Dict, Tuple, Callable
 
+import mmh3
+
 
 def args_to_kwargs(args: Tuple, func: Callable) -> Dict[str, Any]:
     sig = inspect.signature(func)
@@ -10,3 +12,7 @@ def args_to_kwargs(args: Tuple, func: Callable) -> Dict[str, Any]:
         arg_names = arg_names[1: 1 + len(args)]
     args_as_kwargs = {arg_name: arg for arg, arg_name in zip(args, arg_names)}
     return args_as_kwargs
+
+
+def get_id(content):
+    return "{:02x}".format(mmh3.hash128(str(content), signed=False))

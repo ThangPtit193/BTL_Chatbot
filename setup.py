@@ -1,5 +1,7 @@
-from setuptools import setup, find_packages, __version__
 import os
+from setuptools import setup, find_packages
+
+from meteor.version import __version__
 
 
 def package_files(directory):

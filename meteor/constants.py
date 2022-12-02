@@ -35,6 +35,8 @@ def get_cfd(backward=0):
 
 WORKING_DIR = os.getcwd()
 SOURCE_DIR = get_cfd(1)
+EVAL_INDEX = "eval_index"
+INDEX_RESULT_FILES = "reports/retriever.csv"
 
 # Init environment
 env = Env()
