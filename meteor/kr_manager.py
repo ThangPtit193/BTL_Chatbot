@@ -5,6 +5,7 @@ from time import perf_counter
 
 import pandas as pd
 from pandas import DataFrame
+from tqdm import tqdm
 
 from meteor.constants import INDEX_RESULT_FILES
 from meteor.utils.config_parser import ConfigParser
@@ -111,7 +112,7 @@ class KRManager:
                 "model_name": name,
                 "query_numbers": len(src_docs),
                 "retriever_time": retriever_time,
-                "query_per_second": retriever_time/len(src_docs),
+                "query_per_second": retriever_time / len(src_docs),
                 "map": df["ap_score"].mean(),
                 "mrr": df["rr_score"].mean(),
                 "date_time": datetime.datetime.now()
@@ -177,7 +178,7 @@ class KRManager:
                 query_id=src_doc.id,
                 rr_score=rr_score,
                 ap_score=round(ap_score / (len(ground_truth)), 2),
-                top_k_relevant=num_srcs,
+                top_k_relevant=len(top_k_relevant_docs),
                 golden_docs=ground_truth,
                 most_relevant_docs=top_k_relevant_docs
 
@@ -227,10 +228,3 @@ class KRManager:
                     num_relevant=num_relevant,
                 ))
         return docs
-
-
-if __name__ == "__main__":
-    kr = KRManager(config_path="config/config.yaml")
-    # corpus = load_json("data/docs/corpus_docs.json")
-    # query = load_json("data/docs/query_docs.json")
-    kr.evaluate_embedder()
