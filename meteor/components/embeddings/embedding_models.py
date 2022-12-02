@@ -13,7 +13,7 @@ from transformers import (
 import time
 from abc import abstractmethod
 from .dataset import data_producer
-from .net import AutoModelForSentenceEmbedding
+from .net import AutoModelForSentenceEmbedding, CustomSentenceEmbedding
 
 __all__ = []
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
@@ -231,7 +231,7 @@ class SentenceEmbedder(BaseEmbedder):
         :return:
         """
         from venus.dataset_reader.TripletDataset import TripletsDataset
-        from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
+        # from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
 
         # Producing data
         triplets_data = []
@@ -242,7 +242,7 @@ class SentenceEmbedder(BaseEmbedder):
                 raise FileNotFoundError(f"triplets data path {path} does not exist")
             triplets_data.extend(file_util.load_json(path)['data'])
 
-        sentence_embedding = SentenceEmbedding.from_pretrained(
+        sentence_embedding = CustomSentenceEmbedding.from_pretrained(
             model_name_or_path=pretrained_model
         )
 

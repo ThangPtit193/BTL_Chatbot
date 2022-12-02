@@ -1,9 +1,16 @@
 import os
+import os
+from typing import *
 
 import torch
+import transformers
+from sentence_transformers import losses
+from torch.optim import Optimizer
+from torch.utils.data import DataLoader
 from transformers import (
     AutoModel,
 )
+from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
 
 
 class AutoModelForSentenceEmbedding(torch.nn.Module):
@@ -31,3 +38,47 @@ class AutoModelForSentenceEmbedding(torch.nn.Module):
         self.tokenizer.save_pretrained(output_path)
         self.model.config.save_pretrained(output_path)
         torch.save(self.model.state_dict(), os.path.join(output_path, "pytorch_model.bin"))
+
+
+class CustomSentenceEmbedding(SentenceEmbedding):
+    def train_negative_ranking(
+        self,
+        train_dataset,
+        dev_evaluator=None,
+        batch_size=16,
+        epochs=10,
+        warmup_steps=1000,
+        model_save_path='models',
+        evaluation_steps=5000,
+        use_amp=True,
+        optimizer_params: Dict[str, object] = {'lr': 2e-5},
+        optimizer_class: Type[Optimizer] = transformers.AdamW,
+        scheduler='WarmupLinear',
+        weight_decay: float = 0.01,
+        max_grad_norm: float = 1,
+        save_best_model=True,
+        show_progress_bar: bool = True,
+    ):
+        train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
+        # train_loss = losses.MultipleNegativesRankingLoss(model=self.model)
+        train_loss = losses.TripletLoss(model=self.model)
+        exit()
+
+        # Train the model
+        self.model.fit(
+            train_objectives=[(train_dataloader, train_loss)],
+            evaluator=dev_evaluator,
+            epochs=epochs,
+            warmup_steps=warmup_steps,
+            output_path=model_save_path,
+            evaluation_steps=evaluation_steps,
+            use_amp=use_amp,
+            optimizer_params=optimizer_params,
+            optimizer_class=optimizer_class,
+            scheduler=scheduler,
+            weight_decay=weight_decay,
+            max_grad_norm=max_grad_norm,
+            save_best_model=save_best_model,
+            show_progress_bar=show_progress_bar
+        )
+        self.model.save(model_save_path)
