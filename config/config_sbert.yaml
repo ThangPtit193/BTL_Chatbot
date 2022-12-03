@@ -7,11 +7,11 @@ EMBEDDER:
 
   TRAINER:
     triplets_data_path:
-      - assets/timi/triples_2000000.json
-      - assets/timi/triples_4000000.json
-      - assets/timi/triples_6000000.json
-      - assets/timi/triples_8000000.json
-      - assets/timi/triples_8041925.json
+      - assets/timi/bm25_embedder/triples_2000000.json
+      - assets/timi/bm25_embedder/triples_4000000.json
+      - assets/timi/bm25_embedder/triples_6000000.json
+      - assets/timi/bm25_embedder/triples_8000000.json
+      - assets/timi/bm25_embedder/triples_8225130.json
     pretrained_model: vinai/phobert-base
     model_save_path: models
     n_samples: 10
