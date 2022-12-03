@@ -49,16 +49,6 @@
       "query": "Tôi rất thích con mèo",
       "pos": "Tôi yêu con mèo rất nhiều",
       "neg": "Tôi rất ghét con mèo"
-    },
-    {
-      "query": "Tôi rất thích con mèo",
-      "pos": "Tôi thương con mèo rất nhiều",
-      "neg": "Tôi rất thương con chó"
-    },
-    {
-      "query": "Tôi rất thích con chó",
-      "pos": "Tôi thương con chó rất nhiều",
-      "neg": "Tôi rất thương con mèo"
     }
   ]
 }
