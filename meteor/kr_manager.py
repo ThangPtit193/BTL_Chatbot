@@ -1,20 +1,19 @@
 import datetime
-from pathlib import Path
+import os
 import time
+from pathlib import Path
 from time import perf_counter
+from typing import *
 
 import pandas as pd
+from comet.lib import file_util, logger
+from comet.lib.helpers import get_module_or_attr
+from comet.utilities.utility import convert_unicode
 from pandas import DataFrame
-from tqdm import tqdm
 
+from meteor.components.utils.document import Document, EvalResult
 from meteor.constants import INDEX_RESULT_FILES
 from meteor.utils.config_parser import ConfigParser
-from comet.lib.helpers import get_module_or_attr
-from comet.lib import file_util, logger
-from typing import *
-from comet.utilities.utility import convert_unicode
-from meteor.components.utils.document import Document, EvalResult
-import os
 
 if TYPE_CHECKING:
     from meteor.components.embeddings.embedding_models import SentenceEmbedder
@@ -78,7 +77,6 @@ class KRManager:
 
     def train_embedder(self):
         trainer_config = self.config_parser.trainer_config()
-
         self.embedder.train(trainer_config)
 
         # TODO save the model and upload it to axiom
@@ -149,7 +147,7 @@ class KRManager:
         df.to_csv(target_path)
 
     def _extract_eval_result(
-            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
+        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
     ) -> List[dict]:
         eval_results = []
 

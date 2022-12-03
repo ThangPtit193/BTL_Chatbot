@@ -1,7 +1,7 @@
 from sentence_transformers import SentenceTransformer, util
 
 # model = SentenceTransformer('./models')
-model = SentenceTransformer('./models/final')
+model = SentenceTransformer('./models')
 
 # Two lists of sentences
 sentences1 = [

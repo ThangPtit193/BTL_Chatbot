@@ -19,9 +19,13 @@ EMBEDDER:
     evaluation_steps: 2000
     weight_decay: 0.01
     max_grad_norm: 1.0
-    use_amp: False
+    use_amp: True
     save_best_model: True
     show_progress_bar: True
+    checkpoint_path: models/checkpoints
+    checkpoint_save_epoch: 50
+    checkpoint_save_total_limit: 3
+    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
 
 EVALUATION:
   type: "evaluation_pipeline"

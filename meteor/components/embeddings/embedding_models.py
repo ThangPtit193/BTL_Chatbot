@@ -1,19 +1,24 @@
 import os
+import time
+from abc import abstractmethod
 from typing import *
-from tqdm import tqdm
+
 import torch
 import torch.multiprocessing as mp
+import transformers
 from comet.components.embeddings.embedding_models import BertEmbedder
 from comet.lib import file_util
+from sentence_transformers import losses
+from torch.utils.data import DataLoader
+from tqdm import tqdm
 from transformers import (
     AdamW,
     AutoTokenizer,
     get_linear_schedule_with_warmup,
 )
-import time
-from abc import abstractmethod
+
 from .dataset import data_producer
-from .net import AutoModelForSentenceEmbedding, CustomSentenceEmbedding
+from .net import AutoModelForSentenceEmbedding, CustomSentenceTransformer
 
 __all__ = []
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
@@ -196,8 +201,19 @@ class NaiveEmbedder(BaseEmbedder):
 
 class SentenceEmbedder(BaseEmbedder):
 
-    @staticmethod
+    def __init__(self, model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased"):
+        super(SentenceEmbedder, self).__init__()
+        self.model_name_or_path: Text = model_name_or_path
+        self._model: CustomSentenceTransformer = None
+
+    @property
+    def model(self):
+        if not self._model:
+            self._model = CustomSentenceTransformer.from_pretrained(self.model_name_or_path)
+        return self._model
+
     def _train(
+        self,
         triplets_data_path: List[Text],
         pretrained_model="bert-base-uncased",
         model_save_path: Text = None,
@@ -211,6 +227,10 @@ class SentenceEmbedder(BaseEmbedder):
         use_amp: bool = False,
         save_best_model: bool = True,
         show_progress_bar: bool = True,
+        checkpoint_path: Text = None,
+        checkpoint_save_epoch: int = None,
+        checkpoint_save_total_limit: int = None,
+        resume_from_checkpoint: Text = None,
         **kwargs,
     ):
         """
@@ -232,7 +252,6 @@ class SentenceEmbedder(BaseEmbedder):
         """
         from venus.dataset_reader.TripletDataset import TripletsDataset
         # from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
-
         # Producing data
         triplets_data = []
         if isinstance(triplets_data_path, str):
@@ -242,11 +261,11 @@ class SentenceEmbedder(BaseEmbedder):
                 raise FileNotFoundError(f"triplets data path {path} does not exist")
             triplets_data.extend(file_util.load_json(path)['data'])
 
-        sentence_embedding = CustomSentenceEmbedding.from_pretrained(
-            model_name_or_path=pretrained_model
-        )
+        # sentence_embedding = CustomSentenceTransformer.from_pretrained(
+        #     model_name_or_path=pretrained_model
+        # )
 
-        sentence_embedding.model.max_seq_length = 128
+        # sentence_embedding.model.max_seq_length = 128
 
         train_dataset = TripletsDataset(
             triplet_examples=triplets_data,
@@ -254,17 +273,28 @@ class SentenceEmbedder(BaseEmbedder):
             pos_key="pos",
             neg_key="neg"
         )
-        sentence_embedding.train_negative_ranking(
-            train_dataset=train_dataset,
-            batch_size=batch_size,
+        train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
+        train_loss = losses.TripletLoss(model=self.model)
+
+        # Train the model
+        self.model.fit(
+            train_objectives=[(train_dataloader, train_loss)],
+            evaluator=None,
             epochs=epochs,
             warmup_steps=warmup_steps,
-            model_save_path=model_save_path,
+            output_path=model_save_path,
             evaluation_steps=evaluation_steps,
             use_amp=use_amp,
+            optimizer_params={'lr': 2e-5},
+            optimizer_class=transformers.AdamW,
             scheduler='WarmupLinear',
             weight_decay=weight_decay,
             max_grad_norm=max_grad_norm,
             save_best_model=save_best_model,
             show_progress_bar=show_progress_bar,
+            checkpoint_path=checkpoint_path,
+            checkpoint_save_epoch=checkpoint_save_epoch,
+            checkpoint_save_total_limit=checkpoint_save_total_limit,
+            resume_from_checkpoint=resume_from_checkpoint
         )
+        self.model.save(model_save_path)
