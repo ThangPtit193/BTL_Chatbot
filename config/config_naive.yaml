@@ -6,7 +6,7 @@ EMBEDDER:
   package: saturn.components.embeddings.embedding_models
   TRAINER:
     # A data_config.json file
-    data_config_path: data/data_config.json
+    data_config_path: data/train_data/dummy/data_config.json
     # The pretrained model
     #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
     pretrained_model: vinai/phobert-base

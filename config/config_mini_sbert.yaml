@@ -7,9 +7,9 @@ EMBEDDER:
 
   TRAINER:
     triplets_data_path:
-      - data/triples/triples_10.json
-      - data/triples/triples_20.json
-      - data/triples/triples_30.json
+      - data/train_data/dummy/triples/triples_10.json
+      - data/train_data/dummy/triples/triples_20.json
+      - data/train_data/dummy/triples/triples_30.json
     pretrained_model: vinai/phobert-base
     model_save_path: models
     n_samples: 10
