@@ -1,5 +1,5 @@
 import click
-from meteor.kr_manager import KRManager
+from saturn.kr_manager import KRManager
 from comet.lib import logger
 
 logger.configure_logger("DEBUG")
@@ -12,7 +12,7 @@ def entry_point():
 
 @click.command()
 def version():
-    print(f"Meteor version: {click.__version__}")
+    print(f"Saturn version: {click.__version__}")
 
 
 @click.command()

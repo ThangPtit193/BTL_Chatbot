@@ -11,12 +11,12 @@ from comet.lib.helpers import get_module_or_attr
 from comet.utilities.utility import convert_unicode
 from pandas import DataFrame
 
-from meteor.components.utils.document import Document, EvalResult
-from meteor.constants import INDEX_RESULT_FILES
-from meteor.utils.config_parser import ConfigParser
+from saturn.components.utils.document import Document, EvalResult
+from saturn.constants import INDEX_RESULT_FILES
+from saturn.utils.config_parser import ConfigParser
 
 if TYPE_CHECKING:
-    from meteor.components.embeddings.embedding_models import SentenceEmbedder
+    from saturn.components.embeddings.embedding_models import SentenceEmbedder
 
 _logger = logger.get_logger(__name__)
 

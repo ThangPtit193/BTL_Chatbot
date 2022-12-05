@@ -12,7 +12,7 @@
 
 
 
-Meteor Services is a service that enables you to upload document to DocumentStore, semantic document search use case and
+Saturn Services is a service that enables you to upload document to DocumentStore, semantic document search use case and
 training
 model (**coming soon**).
 Whether you want to perform Question Answering or semantic document search, you can use the SOTA NLP models
@@ -34,7 +34,7 @@ in Venus hub to provide unique search experiences and allow your users to query 
 
 ## 💾 Installation
 
-The following command will install the latest version of Meteor from the main branch.
+The following command will install the latest version of Saturn from the main branch.
 
 ```shell
 pip install .
@@ -66,12 +66,12 @@ distribution. Otherwise you may have to enable the conda-forge channel for the f
 Starting from a fresh environment:
 
 ```shell
-conda create -n meteor python==3.7.9
-conda activate meteor
+conda create -n saturn python==3.7.9
+conda activate saturn
 pip install .
 
 # Test version 
-meteor version
+saturn version
 ```
 
 To support for most current servers, we highly recommend install pytorch in stable version if using GPU (**Optional**)
@@ -92,7 +92,7 @@ GENERAL:
 
 EMBEDDER:
   class: NaiveEmbedder
-  package: meteor.components.embeddings.embedding_models
+  package: saturn.components.embeddings.embedding_models
   TRAINER:
     # A data_config.json file
     data_config_path: data/data_config.json
@@ -120,9 +120,9 @@ EMBEDDER:
     show_progress_bar: True
 
 EVALUATION:
-  # Corpus name or path, meteor will load your corpus dataset from local or axiom hub (coming soon)
+  # Corpus name or path, saturn will load your corpus dataset from local or axiom hub (coming soon)
   corpus_name_or_path: "assets/corpus_company.json"
-  # Corpus name or path, meteor will load your query dataset from local or axiom hub ((coming soon))
+  # Corpus name or path, saturn will load your query dataset from local or axiom hub ((coming soon))
   query_name_or_path: "assets/query_company.json"
   model_name_or_path: [ "distilbert-multilingual-faq-v3.2" , "khanhpd2/sbert_phobert_large_cosine_sim", "timi-idol-paraphrase-multilingual-MiniLM-L12-v2-v.1.0.1" ]
 
@@ -168,7 +168,7 @@ If configuration path is none, the default configuration will be loaded. Use `--
 configuration path.
 
 ```shell
-meteor test 
+saturn test 
 ```
 
 The benchmark results will be saved at [./reports](reports) folder.
@@ -189,7 +189,7 @@ models, [see here](https://docs.google.com/document/d/1bTPGMUd4q0591bIRb9g28X1qx
 To train a model, run:
 
 ```shell
-meteor train -c <config/config.yaml>
+saturn train -c <config/config.yaml>
 ```
 
 #### Evaluation
@@ -197,7 +197,7 @@ meteor train -c <config/config.yaml>
 To evaluate a model, run:
 
 ```shell
-meteor test -c <config/config.yaml>
+saturn test -c <config/config.yaml>
 ```
 
 #### Inference
@@ -218,13 +218,13 @@ Options:
 ```
 
 ```shell
-meteor push --model_path <model_path> --name <name> --replace <replace>
+saturn push --model_path <model_path> --name <name> --replace <replace>
 ```
 
 To pull your model from Axiom Hub, you can use the following command.
 
 ```console
-Usage: meteor pull [OPTIONS]
+Usage: saturn pull [OPTIONS]
 
 Options:
   -n, --name TEXT          The name of the model to pull  [required]
@@ -234,13 +234,13 @@ Options:
 ```
 
 ```shell
-meteor pull --name <name> --output_path <output_path> --replace <replace>
+saturn pull --name <name> --output_path <output_path> --replace <replace>
 ```
 
 To list all models in Axiom Hub, you can use the following command.
 
 ```shell
-meteor ls
+saturn ls
 ```
 
 ## Reference

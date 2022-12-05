@@ -7,10 +7,10 @@ env = Env()
 env.read_env(f"{os.getcwd()}/.env")  # read .env file, if it exists
 
 HOME = expanduser("~")
-METEOR_DIR = os.path.join(HOME, ".meteor")
-METEOR_DIR_CONFIGURE = os.path.join(METEOR_DIR, "config")
-METEOR_DIR_DATASET = os.path.join(METEOR_DIR, "dataset")
-METEOR_DIR_MODEL = os.path.join(METEOR_DIR, "models")
+SATURN_DIR = os.path.join(HOME, ".saturn")
+SATURN_DIR_CONFIGURE = os.path.join(SATURN_DIR, "config")
+SATURN_DIR_DATASET = os.path.join(SATURN_DIR, "dataset")
+SATURN_DIR_MODEL = os.path.join(SATURN_DIR, "models")
 
 DEFAULT_API_SECRET_TOKEN = "t17ySBMD2XeX0cG0yypF/XlsH7dIGiThBsz/f4pr5Sc="
 

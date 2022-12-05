@@ -1,7 +1,7 @@
 import pytest
 
-from meteor.pipelines.standard_pipelines import DocumentSearchPipeline, SearchSummarizationPipeline
-from meteor.schema import MultiLabel, Label, Answer, Span, Document, EvaluationResult
+from saturn.pipelines.standard_pipelines import DocumentSearchPipeline, SearchSummarizationPipeline
+from saturn.schema import MultiLabel, Label, Answer, Span, Document, EvaluationResult
 
 
 @pytest.mark.parametrize("retriever_with_docs", ["embedding"], indirect=True)

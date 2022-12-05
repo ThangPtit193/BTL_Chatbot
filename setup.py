@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
-from meteor.version import __version__
+from saturn.version import __version__
 
 
 def package_files(directory):
@@ -16,12 +16,12 @@ with open('requirements.txt') as f:
     required_packages = f.readlines()
 
 setup(
-    name='meteor',
+    name='saturn',
     version=__version__,
-    description='Meteor for training, evaluating and interring SOTA models',
+    description='Saturn for training, evaluating and interring SOTA models',
     packages=find_packages(),
     include_package_data=True,
-    py_modules=['meteor'],
+    py_modules=['saturn'],
     install_requires=required_packages,
     python_requires='>=3.6.0',
     package_data={
@@ -32,7 +32,7 @@ setup(
 
     entry_points={
         'console_scripts': [
-            'meteor = meteor.run_cli:entry_point'
+            'saturn = saturn.run_cli:entry_point'
         ]
     },
 )
