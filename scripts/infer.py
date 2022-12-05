@@ -1,10 +1,11 @@
 from sentence_transformers import SentenceTransformer, util
 
 # model = SentenceTransformer('./models')
-model = SentenceTransformer('./models')
+model = SentenceTransformer('khanhpd2/sbert_phobert_large_cosine_sim')
 
 # Two lists of sentences
 sentences1 = [
+    "Tôi rất thích con mèo",
     "Tôi rất thích con mèo",
     '"Tôi rất thích con chó',
     'Tôi rất thích con mèo',
@@ -13,6 +14,7 @@ sentences1 = [
     'hôm nay tôi đi học',
 ]
 sentences2 = [
+    "Tôi không thích con mèo",
     'Tôi yêu con mèo rất nhiều',
     'Tôi thương con chó rất nhiều',
     'Tôi rất ghét con mèo',
