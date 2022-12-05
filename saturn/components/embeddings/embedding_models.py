@@ -33,6 +33,9 @@ class BaseEmbedder(BertEmbedder):
             if hasattr(self, k):
                 setattr(self, k, val)
 
+    def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
+        super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
+
     def train(self, trainer_config: Dict):
         self._train(**trainer_config)
 
@@ -47,8 +50,8 @@ class NaiveEmbedder(BaseEmbedder):
             if hasattr(self, k):
                 setattr(self, k, val)
 
-    def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
-        super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
+    # def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
+    #     super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
 
     def _train(
         self,
@@ -204,13 +207,13 @@ class SentenceEmbedder(BaseEmbedder):
     def __init__(self, model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased"):
         super(SentenceEmbedder, self).__init__()
         self.model_name_or_path: Text = model_name_or_path
-        self._model: CustomSentenceTransformer = None
+        self._learner: CustomSentenceTransformer = None
 
     @property
-    def model(self):
-        if not self._model:
-            self._model = CustomSentenceTransformer.from_pretrained(self.model_name_or_path)
-        return self._model
+    def learner(self):
+        if not self._learner:
+            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path)
+        return self._learner
 
     def _train(
         self,
@@ -274,10 +277,10 @@ class SentenceEmbedder(BaseEmbedder):
             neg_key="neg"
         )
         train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
-        train_loss = losses.TripletLoss(model=self.model)
+        train_loss = losses.TripletLoss(model=self.learner)
 
         # Train the model
-        self.model.fit(
+        self.learner.fit(
             train_objectives=[(train_dataloader, train_loss)],
             evaluator=None,
             epochs=epochs,
@@ -297,4 +300,4 @@ class SentenceEmbedder(BaseEmbedder):
             checkpoint_save_total_limit=checkpoint_save_total_limit,
             resume_from_checkpoint=resume_from_checkpoint
         )
-        self.model.save(model_save_path)
+        self.learner.save(model_save_path)
