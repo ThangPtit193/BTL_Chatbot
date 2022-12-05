@@ -1,0 +1,33 @@
+{
+  "science.ask_application.VIRUS": [
+    "Cho biết  1 số ưng dụng of vi rút",
+    "Cho biết  vài ưng dung của virut",
+    "Cho biết  vài ứng dung of virus",
+    "Cho biết ưng dung of virut",
+    "Cho biết ưng dung of zi rút",
+    "Cho t bít úng dụng of zi rút",
+    "Cho tôi biết ung dung của virus",
+    "ad cho t hỏi về vai tro của di truyền liên keets",
+    "ad cho t hỏi về vai trò của di truyen lieen ket"
+  ],
+  "science.ask_role.DI_TRUYEN_LIEN_KET": [
+    "ad cho t hỏi về ý nghĩa của di truyền liên kết",
+    "ad cho tôi hỏi về v/trò của di truyen lieen kết",
+    "bạn cho mình hỏi về vai tro của di truyen lien kết",
+    "bạn cho mình hỏi về vai trò của di truyen lien kết",
+    "tooi chi muon test thoiu",
+    "test do ok khum bao"
+  ],
+  "chemistry.ask_nature_state.SILIC": [
+    "Silic có trang thái tn ra sao",
+    "Silic có trang thái tu nhien như răng",
+    "Silic có trạng thái t/nhiên như nào",
+    "Silic có trạng thái t/nhiên ra làm sao",
+    "Silic thì có trang thái t/nhiên như thế nào",
+    "Silic thì có trang thái tu nhien như thế nào",
+    "Silic thì có trang thái tu nhien ntn",
+    "Silic thì có trang thái tự nhiên như thế nào",
+    "anh k rõ trang thái t/nhiên của si líc, timi có thể chỉ cho mình được không",
+    "anh k rõ trạng thái tn của Silic, timi có thể chỉ cho tớ được không"
+  ]
+}
