@@ -31,7 +31,7 @@ EMBEDDER:
     show_progress_bar: True
 
 EVALUATION:
-  corpus_name_or_path: "data/docs/corpus.json"
-  query_name_or_path: "data/docs/query.json"
+  corpus_name_or_path: "eval-data/timi/corpus.json"
+  query_name_or_path: "eval-data/timi/query.json"
   model_name_or_path: ["distilbert-multilingual-faq-v3.2"]
 
