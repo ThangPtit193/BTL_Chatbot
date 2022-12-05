@@ -30,7 +30,8 @@ EMBEDDER:
 
 EVALUATION:
   type: "evaluation_pipeline"
-  corpus_name_or_path: "data/docs/corpus_docs.json"
-  query_name_or_path: "data/docs/query_docs.json"
-  model_name_or_path: [ "fschool-distilbert-multilingual-faq-v8.0.0" ]
+  corpus_name_or_path: "data/eval-data/timi/corpus.json"
+  query_name_or_path: "data/eval-data/timi/query.json"
+  model_name_or_path:
+    - "distilbert-multilingual-faq-v3.2"
 

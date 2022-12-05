@@ -31,7 +31,7 @@ EMBEDDER:
     show_progress_bar: True
 
 EVALUATION:
-  corpus_name_or_path: "assets/corpus_company.json"
-  query_name_or_path: "assets/query_company.json"
+  corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
+  query_name_or_path: "data/eval-data/dummy/query_docs.json"
   model_name_or_path: [ "distilbert-multilingual-faq-v3.2" , "khanhpd2/sbert_phobert_large_cosine_sim", "timi-idol-paraphrase-multilingual-MiniLM-L12-v2-v.1.0.1"]
 
