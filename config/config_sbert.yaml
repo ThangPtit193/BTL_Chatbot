@@ -4,7 +4,7 @@ GENERAL:
 EMBEDDER:
   class: SentenceEmbedder
   package: meteor.components.embeddings.embedding_models
-
+  model_name_or_path: vinai/phobert-base
   TRAINER:
     triplets_data_path:
       - assets/timi/bm25_embedder/triples_2000000.json
@@ -12,18 +12,21 @@ EMBEDDER:
       - assets/timi/bm25_embedder/triples_6000000.json
       - assets/timi/bm25_embedder/triples_8000000.json
       - assets/timi/bm25_embedder/triples_8225130.json
-    pretrained_model: vinai/phobert-base
     model_save_path: models
     n_samples: 10
     batch_size: 128
-    epochs: 1000
+    epochs: 10
     warmup_steps: 5000
     evaluation_steps: 2000
     weight_decay: 0.01
     max_grad_norm: 1.0
-    use_amp: False
+    use_amp: True
     save_best_model: True
     show_progress_bar: True
+    checkpoint_path: models/checkpoints
+    checkpoint_save_epoch: 1
+    checkpoint_save_total_limit: 10
+#    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
 
 EVALUATION:
   type: "evaluation_pipeline"

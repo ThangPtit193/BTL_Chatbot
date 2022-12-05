@@ -11,9 +11,9 @@ EMBEDDER:
     #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
     pretrained_model: vinai/phobert-base
     # Total of steps, it depends on the number of question answering pair that you have
-    steps: 1000
+    steps: 350
     # When reach this step, we will be saved checkpoint
-    save_steps: 1000
+    save_steps: 100
     # The max length of tokenizer
     max_length: 128
     # Use 20 for cossim, and 1 when you work with un-normalized embeddings with dot product
