@@ -10,7 +10,6 @@ from comet.lib import file_util, logger
 from comet.lib.helpers import get_module_or_attr
 from comet.utilities.utility import convert_unicode
 from pandas import DataFrame
-
 from saturn.components.utils.document import Document, EvalResult
 from saturn.constants import INDEX_RESULT_FILES
 from saturn.utils.config_parser import ConfigParser
@@ -94,8 +93,8 @@ class KRManager:
             self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=model_name_or_path)
 
             tic = perf_counter()
-            tgt_docs = [doc.text for doc in self.corpus_docs]
-            src_docs = [doc.text for doc in self.query_docs]
+            tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
+            src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
             similarity_data = self.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
             toc = perf_counter()
             retriever_time = toc - tic
