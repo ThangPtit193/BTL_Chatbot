@@ -146,7 +146,7 @@ class KRManager:
         df.to_csv(target_path)
 
     def _extract_eval_result(
-        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
+            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
     ) -> List[dict]:
         eval_results = []
 
@@ -157,11 +157,10 @@ class KRManager:
 
             # Get top_k relevant docs from indices
             top_k_relevant_docs = []
-            num_srcs = len(src_docs)
-            for i in indices[:num_srcs]:
+            ground_truth = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
+            for i in indices[:len(ground_truth)]:
                 top_k_relevant_docs.append(tgt_docs[i].text)
 
-            ground_truth = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
             ap = 0
             for idx, relevant_doc in enumerate(top_k_relevant_docs):
                 if relevant_doc in ground_truth:
