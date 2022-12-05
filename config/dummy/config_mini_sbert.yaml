@@ -25,7 +25,7 @@ EMBEDDER:
     checkpoint_path: models/checkpoints
     checkpoint_save_epoch: 50
     checkpoint_save_total_limit: 3
-    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
+#    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
 
 EVALUATION:
   type: "evaluation_pipeline"

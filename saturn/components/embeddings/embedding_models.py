@@ -7,7 +7,7 @@ import torch
 import torch.multiprocessing as mp
 import transformers
 from comet.components.embeddings.embedding_models import BertEmbedder
-from comet.lib import file_util
+from comet.lib import file_util, logger
 from sentence_transformers import losses
 from torch.utils.data import DataLoader
 from tqdm import tqdm
@@ -16,12 +16,13 @@ from transformers import (
     AutoTokenizer,
     get_linear_schedule_with_warmup,
 )
-
+import shutil
 from .dataset import data_producer
 from .net import AutoModelForSentenceEmbedding, CustomSentenceTransformer
 
 __all__ = []
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+_logger = logger.get_logger(__name__)
 
 
 class BaseEmbedder(BertEmbedder):
@@ -97,15 +98,15 @@ class NaiveEmbedder(BaseEmbedder):
         # Start training process
         self._fit(
             queue, pretrained_model=pretrained_model, steps=steps, max_length=max_length, scale=scale,
-            save_steps=save_steps, model_save_path=model_save_path
+            save_steps=save_steps, model_save_path=model_save_path, **kwargs
         )
 
         # Terminate data procedure
         p.terminate()
         exit()
 
-    @staticmethod
     def _fit(
+        self,
         queue,
         pretrained_model='microsoft/MiniLM-L12-H384-uncased',
         steps: int = 20000,
@@ -113,6 +114,11 @@ class NaiveEmbedder(BaseEmbedder):
         scale: int = 20,
         save_steps: int = 10000,
         model_save_path: Text = "models",
+        checkpoint_path: Text = None,
+        checkpoint_save_step: int = None,
+        checkpoint_save_total_limit: int = None,
+        resume_from_checkpoint: Text = None,
+        **kwargs
     ):
         tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
         model = AutoModelForSentenceEmbedding(pretrained_model, tokenizer)
@@ -132,8 +138,20 @@ class NaiveEmbedder(BaseEmbedder):
         max_grad_norm = 1
         model.train()
 
+        step_offset = None
+        if resume_from_checkpoint:
+            if not os.path.exists(resume_from_checkpoint):
+                raise ValueError(f"Resume from checkpoint {resume_from_checkpoint} does not exist")
+            checkpoint = torch.load(resume_from_checkpoint, map_location=device)
+            step_offset = checkpoint['step']
+            optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+            lr_scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
+            model.load_state_dict(checkpoint['model_state_dict'])
+
         print(f"Starting training process")
         for global_step in tqdm(range(steps)):
+            if step_offset and global_step < step_offset:
+                continue
             # Get the batch data
             while queue.empty():
                 time.sleep(0.5)
@@ -192,14 +210,53 @@ class NaiveEmbedder(BaseEmbedder):
             lr_scheduler.step()
 
             # Save model
+            if bool(
+                checkpoint_path is not None
+                and checkpoint_save_step is not None
+                and checkpoint_save_step > 0
+                and (global_step + 1) % checkpoint_save_step == 0
+            ):
+                self.save_checkpoint(
+                    model, global_step, optimizer, lr_scheduler, checkpoint_path, checkpoint_save_total_limit
+                )
+                print(f"Saved checkpoint at step: {global_step} at {checkpoint_path}")
+
+            # Save model
             if (global_step + 1) % save_steps == 0:
                 output_path = os.path.join(model_save_path, str(global_step + 1))
                 model.save_pretrained(output_path)
-                print(f"Saved checkpoint at step: {global_step} at {output_path}")
+                print(f"Saved model at step: {global_step} at {output_path}")
 
         print(f"Save final checkpoint at: {model_save_path}/final")
         output_path = os.path.join(model_save_path, "final")
         model.save_pretrained(output_path)
+
+    @staticmethod
+    def save_checkpoint(model, step, optimizer, scheduler, checkpoint_path, checkpoint_save_total_limit):
+        _logger.info(f"Saving checkpoint for epoch {step}")
+        model_checkpoint_path = os.path.join(checkpoint_path, "step-{}".format(step))
+        if not os.path.exists(model_checkpoint_path):
+            os.makedirs(model_checkpoint_path)
+
+        model_checkpoint_file = os.path.join(model_checkpoint_path, "checkpoint.pt")
+
+        torch.save({
+            'step': step,
+            'model_state_dict': model.state_dict(),
+            'optimizer_state_dict': optimizer.state_dict(),
+            'scheduler_state_dict': scheduler.state_dict(),
+        }, model_checkpoint_file)
+        # Delete old checkpoints
+        if checkpoint_save_total_limit is not None and checkpoint_save_total_limit > 0:
+            old_checkpoints = []
+            for subdir in os.listdir(checkpoint_path):
+                prefix, epoch = subdir.split("-")
+                if epoch.isdigit():
+                    old_checkpoints.append({'step': int(step), 'path': os.path.join(checkpoint_path, subdir)})
+
+            if len(old_checkpoints) > checkpoint_save_total_limit:
+                old_checkpoints = sorted(old_checkpoints, key=lambda x: x['step'])
+                shutil.rmtree(old_checkpoints[0]['path'])
 
 
 class SentenceEmbedder(BaseEmbedder):

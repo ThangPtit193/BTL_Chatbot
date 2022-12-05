@@ -6,7 +6,7 @@ EMBEDDER:
   package: saturn.components.embeddings.embedding_models
   TRAINER:
     # A data_config.json file
-    data_config_path: data/data_config.json
+    data_config_path: data/train_data/dummy/data_config.json
     # The pretrained model
     #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
     pretrained_model: vinai/phobert-base
@@ -18,7 +18,7 @@ EMBEDDER:
     max_length: 128
     # Use 20 for cossim, and 1 when you work with un-normalized embeddings with dot product
     scale: 20
-    batch_size: 32
+    batch_size: 30
     model_save_path: models
     warmup_steps: 50
     datasets_per_batch: 2
@@ -29,6 +29,10 @@ EMBEDDER:
     use_amp: False
     save_best_model: True
     show_progress_bar: True
+    checkpoint_path: checkpoints
+    checkpoint_save_step: 50
+    checkpoint_save_total_limit: 3
+    resume_from_checkpoint: null
 
 EVALUATION:
   corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"

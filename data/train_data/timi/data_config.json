@@ -1,0 +1,27 @@
+[
+  {
+    "name": "assets/timi/bm25_embedder/triples_2000000.json",
+    "lines": 10,
+    "weight": 1
+  },
+  {
+    "name": "assets/timi/bm25_embedder/triples_4000000.json",
+    "lines": 12,
+    "weight": 1
+  },
+  {
+    "name": "assets/timi/bm25_embedder/triples_6000000.json",
+    "lines": 12,
+    "weight": 2
+  },
+  {
+    "name": "assets/timi/bm25_embedder/triples_8000000.json",
+    "lines": 12,
+    "weight": 2
+  },
+  {
+    "name": "assets/timi/bm25_embedder/triples_8225130.json",
+    "lines": 12,
+    "weight": 2
+  }
+]

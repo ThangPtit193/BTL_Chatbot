@@ -1,16 +1,16 @@
 [
   {
-    "name": "data/triples/triples_10.json",
+    "name": "data/train_data/dummy/triples/triples_10.json",
     "lines": 10,
     "weight": 1
   },
   {
-    "name": "data/triples/triples_20.json",
+    "name": "data/train_data/dummy/triples/triples_20.json",
     "lines": 12,
     "weight": 1
   },
   {
-    "name": "data/triples/triples_30.json",
+    "name": "data/train_data/dummy/triples/triples_30.json",
     "lines": 12,
     "weight": 2
   }
