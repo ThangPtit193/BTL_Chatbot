@@ -3,7 +3,7 @@ GENERAL:
 
 EMBEDDER:
   class: SentenceEmbedder
-  package: meteor.components.embeddings.embedding_models
+  package: saturn.components.embeddings.embedding_models
   model_name_or_path: vinai/phobert-base
   TRAINER:
     triplets_data_path:

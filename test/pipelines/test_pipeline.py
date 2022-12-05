@@ -2,8 +2,8 @@ import logging
 
 import pytest
 
-from meteor.nodes.base import BaseComponent
-from meteor.pipelines.base import Pipeline
+from saturn.nodes.base import BaseComponent
+from saturn.pipelines.base import Pipeline
 from test.conftest import SAMPLES_PATH
 
 logger = logging.getLogger(__name__)
@@ -25,7 +25,7 @@ class ParentComponent(BaseComponent):
 # @pytest.mark.elasticsearch
 def test_to_code_creates_same_pipelines():
     query_pipeline = Pipeline.load_from_yaml(
-        SAMPLES_PATH / "pipeline" / "test.meteor-pipeline.yml", pipeline_name="indexing_pipeline"
+        SAMPLES_PATH / "pipeline" / "test.saturn-pipeline.yml", pipeline_name="indexing_pipeline"
     )
     query_pipeline_code = query_pipeline.to_code(pipeline_variable_name="indexing_pipeline_from_code")
 

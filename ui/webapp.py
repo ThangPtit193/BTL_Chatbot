@@ -34,7 +34,7 @@ def set_state_if_absent(key, value):
 
 def main():
 
-    st.set_page_config(page_title="Meteor Demo", page_icon="https://ibb.co/4JjtwLy")
+    st.set_page_config(page_title="saturn Demo", page_icon="https://ibb.co/4JjtwLy")
 
     # Persistent state
     set_state_if_absent("question", DEFAULT_QUESTION_AT_STARTUP)
@@ -50,14 +50,14 @@ def main():
         st.session_state.raw_json = None
 
     # Title
-    st.write("# Meteor Demo - Explore the world")
+    st.write("# saturn Demo - Explore the world")
     st.markdown(
         """
 This demo takes its data from a selection of VA Projects including Fschool, Ftech, Timi Idol
 
 <h3 style='text-align:center;padding: 0 0 1rem;'>VA Projects</h3>
 
-Ask any question on this topic and see if Meteor can find the correct answer to your query!
+Ask any question on this topic and see if saturn can find the correct answer to your query!
 
 *Note: do not use keywords, but full-fledged questions.* The demo is not optimized to deal with keyword queries and might misunderstand you.
 """,
