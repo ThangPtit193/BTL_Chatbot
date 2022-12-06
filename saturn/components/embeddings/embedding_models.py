@@ -110,7 +110,6 @@ class NaiveEmbedder(BaseEmbedder):
         queue,
         pretrained_model='microsoft/MiniLM-L12-H384-uncased',
         steps: int = 20000,
-        max_length: int = 128,
         scale: int = 20,
         save_steps: int = 10000,
         model_save_path: Text = "models",
@@ -118,6 +117,7 @@ class NaiveEmbedder(BaseEmbedder):
         checkpoint_save_step: int = None,
         checkpoint_save_total_limit: int = None,
         resume_from_checkpoint: Text = None,
+        max_length: int = 128,
         **kwargs
     ):
         tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
@@ -158,11 +158,12 @@ class NaiveEmbedder(BaseEmbedder):
                 print(f"Waiting for data will put into queue")
             batch = queue.get()
             # For the dataset containing a tuple (anchor, positive)
+            _max_length = min(max([len(b[0]) for b in batch]), max_length)
             if len(batch[0]) == 2:
                 text1 = tokenizer([b[0] for b in batch], return_tensors="pt",
-                                  max_length=max_length, truncation=True, padding="max_length")
+                                  max_length=_max_length, truncation=True, padding="max_length")
                 text2 = tokenizer([b[1] for b in batch], return_tensors="pt",
-                                  max_length=max_length, truncation=True, padding="max_length")
+                                  max_length=_max_length, truncation=True, padding="max_length")
 
                 # Computing the embeddings of two sentences
                 embeddings_a = model(**text1.to(device))
@@ -181,11 +182,11 @@ class NaiveEmbedder(BaseEmbedder):
             # For the dataset containing a tuple (anchor, positive, negative)
             else:
                 text1 = tokenizer([b[0] for b in batch], return_tensors="pt",
-                                  max_length=max_length, truncation=True, padding="max_length")
+                                  max_length=_max_length, truncation=True, padding="max_length")
                 text2 = tokenizer([b[1] for b in batch], return_tensors="pt",
-                                  max_length=max_length, truncation=True, padding="max_length")
+                                  max_length=_max_length, truncation=True, padding="max_length")
                 text3 = tokenizer([b[2] for b in batch], return_tensors="pt",
-                                  max_length=max_length, truncation=True, padding="max_length")
+                                  max_length=_max_length, truncation=True, padding="max_length")
                 embeddings_a = model(**text1.to(device))
                 embeddings_b1 = model(**text2.to(device))
                 embeddings_b2 = model(**text3.to(device))

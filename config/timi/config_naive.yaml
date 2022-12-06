@@ -6,19 +6,19 @@ EMBEDDER:
   package: saturn.components.embeddings.embedding_models
   TRAINER:
     # A data_config.json file
-    data_config_path: data/train_data/dummy/data_config.json
+    data_config_path: data/train_data/timi/data_config.json
     # The pretrained model
     #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
     pretrained_model: microsoft/MiniLM-L12-H384-uncased
     # Total of steps, it depends on the number of question answering pair that you have
-    steps: 1250000
+    steps: 2250000
     # When reach this step, we will be saved checkpoint
     save_steps: 300000
     # The max length of tokenizer
-    max_length: 128
+    max_length: 100
     # Use 20 for cossim, and 1 when you work with un-normalized embeddings with dot product
     scale: 20
-    batch_size: 64
+    batch_size: 128
     model_save_path: models
     warmup_steps: 1000
     datasets_per_batch: 2
