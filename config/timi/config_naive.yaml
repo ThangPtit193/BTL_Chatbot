@@ -9,7 +9,7 @@ EMBEDDER:
     data_config_path: data/train_data/dummy/data_config.json
     # The pretrained model
     #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
-    pretrained_model: vinai/phobert-base
+    pretrained_model: microsoft/MiniLM-L12-H384-uncased
     # Total of steps, it depends on the number of question answering pair that you have
     steps: 1250000
     # When reach this step, we will be saved checkpoint
@@ -18,7 +18,7 @@ EMBEDDER:
     max_length: 128
     # Use 20 for cossim, and 1 when you work with un-normalized embeddings with dot product
     scale: 20
-    batch_size: 256
+    batch_size: 64
     model_save_path: models
     warmup_steps: 1000
     datasets_per_batch: 2

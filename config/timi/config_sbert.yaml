@@ -14,8 +14,8 @@ EMBEDDER:
       - assets/timi/bm25_embedder/triples_8225130.json
     model_save_path: models
     n_samples: 10
-    batch_size: 128
-    epochs: 10
+    batch_size: 256
+    epochs: 20
     warmup_steps: 5000
     evaluation_steps: 2000
     weight_decay: 0.01
@@ -24,7 +24,7 @@ EMBEDDER:
     save_best_model: True
     show_progress_bar: True
     checkpoint_path: models/checkpoints
-    checkpoint_save_epoch: 1
+    checkpoint_save_epoch: 3
     checkpoint_save_total_limit: 10
 #    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
 
