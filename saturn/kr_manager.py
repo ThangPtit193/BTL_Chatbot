@@ -250,8 +250,3 @@ class KRManager:
                     num_relevant=num_relevant,
                 ))
         return docs
-
-
-if __name__ == "__main__":
-    kr = KRManager(config_path="config/timi/config_sbert.yaml")
-    kr.evaluate_embedder()
