@@ -197,27 +197,30 @@ class KRManager:
 
             # Get score of each relevant doc
 
-            for i, id in enumerate(indices[:src_doc.num_relevant]):
-                top_k_relevant_docs.append(tgt_docs[id])
-                relevant_doc_scores.append(str(similarities[i][1]))
+            for i in indices[:src_doc.num_relevant]:
+                top_k_relevant_docs.append(tgt_docs[i])
+                for id, answer in enumerate(similarities):
+                    if tgt_docs[i] == answer[0]:
+                        relevant_doc_scores.append(str(answer[1]))
 
             ap = 0
 
             ground_truth = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
             for idx, relevant_doc in enumerate(top_k_relevant_docs):
-                if relevant_doc in ground_truth:
-                    ap += 1
-                    if ap == 1 and rr_score == 0:
-                        rr_score = 1 / int(idx + 1)
-                    else:
-                        rr_score = rr_score
-                    ap_score += ap / (int(idx) + 1)
+                if relevant_doc not in ground_truth:
+                    continue
+                ap += 1
+                if ap == 1 and rr_score == 0:
+                    rr_score = 1 / int(idx + 1)
+                else:
+                    rr_score = rr_score
+                ap_score += ap / (int(idx) + 1)
 
             eval_result = EvalResult(
                 query=src_doc.text,
                 query_id=src_doc.id,
                 rr_score=rr_score,
-                ap_score=round(int(ap_score) / int(src_doc.num_relevant), 2),
+                ap_score=round((ap_score / src_doc.num_relevant), 2),
                 top_k_relevant=src_doc.num_relevant,
                 golden_docs=ground_truth,
                 most_relevant_docs=top_k_relevant_docs,
@@ -293,3 +296,8 @@ class KRManager:
                     num_relevant=num_relevant,
                 ))
         return docs
+
+
+if __name__ == "__main__":
+    kr = KRManager(config_path="config/timi/config_sbert.yaml")
+    kr.evaluate_embedder()
