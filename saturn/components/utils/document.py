@@ -12,7 +12,7 @@ class EvalResult:
             top_k_relevant: int = 20,
             golden_docs: List[str] = None,
             most_relevant_docs: List[str] = None,
-            relevant_doc_scores: List[str] = None
+            relevant_doc_scores: List[float] = None
     ):
         self.query = query
         self.query_id = query_id
