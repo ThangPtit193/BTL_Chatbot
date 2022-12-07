@@ -168,6 +168,7 @@ class KRManager:
             indices = self._arg_sort(similarities)
             rr_score = 0
             ap_score = 0
+            ap = 0
 
             # Get top_k relevant docs from indices
             top_k_relevant_docs = []
@@ -180,8 +181,6 @@ class KRManager:
                 for id, answer in enumerate(similarities):
                     if tgt_docs[i] == answer[0]:
                         relevant_doc_scores.append(str(answer[1]))
-
-            ap = 0
 
             ground_truth = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
             for idx, relevant_doc in enumerate(top_k_relevant_docs):
