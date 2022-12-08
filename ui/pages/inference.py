@@ -8,7 +8,7 @@ from saturn.kr_manager import KRManager
 from typing import List
 
 CONFIG_DEFAUT = "config/dummy/config_mini_sbert.yaml"
-
+# fschool-distilbert-multilingual-faq-v8.0.0
 
 # kr.load_model(model_name_or_path="fschool-distilbert-multilingual-faq-v8.0.0"
 
@@ -27,17 +27,9 @@ def read_txt_streamlit(file) -> List:
         lines.append(line.decode("utf-8"))
     return lines
 
-@st.experimental_singleton
-def get_model(input_model_name):
-    print("abc", input_model_name)
-    kr_loader = KRManager(CONFIG_DEFAUT)
-    kr_loader.embedder.load_model(pretrained_name_or_abspath = input_model_name)
-    print(kr_loader.model_name_or_path)
-    return kr_loader
-
 
 def check_input(input_doc):
-    if input_doc is not None:
+    if input_doc is not None and input_doc != "":
         return input_doc
     else:
         st.error("Please paste your text")
@@ -55,29 +47,12 @@ st.set_page_config(
     page_icon="🎈",
 )
 
-
-def _max_width_():
-    max_width_str = f"max-width: 1400px;"
-    st.markdown(
-        f"""
-    <style>
-    .reportview-container .main .block-container{{
-        {max_width_str}
-    }}
-    </style>    
-    """,
-        unsafe_allow_html=True,
-    )
+# st.sidebar.title("🔑 Knowledge retriever")
 
 
-_max_width_()
+st.title("🔑 Knowledge retriever ")
 
-c30, c31, c32 = st.columns([2.5, 1, 3])
-
-with c30:
-    st.title("🔑 Knowledge retriever")
-
-with st.expander("ℹ️ Introduce", expanded=True):
+with st.expander("ℹ️ Introduce", expanded=True, ):
     st.write(
         """     
 -   The Knowledge retriever will get the relevant sentences/paragraphs from query
@@ -90,41 +65,41 @@ with st.expander("ℹ️ Introduce", expanded=True):
 st.markdown("")
 st.markdown("## 📌 **Paste document** ##")
 with st.form(key="my_form"):
-    ce, c1, ce, c2, c3 = st.columns([0.07, 1, 0.07, 2, 0.07])
-    with c1:
-        model_name = st.text_input(
-            "Paste your model name",
-            help="Choose model from Huggingface or Axiom",
+    model_name = st.text_input(
+        "Paste your model name",
+        help="Choose model from Huggingface or Axiom",
+    )
+
+    top_N = st.slider(
+        "Top k",
+        min_value=1,
+        max_value=50,
+        value=10,
+        help="You can choose the number of relevant results to display. Between 1 and 50, default number is 10",
+
+    )
+
+    clear_memo = st.form_submit_button("Clear Cache")
+
+    doc = st.text_input(
+        "Paste your text below (max 50 words)",
+    )
+
+    MAX_WORDS = 50
+    import re
+
+    res = len(re.findall(r"\w+", doc))
+    if res > MAX_WORDS:
+        st.warning(
+            "⚠️ Your text contains "
+            + str(res)
+            + " words."
+            + " Only the first 50 words will be reviewed. Stay tuned as increased allowance is coming! 😊"
         )
+        doc = doc[:MAX_WORDS]
+    corpus_uploader = st.file_uploader("Choose a txt file", accept_multiple_files=False)
 
-        top_N = st.slider(
-            "# top_k",
-            min_value=1,
-            max_value=50,
-            value=10,
-            help="You can choose the number of relevant results to display. Between 1 and 50, default number is 10",
-        )
-
-    with c2:
-        doc = st.text_input(
-            "Paste your text below (max 200 words)",
-        )
-
-        MAX_WORDS = 200
-        import re
-
-        res = len(re.findall(r"\w+", doc))
-        if res > MAX_WORDS:
-            st.warning(
-                "⚠️ Your text contains "
-                + str(res)
-                + " words."
-                + " Only the first 200 words will be reviewed. Stay tuned as increased allowance is coming! 😊"
-            )
-            doc = doc[:MAX_WORDS]
-        corpus_uploader = st.file_uploader("Choose a txt file", accept_multiple_files=False)
-
-        submit_button = st.form_submit_button(label="✨ Get relevants sentences!")
+    submit_button = st.form_submit_button(label="✨ Get relevants sentences!")
 
 # if load_model_button:
 #     try:
@@ -138,11 +113,25 @@ with st.form(key="my_form"):
 #         st.stop()
 #     st.success("Model loaded successfully")
 
-def get_inference(input_doc, input_corpus, top_N, kr):
+def get_inference(input_doc, input_corpus, input_top_k, input_model):
     input_doc = check_input(input_doc)
     input_corpus = check_corpus(input_corpus)
-    inference_docs = kr.inference(input_doc, input_corpus, top_N)
-    return inference_docs
+    return input_model.inference(input_doc, input_corpus, input_top_k)
+
+@st.experimental_memo(max_entries = 2, ttl = 60*3)
+def get_model(input_model_name):
+    kr_loader = KRManager(CONFIG_DEFAUT)
+    try:
+        kr_loader.embedder.load_model(pretrained_name_or_abspath = input_model_name)
+    except Exception as e:
+        st.error("Model not found: Error: {}".format(e))
+        st.stop()
+    return kr_loader
+
+if clear_memo:
+    # Clear values from *all* memoized functions:
+    st.experimental_memo.clear()
+    st.experimental_rerun()
 
 if submit_button:
     kr = get_model(model_name)
@@ -168,12 +157,5 @@ if submit_button:
     df = df.format(format_dictionary)
     st.table(df)
     st.stop()
-
-# input_doc = check_input(doc)
-# corpus = check_corpus(corpus_uploader)
-# inference_docs = kr.inference(doc, corpus, top_N)
-
-# merge os pat
-
 
 
