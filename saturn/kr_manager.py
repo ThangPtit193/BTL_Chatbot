@@ -6,6 +6,7 @@ from time import perf_counter
 from typing import *
 
 import pandas as pd
+
 from comet.lib import file_util, logger
 from comet.lib.helpers import get_module_or_attr
 from comet.utilities.utility import convert_unicode
@@ -100,7 +101,8 @@ class KRManager:
             retriever_time = toc - tic
 
             evaluation_results[name].extend(
-                self._extract_eval_result(self.query_docs, self.corpus_docs, similarity_data))
+                self._extract_eval_result(self.query_docs, tgt_docs, similarity_data)
+            )
 
             df = pd.DataFrame(evaluation_results[name])
             self.save_detail_report(out_dir='reports', model_name=name, df=df)
@@ -145,8 +147,20 @@ class KRManager:
         target_path = out_dir / f"{model_name}.csv"
         df.to_csv(target_path)
 
+        # save report as Excel file
+        df["golden_docs"] = df["golden_docs"].apply(lambda x: self._split_list_to_line(x))
+        df["most_relevant_docs"] = df["most_relevant_docs"].apply(lambda x: self._split_list_to_line(x))
+        df["relevant_doc_scores"] = df["relevant_doc_scores"].apply(lambda x: self._split_list_to_line(x))
+        writer = pd.ExcelWriter(f"{str(target_path).replace('.csv', '.xlsx')}")
+        df.to_excel(writer, sheet_name="Detail Evaluation Report")
+        writer.save()
+        _logger.info(f"Evaluation report with excel format is saved at {str(target_path).replace('.csv', '.xlsx')}")
+
+    def _split_list_to_line(self, data: list):
+        return '\015'.join(data)
+
     def _extract_eval_result(
-        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
+            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
     ) -> List[dict]:
         eval_results = []
 
@@ -154,30 +168,40 @@ class KRManager:
             indices = self._arg_sort(similarities)
             rr_score = 0
             ap_score = 0
+            ap = 0
 
             # Get top_k relevant docs from indices
             top_k_relevant_docs = []
-            num_srcs = len(src_docs)
-            for i in indices[:num_srcs]:
-                top_k_relevant_docs.append(tgt_docs[i].text)
+            relevant_doc_scores = []
+
+            # Get score of each relevant doc
+
+            for i in indices[:src_doc.num_relevant]:
+                top_k_relevant_docs.append(tgt_docs[i])
+                for id, answer in enumerate(similarities):
+                    if tgt_docs[i] == answer[0]:
+                        relevant_doc_scores.append(str(answer[1]))
 
             ground_truth = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
-            ap = 0
             for idx, relevant_doc in enumerate(top_k_relevant_docs):
-                if relevant_doc in ground_truth:
-                    ap += 1
-                    if ap == 1:
-                        rr_score = 1
-                    ap_score += ap / (int(idx) + 1)
+                if relevant_doc not in ground_truth:
+                    continue
+                ap += 1
+                if ap == 1 and rr_score == 0:
+                    rr_score = 1 / int(idx + 1)
+                else:
+                    rr_score = rr_score
+                ap_score += ap / (int(idx) + 1)
 
             eval_result = EvalResult(
                 query=src_doc.text,
                 query_id=src_doc.id,
                 rr_score=rr_score,
-                ap_score=round(ap_score / (len(ground_truth)), 2),
-                top_k_relevant=len(top_k_relevant_docs),
+                ap_score=round((ap_score / src_doc.num_relevant), 2),
+                top_k_relevant=src_doc.num_relevant,
                 golden_docs=ground_truth,
-                most_relevant_docs=top_k_relevant_docs
+                most_relevant_docs=top_k_relevant_docs,
+                relevant_doc_scores=relevant_doc_scores
 
             )
             eval_results.append(eval_result.to_dict())

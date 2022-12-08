@@ -11,7 +11,8 @@ class EvalResult:
             ap_score: float = None,
             top_k_relevant: int = 20,
             golden_docs: List[str] = None,
-            most_relevant_docs: List["Document"] = None
+            most_relevant_docs: List[str] = None,
+            relevant_doc_scores: List[str] = None
     ):
         self.query = query
         self.query_id = query_id
@@ -20,6 +21,7 @@ class EvalResult:
         self.top_k_relevant = top_k_relevant
         self.most_relevant_docs = most_relevant_docs
         self.golden_docs = golden_docs
+        self.relevant_doc_scores = relevant_doc_scores
 
     @classmethod
     def from_dict(cls, data: Dict):
@@ -34,6 +36,7 @@ class EvalResult:
             "ap_score": self.ap_score,
             "golden_docs": self.golden_docs,
             "most_relevant_docs": self.most_relevant_docs,
+            "relevant_doc_scores": self.relevant_doc_scores
         }
 
     def __str__(self):
