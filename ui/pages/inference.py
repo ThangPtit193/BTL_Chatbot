@@ -57,7 +57,7 @@ with st.expander("ℹ️ Introduce", expanded=True, ):
         """     
 -   The Knowledge retriever will get the relevant sentences/paragraphs from query
 -   You can use it to experiment models from Huggingface or Axiom
-	    """
+    """
     )
 
     st.markdown("")
@@ -101,17 +101,6 @@ with st.form(key="my_form"):
 
     submit_button = st.form_submit_button(label="✨ Get relevants sentences!")
 
-# if load_model_button:
-#     try:
-#         kr = get_model(model_name)
-#         if kr is None:
-#             st.error("Model not found")
-#             st.stop()
-#         print((f"Model {model_name} loaded successfully"))
-#     except Exception as e:
-#         st.error("Model not found: Error: {}".format(e))
-#         st.stop()
-#     st.success("Model loaded successfully")
 
 def get_inference(input_doc, input_corpus, input_top_k, input_model):
     input_doc = check_input(input_doc)
@@ -138,7 +127,7 @@ if submit_button:
     inference_docs = get_inference(doc, corpus_uploader, top_N, kr)
 
 
-    st.markdown("## 🎈 **Check & download results**")
+    st.markdown("## 🎈 **Check results**")
     df = (
         DataFrame(inference_docs)
     )
