@@ -82,6 +82,27 @@ class KRManager:
         # TODO save the model and upload it to axiom
         # Your code here
 
+    def inference(self, input_query: str, input_corpus_list_or_path: Union[str, List[str]], top_k: int):
+        """
+        inference the input query with the input corpus
+        :param input_query: the input query
+        :param input_corpus_list_or_path: the input corpus list or the corpus path
+        :param top_k: the top k results
+        :return: the top k results
+        """
+        retriever_results = {'relevant doc': [], 'score': []}
+        # model_name_or_paths = self.model_name_or_path
+
+        input_query = [convert_unicode(input_query)]
+        input_corpus = self._get_input_reference_corpus(input_corpus_list_or_path)
+            # self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=model_name_or_path)
+        similarity_data = self.embedder.find_similarity(input_query, input_corpus, _no_sort=False, top_n = top_k)
+        similarity_data = similarity_data[0][:top_k]
+        # reformat the results
+        for text, score in similarity_data:
+            retriever_results['relevant doc'].append(text)
+            retriever_results['score'].append(score)
+        return retriever_results
     def evaluate_embedder(self, save_markdown: Optional[bool] = True):
         retriever_results = []
         model_name_or_paths = self.config_parser.eval_config()['model_name_or_path']
@@ -219,6 +240,29 @@ class KRManager:
         indices = np.argsort(scores)[::-1].tolist()
         return indices
 
+    @staticmethod
+    def _get_input_reference_corpus(list_or_path: str) -> List[str]:
+        """
+        Load the corpus from the given path.
+        :param list_or_path: Path to the corpus
+        :return: list of corpus
+        raise FileNotFoundError: If the given path is not found
+        """
+        # print(list_or_path)
+        if isinstance(list_or_path, str):
+            if not os.path.isfile(list_or_path):
+                raise FileNotFoundError(f"File {list_or_path} does not exist")
+            with open(list_or_path, "r") as f:
+                input_corpus = f.readlines()
+                for idx, item in enumerate(input_corpus):
+                    input_corpus[idx] = convert_unicode(item.replace("\n", ""))
+        elif isinstance(list_or_path, list):
+            input_corpus = list_or_path
+            for idx, item in enumerate(input_corpus):
+                input_corpus[idx] = convert_unicode(item)
+        else:
+            raise ValueError(f"Invalid input type {type(list_or_path)}")
+        return input_corpus
     @staticmethod
     def _load_docs(path: str, corpus_path: Optional[str] = None) -> List[Document]:
         """
