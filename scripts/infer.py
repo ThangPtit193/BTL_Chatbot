@@ -1,35 +1,24 @@
 from sentence_transformers import SentenceTransformer, util
+from comet.components.embeddings.embedding_models import BertEmbedder
+import pprint
 
 # model = SentenceTransformer('./models')
-model = SentenceTransformer('khanhpd2/sbert_phobert_large_cosine_sim')
-
+embedder = BertEmbedder(pretrained_name_or_abspath='timi-idol-phobert-32M-embedder-bm25-e10')
 # Two lists of sentences
-sentences1 = [
-    "Tôi rất thích con mèo",
-    "Tôi rất thích con mèo",
-    '"Tôi rất thích con chó',
-    'Tôi rất thích con mèo',
-    'Tôi rất thích con chó',
-    'hôm nay tôi đi học',
-    'hôm nay tôi đi học',
+query = "hôm nay không biết thời tiết ra sao nữa"
+corpus = [
+    "hôm nay không biết thời tiết ra sao nữa",
+    "hôm nay trời như nào nhỉ",
+    "thời tiết ở Đà Nẵng ntn vậy timi",
+    "không biết bây giờ Hà Nội có mưa không nhỉ",
+    "cho mình hỏi thời tiết tại Hải Phòng với",
+    "sắp đến đi du lịch mà ko biết thời tiết ở Đà Lạt có đỡ mưa ko ớ",
+    "mình cần biết Hàn Quốc đang có nhiệt độ ra sao",
+    "trời hôm nay nóng vãi",
+    "thời tiết chán ghia bot",
+    "trời mưa hoài dị trời",
+    "trời ơi là trời, sao mùa hè mà mưa quoài dậy chời",
+    "má ơi, nóng chết đi đc",
 ]
-sentences2 = [
-    "Tôi không thích con mèo",
-    'Tôi yêu con mèo rất nhiều',
-    'Tôi thương con chó rất nhiều',
-    'Tôi rất ghét con mèo',
-    'Tôi rất ghét con chó',
-    'hôm nay tôi đến trường',
-    'hôm nay tôi đi chơi',
-]
-
-# Compute embedding for both lists
-embeddings1 = model.encode(sentences1, convert_to_tensor=True)
-embeddings2 = model.encode(sentences2, convert_to_tensor=True)
-
-# Compute cosine-similarities
-cosine_scores = util.cos_sim(embeddings1, embeddings2)
-
-# Output the pairs with their score
-for i in range(len(sentences1)):
-    print("{} \t\t {} \t\t Score: {:.4f}".format(sentences1[i], sentences2[i], cosine_scores[i][i]))
+similarities = embedder.find_similarity([query], corpus)
+pprint.pprint(similarities)
