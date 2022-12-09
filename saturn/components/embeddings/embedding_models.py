@@ -157,13 +157,11 @@ class NaiveEmbedder(BaseEmbedder):
                 time.sleep(0.5)
                 print(f"Waiting for data will put into queue")
             batch = queue.get()
-            # For the dataset containing a tuple (anchor, positive)
-            _max_length = min(max([len(b[0]) for b in batch]), max_length)
             if len(batch[0]) == 2:
                 text1 = tokenizer([b[0] for b in batch], return_tensors="pt",
-                                  max_length=_max_length, truncation=True, padding="max_length")
+                                  max_length=max_length, truncation=True, padding="max_length")
                 text2 = tokenizer([b[1] for b in batch], return_tensors="pt",
-                                  max_length=_max_length, truncation=True, padding="max_length")
+                                  max_length=max_length, truncation=True, padding="max_length")
 
                 # Computing the embeddings of two sentences
                 embeddings_a = model(**text1.to(device))
@@ -178,15 +176,14 @@ class NaiveEmbedder(BaseEmbedder):
                 # Symmetric loss as in CLIP
                 loss = (cross_entropy_loss(scores, labels) +
                         cross_entropy_loss(scores.transpose(0, 1), labels)) / 2
-
             # For the dataset containing a tuple (anchor, positive, negative)
             else:
                 text1 = tokenizer([b[0] for b in batch], return_tensors="pt",
-                                  max_length=_max_length, truncation=True, padding="max_length")
+                                  max_length=max_length, truncation=True, padding="max_length")
                 text2 = tokenizer([b[1] for b in batch], return_tensors="pt",
-                                  max_length=_max_length, truncation=True, padding="max_length")
+                                  max_length=max_length, truncation=True, padding="max_length")
                 text3 = tokenizer([b[2] for b in batch], return_tensors="pt",
-                                  max_length=_max_length, truncation=True, padding="max_length")
+                                  max_length=max_length, truncation=True, padding="max_length")
                 embeddings_a = model(**text1.to(device))
                 embeddings_b1 = model(**text2.to(device))
                 embeddings_b2 = model(**text3.to(device))

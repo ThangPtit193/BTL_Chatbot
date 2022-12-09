@@ -11,11 +11,11 @@ EMBEDDER:
     #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
     pretrained_model: microsoft/MiniLM-L12-H384-uncased
     # Total of steps, it depends on the number of question answering pair that you have
-    steps: 2250000
+    steps: 1250000
     # When reach this step, we will be saved checkpoint
-    save_steps: 300000
+    save_steps: 100000
     # The max length of tokenizer
-    max_length: 100
+    max_length: 64
     # Use 20 for cossim, and 1 when you work with un-normalized embeddings with dot product
     scale: 20
     batch_size: 128
