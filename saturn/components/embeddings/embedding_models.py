@@ -26,8 +26,8 @@ _logger = logger.get_logger(__name__)
 
 
 class BaseEmbedder(BertEmbedder):
-    def __init__(self):
-        pass
+    def __init__(self, **kwargs):
+        self.cache_path = ".embeddings_cache"
 
     def initialize(self, **kwargs):
         for k, val in kwargs.items():
@@ -35,6 +35,7 @@ class BaseEmbedder(BertEmbedder):
                 setattr(self, k, val)
 
     def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
+        cache_path = cache_path or self.cache_path
         super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
 
     def train(self, trainer_config: Dict):
