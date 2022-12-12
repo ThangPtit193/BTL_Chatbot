@@ -22,13 +22,13 @@ EMBEDDER:
     weight_decay: 0.01
     max_grad_norm: 1.0
     use_amp: True
-    save_best_model: False # only use if you have evaluate dataset
+    save_best_model: False # only use if you have eval dataset
     show_progress_bar: True
-    checkpoint_path: checkpoints # not in model_save_path
+    checkpoint_path: checkpoints # checkpoint_path is not in model_save_path
     checkpoint_save_epoch: 3
     checkpoint_save_total_limit: 10
-    save_by_epoch: False
-    model_save_total_limit: 5
+    save_by_epoch: True # True if you want to save model by epoch
+    model_save_total_limit: 5 # total models you want to save
 #    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
 
 EVALUATION:

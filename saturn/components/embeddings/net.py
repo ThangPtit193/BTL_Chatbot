@@ -369,12 +369,13 @@ class CustomSentenceTransformer(SentenceTransformer):
 
         # Delete old checkpoints
         if model_save_total_limit is not None and model_save_total_limit > 0:
-            old_checkpoints = []
+            old_models = []
             for subdir in os.listdir(model_path):
                 epoch_numer = subdir.split("-")[-1]
-                old_checkpoints.append({'epochs': int(epoch_numer), 'path': os.path.join(model_path, subdir)})
+                if epoch_numer.isdigit():
+                    old_models.append({'epochs': int(epoch_numer), 'path': os.path.join(model_path, subdir)})
 
-            if len(old_checkpoints) > model_save_total_limit:
-                old_checkpoints = sorted(old_checkpoints, key=lambda x: x['epochs'])
+            if len(old_models) > model_save_total_limit:
+                old_checkpoints = sorted(old_models, key=lambda x: x['epochs'])
                 shutil.rmtree(old_checkpoints[0]['path'])
 
