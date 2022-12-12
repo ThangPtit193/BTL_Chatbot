@@ -182,7 +182,7 @@ class KRManager:
         return '\015'.join(data)
 
     def _extract_eval_result(
-        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
+            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
     ) -> List[dict]:
         eval_results = []
 
