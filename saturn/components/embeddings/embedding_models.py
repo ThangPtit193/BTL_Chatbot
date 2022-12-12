@@ -356,7 +356,8 @@ class SentenceEmbedder(BaseEmbedder):
             checkpoint_save_epoch=checkpoint_save_epoch,
             checkpoint_save_total_limit=checkpoint_save_total_limit,
             resume_from_checkpoint=resume_from_checkpoint,
-            model_save_total_limit= model_save_total_limit
+            save_by_epoch=save_by_epoch,
+            model_save_total_limit=model_save_total_limit
         )
         # save_best_model_path = os.path.join(model_save_path,"final_model")
         # if not os.path.exists(save_best_model_path):
