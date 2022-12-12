@@ -289,6 +289,8 @@ class SentenceEmbedder(BaseEmbedder):
         checkpoint_save_epoch: int = None,
         checkpoint_save_total_limit: int = None,
         resume_from_checkpoint: Text = None,
+        save_by_epoch: bool = True,
+        model_save_total_limit: int = None,
         **kwargs,
     ):
         """
@@ -341,7 +343,7 @@ class SentenceEmbedder(BaseEmbedder):
             epochs=epochs,
             warmup_steps=warmup_steps,
             output_path=model_save_path,
-            evaluation_steps=evaluation_steps,
+            # evaluation_steps=evaluation_steps,
             use_amp=use_amp,
             optimizer_params={'lr': 2e-5},
             optimizer_class=transformers.AdamW,
@@ -353,6 +355,11 @@ class SentenceEmbedder(BaseEmbedder):
             checkpoint_path=checkpoint_path,
             checkpoint_save_epoch=checkpoint_save_epoch,
             checkpoint_save_total_limit=checkpoint_save_total_limit,
-            resume_from_checkpoint=resume_from_checkpoint
+            resume_from_checkpoint=resume_from_checkpoint,
+            save_by_epoch=save_by_epoch,
+            model_save_total_limit=model_save_total_limit
         )
-        self.learner.save(model_save_path)
+        # save_best_model_path = os.path.join(model_save_path,"final_model")
+        # if not os.path.exists(save_best_model_path):
+        #     os.makedirs(save_best_model_path)
+        # self.learner.save(save_best_model_path)

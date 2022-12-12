@@ -4,28 +4,31 @@ GENERAL:
 EMBEDDER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
-  model_name_or_path: microsoft/MiniLM-L12-H384-uncased
+  model_name_or_path: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
   TRAINER:
     triplets_data_path:
-      - assets/timi/bm25_embedder/triples_2000000.json
-      - assets/timi/bm25_embedder/triples_4000000.json
-      - assets/timi/bm25_embedder/triples_6000000.json
-      - assets/timi/bm25_embedder/triples_8000000.json
-      - assets/timi/bm25_embedder/triples_8225130.json
+      - data/train_data/dummy/triples/triples_10.json
+#      - assets/timi/bm25_embedder/triples_2000000.json
+#      - assets/timi/bm25_embedder/triples_4000000.json
+#      - assets/timi/bm25_embedder/triples_6000000.json
+#      - assets/timi/bm25_embedder/triples_8000000.json
+#      - assets/timi/bm25_embedder/triples_8225130.json
     model_save_path: models
     n_samples: 10
-    batch_size: 256
-    epochs: 20
+    batch_size: 32
+    epochs: 3
     warmup_steps: 5000
     evaluation_steps: 2000
     weight_decay: 0.01
     max_grad_norm: 1.0
     use_amp: True
-    save_best_model: True
+    save_best_model: False # only use if you have eval dataset
     show_progress_bar: True
-    checkpoint_path: models/checkpoints
+    checkpoint_path: checkpoints # checkpoint_path is not in model_save_path
     checkpoint_save_epoch: 3
     checkpoint_save_total_limit: 10
+    save_by_epoch: True # True if you want to save model by epoch
+    model_save_total_limit: 5 # total models you want to save
 #    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
 
 EVALUATION:

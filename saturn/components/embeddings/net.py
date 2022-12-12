@@ -136,6 +136,8 @@ class CustomSentenceTransformer(SentenceTransformer):
             checkpoint_save_epoch: int = 500,
             checkpoint_save_total_limit: int = 1,
             resume_from_checkpoint: str = False,
+            save_by_epoch: bool = True,
+            model_save_total_limit: int = None
             ):
         """
         Train the model with the given training objective
@@ -326,8 +328,14 @@ class CustomSentenceTransformer(SentenceTransformer):
             ):
                 self.save_checkpoint(epoch, optimizers, schedulers, checkpoint_path, checkpoint_save_total_limit)
 
+            if bool(
+                save_by_epoch is True
+                and output_path is not None
+            ):
+                self.save_model(output_path,model_save_total_limit, epoch)
+
         if evaluator is None and output_path is not None:  # No evaluator, but output path: save final model version
-            self.save(output_path)
+            self.save(os.path.join(output_path, "final_model"))
 
     def save_checkpoint(self, epoch, optimizers, schedulers, checkpoint_path, checkpoint_save_total_limit):
         _logger.info(f"Saving checkpoint for epoch {epoch}")
@@ -354,3 +362,20 @@ class CustomSentenceTransformer(SentenceTransformer):
             if len(old_checkpoints) > checkpoint_save_total_limit:
                 old_checkpoints = sorted(old_checkpoints, key=lambda x: x['epoch'])
                 shutil.rmtree(old_checkpoints[0]['path'])
+
+    def save_model(self, model_path, model_save_total_limit, epoch):
+        # Store new checkpoint
+        self.save(os.path.join(model_path, "epoch-{}".format(epoch)))
+
+        # Delete old checkpoints
+        if model_save_total_limit is not None and model_save_total_limit > 0:
+            old_models = []
+            for subdir in os.listdir(model_path):
+                epoch_numer = subdir.split("-")[-1]
+                if epoch_numer.isdigit():
+                    old_models.append({'epochs': int(epoch_numer), 'path': os.path.join(model_path, subdir)})
+
+            if len(old_models) > model_save_total_limit:
+                old_checkpoints = sorted(old_models, key=lambda x: x['epochs'])
+                shutil.rmtree(old_checkpoints[0]['path'])
+
