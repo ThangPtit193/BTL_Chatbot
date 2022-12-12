@@ -1,3 +1,5 @@
+import os
+
 import click
 from saturn.kr_manager import KRManager
 from comet.lib import logger
@@ -70,12 +72,24 @@ def pull(name, dir_path, replace):
     axiom_wrapper.download_model(model_name=name, dir_path=dir_path, replace=replace)
 
 
+@click.command()
+@click.option('--path', '-p',
+              required=False,
+              help="Path to run streamlit",
+              default=None)
+def ui(path):
+    if path is not None:
+        os.system(f'streamlit run {path}')
+    os.system('streamlit run ui/app.py')
+
+
 entry_point.add_command(version)
 entry_point.add_command(train)
 entry_point.add_command(test)
 entry_point.add_command(push)
 entry_point.add_command(pull)
 entry_point.add_command(ls)
+entry_point.add_command(ui)
 
 if __name__ == '__main__':
     entry_point()

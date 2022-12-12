@@ -94,14 +94,15 @@ class KRManager:
 
         input_query = [convert_unicode(input_query)]
         input_corpus = self._get_input_reference_corpus(input_corpus_list_or_path)
-            # self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=model_name_or_path)
-        similarity_data = self.embedder.find_similarity(input_query, input_corpus, _no_sort=False, top_n = top_k)
+        # self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=model_name_or_path)
+        similarity_data = self.embedder.find_similarity(input_query, input_corpus, _no_sort=False, top_n=top_k)
         similarity_data = similarity_data[0][:top_k]
         # reformat the results
         for text, score in similarity_data:
             retriever_results['relevant doc'].append(text)
             retriever_results['score'].append(score)
         return retriever_results
+
     def evaluate_embedder(self, save_markdown: Optional[bool] = True):
         retriever_results = []
         model_name_or_paths = self.config_parser.eval_config()['model_name_or_path']
@@ -167,7 +168,7 @@ class KRManager:
         df.to_csv(target_path)
 
     def _extract_eval_result(
-        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
+            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
     ) -> List[dict]:
         eval_results = []
 
@@ -239,6 +240,7 @@ class KRManager:
         else:
             raise ValueError(f"Invalid input type {type(list_or_path)}")
         return input_corpus
+
     @staticmethod
     def _load_docs(path: str, corpus_path: Optional[str] = None) -> List[Document]:
         """
