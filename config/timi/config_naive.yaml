@@ -38,5 +38,10 @@ EVALUATION:
   corpus_name_or_path: "data/eval-data/timi/corpus.json"
   query_name_or_path: "data/eval-data/timi/query.json"
   model_name_or_path:
-    - "distilbert-multilingual-faq-v3.2"
+    - models/200000
+    - models/300000
+    - models/400000
+    - models/500000
+    - models/600000
+    - models/700000
 
