@@ -113,7 +113,7 @@ class KRManager:
         for model_name_or_path in model_name_or_paths:
             name = os.path.basename(model_name_or_path)
             evaluation_results[name] = []
-            self.embedder.load_model(pretrained_name_or_abspath=model_name_or_path)
+            self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=model_name_or_path)
 
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
