@@ -8,6 +8,8 @@ from saturn.kr_manager import KRManager
 from typing import List
 
 CONFIG_DEFAUT = "config/dummy/config_mini_sbert.yaml"
+
+
 # fschool-distilbert-multilingual-faq-v8.0.0
 
 # kr.load_model(model_name_or_path="fschool-distilbert-multilingual-faq-v8.0.0"
@@ -35,12 +37,14 @@ def check_input(input_doc):
         st.error("Please paste your text")
         st.stop()
 
+
 def check_corpus(input_corpus_loader):
     if input_corpus_loader is not None:
         return read_txt_streamlit(input_corpus_loader)
     else:
         st.error("Please upload a txt file")
         st.stop()
+
 
 st.set_page_config(
     page_title="Knowledge retriever",
@@ -107,15 +111,17 @@ def get_inference(input_doc, input_corpus, input_top_k, input_model):
     input_corpus = check_corpus(input_corpus)
     return input_model.inference(input_doc, input_corpus, input_top_k)
 
-@st.experimental_memo(max_entries = 2, ttl = 60*3)
+
+@st.experimental_memo(max_entries=2, ttl=60 * 3)
 def get_model(input_model_name):
     kr_loader = KRManager(CONFIG_DEFAUT)
     try:
-        kr_loader.embedder.load_model(pretrained_name_or_abspath = input_model_name)
+        kr_loader.embedder.load_model(pretrained_name_or_abspath=input_model_name)
     except Exception as e:
         st.error("Model not found: Error: {}".format(e))
         st.stop()
     return kr_loader
+
 
 if clear_memo:
     # Clear values from *all* memoized functions:
@@ -125,7 +131,6 @@ if clear_memo:
 if submit_button:
     kr = get_model(model_name)
     inference_docs = get_inference(doc, corpus_uploader, top_N, kr)
-
 
     st.markdown("## 🎈 **Check results**")
     df = (
@@ -138,7 +143,6 @@ if submit_button:
 
     df = df.style.background_gradient(cmap=cmGreen, subset=["score"])
 
-
     format_dictionary = {
         "score": "{:.2}",
     }
@@ -146,5 +150,3 @@ if submit_button:
     df = df.format(format_dictionary)
     st.table(df)
     st.stop()
-
-

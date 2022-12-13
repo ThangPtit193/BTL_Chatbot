@@ -35,8 +35,9 @@ EMBEDDER:
     resume_from_checkpoint: null
 
 EVALUATION:
-  corpus_name_or_path: "data/eval-data/timi/corpus.json"
-  query_name_or_path: "data/eval-data/timi/query.json"
+  corpus_name_or_path: "data/eval-data/timi/v1.0.0/corpus.json"
+  query_name_or_path: "data/eval-data/timi/v1.0.0/query.json"
   model_name_or_path:
-    - "distilbert-multilingual-faq-v3.2"
-
+    - distilbert-multilingual-faq-v3.2
+    - timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0
+    - timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0
