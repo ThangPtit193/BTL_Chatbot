@@ -293,7 +293,7 @@ class SentenceEmbedder(BaseEmbedder):
         checkpoint_save_epoch: int = None,
         checkpoint_save_total_limit: int = None,
         resume_from_checkpoint: Text = None,
-        save_by_epoch: bool = True,
+        save_by_epoch: int = 0,
         model_save_total_limit: int = None,
         **kwargs,
     ):
