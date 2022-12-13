@@ -11,7 +11,8 @@ EMBEDDER:
       - assets/timi/bm25_embedder/triples_4000000.json
       - assets/timi/bm25_embedder/triples_6000000.json
       - assets/timi/bm25_embedder/triples_8000000.json
-      - assets/timi/bm25_embedder/triples_8225130.json
+      - assets/timi/bm25_embedder/triples_8284471.json
+
     model_save_path: models
     n_samples: 10
     batch_size: 256
@@ -23,7 +24,7 @@ EMBEDDER:
     use_amp: True
     save_best_model: True
     show_progress_bar: True
-    checkpoint_path: models/checkpoints
+    checkpoint_path: checkpoints
     checkpoint_save_epoch: 3
     checkpoint_save_total_limit: 10
 #    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
