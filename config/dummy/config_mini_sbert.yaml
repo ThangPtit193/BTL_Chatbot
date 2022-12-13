@@ -8,13 +8,13 @@ EMBEDDER:
   TRAINER:
     triplets_data_path:
       - data/train_data/dummy/triples/triples_10.json
-      - data/train_data/dummy/triples/triples_20.json
-      - data/train_data/dummy/triples/triples_30.json
+#      - data/train_data/dummy/triples/triples_20.json
+#      - data/train_data/dummy/triples/triples_30.json
     pretrained_model: vinai/phobert-base
     model_save_path: models
     n_samples: 10
     batch_size: 128
-    epochs: 1000
+    epochs: 10
     warmup_steps: 5000
     evaluation_steps: 2000
     weight_decay: 0.01
@@ -25,6 +25,7 @@ EMBEDDER:
     checkpoint_path: models/checkpoints
     checkpoint_save_epoch: 50
     checkpoint_save_total_limit: 3
+#    save_by_epoch: 0
 #    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
 
 EVALUATION:

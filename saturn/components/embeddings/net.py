@@ -136,7 +136,7 @@ class CustomSentenceTransformer(SentenceTransformer):
             checkpoint_save_epoch: int = 500,
             checkpoint_save_total_limit: int = 1,
             resume_from_checkpoint: str = False,
-            save_by_epoch: bool = True,
+            save_by_epoch: int = 0,
             model_save_total_limit: int = None
             ):
         """
@@ -321,18 +321,16 @@ class CustomSentenceTransformer(SentenceTransformer):
                 training_steps += 1
                 global_step += 1
             if bool(
-                checkpoint_path is not None
-                and checkpoint_save_epoch is not None
-                and checkpoint_save_epoch > 0
-                and (epoch + 1) % checkpoint_save_epoch == 0
+                    checkpoint_path is not None
+                    and checkpoint_save_epoch is not None
+                    and checkpoint_save_epoch > 0
+                    and (epoch + 1) % checkpoint_save_epoch == 0
             ):
                 self.save_checkpoint(epoch, optimizers, schedulers, checkpoint_path, checkpoint_save_total_limit)
 
-            if bool(
-                save_by_epoch is True
-                and output_path is not None
-            ):
-                self.save_model(output_path,model_save_total_limit, epoch)
+            if save_by_epoch > 0 and \
+                    (epoch+1) % save_by_epoch == 0:
+                self.save_model(output_path, model_save_total_limit, epoch)
 
         if evaluator is None and output_path is not None:  # No evaluator, but output path: save final model version
             self.save(os.path.join(output_path, "final_model"))
@@ -378,4 +376,3 @@ class CustomSentenceTransformer(SentenceTransformer):
             if len(old_models) > model_save_total_limit:
                 old_checkpoints = sorted(old_models, key=lambda x: x['epochs'])
                 shutil.rmtree(old_checkpoints[0]['path'])
-
