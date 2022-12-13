@@ -242,6 +242,29 @@ To list all models in Axiom Hub, you can use the following command.
 ```shell
 saturn ls
 ```
+## Experiments
+
+|Model name / Data name|Timi-eval-data-v1.0.0|Timi-eval-data-v1.2.0|
+|:----|:----|:----|
+|timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0| |0.653mAP 0.751mRR|
+|timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0| |**0.749**mAP **0.770**mRR|
+
+**Note**
+1. timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0
+
+- Pretrained model: [microsoft/MiniLM-L12-H384-uncased](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)
+- Training data: 9M FAQ data from timi idol
+- Method: Naive fine-tuning
+- Steps: 600000
+- Batch size: 128
+
+3. timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.2.0
+
+- Pretrained model: [microsoft/MiniLM-L12-H384-uncased](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)
+- Training data: 9M FAQ data from timi idol
+- Method: Naive fine-tuning
+- Steps: 500000
+- Batch size: 128
 
 ## Reference
 
