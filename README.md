@@ -244,11 +244,11 @@ saturn ls
 ```
 ## Experiments
 
-| Model name / Data name                                       | Timi-eval-data-v1.0.0     |Timi-eval-data-v1.2.0|
-|:-------------------------------------------------------------|:--------------------------|:----|
-| 1. distilbert-multilingual-faq-v3.2                          | 0.252mAP 0.688mRR         |0.653mAP 0.751mRR|
-| 2. timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0 | **0.733**mAP **0.793**mRR |0.653mAP 0.751mRR|
-| 3. timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0 | 0.6686mAP 0.783mRR        |**0.749**mAP **0.770**mRR|
+| Model name / Data name                                    | Timi-eval-data-v1.0.0     |Timi-eval-data-v1.2.0|
+|:----------------------------------------------------------|:--------------------------|:----|
+| distilbert-multilingual-faq-v3.2                          | 0.252mAP 0.688mRR         |0.653mAP 0.751mRR|
+| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0 | **0.733**mAP **0.793**mRR |0.653mAP 0.751mRR|
+| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0 | 0.6686mAP 0.783mRR        |**0.749**mAP **0.770**mRR|
 
 **Note**
 1. distilbert-multilingual-faq-v3.2
