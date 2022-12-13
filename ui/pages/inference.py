@@ -1,12 +1,15 @@
+from typing import TYPE_CHECKING
+
 import streamlit as st
-import numpy as np
 from pandas import DataFrame
 import seaborn as sns
 import os
-import json
-from saturn.kr_manager import KRManager
-from ui.utils import check_input, check_corpus
 
+from ui import MODELS
+
+if TYPE_CHECKING:
+    from saturn.kr_manager import KRManager
+from ui.utils import check_input, check_corpus
 
 DEFAULT_MODEL_AT_STARTUP = os.getenv("DEFAULT_MODEL_AT_STARTUP", "vinai/phobert-base")
 DEFAULT_TOP_K_AT_STARTUP = os.getenv("DEFAULT_TOP_K_AT_STARTUP", 10)
@@ -17,13 +20,11 @@ DEFAULT_INPUT_QUERY = os.getenv("DEFAULT_INPUT_QUERY", "Hôm nay tôi đi học"
 # INPUT corpus
 DEFAULT_INPUT_CORPUS = os.getenv("DEFAULT_INPUT_CORPUS", "data/sample_corpus.txt")
 
-# fschool-distilbert-multilingual-faq-v8.0.0
-
-# kr.load_model(model_name_or_path="fschool-distilbert-multilingual-faq-v8.0.0"
 
 def set_state_if_absent(key, value):
     if key not in st.session_state:
         st.session_state[key] = value
+
 
 def main():
     set_state_if_absent("model_name", DEFAULT_MODEL_AT_STARTUP)
@@ -37,12 +38,12 @@ def main():
         page_title="Knowledge retriever",
         page_icon="🎈",
     )
-    st.title("🔑 Knowledge retriever ")
+    st.title("🤖 Knowledge Retrieval ")
 
     with st.expander("ℹ️ Introduce", expanded=True):
         st.write(
             """     
-    -   The Knowledge retriever will get the relevant sentences/paragraphs from query
+    -   The Knowledge Retrieval will search the relevant sentences/paragraphs from query
     -   You can use it to experiment models from Huggingface or Axiom
         """
         )
@@ -53,17 +54,22 @@ def main():
     st.markdown("## 📌 **Query and Relevant docs** ##")
     st.markdown(
         """
-        Input model name, top k, query and corpus to get the top k relevant docs
+        Enter model name, top_k retrieval, query and corpus to get relevant documents
         """,
         unsafe_allow_html=True,
     )
-    
-    with st.form(key="my_form"):
+
+    model_options = [model for model in MODELS] + ["Your model ..."]
+    model_name = st.selectbox("Choose model from Axiom Hub", options=model_options)
+
+    if model_name == "Your model ...":
         model_name = st.text_input(
-            label="Input your model name",
+            label="Enter your model from local or HuggingFace",
             value=DEFAULT_MODEL_AT_STARTUP,
             help="Choose model from Huggingface or Axiom",
         )
+    st.info(f":white_check_mark: The selected option is {model_name} ")
+    with st.form(key="my_form"):
 
         top_N = st.slider(
             "Top k",
@@ -75,9 +81,9 @@ def main():
         # center the button
 
         doc = st.text_input(
-            label = "Paste your text below (max 50 words)",
-            value = DEFAULT_INPUT_QUERY,
-            help = "Input your query here",
+            label="Paste your text below (max 50 words)",
+            value=DEFAULT_INPUT_QUERY,
+            help="Input your query here",
         )
 
         import re
@@ -98,19 +104,19 @@ def main():
             key="corpus_uploader",
             accept_multiple_files=False)
 
-        submit_button = st.form_submit_button(label="✨ Get relevants sentences!")
+        submit_button = st.form_submit_button(label="✨ Get relevant sentences!")
 
     def get_inference(input_doc, input_corpus, input_top_k, input_model):
         input_doc = check_input(input_doc)
         input_corpus = check_corpus(input_corpus)
         return input_model.inference(input_doc, input_corpus, input_top_k)
 
-    @st.experimental_memo(max_entries = 3, ttl = 60*3)
+    @st.experimental_memo(max_entries=3, ttl=60 * 3)
     def get_model(input_model_name):
         # check if cache is full
         kr_loader = KRManager(DEFAULT_CONFIG_AT_STARTUP)
         try:
-            kr_loader.embedder.load_model(pretrained_name_or_abspath = input_model_name)
+            kr_loader.embedder.load_model(pretrained_name_or_abspath=input_model_name)
         except Exception as e:
             st.error("Model not found: Error: {}".format(e))
             st.stop()
@@ -119,7 +125,6 @@ def main():
     if submit_button:
         kr = get_model(model_name)
         inference_docs = get_inference(doc, corpus_uploader, top_N, kr)
-
 
         st.markdown("## 🎈 **Check results**")
         df = (
@@ -139,5 +144,6 @@ def main():
         df = df.format(format_dictionary)
         st.table(df)
         st.stop()
+
 
 main()

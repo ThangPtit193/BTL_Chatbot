@@ -80,7 +80,7 @@ def pull(name, dir_path, replace):
 def ui(path):
     if path is not None:
         os.system(f'streamlit run {path}')
-    os.system('streamlit run ui/app.py')
+    os.system('streamlit run ui/navigation.py')
 
 
 entry_point.add_command(version)
