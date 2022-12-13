@@ -19,6 +19,9 @@ from transformers import (
 import shutil
 from .dataset import data_producer
 from .net import AutoModelForSentenceEmbedding, CustomSentenceTransformer
+from sentence_transformers import SentenceTransformer
+from venus.sentence_embedding.sentence_embedding import  SentenceEmbedding
+
 
 __all__ = []
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
@@ -290,7 +293,7 @@ class SentenceEmbedder(BaseEmbedder):
         checkpoint_save_epoch: int = None,
         checkpoint_save_total_limit: int = None,
         resume_from_checkpoint: Text = None,
-        save_by_epoch: bool = True,
+        save_by_epoch: int = 0,
         model_save_total_limit: int = None,
         **kwargs,
     ):
