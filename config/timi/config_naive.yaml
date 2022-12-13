@@ -35,13 +35,14 @@ EMBEDDER:
     resume_from_checkpoint: null
 
 EVALUATION:
-  corpus_name_or_path: "data/eval-data/timi/corpus.json"
-  query_name_or_path: "data/eval-data/timi/query.json"
+  corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
+  query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
   model_name_or_path:
-    - models/200000
-    - models/300000
-    - models/400000
-    - models/500000
-    - models/600000
-    - models/700000
+    - "600000"
+    - models_naive/200000
+    - models_naive/300000
+    - models_naive/400000
+    - models_naive/500000
+    - models_naive/600000
+    - models_naive/700000
 
