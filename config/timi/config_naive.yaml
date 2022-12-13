@@ -38,11 +38,5 @@ EVALUATION:
   corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
   query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
   model_name_or_path:
-    - "600000"
-    - models_naive/200000
-    - models_naive/300000
-    - models_naive/400000
-    - models_naive/500000
-    - models_naive/600000
-    - models_naive/700000
-
+    - timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0
+    - timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0
