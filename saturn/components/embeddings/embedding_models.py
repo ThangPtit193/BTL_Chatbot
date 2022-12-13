@@ -19,6 +19,9 @@ from transformers import (
 import shutil
 from .dataset import data_producer
 from .net import AutoModelForSentenceEmbedding, CustomSentenceTransformer
+from sentence_transformers import SentenceTransformer
+from venus.sentence_embedding.sentence_embedding import  SentenceEmbedding
+
 
 __all__ = []
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
