@@ -244,11 +244,11 @@ saturn ls
 ```
 ## Experiments
 
-| Model name / Data name                                    | Timi-eval-data-v1.0.0     |Timi-eval-data-v1.2.0|
-|:----------------------------------------------------------|:--------------------------|:----|
-| distilbert-multilingual-faq-v3.2                          | 0.252mAP 0.688mRR         |0.653mAP 0.751mRR|
-| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0 | **0.733**mAP **0.793**mRR |0.653mAP 0.751mRR|
-| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0 | 0.6686mAP 0.783mRR        |**0.749**mAP **0.770**mRR|
+| Model name / Data name                                    | Timi-eval-data-v1.0.0     | Timi-eval-data-v1.2.0     |
+|:----------------------------------------------------------|:--------------------------|:--------------------------|
+| distilbert-multilingual-faq-v3.2                          | 0.252mAP 0.688mRR         | 0.293mAP 0.540mRR         |
+| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0 | **0.733**mAP **0.793**mRR | 0.653mAP 0.751mRR         |
+| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0 | 0.6686mAP 0.783mRR        | **0.749**mAP **0.770**mRR |
 
 **Note**
 1. distilbert-multilingual-faq-v3.2
@@ -257,7 +257,7 @@ saturn ls
 
 2. timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0
 - Pretrained model: [microsoft/MiniLM-L12-H384-uncased](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)
-- Training data: 9M FAQ data from timi idol
+- Training data: 9M FAQ data from timi idol (ID 464, version: v1.0.0)
 - Method: Naive fine-tuning
 - Steps: 600000
 - Batch size: 128
@@ -265,7 +265,7 @@ saturn ls
 3. timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.2.0
 
 - Pretrained model: [microsoft/MiniLM-L12-H384-uncased](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)
-- Training data: 9M FAQ data from timi idol
+- Training data: 9M FAQ data from timi idol (ID 464, version: v1.1.0)
 - Method: Naive fine-tuning
 - Steps: 500000
 - Batch size: 128
