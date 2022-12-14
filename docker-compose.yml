@@ -2,7 +2,7 @@ version: '3.8'
 services:
   application:
     container_name: saturn
-    image: phongnt2903/saturn:0.1.0
+    image: saturn:0.1.0
     networks:
       - es-net
     ports:

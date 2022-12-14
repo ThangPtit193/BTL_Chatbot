@@ -127,6 +127,7 @@ class KRManager:
             )
 
             df = pd.DataFrame(evaluation_results[name])
+            df = df.drop(columns=['query_id'])
             self.save_detail_report(out_dir='reports', model_name=name, df=df)
 
             records = {
@@ -170,9 +171,9 @@ class KRManager:
         df.to_csv(target_path)
 
         # save report as Excel file
-        df["golden_docs"] = df["golden_docs"].apply(lambda x: self._split_list_to_line(x))
-        df["most_relevant_docs"] = df["most_relevant_docs"].apply(lambda x: self._split_list_to_line(x))
-        df["relevant_doc_scores"] = df["relevant_doc_scores"].apply(lambda x: self._split_list_to_line(x))
+        # df["golden_docs"] = df["golden_docs"].apply(lambda x: self._split_list_to_line(x))
+        # df["most_relevant_docs"] = df["most_relevant_docs"].apply(lambda x: self._split_list_to_line(x))
+        # df["relevant_doc_scores"] = df["relevant_doc_scores"].apply(lambda x: self._split_list_to_line(x))
         writer = pd.ExcelWriter(f"{str(target_path).replace('.csv', '.xlsx')}")
         df.to_excel(writer, sheet_name="Detail Evaluation Report")
         writer.save()
