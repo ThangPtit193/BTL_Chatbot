@@ -4,6 +4,8 @@ import click
 from saturn.kr_manager import KRManager
 from comet.lib import logger
 
+from .version import get_saturn_version
+
 logger.configure_logger("DEBUG")
 
 
@@ -14,7 +16,8 @@ def entry_point():
 
 @click.command()
 def version():
-    print(f"Saturn version: {click.__version__}")
+    ver = get_saturn_version()
+    print(f"Saturn version: {ver}")
 
 
 @click.command()
@@ -93,3 +96,4 @@ entry_point.add_command(ui)
 
 if __name__ == '__main__':
     entry_point()
+

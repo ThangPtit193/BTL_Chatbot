@@ -1,6 +1,8 @@
 FROM silverlogic/python3.6
 ENV PYTHONPATH "${PYTHONPATH}/saturn"
 ENV APPLICATION_SERVICE = /saturn
+ARG AIXOM_EMAIL
+ARG AXIOM_PASSWORD
 
 EXPOSE 8501:8501
 
@@ -16,4 +18,5 @@ RUN pip install -r /requirements.txt
 
 COPY . ./
 COPY ./template.env ./.env
-CMD ["streamlit", "run", "ui/home.py"]
+RUN axiom login --email $AXIOM_EMAIL --password $AXIOM_PASSWORD
+ENTRYPOINT ["streamlit", "run", "ui/navigation.py"]

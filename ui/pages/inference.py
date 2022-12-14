@@ -1,14 +1,12 @@
-from typing import TYPE_CHECKING
+import os
 
 import streamlit as st
 from pandas import DataFrame
 import seaborn as sns
-import os
+
+from saturn.kr_manager import KRManager
 
 from ui import MODELS
-
-if TYPE_CHECKING:
-    from saturn.kr_manager import KRManager
 from ui.utils import check_input, check_corpus
 
 DEFAULT_MODEL_AT_STARTUP = os.getenv("DEFAULT_MODEL_AT_STARTUP", "vinai/phobert-base")
@@ -35,8 +33,15 @@ def main():
     set_state_if_absent("input_corpus", DEFAULT_INPUT_CORPUS)
 
     st.set_page_config(
-        page_title="Knowledge retriever",
-        page_icon="🎈",
+        page_title="Knowledge Retrieval",
+        page_icon="🧊",
+        layout="wide",
+        initial_sidebar_state="expanded",
+        menu_items={
+            'Get help': 'https://trello.com/b/8zAozWIB/knowledge-retriever',
+            'Report a bug': 'https://ftech.ai/',
+            'About': 'The services is applied for knowledge retrieval and infer models quickly developed by VA TEAM'
+        }
     )
     st.title("🤖 Knowledge Retrieval ")
 
