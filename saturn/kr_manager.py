@@ -3,7 +3,7 @@ import os
 import time
 from pathlib import Path
 from time import perf_counter
-from typing import *
+from typing import TYPE_CHECKING, Optional, List, Union, Tuple, Text, Dict
 
 import pandas as pd
 
