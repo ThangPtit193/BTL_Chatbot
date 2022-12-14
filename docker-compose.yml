@@ -1,18 +1,11 @@
-version: '3.8'
+version: '3.3'
 services:
   application:
     container_name: saturn
     image: saturn:0.1.0
-    networks:
-      - es-net
     ports:
       - 8501:8501
-    env_file:
-      - .env
     environment:
       - DOCKER_DEFAULT_PLATFORM=linux/amd64   # This is to align with Apple Silicon (M1)
     build: .
     restart: always
-networks:
-  es-net:
-    driver: bridge
