@@ -33,4 +33,5 @@ EVALUATION:
   corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
   query_name_or_path: "data/eval-data/dummy/query_docs.json"
   model_name_or_path: [ "fschool-distilbert-multilingual-faq-v8.0.0" ]
+  output_dir: "reports"
 

@@ -16,5 +16,5 @@ RUN pip install -r /requirements.txt
 
 COPY . ./
 COPY ./.env ./.env
-
+RUN axiom login --email 'phongnt@ftech.ai' --password 'b8dJfQFq6DL3'
 ENTRYPOINT ["streamlit", "run", "ui/navigation.py"]

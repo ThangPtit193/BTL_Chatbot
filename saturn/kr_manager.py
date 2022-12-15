@@ -6,13 +6,13 @@ from time import perf_counter
 from typing import TYPE_CHECKING, Optional, List, Union, Tuple, Text, Dict
 
 import pandas as pd
+from xlsxwriter.utility import xl_range_abs
 
 from comet.lib import file_util, logger
 from comet.lib.helpers import get_module_or_attr
 from comet.utilities.utility import convert_unicode
 from pandas import DataFrame
 from saturn.components.utils.document import Document, EvalResult
-from saturn.constants import INDEX_RESULT_FILES
 from saturn.utils.config_parser import ConfigParser
 
 if TYPE_CHECKING:
@@ -30,6 +30,7 @@ class KRManager:
         self._model_name_or_path: Optional[Union[str, List[str]]] = None
         self.retriever_type: Optional[Union[str, List]] = "embedding"
         self.document_store_type: Optional[Union[str, List]] = "memory"
+        self._output_dir: Optional[Union[str, Path]] = None
 
     @property
     def embedder(self):
@@ -75,6 +76,20 @@ class KRManager:
         else:
             raise ValueError("model_name_or_path should be a string or a list of string")
 
+    @property
+    def output_dir(self):
+        if not self._output_dir:
+            eval_config = self.config_parser.eval_config()
+            if "output_dir" not in eval_config:
+                self._output_dir = "reports"
+                return self._output_dir
+            self._output_dir = eval_config.get("output_dir")
+            return self._output_dir
+        else:
+            _logger.warning("No specific output direction so that the report will be saved at `./reports`")
+            self._output_dir = "reports"
+            return self._output_dir
+
     def train_embedder(self):
         trainer_config = self.config_parser.trainer_config()
         self.embedder.train(trainer_config)
@@ -104,15 +119,18 @@ class KRManager:
             retriever_results['score'].append(score)
         return retriever_results
 
-    def evaluate_embedder(self, save_markdown: Optional[bool] = True):
+    def evaluate_embedder(self):
         retriever_results = []
+        retriever_top_k_results = []
         model_name_or_paths = self.config_parser.eval_config()['model_name_or_path']
         if isinstance(model_name_or_paths, str):
             model_name_or_paths = [model_name_or_paths]
         evaluation_results: Dict[str, List[EvalResult]] = {}
+        evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
         for model_name_or_path in model_name_or_paths:
             name = os.path.basename(model_name_or_path)
             evaluation_results[name] = []
+            evaluation_top_k_results[name] = []
             self.embedder.load_model(cache_path=None, pretrained_name_or_abspath=model_name_or_path)
 
             tic = perf_counter()
@@ -122,13 +140,9 @@ class KRManager:
             toc = perf_counter()
             retriever_time = toc - tic
 
-            evaluation_results[name].extend(
-                self._extract_eval_result(self.query_docs, tgt_docs, similarity_data)
-            )
-
+            eval_results, eval_top_k_results = self._extract_eval_result(self.query_docs, tgt_docs, similarity_data)
+            evaluation_results[name].extend(eval_results)
             df = pd.DataFrame(evaluation_results[name])
-            df = df.drop(columns=['query_id'])
-            self.save_detail_report(out_dir='reports', model_name=name, df=df)
 
             records = {
                 "model_name": name,
@@ -141,51 +155,144 @@ class KRManager:
             }
             retriever_results.append(records)
 
-        retriever_df = pd.DataFrame.from_records(retriever_results)
+            evaluation_top_k_results[name].extend(eval_top_k_results)
+            retriever_top_k_results.append(evaluation_top_k_results)
+
+        return retriever_results, retriever_top_k_results
+
+    def save(self, report_type: str = "detail", save_markdown: bool = False):
+        retriever_results, retriever_top_k_results = self.evaluate_embedder()
+        if report_type == "overall":
+            self._save_overall_report(
+                output_dir=self.output_dir,
+                df=pd.DataFrame(retriever_results),
+                save_markdown=save_markdown
+            )
+        elif report_type == "detail":
+            for models in retriever_top_k_results:
+                for model, data in models.items():
+                    self._save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
+        else:
+            raise NotImplemented(f"Sorry, this report type {report_type} is not found")
+
+    def _save_overall_report(
+            self,
+            output_dir: Union[str, Path],
+            df: Union[DataFrame, List],
+            save_markdown: bool = False
+    ):
+        output_dir = output_dir if isinstance(output_dir, Path) else Path(output_dir)
+        _logger.info("Saving evaluation results to %s", output_dir)
+        if not output_dir.exists():
+            output_dir.mkdir(parents=True)
+
+        target_path = os.path.join(output_dir, "knowledge_retrieval.csv")
+
+        retriever_df = pd.DataFrame.from_records(df)
         retriever_df = retriever_df.sort_values(by="map")
-        retriever_df.to_csv(INDEX_RESULT_FILES)
+        retriever_df.to_csv(target_path)
 
         if save_markdown:
-            md_file = INDEX_RESULT_FILES.replace(".csv", ".md")
+            md_file = target_path.replace(".csv", ".md")
             with open(md_file, "w") as f:
                 f.write(str(retriever_df.to_markdown()))
-        time.sleep(10)
 
-        return evaluation_results
-
-    def save_detail_report(self, out_dir: Union[str, Path], model_name: str, df: DataFrame):
+    def _save_detail_report(self, output_dir: Union[str, Path], model_name: str, df: Union[DataFrame, List]):
         """
         Saves the evaluation result.
-        The result of each node is saved in a separate csv with file name {node_name}.csv to the out_dir folder.
+        The result of each node is saved in a separate csv with file name {node_name}.csv to the output_dir folder.
 
-        :param out_dir: Path to the target folder the csvs will be saved.
+        :param output_dir: Path to the target folder the csvs will be saved.
         :param model_name: Model name to benchmark
-        :param df: Evaluation resulr
+        :param df: Evaluation result
         """
-        out_dir = out_dir if isinstance(out_dir, Path) else Path(out_dir)
-        _logger.info("Saving evaluation results to %s", out_dir)
-        if not out_dir.exists():
-            out_dir.mkdir(parents=True)
+        output_dir = output_dir if isinstance(output_dir, Path) else Path(output_dir)
+        _logger.info("Saving evaluation results to %s", output_dir)
+        if not output_dir.exists():
+            output_dir.mkdir(parents=True)
 
-        target_path = out_dir / f"{model_name}.csv"
-        df.to_csv(target_path)
+        target_path = output_dir / f"{model_name}.xlsx"
 
-        # save report as Excel file
-        # df["golden_docs"] = df["golden_docs"].apply(lambda x: self._split_list_to_line(x))
-        # df["most_relevant_docs"] = df["most_relevant_docs"].apply(lambda x: self._split_list_to_line(x))
-        # df["relevant_doc_scores"] = df["relevant_doc_scores"].apply(lambda x: self._split_list_to_line(x))
-        writer = pd.ExcelWriter(f"{str(target_path).replace('.csv', '.xlsx')}")
-        df.to_excel(writer, sheet_name="Detail Evaluation Report")
+        if isinstance(df, list):
+            df = pd.DataFrame(df)
+        # df = df.drop(columns=['query_id'])
+        df.insert(loc=0, column='index', value=df.index)
+
+        # explode lists of corpus to row
+        df = df.apply(pd.Series.explode)
+        df_merged = pd.DataFrame(df.to_dict('records'))
+
+        writer = pd.ExcelWriter(f'{target_path}', engine='xlsxwriter')
+        df_merged.to_excel(writer, sheet_name='Detail_Report', index=False)
+
+        workbook = writer.book
+        worksheet = writer.sheets['Detail_Report']
+        header_format = workbook.add_format(
+            {
+                'align': 'center',
+                'valign': 'vcenter',
+                'border': 1,
+                'bg_color': '#fff2cc'
+            }
+        )
+        header_range = xl_range_abs(0, 0, 0, df_merged.shape[1] - 1)
+        worksheet.conditional_format(header_range, {'type': 'no_blanks',
+                                                    'format': header_format})
+
+        merge_format = workbook.add_format({'align': 'center', 'valign': 'vcenter', 'border': 1})
+        bg_format_odd = workbook.add_format({'bg_color': '#cfe2f3', 'border': 1})
+        bg_format_even = workbook.add_format({'bg_color': '#FFFFFF', 'border': 1})
+        bg_format_wrong = workbook.add_format({'font_color': 'red'})
+
+        for idx in df_merged['index'].unique():
+            # find indices and add one to account for header
+            u = df_merged.loc[df_merged['index'] == idx].index.values + 1
+
+            cell_range = xl_range_abs(u[0], 0, u[0] + len(u) - 1, df_merged.shape[1])
+            compare_range = xl_range_abs(u[0], df_merged.shape[1] - 1, u[0] + len(u) - 1, df_merged.shape[1] - 1)
+
+            if idx % 2 == 0:
+                worksheet.conditional_format(cell_range, {'type': 'no_blanks',
+                                                          'format': bg_format_odd})
+            else:
+                worksheet.conditional_format(cell_range, {'type': 'no_blanks',
+                                                          'format': bg_format_even})
+            worksheet.conditional_format(compare_range, {'type': 'cell',
+                                                         'criteria': 'not equal to',
+                                                         'value': f"$C${u[0] + 1}",
+                                                         'format': bg_format_wrong
+                                                         })
+
+            if len(u) < 2:
+                pass  # do not merge cells if there is only one row
+            else:
+                column_index = {
+                    'index': 0,
+                    'query': 1,
+                    'label': 2,
+                    'top_k_relevant': 3,
+                    'rr_score': 4,
+                    'ap_score': 5
+                }
+                # merge cells using the first and last indices
+                for key, index in column_index.items():
+                    worksheet.merge_range(u[0], index, u[-1], index, df_merged.loc[u[0], f'{key}'], merge_format)
+
+        # auto-adjust column size
+        for column in df:
+            column_width = max(df[column].astype(str).map(len).max(), len(column))
+            col_idx = df.columns.get_loc(column)
+            writer.sheets['Detail_Report'].set_column(col_idx, col_idx, column_width)
+
         writer.save()
-        _logger.info(f"Evaluation report with excel format is saved at {str(target_path).replace('.csv', '.xlsx')}")
-
-    def _split_list_to_line(self, data: list):
-        return '\015'.join(data)
+        _logger.info(f"Evaluation report with excel format is saved at {target_path}")
 
     def _extract_eval_result(
-            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]]
-    ) -> List[dict]:
+            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
+            top_k: int = None
+    ):
         eval_results = []
+        eval_top_k_results = []
 
         for src_doc, similarities in zip(src_docs, similarity_data_2d):
             indices = self._arg_sort(similarities)
@@ -196,6 +303,7 @@ class KRManager:
             # Get top_k relevant docs from indices
             top_k_relevant_docs = []
             relevant_doc_scores = []
+            predicted_labels = []
 
             # Get score of each relevant doc
 
@@ -204,10 +312,11 @@ class KRManager:
                 for id, answer in enumerate(similarities):
                     if tgt_docs[i] == answer[0]:
                         relevant_doc_scores.append(str(answer[1]))
+                        predicted_labels.extend([doc.label for doc in self.corpus_docs if doc.text == answer[0]])
 
-            ground_truth = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
+            ground_truths = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
             for idx, relevant_doc in enumerate(top_k_relevant_docs):
-                if relevant_doc not in ground_truth:
+                if relevant_doc not in ground_truths:
                     continue
                 ap += 1
                 if ap == 1 and rr_score == 0:
@@ -218,17 +327,20 @@ class KRManager:
 
             eval_result = EvalResult(
                 query=src_doc.text,
-                query_id=src_doc.id,
+                label=src_doc.label,
                 rr_score=rr_score,
                 ap_score=round((ap_score / src_doc.num_relevant), 2),
                 top_k_relevant=src_doc.num_relevant,
-                golden_docs=ground_truth,
                 most_relevant_docs=top_k_relevant_docs,
-                relevant_doc_scores=relevant_doc_scores
+                relevant_doc_scores=relevant_doc_scores,
+                predicted_labels=predicted_labels
 
             )
+            top_k = top_k if top_k in range(1, src_doc.num_relevant) else src_doc.num_relevant
+            tmp_df = pd.DataFrame(eval_result.to_dict())[:top_k]
+            eval_top_k_results.append(tmp_df.to_dict())
             eval_results.append(eval_result.to_dict())
-        return eval_results
+        return eval_results, eval_top_k_results
 
     @staticmethod
     def _arg_sort(similarities: List[Tuple[Text, float]]) -> List[int]:
