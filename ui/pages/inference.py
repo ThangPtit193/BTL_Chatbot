@@ -7,7 +7,7 @@ import seaborn as sns
 from saturn.kr_manager import KRManager
 
 from ui import MODELS
-from ui.utils import check_input, check_corpus, clean_corpus
+from ui.utils import check_input, check_corpus
 from st_aggrid import AgGrid
 
 
