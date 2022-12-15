@@ -35,5 +35,4 @@ def check_corpus(input_corpus_loader):
     if input_corpus_loader is not None:
         return read_txt_streamlit(input_corpus_loader)
     else:
-        st.error("Please upload a txt file")
-        st.stop()
+        return None
