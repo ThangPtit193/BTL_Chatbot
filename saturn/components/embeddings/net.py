@@ -18,6 +18,7 @@ from transformers import (
 )
 import shutil
 from venus.wrapper import axiom_wrapper
+from torch.utils.tensorboard import SummaryWriter
 
 _logger = logger.get_logger(__name__)
 
@@ -95,7 +96,7 @@ class AutoModelForSentenceEmbedding(torch.nn.Module):
 
 class CustomSentenceTransformer(SentenceTransformer):
     @classmethod
-    def from_pretrained(cls, model_name_or_path: Text = None) -> "CustomSentenceTransformer":
+    def from_pretrained(cls, model_name_or_path: Text = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2") -> "CustomSentenceTransformer":
         """
 
         Args:
@@ -137,7 +138,8 @@ class CustomSentenceTransformer(SentenceTransformer):
             checkpoint_save_total_limit: int = 1,
             resume_from_checkpoint: str = False,
             save_by_epoch: int = 0,
-            model_save_total_limit: int = None
+            model_save_total_limit: int = None,
+            writer: bool = True,
             ):
         """
         Train the model with the given training objective
@@ -212,7 +214,7 @@ class CustomSentenceTransformer(SentenceTransformer):
         # Prepare optimizers
         optimizers = []
         schedulers = []
-
+        writer = SummaryWriter(log_dir="Time 1")
         # Handle checkpoint
         checkpoints = None
         epoch_offset = None
@@ -270,6 +272,9 @@ class CustomSentenceTransformer(SentenceTransformer):
 
         skip_scheduler = False
 
+        steps = 0
+        writer = SummaryWriter()
+
         for epoch in trange(epochs, desc="Epoch", disable=not show_progress_bar):
             if epoch_offset and epoch < epoch_offset:
                 continue
@@ -308,10 +313,15 @@ class CustomSentenceTransformer(SentenceTransformer):
 
                         skip_scheduler = scaler.get_scale() != scale_before_step
                     else:
+
                         loss_value = loss_model(features, labels)
+
                         loss_value.backward()
                         torch.nn.utils.clip_grad_norm_(loss_model.parameters(), max_grad_norm)
                         optimizer.step()
+
+                    writer.add_scalar("Loss/train", loss_value, steps)
+                    steps += 1
 
                     optimizer.zero_grad()
 
@@ -320,6 +330,7 @@ class CustomSentenceTransformer(SentenceTransformer):
 
                 training_steps += 1
                 global_step += 1
+            writer.flush()
             if bool(
                     checkpoint_path is not None
                     and checkpoint_save_epoch is not None
