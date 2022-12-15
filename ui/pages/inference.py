@@ -1,13 +1,15 @@
 import os
 
 import streamlit as st
-from pandas import DataFrame
+import pandas as pd
 import seaborn as sns
 
 from saturn.kr_manager import KRManager
 
 from ui import MODELS
-from ui.utils import check_input, check_corpus
+from ui.utils import check_input, check_corpus, clean_corpus
+from st_aggrid import AgGrid
+
 
 DEFAULT_MODEL_AT_STARTUP = os.getenv("DEFAULT_MODEL_AT_STARTUP", "vinai/phobert-base")
 DEFAULT_TOP_K_AT_STARTUP = os.getenv("DEFAULT_TOP_K_AT_STARTUP", 10)
@@ -84,7 +86,6 @@ def main():
             help="You can choose the number of relevant results to display. Between 1 and 50, default number is 10",
         )
         # center the button
-
         doc = st.text_input(
             label="Paste your text below (max 50 words)",
             value=DEFAULT_INPUT_QUERY,
@@ -102,19 +103,46 @@ def main():
                 + " Only the first 50 words will be reviewed. Stay tuned as increased allowance is coming! 😊"
             )
             doc = doc[:DEFAULT_MAX_WORDS]
-        corpus_uploader = st.file_uploader(
-            label="Choose a txt file",
-            type=["txt"],
-            help="You can upload a txt file to get the relevant sentences. The file should contain one sentence per line.",
-            key="corpus_uploader",
-            accept_multiple_files=False)
+
+        tab_1, tab_2 = st.tabs(["Input docs", "Input txt file"])
+        with tab_1:
+            df_template = pd.DataFrame(
+                '',
+                index=range(6),
+                columns=['Samples text']
+            )
+            response_samples = AgGrid(df_template, editable=True, fit_columns_on_grid_load=True, key='sample', height=203)
+        with tab_2:
+            corpus_uploader = st.file_uploader(
+                label="Choose a txt file",
+                type=["txt"],
+                help="You can upload a txt file to get the relevant sentences. The file should contain one sentence per line.",
+                key="corpus_uploader",
+                accept_multiple_files=False)
 
         submit_button = st.form_submit_button(label="✨ Get relevant sentences!")
 
-    def get_inference(input_doc, input_corpus, input_top_k, input_model):
-        input_doc = check_input(input_doc)
+    def get_corpus(response_samples, input_corpus):
+        response_samples = response_samples['data']['Samples text'].tolist()
+        response_samples = [x for x in response_samples if x != '']
         input_corpus = check_corpus(input_corpus)
-        return input_model.inference(input_doc, input_corpus, input_top_k)
+
+        if input_corpus and response_samples:
+            corpus = input_corpus + response_samples
+        elif input_corpus:
+            corpus = input_corpus
+        elif response_samples:
+            corpus = response_samples
+        else:
+            st.error("Please input corpus or samples")
+            st.stop()
+        return corpus
+
+    def get_inference(input_doc, response_samples, input_corpus, input_top_k, input_model):
+        input_doc = check_input(input_doc)
+        # input_corpus = check_corpus(input_corpus)
+        corpus = get_corpus(response_samples, input_corpus)
+        return input_model.inference(input_doc, corpus, input_top_k)
 
     @st.experimental_memo(max_entries=3, ttl=60 * 3)
     def get_model(input_model_name):
@@ -129,11 +157,11 @@ def main():
 
     if submit_button:
         kr = get_model(model_name)
-        inference_docs = get_inference(doc, corpus_uploader, top_N, kr)
+        inference_docs = get_inference(doc, response_samples, corpus_uploader, top_N, kr)
 
         st.markdown("## 🎈 **Check results**")
         df = (
-            DataFrame(inference_docs)
+            pd.DataFrame(inference_docs)
         )
         # styling
         df.index += 1
@@ -149,6 +177,5 @@ def main():
         df = df.format(format_dictionary)
         st.table(df)
         st.stop()
-
 
 main()
