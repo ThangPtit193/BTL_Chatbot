@@ -139,7 +139,6 @@ class CustomSentenceTransformer(SentenceTransformer):
             resume_from_checkpoint: str = False,
             save_by_epoch: int = 0,
             model_save_total_limit: int = None,
-            writer: bool = True,
             ):
         """
         Train the model with the given training objective
