@@ -34,17 +34,6 @@ def main():
     set_state_if_absent("input_query", DEFAULT_INPUT_QUERY)
     set_state_if_absent("input_corpus", DEFAULT_INPUT_CORPUS)
 
-    st.set_page_config(
-        page_title="Knowledge Retrieval",
-        page_icon="🧊",
-        layout="wide",
-        initial_sidebar_state="expanded",
-        menu_items={
-            'Get help': 'https://trello.com/b/8zAozWIB/knowledge-retriever',
-            'Report a bug': 'https://ftech.ai/',
-            'About': 'The services is applied for knowledge retrieval and infer models quickly developed by VA TEAM'
-        }
-    )
     st.title("🤖 Knowledge Retrieval ")
 
     with st.expander("ℹ️ Introduce", expanded=True):
@@ -120,15 +109,20 @@ def main():
                 key="corpus_uploader",
                 accept_multiple_files=False)
 
+        merge_input = st.checkbox(label="Merge input docs and samples", value=True, key="merge_input")
+
         submit_button = st.form_submit_button(label="✨ Get relevant sentences!")
 
-    def get_corpus(response_samples, input_corpus):
+    def get_corpus(response_samples, input_corpus, merge_input):
         response_samples = response_samples['data']['Samples text'].tolist()
         response_samples = [x for x in response_samples if x != '']
         input_corpus = check_corpus(input_corpus)
 
         if input_corpus and response_samples:
-            corpus = input_corpus + response_samples
+            if merge_input:
+                corpus = input_corpus + response_samples
+            else:
+                corpus = input_corpus
         elif input_corpus:
             corpus = input_corpus
         elif response_samples:
@@ -141,7 +135,7 @@ def main():
     def get_inference(input_doc, response_samples, input_corpus, input_top_k, input_model):
         input_doc = check_input(input_doc)
         # input_corpus = check_corpus(input_corpus)
-        corpus = get_corpus(response_samples, input_corpus)
+        corpus = get_corpus(response_samples, input_corpus, merge_input)
         return input_model.inference(input_doc, corpus, input_top_k)
 
     @st.experimental_memo(max_entries=3, ttl=60 * 3)
