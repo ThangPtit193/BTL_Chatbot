@@ -11,9 +11,9 @@ def convert_size(num, suffix='B'):
 
 def create_list_item_table(items: List[Dict]):
     from columnar import columnar
-    headers = ["Model name", "Size", "Link"]
+    headers = ["Model name", "Size", "Created at", "Link"]
     data = []
     for item in items:
-        data.append([item["key"], convert_size(item["size"]), item["url"]])
+        data.append([item["key"], convert_size(item["size"]), item["created_at"][:10], item["url"]])
     table = columnar(data, headers, no_borders=False)
     return table

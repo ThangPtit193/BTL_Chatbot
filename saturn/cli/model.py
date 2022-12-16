@@ -118,21 +118,24 @@ def ls(ctx):
             break
         page += 1
     item_list = [item for item in item_list if item["key"].endswith(".zip")]
+    # Sort by created_at
+    item_list = sorted(item_list, key=lambda x: x["created_at"], reverse=True)
     for item in item_list:
         # Ignore the item that is not model
         item_id = item["id"]
-        item_detail = client.resource_item_detail(item_id)
-        result = client.resource_item_get_url(
-            item_detail["resource_name"],
-            "model",
-            item_detail["version_name"],
-            item_detail["key"],
+        # item_detail = client.resource_item_detail(item_id)
+        # result = client.resource_item_get_url(
+        #     item_detail["resource_name"],
+        #     "model",
+        #     item_detail["version_name"],
+        #     item_detail["key"],
+        # )
+        item['url'] = os.path.join(
+            "http://minio.dev.ftech.ai/venus-model-v0.1-ca24fe0d",
+            item["key"]
         )
-        comet_url = urlsplit(result)._replace(query=None).geturl()
-        item['url'] = comet_url
-
         # Get key name
-        item['key'] = item_detail["key"].strip(".zip")
+        item['key'] = item["key"].strip(".zip")
     print(create_list_item_table(item_list))
     return item_list
 
