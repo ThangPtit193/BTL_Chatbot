@@ -125,7 +125,7 @@ class KRManager:
     def evaluate_embedder(self, top_k: int = None):
         retriever_results = []
         retriever_top_k_results = []
-        model_name_or_paths = self.config_parser.eval_config()['model_name_or_path']
+        model_name_or_paths = self.model_name_or_path
         if isinstance(model_name_or_paths, str):
             model_name_or_paths = [model_name_or_paths]
         evaluation_results: Dict[str, List[EvalResult]] = {}

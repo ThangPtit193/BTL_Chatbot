@@ -8,6 +8,9 @@ from pandas.api.types import (
 )
 import pandas as pd
 
+
+
+
 def read_txt_streamlit(file) -> List:
     """
     Read txt file from streamlit
