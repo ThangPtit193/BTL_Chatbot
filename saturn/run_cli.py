@@ -63,6 +63,7 @@ entry_point.add_command(version)
 entry_point.add_command(train)
 entry_point.add_command(test)
 entry_point.add_command(ui)
+entry_point.add_command(model)
 
 if __name__ == '__main__':
     entry_point()
