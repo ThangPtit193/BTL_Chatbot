@@ -1,124 +1,118 @@
-# pylint: disable=missing-timeout
-
-from typing import List, Dict, Any, Tuple, Optional
-
-import os
-import logging
-from time import sleep
-
-import requests
 import streamlit as st
+from typing import List
+from pandas.api.types import (
+    is_categorical_dtype,
+    is_datetime64_any_dtype,
+    is_numeric_dtype,
+    is_object_dtype,
+)
+import pandas as pd
 
-
-API_ENDPOINT = os.getenv("API_ENDPOINT", "http://localhost:8002")
-STATUS = "initialized"
-HS_VERSION = "hs_version"
-DOC_REQUEST = "query"
-DOC_FEEDBACK = "feedback"
-DOC_UPLOAD = "file-upload"
-
-
-def haystack_is_ready():
+def read_txt_streamlit(file) -> List:
     """
-    Used to show the "Haystack is loading..." message
+    Read txt file from streamlit
+
+    Args:
+        file: file from streamlit
+
+    Returns: list of lines
+
     """
-    url = f"{API_ENDPOINT}/{STATUS}"
-    try:
-        if requests.get(url).status_code < 400:
-            return True
-    except Exception as e:
-        logging.exception(e)
-        sleep(1)  # To avoid spamming a non-existing endpoint at startup
-    return False
+    lines = []
+    for line in file:
+        lines.append(line.decode("utf-8"))
+    return lines
 
 
-@st.cache
-def haystack_version():
+def check_input(input_doc):
     """
-    Get the Haystack version from the REST API
+    Check if input is not empty
     """
-    url = f"{API_ENDPOINT}/{HS_VERSION}"
-    return requests.get(url, timeout=0.1).json()["hs_version"]
+    if input_doc is not None and input_doc != "":
+        return input_doc
+    else:
+        st.error("Please paste your text")
+        st.stop()
 
-
-def query(query, filters={}, top_k_reader=5, top_k_retriever=5) -> Tuple[List[Dict[str, Any]], Dict[str, str]]:
+def check_corpus(input_corpus_loader):
     """
-    Send a query to the REST API and parse the answer.
-    Returns both a ready-to-use representation of the results and the raw JSON.
+    Check if input is not empty
     """
+    if input_corpus_loader is not None:
+        return read_txt_streamlit(input_corpus_loader)
+    else:
+        return None
 
-    url = f"{API_ENDPOINT}/{DOC_REQUEST}"
-    params = {"filters": filters, "Retriever": {"top_k": top_k_retriever}, "Reader": {"top_k": top_k_reader}}
-    req = {"query": query, "params": params}
-    response_raw = requests.post(url, json=req)
-
-    if response_raw.status_code >= 400 and response_raw.status_code != 503:
-        raise Exception(f"{vars(response_raw)}")
-
-    response = response_raw.json()
-    if "errors" in response:
-        raise Exception(", ".join(response["errors"]))
-
-    # Format response
-    results = []
-    answers = response["answers"]
-    for answer in answers:
-        if answer.get("answer", None):
-            results.append(
-                {
-                    "context": "..." + answer["context"] + "...",
-                    "answer": answer.get("answer", None),
-                    "source": answer["meta"]["name"],
-                    "relevance": round(answer["score"] * 100, 2),
-                    "document": [doc for doc in response["documents"] if doc["id"] == answer["document_id"]][0],
-                    "offset_start_in_doc": answer["offsets_in_document"][0]["start"],
-                    "_raw": answer,
-                }
-            )
-        else:
-            results.append(
-                {
-                    "context": None,
-                    "answer": None,
-                    "document": None,
-                    "relevance": round(answer["score"] * 100, 2),
-                    "_raw": answer,
-                }
-            )
-    return results, response
-
-
-def send_feedback(query, answer_obj, is_correct_answer, is_correct_document, document) -> None:
+def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Send a feedback (label) to the REST API
+    Adds a UI on top of a dataframe to let viewers filter columns
+
+    Args:
+        df (pd.DataFrame): Original dataframe
+
+    Returns:
+        pd.DataFrame: Filtered dataframe
     """
-    url = f"{API_ENDPOINT}/{DOC_FEEDBACK}"
-    req = {
-        "query": query,
-        "document": document,
-        "is_correct_answer": is_correct_answer,
-        "is_correct_document": is_correct_document,
-        "origin": "user-feedback",
-        "answer": answer_obj,
-    }
-    response_raw = requests.post(url, json=req)
-    if response_raw.status_code >= 400:
-        raise ValueError(f"An error was returned [code {response_raw.status_code}]: {response_raw.json()}")
+    modify = st.checkbox("Add filters")
 
+    if not modify:
+        return df
 
-def upload_doc(file):
-    url = f"{API_ENDPOINT}/{DOC_UPLOAD}"
-    files = [("files", file)]
-    response = requests.post(url, files=files).json()
-    return response
+    df = df.copy()
 
+    # Try to convert datetimes into a standard format (datetime, no timezone)
+    for col in df.columns:
+        if is_object_dtype(df[col]):
+            try:
+                df[col] = pd.to_datetime(df[col])
+            except Exception:
+                pass
 
-def get_backlink(result) -> Tuple[Optional[str], Optional[str]]:
-    if result.get("document", None):
-        doc = result["document"]
-        if isinstance(doc, dict):
-            if doc.get("meta", None):
-                if isinstance(doc["meta"], dict):
-                    if doc["meta"].get("url", None) and doc["meta"].get("title", None):
-                        return doc["meta"]["url"], doc["meta"]["title"]
-    return None, None
+        if is_datetime64_any_dtype(df[col]):
+            df[col] = df[col].dt.tz_localize(None)
+
+    modification_container = st.container()
+
+    with modification_container:
+        to_filter_columns = st.multiselect("Filter dataframe on", df.columns)
+        for column in to_filter_columns:
+            left, right = st.columns((1, 20))
+            # Treat columns with < 10 unique values as categorical
+            if is_categorical_dtype(df[column]) or df[column].nunique() < 10:
+                user_cat_input = right.multiselect(
+                    f"Values for {column}",
+                    df[column].unique(),
+                    default=list(df[column].unique()),
+                )
+                df = df[df[column].isin(user_cat_input)]
+            elif is_numeric_dtype(df[column]):
+                _min = float(df[column].min())
+                _max = float(df[column].max())
+                step = (_max - _min) / 100
+                user_num_input = right.slider(
+                    f"Values for {column}",
+                    min_value=_min,
+                    max_value=_max,
+                    value=(_min, _max),
+                    step=step,
+                )
+                df = df[df[column].between(*user_num_input)]
+            elif is_datetime64_any_dtype(df[column]):
+                user_date_input = right.date_input(
+                    f"Values for {column}",
+                    value=(
+                        df[column].min(),
+                        df[column].max(),
+                    ),
+                )
+                if len(user_date_input) == 2:
+                    user_date_input = tuple(map(pd.to_datetime, user_date_input))
+                    start_date, end_date = user_date_input
+                    df = df.loc[df[column].between(start_date, end_date)]
+            else:
+                user_text_input = right.text_input(
+                    f"Substring or regex in {column}",
+                )
+                if user_text_input:
+                    df = df[df[column].astype(str).str.contains(user_text_input)]
+    return df

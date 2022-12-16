@@ -1,152 +1,175 @@
-import streamlit as st
-import numpy as np
-from pandas import DataFrame
-import seaborn as sns
 import os
-import json
+
+import streamlit as st
+import pandas as pd
+import seaborn as sns
+
 from saturn.kr_manager import KRManager
-from typing import List
 
-CONFIG_DEFAUT = "config/dummy/config_mini_sbert.yaml"
-
-
-# fschool-distilbert-multilingual-faq-v8.0.0
-
-# kr.load_model(model_name_or_path="fschool-distilbert-multilingual-faq-v8.0.0"
-
-def read_txt_streamlit(file) -> List:
-    """
-    Read txt file from streamlit
-
-    Args:
-        file: file from streamlit
-
-    Returns: list of lines
-
-    """
-    lines = []
-    for line in file:
-        lines.append(line.decode("utf-8"))
-    return lines
+from ui import MODELS
+from ui.utils import check_input, check_corpus
+from st_aggrid import AgGrid
 
 
-def check_input(input_doc):
-    if input_doc is not None and input_doc != "":
-        return input_doc
-    else:
-        st.error("Please paste your text")
-        st.stop()
+DEFAULT_MODEL_AT_STARTUP = os.getenv("DEFAULT_MODEL_AT_STARTUP", "vinai/phobert-base")
+DEFAULT_TOP_K_AT_STARTUP = os.getenv("DEFAULT_TOP_K_AT_STARTUP", 10)
+DEFAULT_CONFIG_AT_STARTUP = os.getenv("DEFAULT_CONFIG_AT_STARTUP", "config/dummy/config_mini_sbert.yaml")
+DEFAULT_MAX_WORDS = os.getenv("DEFAULT_MAX_WORDS_AT_STARTUP", 50)
+# INPUT query
+DEFAULT_INPUT_QUERY = os.getenv("DEFAULT_INPUT_QUERY", "Hôm nay tôi đi học")
+# INPUT corpus
+DEFAULT_INPUT_CORPUS = os.getenv("DEFAULT_INPUT_CORPUS", "data/sample_corpus.txt")
 
 
-def check_corpus(input_corpus_loader):
-    if input_corpus_loader is not None:
-        return read_txt_streamlit(input_corpus_loader)
-    else:
-        st.error("Please upload a txt file")
-        st.stop()
+def set_state_if_absent(key, value):
+    if key not in st.session_state:
+        st.session_state[key] = value
 
 
-st.set_page_config(
-    page_title="Knowledge retriever",
-    page_icon="🎈",
-)
+def main():
+    set_state_if_absent("model_name", DEFAULT_MODEL_AT_STARTUP)
+    set_state_if_absent("top_k", DEFAULT_TOP_K_AT_STARTUP)
+    set_state_if_absent("config", DEFAULT_CONFIG_AT_STARTUP)
+    set_state_if_absent("max_words", DEFAULT_MAX_WORDS)
+    set_state_if_absent("input_query", DEFAULT_INPUT_QUERY)
+    set_state_if_absent("input_corpus", DEFAULT_INPUT_CORPUS)
 
-# st.sidebar.title("🔑 Knowledge retriever")
+    st.title("🤖 Knowledge Retrieval ")
 
+    with st.expander("ℹ️ Introduce", expanded=True):
+        st.write(
+            """     
+    -   The Knowledge Retrieval will search the relevant sentences/paragraphs from query
+    -   You can use it to experiment models from Huggingface or Axiom
+        """
+        )
 
-st.title("🔑 Knowledge retriever ")
-
-with st.expander("ℹ️ Introduce", expanded=True, ):
-    st.write(
-        """     
--   The Knowledge retriever will get the relevant sentences/paragraphs from query
--   You can use it to experiment models from Huggingface or Axiom
-    """
-    )
+        st.markdown("")
 
     st.markdown("")
-
-st.markdown("")
-st.markdown("## 📌 **Paste document** ##")
-with st.form(key="my_form"):
-    model_name = st.text_input(
-        "Paste your model name",
-        help="Choose model from Huggingface or Axiom",
+    st.markdown("## 📌 **Query and Relevant docs** ##")
+    st.markdown(
+        """
+        Enter model name, top_k retrieval, query and corpus to get relevant documents
+        """,
+        unsafe_allow_html=True,
     )
 
-    top_N = st.slider(
-        "Top k",
-        min_value=1,
-        max_value=50,
-        value=10,
-        help="You can choose the number of relevant results to display. Between 1 and 50, default number is 10",
+    model_options = [model for model in MODELS] + ["Your model ..."]
+    model_name = st.selectbox("Choose model from Axiom Hub", options=model_options)
 
-    )
-
-    clear_memo = st.form_submit_button("Clear Cache")
-
-    doc = st.text_input(
-        "Paste your text below (max 50 words)",
-    )
-
-    MAX_WORDS = 50
-    import re
-
-    res = len(re.findall(r"\w+", doc))
-    if res > MAX_WORDS:
-        st.warning(
-            "⚠️ Your text contains "
-            + str(res)
-            + " words."
-            + " Only the first 50 words will be reviewed. Stay tuned as increased allowance is coming! 😊"
+    if model_name == "Your model ...":
+        model_name = st.text_input(
+            label="Enter your model from local or HuggingFace",
+            value=DEFAULT_MODEL_AT_STARTUP,
+            help="Choose model from Huggingface or Axiom",
         )
-        doc = doc[:MAX_WORDS]
-    corpus_uploader = st.file_uploader("Choose a txt file", accept_multiple_files=False)
+    st.info(f":white_check_mark: The selected option is {model_name} ")
+    with st.form(key="my_form"):
 
-    submit_button = st.form_submit_button(label="✨ Get relevants sentences!")
+        top_N = st.slider(
+            "Top k",
+            min_value=1,
+            max_value=50,
+            value=DEFAULT_TOP_K_AT_STARTUP,
+            help="You can choose the number of relevant results to display. Between 1 and 50, default number is 10",
+        )
+        # center the button
+        doc = st.text_input(
+            label="Paste your text below (max 50 words)",
+            value=DEFAULT_INPUT_QUERY,
+            help="Input your query here",
+        )
 
+        import re
 
-def get_inference(input_doc, input_corpus, input_top_k, input_model):
-    input_doc = check_input(input_doc)
-    input_corpus = check_corpus(input_corpus)
-    return input_model.inference(input_doc, input_corpus, input_top_k)
+        res = len(re.findall(r"\w+", doc))
+        if res > DEFAULT_MAX_WORDS:
+            st.warning(
+                "⚠️ Your text contains "
+                + str(res)
+                + " words."
+                + " Only the first 50 words will be reviewed. Stay tuned as increased allowance is coming! 😊"
+            )
+            doc = doc[:DEFAULT_MAX_WORDS]
 
+        tab_1, tab_2 = st.tabs(["Input docs", "Input txt file"])
+        with tab_1:
+            df_template = pd.DataFrame(
+                '',
+                index=range(6),
+                columns=['Samples text']
+            )
+            response_samples = AgGrid(df_template, editable=True, fit_columns_on_grid_load=True, key='sample', height=203)
+        with tab_2:
+            corpus_uploader = st.file_uploader(
+                label="Choose a txt file",
+                type=["txt"],
+                help="You can upload a txt file to get the relevant sentences. The file should contain one sentence per line.",
+                key="corpus_uploader",
+                accept_multiple_files=False)
 
-@st.experimental_memo(max_entries=2, ttl=60 * 3)
-def get_model(input_model_name):
-    kr_loader = KRManager(CONFIG_DEFAUT)
-    try:
-        kr_loader.embedder.load_model(pretrained_name_or_abspath=input_model_name)
-    except Exception as e:
-        st.error("Model not found: Error: {}".format(e))
+        merge_input = st.checkbox(label="Merge input docs and samples", value=True, key="merge_input")
+
+        submit_button = st.form_submit_button(label="✨ Get relevant sentences!")
+
+    def get_corpus(response_samples, input_corpus, merge_input):
+        response_samples = response_samples['data']['Samples text'].tolist()
+        response_samples = [x for x in response_samples if x != '']
+        input_corpus = check_corpus(input_corpus)
+
+        if input_corpus and response_samples:
+            if merge_input:
+                corpus = input_corpus + response_samples
+            else:
+                corpus = input_corpus
+        elif input_corpus:
+            corpus = input_corpus
+        elif response_samples:
+            corpus = response_samples
+        else:
+            st.error("Please input corpus or samples")
+            st.stop()
+        return corpus
+
+    def get_inference(input_doc, response_samples, input_corpus, input_top_k, input_model):
+        input_doc = check_input(input_doc)
+        # input_corpus = check_corpus(input_corpus)
+        corpus = get_corpus(response_samples, input_corpus, merge_input)
+        return input_model.inference(input_doc, corpus, input_top_k)
+
+    @st.experimental_memo(max_entries=3, ttl=60 * 3)
+    def get_model(input_model_name):
+        # check if cache is full
+        kr_loader = KRManager(DEFAULT_CONFIG_AT_STARTUP)
+        try:
+            kr_loader.embedder.load_model(pretrained_name_or_abspath=input_model_name)
+        except Exception as e:
+            st.error("Model not found: Error: {}".format(e))
+            st.stop()
+        return kr_loader
+
+    if submit_button:
+        kr = get_model(model_name)
+        inference_docs = get_inference(doc, response_samples, corpus_uploader, top_N, kr)
+
+        st.markdown("## 🎈 **Check results**")
+        df = (
+            pd.DataFrame(inference_docs)
+        )
+        # styling
+        df.index += 1
+        cmGreen = sns.light_palette("green", as_cmap=True)
+
+        df = df.style.background_gradient(cmap=cmGreen, subset=["score"])
+        df = df.set_properties(**{"text-align": "left"})
+
+        format_dictionary = {
+            "score": "{:.3}",
+        }
+
+        df = df.format(format_dictionary)
+        st.table(df)
         st.stop()
-    return kr_loader
 
-
-if clear_memo:
-    # Clear values from *all* memoized functions:
-    st.experimental_memo.clear()
-    st.experimental_rerun()
-
-if submit_button:
-    kr = get_model(model_name)
-    inference_docs = get_inference(doc, corpus_uploader, top_N, kr)
-
-    st.markdown("## 🎈 **Check results**")
-    df = (
-        DataFrame(inference_docs)
-    )
-    # styling
-    df.index += 1
-    cmGreen = sns.light_palette("green", as_cmap=True)
-    cmRed = sns.light_palette("red", as_cmap=True)
-
-    df = df.style.background_gradient(cmap=cmGreen, subset=["score"])
-
-    format_dictionary = {
-        "score": "{:.2}",
-    }
-
-    df = df.format(format_dictionary)
-    st.table(df)
-    st.stop()
+main()
