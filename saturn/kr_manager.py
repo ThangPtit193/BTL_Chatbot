@@ -1,4 +1,6 @@
 import datetime
+import json
+import logging
 import os
 from pathlib import Path
 from time import perf_counter
@@ -17,7 +19,8 @@ from comet.lib.print_utils import print_title
 
 from saturn.components.utils.document import Document, EvalResult
 from saturn.utils.config_parser import ConfigParser
-
+import torch
+import torch.nn as nn
 if TYPE_CHECKING:
     from saturn.components.embeddings.embedding_models import SentenceEmbedder
 
@@ -95,6 +98,7 @@ class KRManager:
 
     def train_embedder(self):
         trainer_config = self.config_parser.trainer_config()
+        logging.info(json.dumps(trainer_config, indent=4))
         self.embedder.train(trainer_config)
 
         # TODO save the model and upload it to axiom
@@ -139,7 +143,8 @@ class KRManager:
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
-            similarity_data = self.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
+            similarity_data = self.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True, \
+                                                            similarity_function=self.pytorch_euclid)
             toc = perf_counter()
             retriever_time = toc - tic
 
@@ -430,3 +435,35 @@ class KRManager:
                     num_relevant=num_relevant,
                 ))
         return docs
+
+    @staticmethod
+    def _euclid(query_vector,tgt_vectors, pdist ):
+        query_matrix = query_vector*tgt_vectors.shape[0]
+        query_score_matrix = pdist(query_matrix,tgt_vectors)
+        query_score_matrix *= -1
+        return query_score_matrix
+
+    def pytorch_euclid(self,src_vectors, tgt_vectors):
+        logging.info("Using euclid distance")
+        src_vectors = torch.as_tensor(src_vectors)
+        tgt_vectors = torch.as_tensor(tgt_vectors)
+
+        if len(src_vectors.shape) == 1:
+            src_vectors = src_vectors.view(1, -1)
+
+        if len(tgt_vectors.shape) == 1:
+            tgt_vectors = tgt_vectors.view(1, -1)
+
+        if len(src_vectors.shape) != 2 or len(tgt_vectors.shape) != 2:
+            msg = "Only 2-dimensional arrays/tensors are allowed in Embedder.pytorch_cos_sim()"
+            raise ValueError(msg)
+
+        score_matrix = []
+        pdist = nn.PairwiseDistance(p=2)
+
+        for src_vector in src_vectors:
+            src_vector = torch.reshape(src_vector,(1,-1))
+            query_score_vector = self._euclid(src_vector,tgt_vectors,pdist)
+            score_matrix.append(query_score_vector)
+        similarity_scores = torch.vstack(score_matrix)
+        return similarity_scores
