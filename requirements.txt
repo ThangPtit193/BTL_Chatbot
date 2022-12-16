@@ -6,3 +6,4 @@ seaborn
 xlsxwriter
 streamlit-aggrid
 streamlit==1.15.2
+streamlit_tags

@@ -1,17 +1,20 @@
 import datetime
 import os
-import time
 from pathlib import Path
 from time import perf_counter
 from typing import TYPE_CHECKING, Optional, List, Union, Tuple, Text, Dict
 
 import pandas as pd
+from pandas import DataFrame
+from tqdm import tqdm
 from xlsxwriter.utility import xl_range_abs
+from tabulate import tabulate
 
 from comet.lib import file_util, logger
 from comet.lib.helpers import get_module_or_attr
 from comet.utilities.utility import convert_unicode
-from pandas import DataFrame
+from comet.lib.print_utils import print_title
+
 from saturn.components.utils.document import Document, EvalResult
 from saturn.utils.config_parser import ConfigParser
 
@@ -119,7 +122,7 @@ class KRManager:
             retriever_results['score'].append(score)
         return retriever_results
 
-    def evaluate_embedder(self):
+    def evaluate_embedder(self, top_k: int = None):
         retriever_results = []
         retriever_top_k_results = []
         model_name_or_paths = self.config_parser.eval_config()['model_name_or_path']
@@ -127,7 +130,7 @@ class KRManager:
             model_name_or_paths = [model_name_or_paths]
         evaluation_results: Dict[str, List[EvalResult]] = {}
         evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
-        for model_name_or_path in model_name_or_paths:
+        for model_name_or_path in tqdm(model_name_or_paths):
             name = os.path.basename(model_name_or_path)
             evaluation_results[name] = []
             evaluation_top_k_results[name] = []
@@ -140,28 +143,30 @@ class KRManager:
             toc = perf_counter()
             retriever_time = toc - tic
 
-            eval_results, eval_top_k_results = self._extract_eval_result(self.query_docs, tgt_docs, similarity_data)
+            eval_results, eval_top_k_results = self._extract_eval_result(self.query_docs,
+                                                                         tgt_docs,
+                                                                         similarity_data,
+                                                                         top_k=top_k)
             evaluation_results[name].extend(eval_results)
             df = pd.DataFrame(evaluation_results[name])
 
             records = {
                 "model_name": name,
                 "query_numbers": len(src_docs),
-                "retriever_time": retriever_time,
-                "query_per_second": retriever_time / len(src_docs),
-                "map": df["ap_score"].mean(),
-                "mrr": df["rr_score"].mean(),
+                "retriever_time": round(retriever_time, 2),
+                "query_per_second": round(retriever_time / len(src_docs), 2),
+                "map": round(df["ap_score"].mean(), 2),
+                "mrr": round(df["rr_score"].mean(), 2),
                 "date_time": datetime.datetime.now()
             }
             retriever_results.append(records)
 
             evaluation_top_k_results[name].extend(eval_top_k_results)
             retriever_top_k_results.append(evaluation_top_k_results)
-
         return retriever_results, retriever_top_k_results
 
-    def save(self, report_type: str = "detail", save_markdown: bool = False):
-        retriever_results, retriever_top_k_results = self.evaluate_embedder()
+    def save(self, report_type: str = "all", top_k: int = None, save_markdown: bool = True):
+        retriever_results, retriever_top_k_results = self.evaluate_embedder(top_k=top_k)
         if report_type == "overall":
             self._save_overall_report(
                 output_dir=self.output_dir,
@@ -169,6 +174,15 @@ class KRManager:
                 save_markdown=save_markdown
             )
         elif report_type == "detail":
+            for models in retriever_top_k_results:
+                for model, data in models.items():
+                    self._save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
+        elif report_type == "all":
+            self._save_overall_report(
+                output_dir=self.output_dir,
+                df=pd.DataFrame(retriever_results),
+                save_markdown=save_markdown
+            )
             for models in retriever_top_k_results:
                 for model, data in models.items():
                     self._save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
@@ -196,6 +210,9 @@ class KRManager:
             md_file = target_path.replace(".csv", ".md")
             with open(md_file, "w") as f:
                 f.write(str(retriever_df.to_markdown()))
+
+        print_title(text="Knowledge Retrieval Overall Results", scale=110, color='purple')
+        print(tabulate(retriever_df, headers='keys', tablefmt='pretty'))
 
     def _save_detail_report(self, output_dir: Union[str, Path], model_name: str, df: Union[DataFrame, List]):
         """
@@ -249,7 +266,6 @@ class KRManager:
             u = df_merged.loc[df_merged['index'] == idx].index.values + 1
 
             cell_range = xl_range_abs(u[0], 0, u[0] + len(u) - 1, df_merged.shape[1])
-            compare_range = xl_range_abs(u[0], df_merged.shape[1] - 1, u[0] + len(u) - 1, df_merged.shape[1] - 1)
 
             if idx % 2 == 0:
                 worksheet.conditional_format(cell_range, {'type': 'no_blanks',
@@ -257,11 +273,12 @@ class KRManager:
             else:
                 worksheet.conditional_format(cell_range, {'type': 'no_blanks',
                                                           'format': bg_format_even})
-            worksheet.conditional_format(compare_range, {'type': 'cell',
-                                                         'criteria': 'not equal to',
-                                                         'value': f"$C${u[0] + 1}",
-                                                         'format': bg_format_wrong
-                                                         })
+            for i in u:
+                if df_merged['label'][i - 1] != df_merged['predicted_labels'][i - 1]:
+                    wrong_label_range = xl_range_abs(i - 1, df_merged.columns.get_loc('most_relevant_docs'),
+                                                     i - 1, df_merged.shape[1])
+                    worksheet.conditional_format(wrong_label_range, {'type': 'no_blanks',
+                                                                     'format': bg_format_wrong})
 
             if len(u) < 2:
                 pass  # do not merge cells if there is only one row
@@ -337,6 +354,11 @@ class KRManager:
 
             )
             top_k = top_k if top_k in range(1, src_doc.num_relevant) else src_doc.num_relevant
+            if top_k > 20:
+                _logger.warning(
+                    f"Got {top_k} instead of being less than or equal to 20, so the default value {5} will be applied")
+                top_k = 5
+
             tmp_df = pd.DataFrame(eval_result.to_dict())[:top_k]
             eval_top_k_results.append(tmp_df.to_dict())
             eval_results.append(eval_result.to_dict())

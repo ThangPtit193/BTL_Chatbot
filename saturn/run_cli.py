@@ -28,10 +28,24 @@ def train(config):
 
 
 @click.command()
-@click.option('--config', '-c', required=True, default="config/config.yaml")
-def test(config):
+@click.option('--config', '-c',
+              required=True,
+              default="config/config.yaml")
+@click.option('--rtype', '-rt',
+              required=False,
+              help="Supported report types are `detail, overall, all` with default value is all",
+              default="all")
+@click.option('--top_k', '-k',
+              required=False,
+              help="Top_k for limiting the retrieval report",
+              default=None)
+@click.option('--save_md', '-md',
+              required=False,
+              help="Save report with markdown file",
+              default=False)
+def test(config, rtype, top_k, save_md):
     kr_manager = KRManager(config_path=config)
-    kr_manager.evaluate_embedder()
+    kr_manager.save(report_type=rtype, top_k=top_k, save_markdown=save_md)
 
 
 @click.command()
@@ -96,4 +110,3 @@ entry_point.add_command(ui)
 
 if __name__ == '__main__':
     entry_point()
-
