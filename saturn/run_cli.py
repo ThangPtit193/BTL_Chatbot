@@ -38,9 +38,11 @@ def train(config):
 @click.option('--top_k', '-k',
               required=False,
               help="Top_k for limiting the retrieval report",
+              type=int,
               default=None)
 @click.option('--save_md', '-md',
               required=False,
+              type=bool,
               help="Save report with markdown file",
               default=False)
 def test(config, rtype, top_k, save_md):
@@ -63,6 +65,7 @@ entry_point.add_command(version)
 entry_point.add_command(train)
 entry_point.add_command(test)
 entry_point.add_command(ui)
+entry_point.add_command(model)
 
 if __name__ == '__main__':
     entry_point()

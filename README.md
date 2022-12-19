@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://gitlab.ftech.ai/nlp/va/knowledge-retrieval"><img src="./images/Meteor.svg" alt="Meteor Services"></a>
+  <a href="https://gitlab.ftech.ai/nlp/va/knowledge-retrieval"><img src="./images/saturn_readme.svg" alt="Saturn Services"></a>
 </p>
 
 <p>
@@ -7,18 +7,30 @@
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Models%20on%20Hub-yellow)](https://huggingface.co/models?filter=keytotext)
 [![AxiomHub](https://img.shields.io/badge/Axiom-Axiom%20Hub-blue)](https://axiom.dev.ftech.ai/ui/home)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Demo-ff69b4)](https://gitlab.ftech.ai/nlp/va/knowledge-retrieval)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Demo-ff69b4)](http://192.168.1.11:8501/)
 </p>
 
 
-
-Saturn Services is a service that enables you to upload document to DocumentStore, semantic document search use case and
+Saturn is a service that enables you to upload document to DocumentStore, semantic document search use case and
 training
 model (**coming soon**).
 Whether you want to perform Question Answering or semantic document search, you can use the SOTA NLP models
 in Venus hub to provide unique search experiences and allow your users to query in natural language.
 
-## Core Features
+# **Contents**
+
+* [Core Feature](#core-features)
+* [Installation](#installation)
+* [Configuration](#configuration)
+* [Data Preparation](#data-preparation)
+* [Services](#services)
+* [Information Retriveal Metrics](#ir-metrics)
+* [Experiments](#expriments)
+* [Reference](#reference)
+* [Contributors](#contributors)
+
+
+## Core Features <div id="core-features"></div>
 
 - [x] **Latest models**: Utilize all latest transformer-based models (e.g., BERT, RoBERTa, PhoBert) for extractive QA,
   generative QA, and document retrieval.
@@ -30,25 +42,24 @@ in Venus hub to provide unique search experiences and allow your users to query 
   soon)
 - [x] **End-to-End**: All tooling in one place: training, eval, inference, etc.
 - [ ] **RestAPI**: Coming soon ...
-- [ ] **Streamlit**: Coming soon ...
+- [x] **Streamlit**: [https://saturn.dev.ftech.ai/home](http://192.168.1.11:8501/)
 
-## 💾 Installation
+## 💾 Installation <div id="core-features"></div>
 
 The following command will install the latest version of Saturn from the main branch.
+You can install a basic version of Saturn's latest release by using [pip](https://github.com/pypa/pip).
 
 ```shell
-pip install .
+pip install <update later>
 ```
 
-## Requirements
-
-### Using pip
+### Install from repository
 
 ```shell
 python3 -m venv ./venv 
 . ./venv/bin/activate
 pip install --upgrade pip wheel
-pip install -r requirements.txt
+pip install .
 ```
 
 The minimum required packages to train and run the baseline ML models are listed in [requirements.txt](requirements.txt)
@@ -81,60 +92,55 @@ To support for most current servers, we highly recommend install pytorch in stab
 pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio==0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
 ```
 
-## Configuration
+## Configuration <div id="configuration"></div>
 
 To run benchmark for your dataset and model, you config it at [config file](config/config.yaml) or pass custom config
 path
 
+Sample configuration
 ```yaml
 GENERAL:
   run_mode: inference
 
 EMBEDDER:
-  class: NaiveEmbedder
+  class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
+
   TRAINER:
-    # A data_config.json file
-    data_config_path: data/data_config.json
-    # The pretrained model
-    #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
+    triplets_data_path:
+      - data/train_data/dummy/triples/triples_10.json
     pretrained_model: vinai/phobert-base
-    # Total of steps, it depends on the number of question answering pair that you have
-    steps: 1000
-    # When reach this step, we will be saved checkpoint
-    save_steps: 10000
-    # The max length of tokenizer
-    max_length: 128
-    # Use 20 for cossim, and 1 when you work with un-normalized embeddings with dot product
-    scale: 20
-    batch_size: 32
     model_save_path: models
-    warmup_steps: 50
-    datasets_per_batch: 2
-    num_same_dataset: 1
-    evaluation_steps: 200
+    n_samples: 10
+    batch_size: 128
+    epochs: 10
+    warmup_steps: 5000
+    evaluation_steps: 2000
     weight_decay: 0.01
     max_grad_norm: 1.0
-    use_amp: False
+    use_amp: True
     save_best_model: True
     show_progress_bar: True
+    checkpoint_path: models/checkpoints
+    checkpoint_save_epoch: 50
+    checkpoint_save_total_limit: 3
 
 EVALUATION:
-  # Corpus name or path, saturn will load your corpus dataset from local or axiom hub (coming soon)
-  corpus_name_or_path: "assets/corpus_company.json"
-  # Corpus name or path, saturn will load your query dataset from local or axiom hub ((coming soon))
-  query_name_or_path: "assets/query_company.json"
-  model_name_or_path: [ "distilbert-multilingual-faq-v3.2" , "khanhpd2/sbert_phobert_large_cosine_sim", "timi-idol-paraphrase-multilingual-MiniLM-L12-v2-v.1.0.1" ]
+  type: "evaluation_pipeline"
+  corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
+  query_name_or_path: "data/eval-data/dummy/query_docs.json"
+  model_name_or_path: [ "fschool-distilbert-multilingual-faq-v8.0.0"]
+  output_dir: "reports"
 
 
 ```
 
-## Data Preparation
+## Data Preparation <div id="data-preparation"></div>
 
 We provide you with two approaches to prepare dataset for training, evaluating and inferring models. However, you should
 follow my data format to avoid any errors while executing.
 
-<span style="color:red">**Corpus and Query** Datasets</span> should be prepared before running services.
+<span style="color:green">Corpus and Query Datasets</span> should be prepared before running services.
 
 ```yaml
 {
@@ -155,34 +161,16 @@ follow my data format to avoid any errors while executing.
 
 Noted that query and corpus have the same keys.
 
-## Local Run
+## Services <div id="services"></div>
 
-You should export python path to run this service in local. To see why we export
-it [here](https://www.simplilearn.com/tutorials/python-tutorial/python-path)
+Currently, we provide with you some services such as evaluation, inference.
 
-```commandline
-export PYTHONPATH=./
-```
+## Information Retrieval Metrics <div id="ir-metrics"></div>
 
-If configuration path is none, the default configuration will be loaded. Use `--c` or `-config` if you use your
-configuration path.
+There are three metrics for evaluating information retrieval
+models, Learn more: [IR metrics](https://docs.google.com/document/d/1bTPGMUd4q0591bIRb9g28X1qxcc3B5i0WdQPvegZINE/edit)
 
-```shell
-saturn test 
-```
-
-The benchmark results will be saved at [./reports](reports) folder.
-
-## Services
-
-(Coming soon)
-
-## Information Retriever Metrics
-
-There are three metrics for evaluating information retriever
-models, [see here](https://docs.google.com/document/d/1bTPGMUd4q0591bIRb9g28X1qxcc3B5i0WdQPvegZINE/edit)
-
-## Command Line Interface
+## Command Line Interface <div id="cli"></div>
 
 #### Training
 
@@ -200,9 +188,28 @@ To evaluate a model, run:
 saturn test -c <config/config.yaml>
 ```
 
+Options
+
+```commandline  
+-c, --config    TEXT  path to config  [required]
+-rt, --rtype    TEXT  supported report type
+-k, --top_k     int   k retriveal docs
+-md, --save_md  bool  save report with markdown file
+```
+
 #### Inference
 
-Coming soon ...
+To run the UI, run the following from the root directory of the Saturn repo
+
+```shell
+saturn ui
+```
+
+Options
+
+```commandline
+-p, --path TEXT path to streamlit file [optional]
+```
 
 #### Push and pull model to/from Axiom Hub
 
@@ -242,40 +249,47 @@ To list all models in Axiom Hub, you can use the following command.
 ```shell
 saturn ls
 ```
-## Experiments
 
-| Model name / Data name                                    | Timi-eval-data-v1.0.0     | Timi-eval-data-v1.2.0     |
-|:----------------------------------------------------------|:--------------------------|:--------------------------|
-| distilbert-multilingual-faq-v3.2                          | 0.252mAP 0.688mRR         | 0.293mAP 0.540mRR         |
-| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0 | **0.733**mAP **0.793**mRR | 0.653mAP 0.751mRR         |
-| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0 | 0.6686mAP 0.783mRR        | **0.749**mAP **0.770**mRR |
+## Experiments <div id="experiments"></div>
+
+| Model name / Data name                                    | Timi-eval-data-v1.0.0      | Timi-eval-data-v1.2.0     |
+|:----------------------------------------------------------|:---------------------------|:--------------------------|
+| distilbert-multilingual-faq-v3.2                          | 0.252mAP 0.688mRR          | 0.293mAP 0.540mRR         |
+| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0 | **0.733**mAP **0.793**mRR  | 0.653mAP 0.751mRR         |
+| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0 | 0.6686mAP 0.783mRR         | **0.749**mAP **0.770**mRR |
 
 **Note**
+
 1. distilbert-multilingual-faq-v3.2
 
 - No information retriever
 
 2. timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0
+
+```text
 - Pretrained model: [microsoft/MiniLM-L12-H384-uncased](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)
 - Training data: 9M FAQ data from timi idol (ID 464, version: v1.0.0)
 - Method: Naive fine-tuning
 - Steps: 600000
 - Batch size: 128
+```
 
 3. timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.2.0
 
+```text
 - Pretrained model: [microsoft/MiniLM-L12-H384-uncased](https://huggingface.co/microsoft/MiniLM-L12-H384-uncased)
 - Training data: 9M FAQ data from timi idol (ID 464, version: v1.1.0)
 - Method: Naive fine-tuning
 - Steps: 500000
 - Batch size: 128
+```
 
-## Reference
+## Reference <div id="reference"></div>
 
 [Evaluation Metrics For Information Retrieval](https://amitness.com/2020/08/information-retrieval-evaluation/), Amit
 Chaudhary, 2020
 
-## Code Contributors
+## Code Contributors <div id="contributors"></div>
 
 [Hao Nguyen Van](https://gitlab.ftech.ai/haonv)
 
