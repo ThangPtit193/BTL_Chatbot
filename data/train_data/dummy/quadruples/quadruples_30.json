@@ -1,0 +1,65 @@
+{
+  "data": [
+    {
+      "query": "Tôi rất thích con mèo",
+      "pos": "Tôi yêu con mèo rất nhiều",
+      "neg1": "Tôi rất ghét con mèo",
+      "neg2": "Tôi ghét con chó"
+    },
+    {
+      "query": "Tôi rất thích con mèo",
+      "pos": "Tôi thương con mèo rất nhiều",
+      "neg1": "Tôi rất thương con chó",
+      "neg2": "Tôi yêu động vật, nhất là chó"
+    },
+    {
+      "query": "Tôi rất thích con chó",
+      "pos": "Tôi thương con chó rất nhiều",
+      "neg1": "Tôi rất thương con mèo",
+      "neg2": "Tôi yêu quý thiên nhiên, nhất là mèo"
+
+    },
+    {
+      "query": "Tôi rất thích con mèo",
+      "pos": "Tôi yêu con mèo rất nhiều",
+      "neg1": "Tôi rất ghét con mèo",
+      "neg2": "Tôi ghét con chó"
+    },
+    {
+      "query": "hôm nay tôi đi học",
+      "pos": "hôm nay tôi đến trường",
+      "neg1": "hôm nay tôi đi chơi",
+      "neg2": "Hôm này tôi không đến trường"
+    },
+    {
+      "query": "hôm nay tôi đi học",
+      "pos": "hôm nay tôi đến trường",
+      "neg1": "hôm nay tôi đi chơi",
+      "neg2": "hôm mai tôi đi chơi"
+    },
+    {
+      "query": "hôm nay tôi đi học",
+      "pos": "hôm nay tôi đến trường",
+      "neg1": "hôm nay tôi đi chơi",
+      "neg2": "Trường học tôi đóng cửa"
+    },
+    {
+      "query": "Tôi rất thích con mèo",
+      "pos": "Tôi thương con mèo rất nhiều",
+      "neg1": "Tôi rất thương con chó",
+      "neg2": "Tôi yêu yêu chó"
+    },
+    {
+      "query": "hôm nay tôi đi học",
+      "pos": "hôm nay tôi đến trường",
+      "neg1": "hôm nay tôi đi chơi",
+      "neg2": "hôm nay tôi đi ngủ"
+    },
+    {
+      "query": "Tôi rất thích con mèo",
+      "pos": "Tôi yêu con mèo rất nhiều",
+      "neg1": "Tôi rất ghét con mèo",
+      "neg2": "Tôi ghét con chó"
+    }
+  ]
+}
