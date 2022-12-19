@@ -23,6 +23,7 @@ from sentence_transformers import SentenceTransformer
 from venus.sentence_embedding.sentence_embedding import  SentenceEmbedding
 
 
+
 __all__ = []
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 _logger = logger.get_logger(__name__)
@@ -367,3 +368,100 @@ class SentenceEmbedder(BaseEmbedder):
         # if not os.path.exists(save_best_model_path):
         #     os.makedirs(save_best_model_path)
         # self.learner.save(save_best_model_path)
+
+class QuadrupletEmbedder(BaseEmbedder):
+
+    def __init__(self, model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased"):
+        super(QuadrupletEmbedder, self).__init__()
+        self.model_name_or_path: Text = model_name_or_path
+        self._learner: CustomSentenceTransformer = None
+
+    @property
+    def learner(self):
+        if not self._learner:
+            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path)
+        return self._learner
+
+    def _train(
+        self,
+        quadruplet_data_path: List[Text],
+        pretrained_model="bert-base-uncased",
+        model_save_path: Text = None,
+        n_samples: int = 5,
+        batch_size: int = 128,
+        epochs: int = 5,
+        warmup_steps: int = 5000,
+        evaluation_steps: int = 2000,
+        weight_decay: float = 0.01,
+        max_grad_norm: float = 1.0,
+        use_amp: bool = False,
+        save_best_model: bool = True,
+        show_progress_bar: bool = True,
+        checkpoint_path: Text = None,
+        checkpoint_save_epoch: int = None,
+        checkpoint_save_total_limit: int = None,
+        resume_from_checkpoint: Text = None,
+        **kwargs,
+    ):
+        """
+        Train the sentence embedding model
+        :param triplets_data: The triplets data
+        :param pretrained_model: The pretrained model
+        :param model_save_path: Where to save the model
+        :param n_samples:
+        :param batch_size:
+        :param epochs:
+        :param warmup_steps:
+        :param evaluation_steps:
+        :param weight_decay:
+        :param max_grad_norm:
+        :param use_amp:
+        :param save_best_model:
+        :param show_progress_bar:
+        :return:
+        """
+        from saturn.components.dataset_reader.quadruplet_dataset import QuadrupletDataset
+        # quad loss
+        from  saturn.components.losses.quadruplet_loss import QuadrupletLoss
+        # from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
+        # Producing data
+        quadruplets_data = []
+        if isinstance(quadruplet_data_path, str):
+            quadruplet_data_path = [quadruplet_data_path]
+        for path in quadruplet_data_path:
+            if not os.path.exists(path):
+                raise FileNotFoundError(f"triplets data path {path} does not exist")
+            quadruplets_data.extend(file_util.load_json(path)['data'])
+
+        train_dataset = QuadrupletDataset(
+            quadruplet_examples=quadruplets_data,
+            query_key="query",
+            pos_key="pos",
+            neg_key_1="neg1",
+            neg_key_2="neg2"
+        )
+        train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
+        train_loss = QuadrupletLoss(model=self.learner)
+
+        # Train the model
+        self.learner.fit(
+            train_objectives=[(train_dataloader, train_loss)],
+            evaluator=None,
+            epochs=epochs,
+            warmup_steps=warmup_steps,
+            output_path=model_save_path,
+            evaluation_steps=evaluation_steps,
+            use_amp=use_amp,
+            optimizer_params={'lr': 2e-5},
+            optimizer_class=transformers.AdamW,
+            scheduler='WarmupLinear',
+            weight_decay=weight_decay,
+            max_grad_norm=max_grad_norm,
+            save_best_model=save_best_model,
+            show_progress_bar=show_progress_bar,
+            checkpoint_path=checkpoint_path,
+            checkpoint_save_epoch=checkpoint_save_epoch,
+            checkpoint_save_total_limit=checkpoint_save_total_limit,
+            resume_from_checkpoint=resume_from_checkpoint
+        )
+        self.learner.save(model_save_path)
