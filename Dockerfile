@@ -1,4 +1,4 @@
-FROM silverlogic/python3.6
+FROM python:3.7.9-alpine3.13
 ENV APPLICATION_SERVICE = /saturn
 ENV PYTHONPATH "${PYTHONPATH}:$APPLICATION_SERVICE"
 
