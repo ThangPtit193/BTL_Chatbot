@@ -7,5 +7,7 @@ services:
       - 8501:8501
     environment:
       - DOCKER_DEFAULT_PLATFORM=linux/amd64   # This is to align with Apple Silicon (M1)
+    env_file:
+      - .env
     build: .
     restart: always
