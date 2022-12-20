@@ -78,8 +78,16 @@ def lazy_init():
     kr._corpus_docs = corpus
     kr._query_docs = None
     kr._query_docs = queries
+
     return kr
 
+
+result_type = st.selectbox('Select result type', ['',
+                                                  'Display detail report',
+                                                  'Display overall result',
+                                                  'Download overall report',
+                                                  'Download detail report',
+                                                  'Download all reports'], key='4')
 
 if summit_button:
     kr = lazy_init()
@@ -88,12 +96,6 @@ if summit_button:
     st.session_state['overall_report'] = retriever_results
     st.session_state['detail_report'] = retriever_top_k_results
 
-result_type = st.selectbox('Select result type', ['',
-                                                  'Display detail report',
-                                                  'Display overall result',
-                                                  'Download overall report',
-                                                  'Download detail report',
-                                                  'Download all reports'], key='4')
 
 if result_type == "Display overall result":
     if st.session_state['overall_report'] is not None:
