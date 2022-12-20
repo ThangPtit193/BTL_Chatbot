@@ -356,8 +356,8 @@ class KRManager:
             top_k = top_k if top_k in range(1, src_doc.num_relevant) else src_doc.num_relevant
             if top_k > 20:
                 _logger.warning(
-                    f"Got {top_k} instead of being less than or equal to 20, so the default value {5} will be applied")
-                top_k = 5
+                    f"Got {top_k} instead of being less than or equal to 20, so the default value {10} will be applied")
+                top_k = 10
 
             tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
             eval_top_k_results.append(tmp_df.to_dict())

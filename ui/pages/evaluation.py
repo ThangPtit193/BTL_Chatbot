@@ -1,22 +1,20 @@
 import os
-import json
 import shutil
 import time
 from pathlib import Path
 from random import random
 
-from typing import List, Union
+from typing import Union
 import pandas as pd
 
 import streamlit as st
 from comet.lib.file_util import zip_folder
 from streamlit_tags import st_tags
 from st_aggrid import AgGrid
-from comet.utilities.utility import convert_unicode
 
 from saturn.kr_manager import KRManager
-from saturn.components.utils.document import Document
 from ui import MODELS
+from ui.utils.io import get_json, load_docs
 
 DEFAULT_CONFIG_AT_STARTUP = os.getenv(
     "DEFAULT_CONFIG_AT_STARTUP", "config/dummy/config_mini_sbert.yaml")
@@ -25,6 +23,8 @@ if 'overall_report' not in st.session_state:
 if 'detail_report' not in st.session_state:
     st.session_state['detail_report'] = None
 
+kr = KRManager(DEFAULT_CONFIG_AT_STARTUP)
+
 
 def trigger_on_click(folder_path: Union[str, Path]):
     time.sleep(1)
@@ -32,42 +32,11 @@ def trigger_on_click(folder_path: Union[str, Path]):
         shutil.rmtree(folder_path)
 
 
-def load_docs(data_docs, corpus=None) -> List[Document]:
-    """
-    Load documents from a file or a directory
-    """
-    if not isinstance(data_docs, dict):
-        raise FileNotFoundError(f"File not valid")
-
-    docs = []
-    for unique_intent, query_list in data_docs.items():
-        if corpus:
-            num_relevant = len(corpus[unique_intent])
-        else:
-            num_relevant = None
-        for query in query_list:
-            docs.append(Document(
-                text=convert_unicode(query),
-                label=unique_intent,
-                num_relevant=num_relevant,
-            ))
-    return docs
-
-
 st.set_page_config(
     page_title="Evaluation",
     page_icon="🤖",
     layout="wide",
 )
-
-
-def get_json(json_files):
-    json_list = {}
-    for json_file in json_files:
-        temp_json = json.loads(json_file.read())
-        json_list.update(temp_json)
-    return json_list
-
 
 st.title("🤖 Evaluation")
 
@@ -96,26 +65,24 @@ with st.form("eval model") as eval_form:
     summit_button = st.form_submit_button()
 
 
-@st.experimental_singleton
+# @st.experimental_singleton
 def lazy_init():
-    return KRManager(DEFAULT_CONFIG_AT_STARTUP)
-
-
-if summit_button:
-    kr = lazy_init()
-
     models_name = list(set(eval_models))
     queries_json = get_json(eval_query)
     corpus_json = get_json(eval_corpus)
     queries = load_docs(queries_json, corpus_json)
     corpus = load_docs(corpus_json)
 
-    folder_dir = os.path.join(kr.output_dir, str(time.time()))
-    kr._output_dir = folder_dir
-
     kr._model_name_or_path = models_name
+    kr._corpus_docs = None
     kr._corpus_docs = corpus
-    kr._queries = queries
+    kr._query_docs = None
+    kr._query_docs = queries
+    return kr
+
+
+if summit_button:
+    kr = lazy_init()
     retriever_results, retriever_top_k_results = kr.evaluate_embedder()
 
     st.session_state['overall_report'] = retriever_results

@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
+
 # Feedback page
 # input text for feedback
 # save feedback to file
@@ -14,5 +15,6 @@ def feedback():
         feedback_df = pd.DataFrame({"feedback": [feedback], "time": [datetime.now()]})
         feedback_df.to_csv("ui/logs/feedback.csv", mode="a", index=False, header=False)
         st.success("Feedback saved")
+
 
 feedback()
