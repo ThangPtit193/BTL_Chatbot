@@ -1,23 +1,35 @@
-import streamlit as st
-import pandas as pd
-from ui import MODELS
-from typing import List
-import json
 import os
-from saturn.kr_manager import KRManager
-from comet.lib import file_util
-from saturn.components.utils.document import Document
-from comet.utilities.utility import convert_unicode
-from streamlit_tags import st_tags
-from ui.utils import filter_dataframe
+import json
+import shutil
+import time
+from pathlib import Path
+from random import random
 
+from typing import List, Union
+import pandas as pd
+
+import streamlit as st
+from comet.lib.file_util import zip_folder
+from streamlit_tags import st_tags
+from st_aggrid import AgGrid
+from comet.utilities.utility import convert_unicode
+
+from saturn.kr_manager import KRManager
+from saturn.components.utils.document import Document
+from ui import MODELS
 
 DEFAULT_CONFIG_AT_STARTUP = os.getenv(
     "DEFAULT_CONFIG_AT_STARTUP", "config/dummy/config_mini_sbert.yaml")
-if 'retriever_results' not in st.session_state:
-    st.session_state['retriever_results'] = None
-if 'retriever_top_k_results' not in st.session_state:
-    st.session_state['retriever_top_k_results'] = None
+if 'overall_report' not in st.session_state:
+    st.session_state['overall_report'] = None
+if 'detail_report' not in st.session_state:
+    st.session_state['detail_report'] = None
+
+
+def trigger_on_click(folder_path: Union[str, Path]):
+    time.sleep(1)
+    if os.path.exists(folder_path):
+        shutil.rmtree(folder_path)
 
 
 def load_docs(data_docs, corpus=None) -> List[Document]:
@@ -60,11 +72,11 @@ def get_json(json_files):
 st.title("🤖 Evaluation")
 
 with st.form("eval model") as eval_form:
-    eval_model = st_tags(
+    eval_models = st_tags(
         label='Enter model:',
         text='Press enter to add more',
         value=['vinai/phobert-base'],
-        suggestions=['vinai/phobert-base'],
+        suggestions=MODELS,
         maxtags=5,
         key='eval_model')
     col_1, col_2 = st.columns(2)
@@ -83,73 +95,132 @@ with st.form("eval model") as eval_form:
         )
     summit_button = st.form_submit_button()
 
+
+@st.experimental_singleton
+def lazy_init():
+    return KRManager(DEFAULT_CONFIG_AT_STARTUP)
+
+
 if summit_button:
-    model_list = eval_model
+    kr = lazy_init()
+
+    models_name = list(set(eval_models))
     queries_json = get_json(eval_query)
     corpus_json = get_json(eval_corpus)
     queries = load_docs(queries_json, corpus_json)
     corpus = load_docs(corpus_json)
 
-    kr = KRManager(DEFAULT_CONFIG_AT_STARTUP)
-    kr._model_name_or_path = model_list
+    folder_dir = os.path.join(kr.output_dir, str(time.time()))
+    os.mkdir(folder_dir)
+    kr._output_dir = folder_dir
 
+    kr._model_name_or_path = models_name
     kr._corpus_docs = corpus
     kr._queries = queries
     retriever_results, retriever_top_k_results = kr.evaluate_embedder()
 
-    st.session_state['retriever_results'] = retriever_results
-    # print(retriever_top_k_results)
-    df = pd.DataFrame(retriever_top_k_results)
-    # df = pd.DataFrame(retriever_top_k_results[0]['all-MiniLM-L6-v2'])
-    if isinstance(df, list):
-        df = pd.DataFrame(df)
-    # df = df.drop(columns=['query_id'])
-    # df.insert(loc=0, column='index', value=df.index)
+    st.session_state['overall_report'] = retriever_results
+    st.session_state['detail_report'] = retriever_top_k_results
 
-    # # explode lists of corpus to row
-    df = df.apply(pd.Series.explode)
-    print(df)
-    # df_merged = pd.DataFrame(df.to_dict('records'))
-    # print(df_merged)
-    # st.dataframe(retriever_top_k_results[0]['phobert-base'])
-    # st.session_state['retriever_top_k_results'] = retriever_top_k_results
-    kr._save_overall_report(
-        output_dir='reports',
-        df=pd.DataFrame(retriever_results),
-        save_markdown=False,
-    )
-    for models in retriever_top_k_results:
-        for model, data in models.items():
-            kr._save_detail_report(output_dir="reports",
-                                   model_name=model, df=data)
+result_type = st.selectbox('Select result type', ['',
+                                                  'Display detail report',
+                                                  'Display overall result',
+                                                  'Download overall report',
+                                                  'Download detail report',
+                                                  'Download all reports'], key='4')
 
+if result_type == "Display overall result":
+    if st.session_state['overall_report'] is not None:
+        results = st.session_state['overall_report']
+        df = pd.DataFrame(results)
+        AgGrid(df, key=random())
+        st.success('Compute metrics done!')
+    else:
+        st.error('No file to show', icon="🚨")
 
-@st.cache
-def convert_df(df):
-    # IMPORTANT: Cache the conversion to prevent computation on every rerun
-    return df.to_csv().encode('utf-8')
+if result_type == "Display detail report":
+    if st.session_state['detail_report'] is not None:
+        results = st.session_state['detail_report']
+        my_bar = st.progress(0)
+        percentage = 0
+        for idx, models in enumerate(results):
+            percentage = (idx + 1) / len(results)
+            my_bar.progress(percentage)
+            for model, df in models.items():
+                if isinstance(df, list):
+                    df = pd.DataFrame(df)
+                # df = df.drop(columns=['query_id'])
+                df.insert(loc=0, column='index', value=df.index)
 
+                # explode lists of corpus to row
+                df = df.apply(pd.Series.explode)
+                with st.container():
+                    st.write(f"<h2 style='text-align: center; color: red; font-size:20px;'>Results for {model}</h2>",
+                             unsafe_allow_html=True)
+                    df_merged = pd.DataFrame(df.to_dict('records'))
+                    AgGrid(df_merged, key=random())
+        st.success('Compute metrics done!')
+    else:
+        st.error('No file to show', icon="🚨")
 
-result_type = st.selectbox('Select result type', [
-                           'Retriever results', 'Detail retriever results'], key='4')
-if result_type == 'Retriever results':
-    # st.session_state['df_1']
-    if st.session_state['retriever_results'] is not None:
-        st.dataframe(st.session_state['retriever_results'])
-        # st.download_button('Retriever results', convert_df(st.session_state['retriever_results'][0]), 'download.csv')
-        with open('reports/knowledge_retrieval.csv') as f:
-            st.download_button('Retriever results', f,
-                               'knowledge_retrieval.csv')
-if result_type == 'Detail retriever results':
-    if st.session_state['retriever_top_k_results'] is not None:
-        details_result = st.session_state['retriever_top_k_results']
-        print(type(details_result[0]))
-        model_list_details = list(details_result[0].keys())
-        key_select = st.selectbox(
-            'Select result type', model_list_details, key='5')
-        details_result[0][key_select]
-        df_key_select = pd.DataFrame(details_result[0][key_select])
-        st.dataframe(df_key_select)
+if result_type == 'Download overall report':
+    if st.session_state['overall_report'] is not None:
+        df = pd.DataFrame(st.session_state['overall_report']).to_csv()
+        st.download_button(label=' 📥 Download overall report',
+                           data=df,
+                           file_name='knowledge_retrieval.csv')
+    else:
+        st.error('No file to download', icon="🚨")
 
-        with open(f'reports/{key_select}.xlsx') as f:
-            st.download_button('Retriever results', f, f'{key_select}.xlsx')
+if result_type == 'Download detail report':
+    if st.session_state['detail_report'] is not None:
+
+        results = st.session_state['detail_report']
+        kr = lazy_init()
+
+        # create tempt folder to compress all reports
+        dt = str(time.time())
+        temp_path = os.path.join('reports', dt)
+        os.mkdir(temp_path)
+        for idx, models in enumerate(results):
+            for model, df in models.items():
+                kr.save_detail_report(output_dir=temp_path, model_name=model, df=df)
+        time.sleep(5)
+        zip_path = zip_folder(folder=temp_path)
+        with open(zip_path, "rb") as fp:
+            btn = st.download_button(
+                label="📥 Download detail reports",
+                data=fp,
+                file_name=f"{zip_path}",
+                mime="application/zip",
+                on_click=trigger_on_click(temp_path)
+            )
+    else:
+        st.error('No file to download', icon="🚨")
+
+if result_type == "Download all reports":
+    kr = lazy_init()
+
+    # create tempt folder to compress all reports
+    dt = str(time.time())
+    temp_path = os.path.join('reports', dt)
+    os.mkdir(temp_path)
+    if st.session_state['detail_report'] is not None:
+        results = st.session_state['detail_report']
+        for idx, models in enumerate(results):
+            for model, df in models.items():
+                kr.save_detail_report(output_dir=temp_path, model_name=model, df=df)
+    if st.session_state['overall_report'] is not None:
+        df = pd.DataFrame(st.session_state['overall_report'])
+        kr.save_overall_report(output_dir=temp_path, df=df, save_markdown=True)
+
+    time.sleep(5)
+    zip_path = zip_folder(folder=temp_path)
+    with open(zip_path, "rb") as fp:
+        btn = st.download_button(
+            label="📥 Download all reports",
+            data=fp,
+            file_name=f"{zip_path}",
+            mime="application/zip",
+            on_click=trigger_on_click(temp_path)
+        )
