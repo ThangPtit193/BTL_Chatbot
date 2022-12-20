@@ -111,7 +111,6 @@ if summit_button:
     corpus = load_docs(corpus_json)
 
     folder_dir = os.path.join(kr.output_dir, str(time.time()))
-    os.mkdir(folder_dir)
     kr._output_dir = folder_dir
 
     kr._model_name_or_path = models_name
