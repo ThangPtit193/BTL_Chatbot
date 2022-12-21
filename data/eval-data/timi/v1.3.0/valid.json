@@ -1,0 +1,1255 @@
+{
+    "recsys_food/recsys_request_food_by_session": [
+        "cuối tuần tớ nên ăn nào nhở",
+        "ngay nha giao viet nam ăn j cho hợp nhở",
+        "trưa nay nên ăn j nhể",
+        "bữa tối thì ăn gì mầy",
+        "trưa nay nên ăn nào nhở"
+    ],
+    "ask_hobby/general_ask_hobby_va_sport": [
+        "chú em có thích chơi thể thao khum",
+        "Môn thể thao nào mầy thích nhất",
+        "bot thích chơi thể thao không",
+        "cậu có biết chơi trượt tuyết hem",
+        "bot có hay chơi bơi lội hông"
+    ],
+    "company_product_ask_info": [
+        "cho tôi hỏi sản phẩm fscool làm về mảng gì",
+        "công ty f-tech có le tan ao hử",
+        "đang chạy những sản phẩm nào",
+        "chị muốn hỏi về product của cong ty",
+        "cổng game là game xây dựng thành phố à"
+    ],
+    "flirting": [
+        "ngành văn xin caption gây chú ý con trai",
+        "cho tớ xin status tán tỉnh bạn gái tên nương",
+        "tán tỉnh con trai theo phong cách công nghệ thông tin",
+        "ngành địa xin câu tỏ tình con gái",
+        "ngành địa xin câu nói thả thính anh zai"
+    ],
+    "ask_person/knowledge_ask_gender_person": [
+        "mi ơi Nguyên Khang là con gái chính xác không",
+        "Cáo là g/tính như thế nào hả",
+        "mình muốn biết Đỗ Mỹ Linh là đàn ông hay phụ nữ",
+        "Đàm Phương Linh là nam nhỉ",
+        "bạn ơi Đặng Thu Thảo là nữ chuẩn chỉ không"
+    ],
+    "recruit/company_rec_ask_how_return_result": [
+        "bên nhân sự có gọi để tbao kết quả pv cho tôi ko nhỉ",
+        "toai nhận kqua phong vân như nào",
+        "bên hr admin có gọi để tbao kết quả phỏng vấn cho tôi ko nhỉ",
+        "công ty sẽ gọi điện để thông báo kqua phỏng vân nhỉ",
+        "cty sẽ gọi điện để thông báo kqua pv nhỉ"
+    ],
+    "department/company_department_ask_responsibility": [
+        "cho mình hỏi vai trò của phòng ban CV",
+        "ỉis biết phòng ban it support làm những nào không",
+        "ták chính của phòng ban NLP liên quan đến j",
+        "phòng ban nào chịu trách nhiệm nghiên cứu trong c/ty",
+        "nh.vu của bphan dev là j vậy á hả"
+    ],
+    "recsys_music/recsys_request_music_by_song_name": [
+        "bot có link của bài hát are you man enough hông, gửi tớ đi",
+        "gợi ý tớ bai hat Don't let me down của Hà Anh Tuấn nhe",
+        "tớ mún nghe that's why we của Quang Vinh",
+        "cho tớ ca khúc tặng em",
+        "mầy cho tớ xin link của bài hat khuê mộc lang với"
+    ],
+    "office/company_office_ask_info": [
+        "có cách nào view chi nhánh online mà ko cần đến trực tiếp nơi đó k",
+        "timi mô tả không gian vphong cty cho tớ với",
+        "tập đoàn Vàng bạc Đá quý DOJI mình có đẹp",
+        "mầy mô tả vphong đi",
+        "cho anh xin ít bức tranh văn phòng bình dương"
+    ],
+    "company_salary_ask_calculate": [
+        "nhan vien có thể có những khoản lương nào",
+        "lương thưởng có nhiều loại k",
+        "nhận sự có thể có những khoản thu nhập nào khác ngoài salary",
+        "nsu có thể có những khoản thu nhập nào",
+        "cty tinh vân tính lương theo net hay gross"
+    ],
+    "knowledge_ask_place_traveling": [
+        "Việt Nam có như thế nào thú vị không nhể",
+        "cho tui xin vài chốn cắm trại ở Campuchia đê",
+        "phụ toaii tìm nơi dã ngoại nhé",
+        "bắc trung bộ có gì chơi không timi?",
+        "cho tớ hỏi hưng yên có gì tắm biển khum chú em?"
+    ],
+    "recsys_film/recsys_request_film_by_top_ranking": [
+        "bot biết phim nào đang hot hay khum",
+        "biết phim nào đang đặc sắc hay không",
+        "có film nào đang nổi trội hân",
+        "những film nào đang nổi trên bxh",
+        "những phim nào đang nổi trội trên bxh"
+    ],
+    "recruit/company_rec_ask_time_between_two_rounds": [
+        "mình pass vòng 1 rồi tôi xin thời gian phỏng vấn lại vòng 2 với",
+        "pvan lần một xong thì sau khi nào sẽ pvan round tiếp theo?",
+        "tui muốn hỏi thời gian cách nhau của hai roun",
+        "sau mấy ngày sẽ pvan roun hai",
+        "cho tớ hỏi thời gian cách nhau của 2 vòng phỏng vân"
+    ],
+    "ask_name/general_ask_name_va": [
+        "timi họ và tên là gì",
+        "cho toai hỏi bạn tên là j đêy",
+        "cậu có thể cho tôi hỏi tên đầy đủ của cậu là gì",
+        "cậu ten la gi",
+        "cô tên là gì"
+    ],
+    "time_off/company_time_off_ask_calender": [
+        "c.ty cho nsu nghỉ các ngày lễ nào hả",
+        "c/ty cho nhan vien nghỉ các ngày lễ nào hả",
+        "thường công ty dc nghỉ những ngày lễ nào ạ",
+        "lịch nghỉ lễ của công ty Vietsoftware có giống nhà nước không",
+        "c.ty cho ng nghỉ những ngày lễ nào hở"
+    ],
+    "general_ask_va/general_ask_info_va": [
+        "bot là đứa nào hử",
+        "tự gth về mình đi em",
+        "thế mi là đứa nào ha",
+        "gthiệu về bot trước đi",
+        "gthieu về bot đi"
+    ],
+    "ask_hobby/general_ask_hobby_va": [
+        "timi thích gì nhất",
+        "timi thích những mô đấy",
+        "bạn thích gì nhất",
+        "chú em thích những gì thế",
+        "sở thích của timi là gì hả"
+    ],
+    "insurance/company_insurance_ask_different": [
+        "tớ muốn hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên k ạ",
+        "tớ muốn hỏi ngân hàng viettinbank có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội khum",
+        "cty có các gói bảo hiểm nào khác ngoài bảo hiểm xã hội hem",
+        "cty có đóng bảo hiểm tai nạn lao động Bảo Việt ko",
+        "BHYT cao cấp chỉ dành cho chức vụ cao hả"
+    ],
+    "working_time/company_working_in_day_ask_time_overall": [
+        "nội quy thời gian làm việc của công ty như nào",
+        "quy định giờ làm việc của công ti thế nào",
+        "đi làm thì thời khóa biểu như nào?",
+        "cho tôi hỏi về tgian làm việc của c.ty đi nào m",
+        "rule về h làm việc của công ty như thế nào"
+    ],
+    "recruit/company_rec_ask_interview_panel": [
+        "trưởng team tech pvan tớ hay phòng HCNS phỏng vấn tớ thế ạ",
+        "f tech Việt Nam phong vân có đông hông",
+        "có bao nhiêu ng khi phong vân vậy á hả",
+        "cô muốn xin in tư về hình thức pv của ftech",
+        "ta muốn xin ttin hình thức pv của cty f-tech"
+    ],
+    "review_salary/company_review_salary_ask_criteria": [
+        "những ai phải đánh giá hả",
+        "cho tôi hỏi đối tượng được đánh giá review gồm những ai",
+        "các tiêu chí đánh giá review là gì?",
+        "cần đạt được những chỉ tiêu như thế nào thì sẽ được review lương",
+        "điều kiện để được review tăng lương là j"
+    ],
+    "recruit/company_rec_ask_working_place": [
+        "c apply vị trí game UI/UX designs thi làm tại đâu?",
+        "VN có làm data science ko",
+        "chỗ làm của nhân viên soạn ndung giáo dục",
+        "game 2d dev làm ở đâu",
+        "junio Tester thì làm ở sài gòn ha"
+    ],
+    "bonus/company_bonus_december_ask_overview": [
+        "chế độ thưởng tháng thứ 13 của cty dành cho intern như nào ạ",
+        "intern có được thưởng tháng 13 khum",
+        "c.ty có tháng thứ 13 ko",
+        "cho tớ hỏi chế độ thưởng tháng thứ 13 của trainee",
+        "Mình cần biết về chế độ thuong tháng 13 c/ty"
+    ],
+    "request_tarot/funny_request_tarot_for_wellness": [
+        "anh cần làm như nào để tăng mức năng lượng về sức khoẻ và tinh thần của mình",
+        "Điều giề đang cản trở chị có dx mức năng lượng tốt nhất về sức khoẻ?",
+        "toai có thể làm răn để đối phó với problem sức khoẻ?",
+        "Điều chi đương cản trở tớ có được mức năng lượng tốt nhất về sức khoẻ?",
+        "tớ có thể làm răng để đối phó với vđề sức khoẻ?"
+    ],
+    "chitchat_user_want_lover": [
+        "m ơi tớ muốn có người thương",
+        "tớ muốn có ng thưn thế",
+        "bt ai chưa có bồ trong công ty k",
+        "tớ mún có người thương quá ạ",
+        "tìm bạn trai ạ"
+    ],
+    "training/company_training_ask_content": [
+        "cong ty sẽ huấn luyện về sản phẩm cty hay kiến thức bên ngoài",
+        "cty ftech thường đào tạo nâng cao chuyên môn về cái gì?",
+        "cty huấn luyện về kiến thức làm việc thôi hả",
+        "chương trình huấn luyện nâng cao chuyên môn của c/ty gồm những nội dung gì",
+        "cty f tech có hướng dẫn ngoại ngữ chứ"
+    ],
+    "paid_time_off/company_paid_time_off_ask_overview": [
+        "thời gian nghỉ phép hàng năm của thử việc tại công ty f tech thế nào",
+        "Số ngày phép của người là mấy ha",
+        "số ngày dc nghỉ phép của nsu là mấy",
+        "một năm nhận sự phải làm việc ít nhất bao nhiêu buổi",
+        "số buổi dx nghỉ phép cho android developer là bao nhiêu"
+    ],
+    "review_salary/company_review_salary_ask_purpose": [
+        "việc đánh giá tăng lương như vậy để làm gì đó",
+        "muc tieu của việc đánh giá review là gì",
+        "việc review tăng lương có mục đích gì hem",
+        "việc review như vậy để làm gì cậu",
+        "mục tiêu của công ty khi review tăng lương nhân viên là j"
+    ],
+    "ask_hobby/general_ask_hobby_va_game": [
+        "mày có thích j ko",
+        "cậu có thích chơi game đua xe hem",
+        "vào thời gian rảnh rỗi timi thích làm gì",
+        "bạn thích làm gì vào thứ bảy chủ nhật",
+        "Game phiêu lưu mày có thích chơi hông"
+    ],
+    "recruit/company_rec_ask_time_get_result": [
+        "cho tớ hỏi nhận được kết quả pvan có lâu không",
+        "bao lâu thì có kết qủa phỏng vấn vậy bạn",
+        "Timi cho tôi hỏi thời gian nhận kết quả",
+        "tôi muốn hỏi bao lâu công ty trả kqua pvan ạ",
+        "bao lâu thì có kết qủa phỏng vấn vậy em"
+    ],
+    "ot/company_ot_ask_overview": [
+        "công ty có bắt buộc làm ngoài giờ k",
+        "Thời gian OT c.ty ntn",
+        "qui định về làm thêm giờ ở công ti thế nào",
+        "OT cty như nào",
+        "như nhân viên không muốn Over-time có được không"
+    ],
+    "recruit/company_rec_ask_how_contact_hr": [
+        "giờ làm như răn để tớ liên hệ với hr đc cậu?",
+        "tớ muốn liên lạc với tuyển chọn nhân sự thì làm như nào",
+        "send tôi cách thức liên lạc với bộ phận recruitment",
+        "t/tin connect tại Thái Lan",
+        "thg tin contact tại TT Ai"
+    ],
+    "general_ask_va/general_ask_gender_va": [
+        "mi có giới tính là gì",
+        "anh muốn hỏi giới tính của em là như nào",
+        "giới tính của cậu là gì",
+        "bot là less à",
+        "bot là nam phải ko"
+    ],
+    "company_ask_working_space": [
+        "cty tạo moi trg tự do cho nhân viên hông",
+        "công ti có trẻ trung hông",
+        "các thức giao tiếp giữa các thành viên trong công ty f-tech như nào",
+        "công ty rộng hân",
+        "các thức giao tiếp giữa các thành viên trong cong ty thế nào"
+    ],
+    "company_ask_slogan": [
+        "tớ muốn bít khảu ngữ của c.ty",
+        "mi điểm nhấn thương hiệu của cty ftech là như thế nào",
+        "cong ty có khẩu hiệu gì hân nhể",
+        "khẩu ngữ của công ti là như nào",
+        "f-tech có khảu ngữ chứ nhể"
+    ],
+    "request_tarot/funny_request_tarot_for_career": [
+        "tớ nên chú ý điều mô để thăng tiến trong năm nay?",
+        "Tình trạng công việc hiện tại của chị khá tệ hại. tôi nên làm sao?",
+        "Tình trạng công việc hiện tại của toai khá tệ hại. a nên làm răng?",
+        "Tình trạng công việc hiện tại của chú khá tệ hại. toai nên làm như nào?",
+        "Tình trạng công việc hiện tại của toai khá tệ hại. a nên làm răng?"
+    ],
+    "general_request_human": [
+        "tớ muốn báo lỗi cho nhân sự phụ trách",
+        "cho mình gặp con người hỗ trợ đi",
+        "mình mún báo lỗi cho nhân sự phụ trách",
+        "chuyển sang gặp ngừi được ko",
+        "chuyển sang chế độ inbox với con người đi"
+    ],
+    "recruit/company_rec_ask_interview_form": [
+        "cuối tháng này tớ mới từ Pháp về VN, tớ pass sơ yếu lý lịch rồi nhưng không biết bên ftech có cho phỏng vân on không í?",
+        "cuối tháng này tớ mới từ Pháp về VN, tớ pass CV rồi nhưng không biết bên f-tech có cho pvan qua google meet không í?",
+        "tớ muốn phỏng vấn on được không",
+        "mình muốn interview meet được không",
+        "tớ muốn pv qua skype được không"
+    ],
+    "insurance/company_insurance_ask_maternity": [
+        "c/ty có ưu đãi về bảo hiểm cho người mang thai khum",
+        "chính sách cho người mang thai ở cong ty có hịn hem",
+        "công ti có ưu đãi về bảo hiểm xã hội cho người mang thai khum",
+        "có 1 cái chính sách dành cho thai sản k hả",
+        "chính sách cho phụ nữ có con nhỏ của cty thế nào"
+    ],
+    "company_pregnant_ask_time": [
+        "đang trong tgian có con nhỏ thì có dx nghỉ ngơi nhiều khi làm việc không",
+        "cho tui xin chính sách về thời gian làm việc của sản phụ đi",
+        "phụ nữ có con nhỏ có quyền về sớm hơn nhân viên bthuong ha",
+        "f-tech có đãi ngộ gì về thời gian làm việc cho trường hợp có thai trên 7 tháng khum nhỉ",
+        "bà bầu thì có quy định về thời gian làm như thế nào ạ"
+    ],
+    "recsys_film/recsys_request_film_by_film_type": [
+        "tớ muốn xem film thể loại film học đường nha",
+        "gửi tớ mấy bộ phim loại phim ngôn tình",
+        "có bít phim ký sự nào thì gửi tớ với",
+        "phim boy love nha",
+        "có bít film nào hài thì gửi mình với"
+    ],
+    "bonus/company_bonus_december_ask_calculate": [
+        "cty trả lương tháng thứ 13 mấy tr",
+        "dựa vào đâu mình tính tiền thưởng tháng thứ 13",
+        "mức chi trả của cty f-tech cho tháng 13 là bao nhiêu",
+        "mức chi trả của c.ty cho tháng thứ 13 là bao nhiêu",
+        "dựa vào đâu c.ty tính tiền thưởng tháng thứ 13"
+    ],
+    "general_ask_va/general_ask_height_va": [
+        "cậu được mấy mét",
+        "cao mấy",
+        "bạn cao bao nhiêu thế",
+        "timi cao b/nhiu thế",
+        "mi cao bao nhiêu thế hả cậu"
+    ],
+    "company_ask_founding": [
+        "cty f tech thành lập từ năm bao nhiêu",
+        "f-tech thành lập được lâu chưa vậy á hả",
+        "bot cho cho tớ hỏi cty sáng lập khi nào",
+        "mày biết công ti thành lập từ khi nào hông",
+        "f-tech mở được lâu chưa"
+    ],
+    "bonus/company_bonus_kpi_ask_overview": [
+        "có áp kpi ko",
+        "công ti có chính sách đãi ngộ quí ko",
+        "c.ty có đánh giá thông qua kpi không",
+        "nói cho tớ biết thêm về bonus quí đi",
+        "thưởng quí là ntn"
+    ],
+    "company_ask_core_values": [
+        "timi có biết cty có những giá trị core gì không",
+        "những giá trị cốt lõi mà cty f-tech mang lại là như thế nào",
+        "giá trị core của cong ty là gì hả lily",
+        "mi có biết công ty f tech có những giá trị core gì k",
+        "core-value của f-tech là gì hở"
+    ],
+    "working_time/company_working_in_day_ask_how_many": [
+        "một ngày làm bao nhiu tiếng",
+        "cty làm ngày mấy tiếng hả",
+        "một buổi nsu phải làm mấy giờ",
+        "một ngày nhân viên phải làm bao nhiêu giờ",
+        "một ngày làm bao nhiu giờ"
+    ],
+    "recruit/company_rec_ask_time_interview": [
+        "nộp sơ yếu lí lịch rồi thì khi nào đi phỏng vân vậy ạ",
+        "nộp curriculum vitae rồi thì khi nào đi phỏng vân vậy ạ",
+        "cho tớ xin info về khoảng thời gian được gọi đi pv sau khi gửi CV với",
+        "toai muốn biết thời gian ftech gọi ứng viên xin việc đi pvan sau khi xem xét CV ạ",
+        "mình muốn biết thời gian f-tech gọi cand đi phong vân sau khi xem xét sơ yếu lý lịch ạ"
+    ],
+    "ask_animal/knowledge_ask_info_animal_by_ability": [
+        "con sói đồng cỏ biết bay không",
+        "con mực ống có biết bay không",
+        "ong nghệ sinh ra độc để giết người mà tại sao nó lại hông bị độc",
+        "con chuột nhảy hú ra sao",
+        "Sao cá chép đi ị xong lại phải che dấu phân của mình đi vậy á hả cậu"
+    ],
+    "time_off/company_time_off_ask_handle_not_use": [
+        "ngay phép dư sẽ dx tính ntn",
+        "tôi có cộng dồn ngày phép sang năm tiếp theo được hem",
+        "Hết năm hem nghỉ hết số ngày phép, mình có dx tính tiếp vào năm tiếp theo không",
+        "nếu ko sử dụng hết thời gian nghỉ phép thì có dc cộng dồn sang năm tiếp theo k",
+        "cho tớ hỏi phép năm dùng không hết thì sẽ xử lý như thế nào?"
+    ],
+    "recruit/company_rec_ask_job_requirement": [
+        "công ti có yêu cầu biết php không",
+        "mình xin yêu cầu công việc của db engineer",
+        "có gì cần khi ứng tuyển thử việc nvien",
+        "k biết làm database engineer thì có require như nào",
+        "thử việc front end develop cần mấy năm kinh nghiệm"
+    ],
+    "faq_convert_value": [
+        "làm sao để đổi đơn vị trọng lượng mi hè",
+        "đổi ki-lo-gam ra đề ca mét vuông làm sao hè",
+        "1 dm2 bằng nhiêu thế chị",
+        "đổi đơn vị độ dài ra toán học được không",
+        "cách đổi đơn vị đo thế nào cậu"
+    ],
+    "timekeeping/company_timekeeping_ask_late": [
+        "sau mấy tiếng thì bị coi đi muộn",
+        "checkin sau giờ nào thì dx tính là đi muộn",
+        "nếu tớ về trước 5h30 thì dc công ty kinh đô tính là đi làm về sớm ch/xác ko timi",
+        "sau mấy phút thì bị coi đi muộn",
+        "đi làm sau mấy giờ thì dc coi là đi muộn"
+    ],
+    "ask_hobby/general_ask_hobby_va_film": [
+        "timi có hay xem phim khoa học viễn tưởng",
+        "bạn thích đi xem phjm hân",
+        "bạn có thích xem fim hông",
+        "timi có hay xem phim bê đê",
+        "bot thích xem fim mô"
+    ],
+    "insurance/company_insurance_ask_type": [
+        "Có nhưunxg gì tỏng gói BHXH ở ftech",
+        "bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy m",
+        "BHXH được đóng có BHTNLD y tế ko",
+        "những loại bảo hiểm nào mà cong ty hỗ trợ đóng ạ",
+        "c/ty bắt buộc phải đóng những loại bảo hiểm gì"
+    ],
+    "review_salary/company_review_salary_ask_time": [
+        "review tăng lương định kỳ vào thời điểm nào",
+        "review tăng lương định kỳ vào thời điểm nào",
+        "c.ty đánh giá review lương vào khi nào",
+        "tui muốn hỏi nếu mà chưa làm đủ 6 tháng thì có được review tăng lương k",
+        "công ty Infoway solutions jsc sẽ review tăng lương vào thời điểm nào"
+    ],
+    "company_ask_type": [
+        "cho tớ hỏi công ty làm sản phẩm hay âu sọt?",
+        "bên mình làm outsource đúng khum",
+        "ftech là công ty product à",
+        "f-tech có nhận làm thay hông",
+        "cho tớ hỏi cty làm sản phẩm hay âu sọt?"
+    ],
+    "recsys_food/recsys_request_food_type": [
+        "tớ mún ăn món của nhật bản",
+        "toai thích món của người Hàn",
+        "c gợi ý món của người Hàn cho tớ đi",
+        "tớ muốn uống Sinh tố quá",
+        "chú em gợi ý haelthy cho tui đi"
+    ],
+    "ask_animal/knowledge_ask_info_animal_overall": [
+        "cá là ra sao",
+        "con gà tây là chi vậy",
+        "xin ít thông tin về con chim đại bàng",
+        "cá kình là ra sao",
+        "xin info con chuột nào"
+    ],
+    "company_penalty_for_late_ask_rule": [
+        "về đi trễ thì công ty f tech có những qđịnh xử phạt như thế nào",
+        "quy định xử phạt đi làm muộn như nào",
+        "đi muộn giờ quy định thì nv sẽ bị ntn",
+        "đi muộn giờ quy định 3 buổi có bị phạt k",
+        "đi làm trễ buổi đầu có bị phạt hân"
+    ],
+    "company_lunch_ask_time": [
+        "cty quy đinh thời gian nào thì nhân viện được nghỉ trưa",
+        "khoảng thgian nghỉ trưa là như thế nào nhỉ",
+        "nghỉ trưa bao lau",
+        "tgian nghỉ trưa của công ti vào lúc mấy giờ hở",
+        "mấy giờ thì dc ăn trưa vậy á hả"
+    ],
+    "general_agree": [
+        "oki r timi",
+        "oke nhé bot",
+        "uhmm chuẩn r",
+        "uhmm",
+        "chuẩn chỉ rùi"
+    ],
+    "general_ask_va/general_ask_weight_va": [
+        "mày được bao nhiêu kí",
+        "timi được b/nhiu ký",
+        "năng trên 42 kí k hả",
+        "em mấy kí",
+        "mầy được bao nhieu kg"
+    ],
+    "recsys_film/recsys_request_film_by_mood": [
+        "có bộ phim nào phù hợp với tâm trạng sướng của mình",
+        "mình bực mình quá b có bộ phim nào hem",
+        "có bộ phim nào phù hợp với tâm trạng điên của tớ",
+        "có bộ phim nào phù hợp với tâm trạng điên của tớ",
+        "mình bực mình quá b có bộ phim nào hem"
+    ],
+    "company_probation_ask_time": [
+        "giai đoạn thử việc của cty kéo dài bao lâu",
+        "thời gian thử việt tại c.ty ra răn",
+        "cho tớ hỏi công ti cho người xin việc thử diệt trong bao lâu hở",
+        "thử việc lúc nào thì kết thúc",
+        "cho toai hỏi công ti cho ứng viên thử việt trong bao lâu vậy hả"
+    ],
+    "recsys_music/recsys_request_music_by_singer": [
+        "bật mình bài nhạc của Ariana Grande với",
+        "Nguyễn Phi Hùng có bài nhạc nào hay hông",
+        "bài nhạc của Lionel Richie nhaa",
+        "bot có bài nhạc nào nổi trội của Saka Trương Tuyền khum gợi ý mình với",
+        "nghe nói Hồ Quang Hiếu vừa ra bài mới, hát nghe coi"
+    ],
+    "recruit/company_rec_ask_how_send_cv": [
+        "Nộp resume ở đâu vậy timi?",
+        "em ơi, hướng dẫn tui nộp résume được hông",
+        "làm răn để tuyển",
+        "làm thế nào để tuyển",
+        "nộp resume đến chỗ nào đó em"
+    ],
+    "rule/company_rule_ask_hygiene": [
+        "f tech có yêu cầu gì để giữ gìn vsinh chung cho công ty hông nhể",
+        "quy định về su dung khu vực ăn uống",
+        "tui có cần dọn dẹp chỗ làm việc khi đi làm tại f tech không",
+        "f-tech có yêu cầu gì để giữ gìn vệ sinh chung cho c/ty hông nhỉ",
+        "quy định về xài máy pha ca phê"
+    ],
+    "company_offset_working_ask_how": [
+        "mình muốn hỏi về qđịnh làm bù giờ của cty long thành",
+        "cơ chế làm bù giờ ntn",
+        "c/ty có quy định làm bù giờ khi đi muộn k",
+        "c/ty có qđịnh gì về làm bù giờ",
+        "khi tớ đi muộn thì có phải làm bù giờ bao nhiêu tiếng"
+    ],
+    "recsys_food/recsys_request_food_overall": [
+        "tớ hỏi nên ăn j nhở",
+        "tui hỏi nên ăn nào nhể",
+        "tại đây có món nào ăn dx dc hông",
+        "mún ăn gì đó thế chú em ơi",
+        "gọi ý cho toai một số món nào ngon đi"
+    ],
+    "general_ask_va/general_ask_health_va": [
+        "Gần đây mày thế nào",
+        "sức khỏe ổn khum",
+        "sức khỏe của cậu ổn hem",
+        "sức khỏe em ntn rầu",
+        "Mọi thứ ổn phải hông bot"
+    ],
+    "user_react_va/chitchat_react_bot_stupid": [
+        "tớ mệt với mày quá",
+        "vậy hả bot học lại nha",
+        "dốt đến cùng cực",
+        "nói hông rõ",
+        "không giúp đươc gì cho tao"
+    ],
+    "recsys_music/recsys_request_music_by_type": [
+        "tớ thích nhất là nhạc tiếng anh của anh Lam Trường",
+        "bài nhạc giáng sinh đi",
+        "tui thích thể loại nhạc hy vọng",
+        "thích nhạc indie",
+        "toai thích nhất là nhạc hợp xướng chorus của anh Justin Randall Timberlake"
+    ],
+    "user_feeling/chitchat_user_feel_hungry": [
+        "tôi đói thật sự",
+        "c đói quá bot ạ",
+        "bụng mình kêu rồi ơi",
+        "đói thế nhỉ",
+        "mình đói rồi đấy"
+    ],
+    "recsys_film/recsys_request_film_by_actor": [
+        "gợi ý film film khoa học của Vân Trang đi",
+        "tớ mún xem film của Cát Phượng",
+        "tôi muốn xem film ngôn tình của Công Dũng",
+        "gửi link film nào của Cao Minh Đạt hay đi",
+        "gợi ý cho toai vài film của Kim Xuân đi"
+    ],
+    "timekeeping/company_timekeeping_ask_forgot": [
+        "nếu tớ quên chấm công thì có bị sao khum ạ",
+        "công ti sẽ xử lý như thế nào khi nhân viên quên check-in",
+        "nếu quên check-in thì phải làm gì",
+        "nếu quên check-out thì sẽ dx xử lý như thế nào",
+        "quên checkout thì có được xử lý không"
+    ],
+    "company_ask_size": [
+        "quy mô c/ty tại hà nôi có đông ko nhỉ",
+        "thế TT Aitại hà nôi có bao nhiêu n.vien",
+        "quy mô công ty có đông hân tại TT Ai BN",
+        "công ti có quy mô ra sao hở cậu",
+        "số lượng nv làm việc tại cơ sở cao bằng là bao nhiu"
+    ],
+    "bonus/company_bonus_holiday_ask_overview": [
+        "giổ tổ Hùng Vương ngân hàng vpbank có cho thưởng",
+        "vào dịp lễ tết cty ftech tiền bonus được tính ntn?",
+        "lễ nào cong ty sẽ thưởng",
+        "toai muốn hỏi c.ty có cách tính thưởng tết ntn",
+        "công ty f tech có thưởng tết dương lịch ko"
+    ],
+    "recruit/company_rec_ask_interview_process": [
+        "công ti có quy trình tuyển dụng như nào",
+        "timi ơi, gửi tớ quy trình tuyển dụng đi",
+        "mình phải tham gia tận 2 vòng phong vân mới đc vô f-tech làm việc à",
+        "candidate phải phỏng vân bnhiu vòng hả",
+        "công ty samsung cty công nghệ và gia đình phong vân b/nhiu vòng?"
+    ],
+    "recruit/company_rec_ask_introduce_candidate": [
+        "tập đoàn Vàng bạc Đá quý DOJI có thưởng tiền reference",
+        "gthiệu người mới có nhận được tiền khum",
+        "gth nv vào ftech có được gì khum",
+        "người ngoài g/thiệu CV có nhận được gì không",
+        "mình muốn hỏi về cái giới thiêu candidate cho vào làm là ntn"
+    ],
+    "company_ask_vision_and_mission": [
+        "từ khi thành lập công ty có tầm nhìn gì trong lĩnh vực ai",
+        "trong 10 năm tới f tech nghĩ mình sẽ đi đến đâu",
+        "công ty Đài Phát thanh - Truyền hình Hà Nội có đặt mục tiêu cho mình trong mảng ml này hem",
+        "sứ mệnh của công ti là gì",
+        "sứ mệnh của chúng ta là gì"
+    ],
+    "ask_person/knowledge_ask_social_person": [
+        "không bít BoA có face nào hem",
+        "bạn biết sdt của MC Công Tố hân",
+        "cho toai số phone của Nguyễn Thùy Lâm nhé",
+        "hông bít Yeji thuộc EXO có phan bết nào không",
+        "hem bít Bằng Kiều có face nào hem"
+    ],
+    "recruit/company_rec_ask_interview_language": [
+        "c/ty có nói Tiếng Việt ko",
+        "ta interview bằng Tiếng Đức dc khum",
+        "cty pv bằng Tiếng Anh à?",
+        "tôi pass resume rồi nhưng lăn tăn không biết bên mình pv bằng tiếng gì để ôn bài í",
+        "p.ban p.ban tài chính pvan bằng ngôn ngữ gì hả"
+    ],
+    "ask_hobby/general_ask_hobby_va_travel": [
+        "nước ngoài thì timi thích đi du lịch ở đâu nhất",
+        "bạn thích đi du lịch ko",
+        "em thích đi du lịch nước ngoài ko",
+        "nước ngoài thì timi thích đi du lịch ở đâu nhất",
+        "bạn có khoái đi tham quan thắng cảnh hem"
+    ],
+    "recsys_music/recsys_request_music_by_mood": [
+        "vừa bị bồ bỏ mi có nào nghe cho thư giản hân đó?",
+        "tớ đang thất tình có bài nào đặc sắc hân",
+        "timi recommend bài đi cô đơn quá",
+        "tâm trạng quá c có gì nghe cho hạ hỏa khum đó?",
+        "đang chia tay người yêu timi gợi ý ca nhạc xoa dịu tớ đi"
+    ],
+    "company_ask_field": [
+        "ftech là công ty f tech giao duc à",
+        "c.ty hoạt động trong lĩnh vực nao hả",
+        "f tech hđ trong ngành nao",
+        "cty f tech tập trung vào các mảng như nào vậy hả",
+        "cty f-tech kinh doanh secuirity hay làm game rồi bán"
+    ],
+    "ask_lover/knowledge_ask_relationship_person": [
+        "hem biết bồ của George Washington là ai nhể",
+        "hoa hậu Mai Phương Thúy cưới vợ khi nào",
+        "trạng thái yêu của Phương Anh Đào như nào",
+        "trạng thái tềnh iu của Jennie (BLACKPINK) như nào",
+        "hông biết Đàm Phương Linh cưới chồng roài đấy"
+    ],
+    "general_ask_va/general_ask_have_eaten_va": [
+        "đang cbi ăn trưa hà",
+        "bot có ăn bữa xế không",
+        "đang cbi ăn sag hả",
+        "bạn đã ăn được chưa",
+        "bot có ăn bữa xế không"
+    ],
+    "rule/company_rule_ask_overview": [
+        "rule ngân hàng saigonbank",
+        "c.ty có những quy định chung nào",
+        "tui muốn hỏi về nội quy công ti",
+        "cho hỏi quy định công ti",
+        "cho tớ hỏi quy định cong ty như thế nào"
+    ],
+    "ask_name/company_ask_name": [
+        "lily cho tui tên đầy đủ của cong ty được k",
+        "nguồn gốc cái tên f-tech là từ family technology company limited chuẩn chỉ không",
+        "ten đầy đủ của f-tech là gì đó",
+        "cty có tên tiếng ah là như nào",
+        "tại sao công ti lại dc gọi là f-tech vậy"
+    ],
+    "request_tarot/funny_request_tarot_overview": [
+        "nghe bảo mày bt trải bài hở",
+        "mày xem giúp tớ một trải bài vs",
+        "mình thấy chán quá, timi bói cho mình đi",
+        "ê coi trải bài tarot cho tớ vs",
+        "nghe bảo chú em xem bói toán được hả, xem hộ một quẻ trải bài tarot với"
+    ],
+    "general_ask_va/general_ask_dislike_va": [
+        "bạn cực kỳ hem thích điều gì nhất",
+        "bot bưa ăn món gì",
+        "điều mà khiến timi cảm thấy không thich là nào",
+        "chú em dị ứng điều gì vậy á hả",
+        "em rất hân thích làm gì vào khuya"
+    ],
+    "user_feeling/chitchat_user_feel_sleepy": [
+        "haiz, muốn ngủ thì phải làm gì",
+        "làm sao cho hết mún ngủ bây giờ nhỉ",
+        "buồn ngủ thế đi",
+        "làm răng cho hết buồn ngủ bây giờ",
+        "mình muốn đi ngủ thế"
+    ],
+    "recsys_food/recsys_request_food_purpose": [
+        "muốn ăn chay thì nên ăn j ha",
+        "tớ đang trong kỳ tăng cơ thì ăn gì dc nhỉ",
+        "người ốm thì nên ăn nào nhở",
+        "mún ăn chay thì nên ăn j nhỉ",
+        "hôm nay ram thang gieng thì ăn nào"
+    ],
+    "training/company_training_ask_object": [
+        "sinh viên thực tập chắc được đào tạo kĩ nhỉ",
+        "thực tập sinh có được tham gia các khóa huấn luyện của công ti ko",
+        "internship có được tham gia các khóa huấn luyện của cty Hòa Phát ko",
+        "svtt có được tham gia các khóa huấn luyện của cong ty ko",
+        "ai trong ngân hàng techcombank sẽ được đào tạo ạ"
+    ],
+    "recsys_film/recsys_request_film_by_overview": [
+        "buồn chán qué tìm giúp tớ vài phim đi",
+        "b bít bộ phim nào hay k",
+        "gửi tôi vài film vui vui",
+        "bt phim nào ko",
+        "có phim nào không gửi tớ đi"
+    ],
+    "timekeeping/company_timekeeping_ask_overview": [
+        "cho tớ hỏi về quy định chấm công của c/ty đi",
+        "tớ muốn hỏii về nội quy chấm công của c.ty",
+        "công ty check out lúc mấy giờ",
+        "mình muốn hỏii về nội quy chấm công của c/ty",
+        "cong ty có những nội quy gì về check out"
+    ],
+    "recsys_music/recsys_request_music_overall": [
+        "biết bài nào hay hân bot, gửi mình đi dx không",
+        "biết bài nào hay k cậu, gửi tớ đi được hem",
+        "biết bài nào hay hem bạn, gửi tớ đi dx khum",
+        "xin link nhạc đi bạn",
+        "xin link nhạc đi mày"
+    ],
+    "welfare/company_welfare_ask_overview": [
+        "đãi ngộ c/ty ok không",
+        "về du lịch thì sanh diên thực tập có được tham gia cùng không",
+        "toai muốn hỏi về chế độ hỗ trợ của công ty f tech",
+        "những chế độ quyền lợi gì mà công ti dành cho nhân viên",
+        "cho tớ hỏi chế độ của trainee"
+    ],
+    "paid_time_off/company_paid_time_off_ask_salary": [
+        "nghỉ phép thì công ty vẫn trả lương chuẩn chỉ hông mày",
+        "data science fultime nghỉ phép thì vẫn nhận đủ lương nhỉ",
+        "database engineer ctác vien nghỉ phép thì vẫn nhận đủ lương ha",
+        "freser nghỉ phép thì c/ty vẫn trả lương ha",
+        "nghỉ phép thì có dc nhận lương không"
+    ],
+    "ask_hobby/general_ask_hobby_va_music": [
+        "timi có thích Unstopable không",
+        "mi yêu thích ca sĩ nào nhất",
+        "bot thích nghe nhạc ko lời không",
+        "mày thích nghe nhạc k lời hông",
+        "loại nhạc bạn hay nghe là như thế nào"
+    ],
+    "ask_hobby/general_ask_hobby_va_color": [
+        "Màu đen huyền bí, có hợp gu của bot hem",
+        "Nếu chọn trong các màu xanh đỏ hồng mày chọn màu nào",
+        "mầy thích màu hồng hân",
+        "timi thích màu hồng hem",
+        "Màu đen huyền bí, có hợp gu của bot ko"
+    ],
+    "insurance/company_insurance_ask_overview": [
+        "mình hông muốn đóng BHXH được không",
+        "nhân viên có phải đóng bảo hiểm xã hội hay c/ty đóng hết",
+        "cho tớ hỏi bên c.ty mình đóng bảo hiểm xã hội phải đóng theo những mức nào",
+        "cty đóng bảo hiểm xã hội trị giá bao nhiêu",
+        "gửi mình chi tiết thông tin chính sách BHXH ở cty với"
+    ],
+    "company_ask_overview": [
+        "thế giới thiệu về c.ty đi",
+        "cho chị xin ít thông tin về cty",
+        "toai muốn tìm hiểu về công ty cậu",
+        "gthieu về công nghệ và gia đình",
+        "hãy giới thiệu về c/ty xem nào"
+    ],
+    "training/company_training_ask_overview": [
+        "nhân viên công ty có được đào tạo định kỳ để nâng cao năng lực không",
+        "tập đoàn Hoa Sen có đào tạo không?",
+        "công ty có tổ chức huấn luyện chuyên môn định kỳ cho nhân viên hông",
+        "công ty có hay tổ chứ huấn luyện nâng cao năng lực cho nhân viên hem",
+        "công ty có thường xuyên tổ chứ đào tạo nâng cao chuyên môn cho nhân viên hông"
+    ],
+    "ask_hobby/general_ask_hobby_va_doing": [
+        "bot có thích làm bánh in hân",
+        "em có thích làm bánh in ko",
+        "Nấu ăn bot có thích hem",
+        "Nấu ăn em có thích không",
+        "timi có thích làm bánh in khum"
+    ],
+    "working_time/company_working_in_day_ask_time_start": [
+        "cong ty bắt đầu làm việc khi nào vậy á hả",
+        "công ti làm vào mấy giờ m",
+        "tớ nghe bảo cong ty vào làm việc lúc 8h30 chuẩn hông bạn",
+        "bắt đầu làm việc vào buổi sáng lúc mấy giờ",
+        "buoi chiu mấy giờ làm việc"
+    ],
+    "request_tarot/funny_request_tarot_for_fortune": [
+        "tiền tài của toaii sẽ ra sao bot ha",
+        "xem giúp tớ trải bài về tài chính nhe",
+        "xem giúp mình tarrot về tiền tài nha",
+        "xem giúp toaii trải bài về tiền tài nhe",
+        "tiền tài của tôi sẽ thế nào trong t/gian tới?"
+    ],
+    "user_feeling/chitchat_user_feel_lonely": [
+        "làm răng để bớt cu độc timi ơi",
+        "tôi thật sự đang rất cô độc bạn ạ",
+        "cu đơn quá timi ơi",
+        "timi mặc kệ toai đi",
+        "toai thấy chống vắng qué"
+    ],
+    "company_ask_partner": [
+        "cho toai hỏi ngân hàng acb đang làm việc với cty nào thế",
+        "vtvlive có làm việc với cong ty k",
+        "ftech có hop tac với cty khác hem",
+        "hiện tại công ty nào đang hop tac với ftech ạ",
+        "c/ty đang là đối tác làm ăn của ai đó m"
+    ],
+    "ask_hobby/general_ask_hobby_va_food": [
+        "rau thì bot có thích hem",
+        "Ăn bưởi hân cậu",
+        "mi thích ăn mực nướng hân",
+        "timi thích ăn món không",
+        "chú em thích ăn gì nhất"
+    ],
+    "general_ask_va/general_ask_character_va": [
+        "tính tình em ra răng vậy",
+        "mi có thích đùa k",
+        "bot là một thiếu nữ dịu dàng nhỉ",
+        "em là kiểu tự động reply vui tính hay nghiêm túc vậy á hả",
+        "Tính cách bot như thế nào"
+    ],
+    "recruit/company_rec_ask_code_live": [
+        "testing thuật toán sẽ phải chia sẻ camera lúc code đúng ko ạ",
+        "em apply pro-duct owners thì có cần share màn hình cho hđồng ko ạ",
+        "tui có phải vượt qua bài share màn hình coding k",
+        "ftech có share screen không hả?",
+        "tui có phải vượt qua bài live coding hông"
+    ],
+    "user_feeling/chitchat_user_feel_boring": [
+        "ngayf hôm nay tui bùn chán quá đêyyy",
+        "rầu thế đêyyy",
+        "sao ngay hôm nay mình chán quá",
+        "khóc hu hu",
+        "ngày hôm nay mình thấy hơi buồn"
+    ],
+    "user_feeling/chitchat_user_feel_tired": [
+        "căng thẳng quá",
+        "hum nay khó chiệu trong người quá",
+        "toai mệt quá",
+        "thế đỗi là mệt",
+        "rất mệt mủa"
+    ],
+    "rule/company_rule_ask_discipline": [
+        "công ti có khiển trách người khi họ vi phạm kỷ luật k ha",
+        "muộn dealine dự án thì có bị phạt nào hem",
+        "có các hình thức xử phạt như nào",
+        "cho tớ hỏi về hình thức xử phạt của cong ty đối với các sai phạm của n.vien",
+        "công ty f tech có các hình thức xử phạt như thế nào đối với các hành vi vi phạm kỷ luật"
+    ],
+    "ask_person/knowledge_ask_introduction_person": [
+        "bít Erik là ai hân",
+        "Khánh Vy là ai đấy",
+        "bít Leonardo da Vinci không",
+        "nhan vien bảo vệ nổi tiếng nhất VNam là ai",
+        "bít Kyuhyun (Super Junior) thuộc Bangtan Boys (BTS) hem"
+    ],
+    "recruit/company_rec_ask_time_in_round": [
+        "pvan 1 lần thường lâu ko",
+        "ftech phỏng vấn có nhánh khum",
+        "pvan 1 lần thường kéo dài ko",
+        "pv 1 lượt thường lâu hông",
+        "tớ thăc mắc hân biết 1 buổi phỏng vân sẽ tốn bao lâu"
+    ],
+    "user_react_va/chitchat_react_bot_smart": [
+        "quá giỏi luôn",
+        "cậu khả dụng hơn r",
+        "hữu ích quá nhỉ",
+        "mày là cô gái đẹp nhất tôi từng gặp",
+        "thú vị chứ nhỉ"
+    ],
+    "recruit/company_rec_ask_interview_criteria": [
+        "công ty có chỉ tiêu gì để đánh giá thử việt hân",
+        "tớ muốn hỏi chuẩn mực đánh giá thí sinh của công ty f-tech được ko",
+        "dựa vào chuẩn gì để biết mình rớt nhể",
+        "dựa vào điều gì để biết bản thân đậu nhỉ",
+        "dựa vào tiêu chí gì để biết bản thân đậu nhỉ"
+    ],
+    "user_feeling/chitchat_user_feel_thirsty": [
+        "bot ơi tôi có gì uống ko",
+        "vì sao tớ lại khát nước như vậy hả",
+        "trời ơi mình khát khô cả họng r nè",
+        "trời nóng khát nước quá đi",
+        "mình làm răng cho hết khát nước timi nhể"
+    ],
+    "knowledge_ask_coin_price": [
+        "21 VND là giá hôm trước của tiền số stellar nhử",
+        "thông tin về tiền tether hôm nay mấy",
+        "giá cả loại tiền ripple bây giờ là ra sao nhở",
+        "tiền tiền mã hóa UNI hôm nay",
+        "cho mình xin thông tin về giá cả đồng DGB"
+    ],
+    "recsys_request_poetry_counter": [
+        "cùng tìm chủ đề chơi đối thơ với tui nhé",
+        "toai muốn chơi thi đối thơ với timi",
+        "thi đối thơ với tớ nhé timi",
+        "thi đối thơ hem?",
+        "cùng tìm chủ đề chơi thi đối thơ với mình nha"
+    ],
+    "recruit/company_rec_ask_recruit_email": [
+        "đa năng có e-mail tuyển dụng hem",
+        "tớ xin e-mail để apply job",
+        "ninh thuận có meo tuyển dụng hem vậy",
+        "HR and Admin tập đoàn Xăng dầu Việt Nam ftech có gmail để tiện hỏi chuyện ko",
+        "m muốn nói chuyện bằng meo được k"
+    ],
+    "ask_birthday/general_ask_birthday_va": [
+        "cho anh hỏi em sinh ngày nào",
+        "mấy tuổi vậy á hả",
+        "cho tớ biết cậu sinh ngày nào",
+        "năm ni b/nhiu tuổi rồi timi",
+        "bạn sinh năm bao nhiêu"
+    ],
+    "recruit/company_rec_ask_recruit_phone": [
+        "ê ơi, sdt bên f-tech chi nhánh VN là gì vậy?",
+        "xin hotline",
+        "Gửi số dthoai hr đi",
+        "tuyển có hotline để gọi k",
+        "cho tớ xin sdt của cong ty đi?"
+    ],
+    "recruit/company_rec_ask_remote": [
+        "chính sách tuyển làm từ xa của cty",
+        "bên bạn áp dụng tuyển làm từ xa làm việc hân",
+        "lập trình viên ios không lên công ty này đang tuyển phải ko",
+        "p.ban có tuyển làm tại nhà hông",
+        "cty ftech có tuyển seni golang develop remote hem"
+    ],
+    "timekeeping/company_timekeeping_ask_form": [
+        "cong ty có hình thức chấm công bằng gương mặt hay vân tay",
+        "công ty Ngân hàng thương mại cổ phần Bưu điện Liên Việt chấm công bằng AI à",
+        "cty f tech làm AI chắc chấm công cũng bằng AI nhể",
+        "ftech chấm công cho nsu thế nào đó",
+        "ftech quy định chấm công bằng vân tay hay quẹt thẻ ạ"
+    ],
+    "funny_request_game_puzzle": [
+        "bít chơi giải đố hem",
+        "mày có thể làm trò j vui vui để chơi khum?",
+        "cho trò chơi giề không",
+        "bít chơi giải đố hân",
+        "có trò j vui để chơi k"
+    ],
+    "welfare/company_welfare_ask_wedding": [
+        "nhân viên cty cổ phần Kinh Đô đám cưới có chính sách gì ko",
+        "cty có hỗ trợ gì khi có nhân viên tổ chức kết hôn ko",
+        "Kết hôn thì có được hỗ trợ gì ko",
+        "Khi lấy chồng thì có những chế độ đãi ngộ gì em",
+        "khi kết hôn c.ty có những đãi ngộ gì"
+    ],
+    "recruit/company_rec_ask_overview": [
+        "công ti có tuyển ctvien k",
+        "có tuyển fultime vị trí DE hông",
+        "bên bạn có tuyển junier ở VL khum",
+        "cty có tuyển những người chưa có khinh nghiệp hông ạ",
+        "tớ muốn làm PA, không biết vị trí này có tuyển freshe"
+    ],
+    "ask_lover/chitchat_ask_have_lover_user": [
+        "bạn trai tớ là ai nhể",
+        "ai là vợ toaii",
+        "ck của toai là ai hả",
+        "liệu rằng timi có hay bít về boy friend tớ",
+        "đố bot trả lời dx người yêu tôi là ai"
+    ],
+    "recruit/company_rec_ask_type_of_test": [
+        "ftech có test của người đi phỏng vấn khum",
+        "Có k.tra phong vân không",
+        "có tét tư duy code phỏng vấn k",
+        "f-tech có test coding của ứng viên xin việc hông",
+        "có bài tét pv k"
+    ],
+    "working_time/company_working_in_day_ask_day_off": [
+        "f-tech có cho nghỉ thu 7 và cn khum",
+        "ftech có cho nghỉ thứ 7 va chu nhat hem",
+        "cho mình hỏii công ti làm việc vào thứ 7 khum",
+        "ngân hàng dongabank làm việc vào ban ngày hay đêm vậy em",
+        "3d artist thử diệt vào ngày thứ 7 có làm việc hông"
+    ],
+    "general_ask_va/general_ask_features_va": [
+        "có thể cho tôi hỏi những tính năng của cậu là giề",
+        "thế mày biết những gì",
+        "timi có những tính năng gì",
+        "mày có thể hiểu dc gì",
+        "có thể cho mình hỏi bạn có những t/nang giề"
+    ],
+    "working_time/company_working_in_day_ask_time_end": [
+        "công ti tan làm lúc 6h chuẩn hem vậy",
+        "mấy giờ tan làm hở",
+        "thành viên cong ty mấy giờ đi làm về",
+        "công ty buổi chiều dc về lúc mấy giờ",
+        "nvien c/ty khi nào tan làm về"
+    ],
+    "recsys_music/recsys_request_music_by_timi_singing": [
+        "cho toai hỏi b có biết hát hông",
+        "mình mún nghe hát dữ?",
+        "mình mún nghe hát dữ?",
+        "mày bạn hát như thế nào",
+        "tao muốn nghe hát dữ?"
+    ],
+    "ask_birthday/knowledge_ask_age_person": [
+        "ngày sinh của Cáo là",
+        "timi bít Phương Anh Đào mấy tuổi hem?",
+        "Diễm My 9x sinh vào ngày nào?",
+        "cho tui biết sinh nhật của Moonbyul (Mamamoo) thuộc EXID",
+        "tớ mún biết Yuta (NCT) thuộc EXO sinh vào ngày nào?"
+    ],
+    "ask_person/knowledge_ask_hometown_person": [
+        "quê của Trung Quân ở Anh chuẩn chỉ hem?",
+        "bạn biết Phương Thanh quê ở đâu khum?",
+        "bot bít Phạm Thị Hương quê ở đâu hông?",
+        "timi biết Nguyên Khang quê ở đâu hem?",
+        "VN là quê của Wheein (Mamamoo) thuộc NCT nhỉ"
+    ],
+    "time_off/company_time_off_ask_rule": [
+        "công ti có ycau nhân viên phải báo trước vài tiếng trước khi xin nghỉ sơm ko",
+        "nếu tớ muốn xin nghỉ dài ngày thì phải báo trước cho ai hả ỉis",
+        "rule về xin nghỉ sơm ntn",
+        "ngân hàng techcombank có ycau ngừi phải báo trước vài tiếng trước khi xin off sớm ko",
+        "tập đoàn CÔNG NGHỆ CMC có rule gì về việc xin nghỉ phép"
+    ],
+    "recsys_food/recsys_request_food_location": [
+        "tớ đang ở vịnh hạ long và muốn tìm món ăn ngon",
+        "trời mưa ni thèm nhứt món mì xào ở an giang",
+        "trời mưa ni thèm nhứt món mì xào ở an giang",
+        "hậu giang thì nên ăn món j nhể",
+        "Đan Mạch có món j ngon hông"
+    ],
+    "general_deny": [
+        "khum đúng r bạn",
+        "no sai rồi em",
+        "sai",
+        "k chuẩn chỉ mầy ơi",
+        "nhầm lẫn roài bot"
+    ],
+    "recruit/company_rec_ask_recruit_link": [
+        "có face tuyển dụng công khai không?",
+        "linkin f tech có chi hay hem",
+        "cho tui thêm đường dẫn của công ti ftech để tìm hiểu thêm information đi",
+        "có linkin hân",
+        "có top-cv hân"
+    ],
+    "general_bye": [
+        "py py tắt máy đây",
+        "hẹn găp lại chú em",
+        "bi bi nhé",
+        "gặp lại timi sau",
+        "bi bạn"
+    ],
+    "recsys_film/recsys_request_film_by_film_name": [
+        "đưa tớ hỗn thế tiểu ma đầu",
+        "cho tớ film lưu manh lên đời",
+        "bộ? phim khoảnh khắc ngọt ngào",
+        "tập? phim beyond evil này có hông",
+        "cho tớ xin link của film advenger với"
+    ],
+    "chitchat_user_says_love_va": [
+        "làm vợ anh nhá baby",
+        "timi có muốn cứi tớ hem",
+        "làm vợ tớ nha",
+        "tớ iu thưn cậu",
+        "timi yêu toai đi"
+    ],
+    "user_feeling/chitchat_user_feel_angry": [
+        "em đang khó ở đây",
+        "bực hết cả tớ",
+        "điên ông Phương Anh quá",
+        "máu của tôi đang sôi lên não đây",
+        "điên ông Phương Anh quá"
+    ],
+    "company_ask_origin": [
+        "công ty mình là cty việt ạ",
+        "ftech là doanh nghiệp việt nhể",
+        "bạn cho tớ hỏi công ty việt ạ",
+        "công ty có phải cty việt không ạ",
+        "f-tech là doanh nghiệp việt ha"
+    ],
+    "ask_person/knowledge_ask_zodiac_person": [
+        "Sagittarius là tên cung hoàng đạo của Hyeri chuẩn hông?",
+        "cung hoàng đạo của Phương Thanh là gì vậy á hả?",
+        "chắc chắn Độ Mixi thuộc cung hoàng đạo Cự Giải",
+        "toaii muốn bít cung hoàng đạo của Midu",
+        "mi bít Độ Mixi thuộc cung hoàng đạo nào đúng khum?"
+    ],
+    "ask_animal/knowledge_ask_info_animal_by_habitat": [
+        "nguồn gốc con chim ra sao",
+        "nguồn gốc con bọ cạp là như thế nào nha",
+        "nguồn gốc con ong là như t/nào",
+        "dơi sống ở đâu",
+        "con cú mèo sống ở đâu nhỉ"
+    ],
+    "general_ask_va/general_ask_creator_va": [
+        "bot có người đỡ đầu ko",
+        "mày có chị hem",
+        "người làm ra bot là ai thía",
+        "timi là người từ chỗ nào hả",
+        "bot còn ông bà không"
+    ],
+    "general_ask_va/general_ask_language_va": [
+        "Ê chú em nói được mấy thứ tiếng",
+        "i want speak Malayalam",
+        "tớ có thể sử dụng tiếng trung với bot dx hem",
+        "tớ nch với timi bằng tiếng anh dc khum",
+        "ib bằng tiếng anh đi"
+    ],
+    "user_feeling/chitchat_user_feel_sick": [
+        "anh đang bị đau mắt",
+        "ốm rồi",
+        "mày ơi, tớ thấy ù tai qué",
+        "ù tai qué đi",
+        "c đang bị ho"
+    ],
+    "general_thank": [
+        "keke cảm ơn admin",
+        "mình cảm ơn bot",
+        "vâng, cảm ơn ạ",
+        "vâng, tôi cảm ơn ạ",
+        "vâng, toaii cảm ơn admin"
+    ],
+    "recruit/company_rec_ask_job_description": [
+        "vô công ty ftech sẽ làm gì?",
+        "sinh viên thực tập thì làm những công việc như nào",
+        "muốn biết thông tin về mô tả công việc tại vị trí thử diệt 2d art của ĐN nè",
+        "ứng tuyển vào cty ftech để làm gì thế",
+        "xin mô tả senior development and operations"
+    ],
+    "office/company_office_ask_address": [
+        "cho mình xin vị trí công ti nơi bắc trung bộ",
+        "tìm cho tớ số đường c.ty với ạ",
+        "công ti có văn phòng ở đâu",
+        "cho mình xin d/chỉ ftech ở hang sơn đoòng",
+        "công ti mình ởđâu đó? timi"
+    ],
+    "weather/chitchat_complain_weather": [
+        "nắng nóng vãi chú em ơi",
+        "hôm ni nắng gắt thật",
+        "hôm ni bot có thấy rét giống toai ko",
+        "hum nay nóng bức thật",
+        "mình nóng ướt hết áo rồi nắng nog ghê"
+    ],
+    "user_feeling/chitchat_user_feel_happy": [
+        "tự dưng thấy yên bình thế",
+        "sao mà yên bình thế nhỉ",
+        "ngày hôm nay vui sướng ghê",
+        "Cuộc sống có ăn, có ngủ là vui sướng rồi chuẩn k bạn.",
+        "anh thấy yên bình thế"
+    ],
+    "ask_lover/chitchat_ask_have_lover_va": [
+        "timi đang yêu ai đó",
+        "bot có người yêu chưa",
+        "gấu 37 độ của timi là ai hả",
+        "mi có người yêu chưa",
+        "ai là ox của timi hả"
+    ],
+    "chitchat_user_ask_love_definition": [
+        "hãy nói cho tui bít như nào là tình iuu đi",
+        "ý niệm tềnh iu",
+        "mày biết yêu hông nhể",
+        "timi biết yêu sét đánh ko",
+        "bạn chắc có tìm tòi về thích đấy chứ"
+    ],
+    "department/company_department_ask_overview": [
+        "gthiệu về các bộ phận có trong c.ty đi",
+        "tôi tìm hiểu thấy cty có 6 phòng ạ",
+        "f-tech có phòng hệ thống system chính xác hân ha",
+        "các bộ phận trong c.ty",
+        "hãy giới thiệu về các bộ phận có trong c/ty đi"
+    ],
+    "ask_animal/knowledge_ask_info_animal_by_food": [
+        "con thỏ rừng ăn ra sao ạ nhỉ",
+        "con cu gáy ăn như thế nào nhỉ",
+        "chuột lang nhà thường ăn cả sỏi đá vào làm như t/nào vậy á hả",
+        "báo gấm thường ăn cả sỏi đá vào làm như t/nào hả",
+        "cáo thường ăn cả sỏi đá vào làm gì vậy hả"
+    ],
+    "ask_animal/knowledge_ask_info_animal_by_characteristic": [
+        "con khủng long bạo chúa có to không",
+        "con voi ma mút có to không",
+        "con cu gáy có to không",
+        "con rắn hổ mang nó như thế nào nhỉ",
+        "con kí sinh trùng có to không"
+    ],
+    "insurance/company_insurance_ask_benefit": [
+        "tớ muốn hỏi khi đóng BHYT thì có những ích lợi gì ạ",
+        "cho tui hỏi khi đóng bảo hiểm xã hội thì có những quyền lợi gì ạ",
+        "đóng BHTN thì được hưởng quyền lợi gì",
+        "bảo hiểm thất ngiệp có nhiều lợi ích hem",
+        "mức BHXH của cong ty mình được hưởng những chi"
+    ],
+    "rule/company_rule_ask_violation": [
+        "vi phạm điều gì khi làm việc ở công ti sẽ bị kỉ luật nhỉ",
+        "chơi game trong giờ hành chính có bị cong ty xử phạt ko vậy á hả",
+        "mình muốn hỏi những hvi nào sẽ bị phạt tại f-tech",
+        "những hoạt động nào là vpham nội quy kỷ luật hả em",
+        "ftech coi những hành động nào là vi phạm kỷ luật ha"
+    ],
+    "recruit/company_rec_ask_level_of_test": [
+        "testing kĩ năng thuật toán có khó không",
+        "tui tò mò k biết phỏng vân ai thì bài testing có khó lắm ko",
+        "bài interview có dễ hem",
+        "toai thắc mắc về mức độ các bài ktra của f tech",
+        "level svtt thì bài test có khó không nhể"
+    ],
+    "weather/chitchat_ask_weather": [
+        "h.noi đang mưa à",
+        "thời tiết Áo ngayf tới bão có to hân",
+        "thời tiết ngay hôm nay có nắng ko",
+        "thứ hai thứ 3 và thứ hai tuaanf tới đây có nóng ko",
+        "bây giờ ngoài trời bnhieu độ C nhỉ, tui ở da nang"
+    ],
+    "time_off/company_time_off_ask_advance_paid": [
+        "c/ty có chế độ ứng phép không?",
+        "tớ do đi du lịch nên muốn ung phep sớm dx hông",
+        "f-tech cho ứng phép đung k",
+        "f-tech cho ứng phép chuẩn chỉ hông",
+        "c.ty có chế độ ứng phép hân?"
+    ],
+    "company_bod_ask_info": [
+        "tui thắc mắc k biết pgd của c.ty",
+        "pgd công ty f-tech là ai",
+        "hãy liệt kê các anh trong g/doc bộ phận chăm sóc khách hàng công ty f tech",
+        "hình như anh Trí là phó phòng của cty hửm",
+        "gth cho tui về các anh trong phó giám đốc cty f tech"
+    ],
+    "ot/company_ot_salary_ask_calculate": [
+        "salary Over-time là bao nhiêu",
+        "tập đoàn viễn thông quân đội Việt Nam có lương tăng ca chứ",
+        "tiền làm thêm giờ trả vào lương hay nhận riêng",
+        "làm ngoài giờ thì nhân hệ số lương bao nhiêu",
+        "làm thêm giờ lương nhiều không?"
+    ],
+    "general_greet": [
+        "tui chào bot nha",
+        "salut mầy",
+        "tui chào bạn nha",
+        "bonjour timi",
+        "salut mày"
+    ],
+    "rule/company_rule_ask_uniform": [
+        "công ti có bắt buộc mang cà vạt khi đi làm không",
+        "c.ty cho tớ mặc đồng phục thế nào",
+        "c/ty có đồng phục khum",
+        "khi đi làm nsu trong công ti có ycau gì về đồng phục hông",
+        "tớ muốn hỏi ngân hàng bidv có ycau về đồng phục không"
+    ],
+    "ask_hobby/general_ask_hobby_va_book": [
+        "cậu có đọc sách lịch sử không",
+        "bạn thích light novel không",
+        "mày có đọc sách lịch sử k",
+        "em có thích đọc không",
+        "bot có hay đọc sách ko"
+    ],
+    "recruit/company_rec_ask_salary": [
+        "tính salary thế nào",
+        "bonus",
+        "ngân hàng tpbank tính salary theo net hay gross",
+        "lương của nhan vien trong cong ty như nào vậy",
+        "Lương p.ban AI center như nào vậy"
+    ],
+    "request_tarot/funny_request_tarot_for_love": [
+        "Cái mô sẽ xuất hiện và ảnh hưởng tới chuyện tình củm của toai trong thời gian tới?",
+        "tớ mún xem tarrot về tcam nha bot",
+        "cơ hội của mối quan hệ này là gì hở?",
+        "suy nghĩ của họ về mình",
+        "tcum của họ dành cho chị"
+    ],
+    "general_ask_va/general_ask_doing_va": [
+        "bạn có đang hoạt động hem",
+        "làm gì thế bạn ơi",
+        "đang làm gì hả",
+        "timi có đang làm gì hân",
+        "cậu ơi có rảnh không"
+    ],
+    "recsys_music/recsys_request_music_by_top_ranking": [
+        "có bài hát nào nổi trên thị trường",
+        "có bài hát nào nổi trội hem",
+        "cho tớ link bài hay trong năm 2021",
+        "mầy cho tui link top ca khúc ấn tượng",
+        "cho toai xin link top ca khúc"
+    ],
+    "company_pay_salary_ask_time": [
+        "c.ty trả lương ngày nào",
+        "cty cổ phần Sữa Hà Nội bao giờ có lương?",
+        "công ti trả salary ngày nào",
+        "công ty sea croup phát lương 1 lần thôi ả",
+        "hàng tháng c/ty trả salary vào ngày nào"
+    ],
+    "working_time/company_working_in_week_ask_time": [
+        "nhận sự fultine làm từ ngày nào đến ngày nào trong tuần",
+        "quy định về số ngày làm việc trong tuần của freser ở cty",
+        "junior làm việc ngày nào trong tuần",
+        "thời gian làm việc 1 tuần như nào vậy hả",
+        "c.ty làm việc từ ngày nào đến ngày nào trong tuần"
+    ]
+}
