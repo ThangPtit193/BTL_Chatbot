@@ -252,11 +252,13 @@ saturn ls
 
 ## Experiments <div id="experiments"></div>
 
-| Model name / Data name                                    | Timi-eval-data-v1.0.0      | Timi-eval-data-v1.2.0     |
-|:----------------------------------------------------------|:---------------------------|:--------------------------|
-| distilbert-multilingual-faq-v3.2                          | 0.252mAP 0.688mRR          | 0.293mAP 0.540mRR         |
-| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0 | **0.733**mAP **0.793**mRR  | 0.653mAP 0.751mRR         |
-| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0 | 0.6686mAP 0.783mRR         | **0.749**mAP **0.770**mRR |
+| Model name / Data name                                        | Timi-eval-data-v1.0.0      | Timi-eval-data-v1.2.0   | Timi-eval-data-v1.3.0   |
+|:--------------------------------------------------------------|:---------------------------|:------------------------|:------------------------|
+| distilbert-multilingual-faq-v3.2                              | 0.252mAP 0.688mRR          | 0.293mAP 0.540mRR       | 0.29mAP 0.54mRR         |
+| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0     | **0.733**mAP **0.793**mRR  | 0.653mAP 0.751mRR       | 0.65mAP 0.75mRR         |
+| timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0     | 0.6686mAP 0.783mRR         | 0.749mAP 0.770mRR       | 0.75mAP 0.77mRR         |
+| timi-idol-paraphrase-multilingual-MiniLM-L12-v2-faq-8M-v1.0.1 |                            | 0.78mAP 0.79mRR         | 0.78mAP 0.79mRR         |
+| timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0                   |                            | **0.82**mAP **0.83**mRR | **0.82**mAP **0.83**mRR |
 
 **Note**
 
@@ -282,6 +284,28 @@ saturn ls
 - Method: Naive fine-tuning
 - Steps: 500000
 - Batch size: 128
+```
+
+4. timi-idol-timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0-faq-9M-15-v1.0.0
+
+```text
+- Pretrained model: [timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0](http://minio.dev.ftech.ai/venus-model-v0.1-ca24fe0d/timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0.zip)
+- Training data: 9M FAQ data from timi idol (ID 464, version: v1.3.0)
+- Method: SentenceBert fine-tuning
+- Epochs: 15
+- Batch size: 256
+- use_amp: True
+```
+
+5. timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+
+```text
+- Pretrained model: [keepitreal/vietnamese-sbert](https://huggingface.co/keepitreal/vietnamese-sbert)
+- Training data: 9M FAQ data from timi idol (ID 464, version: v1.3.0)
+- Method: SentenceBert fine-tuning
+- Epochs: 15
+- Batch size: 256
+- use_amp: True
 ```
 
 ## Reference <div id="reference"></div>
