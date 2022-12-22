@@ -1,6 +1,5 @@
 import click
-from comet.cli import login_axiom
-from urllib.parse import urlsplit
+
 from saturn.cli.utils import create_list_item_table
 import questionary
 from comet.lib import print_utils, logger
@@ -11,6 +10,7 @@ import os
 from comet.constants import env
 
 _logger = logger.get_logger(__name__)
+
 AXIOM_EMAIL = env.str('AXIOM_EMAIL', '')
 AXIOM_PASSWORD = env.str('AXIOM_PASSWORD', '')
 
