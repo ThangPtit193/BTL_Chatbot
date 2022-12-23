@@ -53,9 +53,9 @@ class NaiveEmbedder(BaseEmbedder):
     # def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
     #     super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
 
-    def __init__(self, gpu: int = 0):
+    def __init__(self, gpu: int = None):
         super(NaiveEmbedder, self).__init__()
-        if gpu >= 0 and torch.cuda.is_available():
+        if gpu is not None and torch.cuda.is_available():
             self.device = torch.device(f'cuda:{gpu}')
         else:
             self.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')

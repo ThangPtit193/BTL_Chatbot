@@ -110,7 +110,7 @@ class CustomSentenceTransformer(SentenceTransformer):
                                 It will be loaded from hugging face hub or from axiom
             gpu: The device to load the model on
         """
-        if gpu and torch.cuda.is_available():
+        if gpu is not None and torch.cuda.is_available():
             device = "cuda:{}".format(gpu)
         else:
             device = "cuda" if torch.cuda.is_available() else "cpu"
