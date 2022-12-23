@@ -10,7 +10,7 @@ import pandas as pd
 import streamlit as st
 from comet.lib.file_util import zip_folder
 from streamlit_tags import st_tags
-from st_aggrid import AgGrid
+from st_aggrid import AgGrid, GridOptionsBuilder, DataReturnMode
 
 from saturn.kr_manager import KRManager
 from ui import MODELS
@@ -96,7 +96,6 @@ if summit_button:
     st.session_state['overall_report'] = retriever_results
     st.session_state['detail_report'] = retriever_top_k_results
 
-
 if result_type == "Display overall result":
     if st.session_state['overall_report'] is not None:
         results = st.session_state['overall_report']
@@ -107,6 +106,18 @@ if result_type == "Display overall result":
         st.error('No file to show', icon="🚨")
 
 if result_type == "Display detail report":
+    theme = st.sidebar.selectbox('Theme', ['light', 'dark', 'blue', 'fresh', 'material'], key='5')
+    grid_options = {
+        "columnDefs": [
+            {
+                "headerName": "index",
+                "field": "query",
+                "tooltipField": 'query'
+
+            }
+        ]
+    }
+
     if st.session_state['detail_report'] is not None:
         results = st.session_state['detail_report']
         my_bar = st.progress(0)
@@ -123,10 +134,24 @@ if result_type == "Display detail report":
                 # explode lists of corpus to row
                 df = df.apply(pd.Series.explode)
                 with st.container():
-                    st.write(f"<h2 style='text-align: center; color: red; font-size:20px;'>Results for {model}</h2>",
-                             unsafe_allow_html=True)
+                    st.write(
+                        f"<h2 style='text-align: center; color: red; font-size:20px;'>Results for {model}</h2>",
+                        unsafe_allow_html=True)
                     df_merged = pd.DataFrame(df.to_dict('records'))
-                    AgGrid(df_merged, key=random())
+                    ob = GridOptionsBuilder.from_dataframe(df_merged)
+                    ob.configure_column('query', header_name='query', rowGroup=True, enableRowGroup=True,
+                                        dragAndDrop=True, tooltip=True)
+                    ob.configure_side_bar()
+                    ob.configure_selection("single")
+                    ob.configure_pagination(paginationAutoPageSize=False, paginationPageSize=10)
+                    gridOptions = ob.build()
+                    AgGrid(df_merged,
+                           gridOptions=gridOptions,
+                           data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
+                           allow_unsafe_jscode=True,
+                           theme=theme,
+                           key=random(),
+                           enable_enterprise_modules=True)
         st.success('Compute metrics done!')
     else:
         st.error('No file to show', icon="🚨")
