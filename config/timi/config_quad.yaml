@@ -1,0 +1,38 @@
+GENERAL:
+  run_mode: inference
+
+EMBEDDER:
+  class: QuadrupletEmbedder
+  package: saturn.components.embeddings.embedding_models
+  model_name_or_path: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  TRAINER:
+    quadruplet_data_path:
+      # - data/train_data/dummy/quadruples/quadruples_30.json
+      - assets/quadrup_timi/quadruplet2000000.json
+      - assets/quadrup_timi/quadruplet4000000.json
+      - assets/quadrup_timi/quadruplet6000000.json
+      - assets/quadrup_timi/quadruplet8000000.json
+      - assets/quadrup_timi/quadruplet8041925.json
+    model_save_path: models/quad
+    n_samples: 10
+    batch_size: 256
+    epochs: 10
+    warmup_steps: 5000
+    evaluation_steps: 2000
+    weight_decay: 0.01
+    max_grad_norm: 1.0
+    use_amp: True
+    save_best_model: True
+    show_progress_bar: True
+    checkpoint_path: models/quad/checkpoints
+    checkpoint_save_epoch: 1
+    checkpoint_save_total_limit: 2
+    save_by_epoch: 1
+
+
+EVALUATION:
+  type: "evaluation_pipeline"
+  corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
+  query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
+  model_name_or_path:
+    # - models/quad_v2_1/epoch-0

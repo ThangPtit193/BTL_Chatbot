@@ -35,7 +35,7 @@ class QuadrupletLoss(nn.Module):
         distance_metric_name = self.distance_metric.__name__
         for name, value in vars(QuadrupletDistanceMetric).items():
             if value == self.distance_metric:
-                distance_metric_name = "TripletDistanceMetric.{}".format(name)
+                distance_metric_name = "QuadrupletDistanceMetric.{}".format(name)
                 break
 
         return {

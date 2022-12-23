@@ -401,6 +401,8 @@ class QuadrupletEmbedder(BaseEmbedder):
         checkpoint_save_epoch: int = None,
         checkpoint_save_total_limit: int = None,
         resume_from_checkpoint: Text = None,
+        save_by_epoch: int = 0,
+        model_save_total_limit: int = None,
         **kwargs,
     ):
         """
@@ -415,7 +417,7 @@ class QuadrupletEmbedder(BaseEmbedder):
         :param evaluation_steps:
         :param weight_decay:
         :param max_grad_norm:
-        :param use_amp:
+        :param use_amp:save_by_epoch
         :param save_best_model:
         :param show_progress_bar:
         :return:
@@ -441,7 +443,7 @@ class QuadrupletEmbedder(BaseEmbedder):
             neg_key_2="neg2"
         )
         train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
-        train_loss = QuadrupletLoss(model=self.learner)
+        train_loss = QuadrupletLoss(model=self.learner, quadruple_margin_1=5, quadruple_margin_2=4)
 
         # Train the model
         self.learner.fit(
@@ -450,7 +452,7 @@ class QuadrupletEmbedder(BaseEmbedder):
             epochs=epochs,
             warmup_steps=warmup_steps,
             output_path=model_save_path,
-            evaluation_steps=evaluation_steps,
+            # evaluation_steps=evaluation_steps,
             use_amp=use_amp,
             optimizer_params={'lr': 2e-5},
             optimizer_class=transformers.AdamW,
@@ -462,6 +464,8 @@ class QuadrupletEmbedder(BaseEmbedder):
             checkpoint_path=checkpoint_path,
             checkpoint_save_epoch=checkpoint_save_epoch,
             checkpoint_save_total_limit=checkpoint_save_total_limit,
-            resume_from_checkpoint=resume_from_checkpoint
+            resume_from_checkpoint=resume_from_checkpoint,
+            save_by_epoch=save_by_epoch,
+            model_save_total_limit=model_save_total_limit
         )
-        self.learner.save(model_save_path)
+        # self.learner.save(model_save_path)
