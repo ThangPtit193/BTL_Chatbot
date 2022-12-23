@@ -20,9 +20,7 @@ import shutil
 from .dataset import data_producer
 from .net import AutoModelForSentenceEmbedding, CustomSentenceTransformer
 from sentence_transformers import SentenceTransformer
-from venus.sentence_embedding.sentence_embedding import  SentenceEmbedding
-
-
+from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
 
 __all__ = []
 # device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
@@ -52,13 +50,15 @@ class BaseEmbedder(BertEmbedder):
 
 class NaiveEmbedder(BaseEmbedder):
 
-
     # def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
     #     super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
 
-    def __init__(self, device_name="cpu"):
+    def __init__(self, gpu: int = 0):
         super(NaiveEmbedder, self).__init__()
-        self.device = torch.device(f"cuda:{device_name}") if torch.cuda.is_available() else torch.device("cpu")
+        if gpu >= 0 and torch.cuda.is_available():
+            self.device = torch.device(f'cuda:{gpu}')
+        else:
+            self.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
     def initialize(self, **kwargs):
         for k, val in kwargs.items():
@@ -270,16 +270,16 @@ class NaiveEmbedder(BaseEmbedder):
 
 class SentenceEmbedder(BaseEmbedder):
 
-    def __init__(self, device_name="cpu", model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased"):
+    def __init__(self, model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased", gpu: int = None):
         super(SentenceEmbedder, self).__init__()
         self.model_name_or_path: Text = model_name_or_path
         self._learner: CustomSentenceTransformer = None
-        self.device = torch.device(f"cuda:{device_name}") if torch.cuda.is_available() else torch.device("cpu")
-    #
+        self.gpu = gpu
+
     @property
     def learner(self):
         if not self._learner:
-            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path, device=self.device)
+            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path, gpu=self.gpu)
         return self._learner
 
     def _train(
@@ -379,17 +379,19 @@ class SentenceEmbedder(BaseEmbedder):
         #     os.makedirs(save_best_model_path)
         # self.learner.save(save_best_model_path)
 
+
 class QuadrupletEmbedder(BaseEmbedder):
 
-    def __init__(self, model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased"):
+    def __init__(self, model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased", gpu: int = None):
         super(QuadrupletEmbedder, self).__init__()
         self.model_name_or_path: Text = model_name_or_path
         self._learner: CustomSentenceTransformer = None
+        self.gpu = gpu
 
     @property
     def learner(self):
         if not self._learner:
-            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path)
+            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path, gpu=self.gpu)
         return self._learner
 
     def _train(
@@ -434,7 +436,7 @@ class QuadrupletEmbedder(BaseEmbedder):
         """
         from saturn.components.dataset_reader.quadruplet_dataset import QuadrupletDataset
         # quad loss
-        from  saturn.components.losses.quadruplet_loss import QuadrupletLoss
+        from saturn.components.losses.quadruplet_loss import QuadrupletLoss
         # from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
         # Producing data
         quadruplets_data = []

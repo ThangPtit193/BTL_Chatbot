@@ -4,7 +4,7 @@ GENERAL:
 EMBEDDER:
   class: QuadrupletEmbedder
   package: saturn.components.embeddings.embedding_models
-
+  gpu: 0
   TRAINER:
     quadruplet_data_path:
       - data/train_data/dummy/quadruples/quadruples_30.json

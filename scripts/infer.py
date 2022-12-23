@@ -1,9 +1,10 @@
 from sentence_transformers import SentenceTransformer, util
 from comet.components.embeddings.embedding_models import BertEmbedder
 import pprint
-
+import time
 # model = SentenceTransformer('./models')
-embedder = BertEmbedder(pretrained_name_or_abspath='timi-idol-phobert-32M-embedder-bm25-e10')
+embedder = BertEmbedder(pretrained_name_or_abspath='timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0')
+# embedder = BertEmbedder(pretrained_name_or_abspath='distilbert-multilingual-faq-v3.2')
 # Two lists of sentences
 query = "hôm nay không biết thời tiết ra sao nữa"
 corpus = [
@@ -20,5 +21,7 @@ corpus = [
     "trời ơi là trời, sao mùa hè mà mưa quoài dậy chời",
     "má ơi, nóng chết đi đc",
 ]
+t0 = time.time()
 similarities = embedder.find_similarity([query], corpus)
+print(f"Time: {time.time() - t0}")
 pprint.pprint(similarities)

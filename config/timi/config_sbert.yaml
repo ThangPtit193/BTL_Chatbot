@@ -5,6 +5,7 @@ EMBEDDER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
   model_name_or_path: microsoft/MiniLM-L12-H384-uncased
+  gpu: 1
   TRAINER:
     triplets_data_path:
       - assets/timi/bm25_embedder/triples_2000000.json

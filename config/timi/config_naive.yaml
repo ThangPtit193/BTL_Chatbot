@@ -4,6 +4,7 @@ GENERAL:
 EMBEDDER:
   class: NaiveEmbedder
   package: saturn.components.embeddings.embedding_models
+  gpu: 0
   TRAINER:
     # A data_config.json file
     data_config_path: data/train_data/timi/data_config.json

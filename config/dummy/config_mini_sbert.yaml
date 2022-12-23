@@ -4,7 +4,7 @@ GENERAL:
 EMBEDDER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
-  device_name: 0
+  gpu: 0
   model_name_or_path: vinai/phobert-base
   TRAINER:
     triplets_data_path:

@@ -98,13 +98,22 @@ class AutoModelForSentenceEmbedding(torch.nn.Module):
 
 class CustomSentenceTransformer(SentenceTransformer):
     @classmethod
-    def from_pretrained(cls, model_name_or_path: Text = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2", device="cpu") -> "CustomSentenceTransformer":
+    def from_pretrained(
+        cls,
+        model_name_or_path: Text = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        gpu: int = None
+    ) -> "CustomSentenceTransformer":
         """
 
         Args:
             model_name_or_path: The model name or path. If name provided,
                                 It will be loaded from hugging face hub or from axiom
+            gpu: The device to load the model on
         """
+        if gpu and torch.cuda.is_available():
+            device = "cuda:{}".format(gpu)
+        else:
+            device = "cuda" if torch.cuda.is_available() else "cpu"
         model = None
         if os.path.isdir(model_name_or_path):
             try:
@@ -333,15 +342,15 @@ class CustomSentenceTransformer(SentenceTransformer):
                 global_step += 1
             writer.flush()
             if bool(
-                    checkpoint_path is not None
-                    and checkpoint_save_epoch is not None
-                    and checkpoint_save_epoch > 0
-                    and (epoch + 1) % checkpoint_save_epoch == 0
+                checkpoint_path is not None
+                and checkpoint_save_epoch is not None
+                and checkpoint_save_epoch > 0
+                and (epoch + 1) % checkpoint_save_epoch == 0
             ):
                 self.save_checkpoint(epoch, optimizers, schedulers, checkpoint_path, checkpoint_save_total_limit)
 
             if save_by_epoch > 0 and \
-                    (epoch+1) % save_by_epoch == 0:
+                (epoch + 1) % save_by_epoch == 0:
                 self.save_model(output_path, model_save_total_limit, epoch)
 
         if evaluator is None and output_path is not None:  # No evaluator, but output path: save final model version
