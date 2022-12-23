@@ -20,6 +20,8 @@ import shutil
 from venus.wrapper import axiom_wrapper
 from torch.utils.tensorboard import SummaryWriter
 
+# from pytorch.torch.cuda import device
+
 _logger = logger.get_logger(__name__)
 
 
@@ -96,7 +98,7 @@ class AutoModelForSentenceEmbedding(torch.nn.Module):
 
 class CustomSentenceTransformer(SentenceTransformer):
     @classmethod
-    def from_pretrained(cls, model_name_or_path: Text = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2") -> "CustomSentenceTransformer":
+    def from_pretrained(cls, model_name_or_path: Text = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2", device="cpu") -> "CustomSentenceTransformer":
         """
 
         Args:
@@ -106,13 +108,13 @@ class CustomSentenceTransformer(SentenceTransformer):
         model = None
         if os.path.isdir(model_name_or_path):
             try:
-                model = CustomSentenceTransformer(model_name_or_path)
+                model = CustomSentenceTransformer(model_name_or_path, device=device)
             except Exception as e:
                 _logger.error(f"Cannot load pretrained model from {model_name_or_path}, "
                               f"Because {e}")
         else:
             model_name_or_path = axiom_wrapper.fetch_model(model_name_or_path)
-            model = CustomSentenceTransformer(model_name_or_path)
+            model = CustomSentenceTransformer(model_name_or_path, device=device)
             model.max_seq_length = 128
         return model
 
