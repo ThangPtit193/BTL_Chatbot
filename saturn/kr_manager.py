@@ -1,4 +1,6 @@
 import datetime
+import json
+import logging
 import os
 from pathlib import Path
 from time import perf_counter
@@ -17,7 +19,8 @@ from comet.lib.print_utils import print_title
 
 from saturn.components.utils.document import Document, EvalResult
 from saturn.utils.config_parser import ConfigParser
-
+import torch
+import torch.nn as nn
 if TYPE_CHECKING:
     from saturn.components.embeddings.embedding_models import SentenceEmbedder
 
@@ -95,6 +98,7 @@ class KRManager:
 
     def train_embedder(self):
         trainer_config = self.config_parser.trainer_config()
+        logging.info(json.dumps(trainer_config, indent=4))
         self.embedder.train(trainer_config)
 
         # TODO save the model and upload it to axiom
@@ -125,21 +129,22 @@ class KRManager:
     def evaluate_embedder(self, top_k: int = None):
         retriever_results = []
         retriever_top_k_results = []
-        model_name_or_paths = self.config_parser.eval_config()['model_name_or_path']
+        model_name_or_paths = self.model_name_or_path
         if isinstance(model_name_or_paths, str):
             model_name_or_paths = [model_name_or_paths]
         evaluation_results: Dict[str, List[EvalResult]] = {}
-        evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
-        for model_name_or_path in tqdm(model_name_or_paths):
+        # evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
+        for model_name_or_path in tqdm(list(set(model_name_or_paths))):
             name = os.path.basename(model_name_or_path)
             evaluation_results[name] = []
-            evaluation_top_k_results[name] = []
+            evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
             self.embedder.load_model(cache_path=None, pretrained_name_or_abspath=model_name_or_path)
 
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
-            similarity_data = self.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
+            similarity_data = self.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True, \
+                                                            similarity_function=self.pytorch_euclid)
             toc = perf_counter()
             retriever_time = toc - tic
 
@@ -148,6 +153,8 @@ class KRManager:
                                                                          similarity_data,
                                                                          top_k=top_k)
             evaluation_results[name].extend(eval_results)
+            evaluation_top_k_results[name] = eval_top_k_results
+            retriever_top_k_results.append(evaluation_top_k_results)
             df = pd.DataFrame(evaluation_results[name])
 
             records = {
@@ -161,14 +168,12 @@ class KRManager:
             }
             retriever_results.append(records)
 
-            evaluation_top_k_results[name].extend(eval_top_k_results)
-            retriever_top_k_results.append(evaluation_top_k_results)
         return retriever_results, retriever_top_k_results
 
     def save(self, report_type: str = "all", top_k: int = None, save_markdown: bool = True):
         retriever_results, retriever_top_k_results = self.evaluate_embedder(top_k=top_k)
         if report_type == "overall":
-            self._save_overall_report(
+            self.save_overall_report(
                 output_dir=self.output_dir,
                 df=pd.DataFrame(retriever_results),
                 save_markdown=save_markdown
@@ -176,20 +181,20 @@ class KRManager:
         elif report_type == "detail":
             for models in retriever_top_k_results:
                 for model, data in models.items():
-                    self._save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
+                    self.save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
         elif report_type == "all":
-            self._save_overall_report(
+            self.save_overall_report(
                 output_dir=self.output_dir,
                 df=pd.DataFrame(retriever_results),
                 save_markdown=save_markdown
             )
             for models in retriever_top_k_results:
                 for model, data in models.items():
-                    self._save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
+                    self.save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
         else:
             raise NotImplemented(f"Sorry, this report type {report_type} is not found")
 
-    def _save_overall_report(
+    def save_overall_report(
             self,
             output_dir: Union[str, Path],
             df: Union[DataFrame, List],
@@ -214,7 +219,7 @@ class KRManager:
         print_title(text="Knowledge Retrieval Overall Results", scale=110, color='purple')
         print(tabulate(retriever_df, headers='keys', tablefmt='pretty'))
 
-    def _save_detail_report(self, output_dir: Union[str, Path], model_name: str, df: Union[DataFrame, List]):
+    def save_detail_report(self, output_dir: Union[str, Path], model_name: str, df: Union[DataFrame, List]):
         """
         Saves the evaluation result.
         The result of each node is saved in a separate csv with file name {node_name}.csv to the output_dir folder.
@@ -275,8 +280,8 @@ class KRManager:
                                                           'format': bg_format_even})
             for i in u:
                 if df_merged['label'][i - 1] != df_merged['predicted_labels'][i - 1]:
-                    wrong_label_range = xl_range_abs(i - 1, df_merged.columns.get_loc('most_relevant_docs'),
-                                                     i - 1, df_merged.shape[1])
+                    wrong_label_range = xl_range_abs(i, df_merged.columns.get_loc('most_relevant_docs'),
+                                                     i, df_merged.shape[1])
                     worksheet.conditional_format(wrong_label_range, {'type': 'no_blanks',
                                                                      'format': bg_format_wrong})
 
@@ -356,8 +361,8 @@ class KRManager:
             top_k = top_k if top_k in range(1, src_doc.num_relevant) else src_doc.num_relevant
             if top_k > 20:
                 _logger.warning(
-                    f"Got {top_k} instead of being less than or equal to 20, so the default value {5} will be applied")
-                top_k = 5
+                    f"Got {top_k} instead of being less than or equal to 20, so the default value {10} will be applied")
+                top_k = 10
 
             tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
             eval_top_k_results.append(tmp_df.to_dict())
@@ -430,3 +435,35 @@ class KRManager:
                     num_relevant=num_relevant,
                 ))
         return docs
+
+    @staticmethod
+    def _euclid(query_vector,tgt_vectors, pdist ):
+        query_matrix = query_vector*tgt_vectors.shape[0]
+        query_score_matrix = pdist(query_matrix,tgt_vectors)
+        query_score_matrix *= -1
+        return query_score_matrix
+
+    def pytorch_euclid(self,src_vectors, tgt_vectors):
+        logging.info("Using euclid distance")
+        src_vectors = torch.as_tensor(src_vectors)
+        tgt_vectors = torch.as_tensor(tgt_vectors)
+
+        if len(src_vectors.shape) == 1:
+            src_vectors = src_vectors.view(1, -1)
+
+        if len(tgt_vectors.shape) == 1:
+            tgt_vectors = tgt_vectors.view(1, -1)
+
+        if len(src_vectors.shape) != 2 or len(tgt_vectors.shape) != 2:
+            msg = "Only 2-dimensional arrays/tensors are allowed in Embedder.pytorch_cos_sim()"
+            raise ValueError(msg)
+
+        score_matrix = []
+        pdist = nn.PairwiseDistance(p=2)
+
+        for src_vector in src_vectors:
+            src_vector = torch.reshape(src_vector,(1,-1))
+            query_score_vector = self._euclid(src_vector,tgt_vectors,pdist)
+            score_matrix.append(query_score_vector)
+        similarity_scores = torch.vstack(score_matrix)
+        return similarity_scores

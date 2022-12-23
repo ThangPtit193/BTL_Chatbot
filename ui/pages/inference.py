@@ -7,9 +7,9 @@ import seaborn as sns
 from saturn.kr_manager import KRManager
 
 from ui import MODELS
-from ui.utils import check_input, check_corpus
 from st_aggrid import AgGrid
 
+from ui.utils.io import check_corpus, check_input
 
 DEFAULT_MODEL_AT_STARTUP = os.getenv("DEFAULT_MODEL_AT_STARTUP", "vinai/phobert-base")
 DEFAULT_TOP_K_AT_STARTUP = os.getenv("DEFAULT_TOP_K_AT_STARTUP", 10)
@@ -100,7 +100,8 @@ def main():
                 index=range(6),
                 columns=['Samples text']
             )
-            response_samples = AgGrid(df_template, editable=True, fit_columns_on_grid_load=True, key='sample', height=203)
+            response_samples = AgGrid(df_template, editable=True, fit_columns_on_grid_load=True, key='sample',
+                                      height=203)
         with tab_2:
             corpus_uploader = st.file_uploader(
                 label="Choose a txt file",
@@ -113,29 +114,30 @@ def main():
 
         submit_button = st.form_submit_button(label="✨ Get relevant sentences!")
 
-    def get_corpus(response_samples, input_corpus, merge_input):
-        response_samples = response_samples['data']['Samples text'].tolist()
-        response_samples = [x for x in response_samples if x != '']
+    def get_corpus(samples, input_corpus, merged_input):
+        samples = samples['data']['Samples text'].tolist()
+        samples = [x for x in samples if x != '']
         input_corpus = check_corpus(input_corpus)
+        corpus = None
 
-        if input_corpus and response_samples:
-            if merge_input:
-                corpus = input_corpus + response_samples
+        if input_corpus and samples:
+            if merged_input:
+                corpus = input_corpus + samples
             else:
                 corpus = input_corpus
         elif input_corpus:
             corpus = input_corpus
-        elif response_samples:
-            corpus = response_samples
+        elif samples:
+            corpus = samples
         else:
             st.error("Please input corpus or samples")
             st.stop()
         return corpus
 
-    def get_inference(input_doc, response_samples, input_corpus, input_top_k, input_model):
+    def get_inference(input_doc, samples, input_corpus, input_top_k, input_model):
         input_doc = check_input(input_doc)
         # input_corpus = check_corpus(input_corpus)
-        corpus = get_corpus(response_samples, input_corpus, merge_input)
+        corpus = get_corpus(samples, input_corpus, merge_input)
         return input_model.inference(input_doc, corpus, input_top_k)
 
     @st.experimental_memo(max_entries=3, ttl=60 * 3)
@@ -171,5 +173,6 @@ def main():
         df = df.format(format_dictionary)
         st.table(df)
         st.stop()
+
 
 main()

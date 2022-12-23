@@ -1,3 +1,9 @@
+rapidfuzz
+mmh3
+seaborn
+streamlit
+xlsxwriter
+streamlit-aggrid
 streamlit_tags
 tensorboard
 comet@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/comet-7.1.0rc11-py3-none-any.whl
