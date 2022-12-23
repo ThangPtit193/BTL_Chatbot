@@ -1,9 +1,11 @@
-comet@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/comet-7.1.0rc8-py3-none-any.whl
-venus@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/venus-1.2.3rc4-py3-none-any.whl
 rapidfuzz
 mmh3
 seaborn
+streamlit
 xlsxwriter
 streamlit-aggrid
-streamlit==1.15.2
 streamlit_tags
+tensorboard
+comet@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/comet-7.1.0rc11-py3-none-any.whl
+venus@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/venus-1.2.3rc4-py3-none-any.whl
+axiom_client@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/axiom_client-1.9.4-py3-none-any.whl

@@ -1,14 +1,48 @@
-import streamlit as st
-from typing import List
+import json
+
+import pandas as pd
 from pandas.api.types import (
     is_categorical_dtype,
     is_datetime64_any_dtype,
     is_numeric_dtype,
     is_object_dtype,
 )
-import pandas as pd
+
+from typing import List
+import streamlit as st
+
+from comet.utilities.utility import convert_unicode
+
+from saturn.components.utils.document import Document
 
 
+def get_json(json_files):
+    json_list = {}
+    for json_file in json_files:
+        temp_json = json.loads(json_file.read())
+        json_list.update(temp_json)
+    return json_list
+
+
+def load_docs(data_docs, corpus=None) -> List[Document]:
+    """
+    Load documents from a file or a directory
+    """
+    if not isinstance(data_docs, dict):
+        raise FileNotFoundError(f"File not valid")
+    docs = []
+    for unique_intent, query_list in data_docs.items():
+        if corpus:
+            num_relevant = len(corpus[unique_intent])
+        else:
+            num_relevant = None
+        for idx, query in enumerate(query_list):
+            docs.append(Document(
+                text=convert_unicode(query),
+                label=unique_intent,
+                num_relevant=num_relevant,
+            ))
+    return docs
 
 
 def read_txt_streamlit(file) -> List:
@@ -37,6 +71,7 @@ def check_input(input_doc):
         st.error("Please paste your text")
         st.stop()
 
+
 def check_corpus(input_corpus_loader):
     """
     Check if input is not empty
@@ -45,6 +80,7 @@ def check_corpus(input_corpus_loader):
         return read_txt_streamlit(input_corpus_loader)
     else:
         return None
+
 
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """

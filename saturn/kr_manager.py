@@ -125,15 +125,15 @@ class KRManager:
     def evaluate_embedder(self, top_k: int = None):
         retriever_results = []
         retriever_top_k_results = []
-        model_name_or_paths = self.config_parser.eval_config()['model_name_or_path']
+        model_name_or_paths = self.model_name_or_path
         if isinstance(model_name_or_paths, str):
             model_name_or_paths = [model_name_or_paths]
         evaluation_results: Dict[str, List[EvalResult]] = {}
-        evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
-        for model_name_or_path in tqdm(model_name_or_paths):
+        # evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
+        for model_name_or_path in tqdm(list(set(model_name_or_paths))):
             name = os.path.basename(model_name_or_path)
             evaluation_results[name] = []
-            evaluation_top_k_results[name] = []
+            evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
             self.embedder.load_model(cache_path=None, pretrained_name_or_abspath=model_name_or_path)
 
             tic = perf_counter()
@@ -148,6 +148,8 @@ class KRManager:
                                                                          similarity_data,
                                                                          top_k=top_k)
             evaluation_results[name].extend(eval_results)
+            evaluation_top_k_results[name] = eval_top_k_results
+            retriever_top_k_results.append(evaluation_top_k_results)
             df = pd.DataFrame(evaluation_results[name])
 
             records = {
@@ -161,14 +163,12 @@ class KRManager:
             }
             retriever_results.append(records)
 
-            evaluation_top_k_results[name].extend(eval_top_k_results)
-            retriever_top_k_results.append(evaluation_top_k_results)
         return retriever_results, retriever_top_k_results
 
     def save(self, report_type: str = "all", top_k: int = None, save_markdown: bool = True):
         retriever_results, retriever_top_k_results = self.evaluate_embedder(top_k=top_k)
         if report_type == "overall":
-            self._save_overall_report(
+            self.save_overall_report(
                 output_dir=self.output_dir,
                 df=pd.DataFrame(retriever_results),
                 save_markdown=save_markdown
@@ -176,20 +176,20 @@ class KRManager:
         elif report_type == "detail":
             for models in retriever_top_k_results:
                 for model, data in models.items():
-                    self._save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
+                    self.save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
         elif report_type == "all":
-            self._save_overall_report(
+            self.save_overall_report(
                 output_dir=self.output_dir,
                 df=pd.DataFrame(retriever_results),
                 save_markdown=save_markdown
             )
             for models in retriever_top_k_results:
                 for model, data in models.items():
-                    self._save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
+                    self.save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
         else:
             raise NotImplemented(f"Sorry, this report type {report_type} is not found")
 
-    def _save_overall_report(
+    def save_overall_report(
             self,
             output_dir: Union[str, Path],
             df: Union[DataFrame, List],
@@ -214,7 +214,7 @@ class KRManager:
         print_title(text="Knowledge Retrieval Overall Results", scale=110, color='purple')
         print(tabulate(retriever_df, headers='keys', tablefmt='pretty'))
 
-    def _save_detail_report(self, output_dir: Union[str, Path], model_name: str, df: Union[DataFrame, List]):
+    def save_detail_report(self, output_dir: Union[str, Path], model_name: str, df: Union[DataFrame, List]):
         """
         Saves the evaluation result.
         The result of each node is saved in a separate csv with file name {node_name}.csv to the output_dir folder.
@@ -275,8 +275,8 @@ class KRManager:
                                                           'format': bg_format_even})
             for i in u:
                 if df_merged['label'][i - 1] != df_merged['predicted_labels'][i - 1]:
-                    wrong_label_range = xl_range_abs(i - 1, df_merged.columns.get_loc('most_relevant_docs'),
-                                                     i - 1, df_merged.shape[1])
+                    wrong_label_range = xl_range_abs(i, df_merged.columns.get_loc('most_relevant_docs'),
+                                                     i, df_merged.shape[1])
                     worksheet.conditional_format(wrong_label_range, {'type': 'no_blanks',
                                                                      'format': bg_format_wrong})
 
@@ -356,8 +356,8 @@ class KRManager:
             top_k = top_k if top_k in range(1, src_doc.num_relevant) else src_doc.num_relevant
             if top_k > 20:
                 _logger.warning(
-                    f"Got {top_k} instead of being less than or equal to 20, so the default value {5} will be applied")
-                top_k = 5
+                    f"Got {top_k} instead of being less than or equal to 20, so the default value {10} will be applied")
+                top_k = 10
 
             tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
             eval_top_k_results.append(tmp_df.to_dict())
