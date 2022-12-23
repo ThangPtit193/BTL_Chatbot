@@ -24,7 +24,7 @@ from venus.sentence_embedding.sentence_embedding import  SentenceEmbedding
 
 
 __all__ = []
-device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+# device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 _logger = logger.get_logger(__name__)
 
 
@@ -50,13 +50,19 @@ class BaseEmbedder(BertEmbedder):
 
 
 class NaiveEmbedder(BaseEmbedder):
+
+
+    # def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
+    #     super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
+
+    def __init__(self, device_name="cpu"):
+        super(NaiveEmbedder, self).__init__()
+        self.device = torch.device(f"cuda:{device_name}") if torch.cuda.is_available() else torch.device("cpu")
+
     def initialize(self, **kwargs):
         for k, val in kwargs.items():
             if hasattr(self, k):
                 setattr(self, k, val)
-
-    # def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
-    #     super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
 
     def _train(
         self,
@@ -127,7 +133,7 @@ class NaiveEmbedder(BaseEmbedder):
         tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
         model = AutoModelForSentenceEmbedding(pretrained_model, tokenizer)
 
-        model = model.to(device)
+        model = model.to(self.device)
 
         # Instantiate optimizer
         optimizer = AdamW(params=model.parameters(), lr=2e-5, correct_bias=True)
@@ -146,7 +152,7 @@ class NaiveEmbedder(BaseEmbedder):
         if resume_from_checkpoint:
             if not os.path.exists(resume_from_checkpoint):
                 raise ValueError(f"Resume from checkpoint {resume_from_checkpoint} does not exist")
-            checkpoint = torch.load(resume_from_checkpoint, map_location=device)
+            checkpoint = torch.load(resume_from_checkpoint, map_location=self.device)
             step_offset = checkpoint['step']
             optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
             lr_scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
@@ -168,8 +174,8 @@ class NaiveEmbedder(BaseEmbedder):
                                   max_length=max_length, truncation=True, padding="max_length")
 
                 # Computing the embeddings of two sentences
-                embeddings_a = model(**text1.to(device))
-                embeddings_b = model(**text2.to(device))
+                embeddings_a = model(**text1.to(self.device))
+                embeddings_b = model(**text2.to(self.device))
 
                 # Compute similarity scores 512 x 512
                 scores = torch.mm(embeddings_a, embeddings_b.transpose(0, 1)) * scale
@@ -188,9 +194,9 @@ class NaiveEmbedder(BaseEmbedder):
                                   max_length=max_length, truncation=True, padding="max_length")
                 text3 = tokenizer([b[2] for b in batch], return_tensors="pt",
                                   max_length=max_length, truncation=True, padding="max_length")
-                embeddings_a = model(**text1.to(device))
-                embeddings_b1 = model(**text2.to(device))
-                embeddings_b2 = model(**text3.to(device))
+                embeddings_a = model(**text1.to(self.device))
+                embeddings_b1 = model(**text2.to(self.device))
+                embeddings_b2 = model(**text3.to(self.device))
 
                 embeddings_b = torch.cat([embeddings_b1, embeddings_b2])
 
@@ -263,15 +269,16 @@ class NaiveEmbedder(BaseEmbedder):
 
 class SentenceEmbedder(BaseEmbedder):
 
-    def __init__(self, model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased"):
+    def __init__(self, device_name="cpu", model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased"):
         super(SentenceEmbedder, self).__init__()
         self.model_name_or_path: Text = model_name_or_path
         self._learner: CustomSentenceTransformer = None
-
+        self.device = torch.device(f"cuda:{device_name}") if torch.cuda.is_available() else torch.device("cpu")
+    #
     @property
     def learner(self):
         if not self._learner:
-            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path)
+            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path, device=self.device)
         return self._learner
 
     def _train(
@@ -295,6 +302,7 @@ class SentenceEmbedder(BaseEmbedder):
         resume_from_checkpoint: Text = None,
         save_by_epoch: int = 0,
         model_save_total_limit: int = None,
+        # device_name: Union[str,int] = "cpu",
         **kwargs,
     ):
         """
@@ -337,6 +345,8 @@ class SentenceEmbedder(BaseEmbedder):
             pos_key="pos",
             neg_key="neg"
         )
+        # device = torch.device(f"cuda:{device_name}") if torch.cuda.is_available() else torch.device("cpu")
+        # self.learner = self.learner.to(device)
         train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
         train_loss = losses.TripletLoss(model=self.learner)
 

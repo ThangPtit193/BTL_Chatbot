@@ -4,14 +4,14 @@ GENERAL:
 EMBEDDER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
-
+  device_name: 0
+  model_name_or_path: vinai/phobert-base
   TRAINER:
     triplets_data_path:
       - data/train_data/dummy/triples/triples_10.json
 #      - data/train_data/dummy/triples/triples_20.json
 #      - data/train_data/dummy/triples/triples_30.json
-    pretrained_model: vinai/phobert-base
-    model_save_path: models
+    model_save_path: models_test
     n_samples: 10
     batch_size: 128
     epochs: 10
@@ -25,6 +25,7 @@ EMBEDDER:
     checkpoint_path: models/checkpoints
     checkpoint_save_epoch: 50
     checkpoint_save_total_limit: 3
+    device_name: 0
 #    save_by_epoch: 0
 #    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
 
