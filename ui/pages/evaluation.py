@@ -65,6 +65,7 @@ with st.expander("ℹ️ Introduce", expanded=True):
     ```
     """
     )
+with st.expander("📂 Download sample files", expanded=False):
     st.markdown("You can download sample json file here")
     with open("data/eval-data/dummy/corpus_docs.json", "r") as f:
         st.download_button("Download corpus file", f.read(), file_name="corpus_docs.json", mime="application/json")

@@ -46,6 +46,7 @@ def main():
         )
 
         st.markdown("")
+    with st.expander("📂 Download sample files", expanded=False):
         st.markdown("You can download sample txt file here")
         with open("data/sample_corpus.txt", "r") as f:
             st.download_button("Download sample txt file", f, key="sample_file")
