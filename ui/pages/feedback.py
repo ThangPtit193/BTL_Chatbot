@@ -6,20 +6,22 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import HttpRequest
 from datetime import datetime
+from utils.io import read_feedback_config
 
+@st.experimental_memo
+def read_config(file_path):
+    return read_feedback_config(file_path)
 
-SERVICE_ACCOUNT_FILE = 'google/knowledge-retrival-9fdb9a7d9f72.json'
-SCOPE = "https://www.googleapis.com/auth/spreadsheets"
-SPREADSHEET_ID = "14dIPHGIQaTOh6vXw2fDCjEy__6B1Ned1rKCvLLsyhgA"
-SHEET_NAME = "Feedback"
-GSHEET_URL = f"https://docs.google.com/spreadsheets/d/{SPREADSHEET_ID}"
+fback_config = read_config("ui/feedback_config/Feedback_config.yaml")
+
 
 @st.experimental_singleton()
 def connect_to_gsheet():
     # Create a connection object.
+
     credentials = service_account.Credentials.from_service_account_file(
-        SERVICE_ACCOUNT_FILE,
-        scopes=[SCOPE],
+        fback_config['SERVICE_ACCOUNT_FILE'],
+        scopes=[fback_config['SCOPE']],
     )
 
     # Create a new Http() object for every request
@@ -45,8 +47,8 @@ def get_data(gsheet_connector) -> pd.DataFrame:
     values = (
         gsheet_connector.values()
         .get(
-            spreadsheetId=SPREADSHEET_ID,
-            range=f"{SHEET_NAME}!A:E",
+            spreadsheetId=fback_config['SPREADSHEET_ID'],
+            range=f"{fback_config['SHEET_NAME']}!A:E",
         )
         .execute()
     )
@@ -59,8 +61,8 @@ def get_data(gsheet_connector) -> pd.DataFrame:
 
 def add_row_to_gsheet(gsheet_connector, row) -> None:
     gsheet_connector.values().append(
-        spreadsheetId=SPREADSHEET_ID,
-        range=f"{SHEET_NAME}!A:E",
+        spreadsheetId=fback_config['SPREADSHEET_ID'],
+        range=f"{fback_config['SHEET_NAME']}!A:E",
         body=dict(values=row),
         valueInputOption="USER_ENTERED",
     ).execute()

@@ -1,5 +1,5 @@
 import json
-
+import yaml
 import pandas as pd
 from pandas.api.types import (
     is_categorical_dtype,
@@ -155,3 +155,16 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
                 if user_text_input:
                     df = df[df[column].astype(str).str.contains(user_text_input)]
     return df
+
+
+def read_feedback_config(config_file):
+    """
+    Read feedback yaml config file
+    """
+    print('hi')
+    if config_file is not None:
+        with open(config_file, "r") as f:
+            feedback_config = yaml.safe_load(f)
+    else:
+        feedback_config = None
+    return feedback_config
