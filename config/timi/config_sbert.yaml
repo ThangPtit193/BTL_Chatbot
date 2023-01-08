@@ -4,20 +4,21 @@ GENERAL:
 EMBEDDER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
-  model_name_or_path: microsoft/MiniLM-L12-H384-uncased
-  gpu: 1
+  pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+  device: "cuda:1"
   TRAINER:
     triplets_data_path:
       - assets/timi/bm25_embedder/triples_2000000.json
       - assets/timi/bm25_embedder/triples_4000000.json
       - assets/timi/bm25_embedder/triples_6000000.json
       - assets/timi/bm25_embedder/triples_8000000.json
-      - assets/timi/bm25_embedder/triples_8284471.json
+      - assets/timi/bm25_embedder/triples_10000000.json
+      - assets/timi/bm25_embedder/triples_1047342.json
 
     model_save_path: models
     n_samples: 10
     batch_size: 256
-    epochs: 20
+    epochs: 25
     warmup_steps: 5000
     evaluation_steps: 2000
     weight_decay: 0.01
@@ -29,17 +30,27 @@ EMBEDDER:
     checkpoint_save_epoch: 3
     checkpoint_save_total_limit: 10
     save_by_epoch: 1
-#    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
+#    resume_from_checkpoint: checkpoints/epoch-14/checkpoint.pt
 
 EVALUATION:
   type: "evaluation_pipeline"
-  corpus_name_or_path: "data/eval-data/timi/corpus.json"
-  query_name_or_path: "data/eval-data/timi/query.json"
-  model_name_or_path:
-#    - distilbert-multilingual-faq-v3.2
-#    - fschool-distilbert-multilingual-faq-v8.0.0
-#    - timi-idol-paraphrase-multilingual-MiniLM-L12-v2-v.1.0.1
-#    - khanhpd2/sbert_phobert_large_cosine_sim
-    - models/checkpoints/epoch-11
-    - models/checkpoints/epoch-14
-    - models/checkpoints/epoch-17
+  corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
+  query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
+  pretrained_name_or_abspath:
+    - models/epoch-0
+    - models/epoch-1
+    - models/epoch-3
+    - models/epoch-5
+    - models/epoch-7
+    - models/epoch-8
+    - models/epoch-9
+    - models/epoch-11
+    - models/epoch-12
+    - models/epoch-13
+    - models/epoch-14
+    - models/epoch-15
+    - models/epoch-16
+    - models/epoch-17
+    - models/epoch-18
+    - models/epoch-19
+    - models/epoch-20

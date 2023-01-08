@@ -28,17 +28,24 @@ _logger = logger.get_logger(__name__)
 
 
 class BaseEmbedder(BertEmbedder):
-    def __init__(self, **kwargs):
+    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
+        # super(BaseEmbedder, self).__init__(
+        #     pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs
+        # )
         self.cache_path = ".embeddings_cache"
+        self.device = device
+        self.pretrained_name_or_abspath = pretrained_name_or_abspath
 
     def initialize(self, **kwargs):
         for k, val in kwargs.items():
             if hasattr(self, k):
                 setattr(self, k, val)
 
-    def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
+    def load_model(self, cache_path=None, pretrained_name_or_abspath=None, **kwargs):
         cache_path = cache_path or self.cache_path
-        super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
+        super(BaseEmbedder, self).__init__(
+            cache_path, pretrained_name_or_abspath, device=self.device, **kwargs
+        )
 
     def train(self, trainer_config: Dict):
         self._train(**trainer_config)
@@ -53,12 +60,13 @@ class NaiveEmbedder(BaseEmbedder):
     # def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
     #     super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
 
-    def __init__(self, gpu: int = None):
-        super(NaiveEmbedder, self).__init__()
-        if gpu is not None and torch.cuda.is_available():
-            self.device = torch.device(f'cuda:{gpu}')
-        else:
-            self.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
+        super(NaiveEmbedder, self).__init__(
+            pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs)
+        # if gpu is not None and torch.cuda.is_available():
+        #     self.device = torch.device(f'cuda:{gpu}')
+        # else:
+        #     self.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
     def initialize(self, **kwargs):
         for k, val in kwargs.items():
@@ -270,16 +278,19 @@ class NaiveEmbedder(BaseEmbedder):
 
 class SentenceEmbedder(BaseEmbedder):
 
-    def __init__(self, model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased", gpu: int = None):
-        super(SentenceEmbedder, self).__init__()
-        self.model_name_or_path: Text = model_name_or_path
+    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
+        super(SentenceEmbedder, self).__init__(
+            pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs)
+        # self.model_name_or_path: Text = model_name_or_path
         self._learner: CustomSentenceTransformer = None
-        self.gpu = gpu
+        # self.gpu = gpu
 
     @property
     def learner(self):
         if not self._learner:
-            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path, gpu=self.gpu)
+            self._learner = CustomSentenceTransformer.from_pretrained(
+                self.pretrained_name_or_abspath, device=self.device
+            )
         return self._learner
 
     def _train(
@@ -382,16 +393,16 @@ class SentenceEmbedder(BaseEmbedder):
 
 class QuadrupletEmbedder(BaseEmbedder):
 
-    def __init__(self, model_name_or_path: Text = "microsoft/MiniLM-L12-H384-uncased", gpu: int = None):
-        super(QuadrupletEmbedder, self).__init__()
-        self.model_name_or_path: Text = model_name_or_path
+    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
+        super(QuadrupletEmbedder, self).__init__(pretrained_name_or_abspath, device, **kwargs)
         self._learner: CustomSentenceTransformer = None
-        self.gpu = gpu
 
     @property
     def learner(self):
         if not self._learner:
-            self._learner = CustomSentenceTransformer.from_pretrained(self.model_name_or_path, gpu=self.gpu)
+            self._learner = CustomSentenceTransformer.from_pretrained(
+                self.pretrained_name_or_abspath, device=self.device
+            )
         return self._learner
 
     def _train(

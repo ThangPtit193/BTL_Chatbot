@@ -137,7 +137,7 @@ EVALUATION:
   type: "evaluation_pipeline"
   corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
   query_name_or_path: "data/eval-data/dummy/query_docs.json"
-  model_name_or_path: [ "fschool-distilbert-multilingual-faq-v8.0.0"]
+  pretrained_name_or_abspath: [ "fschool-distilbert-multilingual-faq-v8.0.0"]
   output_dir: "reports"
 ```
 
@@ -149,7 +149,7 @@ GENERAL:
 EMBEDDER:
   class: QuadrupletEmbedder
   package: saturn.components.embeddings.embedding_models
-  model_name_or_path: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  pretrained_name_or_abspath: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
   TRAINER:
     quadruplet_data_path:
       - data/train_data/dummy/quadruples/quadruples_30.json
@@ -174,7 +174,7 @@ EVALUATION:
   type: "evaluation_pipeline"
   corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
   query_name_or_path: "data/eval-data/dummy/query_docs.json"
-  model_name_or_path:
+  pretrained_name_or_abspath:
     - models/quad/epoch-0
 ```
 

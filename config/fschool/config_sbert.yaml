@@ -4,7 +4,7 @@ GENERAL:
 EMBEDDER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
-  model_name_or_path: vinai/phobert-base
+  pretrained_name_or_abspath: vinai/phobert-base
   TRAINER:
     triplets_data_path:
       - assets/timi/bm25_embedder/triples_2000000.json
@@ -32,5 +32,5 @@ EVALUATION:
   type: "evaluation_pipeline"
   corpus_name_or_path: "data/eval-data/timi/corpus.json"
   query_name_or_path: "data/eval-data/timi/query.json"
-  model_name_or_path: [ "fschool-distilbert-multilingual-faq-v8.0.0" ]
+  pretrained_name_or_abspath: [ "fschool-distilbert-multilingual-faq-v8.0.0" ]
 

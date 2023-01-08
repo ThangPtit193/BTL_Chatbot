@@ -101,19 +101,17 @@ class CustomSentenceTransformer(SentenceTransformer):
     def from_pretrained(
         cls,
         model_name_or_path: Text = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
-        gpu: int = None
+        device: Text = None
     ) -> "CustomSentenceTransformer":
         """
 
         Args:
             model_name_or_path: The model name or path. If name provided,
                                 It will be loaded from hugging face hub or from axiom
-            gpu: The device to load the model on
+            device: The device to load the model on. cpu, cuda, cuda:0, cuda:1, etc.
         """
-        if gpu is not None and torch.cuda.is_available():
-            device = "cuda:{}".format(gpu)
-        else:
-            device = "cuda" if torch.cuda.is_available() else "cpu"
+        if not torch.cuda.is_available():
+            device = "cpu"
         model = None
         if os.path.isdir(model_name_or_path):
             try:

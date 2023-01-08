@@ -4,7 +4,7 @@ GENERAL:
 EMBEDDER:
   class: QuadrupletEmbedder
   package: saturn.components.embeddings.embedding_models
-  model_name_or_path: keepitreal/vietnamese-sbert
+  pretrained_name_or_abspath: keepitreal/vietnamese-sbert
   gpu: 0
   TRAINER:
     quadruplet_data_path:
@@ -16,8 +16,8 @@ EMBEDDER:
       - assets/timi/bm25_embedder_quadruplet/quadruplet_8284471.json
     model_save_path: models_quad
     n_samples: 10
-    batch_size: 256
-    epochs: 15
+    batch_size: 128
+    epochs: 25
     warmup_steps: 5000
     evaluation_steps: 2000
     weight_decay: 0.01
@@ -29,11 +29,28 @@ EMBEDDER:
     checkpoint_save_epoch: 1
     checkpoint_save_total_limit: 2
     save_by_epoch: 1
+    resume_from_checkpoint: models_quad/checkpoints/epoch-14/checkpoint.pt
 
 
 EVALUATION:
   type: "evaluation_pipeline"
   corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
   query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
-  model_name_or_path:
-  # - models/quad_v2_1/epoch-0
+  pretrained_name_or_abspath:
+   - models_quad/epoch-6
+   - models_quad/epoch-7
+   - models_quad/epoch-9
+   - models_quad/epoch-10
+   - models_quad/epoch-11
+   - models_quad/epoch-12
+   - models_quad/epoch-13
+   - models_quad/epoch-14
+   - models_quad/epoch-15
+   - models_quad/epoch-16
+   - models_quad/epoch-17
+   - models_quad/epoch-18
+   - models_quad/epoch-19
+   - models_quad/epoch-20
+   - models_quad/epoch-22
+   - models_quad/epoch-23
+   - models_quad/epoch-24

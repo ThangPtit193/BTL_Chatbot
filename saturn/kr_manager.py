@@ -30,7 +30,7 @@ class KRManager:
         self._embedder: Optional[SentenceEmbedder] = None
         self._corpus_docs: Optional[List[Document]] = None
         self._query_docs: Optional[List[Document]] = None
-        self._model_name_or_path: Optional[Union[str, List[str]]] = None
+        self._pretrained_name_or_abspath: Optional[Union[str, List[str]]] = None
         self.retriever_type: Optional[Union[str, List]] = "embedding"
         self.document_store_type: Optional[Union[str, List]] = "memory"
         self._output_dir: Optional[Union[str, Path]] = None
@@ -64,20 +64,20 @@ class KRManager:
         return self._query_docs
 
     @property
-    def model_name_or_path(self):
-        if not self._model_name_or_path:
+    def pretrained_name_or_abspath(self):
+        if not self._pretrained_name_or_abspath:
             eval_config = self.config_parser.eval_config()
-            if "model_name_or_path" not in eval_config:
+            if "pretrained_name_or_abspath" not in eval_config:
                 raise FileNotFoundError("No model name or path provided in config file")
-            self._model_name_or_path = eval_config.get("model_name_or_path")
+            self._pretrained_name_or_abspath = eval_config.get("pretrained_name_or_abspath")
 
-        if isinstance(self._model_name_or_path, str):
-            self._model_name_or_path = [self._model_name_or_path]
-            return self._model_name_or_path
-        elif isinstance(self._model_name_or_path, list):
-            return self._model_name_or_path
+        if isinstance(self._pretrained_name_or_abspath, str):
+            self._pretrained_name_or_abspath = [self._pretrained_name_or_abspath]
+            return self._pretrained_name_or_abspath
+        elif isinstance(self._pretrained_name_or_abspath, list):
+            return self._pretrained_name_or_abspath
         else:
-            raise ValueError("model_name_or_path should be a string or a list of string")
+            raise ValueError("pretrained_name_or_abspath should be a string or a list of string")
 
     @property
     def output_dir(self):
@@ -109,11 +109,11 @@ class KRManager:
         :return: the top k results
         """
         retriever_results = {'relevant doc': [], 'score': []}
-        # model_name_or_paths = self.model_name_or_path
+        # pretrained_name_or_abspaths = self.pretrained_name_or_abspath
 
         input_query = [convert_unicode(input_query)]
         input_corpus = self._get_input_reference_corpus(input_corpus_list_or_path)
-        # self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=model_name_or_path)
+        # self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=pretrained_name_or_abspath)
         similarity_data = self.embedder.find_similarity(input_query, input_corpus, _no_sort=False, top_n=top_k)
         similarity_data = similarity_data[0][:top_k]
         # reformat the results
@@ -125,17 +125,20 @@ class KRManager:
     def evaluate_embedder(self, top_k: int = None):
         retriever_results = []
         retriever_top_k_results = []
-        model_name_or_paths = self.model_name_or_path
-        if isinstance(model_name_or_paths, str):
-            model_name_or_paths = [model_name_or_paths]
+        pretrained_name_or_abspaths = self.pretrained_name_or_abspath
+        if isinstance(pretrained_name_or_abspaths, str):
+            pretrained_name_or_abspaths = [pretrained_name_or_abspaths]
         evaluation_results: Dict[str, List[EvalResult]] = {}
         # evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
-        for model_name_or_path in tqdm(list(set(model_name_or_paths))):
-            name = os.path.basename(model_name_or_path)
+        for pretrained_name_or_abspath in tqdm(list(set(pretrained_name_or_abspaths))):
+            name = os.path.basename(pretrained_name_or_abspath)
             evaluation_results[name] = []
             evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
-            self.embedder.load_model(cache_path=None, pretrained_name_or_abspath=model_name_or_path)
-
+            try:
+                self.embedder.load_model(cache_path=None, pretrained_name_or_abspath=pretrained_name_or_abspath)
+            except Exception as e:
+                _logger.error(f"Failed to load model {pretrained_name_or_abspath} due to {e}")
+                continue
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]

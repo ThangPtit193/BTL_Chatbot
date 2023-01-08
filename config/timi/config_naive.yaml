@@ -10,7 +10,7 @@ EMBEDDER:
     data_config_path: data/train_data/timi/data_config.json
     # The pretrained model
     #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
-    pretrained_model: microsoft/MiniLM-L12-H384-uncased
+    pretrained_name_or_abspath: microsoft/MiniLM-L12-H384-uncased
     # Total of steps, it depends on the number of question answering pair that you have
     steps: 1250000
     # When reach this step, we will be saved checkpoint
@@ -38,7 +38,7 @@ EMBEDDER:
 EVALUATION:
   corpus_name_or_path: "data/eval-data/timi/v1.0.0/corpus.json"
   query_name_or_path: "data/eval-data/timi/v1.0.0/query.json"
-  model_name_or_path:
+  pretrained_name_or_abspath:
     - distilbert-multilingual-faq-v3.2
     - timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.0.0
     - timi-idol-microsoft-MiniLM-L12-H384-uncased-faq-9M-v1.1.0
