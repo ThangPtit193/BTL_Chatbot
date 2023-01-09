@@ -1,0 +1,52 @@
+GENERAL:
+  run_mode: inference
+
+EMBEDDER:
+  class: NLIEmbedder
+  package: saturn.components.embeddings.embedding_models
+  pretrained_name_or_abspath: keepitreal/vietnamese-sbert
+  device: "cuda"
+  TRAINER:
+    data_path_or_dir:
+      - data/train_data/dummy/nli/contradiction.json
+      - data/train_data/dummy/nli/entailment.json
+      - data/train_data/dummy/nli/neutral.json
+    model_save_path: models
+    n_samples: 10
+    batch_size: 8
+    epochs: 5000
+    warmup_steps: 5000
+    evaluation_steps: 2000
+    weight_decay: 0.01
+    max_grad_norm: 1.0
+    use_amp: True
+    save_best_model: True
+    show_progress_bar: True
+    checkpoint_path: checkpoints
+    checkpoint_save_epoch: 3
+    checkpoint_save_total_limit: 10
+    save_by_epoch: 1
+#    resume_from_checkpoint: checkpoints/epoch-14/checkpoint.pt
+
+EVALUATION:
+  type: "evaluation_pipeline"
+  corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
+  query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
+  pretrained_name_or_abspath:
+    - models/epoch-0
+    - models/epoch-1
+    - models/epoch-3
+    - models/epoch-5
+    - models/epoch-7
+    - models/epoch-8
+    - models/epoch-9
+    - models/epoch-11
+    - models/epoch-12
+    - models/epoch-13
+    - models/epoch-14
+    - models/epoch-15
+    - models/epoch-16
+    - models/epoch-17
+    - models/epoch-18
+    - models/epoch-19
+    - models/epoch-20

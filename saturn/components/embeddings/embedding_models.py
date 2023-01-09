@@ -21,6 +21,9 @@ from .dataset import data_producer
 from .net import AutoModelForSentenceEmbedding, CustomSentenceTransformer
 from sentence_transformers import SentenceTransformer
 from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
+from sentence_transformers import models, losses, datasets
+from sentence_transformers import LoggingHandler, SentenceTransformer, util, InputExample
+import math
 
 __all__ = []
 # device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
@@ -296,7 +299,7 @@ class SentenceEmbedder(BaseEmbedder):
     def _train(
         self,
         triplets_data_path: List[Text],
-        pretrained_model="bert-base-uncased",
+        pretrained_name_or_abspath="bert-base-uncased",
         model_save_path: Text = None,
         n_samples: int = 5,
         batch_size: int = 128,
@@ -389,6 +392,104 @@ class SentenceEmbedder(BaseEmbedder):
         # if not os.path.exists(save_best_model_path):
         #     os.makedirs(save_best_model_path)
         # self.learner.save(save_best_model_path)
+
+
+class NLIEmbedder(BaseEmbedder):
+
+    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
+        super(NLIEmbedder, self).__init__(
+            pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs)
+        # self.model_name_or_path: Text = model_name_or_path
+        self._learner: Optional[SentenceTransformer] = None
+        self.max_seq_length = kwargs.get("max_seq_length", 128)
+
+    @property
+    def learner(self):
+        if not self._learner:
+            word_embedding_model = models.Transformer(self.pretrained_name_or_abspath,
+                                                      max_seq_length=self.max_seq_length)
+            pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(), pooling_mode='mean')
+
+            self._learner = SentenceTransformer(modules=[word_embedding_model, pooling_model], device=self.device)
+        return self._learner
+
+    def _train(
+        self,
+        data_path_or_dir: List[Text],
+        model_save_path: Text = None,
+        n_samples: int = 5,
+        batch_size: int = 128,
+        epochs: int = 5,
+        warmup_steps: int = 5000,
+        evaluation_steps: int = 2000,
+        weight_decay: float = 0.01,
+        max_grad_norm: float = 1.0,
+        use_amp: bool = False,
+        save_best_model: bool = True,
+        show_progress_bar: bool = True,
+        checkpoint_path: Text = None,
+        checkpoint_save_epoch: int = None,
+        checkpoint_save_total_limit: int = None,
+        resume_from_checkpoint: Text = None,
+        save_by_epoch: int = 0,
+        model_save_total_limit: int = None,
+        # device_name: Union[str,int] = "cpu",
+        **kwargs,
+    ):
+        """
+        Train the sentence embedding model
+        :param triplets_data: The triplets data
+        :param pretrained_model: The pretrained model
+        :param model_save_path: Where to save the model
+        :param n_samples:
+        :param batch_size:
+        :param epochs:
+        :param warmup_steps:
+        :param evaluation_steps:
+        :param weight_decay:
+        :param max_grad_norm:
+        :param use_amp:
+        :param save_best_model:
+        :param show_progress_bar:
+        :return:
+        """
+        from venus.dataset_reader.TripletDataset import TripletsDataset
+        # from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
+        # Producing data
+        label2int = {"contradiction": 0, "entailment": 1, "neutral": 2}
+        train_samples = []
+        if isinstance(data_path_or_dir, str):
+            data_path_or_dir = [data_path_or_dir]
+        for path in data_path_or_dir:
+            if not os.path.exists(path):
+                raise FileNotFoundError(f"triplets data path {path} does not exist")
+            datas = file_util.load_json(path)['data']
+            for data in datas:
+                label_id = label2int[data['label']]
+                train_samples.append(InputExample(texts=[data['sentence1'], data['sentence2']], label=label_id))
+        _logger.info("Train samples: {}".format(len(train_samples)))
+
+        # Special data loader that avoid duplicates within a batch
+        train_dataloader = datasets.NoDuplicatesDataLoader(train_samples, batch_size=batch_size)
+
+        # Our training loss
+        train_loss = losses.MultipleNegativesRankingLoss(self.learner)
+        # Configure the training
+        warmup_steps = math.ceil(len(train_dataloader) * epochs * 0.1)  # 10% of train data for warm-up
+        _logger.info("Warmup-steps: {}".format(warmup_steps))
+
+        # Train the model
+        self.learner.fit(
+            train_objectives=[(train_dataloader, train_loss)],
+            # evaluator=dev_evaluator,
+            epochs=epochs,
+            evaluation_steps=int(len(train_dataloader) * 0.1),
+            warmup_steps=warmup_steps,
+            output_path=model_save_path,
+            use_amp=False,
+            checkpoint_path=checkpoint_path,
+            checkpoint_save_total_limit=checkpoint_save_total_limit
+        )
 
 
 class QuadrupletEmbedder(BaseEmbedder):

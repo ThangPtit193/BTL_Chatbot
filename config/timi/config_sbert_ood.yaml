@@ -5,7 +5,7 @@ EMBEDDER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
   pretrained_name_or_abspath: keepitreal/vietnamese-sbert
-  device: cuda:1
+  device: cpu
   TRAINER:
     triplets_data_path:
       - /home/haonv/workspaces/knowledge-retriever-data/assets/timi/bm25_embedder/triples_2000000.json
@@ -38,12 +38,12 @@ EVALUATION:
   corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
   query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
   pretrained_name_or_abspath:
-    - models_ood/epoch-0
-    - models_ood/epoch-1
-    - models_ood/epoch-2
-    - models_ood/epoch-3
-    - models_ood/epoch-4
-#    - models_ood/epoch-5
+#    - models_ood/epoch-0
+#    - models_ood/epoch-1
+#    - models_ood/epoch-2
+#    - models_ood/epoch-3
+#    - models_ood/epoch-4
+    - models_ood/epoch-5
 #    - models_ood/epoch-7
 #    - models_ood/epoch-8
 #    - models_ood/epoch-9

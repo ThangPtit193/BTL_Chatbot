@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "sentence1": "i love you",
+      "sentence2": "i hate you",
+      "label": "contradiction"
+    },
+    {
+      "sentence1": "i like you",
+      "sentence2": "i dont like you",
+      "label": "contradiction"
+    },
+    {
+      "sentence1": "it's so beautiful",
+      "sentence2": "it's so ugly",
+      "label": "contradiction"
+    },
+    {
+      "sentence1": "i am so happy",
+      "sentence2": "I am so sad",
+      "label": "contradiction"
+    }
+  ]
+}
