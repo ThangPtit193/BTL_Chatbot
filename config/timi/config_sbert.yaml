@@ -5,10 +5,10 @@ EMBEDDER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
   pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
-  device: "cuda:1"
+  device: "cuda"
   TRAINER:
     triplets_data_path:
-      - assets/timi/bm25_embedder/triples_2000000.json
+      - assets/timi/bm25_embedder/triples_2000000.jsodn
       - assets/timi/bm25_embedder/triples_4000000.json
       - assets/timi/bm25_embedder/triples_6000000.json
       - assets/timi/bm25_embedder/triples_8000000.json
@@ -37,20 +37,21 @@ EVALUATION:
   corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
   query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
   pretrained_name_or_abspath:
-    - models/epoch-0
-    - models/epoch-1
-    - models/epoch-3
-    - models/epoch-5
-    - models/epoch-7
-    - models/epoch-8
-    - models/epoch-9
-    - models/epoch-11
-    - models/epoch-12
-    - models/epoch-13
-    - models/epoch-14
-    - models/epoch-15
-    - models/epoch-16
-    - models/epoch-17
-    - models/epoch-18
-    - models/epoch-19
-    - models/epoch-20
+#    - models/epoch-0
+#    - models/epoch-1
+#    - models/epoch-3
+#    - models/epoch-5
+    - models/epoch-6
+#    - models/epoch-7
+#    - models/epoch-8
+#    - models/epoch-9
+#    - models/epoch-11
+#    - models/epoch-12
+#    - models/epoch-13
+#    - models/epoch-14
+#    - models/epoch-15
+#    - models/epoch-16
+#    - models/epoch-17
+#    - models/epoch-18
+#    - models/epoch-19
+#    - models/epoch-20

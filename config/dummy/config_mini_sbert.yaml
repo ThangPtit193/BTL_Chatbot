@@ -4,17 +4,17 @@ GENERAL:
 EMBEDDER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
-  gpu: 0
-  model_name_or_path: vinai/phobert-base
+  pretrained_name_or_abspath: keepitreal/vietnamese-sbert
+  device: "cuda"
   TRAINER:
     triplets_data_path:
       - data/train_data/dummy/triples/triples_10.json
-#      - data/train_data/dummy/triples/triples_20.json
-#      - data/train_data/dummy/triples/triples_30.json
+      - data/train_data/dummy/triples/triples_20.json
+      - data/train_data/dummy/triples/triples_30.json
     model_save_path: models_test
     n_samples: 10
     batch_size: 128
-    epochs: 10
+    epochs: 300
     warmup_steps: 5000
     evaluation_steps: 2000
     weight_decay: 0.01
@@ -26,13 +26,26 @@ EMBEDDER:
     checkpoint_save_epoch: 50
     checkpoint_save_total_limit: 3
     device_name: 0
-#    save_by_epoch: 0
-#    resume_from_checkpoint: models/checkpoints/epoch-495/checkpoint.pt
 
 EVALUATION:
   type: "evaluation_pipeline"
-  corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
-  query_name_or_path: "data/eval-data/dummy/query_docs.json"
-  model_name_or_path: [ "fschool-distilbert-multilingual-faq-v8.0.0"]
-  output_dir: "reports"
-
+  corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
+  query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
+  pretrained_name_or_abspath:
+    - models/epoch-0
+    - models/epoch-1
+    - models/epoch-3
+    - models/epoch-5
+    - models/epoch-7
+    - models/epoch-8
+    - models/epoch-9
+    - models/epoch-11
+    - models/epoch-12
+    - models/epoch-13
+    - models/epoch-14
+    - models/epoch-15
+    - models/epoch-16
+    - models/epoch-17
+    - models/epoch-18
+    - models/epoch-19
+    - models/epoch-20
