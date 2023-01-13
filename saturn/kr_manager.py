@@ -362,7 +362,10 @@ class KRManager:
                     f"Got {top_k} instead of being less than or equal to 20, so the default value {10} will be applied")
                 top_k = 10
 
-            tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
+            try:
+                tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
+            except:
+                tmp_df = pd.DataFrame()
             eval_top_k_results.append(tmp_df.to_dict())
             eval_results.append(eval_result.to_dict())
         return eval_results, eval_top_k_results
