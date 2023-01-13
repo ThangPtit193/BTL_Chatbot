@@ -1188,7 +1188,7 @@
   "faq/chitchat_react_bot_smart": [
     "duyệt bot khôn quá"
   ],
-  "faq/user_complain_weather": [
+  "faq/chitchat_user_complain_weather": [
     "trời hôm nay nóng vãi",
     "thời tiết chán quá nhở",
     "trời mưa hoài dị trời",
@@ -1418,7 +1418,7 @@
     "quản lý văn phòng Ftech HN là ai vậy",
     "các leader team hành chính nhân sự ftech đang là ai"
   ],
-  "faq/ood": [
+  "faq/oos": [
     "lịch để bàn được dùng cho việc gì",
     "mặt trời mọc hướng nào nhỉ",
     "tác vụ sentence similarity trong nlp được hiểu ntn vậy",
