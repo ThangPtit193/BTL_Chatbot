@@ -33,9 +33,9 @@ def run_e2e(config):
 
     # Train the model
     kr_manager = KRManager(config=config_parser)
-    # kr_manager.train_embedder()
+    kr_manager.train_embedder()
     # Evaluate the model
-    kr_manager.save()
+    # kr_manager.save()
 
 
 @click.command()

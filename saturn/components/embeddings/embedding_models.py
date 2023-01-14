@@ -31,12 +31,11 @@ _logger = logger.get_logger(__name__)
 
 
 class SemanticSimilarity(SaturnAbstract):
-    def __init__(self, config, pretrained_name_or_abspath, device=None, **kwargs):
+    def __init__(self, config, pretrained_name_or_abspath, **kwargs):
         super(SemanticSimilarity, self).__init__(
             config=config, **kwargs
         )
         self.cache_path = ".embeddings_cache"
-        self.device = device
         self.pretrained_name_or_abspath = pretrained_name_or_abspath
         self._embedder: Optional[BertEmbedder] = None
 
@@ -71,13 +70,10 @@ class NaiveSemanticSimilarity(SemanticSimilarity):
     # def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
     #     super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
 
-    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
+    def __init__(self, config, pretrained_name_or_abspath, **kwargs):
         super(NaiveSemanticSimilarity, self).__init__(
-            pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs)
-        # if gpu is not None and torch.cuda.is_available():
-        #     self.device = torch.device(f'cuda:{gpu}')
-        # else:
-        #     self.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+            config=config, pretrained_name_or_abspath=pretrained_name_or_abspath, **kwargs
+        )
 
     def initialize(self, **kwargs):
         for k, val in kwargs.items():
@@ -90,7 +86,6 @@ class NaiveSemanticSimilarity(SemanticSimilarity):
         datasets_per_batch: int = 2,
         num_same_dataset: int = 2,
         batch_size: int = 32,
-        pretrained_model='microsoft/MiniLM-L12-H384-uncased',
         steps: int = 20000,
         max_length: int = 128,
         scale: int = 20,
@@ -127,7 +122,7 @@ class NaiveSemanticSimilarity(SemanticSimilarity):
 
         # Start training process
         self._fit(
-            queue, pretrained_model=pretrained_model, steps=steps, max_length=max_length, scale=scale,
+            queue, pretrained_model=self.pretrained_name_or_abspath, steps=steps, max_length=max_length, scale=scale,
             save_steps=save_steps, model_save_path=model_save_path, **kwargs
         )
 
@@ -152,7 +147,7 @@ class NaiveSemanticSimilarity(SemanticSimilarity):
     ):
         tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
         model = AutoModelForSentenceEmbedding(pretrained_model, tokenizer)
-
+        print(self.device)
         model = model.to(self.device)
 
         # Instantiate optimizer
@@ -289,9 +284,9 @@ class NaiveSemanticSimilarity(SemanticSimilarity):
 
 class SBertSemanticSimilarity(SemanticSimilarity):
 
-    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
+    def __init__(self, pretrained_name_or_abspath, **kwargs):
         super(SBertSemanticSimilarity, self).__init__(
-            pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs)
+            pretrained_name_or_abspath=pretrained_name_or_abspath, **kwargs)
         self._learner: CustomSentenceTransformer = None
 
     @property

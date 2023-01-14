@@ -1,6 +1,8 @@
-from saturn.utils.config_parser import ConfigParser
-from typing import Text, Union
 import os
+from typing import Text, Union
+
+from saturn.utils.config_parser import ConfigParser
+import torch
 
 
 class SaturnAbstract:
@@ -11,6 +13,7 @@ class SaturnAbstract:
             self.config_parser = ConfigParser(config)
         else:
             self.config_parser = config
+        self.device = self.config_parser.general_config().get('device', None)
         self.initialize(**kwargs)
 
     def initialize(self, **kwargs):
@@ -18,8 +21,9 @@ class SaturnAbstract:
             if hasattr(self, key):
                 setattr(self, key, val)
         if self.device is not None:
-            import torch
             self.device = "cpu" if not torch.cuda.is_available() else self.device
+        if self.device is None:
+            self.device = "cpu" if not torch.cuda.is_available() else "cuda"
 
     def get_model_dir(self):
         return os.path.join(
