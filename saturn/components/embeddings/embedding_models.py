@@ -24,30 +24,37 @@ from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
 from sentence_transformers import models, losses, datasets
 from sentence_transformers import LoggingHandler, SentenceTransformer, util, InputExample
 import math
+from saturn.abstract_method.staturn_abstract import SaturnAbstract
 
 __all__ = []
-# device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 _logger = logger.get_logger(__name__)
 
 
-class BaseEmbedder(BertEmbedder):
-    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
-        # super(BaseEmbedder, self).__init__(
-        #     pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs
-        # )
+class SemanticSimilarity(SaturnAbstract):
+    def __init__(self, config, pretrained_name_or_abspath, **kwargs):
+        super(SemanticSimilarity, self).__init__(
+            config=config, **kwargs
+        )
         self.cache_path = ".embeddings_cache"
-        self.device = device
         self.pretrained_name_or_abspath = pretrained_name_or_abspath
+        self._embedder: Optional[BertEmbedder] = None
 
     def initialize(self, **kwargs):
         for k, val in kwargs.items():
             if hasattr(self, k):
                 setattr(self, k, val)
 
+    @property
+    def embedder(self):
+        if self._embedder is None:
+            self._embedder = BertEmbedder(
+                pretrained_name_or_abspath=self.pretrained_name_or_abspath, device=self.device
+            )
+        return self._embedder
+
     def load_model(self, cache_path=None, pretrained_name_or_abspath=None, **kwargs):
-        cache_path = cache_path or self.cache_path
-        super(BaseEmbedder, self).__init__(
-            cache_path, pretrained_name_or_abspath, device=self.device, **kwargs
+        self._embedder = BertEmbedder(
+            cache_path=cache_path, pretrained_name_or_abspath=pretrained_name_or_abspath, device=self.device
         )
 
     def train(self, trainer_config: Dict):
@@ -58,18 +65,15 @@ class BaseEmbedder(BertEmbedder):
         raise NotImplementedError
 
 
-class NaiveEmbedder(BaseEmbedder):
+class NaiveSemanticSimilarity(SemanticSimilarity):
 
     # def load_model(self, cache_path=None, pretrained_name_or_abspath=None):
     #     super(BaseEmbedder, self).__init__(cache_path, pretrained_name_or_abspath)
 
-    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
-        super(NaiveEmbedder, self).__init__(
-            pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs)
-        # if gpu is not None and torch.cuda.is_available():
-        #     self.device = torch.device(f'cuda:{gpu}')
-        # else:
-        #     self.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    def __init__(self, config, pretrained_name_or_abspath, **kwargs):
+        super(NaiveSemanticSimilarity, self).__init__(
+            config=config, pretrained_name_or_abspath=pretrained_name_or_abspath, **kwargs
+        )
 
     def initialize(self, **kwargs):
         for k, val in kwargs.items():
@@ -82,7 +86,6 @@ class NaiveEmbedder(BaseEmbedder):
         datasets_per_batch: int = 2,
         num_same_dataset: int = 2,
         batch_size: int = 32,
-        pretrained_model='microsoft/MiniLM-L12-H384-uncased',
         steps: int = 20000,
         max_length: int = 128,
         scale: int = 20,
@@ -119,7 +122,7 @@ class NaiveEmbedder(BaseEmbedder):
 
         # Start training process
         self._fit(
-            queue, pretrained_model=pretrained_model, steps=steps, max_length=max_length, scale=scale,
+            queue, pretrained_model=self.pretrained_name_or_abspath, steps=steps, max_length=max_length, scale=scale,
             save_steps=save_steps, model_save_path=model_save_path, **kwargs
         )
 
@@ -144,7 +147,7 @@ class NaiveEmbedder(BaseEmbedder):
     ):
         tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
         model = AutoModelForSentenceEmbedding(pretrained_model, tokenizer)
-
+        print(self.device)
         model = model.to(self.device)
 
         # Instantiate optimizer
@@ -279,14 +282,12 @@ class NaiveEmbedder(BaseEmbedder):
                 shutil.rmtree(old_checkpoints[0]['path'])
 
 
-class SentenceEmbedder(BaseEmbedder):
+class SBertSemanticSimilarity(SemanticSimilarity):
 
-    def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
-        super(SentenceEmbedder, self).__init__(
-            pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs)
-        # self.model_name_or_path: Text = model_name_or_path
+    def __init__(self, pretrained_name_or_abspath, **kwargs):
+        super(SBertSemanticSimilarity, self).__init__(
+            pretrained_name_or_abspath=pretrained_name_or_abspath, **kwargs)
         self._learner: CustomSentenceTransformer = None
-        # self.gpu = gpu
 
     @property
     def learner(self):
@@ -298,9 +299,8 @@ class SentenceEmbedder(BaseEmbedder):
 
     def _train(
         self,
-        triplets_data_path: List[Text],
+        triplets_data_path: List[Text] = None,
         pretrained_name_or_abspath="bert-base-uncased",
-        model_save_path: Text = None,
         n_samples: int = 5,
         batch_size: int = 128,
         epochs: int = 5,
@@ -311,13 +311,11 @@ class SentenceEmbedder(BaseEmbedder):
         use_amp: bool = False,
         save_best_model: bool = True,
         show_progress_bar: bool = True,
-        checkpoint_path: Text = None,
         checkpoint_save_epoch: int = None,
         checkpoint_save_total_limit: int = None,
         resume_from_checkpoint: Text = None,
         save_by_epoch: int = 0,
         model_save_total_limit: int = None,
-        # device_name: Union[str,int] = "cpu",
         **kwargs,
     ):
         """
@@ -338,8 +336,11 @@ class SentenceEmbedder(BaseEmbedder):
         :return:
         """
         from venus.dataset_reader.TripletDataset import TripletsDataset
-        # from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
         # Producing data
+        if not triplets_data_path:
+            triplets_data_path = file_util.get_all_files_in_directory(
+                self.get_data_dir(), extensions=[".json"]
+            )
         triplets_data = []
         if isinstance(triplets_data_path, str):
             triplets_data_path = [triplets_data_path]
@@ -348,20 +349,12 @@ class SentenceEmbedder(BaseEmbedder):
                 raise FileNotFoundError(f"triplets data path {path} does not exist")
             triplets_data.extend(file_util.load_json(path)['data'])
 
-        # sentence_embedding = CustomSentenceTransformer.from_pretrained(
-        #     model_name_or_path=pretrained_model
-        # )
-
-        # sentence_embedding.model.max_seq_length = 128
-
         train_dataset = TripletsDataset(
             triplet_examples=triplets_data,
             query_key="query",
             pos_key="pos",
             neg_key="neg"
         )
-        # device = torch.device(f"cuda:{device_name}") if torch.cuda.is_available() else torch.device("cpu")
-        # self.learner = self.learner.to(device)
         train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
         train_loss = losses.TripletLoss(model=self.learner)
 
@@ -371,7 +364,7 @@ class SentenceEmbedder(BaseEmbedder):
             evaluator=None,
             epochs=epochs,
             warmup_steps=warmup_steps,
-            output_path=model_save_path,
+            output_path=self.get_model_dir(),
             # evaluation_steps=evaluation_steps,
             use_amp=use_amp,
             optimizer_params={'lr': 2e-5},
@@ -381,12 +374,12 @@ class SentenceEmbedder(BaseEmbedder):
             max_grad_norm=max_grad_norm,
             save_best_model=save_best_model,
             show_progress_bar=show_progress_bar,
-            checkpoint_path=checkpoint_path,
+            checkpoint_path=self.get_checkpoint_dir(),
             checkpoint_save_epoch=checkpoint_save_epoch,
             checkpoint_save_total_limit=checkpoint_save_total_limit,
             resume_from_checkpoint=resume_from_checkpoint,
             save_by_epoch=save_by_epoch,
-            model_save_total_limit=model_save_total_limit
+            model_save_total_limit=model_save_total_limit,
         )
         # save_best_model_path = os.path.join(model_save_path,"final_model")
         # if not os.path.exists(save_best_model_path):
@@ -394,10 +387,10 @@ class SentenceEmbedder(BaseEmbedder):
         # self.learner.save(save_best_model_path)
 
 
-class NLIEmbedder(BaseEmbedder):
+class NLISemanticSimilarity(SemanticSimilarity):
 
     def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
-        super(NLIEmbedder, self).__init__(
+        super(NLISemanticSimilarity, self).__init__(
             pretrained_name_or_abspath=pretrained_name_or_abspath, device=device, **kwargs)
         # self.model_name_or_path: Text = model_name_or_path
         self._learner: Optional[SentenceTransformer] = None
@@ -492,10 +485,10 @@ class NLIEmbedder(BaseEmbedder):
         )
 
 
-class QuadrupletEmbedder(BaseEmbedder):
+class QuadrupletSemanticSimilarity(SemanticSimilarity):
 
     def __init__(self, pretrained_name_or_abspath, device=None, **kwargs):
-        super(QuadrupletEmbedder, self).__init__(pretrained_name_or_abspath, device, **kwargs)
+        super(QuadrupletSemanticSimilarity, self).__init__(pretrained_name_or_abspath, device, **kwargs)
         self._learner: CustomSentenceTransformer = None
 
     @property

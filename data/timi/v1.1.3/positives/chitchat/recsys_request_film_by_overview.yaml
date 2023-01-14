@@ -1,0 +1,303 @@
+positives:
+- examples:
+  - tôi muốn coi film mầy
+  - tớ đang muốn xem phim
+  - mình đang muốn coi phim iem
+  - tớ đang muốn coi phim nè mi
+  - mình đang muốn xem phim nè
+  - cậu biết bộ phim nào hay không
+  - tớ đang muốn coi film nè mày
+  - cho tui xin link xem phim với
+  - tôi muốn xem film nè bot
+  - buồn quá, có phim gì xem không em
+  - mình muốn coi film nè bạn
+  - tui đang muốn coi phim nè bạn
+  - tôi đang muốn coi film
+  - có bộ film gì không cậu
+  - tôi muốn xem phim nè iem
+  - chán quá tìm giúp tôi vài phim đi
+  - tôi đang muốn coi phim nè
+  - cho tớ link xem film với
+  - bạn biết phim nào hay không
+  - tui đang muốn coi phim nè cậu
+  - tớ muốn coi film mày
+  - tôi đang muốn xem film nè cậu
+  - chán thế tìm giúp mình vài film đi
+  - mình muốn xem film iem
+  - tớ đang muốn coi film nè cậu
+  - tôi đang muốn coi phim nè bot
+  - tui muốn xem film nè
+  - cho tui tên film để coi với
+  - có phim nào không mầy
+  - tui đang muốn xem film timi
+  - tôi muốn xem phim nè timi
+  - tớ đang muốn xem film
+  - gửi mình vài phim vui vui
+  - mình đang muốn coi film nè bot
+  - cho tui xin tên film để xem với
+  - cho mình link film để coi với
+  - cho tui xin link coi film với
+  - tôi muốn coi film nè bot
+  - cho tớ link coi film với
+  - cho tui tên film để xem với
+  - tôi đang muốn coi film nè em
+  - có film gì không
+  - tui đang muốn coi phim nè em
+  - chán quá, có phim gì xem không timi
+  - có phim gì không iem
+  - mình đang muốn xem film nè chú em
+  - tôi muốn xem phim em
+  - tui muốn coi phim nè
+  - tui muốn xem film nè chú em
+  - tớ muốn coi film mi
+  - tớ đang muốn coi film chú em
+  - tớ đang muốn xem film mầy
+  - tớ đang muốn xem phim nè iem
+  - tớ muốn coi film timi
+  - tôi đang muốn coi film nè mày
+  - tớ đang muốn xem phim nè mầy
+  - tớ đang muốn xem film nè iem
+  - tui đang muốn xem phim chú em
+  - mình muốn xem phim nè mầy
+  - timi biết phim nào hay không
+  - em biết film nào hay không
+  - tớ muốn xem phim mày
+  - tôi đang muốn xem phim nè
+  - có bộ film nào không mi
+  - tui muốn coi film nè iem
+  - tớ muốn coi phim nè mi
+  - cho tui link coi film với
+  - tui muốn coi film nè mi
+  - tôi đang muốn xem phim nè iem
+  - tớ muốn coi film bạn
+  - tôi muốn xem phim
+  - mình đang muốn xem phim cậu
+  - mình muốn coi phim nè bạn
+  - tôi đang muốn xem film cậu
+  - có film gì không em
+  - tớ muốn coi phim nè cậu
+  - tớ muốn xem film mi
+  - có film nào không timi
+  - cho tôi link coi film với
+  - tôi muốn coi film nè bạn
+  - buồn chán quá tìm giúp tôi vài film đi
+  - tôi muốn coi phim bot
+  - có phim nào không chú em
+  - tôi muốn coi phim nè cậu
+  - tôi đang muốn xem film nè bạn
+  - tớ đang muốn xem film mi
+  - tui muốn coi film nè cậu
+  - tui muốn coi phim mầy
+  - mình muốn xem film mày
+  - tớ đang muốn xem phim mầy
+  - chán thế tìm giúp tôi vài phim đi
+  - tui đang muốn xem film chú em
+  - tôi đang muốn xem phim nè chú em
+  - mình đang muốn coi phim nè bạn
+  - tôi muốn coi film nè chú em
+  - mình muốn xem phim chú em
+  - có bộ phim nào không mày
+  - tui muốn xem film nè mi
+  - tui đang muốn coi phim cậu
+  - mình đang muốn xem phim nè chú em
+  - mình đang muốn xem film iem
+  - tui muốn coi phim nè bạn
+  - tớ đang muốn xem film nè mầy
+  - mày có biết film nào hay không
+  - buồn chán thế tìm giúp tớ vài film đi
+  - tớ đang muốn coi phim nè bạn
+  - mình muốn coi film nè bot
+  - mình đang muốn xem phim nè bot
+  - cho tôi xin tên phim để xem với
+  - tớ muốn coi phim nè mầy
+  - mình muốn coi film nè iem
+  - buồn quá, có phim gì xem không timi
+  - có film gì không mày
+  - gợi ý phim đi iem
+  - buồn quá tìm giúp mình vài phim đi
+  - chú em có biết phim nào hay không
+  - tôi đang muốn xem phim
+  - tớ đang muốn xem film nè mày
+  - tui muốn coi phim nè mầy
+  - tui đang muốn xem phim em
+  - mình đang muốn coi film bạn
+  - mình đang muốn xem film nè mầy
+  - buồn quá, có phim gì xem không mày
+  - tui đang muốn coi film chú em
+  - cho tôi tên phim để coi với
+  - tui đang muốn coi film nè em
+  - có bộ phim nào không
+  - tớ đang muốn xem film bạn
+  - mình muốn xem film nè mày
+  - tui muốn coi phim
+  - mình đang muốn xem film nè
+  - tui muốn xem film nè mày
+  - tớ đang muốn xem film nè
+  - có phim gì không timi
+  - tui đang muốn xem film iem
+  - mình đang muốn xem film mày
+  - có film nào không
+  - tôi muốn xem film bạn
+  - mình đang muốn coi film nè timi
+  - chán quá, có phim gì xem không bạn
+  - tớ muốn xem phim
+  - tôi đang muốn xem phim bạn
+  - tôi đang muốn coi film nè mi
+  - mình muốn coi film mầy
+  - mình đang muốn xem film nè mày
+  - mình muốn coi film em
+  - mình đang muốn xem phim timi
+  - có film nào không iem
+  - cho mình xin link coi film với
+  - có film nào không gửi tôi đi
+  - cho tui tên phim để xem với
+  - mình đang muốn coi film
+  - có phim nào không mi
+  - mày biết film nào hay không
+  - cho tôi link film để coi với
+  - tui muốn coi phim mày
+  - mình muốn xem film nè timi
+  - có film gì không timi
+  - buồn chán quá, có phim gì xem không mi
+  - tôi muốn xem film cậu
+  - tớ muốn xem film cậu
+  - mình đang muốn coi phim timi
+  - tớ muốn xem film nè
+  - tôi muốn xem film nè
+  - tớ đang muốn xem film em
+  - chán quá, có phim gì xem không em
+  - tui muốn coi film iem
+  - có biết phim nào hay không
+  - tôi đang muốn coi film nè iem
+  - mình đang muốn xem phim
+  - tui muốn coi phim em
+  - mình muốn coi phim nè iem
+  - có film nào không gửi mình đi
+  - tớ muốn xem phim iem
+  - tui đang muốn coi phim mầy
+  - tui muốn xem phim mày
+  - tui đang muốn coi phim timi
+  - mình đang muốn xem phim chú em
+  - cho tui link xem film với
+  - tôi muốn coi film bạn
+  - tui muốn xem phim nè mày
+  - tui đang muốn xem film mầy
+  - cho tui link film để coi với
+  - cho tôi link phim để coi với
+  - tui muốn coi film nè bạn
+  - có phim nào không bot
+  - tôi đang muốn xem film bot
+  - tui đang muốn xem film
+  - có bộ film nào không gửi tớ đi
+  - chán thế tìm giúp tui vài phim đi
+  - có bộ film nào không cậu
+  - tôi đang muốn xem phim nè mày
+  - tôi muốn xem phim nè mày
+  - tui đang muốn coi film nè timi
+  - cho tớ link film để coi với
+  - buồn chán thế tìm giúp mình vài film đi
+  - tôi muốn coi film nè iem
+  - mầy có biết film nào hay không
+  - tôi đang muốn xem film nè
+  - tui muốn xem phim nè bạn
+  - tôi muốn coi phim mi
+  - tui đang muốn coi phim mày
+  - tôi đang muốn coi phim mày
+  - buồn quá tìm giúp tôi vài phim đi
+  - em biết bộ phim nào hay không
+  - có bộ phim gì không mầy
+  - có film nào không em
+  - tôi muốn xem film chú em
+  - cho tôi xin tên film để coi với
+  - chú em có biết film nào hay không
+  - mình đang muốn xem film
+  - có bộ film gì không iem
+  - cho tôi xin link xem phim với
+  - tui muốn xem film timi
+  - tui đang muốn coi phim bạn
+  - mình đang muốn xem film nè cậu
+  - tớ muốn coi phim chú em
+  - có bộ phim nào không bot
+  - tớ đang muốn coi phim cậu
+  - tớ đang muốn xem film nè timi
+  - tui muốn xem film nè iem
+  - cho tớ link coi phim với
+  - tui muốn xem phim em
+  - cho mình link xem phim với
+  - có bộ film gì không mầy
+  - tớ muốn coi film chú em
+  - tôi muốn xem phim nè em
+  - mình muốn coi film mi
+  - chán quá, có phim gì xem không iem
+  - tôi muốn coi film nè mày
+  - mình muốn coi film nè timi
+  - gửi tớ vài film vui vui
+  - tớ muốn coi film
+  - tớ đang muốn coi film nè em
+  - tui đang muốn coi phim bot
+  - tui muốn xem film nè cậu
+  - có bộ phim gì không timi
+  - có phim nào không mày
+  - tôi đang muốn xem phim bot
+  - tôi muốn coi film nè cậu
+  - mình muốn coi phim bot
+  - tui đang muốn xem phim nè mi
+  - mình muốn coi phim nè cậu
+  - tớ muốn xem phim nè timi
+  - tôi muốn coi phim nè iem
+  - tớ đang muốn coi phim em
+  - tớ đang muốn coi film nè mi
+  - có bộ film gì không timi
+  - có phim nào không gửi mình đi
+  - tôi muốn coi film nè mầy
+  - tui muốn coi phim nè em
+  - tớ muốn xem film em
+  - tôi muốn coi phim em
+  - mình muốn xem film nè mầy
+  - tôi đang muốn xem phim em
+  - mình muốn xem film mi
+  - mình đang muốn xem phim bạn
+  - mình đang muốn xem film nè bạn
+  - bot biết phim nào hay không
+  - cho tớ link film để xem với
+  - tui đang muốn xem phim
+  - tôi muốn xem phim nè
+  - mình đang muốn xem phim mày
+  - chán quá tìm giúp tớ vài phim đi
+  - tôi muốn coi film mi
+  - iem biết phim nào hay không
+  - tui muốn coi film nè em
+  - mình muốn xem film
+  - tôi đang muốn coi phim iem
+  - có bộ phim nào không gửi tui đi
+  - cho tớ xin link xem film với
+  - tui muốn coi film timi
+  - mình muốn coi phim em
+  - gợi ý phim đi mầy
+  - cho tớ xin link coi phim với
+  - tớ muốn coi film nè bot
+  - tui muốn xem film
+  - mình muốn coi film nè em
+  - cho tớ xin link film để coi với
+  - buồn quá, có phim gì xem không chú em
+  - gửi tui vài phim vui vui
+  - có bộ phim nào không gửi tớ đi
+  - tui đang muốn coi phim nè mầy
+  - tớ muốn xem film timi
+  - tớ đang muốn xem film timi
+  - tôi đang muốn coi film chú em
+  - mình đang muốn xem film nè timi
+  - tớ muốn coi film bot
+  - iem có biết phim nào hay không
+  - có bộ film nào không
+  - tui muốn coi film em
+  - tui muốn xem phim bạn
+  - tôi muốn coi film nè
+  - tớ muốn coi film cậu
+  - buồn thế tìm giúp tớ vài phim đi
+  - gửi tui vài film vui vui
+  - có phim nào không bạn
+  - tui muốn coi film nè timi
+  - có film gì không mầy
+  - cho tui xin tên phim để coi với
+  intent: recsys_request_film_by_overview

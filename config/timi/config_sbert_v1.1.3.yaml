@@ -1,12 +1,27 @@
 GENERAL:
   run_mode: inference
+  device: cuda
+  version: v1.1.3
 
-EMBEDDER:
+DATA_GENERATION:
+  data_dir: data/timi/v1.1.3
+  output_dir: assets/timi/v1.1.3
+  search_mode: bm25_embedder
+  embedding_batch_size: 100
+  neg_sim_batch_size: 200
+  max_triple_per_file: 2000000
+  EMBEDDER:
+    cache_path: ./embedder_caches
+    pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+    device: "cuda:0"
+#  COMBINER:
+
+
+TRAINER:
   class: SentenceEmbedder
   package: saturn.components.embeddings.embedding_models
   pretrained_name_or_abspath: keepitreal/vietnamese-sbert
-  device: cuda:1
-  TRAINER:
+  HYPERPARAMS:
     triplets_data_path:
       - /home/haonv/workspaces/knowledge-retriever-data/assets/timi/v1.1.3/triples_2000000.json
       - /home/haonv/workspaces/knowledge-retriever-data/assets/timi/v1.1.3/triples_4000000.json
@@ -15,7 +30,7 @@ EMBEDDER:
       - /home/haonv/workspaces/knowledge-retriever-data/assets/timi/v1.1.3/triples_10000000.json
       - /home/haonv/workspaces/knowledge-retriever-data/assets/timi/v1.1.3/triples_10484937.json
 
-    model_save_path: models_v1.1.3
+    model_save_path: models
     n_samples: 10
     batch_size: 256
     epochs: 20
@@ -26,7 +41,7 @@ EMBEDDER:
     use_amp: True
     save_best_model: True
     show_progress_bar: True
-    checkpoint_path: checkpoints_v1.1.3
+    checkpoint_path: checkpoints
     checkpoint_save_epoch: 3
     checkpoint_save_total_limit: 10
     save_by_epoch: 1

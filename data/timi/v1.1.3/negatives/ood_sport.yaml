@@ -1,0 +1,12 @@
+negatives:
+- examples:
+  - vận động viên cử tạ nào ở VN từng tham dự Olimpic
+  - chung kết aff cup 2020 là gồm những đội nào
+  - Môn thể thao nào được gọi là thể thao vua
+  - ở Việt Nam có bao nhiêu đội bóng đang hoạt động
+  - môn đua thuyền có được đưa vào thi đấu ở Olimpic hay không
+  - lịch thi đấu ngoại hạng anh sẽ diễn ra vào khi nào
+  - môn cờ vua có được thi đấu ở Olimpic không
+  - Đội tuyển nào vô địch worldcup nhiều nhất thế giới
+  - câu lạc bộ nào lâu đời nhất thế giới
+  intent: ood_sport

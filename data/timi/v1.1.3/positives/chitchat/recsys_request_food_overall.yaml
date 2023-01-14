@@ -1,0 +1,303 @@
+positives:
+- examples:
+  - tớ đang muốn ăn nào đó, mi có biết món nào ngon không
+  - tôi đang muốn ăn nào đó, mi có biết món nào hấp dẫn không
+  - gọi ý cho tôi một số món nào hấp dẫn đi
+  - tôi đang muốn ăn nào đó, cậu có biết món nào ngon không
+  - tôi nên ăn nào ha
+  - iem cho xin tên món ăn ngon
+  - mình đang muốn ăn nào đó, mi có biết món nào ngon không
+  - tôi đang muốn ăn gì đó, bot có biết món nào ngon không
+  - ở đây có đặc sản nào ngon không
+  - cậu có biết quanh đây có quán nào hấp dẫn không
+  - muốn ăn gì đó thế mi ơi
+  - mình đang muốn ăn nào đó, timi có biết món nào hấp dẫn không
+  - em biết món nào ở đây ngon không
+  - tui đang muốn ăn gì đó, có biết món nào ngon không
+  - tui đang muốn ăn nào đó, bot có biết món nào ngon không
+  - tớ hỏi nên ăn nào ý
+  - muốn ăn gì đó quá bạn ơi
+  - tôi đang muốn ăn gì đó, cậu có biết món nào hấp dẫn không
+  - mầy biết món nào hấp dẫn không
+  - timi biết món nào ở đây hấp dẫn không
+  - tôi đang muốn ăn gì đó, timi có biết món nào hấp dẫn không
+  - muốn ăn nào đó thế bạn ơi
+  - tui đang muốn ăn nào đó, timi có biết món nào hấp dẫn không
+  - tui đang muốn ăn nào đó, mày có biết món nào hấp dẫn không
+  - tớ hỏi nên ăn gì nhỉ
+  - ăn nào bây giờ mày
+  - mày biết món nào ở đây hấp dẫn không
+  - ăn gì bây giờ mi
+  - có món ăn gì hấp dẫn không gợi ý mình với
+  - tôi đang muốn ăn nào đó, bot có biết món nào ngon không
+  - tui đang muốn ăn nào đó, timi có biết món nào ngon không
+  - tui đang muốn ăn gì đó, iem có biết món nào hấp dẫn không
+  - ở đây có đặc sản nào hấp dẫn không
+  - bạn cho xin tên món ăn ngon
+  - bot cho xin tên món ăn ngon
+  - tui hỏi nên ăn nào ha
+  - mầy có biết quanh đây có quán nào hấp dẫn không
+  - tui đang muốn ăn gì đó, bot có biết món nào hấp dẫn không
+  - muốn ăn gì đó quá mầy ơi
+  - tớ đang muốn ăn nào đó, mầy có biết món nào ngon không
+  - tớ đang muốn ăn gì đó, em có biết món nào ngon không
+  - tui đang muốn ăn gì đó, em có biết món nào hấp dẫn không
+  - mình đang muốn ăn gì đó, mày có biết món nào hấp dẫn không
+  - mi biết món nào ở đây hấp dẫn không
+  - muốn ăn gì đó thế mầy ơi
+  - tớ đang muốn ăn nào đó, mi có biết món nào hấp dẫn không
+  - tui đang muốn ăn gì đó, mày có biết món nào hấp dẫn không
+  - gợi ý đặc sản đi
+  - muốn ăn nào đó quá mi ơi
+  - chú em có biết quanh đây có quán nào hấp dẫn không
+  - tớ hỏi nên ăn gì ý
+  - tớ đang muốn ăn gì đó, mi có biết món nào hấp dẫn không
+  - mình nên ăn gì mà
+  - mình đang muốn ăn nào đó, bot có biết món nào hấp dẫn không
+  - bạn biết món nào ở đây ngon không
+  - tui đang muốn ăn gì đó, mầy có biết món nào ngon không
+  - mày biết món nào ngon không
+  - muốn ăn gì đó thế iem ơi
+  - tớ đang muốn ăn gì đó, có biết món nào ngon không
+  - em biết món nào ở đây hấp dẫn không
+  - mình đang muốn ăn gì đó, có biết món nào ngon không
+  - ăn nào bây giờ timi
+  - tui đang muốn ăn nào đó, bạn có biết món nào ngon không
+  - tui nên ăn gì nhỉ
+  - muốn ăn nào đó thế mày ơi
+  - muốn ăn nào đó thế mầy ơi
+  - mi biết món nào hấp dẫn không
+  - tôi đang muốn ăn nào đó, chú em có biết món nào hấp dẫn không
+  - mình nên ăn gì ha
+  - tôi hỏi nên ăn gì ha
+  - tớ hỏi nên ăn nào mà
+  - tớ nên ăn gì nhỉ
+  - tui hỏi nên ăn nào nhỉ
+  - tớ đang muốn ăn nào đó, timi có biết món nào ngon không
+  - gọi ý cho tui một số món nào hấp dẫn đi
+  - tớ hỏi nên ăn gì ha
+  - tôi đang muốn ăn gì đó, timi có biết món nào ngon không
+  - mầy biết món nào ở đây hấp dẫn không
+  - muốn ăn nào đó quá mày ơi
+  - mình đang muốn ăn nào đó, bạn có biết món nào hấp dẫn không
+  - mình đang muốn ăn nào đó, bạn có biết món nào ngon không
+  - tui đang muốn ăn gì đó, mầy có biết món nào hấp dẫn không
+  - tớ đang muốn ăn nào đó, iem có biết món nào hấp dẫn không
+  - có món ăn nào hấp dẫn không
+  - mày có biết quanh đây có quán nào ngon không
+  - gọi ý cho tớ một số món nào hấp dẫn đi
+  - em có biết quanh đây có quán nào hấp dẫn không
+  - mình đang muốn ăn gì đó, chú em có biết món nào hấp dẫn không
+  - bot có biết quanh đây có quán nào ngon không
+  - muốn ăn nào đó thế chú em ơi
+  - mầy có biết quanh đây có quán nào ngon không
+  - iem có biết quanh đây có quán nào ngon không
+  - tui đang muốn ăn gì đó, timi có biết món nào ngon không
+  - mình hỏi nên ăn gì ý
+  - tui đang muốn ăn nào đó, iem có biết món nào ngon không
+  - mình đang muốn ăn nào đó, chú em có biết món nào hấp dẫn không
+  - mình đang muốn ăn gì đó, mầy có biết món nào hấp dẫn không
+  - tui nên ăn nào ý
+  - tớ đang muốn ăn nào đó, iem có biết món nào ngon không
+  - cậu biết món nào hấp dẫn không
+  - tôi nên ăn nào ý
+  - tớ đang muốn ăn nào đó, em có biết món nào hấp dẫn không
+  - tui đang muốn ăn gì đó, em có biết món nào ngon không
+  - tớ đang muốn ăn gì đó, bạn có biết món nào hấp dẫn không
+  - tôi nên ăn gì nhỉ
+  - tớ đang muốn ăn nào đó, bot có biết món nào hấp dẫn không
+  - mình đang muốn ăn gì đó, có biết món nào hấp dẫn không
+  - mình đang muốn ăn nào đó, iem có biết món nào ngon không
+  - mình đang muốn ăn gì đó, iem có biết món nào hấp dẫn không
+  - muốn ăn nào đó thế mi ơi
+  - tôi đang muốn ăn nào đó, bạn có biết món nào hấp dẫn không
+  - tui đang muốn ăn gì đó, chú em có biết món nào ngon không
+  - tôi hỏi nên ăn nào ha
+  - bot biết món nào hấp dẫn không
+  - tui hỏi nên ăn gì ha
+  - mày có biết quanh đây có quán nào hấp dẫn không
+  - ăn gì bây giờ em
+  - chú em có biết quanh đây có quán nào ngon không
+  - mình đang muốn ăn nào đó, chú em có biết món nào ngon không
+  - tôi đang muốn ăn nào đó, có biết món nào ngon không
+  - có món ăn nào ngon không
+  - muốn ăn nào đó thế cậu ơi
+  - tôi đang muốn ăn gì đó, em có biết món nào hấp dẫn không
+  - timi biết món nào hấp dẫn không
+  - gọi ý cho mình một số món nào hấp dẫn đi
+  - muốn ăn gì đó quá em ơi
+  - muốn ăn gì đó thế chú em ơi
+  - muốn ăn nào đó quá chú em ơi
+  - tớ nên ăn nào nhỉ
+  - tui đang muốn ăn gì đó, cậu có biết món nào hấp dẫn không
+  - ăn nào bây giờ mầy
+  - tớ đang muốn ăn gì đó, chú em có biết món nào ngon không
+  - mình nên ăn gì nhỉ
+  - tôi đang muốn ăn gì đó, mi có biết món nào ngon không
+  - tui đang muốn ăn gì đó, mi có biết món nào hấp dẫn không
+  - mình đang muốn ăn gì đó, timi có biết món nào ngon không
+  - muốn ăn gì đó quá mi ơi
+  - mình hỏi nên ăn nào mà
+  - chú em cho xin tên món ăn ngon
+  - có món ăn nào hấp dẫn không gợi ý mình với
+  - tôi đang muốn ăn gì đó, bạn có biết món nào ngon không
+  - biết món nào ngon không
+  - tớ đang muốn ăn nào đó, timi có biết món nào hấp dẫn không
+  - muốn ăn gì đó quá cậu ơi
+  - tui nên ăn nào ha
+  - tớ đang muốn ăn gì đó, cậu có biết món nào ngon không
+  - mình đang muốn ăn gì đó, mầy có biết món nào ngon không
+  - mình đang muốn ăn nào đó, có biết món nào hấp dẫn không
+  - muốn ăn nào đó quá mầy ơi
+  - tớ đang muốn ăn nào đó, có biết món nào ngon không
+  - ăn gì bây giờ bot
+  - tui đang muốn ăn nào đó, em có biết món nào ngon không
+  - mình đang muốn ăn gì đó, cậu có biết món nào hấp dẫn không
+  - tui hỏi nên ăn gì nhỉ
+  - tui đang muốn ăn gì đó, chú em có biết món nào hấp dẫn không
+  - cậu có biết quanh đây có quán nào ngon không
+  - tôi hỏi nên ăn nào mà
+  - tôi đang muốn ăn gì đó, bot có biết món nào hấp dẫn không
+  - mình đang muốn ăn nào đó, cậu có biết món nào hấp dẫn không
+  - tôi đang muốn ăn gì đó, mầy có biết món nào hấp dẫn không
+  - tui đang muốn ăn nào đó, cậu có biết món nào ngon không
+  - mi có biết quanh đây có quán nào hấp dẫn không
+  - mình đang muốn ăn nào đó, timi có biết món nào ngon không
+  - tôi đang muốn ăn gì đó, iem có biết món nào ngon không
+  - mình đang muốn ăn gì đó, em có biết món nào hấp dẫn không
+  - tôi đang muốn ăn nào đó, timi có biết món nào hấp dẫn không
+  - tớ đang muốn ăn nào đó, mày có biết món nào ngon không
+  - tui đang muốn ăn nào đó, chú em có biết món nào hấp dẫn không
+  - tôi đang muốn ăn nào đó, mầy có biết món nào ngon không
+  - tớ đang muốn ăn gì đó, bot có biết món nào hấp dẫn không
+  - muốn ăn nào đó quá em ơi
+  - mình hỏi nên ăn nào ha
+  - muốn ăn nào đó quá iem ơi
+  - tớ đang muốn ăn gì đó, mày có biết món nào hấp dẫn không
+  - mày cho xin tên món ăn ngon
+  - tôi đang muốn ăn gì đó, có biết món nào hấp dẫn không
+  - tui đang muốn ăn nào đó, mi có biết món nào ngon không
+  - tôi đang muốn ăn nào đó, iem có biết món nào ngon không
+  - có biết quanh đây có quán nào hấp dẫn không
+  - mình nên ăn nào ý
+  - mình đang muốn ăn nào đó, em có biết món nào ngon không
+  - ăn nào bây giờ chú em
+  - tớ nên ăn gì ý
+  - bot biết món nào ở đây hấp dẫn không
+  - tui đang muốn ăn nào đó, bot có biết món nào hấp dẫn không
+  - gọi ý cho tôi một số món nào ngon đi
+  - tui đang muốn ăn gì đó, mày có biết món nào ngon không
+  - muốn ăn gì đó thế bot ơi
+  - tôi nên ăn gì mà
+  - em có biết quanh đây có quán nào ngon không
+  - tôi đang muốn ăn nào đó, em có biết món nào ngon không
+  - tớ nên ăn gì mà
+  - tôi hỏi nên ăn gì mà
+  - mình đang muốn ăn nào đó, mầy có biết món nào ngon không
+  - tớ đang muốn ăn nào đó, cậu có biết món nào ngon không
+  - muốn ăn nào đó thế timi ơi
+  - muốn ăn nào đó thế iem ơi
+  - cậu cho xin tên món ăn ngon
+  - mày biết món nào hấp dẫn không
+  - ăn gì bây giờ chú em
+  - tớ đang muốn ăn gì đó, có biết món nào hấp dẫn không
+  - mình hỏi nên ăn gì mà
+  - tớ đang muốn ăn nào đó, em có biết món nào ngon không
+  - tớ đang muốn ăn gì đó, bot có biết món nào ngon không
+  - tại đây có món nào ăn được được không
+  - tớ đang muốn ăn gì đó, mầy có biết món nào ngon không
+  - tui đang muốn ăn gì đó, có biết món nào hấp dẫn không
+  - bạn có biết quanh đây có quán nào hấp dẫn không
+  - tôi đang muốn ăn gì đó, chú em có biết món nào ngon không
+  - cậu biết món nào ở đây hấp dẫn không
+  - ăn gì bây giờ bạn
+  - mình nên ăn gì ý
+  - timi có biết quanh đây có quán nào hấp dẫn không
+  - tui nên ăn gì ha
+  - cậu biết món nào ngon không
+  - mình đang muốn ăn nào đó, cậu có biết món nào ngon không
+  - iem biết món nào hấp dẫn không
+  - tớ đang muốn ăn gì đó, iem có biết món nào ngon không
+  - tui đang muốn ăn gì đó, timi có biết món nào hấp dẫn không
+  - tui đang muốn ăn nào đó, có biết món nào ngon không
+  - muốn ăn nào đó thế bot ơi
+  - mình đang muốn ăn gì đó, bot có biết món nào hấp dẫn không
+  - mình đang muốn ăn gì đó, mày có biết món nào ngon không
+  - mình nên ăn nào nhỉ
+  - tớ đang muốn ăn gì đó, mầy có biết món nào hấp dẫn không
+  - mình đang muốn ăn nào đó, mày có biết món nào ngon không
+  - bot biết món nào ngon không
+  - tớ hỏi nên ăn nào nhỉ
+  - ăn nào bây giờ iem
+  - muốn ăn gì đó thế timi ơi
+  - muốn ăn nào đó quá bạn ơi
+  - tôi đang muốn ăn nào đó, iem có biết món nào hấp dẫn không
+  - muốn ăn nào đó quá timi ơi
+  - ăn gì bây giờ iem
+  - tui đang muốn ăn gì đó, mi có biết món nào ngon không
+  - tớ nên ăn nào ha
+  - iem có biết quanh đây có quán nào hấp dẫn không
+  - tớ nên ăn nào mà
+  - gọi ý cho mình một số món nào ngon đi
+  - có biết quanh đây có quán nào ngon không
+  - tôi đang muốn ăn gì đó, mi có biết món nào hấp dẫn không
+  - tớ đang muốn ăn gì đó, bạn có biết món nào ngon không
+  - tớ đang muốn ăn nào đó, chú em có biết món nào ngon không
+  - mình hỏi nên ăn gì ha
+  - iem biết món nào ở đây hấp dẫn không
+  - tớ đang muốn ăn nào đó, mầy có biết món nào hấp dẫn không
+  - chú em biết món nào ngon không
+  - tui đang muốn ăn gì đó, bot có biết món nào ngon không
+  - tôi đang muốn ăn gì đó, chú em có biết món nào hấp dẫn không
+  - mình nên ăn nào mà
+  - tôi đang muốn ăn gì đó, cậu có biết món nào ngon không
+  - tôi đang muốn ăn gì đó, bạn có biết món nào hấp dẫn không
+  - tớ nên ăn nào ý
+  - muốn ăn gì đó quá iem ơi
+  - ở đây có đặc sản gì ngon không
+  - tui hỏi nên ăn nào mà
+  - mình hỏi nên ăn nào nhỉ
+  - muốn ăn gì đó thế bạn ơi
+  - tui nên ăn gì ý
+  - tớ đang muốn ăn nào đó, mày có biết món nào hấp dẫn không
+  - tôi nên ăn nào mà
+  - ăn nào bây giờ mi
+  - timi có biết quanh đây có quán nào ngon không
+  - gợi ý vài món để mình dẫn crush đi ăn đi
+  - tui đang muốn ăn nào đó, có biết món nào hấp dẫn không
+  - tui đang muốn ăn gì đó, cậu có biết món nào ngon không
+  - mi có biết quanh đây có quán nào ngon không
+  - mình đang muốn ăn nào đó, mày có biết món nào hấp dẫn không
+  - mình đang muốn ăn gì đó, mi có biết món nào ngon không
+  - tôi hỏi nên ăn nào nhỉ
+  - tôi đang muốn ăn gì đó, có biết món nào ngon không
+  - muốn ăn gì đó quá chú em ơi
+  - tớ đang muốn ăn gì đó, chú em có biết món nào hấp dẫn không
+  - có món ăn gì ngon không gợi ý mình với
+  - ăn gì bây giờ mầy
+  - mình đang muốn ăn gì đó, bot có biết món nào ngon không
+  - tôi đang muốn ăn nào đó, timi có biết món nào ngon không
+  - tui đang muốn ăn nào đó, iem có biết món nào hấp dẫn không
+  - muốn ăn gì đó quá mày ơi
+  - tôi hỏi nên ăn gì ý
+  - tớ đang muốn ăn nào đó, chú em có biết món nào hấp dẫn không
+  - tôi đang muốn ăn gì đó, mày có biết món nào hấp dẫn không
+  - tôi đang muốn ăn nào đó, có biết món nào hấp dẫn không
+  - mình đang muốn ăn gì đó, iem có biết món nào ngon không
+  - tôi đang muốn ăn nào đó, chú em có biết món nào ngon không
+  - muốn ăn gì đó thế mày ơi
+  - tôi đang muốn ăn nào đó, bot có biết món nào hấp dẫn không
+  - ăn nào bây giờ cậu
+  - gọi ý cho tớ một số món nào ngon đi
+  - tớ đang muốn ăn gì đó, mày có biết món nào ngon không
+  - chú em biết món nào ở đây ngon không
+  - ở đây có đặc sản gì hấp dẫn không
+  - bạn biết món nào ở đây hấp dẫn không
+  - mình đang muốn ăn nào đó, em có biết món nào hấp dẫn không
+  - có món ăn gì hấp dẫn không
+  - mình đang muốn ăn nào đó, iem có biết món nào hấp dẫn không
+  - tôi hỏi nên ăn gì nhỉ
+  - tôi đang muốn ăn gì đó, mầy có biết món nào ngon không
+  - tớ đang muốn ăn gì đó, cậu có biết món nào hấp dẫn không
+  - bạn biết món nào ngon không
+  intent: recsys_request_food_overall

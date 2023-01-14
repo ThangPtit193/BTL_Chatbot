@@ -1,0 +1,12 @@
+KEY_NEGATIVE = "negative"
+KEY_POSITIVE = "positive"
+KEY_INTENT = "intent"
+KEY_MAIN_INTENT = "main_intent"
+KEY_NEGATIVES = "negatives"
+KEY_POSITIVES = "positives"
+KEY_WEIGHT = "weight"
+KEY_RATIO_INFO = "ratio_info"
+# Method
+KEY_EMBEDDER = "embedder"
+KEY_BM25 = "bm25"
+KEY_RANDOM = "random"

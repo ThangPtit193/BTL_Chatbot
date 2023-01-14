@@ -1,0 +1,353 @@
+positives:
+- examples:
+  - anh đang thắc mắc m có đang làm gì không
+  - m ơi làm gì vậy nói mau
+  - cậu ơi đang làm gì thế nhỉ
+  - m cho anh hỏi đang rảnh không
+  - mình đang thắc mắc bạn có đang làm gì không
+  - bạn cho mình hỏi đang rảnh chứ
+  - em cho anh hỏi đang rảnh chứ
+  - Timi cho anh hỏi đang rảnh chứ
+  - anh đang thắc mắc TIMI có đang làm gì không
+  - bot ơi cậu đang làm gì thế
+  - timi cho chị hỏi đang rảnh phải không
+  - bot cho mình hỏi đang rảnh không
+  - bot cho chị hỏi đang rảnh chớ
+  - timi cho tớ hỏi đang rảnh không
+  - bot cho chị hỏi đang rảnh phải không
+  - timi cho mình hỏi đang rảnh chớ
+  - bạn cho anh hỏi đang rảnh không
+  - mày cho tớ hỏi đang rảnh không
+  - em cho mình hỏi đang rảnh chứ
+  - TIMI cho mình hỏi đang rảnh phải không
+  - đang làm gì nói ngay cho tớ biết ngay
+  - mày ơi làm gì vậy nói mau
+  - timi cho anh hỏi đang rảnh chớ
+  - m ơi cậu đang làm gì thế
+  - m ơi có rảnh không
+  - em cho chị hỏi đang rảnh chớ
+  - làm gì vậy mày
+  - timi cho chị hỏi đang rảnh chớ
+  - làm gì đó TIMI
+  - TIMI cho chị hỏi đang rảnh phải không
+  - tớ đang thắc mắc TIMI có đang làm gì không
+  - đang làm gì nói ngay cho chị biết ngay
+  - bạn ơi có rảnh không
+  - timi ơi làm gì đó nói mau
+  - timi ơi làm gì thế nói mau
+  - làm gì đấy bạn ơi
+  - bot cho mình hỏi đang rảnh chớ
+  - em cho chị hỏi đang rảnh phải không
+  - timi có rảnh không thế
+  - làm gì hả TIMI
+  - chị đang thắc mắc cậu có đang làm gì không
+  - em cho chị hỏi đang rảnh không
+  - làm gì đấy m
+  - có đang rảnh không đang làm gì vậy
+  - bạn cho chị hỏi đang rảnh không
+  - Timi ơi làm gì vậy nói mau
+  - bạn cho chị hỏi đang rảnh chứ
+  - cậu cho chị hỏi đang rảnh chớ
+  - cậu ơi làm gì thế nói mau
+  - làm gì hả bot
+  - làm gì đó bot
+  - bạn cho tớ hỏi đang rảnh chớ
+  - timi ơi làm gì đấy nói mau
+  - mày có rảnh không thế
+  - em ơi làm gì đó nói mau
+  - em cho tớ hỏi đang rảnh phải không
+  - làm gì đấy TIMI
+  - m cho chị hỏi đang rảnh chớ
+  - timi ơi cậu đang làm gì thế
+  - làm gì vậy bot
+  - cậu cho tớ hỏi đang rảnh không
+  - m cho tớ hỏi đang rảnh chớ
+  - làm gì thế bạn ơi
+  - m cho mình hỏi đang rảnh chứ
+  - cậu ơi làm gì đó nói mau
+  - Timi cho mình hỏi đang rảnh chớ
+  - TIMI ơi làm gì vậy nói mau
+  - có đang làm gì không đấy
+  - mày cho chị hỏi đang rảnh chớ
+  - TIMI cho chị hỏi đang rảnh chứ
+  - em ơi đang làm gì thế nhỉ
+  - mày cho tớ hỏi đang rảnh chớ
+  - mày ơi làm gì đó nói mau
+  - mày ơi cậu đang làm gì thế
+  - timi đang làm gì thế
+  - mình đang thắc mắc cậu có đang làm gì không
+  - mày cho anh hỏi đang rảnh không
+  - mày cho tớ hỏi đang rảnh phải không
+  - mày cho mình hỏi đang rảnh chớ
+  - timi cho tớ hỏi đang rảnh chứ
+  - có đang làm gì không hả
+  - cậu có rảnh không thế
+  - m có rảnh không thế
+  - bot cho chị hỏi đang rảnh không
+  - cho anh hỏi phát đang làm gì thế
+  - làm gì đấy bạn
+  - Timi cho mình hỏi đang rảnh chứ
+  - chị đang thắc mắc Timi có đang làm gì không
+  - TIMI cho tớ hỏi đang rảnh không
+  - em ơi làm gì thế nói mau
+  - cậu cho chị hỏi đang rảnh phải không
+  - có đang rảnh không đang làm gì đó
+  - anh đang thắc mắc timi có đang làm gì không
+  - có đang bận làm gì không đó
+  - bot cho mình hỏi đang rảnh chứ
+  - cậu ơi làm gì hả nói mau
+  - làm gì thế mày
+  - cậu cho tớ hỏi đang rảnh phải không
+  - m cho mình hỏi đang rảnh chớ
+  - timi ơi làm gì vậy nói mau
+  - Timi cho chị hỏi đang rảnh chớ
+  - Timi ơi làm gì đấy nói mau
+  - bot cho anh hỏi đang rảnh phải không
+  - tớ đang thắc mắc timi có đang làm gì không
+  - em ơi làm gì vậy nói mau
+  - Timi cho mình hỏi đang rảnh không
+  - làm gì thế bot
+  - mày cho anh hỏi đang rảnh phải không
+  - tớ đang thắc mắc em có đang làm gì không
+  - timi cho mình hỏi đang rảnh phải không
+  - Timi ơi có rảnh không
+  - bạn cho chị hỏi đang rảnh phải không
+  - làm gì hả mày
+  - Timi ơi làm gì thế nói mau
+  - có đang bận làm gì không đấy
+  - bot cho anh hỏi đang rảnh chứ
+  - timi cho chị hỏi đang rảnh chứ
+  - em cho mình hỏi đang rảnh phải không
+  - cho chị hỏi phát đang làm gì thế
+  - có đang bận làm gì không vậy
+  - chị đang thắc mắc m có đang làm gì không
+  - em cho tớ hỏi đang rảnh chớ
+  - mình đang thắc mắc timi có đang làm gì không
+  - bot đang làm gì thế
+  - m cho anh hỏi đang rảnh chớ
+  - làm gì thế timi
+  - có đang làm gì không đó
+  - tớ đang thắc mắc mày có đang làm gì không
+  - TIMI ơi cậu đang làm gì thế
+  - có đang rảnh không đang làm gì hả
+  - Timi cho chị hỏi đang rảnh chứ
+  - bạn cho tớ hỏi đang rảnh không
+  - timi cho tớ hỏi đang rảnh phải không
+  - anh đang thắc mắc bạn có đang làm gì không
+  - làm gì đấy bot
+  - TIMI cho mình hỏi đang rảnh chứ
+  - timi cho chị hỏi đang rảnh không
+  - cho tớ hỏi phát đang làm gì thế
+  - mày ơi làm gì đấy nói mau
+  - làm gì đó timi
+  - cậu cho tớ hỏi đang rảnh chớ
+  - cậu cho mình hỏi đang rảnh không
+  - em cho tớ hỏi đang rảnh chứ
+  - mày ơi làm gì hả nói mau
+  - cậu cho mình hỏi đang rảnh chứ
+  - TIMI cho anh hỏi đang rảnh không
+  - cậu cho chị hỏi đang rảnh chứ
+  - làm gì thế em
+  - bot cho tớ hỏi đang rảnh không
+  - TIMI đang làm gì thế
+  - làm gì thế TIMI
+  - mày có đang làm gì không
+  - bạn cho anh hỏi đang rảnh phải không
+  - bạn ơi đang làm gì thế nhỉ
+  - chị đang thắc mắc TIMI có đang làm gì không
+  - Timi cho tớ hỏi đang rảnh không
+  - làm gì hả bạn ơi
+  - em ơi cậu đang làm gì thế
+  - m có đang làm gì không
+  - em cho anh hỏi đang rảnh không
+  - bot cho mình hỏi đang rảnh phải không
+  - làm gì đó m
+  - m ơi đang làm gì thế nhỉ
+  - cậu cho chị hỏi đang rảnh không
+  - có đang làm gì không thế
+  - bạn có rảnh không thế
+  - bot ơi có rảnh không
+  - Timi cho tớ hỏi đang rảnh phải không
+  - em cho anh hỏi đang rảnh phải không
+  - mình đang thắc mắc Timi có đang làm gì không
+  - bot cho tớ hỏi đang rảnh chứ
+  - m ơi làm gì hả nói mau
+  - làm gì vậy Timi
+  - cậu cho anh hỏi đang rảnh không
+  - mình đang thắc mắc bot có đang làm gì không
+  - bạn ơi làm gì đấy nói mau
+  - bạn cho anh hỏi đang rảnh chứ
+  - em đang làm gì thế
+  - Timi cho chị hỏi đang rảnh phải không
+  - TIMI cho mình hỏi đang rảnh không
+  - timi cho anh hỏi đang rảnh chứ
+  - TIMI ơi làm gì hả nói mau
+  - TIMI cho anh hỏi đang rảnh chớ
+  - m ơi làm gì thế nói mau
+  - bot ơi làm gì thế nói mau
+  - tớ đang thắc mắc cậu có đang làm gì không
+  - làm gì vậy m
+  - cậu cho mình hỏi đang rảnh chớ
+  - làm gì đó mày
+  - bot có rảnh không thế
+  - cậu đang làm gì thế
+  - bạn ơi làm gì vậy nói mau
+  - bot ơi làm gì đấy nói mau
+  - đang làm gì nói ngay cho anh biết ngay
+  - mày cho mình hỏi đang rảnh chứ
+  - làm gì hả m
+  - Timi cho anh hỏi đang rảnh không
+  - làm gì đó bạn ơi
+  - em cho anh hỏi đang rảnh chớ
+  - làm gì hả bạn
+  - mày cho chị hỏi đang rảnh chứ
+  - có đang rảnh không đang làm gì thế
+  - bot cho anh hỏi đang rảnh không
+  - timi cho mình hỏi đang rảnh không
+  - Timi đang làm gì thế
+  - m cho tớ hỏi đang rảnh chứ
+  - làm gì thế bạn
+  - bạn cho mình hỏi đang rảnh chớ
+  - mày ơi có rảnh không
+  - em ơi làm gì đấy nói mau
+  - có đang làm gì không vậy
+  - cho mình hỏi phát đang làm gì thế
+  - làm gì thế cậu
+  - m cho chị hỏi đang rảnh không
+  - làm gì đấy timi
+  - anh đang thắc mắc cậu có đang làm gì không
+  - bạn ơi cậu đang làm gì thế
+  - chị đang thắc mắc bot có đang làm gì không
+  - timi ơi làm gì hả nói mau
+  - timi ơi đang làm gì thế nhỉ
+  - bạn cho anh hỏi đang rảnh chớ
+  - anh đang thắc mắc em có đang làm gì không
+  - mày cho chị hỏi đang rảnh không
+  - chị đang thắc mắc mày có đang làm gì không
+  - bot ơi làm gì đó nói mau
+  - m cho tớ hỏi đang rảnh phải không
+  - cậu cho anh hỏi đang rảnh phải không
+  - mình đang thắc mắc m có đang làm gì không
+  - em cho mình hỏi đang rảnh không
+  - em có rảnh không thế
+  - tớ đang thắc mắc bot có đang làm gì không
+  - bot ơi làm gì vậy nói mau
+  - m cho anh hỏi đang rảnh chứ
+  - anh đang thắc mắc Timi có đang làm gì không
+  - có đang bận làm gì không hả
+  - cậu cho anh hỏi đang rảnh chớ
+  - làm gì hả timi
+  - anh đang thắc mắc mày có đang làm gì không
+  - làm gì đấy em
+  - bot cho anh hỏi đang rảnh chớ
+  - Timi cho chị hỏi đang rảnh không
+  - làm gì hả Timi
+  - cậu cho tớ hỏi đang rảnh chứ
+  - TIMI cho tớ hỏi đang rảnh phải không
+  - m cho tớ hỏi đang rảnh không
+  - Timi ơi cậu đang làm gì thế
+  - timi cho anh hỏi đang rảnh không
+  - TIMI ơi làm gì đấy nói mau
+  - m ơi làm gì đó nói mau
+  - timi có đang làm gì không
+  - TIMI cho tớ hỏi đang rảnh chớ
+  - bạn ơi làm gì thế nói mau
+  - làm gì hả em
+  - cậu ơi làm gì vậy nói mau
+  - bạn cho tớ hỏi đang rảnh chứ
+  - em có đang làm gì không
+  - Timi ơi đang làm gì thế nhỉ
+  - làm gì đấy mày
+  - timi cho anh hỏi đang rảnh phải không
+  - TIMI ơi đang làm gì thế nhỉ
+  - Timi cho tớ hỏi đang rảnh chứ
+  - mình đang thắc mắc TIMI có đang làm gì không
+  - làm gì hả cậu
+  - em cho chị hỏi đang rảnh chứ
+  - bạn đang làm gì thế
+  - Timi ơi làm gì đó nói mau
+  - chị đang thắc mắc bạn có đang làm gì không
+  - bạn ơi làm gì đó nói mau
+  - TIMI ơi làm gì thế nói mau
+  - Timi có rảnh không thế
+  - mình đang thắc mắc em có đang làm gì không
+  - mày ơi làm gì thế nói mau
+  - m cho mình hỏi đang rảnh phải không
+  - TIMI cho mình hỏi đang rảnh chớ
+  - đang làm gì nói ngay cho mình biết ngay
+  - bạn cho tớ hỏi đang rảnh phải không
+  - cậu ơi làm gì đấy nói mau
+  - TIMI có rảnh không thế
+  - tớ đang thắc mắc m có đang làm gì không
+  - làm gì vậy TIMI
+  - bot ơi đang làm gì thế nhỉ
+  - em cho mình hỏi đang rảnh chớ
+  - có đang bận làm gì không thế
+  - làm gì đó bạn
+  - cậu có đang làm gì không
+  - Timi cho anh hỏi đang rảnh phải không
+  - timi cho mình hỏi đang rảnh chứ
+  - làm gì vậy timi
+  - TIMI có đang làm gì không
+  - Timi cho anh hỏi đang rảnh chớ
+  - bot ơi làm gì hả nói mau
+  - Timi ơi làm gì hả nói mau
+  - bot cho tớ hỏi đang rảnh chớ
+  - mình đang thắc mắc mày có đang làm gì không
+  - timi ơi có rảnh không
+  - cậu ơi cậu đang làm gì thế
+  - mày cho chị hỏi đang rảnh phải không
+  - TIMI ơi làm gì đó nói mau
+  - mày cho mình hỏi đang rảnh không
+  - tớ đang thắc mắc bạn có đang làm gì không
+  - m cho anh hỏi đang rảnh phải không
+  - cậu cho mình hỏi đang rảnh phải không
+  - làm gì đấy Timi
+  - tớ đang thắc mắc Timi có đang làm gì không
+  - làm gì vậy em
+  - TIMI cho tớ hỏi đang rảnh chứ
+  - bot có đang làm gì không
+  - làm gì vậy bạn
+  - Timi cho tớ hỏi đang rảnh chớ
+  - mày cho tớ hỏi đang rảnh chứ
+  - em ơi làm gì hả nói mau
+  - bot cho tớ hỏi đang rảnh phải không
+  - chị đang thắc mắc timi có đang làm gì không
+  - timi cho tớ hỏi đang rảnh chớ
+  - có đang rảnh không đang làm gì đấy
+  - bạn ơi làm gì hả nói mau
+  - TIMI cho chị hỏi đang rảnh không
+  - mày cho anh hỏi đang rảnh chớ
+  - làm gì thế Timi
+  - bot cho chị hỏi đang rảnh chứ
+  - m ơi làm gì đấy nói mau
+  - anh đang thắc mắc bot có đang làm gì không
+  - cậu ơi có rảnh không
+  - mày cho anh hỏi đang rảnh chứ
+  - bạn có đang làm gì không
+  - cậu cho anh hỏi đang rảnh chứ
+  - bạn cho chị hỏi đang rảnh chớ
+  - làm gì đấy cậu
+  - Timi cho mình hỏi đang rảnh phải không
+  - TIMI cho anh hỏi đang rảnh phải không
+  - m cho chị hỏi đang rảnh phải không
+  - m cho mình hỏi đang rảnh không
+  - bạn cho mình hỏi đang rảnh phải không
+  - TIMI cho chị hỏi đang rảnh chớ
+  - làm gì vậy bạn ơi
+  - làm gì đó cậu
+  - bạn cho mình hỏi đang rảnh không
+  - em cho tớ hỏi đang rảnh không
+  - mày đang làm gì thế
+  - chị đang thắc mắc em có đang làm gì không
+  - làm gì thế m
+  - TIMI ơi có rảnh không
+  - làm gì đó em
+  - làm gì đó Timi
+  - TIMI cho anh hỏi đang rảnh chứ
+  - mày cho mình hỏi đang rảnh phải không
+  - Timi có đang làm gì không
+  - mày ơi đang làm gì thế nhỉ
+  - m cho chị hỏi đang rảnh chứ
+  - m đang làm gì thế
+  intent: self_ask_doing

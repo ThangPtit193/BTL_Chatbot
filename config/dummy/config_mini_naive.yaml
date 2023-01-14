@@ -1,42 +1,57 @@
 GENERAL:
-  run_mode: inference
+  device: cuda
+  project: dummy
+  version: v1.0.0
+  output_data: assets
+  output_model: models
+  output_report: reports
 
-EMBEDDER:
-  class: NaiveEmbedder
+DATA_GENERATION:
+  data_dir: data/dummy
+  search_mode: bm25_embedder
+  embedding_batch_size: 100
+  neg_sim_batch_size: 10
+  max_triple_per_file: 50
+  EMBEDDER:
+    cache_path: ./embedder_caches
+    pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+#  COMBINER:
+
+
+TRAINER:
+  class: NaiveSemanticSimilarity
   package: saturn.components.embeddings.embedding_models
-  gpu: 0
-  TRAINER:
-    # A data_config.json file
-    data_config_path: data/train_data/dummy/data_config.json
-    # The pretrained model
-    #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
-    pretrained_model: vinai/phobert-base
-    # Total of steps, it depends on the number of question answering pair that you have
-    steps: 350
-    # When reach this step, we will be saved checkpoint
-    save_steps: 100
-    # The max length of tokenizer
-    max_length: 128
-    # Use 20 for cossim, and 1 when you work with un-normalized embeddings with dot product
-    scale: 20
-    batch_size: 30
-    model_save_path: models
-    warmup_steps: 50
-    datasets_per_batch: 2
-    num_same_dataset: 1
-    evaluation_steps: 200
-    weight_decay: 0.01
-    max_grad_norm: 1.0
-    use_amp: False
-    save_best_model: True
-    show_progress_bar: True
-    checkpoint_path: checkpoints
-    checkpoint_save_step: 50
-    checkpoint_save_total_limit: 3
-    resume_from_checkpoint: null
-
+  # A data_config.json file
+  data_config_path: assets/dummy/v1.0.0/data_config.json
+  # The pretrained model
+  #    pretrained_model: sentence-transformers/quora-distilbert-multilingual
+  pretrained_name_or_abspath: vinai/phobert-base
+  # Total of steps, it depends on the number of question answering pair that you have
+  steps: 350
+  # When reach this step, we will be saved checkpoint
+  save_steps: 100
+  # The max length of tokenizer
+  max_length: 128
+  # Use 20 for cossim, and 1 when you work with un-normalized embeddings with dot product
+  scale: 20
+  batch_size: 30
+  model_save_path: models
+  warmup_steps: 50
+  datasets_per_batch: 2
+  num_same_dataset: 1
+  evaluation_steps: 200
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  use_amp: False
+  save_best_model: True
+  show_progress_bar: True
+  checkpoint_path: checkpoints
+  checkpoint_save_step: 50
+  checkpoint_save_total_limit: 3
+#  resume_from_checkpoint: null
+#    resume_from_checkpoint: checkpoints/epoch-14/checkpoint.pt
 EVALUATION:
   corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
   query_name_or_path: "data/eval-data/dummy/query_docs.json"
-  model_name_or_path: [ "distilbert-multilingual-faq-v3.2" , "khanhpd2/sbert_phobert_large_cosine_sim", "timi-idol-paraphrase-multilingual-MiniLM-L12-v2-v.1.0.1"]
+  model_name_or_path: [ "distilbert-multilingual-faq-v3.2" , "khanhpd2/sbert_phobert_large_cosine_sim", "timi-idol-paraphrase-multilingual-MiniLM-L12-v2-v.1.0.1" ]
 

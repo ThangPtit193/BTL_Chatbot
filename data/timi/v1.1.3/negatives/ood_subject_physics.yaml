@@ -1,0 +1,7 @@
+negatives:
+- examples:
+  - Tác dụng chung của nguồn điện là gì?
+  - Cách đổi đơn vị vận tốc,lực ma sát trượt là gì
+  - Tính chất tạo bởi gương cầu lõm và ứng dụng của nó
+  - Nêu ứng dụng của nhiệt kế
+  intent: ood_subject_physics

@@ -1,0 +1,307 @@
+positives:
+- examples:
+  - thời gian nghỉ trưa như nào
+  - nhận sự sẽ nghỉ trưa lúc nào hở
+  - thời gian nghỉ trưa của công ty là lúc nào vậy á hả
+  - công ty amazon nghỉ trưa lúc vào thời gian nào
+  - nghỉ trưa bao lâu vậy á hả
+  - Nghỉ trưa vào thời gian nào vậy
+  - thời gian nghỉ giữa giờ là thế nào
+  - khoảng thời gian nghỉ trưa là như thế nào nhỉ
+  - công ty mấy giờ thì dc nghỉ trưa
+  - cty hải hà nghỉ trưa lúc 11h30 hay 12h30 vậy hả
+  - buổi chiều mấy h làm việc
+  - mấy giờ dc nghỉ ăn trưa vậy
+  - khoảng thời gian nghỉ trưa của cty Ngân hàng thương mại cổ phần Phương Đông là
+    thế nào nhỉ
+  - chiều làm lại từ 1 h hả
+  - tớ muốn hỏi về quy định thời gian nghỉ trưa của công ty
+  - mấy giờ thì được ăn trưa vậy hả
+  - buổi sáng mấy giờ kết thúc
+  - mình muốn hỏi về rule thời gian nghỉ trưa của công ty vinAI
+  - thời gian nghỉ trưa của công ty f tech vào lúc mấy giờ
+  - công ty nghỉ trưa lúc mấy giờ
+  - cho mình hỏi về quy định thời gian ăn trưa của công ty f-tech
+  - thời gian nghỉ trưa là lúc nào hở
+  - thời gian nghỉ trưa cho nhân viên như thế nào vậy hả
+  - quy định thời gian ăn trưa của công ty
+  - công ty hải âu ăn trưa lúc 12h chuẩn chỉ ko
+  - thời gian nghỉ trưa vào khoảng thời gian nào
+  - thời gian nghỉ trưa như thế nào
+  - quy định thời gian nghỉ trưa của công ty như thế nào
+  - thông thường người sẽ dc ăn trưa lúc nào hả
+  - công ty quy đinh thời gian nào thì nhân viện dc nghỉ trưa
+  - lúc nào thì tôi dc nghỉ ăn trưa đây
+  - thời gian ăn trưa của công ty phương đông như nào
+  - quy định về thời gian nghỉ trưa như thế nào
+  - cho tớ hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ
+  - công ty nghỉ trưa trong khoảng thời gian bao lâu
+  - ' nghỉ trưa đến mấy giờ nhỉ'
+  - được nghỉ trưa mấy tiếng vậy
+  - mấy giờ thì được nghỉ giữa giờ hả
+  - thời gian nghỉ trưa vào thời gian nào
+  - thời gian nghỉ trưa của công ty như thế nào
+  - anh muốn hỏi thời gian nghỉ trưa như thế nào
+  - thời gian nghỉ trưa thế nào
+  - thành viên sẽ ăn trưa lúc nào vậy hả
+  - thời gian nghỉ trưa của công ty là lúc nào hả
+  - ' nghỉ trưa lúc nào'
+  - nghỉ trưa bao lâu vậy
+  - Nghỉ trưa vào thời gian nào vậy bạn
+  - thời gian nghỉ giữa giờ là như thế nào
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ
+  - ' mấy giờ thì dc nghỉ trưa'
+  - công ty nghỉ trưa lúc 11h30 hay 12h vậy á hả
+  - chiều mấy h làm việc
+  - mấy giờ được nghỉ ăn trưa vậy bạn
+  - khoảng thời gian nghỉ trưa của công ty là như nào nhỉ lily
+  - buổi chiều làm lại từ 13 h hử
+  - tôi muốn hỏi về rule thời gian nghỉ trưa của công ty f tech
+  - mấy giờ thì được ăn trưa vậy á hả
+  - sáng mấy h kết thúc
+  - tớ muốn hỏi về rule thời gian nghỉ trưa của công ty f tech
+  - thời gian nghỉ trưa của ngân hàng saigonbank vào lúc mấy giờ
+  - công ty nghỉ trưa lúc mấy giờ vậy hả
+  - cho mình hỏi về nội quy thời gian ăn trưa của công ty ftech
+  - thời gian nghỉ trưa là lúc nào vậy hả
+  - thời gian nghỉ trưa cho nhân viên vào thời gian nào vậy
+  - quy định thời gian ăn trưa của công ty thế nào
+  - công ty ngủ trưa lúc 12h chính xác ko
+  - quy định thời gian nghỉ trưa của công ty contectcone như nào
+  - thông thường nhân viên sẽ được nghỉ trưa bao giờ vậy hả
+  - công ty quy đinh thời gian nào thì nhân viện được nghỉ trưa
+  - lúc nào thì mình được nghỉ ăn trưa đây
+  - giờ ăn trưa của công ty f tech như nào
+  - quy định về thời gian nghỉ trưa thế nào
+  - cho mình hỏi thời gian nghỉ trưa của công ty aimesoft vào lúc mấy giờ vậy á hả
+  - ' nghỉ trưa trong khoảng thời gian bao lâu'
+  - công ty f tech nghỉ trưa đến mấy giờ nhỉ
+  - được nghỉ trưa mấy tiếng vậy mầy
+  - mấy giờ thì được nghỉ giữa giờ vậy á hả
+  - thời gian nghỉ trưa như thế nào vậy á hả
+  - thời gian nghỉ trưa của công ty f-tech như thế nào hả
+  - tớ muốn hỏi thời gian nghỉ trưa như thế nào
+  - nhân viên sẽ nghỉ trưa khi nào hở
+  - thời gian nghỉ trưa của công ty f-tech là lúc nào vậy á hả
+  - công ty nghỉ trưa lúc nào
+  - nghỉ trưa bao lâu hở
+  - Nghỉ trưa vào thời gian nào vậy bot
+  - thời gian nghỉ giữa giờ là như nào
+  - khoảng thời gian nghỉ trưa là như nào nhỉ
+  - ' mấy giờ thì được nghỉ trưa'
+  - công ty nghỉ trưa lúc 11h30 hay 12h vậy
+  - buổi chiều mấy giờ làm việc
+  - mấy giờ được nghỉ ăn trưa vậy cậu
+  - khoảng thời gian nghỉ trưa của công ty là như nào nhỉ iris
+  - chiều làm lại từ 13 h hửm
+  - tôi muốn hỏi về rule thời gian nghỉ trưa của công ty ftech
+  - mấy giờ thì được ăn trưa
+  - buổi sáng mấy h kết thúc
+  - tôi muốn hỏi về quy định thời gian nghỉ trưa của công ty cổ phần Sữa Hà Nội
+  - thời gian nghỉ trưa của công ty vào lúc mấy giờ vậy
+  - tập đoàn viễn thông quân đội Việt Nam nghỉ trưa lúc mấy giờ
+  - tôi muốn hỏi về rule thời gian ăn trưa của công ty
+  - thời gian nghỉ trưa là lúc nào vậy á hả
+  - thời gian nghỉ trưa cho nhân viên như nào vậy á hả
+  - rule thời gian ăn trưa của công ty f-tech
+  - công ty ngủ trưa lúc 11h chuẩn ko
+  - nội quy thời gian nghỉ trưa của công ty f-tech
+  - thông thường thành viên sẽ được ăn trưa lúc nào vậy á hả
+  - lúc nào thì tớ dc nghỉ ăn trưa đây
+  - giờ ăn trưa của công ty f-tech như nào
+  - quy định về thời gian nghỉ trưa như nào
+  - cho tớ hỏi thời gian nghỉ trưa của công ty ftech vào lúc mấy giờ
+  - công ty f tech nghỉ trưa trong khoảng thời gian bao lâu
+  - công ty nghỉ trưa đến mấy giờ nhỉ
+  - dc nghỉ trưa mấy tiếng vậy mầy
+  - mấy giờ thì dc nghỉ giữa giờ hả
+  - thời gian nghỉ trưa vào thời gian nào vậy hả
+  - thời gian nghỉ trưa của tập đoàn Liên Thái Bình Dương thế nào hở
+  - chị muốn hỏi thời gian nghỉ trưa như thế nào
+  - nhân viên sẽ ăn trưa lúc nào vậy á hả
+  - thời gian nghỉ trưa của công ty là lúc nào vậy
+  - công ty f tech nghỉ trưa lúc nào
+  - nghỉ trưa bao lâu
+  - Nghỉ trưa vào thời gian nào vậy m
+  - khoảng thời gian nghỉ trưa là như thế nào nhỉ mầy
+  - công ty Vinacomin mấy giờ thì được nghỉ trưa
+  - công ty ngủ trưa lúc 11h hay 12h vậy á hả
+  - chiều mấy giờ làm việc
+  - mấy giờ được nghỉ ăn trưa vậy
+  - khoảng thời gian nghỉ trưa của công ty f tech là như thế nào nhỉ em
+  - buổi chiều làm lại từ 1 h hả
+  - mình muốn hỏi về rule thời gian nghỉ trưa của công ty f tech
+  - mấy giờ thì dc ăn trưa
+  - buổi sáng mấy giờ hết giờ
+  - mình muốn hỏi về nội quy thời gian nghỉ trưa của cty vietis
+  - thời gian nghỉ trưa của cty Cổ phần Cao su Đà Nẵng vào lúc mấy giờ
+  - công ty f-tech nghỉ trưa lúc mấy giờ
+  - cho tớ hỏi về rule thời gian ăn trưa của công ty
+  - thời gian nghỉ trưa là lúc nào vậy
+  - thời gian nghỉ trưa cho nhân viên vào thời gian nào hở
+  - rule thời gian ăn trưa của công ty như nào
+  - công ty nghỉ trưa lúc 11h chính xác không
+  - quy định thời gian nghỉ trưa của công ty
+  - thông thường người sẽ được nghỉ trưa bao giờ hở
+  - lúc nào thì mình dc nghỉ ăn trưa đây
+  - giờ ăn trưa của cty Đài Phát thanh - Truyền hình Hà Nội thế nào
+  - cho chị hỏi thời gian nghỉ trưa của ngân hàng acb vào lúc mấy giờ
+  - công ty ftech nghỉ trưa trong khoảng thời gian bao lâu
+  - tập đoàn Hòa Phát nghỉ trưa đến mấy giờ nhỉ
+  - dc nghỉ trưa mấy tiếng vậy mi
+  - mấy giờ thì dc nghỉ giữa giờ hở
+  - thời gian nghỉ trưa như thế nào hả
+  - thời gian nghỉ trưa của công ty như thế nào vậy á hả
+  - mình muốn hỏi thời gian nghỉ trưa như thế nào
+  - nhân viên sẽ nghỉ trưa khi nào vậy
+  - thời gian nghỉ trưa của công ty family technology company limited là lúc nào hở
+  - công ty f-tech nghỉ trưa lúc vào thời gian nào
+  - nghỉ trưa bao lâu hả
+  - Nghỉ trưa vào thời gian nào vậy iris
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ mày
+  - công ty f tech mấy giờ thì dc nghỉ trưa
+  - công ty f tech ngủ trưa lúc 11h hay 12h30 vậy á hả
+  - mấy giờ dc nghỉ ăn trưa vậy Timi
+  - khoảng thời gian nghỉ trưa của cty VinFast là như thế nào nhỉ TIMI
+  - buổi chiều làm lại từ 13 giờ hả
+  - cho tớ hỏi về quy chế thời gian nghỉ trưa của công ty ftech
+  - mấy giờ thì được ăn trưa vậy
+  - sáng mấy giờ hết giờ
+  - tớ muốn hỏi về quy định thời gian nghỉ trưa của công ty ftech
+  - thời gian nghỉ trưa của công ty vào lúc mấy giờ
+  - công ty f tech nghỉ trưa lúc mấy giờ
+  - tớ muốn hỏi về quy định thời gian ăn trưa của tập đoàn Bưu chính Viễn thông Việt
+    Nam
+  - thời gian nghỉ trưa là lúc nào hả
+  - thời gian nghỉ trưa cho nhân viên như nào
+  - quy định thời gian ăn trưa của tập đoàn Dầu khí Việt Nam như thế nào
+  - cty hải hà ăn trưa lúc 12h chuẩn ko
+  - quy chế thời gian nghỉ trưa của công ty
+  - thông thường nhân viên sẽ được ăn trưa bao giờ vậy hả
+  - lúc nào thì tôi được nghỉ ăn trưa đây
+  - giờ ăn trưa của cty htc-itc thế nào
+  - cho anh hỏi thời gian nghỉ trưa của cty minh long vào lúc mấy giờ vậy hả
+  - cty minh long nghỉ trưa trong khoảng thời gian bao lâu
+  - ngân hàng vpbank nghỉ trưa đến mấy giờ nhỉ
+  - dc nghỉ trưa mấy tiếng vậy lily
+  - mấy giờ thì dc nghỉ giữa giờ vậy á hả
+  - thời gian nghỉ trưa như thế nào vậy hả
+  - thời gian nghỉ trưa của công ty ftech như thế nào
+  - người sẽ nghỉ trưa lúc nào vậy
+  - thời gian nghỉ trưa của công ty là lúc nào vậy hả
+  - tập đoàn Công nghiệp – Viễn thông Quân đội nghỉ trưa lúc nào
+  - nghỉ trưa bao lâu vậy hả
+  - Nghỉ trưa vào thời gian nào vậy lily
+  - khoảng thời gian nghỉ trưa là như thế nào nhỉ iris
+  - cty VTI mấy giờ thì dc nghỉ trưa
+  - công ty f-tech ngủ trưa lúc 11h30 hay 12h hở
+  - mấy giờ được nghỉ ăn trưa vậy bot
+  - khoảng thời gian nghỉ trưa của tập đoàn Liên Thái Bình Dương là như nào nhỉ timi
+  - buổi chiều làm lại từ 13 giờ hử
+  - tôi muốn hỏi về quy định thời gian nghỉ trưa của công ty ftech
+  - mấy giờ thì dc ăn trưa vậy
+  - buổi sáng mấy h hết giờ
+  - mình muốn hỏi về nội quy thời gian nghỉ trưa của công ty
+  - thời gian nghỉ trưa của công ty ftech vào lúc mấy giờ vậy á hả
+  - công ty nghỉ trưa lúc mấy giờ hả
+  - tớ muốn hỏi về nội quy thời gian ăn trưa của công ty ftech
+  - thời gian nghỉ trưa cho nhân viên như nào hở
+  - quy định thời gian ăn trưa của công ty ftech
+  - công ty nghỉ trưa lúc 12h chính xác ko
+  - nội quy thời gian nghỉ trưa của công ty f tech
+  - thông thường thành viên sẽ được nghỉ trưa bao giờ vậy hả
+  - lúc nào thì tớ được nghỉ ăn trưa đây
+  - giờ ăn trưa của công ty như nào
+  - cho chị hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ
+  - ngân hàng techcombank nghỉ trưa trong khoảng thời gian bao lâu
+  - công ty f-tech nghỉ trưa đến mấy giờ nhỉ
+  - dc nghỉ trưa mấy tiếng vậy
+  - mấy giờ thì dc nghỉ giữa giờ vậy
+  - thời gian nghỉ trưa vào thời gian nào vậy á hả
+  - thời gian nghỉ trưa của công ty hải âu như thế nào
+  - thành viên sẽ ăn trưa khi nào vậy á hả
+  - thời gian nghỉ trưa của công ty ftech là lúc nào vậy á hả
+  - tập đoàn Tân Hiệp Phát nghỉ trưa lúc nào
+  - Nghỉ trưa vào thời gian nào vậy mi
+  - khoảng thời gian nghỉ trưa là như nào nhỉ TIMI
+  - công ty CỔ PHẦN PHẦN MỀM HÀ NỘi mấy giờ thì được nghỉ trưa
+  - công ty ftech nghỉ trưa lúc 11h30 hay 12h30 vậy á hả
+  - mấy giờ được nghỉ ăn trưa vậy em
+  - khoảng thời gian nghỉ trưa của công ty f-tech là như thế nào nhỉ
+  - buổi chiều làm lại từ 13 h hửm
+  - tớ muốn hỏi về nội quy thời gian nghỉ trưa của công ty ftech
+  - mấy giờ thì dc ăn trưa hả
+  - sáng mấy giờ kết thúc
+  - tôi muốn hỏi về rule thời gian nghỉ trưa của công ty f-tech
+  - thời gian nghỉ trưa của ngân hàng bidv vào lúc mấy giờ hả
+  - công ty ftech nghỉ trưa lúc mấy giờ
+  - tớ muốn hỏi về nội quy thời gian ăn trưa của công ty
+  - thời gian nghỉ trưa cho nhân viên như thế nào vậy á hả
+  - quy chế thời gian ăn trưa của công ty f-tech
+  - công ty ăn trưa lúc 11h chính xác hông
+  - quy định thời gian nghỉ trưa của công ty thế nào
+  - thông thường nhận sự sẽ được ăn trưa lúc nào vậy hả
+  - giờ ăn trưa của công ty như thế nào
+  - cho tớ hỏi thời gian nghỉ trưa của công ty f-tech vào lúc mấy giờ
+  - cty mobifone nghỉ trưa trong khoảng thời gian bao lâu
+  - công ty ftech nghỉ trưa đến mấy giờ nhỉ
+  - được nghỉ trưa mấy tiếng vậy lily
+  - mấy giờ thì được nghỉ giữa giờ vậy
+  - thời gian nghỉ trưa vào thời gian nào hả
+  - thời gian nghỉ trưa của công ty f-tech như nào vậy á hả
+  - thành viên sẽ nghỉ trưa khi nào hở
+  - thời gian nghỉ trưa của cty Cổ phần Cao su Đà Nẵng là lúc nào vậy á hả
+  - công ty f tech nghỉ trưa lúc vào thời gian nào
+  - Nghỉ trưa vào thời gian nào vậy cậu
+  - khoảng thời gian nghỉ trưa là như thế nào nhỉ Timi
+  - công ty HANOI SOFTWARE JSC mấy giờ thì dc nghỉ trưa
+  - ngân hàng vietcombank nghỉ trưa lúc 11h hay 12h30 vậy hả
+  - mấy giờ dc nghỉ ăn trưa vậy em
+  - khoảng thời gian nghỉ trưa của công ty ftech là như nào nhỉ bot
+  - chiều làm lại từ 13 h hử
+  - tôi muốn hỏi về nội quy thời gian nghỉ trưa của công ty phương đông
+  - mấy giờ thì dc ăn trưa vậy á hả
+  - sáng mấy h hết giờ
+  - tớ muốn hỏi về nội quy thời gian nghỉ trưa của công ty
+  - thời gian nghỉ trưa của ngân hàng tpbank vào lúc mấy giờ
+  - công ty f-tech nghỉ trưa lúc mấy giờ vậy á hả
+  - mình muốn hỏi về quy định thời gian ăn trưa của công ty ftech
+  - thời gian nghỉ trưa cho nhân viên vào thời gian nào vậy hả
+  - quy định thời gian ăn trưa của công ty hải âu như thế nào
+  - công ty VTV ngủ trưa lúc 11h chính xác không
+  - rule thời gian nghỉ trưa của công ty như thế nào
+  - thông thường người sẽ dc ăn trưa bao giờ vậy á hả
+  - giờ ăn trưa của công ty thế nào
+  - cho mình hỏi thời gian nghỉ trưa của công ty f tech vào lúc mấy giờ
+  - công ty f-tech nghỉ trưa trong khoảng thời gian bao lâu
+  - cty cystack nghỉ trưa đến mấy giờ nhỉ
+  - được nghỉ trưa mấy tiếng vậy mi
+  - mấy giờ thì dc nghỉ giữa giờ vậy hả
+  - thời gian nghỉ trưa như thế nào vậy
+  - thời gian nghỉ trưa của cty minh long như nào
+  - thành viên sẽ ăn trưa lúc nào hở
+  - thời gian nghỉ trưa của tập đoàn Công nghiệp Than - Khoáng sản Việt Nam là lúc
+    nào vậy hả
+  - công ty amazon nghỉ trưa lúc nào
+  - Nghỉ trưa vào thời gian nào vậy timi
+  - khoảng thời gian nghỉ trưa là như nào nhỉ mầy
+  - công ty ftech mấy giờ thì dc nghỉ trưa
+  - tập đoàn Vàng bạc Đá quý DOJI nghỉ trưa lúc 11h30 hay 12h30 hở
+  - mấy giờ được nghỉ ăn trưa vậy timi
+  - khoảng thời gian nghỉ trưa của công ty f tech là như thế nào nhỉ
+  - buổi chiều làm lại từ 13 h hả
+  - tớ muốn hỏi về quy chế thời gian nghỉ trưa của công ty ftech
+  - mấy giờ thì được ăn trưa hở
+  - tôi muốn hỏi về nội quy thời gian nghỉ trưa của công ty
+  - thời gian nghỉ trưa của tập đoàn Sunhouse vào lúc mấy giờ
+  - cty VTI nghỉ trưa lúc mấy giờ vậy á hả
+  - tôi muốn hỏi về rule thời gian ăn trưa của công ty TNHH CÔNG NGHỆ VÀ GIẢI PHÁP
+    OMEGA
+  - thời gian nghỉ trưa cho nhân viên như thế nào
+  - nội quy thời gian ăn trưa của tập đoàn Công nghiệp – Viễn thông Quân đội thế nào
+  - tập đoàn Hoàng Anh Gia Lai ăn trưa lúc 11h chuẩn ko
+  - quy định thời gian nghỉ trưa của công ty f tech như nào
+  - thông thường thành viên sẽ dc ăn trưa bao giờ vậy á hả
+  - giờ ăn trưa của công ty f-tech thế nào
+  - cho anh hỏi thời gian nghỉ trưa của công ty ftech vào lúc mấy giờ
+  intent: rule_lunch_ask_time

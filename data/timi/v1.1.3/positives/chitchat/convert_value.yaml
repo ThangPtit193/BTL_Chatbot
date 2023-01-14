@@ -1,0 +1,603 @@
+positives:
+- examples:
+  - bạn biết cách đổi đơn vị không
+  - làm thế nào để đổi đơn vị thời gian bạn hè
+  - biết cách chuyển đổi đơn vị không em
+  - chuyển đổi mét ra m/s làm sao hè
+  - 1 mi-li-mét vuông bằng bao nhiêu
+  - cách đổi đơn vị đo
+  - 10 mi-li-mét vuông bằng bao nhiêu mi-li-met vuông
+  - 1 đề ci mét khối bằng nhiêu thế anh
+  - chuyển đổi đơn vị khối lượng riêng ra khối lượng được không
+  - em biết cách đổi đơn vị không
+  - làm thế nào để chuyển đổi đơn vị dung tích riêng bot hè
+  - biết cách chuyển đổi đơn vị không mi
+  - chuyển đổi ki-lo-gam ra dm2 làm sao hè
+  - 1 ki lô mét bằng bao nhiêu
+  - cách đổi đơn vị đo thế nào chị
+  - 7 mét vuông bằng bao nhiêu đề xi mét
+  - 1 đê-ka-met vuông bằng nhiêu thế anh
+  - đổi đơn vị thể tích ra diện tích được không
+  - chị biết cách chuyển đổi đơn vị không
+  - làm thế nào để đổi đơn vị toán học em hè
+  - biết cách đổi đơn vị không mi
+  - đổi lít ra xăng-ti-mét làm sao hè
+  - 1 xăng-ti-mét bằng bao nhiêu
+  - cách đổi đơn vị đo thế nào em
+  - 2 xăng ti mét bằng bao nhiêu đề-ca-met vuông
+  - 1 dm3 bằng nhiêu thế cậu
+  - chuyển đổi đơn vị vận tốc ra trọng lượng được không
+  - anh biết cách đổi đơn vị không
+  - làm thế nào để chuyển đổi đơn vị thời gian cậu hè
+  - biết cách chuyển đổi đơn vị không anh
+  - chuyển đổi xăng-ti-mét ra đề xi mét khối làm sao hè
+  - 1 km/h bằng bao nhiêu
+  - cách đổi đơn vị đo thế nào mày
+  - 5 đề-xi-mét vuông bằng bao nhiêu lít
+  - 1 km2 bằng nhiêu thế chị
+  - chuyển đổi đơn vị khối lượng riêng ra vận tốc được không
+  - chị biết cách đổi đơn vị không
+  - làm thế nào để đổi đơn vị vật lý bot hè
+  - biết cách đổi đơn vị không chị
+  - chuyển đổi đề-xi-mét ra ngày làm sao hè
+  - 1 centimet bằng bao nhiêu
+  - cách đổi đơn vị đo thế nào anh
+  - 10 phút bằng bao nhiêu mét khối
+  - 1 cm3 bằng nhiêu thế mày
+  - đổi đơn vị thời gian ra toán học được không
+  - mày biết cách chuyển đổi đơn vị không
+  - làm sao để chuyển đổi đơn vị diện tích chị hè
+  - biết cách đổi đơn vị không cậu
+  - chuyển đổi ngày ra mét khối làm sao hè
+  - 1 ngày bằng bao nhiêu
+  - cách đổi đơn vị đo thế nào bạn
+  - 1 cen-ti-mét bằng bao nhiêu lít
+  - 1 năm ánh sáng bằng nhiêu thế bot
+  - đổi đơn vị trọng lượng ra độ dài được không
+  - anh biết cách chuyển đổi đơn vị không
+  - làm sao để chuyển đổi đơn vị thời gian bot hè
+  - biết cách đổi đơn vị không anh
+  - đổi đề-xi-mét ra xen ti mét làm sao hè
+  - 1 lít bằng bao nhiêu
+  - cách đổi đơn vị đo thế nào cậu
+  - 10 dm3 bằng bao nhiêu lít
+  - 1 đề xi mét khối bằng nhiêu thế mi
+  - đổi đơn vị vật lý ra cường độ dòng điện được không
+  - mi biết cách đổi đơn vị không
+  - làm thế nào để chuyển đổi đơn vị toán học chị hè
+  - biết cách chuyển đổi đơn vị không bạn
+  - chuyển đổi mm2 ra mét khối làm sao hè
+  - 1 km2 bằng bao nhiêu
+  - 9 kg bằng bao nhiêu lít
+  - 1 ki-lô-mét vuông bằng nhiêu thế em
+  - chuyển đổi đơn vị độ dài ra trọng lượng được không
+  - bot biết cách đổi đơn vị không
+  - làm sao để chuyển đổi đơn vị khối lượng bạn hè
+  - biết cách chuyển đổi đơn vị không bot
+  - chuyển đổi hec-to-met vuông ra đê-ka-met vuông làm sao hè
+  - 1 tháng bằng bao nhiêu
+  - 8 mét bằng bao nhiêu đề xi mét vuông
+  - 1 đề-ci-mét vuông bằng nhiêu thế bạn
+  - đổi đơn vị diện tích ra toán học được không
+  - cậu biết cách đổi đơn vị không
+  - làm thế nào để đổi đơn vị diện tích anh hè
+  - biết cách đổi đơn vị không bạn
+  - đổi dm khối ra ki lô mét làm sao hè
+  - 1 ki-lô-mét vuông bằng bao nhiêu
+  - cách đổi đơn vị đo thế nào bot
+  - 8 xăng ti mét khối bằng bao nhiêu hec tô mét vuông
+  - 1 giờ bằng nhiêu thế chị
+  - chuyển đổi đơn vị vật lý ra toán học được không
+  - em biết cách chuyển đổi đơn vị không
+  - làm thế nào để chuyển đổi đơn vị khối lượng bạn hè
+  - biết cách đổi đơn vị không mày
+  - chuyển đổi dm2 ra hecta làm sao hè
+  - 1 mét vuông bằng bao nhiêu
+  - 1 tháng bằng bao nhiêu phút
+  - 1 dm2 bằng nhiêu thế mày
+  - chuyển đổi đơn vị dung tích riêng ra thể tích được không
+  - bạn biết cách chuyển đổi đơn vị không
+  - làm sao để chuyển đổi đơn vị khối lượng mi hè
+  - biết cách chuyển đổi đơn vị không mày
+  - đổi đề ci mét ra centimet làm sao hè
+  - 1 mi li mét vuông bằng bao nhiêu
+  - 10 ki-lô-mét bằng bao nhiêu km2
+  - 1 xăng ti mét bằng nhiêu thế chị
+  - đổi đơn vị thời gian ra độ dài được không
+  - cậu biết cách chuyển đổi đơn vị không
+  - làm thế nào để đổi đơn vị cường độ dòng điện em hè
+  - biết cách đổi đơn vị không em
+  - đổi lít ra mi-li-met vuông làm sao hè
+  - 1 mét bằng bao nhiêu
+  - cách đổi đơn vị đo thế nào mi
+  - 8 tháng bằng bao nhiêu mét khối
+  - 1 đề ci mét vuông bằng nhiêu thế bạn
+  - đổi đơn vị diện tích ra cường độ dòng điện được không
+  - mi biết cách chuyển đổi đơn vị không
+  - làm thế nào để chuyển đổi đơn vị khối lượng riêng bạn hè
+  - biết cách đổi đơn vị không bot
+  - đổi mét ra đề-ci-mét vuông làm sao hè
+  - 1 dm khối bằng bao nhiêu
+  - 7 hm2 bằng bao nhiêu mi-li-mét vuông
+  - 1 mét khối bằng nhiêu thế bạn
+  - chuyển đổi đơn vị diện tích ra khối lượng được không
+  - bot biết cách chuyển đổi đơn vị không
+  - làm thế nào để chuyển đổi đơn vị vận tốc bạn hè
+  - biết cách chuyển đổi đơn vị không chị
+  - chuyển đổi mét vuông ra mét làm sao hè
+  - 1 ki lô gam bằng bao nhiêu
+  - 4 cen-ti-mét bằng bao nhiêu mét vuông
+  - 1 ki-lô-mét vuông bằng nhiêu thế chị
+  - đổi đơn vị thời gian ra vận tốc được không
+  - mày biết cách đổi đơn vị không
+  - làm thế nào để chuyển đổi đơn vị độ dài em hè
+  - biết cách chuyển đổi đơn vị không cậu
+  - đổi mét khối ra mét khối làm sao hè
+  - 1 dm2 bằng bao nhiêu
+  - 10 đề ci mét bằng bao nhiêu tháng
+  - 1 hec-to-met vuông bằng nhiêu thế chị
+  - chuyển đổi đơn vị thời gian ra khối lượng riêng được không
+  - làm thế nào để đổi đơn vị cường độ dòng điện chị hè
+  - đổi xen ti mét ra dm2 làm sao hè
+  - 1 xăng ti mét khối bằng bao nhiêu
+  - 1 mét vuông bằng bao nhiêu lít
+  - 1 lít bằng nhiêu thế bạn
+  - đổi đơn vị khối lượng ra cường độ dòng điện được không
+  - làm sao để đổi đơn vị cường độ dòng điện mày hè
+  - đổi đề-ci-mét khối ra mét làm sao hè
+  - 1 giờ bằng bao nhiêu
+  - 8 đề ci mét vuông bằng bao nhiêu đề-ci-mét
+  - 1 phút bằng nhiêu thế mày
+  - đổi đơn vị vận tốc ra cường độ dòng điện được không
+  - làm sao để chuyển đổi đơn vị khối lượng riêng mi hè
+  - chuyển đổi mét ra xăng-ti-mét làm sao hè
+  - 1 dam2 bằng bao nhiêu
+  - 3 dm khối bằng bao nhiêu ki lô mét
+  - 1 kg bằng nhiêu thế anh
+  - đổi đơn vị độ dài ra khối lượng được không
+  - làm thế nào để đổi đơn vị toán học chị hè
+  - chuyển đổi mi-li-met vuông ra mét làm sao hè
+  - 1 mi-li-met vuông bằng bao nhiêu
+  - 10 mi li mét vuông bằng bao nhiêu mm2
+  - 1 kg bằng nhiêu thế bot
+  - chuyển đổi đơn vị khối lượng riêng ra khối lượng riêng được không
+  - làm thế nào để chuyển đổi đơn vị thể tích mi hè
+  - chuyển đổi giờ ra lít làm sao hè
+  - 1 dm3 bằng bao nhiêu
+  - 10 mét vuông bằng bao nhiêu cm khối
+  - 1 đề-ca-met vuông bằng nhiêu thế chị
+  - đổi đơn vị toán học ra trọng lượng được không
+  - làm sao để chuyển đổi đơn vị vận tốc chị hè
+  - chuyển đổi mm2 ra ki-lo-gam làm sao hè
+  - 1 cm khối bằng bao nhiêu
+  - 8 xen ti mét bằng bao nhiêu ki lô mét
+  - 1 mi-li-met vuông bằng nhiêu thế chị
+  - đổi đơn vị vận tốc ra trọng lượng được không
+  - làm thế nào để đổi đơn vị vận tốc mày hè
+  - đổi km/h ra mét vuông làm sao hè
+  - 1 ki-lô-mét bằng bao nhiêu
+  - 1 mi-li-met vuông bằng bao nhiêu đề-ka-mét vuông
+  - 1 m/s bằng nhiêu thế mi
+  - đổi đơn vị độ dài ra trọng lượng được không
+  - làm sao để chuyển đổi đơn vị thời gian em hè
+  - chuyển đổi centimet khối ra lít làm sao hè
+  - 1 đề-ci-mét bằng bao nhiêu
+  - 4 dm3 bằng bao nhiêu đề ka mét vuông
+  - 1 phút bằng nhiêu thế em
+  - chuyển đổi đơn vị độ dài ra diện tích được không
+  - làm thế nào để đổi đơn vị vận tốc mi hè
+  - chuyển đổi ngày ra mét làm sao hè
+  - 1 đề-ci-mét vuông bằng bao nhiêu
+  - 10 mi-li-mét vuông bằng bao nhiêu dm3
+  - 1 đề-xi-mét vuông bằng nhiêu thế mi
+  - đổi đơn vị độ dài ra độ dài được không
+  - làm thế nào để đổi đơn vị khối lượng mi hè
+  - chuyển đổi mi-li-met vuông ra dm3 làm sao hè
+  - 1 xen ti mét bằng bao nhiêu
+  - 9 đề-ka-mét vuông bằng bao nhiêu đề ci mét khối
+  - 1 dm khối bằng nhiêu thế bạn
+  - chuyển đổi đơn vị vật lý ra thể tích được không
+  - làm thế nào để đổi đơn vị diện tích bạn hè
+  - chuyển đổi mi-li-mét vuông ra mi li mét vuông làm sao hè
+  - 1 năm ánh sáng bằng bao nhiêu
+  - 2 ki-lô-mét bằng bao nhiêu lít
+  - 1 đề-ci-mét vuông bằng nhiêu thế mày
+  - chuyển đổi đơn vị thể tích ra cường độ dòng điện được không
+  - làm thế nào để chuyển đổi đơn vị khối lượng riêng bot hè
+  - đổi mét ra mét vuông làm sao hè
+  - 1 hm2 bằng bao nhiêu
+  - 3 ki-lô-gam bằng bao nhiêu phút
+  - 1 héc-tô-mét vuông bằng nhiêu thế mày
+  - chuyển đổi đơn vị vận tốc ra vật lý được không
+  - làm sao để chuyển đổi đơn vị cường độ dòng điện anh hè
+  - chuyển đổi đê-ka-mét vuông ra ki-lô-mét làm sao hè
+  - 1 ki lô mét vuông bằng bao nhiêu
+  - 2 lít bằng bao nhiêu ngày
+  - 1 ki-lo-gam bằng nhiêu thế anh
+  - chuyển đổi đơn vị cường độ dòng điện ra thời gian được không
+  - làm thế nào để chuyển đổi đơn vị trọng lượng chị hè
+  - chuyển đổi km/h ra centimet làm sao hè
+  - 1 phút bằng bao nhiêu
+  - 7 mét khối bằng bao nhiêu dm2
+  - 1 mét vuông bằng nhiêu thế cậu
+  - chuyển đổi đơn vị cường độ dòng điện ra khối lượng được không
+  - làm sao để đổi đơn vị khối lượng cậu hè
+  - chuyển đổi ngày ra cm3 làm sao hè
+  - 1 đề-ci-mét khối bằng bao nhiêu
+  - 1 cm khối bằng bao nhiêu phút
+  - 1 ngày bằng nhiêu thế bot
+  - chuyển đổi đơn vị khối lượng ra thời gian được không
+  - làm sao để chuyển đổi đơn vị thời gian cậu hè
+  - đổi giờ ra mét làm sao hè
+  - 1 đề-xi-mét bằng bao nhiêu
+  - 9 mi li mét vuông bằng bao nhiêu xen ti mét
+  - 1 mét bằng nhiêu thế bạn
+  - chuyển đổi đơn vị vận tốc ra độ dài được không
+  - làm sao để chuyển đổi đơn vị thể tích anh hè
+  - chuyển đổi ki-lô-mét ra đề-xi-mét khối làm sao hè
+  - 1 đề-ca-mét vuông bằng bao nhiêu
+  - 7 mét khối bằng bao nhiêu héc-tô-mét vuông
+  - 1 đề-ci-mét vuông bằng nhiêu thế chị
+  - đổi đơn vị khối lượng riêng ra cường độ dòng điện được không
+  - làm thế nào để đổi đơn vị khối lượng em hè
+  - chuyển đổi xăng ti mét ra hecta làm sao hè
+  - 1 âm thanh bằng bao nhiêu
+  - 9 mét vuông bằng bao nhiêu ki-lô-gam
+  - 1 ki-lô-mét bằng nhiêu thế mày
+  - chuyển đổi đơn vị toán học ra dung tích riêng được không
+  - làm sao để đổi đơn vị thể tích bạn hè
+  - đổi phút ra âm thanh làm sao hè
+  - 1 cen-ti-mét khối bằng bao nhiêu
+  - 7 đề-ci-mét bằng bao nhiêu mét
+  - 1 mét vuông bằng nhiêu thế bot
+  - chuyển đổi đơn vị thời gian ra khối lượng được không
+  - làm sao để chuyển đổi đơn vị toán học anh hè
+  - đổi mm2 ra hecto mét vuông làm sao hè
+  - 1 mét khối bằng bao nhiêu
+  - 2 mét bằng bao nhiêu mét vuông
+  - 1 mi-li-met vuông bằng nhiêu thế cậu
+  - chuyển đổi đơn vị cường độ dòng điện ra toán học được không
+  - làm thế nào để chuyển đổi đơn vị vật lý anh hè
+  - đổi kg ra giờ làm sao hè
+  - 1 xen ti mét khối bằng bao nhiêu
+  - 5 mét vuông bằng bao nhiêu mét khối
+  - 1 héc-tô-mét vuông bằng nhiêu thế cậu
+  - đổi đơn vị trọng lượng ra diện tích được không
+  - làm sao để đổi đơn vị vật lý bot hè
+  - đổi mi li mét vuông ra hecto mét vuông làm sao hè
+  - 1 đề-xi-mét khối bằng bao nhiêu
+  - 5 phút bằng bao nhiêu ki-lo-gam
+  - 1 cm khối bằng nhiêu thế bạn
+  - chuyển đổi đơn vị khối lượng ra diện tích được không
+  - làm thế nào để đổi đơn vị thể tích cậu hè
+  - chuyển đổi lít ra ki-lô-mét vuông làm sao hè
+  - 1 đề ci mét bằng bao nhiêu
+  - 6 xăng-ti-mét bằng bao nhiêu xăng-ti-mét
+  - 1 ki-lô-mét vuông bằng nhiêu thế cậu
+  - đổi đơn vị khối lượng riêng ra độ dài được không
+  - làm sao để đổi đơn vị vận tốc mi hè
+  - chuyển đổi mét ra giờ làm sao hè
+  - 1 đề xi mét vuông bằng bao nhiêu
+  - 9 mét khối bằng bao nhiêu ki-lô-mét
+  - 1 mét vuông bằng nhiêu thế mày
+  - chuyển đổi đơn vị khối lượng ra toán học được không
+  - làm thế nào để đổi đơn vị khối lượng riêng mi hè
+  - chuyển đổi ki lô mét vuông ra m/s làm sao hè
+  - 1 đề-ca-met vuông bằng bao nhiêu
+  - 3 đê-ca-mét vuông bằng bao nhiêu xăng-ti-mét
+  - 1 cen-ti-mét bằng nhiêu thế bạn
+  - chuyển đổi đơn vị vận tốc ra thời gian được không
+  - làm sao để đổi đơn vị vật lý em hè
+  - chuyển đổi ki-lô-mét ra phút làm sao hè
+  - 1 hec-to-mét vuông bằng bao nhiêu
+  - 6 ngày bằng bao nhiêu dm3
+  - 1 lít bằng nhiêu thế chị
+  - đổi đơn vị thời gian ra khối lượng riêng được không
+  - làm thế nào để chuyển đổi đơn vị trọng lượng bot hè
+  - đổi giờ ra km/h làm sao hè
+  - 1 xăng ti mét bằng bao nhiêu
+  - 4 ngày bằng bao nhiêu tháng
+  - 1 tháng bằng nhiêu thế bot
+  - đổi đơn vị độ dài ra cường độ dòng điện được không
+  - làm sao để đổi đơn vị thể tích em hè
+  - đổi đơn vị khó không anh
+  - mày biết đổi đơn vị độ dài không
+  - cho tôi hỏi cách đổi đơn vị với bot
+  - chuyển đổi đơn vị thế nào cậu
+  - đổi tháng ra hm2 thế nào
+  - đổi giá trị đơn vị thế nào chị
+  - mày biết đổi đơn vị lít không
+  - đổi dùm 7 tháng ra âm thanh với
+  - đổi đơn vị làm sao bạn hè
+  - đổi đơn vị khó không mi
+  - em biết đổi đơn vị thời gian không
+  - cho mình hỏi cách đổi đơn vị với mi
+  - chuyển đổi đơn vị
+  - đổi ki-lô-gam sang đề ca mét vuông thế nào
+  - đổi giá trị đơn vị thế nào em
+  - chị biết đổi đơn vị phút không
+  - đổi giúp 7 tháng ra ngày với
+  - đổi đơn vị làm sao em hè
+  - đổi đơn vị khó không bạn
+  - em biết đổi đơn vị trọng lượng không
+  - cho tớ hỏi cách đổi đơn vị với bạn
+  - chuyển đổi đơn vị thế nào mày
+  - đổi phút sang giờ thế nào
+  - đổi giá trị đơn vị thế nào mày
+  - mi biết đổi đơn vị giờ không
+  - đổi giúp 3 cm khối ra hec-to-mét vuông với
+  - đổi đơn vị làm sao cậu hè
+  - đổi đơn vị khó không bot
+  - chị biết đổi đơn vị toán học không
+  - cho mình hỏi cách đổi đơn vị với mày
+  - chuyển đổi đơn vị thế nào mi
+  - đổi xen ti mét khối ra mét khối thế nào
+  - đổi giá trị đơn vị
+  - mi biết đổi đơn vị phút không
+  - đổi giúp 9 âm thanh ra cen-ti-mét với
+  - đổi đơn vị làm sao bot hè
+  - đổi đơn vị khó không chị
+  - em biết đổi đơn vị khối lượng riêng không
+  - cho mình hỏi cách đổi đơn vị với anh
+  - chuyển đổi đơn vị thế nào bạn
+  - đổi mét khối ra kg thế nào
+  - đổi giá trị đơn vị thế nào cậu
+  - cậu biết đổi đơn vị giờ không
+  - đổi giúp 8 cm khối ra lít với
+  - đổi đơn vị làm sao anh hè
+  - đổi đơn vị khó không em
+  - mày biết đổi đơn vị dung tích riêng không
+  - cho tớ hỏi cách đổi đơn vị với em
+  - chuyển đổi đơn vị thế nào bot
+  - đổi mét sang hecto met vuông thế nào em
+  - đổi giá trị đơn vị thế nào mi
+  - bạn biết đổi đơn vị mét vuông không
+  - đổi giúp 8 centimet khối ra tháng với
+  - đổi đơn vị làm sao mày hè
+  - đổi đơn vị khó không cậu
+  - em biết đổi đơn vị cường độ dòng điện không
+  - cho tớ hỏi cách đổi đơn vị với mi
+  - chuyển đổi đơn vị thế nào em
+  - đổi đề-xi-mét ra giờ thế nào bạn
+  - đổi giá trị đơn vị thế nào bạn
+  - chị biết đổi đơn vị ki-lo-gam không
+  - đổi dùm 8 ngày ra hec-to-mét vuông với
+  - đổi đơn vị làm sao mi hè
+  - đổi đơn vị khó không mày
+  - anh biết đổi đơn vị độ dài không
+  - cho tớ hỏi cách đổi đơn vị với anh
+  - chuyển đổi đơn vị thế nào chị
+  - đổi cm khối sang hm2 thế nào mi
+  - đổi giá trị đơn vị thế nào anh
+  - bạn biết đổi đơn vị mi-li-met vuông không
+  - đổi giúp tớ 1 mi li mét vuông ra ki lô mét với
+  - đổi đơn vị làm sao chị hè
+  - anh biết đổi đơn vị vận tốc không
+  - cho tôi hỏi cách đổi đơn vị với chị
+  - đổi ngày sang giờ thế nào mi
+  - anh biết đổi đơn vị dam2 không
+  - đổi giúp 5 mét vuông ra lít với
+  - bạn biết đổi đơn vị thời gian không
+  - cho tôi hỏi cách đổi đơn vị với mi
+  - chuyển đổi đơn vị thế nào anh
+  - đổi mi-li-met vuông sang mét khối thế nào
+  - đổi giá trị đơn vị thế nào bot
+  - chị biết đổi đơn vị ngày không
+  - đổi giúp tớ 7 lít ra ngày với
+  - bot biết đổi đơn vị thể tích không
+  - cho tớ hỏi cách đổi đơn vị với bot
+  - đổi ki lô mét ra ki lô mét thế nào
+  - em biết đổi đơn vị mét vuông không
+  - đổi dùm 10 phút ra cm3 với
+  - mày biết đổi đơn vị trọng lượng không
+  - cho tôi hỏi cách đổi đơn vị với bạn
+  - đổi ngày ra mi li mét vuông thế nào em
+  - mày biết đổi đơn vị đề ci mét vuông không
+  - đổi dùm 10 ngày ra đề ci mét với
+  - anh biết đổi đơn vị diện tích không
+  - cho mình hỏi cách đổi đơn vị với cậu
+  - đổi dm2 ra ki lô mét thế nào anh
+  - chị biết đổi đơn vị ki-lô-gam không
+  - đổi giúp 5 xen ti mét ra mét với
+  - bot biết đổi đơn vị khối lượng không
+  - cho tớ hỏi cách đổi đơn vị với mày
+  - đổi mét ra ki-lô-gam thế nào chị
+  - cậu biết đổi đơn vị mm2 không
+  - đổi giúp 3 ki-lô-mét ra đề-ci-mét khối với
+  - mi biết đổi đơn vị độ dài không
+  - cho tôi hỏi cách đổi đơn vị với mày
+  - đổi ki lô mét vuông ra xăng-ti-mét khối thế nào
+  - bạn biết đổi đơn vị mét không
+  - đổi dùm tôi 6 giờ ra phút với
+  - em biết đổi đơn vị dung tích riêng không
+  - cho tớ hỏi cách đổi đơn vị với cậu
+  - đổi ngày ra dm3 thế nào mi
+  - em biết đổi đơn vị xăng ti mét khối không
+  - đổi dùm 6 đê-ca-mét vuông ra cm3 với
+  - cậu biết đổi đơn vị độ dài không
+  - cho mình hỏi cách đổi đơn vị với em
+  - đổi ngày ra mm2 thế nào
+  - anh biết đổi đơn vị tháng không
+  - đổi giúp 10 ki-lo-gam ra km2 với
+  - cậu biết đổi đơn vị cường độ dòng điện không
+  - cho mình hỏi cách đổi đơn vị với bạn
+  - đổi ki lô mét vuông sang mi-li-mét vuông thế nào
+  - mày biết đổi đơn vị đề-ci-mét vuông không
+  - đổi giúp mình 6 đề ka mét vuông ra lít với
+  - anh biết đổi đơn vị khối lượng riêng không
+  - cho tớ hỏi cách đổi đơn vị với chị
+  - đổi kg ra ngày thế nào
+  - chị biết đổi đơn vị cm3 không
+  - đổi dùm 1 đê-ca-mét vuông ra hec tô mét vuông với
+  - cậu biết đổi đơn vị trọng lượng không
+  - cho tôi hỏi cách đổi đơn vị với cậu
+  - đổi giờ ra đề ci mét thế nào
+  - mày biết đổi đơn vị đề-ci-mét không
+  - đổi dùm tớ 8 mi-li-met vuông ra đề ka mét vuông với
+  - chị biết đổi đơn vị khối lượng riêng không
+  - cho tôi hỏi cách đổi đơn vị với anh
+  - đổi xăng ti mét khối sang mét thế nào
+  - mày biết đổi đơn vị dm3 không
+  - đổi dùm 2 ki lô mét ra hecto met vuông với
+  - chị biết đổi đơn vị thể tích không
+  - cho mình hỏi cách đổi đơn vị với chị
+  - đổi âm thanh ra mi-li-met vuông thế nào
+  - bot biết đổi đơn vị mm2 không
+  - đổi giúp 5 mét khối ra km2 với
+  - mi biết đổi đơn vị thời gian không
+  - cho mình hỏi cách đổi đơn vị với bot
+  - đổi cm khối ra ki lô mét vuông thế nào bạn
+  - chị biết đổi đơn vị tháng không
+  - đổi giúp 2 đề xi mét ra đề ca mét vuông với
+  - bạn biết đổi đơn vị dung tích riêng không
+  - đổi phút sang mét thế nào
+  - anh biết đổi đơn vị mét vuông không
+  - đổi dùm tôi 6 tháng ra giờ với
+  - cậu biết đổi đơn vị vận tốc không
+  - cho tôi hỏi cách đổi đơn vị với em
+  - đổi mi li mét vuông sang giờ thế nào
+  - em biết đổi đơn vị mm2 không
+  - đổi dùm 4 mi li mét vuông ra dm3 với
+  - mày biết đổi đơn vị cường độ dòng điện không
+  - đổi năm ánh sáng sang phút thế nào cậu
+  - chị biết đổi đơn vị hecto met vuông không
+  - đổi giúp 6 mm2 ra km2 với
+  - bot biết đổi đơn vị cường độ dòng điện không
+  - đổi lít sang dm2 thế nào
+  - mi biết đổi đơn vị ngày không
+  - đổi dùm tôi 4 mét vuông ra hec-to-mét vuông với
+  - mày biết đổi đơn vị thể tích không
+  - đổi mét sang mét khối thế nào
+  - em biết đổi đơn vị ki lô mét vuông không
+  - đổi dùm tớ 2 ki-lô-gam ra mét khối với
+  - cậu biết đổi đơn vị thời gian không
+  - đổi mét vuông ra xăng ti mét thế nào
+  - mày biết đổi đơn vị mi-li-met vuông không
+  - đổi giúp 3 đề ca mét vuông ra tháng với
+  - bot biết đổi đơn vị thời gian không
+  - đổi phút ra mi li mét vuông thế nào bot
+  - mi biết đổi đơn vị xen ti mét không
+  - đổi giúp 8 phút ra xăng-ti-mét khối với
+  - chị biết đổi đơn vị cường độ dòng điện không
+  - đổi giờ ra giờ thế nào cậu
+  - em biết đổi đơn vị giờ không
+  - đổi dùm 10 mét ra đề ci mét vuông với
+  - cậu biết đổi đơn vị dung tích riêng không
+  - đổi giờ sang hec-to-mét vuông thế nào
+  - bot biết đổi đơn vị tháng không
+  - đổi dùm tớ 5 mét khối ra tháng với
+  - em biết đổi đơn vị vật lý không
+  - đổi km/h ra đề xi mét thế nào
+  - em biết đổi đơn vị phút không
+  - đổi giúp mình 10 mét ra km/h với
+  - bot biết đổi đơn vị vật lý không
+  - đổi centimet ra ki-lô-mét thế nào anh
+  - em biết đổi đơn vị âm thanh không
+  - đổi dùm tôi 4 đề ci mét khối ra cm khối với
+  - cậu biết đổi đơn vị khối lượng không
+  - đổi m/s ra dm3 thế nào
+  - mi biết đổi đơn vị km2 không
+  - đổi giúp tôi 1 dam2 ra hec-to-mét vuông với
+  - em biết đổi đơn vị độ dài không
+  - đổi cen-ti-mét sang đề xi mét vuông thế nào
+  - em biết đổi đơn vị mét không
+  - đổi giúp 7 lít ra dm khối với
+  - mi biết đổi đơn vị thể tích không
+  - đổi lít sang đề ci mét thế nào bạn
+  - chị biết đổi đơn vị xen ti mét khối không
+  - đổi giúp 8 cm3 ra centimet với
+  - bạn biết đổi đơn vị diện tích không
+  - đổi dm3 ra phút thế nào
+  - anh biết đổi đơn vị mi-li-met vuông không
+  - đổi giúp 4 ngày ra đề ci mét với
+  - bạn biết đổi đơn vị trọng lượng không
+  - đổi xăng-ti-mét sang ki lô mét thế nào
+  - chị biết đổi đơn vị centimet không
+  - đổi dùm tớ 4 mét ra đề xi mét vuông với
+  - anh biết đổi đơn vị dung tích riêng không
+  - đổi dm khối sang ki-lô-mét thế nào
+  - mi biết đổi đơn vị dm khối không
+  - đổi dùm tôi 9 dm2 ra kg với
+  - chị biết đổi đơn vị khối lượng không
+  - đổi tháng sang năm ánh sáng thế nào
+  - bạn biết đổi đơn vị hecto mét vuông không
+  - đổi dùm tôi 5 ki lô mét ra đề-xi-mét vuông với
+  - bạn biết đổi đơn vị cường độ dòng điện không
+  - đổi tháng sang lít thế nào
+  - anh biết đổi đơn vị đề-ca-mét vuông không
+  - đổi giúp tớ 7 mm2 ra cen-ti-mét với
+  - em biết đổi đơn vị diện tích không
+  - đổi mét khối ra centimet khối thế nào
+  - bot biết đổi đơn vị mi-li-mét vuông không
+  - đổi dùm mình 1 mét ra mi-li-mét vuông với
+  - mày biết đổi đơn vị thời gian không
+  - đổi ki lô mét vuông ra dm2 thế nào anh
+  - cậu biết đổi đơn vị ki lô gam không
+  - đổi giúp tớ 3 cm khối ra tháng với
+  - mày biết đổi đơn vị khối lượng không
+  - đổi cm3 ra năm ánh sáng thế nào
+  - em biết đổi đơn vị đề-xi-mét không
+  - đổi dùm tớ 3 kg ra ki lô gam với
+  - bot biết đổi đơn vị độ dài không
+  - đổi ngày ra centimet thế nào mày
+  - mày biết đổi đơn vị ki-lô-mét không
+  - đổi dùm 2 tháng ra đề ka mét vuông với
+  - chị biết đổi đơn vị trọng lượng không
+  - đổi lít sang km2 thế nào
+  - mi biết đổi đơn vị ki lô mét không
+  - đổi giúp 7 tháng ra km/h với
+  - mi biết đổi đơn vị vật lý không
+  - đổi đề-ci-mét sang đề-ci-mét thế nào
+  - mi biết đổi đơn vị xăng ti mét không
+  - đổi giúp tớ 4 mi li mét vuông ra lít với
+  - mi biết đổi đơn vị khối lượng riêng không
+  - đổi đê-ka-met vuông ra đề-ka-met vuông thế nào
+  - mày biết đổi đơn vị ngày không
+  - đổi dùm 1 hec-to-mét vuông ra cen-ti-mét khối với
+  - anh biết đổi đơn vị khối lượng không
+  - đổi m/s ra phút thế nào mày
+  - em biết đổi đơn vị đê-ca-met vuông không
+  - đổi dùm tớ 7 đề ci mét ra hecto mét vuông với
+  - chị biết đổi đơn vị diện tích không
+  - đổi dm khối ra năm ánh sáng thế nào chị
+  - chị biết đổi đơn vị xen ti mét không
+  - đổi giúp tôi 7 centimet ra hecto mét vuông với
+  - mi biết đổi đơn vị trọng lượng không
+  - đổi tháng sang mét vuông thế nào mi
+  - bot biết đổi đơn vị mét không
+  - đổi giúp mình 1 m/s ra đề-ci-mét khối với
+  - chị biết đổi đơn vị vận tốc không
+  - đổi dm2 sang tháng thế nào
+  - bot biết đổi đơn vị ki-lo-gam không
+  - đổi giúp mình 2 hm2 ra mét với
+  - mi biết đổi đơn vị diện tích không
+  - đổi ngày sang km/h thế nào em
+  - bạn biết đổi đơn vị mi-li-mét vuông không
+  - đổi giúp tôi 1 đề ca mét vuông ra mi-li-mét vuông với
+  - chị biết đổi đơn vị độ dài không
+  - đổi tháng sang giờ thế nào bot
+  - mày biết đổi đơn vị hec-to-met vuông không
+  - đổi dùm tớ 6 giờ ra phút với
+  - mi biết đổi đơn vị toán học không
+  - đổi đề-ka-mét vuông sang cm3 thế nào
+  - mi biết đổi đơn vị km/h không
+  - đổi giúp tớ 6 lít ra xăng ti mét với
+  - cậu biết đổi đơn vị vật lý không
+  - đổi giờ sang mét khối thế nào
+  - mi biết đổi đơn vị mét khối không
+  - đổi giúp 1 mét ra dm2 với
+  - anh biết đổi đơn vị thể tích không
+  - đổi giờ sang dm2 thế nào
+  - cậu biết đổi đơn vị đề-ca-mét vuông không
+  - đổi giúp 6 centimet ra âm thanh với
+  - mày biết đổi đơn vị vật lý không
+  - đổi mi li mét vuông sang km2 thế nào cậu
+  - mày biết đổi đơn vị cm3 không
+  - đổi giúp tớ 6 mét khối ra giờ với
+  - cậu biết đổi đơn vị toán học không
+  - đổi hecto mét vuông sang cm3 thế nào
+  - mi biết đổi đơn vị âm thanh không
+  - đổi giúp tớ 1 km/h ra đề ka mét vuông với
+  - bot biết đổi đơn vị trọng lượng không
+  - đổi ki lô gam sang đê-ca-mét vuông thế nào anh
+  intent: convert_value

@@ -1,0 +1,665 @@
+positives:
+- examples:
+  - tớ thắc mắc ko biết fresher thì làm gì nhỉ
+  - ' sẽ làm những đầu việc gì với vị trí fulltime ai research ạ'
+  - cho tôi hỏi ctv ai engineering làm gì
+  - làm data engineers có khó hông
+  - mình xin mô tả công việc để ứng tuyển vào lĩnh vực java developer
+  - nếu apply vị trí fresher tại f-tech thì làm những công việc
+  - Bạn có thể cung cấp thêm thông tin về ds không?
+  - team cơ sở hạ tầng làm về những game gì
+  - nhiệm vụ chính của bộ phận business là gì
+  - internship tại công ty thì làm những công việc thế nào
+  - react-native dev của ftech có bổn phận làm gì
+  - ' ai engineering có công việc liên quan đến gì'
+  - phòng team game và design làm gì bot
+  - giới thiệu cho mình về jd của junior bên mầy nhé
+  - full-time ds làm những gì hở lily
+  - bộ phận TT Ai chủ yếu là làm việc gì vậy
+  - tớ muốn xin jd!
+  - làm data analysts ở có nhọc ko
+  - bổn phận của mình trong vai trò unity 2d develop là như nào
+  - mức độ công việc của svtt có khó không
+  - công việc của full time khó ko
+  - mình cần hoàn thành các loại công việc gì khi làm business analyst vậy á hả
+  - bạn ơi, mình muốn hỏi jd văn phòng hn
+  - công việc chính của pre-senior cv engineering là gì
+  - vị trí nhân sự là đi sale hả
+  - thử việc ai liên quan đến những việc gì
+  - mức độ công việc của internship như thế nào
+  - cho tớ hỏi công việc của phòng hạ tầng là gì vậy hả
+  - cho tôi hỏi jd của job data science với nha
+  - junior android là ngồi label ảnh thôi phải ko
+  - những vai trò của database engineering là gì
+  - vai trò của junior data analyst là gì
+  - nhiệm vụ của phòng hr admin là gì hả
+  - cho anh hỏi team kinh doanh làm gì vậy
+  - cho tớ hỏi mô tả công việc bên công ty Viglacera TIMI với
+  - blockchain engineer bên bạn làm những gì vậy
+  - cho tớ hỏi nhiệm vụ của bộ phận Product và R and D
+  - Cho tớ xin job description khi ứng tuyển vào vị trí bảo vệ cái
+  - ' muốn jd fresher data analysts'
+  - tôi muốn hỏi ba làm gì vậy á hả
+  - nhiệm vụ của bộ phận kinh doanh liên quan đến gì
+  - khi tts thì thường làm gì
+  - vô công ty sẽ làm gì?
+  - vai trò của tôi nếu được ứng tuyển thành công
+  - intern thì làm những công việc như nào
+  - level thử việc có nhiệm vụ thế nào
+  - công việc của tts có khó không
+  - ' xin jd junior nhân viên kinh doanh thị trường Trung QUốc'
+  - thông tin vị trí tây ninh
+  - bộ phận hr làm về những gì vậy
+  - ' muốn biết thông tin về mô tả công việc tại vị trí fresher lập trình viên android
+    của ĐN nè'
+  - thử việc game UI/UX design làm những task gì
+  - cho em xin info của job game 3d prod với ạ?
+  - phòng HR and Admin làm gì
+  - ứng tuyển vào tập đoàn Toàn đoàn VNG để làm gì thế
+  - giới thiệu về job descript tại vị trí ios dev cho tớ được không
+  - mô tả công việc ở dn
+  - fulltime 2d product có vai trò gì
+  - AI center chủ yếu là làm việc chi ạ
+  - ở công ty f-tech full time business analyst thì làm gì
+  - công việc của internship thì làm những gì
+  - tớ thắc mắc không biết junior thì làm gì nhể
+  - ' sẽ làm những đầu việc gì với vị trí thử việc ai ạ'
+  - cho tớ hỏi junior ai làm gì
+  - làm C++ dev có khó ko
+  - tôi xin job description để ứng tuyển vào lĩnh vực java developer
+  - nếu apply vị trí junior tại f-tech thì làm những nhiệm vụ
+  - Bạn có thể cung cấp thêm thông tin về product owners hông?
+  - bộ phận platforms làm về những game gì
+  - nhiệm vụ chính của phòng ban business là chi
+  - svtt tại công ty thì làm những công việc như thế nào
+  - data analyst của f-tech có bổn phận làm gì
+  - ' ai có công việc liên quan đến gì'
+  - phòng team business làm gì bot
+  - giới thiệu cho tớ về mô tả công việc của intern bên bạn nha
+  - full time nlp engineer làm những gì hả lily
+  - phòng Product và R and D chủ yếu là làm việc nào vậy
+  - tôi muốn xin mô tả công việc!
+  - làm blockchain dev ở có nhọc ko
+  - bổn phận của mình trong vai trò lập trình ios là như thế nào
+  - mức độ công việc của intern có khó không
+  - công việc của junior khó ko
+  - mình cần hoàn thành những loại công việc gì khi làm product analyst vậy
+  - bạn ơi, muốn hỏi jd văn phòng đà nẵng
+  - công việc chính của thử việc VFX Animator là gì
+  - vị trí 2d develop là đi sale hả
+  - ' ai engineer liên quan đến những việc gì'
+  - mức độ công việc của trainee thế nào
+  - cho chị hỏi nhiệm vụ của phòng ban hr là nào hả
+  - cho mình hỏi jd của job data scientists với nhe
+  - junior business analyst là ngồi label ảnh thôi phải ko
+  - những chức năng của fresher QA Tester là gì
+  - vai trò chính của fresher ios develop là gì
+  - nhiệm vụ của phòng trung tâm ai là gì vậy á hả
+  - cho tớ hỏi phòng application làm gì vậy
+  - tớ muốn hỏi job description bên công ty Timi với
+  - game 2d unity bên bạn làm những gì vậy
+  - cho mình hỏi vai trò của team CSKH
+  - Cho mình xin mô tả công việc khi ứng tuyển vào vị trí computer vision cái
+  - ' muốn jd thử việc blockchain engineer'
+  - mình muốn hỏi VFX Animators làm gì vậy á hả
+  - công việc của team game & design liên quan đến gì
+  - khi trainee thì thường làm gì
+  - vô cty Đài Truyền hình Việt Nam sẽ làm gì?
+  - svtt thì làm những công việc như nào
+  - ' thử việc có nhiệm vụ như thế nào'
+  - công việc của internship có khó không
+  - ' xin job description ctv db engineering'
+  - thông tin vị trí đn
+  - phòng it support làm gì vậy
+  - ' muốn biết thông tin về mô tả công việc tại vị trí fresher Quality Assurance
+    của ĐN nè'
+  - full time game UI/UX designer làm những nhiệm vụ gì hả
+  - cho em xin info của job back-end dev với ạ?
+  - bộ phận game & design làm về gì
+  - ứng tuyển vào công ty Đài Phát thanh - Truyền hình Hà Nội để làm gì thế
+  - kể về mô tả công việc tại vị trí pentest cho tôi được ko lily
+  - mô tả công việc ở hà nội
+  - ' nlp có nhiệm vụ gì'
+  - trung tâm ai chủ yếu là làm việc chi ạ
+  - ở cty Cổ phần Giấy Hải Âu graphic designers thì làm gì
+  - công việc của thực tập sinh thì làm những gì
+  - tớ thắc mắc ko biết pretrain thì làm gì nhể
+  - ' sẽ làm những đầu việc gì với vị trí fresher ai ạ'
+  - cho mình hỏi ai engineering làm gì
+  - làm game 3d prod có khó không
+  - tôi xin job descript để ứng tuyển vào lĩnh vực nlp researcher
+  - nếu apply vị trí fulltime tại ftech thì làm những nhiệm vụ
+  - Bạn có thể cung cấp thêm thông tin về back end dev hông?
+  - phòng hạ tầng làm về những game gì
+  - nhiệm vụ chính của phòng Quan hệ quốc tế là nào
+  - trainee tại công ty thì làm những công việc như nào
+  - VFX Animation của f tech có bổn phận làm gì
+  - thực tập sinh ai engineering có task liên quan đến gì
+  - phòng team hạ tầng làm gì bot
+  - giới thiệu cho tôi về mô tả công việc của senior bên em nhé
+  - ' ds làm những gì vậy'
+  - team Quan hệ quốc tế chủ yếu là làm việc mô vậy á hả
+  - mình muốn xin job descript!
+  - làm nlp ở công ty có nhọc không
+  - bổn phận của mình trong vai trò dotnet developer là thế nào
+  - mức độ công việc của thực tập sinh có khó không
+  - công việc của fresher khó ko
+  - tớ cần đáp ứng các loại nhiệm vụ gì khi làm unity 3d dev vậy á hả
+  - bạn ơi, muốn hỏi jd văn phòng thừa thiên huế
+  - công việc chính của senior backend dev là gì
+  - vị trí nlp engineer là đi sale hả
+  - fresher ai engineer liên quan đến những việc gì
+  - mức độ công việc của sinh viên thực tập thế nào
+  - cho chị hỏi task của phòng ban AI là nào vậy hả
+  - cho tớ hỏi job descript của job ja-va developer với nhe
+  - fresher 2d prod là ngồi label ảnh thôi phải ko
+  - những task của DA là gì
+  - nhiệm vụ chính của fresher Ruby dev là gì
+  - nhiệm vụ của team game & design là gì
+  - cho anh hỏi bộ phận AI center làm gì vậy
+  - tôi muốn hỏi job description bên cty CP Phát Triển Phần Mềm Asia mày với
+  - ba bên bạn làm những gì vậy
+  - cho mình hỏi task của bộ phận Product và R&D
+  - Cho tôi xin job description khi ứng tuyển vào vị trí computer vision engineer
+    cái
+  - ' muốn jd thử việc ai engineering'
+  - tớ muốn hỏi fresher back-end dev làm gì vậy á hả
+  - nhiệm vụ chính của team kinh doanh liên quan đến gì
+  - khi intern thì thường làm gì
+  - vô công ty hải hà sẽ làm gì?
+  - pretrain thì làm những task như nào
+  - level ctv có nhiệm vụ như thế nào
+  - công việc của intern có khó không
+  - ' xin jd thử việc business analysts'
+  - thông tin vị trí đất Việt
+  - phòng cơ sở hạ tầng làm gì vậy timi
+  - tớ muốn biết thông tin về mô tả công việc tại vị trí junior 2d developer của ĐN
+    nè
+  - ' data engineering làm những nhiệm vụ gì vậy mày'
+  - cho em xin info của job 3d unity với ạ?
+  - team nhân sự làm gì
+  - ứng tuyển vào công ty vbee để làm gì thế
+  - giới thiệu về mô tả công việc tại vị trí business analysts cho tớ được không Timi
+  - mô tả công việc ở hà giang
+  - ' dotnet developer có nhiệm vụ gì'
+  - AI center chủ yếu là làm việc mô ạ
+  - ở công ty ftech fresher ja-va dev thì làm gì
+  - công việc của intern thì làm những gì
+  - tớ thắc mắc ko biết full-time thì làm gì nhể
+  - ' sẽ làm những đầu việc gì với vị trí full time ai ạ'
+  - cho mình hỏi ai engineering làm gì vậy hả
+  - làm graphic designers có khó không
+  - mình xin jd để ứng tuyển vào lĩnh vực blockchain develop
+  - nếu apply vị trí pre-senior tại f tech thì làm những nhiệm vụ
+  - Bạn có thể cung cấp thêm thông tin về backend dev hông?
+  - phòng nhân sự làm về những game gì
+  - công việc chính của phòng game & design là gì
+  - svtt tại công ty thì làm những công việc thế nào
+  - ba của f tech có bổn phận làm gì
+  - thử việc ai research có công việc liên quan đến gì
+  - phòng phòng game và design làm gì bot
+  - giới thiệu cho tôi về job description của fresher bên mi nhé
+  - ctv ai engineer làm những gì mầy
+  - phòng ban cơ sở hạ tầng chủ yếu là làm việc chi vậy á hả
+  - tớ muốn xin job descript!
+  - làm vẽ game 3d ở công ty f tech có nhọc hông
+  - bổn phận của tôi trong vai trò nlp là gì
+  - mức độ công việc của sinh viên thực tập có khó không
+  - công việc của fulltime khó ko
+  - chị cần đáp ứng những loại task gì khi làm senior game develop hở
+  - bạn ơi, tớ muốn hỏi jd văn phòng phú quốc
+  - công việc chính của thử việc db engineering là gì
+  - vị trí database engineering là đi sale hả
+  - ' ai engineering liên quan đến những việc gì'
+  - mức độ công việc của tts như thế nào
+  - cho anh hỏi nhiệm vụ của team platforms là gì hở
+  - tôi muốn hỏi job descript của job vẽ game 2d với nhe
+  - senior VFX Animation là ngồi label ảnh thôi phải ko
+  - những công việc của fulltime graphic designer là gì
+  - chức năng của backend dev là gì
+  - chức năng của phòng platforms là gì
+  - cho anh hỏi phòng hệ thống system làm gì vậy
+  - cho tôi hỏi jd bên công ty phương đông mầy với
+  - os admin bên bạn làm những gì vậy
+  - cho tớ hỏi task của team hệ thống cơ sở hạ tầng
+  - Cho tớ xin mô tả công việc khi ứng tuyển vào vị trí game unity 3d cái
+  - tớ muốn job description cộng tác viên game 2d products
+  - tớ muốn hỏi devops làm gì vậy á hả
+  - nhiệm vụ chính của bộ phận IS liên quan đến gì
+  - khi sinh viên thực tập thì thường làm gì
+  - vô công ty Ngân hàng thương mại cổ phần Phương Đông sẽ làm gì?
+  - tts thì làm những task như nào
+  - ' full time có nhiệm vụ như nào'
+  - công việc của trainee có khó không
+  - ' xin job descript senior DE'
+  - thông tin vị trí QN
+  - phòng bảo vệ làm về gì vậy bạn
+  - tớ muốn biết thông tin về mô tả công việc tại vị trí fresher game develop của
+    ĐN nè
+  - senior game UI/UX design làm những task gì hả
+  - cho em xin info của job VFX Animators với ạ?
+  - phòng ban sản phẩm làm những gì
+  - ứng tuyển vào tập đoàn Hoa Sen để làm gì thế
+  - kể về jd tại vị trí game designs cho tôi được không
+  - mô tả công việc ở đà nẵng
+  - full time natural language processing có vai trò gì
+  - AI chủ yếu là làm việc mô ạ
+  - ở công ty FLC pentester thì làm gì
+  - công việc của svtt thì làm những gì
+  - mình thắc mắc không biết senior thì làm gì ha
+  - ' sẽ làm những đầu việc gì với vị trí fresher ai engineer ạ'
+  - cho tôi hỏi junior ai engineer làm gì
+  - làm react native developer có khó không
+  - tôi xin mô tả công việc để ứng tuyển vào lĩnh vực graphic designer
+  - nếu apply vị trí tts tại f-tech thì làm những nhiệm vụ
+  - Bạn có thể cung cấp thêm thông tin về pentest ko?
+  - phòng ban hạ tầng làm về những game gì
+  - task chính của team game và design là nào vậy
+  - trainee tại công ty thì làm những công việc như thế nào
+  - 2d prod của f tech có bổn phận làm gì
+  - ' ai có nhiệm vụ liên quan đến gì'
+  - phòng phòng ban Product và R and D làm gì bot
+  - giới thiệu cho mình về job descript của fresher bên mầy nhé
+  - ' react native developer làm những gì iris'
+  - team chăm sóc khách hàng chủ yếu là làm nào hả
+  - tớ muốn xin job description!
+  - làm system network ở có nhọc ko
+  - bổn phận của mình trong vai trò cv engineering là gì hả
+  - mức độ công việc của trainee có khó không
+  - công việc của cộng tác viên khó ko
+  - anh cần đáp ứng các loại task gì khi làm pre-senior ios dev vậy á hả
+  - bạn ơi, muốn hỏi jd văn phòng Nga
+  - công việc chính của junior game unity 2d dev là gì
+  - vị trí react-native dev là đi sale hả
+  - junior ai engineering liên quan đến những việc gì
+  - mức độ công việc của pretrain thế nào
+  - cho chị hỏi nhiệm vụ của phòng ban business là mô
+  - cho tớ hỏi job description của job Ruby dev với nhe
+  - junior graphic designers là ngồi label ảnh thôi phải ko
+  - những chức năng của ios developer là gì
+  - vai trò chính của fulltime unity 3d dev là gì
+  - chức năng chính của trung tâm ai là gì
+  - cho chị hỏi phòng ban hành chính nhân sự làm gì vậy
+  - tớ muốn hỏi jd bên công ty f-tech mầy với
+  - .net developer bên bạn làm những gì vậy
+  - cho mình hỏi vai trò của phòng CSKH
+  - Cho mình xin mô tả công việc khi ứng tuyển vào vị trí cầu thủ bóng đá cái
+  - tớ xin jd pre-senior nhân viên soạn nội dung giáo dục
+  - tớ muốn hỏi fresher xử lý ngôn ngữ tự nhiên làm gì vậy á hả
+  - công việc của phòng ban product liên quan đến gì
+  - khi svtt thì thường làm gì
+  - vô ngân hàng saigonbank sẽ làm gì?
+  - internship thì làm những công việc như nào
+  - ' pre-senior có nhiệm vụ như thế nào'
+  - công việc của thực tập sinh có khó không
+  - ' xin job description pre-senior game 2d'
+  - thông tin vị trí VN
+  - phòng game và design làm về gì vậy mầy
+  - tôi muốn biết thông tin về mô tả công việc tại vị trí thử việc cv của ĐN nè
+  - ' react-native làm những công việc gì vậy hả'
+  - cho em xin info của job dotnet developer với ạ?
+  - phòng hệ thống system làm về những gì
+  - ứng tuyển vào ngân hàng agribank để làm gì thế
+  - kể về job descript tại vị trí product analyst cho tớ đc không mày
+  - mô tả công việc ở LS
+  - ' 3d prod có vai trò gì'
+  - Trung tâm AI chủ yếu là làm việc gì ạ
+  - ở tập đoàn Tân Hiệp Phát thử việc graphic designers thì làm gì
+  - công việc của sinh viên thực tập thì làm những gì
+  - tớ thắc mắc không biết senior thì làm gì ha
+  - ' sẽ làm những đầu việc gì với vị trí fresher ai engineering ạ'
+  - cho mình hỏi ai engineer làm gì vậy
+  - làm ja-va có khó hông
+  - tớ xin jd để ứng tuyển vào lĩnh vực nv soạn nội dung giáo dục
+  - nếu apply vị trí fulltime tại ftech thì làm những task
+  - Bạn có thể cung cấp thêm thông tin về ja-va hông?
+  - phòng ban kinh doanh làm về những game gì
+  - task của bộ phận game là mô hả
+  - intern tại công ty thì làm những công việc thế nào
+  - nhân viên kinh doanh thị trường TQ của f-tech có bổn phận làm gì
+  - ' ai research có task liên quan đến gì'
+  - phòng bộ phận kinh doanh làm gì bot
+  - giới thiệu cho mình về jd của junior bên cậu nha
+  - fresher data science làm những gì cậu
+  - bộ phận kinh doanh chủ yếu là làm việc nào hở
+  - tớ muốn xin mô tả công việc!
+  - làm MC ở công ty có nhọc không
+  - bổn phận của tôi trong vai trò pentest là như nào
+  - mức độ công việc của internship có khó không
+  - công việc của pretrain khó ko
+  - mình cần hoàn thành các loại nhiệm vụ gì khi làm ja-va vậy á hả
+  - bạn ơi, muốn hỏi jd văn phòng tiền giang
+  - công việc chính của fulltime net developer là gì
+  - vị trí 3d artist là đi sale hả
+  - fresher ai research liên quan đến những việc gì
+  - mức độ công việc của thực tập sinh như nào
+  - cho chị hỏi nhiệm vụ của phòng ban hr là mô
+  - cho mình hỏi job description của job cầu thủ đá banh với nhé
+  - junior 3d product là ngồi label ảnh thôi phải ko
+  - những chức năng của game 3d prod là gì
+  - vai trò của junior DE là gì
+  - công việc chính của AI là gì
+  - cho chị hỏi team CSKH làm gì vậy
+  - cho tớ hỏi job description bên ngân hàng tpbank iris với
+  - VFX Animators bên bạn làm những gì vậy
+  - cho anh hỏi vai trò của bộ phận hành chính nhân sự
+  - Cho tôi xin job description khi ứng tuyển vào vị trí fe develop cái
+  - ' xin job descript full time front end develop'
+  - tôi muốn hỏi android developer làm gì
+  - công việc của phòng platform liên quan đến gì
+  - khi pretrain thì thường làm gì
+  - vô công ty ftech sẽ làm gì?
+  - intern thì làm những công việc như thế nào
+  - ' junior có nhiệm vụ thế nào'
+  - công việc của pretrain có khó không
+  - ' xin job descript full-time db engineering'
+  - thông tin vị trí khánh hoà
+  - phòng ban Trung tâm AI làm về gì vậy bạn
+  - tôi muốn biết thông tin về mô tả công việc tại vị trí junior fullstack devlop
+    của ĐN nè
+  - thử việc product analyst làm những task gì hả iris
+  - cho em xin info của job android dev với ạ?
+  - bộ phận platform làm về gì
+  - ứng tuyển vào tập đoàn Hòa Phát để làm gì thế
+  - giới thiệu về jd tại vị trí data science cho tớ đc hông m
+  - mô tả công việc ở hồ chí minh
+  - ' data engineers có nhiệm vụ gì'
+  - Trung tâm AI chủ yếu là làm việc nào ạ
+  - ở cty family technology company limited pretrain 2d product thì làm gì
+  - công việc của trainee thì làm những gì
+  - tớ thắc mắc hông biết senior thì làm gì nhể
+  - tớ sẽ làm những đầu việc gì với vị trí cộng tác viên ai ạ
+  - cho tôi hỏi cộng tác viên ai engineering làm gì vậy
+  - làm game 3d unity develop có khó ko
+  - mình xin jd để ứng tuyển vào lĩnh vực vận động viên
+  - nếu apply vị trí cộng tác viên tại ftech thì làm những task
+  - Bạn có thể cung cấp thêm thông tin về golang develop ko?
+  - phòng ban applications làm về những game gì
+  - task của phòng game là chi
+  - tts tại công ty thì làm những công việc thế nào
+  - java develop của f-tech có bổn phận làm gì
+  - ctv ai engineering có công việc liên quan đến gì
+  - phòng team trung tâm ai làm gì bot
+  - giới thiệu cho mình về jd của junior bên mày nha
+  - ' react-native làm những gì TIMI'
+  - phòng ban Product và R&D chủ yếu là làm mô hở
+  - tôi muốn xin jd!
+  - làm development and operations ở có nhọc ko
+  - bổn phận của tôi trong vai trò 2d prod là thế nào
+  - mức độ công việc của pretrain có khó không
+  - công việc của thử việc khó ko
+  - chị cần đáp ứng những loại nhiệm vụ gì khi làm C++ engineer hở
+  - bạn ơi, tớ muốn hỏi jd văn phòng Việt Nam
+  - công việc chính của cộng tác viên golang là gì
+  - vị trí 2d dev là đi sale hả
+  - ' ai liên quan đến những việc gì'
+  - mức độ công việc của intern như nào
+  - cho tớ hỏi nhiệm vụ của team Product và R and D là nào vậy hả
+  - cho tôi hỏi job description của job QA Tester với nhé
+  - full time QA là ngồi label ảnh thôi phải ko
+  - những chức năng của senior blockchain là gì
+  - chức năng chính của senior db engineering là gì
+  - chức năng chính của phòng Quan hệ quốc tế là gì vậy hả
+  - cho anh hỏi bộ phận kiểm toán làm gì vậy
+  - mình muốn hỏi job descript bên công ty đại cát tường m với
+  - nhân viên cskh bên bạn làm những gì vậy
+  - cho mình hỏi vai trò của team product
+  - Cho tớ xin jd khi ứng tuyển vào vị trí game 3d prod cái
+  - ' muốn mô tả công việc svtt full-stack'
+  - tớ muốn hỏi fresher soạn nội dung giáo dục làm gì hở
+  - công việc của team Trung tâm AI liên quan đến gì
+  - khi thực tập sinh thì thường làm gì
+  - vô công ty f tech sẽ làm gì?
+  - intern thì làm những task như thế nào
+  - ' ctv có nhiệm vụ thế nào'
+  - công việc của svtt có khó không
+  - ' xin job description fulltime mc dẫn chương trình'
+  - thông tin vị trí hội an
+  - team vệ sinh làm gì vậy m
+  - mình muốn biết thông tin về mô tả công việc tại vị trí junior nv cskh của ĐN nè
+  - ' game 3d product làm những nhiệm vụ gì'
+  - cho em xin info của job game 2d products với ạ?
+  - bộ phận platforms làm gì
+  - ứng tuyển vào công ty cystack để làm gì thế
+  - kể về jd tại vị trí .net cho tớ được hông
+  - mô tả công việc ở tây nam bộ
+  - junior DE có nhiệm vụ gì
+  - trung tâm ai chủ yếu là làm việc gì ạ
+  - ở công ty ftech full-time business analysts thì làm gì
+  - công việc của pretrain thì làm những gì
+  - tớ thắc mắc ko biết thử việc thì làm gì nhỉ
+  - tôi sẽ làm những đầu việc gì với vị trí full time ai research ạ
+  - cho mình hỏi senior ai research làm gì
+  - làm database engineer có khó hông
+  - tớ xin mô tả công việc để ứng tuyển vào lĩnh vực nv soạn nội dung giáo dục
+  - nếu apply vị trí junior tại f tech thì làm những công việc
+  - Bạn có thể cung cấp thêm thông tin về natural language processing hông?
+  - phòng it support làm về những game gì
+  - công việc chính của team kế toán là chi vậy
+  - sinh viên thực tập tại công ty thì làm những công việc như nào
+  - front-end dev của ftech có bổn phận làm gì
+  - fresher ai có task liên quan đến gì
+  - phòng phòng application làm gì bot
+  - giới thiệu cho tôi về job description của thử việc bên m nhe
+  - fresher hr manager làm những gì vậy á hả bạn
+  - team it support chủ yếu là làm gì vậy á hả
+  - mình muốn xin mô tả công việc!
+  - làm DA ở công ty f-tech có nhọc hông
+  - bổn phận của mình trong vai trò game 2d products là gì
+  - mức độ công việc của tts có khó không
+  - công việc của thực tập sinh khó ko
+  - chị cần đáp ứng những loại công việc gì khi làm người mẫu vậy hả
+  - bạn ơi, tớ muốn hỏi jd văn phòng sapa
+  - công việc chính của junior go lang dev là gì
+  - vị trí vẽ 3d là đi sale hả
+  - full time ai research liên quan đến những việc gì
+  - mức độ công việc của svtt như thế nào
+  - cho tớ hỏi nhiệm vụ của phòng ban application là gì vậy hả
+  - cho tớ hỏi mô tả công việc của job game 2d unity develop với nhé
+  - ctv game designs là ngồi label ảnh thôi phải ko
+  - những chức năng của junior nhân viên kinh doanh thị trường China là gì
+  - nhiệm vụ chính của VFX Animator là gì
+  - task của phòng ban hr admin là gì
+  - cho anh hỏi phòng hành chính nhân sự làm gì vậy
+  - tớ muốn hỏi job descript bên ngân hàng bidv mầy với
+  - game 2d unity develop bên bạn làm những gì vậy
+  - cho anh hỏi nhiệm vụ của team Trung tâm AI
+  - Cho tôi xin jd khi ứng tuyển vào vị trí game 3d artist cái
+  - tớ muốn job descript pre-senior php develop
+  - mình muốn hỏi fresher QA Tester làm gì hả
+  - task của phòng AI liên quan đến gì
+  - khi internship thì thường làm gì
+  - vô cty Viễn thông MobiFone sẽ làm gì?
+  - internship thì làm những task thế nào
+  - level fresher có nhiệm vụ thế nào
+  - công việc của sinh viên thực tập có khó không
+  - cho xin job description fulltime data engineering
+  - thông tin vị trí sài gòn
+  - team hành chính nhân sự làm gì vậy cậu
+  - tớ muốn biết thông tin về mô tả công việc tại vị trí fresher graphic designer
+    của ĐN nè
+  - ' ios develop làm những nhiệm vụ gì bạn'
+  - cho em xin info của job frontend develop với ạ?
+  - team game & design làm về những gì
+  - ứng tuyển vào ngân hàng vpbank để làm gì thế
+  - kể về job descript tại vị trí data scientist cho tôi được hông
+  - mô tả công việc ở huế
+  - ' game 3d artist có chức năng gì'
+  - AI chủ yếu là làm việc gì ạ
+  - ở công ty f tech go lang thì làm gì
+  - công việc của tts thì làm những gì
+  - tôi thắc mắc hông biết junior thì làm gì ha
+  - mình sẽ làm những đầu việc gì với vị trí fulltime ai research ạ
+  - cho tớ hỏi ai làm gì
+  - làm system administrator có khó ko
+  - mình xin job description để ứng tuyển vào lĩnh vực Quality Assurance
+  - nếu apply vị trí full-time tại ftech thì làm những nhiệm vụ
+  - Bạn có thể cung cấp thêm thông tin về system admin hông?
+  - phòng ban vệ sinh làm về những game gì
+  - nhiệm vụ của team business là nào hả
+  - thực tập sinh tại công ty thì làm những công việc như nào
+  - PO của f tech có bổn phận làm gì
+  - ' ai có task liên quan đến gì'
+  - phòng phòng Product và R and D làm gì bot
+  - giới thiệu cho mình về job description của junior bên bot nhé
+  - ' graphic designers làm những gì vậy á hả TIMI'
+  - phòng game và design chủ yếu là làm việc nào vậy hả
+  - tôi muốn xin job descript!
+  - làm back end ở có nhọc ko
+  - bổn phận của tôi trong vai trò nv soạn nội dung giáo dục là thế nào
+  - công việc của full-time khó ko
+  - mình cần hoàn thành những loại nhiệm vụ gì khi làm front-end developer hả
+  - bạn ơi, muốn hỏi jd văn phòng bắc trung bộ
+  - công việc chính của cộng tác viên ba là gì
+  - vị trí database engineer là đi sale hả
+  - ' ai research liên quan đến những việc gì'
+  - mức độ công việc của svtt như nào
+  - cho chị hỏi công việc của phòng ban platform là gì vậy á hả
+  - tớ muốn hỏi mô tả công việc của job pentest với nha
+  - cộng tác viên unity 2d dev là ngồi label ảnh thôi phải ko
+  - những vai trò của intern data science là gì
+  - nhiệm vụ chính của pre-senior nlp researcher là gì
+  - công việc của TT Ai là gì vậy á hả
+  - cho chị hỏi phòng kinh doanh làm gì vậy
+  - cho tôi hỏi job descript bên tập đoàn Tân Hiệp Phát TIMI với
+  - db engineer bên bạn làm những gì vậy
+  - cho tớ hỏi vai trò của team game
+  - Cho tớ xin mô tả công việc khi ứng tuyển vào vị trí cv engineer cái
+  - tớ xin mô tả công việc ctv QA Tester
+  - tớ muốn hỏi full-time lập trình viên làm gì
+  - nhiệm vụ chính của phòng hệ thống cơ sở hạ tầng liên quan đến gì
+  - vô công ty f-tech sẽ làm gì?
+  - internship thì làm những task như thế nào
+  - ' thử việc có nhiệm vụ thế nào'
+  - cho xin mô tả công việc internship QA Tester
+  - thông tin vị trí dn
+  - bộ phận product làm về những gì vậy
+  - mình muốn biết thông tin về mô tả công việc tại vị trí pre-senior business analyst
+    của ĐN nè
+  - ' back-end dev làm những công việc gì mầy'
+  - cho em xin info của job golang develop với ạ?
+  - phòng ban hr làm gì
+  - ứng tuyển vào cty Sao Mai để làm gì thế
+  - kể về job descript tại vị trí nhân viên kinh doanh thị trường Trung QUốc cho tôi
+    được hông
+  - mô tả công việc ở hcm
+  - pre-senior blockchain dev có nhiệm vụ gì
+  - AI center chủ yếu là làm việc nào ạ
+  - ở công ty f-tech nlp thì làm gì
+  - tớ thắc mắc ko biết junior thì làm gì nhỉ
+  - ' sẽ làm những đầu việc gì với vị trí junior ai research ạ'
+  - cho tớ hỏi junior ai engineer làm gì hở
+  - làm graphic designers có khó ko
+  - tớ xin jd để ứng tuyển vào lĩnh vực vẽ 2d
+  - nếu apply vị trí junior tại f-tech thì làm những task
+  - Bạn có thể cung cấp thêm thông tin về vẽ game 3d không?
+  - team hệ thống cơ sở hạ tầng làm về những game gì
+  - nhiệm vụ chính của phòng ban game & design là nào vậy hả
+  - intern tại công ty thì làm những công việc như thế nào
+  - python develop của f tech có bổn phận làm gì
+  - fresher ai có công việc liên quan đến gì
+  - phòng phòng kinh doanh làm gì bot
+  - giới thiệu cho mình về job descript của full time bên Timi nha
+  - ctv frontend dev làm những gì vậy iris
+  - bộ phận platforms chủ yếu là làm việc nào vậy á hả
+  - tôi muốn xin job description!
+  - làm data engineers ở công ty f tech có nhọc hông
+  - bổn phận của tôi trong vai trò react developer là gì vậy hả
+  - công việc của senior khó ko
+  - mình cần đáp ứng những loại task gì khi làm graphic design vậy
+  - bạn ơi, muốn hỏi jd văn phòng Việt Nam
+  - công việc chính của fulltime QA Tester là gì
+  - vị trí game 3d unity dev là đi sale hả
+  - junior ai research liên quan đến những việc gì
+  - mức độ công việc của pretrain như thế nào
+  - cho mình hỏi công việc của bộ phận hr là chi vậy hả
+  - mình muốn hỏi mô tả công việc của job game develop với nhé
+  - fresher react native develop là ngồi label ảnh thôi phải ko
+  - những task của business analyst là gì
+  - nhiệm vụ của cộng tác viên golang là gì
+  - chức năng chính của team nhân sự là gì
+  - cho anh hỏi phòng ban product làm gì vậy
+  - cho tôi hỏi mô tả công việc bên công ty ftech bot với
+  - nv soạn nội dung giáo dục bên bạn làm những gì vậy
+  - cho anh hỏi công việc của team kinh doanh
+  - Cho mình xin jd khi ứng tuyển vào vị trí game 2d unity cái
+  - ' muốn job description fresher game UI/UX designer'
+  - tớ muốn hỏi fulltime ios developer làm gì
+  - công việc của team hệ thống cơ sở hạ tầng liên quan đến gì
+  - vô công ty CỔ PHẦN PHẦN MỀM FPT SOFTWARE sẽ làm gì?
+  - internship thì làm những công việc thế nào
+  - level fresher có nhiệm vụ như thế nào
+  - cho xin job description fresher xử lý ngôn ngữ tự nhiên
+  - thông tin vị trí TV
+  - team Trung tâm AI làm về những gì vậy m
+  - ' muốn biết thông tin về mô tả công việc tại vị trí thử việc Ruby developer của
+    ĐN nè'
+  - ' system administrator làm những task gì vậy lily'
+  - cho em xin info của job 2d artist với ạ?
+  - phòng applications làm về gì
+  - ứng tuyển vào công ty đại cát tường để làm gì thế
+  - giới thiệu về mô tả công việc tại vị trí go lang develop cho tớ được không
+  - mô tả công việc ở BN
+  - ' development and operations có nhiệm vụ gì'
+  - Trung tâm AI chủ yếu là làm việc mô ạ
+  - ở công ty java developer thì làm gì
+  - mình thắc mắc không biết thử việc thì làm gì nhỉ
+  - ' sẽ làm những đầu việc gì với vị trí junior ai ạ'
+  - cho tôi hỏi junior ai làm gì
+  - làm nhân sự có khó ko
+  - tôi xin job description để ứng tuyển vào lĩnh vực cv researcher
+  - nếu apply vị trí senior tại ftech thì làm những task
+  - Bạn có thể cung cấp thêm thông tin về pentesters hông?
+  - team platforms làm về những game gì
+  - nhiệm vụ chính của team it support là chi
+  - sinh viên thực tập tại công ty thì làm những công việc như thế nào
+  - 2d prod của ftech có bổn phận làm gì
+  - senior ai có task liên quan đến gì
+  - phòng bộ phận applications làm gì bot
+  - giới thiệu cho tớ về mô tả công việc của senior bên TIMI nhé
+  - thử việc QA làm những gì hả mi
+  - team hệ thống system chủ yếu là làm việc gì hở
+  - mình muốn xin job description!
+  - làm Quality Assurance ở công ty kinh đô có nhọc không
+  - bổn phận của mình trong vai trò product analyst là gì
+  - công việc của sinh viên thực tập khó ko
+  - tớ cần hoàn thành những loại công việc gì khi làm junior nhân viên kinh doanh
+    thị trường China vậy
+  - bạn ơi, tớ muốn hỏi jd văn phòng hà nội
+  - công việc chính của thử việc java dev là gì
+  - vị trí data analyst là đi sale hả
+  - junior ai engineer liên quan đến những việc gì
+  - mức độ công việc của internship thế nào
+  - cho tớ hỏi công việc của phòng Product và R&D là mô vậy á hả
+  - cho tớ hỏi job descript của job game 2d unity với nhé
+  - thử việc game 2d artist là ngồi label ảnh thôi phải ko
+  - những công việc của fulltime os admin là gì
+  - vai trò của fresher data engineering là gì
+  - task chính của phòng ban business là gì
+  - cho mình hỏi phòng hành chính nhân sự làm gì vậy
+  - cho tớ hỏi jd bên công ty ftech bot với
+  - game unity 3d dev bên bạn làm những gì vậy
+  - cho chị hỏi vai trò của bộ phận hr
+  - Cho tôi xin mô tả công việc khi ứng tuyển vào vị trí lập trình ios cái
+  - ' muốn mô tả công việc junior backend'
+  - tôi muốn hỏi lập trình ios làm gì
+  - công việc chính của team game và design liên quan đến gì
+  - vô cty điền quân sẽ làm gì?
+  - intern thì làm những tasks như nào
+  - level thử việc có nhiệm vụ như nào
+  - cho xin mô tả công việc junior blockchain engineer
+  - thông tin vị trí hà nội
+  - team bảo vệ làm gì vậy Timi
+  - tớ muốn biết thông tin về mô tả công việc tại vị trí fresher blockchain dev của
+    ĐN nè
+  - fulltime business analysts làm những công việc gì
+  - cho em xin info của job 2d dev với ạ?
+  - phòng ban AI center làm về những gì
+  - ứng tuyển vào tập đoàn điện tử Panasonic để làm gì thế
+  - giới thiệu về jd tại vị trí android develop cho mình dc hông
+  - mô tả công việc ở sài gòn
+  - ' nlp có vai trò gì'
+  - TT Ai chủ yếu là làm việc nào ạ
+  - ở công ty f-tech thử việc front-end develop thì làm gì
+  - tôi thắc mắc không biết full-time thì làm gì ha
+  intent: rec_ask_job_description

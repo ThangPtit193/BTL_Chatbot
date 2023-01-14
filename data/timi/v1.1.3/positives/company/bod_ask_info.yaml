@@ -1,0 +1,308 @@
+positives:
+- examples:
+  - ban lãnh đạo là những ai
+  - tớ muốn hỏi danh sách của thành viên lãnh đạo
+  - gửi cho anh thông tin của trưởng phòng
+  - cho mình hỏi phó giám đốc là ai hử
+  - người điều hành công ty là ai
+  - ' giới thiệu cho tớ về trưởng phòng cty hải hà'
+  - giám đốc n/chính bao gồm có những thành viên nào
+  - giới thiệu cho tớ về các anh trong giám đốc n/chính của công ty tập đoàn trung
+    nguyên
+  - gửi anh thông tin của phó phòng công ty
+  - giới thiệu cho mình về phó giám đốc đi
+  - cho mình xin profile của CIAO công ty ftech
+  - cho tớ xin ít thông tin về CSO cty tinh vân
+  - giới thiệu cho mình về ban lãnh đạo cty điền quân dc hông
+  - cho tớ hỏi trưởng team có những anh nào
+  - công ty f tech có bao nhiêu giám đốc
+  - có những chức vụ nào trong ban lãnh đạo
+  - cậu có biết các anh trong phó phòng bao gồm những ai không
+  - ai là trưởng phòng công ty thế
+  - mình nhớ hình như anh Dũng gì đó làm giám đốc n/chính hả
+  - bạn có thể cung cấp thông tin về leader công ty VTI được ko
+  - tôi thắc mắc không biết g/doc n/chính của công ty f tech
+  - ban giám đốc của ngân hàng acb là ai
+  - gửi cho mình list các anh trong CFO
+  - trưởng team có bao nhiêu thành viên
+  - cho chị hỏi giám đốc công ty f tech là ai
+  - giới thiệu cho tôi về leader công ty Đài Truyền hình Thành phố Hồ Chí Minh đc
+    ko
+  - ban giám đốc gồm những thành viên nào
+  - giới thiệu về các vị trí trong cio công ty Đài Phát thanh - Truyền hình Hà Nội
+    đi
+  - giám đốc tiếp thị công ty là ai
+  - xin profile của giám đốc trung tâm ai
+  - biết giám đốc là ai ko
+  - cho tôi hỏi ai đang làm phó phòng
+  - trưởng team của f-tech đông ko
+  - giám đốc của công ty là ai
+  - ngân hàng agribank có giám đốc thường trực hông
+  - cho tớ xin ít thông tin về ban giám đốc
+  - bot có biết trưởng team của công ty ftech bao gồm những vị trí nào hông
+  - ai là giám đốc nhân sự của công ty f-tech
+  - công ty có người điều hành ko? nếu có thì là ai ,chức vụ gì
+  - cho anh hỏi về trưởng team công ty
+  - ai là phó phòng công ty hải tiến
+  - trưởng phòng là ai
+  - các vị trí trong pgd công ty bao gồm những ai
+  - giới thiệu về các thành viên trong giám đốc của công ty
+  - Ai điều hành công ty
+  - giám đốc info công ty mình là ai
+  - danh sách các anh trong giám đốc của công ty
+  - hãy giới thiệu về COO công ty f-tech đc ko
+  - bạn Trần Anh Tuấn là trưởng phòng của công ty à
+  - giới thiệu g/doc dịch vụ khách hàng của công ty f tech
+  - ai đang là người điều hành tập đoàn Công nghiệp Than - Khoáng sản Việt Nam
+  - trưởng phòng gồm có vị trí nào nhỉ
+  - hãy giới thiệu về leader công ty f-tech
+  - cho tôi hỏi thông tin của ai đảm nhận chức vụ phó giám đốc với
+  - không biết giám đốc gồm những ai
+  - boss của công ty là ai
+  - giới thiệu về giám đốc tiếp thị của công ty
+  - trưởng phòng của công ty là sếp Vũ Lê Huy chính xác không
+  - TIMI có biết giám đốc của cty mobiephone là ai hông hả bạn
+  - hãy giới thiệu về phó phòng công ty f tech
+  - gửi chị thông tin ban giám đốc công ty dc hông bạn
+  - hãy giới thiệu về lãnh đạo đi
+  - hãy liệt kê các anh trong COO công ty ftech
+  - xin profile của phó giám đốc TT Ai
+  - giới thiệu về giám đốc tiếp thị công ty Cổ phần Giấy Hải Âu dc ko
+  - cho anh xin profile của BOD
+  - ' giới thiệu về CSO'
+  - mày hãy giới thiệu về lãnh đạo công ty f-tech đi
+  - cho mình hỏi trưởng team dự án f-cake là ai
+  - trưởng team công ty cổ phần VCCorp gồm có ai
+  - có những ai thuộc giám đốc công ty
+  - CPO ngân hàng techcombank là ai
+  - giới thiệu cho tớ trưởng team
+  - có bao nhiêu thành viên trong lãnh đạo
+  - cho tớ xin ít thông tin về các vị trí trong g/doc stao cty FPT software
+  - cho mình hỏi về các thành viên trong CEO của cty cổ phần Kinh Đô
+  - xin profile của giám đốc tiếp thị
+  - ban giám đốc của công ty là những ai
+  - công ty hiện có bao nhiêu giám đốc
+  - cho tớ hỏi giám đốc công ty f-tech là ai
+  - những ai nằm trong giám đốc tiếp thị của công ty
+  - liệt kê các thành viên trong CIAO của công ty
+  - ' giới thiệu về các thành viên trong g/doc info của công ty'
+  - lily có biết trưởng phòng là ai ko
+  - người đứng đầu công ty là ai
+  - giới thiệu các vị trí trong trưởng phòng của cty vinAI
+  - tôi muốn hỏi thông tin về leader được không
+  - giám đốc information bao gồm những vị trí nào
+  - những ai là phó giám đốc của công ty của công ty f-tech
+  - list các thành viên trong ban giám đốc công ty f tech bao gồm những ai
+  - cho tớ hỏi giám đốc sản phẩm của công ty mình là ai
+  - cho tớ hỏi leader gồm anh nào nhỉ
+  - tớ muốn biết hiện ai đảm nhận chức vụ giám đốc của cty tinh vân
+  - leader của ftech gồm những vị nào vậy TIMI
+  - nói cho tớ biết về giám đốc đi mầy
+  - giới thiệu cho tớ phó phòng
+  - BOD công ty ftech gồm những ai
+  - hình như chị Trần Thị Mỹ Hạnh là trưởng phòng của công ty hửm
+  - bạn có biết pgd công ty f tech là ai hông
+  - xin profile của ban giám đốc
+  - cho chị hỏi ban lãnh đạo công ty bao gồm những vị trí nào
+  - giám đốc nhân sự là những ai
+  - tớ muốn biết list của phó phòng
+  - gửi chị thông tin giám đốc
+  - cho mình hỏi lãnh đạo là ai
+  - ' giới thiệu cho mình về giám đốc thường trực công ty hải tiến'
+  - ban giám đốc gồm có những ai
+  - giới thiệu cho mình về các anh trong giám đốc marketing của công ty
+  - gửi cho tớ thông tin ban giám đốc công ty
+  - giới thiệu cho tôi về trưởng phòng đi
+  - cho tớ xin profile của lãnh đạo
+  - cho chị xin ít thông tin về CSO của cty Viglacera
+  - giới thiệu cho tôi về phó phòng của công ty ftech được ko
+  - cho tớ hỏi ban lãnh đạo gồm những anh nào
+  - tập đoàn điện tử Panasonic hiện có bao nhiêu giám đốc
+  - có những chức vụ nào trong CIA
+  - em có biết các anh trong ban giám đốc bao gồm những ai không
+  - ai là phó phòng của công ty f-tech thế
+  - mình nhớ hình như anh Hảo gì đó làm g/doc info hả
+  - mày có thể cung cấp thông tin về CTO cty sapo được ko
+  - mình thắc mắc không biết phó giám đốc của công ty
+  - ban giám đốc của công ty ftech là ai
+  - gửi cho mình list các anh trong phó phòng
+  - giám đốc có bao nhiêu thành viên
+  - cho anh hỏi g/doc thường trực công ty ftech là ai
+  - giới thiệu cho tôi ban giám đốc dc không Timi
+  - ban giám đốc bao gồm những vị trí nào
+  - giới thiệu về các vị trí trong ban giám đốc của công ty f-tech đi
+  - giám đốc sản phẩm công ty là ai
+  - xin profile của giám đốc Trung tâm AI
+  - có biết trưởng phòng là ai ko
+  - tớ muốn hỏi ai đang làm phó giám đốc
+  - pgd của f tech đông ko
+  - BOD của công ty là ai
+  - ngân hàng vietinbank có phó phòng hông
+  - cho anh xin ít thông tin về phó phòng
+  - em có biết phó phòng của công ty gồm những anh nào không
+  - ai là pgd của công ty
+  - công ty có người điều hành hông? nếu có thì là ai ,chức vụ gì
+  - cho chị hỏi về phó phòng của công ty
+  - ai là phó giám đốc công ty vc corp
+  - giám đốc là ai hửm
+  - các vị trí trong phó giám đốc công ty f tech bao gồm những ai
+  - giới thiệu về các thành viên trong pgd của cty hải âu
+  - Ai điều hành ngân hàng techcombank
+  - g/doc thường trực công ty mình là ai
+  - list các thành viên trong trưởng phòng công ty
+  - ' giới thiệu ban giám đốc công ty ftech được không'
+  - c Nguyễn Hồng Hạnh là giám đốc của công ty f tech hả
+  - giới thiệu ban lãnh đạo công ty f tech
+  - ai đang là người điều hành công ty
+  - CIA gồm có anh nào nhỉ
+  - hãy giới thiệu về cio của cty tinh vân
+  - tớ muốn hỏi thông tin của thành viên chức vụ giám đốc bộ phận chăm sóc khách hàng
+    với
+  - không biết CCO gồm những ai
+  - boss của tập đoàn viễn thông quân đội Việt Nam là ai
+  - giới thiệu về ban giám đốc công ty f tech
+  - lãnh đạo của công ty là anh Trường chuẩn không
+  - Timi có biết trưởng phòng của công ty là ai không hả timi
+  - hãy giới thiệu về ban giám đốc công ty f tech
+  - gửi cho tớ thông tin trưởng team công ty ftech dc không TIMI
+  - ' giới thiệu về ban giám đốc đi'
+  - ' liệt kê các anh trong phó phòng công ty'
+  - xin profile của phó giám đốc AI center
+  - giới thiệu về CTO của tập đoàn Vingroup dc không
+  - cho mình xin profile của phó phòng
+  - hãy giới thiệu về giám đốc n/chính
+  - mày hãy giới thiệu về lãnh đạo công ty đi
+  - cho anh hỏi trưởng phòng dự án Game city là ai
+  - trưởng phòng công ty Cổ phần Công nghiệp Cao su Miền Nam bao gồm có anh nào
+  - có những ai thuộc phó giám đốc công ty f tech
+  - giám đốc c.nghệ công ty f tech là ai
+  - giới thiệu cho tôi ban lãnh đạo
+  - có bao nhiêu thành viên trong phó phòng
+  - cho chị xin ít thông tin về các anh trong ban lãnh đạo công ty f-tech
+  - cho chị hỏi về các vị trí trong g/doc công nghệ của công ty VinTech
+  - xin profile của giám đốc thông tin
+  - giám đốc tiếp thị của công ty là những ai
+  - công ty hiện có bao nhiêu trưởng phòng
+  - cho chị hỏi giám đốc công ty là ai
+  - những ai nằm trong CIA công ty
+  - liệt kê các thành viên trong giám đốc dịch vụ khách hàng của ngân hàng saigonbank
+  - hãy giới thiệu về các anh trong lãnh đạo của công ty f tech
+  - em có biết lãnh đạo là ai không
+  - người đứng đầu cty FPT software là ai
+  - giới thiệu các vị trí trong giám đốc của công ty rikkeisoft
+  - tớ muốn hỏi thông tin về phó phòng của công ty f tech được ko
+  - phó phòng gồm có những ai
+  - những ai là trưởng phòng của công ty của công ty
+  - list các vị trí trong phó phòng công ty f tech bao gồm những ai
+  - cho chị hỏi phó phòng công ty mình là ai
+  - cho tớ hỏi ceo gồm ai nhỉ
+  - tớ muốn hỏi hiện người nào đảm nhận chức vụ ban lãnh đạo của công ty vinamilk
+  - g/doc stao của ftech gồm những vị nào vậy á hả bạn
+  - nói cho mình biết về phó phòng đi m
+  - giới thiệu cho tớ leader công ty f tech
+  - CEO công ty f-tech bao gồm những ai
+  - hình như anh Huỳnh Ngọc Hải là pgd của ngân hàng acb hửm
+  - iris có biết CBO ngân hàng vpbank là ai không
+  - xin profile của CSO công ty
+  - cho mình hỏi phó giám đốc công ty bao gồm những anh nào
+  - giám đốc là những ai
+  - tớ muốn hỏi list của thành viên giám đốc nội chính
+  - gửi cho chị thông tin giám đốc
+  - cho tớ hỏi ban lãnh đạo là ai
+  - ' giới thiệu cho tớ về ban lãnh đạo công ty ftech'
+  - trưởng team gồm có những vị trí nào
+  - giới thiệu cho tớ về các thành viên trong g/doc công nghệ công ty topcv
+  - gửi anh thông tin ban giám đốc công ty Cổ Phần Phần Mềm Và Đầu Tư Công Nghệ LIVA
+  - giới thiệu cho tớ về g/doc điều hành đi
+  - cho anh xin profile của phó phòng công ty
+  - cho anh xin ít thông tin về g/doc bộ phận chăm sóc khách hàng ngân hàng saigonbank
+  - giới thiệu cho tôi về phó phòng của cty hải âu được k
+  - cho tớ hỏi CEO có những vị trí nào
+  - tập đoàn Tân Hiệp Phát hiện có bao nhiêu giám đốc
+  - có những chức vụ nào trong lãnh đạo
+  - m có biết các anh trong leader bao gồm những ai ko
+  - ai là phó phòng của cty Cổ phần Hàng không VietJet thế
+  - mình nhớ hình như anh Giang gì đó làm giám đốc marketing hả
+  - mi có thể cung cấp thông tin về giám đốc cty Sao Mai được ko
+  - tôi thắc mắc không biết g/doc c.nghệ của công ty f-tech
+  - CCO của công ty là ai
+  - gửi cho mình list các thành viên trong pgd
+  - giám đốc tiếp thị có bao nhiêu thành viên
+  - cho anh hỏi giám đốc dịch vụ khách hàng cty kinh đô là ai
+  - giới thiệu cho tôi phó giám đốc được k timi
+  - CMO gồm những thành viên nào
+  - giới thiệu về các thành viên trong giám đốc công ty ftech đi
+  - phó phòng công ty là ai
+  - xin profile của giám đốc AI
+  - có biết CIAO là ai hông
+  - cho tớ hỏi ai đang làm giám đốc tiếp thị
+  - phó phòng của f-tech đông ko
+  - g/doc dịch vụ khách hàng của công ty là ai
+  - công ty f-tech có phó phòng ko
+  - cho tớ xin ít thông tin về pgd
+  - bạn có biết trưởng team ngân hàng agribank gồm những anh nào không
+  - ai là g/doc info của cty tinh vân
+  - công ty có người điều hành không? nếu có thì là ai ,chức vụ gì
+  - cho mình hỏi về phó phòng của công ty f tech
+  - ai là phó phòng công ty f-tech
+  - phó phòng là ai hửm
+  - các vị trí trong CCO của tập đoàn Bưu chính Viễn thông Việt Nam bao gồm những
+    ai
+  - giới thiệu về các anh trong giám đốc của công ty
+  - Ai điều hành cty panasonic
+  - giám đốc của công ty mình là ai
+  - list các anh trong trưởng phòng của công ty f-tech
+  - hãy giới thiệu về trưởng team dc hông timi
+  - anh Nguyễn Việt Cường là ban giám đốc của công ty ftech à
+  - giới thiệu CEO của công ty
+  - ai đang là người điều hành công ty ftech
+  - giám đốc bao gồm có anh nào nhỉ
+  - ' giới thiệu về giám đốc của công ty ftech'
+  - tôi muốn hỏi thông tin của thành viên chức vụ g/doc marketing với
+  - hông biết giám đốc thường trực gồm những ai
+  - boss của công ty f tech là ai
+  - giới thiệu về giám đốc của công ty
+  - trưởng phòng của công ty là anh Phùng Tuấn Long đúng hông
+  - lily có biết trưởng team của công ty là ai không hả bạn
+  - ' giới thiệu về CAIO ngân hàng bidv'
+  - gửi anh thông tin của cto công ty f tech dc không iris
+  - ' giới thiệu giám đốc công ty ftech đi'
+  - ' liệt kê các thành viên trong phó phòng ngân hàng vietinbank'
+  - xin profile của pgd AI
+  - giới thiệu về ban giám đốc công ty được hông
+  - cho anh xin profile của phó phòng
+  - hãy giới thiệu về phó giám đốc
+  - mầy hãy giới thiệu về pgd công ty f-tech đi
+  - cho anh hỏi trưởng team dự án Fschool là ai
+  - CAIO công ty gồm có vị trí nào
+  - có những ai thuộc ban giám đốc công ty f-tech
+  - leader công ty ftech là ai
+  - giới thiệu cho tôi về phó phòng
+  - có bao nhiêu người trong ban giám đốc
+  - cho tớ xin ít thông tin về các anh trong giám đốc của ngân hàng vpbank
+  - cho mình hỏi về các anh trong trưởng team của công ty f tech
+  - xin profile của pgd
+  - COO của công ty là những ai
+  - công ty có bao nhiêu pgd
+  - cho mình hỏi giám đốc tập đoàn CÔNG NGHỆ CMC là ai
+  - những ai nằm trong giám đốc của tập đoàn Vàng bạc Đá quý DOJI
+  - liệt kê các thành viên trong HRD của công ty ftech
+  - hãy giới thiệu về các vị trí trong ban giám đốc của công ty trung nguyên
+  - TIMI có biết g/doc nhân sự là ai hông
+  - người đứng đầu ngân hàng dongabank là ai
+  - giới thiệu các anh trong CSO của công ty
+  - cho mình hỏi thông tin về CCO của cty CÔNG NGHỆ CMC được k
+  - giám đốc gồm những anh nào
+  - những ai là trưởng phòng của công ty của công ty ftech
+  - danh sách các thành viên trong phó phòng của công ty ftech gồm những ai
+  - cho chị hỏi CIA của công ty mình là ai
+  - cho chị hỏi giám đốc dịch vụ khách hàng gồm ai nhỉ
+  - tớ muốn biết hiện người nào đảm nhận chức vụ phó giám đốc của công ty
+  - giám đốc của f tech gồm những vị nào vậy hả cậu
+  - nói cho mình biết về g/doc n/chính đi mầy
+  - giới thiệu cho mình phó phòng
+  - pgd công ty VietJet AiR bao gồm những ai
+  - hình như anh Tiến là giám đốc của công ty f-tech hả
+  - iris có biết leader công ty là ai ko
+  - xin profile của ban lãnh đạo
+  intent: bod_ask_info

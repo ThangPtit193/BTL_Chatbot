@@ -1,0 +1,37 @@
+negatives:
+- examples:
+  - Giá thịt lợn ở thị trường đã có chút nào giảm chưa
+  - Chính sách hỗ trợ kinh tế kích cầu sau covid là gì
+  - Tình trạng xuất khẩu may mặc của Việt Nam hiện tại
+  - Nêu những thành tựu của kinh tế Việt Nam năm 2022
+  - Lãi suất trần hiện tại là bao nhiêu
+  - Tình hình xuất nhẩu khẩu ở các nước ASEAN năm 2022
+  - Năm nay có khủng hoảng kinh tế lớn nữa không
+  - Nước nào nghèo nhất thế giới
+  - GDP Việt Nam năm 2022 đạt bao nhiêu
+  - tỷ giá đồng USD có bị sụt giảm không
+  - Năm 2022 có bao nhiêu doanh nghiệp bị phá sản
+  - Nước nào đang có thu nhập GDP đầu người cao nhất
+  - Kinh tế Việt Nam có tăng trưởng trở lại sau covid
+  - Năm nay kinh tế tăng trưởng bao nhiêu phần trăm
+  - Nước nào đang là nước có nợ nhiều nhất
+  - Năm nay tết chắc giá cả sản phẩm tăng không quá cao đâu nhỉ
+  - mức lương cơ bản của người dân Việt Nam là bao nhiêu
+  - tình hình vay tín chấp của Việt Nam năm 2022
+  - Nga có bị cấm vận xuất khẩu không khi tiến đánh Ucraina
+  - tình hình đóng góp vào GDP của 10 doanh nghiệp lớn nhất Việt Nam
+  - Nước nào xuất khẩu cà phê lớn nhất thế giới
+  - Hiện tại mặt hàng nào của Việt Nam có doanh số xuất khẩu nhiều nhâst
+  - Năm 2022 có kĩ thuật nông nghiệp nào nổi bật không
+  - Xuất khẩu thủy hải sản có gặp khó khăn gì trong năm 2022
+  - Những vấn đề khó khăn đang gặp phải của kinh tế Việt Nam
+  - Hiện tại nước nào còn đang bị cấm vận kinh tế
+  - Tình hình kinh doanh ở khu phố thương mại Paris sau dịch covid
+  - Đang có rét đậm các cây mai có bán được giá tốt không
+  - tỷ lệ lạm phát thế giới hiện tại là bao nhiêu
+  - Cuối năm tình trạng thất nghiệp rầm rộ do đâu
+  - Sự đình trệ của xuất khẩu Việt Nam có cải thiện?
+  - Đức năm nay tăng trưởng thế nào
+  - chiến tranh Nga-UCraina gây ảnh hưởng đến kinh tế thế giới như thế nào
+  - ngành dịch vụ du lịch của Việt Nam sau khi mở cửa trở lại
+  intent: ood_economy_general

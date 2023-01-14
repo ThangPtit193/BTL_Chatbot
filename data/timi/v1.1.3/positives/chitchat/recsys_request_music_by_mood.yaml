@@ -1,0 +1,303 @@
+positives:
+- examples:
+  - buồn quá thì nghe nào bây giờ nhỉ?
+  - tớ đang ko tập trung, cậu mở bài hát nào phù hợp tâm trạng tui đi
+  - đang không tốt, mở bài hát nghe chơi
+  - bot bật ca nhạc đi vui quá
+  - đang chia tay người yêu bot bật ca khúc xoa dịu mình đi
+  - khó ngủ quá mi có nào nghe cho yêu đời không vậy?
+  - tớ cần tập trung, bật bài hát nghe với
+  - tôi đang thất tình có bài nào nổi trội không
+  - có ca khúc nào timi muốn gợi ý không
+  - vừa bị bồ bỏ thì nghe gì bây giờ nhỉ?
+  - tôi đang stress, timi bật ca nhạc nào phù hợp tâm trạng tui đi
+  - đang cô đơn, gợi ý ca khúc nghe chơi
+  - cậu recommend ca khúc đi vui quá
+  - đang chia tay người yêu bot bật bài xoa dịu tôi đi
+  - vừa bị bồ bỏ mày có nào nghe cho hạ hỏa không vậy hả?
+  - tớ cần tập trung, bot gợi ý ca khúc nghe
+  - tôi đang cô đơn có ca nhạc nào nổi bật không
+  - có ca nhạc nào timi muốn gợi ý
+  - buồn quá thì nghe nào bây giờ ha?
+  - tui đang tập trung, bật bài nào phù hợp tâm trạng đi
+  - đang stress, bật bài hát nghe chơi
+  - timi gợi ý bài hát đi mệt quá
+  - đang chia tay người yêu gợi ý bài hát xoa dịu tớ đi
+  - vừa bị bồ bỏ bạn có nào nghe cho năng lượng không đó?
+  - tớ cần tập trung, bật ca nhạc nghe
+  - mình đang cô đơn có bài hát nào mới mẻ không gợi ý mình với
+  - có ca nhạc nào mi muốn gợi ý
+  - bực mình quá thì nghe nào bây giờ nhỉ?
+  - tớ đang mệt, chú em recommend ca khúc nào phù hợp tâm trạng mình đi
+  - đang tập trung, gợi ý ca nhạc nghe chơi
+  - timi gợi ý bài hát đi cảm xúc ko tốt quá
+  - đang chia tay người yêu cậu gợi ý ca nhạc xoa dịu tui đi
+  - vừa bị bồ bỏ cậu có gì nghe cho yêu đời không vậy hả?
+  - tôi cần tập trung, bot bật bài hát nghe với
+  - tớ đang buồn có ca nhạc nào hot không
+  - có bài nào bot muốn gợi ý không
+  - khó ngủ quá thì nghe gì bây giờ nhỉ?
+  - tớ đang stress, gợi ý bài hát nào phù hợp tâm trạng mình đi
+  - đang mệt mỏi, gợi ý bài nghe chơi
+  - timi bật ca nhạc đi cảm xúc ko tốt quá
+  - đang chia tay người yêu bot recommend ca nhạc xoa dịu tui đi
+  - buồn quá mầy có nào nghe cho thư giản không hả?
+  - tớ cần tập trung, em bật bài nghe
+  - tui đang thất tình có ca khúc nào hot không
+  - có ca nhạc nào bot muốn gợi ý không
+  - trời ơi là trời vừa bị bồ bỏ thì nghe nào bây giờ ha?
+  - mình đang mệt mỏi, gợi ý bài nào phù hợp tâm trạng đi
+  - đang cô đơn, recommend bài nghe chơi
+  - timi gợi ý ca khúc đi cảm xúc ko tốt quá
+  - đang chia tay người yêu iem mở ca khúc xoa dịu tớ đi
+  - căng thẳng quá cậu có nào nghe cho hạ hỏa không vậy?
+  - tôi cần tập trung, timi gợi ý ca nhạc nghe với
+  - tớ đang cô đơn có ca khúc nào nổi trội không gợi ý mình với
+  - có bài nào mi muốn gợi ý
+  - khó ngủ quá thì nghe nào bây giờ ha?
+  - tớ đang buồn, gợi ý ca khúc nào phù hợp tâm trạng tôi đi
+  - đang cảm xúc ko tốt, bật bài nghe chơi
+  - timi mở bài đi mệt mỏi quá
+  - đang chia tay người yêu gợi ý bài hát xoa dịu tui đi
+  - trời ui vừa bị bồ bỏ mầy có gì nghe cho xoa dịu không vậy?
+  - tớ cần tập trung, bật bài hát nghe
+  - tui đang vui có ca nhạc nào nổi trội không
+  - có bài hát nào bot muốn gợi ý không
+  - căng thẳng quá thì nghe gì bây giờ nhỉ?
+  - tui đang ko tập trung, cậu gợi ý bài nào phù hợp tâm trạng tớ đi
+  - đang tập trung, bật ca nhạc nghe chơi
+  - bạn gợi ý bài đi yêu quá
+  - đang chia tay người yêu recommend bài xoa dịu tớ đi
+  - buồn quá mi có gì nghe cho thư giản không hả?
+  - tớ cần tập trung, recommend ca nhạc nghe
+  - tớ đang cô đơn có bài nào đặc sắc không
+  - có bài hát nào bot muốn gợi ý
+  - trời ơi vừa bị bồ bỏ thì nghe nào bây giờ nhỉ?
+  - tớ đang mệt mỏi, timi bật bài nào phù hợp tâm trạng đi
+  - đang thất tình, recommend ca khúc nghe chơi
+  - ' gợi ý ca khúc đi không tốt quá'
+  - đang chia tay người yêu recommend bài xoa dịu tôi đi
+  - căng thẳng quá mi có nào nghe cho xoa dịu không đó?
+  - tớ cần tập trung, recommend ca nhạc nghe với
+  - tôi đang cô đơn có bài hát nào hot không
+  - có bài nào em muốn gợi ý không
+  - trời ơi là trời vừa bị bồ bỏ thì nghe gì bây giờ ha?
+  - tôi đang stress, bạn bật ca khúc nào phù hợp tâm trạng tôi đi
+  - đang cảm xúc ko tốt, mở bài hát nghe chơi
+  - ' gợi ý ca nhạc đi vui quá'
+  - đang chia tay người yêu bật ca nhạc xoa dịu tôi đi
+  - buồn quá mày có nào nghe cho hạ hỏa không đó?
+  - tớ cần tập trung, timi recommend ca nhạc nghe với
+  - tớ đang thất tình có ca nhạc nào mới mẻ không gợi ý mình với
+  - có ca nhạc nào cậu muốn gợi ý không
+  - vừa bị bồ bỏ thì nghe nào bây giờ ha?
+  - tôi đang mệt mỏi, gợi ý ca khúc nào phù hợp tâm trạng đi
+  - đang vui, recommend bài nghe chơi
+  - timi recommend ca khúc đi mệt quá
+  - đang chia tay người yêu mày mở bài hát xoa dịu tớ đi
+  - buồn quá iem có nào nghe cho xoa dịu không vậy hả?
+  - tớ cần tập trung, timi recommend bài nghe
+  - tớ đang vui có bài hát nào nổi trội không gợi ý mình với
+  - có ca khúc nào bot muốn gợi ý
+  - tâm trạng quá thì nghe nào bây giờ ha?
+  - tớ đang yêu, mở ca nhạc nào phù hợp tâm trạng đi
+  - đang không tốt, recommend bài hát nghe chơi
+  - timi gợi ý ca nhạc đi vui quá
+  - đang chia tay người yêu recommend bài hát xoa dịu tui đi
+  - buồn quá mày có nào nghe cho yêu đời không vậy hả?
+  - tôi cần tập trung, bot bật bài nghe
+  - tớ đang thất tình có bài nào nổi không
+  - có ca khúc nào timi muốn gợi ý
+  - tâm trạng quá thì nghe nào bây giờ nhỉ?
+  - tớ đang cô đơn, mầy bật ca khúc nào phù hợp tâm trạng tớ đi
+  - đang tập trung, bật ca khúc nghe chơi
+  - ' mở ca nhạc đi buồn quá'
+  - đang chia tay người yêu mở bài hát xoa dịu tớ đi
+  - trời ơi là trời vừa bị bồ bỏ cậu có nào nghe cho năng lượng không vậy hả?
+  - tui cần tập trung, cậu bật ca khúc nghe
+  - tui đang buồn có ca nhạc nào đặc sắc không
+  - có bài nào bạn muốn gợi ý
+  - tâm trạng quá thì nghe gì bây giờ ha?
+  - tớ đang vui, timi mở ca nhạc nào phù hợp tâm trạng đi
+  - đang ko tập trung, bật bài hát nghe chơi
+  - ' bật bài hát đi mệt mỏi quá'
+  - đang chia tay người yêu cậu mở ca khúc xoa dịu tui đi
+  - khó ngủ quá mày có nào nghe cho hạ hỏa không vậy hả?
+  - mình cần tập trung, timi mở bài hát nghe
+  - tui đang thất tình có bài hát nào đặc sắc không
+  - có bài nào timi muốn gợi ý không
+  - khó ngủ quá thì nghe nào bây giờ nhỉ?
+  - tui đang vui, timi gợi ý ca khúc nào phù hợp tâm trạng đi
+  - đang cô đơn, gợi ý bài nghe chơi
+  - mi bật ca nhạc đi yêu quá
+  - đang chia tay người yêu bot recommend ca nhạc xoa dịu tớ đi
+  - tâm trạng quá cậu có gì nghe cho xoa dịu không hả?
+  - tớ cần tập trung, mở bài nghe với
+  - tôi đang buồn có bài hát nào đặc sắc không
+  - có ca khúc nào cậu muốn gợi ý không
+  - buồn quá thì nghe gì bây giờ ha?
+  - tớ đang buồn, cậu gợi ý ca nhạc nào phù hợp tâm trạng đi
+  - đang cô đơn, recommend ca nhạc nghe chơi
+  - ' mở ca khúc đi không tốt quá'
+  - đang chia tay người yêu cậu gợi ý ca khúc xoa dịu tớ đi
+  - bực mình quá cậu có gì nghe cho năng lượng không hả?
+  - tớ cần tập trung, bot gợi ý ca nhạc nghe với
+  - tớ đang cô đơn có bài nào nổi trội không
+  - có bài hát nào bạn muốn gợi ý không
+  - trời ui vừa bị bồ bỏ thì nghe nào bây giờ ha?
+  - tớ đang ko tập trung, bật ca nhạc nào phù hợp tâm trạng đi
+  - đang tập trung, mở bài nghe chơi
+  - timi gợi ý bài hát đi yêu quá
+  - đang chia tay người yêu bạn mở bài hát xoa dịu tui đi
+  - tâm trạng quá cậu có gì nghe cho năng lượng không vậy?
+  - mình cần tập trung, bật bài hát nghe
+  - tớ đang buồn có bài nào đặc sắc không gợi ý mình với
+  - có bài nào bot muốn gợi ý
+  - trời ui là trời vừa bị bồ bỏ thì nghe gì bây giờ ha?
+  - tớ đang yêu, timi recommend bài nào phù hợp tâm trạng đi
+  - đang chia tay, bật ca nhạc nghe chơi
+  - ' bật bài hát đi cảm xúc ko tốt quá'
+  - đang chia tay người yêu em gợi ý bài xoa dịu tôi đi
+  - căng thẳng quá mầy có gì nghe cho hạ hỏa không hả?
+  - tớ cần tập trung, timi mở bài hát nghe với
+  - tớ đang thất tình có ca khúc nào nổi bật không gợi ý mình với
+  - có ca nhạc nào bạn muốn gợi ý không
+  - trời ơi là trời vừa bị bồ bỏ thì nghe nào bây giờ nhỉ?
+  - tui đang vui, bật ca khúc nào phù hợp tâm trạng tui đi
+  - đang tập trung, recommend ca khúc nghe chơi
+  - timi bật ca khúc đi buồn quá
+  - đang chia tay người yêu mày bật ca khúc xoa dịu tớ đi
+  - bực mình quá mi có gì nghe cho tự tin không đó?
+  - mình cần tập trung, gợi ý ca khúc nghe với
+  - tớ đang buồn có ca khúc nào hot không gợi ý mình với
+  - có bài nào mầy muốn gợi ý không
+  - trời ơi vừa bị bồ bỏ thì nghe gì bây giờ nhỉ?
+  - tớ đang không tốt, bật bài hát nào phù hợp tâm trạng đi
+  - đang ko tập trung, gợi ý bài hát nghe chơi
+  - timi bật ca nhạc đi mệt quá
+  - đang chia tay người yêu bot bật bài hát xoa dịu tui đi
+  - khó ngủ quá chú em có nào nghe cho thư giản không đó?
+  - tôi cần tập trung, gợi ý ca nhạc nghe
+  - tui đang cô đơn có bài hát nào nổi bật không gợi ý mình với
+  - có ca nhạc nào cậu muốn gợi ý
+  - vừa bị bồ bỏ thì nghe gì bây giờ ha?
+  - tớ đang tập trung, chú em mở ca nhạc nào phù hợp tâm trạng tôi đi
+  - đang mệt, gợi ý bài hát nghe chơi
+  - bot mở ca khúc đi chia tay quá
+  - đang chia tay người yêu recommend bài hát xoa dịu mình đi
+  - căng thẳng quá chú em có nào nghe cho năng lượng không vậy?
+  - tớ cần tập trung, bạn mở bài hát nghe với
+  - tôi đang buồn có ca khúc nào hot không
+  - có ca nhạc nào bạn muốn gợi ý
+  - căng thẳng quá thì nghe gì bây giờ ha?
+  - tớ đang mệt mỏi, recommend bài nào phù hợp tâm trạng tôi đi
+  - đang thất tình, gợi ý bài nghe chơi
+  - ' bật ca nhạc đi vui quá'
+  - đang chia tay người yêu bot gợi ý ca khúc xoa dịu tui đi
+  - trời ui là trời vừa bị bồ bỏ cậu có gì nghe cho thư giản không vậy hả?
+  - mình cần tập trung, recommend ca khúc nghe với
+  - tui đang cô đơn có ca nhạc nào nổi trội không
+  - có ca khúc nào bot muốn gợi ý không
+  - căng thẳng quá thì nghe nào bây giờ ha?
+  - mình đang vui, gợi ý ca nhạc nào phù hợp tâm trạng tui đi
+  - đang không tốt, bật bài nghe chơi
+  - ' gợi ý ca khúc đi cảm xúc ko tốt quá'
+  - đang chia tay người yêu bật bài xoa dịu tớ đi
+  - vừa bị bồ bỏ bạn có nào nghe cho tự tin không đó?
+  - tui cần tập trung, bot gợi ý ca khúc nghe với
+  - tui đang buồn có bài nào đặc sắc không
+  - có bài hát nào timi muốn gợi ý không
+  - buồn quá thì nghe gì bây giờ nhỉ?
+  - tui đang buồn, bạn mở ca nhạc nào phù hợp tâm trạng đi
+  - đang stress, bật ca khúc nghe chơi
+  - timi recommend ca nhạc đi cảm xúc ko tốt quá
+  - đang chia tay người yêu mở ca nhạc xoa dịu tớ đi
+  - vừa bị bồ bỏ cậu có gì nghe cho xung sức không đó?
+  - tôi cần tập trung, bật bài nghe với
+  - tớ đang cô đơn có ca nhạc nào đặc sắc không
+  - có ca khúc nào mày muốn gợi ý không
+  - tâm trạng quá thì nghe gì bây giờ nhỉ?
+  - mình đang yêu, recommend bài hát nào phù hợp tâm trạng đi
+  - đang tập trung, recommend bài nghe chơi
+  - mày bật bài đi chia tay quá
+  - đang chia tay người yêu bot bật bài hát xoa dịu tôi đi
+  - tâm trạng quá mi có gì nghe cho năng lượng không vậy?
+  - tớ cần tập trung, mi recommend ca khúc nghe với
+  - mình đang vui có ca khúc nào nổi không gợi ý mình với
+  - có bài nào timi muốn gợi ý
+  - vừa bị bồ bỏ thì nghe nào bây giờ nhỉ?
+  - tớ đang thất tình, gợi ý ca nhạc nào phù hợp tâm trạng đi
+  - đang thất tình, mở bài nghe chơi
+  - ' gợi ý bài hát đi stress quá'
+  - đang chia tay người yêu bạn recommend bài xoa dịu tớ đi
+  - tâm trạng quá mi có nào nghe cho thư giản không hả?
+  - tui cần tập trung, mầy mở bài hát nghe
+  - tớ đang thất tình có ca khúc nào đặc sắc không
+  - có bài hát nào cậu muốn gợi ý không
+  - căng thẳng quá thì nghe nào bây giờ nhỉ?
+  - tớ đang stress, timi recommend bài hát nào phù hợp tâm trạng tớ đi
+  - đang cảm xúc ko tốt, bật ca nhạc nghe chơi
+  - ' recommend bài đi chia tay quá'
+  - đang chia tay người yêu bật ca khúc xoa dịu tớ đi
+  - tâm trạng quá cậu có gì nghe cho yêu đời không đó?
+  - tôi cần tập trung, mở bài nghe với
+  - tôi đang vui có ca khúc nào nổi bật không gợi ý mình với
+  - có ca nhạc nào timi muốn gợi ý không
+  - bực mình quá thì nghe gì bây giờ nhỉ?
+  - tớ đang thất tình, bạn bật ca nhạc nào phù hợp tâm trạng tớ đi
+  - đang buồn, gợi ý ca khúc nghe chơi
+  - cậu recommend bài hát đi mệt mỏi quá
+  - đang chia tay người yêu mở ca nhạc xoa dịu mình đi
+  - trời ơi vừa bị bồ bỏ mầy có gì nghe cho giảm stress không đó?
+  - tui cần tập trung, mầy recommend bài nghe
+  - mình đang cô đơn có bài nào hot không
+  - có bài nào mày muốn gợi ý không
+  - khó ngủ quá thì nghe gì bây giờ ha?
+  - tớ đang stress, mở bài hát nào phù hợp tâm trạng đi
+  - đang vui, gợi ý bài hát nghe chơi
+  - bot bật bài đi cô đơn quá
+  - đang chia tay người yêu mở bài hát xoa dịu tui đi
+  - buồn quá iem có nào nghe cho hạ hỏa không vậy?
+  - mình cần tập trung, timi gợi ý ca khúc nghe với
+  - tớ đang buồn có bài nào mới mẻ không gợi ý mình với
+  - có bài nào bạn muốn gợi ý không
+  - mình đang tập trung, timi recommend bài hát nào phù hợp tâm trạng đi
+  - đang vui, bật ca nhạc nghe chơi
+  - ' bật bài hát đi tập trung quá'
+  - đang chia tay người yêu timi recommend bài xoa dịu tớ đi
+  - trời ui vừa bị bồ bỏ mầy có gì nghe cho xoa dịu không đó?
+  - tui cần tập trung, timi mở bài hát nghe
+  - mình đang vui có ca nhạc nào mới mẻ không
+  - có bài nào chú em muốn gợi ý
+  - trời ơi vừa bị bồ bỏ thì nghe nào bây giờ ha?
+  - tớ đang cảm xúc ko tốt, mở bài nào phù hợp tâm trạng đi
+  - đang mệt, recommend ca nhạc nghe chơi
+  - mày recommend ca khúc đi vui quá
+  - đang chia tay người yêu iem recommend bài xoa dịu mình đi
+  - trời ơi là trời vừa bị bồ bỏ cậu có gì nghe cho hạ hỏa không đó?
+  - tôi cần tập trung, cậu recommend ca nhạc nghe với
+  - tớ đang cô đơn có ca khúc nào đặc sắc không gợi ý mình với
+  - có ca khúc nào bạn muốn gợi ý không
+  - trời ui là trời vừa bị bồ bỏ thì nghe nào bây giờ ha?
+  - tôi đang buồn, gợi ý ca nhạc nào phù hợp tâm trạng đi
+  - đang cảm xúc ko tốt, recommend ca khúc nghe chơi
+  - timi gợi ý ca nhạc đi ko tập trung quá
+  - đang chia tay người yêu em mở bài hát xoa dịu tớ đi
+  - buồn quá mày có gì nghe cho hạ hỏa không đó?
+  - mình cần tập trung, mở ca khúc nghe
+  - tớ đang buồn có bài hát nào mới mẻ không
+  - có ca nhạc nào mày muốn gợi ý
+  - trời ui vừa bị bồ bỏ thì nghe gì bây giờ nhỉ?
+  - tớ đang mệt mỏi, bot recommend ca khúc nào phù hợp tâm trạng tui đi
+  - đang không tốt, mở bài nghe chơi
+  - ' mở bài đi ko tập trung quá'
+  - đang chia tay người yêu timi recommend ca nhạc xoa dịu mình đi
+  - căng thẳng quá cậu có nào nghe cho thư giản không đó?
+  - tôi cần tập trung, cậu recommend bài nghe
+  - tớ đang cô đơn có bài nào nổi không
+  - có bài hát nào mày muốn gợi ý
+  - bực mình quá thì nghe nào bây giờ ha?
+  - tớ đang mệt mỏi, bot mở ca khúc nào phù hợp tâm trạng đi
+  - đang thất tình, bật ca nhạc nghe chơi
+  - ' bật ca nhạc đi cảm xúc ko tốt quá'
+  intent: recsys_request_music_by_mood

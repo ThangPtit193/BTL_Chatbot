@@ -1,0 +1,403 @@
+positives:
+- examples:
+  - tao không có chồng đây này
+  - vào công ty không hỏi có người không
+  - hỏi ai chưa có bồ trong công ty không
+  - ' bao giờ tôi mới có bạn gái'
+  - TIMI hỏi cách để tán gái không
+  - công ty có ai độc thân không
+  - Vậy đến khi nào tôi kết hôn
+  - tìm bạn gái ạ
+  - không ai yêu tớ hết
+  - thế khi nào tui mới có bạn trai
+  - tui muốn có bồ
+  - có bạn nữ nào còn đang độc thân trong công ty không
+  - có ai độc thân trong công ty không
+  - trời ơi tui muốn có bạn gái thế
+  - công ty có phát bạn trai không em
+  - làm răng để có chồng đây, chán thế
+  - mình muốn có bồ quá mày ạ
+  - vào công ty có bồ không
+  - tớ chưa có bồ
+  - vào công ty không hỏi kiếm được vợ không
+  - ế 10 5 muốn có chồng bé nhỏ
+  - công ty có ai đang còn ế không
+  - tôi thật sự cô độc, tôi muốn có bạn trai ngay bây giờ
+  - vào công ty có chồng không
+  - có nơi đâu phát bạn gái không bạn
+  - công ty có ai vẫn ế không
+  - ' bao lâu nữa thì tao mới có chồng hả'
+  - có nơi đâu phát bạn gái không bạn tớ đơn độc thế
+  - tôi muốn có bồ thế m ạ
+  - mình muốn có vợ thế
+  - tớ muốn có người yêu thế
+  - tập đoàn Bưu chính Viễn thông Việt Nam có ai chưa có gia đình không
+  - bot ơi mình muốn có chồng quá
+  - bạn ơi mình muốn có bạn trai
+  - bạn ơi tôi muốn có vợ thế ạ
+  - công ty có ai chưa có gia đình không
+  - có bạn nữ nào còn đang độc thân không
+  - mấy tuần nữa thì tớ mới có bồ
+  - tôi cần một người bạn gái
+  - tớ không có bồ đây này
+  - vào công ty không biết có người không
+  - biết ai chưa có vợ trong công ty không
+  - ' bao giờ tớ có bạn gái ạ'
+  - timi biết cách để tán gái không
+  - công ty có ai single không
+  - ' khi nào tớ kết hôn'
+  - tìm bồ ạ
+  - không ai yêu tui hết
+  - ' khi nào tao có bạn trai'
+  - mình muốn có vợ
+  - có bạn nữ nào còn đang single trong công ty không
+  - có ai single trong công ty không
+  - trời ơi tui muốn có người yêu quá
+  - công ty có phát vợ không m
+  - làm gì để có chồng đây, chán thế
+  - tớ muốn có bạn trai quá ạ
+  - vào công ty có người yêu không
+  - tớ chưa có bạn gái
+  - vào công ty không biết kiếm được chồng không
+  - ế 10 năm muốn có bồ dễ thương
+  - tớ thật đơn độc, tao muốn có bồ ngay bây giờ
+  - vào công ty có bạn trai không
+  - có nơi đâu phát người yêu không em
+  - Vậy đến bao lâu nữa thì tớ có bạn trai
+  - có nơi đâu phát vợ không tớ cô đơn thế
+  - tớ muốn có người yêu quá ạ
+  - tao muốn có chồng thế
+  - tớ muốn có bạn gái quá
+  - tập đoàn viettel có ai chưa có gia đình không
+  - m ơi mình muốn có bạn gái thế
+  - cậu ơi tớ muốn có bạn gái
+  - timi ơi tớ muốn có vợ thế ạ
+  - có bạn nữ nào còn đang single không
+  - mấy tháng nữa thì tao mới có vợ hả
+  - tui không có chồng đây này
+  - biết ai chưa có người yêu trong công ty không
+  - ' bao giờ tớ mới có người yêu'
+  - Timi biết cách để tán gái không
+  - ' khi nào tao mới kết hôn'
+  - tìm người yêu ạ
+  - không ai yêu tớ cả
+  - vậy đến khi nào tớ mới có bạn trai
+  - mình muốn có bạn trai
+  - trời ơi tớ muốn có bạn trai quá
+  - công ty có phát bạn trai không timi
+  - làm sao để có người yêu đây, chán quá
+  - tớ muốn có vợ thế Timi ạ
+  - vào ngân hàng viettinbank có bạn trai không
+  - tớ chưa có người yêu
+  - vào công ty không biết kiếm được người yêu không
+  - ế 13 năm muốn có chồng bé nhỏ
+  - tao thật cô độc, tớ muốn có bạn trai ngay bây giờ
+  - vào công ty có vợ không
+  - có nơi đâu phát bạn trai không em
+  - thế bao lâu nữa thì mình mới có bạn trai hả
+  - có nơi đâu phát bồ không tớ cô đơn thế
+  - tớ muốn có người yêu thế ạ
+  - mình muốn có bạn gái quá
+  - tao muốn có bạn trai thế
+  - công ty ftech có ai chưa có gia đình không
+  - em ơi mình muốn có bồ quá
+  - mày ơi tôi muốn có bạn gái
+  - m ơi tớ muốn có vợ quá timi ạ
+  - mấy năm nữa thì tui có bạn trai hả
+  - tớ không có bạn trai đây này
+  - hỏi ai chưa có chồng trong công ty không
+  - ' bao giờ tớ mới có bồ'
+  - Timi hỏi cách để tán gái không
+  - Vậy đến khi nào tớ kết hôn
+  - tìm chồng ạ
+  - không ai yêu mình hay sao ấy
+  - ' khi nào tui có bạn gái'
+  - tớ muốn có bồ
+  - trời ơi mình muốn có người yêu thế
+  - công ty có phát bạn gái không bot
+  - làm ntn để có người yêu đây, chán quá
+  - tôi muốn có người yêu quá Timi ạ
+  - vào cty momo có bạn gái không
+  - tớ chưa có vợ
+  - vào công ty không biết kiếm được bạn trai không
+  - đơn độc 6 năm muốn có chồng bé nhỏ
+  - tao thật cô đơn, mình muốn có bạn gái ngay bây giờ
+  - vào công ty có bạn gái không
+  - có nơi đâu phát bạn trai không mày
+  - ' bao lâu nữa thì tớ mới có người yêu ạ'
+  - có nơi đâu phát chồng không timi tôi đơn độc thế
+  - tớ muốn có chồng quá cậu ạ
+  - tui muốn có bồ thế
+  - tui muốn có bồ quá
+  - ngân hàng saigonbank có ai chưa có gia đình không
+  - em ơi tôi muốn có bạn trai quá
+  - bạn ơi tao muốn có chồng
+  - em ơi mình muốn có người yêu quá m ạ
+  - mấy ngày nữa thì tui có vợ
+  - tui không có vợ đây này
+  - hỏi ai chưa có bạn trai trong công ty không
+  - Vậy đến bao giờ tôi mới có bồ
+  - bot biết cách để tán gái không
+  - thế khi nào tao kết hôn
+  - tìm vợ ạ
+  - không ai yêu tôi cả
+  - ' khi nào tớ có bạn gái'
+  - tui muốn có người yêu
+  - trời ơi tớ muốn có bạn gái thế
+  - công ty có phát vợ không mày
+  - làm răng để có bạn gái đây, chán quá
+  - tôi muốn có người yêu thế timi ạ
+  - vào cty phương đông có bạn trai không
+  - mình chưa có vợ
+  - vào công ty không hỏi kiếm được bạn trai không
+  - ế 10 năm muốn có chồng bé nhỏ
+  - tớ thật đơn độc, tớ muốn có bạn trai ngay bây giờ
+  - có nơi đâu phát vợ không bot
+  - ' bao lâu nữa thì mình có người yêu'
+  - có nơi đâu phát bạn trai không tui cô độc quá
+  - tớ muốn có chồng thế bot ạ
+  - tui muốn có chồng quá
+  - tui muốn có bạn trai thế
+  - cty trung nguyên có ai chưa có gia đình không
+  - mày ơi tớ muốn có người yêu thế
+  - cậu ơi tui muốn có người yêu
+  - bạn ơi tao muốn có bồ thế ạ
+  - mấy tháng nữa thì tôi có bạn trai vậy
+  - mình không có chồng đây này
+  - hỏi ai chưa có người yêu trong công ty không
+  - ' bao giờ tớ có bạn trai vậy'
+  - m hỏi cách để tán gái không
+  - thế khi nào tui kết hôn
+  - tìm bạn trai ạ
+  - không ai yêu tớ hay sao ấy
+  - ' khi nào tui mới có vợ'
+  - tớ muốn có người yêu
+  - trời ơi tôi muốn có bạn trai thế
+  - công ty có phát bạn gái không cậu
+  - làm gì để có bạn gái đây, chán quá
+  - tui muốn có bạn trai thế mày ạ
+  - vào cty Cổ phần Hàng không VietJet có bồ không
+  - tớ không có vợ
+  - vào công ty không hỏi kiếm được bạn gái không
+  - ế 8 5 muốn có vợ bé bỏng
+  - tớ thật cô độc, tớ muốn có bạn gái ngay bây giờ
+  - có nơi đâu phát bồ không cậu
+  - Vậy đến bao lâu nữa thì tớ có chồng
+  - có nơi đâu phát vợ không cậu tớ cô độc thế
+  - tớ muốn có chồng quá bạn ạ
+  - tao muốn có bạn trai quá
+  - tôi muốn có bạn gái thế
+  - tập đoàn Điện lực Việt Nam có ai chưa có gia đình không
+  - timi ơi tui muốn có bạn trai quá
+  - mày ơi tớ muốn có bạn gái
+  - bot ơi tui muốn có bạn gái thế ạ
+  - mấy năm nữa thì mình có chồng
+  - tớ không có bạn gái đây này
+  - biết ai chưa có bồ trong công ty không
+  - ' bao giờ tui mới có chồng vậy'
+  - bạn hỏi cách để tán gái không
+  - thế khi nào tôi mới kết hôn
+  - không ai yêu tao cả
+  - ' khi nào tớ mới có vợ hả'
+  - tao muốn có vợ
+  - trời ơi mình muốn có vợ thế
+  - công ty có phát người yêu không timi
+  - làm răng để có chồng đây, chán quá
+  - tớ muốn có bạn gái quá Timi ạ
+  - vào công ty hải hà có người yêu không
+  - tớ không có chồng
+  - vào công ty không biết kiếm được bạn gái không
+  - đơn độc 3 năm muốn có chồng bé nhỏ
+  - tớ thật cô độc, tui muốn có vợ ngay bây giờ
+  - có nơi đâu phát người yêu không timi
+  - thế bao lâu nữa thì tui mới có chồng hả
+  - có nơi đâu phát người yêu không tôi đơn độc quá
+  - tớ muốn có vợ thế ạ
+  - mình muốn có chồng quá
+  - tớ muốn có chồng quá
+  - cty Cổ phần Công nghiệp Cao su Miền Nam có ai chưa có gia đình không
+  - bot ơi tao muốn có bồ thế
+  - em ơi tôi muốn có bồ
+  - Timi ơi tớ muốn có người yêu thế mày ạ
+  - mấy năm nữa thì mình mới có vợ
+  - tao không có bồ đây này
+  - biết ai chưa có chồng trong công ty không
+  - Vậy đến bao giờ tớ mới có bạn trai
+  - cậu biết cách để tán gái không
+  - ' khi nào tui kết hôn'
+  - không ai yêu mình hết
+  - ' khi nào mình có chồng ạ'
+  - tui muốn có vợ
+  - trời ơi tớ muốn có bồ quá
+  - công ty có phát bồ không mày
+  - làm như nào để có chồng đây, chán quá
+  - mình muốn có bồ quá ạ
+  - vào công ty ftech có bạn trai không
+  - tớ không có bồ
+  - vào công ty không biết kiếm được vợ không
+  - ế 12 năm muốn có vợ bé nhỏ
+  - tui thật cô độc, mình muốn có bạn trai ngay bây giờ
+  - có nơi đâu phát vợ không bạn
+  - thế bao lâu nữa thì tao mới có người yêu vậy
+  - có nơi đâu phát bạn trai không tớ cô độc quá
+  - tui muốn có người yêu thế ạ
+  - tớ muốn có vợ quá
+  - tao muốn có người yêu thế
+  - tập đoàn Công nghiệp – Viễn thông Quân đội có ai chưa có gia đình không
+  - timi ơi tớ muốn có bạn trai thế
+  - em ơi mình muốn có bồ
+  - Timi ơi tớ muốn có chồng quá bạn ạ
+  - mấy tháng nữa thì tôi có bồ
+  - tớ không có người yêu đây này
+  - biết ai chưa có bạn trai trong công ty không
+  - ' bao giờ tui mới có bạn gái hả'
+  - mày hỏi cách để tán gái không
+  - ' khi nào tớ mới kết hôn'
+  - không ai yêu tui hay sao ấy
+  - ' khi nào tớ có chồng'
+  - tôi muốn có chồng
+  - trời ơi tui muốn có bồ quá
+  - công ty có phát chồng không em
+  - làm như nào để có vợ đây, chán thế
+  - tớ muốn có bồ quá ạ
+  - vào cty vietis có bạn trai không
+  - mình không có người yêu
+  - vào công ty không hỏi kiếm được bồ không
+  - cô đơn 9 năm muốn có chồng bé bỏng
+  - mình thật cô đơn, tớ muốn có người yêu ngay bây giờ
+  - có nơi đâu phát người yêu không
+  - ' bao lâu nữa thì tớ mới có người yêu hả'
+  - có nơi đâu phát vợ không TIMI tôi đơn độc thế
+  - tớ muốn có vợ quá TIMI ạ
+  - tớ muốn có chồng thế
+  - tớ muốn có bồ quá
+  - ngân hàng acb có ai chưa có gia đình không
+  - m ơi tôi muốn có chồng quá
+  - TIMI ơi mình muốn có người yêu
+  - bạn ơi tớ muốn có bạn gái quá ạ
+  - mấy ngày nữa thì tớ mới có vợ
+  - mình không có vợ đây này
+  - hỏi ai chưa có bạn gái trong công ty không
+  - Vậy đến bao giờ tớ mới có chồng vậy
+  - timi hỏi cách để tán gái không
+  - ' khi nào tui mới kết hôn'
+  - không ai yêu tôi hay sao ấy
+  - ' khi nào tôi mới có bồ'
+  - mình muốn có bạn gái
+  - trời ơi tớ muốn có bạn trai thế
+  - công ty có phát chồng không mày
+  - làm ntn để có vợ đây, chán quá
+  - tôi muốn có bồ quá bạn ạ
+  - vào ngân hàng acb có bồ không
+  - tớ chưa có chồng
+  - vào công ty không hỏi kiếm được chồng không
+  - đơn độc 9 năm muốn có vợ dễ thương
+  - mình thật đơn độc, tao muốn có bạn gái ngay bây giờ
+  - có nơi đâu phát vợ không mày
+  - Vậy đến bao lâu nữa thì tớ mới có người yêu ạ
+  - có nơi đâu phát chồng không tôi đơn độc thế
+  - tớ muốn có bồ thế mày ạ
+  - tớ muốn có vợ thế
+  - mình muốn có bồ thế
+  - tập đoàn Hoa Sen có ai chưa có gia đình không
+  - m ơi tui muốn có bạn gái quá
+  - TIMI ơi tớ muốn có chồng
+  - m ơi tớ muốn có vợ quá ạ
+  - mấy ngày nữa thì tui mới có chồng
+  - tui không có bồ đây này
+  - biết ai chưa có bạn gái trong công ty không
+  - Vậy đến bao giờ tớ mới có bạn gái ạ
+  - bạn biết cách để tán gái không
+  - thế khi nào mình kết hôn
+  - không ai yêu tao hết
+  - ' khi nào tớ có vợ'
+  - tui muốn có bạn trai
+  - trời ơi tớ muốn có vợ thế
+  - công ty có phát chồng không bạn
+  - làm răng để có bạn trai đây, chán thế
+  - tớ muốn có vợ quá mày ạ
+  - vào ngân hàng viettinbank có bạn gái không
+  - mình chưa có bồ
+  - vào công ty không biết kiếm được bồ không
+  - cô đơn 5 năm muốn có bồ dễ thương
+  - tớ thật sự đơn độc, mình muốn có bồ ngay bây giờ
+  - có nơi đâu phát bồ không
+  - ' bao lâu nữa thì tớ mới có vợ'
+  - có nơi đâu phát bồ không tao đơn độc thế
+  - tao muốn có chồng thế em ạ
+  - tớ muốn có bạn trai thế
+  - mình muốn có bạn trai quá
+  - ngân hàng techcombank có ai chưa có gia đình không
+  - timi ơi mình muốn có vợ thế
+  - cậu ơi tớ muốn có bạn trai
+  - timi ơi tớ muốn có người yêu quá ạ
+  - mấy tháng nữa thì tớ mới có chồng vậy
+  - tui không có người yêu đây này
+  - hỏi ai chưa có vợ trong công ty không
+  - ' bao giờ tôi mới có chồng ạ'
+  - cậu hỏi cách để tán gái không
+  - Vậy đến khi nào mình kết hôn
+  - không ai yêu mình cả
+  - thế khi nào tui mới có người yêu
+  - mình muốn có bồ
+  - trời ơi tui muốn có bạn trai quá
+  - công ty có phát bồ không em
+  - làm gì để có bạn trai đây, chán thế
+  - mình muốn có bạn trai thế TIMI ạ
+  - vào công ty ftech có bồ không
+  - tao chưa có bồ
+  - vào công ty không hỏi kiếm được người yêu không
+  - cô độc 3 5 muốn có vợ bé nhỏ
+  - tao thật sự đơn độc, tớ muốn có người yêu ngay bây giờ
+  - có nơi đâu phát vợ không
+  - ' bao lâu nữa thì tôi có bạn trai vậy'
+  - có nơi đâu phát người yêu không tớ cô độc thế
+  - tui muốn có vợ quá ạ
+  - tớ muốn có người yêu quá
+  - tôi muốn có người yêu thế
+  - ngân hàng dongabank có ai chưa có gia đình không
+  - cậu ơi tao muốn có bồ thế
+  - bạn ơi tao muốn có bạn trai
+  - TIMI ơi tao muốn có bồ quá bạn ạ
+  - mấy tháng nữa thì mình mới có chồng hả
+  - tớ không có chồng đây này
+  - ' bao giờ tôi mới có vợ hả'
+  - em biết cách để tán gái không
+  - Vậy đến khi nào tớ mới kết hôn
+  - không ai yêu tao hay sao ấy
+  - ' khi nào tớ mới có chồng vậy'
+  - tớ muốn có vợ
+  - trời ơi tôi muốn có bạn trai quá
+  - công ty có phát vợ không cậu
+  - làm sao để có người yêu đây, chán thế
+  - tớ muốn có chồng quá ạ
+  - vào tập đoàn Hoa Sen có bạn gái không
+  - tôi không có bồ
+  - ế 3 5 muốn có chồng bé bỏng
+  - tao thật đơn độc, tớ muốn có bạn trai ngay bây giờ
+  - có nơi đâu phát vợ không em
+  - ' bao lâu nữa thì tao mới có bồ'
+  - có nơi đâu phát người yêu không cậu mình cô đơn thế
+  - tớ muốn có bồ thế ạ
+  - mình muốn có bồ quá
+  - tôi muốn có bồ quá
+  - cty hải hà có ai chưa có gia đình không
+  - m ơi tớ muốn có bồ quá
+  - bạn ơi tôi muốn có bồ
+  - mày ơi tôi muốn có bồ thế m ạ
+  - mấy năm nữa thì mình có người yêu
+  - tui không có bạn gái đây này
+  - thế bao giờ tao có chồng hả
+  - mày biết cách để tán gái không
+  - ' khi nào mình mới kết hôn'
+  - ' khi nào tao có chồng'
+  - tao muốn có bạn gái
+  - trời ơi tớ muốn có chồng quá
+  - công ty có phát bạn gái không TIMI
+  - làm gì để có chồng đây, chán quá
+  - mình muốn có vợ thế ạ
+  - vào cty kinh đô có bạn trai không
+  - mình chưa có bạn gái
+  - đơn độc 10 5 muốn có bạn trai bé bỏng
+  - tớ thật sự cô độc, tôi muốn có vợ ngay bây giờ
+  intent: chitchat_user_want_lover

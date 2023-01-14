@@ -1,0 +1,17 @@
+positives:
+  - intent: ood_greet
+    examples:
+      - ood hi
+      - ood hello
+      - ood hi there
+      - ood good morning
+      - ood good afternoon
+      - ood good evening
+  - intent: ood_bye
+    examples:
+      - ood bye
+      - ood goodbye
+      - ood see you
+      - ood see you later
+      - ood bye bye
+      - ood goodbye for now
