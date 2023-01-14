@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 from time import perf_counter
 from typing import TYPE_CHECKING, Optional, List, Union, Tuple, Text, Dict
+from comet.components.embeddings.embedding_models import BertEmbedder
 
 import pandas as pd
 from pandas import DataFrame
@@ -136,14 +137,17 @@ class KRManager(SaturnAbstract):
             evaluation_results[name] = []
             evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
             try:
-                self.embedder.load_model(cache_path=None, pretrained_name_or_abspath=pretrained_name_or_abspath)
+                embedder = BertEmbedder(
+                    pretrained_name_or_abspath=pretrained_name_or_abspath, device=self.device
+                )
+                # self.embedder.load_model(cache_path=None, pretrained_name_or_abspath=pretrained_name_or_abspath)
             except Exception as e:
                 _logger.error(f"Failed to load model {pretrained_name_or_abspath} due to {e}")
                 continue
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
-            similarity_data = self.embedder.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
+            similarity_data = embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
             toc = perf_counter()
             retriever_time = toc - tic
 
