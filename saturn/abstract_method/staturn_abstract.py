@@ -20,9 +20,7 @@ class SaturnAbstract:
         else:
             self.config_parser = config
         self.device = self.config_parser.general_config().get('device', None)
-        self.initialize(**kwargs)
 
-    def initialize(self, **kwargs):
         for key, val in kwargs.items():
             if hasattr(self, key):
                 setattr(self, key, val)
@@ -34,7 +32,6 @@ class SaturnAbstract:
             self.device = "cpu" if not torch.cuda.is_available() else self.device
         if self.device is None:
             self.device = "cpu" if not torch.cuda.is_available() else "cuda"
-
 
     def get_model_dir(self):
         return os.path.join(

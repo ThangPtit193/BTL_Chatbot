@@ -2,16 +2,23 @@ GENERAL:
   device: cuda
   project: dummy
   version: v1.0.0
+  is_warning_action: True
   output_data: assets
   output_model: models
   output_report: reports
 
+  # Skipped signal
+  skipped_gen_data: False
+  skipped_training: True
+  skipped_eval: True
+
 DATA_GENERATION:
-  data_dir: data/dummy
+  data_dir: data/raw/dummy
   search_mode: bm25_embedder
   embedding_batch_size: 100
   neg_sim_batch_size: 10
   max_triple_per_file: 50
+  max_sentence_repeated: 2
   EMBEDDER:
     cache_path: ./embedder_caches
     pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0

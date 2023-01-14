@@ -6,6 +6,11 @@ GENERAL:
   output_model: models
   output_report: reports
 
+  # Skipped signal
+  skipped_gen_data: True
+  skipped_training: True
+  skipped_eval: False
+
 DATA_GENERATION:
   data_dir: data/dummy
   search_mode: bm25_embedder

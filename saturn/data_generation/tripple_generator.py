@@ -16,6 +16,7 @@ _logger = logger.get_logger(__name__)
 
 class TripleGenerator(SaturnAbstract):
     max_triple_per_file = 100000
+    max_sentence_repeated = 50
 
     def __init__(self, config: Union[Text, ConfigParser]):
         super(TripleGenerator, self).__init__(config)
@@ -75,7 +76,10 @@ class TripleGenerator(SaturnAbstract):
         check_point = 0
         for document in tqdm(documents):
             negatives_data = [{k: val} for k, val in document.negatives_ids.items()]
-            for idx, positive_id in enumerate(document.positive_ids):
+            positive_ids = sorted(document.positive_ids)
+            for idx, positive_id in enumerate(positive_ids):
+                if idx >= self.max_sentence_repeated:
+                    break
                 anchor = document.text
                 positive = self.document_store.documents[positive_id].text
 
@@ -89,6 +93,7 @@ class TripleGenerator(SaturnAbstract):
                     self.save(triples, f"triples_{check_point}.json", mode="triple")
                     counter = 0
                     triples = []
+
 
         check_point += len(triples)
         self.save(triples, f"triples_{check_point}.json", mode='triple')
@@ -137,9 +142,8 @@ class TripleGenerator(SaturnAbstract):
             os.makedirs(output_dir)
 
         file_path = os.path.join(output_dir, path)
-        # file_util.dump_obj_as_json_to_file(file_path, rendered_data)
         file_util.write_text_file(json.dumps(rendered_data, indent=2, ensure_ascii=False), file_path)
-        _logger.info(f"Saved data to {output_dir}")
+        _logger.info(f"Saved '{file_path}' to '{output_dir}'")
 
     @staticmethod
     def _rendered(sentence_pairs: List[Tuple[str, str, str]], mode="triple"):
