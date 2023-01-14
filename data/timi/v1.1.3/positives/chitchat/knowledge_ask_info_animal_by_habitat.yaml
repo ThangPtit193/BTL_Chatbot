@@ -1,0 +1,73 @@
+positives:
+- examples:
+  - nguồn gốc con bướm là như t/nào nhỉ
+  - nguồn gốc con gà trống ra sao
+  - ' chim hồng hạc sống ở đâu nhỉ'
+  - nguồn gốc con trâu rừng châu phi là ra sao
+  - nguồn gốc con cóc ra sao
+  - ' bọ chét sống ở đâu'
+  - nguồn gốc con bò sữa là chi
+  - nguồn gốc con cá đuối ra sao
+  - con lạc đà 1 bướu sống ở đâu nhỉ
+  - nguồn gốc con cá mòi là gì dạ
+  - nguồn gốc con đà điểu ra sao
+  - con hải cẩu sống ở đâu nhỉ
+  - nguồn gốc con bò rừng là như t/nào
+  - nguồn gốc con trâu ra sao
+  - ' muỗi sống ở đâu'
+  - nguồn gốc con hươu cao cổ là chi
+  - nguồn gốc con cá hồi ra sao
+  - ' lạc đà sống ở đâu'
+  - nguồn gốc con trâu là ra sao vậy
+  - nguồn gốc con hải cẩu ra sao
+  - con bồ câu sống ở đâu nhỉ
+  - nguồn gốc con lạc đà alpaca là chi dạ
+  - nguồn gốc con rùa ra sao
+  - con rồng sống ở đâu nhỉ
+  - nguồn gốc con lừa là gì
+  - nguồn gốc con sư tử biển ra sao
+  - con chim ưng sống ở đâu nhỉ
+  - nguồn gốc con cốc là như t/nào ạ
+  - nguồn gốc con thỏ nhà ra sao
+  - con gà mái sống ở đâu nhỉ
+  - nguồn gốc con cá mập trắng lớn là chi nha
+  - nguồn gốc con chim đại bàng ra sao
+  - con cu gáy sống ở đâu
+  - nguồn gốc con cá voi xanh là giề
+  - nguồn gốc con bạch tuộc ra sao
+  - con bò sữa sống ở đâu nhỉ
+  - nguồn gốc con linh dương đầu bò là gì vậy
+  - nguồn gốc con cú mèo ra sao
+  - con dê sống ở đâu nhỉ
+  - nguồn gốc con rồng komodo là chi dạ
+  - nguồn gốc con rắn hổ mang ra sao
+  - ' chim yến sống ở đâu nhỉ'
+  - nguồn gốc con cá đuối là gì nhỉ
+  - nguồn gốc con cá tuyết ra sao
+  - ' khủng long sống ở đâu'
+  - nguồn gốc con gà mái là giề ạ
+  - nguồn gốc con vẹt đuôi dài đỏ ra sao
+  - con gấu ngựa sống ở đâu nhỉ
+  - nguồn gốc con bò rừng là như t/nào vậy
+  - nguồn gốc con gà tây ra sao
+  - ' lạc đà alpaca sống ở đâu'
+  - nguồn gốc con gà tây là giề nhỉ
+  - nguồn gốc con lửng mật ra sao
+  - ' chó sói sống ở đâu'
+  - nguồn gốc con lửng mật là gì
+  - nguồn gốc con sóc chuột ra sao
+  - ' cá sấu sông nin sống ở đâu'
+  - nguồn gốc con trâu là giề nhỉ
+  - nguồn gốc con chó ra sao
+  - con lửng mật sống ở đâu nhỉ
+  - nguồn gốc con chim ruồi là giề
+  - nguồn gốc con cào cào ra sao
+  - con voi sống ở đâu nhỉ
+  - nguồn gốc con cá trích là như thế nào nhỉ
+  - nguồn gốc con báo ra sao
+  - ' vượn sống ở đâu'
+  - nguồn gốc con la là gì ạ
+  - nguồn gốc con tắc kè hoa ra sao
+  - con cá ngựa sống ở đâu
+  - nguồn gốc con lửng mật là như thế nào dạ
+  intent: knowledge_ask_info_animal_by_habitat

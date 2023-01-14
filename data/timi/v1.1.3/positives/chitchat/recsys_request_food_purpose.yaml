@@ -1,0 +1,303 @@
+positives:
+- examples:
+  - tui đang trong kỳ kiêng tinh bột thì ăn gì được ha
+  - tớ đang trong kỳ kiêng dầu mỡ thì ăn gì được nhỉ
+  - tớ đang ăn kiêng, cậu có idea nào cho buổi tối nay của tôi không
+  - tui đang muốn tăng cơ giảm mỡ, ăn nào thì phù hợp với tiêu chí này nhỉ
+  - tui kiêng tinh bột thì nên ăn gì
+  - hôm nay ram thang mot, mình muốn chỉ ăn rau củ quả
+  - tui đang ăn kiêng, em có idea nào cho buổi tối nay của tôi không
+  - tôi đang trong kỳ kiêng dầu mỡ thì ăn nào được nhỉ
+  - tôi đang trong kỳ giảm cân thì ăn gì được ha
+  - tớ đang ăn kiêng, chú em có idea nào cho buổi tối nay của tôi không
+  - tớ đang ăn kiêng, mầy có idea nào cho buổi tối nay của tôi không
+  - hôm nay 15 âm lịch, tớ muốn chỉ ăn rau củ quả
+  - tớ giảm cân thì nên ăn nào
+  - tui chế độ diet thì nên ăn gì
+  - tớ đang ăn kiêng, timi có idea nào cho buổi tối nay của mình không
+  - tui đang trong kỳ chế độ diet thì ăn gì được nhỉ
+  - tui đang trong kỳ giảm cân thì ăn nào được nhỉ
+  - mình đang ăn kiêng, timi có idea nào cho buổi tối nay của tôi không
+  - tớ đang trong kỳ chế độ diet thì ăn gì được ha
+  - tôi đang ăn kiêng, timi có idea nào cho buổi tối nay của mình không
+  - tui đang trong kỳ tăng cơ thì ăn nào được nhỉ
+  - tớ đang ăn kiêng, em có idea nào cho buổi tối nay của tôi không
+  - tớ đang ăn kiêng, iem có idea nào cho buổi tối nay của tôi không
+  - tớ đang trong kỳ kiêng thịt thì ăn nào được nhỉ
+  - tôi đang ăn kiêng, mày có idea nào cho buổi tối nay của tui không
+  - hôm nay rằm tháng 1, tui muốn ăn chay
+  - tui đang ăn kiêng, bot có idea nào cho buổi tối nay của tôi không
+  - tui kiêng tinh bột thì nên ăn nào
+  - mình đang ăn kiêng, mi có idea nào cho buổi tối nay của tôi không
+  - mình đang muốn tăng cơ giảm mỡ, ăn nào thì phù hợp với tiêu chí này nhỉ
+  - tôi đang trong kỳ kiêng tinh bột thì ăn gì được ha
+  - tớ đang trong kỳ ăn kiêng thì ăn gì được ha
+  - tui đang ăn kiêng, mày có idea nào cho buổi tối nay của mình không
+  - tôi đang trong kỳ chế độ diet thì ăn nào được nhỉ
+  - chỉ ăn rau củ quả thì ăn gì bây giờ
+  - tớ chế độ diet thì nên ăn gì
+  - tớ đang trong kỳ kiêng dầu mỡ thì ăn nào được nhỉ
+  - tui đang ăn kiêng, cậu có idea nào cho buổi tối nay của tui không
+  - hôm nay rằm tháng giêng, tôi muốn ăn chay
+  - tôi đang ăn kiêng, timi có idea nào cho buổi tối nay của tớ không
+  - tôi đang ăn kiêng, iem có idea nào cho buổi tối nay của tớ không
+  - tớ đang trong kỳ kiêng tinh bột thì ăn nào được nhỉ
+  - hôm nay ram thang 1, tui muốn ăn chay
+  - hôm nay rằm, tôi muốn chỉ ăn rau củ quả
+  - mình đang trong kỳ kiêng dầu mỡ thì ăn nào được nhỉ
+  - tớ đang trong kỳ giảm cân thì ăn gì được nhỉ
+  - mình đang ăn kiêng, bạn có idea nào cho buổi tối nay của tui không
+  - ăn chay thì ăn nào bây giờ
+  - hôm nay rằm tháng giêng, mình muốn ăn chay
+  - mình đang ăn kiêng, cậu có idea nào cho buổi tối nay của tui không
+  - hôm nay ram thang mot thì ăn gì
+  - tui đang ăn kiêng, bạn có idea nào cho buổi tối nay của mình không
+  - tôi tăng cơ thì nên ăn gì
+  - mình đang ăn kiêng, em có idea nào cho buổi tối nay của tui không
+  - tui đang ăn kiêng, mi có idea nào cho buổi tối nay của mình không
+  - tôi kiêng thịt thì nên ăn gì
+  - tui chế độ diet thì nên ăn nào
+  - mình đang ăn kiêng, mầy có idea nào cho buổi tối nay của tớ không
+  - tôi đang trong kỳ giảm cân thì ăn nào được ha
+  - mình đang trong kỳ tăng cơ thì ăn nào được nhỉ
+  - mình đang ăn kiêng, cậu có idea nào cho buổi tối nay của mình không
+  - hôm nay rằm, mình muốn ăn chay
+  - hôm nay rằm tháng một, tui muốn chỉ ăn rau củ quả
+  - tớ đang ăn kiêng, mày có idea nào cho buổi tối nay của tui không
+  - mình đang trong kỳ giảm cân thì ăn gì được nhỉ
+  - hôm nay ram thang gieng thì ăn gì
+  - hôm nay 30 âm lịch, mình muốn ăn chay
+  - mình đang ăn kiêng, mầy có idea nào cho buổi tối nay của tui không
+  - mình đang ăn kiêng, chú em có idea nào cho buổi tối nay của mình không
+  - hôm nay rằm tháng 1, mình muốn ăn chay
+  - người ốm thì nên ăn gì nhỉ
+  - hôm nay rằm tháng 1, tớ muốn ăn chay
+  - tôi đang trong kỳ giảm cân thì ăn nào được nhỉ
+  - tui đang ăn kiêng, cậu có idea nào cho buổi tối nay của mình không
+  - hôm nay mùng 1 thì ăn gì
+  - mình kiêng tinh bột thì nên ăn nào
+  - tớ kiêng thịt thì nên ăn gì
+  - muốn ăn chay thì nên ăn gì ha
+  - tui đang trong kỳ giảm cân thì ăn gì được nhỉ
+  - mình đang ăn kiêng, bot có idea nào cho buổi tối nay của tôi không
+  - mình đang trong kỳ kiêng dầu mỡ thì ăn gì được ha
+  - tui đang ăn kiêng, iem có idea nào cho buổi tối nay của tui không
+  - tớ đang trong kỳ kiêng tinh bột thì ăn gì được nhỉ
+  - tôi đang trong kỳ tăng cơ thì ăn gì được nhỉ
+  - tớ đang ăn kiêng, cậu có idea nào cho buổi tối nay của tớ không
+  - tớ đang ăn kiêng, timi có idea nào cho buổi tối nay của tui không
+  - tôi đang ăn kiêng, mi có idea nào cho buổi tối nay của tớ không
+  - tớ đang ăn kiêng, bạn có idea nào cho buổi tối nay của tôi không
+  - tớ tăng cơ thì nên ăn gì
+  - hôm nay ram thang gieng, mình muốn chỉ ăn rau củ quả
+  - hôm nay rằm tháng 1, tôi muốn ăn chay
+  - tui đang trong kỳ kiêng dầu mỡ thì ăn nào được ha
+  - tớ kiêng dầu mỡ thì nên ăn nào
+  - hôm nay ram thang 1, mình muốn ăn chay
+  - mình đang ăn kiêng, bot có idea nào cho buổi tối nay của tớ không
+  - tui ăn kiêng thì nên ăn nào
+  - tui đang trong kỳ kiêng dầu mỡ thì ăn nào được nhỉ
+  - mình đang ăn kiêng, iem có idea nào cho buổi tối nay của tớ không
+  - hôm nay mùng 1, mình muốn ăn chay
+  - tớ đang trong kỳ ăn kiêng thì ăn nào được nhỉ
+  - mình chế độ diet thì nên ăn gì
+  - tôi đang ăn kiêng, bạn có idea nào cho buổi tối nay của mình không
+  - tớ đang ăn kiêng, em có idea nào cho buổi tối nay của tớ không
+  - hôm nay ram thang mot thì ăn nào
+  - mình đang ăn kiêng, em có idea nào cho buổi tối nay của tớ không
+  - tớ đang trong kỳ kiêng dầu mỡ thì ăn nào được ha
+  - tớ đang ăn kiêng, iem có idea nào cho buổi tối nay của tui không
+  - mình đang ăn kiêng, bạn có idea nào cho buổi tối nay của tớ không
+  - mình đang trong kỳ ăn kiêng thì ăn nào được ha
+  - tôi đang trong kỳ ăn kiêng thì ăn nào được ha
+  - tôi đang ăn kiêng, timi có idea nào cho buổi tối nay của tui không
+  - mình đang trong kỳ kiêng thịt thì ăn nào được ha
+  - hôm nay rằm tháng 1 thì ăn gì
+  - tớ đang ăn kiêng, bot có idea nào cho buổi tối nay của tớ không
+  - tui đang ăn kiêng, mi có idea nào cho buổi tối nay của tui không
+  - hôm nay ram thang 1 thì ăn nào
+  - muốn ăn chay thì nên ăn nào ha
+  - tớ đang ăn kiêng, mầy có idea nào cho buổi tối nay của mình không
+  - tui ăn kiêng thì nên ăn gì
+  - hôm nay rằm tháng một, mình muốn ăn chay
+  - hôm nay ram thang gieng thì ăn nào
+  - tôi đang ăn kiêng, chú em có idea nào cho buổi tối nay của tớ không
+  - mình đang trong kỳ chế độ diet thì ăn gì được ha
+  - tớ kiêng dầu mỡ thì nên ăn gì
+  - tui tăng cơ thì nên ăn nào
+  - tôi đang trong kỳ kiêng thịt thì ăn gì được ha
+  - tôi đang ăn kiêng, mầy có idea nào cho buổi tối nay của tôi không
+  - hôm nay rằm tháng 1 thì ăn nào
+  - tôi ăn kiêng thì nên ăn nào
+  - tớ ăn kiêng thì nên ăn nào
+  - tôi đang ăn kiêng, mầy có idea nào cho buổi tối nay của tui không
+  - tui đang ăn kiêng, chú em có idea nào cho buổi tối nay của tui không
+  - hôm nay ram thang gieng, mình muốn ăn chay
+  - tôi đang trong kỳ kiêng dầu mỡ thì ăn nào được ha
+  - tớ đang ăn kiêng, bạn có idea nào cho buổi tối nay của tớ không
+  - hôm nay rằm tháng 1, tớ muốn chỉ ăn rau củ quả
+  - tôi đang ăn kiêng, cậu có idea nào cho buổi tối nay của mình không
+  - tui đang ăn kiêng, bot có idea nào cho buổi tối nay của tớ không
+  - tui kiêng thịt thì nên ăn nào
+  - tớ đang trong kỳ ăn kiêng thì ăn gì được nhỉ
+  - tớ đang trong kỳ kiêng tinh bột thì ăn gì được ha
+  - tớ đang ăn kiêng, cậu có idea nào cho buổi tối nay của tui không
+  - tôi đang ăn kiêng, bạn có idea nào cho buổi tối nay của tớ không
+  - tôi đang ăn kiêng, em có idea nào cho buổi tối nay của tôi không
+  - tớ đang ăn kiêng, cậu có idea nào cho buổi tối nay của mình không
+  - hôm nay ram thang mot, tớ muốn chỉ ăn rau củ quả
+  - mình đang trong kỳ kiêng thịt thì ăn nào được nhỉ
+  - hôm nay 15 âm lịch thì ăn nào
+  - tớ kiêng thịt thì nên ăn nào
+  - hôm nay ram thang mot, tớ muốn ăn chay
+  - tôi đang trong kỳ kiêng tinh bột thì ăn nào được nhỉ
+  - tui tăng cơ thì nên ăn gì
+  - tui đang trong kỳ kiêng thịt thì ăn nào được ha
+  - tui đang muốn tăng cơ giảm mỡ, ăn gì thì phù hợp với tiêu chí này ha
+  - hôm nay mùng 1, mình muốn chỉ ăn rau củ quả
+  - tớ đang ăn kiêng, iem có idea nào cho buổi tối nay của tớ không
+  - tớ đang trong kỳ tăng cơ thì ăn gì được nhỉ
+  - mình đang ăn kiêng, mày có idea nào cho buổi tối nay của tui không
+  - tôi đang ăn kiêng, cậu có idea nào cho buổi tối nay của tớ không
+  - hôm nay rằm tháng một thì ăn nào
+  - mình giảm cân thì nên ăn nào
+  - hôm nay rằm tháng một, tôi muốn ăn chay
+  - tui đang ăn kiêng, mầy có idea nào cho buổi tối nay của tôi không
+  - tôi đang trong kỳ kiêng thịt thì ăn gì được nhỉ
+  - tôi đang ăn kiêng, timi có idea nào cho buổi tối nay của tôi không
+  - tôi đang ăn kiêng, mày có idea nào cho buổi tối nay của tôi không
+  - hôm nay 15 âm lịch, tui muốn ăn chay
+  - hôm nay rằm tháng một, mình muốn chỉ ăn rau củ quả
+  - tớ đang trong kỳ giảm cân thì ăn nào được nhỉ
+  - tôi đang ăn kiêng, iem có idea nào cho buổi tối nay của tôi không
+  - hôm nay rằm tháng giêng thì ăn nào
+  - tui đang ăn kiêng, iem có idea nào cho buổi tối nay của mình không
+  - tôi giảm cân thì nên ăn gì
+  - tui đang trong kỳ ăn kiêng thì ăn nào được nhỉ
+  - mình đang ăn kiêng, iem có idea nào cho buổi tối nay của tôi không
+  - hôm nay rằm thì ăn nào
+  - tôi đang ăn kiêng, bạn có idea nào cho buổi tối nay của tui không
+  - hôm nay 15 âm lịch, tui muốn chỉ ăn rau củ quả
+  - tui đang trong kỳ kiêng tinh bột thì ăn nào được ha
+  - hôm nay rằm tháng một, tớ muốn ăn chay
+  - tui đang ăn kiêng, mi có idea nào cho buổi tối nay của tôi không
+  - tớ đang trong kỳ chế độ diet thì ăn gì được nhỉ
+  - mình đang ăn kiêng, mày có idea nào cho buổi tối nay của mình không
+  - mình đang ăn kiêng, mi có idea nào cho buổi tối nay của mình không
+  - mình đang ăn kiêng, mầy có idea nào cho buổi tối nay của mình không
+  - tớ đang trong kỳ tăng cơ thì ăn nào được nhỉ
+  - tớ đang trong kỳ kiêng tinh bột thì ăn nào được ha
+  - mình đang ăn kiêng, mi có idea nào cho buổi tối nay của tui không
+  - mình đang ăn kiêng, timi có idea nào cho buổi tối nay của tui không
+  - tôi đang ăn kiêng, iem có idea nào cho buổi tối nay của tui không
+  - mình tăng cơ thì nên ăn nào
+  - hôm nay rằm tháng một, tôi muốn chỉ ăn rau củ quả
+  - mình đang ăn kiêng, em có idea nào cho buổi tối nay của mình không
+  - hôm nay rằm, tui muốn ăn chay
+  - tui đang ăn kiêng, mày có idea nào cho buổi tối nay của tớ không
+  - tui đang trong kỳ tăng cơ thì ăn gì được ha
+  - hôm nay ram thang 1, tôi muốn chỉ ăn rau củ quả
+  - tớ đang trong kỳ kiêng thịt thì ăn gì được nhỉ
+  - tôi đang ăn kiêng, iem có idea nào cho buổi tối nay của mình không
+  - tui đang ăn kiêng, chú em có idea nào cho buổi tối nay của mình không
+  - tui đang ăn kiêng, em có idea nào cho buổi tối nay của mình không
+  - tôi đang ăn kiêng, chú em có idea nào cho buổi tối nay của tui không
+  - tôi đang trong kỳ tăng cơ thì ăn nào được nhỉ
+  - mình đang trong kỳ tăng cơ thì ăn gì được nhỉ
+  - tớ đang ăn kiêng, bạn có idea nào cho buổi tối nay của tui không
+  - hôm nay rằm tháng giêng, tui muốn ăn chay
+  - hôm nay ram thang 1, tui muốn chỉ ăn rau củ quả
+  - tui đang trong kỳ ăn kiêng thì ăn gì được ha
+  - tớ đang trong kỳ kiêng dầu mỡ thì ăn gì được ha
+  - tui đang ăn kiêng, bạn có idea nào cho buổi tối nay của tớ không
+  - hôm nay ram thang gieng, tớ muốn ăn chay
+  - hôm nay ram thang gieng, tui muốn chỉ ăn rau củ quả
+  - tui đang trong kỳ kiêng thịt thì ăn gì được nhỉ
+  - hôm nay rằm tháng một thì ăn gì
+  - tôi đang trong kỳ giảm cân thì ăn gì được nhỉ
+  - tui đang ăn kiêng, cậu có idea nào cho buổi tối nay của tớ không
+  - tôi đang ăn kiêng, cậu có idea nào cho buổi tối nay của tôi không
+  - tớ đang ăn kiêng, mầy có idea nào cho buổi tối nay của tui không
+  - tớ đang trong kỳ giảm cân thì ăn gì được ha
+  - mình đang trong kỳ chế độ diet thì ăn nào được nhỉ
+  - tôi đang muốn tăng cơ giảm mỡ, ăn nào thì phù hợp với tiêu chí này ha
+  - người ốm thì nên ăn nào ha
+  - tôi đang trong kỳ ăn kiêng thì ăn gì được ha
+  - mình đang muốn tăng cơ giảm mỡ, ăn gì thì phù hợp với tiêu chí này ha
+  - hôm nay rằm, tôi muốn ăn chay
+  - mình đang trong kỳ kiêng tinh bột thì ăn gì được nhỉ
+  - hôm nay rằm tháng giêng, tớ muốn chỉ ăn rau củ quả
+  - tui đang ăn kiêng, mầy có idea nào cho buổi tối nay của mình không
+  - mình đang trong kỳ kiêng tinh bột thì ăn nào được nhỉ
+  - mình kiêng tinh bột thì nên ăn gì
+  - tôi đang trong kỳ kiêng dầu mỡ thì ăn gì được nhỉ
+  - tớ tăng cơ thì nên ăn nào
+  - tớ đang ăn kiêng, mi có idea nào cho buổi tối nay của tui không
+  - mình chế độ diet thì nên ăn nào
+  - tui đang ăn kiêng, mầy có idea nào cho buổi tối nay của tui không
+  - hôm nay 30 âm lịch, mình muốn chỉ ăn rau củ quả
+  - tôi đang trong kỳ chế độ diet thì ăn gì được ha
+  - ăn chay thì ăn gì bây giờ
+  - mình đang trong kỳ kiêng tinh bột thì ăn gì được ha
+  - tui đang ăn kiêng, iem có idea nào cho buổi tối nay của tôi không
+  - hôm nay rằm thì ăn gì
+  - hôm nay mùng 1, tôi muốn ăn chay
+  - tôi đang trong kỳ ăn kiêng thì ăn nào được nhỉ
+  - tớ đang trong kỳ tăng cơ thì ăn gì được ha
+  - hôm nay 15 âm lịch, mình muốn chỉ ăn rau củ quả
+  - hôm nay mùng 1, tôi muốn chỉ ăn rau củ quả
+  - hôm nay rằm tháng 1, mình muốn chỉ ăn rau củ quả
+  - hôm nay rằm tháng 1, tôi muốn chỉ ăn rau củ quả
+  - mình đang trong kỳ chế độ diet thì ăn nào được ha
+  - tớ đang ăn kiêng, mày có idea nào cho buổi tối nay của tôi không
+  - tôi đang muốn tăng cơ giảm mỡ, ăn nào thì phù hợp với tiêu chí này nhỉ
+  - tớ chế độ diet thì nên ăn nào
+  - mình kiêng thịt thì nên ăn gì
+  - tôi đang ăn kiêng, bot có idea nào cho buổi tối nay của tôi không
+  - tui đang muốn tăng cơ giảm mỡ, ăn gì thì phù hợp với tiêu chí này nhỉ
+  - hôm nay rằm tháng giêng, tớ muốn ăn chay
+  - tui đang muốn tăng cơ giảm mỡ, ăn nào thì phù hợp với tiêu chí này ha
+  - mình đang ăn kiêng, chú em có idea nào cho buổi tối nay của tôi không
+  - tôi chế độ diet thì nên ăn gì
+  - hôm nay 30 âm lịch thì ăn nào
+  - hôm nay mùng 1, tớ muốn chỉ ăn rau củ quả
+  - mình đang ăn kiêng, iem có idea nào cho buổi tối nay của mình không
+  - mình ăn kiêng thì nên ăn gì
+  - tớ đang ăn kiêng, iem có idea nào cho buổi tối nay của mình không
+  - tớ đang ăn kiêng, mi có idea nào cho buổi tối nay của tớ không
+  - tớ đang ăn kiêng, chú em có idea nào cho buổi tối nay của tớ không
+  - tôi đang ăn kiêng, em có idea nào cho buổi tối nay của tui không
+  - mình đang muốn tăng cơ giảm mỡ, ăn nào thì phù hợp với tiêu chí này ha
+  - hôm nay 15 âm lịch thì ăn gì
+  - tớ đang trong kỳ ăn kiêng thì ăn nào được ha
+  - hôm nay ram thang 1, tớ muốn ăn chay
+  - hôm nay 15 âm lịch, tôi muốn chỉ ăn rau củ quả
+  - mình đang ăn kiêng, bot có idea nào cho buổi tối nay của tui không
+  - mình kiêng dầu mỡ thì nên ăn nào
+  - mình đang trong kỳ chế độ diet thì ăn gì được nhỉ
+  - tôi đang trong kỳ kiêng dầu mỡ thì ăn gì được ha
+  - tôi đang ăn kiêng, chú em có idea nào cho buổi tối nay của tôi không
+  - tui đang ăn kiêng, mày có idea nào cho buổi tối nay của tôi không
+  - tớ đang trong kỳ kiêng thịt thì ăn nào được ha
+  - tôi tăng cơ thì nên ăn nào
+  - tớ đang ăn kiêng, em có idea nào cho buổi tối nay của tui không
+  - tôi đang ăn kiêng, bạn có idea nào cho buổi tối nay của tôi không
+  - mình giảm cân thì nên ăn gì
+  - tôi đang ăn kiêng, mày có idea nào cho buổi tối nay của mình không
+  - hôm nay 30 âm lịch thì ăn gì
+  - tớ đang ăn kiêng, chú em có idea nào cho buổi tối nay của mình không
+  - tớ đang ăn kiêng, mi có idea nào cho buổi tối nay của mình không
+  - tôi đang trong kỳ chế độ diet thì ăn gì được nhỉ
+  - tôi kiêng tinh bột thì nên ăn gì
+  - hôm nay 30 âm lịch, tui muốn ăn chay
+  - mình tăng cơ thì nên ăn gì
+  - hôm nay ram thang mot, tui muốn ăn chay
+  - tớ đang trong kỳ chế độ diet thì ăn nào được ha
+  - mình đang ăn kiêng, bạn có idea nào cho buổi tối nay của tôi không
+  - hôm nay 30 âm lịch, tớ muốn ăn chay
+  - tui đang trong kỳ kiêng dầu mỡ thì ăn gì được nhỉ
+  - tui đang ăn kiêng, chú em có idea nào cho buổi tối nay của tớ không
+  - tôi đang ăn kiêng, em có idea nào cho buổi tối nay của tớ không
+  - hôm nay rằm, tui muốn chỉ ăn rau củ quả
+  - tôi đang trong kỳ kiêng thịt thì ăn nào được ha
+  intent: recsys_request_food_purpose

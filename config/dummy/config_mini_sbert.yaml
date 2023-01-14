@@ -1,51 +1,45 @@
 GENERAL:
-  run_mode: inference
+  device: cuda
+  project: dummy
+  version: v1.0.0
+  output_data: assets
+  output_model: models
+  output_report: reports
 
-EMBEDDER:
-  class: SentenceEmbedder
+DATA_GENERATION:
+  data_dir: data/dummy
+  search_mode: bm25_embedder
+  embedding_batch_size: 100
+  neg_sim_batch_size: 10
+  max_triple_per_file: 50
+  EMBEDDER:
+    cache_path: ./embedder_caches
+    pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+#  COMBINER:
+
+
+TRAINER:
+  class: SBertSemanticSimilarity
   package: saturn.components.embeddings.embedding_models
   pretrained_name_or_abspath: keepitreal/vietnamese-sbert
-  device: "cuda"
-  TRAINER:
-    triplets_data_path:
-      - data/train_data/dummy/triples/triples_10.json
-      - data/train_data/dummy/triples/triples_20.json
-      - data/train_data/dummy/triples/triples_30.json
-    model_save_path: models_test
-    n_samples: 10
-    batch_size: 128
-    epochs: 300
-    warmup_steps: 5000
-    evaluation_steps: 2000
-    weight_decay: 0.01
-    max_grad_norm: 1.0
-    use_amp: True
-    save_best_model: True
-    show_progress_bar: True
-    checkpoint_path: models/checkpoints
-    checkpoint_save_epoch: 50
-    checkpoint_save_total_limit: 3
-    device_name: 0
+  n_samples: 10
+  batch_size: 256
+  epochs: 20
+  warmup_steps: 5000
+  evaluation_steps: 2000
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  use_amp: True
+  save_best_model: True
+  show_progress_bar: True
+  checkpoint_save_epoch: 4
+  checkpoint_save_total_limit: 10
+  save_by_epoch: 4
+#    resume_from_checkpoint: checkpoints/epoch-14/checkpoint.pt
 
 EVALUATION:
   type: "evaluation_pipeline"
-  corpus_name_or_path: "data/eval-data/timi/v2.0.0/corpus.json"
-  query_name_or_path: "data/eval-data/timi/v2.0.0/query.json"
+  corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
+  query_name_or_path: "data/eval-data/dummy/query_docs.json"
   pretrained_name_or_abspath:
-    - models/epoch-0
-    - models/epoch-1
-    - models/epoch-3
-    - models/epoch-5
-    - models/epoch-7
-    - models/epoch-8
-    - models/epoch-9
-    - models/epoch-11
-    - models/epoch-12
-    - models/epoch-13
-    - models/epoch-14
-    - models/epoch-15
-    - models/epoch-16
-    - models/epoch-17
-    - models/epoch-18
-    - models/epoch-19
-    - models/epoch-20
+    - models/dummy/v1.0.0/epoch-15

@@ -1,0 +1,303 @@
+positives:
+- examples:
+  - hum nay ngay quốc khánh vn thì ăn gì nhở
+  - ngày gia dinh vn ăn nào cho hợp ha
+  - trưa nay tớ nên ăn gì ha
+  - chiều qua ăn gì thì hợp nhỉ
+  - bạn có thể gợi ý bữa sán được không
+  - cuối tuần nên ăn nào nhỉ
+  - bữa sán thì ăn nào bot
+  - tối nay mình nên ăn gì nhỉ
+  - hôm nay nên ăn gì nhỉ
+  - hôm ni giỗ hùng vương thì ăn nào nhở
+  - rằm tháng giêng ăn nào cho hợp ha
+  - trưa nay tớ nên ăn nào nhỉ
+  - buổi chiều mai ăn gì thì hợp nhỉ
+  - cậu có thể gợi ý bữa khuya được không
+  - cuối tuần nên ăn gì nhỉ
+  - bữa sáng thì ăn gì timi
+  - tối nay nên ăn gì nhỉ
+  - hôm nay nên ăn gì ha
+  - hôm nay ngayf thong nhat thì ăn gì nhở
+  - ngayf quốc khánh việt nam ăn gì cho hợp nhỉ
+  - trưa nay nên ăn gì nhỉ
+  - buổi sáng qua ăn gì thì hợp nhỉ
+  - bot có thể gợi ý bữa tối được không
+  - cuối tuần tớ nên ăn nào nhỉ
+  - bữa khuya thì ăn nào timi
+  - tối nay tớ nên ăn nào nhỉ
+  - hôm nay tớ nên ăn nào ha
+  - hôm ni ngày nhà giáo việt nam thì ăn nào nhở
+  - tet co truyen ăn nào cho hợp ha
+  - trưa nay nên ăn nào nhỉ
+  - buổi sáng mai ăn gì thì hợp nhỉ
+  - mi có thể gợi ý bữa tối được không
+  - cuối tuần tui nên ăn nào ha
+  - bữa tối thì ăn gì timi
+  - tối nay nên ăn nào ha
+  - hôm nay tui nên ăn nào nhỉ
+  - hôm nay ngayf quốc khánh vn thì ăn nào nhở
+  - ngày phụ nữ việt nam ăn nào cho hợp nhỉ
+  - trưa nay tôi nên ăn gì nhỉ
+  - chiều ăn gì thì hợp nhỉ
+  - bạn có thể gợi ý bữa túi được không
+  - cuối tuần tui nên ăn nào nhỉ
+  - bữa sán thì ăn nào timi
+  - tối nay nên ăn gì ha
+  - hôm nay mình nên ăn nào ha
+  - hum nay ngayf le vu lan thì ăn nào nhở
+  - ngay quoc khanh viet nam ăn gì cho hợp nhỉ
+  - trưa nay tui nên ăn gì ha
+  - đêm nay ăn gì thì hợp nhỉ
+  - cậu có thể gợi ý bữa chìu được không
+  - cuối tuần tôi nên ăn nào ha
+  - bữa chìu thì ăn nào timi
+  - tối nay tôi nên ăn gì ha
+  - hôm nay nên ăn nào nhỉ
+  - hôm ni rằm tháng một thì ăn gì nhở
+  - ngayf giáng sinh ăn gì cho hợp ha
+  - trưa nay tớ nên ăn gì nhỉ
+  - buổi chiều qua ăn gì thì hợp nhỉ
+  - bot có thể gợi ý bữa khuya được không
+  - cuối tuần nên ăn gì ha
+  - bữa khuya thì ăn nào bot
+  - tối nay tớ nên ăn nào ha
+  - hôm nay tớ nên ăn gì ha
+  - hum nay ngày trung thu thì ăn gì nhở
+  - tết âm lịch việt nam ăn gì cho hợp ha
+  - trưa nay tớ nên ăn nào ha
+  - buổi trưa nay ăn gì thì hợp nhỉ
+  - bạn có thể gợi ý bữa khuya được không
+  - cuối tuần tui nên ăn gì nhỉ
+  - bữa tối thì ăn nào bot
+  - tối nay nên ăn nào nhỉ
+  - hôm nay tớ nên ăn gì nhỉ
+  - hôm ni ngay quoc khanh vn thì ăn nào nhở
+  - ngayf trai dat ăn gì cho hợp ha
+  - trưa nay mình nên ăn nào nhỉ
+  - đêm ăn gì thì hợp nhỉ
+  - timi có thể gợi ý bữa chìu được không
+  - cuối tuần nên ăn nào ha
+  - bữa tối thì ăn gì bot
+  - tối nay tôi nên ăn gì nhỉ
+  - hôm nay tui nên ăn nào ha
+  - hôm ni ngay quốc khánh vn thì ăn nào nhở
+  - ngày phu nu vn ăn nào cho hợp ha
+  - trưa nay tui nên ăn gì nhỉ
+  - tối mai ăn gì thì hợp nhỉ
+  - em có thể gợi ý bữa chiều được không
+  - cuối tuần tớ nên ăn nào ha
+  - bữa chìu thì ăn gì chú em
+  - tối nay tớ nên ăn gì nhỉ
+  - hôm nay tôi nên ăn gì ha
+  - hôm ni ngayf lễ tình nhân thì ăn gì nhở
+  - ngay quoc khanh ăn nào cho hợp nhỉ
+  - trưa nay nên ăn nào ha
+  - sáng nay ăn gì thì hợp nhỉ
+  - iem có thể gợi ý bữa túi được không
+  - cuối tuần tôi nên ăn gì ha
+  - bữa chiều thì ăn nào mày
+  - tối nay mình nên ăn nào nhỉ
+  - hôm nay nên ăn nào ha
+  - hum nay ngày vallentine thì ăn nào nhở
+  - ngay quốc tế cô đơn ăn gì cho hợp ha
+  - trưa nay nên ăn gì ha
+  - tối ăn gì thì hợp nhỉ
+  - cậu có thể gợi ý bữa tối được không
+  - cuối tuần mình nên ăn nào nhỉ
+  - bữa chìu thì ăn gì timi
+  - tối nay mình nên ăn gì ha
+  - hôm nay tớ nên ăn nào nhỉ
+  - hôm ni tet nguyen dan thì ăn nào nhở
+  - rằm tháng một ăn nào cho hợp nhỉ
+  - trưa nay tôi nên ăn gì ha
+  - tối qua ăn gì thì hợp nhỉ
+  - timi có thể gợi ý bữa chiều được không
+  - cuối tuần tớ nên ăn gì nhỉ
+  - bữa sáng thì ăn nào bot
+  - tối nay tui nên ăn gì nhỉ
+  - hôm nay tôi nên ăn nào ha
+  - ngày hôm nay ngayf gio to thì ăn gì nhở
+  - tết việt nam ăn gì cho hợp ha
+  - trưa nay mình nên ăn gì ha
+  - chiều nay ăn gì thì hợp nhỉ
+  - bot có thể gợi ý bữa sán được không
+  - cuối tuần mình nên ăn gì ha
+  - bữa túi thì ăn nào bot
+  - tối nay tui nên ăn nào ha
+  - hôm nay mình nên ăn gì nhỉ
+  - hôm ni rằm tháng giêng thì ăn gì nhở
+  - han thuc ăn nào cho hợp nhỉ
+  - trưa nay tui nên ăn nào nhỉ
+  - buổi đêm mai ăn gì thì hợp nhỉ
+  - mi có thể gợi ý bữa chiều được không
+  - cuối tuần tớ nên ăn gì ha
+  - bữa sáng thì ăn gì bạn
+  - hôm nay tui nên ăn gì ha
+  - hôm nay ngay quoc te lao dong thì ăn nào nhở
+  - tet nguyen tieu ăn gì cho hợp nhỉ
+  - trưa nay mình nên ăn nào ha
+  - trưa ăn gì thì hợp nhỉ
+  - bot có thể gợi ý bữa sáng được không
+  - cuối tuần tui nên ăn gì ha
+  - bữa túi thì ăn gì bạn
+  - tối nay tớ nên ăn gì ha
+  - hôm nay mình nên ăn nào nhỉ
+  - ngày hôm nay ram thang gieng thì ăn nào nhở
+  - ngayf gio hung vuong ăn gì cho hợp nhỉ
+  - trưa nay mình nên ăn gì nhỉ
+  - chiều mai ăn gì thì hợp nhỉ
+  - timi có thể gợi ý bữa sán được không
+  - cuối tuần mình nên ăn nào ha
+  - bữa chìu thì ăn nào chú em
+  - tối nay mình nên ăn nào ha
+  - hôm nay ngayf nhà giáo vn thì ăn nào nhở
+  - ram thang mot ăn gì cho hợp ha
+  - trưa nay tôi nên ăn nào nhỉ
+  - đêm mai ăn gì thì hợp nhỉ
+  - bạn có thể gợi ý bữa tối được không
+  - cuối tuần mình nên ăn gì nhỉ
+  - bữa chiều thì ăn nào timi
+  - tối nay tôi nên ăn nào ha
+  - hôm nay tui nên ăn gì nhỉ
+  - ngày hôm nay ngay ngưu lang chức nữ thì ăn nào nhở
+  - ngày quoc khanh viet nam ăn nào cho hợp nhỉ
+  - trưa nay tôi nên ăn nào ha
+  - buổi đêm nay ăn gì thì hợp nhỉ
+  - mi có thể gợi ý bữa chìu được không
+  - bữa chiều thì ăn nào bạn
+  - tối nay tôi nên ăn nào nhỉ
+  - hôm ni ngayf quoc khanh thì ăn gì nhở
+  - ngay Hallowe'en ăn gì cho hợp nhỉ
+  - buổi trưa qua ăn gì thì hợp nhỉ
+  - timi có thể gợi ý bữa túi được không
+  - cuối tuần tôi nên ăn nào nhỉ
+  - bữa sán thì ăn nào mi
+  - hôm nay tôi nên ăn nào nhỉ
+  - hum nay ngay gd vn thì ăn gì nhở
+  - ngày tết hàn thực ăn gì cho hợp nhỉ
+  - sáng mai ăn gì thì hợp nhỉ
+  - timi có thể gợi ý bữa sáng được không
+  - bữa khuya thì ăn gì mi
+  - tối nay tui nên ăn gì ha
+  - hôm nay tôi nên ăn gì nhỉ
+  - hôm ni ngayf gia đình vn thì ăn gì nhở
+  - ram thang gieng ăn nào cho hợp nhỉ
+  - trưa nay ăn gì thì hợp nhỉ
+  - bạn có thể gợi ý bữa chiều được không
+  - cuối tuần tôi nên ăn gì nhỉ
+  - bữa khuya thì ăn gì timi
+  - hôm nay mình nên ăn gì ha
+  - hôm nay ngày tet doan ngo thì ăn gì nhở
+  - ngayf nhà giáo việt nam ăn gì cho hợp nhỉ
+  - buổi tối nay ăn gì thì hợp nhỉ
+  - bot có thể gợi ý bữa chiều được không
+  - bữa chìu thì ăn nào bạn
+  - ngày hôm nay ngày quốc tế cô đơn thì ăn gì nhở
+  - ngay giai phong mien nam ăn gì cho hợp ha
+  - trưa nay tui nên ăn nào ha
+  - buổi tối qua ăn gì thì hợp nhỉ
+  - cậu có thể gợi ý bữa túi được không
+  - bữa chiều thì ăn nào mi
+  - hôm ni ngay phụ nữ việt nam thì ăn gì nhở
+  - ngay nhà giáo vn ăn gì cho hợp nhỉ
+  - tối nay ăn gì thì hợp nhỉ
+  - chú em có thể gợi ý bữa túi được không
+  - bữa chìu thì ăn gì mầy
+  - hum nay ngayf nguu lang chuc nu thì ăn nào nhở
+  - ngay quốc khánh vn ăn gì cho hợp ha
+  - đêm qua ăn gì thì hợp nhỉ
+  - bot có thể gợi ý bữa túi được không
+  - bữa túi thì ăn nào timi
+  - ngày hôm nay ngay quoc te phu nu thì ăn gì nhở
+  - ngayf quốc tế phụ nữ ăn gì cho hợp ha
+  - sáng qua ăn gì thì hợp nhỉ
+  - chú em có thể gợi ý bữa sáng được không
+  - bữa chiều thì ăn gì bot
+  - ngày hôm nay ngay halowen thì ăn nào nhở
+  - tết đoan ngọ ăn gì cho hợp nhỉ
+  - sáng ăn gì thì hợp nhỉ
+  - timi có thể gợi ý bữa tối được không
+  - bữa tối thì ăn gì bạn
+  - tối nay tui nên ăn nào nhỉ
+  - hum nay tet han thuc thì ăn gì nhở
+  - ngày Hallowe'en ăn gì cho hợp nhỉ
+  - trưa qua ăn gì thì hợp nhỉ
+  - mầy có thể gợi ý bữa chìu được không
+  - bữa chìu thì ăn nào bot
+  - hôm ni ngayf tết trung thu thì ăn nào nhở
+  - ngayf chiến thắng ăn gì cho hợp nhỉ
+  - buổi tối mai ăn gì thì hợp nhỉ
+  - chú em có thể gợi ý bữa khuya được không
+  - bữa túi thì ăn gì timi
+  - hôm ni ngay nha giao vn thì ăn gì nhở
+  - ngay vu lan ăn gì cho hợp ha
+  - buổi sáng nay ăn gì thì hợp nhỉ
+  - bot có thể gợi ý bữa chìu được không
+  - bữa sán thì ăn gì timi
+  - hôm nay ngayf giải phóng miền nam thì ăn gì nhở
+  - ngày giai phong mien nam ăn nào cho hợp ha
+  - trưa mai ăn gì thì hợp nhỉ
+  - cậu có thể gợi ý bữa sáng được không
+  - bữa chìu thì ăn nào mày
+  - hôm ni tet nguyen tieu thì ăn nào nhở
+  - ngayf giai phong mien nam ăn nào cho hợp ha
+  - buổi đêm qua ăn gì thì hợp nhỉ
+  - iem có thể gợi ý bữa khuya được không
+  - bữa sán thì ăn gì bạn
+  - ngày hôm nay ngay chien thang thì ăn gì nhở
+  - ngay nha giao viet nam ăn gì cho hợp ha
+  - buổi trưa mai ăn gì thì hợp nhỉ
+  - timi có thể gợi ý bữa khuya được không
+  - bữa sán thì ăn nào bạn
+  - hôm ni ngayf thong nhat thì ăn gì nhở
+  - ngay quoc khanh vn ăn gì cho hợp nhỉ
+  - buổi chiều nay ăn gì thì hợp nhỉ
+  - em có thể gợi ý bữa chìu được không
+  - bữa chiều thì ăn gì timi
+  - hôm ni ram thang 1 thì ăn nào nhở
+  - ngày phu nu viet nam ăn nào cho hợp nhỉ
+  - em có thể gợi ý bữa sáng được không
+  - bữa sán thì ăn gì bot
+  - hôm nay tết cổ truyền thì ăn nào nhở
+  - ngayf tet doan ngo ăn nào cho hợp nhỉ
+  - bạn có thể gợi ý bữa sáng được không
+  - bữa sáng thì ăn nào em
+  - hôm ni ngayf quốc tees phụ nữ thì ăn gì nhở
+  - ngayf giải phòng ăn gì cho hợp ha
+  - mầy có thể gợi ý bữa túi được không
+  - bữa chìu thì ăn gì mi
+  - hum nay tet am lich vn thì ăn gì nhở
+  - ngày phụ nữ vn ăn nào cho hợp ha
+  - em có thể gợi ý bữa túi được không
+  - bữa túi thì ăn gì bot
+  - hôm ni ngayf cô đơn thì ăn nào nhở
+  - ngay gđ việt nam ăn gì cho hợp ha
+  - chú em có thể gợi ý bữa sán được không
+  - bữa sáng thì ăn nào bạn
+  - hôm nay ngayf phụ nữ việt nam thì ăn gì nhở
+  - ngay chiến thắng ăn gì cho hợp ha
+  - cậu có thể gợi ý bữa sán được không
+  - bữa khuya thì ăn nào bạn
+  - ngày hôm nay ngày quốc tees phụ nữ thì ăn gì nhở
+  - ngày đoan ngọ ăn nào cho hợp nhỉ
+  - cậu có thể gợi ý bữa chiều được không
+  - bữa sán thì ăn gì cậu
+  - hôm ni ngayf ca thang tu thì ăn gì nhở
+  - ngày tết trung thu ăn nào cho hợp ha
+  - mày có thể gợi ý bữa túi được không
+  - bữa tối thì ăn nào timi
+  - hum nay ngayf quoc khanh viet nam thì ăn nào nhở
+  - ram thang gieng ăn nào cho hợp ha
+  - mày có thể gợi ý bữa chìu được không
+  - bữa khuya thì ăn nào mi
+  - hôm nay ngayf chiến thắng thì ăn nào nhở
+  - ngày cá tháng 4 ăn gì cho hợp ha
+  - chú em có thể gợi ý bữa chìu được không
+  - bữa sáng thì ăn gì mi
+  - ngày hôm nay ngày chiến thắng thì ăn gì nhở
+  - ngayf tết đoan ngọ ăn nào cho hợp nhỉ
+  - mầy có thể gợi ý bữa chiều được không
+  - bữa sán thì ăn nào mày
+  - hôm nay ngày phụ nữ vn thì ăn gì nhở
+  intent: recsys_request_food_by_session

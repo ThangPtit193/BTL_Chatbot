@@ -1,0 +1,303 @@
+positives:
+- examples:
+  - tớ muốn biết ISAAC sinh vào ngày nào?
+  - bot biết Mr Siro sinh vào ngày nào không?
+  - cậu biết V (BTS) thuộc Davichi mấy tuổi không?
+  - cho mình biết ngày sinh của Naeun (Apink) thuộc Blackpink
+  - ngày sinh của Trường Giang
+  - Trường Giang sinh vào ngày nào?
+  - timi có biết Trần Tiểu Vy sinh nhật vào ngày nào
+  - Thu Hoài sinh nhật vào ngày nào
+  - làm gì để biết ngày sinh của Trần Đại Quang
+  - tớ muốn biết Nguyễn Trần Khánh Vân sinh vào ngày nào?
+  - bạn biết Trần Đức Lương sinh vào ngày nào không?
+  - bot biết Lionel Messi mấy tuổi không?
+  - cho tớ biết sinh nhật của Hương Tràm
+  - sinh nhật của Thiều Bảo Trâm là
+  - Elon Musk sinh vào ngày nào?
+  - chú em có biết Độ Mixi sinh nhật vào ngày nào
+  - Đinh Ngọc Diệp sinh vào tháng mấy
+  - làm thế nào để biết sinh nhật của Lionel Messi
+  - mình muốn biết Thành Trung sinh vào ngày nào?
+  - bot biết Xoài Non sinh vào ngày nào không?
+  - timi biết Lại Văn Sâm mấy tuổi không?
+  - cho tớ biết sinh nhật của Vân Trang
+  - ngày sinh của Quyền Linh là
+  - Nguyễn Cao Kỳ Duyên sinh vào ngày nào?
+  - em có biết Lại Văn Sâm sinh vào tháng mấy
+  - Đàm Phương Linh sinh vào tháng nào
+  - làm gì để biết sinh nhật của Gerald Ford
+  - tớ muốn biết Thảo Tâm sinh vào ngày nào?
+  - bot biết Park Jihoon thuộc Bangtan Boys (BTS) sinh vào ngày nào không?
+  - mày biết IU thuộc T-ara mấy tuổi không?
+  - cho tôi biết sinh nhật của Đỗ Mỹ Linh
+  - sinh nhật của Nguyên Khang
+  - Lê Thảo Nhi sinh vào ngày nào?
+  - bot có biết Lan Ngọc sinh năm bao nhiêu
+  - Bill Gates sinh ngày nào
+  - làm thế nào để biết sinh nhật của BoA thuộc SNSD
+  - tớ muốn biết Jungwoo sinh vào ngày nào?
+  - em biết Bảo Thanh sinh vào ngày nào không?
+  - cậu biết Đặng Thị Ngọc Hân mấy tuổi không?
+  - cho mình biết ngày sinh của Lê Thảo Nhi
+  - ngày sinh của Đàm tổng là
+  - Bích Phương sinh vào ngày nào?
+  - bạn có biết Gil Lê sinh vào tháng mấy
+  - Đỗ Mỹ Linh sinh vào tháng nào
+  - làm sao để biết sinh nhật của Võ Chí Công
+  - tớ muốn biết Đỗ Thị Hà sinh vào ngày nào?
+  - bot biết George W. Bush sinh vào ngày nào không?
+  - bạn biết Nayeon (Twice) mấy tuổi không?
+  - cho tôi biết ngày sinh của Jennie
+  - ngày sinh của Phan Anh là
+  - G-Dragon (Big Bang) sinh vào ngày nào?
+  - mày có biết Martin Van Buren sinh nhật vào ngày nào
+  - Độ Mixi sinh năm bao nhiêu
+  - làm sao để biết ngày sinh của Sulli
+  - tớ muốn biết Hyoyeon (SNSD) thuộc Bigbang sinh vào ngày nào?
+  - mi biết Nayeon (Twice) sinh vào ngày nào không?
+  - timi biết James Madison mấy tuổi không?
+  - cho mình biết ngày sinh của Thành Trung
+  - sinh nhật của Da LAB là
+  - Hoà Minzy sinh vào ngày nào?
+  - cậu có biết Linh Đàm sinh năm bao nhiêu
+  - James Madison sinh vào tháng nào
+  - làm gì để biết sinh nhật của Nguyễn Xuân Phúc
+  - mình muốn biết Hà Tăng sinh vào ngày nào?
+  - cậu biết Đặng Thị Ngọc Hân sinh vào ngày nào không?
+  - bot biết Bảo Thanh mấy tuổi không?
+  - cho tớ biết sinh nhật của Lisa (BLACKPINK)
+  - sinh nhật của Thành Trung là
+  - Wheein (Mamamoo) thuộc SHINee sinh vào ngày nào?
+  - mày có biết Steve Jobs sinh vào tháng nào
+  - Khánh Vy sinh ngày nào
+  - làm sao để biết ngày sinh của Phương Linh
+  - mình muốn biết Steve Jobs sinh vào ngày nào?
+  - bot biết Bảo Thanh sinh vào ngày nào không?
+  - bot biết Xoài Non mấy tuổi không?
+  - cho mình biết ngày sinh của Babe Ruth
+  - ngày sinh của Ribi Sachi
+  - Nayeon (Twice) thuộc SHINee sinh vào ngày nào?
+  - mày có biết Wonho thuộc Davichi sinh ngày nào
+  - George W. Bush sinh năm bao nhiêu
+  - làm như nào để biết ngày sinh của Marie Curie
+  - tớ muốn biết Ten (NCT) thuộc SNSD sinh vào ngày nào?
+  - mày biết Quỳnh Nga sinh vào ngày nào không?
+  - bạn biết Yuta (NCT) thuộc Blackpink mấy tuổi không?
+  - cho tớ biết ngày sinh của Martin Van Buren
+  - sinh nhật của Jungwoo (NCT) là
+  - John Adams sinh vào ngày nào?
+  - cậu có biết Jungwoo (NCT) thuộc NCT sinh vào tháng mấy
+  - Khởi My sinh năm bao nhiêu
+  - làm gì để biết ngày sinh của Noo Phước Thịnh
+  - tớ muốn biết Jun Vũ sinh vào ngày nào?
+  - cậu biết Angela Phương Trinh sinh vào ngày nào không?
+  - mày biết Jennie (BLACKPINK) mấy tuổi không?
+  - cho tôi biết ngày sinh của Thanh Bạch
+  - ngày sinh của Thanh Bạch là
+  - Suho (EXO) thuộc SHINee sinh vào ngày nào?
+  - mi có biết Wendy (Red Velvet) sinh ngày nào
+  - Công Tố sinh vào tháng mấy
+  - làm gì để biết sinh nhật của Huỳnh Phạm Thủy Tiên
+  - tớ muốn biết Hyoyeon (SNSD) thuộc Super Junior sinh vào ngày nào?
+  - timi biết BoA sinh vào ngày nào không?
+  - em biết Khánh Vy mấy tuổi không?
+  - cho tớ biết ngày sinh của Erik
+  - ngày sinh của Ngọc Sơn
+  - Vân Trang sinh vào ngày nào?
+  - bot có biết Đặng Thị Ngọc Hân sinh vào tháng mấy
+  - Leonardo da Vinci sinh vào tháng mấy
+  - làm như nào để biết ngày sinh của Trang Hý
+  - mình muốn biết Sơn Tùng sinh vào ngày nào?
+  - timi biết Pope John Paul sinh vào ngày nào không?
+  - cậu biết RUBINA DILAIK mấy tuổi không?
+  - cho mình biết sinh nhật của Moonbyul (Mamamoo) thuộc EXO
+  - ngày sinh của Yuta (NCT) thuộc Blackpink
+  - David Beckham sinh vào ngày nào?
+  - mi có biết Phan Mạnh Quỳnh sinh ngày nào
+  - Đỗ Thị Hà sinh ngày nào
+  - làm sao để biết ngày sinh của Moonbyul (Mamamoo) thuộc NCT
+  - tớ muốn biết Trần Thị Thùy Dung sinh vào ngày nào?
+  - bạn biết Franklin D. Roosevelt sinh vào ngày nào không?
+  - mày biết Linh Đàm mấy tuổi không?
+  - cho tớ biết sinh nhật của Lisa (BLACKPINK) thuộc Davichi
+  - sinh nhật của Hoàng Thuỳ Linh
+  - Bill Clinton sinh vào ngày nào?
+  - bot có biết Jimin (BTS) sinh năm bao nhiêu
+  - Nguyễn Hữu Thọ sinh vào tháng nào
+  - làm răn để biết ngày sinh của Mr. Siro
+  - tớ muốn biết Độ Mixi sinh vào ngày nào?
+  - timi biết Nguyễn Trần Khánh Vân sinh vào ngày nào không?
+  - bạn biết Đỗ Khánh Vân mấy tuổi không?
+  - cho tôi biết sinh nhật của Queen Victoria
+  - sinh nhật của Hyoyeon là
+  - Khánh Vy IELTS sinh vào ngày nào?
+  - mày có biết Mai Phương Thúy sinh vào tháng mấy
+  - Lee Hyori sinh vào tháng mấy
+  - làm gì để biết sinh nhật của Jisoo (BLACKPINK)
+  - mình muốn biết Angelina Jolie sinh vào ngày nào?
+  - mi biết Kyuhyun (Super Junior) thuộc Black pink sinh vào ngày nào không?
+  - chú em biết H'Hen Niê mấy tuổi không?
+  - cho tôi biết ngày sinh của Nguyên Khang
+  - ngày sinh của Đỗ Thị Hà
+  - Nguyên Khang sinh vào ngày nào?
+  - cậu có biết Nguyễn Minh Triết sinh ngày nào
+  - Vân Trang sinh vào tháng nào
+  - làm sao để biết ngày sinh của Xoài Non
+  - tớ muốn biết Quỳnh Nga sinh vào ngày nào?
+  - bot biết Barack Obama sinh vào ngày nào không?
+  - mày biết Bảo Thanh mấy tuổi không?
+  - cho mình biết sinh nhật của Đỗ Khánh Vân
+  - sinh nhật của Rosé (BLACKPINK)
+  - Sơn Tùng sinh vào ngày nào?
+  - bot có biết Khánh Vy sinh ngày nào
+  - Chi Pu sinh ngày nào
+  - làm răng để biết ngày sinh của Khánh Vy
+  - tôi muốn biết Pope John Paul sinh vào ngày nào?
+  - timi biết Albert Einstein sinh vào ngày nào không?
+  - em biết Xoài Non mấy tuổi không?
+  - cho tớ biết sinh nhật của Suho (EXO) thuộc Girls' Generation
+  - sinh nhật của Wendy (Red Velvet) thuộc EXO là
+  - Yeji sinh vào ngày nào?
+  - timi có biết Naeun (Apink) sinh năm bao nhiêu
+  - Thu Hoài sinh ngày nào
+  - làm sao để biết ngày sinh của Richard Branson
+  - mình muốn biết Moonbyul (Mamamoo) thuộc 2NE1 sinh vào ngày nào?
+  - timi biết Minh Hằng sinh vào ngày nào không?
+  - timi biết Quỳnh Kool mấy tuổi không?
+  - cho mình biết sinh nhật của Suga (BTS)
+  - ngày sinh của Trần Thị Thùy Dung là
+  - Angela Phương Trinh sinh vào ngày nào?
+  - timi có biết Diễm My 9x sinh nhật vào ngày nào
+  - Rosa Parks sinh vào tháng nào
+  - làm răn để biết sinh nhật của Yoona (SNSD)
+  - tôi muốn biết Công Tố sinh vào ngày nào?
+  - timi biết Hoàng Yến Chibi sinh vào ngày nào không?
+  - cậu biết Phạm Nhật Vượng mấy tuổi không?
+  - cho mình biết ngày sinh của Phương Anh Đào
+  - ngày sinh của Xoài Non là
+  - Noo Phước Thịnh sinh vào ngày nào?
+  - timi có biết John Quincy Adams sinh vào tháng nào
+  - Jennie sinh vào tháng mấy
+  - làm răng để biết sinh nhật của Lại Văn Sâm
+  - tớ muốn biết Công Tố sinh vào ngày nào?
+  - cậu biết Phương Oanh sinh vào ngày nào không?
+  - timi biết Apink Eunji thuộc T-ara mấy tuổi không?
+  - cho tớ biết ngày sinh của Mai Phương Thúy
+  - ngày sinh của Sơn Tùng MTP
+  - Phương Thanh sinh vào ngày nào?
+  - mi có biết Naeun (Apink) sinh vào tháng mấy
+  - Nhã Phương sinh vào tháng mấy
+  - làm như nào để biết ngày sinh của Trấn Thành
+  - tớ muốn biết Đặng Thị Ngọc Hân sinh vào ngày nào?
+  - timi biết Barack Obama sinh vào ngày nào không?
+  - bot biết Marilyn Monroe mấy tuổi không?
+  - cho tớ biết ngày sinh của Linh Đàm
+  - ngày sinh của Wonho thuộc Davichi là
+  - Yuta (NCT) sinh vào ngày nào?
+  - bạn có biết Thành Trung sinh năm bao nhiêu
+  - Elon Musk sinh nhật vào ngày nào
+  - làm răn để biết sinh nhật của Barack Obama
+  - tôi muốn biết Sơn Tùng sinh vào ngày nào?
+  - chú em biết Lê Đức Anh sinh vào ngày nào không?
+  - timi biết Angela Phương Trinh mấy tuổi không?
+  - cho tôi biết sinh nhật của Hồ Hoài Anh
+  - sinh nhật của Đặng Thu Thảo
+  - Tóc Tiên sinh vào ngày nào?
+  - bạn có biết Nguyễn Thúc Thuỳ Tiên sinh ngày nào
+  - D.O. (EXO) thuộc TVXQ (DBSK) sinh nhật vào ngày nào
+  - làm răng để biết sinh nhật của Rosa Parks
+  - tớ muốn biết Trần Đại Quang sinh vào ngày nào?
+  - em biết Trấn Thành sinh vào ngày nào không?
+  - timi biết Stephen Hawking mấy tuổi không?
+  - cho tớ biết sinh nhật của Tăng Thanh Hà
+  - ngày sinh của James Monroe là
+  - Phan Anh sinh vào ngày nào?
+  - bot có biết Trường Giang sinh vào tháng mấy
+  - Trần Tiểu Vy sinh vào tháng mấy
+  - làm răn để biết ngày sinh của Lại Văn Sâm
+  - tớ muốn biết MTP sinh vào ngày nào?
+  - cậu biết Nguyễn Thị Ngọc Châu sinh vào ngày nào không?
+  - timi biết Thomas Edison mấy tuổi không?
+  - cho tớ biết ngày sinh của David Beckham
+  - sinh nhật của Moonbyul (Mamamoo) thuộc TVXQ (DBSK)
+  - Đặng Thu Thảo sinh vào ngày nào?
+  - timi có biết Độ Mixi sinh vào tháng mấy
+  - Đàm Phương Linh sinh nhật vào ngày nào
+  - làm thế nào để biết sinh nhật của Hồ Hoài Anh
+  - tôi muốn biết Tóc Tiên sinh vào ngày nào?
+  - timi biết Trấn Thành sinh vào ngày nào không?
+  - timi biết Suzy mấy tuổi không?
+  - cho mình biết sinh nhật của Karik
+  - ngày sinh của Khánh Vy
+  - Soyeon ((G)I-DLE) sinh vào ngày nào?
+  - cậu có biết Suga (BTS) sinh vào tháng nào
+  - D.O. (EXO) sinh năm bao nhiêu
+  - làm thế nào để biết ngày sinh của Vincent Van Gogh
+  - tôi muốn biết Nguyễn Cao Kỳ Duyên sinh vào ngày nào?
+  - bot biết Nguyên Khang sinh vào ngày nào không?
+  - timi biết Khánh Vy IELTS mấy tuổi không?
+  - cho tớ biết ngày sinh của Bảo Thanh
+  - ngày sinh của Wheein (Mamamoo) là
+  - Sulli sinh vào ngày nào?
+  - bot có biết Mina (Twice) sinh nhật vào ngày nào
+  - Nguyễn Thúc Thuỳ Tiên sinh vào tháng mấy
+  - làm răng để biết ngày sinh của HỒ HÙNG ANH
+  - tớ muốn biết Irene (Red Velvet) thuộc NCT sinh vào ngày nào?
+  - mày biết Phạm Hồng Thúy Vân sinh vào ngày nào không?
+  - chú em biết Bảo Thy mấy tuổi không?
+  - cho tôi biết sinh nhật của Nguyễn Trần Khánh Vân
+  - sinh nhật của Ngô Thanh Vân là
+  - Hoàng Yến Chibi sinh vào ngày nào?
+  - mi có biết Linh Đàm sinh năm bao nhiêu
+  - Trần Thị Thùy Dung sinh ngày nào
+  - làm thế nào để biết sinh nhật của Marilyn Monroe
+  - tớ muốn biết Đặng Thu Thảo sinh vào ngày nào?
+  - bot biết Diệu Nhi sinh vào ngày nào không?
+  - bot biết Võ Hoàng Yến mấy tuổi không?
+  - cho tớ biết sinh nhật của Độ Mixi
+  - sinh nhật của Cristiano Ronaldo là
+  - Jungwoo sinh vào ngày nào?
+  - mi có biết Wheein (Mamamoo) sinh ngày nào
+  - Bảo Anh sinh ngày nào
+  - làm gì để biết sinh nhật của Độ Mixi
+  - mình muốn biết RUBINA DILAIK sinh vào ngày nào?
+  - chú em biết Cáo sinh vào ngày nào không?
+  - chú em biết Ninh Dương Lan Ngọc mấy tuổi không?
+  - cho mình biết ngày sinh của Jun Vũ
+  - ngày sinh của Richard Branson
+  - Linh Đàm sinh vào ngày nào?
+  - bot có biết Ribi Sachi sinh nhật vào ngày nào
+  - George W. Bush sinh vào tháng mấy
+  - làm răn để biết sinh nhật của John Quincy Adams
+  - tớ muốn biết Nancy (Momoland) sinh vào ngày nào?
+  - em biết Nhã Phương sinh vào ngày nào không?
+  - em biết Thành Trung mấy tuổi không?
+  - cho tôi biết sinh nhật của Wonho thuộc Blackpink
+  - ngày sinh của Yoona (SNSD)
+  - Thu Minh sinh vào ngày nào?
+  - bạn có biết Thanh Bạch sinh ngày nào
+  - RUBINA DILAIK thuộc Black pink sinh vào tháng mấy
+  - làm răn để biết sinh nhật của Hà Anh Tuấn
+  - tôi muốn biết Trường Giang sinh vào ngày nào?
+  - timi biết Đỗ Khánh Vân sinh vào ngày nào không?
+  - mày biết Suzy thuộc Bangtan Boys (BTS) mấy tuổi không?
+  - cho tớ biết sinh nhật của Jungwoo (NCT)
+  - sinh nhật của Đàm tổng là
+  - Kim da-mi thuộc NCT sinh vào ngày nào?
+  - timi có biết Yuta (NCT) sinh năm bao nhiêu
+  - Công Tố sinh năm bao nhiêu
+  - làm sao để biết sinh nhật của Thành Trung
+  - mình muốn biết John Quincy Adams sinh vào ngày nào?
+  - bot biết Tuấn Hưng sinh vào ngày nào không?
+  - bạn biết Nguyễn Thị Ngọc Châu mấy tuổi không?
+  - cho mình biết ngày sinh của Trường Chinh
+  - sinh nhật của John Adams
+  - Ngọc Sơn sinh vào ngày nào?
+  - timi có biết Tăng Thanh Hà sinh ngày nào
+  - Nayeon (Twice) sinh vào tháng nào
+  - làm thế nào để biết ngày sinh của Stephen Hawking
+  - mình muốn biết Trương Tấn Sang sinh vào ngày nào?
+  - mày biết Thomas Jefferson sinh vào ngày nào không?
+  - em biết Đức Phúc mấy tuổi không?
+  intent: knowledge_ask_age_person

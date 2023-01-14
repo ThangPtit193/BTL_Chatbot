@@ -17,17 +17,18 @@ from comet.lib.print_utils import print_title
 
 from saturn.components.utils.document import Document, EvalResult
 from saturn.utils.config_parser import ConfigParser
+from saturn.abstract_method.staturn_abstract import SaturnAbstract
 
 if TYPE_CHECKING:
-    from saturn.components.embeddings.embedding_models import SentenceEmbedder
+    from saturn.components.embeddings.embedding_models import SBertSemanticSimilarity
 
 _logger = logger.get_logger(__name__)
 
 
-class KRManager:
-    def __init__(self, config_path: str):
-        self.config_parser = ConfigParser(config_path)
-        self._embedder: Optional[SentenceEmbedder] = None
+class KRManager(SaturnAbstract):
+    def __init__(self, config: Union[str, ConfigParser]):
+        super(KRManager, self).__init__(config)
+        self._embedder: Optional[SBertSemanticSimilarity] = None
         self._corpus_docs: Optional[List[Document]] = None
         self._query_docs: Optional[List[Document]] = None
         self._pretrained_name_or_abspath: Optional[Union[str, List[str]]] = None
@@ -38,10 +39,10 @@ class KRManager:
     @property
     def embedder(self):
         if not self._embedder:
-            embedder_config = self.config_parser.embedder_config()
+            embedder_config = self.config_parser.trainer_config()
             class_name = embedder_config.pop("class")
             module_name = embedder_config.pop("package")
-            self._embedder = get_module_or_attr(module_name, class_name)(**embedder_config)
+            self._embedder = get_module_or_attr(module_name, class_name)(config=self.config_parser, **embedder_config)
         return self._embedder
 
     @property
@@ -142,7 +143,7 @@ class KRManager:
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
-            similarity_data = self.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
+            similarity_data = self.embedder.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
             toc = perf_counter()
             retriever_time = toc - tic
 
@@ -198,7 +199,7 @@ class KRManager:
             df: Union[DataFrame, List],
             save_markdown: bool = False
     ):
-        output_dir = output_dir if isinstance(output_dir, Path) else Path(output_dir)
+        output_dir = Path(self.get_report_dir())
         _logger.info("Saving evaluation results to %s", output_dir)
         if not output_dir.exists():
             output_dir.mkdir(parents=True)

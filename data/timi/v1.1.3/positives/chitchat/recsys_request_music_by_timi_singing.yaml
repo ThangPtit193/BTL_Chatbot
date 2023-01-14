@@ -1,0 +1,78 @@
+positives:
+- examples:
+  - can you sing a song
+  - ' cho tớ hỏi bot có biết hát không'
+  - chú em có biết hát không
+  - hát một bài nghe nào
+  - ' sing được không'
+  - tao muốn nghe hát quá?
+  - hát nghe coi
+  - biết hát không
+  - sing 1 bài đi
+  - mầy bạn hát như nào
+  - bot hát bài nghe chơi
+  - ' cho tớ hỏi mầy có biết hát không'
+  - cậu có biết hát
+  - gáy một bài nghe nào
+  - mày sing được không
+  - tớ muốn nghe nhạc dữ?
+  - sing nghe coi
+  - biết sing không
+  - hát 1 bài đi
+  - bạn bạn hát thế nào
+  - cậu hát bài nghe chơi gì
+  - iem cho hỏi iem có biết hát không
+  - bot có biết hát không
+  - gáy một bài nghe nào timi
+  - cậu sing được không
+  - tui muốn nghe hát quá?
+  - biết hát không timi
+  - ' bạn hát thế nào'
+  - cậu hát bài nghe chơi nào
+  - ' cho mình hỏi mày có biết hát không'
+  - timi có biết hát không
+  - gáy một bài nghe nào bot
+  - ' hát được không'
+  - mẹ mày muốn nghe nhạc dữ?
+  - biết sing không bot
+  - ' bạn hát như thế nào'
+  - ' hát bài nghe chơi'
+  - ' cho hỏi mầy có biết hát không'
+  - chú em có biết hát
+  - gáy một bài nghe nào chú em
+  - cậu hát được không
+  - mình muốn nghe hát dữ?
+  - biết sing không em
+  - mầy bạn hát như thế nào
+  - mi hát bài nghe chơi
+  - timi cho tớ hỏi bạn có biết hát không
+  - iem có biết hát
+  - hát một bài nghe nào timi
+  - bạn sing được không
+  - tao muốn nghe nhạc quá?
+  - biết sing không bạn
+  - bot bạn hát như nào
+  - ' hát bài nghe chơi gì'
+  - bot cho tớ hỏi bot có biết hát không
+  - bạn có biết hát không
+  - hát một bài nghe nào cậu
+  - timi sing được không
+  - tôi muốn nghe nhạc dữ?
+  - biết sing không cậu
+  - ' bạn hát như nào'
+  - bot hát bài nghe chơi gì
+  - ' cho tớ hỏi timi có biết hát không'
+  - timi có biết hát
+  - hát một bài nghe nào bạn
+  - mi sing được không
+  - bố mày muốn nghe nhạc dữ?
+  - biết sing không mi
+  - mày bạn hát như nào
+  - bạn hát bài nghe chơi
+  - timi cho tớ hỏi timi có biết hát không
+  - cậu có biết hát không
+  - gáy một bài nghe nào mầy
+  - bạn hát được không
+  - bố mày muốn nghe hát quá?
+  - biết hát không bạn
+  intent: recsys_request_music_by_timi_singing

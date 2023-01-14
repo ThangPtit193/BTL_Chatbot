@@ -1,24 +1,19 @@
-from comet.lib import file_util
 from typing import Text
+from comet.lib import file_util
 
 
 class ConfigParser:
     def __init__(self, config_path: Text):
         self.config_data = file_util.load_yaml(config_path)
 
-    def general_config(self):
-        return self.config_data['GENERAL']
+    def trainer_config(self):
+        return self.config_data['TRAINER'] if 'TRAINER' in self.config_data else {}
 
-    def embedder_config(self):
-        embedder_config = self.config_data['EMBEDDER']
-        if "TRAINER" in embedder_config:
-            embedder_config.pop("TRAINER")
-        return embedder_config
+    def data_generation_config(self):
+        return self.config_data['DATA_GENERATION'] if 'DATA_GENERATION' in self.config_data else {}
+
+    def general_config(self):
+        return self.config_data['GENERAL'] if 'GENERAL' in self.config_data else {}
 
     def eval_config(self):
         return self.config_data['EVALUATION'] if 'EVALUATION' in self.config_data else {}
-
-    def trainer_config(self):
-        if "EMBEDDER" not in self.config_data:
-            raise ValueError("No embedder config found in config file")
-        return self.config_data['EMBEDDER']['TRAINER'] if 'TRAINER' in self.config_data['EMBEDDER'] else {}
