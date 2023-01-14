@@ -43,3 +43,8 @@ EVALUATION:
   query_name_or_path: "data/eval-data/dummy/query_docs.json"
   pretrained_name_or_abspath:
     - models/dummy/v1.0.0/epoch-15
+
+RELEASE:
+  model_path: models
+  pretrained_model: MiniLM-L12-H384-uncased
+  data_size: 9M
