@@ -4,13 +4,13 @@ from pathlib import Path
 from time import perf_counter
 from typing import TYPE_CHECKING, Optional, List, Union, Tuple, Text, Dict
 from comet.components.embeddings.embedding_models import BertEmbedder
-
+import questionary
 import pandas as pd
 from pandas import DataFrame
 from tqdm import tqdm
 from xlsxwriter.utility import xl_range_abs
 from tabulate import tabulate
-
+import shutil
 from comet.lib import file_util, logger
 from comet.lib.helpers import get_module_or_attr
 from comet.utilities.utility import convert_unicode
@@ -96,6 +96,20 @@ class KRManager(SaturnAbstract):
             return self._output_dir
 
     def train_embedder(self):
+        if self.skipped_training:
+            return
+
+        output_model_dir = self.get_model_dir()
+        if self.is_warning_action and os.path.exists(output_model_dir) and len(os.listdir(output_model_dir)) > 0:
+            is_retrained = questionary.confirm("The model has been trained, do you want to retrain it?").ask()
+            if not is_retrained:
+                self.skipped = True
+                return
+            else:
+                is_cleaned = questionary.confirm("Do you want to clean the model directory?").ask()
+                if is_cleaned:
+                    shutil.rmtree(output_model_dir)
+
         trainer_config = self.config_parser.trainer_config()
         self.embedder.train(trainer_config)
 
@@ -174,6 +188,19 @@ class KRManager(SaturnAbstract):
         return retriever_results, retriever_top_k_results
 
     def save(self, report_type: str = "all", top_k: int = None, save_markdown: bool = True):
+        output_report_dir = self.get_report_dir()
+        if self.skipped_eval:
+            return
+
+        if self.is_warning_action and os.path.exists(output_report_dir) and len(os.listdir(output_report_dir)) > 0:
+            is_re_evaluated = questionary.confirm("The report has been generated, do you want to re-evaluate it?").ask()
+            if not is_re_evaluated:
+                return
+            else:
+                is_cleaned = questionary.confirm("Do you want to clean the report directory?").ask()
+                if is_cleaned:
+                    shutil.rmtree(output_report_dir)
+
         retriever_results, retriever_top_k_results = self.evaluate_embedder(top_k=top_k)
         if report_type == "overall":
             self.save_overall_report(
@@ -198,10 +225,10 @@ class KRManager(SaturnAbstract):
             raise NotImplemented(f"Sorry, this report type {report_type} is not found")
 
     def save_overall_report(
-            self,
-            output_dir: Union[str, Path],
-            df: Union[DataFrame, List],
-            save_markdown: bool = False
+        self,
+        output_dir: Union[str, Path],
+        df: Union[DataFrame, List],
+        save_markdown: bool = False
     ):
         output_dir = Path(self.get_report_dir())
         _logger.info("Saving evaluation results to %s", output_dir)
@@ -313,8 +340,8 @@ class KRManager(SaturnAbstract):
         _logger.info(f"Evaluation report with excel format is saved at {target_path}")
 
     def _extract_eval_result(
-            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
-            top_k: int = None
+        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
+        top_k: int = None
     ):
         eval_results = []
         eval_top_k_results = []

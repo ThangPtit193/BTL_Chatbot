@@ -2,9 +2,9 @@ import json
 import os
 import random
 from typing import *
-
+import shutil
 from tqdm import tqdm
-
+import questionary
 from comet.lib import file_util, logger
 from saturn.abstract_method.staturn_abstract import SaturnAbstract
 from saturn.data_generation import constants
@@ -15,7 +15,6 @@ _logger = logger.get_logger(__name__)
 
 
 class TripleGenerator(SaturnAbstract):
-    ready = False
     max_triple_per_file = 100000
 
     def __init__(self, config: Union[Text, ConfigParser]):
@@ -37,14 +36,34 @@ class TripleGenerator(SaturnAbstract):
         Returns:
 
         """
+        if self.skipped:
+            return
+        # Check if data is already generated
+        output_data_dir = self.get_data_dir()
+        # Check if folder is not empty
+        if self.is_warning_action and os.path.exists(output_data_dir) and len(os.listdir(output_data_dir)) > 0:
+            is_regen = questionary.confirm(
+                "Data is already generated. Do you want to regenerate?"
+            ).ask()
+            if not is_regen:
+                self.skipped = True
+                return
+            else:
+                # Clear old data in output folder
+                is_cleaned = questionary.confirm(
+                    "Do you want to clean old data in output folder?"
+                ).ask()
+                if is_cleaned:
+                    shutil.rmtree(output_data_dir)
+
         data_dir = self.config_parser.data_generation_config()['data_dir']
         self.document_store.load_document(data_dir)
         self.ready = True
         _logger.info("Load data successfully")
 
     def generate_triples(self):
-        if not self.ready:
-            raise ValueError("Please load data first")
+        if self.skipped_gen_data:
+            return
 
         # Build documents
         self.document_store.build_documents()

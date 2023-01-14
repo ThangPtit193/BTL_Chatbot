@@ -17,3 +17,6 @@ class ConfigParser:
 
     def eval_config(self):
         return self.config_data['EVALUATION'] if 'EVALUATION' in self.config_data else {}
+
+    def release_config(self):
+        return self.config_data['RELEASE'] if 'RELEASE' in self.config_data else {}

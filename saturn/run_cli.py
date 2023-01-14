@@ -1,12 +1,14 @@
 import os
 
 import click
-from saturn.kr_manager import KRManager
+import questionary
+
 from comet.lib import logger
 from saturn.cli.model import model
-from .version import get_saturn_version
 from saturn.data_generation.tripple_generator import TripleGenerator
+from saturn.kr_manager import KRManager
 from saturn.utils.config_parser import ConfigParser
+from .version import get_saturn_version
 
 logger.configure_logger("DEBUG")
 _logger = logger.get_logger(__name__)
@@ -27,15 +29,54 @@ def version():
 @click.option('--config', '-c', required=True, default="config/config.yaml")
 def run_e2e(config):
     config_parser: ConfigParser = ConfigParser(config)
-    # triple_generator = TripleGenerator(config=config_parser)
-    # triple_generator.load()
-    # triple_generator.generate_triples()
+    triple_generator = TripleGenerator(config=config_parser)
+    triple_generator.load()
+    triple_generator.generate_triples()
 
     # Train the model
     kr_manager = KRManager(config=config_parser)
-    # kr_manager.train_embedder()
+    kr_manager.train_embedder()
     # Evaluate the model
     kr_manager.save()
+
+
+@click.command()
+@click.option('--config', '-c', required=True, default="config/config.yaml")
+def release(config):
+    config_parser: ConfigParser = ConfigParser(config)
+    release_config = config_parser.release_config()
+    if not release_config:
+        raise ValueError("Release config is not found")
+
+    model_path = release_config["model_path"]
+    version = config_parser.general_config().get("version")
+    project_name = config_parser.general_config().get("project")
+    pretrained_model = release_config.get("pretrained_model")
+    data_size = release_config.get("data_size", None)
+
+    name = ""
+    if not project_name:
+        raise Exception("Project name is not defined")
+    name += project_name
+    if not pretrained_model:
+        raise Exception("Pretrained model is not defined")
+    name += f"-{pretrained_model}"
+    name += "-faq"
+    if data_size:
+        name += f"-{data_size}"
+    if version:
+        name += f"-{version}"
+
+    # Replace _ with - in name and " " by "-"
+    name = name.replace("_", "-").replace(" ", "-")
+    is_agree_upload = questionary.confirm(
+        f"Are you sure to upload the model from '{model_path}' with name: '{name}' to model hub?"
+    ).ask()
+    if is_agree_upload:
+        print("Uploading...")
+    else:
+        print("Aborting...")
+        return
 
 
 @click.command()
@@ -84,6 +125,7 @@ entry_point.add_command(train)
 entry_point.add_command(test)
 entry_point.add_command(ui)
 entry_point.add_command(run_e2e)
+entry_point.add_command(release)
 entry_point.add_command(model)
 
 if __name__ == '__main__':

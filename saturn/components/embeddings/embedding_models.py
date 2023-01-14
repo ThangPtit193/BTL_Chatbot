@@ -1,4 +1,6 @@
+import math
 import os
+import shutil
 import time
 from abc import abstractmethod
 from typing import *
@@ -6,9 +8,8 @@ from typing import *
 import torch
 import torch.multiprocessing as mp
 import transformers
-from comet.components.embeddings.embedding_models import BertEmbedder
-from comet.lib import file_util, logger
-from sentence_transformers import losses
+from sentence_transformers import SentenceTransformer, InputExample
+from sentence_transformers import models, losses, datasets
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 from transformers import (
@@ -16,15 +17,12 @@ from transformers import (
     AutoTokenizer,
     get_linear_schedule_with_warmup,
 )
-import shutil
+
+from comet.components.embeddings.embedding_models import BertEmbedder
+from comet.lib import file_util, logger
+from saturn.abstract_method.staturn_abstract import SaturnAbstract
 from .dataset import data_producer
 from .net import AutoModelForSentenceEmbedding, CustomSentenceTransformer
-from sentence_transformers import SentenceTransformer
-from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
-from sentence_transformers import models, losses, datasets
-from sentence_transformers import LoggingHandler, SentenceTransformer, util, InputExample
-import math
-from saturn.abstract_method.staturn_abstract import SaturnAbstract
 
 __all__ = []
 _logger = logger.get_logger(__name__)
@@ -347,7 +345,11 @@ class SBertSemanticSimilarity(SemanticSimilarity):
         for path in triplets_data_path:
             if not os.path.exists(path):
                 raise FileNotFoundError(f"triplets data path {path} does not exist")
-            triplets_data.extend(file_util.load_json(path)['data'])
+            triplet_data = file_util.load_json(path)
+            if 'data' not in triplet_data:
+                _logger.warning(f"triplets data path '{path}' is not a valid triplets data")
+                continue
+            triplets_data.extend(triplet_data['data'])
 
         train_dataset = TripletsDataset(
             triplet_examples=triplets_data,
@@ -446,7 +448,6 @@ class NLISemanticSimilarity(SemanticSimilarity):
         :param show_progress_bar:
         :return:
         """
-        from venus.dataset_reader.TripletDataset import TripletsDataset
         # from venus.sentence_embedding.sentence_embedding import SentenceEmbedding
         # Producing data
         label2int = {"contradiction": 0, "entailment": 1, "neutral": 2}
