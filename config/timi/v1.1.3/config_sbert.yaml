@@ -12,12 +12,12 @@ GENERAL:
   skipped_eval: False
 
 DATA_GENERATION:
-  data_dir: data/timi/v1.1.3
+  data_dir: data/raw/timi/v1.1.3
   search_mode: bm25_embedder
   embedding_batch_size: 100
   neg_sim_batch_size: 200
   max_triple_per_file: 2000000
-  max_sentence_repeated: 10
+  max_sentence_repeated: 50
   EMBEDDER:
     cache_path: ./embedder_caches
     pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
@@ -41,7 +41,7 @@ TRAINER:
   save_best_model: True
   show_progress_bar: True
   checkpoint_path: checkpoints
-  checkpoint_save_epoch: 3
+  checkpoint_save_epoch: 4
   checkpoint_save_total_limit: 10
   save_by_epoch: 1
   # resume_from_checkpoint: checkpoints/epoch-14/checkpoint.pt
@@ -51,26 +51,25 @@ EVALUATION:
   corpus_name_or_path: "data/eval-data/timi/v1.0.0/corpus.json"
   query_name_or_path: "data/eval-data/timi/v1.0.0/query.json"
   pretrained_name_or_abspath:
-    #    - models_v1.1.3/epoch-1
-    #    - models_v1.1.3/epoch-2
-    #    - models_v1.1.3/epoch-3
-    #    - models_v1.1.3/epoch-4
-    #    - models_v1.1.3/epoch-5
-    #    - models_v1.1.3/epoch-6
-    #    - models_v1.1.3/epoch-7
-    #    - models_v1.1.3/epoch-8
-    #    - models_v1.1.3/epoch-9
-    #    - models_v1.1.3/epoch-10
-    #    - models_v1.1.3/epoch-11
-    #    - models_v1.1.3/epoch-12
-    #    - models_v1.1.3/epoch-13
-    #    - models_v1.1.3/epoch-14
-    #    - models_v1.1.3/epoch-15
-    #    - models_v1.1.3/epoch-16
-    #    - models_v1.1.3/epoch-17
-    #    - models_v1.1.3/epoch-18
-    #    - models_v1.1.3/epoch-19
-    - timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+    - models/timi/v1.1.3_limit_10/epoch-1
+    - models/timi/v1.1.3_limit_10/epoch-2
+    - models/timi/v1.1.3_limit_10/epoch-3
+    - models/timi/v1.1.3_limit_10/epoch-4
+    - models/timi/v1.1.3_limit_10/epoch-5
+    - models/timi/v1.1.3_limit_10/epoch-6
+    - models/timi/v1.1.3_limit_10/epoch-7
+    - models/timi/v1.1.3_limit_10/epoch-8
+    - models/timi/v1.1.3_limit_10/epoch-9
+    - models/timi/v1.1.3_limit_10/epoch-10
+    - models/timi/v1.1.3_limit_10/epoch-11
+    - models/timi/v1.1.3_limit_10/epoch-12
+    - models/timi/v1.1.3_limit_10/epoch-13
+    - models/timi/v1.1.3_limit_10/epoch-14
+    - models/timi/v1.1.3_limit_10/epoch-15
+    - models/timi/v1.1.3_limit_10/epoch-16
+    - models/timi/v1.1.3_limit_10/epoch-17
+    - models/timi/v1.1.3_limit_10/epoch-18
+    - models/timi/v1.1.3_limit_10/epoch-19
 
 RELEASE:
   model_path: models

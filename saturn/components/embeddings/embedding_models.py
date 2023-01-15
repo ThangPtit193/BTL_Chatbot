@@ -4,7 +4,7 @@ import shutil
 import time
 from abc import abstractmethod
 from typing import *
-
+from saturn.components.dataset_reader.triplets_dataset import TripletsDataset
 import torch
 import torch.multiprocessing as mp
 import transformers
@@ -29,6 +29,8 @@ _logger = logger.get_logger(__name__)
 
 
 class SemanticSimilarity(SaturnAbstract):
+    shuffle = True
+
     def __init__(self, config, pretrained_name_or_abspath, **kwargs):
         super(SemanticSimilarity, self).__init__(
             config=config, **kwargs
@@ -333,7 +335,6 @@ class SBertSemanticSimilarity(SemanticSimilarity):
         :param show_progress_bar:
         :return:
         """
-        from venus.dataset_reader.TripletDataset import TripletsDataset
         # Producing data
         if not triplets_data_path:
             triplets_data_path = file_util.get_all_files_in_directory(
@@ -355,11 +356,18 @@ class SBertSemanticSimilarity(SemanticSimilarity):
             triplet_examples=triplets_data,
             query_key="query",
             pos_key="pos",
-            neg_key="neg"
+            neg_key="neg",
+            shuffle=self.shuffle,
         )
         train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
         train_loss = losses.TripletLoss(model=self.learner)
-
+        # print the data of the first batch
+        # for batch in train_dataloader:
+        #     print(batch)
+        #     break
+        # for data in train_dataloader:
+        #     print(data)
+        # exit()
         # Train the model
         self.learner.fit(
             train_objectives=[(train_dataloader, train_loss)],

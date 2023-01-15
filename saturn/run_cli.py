@@ -3,7 +3,7 @@ import os
 import click
 import questionary
 
-from comet.lib import logger
+from comet.lib import logger, print_utils
 from saturn.cli.model import model
 from saturn.data_generation.tripple_generator import TripleGenerator
 from saturn.kr_manager import KRManager
@@ -29,15 +29,22 @@ def version():
 @click.option('--config', '-c', required=True, default="config/config.yaml")
 def run_e2e(config):
     config_parser: ConfigParser = ConfigParser(config)
+    print_utils.print_line(f"Starting generate triples")
     triple_generator = TripleGenerator(config=config_parser)
     triple_generator.load()
     triple_generator.generate_triples()
+    print_utils.print_line(f"DONE generate triples")
 
     # Train the model
+    print_utils.print_line(f"Starting train the model")
     kr_manager = KRManager(config=config_parser)
     kr_manager.train_embedder()
+    print_utils.print_line(f"DONE train the model")
+
     # Evaluate the model
+    print_utils.print_line(f"Starting evaluate the model")
     kr_manager.save()
+    print_utils.print_line(f"DONE evaluate the model")
 
 
 @click.command()

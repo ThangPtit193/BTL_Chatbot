@@ -37,7 +37,8 @@ class TripleGenerator(SaturnAbstract):
         Returns:
 
         """
-        if self.skipped:
+        if self.skipped_gen_data:
+            _logger.info("Skipped generating data")
             return
         # Check if data is already generated
         output_data_dir = self.get_data_dir()
@@ -49,14 +50,10 @@ class TripleGenerator(SaturnAbstract):
             if not is_regen:
                 self.skipped = True
                 return
-            else:
-                # Clear old data in output folder
-                is_cleaned = questionary.confirm(
-                    "Do you want to clean old data in output folder?"
-                ).ask()
-                if is_cleaned:
-                    shutil.rmtree(output_data_dir)
 
+        _logger.info("Removing old data")
+        if os.path.exists(output_data_dir):
+            shutil.rmtree(output_data_dir)
         data_dir = self.config_parser.data_generation_config()['data_dir']
         self.document_store.load_document(data_dir)
         self.ready = True
@@ -74,14 +71,20 @@ class TripleGenerator(SaturnAbstract):
         triples = []
         counter = 0
         check_point = 0
+        processed_positive_ids = set()
         for document in tqdm(documents):
             negatives_data = [{k: val} for k, val in document.negatives_ids.items()]
             positive_ids = sorted(document.positive_ids)
+            # if len of positive_ids greater than max_sentence_repeated, we will rmove proceesed positive_ids
+            if len(positive_ids) > self.max_sentence_repeated:
+                positive_ids = list(set(positive_ids) - processed_positive_ids)
+            # Get cache of positive ids
             for idx, positive_id in enumerate(positive_ids):
                 if idx >= self.max_sentence_repeated:
                     break
                 anchor = document.text
                 positive = self.document_store.documents[positive_id].text
+                processed_positive_ids.add(positive_id)
 
                 # Get ids randomly
                 doc_ids = list(random.choice(negatives_data).values())[0]
