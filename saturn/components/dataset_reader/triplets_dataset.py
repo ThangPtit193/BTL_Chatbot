@@ -26,7 +26,6 @@ class TripletsDataset(IterableDataset):
 
     def __iter__(self):
         for example in self.triplet_examples:
-            print(example)
             query_text = example[self.query_key]
             pos_text = example[self.pos_key]
             neg_text = example[self.neg_key]

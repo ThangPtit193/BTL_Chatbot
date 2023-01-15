@@ -1,13 +1,13 @@
 GENERAL:
-  device: cuda:1
+  device: cuda:0
   project: timi
-  version: v1.1.3_limit_10
+  version: v1.1.3_shuffle
   output_data: assets
   output_model: models
   output_report: reports
 
   # Skipped signal
-  skipped_gen_data: False
+  skipped_gen_data: True
   skipped_training: False
   skipped_eval: False
 

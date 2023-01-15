@@ -76,8 +76,8 @@ class TripleGenerator(SaturnAbstract):
             negatives_data = [{k: val} for k, val in document.negatives_ids.items()]
             positive_ids = sorted(document.positive_ids)
             # if len of positive_ids greater than max_sentence_repeated, we will rmove proceesed positive_ids
-            if len(positive_ids) > self.max_sentence_repeated:
-                positive_ids = list(set(positive_ids) - processed_positive_ids)
+            # if len(positive_ids) > self.max_sentence_repeated:
+            #     positive_ids = list(set(positive_ids) - processed_positive_ids)
             # Get cache of positive ids
             for idx, positive_id in enumerate(positive_ids):
                 if idx >= self.max_sentence_repeated:
@@ -96,7 +96,6 @@ class TripleGenerator(SaturnAbstract):
                     self.save(triples, f"triples_{check_point}.json", mode="triple")
                     counter = 0
                     triples = []
-
 
         check_point += len(triples)
         self.save(triples, f"triples_{check_point}.json", mode='triple')
