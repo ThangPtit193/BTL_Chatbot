@@ -160,7 +160,7 @@ class KRManager(SaturnAbstract):
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
-            similarity_data = embedder.find_similarity(src_docs, tgt_docs, _no_sort=True, _no_cache=True)
+            similarity_data = embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
             toc = perf_counter()
             retriever_time = toc - tic
 
@@ -309,10 +309,17 @@ class KRManager(SaturnAbstract):
                                                           'format': bg_format_even})
             for i in u:
                 if df_merged['label'][i - 1] != df_merged['predicted_labels'][i - 1]:
-                    wrong_label_range = xl_range_abs(i, df_merged.columns.get_loc('most_relevant_docs'),
-                                                     i, df_merged.shape[1])
-                    worksheet.conditional_format(wrong_label_range, {'type': 'no_blanks',
-                                                                     'format': bg_format_wrong})
+                    # wrong_label_range = xl_range_abs(i, df_merged.columns.get_loc('most_relevant_docs'),
+                    #                                  i, df_merged.shape[1])
+                    worksheet.write(
+                        i, df_merged.columns.get_loc('most_relevant_docs'),
+                        df_merged['most_relevant_docs'][i-1], bg_format_wrong)
+                    worksheet.write(
+                        i, df_merged.columns.get_loc('predicted_labels'),
+                        df_merged['predicted_labels'][i-1], bg_format_wrong)
+                    worksheet.write(
+                        i, df_merged.columns.get_loc('relevant_doc_scores'),
+                        df_merged['relevant_doc_scores'][i-1], bg_format_wrong)
 
             if len(u) < 2:
                 pass  # do not merge cells if there is only one row

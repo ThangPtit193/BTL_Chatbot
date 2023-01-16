@@ -23,6 +23,10 @@ if 'overall_report' not in st.session_state:
 if 'detail_report' not in st.session_state:
     st.session_state['detail_report'] = None
 
+if 'Download all reports' not in st.session_state:
+    st.session_state['Download_all_reports'] = None
+
+
 kr = KRManager(DEFAULT_CONFIG_AT_STARTUP)
 
 
@@ -39,6 +43,18 @@ st.set_page_config(
 )
 
 st.title("🤖 Evaluation")
+with st.expander("ℹ️ Introduce", expanded=True):
+    st.markdown("### Evaluation - Knowledge Retrieval ### ")
+    st.markdown('INSTRUCTION: Select models, query and corpus to evaluate')
+    st.markdown("""Query and corpus must be in json format""")
+
+with st.expander("📂 Download sample files", expanded=False):
+    st.markdown("You can download sample json file here")
+    with open("data/eval-data/dummy/corpus_docs.json", "r") as f:
+        st.download_button("Download corpus file", f.read(), file_name="corpus_docs.json", mime="application/json")
+    with open("data/eval-data/dummy/query_docs.json", "r") as f:
+        st.download_button("Download query file", f.read(), file_name="query_docs.json", mime="application/json")
+    
 
 with st.form("eval model") as eval_form:
     eval_models = st_tags(
@@ -62,7 +78,7 @@ with st.form("eval model") as eval_form:
             key='3',
             accept_multiple_files=True
         )
-    summit_button = st.form_submit_button()
+    summit_button = st.form_submit_button(label = 'Evaluate')
 
 
 # @st.experimental_singleton
@@ -73,7 +89,7 @@ def lazy_init():
     queries = load_docs(queries_json, corpus_json)
     corpus = load_docs(corpus_json)
 
-    kr._model_name_or_path = models_name
+    kr._pretrained_name_or_abspath = models_name
     kr._corpus_docs = None
     kr._corpus_docs = corpus
     kr._query_docs = None
@@ -90,11 +106,16 @@ result_type = st.selectbox('Select result type', ['',
                                                   'Download all reports'], key='4')
 
 if summit_button:
+    if len(eval_query) == 0 or len(eval_corpus) == 0:
+        st.error('Please upload query and corpus file', icon="🚨")
+        st.stop()
     kr = lazy_init()
     retriever_results, retriever_top_k_results = kr.evaluate_embedder()
-
+    st.success('Evaluate done! please check the result below')
     st.session_state['overall_report'] = retriever_results
     st.session_state['detail_report'] = retriever_top_k_results
+    st.session_state['Download_all_reports'] = True
+
 
 if result_type == "Display overall result":
     if st.session_state['overall_report'] is not None:
@@ -192,28 +213,30 @@ if result_type == 'Download detail report':
         st.error('No file to download', icon="🚨")
 
 if result_type == "Download all reports":
-    kr = lazy_init()
+    if st.session_state['Download_all_reports'] is not None:
+        kr = lazy_init()
+        # create tempt folder to compress all reports
+        dt = str(time.time())
+        temp_path = os.path.join('reports', dt)
+        os.mkdir(temp_path)
+        if st.session_state['detail_report'] is not None:
+            results = st.session_state['detail_report']
+            for idx, models in enumerate(results):
+                for model, df in models.items():
+                    kr.save_detail_report(output_dir=temp_path, model_name=model, df=df)
+        if st.session_state['overall_report'] is not None:
+            df = pd.DataFrame(st.session_state['overall_report'])
+            kr.save_overall_report(output_dir=temp_path, df=df, save_markdown=True)
 
-    # create tempt folder to compress all reports
-    dt = str(time.time())
-    temp_path = os.path.join('reports', dt)
-    os.mkdir(temp_path)
-    if st.session_state['detail_report'] is not None:
-        results = st.session_state['detail_report']
-        for idx, models in enumerate(results):
-            for model, df in models.items():
-                kr.save_detail_report(output_dir=temp_path, model_name=model, df=df)
-    if st.session_state['overall_report'] is not None:
-        df = pd.DataFrame(st.session_state['overall_report'])
-        kr.save_overall_report(output_dir=temp_path, df=df, save_markdown=True)
-
-    time.sleep(5)
-    zip_path = zip_folder(folder=temp_path)
-    with open(zip_path, "rb") as fp:
-        btn = st.download_button(
-            label="📥 Download all reports",
-            data=fp,
-            file_name=f"{zip_path}",
-            mime="application/zip",
-            on_click=trigger_on_click(temp_path)
-        )
+        time.sleep(5)
+        zip_path = zip_folder(folder=temp_path)
+        with open(zip_path, "rb") as fp:
+            btn = st.download_button(
+                label="📥 Download all reports",
+                data=fp,
+                file_name=f"{zip_path}",
+                mime="application/zip",
+                on_click=trigger_on_click(temp_path)
+            )
+    else:
+        st.error('No file to download', icon="🚨")

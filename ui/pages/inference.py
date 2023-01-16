@@ -18,7 +18,7 @@ DEFAULT_MAX_WORDS = os.getenv("DEFAULT_MAX_WORDS_AT_STARTUP", 50)
 # INPUT query
 DEFAULT_INPUT_QUERY = os.getenv("DEFAULT_INPUT_QUERY", "Hôm nay tôi đi học")
 # INPUT corpus
-DEFAULT_INPUT_CORPUS = os.getenv("DEFAULT_INPUT_CORPUS", "data/sample_corpus.txt")
+DEFAULT_INPUT_CORPUS = os.getenv("DEFAULT_INPUT_CORPUS", "ui/sample_data/sample_inference.txt")
 
 
 def set_state_if_absent(key, value):
@@ -34,8 +34,9 @@ def main():
     set_state_if_absent("input_query", DEFAULT_INPUT_QUERY)
     set_state_if_absent("input_corpus", DEFAULT_INPUT_CORPUS)
 
-    st.title("🤖 Knowledge Retrieval ")
+    st.sidebar.title("🤖 Inference ")
 
+    st.title("🤖 Knowledge Retrieval ")
     with st.expander("ℹ️ Introduce", expanded=True):
         st.write(
             """     
@@ -45,6 +46,10 @@ def main():
         )
 
         st.markdown("")
+    with st.expander("📂 Download sample files", expanded=False):
+        st.markdown("You can download sample txt file here")
+        with open(DEFAULT_INPUT_CORPUS, "r") as f:
+            st.download_button("Download sample txt file", f, key="sample_file")
 
     st.markdown("")
     st.markdown("## 📌 **Query and Relevant docs** ##")
@@ -103,6 +108,7 @@ def main():
             response_samples = AgGrid(df_template, editable=True, fit_columns_on_grid_load=True, key='sample',
                                       height=203)
         with tab_2:
+            # download sample file
             corpus_uploader = st.file_uploader(
                 label="Choose a txt file",
                 type=["txt"],
@@ -110,7 +116,7 @@ def main():
                 key="corpus_uploader",
                 accept_multiple_files=False)
 
-        merge_input = st.checkbox(label="Merge input docs and samples", value=True, key="merge_input")
+        merge_input = st.checkbox(label="Merge input docs and samples", value=False, key="merge_input")
 
         submit_button = st.form_submit_button(label="✨ Get relevant sentences!")
 
