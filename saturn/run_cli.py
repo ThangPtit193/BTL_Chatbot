@@ -57,7 +57,7 @@ def release(config):
         raise ValueError("Release config is not found")
 
     model_path = release_config["model_path"]
-    version = config_parser.general_config().get("version")
+    version = release_config.get("version") or config_parser.general_config().get("version")
     project_name = config_parser.general_config().get("project")
     pretrained_model = release_config.get("pretrained_model")
     data_size = release_config.get("data_size", None)
