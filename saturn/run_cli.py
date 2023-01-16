@@ -9,6 +9,7 @@ from saturn.data_generation.tripple_generator import TripleGenerator
 from saturn.kr_manager import KRManager
 from saturn.utils.config_parser import ConfigParser
 from .version import get_saturn_version
+from comet.shared.model_hub import ModelHub
 
 logger.configure_logger("DEBUG")
 _logger = logger.get_logger(__name__)
@@ -80,7 +81,7 @@ def release(config):
         f"Are you sure to upload the model from '{model_path}' with name: '{name}' to model hub?"
     ).ask()
     if is_agree_upload:
-        print("Uploading...")
+        ModelHub().upload_model(model_name=name, model_path=model_path, force=False)
     else:
         print("Aborting...")
         return
