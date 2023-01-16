@@ -154,14 +154,13 @@ class KRManager(SaturnAbstract):
                 embedder = BertEmbedder(
                     pretrained_name_or_abspath=pretrained_name_or_abspath, device=self.device
                 )
-                # self.embedder.load_model(cache_path=None, pretrained_name_or_abspath=pretrained_name_or_abspath)
             except Exception as e:
                 _logger.error(f"Failed to load model {pretrained_name_or_abspath} due to {e}")
                 continue
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
-            similarity_data = embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
+            similarity_data = embedder.find_similarity(src_docs, tgt_docs, _no_sort=True, _no_cache=True)
             toc = perf_counter()
             retriever_time = toc - tic
 

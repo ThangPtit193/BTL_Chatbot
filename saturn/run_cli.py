@@ -89,7 +89,8 @@ def release(config):
 @click.command()
 @click.option('--config', '-c', required=True, default="config/config.yaml")
 def train(config):
-    kr_manager = KRManager(config_path=config)
+    config_parser: ConfigParser = ConfigParser(config)
+    kr_manager = KRManager(config=config_parser)
     kr_manager.train_embedder()
 
 
@@ -110,9 +111,10 @@ def train(config):
               required=False,
               type=bool,
               help="Save report with markdown file",
-              default=False)
+              default=True)
 def test(config, rtype, top_k, save_md):
-    kr_manager = KRManager(config_path=config)
+    config_parser: ConfigParser = ConfigParser(config)
+    kr_manager = KRManager(config=config_parser)
     kr_manager.save(report_type=rtype, top_k=top_k, save_markdown=save_md)
 
 

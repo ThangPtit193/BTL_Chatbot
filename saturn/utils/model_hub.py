@@ -32,6 +32,7 @@ class ModelHub:
             # files = self.client.get_your_repositories()
             # self.client.upload_resource()
             all_name_files = [os.path.basename(path) for path in all_paths]
+        print(all_name_files)
 
 
 def get_path_recursive(folder, prefix):

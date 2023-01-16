@@ -1,7 +1,7 @@
 GENERAL:
   device: cuda:1
   project: timi
-  version: v1.1.3
+  version: v1.1.3_shuffle
   output_data: assets
   output_model: models
   output_report: reports
@@ -51,26 +51,25 @@ EVALUATION:
   corpus_name_or_path: "data/eval-data/timi/v1.0.0/corpus.json"
   query_name_or_path: "data/eval-data/timi/v1.0.0/query.json"
   pretrained_name_or_abspath:
-    - models/timi/v1.1.3/epoch-1
-#    - models/timi/v1.1.3/epoch-2
-#    - models/timi/v1.1.3/epoch-3
-#    - models/timi/v1.1.3/epoch-4
-#    - models/timi/v1.1.3/epoch-5
-#    - models/timi/v1.1.3/epoch-6
-#    - models/timi/v1.1.3/epoch-7
-#    - models/timi/v1.1.3/epoch-8
-#    - models/timi/v1.1.3/epoch-9
-    - models/timi/v1.1.3/epoch-10
-    - models/timi/v1.1.3/epoch-11
-    - models/timi/v1.1.3/epoch-12
-    - models/timi/v1.1.3/epoch-13
-    - models/timi/v1.1.3/epoch-14
-    - models/timi/v1.1.3/epoch-15
-    - models/timi/v1.1.3/epoch-16
-    - models/timi/v1.1.3/epoch-17
-    - models/timi/v1.1.3/epoch-18
-    - models/timi/v1.1.3/epoch-19
-    - timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+    - models/timi/v1.1.3_shuffle/epoch-1
+    - models/timi/v1.1.3_shuffle/epoch-2
+    - models/timi/v1.1.3_shuffle/epoch-3
+    - models/timi/v1.1.3_shuffle/epoch-4
+    - models/timi/v1.1.3_shuffle/epoch-5
+    - models/timi/v1.1.3_shuffle/epoch-6
+    - models/timi/v1.1.3_shuffle/epoch-7
+    - models/timi/v1.1.3_shuffle/epoch-8
+    - models/timi/v1.1.3_shuffle/epoch-9
+#    - models/timi/v1.1.3_shuffle/epoch-10
+#    - models/timi/v1.1.3_shuffle/epoch-11
+#    - models/timi/v1.1.3_shuffle/epoch-12
+#    - models/timi/v1.1.3_shuffle/epoch-13
+#    - models/timi/v1.1.3_shuffle/epoch-14
+#    - models/timi/v1.1.3_shuffle/epoch-15
+#    - models/timi/v1.1.3_shuffle/epoch-16
+#    - models/timi/v1.1.3_shuffle/epoch-17
+#    - models/timi/v1.1.3_shuffle/epoch-18
+#    - models/timi/v1.1.3_shuffle/epoch-19
 
 RELEASE:
   model_path: models
