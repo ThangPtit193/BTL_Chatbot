@@ -20,6 +20,8 @@ import shutil
 from venus.wrapper import axiom_wrapper
 from torch.utils.tensorboard import SummaryWriter
 
+# from pytorch.torch.cuda import device
+
 _logger = logger.get_logger(__name__)
 
 
@@ -96,23 +98,30 @@ class AutoModelForSentenceEmbedding(torch.nn.Module):
 
 class CustomSentenceTransformer(SentenceTransformer):
     @classmethod
-    def from_pretrained(cls, model_name_or_path: Text = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2") -> "CustomSentenceTransformer":
+    def from_pretrained(
+        cls,
+        model_name_or_path: Text = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        device: Text = None
+    ) -> "CustomSentenceTransformer":
         """
 
         Args:
             model_name_or_path: The model name or path. If name provided,
                                 It will be loaded from hugging face hub or from axiom
+            device: The device to load the model on. cpu, cuda, cuda:0, cuda:1, etc.
         """
+        if not torch.cuda.is_available():
+            device = "cpu"
         model = None
         if os.path.isdir(model_name_or_path):
             try:
-                model = CustomSentenceTransformer(model_name_or_path)
+                model = CustomSentenceTransformer(model_name_or_path, device=device)
             except Exception as e:
                 _logger.error(f"Cannot load pretrained model from {model_name_or_path}, "
                               f"Because {e}")
         else:
             model_name_or_path = axiom_wrapper.fetch_model(model_name_or_path)
-            model = CustomSentenceTransformer(model_name_or_path)
+            model = CustomSentenceTransformer(model_name_or_path, device=device)
             model.max_seq_length = 128
         return model
 
@@ -331,15 +340,15 @@ class CustomSentenceTransformer(SentenceTransformer):
                 global_step += 1
             writer.flush()
             if bool(
-                    checkpoint_path is not None
-                    and checkpoint_save_epoch is not None
-                    and checkpoint_save_epoch > 0
-                    and (epoch + 1) % checkpoint_save_epoch == 0
+                checkpoint_path is not None
+                and checkpoint_save_epoch is not None
+                and checkpoint_save_epoch > 0
+                and (epoch + 1) % checkpoint_save_epoch == 0
             ):
                 self.save_checkpoint(epoch, optimizers, schedulers, checkpoint_path, checkpoint_save_total_limit)
 
             if save_by_epoch > 0 and \
-                    (epoch+1) % save_by_epoch == 0:
+                (epoch + 1) % save_by_epoch == 0:
                 self.save_model(output_path, model_save_total_limit, epoch)
 
         if evaluator is None and output_path is not None:  # No evaluator, but output path: save final model version

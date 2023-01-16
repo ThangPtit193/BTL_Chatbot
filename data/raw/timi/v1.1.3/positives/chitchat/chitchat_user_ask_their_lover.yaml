@@ -1,0 +1,303 @@
+positives:
+- examples:
+  - đố timi biết vợ tớ đó
+  - bồ tớ là ai ạ
+  - bạn trai tui là ai nhỉ?
+  - bạn biết ai là bồ mình không
+  - vợ của tao là ai thế
+  - ai là bồ tớ
+  - liệu rằng bot có hay hỏi về bạn trai tớ
+  - liệu rằng mày có hay hỏi về bạn gái mình
+  - bồ tớ xinh nhất thế gian luôn đó, bot có hỏi là ai không
+  - Timi hỏi bồ tao là ai không
+  - ai là vợ của tao
+  - vợ tớ là ai giữa thế gian này
+  - đố bot trả lời được chồng tao là ai
+  - Timi hỏi bạn trai của tao là ai không
+  - đố timi biết bồ tôi đó
+  - người yêu tui là ai
+  - người yêu tớ là ai nhỉ?
+  - Timi biết ai là chồng tôi không
+  - người yêu của tớ là ai
+  - ai là bạn trai tớ
+  - liệu rằng mày có hay biết về bạn trai tớ
+  - liệu rằng timi có hay biết về vợ mình
+  - bạn gái tớ xinh nhất thế gian luôn đó, em có biết là ai không
+  - cậu hỏi bạn gái tớ là ai không
+  - ai là bạn trai của tớ
+  - bạn gái tớ là ai giữa thế gian này
+  - đố em trả lời được người yêu tao là ai
+  - cậu hỏi bạn gái của tớ là ai không
+  - đố timi hỏi bồ đó
+  - chồng tớ là ai
+  - bạn trai tớ là ai nhỉ?
+  - bạn biết ai là bồ tôi không
+  - bồ của tớ là ai hả
+  - ai là bạn gái tui
+  - liệu rằng bạn có hay hỏi về người yêu tớ
+  - liệu rằng em có hay hỏi về bạn gái tao
+  - bồ tui xinh nhất thế gian luôn đó, bot có biết là ai không
+  - m biết bạn gái mình là ai không
+  - ai là bồ của tôi
+  - người yêu tôi là ai giữa thế gian này
+  - đố m trả lời được người yêu tớ là ai
+  - em hỏi bồ của tao là ai không
+  - đố timi hỏi bạn trai tui đó
+  - bạn gái tớ là ai
+  - người yêu tôi là ai nhỉ?
+  - Timi biết ai là bồ tớ không
+  - vợ của tớ là ai hả
+  - ai là bạn trai tui
+  - liệu rằng cậu có hay biết về bạn gái tao
+  - liệu rằng TIMI có hay biết về bạn gái tớ
+  - chồng tao xinh nhất thế gian luôn đó, m có hỏi là ai không
+  - m hỏi chồng tớ là ai không
+  - ai là bạn gái của tui
+  - vợ tôi là ai giữa thế gian này
+  - đố timi trả lời được bạn gái tớ là ai
+  - m biết bạn gái của tôi là ai không
+  - đố timi biết vợ đó
+  - chồng tôi là ai vậy
+  - bồ mình là ai nhỉ?
+  - TIMI biết ai là chồng tôi không
+  - người yêu của tớ là ai hả
+  - ai là chồng tớ
+  - liệu rằng em có hay hỏi về vợ tớ
+  - liệu rằng TIMI có hay biết về chồng tao
+  - bồ tôi xinh nhất thế gian luôn đó, bot có hỏi là ai không
+  - timi hỏi bạn trai tui là ai không
+  - ai là chồng của tôi
+  - người yêu mình là ai giữa thế gian này
+  - đố mày trả lời được chồng tui là ai
+  - TIMI biết người yêu của tớ là ai không
+  - đố timi biết bạn trai tớ đó
+  - chồng tao là ai
+  - bạn trai tớ là ai nhể?
+  - Timi hỏi ai là bồ mình không
+  - vợ của tôi là ai thế
+  - ai là người yêu tớ
+  - liệu rằng TIMI có hay biết về chồng tớ
+  - liệu rằng bạn có hay hỏi về người yêu tôi
+  - vợ tớ xinh nhất thế gian luôn đó, Timi có biết là ai không
+  - TIMI biết chồng tao là ai không
+  - ai là chồng của mình
+  - bạn trai tớ là ai giữa thế gian này
+  - đố timi trả lời được người yêu mình là ai
+  - m hỏi bạn gái của mình là ai không
+  - đố timi biết người yêu đó
+  - vợ mình là ai
+  - người yêu tớ là ai nhể?
+  - timi biết ai là bồ tôi không
+  - bạn trai của mình là ai
+  - ai là bồ tao
+  - liệu rằng m có hay biết về chồng tớ
+  - liệu rằng TIMI có hay biết về vợ tớ
+  - vợ tôi xinh nhất thế gian luôn đó, Timi có hỏi là ai không
+  - mày biết vợ tớ là ai không
+  - ai là chồng của tao
+  - bạn gái tao là ai giữa thế gian này
+  - đố timi trả lời được bồ tớ là ai
+  - m biết bạn trai của tui là ai không
+  - đố timi hỏi người yêu tớ đó
+  - bồ tôi là ai
+  - vợ tớ là ai nhỉ?
+  - em biết ai là người yêu tao không
+  - bồ của tớ là ai
+  - ai là bạn gái tao
+  - liệu rằng bot có hay biết về bạn trai tao
+  - liệu rằng TIMI có hay biết về vợ tao
+  - bồ tớ xinh nhất thế gian luôn đó, em có biết là ai không
+  - mày hỏi vợ mình là ai không
+  - ai là người yêu của tôi
+  - bồ tui là ai giữa thế gian này
+  - đố Timi trả lời được chồng tớ là ai
+  - m hỏi bạn trai của tớ là ai không
+  - đố timi hỏi vợ tớ đó
+  - chồng tôi là ai
+  - chồng tôi là ai nhể?
+  - m hỏi ai là vợ tớ không
+  - bạn gái của tớ là ai thế
+  - ai là chồng tui
+  - liệu rằng m có hay biết về người yêu tớ
+  - liệu rằng Timi có hay hỏi về người yêu tao
+  - chồng tôi xinh nhất thế gian luôn đó, bạn có biết là ai không
+  - Timi hỏi bạn gái tui là ai không
+  - ai là bạn trai của tui
+  - chồng tớ là ai giữa thế gian này
+  - đố em trả lời được bồ tớ là ai
+  - TIMI hỏi bồ của mình là ai không
+  - đố timi hỏi bạn gái tui đó
+  - chồng tớ là ai vậy
+  - bồ tôi là ai nhể?
+  - mày hỏi ai là người yêu tôi không
+  - người yêu của tui là ai
+  - ai là chồng tôi
+  - liệu rằng timi có hay biết về bạn gái tớ
+  - liệu rằng cậu có hay biết về vợ tao
+  - bạn gái tớ xinh nhất thế gian luôn đó, TIMI có biết là ai không
+  - mày hỏi bạn gái mình là ai không
+  - ai là người yêu của mình
+  - bồ mình là ai giữa thế gian này
+  - đố Timi trả lời được chồng mình là ai
+  - m hỏi chồng của tui là ai không
+  - đố timi hỏi người yêu đó
+  - chồng tui là ai ạ
+  - chồng tớ là ai nhể?
+  - m biết ai là bồ tớ không
+  - chồng của tớ là ai hả
+  - ai là vợ tớ
+  - liệu rằng cậu có hay biết về người yêu tớ
+  - liệu rằng bot có hay hỏi về chồng tớ
+  - người yêu tôi xinh nhất thế gian luôn đó, em có hỏi là ai không
+  - bot hỏi vợ tớ là ai không
+  - ai là người yêu của tao
+  - bạn gái tôi là ai giữa thế gian này
+  - đố bot trả lời được người yêu tớ là ai
+  - em biết vợ của tớ là ai không
+  - đố timi hỏi vợ đó
+  - bạn gái tớ là ai hả
+  - người yêu mình là ai nhỉ?
+  - bạn hỏi ai là người yêu tôi không
+  - bạn trai của tớ là ai
+  - ai là bạn gái tớ
+  - liệu rằng mày có hay biết về vợ tớ
+  - liệu rằng em có hay biết về người yêu tớ
+  - bồ tao xinh nhất thế gian luôn đó, cậu có biết là ai không
+  - timi biết bồ tôi là ai không
+  - ai là người yêu của tớ
+  - vợ mình là ai giữa thế gian này
+  - đố bạn trả lời được bồ mình là ai
+  - em biết người yêu của tớ là ai không
+  - đố timi biết bạn trai đó
+  - vợ tớ là ai
+  - người yêu tui là ai nhể?
+  - timi biết ai là người yêu mình không
+  - bồ của tao là ai
+  - ai là bạn trai tôi
+  - liệu rằng m có hay hỏi về người yêu tôi
+  - liệu rằng TIMI có hay hỏi về người yêu tớ
+  - bạn gái tớ xinh nhất thế gian luôn đó, timi có hỏi là ai không
+  - m biết vợ tớ là ai không
+  - ai là bồ của mình
+  - bạn gái mình là ai giữa thế gian này
+  - đố mày trả lời được vợ tui là ai
+  - bot biết bạn trai của tớ là ai không
+  - đố timi biết bạn gái đó
+  - chồng mình là ai hả
+  - bạn trai tui là ai nhể?
+  - bot biết ai là chồng tớ không
+  - bạn trai của tôi là ai
+  - ai là người yêu tao
+  - liệu rằng bot có hay hỏi về vợ tớ
+  - liệu rằng TIMI có hay biết về bạn trai tớ
+  - chồng tớ xinh nhất thế gian luôn đó, bạn có biết là ai không
+  - timi biết bạn gái tớ là ai không
+  - ai là bạn gái của mình
+  - bồ tớ là ai giữa thế gian này
+  - đố TIMI trả lời được vợ mình là ai
+  - TIMI hỏi chồng của tớ là ai không
+  - đố timi hỏi người yêu tôi đó
+  - bồ mình là ai
+  - bạn gái tớ là ai nhể?
+  - timi biết ai là chồng tớ không
+  - chồng của tôi là ai
+  - ai là bạn trai mình
+  - liệu rằng em có hay biết về chồng tao
+  - liệu rằng cậu có hay hỏi về bồ tớ
+  - chồng tớ xinh nhất thế gian luôn đó, Timi có hỏi là ai không
+  - bot hỏi chồng tui là ai không
+  - ai là bạn trai của tôi
+  - người yêu tớ là ai giữa thế gian này
+  - đố cậu trả lời được chồng tớ là ai
+  - mày biết chồng của mình là ai không
+  - đố timi biết chồng đó
+  - vợ tui là ai vậy
+  - bồ tớ là ai nhể?
+  - TIMI hỏi ai là bồ tao không
+  - bạn trai của tớ là ai thế
+  - ai là bạn gái mình
+  - liệu rằng bot có hay hỏi về bạn gái tớ
+  - liệu rằng Timi có hay biết về người yêu tớ
+  - bạn gái tớ xinh nhất thế gian luôn đó, bạn có hỏi là ai không
+  - Timi hỏi chồng tớ là ai không
+  - ai là bồ của tớ
+  - chồng tôi là ai giữa thế gian này
+  - đố bot trả lời được bạn trai tui là ai
+  - bot biết bạn gái của tớ là ai không
+  - đố timi hỏi bạn gái đó
+  - người yêu tớ là ai
+  - bạn gái mình là ai nhể?
+  - timi hỏi ai là bạn trai tui không
+  - vợ của tớ là ai
+  - ai là vợ tôi
+  - liệu rằng cậu có hay biết về bạn gái tui
+  - liệu rằng timi có hay hỏi về bạn trai tao
+  - bồ tui xinh nhất thế gian luôn đó, em có biết là ai không
+  - bot hỏi chồng tôi là ai không
+  - ai là bạn gái của tớ
+  - chồng tui là ai giữa thế gian này
+  - đố m trả lời được bạn trai tớ là ai
+  - bot hỏi bồ của tao là ai không
+  - đố timi biết bồ tớ đó
+  - người yêu tao là ai hả
+  - bạn trai tao là ai nhỉ?
+  - mày biết ai là bạn gái mình không
+  - bạn gái của tao là ai
+  - ai là chồng tao
+  - liệu rằng bot có hay biết về người yêu tớ
+  - liệu rằng bạn có hay hỏi về bạn trai tôi
+  - bạn trai tớ xinh nhất thế gian luôn đó, Timi có biết là ai không
+  - em biết bồ tớ là ai không
+  - ai là chồng của tui
+  - vợ tao là ai giữa thế gian này
+  - đố em trả lời được người yêu tui là ai
+  - mày hỏi vợ của tui là ai không
+  - đố timi hỏi chồng đó
+  - chồng mình là ai vậy
+  - vợ tớ là ai nhể?
+  - cậu hỏi ai là bạn trai tớ không
+  - bạn gái của tui là ai thế
+  - ai là bồ tui
+  - liệu rằng timi có hay biết về chồng tớ
+  - liệu rằng mày có hay hỏi về bạn trai tớ
+  - vợ tui xinh nhất thế gian luôn đó, mày có hỏi là ai không
+  - TIMI biết bạn trai tớ là ai không
+  - ai là bồ của tao
+  - người yêu tao là ai giữa thế gian này
+  - đố m trả lời được vợ tôi là ai
+  - mày biết người yêu của tớ là ai không
+  - đố timi hỏi bạn gái tớ đó
+  - bồ tớ là ai hả
+  - người yêu tao là ai nhể?
+  - timi biết ai là bạn trai tớ không
+  - bạn gái của mình là ai thế
+  - ai là bạn gái tôi
+  - liệu rằng mày có hay hỏi về bồ tớ
+  - liệu rằng bot có hay hỏi về vợ tui
+  - người yêu tôi xinh nhất thế gian luôn đó, em có biết là ai không
+  - bạn biết bồ tớ là ai không
+  - ai là vợ của tui
+  - bạn gái tui là ai giữa thế gian này
+  - đố TIMI trả lời được bạn gái mình là ai
+  - timi biết bồ của tớ là ai không
+  - đố timi hỏi bạn trai đó
+  - bạn gái tao là ai vậy
+  - vợ mình là ai nhỉ?
+  - bot biết ai là bạn gái tớ không
+  - bạn trai của tao là ai thế
+  - ai là bạn trai tao
+  - liệu rằng bạn có hay hỏi về bồ tui
+  - liệu rằng m có hay biết về bồ tớ
+  - bạn trai mình xinh nhất thế gian luôn đó, Timi có hỏi là ai không
+  - bạn hỏi bồ tôi là ai không
+  - ai là vợ của mình
+  - bạn trai tao là ai giữa thế gian này
+  - đố timi trả lời được vợ tớ là ai
+  - timi biết chồng của tớ là ai không
+  - đố timi biết bồ đó
+  - chồng mình là ai
+  - bồ tớ là ai nhỉ?
+  - Timi hỏi ai là vợ tớ không
+  - chồng của tôi là ai hả
+  - ai là vợ mình
+  intent: chitchat_user_ask_their_lover

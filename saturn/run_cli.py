@@ -1,12 +1,17 @@
 import os
 
 import click
-from saturn.kr_manager import KRManager
-from comet.lib import logger
+import questionary
+
+from comet.lib import logger, print_utils
 from saturn.cli.model import model
+from saturn.data_generation.tripple_generator import TripleGenerator
+from saturn.kr_manager import KRManager
+from saturn.utils.config_parser import ConfigParser
 from .version import get_saturn_version
 
 logger.configure_logger("DEBUG")
+_logger = logger.get_logger(__name__)
 
 
 @click.group()
@@ -22,8 +27,70 @@ def version():
 
 @click.command()
 @click.option('--config', '-c', required=True, default="config/config.yaml")
+def run_e2e(config):
+    config_parser: ConfigParser = ConfigParser(config)
+    print_utils.print_line(f"Starting generate triples")
+    triple_generator = TripleGenerator(config=config_parser)
+    triple_generator.load()
+    triple_generator.generate_triples()
+    print_utils.print_line(f"DONE generate triples")
+
+    # Train the model
+    print_utils.print_line(f"Starting train the model")
+    kr_manager = KRManager(config=config_parser)
+    kr_manager.train_embedder()
+    print_utils.print_line(f"DONE train the model")
+
+    # Evaluate the model
+    print_utils.print_line(f"Starting evaluate the model")
+    kr_manager.save()
+    print_utils.print_line(f"DONE evaluate the model")
+
+
+@click.command()
+@click.option('--config', '-c', required=True, default="config/config.yaml")
+def release(config):
+    config_parser: ConfigParser = ConfigParser(config)
+    release_config = config_parser.release_config()
+    if not release_config:
+        raise ValueError("Release config is not found")
+
+    model_path = release_config["model_path"]
+    version = config_parser.general_config().get("version")
+    project_name = config_parser.general_config().get("project")
+    pretrained_model = release_config.get("pretrained_model")
+    data_size = release_config.get("data_size", None)
+
+    name = ""
+    if not project_name:
+        raise Exception("Project name is not defined")
+    name += project_name
+    if not pretrained_model:
+        raise Exception("Pretrained model is not defined")
+    name += f"-{pretrained_model}"
+    name += "-faq"
+    if data_size:
+        name += f"-{data_size}"
+    if version:
+        name += f"-{version}"
+
+    # Replace _ with - in name and " " by "-"
+    name = name.replace("_", "-").replace(" ", "-")
+    is_agree_upload = questionary.confirm(
+        f"Are you sure to upload the model from '{model_path}' with name: '{name}' to model hub?"
+    ).ask()
+    if is_agree_upload:
+        print("Uploading...")
+    else:
+        print("Aborting...")
+        return
+
+
+@click.command()
+@click.option('--config', '-c', required=True, default="config/config.yaml")
 def train(config):
-    kr_manager = KRManager(config_path=config)
+    config_parser: ConfigParser = ConfigParser(config)
+    kr_manager = KRManager(config=config_parser)
     kr_manager.train_embedder()
 
 
@@ -44,9 +111,10 @@ def train(config):
               required=False,
               type=bool,
               help="Save report with markdown file",
-              default=False)
+              default=True)
 def test(config, rtype, top_k, save_md):
-    kr_manager = KRManager(config_path=config)
+    config_parser: ConfigParser = ConfigParser(config)
+    kr_manager = KRManager(config=config_parser)
     kr_manager.save(report_type=rtype, top_k=top_k, save_markdown=save_md)
 
 
@@ -65,6 +133,8 @@ entry_point.add_command(version)
 entry_point.add_command(train)
 entry_point.add_command(test)
 entry_point.add_command(ui)
+entry_point.add_command(run_e2e)
+entry_point.add_command(release)
 entry_point.add_command(model)
 
 if __name__ == '__main__':

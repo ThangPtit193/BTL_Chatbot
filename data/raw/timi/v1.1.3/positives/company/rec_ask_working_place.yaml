@@ -1,0 +1,672 @@
+positives:
+- examples:
+  - công ty có cho làm tại Canada không
+  - miền tây có làm product owner hông
+  - tôi muốn biết thông tin về nơi làm việc của senior nlp được k
+  - tập đoàn Vingroup làm việc ở đâu vậy á hả?
+  - khu vực nào làm được react-native dev
+  - front-end develop có làm ở cố đô huế ko
+  - ngân hàng vietinbank có làm ở NB không
+  - tớ định ứng tuyển làm full-time QA nhưng hông biết sẽ làm tại chỗ nào
+  - mình muốn làm ở BG được không
+  - tớ apply vị trí biên soạn nội dung giáo dục thì làm tại đâu?
+  - blockchain dev làm ở đâu
+  - pentest làm tại đâu?
+  - nv cskh làm ở đâu được bạn
+  - ứng tuyển game 3d product thì làm ở BG được không
+  - tôi ứng tuyển vị trí product analyst thì làm việc tại đâu nhể
+  - thử việc blockchain thì làm ở sài gòn nhể
+  - vị trí cầu thủ đá banh làm chỗ nào thế
+  - nhà mình gần hn mình xin làm ở đó được không
+  - nếu tôi đậu vị trí ios dev thì làm việc ở thái bình chuẩn không
+  - ứng tuyển cầu thủ làm ở đâu
+  - ở nam trung bộ có vị trí android develop không
+  - chỗ làm của graphic designer
+  - tập đoàn CÔNG NGHỆ CMC có cho làm tại sài gòn không
+  - LS có làm VFX Animator hông
+  - mình muốn biết thông tin về nơi làm việc của thử việc business supporter china
+    được hông
+  - công ty làm việc ở đâu?
+  - khu vực nào làm được java developer
+  - C++ developer có làm ở đất Việt không
+  - cty vinamilk có làm ở VL không
+  - mình định ứng tuyển làm thử việc os admin nhưng hông biết sẽ làm tại thành phố
+    nào
+  - mình muốn làm ở quảng nam được không
+  - e apply vị trí Ruby engineer thì làm tại đâu?
+  - PA làm ở đâu
+  - react-native develop làm tại đâu?
+  - game unity 2d developer làm ở đâu được bạn
+  - ứng tuyển game 3d art thì làm ở đông nam bộ được không
+  - tớ appy vị trí graphic thì làm việc tại đâu nhỉ
+  - thử việc java thì làm ở hn ha
+  - vị trí java dev làm chỗ nào thế
+  - nhà mình gần ninh bình mình xin làm ở đó được không
+  - nếu mình trúng tuyển 3d product thì làm việc ở kon tum đúng ko
+  - ứng tuyển fullstack làm ở đâu
+  - ở hn có vị trí android dev ko
+  - chỗ làm của back end dev
+  - công ty Đông Tây Promotion có cho làm tại đồng bằng sông hồng không
+  - LS có làm game 2d không
+  - tôi muốn hỏi thông tin về nơi làm việc của fresher dotnet được không
+  - công ty f-tech làm việc ở đâu vậy á hả?
+  - khu vực nào làm được os network
+  - react-native develop có làm ở miền nam hông
+  - tập đoàn Masan có làm ở sa đéc không
+  - mình định apply làm fresher full-stack devlop nhưng hông biết sẽ làm tại thành
+    phố nào
+  - mình muốn làm ở Việt Nam được không
+  - mình apply vị trí business analyst thi làm tại đâu?
+  - pentesters làm ở đâu
+  - VFX Animator làm tại đâu?
+  - full-stack làm ở đâu được bạn
+  - ứng tuyển game 3d product thì làm ở miền nam được không
+  - tớ appy vị trí business support china thì làm việc tại đâu nhỉ
+  - fresher game 2d product thì làm ở miền bắc nhể
+  - vị trí data scientists làm chỗ nào thế
+  - nhà mình gần duyên hải miền trung mình xin làm ở đó được không
+  - nếu tôi pass game UI/UX designers thì làm việc ở bắc giang chuẩn chỉ ko
+  - ứng tuyển PA làm ở đâu
+  - ở hồ chí minh có vị trí blockchain developer hông
+  - chỗ làm của business supporter china
+  - công ty có cho làm tại miền trung không
+  - hà nội có làm android hông
+  - tôi muốn hỏi thông tin về nơi làm việc của thử việc lập trình android được hông
+  - công ty f-tech làm việc ở đâu hả?
+  - khu vực nào làm được graphic designer
+  - dotnet có làm ở hà giang hông
+  - công ty có làm ở tây nam bộ không
+  - mình định ứng tuyển làm cộng tác viên pentesters nhưng hông biết sẽ làm tại đâu
+  - mình muốn làm ở đà nẵng được không
+  - em apply vị trí fullstack dev thi làm tại đâu?
+  - development and operations làm ở đâu
+  - data scientists làm tại đâu?
+  - full-stack developer làm ở đâu được bạn
+  - ứng tuyển data scientists thì làm ở đn được không
+  - tôi appy vị trí business analysts thì làm việc tại đâu nhỉ
+  - thử việc game 2d thì làm ở Pháp nhể
+  - vị trí ai research làm chỗ nào thế
+  - nhà mình gần đà nẵng mình xin làm ở đó được không
+  - nếu mình trúng tuyển devops thì làm việc ở tuyên quang chuẩn không
+  - ứng tuyển xử lý ngôn ngữ tự nhiên làm ở đâu
+  - ở hn có vị trí graphic không
+  - chỗ làm của blockchain developer
+  - công ty có cho làm tại NB không
+  - Trung Quốc có làm ai engineer không
+  - tớ muốn hỏi thông tin về nơi làm việc của cộng tác viên golang developer dc hông
+  - công ty làm việc ở đâu vậy?
+  - khu vực nào làm được nhân sự
+  - business analysts có làm ở pắc pó không
+  - công ty có làm ở Tam đảo không
+  - tớ định apply làm pretrain devops nhưng không biết sẽ làm tại vùng nào
+  - mình muốn làm ở hcm được không
+  - tôi apply vị trí ai engineer thif làm tại đâu?
+  - react native developer làm ở đâu
+  - game unity 3d dev làm tại đâu?
+  - 3d prod làm ở đâu được bạn
+  - ứng tuyển product analysts thì làm ở hn được không
+  - mình ứng tuyển vị trí nlp thì làm việc tại đâu nhỉ
+  - full-time game developer thì làm ở tây nguyên nhỉ
+  - vị trí Tester làm chỗ nào thế
+  - nhà mình gần miền nam mình xin làm ở đó được không
+  - nếu tôi trúng tuyển data engineering thì làm việc ở khánh hoà chuẩn chỉ ko
+  - ứng tuyển product analyst làm ở đâu
+  - ở dn có vị trí dotnet dev hông
+  - chỗ làm của DA
+  - tập đoàn Masan có cho làm tại sài gòn không
+  - đồng văn có làm hr manager hông
+  - tớ muốn biết thông tin về nơi làm việc của full time be develop được không
+  - tập đoàn Hòa Phát làm việc ở đâu hở?
+  - khu vực nào làm được db engineering
+  - 3d artist có làm ở Trung Quốc không
+  - công ty f tech có làm ở VN không
+  - tớ định ứng tuyển làm thử việc VFX Animations nhưng không biết sẽ làm tại nơi
+    nào
+  - mình muốn làm ở nam trung bộ được không
+  - cô apply vị trí computer vision engineer thif làm tại đâu?
+  - front-end dev làm ở đâu
+  - data analyst làm tại đâu?
+  - game 3d làm ở đâu được bạn
+  - ứng tuyển front-end develop thì làm ở miền bắc được không
+  - tớ appy vị trí thị giác máy tính thì làm việc tại đâu nhể
+  - senior data engineering thì làm ở HY nhể
+  - vị trí database engineer làm chỗ nào thế
+  - nhà mình gần sài gòn mình xin làm ở đó được không
+  - nếu mình trúng tuyển vị trí business support thị trường TQ thì làm việc ở sơn
+    la đúng ko
+  - ứng tuyển ios develop làm ở đâu
+  - ở đà nẵng có vị trí game develop không
+  - chỗ làm của .net dev
+  - công ty có cho làm tại hcm không
+  - củ chi có làm data science hông
+  - tớ muốn hỏi thông tin về nơi làm việc của thử việc game 2d unity được không
+  - công ty làm việc ở đâu vậy hả?
+  - khu vực nào làm được android dev
+  - VFX Animations có làm ở hà nội không
+  - ngân hàng bidv có làm ở hà nội không
+  - tôi định apply làm fresher lập trình viên ios nhưng hông biết sẽ làm tại đâu
+  - mình muốn làm ở huế được không
+  - e apply vị trí Quality Assurance thig làm tại đâu?
+  - 2d prod làm ở đâu
+  - game 3d developer làm tại đâu?
+  - backend làm ở đâu được bạn
+  - ứng tuyển system administrator thì làm ở hà nội được không
+  - mình appy vị trí ios developer thì làm việc tại đâu nhể
+  - thực tập sinh VFX Animator thì làm ở hcm ha
+  - vị trí ai engineer làm chỗ nào thế
+  - nhà mình gần bình định mình xin làm ở đó được không
+  - nếu tôi trúng tuyển vị trí game 2d products thì làm việc ở bắc kạn đúng hông
+  - ứng tuyển QA làm ở đâu
+  - ở hn có vị trí product analysts hông
+  - chỗ làm của QA Tester
+  - công ty có cho làm tại Ukraine không
+  - BG có làm game unity 3d dev hông
+  - tôi muốn biết thông tin về nơi làm việc của thử việc game dev đc không
+  - công ty f tech làm việc ở đâu vậy?
+  - khu vực nào làm được .net dev
+  - VFX Animations có làm ở Phong Nha-Kẻ Bàng ko
+  - công ty f tech có làm ở hồ chí minh không
+  - tôi định apply làm thử việc db engineer nhưng ko biết sẽ làm tại nơi nào
+  - mình muốn làm ở sài gòn được không
+  - chú apply vị trí DA thì làm tại đâu?
+  - nhà khoa học làm ở đâu
+  - QA Tester làm tại đâu?
+  - go lang dev làm ở đâu được bạn
+  - ứng tuyển business support thị trường TQ thì làm ở hn được không
+  - mình ứng tuyển vị trí android dev thì làm việc tại đâu nhể
+  - junior back end developer thì làm ở đà nẵng ha
+  - vị trí vẽ game 2d làm chỗ nào thế
+  - nhà mình gần VL mình xin làm ở đó được không
+  - nếu tôi đậu vị trí vận động viên thì làm việc ở đắk nông đúng ko
+  - ứng tuyển fe develop làm ở đâu
+  - ở QN có vị trí data analysts hông
+  - chỗ làm của game 2d unity
+  - công ty ftech có cho làm tại NB không
+  - đất Việt có làm Tester hông
+  - tớ muốn biết thông tin về nơi làm việc của full time product analysts được k
+  - công ty làm việc ở đâu hả?
+  - khu vực nào làm được ai research
+  - game 3d product có làm ở hà nội không
+  - ngân hàng vpbank có làm ở QN không
+  - tớ định apply làm full time C developer nhưng hông biết sẽ làm tại chỗ nào
+  - mình muốn làm ở Tác bản giốc được không
+  - cô apply vị trí nhân viên soạn nội dung giáo dục thi làm tại đâu?
+  - 3d art làm ở đâu
+  - PA làm tại đâu?
+  - graphic design làm ở đâu được bạn
+  - ứng tuyển back-end thì làm ở miền bắc được không
+  - tớ ứng tuyển vị trí QA Tester thì làm việc tại đâu nhể
+  - full time game 2d art thì làm ở đn nhể
+  - vị trí game dev làm chỗ nào thế
+  - nhà mình gần hà nội mình xin làm ở đó được không
+  - nếu tôi pass front end dev thì làm việc ở yên bái chuẩn ko
+  - ứng tuyển android dev làm ở đâu
+  - ở BG có vị trí development and operations hông
+  - chỗ làm của QA
+  - công ty có cho làm tại bình thuận không
+  - hải phòng có làm devops engineer ko
+  - tôi muốn hỏi thông tin về nơi làm việc của fresher android develop được không
+  - tập đoàn Vàng bạc Đá quý DOJI làm việc ở đâu?
+  - khu vực nào làm được business analysts
+  - lập trình viên ios có làm ở củ chi ko
+  - cty hải âu có làm ở HD không
+  - tôi định ứng tuyển làm fresher 3d product nhưng ko biết sẽ làm tại chỗ nào
+  - mình muốn làm ở đn được không
+  - tôi apply vị trí devops thì làm tại đâu?
+  - data analysts làm ở đâu
+  - front end làm tại đâu?
+  - 2d dev làm ở đâu được bạn
+  - ứng tuyển computer vision engineer thì làm ở Phong Nha-Kẻ Bàng được không
+  - tôi appy vị trí nv soạn nội dung giáo dục thì làm việc tại đâu ha
+  - fresher C# engineer thì làm ở hcm nhỉ
+  - vị trí business support thị trường TQ làm chỗ nào thế
+  - nhà mình gần hcm mình xin làm ở đó được không
+  - nếu tôi pass ds thì làm việc ở kiên giang chuẩn chỉ ko
+  - ứng tuyển blockchain dev làm ở đâu
+  - ở hồ chí minh có vị trí ba hông
+  - chỗ làm của Ruby developer
+  - tập đoàn Công nghiệp – Viễn thông Quân đội có cho làm tại đn không
+  - VN có làm pentester hông
+  - tớ muốn biết thông tin về nơi làm việc của fresher DE được ko
+  - công ty ftech làm việc ở đâu vậy á hả?
+  - khu vực nào làm được Ruby develop
+  - 2d prod có làm ở sài gòn không
+  - công ty có làm ở sài gòn không
+  - tớ định ứng tuyển làm pre-senior go-lang nhưng ko biết sẽ làm tại vùng nào
+  - mình muốn làm ở hồ chí minh được không
+  - tớ apply vị trí ja-va thif làm tại đâu?
+  - nhân viên kinh doanh thị trường TQ làm ở đâu
+  - q/lý nhân sự làm tại đâu?
+  - game 3d artist làm ở đâu được bạn
+  - ứng tuyển vẽ 3d thì làm ở hà nội được không
+  - tớ appy vị trí lập trình ios thì làm việc tại đâu nhỉ
+  - cộng tác viên 3d artist thì làm ở tiền giang nhể
+  - vị trí go-lang develop làm chỗ nào thế
+  - nhà mình gần củ chi mình xin làm ở đó được không
+  - nếu mình đậu business support thị trường china thì làm việc ở lâm đồng chuẩn chỉ
+    ko
+  - ứng tuyển graphic designers làm ở đâu
+  - ở phú quốc có vị trí java dev ko
+  - chỗ làm của business support thị trường china
+  - công ty ftech có cho làm tại tây nam bộ không
+  - sài gòn có làm ba ko
+  - mình muốn biết thông tin về nơi làm việc của thử việc devops engineer đc ko
+  - công ty f-tech làm việc ở đâu?
+  - khu vực nào làm được pentester
+  - 3d prod có làm ở Tam đảo hông
+  - công ty ftech có làm ở vịnh hạ long không
+  - tớ định apply làm fresher data engineering nhưng hông biết sẽ làm tại đâu
+  - mình muốn làm ở sa đéc được không
+  - mình apply vị trí back end developer thì làm tại đâu?
+  - hr manager làm ở đâu
+  - 3d prod làm tại đâu?
+  - quản lý nhân sự làm ở đâu được bạn
+  - ứng tuyển ai engineering thì làm ở đồng bằng bắc bộ được không
+  - mình appy vị trí data scientists thì làm việc tại đâu nhể
+  - pre-senior frontend dev thì làm ở thái bình nhỉ
+  - vị trí VFX Animators làm chỗ nào thế
+  - nhà mình gần TV mình xin làm ở đó được không
+  - nếu tôi pass vị trí system network thì làm việc ở tuyên quang chính xác không
+  - ứng tuyển nlp làm ở đâu
+  - ở sài gòn có vị trí vẽ 3d không
+  - chỗ làm của lập trình viên ios
+  - công ty có cho làm tại hồ chí minh không
+  - hcm có làm be dev hông
+  - tớ muốn hỏi thông tin về nơi làm việc của junior ai engineering được không
+  - tập đoàn Tài chính-Bảo hiểm Bảo Việt làm việc ở đâu vậy hả?
+  - khu vực nào làm được .net develop
+  - ds có làm ở bắc giang ko
+  - công ty ftech có làm ở hà nội không
+  - tôi định ứng tuyển làm tts pentesters nhưng ko biết sẽ làm tại nơi nào
+  - mình muốn làm ở hn được không
+  - mình apply vị trí go lang developer thig làm tại đâu?
+  - game UI/UX designers làm ở đâu
+  - react-native developer làm tại đâu?
+  - 2d unity làm ở đâu được bạn
+  - ứng tuyển product owner thì làm ở hồ chí minh được không
+  - tớ ứng tuyển vị trí hành chính nhân sự thì làm việc tại đâu ha
+  - thử việc pentester thì làm ở Canada nhể
+  - vị trí VFX Animations làm chỗ nào thế
+  - nhà mình gần HY mình xin làm ở đó được không
+  - nếu tôi trúng tuyển vị trí front end developer thì làm việc ở thanh hóa đúng ko
+  - ứng tuyển blockchain engineer làm ở đâu
+  - ở đồng nai có vị trí QA hông
+  - chỗ làm của lập trình android
+  - ngân hàng vpbank có cho làm tại đồng bằng bắc bộ không
+  - VL có làm product analyst không
+  - tôi muốn biết thông tin về nơi làm việc của pre-senior blockchain developer được
+    không
+  - tập đoàn viễn thông quân đội Việt Nam làm việc ở đâu?
+  - khu vực nào làm được cv researcher
+  - PA có làm ở miền trung ko
+  - công ty có làm ở Phan Thiết không
+  - mình định ứng tuyển làm full-time ds nhưng hông biết sẽ làm tại chỗ nào
+  - mình muốn làm ở dn được không
+  - tớ apply vị trí android develop thig làm tại đâu?
+  - graphic designers làm ở đâu
+  - java developer làm tại đâu?
+  - ai engineer làm ở đâu được bạn
+  - ứng tuyển game unity 3d developer thì làm ở thái bình được không
+  - tôi ứng tuyển vị trí game 2d thì làm việc tại đâu nhỉ
+  - svtt game 2d artist thì làm ở đất Việt nhỉ
+  - vị trí ja-va dev làm chỗ nào thế
+  - nhà mình gần hà giang mình xin làm ở đó được không
+  - nếu mình đậu data science thì làm việc ở bắc kạn chuẩn hông
+  - ứng tuyển nlp engineering làm ở đâu
+  - ở đất Việt có vị trí soạn nội dung giáo dục hông
+  - chỗ làm của soạn nội dung giáo dục
+  - công ty có cho làm tại đồng bằng bắc bộ không
+  - sài gòn có làm go lang dev không
+  - tớ muốn biết thông tin về nơi làm việc của pretrain lập trình viên android đc
+    không
+  - công ty TINH VÂN làm việc ở đâu?
+  - khu vực nào làm được C# dev
+  - game 3d art có làm ở đồng bằng sông cưu long không
+  - công ty ftech có làm ở miền tây không
+  - mình định apply làm thử việc business support thị trường Trung quốc nhưng hông
+    biết sẽ làm tại vùng nào
+  - mình muốn làm ở đất Việt được không
+  - anh apply vị trí front-end dev thig làm tại đâu?
+  - game 3d artist làm ở đâu
+  - 3d artist làm tại đâu?
+  - pentesters làm ở đâu được bạn
+  - ứng tuyển vẽ 2d thì làm ở quảng bình được không
+  - tớ appy vị trí C# dev thì làm việc tại đâu ha
+  - thử việc pentest thì làm ở đà nẵng ha
+  - vị trí unity 2d developer làm chỗ nào thế
+  - nhà mình gần hà tĩnh mình xin làm ở đó được không
+  - nếu tôi trúng tuyển vị trí backend dev thì làm việc ở lào cai đúng hông
+  - ứng tuyển java làm ở đâu
+  - ở Ukraine có vị trí dotnet developer hông
+  - chỗ làm của 3d artist
+  - tập đoàn Công nghiệp Than - Khoáng sản Việt Nam có cho làm tại đà nẵng không
+  - hcm có làm pentest ko
+  - mình muốn biết thông tin về nơi làm việc của junior react native được ko
+  - công ty ftech làm việc ở đâu?
+  - khu vực nào làm được backend dev
+  - pentester có làm ở sài gòn hông
+  - ngân hàng techcombank có làm ở miền bắc không
+  - tôi định ứng tuyển làm thử việc pentester nhưng không biết sẽ làm tại thành phố
+    nào
+  - mình muốn làm ở đồng bằng bắc bộ được không
+  - mình apply vị trí game designs thif làm tại đâu?
+  - game 2d products làm ở đâu
+  - ios làm tại đâu?
+  - front-end developer làm ở đâu được bạn
+  - ứng tuyển quản lý nhân sự thì làm ở BG được không
+  - mình appy vị trí QA thì làm việc tại đâu ha
+  - fresher hr thì làm ở Nhật Bản ha
+  - vị trí nhân viên kinh doanh thị trường TQ làm chỗ nào thế
+  - nhà mình gần dn mình xin làm ở đó được không
+  - nếu mình trúng tuyển lập trình viên ios thì làm việc ở kiên giang đúng không
+  - ứng tuyển game unity 3d dev làm ở đâu
+  - ở hà nội có vị trí front end develop hông
+  - chỗ làm của vận động viên
+  - công ty long thành có cho làm tại đất Việt không
+  - miền trung có làm DA ko
+  - tớ muốn hỏi thông tin về nơi làm việc của full time VFX Animations đc ko
+  - cty Nhà xuất bản Trẻ làm việc ở đâu?
+  - khu vực nào làm được QA Tester
+  - product owner có làm ở hn hông
+  - cty hải hà có làm ở tây ninh không
+  - tớ định ứng tuyển làm fresher data engineers nhưng không biết sẽ làm tại nơi nào
+  - mình muốn làm ở VL được không
+  - e apply vị trí ds thif làm tại đâu?
+  - ai engineer làm ở đâu
+  - business analysts làm tại đâu?
+  - PA làm ở đâu được bạn
+  - ứng tuyển DA thì làm ở hcm được không
+  - tôi appy vị trí go-lang dev thì làm việc tại đâu nhỉ
+  - pre-senior .net develop thì làm ở BN ha
+  - vị trí VFX Animation làm chỗ nào thế
+  - nhà mình gần đông nam bộ mình xin làm ở đó được không
+  - nếu mình đậu game 3d unity develop thì làm việc ở quảng bình chính xác hông
+  - ứng tuyển ai làm ở đâu
+  - ở đà nẵng có vị trí devops engineer ko
+  - chỗ làm của game 3d product
+  - công ty ftech có cho làm tại sài gòn không
+  - đà nẵng có làm product analyst hông
+  - tớ muốn hỏi thông tin về nơi làm việc của thử việc product analysts được k
+  - cty trung nguyên làm việc ở đâu hả?
+  - khu vực nào làm được product owners
+  - QA có làm ở sài gòn không
+  - công ty có làm ở QB không
+  - tớ định apply làm senior android developer nhưng không biết sẽ làm tại vùng nào
+  - mình muốn làm ở duyên hải miền trung được không
+  - anh apply vị trí react-native dev thì làm tại đâu?
+  - natural language processing làm ở đâu
+  - game 3d products làm tại đâu?
+  - java dev làm ở đâu được bạn
+  - ứng tuyển ba thì làm ở Hàn Quốc được không
+  - tớ ứng tuyển vị trí game 2d art thì làm việc tại đâu nhỉ
+  - senior vẽ 2d thì làm ở hà giang nhể
+  - vị trí data analysts làm chỗ nào thế
+  - nhà mình gần VN mình xin làm ở đó được không
+  - nếu mình trúng tuyển PA thì làm việc ở hà nội chuẩn chỉ không
+  - ứng tuyển VFX Animator làm ở đâu
+  - ở đà nẵng có vị trí system administrator hông
+  - chỗ làm của java dev
+  - ngân hàng tpbank có cho làm tại sài gòn không
+  - côn đảo có làm graphic design ko
+  - tớ muốn biết thông tin về nơi làm việc của junior ios develop được không
+  - công ty f tech làm việc ở đâu?
+  - khu vực nào làm được graphic design
+  - .net dev có làm ở hồ chí minh không
+  - công ty htc-itc có làm ở đà lạt không
+  - tớ định ứng tuyển làm thử việc unity 3d develop nhưng ko biết sẽ làm tại thành
+    phố nào
+  - mình muốn làm ở đồng bằng sông hồng được không
+  - tôi apply vị trí game unity 2d developer thig làm tại đâu?
+  - ca sĩ làm ở đâu
+  - pentester làm tại đâu?
+  - devops engineer làm ở đâu được bạn
+  - ứng tuyển data scientists thì làm ở hải phòng được không
+  - mình ứng tuyển vị trí lập trình viên ios thì làm việc tại đâu nhể
+  - thử việc business support thị trường china thì làm ở đà nẵng ha
+  - vị trí 3d art làm chỗ nào thế
+  - nhà mình gần đồng bằng sông hồng mình xin làm ở đó được không
+  - nếu mình pass ai engineer thì làm việc ở vĩnh long đúng ko
+  - ứng tuyển 2d prod làm ở đâu
+  - ở BG có vị trí nhân viên kinh doanh thị trường China hông
+  - chỗ làm của Quality Assurance
+  - tập đoàn Liên Thái Bình Dương có cho làm tại hcm không
+  - đà nẵng có làm unity 2d dev không
+  - mình muốn hỏi thông tin về nơi làm việc của thử việc data engineers được k
+  - công ty f tech làm việc ở đâu vậy á hả?
+  - khu vực nào làm được nhân viên soạn nội dung giáo dục
+  - business support thị trường Trung quốc có làm ở đồng tháp không
+  - ngân hàng vietinbank có làm ở LS không
+  - tôi định ứng tuyển làm junior be develop nhưng không biết sẽ làm tại thành phố
+    nào
+  - mình muốn làm ở NB được không
+  - em apply vị trí 2d product thig làm tại đâu?
+  - go-lang developer làm ở đâu
+  - product owners làm tại đâu?
+  - .net develop làm ở đâu được bạn
+  - ứng tuyển thiết kế nội dung giáo dục thì làm ở đà nẵng được không
+  - tớ ứng tuyển vị trí ios developer thì làm việc tại đâu nhỉ
+  - junior lập trình ios thì làm ở đồng tháp ha
+  - vị trí product analysts làm chỗ nào thế
+  - nhà mình gần đất Việt mình xin làm ở đó được không
+  - nếu tôi trúng tuyển db engineering thì làm việc ở nam định chính xác không
+  - ứng tuyển dotnet làm ở đâu
+  - ở hn có vị trí product analysts không
+  - chỗ làm của game 2d art
+  - công ty f-tech có cho làm tại đà nẵng không
+  - đà lạt có làm ja-va develop không
+  - tớ muốn hỏi thông tin về nơi làm việc của full time ds được k
+  - công ty ftech làm việc ở đâu vậy?
+  - khu vực nào làm được php develop
+  - cv researcher có làm ở NB hông
+  - công ty ftech có làm ở sài gòn không
+  - tôi định apply làm fresher nlp engineer nhưng hông biết sẽ làm tại thành phố nào
+  - mình muốn làm ở Đảo Nam Du được không
+  - cô apply vị trí business support china thi làm tại đâu?
+  - data engineering làm ở đâu
+  - data engineers làm tại đâu?
+  - VFX Animator làm ở đâu được bạn
+  - ứng tuyển java thì làm ở đn được không
+  - tôi ứng tuyển vị trí golang dev thì làm việc tại đâu nhỉ
+  - thử việc game 2d artist thì làm ở Thụy Sĩ nhể
+  - vị trí ds làm chỗ nào thế
+  - nhà mình gần QN mình xin làm ở đó được không
+  - nếu tôi đậu ai engineer thì làm việc ở bình dương đúng hông
+  - ứng tuyển go lang dev làm ở đâu
+  - ở hcm có vị trí devops engineer hông
+  - chỗ làm của system admin
+  - công ty có cho làm tại đà nẵng không
+  - sài gòn có làm DA ko
+  - mình muốn hỏi thông tin về nơi làm việc của thử việc ios được ko
+  - tập đoàn Tài chính-Bảo hiểm Bảo Việt làm việc ở đâu hả?
+  - khu vực nào làm được os admin
+  - PA có làm ở HD không
+  - công ty có làm ở đn không
+  - tớ định apply làm junior QA nhưng ko biết sẽ làm tại chỗ nào
+  - mình muốn làm ở cù lao chàm được không
+  - mình apply vị trí game developer thig làm tại đâu?
+  - lập trình android làm ở đâu
+  - lập trình ios làm tại đâu?
+  - go-lang develop làm ở đâu được bạn
+  - ứng tuyển cv engineering thì làm ở dn được không
+  - tớ appy vị trí android developer thì làm việc tại đâu nhể
+  - pretrain VFX Animation thì làm ở đn ha
+  - vị trí back-end làm chỗ nào thế
+  - nhà mình gần Thái mình xin làm ở đó được không
+  - nếu mình đậu vị trí data analysts thì làm việc ở bình thuận chuẩn hông
+  - ứng tuyển frontend dev làm ở đâu
+  - ở hồ chí minh có vị trí system network hông
+  - chỗ làm của frontend developer
+  - tập đoàn Xăng dầu Việt Nam có cho làm tại hcm không
+  - NB có làm C# developer hông
+  - tôi muốn hỏi thông tin về nơi làm việc của pre-senior blockchain được không
+  - ngân hàng vietcombank làm việc ở đâu?
+  - khu vực nào làm được back end develop
+  - graphic có làm ở tây nguyên ko
+  - tập đoàn viettel có làm ở hội an không
+  - tôi định ứng tuyển làm thử việc thiết kế nội dung giáo dục nhưng không biết sẽ
+    làm tại thành phố nào
+  - mình muốn làm ở LS được không
+  - chú apply vị trí nv thiết kế nội dung giáo dục thif làm tại đâu?
+  - q/lý nhân sự làm ở đâu
+  - product owner làm tại đâu?
+  - ds làm ở đâu được bạn
+  - ứng tuyển java dev thì làm ở BN được không
+  - mình appy vị trí pentesters thì làm việc tại đâu ha
+  - senior game 3d prod thì làm ở sài gòn ha
+  - vị trí dotnet dev làm chỗ nào thế
+  - nhà mình gần đông bắc bộ mình xin làm ở đó được không
+  - nếu tôi đậu vị trí game unity 2d developer thì làm việc ở hải phòng chính xác
+    không
+  - ứng tuyển 2d artist làm ở đâu
+  - ở sài gòn có vị trí thị giác máy tính ko
+  - chỗ làm của android developer
+  - công ty có cho làm tại Úc không
+  - Đảo Nam Du có làm data analyst không
+  - tớ muốn hỏi thông tin về nơi làm việc của fresher data analysts được không
+  - công ty Quản lý Quỹ đầu tư Việt Nam làm việc ở đâu?
+  - khu vực nào làm được ja-va developer
+  - net dev có làm ở đất Việt ko
+  - công ty f-tech có làm ở trà vinh không
+  - mình định ứng tuyển làm thử việc VFX Animations nhưng không biết sẽ làm tại chỗ
+    nào
+  - mình muốn làm ở QB được không
+  - mình apply vị trí graphic design thif làm tại đâu?
+  - android dev làm ở đâu
+  - db engineering làm tại đâu?
+  - ios dev làm ở đâu được bạn
+  - ứng tuyển xử lý ngôn ngữ tự nhiên thì làm ở đà nẵng được không
+  - tớ ứng tuyển vị trí pentester thì làm việc tại đâu nhỉ
+  - ctv blockchain thì làm ở đn ha
+  - vị trí game 3d products làm chỗ nào thế
+  - nhà mình gần hang sơn đoòng mình xin làm ở đó được không
+  - nếu tôi trúng tuyển vị trí backend dev thì làm việc ở hưng yên chính xác ko
+  - ứng tuyển golang developer làm ở đâu
+  - ở nam trung bộ có vị trí graphic design ko
+  - chỗ làm của net developer
+  - công ty ftech có cho làm tại côn đảo không
+  - dn có làm fullstack developer ko
+  - tôi muốn biết thông tin về nơi làm việc của trainee blockchain engineer được không
+  - ngân hàng vpbank làm việc ở đâu vậy hả?
+  - khu vực nào làm được front end develop
+  - ds có làm ở thanh hóa hông
+  - công ty có làm ở HG không
+  - tớ định ứng tuyển làm thử việc lập trình android nhưng ko biết sẽ làm tại chỗ
+    nào
+  - mình muốn làm ở cố đô huế được không
+  - tôi apply vị trí PA thi làm tại đâu?
+  - vận động viên làm ở đâu
+  - vẽ game 3d làm tại đâu?
+  - os network làm ở đâu được bạn
+  - ứng tuyển 3d artist thì làm ở miền trung được không
+  - tôi appy vị trí full stack thì làm việc tại đâu nhỉ
+  - senior ba thì làm ở LS nhể
+  - vị trí android dev làm chỗ nào thế
+  - nhà mình gần cần thơ mình xin làm ở đó được không
+  - nếu tôi pass game UI/UX design thì làm việc ở hải dương chuẩn không
+  - ứng tuyển game 2d prod làm ở đâu
+  - ở đông nam bộ có vị trí os admin không
+  - chỗ làm của nhân viên kinh doanh thị trường China
+  - công ty nafosted có cho làm tại đn không
+  - sài gòn có làm game 3d hông
+  - tớ muốn hỏi thông tin về nơi làm việc của thử việc data engineering được không
+  - cty minh long làm việc ở đâu vậy hả?
+  - khu vực nào làm được game 2d products
+  - game 2d product có làm ở lào cai hông
+  - công ty có làm ở hn không
+  - tớ định apply làm thử việc game 2d unity dev nhưng hông biết sẽ làm tại nơi nào
+  - mình muốn làm ở VN được không
+  - cô apply vị trí pentesters thi làm tại đâu?
+  - game 3d làm ở đâu
+  - ja-va làm tại đâu?
+  - data engineers làm ở đâu được bạn
+  - ứng tuyển database engineer thì làm ở đông nam bộ được không
+  - tôi ứng tuyển vị trí product owner thì làm việc tại đâu nhể
+  - pre-senior react-native thì làm ở tây nam bộ nhể
+  - vị trí go-lang developer làm chỗ nào thế
+  - nhà mình gần tây nguyên mình xin làm ở đó được không
+  - nếu tôi trúng tuyển data engineering thì làm việc ở yên bái chính xác không
+  - ứng tuyển 3d prod làm ở đâu
+  - ở Tam đảo có vị trí business analysts không
+  - chỗ làm của Ruby develop
+  - công ty có cho làm tại dn không
+  - hn có làm ai engineer ko
+  - tôi muốn biết thông tin về nơi làm việc của svtt data analysts được không
+  - công ty f tech làm việc ở đâu hở?
+  - khu vực nào làm được golang developer
+  - data analysts có làm ở phú yên hông
+  - công ty ftech có làm ở VN không
+  - tớ định ứng tuyển làm junior VFX Animators nhưng không biết sẽ làm tại nơi nào
+  - mình muốn làm ở bắc ninh được không
+  - tôi apply vị trí nv soạn nội dung giáo dục thì làm tại đâu?
+  - fullstack làm ở đâu
+  - ja-va develop làm tại đâu?
+  - be develop làm ở đâu được bạn
+  - ứng tuyển Ruby dev thì làm ở hà nội được không
+  - tớ appy vị trí VFX Animations thì làm việc tại đâu nhỉ
+  - sinh viên thực tập unity 3d develop thì làm ở dn ha
+  - vị trí data analyst làm chỗ nào thế
+  - nhà mình gần đồng bằng sông cưu long mình xin làm ở đó được không
+  - nếu mình pass nv thiết kế nội dung giáo dục thì làm việc ở bạc liệu chuẩn chỉ
+    không
+  - ứng tuyển 3d product làm ở đâu
+  - ở dn có vị trí computer vision engineer hông
+  - chỗ làm của graphic design
+  - công ty long thành có cho làm tại Việt Nam không
+  - đồng bằng sông hồng có làm golang developer hông
+  - mình muốn biết thông tin về nơi làm việc của fresher ai research được hông
+  - công ty làm việc ở đâu hở?
+  - khu vực nào làm được react native dev
+  - game 2d art có làm ở đất Việt ko
+  - công ty VietJet AiR có làm ở hà nội không
+  - mình định ứng tuyển làm intern development and operations nhưng không biết sẽ
+    làm tại vùng nào
+  - mình muốn làm ở côn đảo được không
+  - chú apply vị trí nlp engineering thi làm tại đâu?
+  - xử lý ngôn ngữ tự nhiên làm ở đâu
+  - data science làm tại đâu?
+  - php dev làm ở đâu được bạn
+  - ứng tuyển android developer thì làm ở dn được không
+  - tớ appy vị trí lập trình ios thì làm việc tại đâu nhể
+  - ctv ai research thì làm ở HD nhỉ
+  - vị trí dotnet develop làm chỗ nào thế
+  - nhà mình gần sapa mình xin làm ở đó được không
+  - nếu mình đậu game 3d unity dev thì làm việc ở quảng ngãi chuẩn không
+  - ứng tuyển blockchain develop làm ở đâu
+  - ở hà nội có vị trí hành chính nhân sự không
+  - chỗ làm của db engineer
+  - công ty có cho làm tại VN không
+  - BN có làm .net dev không
+  - tôi muốn hỏi thông tin về nơi làm việc của fresher product analyst đc ko
+  - cty Hòa Phát làm việc ở đâu?
+  - khu vực nào làm được computer vision engineer
+  - game 3d unity developer có làm ở miền tây ko
+  - tập đoàn Xăng dầu Việt Nam có làm ở bắc trung bộ không
+  - tôi định ứng tuyển làm cộng tác viên ios developer nhưng không biết sẽ làm tại
+    chỗ nào
+  - mình muốn làm ở ninh bình được không
+  - em apply vị trí front-end develop thi làm tại đâu?
+  - cv researcher làm ở đâu
+  - system admin làm tại đâu?
+  - thị giác máy tính làm ở đâu được bạn
+  - ứng tuyển vẽ game 3d thì làm ở Úc được không
+  - tớ appy vị trí PA thì làm việc tại đâu nhỉ
+  - thực tập sinh vẽ 3d thì làm ở hồ chí minh nhỉ
+  - vị trí game designs làm chỗ nào thế
+  - nhà mình gần HG mình xin làm ở đó được không
+  - nếu mình đậu vị trí os admin thì làm việc ở yên bái chuẩn không
+  - ứng tuyển DE làm ở đâu
+  - ở Tam đảo có vị trí full-stack devlop ko
+  - chỗ làm của data engineers
+  - công ty có cho làm tại kon tum không
+  - hcm có làm product analyst không
+  - tôi muốn hỏi thông tin về nơi làm việc của junior net developer được ko
+  - ngân hàng techcombank làm việc ở đâu?
+  - khu vực nào làm được data scientist
+  - .net có làm ở HG không
+  - công ty kinh đô có làm ở gia lai không
+  - tôi định apply làm internship game 3d art nhưng ko biết sẽ làm tại chỗ nào
+  - mình muốn làm ở hà tĩnh được không
+  - em apply vị trí game 3d thif làm tại đâu?
+  - nhân viên soạn nội dung giáo dục làm ở đâu
+  - ios developer làm tại đâu?
+  intent: rec_ask_working_place

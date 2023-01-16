@@ -1,0 +1,311 @@
+positives:
+- examples:
+  - đi đâu có tiệm coffee ok?
+  - mình muốn đi coffee thích hợp nhân viên văn phòng không
+  - bạn cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - ' biết tọa độ của chỗ ăn uống nào nơi này'
+  - Coffee house nào có phục vụ tốt, không gian lãng mạn, không thuốc lá không
+  - tớ muốn biết địa chỉ ăn uống nào chỗ này
+  - chỗ gì ăn uống đậm đà không
+  - Coffee chỗ nào giá mắc nhất hà nôi
+  - Nhà hàng chay nào ngon rẻ ở Đường Ông Ích Khiêm vậy bot
+  - uống cà phê gì nhân viên phục vụ tốt
+  - ở đâu tiệm uống cà phê đỉnh cao?
+  - 'mình muốn đi coffee gì phù hợp hs '
+  - timi cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích
+    hợp 2 người hẹn hò với
+  - bot biết địa chỉ chỗ uống cà phê nào good tại đây không
+  - mình muốn tiệm ăn uống nào good tại đây
+  - tiệm nào ăn uống đậm đà
+  - Coffee chỗ nào giá mắc nhất VN
+  - uống cà phê chỗ nào có nhân viên tiếp khách nhiệt tình không
+  - ở đâu có tiệm coffee đậm đà?
+  - 'mình muốn uống cà phê dành cho với làm việc '
+  - cậu cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - ' biết địa chỉ quán uống cà phê nào ngon nơi này không'
+  - cho mình biết nơi coffee nào đỉnh của chóp gần đây
+  - tiệm gì coffee đậm đà không
+  - Coffee chỗ nào giá mắc nhất QN
+  - uống cà phê chỗ nào nhân viên nghiệp vụ tâm huyết không
+  - ở đâu có tiệm ăn uống cực phẩm?
+  - tôi muốn đi ăn uống nào thích hợp với cặp đôi ha
+  - mi cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - mày biết tọa độ chỗ ăn uống nơi đây không
+  - cho chú biết nơi uống cà phê gì ở đây
+  - nơi nào uống cà phê đỉnh của chóp không
+  - Coffee chỗ nào giá mắc nhất da nang
+  - uống cà phê nào nhân viên nghiệp vụ nhiệt tình không
+  - đi đâu có nơi ăn uống đỉnh đỉnh?
+  - cô muốn đi uống cà phê nào dành cho với hẹn hò nhở
+  - mày cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - ' biết tọa độ của nơi giải khát tại đây'
+  - cho tớ quán ăn uống gì gần đây
+  - tiệm nào uống cà phê đậm đà không
+  - Coffee chỗ nào giá mắc nhất h.noi
+  - ' chỗ nào nhân viên tiếp khách nhiệt tình không'
+  - đi đâu có chỗ ăn uống ngon?
+  - chị muốn uống cà phê gì thích hợp với sv nhể
+  - bot cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - bot biết tọa độ nơi giải khát nào ở đây không
+  - cho chị chỗ ăn uống ở đây
+  - nơi nào coffee ngon
+  - Coffee chỗ nào giá mắc nhất hà nội
+  - ăn uống nào nhân viên nghiệp vụ nhiệt tình
+  - đi đâu quán coffee đỉnh cao?
+  - chị muốn coffee gì phù hợp với họp nhở
+  - em cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - ' biết địa chỉ của chỗ coffee đậm đà chỗ này không'
+  - cho mình biết nơi coffee nào chỗ này không
+  - chỗ nào coffee cực phẩm không
+  - Coffee chỗ nào giá mắc nhất duyên hải miền trung
+  - coffee nào nhân viên nghiệp vụ tâm huyết
+  - đi đâu có tiệm ăn uống hấp dẫn?
+  - 'mình muốn đi coffee thích hợp với hẹn hò '
+  - chú em cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích
+    hợp 2 người hẹn hò với
+  - ' biết tọa độ tiệm coffee nào ngon tại đây không'
+  - tớ muốn chỗ uống cà phê gì ok gần đây không
+  - địa chỉ gì uống cà phê hấp dẫn không
+  - Coffee chỗ nào giá mắc nhất đồng bằng bắc bộ
+  - uống cà phê chỗ nào nhân viên phục vụ nhiệt tình không
+  - đi đâu có tiệm uống cà phê ok?
+  - 'anh muốn uống cà phê thích hợp với hẹn hò '
+  - bot biết địa chỉ của tiệm uống cà phê gì ở đây
+  - cho tôi quán uống cà phê hấp dẫn gần đây không
+  - quán nào coffee ngon
+  - Coffee chỗ nào giá mắc nhất HD
+  - ăn uống nào có nhân viên tiếp khách chu đáo
+  - đi đâu có nơi coffee đỉnh đỉnh?
+  - mình muốn uống cà phê nào thích hợp với hẹn hò nhỉ
+  - ' biết tọa độ của chỗ ăn uống gì hấp dẫn ngay đây'
+  - cho mình biết địa chỉ coffee hấp dẫn tại đây không
+  - quán nào uống cà phê ok
+  - Coffee chỗ nào giá mắc nhất sai gòn
+  - ' nào nhân viên nghiệp vụ tâm huyết'
+  - đi đâu có tiệm ăn uống đỉnh của chóp?
+  - chú muốn đi uống cà phê dành cho với làm việc nhể
+  - timi biết tọa độ quán nước nào ngay đây không
+  - cho mình biết địa chỉ ăn uống gì gần đây không
+  - quán nào ăn uống ok không
+  - Coffee chỗ nào giá mắc nhất tp hồ chí minh
+  - ' chỗ nào nhân viên phục vụ tận tình'
+  - đi đâu nơi uống cà phê cực phẩm?
+  - tôi muốn đi ăn uống gì dành cho nhân viên văn phòng không
+  - timi biết địa chỉ của nơi coffee ngon chỗ này
+  - mình muốn biết chỗ ăn uống ngon ngay đây
+  - địa chỉ gì uống cà phê đỉnh đỉnh không
+  - Coffee chỗ nào giá mắc nhất xì gòn
+  - ' gì nhân viên tiếp khách tốt không'
+  - đi đâu có tiệm coffee đỉnh cao?
+  - cô muốn coffee nào dành cho với hs nhỉ
+  - cậu biết tọa độ quán coffee gì đỉnh cao chỗ này
+  - cho chú quán ăn uống ở đây
+  - chỗ gì coffee hấp dẫn
+  - Coffee chỗ nào giá mắc nhất thủ đức
+  - ' chỗ nào có nhân viên tiếp khách tốt không'
+  - đi đâu quán coffee đỉnh của chóp?
+  - mình muốn đi ăn uống thích hợp với cặp đôi không
+  - bot biết địa chỉ của quán nước tại đây
+  - cho tớ biết nơi coffee gì đỉnh của chóp gần đây
+  - địa chỉ nào ăn uống cực phẩm không
+  - Coffee chỗ nào giá mắc nhất Tam đảo
+  - ' nào nhân viên phục vụ tốt'
+  - ở đâu có quán coffee cực phẩm?
+  - chú muốn đi uống cà phê dành cho sv nhỉ
+  - ' biết địa chỉ của nơi coffee gì ở đây không'
+  - mình muốn quán ăn uống nào gần đây
+  - quán gì coffee good
+  - Coffee chỗ nào giá mắc nhất ha noi
+  - ' nào nhân viên phục vụ tâm huyết'
+  - ở đâu có nơi coffee đỉnh của chóp?
+  - tớ muốn đi ăn uống gì phù hợp sv ha
+  - ' biết địa chỉ chỗ uống cà phê gì tại đây không'
+  - tớ muốn biết quán ăn uống gần gần không
+  - quán gì coffee ok không
+  - Coffee chỗ nào giá mắc nhất dn
+  - ' gì có nhân viên tiếp khách chu đáo không'
+  - đi đâu có nơi ăn uống good?
+  - tôi muốn ăn uống nào dành cho sinh viên nhể
+  - ' biết địa chỉ nơi coffee cực phẩm chỗ này'
+  - cho tớ nơi ăn uống gì ngay đây không
+  - tiệm gì coffee đỉnh cao không
+  - Coffee chỗ nào giá mắc nhất đà lạt
+  - uống cà phê gì có nhân viên phục vụ tâm huyết không
+  - ở đâu có quán ăn uống ok?
+  - 'mình muốn đi coffee dành cho với couple '
+  - timi biết tọa độ nơi giải khát đậm đà chỗ này không
+  - cho tôi địa chỉ coffee gì nơi đây không
+  - nơi nào ăn uống good
+  - Coffee chỗ nào giá mắc nhất hn
+  - coffee chỗ nào có nhân viên tiếp khách tốt
+  - ở đâu có quán uống cà phê hấp dẫn?
+  - 'anh muốn ăn uống nào phù hợp với hs '
+  - ' biết tọa độ của quán coffee gì chỗ này không'
+  - cho tôi biết địa chỉ uống cà phê tại đây không
+  - tiệm nào ăn uống ngon không
+  - Coffee chỗ nào giá mắc nhất đắk lắk
+  - ' gì có nhân viên phục vụ nhiệt tình'
+  - ở đâu quán coffee đỉnh đỉnh?
+  - mình muốn đi coffee gì thích hợp với nvvp nhỉ
+  - ' biết tọa độ nơi coffee gì tại đây không'
+  - cho chị nơi ăn uống gần gần không
+  - chỗ nào ăn uống ok không
+  - Coffee chỗ nào giá mắc nhất đà nẳng
+  - ' chỗ nào nhân viên nghiệp vụ chu đáo'
+  - ở đâu quán ăn uống ngon?
+  - 'anh muốn coffee nào phù hợp với lãnh mạn '
+  - timi biết địa chỉ nơi ăn uống cực phẩm nơi này
+  - cho mình biết tiệm uống cà phê đỉnh của chóp nơi đây không
+  - nơi nào coffee cực phẩm
+  - Coffee chỗ nào giá mắc nhất Tác bản giốc
+  - ' chỗ nào nhân viên nghiệp vụ tận tình không'
+  - đi đâu tiệm ăn uống đỉnh của chóp?
+  - mình muốn đi uống cà phê nào phù hợp với hẹn hò nhỉ
+  - cậu biết tọa độ của quán nước nơi đây
+  - cho chú biết nơi ăn uống gì đỉnh cao gần gần không
+  - chỗ gì ăn uống hấp dẫn không
+  - Coffee chỗ nào giá mắc nhất Thái
+  - ' chỗ nào nhân viên nghiệp vụ tâm huyết không'
+  - ở đâu tiệm coffee đỉnh cao?
+  - mình muốn đi uống cà phê nào phù hợp với nvvp không
+  - ' biết tọa độ nơi coffee nào chỗ này không'
+  - cho tôi quán uống cà phê gần đây
+  - chỗ nào coffee đỉnh cao không
+  - Coffee chỗ nào giá mắc nhất hô chi minh
+  - ' nào có nhân viên nghiệp vụ chu đáo không'
+  - ở đâu có chỗ coffee đậm đà?
+  - tôi muốn đi ăn uống gì phù hợp với nhân viên văn phòng nhể
+  - timi biết tọa độ của nơi giải khát gì đỉnh của chóp chỗ này
+  - mình muốn tiệm ăn uống đậm đà nơi này
+  - tiệm nào ăn uống good không
+  - Coffee chỗ nào giá mắc nhất quảng ninh
+  - ' chỗ nào có nhân viên tiếp khách tâm huyết'
+  - đi đâu có quán ăn uống đậm đà?
+  - mình muốn coffee thích hợp chạy deadline không
+  - mày biết tọa độ của nơi coffee nào ok nơi này không
+  - tôi muốn biết địa chỉ coffee nào cực phẩm gần đây
+  - chỗ gì uống cà phê good không
+  - Coffee chỗ nào giá mắc nhất Anh
+  - uống cà phê nào có nhân viên phục vụ nhiệt tình
+  - ở đâu có tiệm coffee good?
+  - mình muốn coffee nào phù hợp nhân viên văn phòng nhở
+  - mày biết tọa độ quán nước tại đây
+  - cho chú biết quán uống cà phê good nơi đây
+  - tiệm gì ăn uống cực phẩm
+  - Coffee chỗ nào giá mắc nhất nam trung bộ
+  - ăn uống nào có nhân viên tiếp khách tâm huyết
+  - đi đâu nơi uống cà phê hấp dẫn?
+  - anh muốn đi uống cà phê nào phù hợp với học sinh nhể
+  - mày biết tọa độ chỗ ăn uống gì chỗ này không
+  - cho tớ quán coffee gì hấp dẫn gần đây không
+  - địa chỉ nào coffee ok không
+  - Coffee chỗ nào giá mắc nhất Áo
+  - ' chỗ nào có nhân viên phục vụ tận tình không'
+  - ở đâu nơi ăn uống đỉnh cao?
+  - 'tôi muốn đi coffee gì thích hợp với nhân viên văn phòng '
+  - em biết địa chỉ của tiệm coffee gì chỗ này
+  - cho mình nơi coffee nơi đây
+  - chỗ gì coffee đỉnh đỉnh không
+  - Coffee chỗ nào giá mắc nhất Đan Mạch
+  - coffee chỗ nào nhân viên tiếp khách tốt
+  - đi đâu có tiệm uống cà phê cực phẩm?
+  - anh muốn coffee gì phù hợp với couple không
+  - ' biết địa chỉ quán nước nào ngay đây không'
+  - cho anh biết quán coffee ngon gần đây
+  - nơi nào uống cà phê hấp dẫn không
+  - Coffee chỗ nào giá mắc nhất đông bắc bộ
+  - ăn uống chỗ nào có nhân viên nghiệp vụ nhiệt tình
+  - đi đâu nơi ăn uống cực phẩm?
+  - tôi muốn uống cà phê phù hợp với hs không
+  - ' biết địa chỉ nơi giải khát nào ngon nơi này'
+  - tớ muốn nơi ăn uống nơi này không
+  - nơi gì uống cà phê đỉnh đỉnh không
+  - Coffee chỗ nào giá mắc nhất ha nọi
+  - ' gì nhân viên phục vụ tốt không'
+  - ở đâu quán coffee đỉnh của chóp?
+  - 'mình muốn ăn uống gì thích hợp sv '
+  - ' biết tọa độ của nơi coffee đỉnh cao nơi đây không'
+  - cho tớ biết tiệm uống cà phê nào gần gần
+  - tiệm gì ăn uống đỉnh của chóp
+  - Coffee chỗ nào giá mắc nhất củ chi
+  - ' gì có nhân viên nghiệp vụ tốt không'
+  - đi đâu có nơi coffee cực phẩm?
+  - tôi muốn đi ăn uống gì phù hợp học sinh nhỉ
+  - ' biết địa chỉ tiệm uống cà phê hấp dẫn nơi này không'
+  - cho tớ địa chỉ ăn uống ngay đây
+  - nơi gì ăn uống ngon không
+  - Coffee chỗ nào giá mắc nhất pắc pó
+  - ăn uống chỗ nào nhân viên phục vụ tâm huyết không
+  - ở đâu có quán coffee đỉnh của chóp?
+  - tớ muốn đi ăn uống thích hợp với lãnh mạn không
+  - ' biết địa chỉ nơi ăn uống gì ngay đây'
+  - cho tớ biết địa chỉ ăn uống gì gần đây
+  - chỗ nào coffee đỉnh đỉnh
+  - Coffee chỗ nào giá mắc nhất QB
+  - ' nào nhân viên nghiệp vụ nhiệt tình không'
+  - ở đâu chỗ ăn uống đỉnh đỉnh?
+  - 'chị muốn ăn uống nào dành cho với lãnh mạn '
+  - ' biết tọa độ quán coffee đỉnh cao ở đây'
+  - cho tôi tiệm ăn uống nào good chỗ này không
+  - quán nào ăn uống đỉnh của chóp
+  - Coffee chỗ nào giá mắc nhất VNam
+  - ' chỗ nào nhân viên tiếp khách tận tình không'
+  - ở đâu nơi ăn uống đậm đà?
+  - tớ muốn đi ăn uống dành cho hẹn hò không
+  - bot biết địa chỉ của quán nước gì ngon tại đây không
+  - cho tớ biết nơi ăn uống ngay đây không
+  - nơi gì uống cà phê đỉnh đỉnh
+  - Coffee chỗ nào giá mắc nhất cù lao chàm
+  - coffee chỗ nào có nhân viên tiếp khách tâm huyết
+  - ở đâu chỗ uống cà phê good?
+  - anh muốn coffee gì phù hợp với nhân viên văn phòng nhể
+  - ' biết tọa độ nơi ăn uống nào đậm đà chỗ này không'
+  - cho tớ biết tiệm uống cà phê nơi đây
+  - quán gì uống cà phê đỉnh của chóp không
+  - Coffee chỗ nào giá mắc nhất sai gon
+  - uống cà phê chỗ nào có nhân viên phục vụ nhiệt tình không
+  - đi đâu có quán ăn uống đỉnh của chóp?
+  - anh muốn ăn uống phù hợp sv nhở
+  - bạn biết địa chỉ của chỗ uống cà phê tại đây
+  - tớ muốn chỗ uống cà phê nào đỉnh đỉnh gần đây
+  - chỗ nào uống cà phê good không
+  - Coffee chỗ nào giá mắc nhất bắc trung bộ
+  - ăn uống nào có nhân viên nghiệp vụ tốt không
+  - ở đâu có nơi ăn uống good?
+  - chú muốn uống cà phê dành cho họp ha
+  - cậu biết tọa độ nơi giải khát nào nơi này không
+  - tớ muốn quán uống cà phê nào gần đây không
+  - quán gì ăn uống đậm đà
+  - Coffee chỗ nào giá mắc nhất hà lội
+  - ' nào có nhân viên nghiệp vụ tâm huyết không'
+  - đi đâu quán ăn uống ngon?
+  - 'anh muốn đi coffee thích hợp với sv '
+  - timi biết địa chỉ chỗ coffee gì ở đây không
+  - tớ muốn địa chỉ ăn uống nào đỉnh của chóp gần đây không
+  - nơi nào ăn uống đỉnh đỉnh
+  - Coffee chỗ nào giá mắc nhất đồng bằng sông hồng
+  - ăn uống gì có nhân viên nghiệp vụ nhiệt tình không
+  - ở đâu có chỗ coffee hấp dẫn?
+  - tớ muốn đi coffee thích hợp với hẹn hò nhể
+  - timi biết tọa độ quán nước đậm đà nơi đây không
+  - cho cô biết chỗ ăn uống gần đây không
+  - quán nào coffee đỉnh đỉnh không
+  - Coffee chỗ nào giá mắc nhất hưng yên
+  - ăn uống gì có nhân viên phục vụ nhiệt tình không
+  - ở đâu quán uống cà phê hấp dẫn?
+  - anh muốn đi uống cà phê nào thích hợp hs ha
+  - ' biết tọa độ quán nước đậm đà ngay đây không'
+  - mình muốn biết quán uống cà phê đậm đà ngay đây
+  - nơi gì uống cà phê ngon
+  - Coffee chỗ nào giá mắc nhất sơn la
+  - ăn uống nào có nhân viên phục vụ tốt
+  - ở đâu có chỗ uống cà phê good?
+  - tớ muốn coffee thích hợp học sinh nhở
+  - ' biết tọa độ quán ăn uống nơi đây không'
+  intent: knowledge_ask_coffee_shop

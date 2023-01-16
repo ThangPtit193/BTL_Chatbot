@@ -1,0 +1,353 @@
+positives:
+- examples:
+  - anh tỏ tỉnh với timi vậy
+  - hỏi thế gian ơi tình là chi mà sao tôi lỡ yêu em mất rồi
+  - bot tình trạng hôn nhân như thế nào
+  - timi đang trong mối quan hệ ntn
+  - yêu bot được không
+  - yêu anh không
+  - mình mến mộ nhau đi
+  - bạn trai TIMI là ai
+  - anh yêu chị
+  - làm tri kỉ của chị nhé
+  - yêu tớ không
+  - ai là bạn trai của em thế
+  - mối quan hệ yêu đương đang tốt đẹp chớ
+  - TIMI đã yêu ai chưa
+  - tình trạng hôn nhân của TIMI ntn
+  - timi có người yêu rồi à
+  - TIMI có vợ chưa
+  - cậu có mối tình đầu không
+  - người yêu của timi là ai
+  - mình tỏ tỉnh với em đó
+  - tớ yêu cậu
+  - bạn có chồng chưa
+  - người yêu của TIMI là ai hả
+  - có bạn gái chưa bạn
+  - m đang trong tình trạng hôn nhân thế nào
+  - yêu tớ đi
+  - cho tớ hỏi người yêu của bạn là ai thế
+  - Timi có người yêu chưa
+  - anh yêu timi
+  - làm vợ tớ nhé
+  - bot yêu ai chưa
+  - bot có bồ không
+  - m vẫn độc thân không
+  - bot có người yêu chưa
+  - tình trạng hôn nhân thế nào
+  - Timi đang yêu ai hả
+  - Timi có chồng rồi hả
+  - anh tỏ tỉnh với timi thế
+  - TIMI tình trạng hôn nhân thế nào
+  - mày đang trong mối quan hệ như thế nào
+  - yêu mày được không
+  - yêu anh đi
+  - mình yêu thích nhau nhé
+  - người yêu timi là ai
+  - anh yêu em
+  - làm người yêu của chị nhé
+  - yêu mình không
+  - ai là bạn trai của timi đó
+  - mối quan hệ yêu đương đang tốt đẹp chứ
+  - bạn đã yêu ai chưa
+  - tình trạng hôn nhân của Timi như nào
+  - Timi có bạn trai rồi hả
+  - cậu có người yêu chưa
+  - TIMI có mối tình đầu chưa
+  - người yêu của TIMI là ai
+  - tớ tỏ tỉnh với em thế
+  - tớ yêu bạn
+  - cậu có chồng chưa
+  - bạn trai của Timi là ai thế
+  - có chồng chưa hả timi
+  - em đang trong tình trạng hôn nhân thế nào
+  - yêu tớ nhé
+  - cho tôi hỏi người yêu của cậu là ai
+  - bạn đã có chồng chưa
+  - chị yêu em
+  - làm người yêu tui nhé
+  - em yêu ai chưa
+  - bot có bạn trai chưa
+  - cậu vẫn độc thân phải không
+  - mày có người yêu chưa
+  - tình trạng hôn nhân như nào
+  - bạn đang yêu ai thế
+  - TIMI có chồng rồi hả
+  - anh tỏ tỉnh với em thế
+  - bot tình trạng hôn nhân ntn
+  - TIMI đang trong mối quan hệ như thế nào
+  - yêu Timi được không
+  - yêu anh nhé
+  - mình thầm thương trộm nhớ nhau đi
+  - bạn trai cậu là ai thế
+  - làm tri kỉ của anh nhé
+  - ai là vợ của cậu
+  - mối quan hệ nam nữ đang tốt đẹp phải không
+  - Timi đã yêu ai chưa
+  - tình trạng hôn nhân của cậu như nào
+  - m có chồng rồi à
+  - m có chồng chưa
+  - em có mối tình đầu chưa
+  - bạn trai của bot là ai
+  - tớ tỏ tỉnh với timi đấy
+  - tui yêu cậu
+  - bạn đã có người yêu chưa
+  - vợ của bạn là ai hả
+  - có bạn trai chưa hả bot
+  - TIMI đang trong tình trạng hôn nhân thế nào
+  - yêu tao nhé
+  - cho tôi hỏi bạn trai của Timi là ai
+  - ' đã có chồng chưa'
+  - chị yêu timi
+  - làm tri kỉ tớ nhé
+  - bạn yêu ai chưa
+  - m có vợ không
+  - mày vẫn độc thân phải không
+  - timi có người yêu chưa
+  - tình trạng hôn nhân như thế nào
+  - cậu đang yêu ai đấy
+  - m có người yêu rồi à
+  - anh tỏ tỉnh với em đấy
+  - mày tình trạng hôn nhân như thế nào
+  - Timi đang trong mối quan hệ ntn
+  - yêu em được không
+  - mình thích nhau nhé
+  - người yêu mày là ai
+  - làm vợ của anh nhé
+  - ai là bồ của em
+  - mối quan hệ hẹn hò đang tốt đẹp phải không
+  - bot đã yêu ai chưa
+  - tình trạng hôn nhân của Timi ntn
+  - em có bồ rồi hả
+  - timi có chồng chưa
+  - timi có mối tình đầu chưa
+  - bạn trai của Timi là ai
+  - tớ tỏ tỉnh với em đó
+  - mình yêu cậu
+  - cậu đã có người yêu chưa
+  - bồ của TIMI là ai thế
+  - có bồ chưa hả m
+  - mày đang trong tình trạng hôn nhân thế nào
+  - yêu tôi đi
+  - cho tớ hỏi người yêu của mày là ai
+  - Timi đã có người yêu chưa
+  - làm tri kỉ tôi nhé
+  - TIMI yêu ai chưa
+  - cậu có bạn gái chưa
+  - em vẫn độc thân không
+  - TIMI có người yêu chưa
+  - tình trạng hôn nhân ntn
+  - bot đang yêu ai vậy
+  - m có bạn trai rồi à
+  - anh tỏ tỉnh với em đó
+  - em tình trạng hôn nhân như thế nào
+  - bạn đang trong mối quan hệ như thế nào
+  - yêu cậu được không
+  - mình yêu nhau nhé
+  - vợ cậu là ai hả
+  - làm người yêu của anh nhé
+  - ai là bạn gái của Timi thế
+  - mối quan hệ nam nữ đang tốt đẹp chứ
+  - em đã yêu ai chưa
+  - tình trạng hôn nhân của m thế nào
+  - TIMI có người yêu rồi hả
+  - Timi có bạn gái chưa
+  - TIMI có mối tình đầu không
+  - người yêu của mày là ai
+  - mình tỏ tỉnh với timi thế
+  - tao yêu bạn
+  - cậu đã có chồng chưa
+  - bạn trai của Timi là ai đó
+  - có bạn gái chưa mày
+  - bot đang trong tình trạng hôn nhân thế nào
+  - yêu tôi không
+  - cho tôi hỏi chồng của timi là ai hả
+  - cậu có gia đình chưa
+  - làm người yêu tôi nhé
+  - timi yêu ai chưa
+  - cậu có vợ chưa
+  - cậu vẫn độc thân chớ
+  - bạn có người yêu chưa
+  - bạn đang yêu ai đấy
+  - mày có chồng rồi hả
+  - anh tỏ tỉnh với em hả
+  - em tình trạng hôn nhân thế nào
+  - bot đang trong mối quan hệ ntn
+  - yêu m được không
+  - mình mến mộ nhau nhé
+  - bạn trai Timi là ai thế
+  - làm vợ của chị nhé
+  - ai là người yêu của mày đó
+  - mối quan hệ nam nữ đang tốt đẹp không
+  - mày đã yêu ai chưa
+  - tình trạng hôn nhân của bạn như nào
+  - timi có người yêu rồi hả
+  - em có chồng chưa
+  - bạn có mối tình đầu chưa
+  - người yêu của bot là ai
+  - mình tỏ tỉnh với timi đấy
+  - tôi yêu bạn
+  - vợ của bot là ai thế
+  - có bồ chưa hả timi
+  - Timi đang trong tình trạng hôn nhân thế nào
+  - yêu tui không
+  - cho tớ hỏi bạn trai của Timi là ai đó
+  - ' có người yêu chưa'
+  - làm người yêu tớ nhé
+  - cậu yêu ai chưa
+  - Timi có chồng không
+  - bạn vẫn độc thân phải không
+  - m có người yêu chưa
+  - em đang yêu ai đó
+  - bot có bạn trai rồi à
+  - anh tỏ tỉnh với timi đó
+  - Timi tình trạng hôn nhân như nào
+  - m đang trong mối quan hệ như nào
+  - yêu TIMI được không
+  - mình thầm thương trộm nhớ nhau nhé
+  - vợ m là ai đó
+  - ai là bạn trai của em đó
+  - mối quan hệ yêu đương đang tốt đẹp phải không
+  - m đã yêu ai chưa
+  - tình trạng hôn nhân của bot như thế nào
+  - em có vợ rồi à
+  - em có vợ chưa
+  - Timi có mối tình đầu không
+  - bạn trai của TIMI là ai
+  - tớ tỏ tỉnh với timi đó
+  - tôi yêu cậu
+  - chồng của bot là ai hả
+  - có bạn trai chưa hả timi
+  - bạn đang trong tình trạng hôn nhân thế nào
+  - yêu tui đi
+  - cho tớ hỏi chồng của bạn là ai đó
+  - timi đã có bạn trai chưa
+  - làm vợ tôi nhé
+  - m yêu ai chưa
+  - TIMI có chồng không
+  - Timi vẫn độc thân không
+  - em có người yêu chưa
+  - mày đang yêu ai vậy
+  - cậu có gia đình rồi à
+  - anh tỏ tỉnh với timi hả
+  - mày tình trạng hôn nhân thế nào
+  - cậu đang trong mối quan hệ ntn
+  - yêu timi được không
+  - mình yêu nhau đi
+  - bạn trai m là ai
+  - ai là chồng của m đó
+  - mối quan hệ yêu đương đang tốt đẹp không
+  - cậu đã yêu ai chưa
+  - tình trạng hôn nhân của bot ntn
+  - m có bạn gái rồi à
+  - m có bạn trai chưa
+  - bot có mối tình đầu không
+  - bạn trai của timi là ai
+  - tớ tỏ tỉnh với em hả
+  - tui yêu bạn
+  - bạn gái của mày là ai đó
+  - có bồ chưa m
+  - timi đang trong tình trạng hôn nhân thế nào
+  - yêu tôi nhé
+  - cho tao hỏi bạn gái của bot là ai
+  - ' đã có bạn trai chưa'
+  - làm vợ tui nhé
+  - Timi yêu ai chưa
+  - m có bạn gái không
+  - TIMI vẫn độc thân phải không
+  - bạn đang yêu ai vậy
+  - em có bạn trai rồi hả
+  - anh tỏ tỉnh với em vậy
+  - cậu tình trạng hôn nhân ntn
+  - mày đang trong mối quan hệ ntn
+  - yêu bạn được không
+  - mình yêu đương nhau nhé
+  - chồng Timi là ai
+  - ai là bạn gái của TIMI
+  - mối quan hệ hẹn hò đang tốt đẹp chứ
+  - timi đã yêu ai chưa
+  - tình trạng hôn nhân của bạn như thế nào
+  - mày có chồng rồi à
+  - mày có chồng chưa
+  - bạn có mối tình đầu không
+  - người yêu của bạn là ai
+  - mình tỏ tỉnh với em hả
+  - bạn trai của bot là ai thế
+  - có người yêu chưa cậu
+  - cậu đang trong tình trạng hôn nhân thế nào
+  - yêu tao đi
+  - cho tui hỏi chồng của Timi là ai
+  - ' đã có gia đình chưa'
+  - làm vợ tao nhé
+  - mày yêu ai chưa
+  - bot có chồng chưa
+  - m vẫn độc thân phải không
+  - timi đang yêu ai đấy
+  - cậu có người yêu rồi à
+  - anh tỏ tỉnh với timi đấy
+  - mày tình trạng hôn nhân như nào
+  - TIMI đang trong mối quan hệ thế nào
+  - mình thích nhau đi
+  - bồ m là ai
+  - ai là bạn trai của bạn
+  - mối quan hệ nam nữ đang tốt đẹp chớ
+  - tình trạng hôn nhân của cậu thế nào
+  - Timi có người yêu rồi à
+  - bot có bạn gái chưa
+  - mày có mối tình đầu chưa
+  - người yêu của m là ai
+  - tao tỏ tỉnh với em đó
+  - tao yêu cậu
+  - người yêu của cậu là ai
+  - có bạn trai chưa hả em
+  - yêu tui nhé
+  - cho mình hỏi bạn gái của TIMI là ai
+  - Timi có gia đình chưa
+  - làm người yêu mình nhé
+  - TIMI có bạn trai chưa
+  - timi vẫn độc thân phải không
+  - Timi đang yêu ai đấy
+  - m có người yêu rồi hả
+  - mày tình trạng hôn nhân ntn
+  - em đang trong mối quan hệ như thế nào
+  - mình yêu đương nhau đi
+  - bồ bạn là ai
+  - ai là bồ của em thế
+  - mối quan hệ hẹn hò đang tốt đẹp chớ
+  - tình trạng hôn nhân của em ntn
+  - em có vợ rồi hả
+  - timi có bồ chưa
+  - mày có mối tình đầu không
+  - người yêu của Timi là ai
+  - tớ tỏ tỉnh với em đấy
+  - bồ của cậu là ai thế
+  - có bạn gái chưa Timi
+  - yêu mình đi
+  - cho tui hỏi vợ của m là ai
+  - TIMI có gia đình chưa
+  - làm người yêu tao nhé
+  - cậu có bạn trai không
+  - TIMI vẫn độc thân không
+  - Timi đang yêu ai thế
+  - bot có chồng rồi hả
+  - bạn tình trạng hôn nhân như thế nào
+  - Timi đang trong mối quan hệ như nào
+  - mình yêu thích nhau đi
+  - bồ TIMI là ai thế
+  - ai là chồng của m hả
+  - tình trạng hôn nhân của timi thế nào
+  - timi có bạn gái rồi à
+  - timi có bạn trai chưa
+  - cậu có mối tình đầu chưa
+  - người yêu của em là ai
+  - tui tỏ tỉnh với timi đấy
+  - bạn gái của timi là ai
+  - có chồng chưa em
+  - cho tớ hỏi bạn trai của timi là ai
+  - ' có chồng chưa'
+  - làm vợ mình nhé
+  - mày có bạn gái không
+  - timi vẫn độc thân chớ
+  - TIMI đang yêu ai đấy
+  - em có bạn trai rồi à
+  intent: self_ask_have_lover

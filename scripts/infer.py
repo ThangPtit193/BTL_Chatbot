@@ -1,24 +1,45 @@
 from sentence_transformers import SentenceTransformer, util
 from comet.components.embeddings.embedding_models import BertEmbedder
 import pprint
-
+import time
 # model = SentenceTransformer('./models')
-embedder = BertEmbedder(pretrained_name_or_abspath='timi-idol-phobert-32M-embedder-bm25-e10')
+# embedder = BertEmbedder(pretrained_name_or_abspath='timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0')
+embedder = BertEmbedder(pretrained_name_or_abspath='models_nli')
+# embedder = BertEmbedder(pretrained_name_or_abspath='models_test/final_model')
 # Two lists of sentences
-query = "hôm nay không biết thời tiết ra sao nữa"
+queries = ["hi", "bye"]
 corpus = [
-    "hôm nay không biết thời tiết ra sao nữa",
-    "hôm nay trời như nào nhỉ",
-    "thời tiết ở Đà Nẵng ntn vậy timi",
-    "không biết bây giờ Hà Nội có mưa không nhỉ",
-    "cho mình hỏi thời tiết tại Hải Phòng với",
-    "sắp đến đi du lịch mà ko biết thời tiết ở Đà Lạt có đỡ mưa ko ớ",
-    "mình cần biết Hàn Quốc đang có nhiệt độ ra sao",
-    "trời hôm nay nóng vãi",
-    "thời tiết chán ghia bot",
-    "trời mưa hoài dị trời",
-    "trời ơi là trời, sao mùa hè mà mưa quoài dậy chời",
-    "má ơi, nóng chết đi đc",
+    "good morning",
+    "morning",
+    "hello",
+    "hi there",
+    'i hate you',
+    'I am a student',
+    "vhgb bn  bn",
+    "it's so beautiful",
+    "see you lator",
+    "it's so ugly",
+    "a",
+    "bla bla,"
+    "tôi đi chươi"
 ]
-similarities = embedder.find_similarity([query], corpus)
-pprint.pprint(similarities)
+
+from sentence_transformers.cross_encoder import CrossEncoder
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import torch
+t0 = time.time()
+from sentence_transformers import CrossEncoder
+model = CrossEncoder('models_nli')
+scores = model.predict([('hi', 'hello'), ('A black race car starts up in front of a crowd of people.', 'A man is driving down a lonely road.')])
+
+#Convert scores to labels
+label_mapping = ['contradiction', 'entailment', 'neutral']
+labels = [label_mapping[score_max] for score_max in scores.argmax(axis=1)]
+print(labels)
+# for query in queries:
+#     print(f"Query: {query}")
+#     t0 = time.time()
+#     similarities = embedder.find_similarity([query], corpus)
+#     print(f"Time: {time.time() - t0}")
+#     pprint.pprint(similarities)
+

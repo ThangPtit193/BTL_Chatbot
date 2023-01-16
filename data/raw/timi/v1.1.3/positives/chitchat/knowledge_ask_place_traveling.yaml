@@ -1,0 +1,403 @@
+positives:
+- examples:
+  - em có địa điểm gì hay ho vui vẻ làm chuyến đi tắm biển không
+  - buồn quá, đi đâu tắm biển cho vui nhở cậu
+  - phụ mình tìm chốn tuần trăng mật nha
+  - cho tôi xin chốn các bạn hay đi du lịch nghỉ dưỡng ở đây với
+  - ' giới thiệu cho tớ hàng quán nhất định phải đi khi đến VNam'
+  - timi giới thiệu cho tớ vài nơi dã ngoại ở VN đê
+  - đến hưng yên thì nhất định phải đi những đâu nhở
+  - mình đang search giề đêy vui vui ở Canada
+  - gợi ý nơi nghỉ dưỡng hay hay cho mình
+  - chú em giúp tôi tìm địa điểm đi tắm biển đi nha
+  - không biết ở đà năng thì nên đi những đâu nhể
+  - nên đi du lịch nghỉ dưỡng ở đâu để khám phá vườn cây ăn trái bot
+  - thường thường cô đi dã ngoại ở đâu nhể
+  - mày suy nghĩ xem nên đi đâu ở Lào nhỉ
+  - mùa xuân nề đi đâu chơi ha
+  - miền tây nơi nào đáng đi nhất
+  - chán quá, muốn đi đâu đó thiệt xa
+  - BN có giề vui vui không nhể
+  - chùi ui sắp đi VN du lịch nghỉ dưỡng rồi mà không biết nên đi đâu
+  - đi đâu tắm biển với 3 người trở lên nhỉ timi
+  - đồng bằng sông hồng có như t/nào chơi không mày?
+  - cho mình hỏi tây bắc bộ có như t/nào thăm quan khám phá không bot?
+  - tớ muốn tìm nơi vui vui để tắm biển
+  - cho tôi xin vài nơi thăm quan khám phá ở đất Việt đê
+  - LS có như t/nào để tắm biển không
+  - timi biết nơi gì thăm quan khám phá tốt không
+  - suggest cho mình những chốn đáng đi ở Sing với
+  - tuyên quang có như t/nào vui vui không nhỉ
+  - em biết ở đn nơi nào du lịch nghỉ dưỡng tốt ha
+  - tôi sắp đến VNam du lịch, không biết cậu biết ở đó có ra sao chơi không?
+  - bạn biết địa điểm nào thú vị ở điện biên không?
+  - bot có địa điểm nào hay ho vui vẻ làm chuyến cắm trại không
+  - buồn chán thế, đi đâu du lịch nghỉ dưỡng cho vui nhở bot
+  - phụ tớ tìm nơi thăm quan khám phá ở đây nhé
+  - cho mình hỏi địa điểm các bạn hay đi thăm quan khám phá ở đây với
+  - ' giới thiệu cho tớ hàng quán nhất định phải đi khi đến đất Việt với'
+  - chú em giới thiệu cho tôi vài chỗ du lịch nghỉ dưỡng ở VN đii
+  - đến quảng nam thì nhất định phải đi những đâu ha
+  - tớ đang search gì vậy thú vị ở Việt Nam
+  - tìm nơi nhảy múa mới lạ cho mình
+  - bạn giúp tôi tìm chỗ đi dã ngoại đi nha
+  - không biết ở ha nôi thì nên đi những đâu nhỉ
+  - nên đi thăm quan khám phá ở đâu để tìm hiểu vườn cây ăn trái chú em
+  - bình thường cô đi dã ngoại ở đâu nhở
+  - timi suy nghĩ xem nên đi đâu ở gia lai giờ nhở
+  - mùa thu nề đi đâu chơi nhở
+  - miền bắc nơi nào nên dừng chân nhất
+  - hà nội có ra sao vui vui không nhể
+  - chời ơi sắp đi Thổ Nhĩ Kỳ dã ngoại roài mà chẳng biết nên đi đâu
+  - đi đâu tuần trăng mật với 4 người trở lên nhỉ chú em
+  - TV có chi chơi không timi?
+  - cho tớ hỏi Tam đảo có như thế nào thăm quan khám phá không timi?
+  - tớ muốn tìm nơi mới lạ để thăm quan khám phá
+  - cho tớ hỏi vài nơi tuần trăng mật ở hậu giang đi
+  - hà nội có như thế nào để du lịch nghỉ dưỡng không
+  - bot biết nơi nào thăm quan khám phá tốt không
+  - suggest cho tôi những nơi đáng đi ở thái nguyên với
+  - lai châu có như thế nào hay hay không nhở
+  - chú em biết ở HY chỗ nào tuần trăng mật tốt nhể
+  - mình sắp đến Việt Nam du lịch, không biết cậu biết ở đó có như t/nào chơi không?
+  - bot biết chỗ nào mới lạ ở Hong Kong không?
+  - mày có địa điểm nào hay ho vui vẻ làm chuyến đi thăm quan khám phá được không
+  - buồn chán quá, đi đâu thăm quan khám phá cho vui ha cậu
+  - phụ tớ tìm địa điểm tắm biển ở đây nhé
+  - cho tớ hỏi nơi các bạn hay đi cắm trại ở đây với
+  - bạn giới thiệu cho mình nơi nhất định phải đi khi đến lạng sơn với
+  - timi giới thiệu cho tớ vài chỗ tuần trăng mật ở Thái Lan đi
+  - đến Hàn thì nhất định phải đi những đâu nhể
+  - tớ đang tìm kiếm chi hả mới lạ ở đất Việt
+  - gợi ý địa điểm chơi thú vị cho tôi
+  - bạn giúp mình tìm nơi đi dã ngoại đi nhe
+  - không biết ở hà lội thì nên đi những đâu ha
+  - nên đi tắm biển ở đâu để tìm hiểu vườn cây ăn trái bot
+  - thường thường chú đi du lịch nghỉ dưỡng ở đâu nhỉ
+  - ' suy nghĩ xem nên đi đâu ở Úc giờ ha'
+  - đông nề đi đâu chơi nhỉ
+  - vùng đông bằng nam bộ địa chỉ nào đáng đi nhất
+  - phú quốc có chi thú vị không ha
+  - chùi ui sắp đi Nhật Bản du lịch nghỉ dưỡng rồi mà chẳng biết nên đi đâu
+  - đi đâu dã ngoại với 3 người trở lên ha bot
+  - Nhật Bản có như thế nào chơi không cậu?
+  - cho tớ xin sài gòn có ra sao dã ngoại không mày?
+  - tớ muốn tìm nơi vui vui để cắm trại
+  - cho tớ hỏi vài chốn tuần trăng mật ở Macau đi
+  - sài gòn có ra sao để thăm quan khám phá không
+  - timi biết nơi nào dã ngoại tốt không
+  - suggest cho mình những chỗ đáng đi ở khánh hoà với
+  - bình dương có như thế nào thú vị không nhở
+  - timi biết ở HY chỗ nào dã ngoại tốt ha
+  - tớ sắp đến cà mau du lịch, không biết timi biết ở đó có chi chơi không?
+  - timi biết địa điểm nào vui vui ở bắc kạn không?
+  - timi có chốn gì du lịch hay ho vui vẻ làm chuyến dã ngoại không
+  - buồn chán thế, đi đâu dã ngoại cho vui nhể bạn
+  - phụ tớ tìm địa điểm thăm quan khám phá nha
+  - cho tớ xin địa điểm các bạn hay đi thăm quan khám phá ở đây với
+  - timi giới thiệu cho tôi chỗ nhất định phải đi khi đến tuyên quang với
+  - chú em giới thiệu cho mình vài chỗ du lịch nghỉ dưỡng ở Việt Nam đii
+  - đến Campuchia thì nhất định phải đi những đâu nhể
+  - tớ đang tìm kiếm ra sao đấy vui vui ở cần thơ
+  - gợi ý nơi nghỉ dưỡng vui vui cho tớ
+  - timi giúp mình tìm chỗ đi thăm quan khám phá đi nha
+  - không biết ở phú quốc thì nên đi những đâu ha
+  - nên đi du lịch nghỉ dưỡng ở đâu để khám phá vườn cây ăn trái bạn
+  - bình thường chị đi dã ngoại ở đâu nhỉ
+  - ' suy nghĩ xem nên đi đâu ở VNam giờ nhở'
+  - thu này đi đâu chơi ha
+  - vùng duyên hải miền trung chốn nào đáng đi du lịch nghỉ dưỡng nhất
+  - đà nẳng có chi thú vị không nhở
+  - chùi ui sắp đi Hoa Kỳ tắm biển roài mà chả biết nên đi đâu
+  - đi đâu tuần trăng mật với 3 người trở lên nhở bot
+  - ho chi minh có như t/nào chơi không bot?
+  - cho tớ xin QN có ra sao cắm trại không mi?
+  - mình muốn tìm chỗ vui vui để dã ngoại
+  - cho tớ xin vài chốn dã ngoại ở Campuchia đii
+  - phú quốc có giề để dã ngoại không
+  - bạn biết nơi gì tắm biển tốt không
+  - suggest cho tôi những chỗ đáng đi ở Hoa Kỳ với
+  - VN có như thế nào thú vị không nhỉ
+  - mi biết ở QB chỗ nào tuần trăng mật tốt nhở
+  - tôi sắp đến VNam du lịch, không biết cậu biết ở đó có giề chơi không?
+  - bot biết chốn nào mới lạ ở cao bằng không?
+  - bot có chỗ gì hay ho vui vẻ làm chuyến đi tuần trăng mật được không
+  - buồn chán thế, đi đâu tuần trăng mật cho vui ha mi
+  - phụ mình tìm chỗ cắm trại nhe
+  - cho tớ xin địa điểm các bạn hay đi du lịch nghỉ dưỡng ở đây với
+  - mày giới thiệu cho tớ hàng quán nhất định phải đi khi đến Hàn Quốc
+  - bạn giới thiệu cho tớ vài địa điểm tắm biển ở Thái đii
+  - đến Áo thì nhất định phải đi những đâu nhỉ
+  - tớ đang tìm giề đêy hay hay ở VN
+  - tìm chỗ chơi vui vui cho tớ
+  - bot giúp mình tìm chốn đi du lịch nghỉ dưỡng đi nha
+  - không biết ở đồng bằng sông cưu long thì nên đi những đâu ha
+  - nên đi du lịch nghỉ dưỡng ở đâu để tìm hiểu vườn cây ăn trái timi
+  - thường thường cậu đi tuần trăng mật ở đâu nhở
+  - cậu suy nghĩ xem nên đi đâu ở thái bình giờ ha
+  - mùa xuân ni đi đâu chơi ha
+  - vùng bắc trung bộ địa chỉ nào nên đi nhất
+  - LS có gì thú vị không nhỉ
+  - chùi ưi sắp đi đắk lắk tuần trăng mật rồi mà chẳng biết nên đi đâu
+  - đi đâu cắm trại với 6 người trở lên nhở bạn
+  - dn có giề chơi không bot?
+  - cho tôi hỏi tây nguyên có giề thăm quan khám phá không timi?
+  - mình muốn tìm nơi thú vị để tuần trăng mật
+  - cho tớ xin vài địa điểm dã ngoại ở thừa thiên huế đi
+  - đồng bằng sông cưu long có ra sao để cắm trại không
+  - mày biết chỗ nào tắm biển tốt không
+  - suggest cho mình những chỗ đáng đi ở phú thọ với
+  - yên bái có gì hay hay không ha
+  - bạn biết ở Thổ Nhĩ Kỳ chốn nào thăm quan khám phá tốt nhở
+  - tớ sắp đến hà nội du lịch, không biết timi biết ở đó có như t/nào chơi không?
+  - em biết nơi nào thú vị ở Việt Nam không?
+  - cậu có địa điểm nào hay ho vui vẻ làm chuyến đi dã ngoại được không
+  - buồn chán thế, đi đâu cắm trại cho vui nhỉ timi
+  - phụ mình tìm địa điểm dã ngoại ở đây nhe
+  - cho tớ xin địa điểm các bạn hay đi tắm biển ở đây với
+  - ' giới thiệu cho tớ hàng quán nhất định phải đi khi đến Việt Nam'
+  - em giới thiệu cho tôi vài nơi thăm quan khám phá ở vĩnh long đê
+  - đến vĩnh long thì nhất định phải đi những đâu nhể
+  - tớ đang tìm kiếm như t/nào vậy vui vui ở Hà Lan
+  - gợi ý chỗ nghỉ dưỡng thú vị cho tớ
+  - bot giúp tớ tìm nơi đi tuần trăng mật đi nhé
+  - không biết ở đồng tháp thì nên đi những đâu nhỉ
+  - nên đi tắm biển ở đâu để tìm hiểu vườn cây ăn trái bạn
+  - bình thường mi đi cắm trại ở đâu nhể
+  - bot suy nghĩ xem nên đi đâu ở Nhật Bản giờ ha
+  - mùa hè nề đi đâu chơi nhở
+  - miền trung tỉnh thành phố nào nên đặt chân nhất
+  - hà nội có chi mới lạ không nhỉ
+  - trời ơi sắp đi Việt Nam tắm biển rùi mà không biết nên đi đâu
+  - đi đâu tắm biển với 5 người trở lên ha mày
+  - cao bằng có gì chơi không bot?
+  - cho tôi xin Australia có chi tắm biển không mày?
+  - tớ muốn tìm địa điểm mới lạ để thăm quan khám phá
+  - cho tôi hỏi vài nơi dã ngoại ở VN đii
+  - huế có giề để tuần trăng mật không
+  - timi biết nơi nào tuần trăng mật tốt không
+  - gợi ý cho tớ những địa điểm đáng đi ở Macau với
+  - Hong Kong có như thế nào mới lạ không nhỉ
+  - bot biết ở miền tây chỗ nào du lịch nghỉ dưỡng tốt nhỉ
+  - mình sắp đến điện biên du lịch, không biết bot biết ở đó có gì chơi không?
+  - bot biết chốn nào thú vị ở đất Việt không?
+  - bot có chốn gì hay ho vui vẻ làm chuyến đi tuần trăng mật được không
+  - buồn qué, đi đâu cắm trại cho vui nhỉ cậu
+  - phụ tôi tìm chỗ du lịch nghỉ dưỡng nhe
+  - cho tôi xin chỗ các bạn hay đi thăm quan khám phá ở đây với
+  - ' giới thiệu cho tớ chỗ nhất định phải đi khi đến đất Việt'
+  - timi giới thiệu cho mình vài chỗ du lịch nghỉ dưỡng ở ninh thuận đi
+  - đến bắc kạn thì nhất định phải đi những đâu ha
+  - tớ đang tìm chi đó hay hay ở vĩnh phúc
+  - gợi ý chỗ dã ngoạn vui vui cho tớ
+  - chú em giúp mình tìm chốn đi thăm quan khám phá đi nha
+  - không biết ở tây nguyên thì nên đi những đâu nhỉ
+  - nên đi cắm trại ở đâu để khám phá vườn cây ăn trái timi
+  - bình thường anh đi tắm biển ở đâu nhở
+  - em suy nghĩ xem nên đi đâu ở sóc trăng giờ nhể
+  - thu ni đi đâu chơi nhỉ
+  - miền đồng bằng duyên hải bắc bộ tỉnh thành phố nào nên đặt chân nhất
+  - h.noi có gì vui vui không nhỉ
+  - chời ơi sắp đi bắc giang tắm biển rùi mà chẳng biết nên đi đâu
+  - đi đâu thăm quan khám phá với 4 người trở lên nhỉ timi
+  - hà nội có như t/nào chơi không em?
+  - cho mình hỏi Hoa Kỳ có ra sao thăm quan khám phá không timi?
+  - mình muốn tìm nơi hay hay để cắm trại
+  - cho tôi hỏi vài chốn thăm quan khám phá ở tuyên quang đii
+  - QB có giề để dã ngoại không
+  - bot biết chốn nào cắm trại tốt không
+  - suggest cho tớ những địa điểm đáng đi ở Việt Nam với
+  - Hong Kong có như t/nào mới lạ không nhở
+  - bạn biết ở Phan Thiết nơi nào tắm biển tốt nhỉ
+  - tớ sắp đến Hoa Kỳ du lịch, không biết bot biết ở đó có như thế nào chơi không?
+  - timi biết chốn nào thú vị ở hà nội không?
+  - bot có nơi gì hay ho vui vẻ làm chuyến tuần trăng mật được không
+  - buồn chán qué, đi đâu tuần trăng mật cho vui nhỉ timi
+  - phụ tôi tìm chốn thăm quan khám phá ở đây nha
+  - cho tôi hỏi địa điểm các bạn hay đi dã ngoại ở đây với
+  - ' giới thiệu cho tôi cảnh đẹp nhất định phải đi khi đến Singapore'
+  - bot giới thiệu cho mình vài chỗ thăm quan khám phá ở hưng yên đi
+  - đến bà rịa - vũng tàu thì nhất định phải đi những đâu nhỉ
+  - mình đang tìm kiếm như t/nào thế vui vui ở điện biên
+  - gợi ý địa điểm nghỉ dưỡng vui vui cho tôi
+  - mày giúp tớ tìm chốn đi tắm biển đi nhé
+  - không biết ở Việt Nam thì nên đi những đâu nhở
+  - nên đi tuần trăng mật ở đâu để tìm hiểu vườn cây ăn trái cậu
+  - thường thường chú đi cắm trại ở đâu nhở
+  - ' suy nghĩ xem nên đi đâu ở Macau nhở'
+  - hè này đi đâu chơi nhở
+  - vùng trung du miền núi? phía bắc địa điểm nào nên đặt chân nhất
+  - hồ chí minh có chi mới lạ không nhở
+  - trời ui sắp đi vĩnh long dã ngoại rồi mà chả biết nên đi đâu
+  - đi đâu dã ngoại với 6 người trở lên nhể timi
+  - mộc châu có chi chơi không bot?
+  - cho tớ xin miền tây có chi du lịch nghỉ dưỡng không mi?
+  - tớ muốn tìm nơi thú vị để thăm quan khám phá
+  - cho tớ xin vài nơi cắm trại ở gia lai đi
+  - hà nôi có ra sao để dã ngoại không
+  - timi biết chốn gì dã ngoại tốt không
+  - gợi ý cho mình những nơi đáng đi ở VN với
+  - quảng ngãi có gì thú vị không nhỉ
+  - timi biết ở sai gòn nơi nào dã ngoại tốt nhể
+  - tớ sắp đến Mĩ du lịch, không biết cậu biết ở đó có gì chơi không?
+  - timi biết nơi nào thú vị ở Nga không?
+  - cậu có địa điểm nào du lịch hay ho vui vẻ làm chuyến thăm quan khám phá không
+  - chán thế, đi đâu cắm trại cho vui ha timi
+  - phụ tớ tìm chỗ dã ngoại nhe
+  - cho tớ hỏi chỗ các bạn hay đi dã ngoại ở đây với
+  - timi giới thiệu cho tớ nơi nhất định phải đi khi đến lạng sơn với
+  - ' giới thiệu cho tôi vài nơi tuần trăng mật ở Việt Nam đi'
+  - đến Thụy Sĩ thì nhất định phải đi những đâu nhể
+  - tớ đang search như t/nào vậy hay hay ở Mỹ
+  - tìm chốn nghỉ dưỡng vui vui cho tớ
+  - bot giúp mình tìm chốn đi thăm quan khám phá đi nhe
+  - không biết ở vịnh hạ long thì nên đi những đâu nhở
+  - nên đi dã ngoại ở đâu để tìm hiểu vườn cây ăn trái cậu
+  - thường thường bạn đi dã ngoại ở đâu nhở
+  - ' suy nghĩ xem nên đi đâu ở Anh nhỉ'
+  - đông này đi đâu chơi nhỉ
+  - miền trung du miền núi bắc bộ nơi nào nên dừng chân nhất
+  - bình dương có chi mới lạ không nhỉ
+  - trời ơi sắp đi Úc cắm trại rùi mà chả biết nên đi đâu
+  - đi đâu tuần trăng mật với 5 người trở lên nhở bot
+  - h.noi có gì chơi không cậu?
+  - cho tớ hỏi bà rịa - vũng tàu có ra sao cắm trại không em?
+  - tớ muốn tìm chốn thú vị để tắm biển
+  - cho tớ xin vài chốn tuần trăng mật ở hải phòng đi
+  - Ukraine có như thế nào để tắm biển không
+  - cậu biết địa điểm nào cắm trại tốt không
+  - suggest cho tôi những chỗ đáng đi ở gia lai với
+  - VNam có gì hay hay không nhở
+  - bot biết ở sai gon chốn nào cắm trại tốt nhỉ
+  - tôi sắp đến Ấn Độ du lịch, không biết bot biết ở đó có giề chơi không?
+  - bot biết địa điểm nào vui vui ở Hàn không?
+  - bot có chỗ nào hay ho vui vẻ làm chuyến đi du lịch nghỉ dưỡng không
+  - chán qué, đi đâu cắm trại cho vui nhỉ timi
+  - phụ tớ tìm nơi cắm trại nhé
+  - cho tớ hỏi nơi các bạn hay đi thăm quan khám phá ở đây với
+  - cậu giới thiệu cho tớ hàng quán nhất định phải đi khi đến Australia với
+  - em giới thiệu cho mình vài địa chỉ thăm quan khám phá ở Thổ Nhĩ Kỳ đi
+  - đến Việt Nam thì nhất định phải đi những đâu ha
+  - mình đang search chi đấy mới lạ ở điện biên
+  - gợi ý địa điểm thăm quan mới lạ cho tớ
+  - timi giúp tớ tìm nơi đi thăm quan khám phá đi nha
+  - không biết ở da nang thì nên đi những đâu nhỉ
+  - nên đi cắm trại ở đâu để tìm hiểu vườn cây ăn trái bot
+  - thường thì chú đi cắm trại ở đâu nhở
+  - bạn suy nghĩ xem nên đi đâu ở đồng nai giờ nhở
+  - đông nề đi đâu chơi nhể
+  - miền tây nơi nào nên có mặt nhất
+  - phú yên có ra sao mới lạ không nhể
+  - chùi ui sắp đi Thụy Điển du lịch nghỉ dưỡng rùi mà không biết nên đi đâu
+  - đi đâu cắm trại với 4 người trở lên nhở timi
+  - pắc pó có ra sao chơi không timi?
+  - cho tôi xin Hàn Quốc có ra sao tắm biển không chú em?
+  - mình muốn tìm chỗ hay hay để du lịch nghỉ dưỡng
+  - cho tôi hỏi vài địa chỉ cắm trại ở bình định đê
+  - vịnh hạ long có chi để cắm trại không
+  - bạn biết địa điểm nào thăm quan khám phá tốt không
+  - gợi ý cho tớ những chỗ đáng đi ở Việt Nam với
+  - cần thơ có gì vui vui không ha
+  - timi biết ở tây ninh địa điểm nào thăm quan khám phá tốt ha
+  - mình sắp đến an giang du lịch, không biết bạn biết ở đó có ra sao chơi không?
+  - em biết chỗ nào hay hay ở đất Việt không?
+  - timi có địa điểm gì du lịch hay ho vui vẻ làm chuyến thăm quan khám phá được không
+  - buồn thế, đi đâu cắm trại cho vui ha mày
+  - phụ mình tìm nơi dã ngoại ở đây nha
+  - cho tớ hỏi địa điểm các bạn hay đi cắm trại ở đây với
+  - bot giới thiệu cho tôi nơi nhất định phải đi khi đến VN
+  - bot giới thiệu cho tớ vài chỗ tắm biển ở vĩnh phúc đii
+  - đến ninh thuận thì nhất định phải đi những đâu nhể
+  - mình đang tìm kiếm như t/nào thế vui vui ở Việt Nam
+  - gợi ý nơi đi chơi thú vị cho mình
+  - mày giúp mình tìm địa điểm đi thăm quan khám phá đi nhé
+  - không biết ở Armenia thì nên đi những đâu nhở
+  - nên đi cắm trại ở đâu để tìm hiểu vườn cây ăn trái timi
+  - bình thường chị đi thăm quan khám phá ở đâu nhể
+  - timi suy nghĩ xem nên đi đâu ở Việt Nam giờ nhỉ
+  - hè ni đi đâu chơi nhở
+  - vùng duyên hải miền trung tỉnh thành phố nào nên đặt chân nhất
+  - xì gòn có như thế nào thú vị không ha
+  - chùi ưi sắp đi VN tắm biển roài mà không biết nên đi đâu
+  - đi đâu tuần trăng mật với 3 người trở lên ha timi
+  - hồ chí minh có như thế nào chơi không bot?
+  - cho mình xin xì gòn có gì dã ngoại không timi?
+  - tớ muốn tìm chỗ mới lạ để tắm biển
+  - cho mình xin vài chỗ tắm biển ở Nhật Bản đii
+  - HG có gì để dã ngoại không
+  - bot biết địa điểm gì tắm biển tốt không
+  - tìm cho tôi những địa điểm đáng đi ở cần thơ với
+  - Hoa Kỳ có giề hay hay không nhở
+  - em biết ở đồng bằng bắc bộ chốn nào du lịch nghỉ dưỡng tốt nhỉ
+  - mình sắp đến Pháp du lịch, không biết mi biết ở đó có chi chơi không?
+  - timi biết nơi nào thú vị ở kon tum không?
+  - mi có nơi nào hay ho vui vẻ làm chuyến đi cắm trại được không
+  - buồn quá, đi đâu tuần trăng mật cho vui nhỉ chú em
+  - phụ tớ tìm nơi thăm quan khám phá ở đây nhe
+  - cho tớ hỏi chốn các bạn hay đi du lịch nghỉ dưỡng ở đây với
+  - bạn giới thiệu cho tớ hàng quán nhất định phải đi khi đến đất Việt
+  - timi giới thiệu cho tôi vài chỗ dã ngoại ở Việt Nam đi
+  - đến sóc trăng thì nhất định phải đi những đâu nhể
+  - tớ đang tìm kiếm ra sao thế hay hay ở Sing
+  - tìm chỗ du lịch vui vui cho tớ
+  - mi giúp tôi tìm địa điểm đi tắm biển đi nha
+  - không biết ở Armenia thì nên đi những đâu nhể
+  - nên đi du lịch nghỉ dưỡng ở đâu để tìm hiểu vườn cây ăn trái em
+  - thường thường cậu đi thăm quan khám phá ở đâu ha
+  - ' suy nghĩ xem nên đi đâu ở Đan Mạch nhể'
+  - thu nề đi đâu chơi ha
+  - miền nam trung bộ nơi nào đáng đặt chân nhất
+  - tây bắc bộ có chi hay hay không nhể
+  - chùi ơi sắp đi ninh bình cắm trại roài mà chả biết nên đi đâu
+  - đi đâu dã ngoại với 5 người trở lên nhở mi
+  - tây nguyên có như thế nào chơi không cậu?
+  - cho tôi xin hội an có chi cắm trại không mi?
+  - mình muốn tìm chốn thú vị để thăm quan khám phá
+  - cho tớ hỏi vài nơi thăm quan khám phá ở hà nội đê
+  - sai gon có gì để tắm biển không
+  - timi biết chỗ gì tuần trăng mật tốt không
+  - gợi ý cho mình những chỗ đáng đi ở bình định với
+  - vĩnh phúc có gì thú vị không ha
+  - cậu biết ở an giang nơi nào tắm biển tốt ha
+  - tôi sắp đến VNam du lịch, không biết bạn biết ở đó có gì chơi không?
+  - cậu biết nơi nào vui vui ở Hoa Kỳ không?
+  - em có chỗ gì hay ho vui vẻ làm chuyến đi du lịch nghỉ dưỡng được không
+  - chán quá, đi đâu thăm quan khám phá cho vui nhở chú em
+  - phụ tớ tìm chỗ du lịch nghỉ dưỡng ở đây nhe
+  - cho tớ hỏi chỗ các bạn hay đi thăm quan khám phá ở đây với
+  - cậu giới thiệu cho tớ chỗ nhất định phải đi khi đến trà vinh với
+  - mi giới thiệu cho tớ vài nơi dã ngoại ở kon tum đi
+  - đến yên bái thì nhất định phải đi những đâu ha
+  - tớ đang search như t/nào đêy thú vị ở hải phòng
+  - tìm địa điểm ngoại khóa mới lạ cho tớ
+  - timi giúp tôi tìm chỗ đi cắm trại đi nha
+  - không biết ở hà nôi thì nên đi những đâu nhể
+  - nên đi cắm trại ở đâu để tìm hiểu vườn cây ăn trái bạn
+  - bth chị đi thăm quan khám phá ở đâu nhở
+  - ' suy nghĩ xem nên đi đâu ở hà nam giờ nhở'
+  - đông nề đi đâu chơi nhở
+  - miền đồng bằng bắc bộ chốn nào đáng đi thăm quan khám phá nhất
+  - HY có như t/nào mới lạ không ha
+  - trời ơi sắp đi Canada tuần trăng mật roài mà không biết nên đi đâu
+  - đi đâu cắm trại với 5 người trở lên nhở timi
+  - TH có ra sao chơi không em?
+  - cho tôi xin Việt Nam có như t/nào tắm biển không cậu?
+  - mình muốn tìm địa điểm hay hay để du lịch nghỉ dưỡng
+  - cho tôi xin vài chốn dã ngoại ở VN đê
+  - ha noi có chi để thăm quan khám phá không
+  - mày biết chốn nào du lịch nghỉ dưỡng tốt không
+  - gợi ý cho tớ những nơi đáng đi ở hải phòng với
+  - lạng sơn có giề mới lạ không ha
+  - mi biết ở h.noi địa điểm nào du lịch nghỉ dưỡng tốt nhỉ
+  - tớ sắp đến vĩnh phúc du lịch, không biết mày biết ở đó có gì chơi không?
+  - timi biết chốn nào thú vị ở thái nguyên không?
+  - timi có địa điểm nào du lịch hay ho vui vẻ làm chuyến đi thăm quan khám phá không
+  - chán thế, đi đâu tắm biển cho vui nhể timi
+  - phụ mình tìm địa điểm cắm trại ở đây nhe
+  - cho tớ hỏi chỗ các bạn hay đi du lịch nghỉ dưỡng ở đây với
+  - timi giới thiệu cho tôi cảnh đẹp nhất định phải đi khi đến Phần Lan
+  - mi giới thiệu cho tớ vài chỗ tắm biển ở bình định đii
+  - đến Nhật Bản thì nhất định phải đi những đâu nhở
+  - tớ đang tìm giề thế hay hay ở Sing
+  - tìm nơi nghỉ dưỡng hay hay cho tôi
+  intent: knowledge_ask_place_traveling

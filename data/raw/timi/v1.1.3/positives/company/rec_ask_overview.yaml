@@ -1,0 +1,694 @@
+positives:
+- examples:
+  - thông tin tuyển dụng
+  - năm 1 có thể xin svtt không
+  - ' muốn tìm hiểu về tuyển dụng của công ty f tech'
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí 2d product
+    vậy cho e ứng tuyển với ạ
+  - cho a xin thông tin về tuyển dụng ở QN đi
+  - chị xin các vị trí tuyển dụng
+  - team product có tuyển thêm pre-senior nữa ko
+  - HY có tuyển database engineering hông bác ơi
+  - có công việc nào liên quan đến pre-senior ko
+  - team hỗ trợ IT có tuyển data analyst hông
+  - admin cho hỏi mình chỉ làm part time thì có ứng tuyển được ko
+  - tôi ở hcm muốn apply thử việc full stack dev
+  - có tuyển ctv làm về biên soạn nội dung giáo dục không
+  - ' mới học năm hai sợ chưa đủ kiến thức thì có được nhận ko ạ'
+  - cty Viễn thông MobiFone có tuyển junior game 3d prod hông
+  - tây nam bộ có đang tuyển junior hay hông
+  - nghe đồn bên team platform đang tuyển internship db engineer hả
+  - bên iris có tuyển thử việc ở sapa không
+  - công ty ftech có tuyển junior ai engineering hông
+  - t đang cần 1 vị trí cho game UI/UX designs thì apply ntn đó
+  - công ty f-tech có tuyển data analysts ko
+  - những vị trí nào đang tuyển dụng tại VL
+  - tư vấn cho tớ job business supporter china
+  - bên phòng platforms có tuyển product analysts tại quảng bình hông nhỉ
+  - ' thấy FB thông báo bên ai Hà Nội đang open đúng không bot?'
+  - phòng ban Trung tâm AI có còn tuyển nhân sự nữa ko
+  - ' giới thiệu tớ về các chính sách liên quan đến tuyển nhân viên tại f tech'
+  - cho mình hỏi chính sách recruitment tại công ty
+  - tớ xin thông tin tuyển dụng
+  - tớ muốn tìm hiểu chính sách tuyển nhân viên của công ty
+  - tuyển dụng
+  - ' không có nhiều kinh nghiệm lắm thì apply vô ftech làm senior được ko'
+  - tôi muốn hỏi thông tin tuyển dụng tại Việt Nam vị trí fresher ai engineer
+  - phòng ban Product và R&D có còn tuyển nhân sự nữa ko
+  - làm thế nào để apply vào một vị trí thế
+  - em học Học viện Kỹ thuật Quân sự chỉ biết java em ứng tuyển vào công ty được không
+  - team application có tuyển ctv nữa không
+  - công ty ftech đang tuyển vị trí nào
+  - phòng game và design có tuyển vị trí android develop nữa không
+  - ở đắk lắk có đang tuyển ba ko
+  - tôi xin thông tin tuyển dụng ở hà giang với
+  - cty Hòa Phát đang có job gì ko
+  - hải phòng có đang tuyển lập trình ios fresher không
+  - tớ có ít kinh nghiệm làm việc thì có ứng tuyển đươc không
+  - hông biết senior android ninh bình có đang tuyển dụng hông nhỉ
+  - ' chưa có kinh nghiệm mấy có ứng tuyển được không'
+  - bên mình có làm về nhân viên kinh doanh thị trường China hông
+  - phòng Product và R&D có tuyển thêm dotnet dev nữa không
+  - công ty đang tuyển vị trí nào ở VL hả
+  - tôi chưa có kinh nghiệm thì công ty có tuyển hông ạ
+  - cho tôi xin thông tin về tuyển dụng chi nhánh hồ chí minh
+  - giới thiệu ứng viên có được tiền hông
+  - ở đà nẵng có đang tuyển vị trí nào hông
+  - ' mới học golang sợ chưa đủ kiến thức thì công ty có tuyển được không'
+  - tuyển dụng công ty f-tech tại sài gòn
+  - công ty có tuyển cộng tác viên ko
+  - e chào a/c ạ, e là sinh viên năm 4 học bên Đại học Giao thông Vận tải, e thấy
+    bên tôi đang tuyển thử việc react native đúng ko a, cho e xin ứng tuyển với ạ
+  - tư vấn cho job fresher ai engineer
+  - tuyển dụng của công ty tập đoàn trung nguyên như thế nào
+  - công ty f tech có ứng tuyển fresher ai engineer hông
+  - em mới ra trường thì có ứng tuyển được vị trí unity 2d develop ko ạ
+  - ở TH thông tin tuyển dụng như thế nào
+  - tôi muốn làm blockchain tại f tech?
+  - bộ phận game và design có tuyển fresher vị trí product analyst nữa hông
+  - Dạ chào bạn tớ muốn ứng tuyển vào vị trị leader system admin ạ, rất hi vọng bạn
+    phản hồi sớm ạ
+  - tớ muốn làm front end developer, ko biết vị trí này có tuyển junior không
+  - cty Cổ phần Bê tông Hoà Cần có đang tuyển nhân viên ko
+  - ' mới học NLP thì có ứng tuyển được trainee ai engineer ko'
+  - tuyển dụng nhân sự tại tp hồ chí minh
+  - có tuyển fresher vị trí back-end develop không cậu
+  - có vị trí nào trống tại hà nội không
+  - công ty f-tech đang có đang tuyển nhân viên soạn nội dung giáo dục không
+  - ko biết ở củ chi có đang tuyển os network thử việc
+  - công ty f tech có tuyển những người chưa có khinh nghiệp không ạ
+  - mình muốn biết thông tin tuyển dụng game designs của bộ phận it support tại hn
+  - em chỉ biết ruby thôi có thể ứng tuyển được hông ạ
+  - nghe đồn bên bạn đang thiếu vẽ game 2d hả?
+  - bộ phận TT Ai có tuyển thêm ai research nữa ko
+  - graphic designers
+  - tớ thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí game 3d product
+    của ftech
+  - mình muốn tìm hiểu về tuyển dụng của cty tinh vân
+  - cho tớ xin thông tin job ai engineer
+  - tớ muốn biết thêm về các chính sách tuyển dụng nhân sự
+  - có job nào đang tuyển hông
+  - cho e xin làm thực tập sinh không lương kiếm kinh nghiệm được không
+  - có công việc nào liên quan đến back-end developer không
+  - cty Hãng hàng không Quốc gia Việt Nam có tuyển nhân sự thêm người tại Phong Nha-Kẻ
+    Bàng ko
+  - bộ phận applications có tuyển vị trí blockchain engineer nữa hông
+  - chính sách của công ty f-tech liên quan đến tuyển dụng
+  - tớ chưa có kinh nghiệm có đc nhận ko ạ
+  - tuyển dụng nhân sự
+  - cho tớ xin thông tin về tuyển dụng
+  - tớ mới làm về ai engineer thì có chuyển sang làm pentesters được ko
+  - fresher có đang tuyển ko hở
+  - bên bạn có đang tuyển vị trí vẽ 3d ko
+  - các thầy giới thiệu sang pretrain, không biết cty có tuyển thử việc nhân sự không
+    nhỉ?
+  - tôi muốn apply vị trí senior ai engineer đc ko ạ
+  - tuyển dụng ngành Quality Assurance hcm
+  - tuyển dụng của cty Cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang
+  - chi tiết về việc ứng tuyên là như nào đó
+  - thử việc
+  - hiện tại công ty đang tuyển các ngành nghề gì vậy?
+  - ' team hỗ trợ it ở VN có đang tuyển natural language processing hông'
+  - làm sao ứng tuyển vào công ty contectcone
+  - vị trí blockchain làm ở đất Việt hả
+  - bên timi có tuyển pre-senior ai engineer không vậy
+  - bộ phận có tuyển senior game 2d product không
+  - ứng tuyển công ty
+  - cho a xin thông tin về tuyển dụng
+  - vị trí nào làm ở Australia
+  - ' mới làm về ai engineering thì có ứng tuyển được ko'
+  - f tech còn trống vị trí thử việc QA ko nhỉ
+  - team hạ tầng có tuyển junior không
+  - job fresher golang develop đà nẵng thế nào
+  - công ty f tech có ứng tuyển svtt computer vision không
+  - năm 1 có thể xin thực tập sinh không
+  - ' muốn tìm hiểu về tuyển dụng của công ty ftech'
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí react
+    native dev vậy cho e ứng tuyển với ạ
+  - cho a xin thông tin về tuyển dụng ở đn đi
+  - anh xin các vị trí tuyển dụng
+  - bộ phận product có tuyển thêm junior nữa ko
+  - bắc kạn có tuyển .net develop không bác ơi
+  - có công việc nào liên quan đến tts hông
+  - bộ phận hệ thống cơ sở hạ tầng có tuyển cv engineering không
+  - admin cho hỏi chỉ làm part time thì có ứng tuyển được không
+  - tớ ở TH muốn apply tts 3d prod
+  - có tuyển cộng tác viên làm về db engineering không
+  - ' mới học NLP sợ chưa đủ kiến thức thì có được nhận không ạ'
+  - tập đoàn Masan có tuyển senior DE ko
+  - miền nam có đang tuyển thử việc hay ko
+  - nghe đồn bên bộ phận hr đang tuyển db engineer fulltime hả
+  - bên Timi có tuyển ctv ở tây bắc bộ không
+  - công ty ftech có tuyển thử việc ai engineer không
+  - t đang cần 1 vị trí cho q/lý nhân sự thì apply ntn đó
+  - công ty f tech có tuyển ba ko
+  - những vị trí nào đang tuyển dụng tại hà nội
+  - tư vấn cho job data engineering
+  - bên phòng ban IS có tuyển 3d artist tại sài gòn hông nhỉ
+  - ' thấy FB thông báo bên ai engineer Hà Nội đang open đúng không bot?'
+  - bộ phận AI có còn tuyển nhân sự nữa ko
+  - có thể giới thiệu cho tôi về chính sách liên quan đến tuyển nhân sự tại f-tech
+  - cho tớ hỏi chính sách tuyển nhân viên tại công ty Quản lý Quỹ đầu tư Việt Nam
+  - mình xin thông tin tuyển dụng
+  - tớ muốn tìm hiểu về chính sách tuyển chọn nhân sự của công ty
+  - ' không có nhiều kinh nghiệm lắm thì apply vô f-tech làm ctv được ko'
+  - mình muốn biết thông tin tuyển dụng tại sài gòn fresher ai engineering
+  - phòng hr admin có còn tuyển nhân sự nữa không
+  - em học Đại học tmu chỉ biết RUBY em ứng tuyển vào công ty f-tech được ko
+  - bộ phận application có tuyển thử việc nữa hông
+  - cty bravo đang tuyển vị trí nào
+  - phòng game có tuyển vị trí người vệ sinh nữa hông
+  - ở đn có đang tuyển product analysts không
+  - tôi xin thông tin tuyển dụng ở đồng bằng bắc bộ với
+  - công ty đang có job gì ko
+  - hn có đang tuyển blockchain develop pre-senior ko
+  - ' có ít kinh nghiệm làm việc thì có ứng tuyển đươc ko'
+  - ko biết thử việc data analysts cao bằng có đang tuyển dụng hông nhỉ
+  - tớ chưa có kinh nghiệm mấy có ứng tuyển được không
+  - bên mình có làm về product owner ko
+  - phòng ban Product và R&D có tuyển thêm business support thị trường TQ nữa không
+  - tập đoàn Dầu khí Việt Nam đang tuyển vị trí nào ở phú quốc hở
+  - ' chưa có kinh nghiệm thì công ty có tuyển ko ạ'
+  - cho tôi xin thông tin về tuyển dụng chi nhánh đn
+  - giới thiệu ứng viên có được tiền
+  - ở Đảo Nam Du có đang tuyển vị trí nào không
+  - ' mới học python sợ chưa đủ kiến thức thì tập đoàn CÔNG NGHỆ CMC có tuyển được
+    không'
+  - tuyển dụng cty tinh vân tại huế
+  - công ty có tuyển ctv không
+  - e chào a/c ạ, e là sinh viên năm 4 học bên Đại học tmu, e thấy bên tớ đang tuyển
+    fresher lập trình android đúng ko a, cho e xin ứng tuyển với ạ
+  - tư vấn cho tớ job senior ai engineer
+  - tuyển dụng của công ty như thế nào
+  - ' có ứng tuyển full-time ai engineer hông'
+  - em mới ra trường thì có ứng tuyển được vị trí nv cskh không ạ
+  - ở BN thông tin tuyển dụng thế nào
+  - mình muốn làm data engineers tại f tech?
+  - bộ phận game có tuyển senior vị trí fe developer nữa ko
+  - Dạ chào bạn tớ muốn ứng tuyển vào vị trị leader nv marketing ạ, rất hi vọng bạn
+    phản hồi sớm ạ
+  - tôi muốn làm product owner, ko biết vị trí này có tuyển thử việc
+  - công ty có đang tuyển thành viên ko
+  - ' mới học Ruby thì có ứng tuyển được svtt ai engineer ko'
+  - tuyển dụng nhân sự tại nam trung bộ
+  - có tuyển fresher vị trí ios dev ko
+  - có vị trí nào trống tại HD không
+  - công ty đang có đang tuyển odoo dev ko
+  - không biết ở VN có đang tuyển vị trí android developer fresher
+  - công ty có tuyển những người chưa có khinh nghiệp không ạ
+  - tớ muốn hỏi thông tin tuyển dụng 2d developer của bộ phận kinh doanh tại hcm
+  - em chỉ biết php thôi có thể ứng tuyển được không ạ
+  - nghe đồn bên bạn đang thiếu react-native hả?
+  - phòng ban TT Ai có tuyển thêm ai research nữa ko
+  - game unity 2d
+  - ' thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí ai engineer
+    của ftech'
+  - ' muốn tìm hiểu về tuyển dụng của tập đoàn Dầu khí Việt Nam'
+  - cho chị xin information job ai research
+  - mình biết thêm về các chính sách tuyển nhân sự
+  - có vị trí nào đang tuyển không
+  - cho e xin làm internship không lương kiếm kinh nghiệm được không
+  - có công việc nào liên quan đến nhân viên soạn nội dung giáo dục hông
+  - công ty Viễn thông MobiFone có tuyển dụng thêm người tại huế ko
+  - phòng ban applications có tuyển vị trí Ruby engineer nữa hông
+  - chính sách của công ty minh long liên quan đến tuyển dụng nhân sự
+  - mình chưa có kinh nghiệm có đc nhận không ạ
+  - cho tôi xin thông tin về tuyển dụng
+  - tôi mới làm về ai engineer thì có chuyển sang làm 2d developer được ko
+  - sinh viên thực tập có đang open không hở
+  - bên bạn có đang tuyển vị trí hr ko
+  - các thầy giới thiệu tôi sang pretrain, không biết cty có tuyển junior product
+    owners không nhỉ?
+  - ' muốn apply vị trí fresher ai engineering đc ko ạ'
+  - tuyển dụng ngành nghề devops engineer bắc trung bộ
+  - tuyển dụng của công ty
+  - ctv
+  - phòng ban team trung tâm ai ở hà nội có đang tuyển nlp engineer hông
+  - làm sao ứng tuyển vào công ty ftech
+  - vị trí 3d prod làm ở hn hả
+  - bên bot có tuyển pre-senior ai engineer hông vậy hả
+  - bộ phận có tuyển thử việc graphic ko
+  - ứng tuyển ngân hàng vietcombank
+  - cho c xin thông tin về tuyển dụng
+  - vị trí nào làm ở BN
+  - tôi mới làm về ai research thì có ứng tuyển được không
+  - f-tech còn trống vị trí pre-senior game design ko nhỉ
+  - phòng ban hạ tầng có tuyển junior ko
+  - job thử việc blockchain engineer hn như thế nào
+  - công ty ftech có ứng tuyển thực tập sinh graphic design không
+  - năm 1 có thể xin pretrain không
+  - tớ muốn tìm hiểu về tuyển dụng của công ty cổ phần chứng Khoán Biển Việt
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí game develop
+    vậy cho e ứng tuyển với ạ
+  - cho a xin thông tin về tuyển dụng ở miền tây đi
+  - tớ xin các vị trí tuyển dụng
+  - phòng product có tuyển thêm thực tập sinh nữa không
+  - Phần Lan có tuyển 3d art hông bác ơi
+  - có công việc nào liên quan đến pre-senior không em
+  - bộ phận help desk có tuyển db engineering không
+  - admin cho hỏi tớ chỉ làm part time thì có ứng tuyển được hông
+  - tớ ở hồ chí minh muốn apply cộng tác viên unity 3d
+  - có tuyển ctv làm về full-stack dev hông
+  - ' mới học odoo sợ chưa đủ kiến thức thì có được nhận hông ạ'
+  - công ty có tuyển full time xử lý ngôn ngữ tự nhiên hông
+  - sài gòn có đang tuyển fulltime hay hông
+  - nghe đồn bên phòng lễ tân đang tuyển thử việc .net dev hửm
+  - bên cậu có tuyển junior ở đồng bằng bắc bộ hông
+  - công ty f tech có tuyển fulltime ai không
+  - t đang cần 1 vị trí cho react develop thì apply ntn đó
+  - công ty f tech có tuyển python developer ko
+  - những vị trí nào đang tuyển dụng tại đà nẵng
+  - tư vấn cho mình job ai engineer
+  - bên team game và design có tuyển go-lang tại NB hông nhỉ
+  - ' thấy FB thông báo bên ai research Hà Nội đang open đúng không bot?'
+  - team Trung tâm AI có còn tuyển nhân sự nữa ko
+  - ' giới thiệu mình về chính sách liên quan đến tuyển dụng nhân sự tại f tech'
+  - cho tớ hỏi chính sách tuyển nhân sự tại tập đoàn Tân Hiệp Phát
+  - tôi xin thông tin tuyển dụng
+  - mình muốn tìm hiểu về chính sách recruitment của công ty
+  - ' không có nhiều kinh nghiệm lắm thì apply vô ftech làm fulltime được ko'
+  - mình muốn biết thông tin tuyển dụng tại HY fresher ai research
+  - phòng hạ tầng có còn tuyển nhân sự nữa hông
+  - em học Đại học hlu chỉ biết css em ứng tuyển vào công ty được không
+  - bộ phận applications có tuyển junior nữa không
+  - công ty đang tuyển vị trí nào
+  - phòng ban game có tuyển vị trí front-end nữa hông
+  - ở VN có đang tuyển java developer không
+  - tớ xin thông tin tuyển dụng ở đồng bằng sông hồng với
+  - công ty f-tech đang có job gì không
+  - Úc có đang tuyển ios developer pre-senior ko
+  - ' có ít kinh nghiệm làm việc thì có ứng tuyển đươc không'
+  - ko biết cộng tác viên data science Úc có đang tuyển dụng hông nhỉ
+  - ' chưa có kinh nghiệm mấy có ứng tuyển được hông'
+  - bên mình có làm về 2d prod không
+  - phòng product có tuyển thêm unity 2d develop nữa hông
+  - công ty f tech đang tuyển vị trí nào ở hn vậy hả
+  - ' chưa có kinh nghiệm thì công ty có tuyển hông ạ'
+  - cho tớ xin thông tin về tuyển dụng chi nhánh đông bắc bộ
+  - giới thiệu ứng viên có được tiền ko
+  - ở đà nẵng có đang tuyển vị trí nào ko
+  - ' mới học python sợ chưa đủ kiến thức thì công ty có tuyển được ko'
+  - tuyển dụng công ty ftech tại đất Việt
+  - công ty có tuyển intern hông
+  - e chào a/c ạ, e là sinh viên năm 4 học bên Bách khoa, e thấy bên mình đang tuyển
+    sinh viên thực tập full-stack developer đúng ko a, cho e xin ứng tuyển với ạ
+  - tư vấn cho tôi job thử việc ai
+  - tuyển dụng của tập đoàn viettel như thế nào
+  - ' có ứng tuyển thử việc ai engineer hông'
+  - em mới ra trường thì có ứng tuyển được vị trí ai engineering ko ạ
+  - ở QB thông tin tuyển dụng thế nào
+  - tôi muốn làm game unity 3d develop tại ftech?
+  - phòng game có tuyển junior vị trí lập trình viên fullstack nữa không
+  - Dạ chào bạn muốn ứng tuyển vào vị trị trưởng phòng golang dev ạ, rất hi vọng bạn
+    phản hồi sớm ạ
+  - tôi muốn làm 2d prod, hông biết vị trí này có tuyển junior
+  - ngân hàng tpbank có đang tuyển nhận sự không
+  - tớ mới học C# thì có ứng tuyển được intern ai ko
+  - tuyển dụng nhân sự tại nam định
+  - có tuyển pre-senior vị trí 2d product hông mầy
+  - có vị trí nào trống tại đà nẵng hông
+  - công ty ftech đang có đang tuyển hành chính nhân sự hông
+  - hông biết ở dn có đang tuyển game 3d product level junior
+  - công ty f tech có tuyển những người chưa có khinh nghiệp ko ạ
+  - tớ muốn hỏi thông tin tuyển dụng natural language processing của phòng ban applications
+    tại hn
+  - em chỉ biết CSS thôi có thể ứng tuyển được ko ạ
+  - nghe đồn bên bạn đang thiếu graphic designers hả?
+  - phòng ban AI có tuyển thêm ai research nữa hông
+  - ba
+  - tớ thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí ai của ftech
+  - tôi muốn tìm hiểu về tuyển dụng của công ty
+  - cho mình xin information job ai
+  - tôi biết thêm về các chính sách tuyển dụng
+  - có vị trí nào đang tuyển ko
+  - cho e xin làm trainee không lương kiếm kinh nghiệm được không
+  - có công việc nào liên quan đến 3d prod ko
+  - tập đoàn Hoa Sen có tuyển nhân sự thêm thành viên tại hn hông
+  - team application có tuyển vị trí development and operations nữa ko
+  - chính sách của công ty f tech f tech liên quan đến tuyển dụng
+  - tớ chưa có kinh nghiệm có đc nhận không ạ
+  - cho mình xin thông tin về tuyển dụng
+  - tớ mới làm về ai research thì có chuyển sang làm front end developer được ko
+  - tts có đang tuyển hông vậy
+  - bên bạn có đang tuyển vị trí blockchain develop ko mi
+  - các thầy giới thiệu tớ sang sinh viên thực tập, không biết cty có tuyển thử việc
+    ai engineering không nhỉ?
+  - tôi muốn apply vị trí thử việc ai engineer đc ko ạ
+  - tuyển dụng nghề full-stack developer hn
+  - tuyển dụng của cty Gmobile
+  - full time
+  - ' team bảo vệ ở Campuchia có đang tuyển data science không'
+  - làm sao ứng tuyển vào tập đoàn Điện lực Việt Nam
+  - vị trí diễn viên làm ở trà vinh hả
+  - bên cậu có tuyển C# engineer full-time không vậy á hả
+  - ban có tuyển senior golang developer hông
+  - ứng tuyển công ty f-tech
+  - cho chị xin thông tin về tuyển dụng
+  - vị trí nào làm ở sài gòn
+  - tớ mới làm về ai engineer thì có ứng tuyển được ko
+  - f tech còn trống vị trí fresher nhân viên soạn nội dung giáo dục ko nhỉ
+  - phòng it support có tuyển fresher hông
+  - job full time 2d developer QB thế nào
+  - công ty f tech có ứng tuyển svtt business analysts hông
+  - năm 1 có thể xin internship không
+  - tớ muốn tìm hiểu về tuyển dụng của công ty htc-itc
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí game 2d
+    art vậy cho e ứng tuyển với ạ
+  - cho a xin thông tin về tuyển dụng ở khánh hoà đi
+  - mình xin các vị trí tuyển dụng
+  - phòng ban product có tuyển thêm fresher nữa hông
+  - hcm có tuyển system admin ko bác ơi
+  - có công việc nào liên quan đến junior ko bạn
+  - phòng hỗ trợ IT có tuyển android dev hông
+  - ad cho hỏi tớ chỉ làm part time thì có ứng tuyển được không
+  - tôi ở miền trung muốn apply junior fe develop
+  - có tuyển intern làm về php develop hông
+  - ' mới học Ruby sợ chưa đủ kiến thức thì có được nhận ko ạ'
+  - tập đoàn FLC có tuyển full-time graphic designers hông
+  - đồng bằng sông cưu long có đang tuyển pre-senior hay hông
+  - nghe đồn bên phòng ban bảo trì đang tuyển pentest full-time hử
+  - bên m có tuyển fresher ở hcm ko
+  - công ty ftech có tuyển thử việc ai research hông
+  - t đang cần 1 vị trí cho data analyst thì apply ntn đó
+  - ngân hàng vietinbank có tuyển devops ko
+  - những vị trí nào đang tuyển dụng tại dn
+  - tư vấn cho tớ job VFX Animators
+  - bên phòng kinh doanh có tuyển java tại dn không nhỉ
+  - tớ thấy FB thông báo bên ai research Hà Nội đang open đúng không bot?
+  - phòng Trung tâm AI có còn tuyển nhân sự nữa ko
+  - ' giới thiệu mình về các chính sách liên quan đến tuyển nhân viên tại f-tech'
+  - tớ muốn hỏi chính sách tuyển nhân viên tại công ty
+  - tôi muốn tìm hiểu chính sách tuyển dụng của công ty
+  - mình không có nhiều kinh nghiệm lắm thì apply vô f-tech làm fresher được ko
+  - mình muốn biết thông tin tuyển dụng tại sài gòn vị trí thử việc ai engineer
+  - phòng ban application có còn tuyển nhân sự nữa không
+  - em học Đại học Ngoại ngữ chỉ biết css em ứng tuyển vào công ty Cổ phần Cao su
+    Đà Nẵng được không
+  - phòng application có tuyển junior nữa hông
+  - công ty f tech đang tuyển vị trí nào
+  - phòng game & design có tuyển vị trí ba nữa ko
+  - ở VN có đang tuyển go lang dev không
+  - mình xin thông tin tuyển dụng ở HG với
+  - cty Hòa Phát đang có job gì không
+  - điện biên có đang tuyển database engineering junior không
+  - mình có ít kinh nghiệm làm việc thì có ứng tuyển đươc ko
+  - ko biết fulltime natural language processing VN có đang tuyển dụng hông nhỉ
+  - tớ chưa có kinh nghiệm mấy có ứng tuyển được hông
+  - bên mình có làm về react-native develop ko
+  - team product có tuyển thêm lập trình ios nữa hông
+  - công ty đang tuyển vị trí nào ở nam định vậy hả
+  - mình chưa có kinh nghiệm thì công ty có tuyển hông ạ
+  - cho mình xin thông tin về tuyển dụng chi nhánh đà nẵng
+  - giới thiệu ứng viên có được tiền không
+  - ở đông bắc bộ có đang tuyển vị trí nào ko
+  - ' mới học deep learning sợ chưa đủ kiến thức thì công ty ftech có tuyển được ko'
+  - tuyển dụng công ty vinamilk tại đà nẵng
+  - công ty có tuyển cộng tác viên hông
+  - e chào a/c ạ, e là sinh viên năm 4 học bên Đại học hanu, e thấy bên đang tuyển
+    full time full-stack devlop đúng ko a, cho e xin ứng tuyển với ạ
+  - tư vấn cho job fresher ai engineering
+  - tuyển dụng của công ty f tech như thế nào
+  - tập đoàn Vàng bạc Đá quý DOJI có ứng tuyển ctv ai research hông
+  - em mới ra trường thì có ứng tuyển được vị trí data scientist ko ạ
+  - ở thủ đức thông tin tuyển dụng như nào
+  - ' muốn làm ios developer tại f-tech?'
+  - phòng ban game có tuyển fresher vị trí thị giác máy tính nữa ko
+  - Dạ chào bạn muốn ứng tuyển vào vị trị trưởng phòng ios develop ạ, rất hi vọng
+    bạn phản hồi sớm ạ
+  - tôi muốn làm data engineering, không biết vị trí này có tuyển trainee
+  - công ty mobifone có đang tuyển nhân viên hông
+  - tớ mới học python thì có ứng tuyển được pretrain ai engineering ko
+  - tuyển dụng nhân sự tại hn
+  - có tuyển junior vị trí 2d develop ko
+  - có vị trí nào trống tại đồng bằng sông cưu long không
+  - công ty đang có đang tuyển hr hông
+  - hông biết ở Tràng An có đang tuyển vị trí data analysts level trainee ko
+  - cty Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam có tuyển những người
+    chưa có khinh nghiệp hông ạ
+  - tớ muốn biết thông tin tuyển dụng 2d artist của phòng ban kinh doanh tại NB
+  - em chỉ biết ruby thôi có thể ứng tuyển được không ạ
+  - nghe đồn bên bạn đang thiếu react native dev hả?
+  - phòng ban TT Ai có tuyển thêm ai nữa không
+  - ios dev
+  - tôi thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí game UI/UX
+    design của ftech
+  - tôi muốn tìm hiểu về tuyển dụng của công ty f-tech
+  - cho tớ xin info job ai research
+  - tớ muốn biết thêm về chính sách recruitment
+  - có vị trí nào đang tuyển hông
+  - cho e xin làm intern không lương kiếm kinh nghiệm được không
+  - có công việc nào liên quan đến business analyst hông em
+  - công ty có tuyển nhân viên thêm thành viên tại hn hông
+  - phòng application có tuyển vị trí business support thị trường Trung quốc nữa ko
+  - chính sách của công ty f tech f tech liên quan đến tuyển nhân viên
+  - ' chưa có kinh nghiệm có đc nhận ko ạ'
+  - tôi mới làm về ai engineering thì có chuyển sang làm blockchain được không
+  - senior có đang open không vậy hả
+  - bên bạn có đang tuyển vị trí data scientists ko iris
+  - các thầy giới thiệu tớ sang pretrain, không biết cty có tuyển fresher .net không
+    nhỉ?
+  - tôi muốn apply vị trí thử việc ai research đc ko ạ
+  - tuyển dụng nghề full stack devlop đn
+  - tuyển dụng của công ty f tech
+  - full-time
+  - phòng ban bộ phận công đoàn ở thái nguyên có đang tuyển dotnet developer không
+  - làm sao ứng tuyển vào công ty f-tech
+  - vị trí blockchain develop làm ở TV hả
+  - bên em có tuyển thử việc ai engineering không vậy á hả
+  - bên có tuyển fulltime vẽ 2d ko
+  - ứng tuyển ngân hàng dongabank
+  - cho anh xin thông tin về tuyển dụng
+  - vị trí nào làm ở đông bắc bộ
+  - mình mới làm về ai engineer thì có ứng tuyển được hông
+  - f-tech còn trống vị trí cộng tác viên database engineering ko nhỉ
+  - bộ phận IS có tuyển ctv hông
+  - job thử việc ja-va dev đất Việt như nào
+  - ' có ứng tuyển internship db engineering ko'
+  - năm 1 có thể xin sinh viên thực tập không
+  - tôi muốn tìm hiểu về tuyển dụng của ngân hàng dongabank
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của mình đang ứng tuyển vị trí C++
+    developer vậy cho e ứng tuyển với ạ
+  - cho chị xin thông tin về tuyển dụng ở hcm đi
+  - team sản phẩm có tuyển thêm svtt nữa ko
+  - hà nam có tuyển nv thiết kế nội dung giáo dục ko bác ơi
+  - có công việc nào liên quan đến pre-senior hông
+  - bộ phận cơ sở hạ tầng có tuyển .net developer không
+  - admin cho hỏi chỉ làm part time thì có ứng tuyển được ko
+  - mình ở Phong Nha-Kẻ Bàng muốn apply fulltime go-lang dev
+  - có tuyển ctv làm về 2d art ko
+  - tớ mới học golang sợ chưa đủ kiến thức thì có được nhận ko ạ
+  - cty cổ phần Sữa Hà Nội có tuyển fresher graphic designers hông
+  - VL có đang tuyển fresher hay không
+  - nghe đồn bên phòng IS đang tuyển pre-senior ja-va developer hử
+  - bên TIMI có tuyển full time ở đà nẵng hông
+  - tập đoàn Vàng bạc Đá quý DOJI có tuyển ctv ai engineering không
+  - t đang cần 1 vị trí cho hoa hậu thì apply ntn đó
+  - công ty có tuyển blockchain không
+  - những vị trí nào đang tuyển dụng tại HY
+  - tư vấn cho tớ job full-stack dev
+  - bên bộ phận hr có tuyển DA tại TV hông nhỉ
+  - mình thấy FB thông báo bên ai research Hà Nội đang open đúng không bot?
+  - phòng trung tâm ai có còn tuyển nhân sự nữa ko
+  - có thể giới thiệu tôi đôi dòng về chính sách liên quan đến tuyển dụng nhân sự
+    tại f-tech
+  - cho mình hỏi chính sách tuyển dụng tại cty spotify
+  - tớ muốn tìm hiểu chính sách tuyển của cty điền quân
+  - ' không có nhiều kinh nghiệm lắm thì apply vô ftech làm junior được ko'
+  - tôi muốn biết thông tin tuyển dụng tại đn fresher ai
+  - bộ phận sản phẩm có còn tuyển nhân sự nữa ko
+  - em học Kỹ thuật Mật mã chỉ biết PHP em ứng tuyển vào công ty hải tiến được hông
+  - phòng application có tuyển pre-senior nữa hông
+  - công ty CỔ PHẦN PHẦN MỀM HÀ NỘi đang tuyển vị trí nào
+  - phòng ban game & design có tuyển vị trí game 3d nữa ko
+  - ở NB có đang tuyển product owner ko
+  - tôi xin thông tin tuyển dụng ở cố đô huế với
+  - công ty đang có job gì không
+  - Tam đảo có đang tuyển data science senior hông
+  - tôi có ít kinh nghiệm làm việc thì có ứng tuyển đươc ko
+  - hông biết fresher ja-va develop BG có đang tuyển dụng ko nhỉ
+  - ' chưa có kinh nghiệm mấy có ứng tuyển được ko'
+  - bên mình có làm về game 2d product hông
+  - phòng sản phẩm có tuyển thêm business supporter china nữa ko
+  - công ty đang tuyển vị trí nào ở Phần Lan vậy á hả
+  - tớ chưa có kinh nghiệm thì công ty f-tech có tuyển ko ạ
+  - cho tớ xin thông tin về tuyển dụng chi nhánh Đài Loan
+  - ở VN có đang tuyển vị trí nào ko
+  - tớ mới học NLP sợ chưa đủ kiến thức thì công ty f tech có tuyển được hông
+  - tuyển dụng công ty tại Thái
+  - tập đoàn Công nghiệp – Viễn thông Quân đội có tuyển ctv hông
+  - e chào a/c ạ, e là sinh viên năm 4 học bên Công nghệ Bưu chính Viễn thông, e thấy
+    bên đang tuyển fresher hành chính nhân sự đúng ko a, cho e xin ứng tuyển với ạ
+  - tư vấn cho job junior ai engineer
+  - tuyển dụng của công ty hải âu như thế nào
+  - công ty VietJet AiR có ứng tuyển junior ai research hông
+  - em mới ra trường thì có ứng tuyển được vị trí game 3d unity develop hông ạ
+  - ở hồ chí minh thông tin tuyển dụng như nào
+  - tớ muốn làm net developer tại f tech?
+  - phòng ban game & design có tuyển junior vị trí biên soạn nội dung giáo dục nữa
+    ko
+  - Dạ chào bạn tớ muốn ứng tuyển vào vị trị leader react-native developer ạ, rất
+    hi vọng bạn phản hồi sớm ạ
+  - mình muốn làm game designer, hông biết vị trí này có tuyển fulltime
+  - công ty có đang tuyển người không
+  - ' mới học odoo thì có ứng tuyển được sinh viên thực tập ai engineering ko'
+  - tuyển dụng nhân sự tại sài gòn
+  - có tuyển full time vị trí ds không em
+  - có vị trí nào trống tại an giang không
+  - cty Vingroup đang có đang tuyển game 2d artist hông
+  - ko biết ở VN có đang tuyển vị trí thiết kế nội dung giáo dục senior
+  - công ty f tech có tuyển những người chưa có khinh nghiệp hông ạ
+  - mình muốn biết thông tin tuyển dụng android dev của phòng ban game và design tại
+    HD
+  - em chỉ biết C++ thôi có thể ứng tuyển được không ạ
+  - nghe đồn bên bạn đang thiếu game 3d unity hả?
+  - bộ phận Trung tâm AI có tuyển thêm ai nữa ko
+  - ai engineer
+  - ' thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí ai research
+    của ftech'
+  - tớ muốn tìm hiểu về tuyển dụng của tập đoàn Vingroup
+  - cho chị xin info job ai engineer
+  - tôi muốn biết thêm về chính sách tuyển nhân viên
+  - có job nào đang tuyển ko
+  - cho e xin làm svtt không lương kiếm kinh nghiệm được không
+  - có công việc nào liên quan đến react develop không mi
+  - công ty Trực thăng Miền Trung có tuyển dụng nhân sự thêm thành viên tại tây bắc
+    bộ ko
+  - phòng application có tuyển vị trí pentester nữa hông
+  - chính sách của công ty f tech liên quan đến tuyển dụng
+  - ' chưa có kinh nghiệm có đc nhận không ạ'
+  - tớ mới làm về ai research thì có chuyển sang làm front-end dev được hông
+  - junior có đang open hông hở
+  - bên bạn có đang tuyển vị trí development and operations ko Timi
+  - các thầy giới thiệu tôi sang trainee, không biết cty có tuyển junior cv engineer
+    không nhỉ?
+  - ' muốn apply vị trí pre-senior ai research đc ko ạ'
+  - tuyển dụng ngành net dev đồng văn
+  - tuyển dụng của cty sapo
+  - svtt
+  - bộ phận phòng lễ tân ở hồ chí minh có đang tuyển blockchain develop không
+  - làm sao ứng tuyển vào công ty
+  - vị trí ai engineering làm ở vĩnh long hả
+  - bên lily có tuyển golang dev fresher ko vậy
+  - bộ phận có tuyển junior cv engineering không
+  - ứng tuyển công ty HiPT
+  - vị trí nào làm ở tây nam bộ
+  - mình mới làm về ai research thì có ứng tuyển được hông
+  - f-tech còn trống vị trí junior thiết kế nội dung giáo dục ko nhỉ
+  - phòng hạ tầng có tuyển junior hông
+  - job junior PA đà lạt như nào
+  - ' có ứng tuyển intern game 3d ko'
+  - năm 1 có thể xin trainee không
+  - ' muốn tìm hiểu về tuyển dụng của cty long thành'
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của tớ đang ứng tuyển vị trí cv
+    vậy cho e ứng tuyển với ạ
+  - cho chị xin thông tin về tuyển dụng ở đà nẵng đi
+  - team sản phẩm có tuyển thêm cộng tác viên nữa ko
+  - hcm có tuyển nhân sự hông bác ơi
+  - có công việc nào liên quan đến fresher ko mi
+  - bộ phận hỗ trợ IT có tuyển .net developer hông
+  - ad cho hỏi chỉ làm part time thì có ứng tuyển được không
+  - tôi ở Việt Nam muốn apply pre-senior net develop
+  - có tuyển sinh viên thực tập làm về vẽ 3d ko
+  - tớ mới học odoo sợ chưa đủ kiến thức thì có được nhận hông ạ
+  - cty trung nguyên có tuyển junior thiết kế nội dung giáo dục ko
+  - LS có đang tuyển pre-senior hay hông
+  - nghe đồn bên phòng platforms đang tuyển pretrain backend dev hửm
+  - bên mầy có tuyển thử việc ở nam trung bộ ko
+  - công ty f-tech có tuyển pre-senior ai engineer hông
+  - t đang cần 1 vị trí cho fullstack dev thì apply ntn đó
+  - công ty có tuyển PO hông
+  - những vị trí nào đang tuyển dụng tại đn
+  - tư vấn cho tớ job ds
+  - bên phòng ban hệ thống cơ sở hạ tầng có tuyển natural language processing tại
+    côn đảo ko nhỉ
+  - mình thấy FB thông báo bên ai engineer Hà Nội đang open đúng không bot?
+  - bộ phận Trung tâm AI có còn tuyển nhân sự nữa ko
+  - ' giới thiệu cho tớ về các chính sách liên quan đến tuyển chọn nhân sự tại ftech'
+  - cho tớ hỏi chính sách recruitment tại ngân hàng saigonbank
+  - mình muốn tìm hiểu về chính sách tuyển dụng của công ty
+  - mình không có nhiều kinh nghiệm lắm thì apply vô ftech làm full time được ko
+  - mình muốn hỏi thông tin tuyển dụng tại đn fulltime ai engineering
+  - phòng ban game và design có còn tuyển nhân sự nữa ko
+  - em học Đại học Ngoại thương chỉ biết python em ứng tuyển vào công ty ftech được
+    ko
+  - phòng applications có tuyển cộng tác viên nữa ko
+  - tập đoàn Toàn đoàn VNG đang tuyển vị trí nào
+  - bộ phận game có tuyển vị trí blockchain develop nữa hông
+  - ở đà nẵng có đang tuyển vị trí ios develop ko
+  - tớ xin thông tin tuyển dụng ở hà nội với
+  - công ty đang có job gì hông
+  - đất Việt có đang tuyển go lang fulltime hông
+  - mình có ít kinh nghiệm làm việc thì có ứng tuyển đươc hông
+  - không biết thử việc game 3d artist TV có đang tuyển dụng hông nhỉ
+  - mình chưa có kinh nghiệm mấy có ứng tuyển được hông
+  - bên mình có làm về full-stack không
+  - phòng ban Product và R&D có tuyển thêm nlp engineering nữa không
+  - công ty ftech đang tuyển vị trí nào ở hang sơn đoòng vậy hả
+  - tớ chưa có kinh nghiệm thì công ty f tech có tuyển không ạ
+  - cho tớ xin thông tin về tuyển dụng chi nhánh Thụy Điển
+  - ở miền bắc có đang tuyển vị trí nào hông
+  - ' mới học C sợ chưa đủ kiến thức thì công ty có tuyển được hông'
+  - tuyển dụng công ty tại hn
+  - công ty có tuyển cộng tác viên không
+  - e chào a/c ạ, e là sinh viên năm 4 học bên Đại học ftu, e thấy bên đang tuyển
+    thực tập sinh data analysts đúng ko a, cho e xin ứng tuyển với ạ
+  - tư vấn cho job senior ai
+  - tuyển dụng của công ty Sao Mai như thế nào
+  - công ty sun* có ứng tuyển fulltime ai engineer hông
+  - em mới ra trường thì có ứng tuyển được vị trí ja-va hông ạ
+  - ở Thụy Sĩ thông tin tuyển dụng như thế nào
+  - ' muốn làm PO tại f-tech?'
+  - team game & design có tuyển fresher vị trí game 2d develop nữa hông
+  - Dạ chào bạn muốn ứng tuyển vào vị trị trưởng phòng game 3d art ạ, rất hi vọng
+    bạn phản hồi sớm ạ
+  - tôi muốn làm game dev, không biết vị trí này có tuyển fulltime
+  - cty hải tiến có đang tuyển thành viên không
+  - tớ mới học odoo thì có ứng tuyển được trainee ai engineering ko
+  - tuyển dụng nhân sự tại củ chi
+  - có tuyển fulltime vị trí natural language processing hông TIMI
+  - có vị trí nào trống tại hà nội hông
+  - công ty ftech đang có đang tuyển devops không
+  - hông biết ở vịnh hạ long có đang tuyển vị trí fe developer level fulltime
+  - công ty có tuyển những người chưa có khinh nghiệp ko ạ
+  - mình muốn biết thông tin tuyển dụng db engineering của phòng game & design tại
+    hcm
+  - em chỉ biết php thôi có thể ứng tuyển được hông ạ
+  - nghe đồn bên bạn đang thiếu tay vợt hả?
+  - team AI center có tuyển thêm ai engineer nữa hông
+  - ja-va dev
+  - ' thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí nhân viên
+    kinh doanh thị trường China của ftech'
+  - mình muốn tìm hiểu về tuyển dụng của công ty Vinacomin
+  - cho mình xin info job ai engineering
+  - tớ biết thêm về chính sách tuyển dụng
+  - có job nào đang tuyển không
+  - cho e xin làm pretrain không lương kiếm kinh nghiệm được không
+  - có công việc nào liên quan đến ai research không mầy
+  - công ty có tuyển dụng thêm người tại hà nội ko
+  - team applications có tuyển vị trí graphic designer nữa ko
+  - chính sách của cty sony liên quan đến việc tuyển dụng
+  - ' chưa có kinh nghiệm có đc nhận hông ạ'
+  - mình mới làm về ai engineer thì có chuyển sang làm C engineer được ko
+  - ctv có đang tuyển hông vậy á hả
+  - bên bạn có đang tuyển vị trí fullstack dev ko TIMI
+  - các thầy giới thiệu sang internship, không biết cty có tuyển ctv game developer
+    không nhỉ?
+  - mình muốn apply vị trí junior ai engineering đc ko ạ
+  - tuyển dụng vị trí go-lang developer đông nam bộ
+  - tuyển dụng của công ty f-tech
+  - sinh viên thực tập
+  - phòng ban team application ở HD có đang tuyển fe developer không
+  - làm sao ứng tuyển vào ngân hàng bidv
+  - vị trí DE làm ở hn hả
+  - bên timi có tuyển hr manager thử việc ko hở
+  - ban có tuyển junior game 2d developer không
+  - ứng tuyển công ty sea croup
+  - vị trí nào làm ở đà nẵng
+  - tớ mới làm về ai research thì có ứng tuyển được hông
+  - f-tech còn trống vị trí junior computer vision engineer ko nhỉ
+  - phòng hạ tầng có tuyển thử việc hông
+  - job internship 3d prod củ chi như nào
+  - ' có ứng tuyển pretrain db engineer ko'
+  - năm 1 có thể xin tts không
+  - ' muốn tìm hiểu về tuyển dụng của công ty'
+  intent: rec_ask_overview

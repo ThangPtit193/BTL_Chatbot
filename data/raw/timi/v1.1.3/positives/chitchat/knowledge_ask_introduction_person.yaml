@@ -1,0 +1,603 @@
+positives:
+- examples:
+  - giới thiệu về Jimmy Carter đi
+  - giới thiệu về Suga (BTS) thuộc TVXQ (DBSK) đi
+  - giới thiệu về Công Tố đi
+  - giới thiệu về Jisoo (BLACKPINK) thuộc SEVENTEEN đi
+  - giới thiệu về J.K.Rowling đi
+  - giới thiệu về Jennie thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về Rosé (BLACKPINK) thuộc BTS đi
+  - giới thiệu về Suzy thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về Yuta (NCT) thuộc T-ara đi
+  - giới thiệu về Soyeon ((G)I-DLE) thuộc Super Junior đi
+  - giới thiệu về Lay (EXO) thuộc SEVENTEEN đi
+  - biết gì về nhóm nhạc nhóm Davichi
+  - giới thiệu về Suho (EXO) thuộc Black pink đi
+  - giới thiệu về Nayeon (Twice) thuộc T-ara đi
+  - giới thiệu về Sulli thuộc Davichi đi
+  - giới thiệu về IU thuộc SEVENTEEN đi
+  - biết gì về nhóm nhạc đình đám nhóm 2NE1
+  - giới thiệu về Linh Đàm đi
+  - giới thiệu về Kim da-mi thuộc BTS đi
+  - giới thiệu về Suho (EXO) thuộc T-ara đi
+  - giới thiệu về Jennie thuộc TVXQ (DBSK) đi
+  - giới thiệu về Hoàng Thuỳ Linh đi
+  - giới thiệu về Yeji thuộc SEVENTEEN đi
+  - giới thiệu về Naeun (Apink) thuộc SHINee đi
+  - giới thiệu về Jungwoo (NCT) thuộc TVXQ (DBSK) đi
+  - giới thiệu về Apink Eunji thuộc 2NE1 đi
+  - giới thiệu về Hani (EXID) thuộc EXO đi
+  - giới thiệu về Taeyang (Big Bang) thuộc SEVENTEEN đi
+  - giới thiệu về Yoona (SNSD) thuộc Bigbang đi
+  - giới thiệu về Thảo Tâm đi
+  - giới thiệu về Jisoo (BLACKPINK) thuộc T-ara đi
+  - giới thiệu về Irene (Red Velvet) đi
+  - giới thiệu về Lê Thảo Nhi đi
+  - giới thiệu về RUBINA DILAIK thuộc 2NE1 đi
+  - giới thiệu về Hà Tăng đi
+  - giới thiệu về Yeji thuộc EXID đi
+  - có biết nhóm EXID không thế
+  - giới thiệu về Jungwoo (NCT) thuộc Bangtan Boys (BTS) đi
+  - biết gì về nhóm nhạc nhóm Black pink
+  - giới thiệu về Trường Chinh đi
+  - giới thiệu về Wheein (Mamamoo) thuộc SHINee đi
+  - có biết nhóm Bigbang không đấy
+  - giới thiệu về Trần Thị Thùy Dung đi
+  - giới thiệu về Taeyang (Big Bang) thuộc TVXQ (DBSK) đi
+  - có biết nhóm SEVENTEEN không đấy
+  - giới thiệu về Lisa (BLACKPINK) thuộc Davichi đi
+  - giới thiệu về Lee Hyori thuộc NCT đi
+  - giới thiệu về Jimin (BTS) thuộc Blackpink đi
+  - giới thiệu về Hyeri thuộc SHINee đi
+  - giới thiệu về Mina (Twice) thuộc T-ara đi
+  - giới thiệu về Lê Đức Anh đi
+  - giới thiệu về Tom Cruise đi
+  - giới thiệu về RUBINA DILAIK thuộc EXID đi
+  - giới thiệu về Kyuhyun (Super Junior) thuộc Bigbang đi
+  - giới thiệu về Nancy (Momoland) thuộc NCT đi
+  - giới thiệu về Taeyeon (SNSD) thuộc TVXQ (DBSK) đi
+  - giới thiệu về Kyuhyun (Super Junior) thuộc TVXQ (DBSK) đi
+  - giới thiệu về Đỗ Khánh Vân đi
+  - giới thiệu về V (BTS) thuộc Black pink đi
+  - giới thiệu về Hyoyeon thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về Phan Anh đi
+  - giới thiệu về Suzy thuộc EXO đi
+  - giới thiệu về Suho (EXO) thuộc SEVENTEEN đi
+  - giới thiệu về V (BTS) thuộc Blackpink đi
+  - giới thiệu về Wheein (Mamamoo) thuộc Davichi đi
+  - có biết nhóm Super Junior không đêy
+  - giới thiệu về Jungwoo (NCT) thuộc Black pink đi
+  - biết gì về nhóm nhạc đình đám nhóm Super Junior
+  - có biết nhóm Black pink không đấy
+  - giới thiệu về Kang Daniel thuộc Blackpink đi
+  - giới thiệu về Jimin (BTS) thuộc SEVENTEEN đi
+  - giới thiệu về Hyeri thuộc 2NE1 đi
+  - giới thiệu về Michael Jackson đi
+  - giới thiệu về Yeji thuộc EXO đi
+  - giới thiệu về Jeongyeon thuộc SNSD đi
+  - giới thiệu về Kang Daniel thuộc SHINee đi
+  - giới thiệu về Naeun (Apink) thuộc SNSD đi
+  - giới thiệu về Taeyeon (SNSD) thuộc EXO đi
+  - giới thiệu về Jimin (BTS) thuộc Bigbang đi
+  - giới thiệu về IU thuộc Super Junior đi
+  - giới thiệu về Suzy thuộc T-ara đi
+  - giới thiệu về Hyoyeon (SNSD) thuộc EXID đi
+  - giới thiệu về Jungkook (BTS) thuộc BTS đi
+  - giới thiệu về Wendy (Red Velvet) thuộc SEVENTEEN đi
+  - giới thiệu về Hyoyeon thuộc SNSD đi
+  - giới thiệu về Jennie (BLACKPINK) thuộc TVXQ (DBSK) đi
+  - giới thiệu về CL thuộc BTS đi
+  - giới thiệu về Taeyang (Big Bang) thuộc Bigbang đi
+  - giới thiệu về Park Jihoon thuộc Black pink đi
+  - giới thiệu về Hyoyeon thuộc TVXQ (DBSK) đi
+  - giới thiệu về Hoà Minzy đi
+  - giới thiệu về Albert Einstein đi
+  - giới thiệu về HỒ HÙNG ANH đi
+  - có biết nhóm Bigbang không vậy
+  - giới thiệu về Irene (Red Velvet) thuộc TVXQ (DBSK) đi
+  - giới thiệu về Ten thuộc TVXQ (DBSK) đi
+  - giới thiệu về Hani (EXID) thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về Jungkook (BTS) thuộc Blackpink đi
+  - có biết nhóm Black pink không thế
+  - giới thiệu về Jennie (BLACKPINK) thuộc SNSD đi
+  - giới thiệu về Karik đi
+  - giới thiệu về Hyeri thuộc NCT đi
+  - giới thiệu về Jeongyeon đi
+  - có biết nhóm Davichi không hả
+  - giới thiệu về Ten thuộc Bigbang đi
+  - có biết nhóm 2NE1 không thế
+  - giới thiệu về Phương Oanh đi
+  - giới thiệu về Sulli thuộc Blackpink đi
+  - giới thiệu về Yuta (NCT) đi
+  - giới thiệu về Suga (BTS) thuộc 2NE1 đi
+  - giới thiệu về RUBINA DILAIK thuộc SNSD đi
+  - giới thiệu về Lay (EXO) thuộc Blackpink đi
+  - giới thiệu về Mr. Siro đi
+  - giới thiệu về IU thuộc NCT đi
+  - giới thiệu về G-Dragon (Big Bang) thuộc Bigbang đi
+  - có biết nhóm SHINee không vậy
+  - giới thiệu về Irene (Red Velvet) thuộc SNSD đi
+  - giới thiệu về Yeji thuộc Girls' Generation đi
+  - có biết nhóm NCT không vậy
+  - giới thiệu về Apink Eunji thuộc BTS đi
+  - có biết nhóm TVXQ (DBSK) không hả
+  - giới thiệu về RUBINA DILAIK thuộc Davichi đi
+  - giới thiệu về CL thuộc TVXQ (DBSK) đi
+  - giới thiệu về Wonho thuộc Girls' Generation đi
+  - giới thiệu về Khánh Vy đi
+  - giới thiệu về Bích Phương đi
+  - giới thiệu về Nguyễn Đăng Quang đi
+  - giới thiệu về Jungwoo (NCT) thuộc 2NE1 đi
+  - giới thiệu về BoA thuộc Bigbang đi
+  - giới thiệu về Naeun (Apink) thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về Rosé (BLACKPINK) thuộc EXID đi
+  - giới thiệu về Wonho thuộc 2NE1 đi
+  - giới thiệu về G-Dragon (Big Bang) thuộc Super Junior đi
+  - giới thiệu về Rosé (BLACKPINK) thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về Kang Daniel thuộc Girls' Generation đi
+  - giới thiệu về Lee Hyori thuộc Blackpink đi
+  - có biết nhóm EXO không đêy
+  - giới thiệu về D.O. (EXO) thuộc 2NE1 đi
+  - giới thiệu về Đào Phương Anh đi
+  - giới thiệu về Jungwoo (NCT) thuộc Bigbang đi
+  - giới thiệu về D.O. (EXO) đi
+  - giới thiệu về Nayeon (Twice) thuộc NCT đi
+  - giới thiệu về Yuta (NCT) thuộc EXID đi
+  - giới thiệu về Soobin Hoàng Sơn đi
+  - có biết nhóm T-ara không vậy
+  - giới thiệu về Quỳnh Nga đi
+  - có biết nhóm Girls' Generation không hả
+  - giới thiệu về Kang Daniel thuộc TVXQ (DBSK) đi
+  - giới thiệu về Lee Hyori thuộc Davichi đi
+  - giới thiệu về IU thuộc TVXQ (DBSK) đi
+  - giới thiệu về Suzy đi
+  - giới thiệu về Jungkook (BTS) đi
+  - giới thiệu về Irene (Red Velvet) thuộc SHINee đi
+  - giới thiệu về Lay (EXO) thuộc 2NE1 đi
+  - giới thiệu về Paul McCartney đi
+  - giới thiệu về Đàm Phương Linh đi
+  - giới thiệu về Midu đi
+  - giới thiệu về Park Jihoon thuộc SNSD đi
+  - giới thiệu về Naeun (Apink) thuộc EXID đi
+  - biết gì về nhóm nhạc nhóm Blackpink
+  - giới thiệu về Quỳnh Kool đi
+  - giới thiệu về CL thuộc T-ara đi
+  - giới thiệu về Hyeri thuộc BTS đi
+  - giới thiệu về Thu Minh đi
+  - giới thiệu về Jungkook (BTS) thuộc EXID đi
+  - giới thiệu về Nancy (Momoland) thuộc Davichi đi
+  - giới thiệu về Jungwoo (NCT) thuộc EXO đi
+  - giới thiệu về Châu Khải Phong đi
+  - giới thiệu về Yeji thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về D.O. (EXO) thuộc BTS đi
+  - giới thiệu về Moonbyul (Mamamoo) thuộc SNSD đi
+  - giới thiệu về D.O. (EXO) thuộc Girls' Generation đi
+  - giới thiệu về Hyoyeon thuộc SEVENTEEN đi
+  - giới thiệu về Mina (Twice) thuộc Davichi đi
+  - biết gì về nhóm nhạc nhóm TVXQ (DBSK)
+  - biết gì về nhóm nhạc đình đám nhóm BTS
+  - giới thiệu về George Washington đi
+  - giới thiệu về Yuta (NCT) thuộc EXO đi
+  - giới thiệu về Suzy thuộc NCT đi
+  - giới thiệu về Yeji thuộc Davichi đi
+  - giới thiệu về John Adams đi
+  - giới thiệu về George W. Bush đi
+  - giới thiệu về Hương Tràm đi
+  - giới thiệu về Jennie (BLACKPINK) thuộc SHINee đi
+  - giới thiệu về Soyeon ((G)I-DLE) thuộc 2NE1 đi
+  - giới thiệu về V (BTS) thuộc Davichi đi
+  - có biết nhóm SHINee không hả
+  - có biết nhóm SEVENTEEN không vậy
+  - giới thiệu về Hyoyeon thuộc Super Junior đi
+  - giới thiệu về Ten (NCT) đi
+  - có biết nhóm Bigbang không thế
+  - giới thiệu về Hani (EXID) thuộc Black pink đi
+  - giới thiệu về Sulli thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về Kyuhyun (Super Junior) thuộc SEVENTEEN đi
+  - giới thiệu về Yeji thuộc Black pink đi
+  - giới thiệu về Kang Daniel thuộc BTS đi
+  - giới thiệu về V (BTS) thuộc SNSD đi
+  - có biết nhóm SEVENTEEN không đêy
+  - giới thiệu về Hani (EXID) thuộc 2NE1 đi
+  - giới thiệu về Kyuhyun (Super Junior) thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về Kang Daniel thuộc EXID đi
+  - giới thiệu về RUBINA DILAIK thuộc Bigbang đi
+  - giới thiệu về Suga (BTS) thuộc T-ara đi
+  - giới thiệu về Jennie thuộc Super Junior đi
+  - giới thiệu về Lay (EXO) thuộc EXO đi
+  - giới thiệu về Jungkook (BTS) thuộc T-ara đi
+  - giới thiệu về RUBINA DILAIK thuộc TVXQ (DBSK) đi
+  - giới thiệu về Irene (Red Velvet) thuộc Super Junior đi
+  - giới thiệu về Jisoo (BLACKPINK) thuộc EXID đi
+  - giới thiệu về Park Jihoon thuộc EXID đi
+  - giới thiệu về Park Jihoon thuộc Bigbang đi
+  - có biết nhóm TVXQ (DBSK) không đấy
+  - giới thiệu về Kang Daniel thuộc EXO đi
+  - giới thiệu về Lee Hyori thuộc BTS đi
+  - giới thiệu về Yoona (SNSD) thuộc BTS đi
+  - giới thiệu về Lay (EXO) thuộc Girls' Generation đi
+  - giới thiệu về Suga (BTS) thuộc EXID đi
+  - giới thiệu về Hyoyeon (SNSD) thuộc BTS đi
+  - giới thiệu về Suho (EXO) thuộc EXID đi
+  - giới thiệu về Lisa (BLACKPINK) thuộc Black pink đi
+  - giới thiệu về Wonho đi
+  - giới thiệu về Cristiano Ronaldo đi
+  - giới thiệu về Apink Eunji thuộc Super Junior đi
+  - giới thiệu về ISAAC đi
+  - giới thiệu về Hyoyeon thuộc BTS đi
+  - giới thiệu về Văn Mai Hương đi
+  - giới thiệu về Hương Giang Idol đi
+  - giới thiệu về Irene (Red Velvet) thuộc Davichi đi
+  - giới thiệu về James Monroe đi
+  - giới thiệu về Suho (EXO) thuộc SNSD đi
+  - có biết nhóm Bangtan Boys (BTS) không thế
+  - giới thiệu về Nayeon (Twice) thuộc BTS đi
+  - giới thiệu về G-Dragon (Big Bang) thuộc 2NE1 đi
+  - giới thiệu về Barack Obama đi
+  - giới thiệu về CL đi
+  - có biết nhóm EXID không vậy
+  - giới thiệu về Moonbyul (Mamamoo) thuộc BTS đi
+  - giới thiệu về Nayeon (Twice) thuộc Bangtan Boys (BTS) đi
+  - giới thiệu về Hyoyeon (SNSD) thuộc SEVENTEEN đi
+  - giới thiệu về G-Dragon (Big Bang) thuộc T-ara đi
+  - giới thiệu về D.O. (EXO) thuộc Bigbang đi
+  - giới thiệu về Ten (NCT) thuộc T-ara đi
+  - giới thiệu về Nguyễn Hữu Thọ đi
+  - giới thiệu về Hà Hồ đi
+  - giới thiệu về Jun Vũ đi
+  - giới thiệu về Jisoo (BLACKPINK) thuộc NCT đi
+  - có biết nhóm 2NE1 không đó
+  - giới thiệu về Kyuhyun (Super Junior) thuộc Black pink đi
+  - có biết nhóm Girls' Generation không đấy
+  - có biết nhóm Davichi không đêy
+  - giới thiệu về Apink Eunji thuộc Bigbang đi
+  - giới thiệu về Kaity Nguyễn đi
+  - giới thiệu về Hyoyeon (SNSD) thuộc SNSD đi
+  - giới thiệu về Suzy thuộc Blackpink đi
+  - giới thiệu về D.O. (EXO) thuộc EXID đi
+  - giới thiệu về Jimin (BTS) thuộc Black pink đi
+  - giới thiệu về Wendy (Red Velvet) thuộc T-ara đi
+  - có biết nhóm Black pink không hả
+  - giới thiệu về Ten thuộc Super Junior đi
+  - giới thiệu về Apink Eunji thuộc SNSD đi
+  - giới thiệu về Nguyễn Phú Trọng đi
+  - giới thiệu về Jennie (BLACKPINK) thuộc EXID đi
+  - giới thiệu về Yoona (SNSD) thuộc EXO đi
+  - giới thiệu về Yuta (NCT) thuộc Girls' Generation đi
+  - giới thiệu về Wendy (Red Velvet) đi
+  - giới thiệu về Ninh Dương Lan Ngọc đi
+  - giới thiệu về Jennie (BLACKPINK) thuộc T-ara đi
+  - giới thiệu về Suho (EXO) thuộc BTS đi
+  - giới thiệu về CL thuộc Girls' Generation đi
+  - giới thiệu về Apink Eunji thuộc Blackpink đi
+  - giới thiệu về Thomas Jefferson đi
+  - giới thiệu về Phương Linh đi
+  - giới thiệu về Noo Phước Thịnh đi
+  - giới thiệu về Nancy (Momoland) thuộc SNSD đi
+  - giới thiệu về Tăng Thanh Hà đi
+  - giới thiệu về Jeongyeon thuộc Black pink đi
+  - giới thiệu về Lisa (BLACKPINK) thuộc Bigbang đi
+  - có biết nhóm Super Junior không hả
+  - giới thiệu về Mina (Twice) thuộc SNSD đi
+  - giới thiệu về Moonbyul (Mamamoo) thuộc EXO đi
+  - giới thiệu về IU thuộc Bigbang đi
+  - giới thiệu về Quyền Linh đi
+  - giới thiệu về Rosa Parks đi
+  - giới thiệu về Jeongyeon thuộc 2NE1 đi
+  - giới thiệu về Moonbyul (Mamamoo) thuộc 2NE1 đi
+  - giới thiệu về Jungwoo (NCT) thuộc NCT đi
+  - giới thiệu về Yeji thuộc Blackpink đi
+  - giới thiệu về Trung Quân Idol đi
+  - giới thiệu về Thanh Lam đi
+  - giới thiệu về Moonbyul (Mamamoo) thuộc T-ara đi
+  - biết gì về nhóm nhạc nhóm EXID
+  - giới thiệu về Mina (Twice) thuộc SHINee đi
+  - giới thiệu về Hyoyeon thuộc NCT đi
+  - biết gì về nhóm nhạc nhóm EXO
+  - giới thiệu về RUBINA DILAIK thuộc Girls' Generation đi
+  - giới thiệu về Nguyễn Minh Triết đi
+  - giới thiệu về Jungkook (BTS) thuộc EXO đi
+  - có biết nhóm SNSD không thế
+  - giới thiệu về Cáo đi
+  - có biết nhóm SEVENTEEN không hả
+  - hoa hậu nổi tiếng là ai vậy bot
+  - biết Linh Đàm là ai không
+  - TRẦN ĐÌNH LONG là ai
+  - tay vợt chuyền nổi tiếng nhất VNam là ai
+  - Tăng Thanh Hà là ai đấy chứ
+  - bot có biết Nayeon (Twice) không?
+  - biết Tuấn Hưng không
+  - bộ trưởng bộ thông tin John Adams là ai đấy
+  - người mẫu nổi tiếng là ai vậy bot
+  - biết Thomas Jefferson là ai không
+  - Stephen King là ai
+  - lễ tân nổi tiếng nhất đất Việt là ai
+  - Cáo là ai đó
+  - timi có biết Soyeon ((G)I-DLE) không?
+  - biết Bảo Thanh không
+  - đại tướng Trương Tấn Sang là ai đấy
+  - biết Marilyn Monroe là ai không
+  - Pope Francis là ai
+  - người dẫn chương trình nổi tiếng nhất Việt Nam là ai
+  - Joe Biden là ai chứ nhỉ
+  - bot có biết Yoona (SNSD) không?
+  - biết Nhã Phương không
+  - bộ trưởng bộ quốc phòng Nguyễn Hữu Thọ là ai đấy
+  - biết Hồ Quỳnh Hương là ai không
+  - David Beckham là ai
+  - người dẫn ctrinh nổi tiếng nhất đất Việt là ai
+  - Mai Phương Thúy là ai đấy
+  - bạn có biết Naeun (Apink) không?
+  - biết Nguyễn Trần Khánh Vân không
+  - bộ trưởng bộ thông tin Võ Chí Công là ai đấy
+  - biết Thanh Hương là ai không
+  - Albert Einstein là ai
+  - người cskh nổi tiếng nhất Thái Lan là ai
+  - Trịnh Đình Quang là ai đấy
+  - cậu có biết CL không?
+  - biết Xoài Non không
+  - chủ tịch nước George W. Bush là ai đấy
+  - biết Thomas Edison là ai không
+  - Tom Cruise là ai
+  - cầu thủ bóng đá nổi tiếng nhất đất Việt là ai
+  - Nguyễn Cao Kỳ Duyên là ai chứ nhỉ
+  - bot có biết Irene (Red Velvet) không?
+  - biết Bùi Anh Tuấn không
+  - đại tướng Bill Clinton là ai đấy
+  - biết Trúc Anh là ai không
+  - Leonardo da Vinci là ai
+  - người mẫu nổi tiếng nhất đất Việt là ai
+  - Nhã Phương là ai đấy chứ
+  - chú em có biết Ten không?
+  - biết Đào Phương Anh không
+  - bộ trưởng bộ quốc phòng George W. Bush là ai đấy
+  - biết Kang Daniel là ai không
+  - Angelina Jolie là ai
+  - người nổi tiếng nhất Mĩ là ai
+  - Nguyễn Minh Triết là ai phết nhỉ
+  - bot có biết Suho (EXO) không?
+  - biết Hyoyeon thuộc T-ara không
+  - bộ trưởng bộ quốc phòng Trần Đức Lương là ai đấy
+  - biết Taeyang (Big Bang) thuộc EXO là ai không
+  - Babe Ruth là ai
+  - người marketting nổi tiếng nhất Việt Nam là ai
+  - G-Dragon (Big Bang) là ai quá nhỉ
+  - cậu có biết Yuta (NCT) không?
+  - biết Nguyễn Xuân Phúc không
+  - bộ trưởng bộ giáo dục John Adams là ai đấy
+  - biết Huỳnh Phạm Thủy Tiên là ai không
+  - Thomas Edison là ai
+  - nhân viên lễ tân nổi tiếng nhất VN là ai
+  - Trường Giang là ai đó
+  - chú em có biết BoA không?
+  - biết Mai Phương Thúy không
+  - đại tướng John Quincy Adams là ai đấy
+  - biết Wonho là ai không
+  - Nguyễn Đăng Quang là ai
+  - diễn viên nổi tiếng nhất Lào là ai
+  - Wheein (Mamamoo) là ai đấy chứ
+  - timi có biết Moonbyul (Mamamoo) không?
+  - biết Công Tố không
+  - bộ trưởng bộ giáo dục Joe Biden là ai đấy
+  - biết Midu là ai không
+  - Queen Victoria là ai
+  - người marketting nổi tiếng nhất VN là ai
+  - Đức Phúc là ai đấy chứ
+  - bot có biết Jungwoo không?
+  - biết Soyeon ((G)I-DLE) thuộc T-ara không
+  - chủ tịch quốc hội Bill Clinton là ai đấy
+  - biết Pope Francis là ai không
+  - Paul McCartney là ai
+  - thủ môn nổi tiếng nhất Việt Nam là ai
+  - Gerald Ford là ai đấy chứ
+  - cậu có biết Sulli không?
+  - biết Angelina Jolie không
+  - chủ tịch nước Nguyễn Xuân Phúc là ai đấy
+  - biết Bảo Thanh là ai không
+  - Richard Branson là ai
+  - lễ tân nổi tiếng nhất Ấn Độ là ai
+  - Nguyễn Minh Triết là ai đó
+  - mi có biết Jimin (BTS) không?
+  - biết ISAAC không
+  - bộ trưởng bộ giáo dục Thomas Jefferson là ai đấy
+  - biết Sulli thuộc Black pink là ai không
+  - Marilyn Monroe là ai
+  - bảo vệ nổi tiếng nhất Phần Lan là ai
+  - Linh Đàm là ai nhỉ
+  - mày có biết Lisa (BLACKPINK) không?
+  - biết Ten (NCT) không
+  - tổng thống mỹ Đặng Thị Ngọc Thịnh là ai đấy
+  - biết Đàm Phương Linh là ai không
+  - Stephen Hawking là ai
+  - người bảo vệ nổi tiếng nhất đất Việt là ai
+  - Naeun (Apink) thuộc EXO là ai nhỉ
+  - timi có biết Yeji không?
+  - biết Jimin (BTS) không
+  - tổng thống mỹ Joe Biden là ai đấy
+  - biết Angelina Jolie là ai không
+  - Vincent Van Gogh là ai
+  - nhân viên marketting nổi tiếng nhất Macau là ai
+  - Park Jihoon là ai phết nhỉ
+  - mày có biết Suho (EXO) không?
+  - biết Huỳnh Phạm Thủy Tiên không
+  - bộ trưởng bộ quốc phòng Barack Obama là ai đấy
+  - biết Thanh Lam là ai không
+  - Michael Jackson là ai
+  - nhân viên quét dọn nổi tiếng nhất Việt Nam là ai
+  - Quỳnh Kool là ai phết nhỉ
+  - mi có biết Park Jihoon không?
+  - biết Phan Anh không
+  - bộ trưởng bộ thông tin Donald Trump là ai đấy
+  - biết Xoài Non là ai không
+  - Bill Gates là ai
+  - nhân viên lễ tân nổi tiếng nhất Việt Nam là ai
+  - Lay (EXO) là ai đó
+  - bot có biết Park Jihoon không?
+  - biết Noo Phước Thịnh không
+  - bộ trưởng bộ giáo dục Trần Đại Quang là ai đấy
+  - biết Trần Đại Quang là ai không
+  - HỒ HÙNG ANH là ai
+  - người dẫn chương trình nổi tiếng nhất VNam là ai
+  - Park Jihoon là ai đấy
+  - bạn có biết Kyuhyun (Super Junior) không?
+  - biết Lee Hyori không
+  - chủ tịch nước Thomas Jefferson là ai đấy
+  - biết Martin Van Buren là ai không
+  - J.K.Rowling là ai
+  - nàng hậu nổi tiếng nhất Macau là ai
+  - Mr.Siro là ai đấy
+  - timi có biết Suzy không?
+  - biết Linh Đàm không
+  - bộ trưởng bộ quốc phòng Nguyễn Minh Triết là ai đấy
+  - biết Quỳnh Kool là ai không
+  - Coco Chanel là ai
+  - người mẫu nổi tiếng nhất Việt Nam là ai
+  - Tăng Thanh Hà là ai phết nhỉ
+  - em có biết BoA không?
+  - biết Đông Nhi không
+  - chủ tịch quốc hội Thomas Jefferson là ai đấy
+  - biết Đặng Thị Ngọc Thịnh là ai không
+  - Franklin D. Roosevelt là ai
+  - mc dẫn chương trình nổi tiếng nhất VN là ai
+  - Diễm My 9x là ai đó
+  - timi có biết Jeongyeon không?
+  - biết Phan Mạnh Quỳnh không
+  - chủ tịch quốc hội John Quincy Adams là ai đấy
+  - biết Karik là ai không
+  - Lionel Messi là ai
+  - bảo vệ nổi tiếng nhất Campuchia là ai
+  - Ten thuộc NCT là ai đấy
+  - cậu có biết Jimin (BTS) không?
+  - biết Martin Van Buren không
+  - bộ trưởng bộ thông tin George W. Bush là ai đấy
+  - biết Nguyễn Thùy Lâm là ai không
+  - Cristiano Ronaldo là ai
+  - nhà phát minh nổi tiếng nhất Nga là ai
+  - Thanh Hương là ai quá nhỉ
+  - bot có biết Jungkook (BTS) không?
+  - biết Bill Gates không
+  - bộ trưởng bộ thông tin Nguyễn Hữu Thọ là ai đấy
+  - biết Đỗ Thị Hà là ai không
+  - Rosa Parks là ai
+  - người marketing nổi tiếng nhất New Zealand là ai
+  - Đàm tổng là ai đấy chứ
+  - cậu có biết Wendy (Red Velvet) không?
+  - biết Trương Tấn Sang không
+  - đại tướng Trường Chinh là ai đấy
+  - biết Võ Hoàng Yến là ai không
+  - Steve Jobs là ai
+  - cầu thủ bóng đá nổi tiếng nhất Thổ Nhĩ Kỳ là ai
+  - Trần Thị Thùy Dung là ai chứ nhỉ
+  - bạn có biết Wendy (Red Velvet) không?
+  - biết George H. W. Bush không
+  - đại tướng Bác Hồ là ai đấy
+  - biết J.K.Rowling là ai không
+  - Phạm Nhật Vượng là ai
+  - diễn viên nổi tiếng nhất Việt Nam là ai
+  - George H. W. Bush là ai phết nhỉ
+  - bot có biết RUBINA DILAIK không?
+  - biết Lê Cát Trọng Lý không
+  - chủ tịch nước George Washington là ai đấy
+  - biết Đàm tổng là ai không
+  - Vladimir Putin là ai
+  - hoa hậu nổi tiếng nhất Hoa Kỳ là ai
+  - Quỳnh Kool là ai đấy
+  - bot có biết Wendy (Red Velvet) không?
+  - biết Kim da-mi không
+  - chủ tịch nước Nguyễn Phú Trọng là ai đấy
+  - biết Diệu Nhi là ai không
+  - Elon Musk là ai
+  - diễn viên nổi tiếng nhất Mỹ là ai
+  - Joe Biden là ai phết nhỉ
+  - timi có biết Jennie (BLACKPINK) không?
+  - biết Trần Thị Thùy Dung không
+  - bộ trưởng bộ quốc phòng Trương Tấn Sang là ai đấy
+  - biết Lee Hyori là ai không
+  - Pope John Paul là ai
+  - người dẫn ctrinh nổi tiếng nhất Việt Nam là ai
+  - Yuta (NCT) thuộc Girls' Generation là ai đó
+  - bot có biết Kang Daniel không?
+  - biết Khánh Vy không
+  - bộ trưởng bộ quốc phòng George Washington là ai đấy
+  - biết D.O. (EXO) thuộc Bigbang là ai không
+  - mc dẫn chương trình nổi tiếng nhất VNam là ai
+  - Chi Pu là ai chứ nhỉ
+  - timi có biết Jennie không?
+  - biết Kaity Nguyễn không
+  - chủ tịch quốc hội John Adams là ai đấy
+  - biết Nguyễn Xuân Phúc là ai không
+  - Marie Curie là ai
+  - nhân viên bảo vệ nổi tiếng nhất VNam là ai
+  - Albert Einstein là ai đấy
+  - em có biết Naeun (Apink) không?
+  - biết Đàm Phương Linh không
+  - đại tướng Trần Đại Quang là ai đấy
+  - biết Coco Chanel là ai không
+  - tay vợt nổi tiếng nhất VNam là ai
+  - Bảo Thy là ai quá nhỉ
+  - cậu có biết Ten không?
+  - biết Ngô Thanh Vân không
+  - bộ trưởng bộ giáo dục Jimmy Carter là ai đấy
+  - biết Miu Lê là ai không
+  - lập trình viên nổi tiếng nhất New Zealand là ai
+  - Khánh Vy IELTS là ai nhỉ
+  - mày có biết Jennie không?
+  - biết Apink Eunji thuộc Bigbang không
+  - chủ tịch nước Jimmy Carter là ai đấy
+  - biết MIN là ai không
+  - người mẫu nổi tiếng nhất Singapo là ai
+  - Wheein (Mamamoo) là ai đó
+  - mi có biết Lay (EXO) không?
+  - biết Barack Obama không
+  - đại tướng James Madison là ai đấy
+  - biết Khánh Vy IELTS là ai không
+  - cầu thủ nổi tiếng nhất Lào là ai
+  - Đặng Thu Thảo là ai quá nhỉ
+  - chú em có biết Apink Eunji không?
+  - biết Trấn Thành không
+  - chủ tịch quốc hội Hồ Chí Minh là ai đấy
+  - biết V (BTS) thuộc TVXQ (DBSK) là ai không
+  - cầu thủ nổi tiếng nhất VN là ai
+  - Thiều Bảo Trang là ai đấy
+  - mày có biết Jisoo (BLACKPINK) không?
+  - biết Apink Eunji thuộc BTS không
+  - bộ trưởng bộ giáo dục George W. Bush là ai đấy
+  - biết Nguyễn Trần Khánh Vân là ai không
+  - người nổi tiếng nhất VNam là ai
+  - Khánh Vy là ai chứ nhỉ
+  - cậu có biết Jeongyeon không?
+  - biết Kyuhyun (Super Junior) không
+  - bộ trưởng bộ thông tin John Quincy Adams là ai đấy
+  - biết Công Tố là ai không
+  - tay vợt chuyền nổi tiếng nhất VN là ai
+  - Võ Hoàng Yến là ai chứ nhỉ
+  - em có biết Nancy (Momoland) không?
+  - biết Paul McCartney không
+  - bộ trưởng bộ thông tin Thomas Jefferson là ai đấy
+  - biết Yeji là ai không
+  - cầu thủ nổi tiếng nhất VNam là ai
+  - Thành Trung là ai nhỉ
+  - bot có biết Hyeri không?
+  - biết Franklin D. Roosevelt không
+  - chủ tịch quốc hội Tôn Đức Thắng là ai đấy
+  - biết Lê Đức Anh là ai không
+  - cầu thủ nổi tiếng nhất Mĩ là ai
+  - Nguyễn Đăng Quang là ai đấy
+  - timi có biết BoA không?
+  - biết Andrew Jackson không
+  - chủ tịch nước Trần Đại Quang là ai đấy
+  - biết Khánh Vy là ai không
+  - nhân viên nổi tiếng nhất đất Việt là ai
+  - Thảo Tâm là ai đấy
+  - bạn có biết Nayeon (Twice) không?
+  - biết Rosé (BLACKPINK) thuộc T-ara không
+  - bộ trưởng bộ quốc phòng Trần Đại Quang là ai đấy
+  - biết James Monroe là ai không
+  - hoa hậu nổi tiếng nhất Úc là ai
+  - Phạm Thị Hương là ai đấy chứ
+  - bạn có biết D.O. (EXO) không?
+  - biết MTP không
+  - đại tướng Donald Trump là ai đấy
+  - biết George H. W. Bush là ai không
+  - cầu thủ nổi tiếng nhất Hàn là ai
+  intent: knowledge_ask_introduction_person

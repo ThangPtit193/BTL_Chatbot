@@ -1,0 +1,303 @@
+positives:
+- examples:
+  - quy chế về thời gian làm việc của công ty như nào
+  - mấy giờ cty Cổ phần Giấy Hải Âu tan làm vậy
+  - công ty ftech kết thúc làm lúc mấy giờ đấy bạn
+  - ngân hàng agribank tan làm lúc 5h hay 6h vậy á hả
+  - cty dell có làm việc tăng ca vào buổi tối ko
+  - công ty tan ca lúc 5h30 chuẩn chỉ ko hả
+  - một buổi nhân viên phải làm mấy tiếng
+  - cho tôi hỏi quy định về thời gian làm việc của công ty
+  - công ty ftech buổi chiều dc về lúc mấy h
+  - công ty vào làm lúc nào
+  - thời gian đi làm về buổi chiều lúc mấy h
+  - ' cho tôi hỏi thứ 7 có đi làm hông'
+  - mình là thành viên mới, tớ muốn biết thời gian làm việc của công ty
+  - thời gian làm việc của công ty đại cát tường thế nào
+  - f-tech có cho nghỉ thứ 7 và chủ nhật không
+  - tớ muốn biết thời gian làm việc của công ty f tech
+  - tớ nghe bảo công ty f-tech vào làm lúc 8h30 đúng không mầy
+  - quy định h làm việc của công ty Vingroup thế nào
+  - quy chế về thời gian làm việc trong ngày của công ty
+  - chiều về mấy h
+  - thời gian làm như nào
+  - có phải công ty ftech của mầy làm từ 8h30 đến 17h30 chính xác không
+  - công ty ftech có nội quy về thời gian làm việc cho nhân viên ko em
+  - nhân viên ngân hàng acb khi nào đi làm về
+  - công ty f-tech làm việc từ mấy giờ
+  - thời gian buổi chiều dc về lúc mấy h
+  - nhân viên tập đoàn Hoàng Anh Gia Lai buổi chiều dc về lúc mấy h
+  - vào buổi sáng công ty bắt đầu làm việc lúc mấy giờ
+  - thời gian biểu của công ty ra sao?
+  - thời gian kết thúc công việc vào lúc mấy giờ
+  - rule thời gian làm việc như thế nào hở
+  - f-tech thời gian làm việc thế nào?
+  - công ty vô làm lúc 9h chuẩn chỉ hông
+  - công ty f-tech có nghỉ cn hông
+  - nhận sự cty Highlands Coffee khi nào được về
+  - tập đoàn điện tử Panasonic làm ngày mấy tiếng hở
+  - một buổi làm mấy giờ
+  - công ty điền quân mở cửa lúc mấy h thế
+  - chiều mấy h về
+  - thường thì công ty f-tech công nghệ bắt đầu làm việc sớm phải ko
+  - h làm việc của công ty như nào
+  - mấy giờ được về
+  - cho tớ xin information thời gian làm việc
+  - cho mình xin information thời gian làm việc của công ty f-tech
+  - làm việc thì giờ giấc như nào?
+  - thời gian làm việc bên mình như thế nào
+  - tôi muốn hỏi về thời gian làm việc của công ty nafosted đi nào iris
+  - cty vinAI làm từ mấy h đến mấy h
+  - tuần làm bao nhiêu buổi thế hả
+  - cho anh hỏi thời gian làm của công ty phương đông thế nào
+  - cty Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam tan ca có trễ ko á
+  - công ty ftech làm 7 ngày/tuần à
+  - đi làm h nào
+  - thời gian làm việc công ty nexttech như nào?
+  - giờ giải lao ở công ty ftech
+  - buổi chiều bắt đầu làm lúc mấy giờ
+  - chiêu khi nào về
+  - thời gian mở cửa của công ty
+  - cho chị hỏi thời gian làm việc như nào vậy á hả
+  - mấy giờ kết thúc làm mầy
+  - thời gian làm việc của tập đoàn điện tử Panasonic như nào
+  - công ty ftech hết h làm vào lúc nào
+  - công ty hết giờ làm lúc mấy h
+  - mấy giờ bắt đầu làm việc bạn
+  - Chủ nhật có được nhể ko
+  - tập đoàn Điện lực Việt Nam bắt đầu làm việc khi nào hả
+  - công ty f-tech làm việc vào ban ngày hay đêm hả bot
+  - công ty bắt đầu làm việc vào buổi sáng lúc mấy giờ
+  - thời gian làm việc chính thức của công ty là từ 8h30 đến 17h30 hử
+  - ' bắt đầu làm việc vào mấy giờ m'
+  - công ty đại cát tường bắt đầu làm việc từ mấy giờ
+  - cty hải hà có ăn cơm trưa ko
+  - Chủ nhật có được hông nhể
+  - thời gian bắt đầu làm từ khi nào bạn
+  - công ty có thời gian biểu ra sao?
+  - công ty ftech bắt đầu làm việc mấy h vào buổi chiều
+  - rule thời gian làm việc của công ty như nào
+  - mấy h công ty tan làm vậy á hả
+  - công ty kết thúc làm lúc mấy h đấy
+  - cty Ngân hàng thương mại cổ phần Ngoại thương Việt Nam tan làm lúc 5h hay 6h hả
+  - công ty có làm việc tăng ca vào buổi tối hông
+  - công ty f tech tan làm lúc 5h chuẩn ko vậy á hả
+  - một ngày nhân viên phải làm bao nhiu tiếng
+  - cho tớ hỏi quy định thời gian làm việc của công ty
+  - tập đoàn Vàng bạc Đá quý DOJI buổi chiều được về lúc mấy h
+  - cty vbee vào làm lúc nào
+  - thời gian đi làm về buổi chiều lúc mấy giờ
+  - ' cho tớ hỏi chủ nhật có đi làm ko'
+  - tớ là nhận sự mới, tớ muốn biết thời gian làm việc của công ty
+  - thời gian làm của công ty như nào
+  - f tech có cho nghỉ thứ 7 và cn hông
+  - mình muốn biết thời gian làm việc của công ty
+  - mình nghe bảo công ty VTC vào làm lúc 8h chính xác không mầy
+  - quy định về h làm việc của cty cổ phần chứng Khoán Biển Việt như nào
+  - nội quy thời gian làm việc trong ngày của công ty
+  - chiều về mấy giờ
+  - thời gian làm việc như thế nào
+  - có phải công ty f-tech của cậu làm từ 8h30 đến 17h30 chuẩn chỉ hông
+  - công ty có quy định về thời gian làm cho người ko iris
+  - nhận sự công ty khi nào đi làm về
+  - công ty phương đông làm lúc mấy giờ
+  - thời gian buổi chiều dc về lúc mấy giờ
+  - người công ty f tech buổi chiều được về lúc mấy giờ
+  - vào buổi sáng công ty Vietnamobile bắt đầu làm từ mấy giờ
+  - h của mình ra sao?
+  - thời gian kết thúc nhiệm vụ vào lúc mấy giờ
+  - rule thời gian làm việc như nào vậy
+  - ftech thời gian làm việc như thế nào?
+  - công ty f tech vô làm lúc 8h chuẩn ko
+  - công ty có nghỉ thứ 7 ko
+  - thành viên công ty khi nào được về
+  - công ty ftech làm ngày mấy giờ vậy á hả
+  - một ngày làm mấy giờ
+  - công ty ftech mở cửa lúc mấy giờ thế
+  - chiều mấy giờ về
+  - thường thì ngân hàng bidv công nghệ bắt đầu làm việc sớm phải hông
+  - h làm việc của công ty thế nào
+  - mấy h được về
+  - cho mình xin info thời gian làm việc
+  - cho mình xin info thời gian làm việc của công ty
+  - làm việc thì thời gian biểu thế nào?
+  - Thời gian làm việc công ty f tech thế nào
+  - cho mình hỏi về thời gian làm việc của ngân hàng techcombank đi nào lily
+  - công ty f-tech làm việc từ mấy h đến mấy h
+  - tháng làm bao nhiêu buổi thế hả
+  - cho mình hỏi thời gian làm của công ty như nào vậy hả
+  - công ty f tech tan ca có trễ hông á
+  - công ty f-tech làm 6 ngày/tuần à
+  - đi làm giờ nào
+  - thời gian làm việc công ty như thế nào?
+  - giờ giải lao ở công ty Đài Truyền hình Thành phố Hồ Chí Minh
+  - buổi chiều làm việc lúc mấy giờ
+  - thời gian mở cửa của tập đoàn Công nghiệp Than - Khoáng sản Việt Nam
+  - cho mình hỏi thời gian làm việc như thế nào
+  - mấy giờ kết thúc làm mày
+  - thời gian làm việc của công ty ftech thế nào
+  - công ty hết h làm vào lúc nào
+  - công ty hết h làm lúc mấy h
+  - mấy giờ bắt đầu làm việc iris
+  - Chủ nhật có được nhỉ hông
+  - công ty ftech bắt đầu làm việc khi nào vậy á hả
+  - công ty ftech làm việc vào ban ngày hay đêm hả bạn
+  - ' bắt đầu làm việc vào buổi sáng từ mấy giờ'
+  - thời gian làm việc chính thức của ngân hàng agribank là từ 8h30 đến 17h30 hửm
+  - công ty làm lúc mấy giờ hở
+  - công ty bắt đầu làm từ mấy giờ
+  - công ty có ăn cơm trưa hông
+  - Chủ nhật có được hông nhỉ
+  - thời gian bắt đầu làm từ khi nào
+  - mình có h thế nào?
+  - công ty bắt đầu làm mấy giờ vào buổi chiều
+  - quy chế về thời gian làm việc của công ty thế nào
+  - mấy giờ công ty f tech tan làm hả
+  - công ty f-tech kết thúc làm lúc mấy giờ đấy
+  - cty vinAI tan làm lúc 5h hay 6h vậy á hả
+  - cty đại cát tường có làm việc tăng ca vào buổi tối hông
+  - công ty mbageas tan làm lúc 6h đúng hông vậy á hả
+  - một ngày nhận sự phải làm bao nhiu giờ
+  - tớ muốn hỏi quy định thời gian làm việc của công ty
+  - công ty buổi chiều dc về lúc mấy h
+  - công ty f-tech vào làm lúc nào
+  - TIMI cho tôi hỏi cn có đi làm hông
+  - mình là thành viên mới, mình muốn biết thời gian làm việc của tập đoàn FLC
+  - thời gian làm của công ty ftech như nào
+  - f tech có cho nghỉ thứ 7 và cn không
+  - tớ muốn biết thời gian làm việc của công ty f-tech
+  - mình nghe bảo công ty vào làm lúc 8h30 chuẩn không Timi
+  - quy chế về h làm việc của công ty thế nào
+  - rule về thời gian làm việc trong ngày của công ty
+  - thời gian làm việc như nào hả
+  - có phải cty VTV của mầy làm việc từ 8h30 đến 17h30 chính xác không
+  - công ty f-tech có quy chế về thời gian làm việc cho nhận sự ko iris
+  - thành viên công ty khi nào đi làm về
+  - công ty f tech làm từ mấy giờ
+  - thời gian buổi chiều được về lúc mấy h
+  - người công ty f-tech buổi chiều dc về lúc mấy h
+  - vào buổi sáng công ty f-tech bắt đầu làm việc từ mấy giờ
+  - thời gian của bên bạn ra sao?
+  - thời gian kết thúc task vào lúc mấy h
+  - quy chế thời gian làm việc như thế nào
+  - f tech thời gian làm việc thế nào?
+  - ngân hàng vpbank vô làm lúc 8h chuẩn không
+  - công ty f tech có nghỉ chủ nhật hông
+  - nhận sự công ty khi nào được về
+  - cty VTC làm ngày mấy giờ hở
+  - một buổi làm bao nhiu tiếng
+  - công ty mở cửa lúc mấy h thế
+  - thường thì công ty công nghệ bắt đầu làm việc sớm phải không
+  - giờ làm việc của công ty như thế nào
+  - mấy h dc về
+  - cho anh xin info thời gian làm việc
+  - cho anh xin thông tin thời gian làm việc của công ty
+  - đi làm thì h như nào?
+  - thời gian làm việc công ty f tech ra sao
+  - tớ muốn hỏi về thời gian làm việc của công ty đi nào iris
+  - công ty làm việc từ mấy giờ đến mấy h
+  - tháng làm bao nhiêu buổi thế hửm
+  - cho tớ hỏi thời gian làm của công ty f-tech thế nào
+  - công ty ftech tan ca có sớm ko ạ
+  - công ty làm 6 ngày/tuần à
+  - thời gian làm việc như thế nào?
+  - giờ giải lao ở công ty f-tech
+  - buổi chiều làm việc mấy h
+  - thời gian mở cửa của tập đoàn FLC
+  - cho anh hỏi thời gian làm như thế nào
+  - mấy giờ kết thúc làm việc Timi
+  - thời gian làm việc của công ty f tech thế nào
+  - công ty Cổ phần Bê tông Hoà Cần hết giờ làm vào lúc nào
+  - công ty hết giờ làm lúc mấy giờ
+  - mấy giờ bắt đầu làm việc cậu
+  - Chủ nhật có được ha không
+  - công ty f-tech bắt đầu làm việc khi nào vậy
+  - cty luvina làm việc vào ban ngày hay đêm vậy mầy
+  - cty Trách nhiệm hữu hạn Bia Huế bắt đầu làm vào buổi sáng lúc mấy h
+  - thời gian làm việc chính thức của công ty f-tech là từ 8h30 đến 17h30 hửm
+  - ' bắt đầu làm việc vào mấy giờ vậy á hả'
+  - ngân hàng vietcombank bắt đầu làm lúc mấy giờ
+  - công ty f tech có ăn cơm trưa ko
+  - Chủ nhật có được ko nhỉ
+  - thời gian bắt đầu làm việc từ khi nào mầy
+  - công ty f tech có thời khóa biểu ra sao?
+  - ' làm việc vào mấy h vào buổi chiều'
+  - rule về thời gian làm việc của công ty như nào
+  - mấy giờ công ty tan làm vậy hả
+  - cty vc corp kết thúc làm lúc mấy h đấy em
+  - công ty Hòa Phát tan ca lúc 5h30 hay 6h vậy
+  - công ty ftech có làm việc tăng ca vào buổi tối không
+  - tập đoàn điện tử Panasonic tan làm lúc 6h chuẩn chỉ không hở
+  - một ngày nhận sự phải làm mấy tiếng
+  - cho tớ hỏi quy định về thời gian làm việc của công ty
+  - công ty buổi chiều được về lúc mấy giờ
+  - tập đoàn Điện lực Việt Nam vào làm lúc nào
+  - ' cho tớ hỏi chủ nhật có đi làm không'
+  - tớ là nhân viên mới, tớ muốn biết thời gian làm việc của công ty f-tech
+  - thời gian làm của cty spotify như thế nào
+  - ftech có cho nghỉ thứ 7 và chủ nhật không
+  - mình muốn biết thời gian làm việc của cty hải hà
+  - tôi nghe bảo công ty vào làm lúc 8h chính xác hông TIMI
+  - quy chế về h làm việc của cty tinh vân thế nào
+  - quy định thời gian làm việc trong ngày của công ty
+  - thời gian làm như thế nào vậy á hả
+  - có phải công ty f-tech của lily làm từ 8h30 đến 17h30 chính xác hông
+  - công ty có quy chế về thời gian làm việc cho nhân viên không mầy
+  - thành viên công ty ftech khi nào đi làm về
+  - công ty ftech làm từ mấy h
+  - thời gian buổi chiều được về lúc mấy giờ
+  - nhận sự công ty f tech buổi chiều được về lúc mấy h
+  - vào buổi sáng công ty hải âu bắt đầu làm việc từ mấy giờ
+  - lịch của cty CỔ PHẦN MISA ra sao?
+  - thời gian kết thúc công việc vào lúc mấy h
+  - rule thời gian làm như thế nào
+  - f tech thời gian làm việc như thế nào?
+  - công ty ftech vô làm lúc 8h chuẩn không
+  - công ty có nghỉ chủ nhật hông
+  - người công ty ftech khi nào dc về
+  - công ty làm ngày mấy giờ vậy á hả
+  - một buổi làm bao nhiêu giờ
+  - tập đoàn điện tử Panasonic mở cửa lúc mấy h thế
+  - thường thì cty điền quân công nghệ bắt đầu làm việc sớm phải ko
+  - giờ làm việc của công ty ftech thế nào
+  - mấy giờ dc về
+  - cho mình xin thông tin thời gian làm
+  - cho mình xin thông tin thời gian làm việc của công ty ftech
+  - đi làm thì h ra sao?
+  - thời gian làm việc công ty f tech ra răng
+  - tớ muốn hỏi về thời gian làm việc của tập đoàn FLC đi nào m
+  - công ty f tech làm việc từ mấy giờ đến mấy giờ
+  - tháng làm bao nhiêu buổi thế
+  - cho mình hỏi thời gian làm của công ty ftech thế nào
+  - công ty tan làm có trễ ko hè
+  - công ty Cổ phần Bê tông Hoà Cần làm 5 ngày/tuần à
+  - thời gian làm việc thế nào?
+  - giờ giải lao ở công ty
+  - buổi chiều bắt đầu làm mấy giờ
+  - thời gian mở cửa của ngân hàng vietinbank
+  - cho anh hỏi thời gian làm việc thế nào
+  - mấy h công ty kết thúc làm mày
+  - thời gian làm việc của công ty f-tech như thế nào
+  - công ty hết giờ làm vào lúc nào
+  - cty CỔ PHẦN MISA hết giờ làm lúc mấy h
+  - mấy h cty kinh đô bắt đầu làm việc cậu
+  - Chủ nhật có được nhể không
+  - công ty ftech bắt đầu làm việc khi nào hả
+  - công ty f tech làm việc vào ban ngày hay đêm vậy hả Timi
+  - ' bắt đầu làm việc vào buổi sáng lúc mấy h'
+  - thời gian làm việc chính thức của tập đoàn FLC là từ 8h30 đến 17h30 hửm
+  - công ty f tech bắt đầu làm vào mấy giờ mi
+  - công ty f-tech bắt đầu làm việc từ mấy giờ
+  - công ty Vinaphone có ăn cơm trưa hông
+  - Chủ nhật có được hông ha
+  - thời gian bắt đầu làm việc từ khi nào
+  - công ty có giờ như nào?
+  - ' bắt đầu làm lúc mấy giờ vào buổi chiều'
+  - nội quy về thời gian làm việc của công ty thế nào
+  - mấy h tan làm vậy
+  - công ty f tech kết thúc làm lúc mấy giờ đấy
+  - công ty tan ca lúc 5h30 hay 6h vậy
+  - công ty có làm việc tăng ca vào buổi tối ko
+  - công ty Cát Tiên Sa tan làm lúc 5h đúng ko vậy
+  - một ngày người phải làm bao nhiu tiếng
+  intent: rule_working_in_day_ask_time

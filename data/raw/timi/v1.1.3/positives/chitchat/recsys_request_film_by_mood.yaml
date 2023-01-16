@@ -1,0 +1,103 @@
+positives:
+- examples:
+  - mình cảm thấy tức timi có bộ film nào không
+  - có bộ phim nào phù hợp với tâm trạng buồn của mình
+  - mình thấy bực mình quá bot có phim nào không
+  - có film nào phù hợp với tâm trạng tức của tôi
+  - mình cảm thấy an lành quá có phim nào không
+  - có bộ film nào phù hợp với tâm trạng vui sướng của mình
+  - mình cảm thấy cô độc quá timi có bộ film nào không
+  - có bộ phim nào phù hợp với tâm trạng buồn chán của tớ
+  - mình chán quá có bộ film nào không
+  - có bộ film nào phù hợp với tâm trạng cô đơn của mình
+  - mình cô độc timi có bộ film nào không
+  - có bộ phim nào phù hợp với tâm trạng bực của tôi
+  - mình yêu đời bạn có film nào không
+  - có bộ film nào phù hợp với tâm trạng vui của tớ
+  - mình thấy vui bot có bộ film nào không
+  - có phim nào phù hợp với tâm trạng tự do của tớ
+  - mình thấy chán có bộ phim nào không
+  - có bộ film nào phù hợp với tâm trạng tự do của tui
+  - mình thấy đơn độc quá có bộ phim nào không
+  - có film nào phù hợp với tâm trạng thoải mái của tớ
+  - mình buồn chán có film nào không
+  - có bộ phim nào phù hợp với tâm trạng tức của tôi
+  - mình yên bình quá có phim nào không
+  - có bộ phim nào phù hợp với tâm trạng tức của mình
+  - mình cảm thấy cô đơn quá có film nào không
+  - có bộ phim nào phù hợp với tâm trạng hanh phúc của tớ
+  - mình thấy chán quá timi có film nào không
+  - có bộ phim nào phù hợp với tâm trạng bực của mình
+  - mình đơn độc quá có bộ phim nào không
+  - có bộ phim nào phù hợp với tâm trạng cô độc của tui
+  - mình cảm thấy cô độc có bộ phim nào không
+  - có phim nào phù hợp với tâm trạng cay của tớ
+  - mình thấy điên quá chú em có bộ film nào không
+  - có phim nào phù hợp với tâm trạng bực mình của tui
+  - mình bực quá cậu có bộ phim nào không
+  - có phim nào phù hợp với tâm trạng bực mình của mình
+  - mình cảm thấy vui sướng có bộ phim nào không
+  - có film nào phù hợp với tâm trạng buồn chán của tôi
+  - mình thấy an lành quá có bộ film nào không
+  - có bộ film nào phù hợp với tâm trạng yêu đời của tớ
+  - mình thấy buồn chán quá có phim nào không
+  - có bộ film nào phù hợp với tâm trạng bực của tớ
+  - mình buồn quá bạn có film nào không
+  - có phim nào phù hợp với tâm trạng buồn chán của tớ
+  - mình vui có bộ film nào không
+  - có bộ phim nào phù hợp với tâm trạng cô đơn của tôi
+  - mình sướng có bộ film nào không
+  - có bộ phim nào phù hợp với tâm trạng thoải mái của tui
+  - mình cảm thấy hanh phúc quá có phim nào không
+  - có film nào phù hợp với tâm trạng bực mình của tui
+  - mình hanh phúc có film nào không
+  - có film nào phù hợp với tâm trạng bực của tớ
+  - mình cô đơn quá timi có film nào không
+  - có bộ phim nào phù hợp với tâm trạng điên của tui
+  - mình cảm thấy đơn độc timi có film nào không
+  - có bộ phim nào phù hợp với tâm trạng vui sướng của tớ
+  - mình thấy tức quá có bộ film nào không
+  - có phim nào phù hợp với tâm trạng tự do của tôi
+  - mình buồn có bộ film nào không
+  - có bộ film nào phù hợp với tâm trạng buồn chán của mình
+  - mình cô độc cậu có film nào không
+  - có bộ film nào phù hợp với tâm trạng chán của tớ
+  - mình cảm thấy đơn độc quá iem có bộ film nào không
+  - có phim nào phù hợp với tâm trạng vui sướng của tớ
+  - mình thấy cay có bộ film nào không
+  - có phim nào phù hợp với tâm trạng hanh phúc của tớ
+  - mình thấy cô đơn quá cậu có bộ film nào không
+  - có bộ phim nào phù hợp với tâm trạng sung sướng của tôi
+  - mình tự do có film nào không
+  - có phim nào phù hợp với tâm trạng buồn của tớ
+  - mình cảm thấy hanh phúc timi có bộ phim nào không
+  - có bộ phim nào phù hợp với tâm trạng buồn của tôi
+  - mình cảm thấy vui sướng mày có bộ phim nào không
+  - có film nào phù hợp với tâm trạng đơn độc của tôi
+  - mình sung sướng có bộ phim nào không
+  - có film nào phù hợp với tâm trạng yên bình của tớ
+  - mình thấy chán có film nào không
+  - có phim nào phù hợp với tâm trạng cô độc của tớ
+  - mình điên có bộ phim nào không
+  - có bộ film nào phù hợp với tâm trạng an lành của tớ
+  - mình cô đơn quá mầy có bộ phim nào không
+  - có film nào phù hợp với tâm trạng cô độc của mình
+  - mình cảm thấy bực mình quá timi có phim nào không
+  - có bộ phim nào phù hợp với tâm trạng vui của tớ
+  - mình bực mình có bộ film nào không
+  - có bộ film nào phù hợp với tâm trạng điên của tui
+  - mình thấy vui sướng quá cậu có bộ phim nào không
+  - có phim nào phù hợp với tâm trạng vui của tớ
+  - mình cảm thấy bực quá cậu có phim nào không
+  - có bộ film nào phù hợp với tâm trạng cay của tui
+  - mình điên quá bạn có bộ phim nào không
+  - có bộ phim nào phù hợp với tâm trạng cô đơn của tớ
+  - mình buồn bot có phim nào không
+  - có bộ film nào phù hợp với tâm trạng buồn chán của tớ
+  - mình cảm thấy buồn chán bạn có film nào không
+  - có film nào phù hợp với tâm trạng tự do của tớ
+  - mình điên có bộ film nào không
+  - có film nào phù hợp với tâm trạng cô đơn của mình
+  - mình thấy chán có bộ film nào không
+  - có bộ film nào phù hợp với tâm trạng đơn độc của mình
+  intent: recsys_request_film_by_mood

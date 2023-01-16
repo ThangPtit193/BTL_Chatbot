@@ -1,0 +1,603 @@
+positives:
+- examples:
+  - chắc bot biết số dthoai của hoa hậu Đặng Thị Ngọc Hân
+  - cho tớ số phone của Trấn Thành nha
+  - bạn biết số của MC Quyền Linh không
+  - xin số Phạm Thị Hương với
+  - chắc bot biết số dthoai của hoa hậu Nguyễn Thùy Lâm
+  - cho tớ hotline của Ninh Dương Lan Ngọc nhé
+  - bạn biết số điện thoại của MC Thanh Bạch không
+  - xin số hotline của Nguyễn Thị Ngọc Châu với
+  - chắc bot biết số điện thoại của hoa hậu Nguyễn Trần Khánh Vân
+  - cho mình hotline của Cáo nha
+  - bạn biết số dthoai của MC Phan Anh không
+  - xin số hotline Trần Thị Thùy Dung với
+  - chắc mày biết số phone của hoa hậu Trần Thị Thùy Dung
+  - cho tớ số dthoai của Thomas Edison nha
+  - bạn biết số phone của MC Khánh Vy IELTS không
+  - xin số phone của Michael Jackson với
+  - chắc timi biết số của hoa hậu Thuỳ Tiên
+  - cho mình số điện thoại của Thành Trung nhé
+  - bạn biết số của MC Khánh Vy không
+  - xin số dthoai Phạm Hồng Thúy Vân với
+  - chắc timi biết số điện thoại của hoa hậu Trần Tiểu Vy
+  - cho tớ số của J.K.Rowling nha
+  - bạn biết số dthoai của MC Thu Hoài không
+  - xin số của Trần Tiểu Vy với
+  - chắc bot biết số dthoai của hoa hậu Nguyễn Trần Khánh Vân
+  - cho mình số dthoai của Wonho nhé
+  - bạn biết số của MC Nguyên Khang không
+  - xin số phone của Xoài Non với
+  - chắc em biết số điện thoại của hoa hậu Nguyễn Thị Ngọc Châu
+  - cho mình số điện thoại của Coco Chanel nha
+  - bạn biết số dthoai của MC Thành Trung không
+  - xin hotline Babe Ruth với
+  - chắc bot biết số hotline của hoa hậu Huỳnh Phạm Thủy Tiên
+  - cho tớ số điện thoại của Yuta (NCT) thuộc SHINee nhé
+  - bạn biết số hotline của MC Phan Anh không
+  - xin số điện thoại của Linh Đàm với
+  - chắc bạn biết số phone của hoa hậu Đỗ Thị Hà
+  - cho tôi số điện thoại của Cristiano Ronaldo nha
+  - bạn biết số hotline của MC Quyền Linh không
+  - xin số Andrew Jackson với
+  - chắc bot biết hotline của hoa hậu Mai Phương Thúy
+  - cho tớ số điện thoại của Khánh Vy nhé
+  - bạn biết số phone của MC Quyền Linh không
+  - xin số dthoai của Linh Đàm với
+  - chắc mày biết số phone của hoa hậu Thuỳ Tiên
+  - cho tôi số của Lisa (BLACKPINK) thuộc SHINee nhé
+  - bạn biết số dthoai của MC Trấn Thành không
+  - xin số hotline của Nguyễn Đăng Quang với
+  - chắc timi biết số điện thoại của hoa hậu H'Hen Niê
+  - cho tôi hotline của Cáo nha
+  - bạn biết hotline của MC Quyền Linh không
+  - xin số phone Nancy (Momoland) thuộc TVXQ (DBSK) với
+  - chắc bot biết số của hoa hậu Đỗ Thị Hà
+  - cho tớ số phone của Quỳnh Kool nha
+  - bạn biết số của MC Trường Giang không
+  - xin số hotline của Lê Hiếu với
+  - chắc timi biết hotline của hoa hậu Đỗ Mỹ Linh
+  - cho tớ số dthoai của Tôn Đức Thắng nha
+  - bạn biết số hotline của MC Trường Giang không
+  - xin số điện thoại Ten (NCT) thuộc NCT với
+  - chắc bot biết số phone của hoa hậu Võ Hoàng Yến
+  - cho tôi hotline của Linh Đàm nhé
+  - bạn biết số phone của MC Trường Giang không
+  - xin hotline của Hyoyeon (SNSD) với
+  - chắc mày biết số điện thoại của hoa hậu Nguyễn Cao Kỳ Duyên
+  - cho tớ số phone của Đặng Thu Thảo nha
+  - bạn biết số hotline của MC Lại Văn Sâm không
+  - xin số hotline của Thu Hoài với
+  - chắc bot biết số phone của hoa hậu Phạm Thị Hương
+  - cho tớ số của Babe Ruth nhé
+  - bạn biết số dthoai của MC Khánh Vy IELTS không
+  - xin hotline Độ Mixi với
+  - chắc bạn biết số phone của hoa hậu Thuỳ Tiên
+  - cho tớ số hotline của Mai Phương Thúy nha
+  - bạn biết hotline của MC Lại Văn Sâm không
+  - xin số của Phương Thanh với
+  - chắc bot biết số hotline của hoa hậu Nguyễn Thị Ngọc Châu
+  - cho tôi số của Rosé (BLACKPINK) nha
+  - bạn biết số điện thoại của MC Nguyên Khang không
+  - xin số phone của Vladimir Putin với
+  - chắc cậu biết số của hoa hậu H'Hen Niê
+  - cho tớ số điện thoại của Bảo Thanh nhé
+  - bạn biết số điện thoại của MC Trường Giang không
+  - xin số của Xoài Non với
+  - chắc em biết số phone của hoa hậu Nguyễn Thùy Lâm
+  - cho tớ số phone của Nguyễn Đăng Quang nha
+  - bạn biết số của MC Công Tố không
+  - xin số phone của Trịnh Công Sơn với
+  - chắc timi biết hotline của hoa hậu Mai Phương Thúy
+  - cho tôi số phone của Trần Thị Thùy Dung nhé
+  - bạn biết số điện thoại của MC Quyền Linh không
+  - xin số của Trường Giang với
+  - chắc timi biết số hotline của hoa hậu Huỳnh Phạm Thủy Tiên
+  - cho tôi hotline của Jeongyeon nhé
+  - bạn biết số hotline của MC Khánh Vy không
+  - xin số phone của Tuấn Hưng với
+  - chắc bot biết số dthoai của hoa hậu Nguyễn Thị Ngọc Châu
+  - cho tôi số phone của Wendy (Red Velvet) thuộc NCT nhé
+  - bạn biết số phone của MC Thu Hoài không
+  - xin số hotline của Độ Mixi với
+  - chắc chú em biết số dthoai của hoa hậu Nguyễn Thị Ngọc Châu
+  - cho tớ số của Quyền Linh nha
+  - bạn biết số điện thoại của MC Khánh Vy không
+  - xin số hotline của Nguyễn Trần Khánh Vân với
+  - chắc timi biết số hotline của hoa hậu Lê Thảo Nhi
+  - cho tớ số hotline của Gil Lê nhé
+  - bạn biết số dthoai của MC Thanh Bạch không
+  - xin số dthoai Phương Anh Đào với
+  - chắc cậu biết số hotline của hoa hậu Trần Thị Thùy Dung
+  - cho tớ hotline của Jungwoo nha
+  - bạn biết số hotline của MC Nguyên Khang không
+  - xin số dthoai của Đặng Thu Thảo với
+  - chắc mi biết số phone của hoa hậu Thuỳ Tiên
+  - cho tôi số điện thoại của Thuỳ Tiên nha
+  - bạn biết số phone của MC Phan Anh không
+  - xin số hotline của Xoài Non với
+  - chắc timi biết số phone của hoa hậu Phạm Thị Hương
+  - cho tớ hotline của Wonho thuộc Black pink nhé
+  - bạn biết số phone của MC Thành Trung không
+  - xin số hotline Pope John Paul với
+  - chắc mi biết số điện thoại của hoa hậu Thuỳ Tiên
+  - cho mình hotline của Đinh Ngọc Diệp nhé
+  - bạn biết số phone của MC Khánh Vy không
+  - xin số điện thoại của HỒ HÙNG ANH với
+  - chắc cậu biết số dthoai của hoa hậu Lê Thảo Nhi
+  - cho mình số phone của Linh Đàm nha
+  - bạn biết số điện thoại của MC Khánh Vy IELTS không
+  - xin số hotline của Phan Anh với
+  - chắc bot biết số phone của hoa hậu Đỗ Thị Hà
+  - cho tôi số hotline của Khánh Vy nha
+  - bạn biết hotline của MC Thanh Bạch không
+  - xin số dthoai Tăng Thanh Hà với
+  - chắc mày biết số của hoa hậu Phạm Thị Hương
+  - cho tớ số dthoai của Đàm tổng nha
+  - bạn biết số phone của MC Trấn Thành không
+  - xin số của TRẦN ĐÌNH LONG với
+  - chắc bot biết số điện thoại của hoa hậu Đỗ Thị Hà
+  - cho tôi hotline của Bùi Anh Tuấn nha
+  - bạn biết số dthoai của MC Công Tố không
+  - xin số phone của G-Dragon (Big Bang) với
+  - chắc timi biết số dthoai của hoa hậu Phạm Hồng Thúy Vân
+  - cho mình số dthoai của Phạm Nhật Vượng nha
+  - bạn biết số của MC Phan Anh không
+  - xin số hotline Huỳnh Phạm Thủy Tiên với
+  - chắc mày biết số của hoa hậu Mai Phương Thúy
+  - cho tớ số điện thoại của Phan Mạnh Quỳnh nha
+  - bạn biết số của MC Thanh Bạch không
+  - xin số hotline Elon Musk với
+  - chắc timi biết số phone của hoa hậu H'Hen Niê
+  - cho tớ số hotline của Wonho nhé
+  - bạn biết số hotline của MC Trấn Thành không
+  - xin số phone Pope Francis với
+  - chắc bot biết số dthoai của hoa hậu Phạm Thị Hương
+  - cho mình số hotline của H'Hen Niê nhé
+  - bạn biết số dthoai của MC Quyền Linh không
+  - xin số dthoai của Võ Hoàng Yến với
+  - chắc bot biết số của hoa hậu Nguyễn Thúc Thuỳ Tiên
+  - cho tớ số điện thoại của Suho (EXO) nhé
+  - bạn biết số hotline của MC Thanh Bạch không
+  - xin số phone của Jun Vũ với
+  - chắc mày biết số của hoa hậu Phạm Hồng Thúy Vân
+  - cho mình hotline của Bill Gates nhé
+  - bạn biết số hotline của MC Thu Hoài không
+  - xin số điện thoại của Minh Hằng với
+  - chắc cậu biết số điện thoại của hoa hậu Nguyễn Cao Kỳ Duyên
+  - cho tôi số hotline của Mr.Siro nha
+  - bạn biết số của MC Lại Văn Sâm không
+  - xin hotline của Jun Vũ với
+  - chắc timi biết số phone của hoa hậu Đặng Thị Ngọc Hân
+  - cho mình hotline của Độ Mixi nha
+  - bạn biết hotline của MC Phan Anh không
+  - xin số điện thoại Cáo với
+  - chắc bot biết số điện thoại của hoa hậu Nguyễn Thúc Thuỳ Tiên
+  - cho mình số dthoai của Donald Trump nha
+  - bạn biết số phone của MC Nguyên Khang không
+  - xin số phone của BoA với
+  - chắc chú em biết số hotline của hoa hậu Nguyễn Thùy Lâm
+  - cho mình số của Wheein (Mamamoo) nha
+  - bạn biết số điện thoại của MC Thu Hoài không
+  - xin số dthoai John Quincy Adams với
+  - chắc bot biết số của hoa hậu Đặng Thị Ngọc Hân
+  - cho tôi số dthoai của Soyeon ((G)I-DLE) nhé
+  - bạn biết số điện thoại của MC Thành Trung không
+  - xin số điện thoại của Xoài Non với
+  - chắc bot biết hotline của hoa hậu Đỗ Mỹ Linh
+  - cho mình số hotline của Tăng Thanh Hà nhé
+  - bạn biết hotline của MC Nguyên Khang không
+  - xin số phone của Babe Ruth với
+  - chắc bạn biết số điện thoại của hoa hậu Lê Thảo Nhi
+  - cho tớ số điện thoại của Đàm Phương Linh nhé
+  - bạn biết số phone của MC Thanh Bạch không
+  - xin số điện thoại Phương Oanh với
+  - chắc bot biết số dthoai của hoa hậu Lê Thảo Nhi
+  - cho mình số điện thoại của MIN nhé
+  - bạn biết hotline của MC Thu Hoài không
+  - xin số phone Đàm tổng với
+  - chắc mi biết số điện thoại của hoa hậu Đặng Thị Ngọc Hân
+  - cho tớ số của Xoài Non nhé
+  - bạn biết hotline của MC Trấn Thành không
+  - xin số hotline Trấn Thành với
+  - chắc bot biết hotline của hoa hậu Đặng Thu Thảo
+  - cho tớ hotline của Lê Đức Anh nhé
+  - bạn biết số phone của MC Lại Văn Sâm không
+  - xin số phone của Nguyên Khang với
+  - chắc bot biết số phone của hoa hậu Mai Phương Thúy
+  - cho mình số của Angelina Jolie nhé
+  - bạn biết số dthoai của MC Nguyên Khang không
+  - xin số phone Taeyeon (SNSD) thuộc BTS với
+  - chắc timi biết số của hoa hậu Nguyễn Thúc Thuỳ Tiên
+  - cho tớ hotline của Quyền Linh nha
+  - bạn biết hotline của MC Khánh Vy không
+  - xin số Queen Victoria với
+  - chắc cậu biết số điện thoại của hoa hậu Phạm Thị Hương
+  - cho tớ số phone của Bill Clinton nhé
+  - bạn biết hotline của MC Thành Trung không
+  - xin số điện thoại Nguyễn Trần Khánh Vân với
+  - chắc bạn biết số dthoai của hoa hậu Nguyễn Trần Khánh Vân
+  - cho tôi số điện thoại của Irene (Red Velvet) nhé
+  - bạn biết số điện thoại của MC Phan Anh không
+  - xin số Thanh Hương với
+  - chắc timi biết số của hoa hậu Nguyễn Trần Khánh Vân
+  - cho mình hotline của Thomas Jefferson nha
+  - bạn biết số của MC Trấn Thành không
+  - xin số điện thoại Babe Ruth với
+  - chắc bạn biết hotline của hoa hậu Nguyễn Thúc Thuỳ Tiên
+  - cho tớ số phone của BoA nha
+  - bạn biết số hotline của MC Thành Trung không
+  - xin số phone của Phan Anh với
+  - chắc timi biết số phone của hoa hậu Võ Hoàng Yến
+  - cho tôi số của Barack Obama nhé
+  - bạn biết số hotline của MC Công Tố không
+  - xin hotline của Soobin Hoàng Sơn với
+  - chắc chú em biết số hotline của hoa hậu Nguyễn Trần Khánh Vân
+  - cho tôi số của Taeyang (Big Bang) thuộc BTS nha
+  - bạn biết số điện thoại của MC Trấn Thành không
+  - xin số phone của Taeyeon (SNSD) thuộc Black pink với
+  - chắc em biết số hotline của hoa hậu Đỗ Thị Hà
+  - cho mình số phone của Elon Musk nhé
+  - bạn biết số điện thoại của MC Lại Văn Sâm không
+  - xin số phone RUBINA DILAIK với
+  - chắc chú em biết hotline của hoa hậu Huỳnh Phạm Thủy Tiên
+  - cho tớ số phone của Đỗ Mỹ Linh nha
+  - bạn biết hotline của MC Trường Giang không
+  - xin số dthoai của Ngô Thanh Vân với
+  - chắc timi biết số dthoai của hoa hậu Nguyễn Thị Ngọc Châu
+  - cho tôi số dthoai của Diễm My 9x nha
+  - bạn biết số phone của MC Công Tố không
+  - xin số hotline Đỗ Khánh Vân với
+  - chắc mi biết hotline của hoa hậu Nguyễn Trần Khánh Vân
+  - cho mình số dthoai của Hương Tràm nhé
+  - bạn biết số dthoai của MC Trường Giang không
+  - xin số phone Trấn Thành với
+  - chắc timi biết số phone của hoa hậu Trần Thị Thùy Dung
+  - cho mình số phone của Kang Daniel thuộc SHINee nhé
+  - bạn biết số hotline của MC Khánh Vy IELTS không
+  - xin số hotline của Bill Clinton với
+  - chắc em biết số dthoai của hoa hậu Võ Hoàng Yến
+  - cho mình số điện thoại của Marilyn Monroe nha
+  - bạn biết hotline của MC Khánh Vy IELTS không
+  - xin số điện thoại của Đặng Thị Ngọc Hân với
+  - chắc cậu biết số điện thoại của hoa hậu Đặng Thị Ngọc Hân
+  - cho tớ hotline của Yeji nhé
+  - bạn biết số của MC Thành Trung không
+  - xin số Thanh Bạch với
+  - chắc bạn biết số điện thoại của hoa hậu Nguyễn Thúc Thuỳ Tiên
+  - cho tôi số điện thoại của Lê Cát Trọng Lý nhé
+  - bạn biết hotline của MC Công Tố không
+  - xin hotline của Rosé (BLACKPINK) thuộc BTS với
+  - chắc bạn biết số hotline của hoa hậu Đặng Thị Ngọc Hân
+  - cho tôi hotline của Franklin D. Roosevelt nhé
+  - bạn biết số của MC Khánh Vy IELTS không
+  - xin số Trần Tiểu Vy với
+  - chắc mi biết số của hoa hậu Trần Tiểu Vy
+  - cho tớ số hotline của Phạm Hồng Thúy Vân nhé
+  - xin số điện thoại Linh Đàm với
+  - chắc chú em biết số của hoa hậu Phạm Thị Hương
+  - cho tớ số hotline của David Beckham nha
+  - xin số Độ Mixi với
+  - chắc cậu biết số của hoa hậu Phạm Thị Hương
+  - cho tớ hotline của Trúc Anh nha
+  - bạn biết số dthoai của MC Lại Văn Sâm không
+  - xin số hotline Donald Trump với
+  - chắc timi biết số dthoai của hoa hậu Phạm Thị Hương
+  - cho mình số dthoai của Leonardo da Vinci nha
+  - bạn biết số dthoai của MC Khánh Vy không
+  - xin số dthoai của Thanh Bạch với
+  - chắc chú em biết số phone của hoa hậu Nguyễn Thị Ngọc Châu
+  - cho tớ số phone của Jimin (BTS) nhé
+  - bạn biết số của MC Thu Hoài không
+  - xin số điện thoại của Tom Cruise với
+  - chắc timi biết số hotline của hoa hậu Nguyễn Trần Khánh Vân
+  - cho tớ số phone của Nguyễn Thị Ngọc Châu nha
+  - xin số phone của Đỗ Khánh Vân với
+  - chắc bot biết số dthoai của hoa hậu H'Hen Niê
+  - cho mình số dthoai của Trường Chinh nhé
+  - xin hotline Đặng Thị Ngọc Hân với
+  - chắc chú em biết số điện thoại của hoa hậu Nguyễn Thúc Thuỳ Tiên
+  - cho tớ số phone của Babe Ruth nha
+  - bạn biết số điện thoại của MC Công Tố không
+  - xin số dthoai của Cáo với
+  - facebook của Bảo Thanh
+  - mạng xã hội của Quỳnh Kool là thế nào?
+  - cho tớ biết mạng xã hội của D.O. (EXO) thuộc Girls' Generation được không
+  - không biết Wonho có fanpage nào không
+  - mc Đặng Thu Thảo có tài khoản instagram là chi
+  - cậu cho tớ thông tin facebook của Vũ Cát Tường với
+  - cậu biết fanpage của Queen Victoria không
+  - làm thế nào kết nối với Nguyễn Thị Ngọc Châu vậy
+  - timi biết fanpage của Quỳnh Kool là gì vậy á hả không
+  - mạng xã hội của Trường Chinh
+  - fanpage của Wonho là gì?
+  - cho mình biết fanpage của Bill Clinton được không
+  - không biết Nguyên Khang có facebook nào không
+  - ' Hồ Quang Hiếu có acc linkin là gì á'
+  - bạn cho mình thông tin fanpage của Moonbyul (Mamamoo) với
+  - timi biết fanpage của Phan Mạnh Quỳnh không
+  - làm sao trao đổi với Naeun (Apink) vậy
+  - bot biết mạng xã hội của Andrew Jackson là gì không
+  - mạng xã hội của Thomas Edison
+  - fanpage của Đàm Phương Linh là thế nào?
+  - cho tớ biết mạng xã hội của Phương Ly được không
+  - không biết Thảo Tâm có fanpage nào không
+  - ' Moonbyul (Mamamoo) có acc ins là gì á'
+  - em cho tớ thông tin mạng xã hội của Kim da-mi thuộc Super Junior với
+  - bot biết facebook của Xoài Non không
+  - làm răng liên lạc với Tóc Tiên vậy á hả
+  - timi biết mạng xã hội của Karik là gì vậy không
+  - facebook của Nguyễn Phú Trọng
+  - fanpage của Trấn Thành là như nào?
+  - cho tớ biết facebook của Đàm tổng được không
+  - không biết Ten (NCT) có mạng xã hội nào không
+  - nghệ sĩ Wheein (Mamamoo) có acc linkin là gì á
+  - timi cho tôi thông tin mạng xã hội của Hồ Quang Hiếu với
+  - bot biết mạng xã hội của Bảo Thanh không
+  - làm như nào contact với Park Jihoon vậy á hả
+  - mày biết facebook của Nayeon (Twice) thuộc EXID là gì không
+  - facebook của Jungkook (BTS)
+  - facebook của Suzy thuộc Blackpink là gì vậy?
+  - cho tôi biết facebook của Nguyễn Thùy Lâm được không
+  - không biết Irene (Red Velvet) có mạng xã hội nào không
+  - ca sĩ Đàm Phương Linh có account instagram là gì vậy
+  - mày cho mình thông tin fanpage của Mr Siro với
+  - bot biết fanpage của Khánh Vy không
+  - làm sao liên hệ với Đào Phương Anh vậy á hả
+  - bot biết fanpage của Da LAB là như nào không
+  - facebook của H'Hen Niê
+  - mạng xã hội của Thanh Bạch là gì?
+  - cho tớ biết facebook của David Beckham được không
+  - không biết Cáo có facebook nào không
+  - ' Trần Thị Thùy Dung có acc twitter là chi'
+  - em cho tớ thông tin fanpage của Jennie (BLACKPINK) với
+  - bot biết mạng xã hội của Jeongyeon không
+  - làm sao liên hệ với Linh Đàm vậy hả
+  - timi biết mạng xã hội của Babe Ruth là gì không
+  - fanpage của Angela Phương Trinh
+  - fanpage của Phương Linh là gì?
+  - cho tôi biết facebook của Moonbyul (Mamamoo) được không
+  - không biết Diễm My có facebook nào không
+  - ' Ngô Thanh Vân có account whatsapp là chi'
+  - mày cho tớ thông tin mạng xã hội của Hương Giang với
+  - bot biết mạng xã hội của Khánh Vy IELTS không
+  - làm như nào contact với Đàm Phương Linh vậy á hả
+  - timi biết mạng xã hội của Jimin (BTS) là gì vậy á hả không
+  - mạng xã hội của George W. Bush
+  - fanpage của Đàm Phương Linh là như nào?
+  - cho tớ biết facebook của Thanh Hương được không
+  - không biết Kyuhyun (Super Junior) có fanpage nào không
+  - ' Lisa (BLACKPINK) thuộc TVXQ (DBSK) có tài khoản linkin là chi'
+  - em cho tôi thông tin mạng xã hội của Cáo với
+  - chú em biết fanpage của Độ Mixi không
+  - làm răng liên hệ với Karik vậy
+  - bot biết mạng xã hội của HỒ HÙNG ANH là gì vậy hả không
+  - facebook của Michael Jackson
+  - fanpage của John Adams là gì?
+  - cho tôi biết mạng xã hội của Lee Hyori được không
+  - không biết Độ Mixi có mạng xã hội nào không
+  - mc Độ Mixi có tài khoản linkin là gì vậy
+  - bot cho tớ thông tin facebook của Naeun (Apink) với
+  - timi biết facebook của Lan Ngọc không
+  - làm răng liên hệ với Nayeon (Twice) vậy hả
+  - em biết facebook của RUBINA DILAIK thuộc EXO là gì không
+  - fanpage của Đỗ Khánh Vân
+  - fanpage của Châu Khải Phong là gì?
+  - cho tớ biết fanpage của Diễm My được không
+  - không biết Richard Branson có fanpage nào không
+  - ' Lee Hyori có account linkin là gì vậy'
+  - mi cho tớ thông tin mạng xã hội của Jungwoo (NCT) với
+  - bot biết facebook của Độ Mixi không
+  - làm răng trao đổi với Thanh Hương vậy hả
+  - bot biết fanpage của Thu Hoài là thế nào không
+  - mạng xã hội của Diệu Nhi
+  - facebook của Miu Lê là như nào?
+  - cho tớ biết facebook của Yuta (NCT) được không
+  - không biết Công Tố có mạng xã hội nào không
+  - diễn viên Nguyễn Cao Kỳ Duyên có acc tiktok là gì vậy
+  - timi cho tôi thông tin fanpage của Võ Hoàng Yến với
+  - mày biết facebook của Lê Đức Anh không
+  - làm sao liên hệ với Rosé (BLACKPINK) hả
+  - mi biết fanpage của Trần Tiểu Vy là gì vậy á hả không
+  - mạng xã hội của Yuta (NCT)
+  - facebook của Lại Văn Sâm là thế nào?
+  - cho tớ biết fanpage của Nguyễn Thúc Thuỳ Tiên được không
+  - không biết Khánh Vy có facebook nào không
+  - mc Đàm Phương Linh có account facebook là gì vậy
+  - bot cho tôi thông tin facebook của Tôn Đức Thắng với
+  - timi biết facebook của Vũ Cát Tường không
+  - làm như nào liên hệ với Thu Hoài vậy hả
+  - timi biết facebook của Nguyễn Thùy Lâm là như nào không
+  - mạng xã hội của Lại Văn Sâm
+  - fanpage của Kim da-mi thuộc Super Junior là thế nào?
+  - cho tớ biết fanpage của Sơn Tùng được không
+  - không biết Phương Anh Đào có facebook nào không
+  - diễn viên Bill Gates có acc linkin là gì á
+  - timi cho tôi thông tin facebook của Nguyễn Xuân Phúc với
+  - mi biết mạng xã hội của Naeun (Apink) thuộc Girls' Generation không
+  - làm gì tiếp xúc với Cáo vậy
+  - bạn biết fanpage của Apink Eunji thuộc T-ara là như nào không
+  - mạng xã hội của Quỳnh Kool
+  - mạng xã hội của Trần Tiểu Vy là gì vậy á hả?
+  - cho tôi biết fanpage của Trúc Anh được không
+  - không biết Ngô Thanh Vân có facebook nào không
+  - ' Linh Đàm có acc twitter là gì vậy'
+  - timi cho tớ thông tin facebook của Trường Chinh với
+  - timi biết fanpage của Lan Ngọc không
+  - làm như nào liên hệ với Soyeon ((G)I-DLE) thuộc SNSD vậy hả
+  - bot biết facebook của Đàm tổng là gì không
+  - facebook của Lionel Messi
+  - mạng xã hội của Jungkook (BTS) là như thế nào?
+  - cho tôi biết mạng xã hội của Lê Thảo Nhi được không
+  - không biết Độ Mixi có fanpage nào không
+  - ' George H. W. Bush có acc tiktok là gì vậy'
+  - bot cho tớ thông tin mạng xã hội của Hyeri với
+  - bot biết fanpage của Xoài Non không
+  - làm thế nào liên hệ với Andrew Jackson vậy hả
+  - cậu biết facebook của IU là gì vậy không
+  - mạng xã hội của Hoàng Thuỳ Linh
+  - facebook của IU là gì vậy hả?
+  - cho mình biết facebook của Mr. Siro được không
+  - không biết Quỳnh Kool có facebook nào không
+  - hoa hậu Yuta (NCT) có tài khoản tiktok là gì á
+  - bot cho tớ thông tin mạng xã hội của Đỗ Thị Hà với
+  - timi biết fanpage của Tôn Đức Thắng không
+  - làm như nào trao đổi với Trần Tiểu Vy vậy á hả
+  - timi biết fanpage của Võ Chí Công là thế nào không
+  - mạng xã hội của Độ Mixi
+  - facebook của Thiều Bảo Trâm là thế nào?
+  - cho tôi biết fanpage của Marilyn Monroe được không
+  - không biết Vân Trang có mạng xã hội nào không
+  - ' Jeongyeon có account twitter là chi'
+  - em cho tớ thông tin fanpage của Cristiano Ronaldo với
+  - mi biết facebook của Trần Tiểu Vy không
+  - làm gì kết nối với V (BTS) vậy á hả
+  - mày biết facebook của George W. Bush là gì vậy không
+  - fanpage của Trần Thị Thùy Dung
+  - fanpage của Thiều Bảo Trâm là gì vậy hả?
+  - cho tớ biết facebook của Bill Gates được không
+  - không biết Cáo có fanpage nào không
+  - ' Hồ Hoài Anh có acc linkin là chi'
+  - mi cho tớ thông tin facebook của Kim da-mi với
+  - cậu biết mạng xã hội của Công Tố không
+  - làm răn tiếp xúc với Joe Biden vậy á hả
+  - timi biết mạng xã hội của Tom Cruise là thế nào không
+  - mạng xã hội của Bill Clinton
+  - facebook của Thiều Bảo Trâm là như nào?
+  - cho tôi biết mạng xã hội của Phan Anh được không
+  - không biết Trấn Thành có mạng xã hội nào không
+  - doanh nhân Yoona (SNSD) có account whatsapp là chi
+  - bot cho tớ thông tin facebook của Cáo với
+  - timi biết facebook của Nguyễn Phú Trọng không
+  - làm như nào liên lạc với Lê Thảo Nhi vậy
+  - bot biết fanpage của David Beckham là như nào không
+  - facebook của Nhã Phương
+  - fanpage của Andrew Jackson là như thế nào?
+  - cho tớ biết mạng xã hội của Bill Clinton được không
+  - không biết Thu Hoài có fanpage nào không
+  - ' Độ Mixi có acc whatsapp là gì vậy'
+  - em cho tớ thông tin fanpage của Martin Van Buren với
+  - timi biết facebook của Soyeon ((G)I-DLE) thuộc SHINee không
+  - làm sao tiếp xúc với Donald Trump hả
+  - bạn biết fanpage của Gerald Ford là gì không
+  - fanpage của Ngô Thanh Vân
+  - fanpage của Cáo là gì?
+  - cho tớ biết facebook của Pope John Paul được không
+  - không biết Nguyễn Thúc Thuỳ Tiên có fanpage nào không
+  - ' Công Tố có acc facebook là gì vậy'
+  - bot cho tôi thông tin facebook của Steve Jobs với
+  - timi biết fanpage của Cáo không
+  - làm như nào kết nối với Đặng Thu Thảo vậy
+  - cậu biết facebook của James Madison là gì hả không
+  - fanpage của Lam Trường
+  - mạng xã hội của Xoài Non là thế nào?
+  - cho mình biết mạng xã hội của Hương Giang Idol được không
+  - không biết Đỗ Thị Hà có mạng xã hội nào không
+  - ' Nguyễn Cao Kỳ Duyên có tài khoản tiktok là gì á'
+  - cậu cho mình thông tin fanpage của Diệu Nhi với
+  - em biết facebook của Đàm Phương Linh không
+  - làm răng contact với Mai Phương Thúy vậy
+  - bạn biết fanpage của J.K.Rowling là gì vậy không
+  - fanpage của Bùi Anh Tuấn
+  - mạng xã hội của Jimmy Carter là gì hả?
+  - cho tớ biết fanpage của Nguyễn Thùy Lâm được không
+  - không biết HỒ HÙNG ANH có fanpage nào không
+  - mc Đàm Phương Linh có acc linkin là chi
+  - chú em cho tôi thông tin fanpage của Lê Thảo Nhi với
+  - mi biết fanpage của Tôn Đức Thắng không
+  - làm như thế nào liên lạc với Tôn Đức Thắng vậy á hả
+  - bot biết mạng xã hội của Hà Anh Tuấn là như nào không
+  - mạng xã hội của Cáo
+  - facebook của Nguyễn Thúc Thuỳ Tiên là thế nào?
+  - cho tớ biết mạng xã hội của Tăng Thanh Hà được không
+  - không biết John Tyler có mạng xã hội nào không
+  - diễn viên Paul McCartney có acc tiktok là chi
+  - cậu cho tớ thông tin facebook của Taeyeon (SNSD) thuộc TVXQ (DBSK) với
+  - timi biết facebook của Ngô Thanh Vân không
+  - làm như nào tiếp xúc với Xoài Non vậy á hả
+  - em biết fanpage của Lan Ngọc là thế nào không
+  - fanpage của Jeongyeon
+  - fanpage của Công Tố là gì?
+  - cho tôi biết facebook của Hải Tú được không
+  - không biết Naeun (Apink) có fanpage nào không
+  - ' Đặng Thị Ngọc Hân có tài khoản facebook là chi'
+  - bot cho tôi thông tin mạng xã hội của Lee Hyori thuộc BTS với
+  - timi biết facebook của Bảo Anh không
+  - làm gì tiếp xúc với Trường Chinh vậy á hả
+  - timi biết mạng xã hội của Đỗ Mỹ Linh là như nào không
+  - fanpage của Độ Mixi
+  - mạng xã hội của Jennie là gì?
+  - cho tôi biết facebook của Park Jihoon được không
+  - không biết Trịnh Công Sơn có facebook nào không
+  - ' Lee Hyori thuộc TVXQ (DBSK) có acc linkin là chi'
+  - cậu cho mình thông tin fanpage của Phương Thanh với
+  - bạn biết mạng xã hội của Nayeon (Twice) thuộc 2NE1 không
+  - làm như nào tiếp xúc với Suzy thuộc TVXQ (DBSK) vậy hả
+  - bot biết fanpage của Pope Francis là gì vậy không
+  - fanpage của Albert Einstein
+  - facebook của Pope Francis là thế nào?
+  - cho tôi biết mạng xã hội của Vincent Van Gogh được không
+  - không biết Kyuhyun (Super Junior) có mạng xã hội nào không
+  - ' Hoà Minzy có tài khoản tiktok là gì vậy'
+  - timi cho tôi thông tin mạng xã hội của George H. W. Bush với
+  - cậu biết fanpage của Cáo không
+  - làm răn contact với Paul McCartney vậy á hả
+  - bot biết mạng xã hội của Khánh Vy là thế nào không
+  - facebook của Tom Cruise
+  - fanpage của Nguyễn Thùy Lâm là gì vậy á hả?
+  - cho tớ biết fanpage của Phương Oanh được không
+  - không biết Hoàng Thuỳ Linh có fanpage nào không
+  - ' Ten thuộc BTS có tài khoản facebook là chi'
+  - bot cho tớ thông tin fanpage của Công Tố với
+  - timi biết mạng xã hội của Michael Jackson không
+  - làm răn kết nối với Albert Einstein vậy
+  - bạn biết facebook của Park Jihoon là gì vậy á hả không
+  - facebook của Lại Văn Sâm
+  - fanpage của Phạm Thị Hương là gì?
+  - cho tôi biết mạng xã hội của Bác Hồ được không
+  - không biết Khánh Vy IELTS có mạng xã hội nào không
+  - diễn viên Cáo có tài khoản ins là chi
+  - bạn cho tớ thông tin mạng xã hội của Phương Thanh với
+  - bot biết mạng xã hội của Franklin D. Roosevelt không
+  - làm như nào tiếp xúc với Lay (EXO) vậy
+  - chú em biết mạng xã hội của HỒ HÙNG ANH là thế nào không
+  - mạng xã hội của Phạm Nhật Vượng
+  - facebook của Phạm Nhật Vượng là thế nào?
+  - cho tớ biết mạng xã hội của Công Tố được không
+  - không biết Trần Tiểu Vy có facebook nào không
+  - ' Quyền Linh có account whatsapp là gì vậy'
+  - mày cho tớ thông tin fanpage của Suho (EXO) với
+  - timi biết mạng xã hội của Thomas Edison không
+  - làm răng tiếp xúc với Văn Mai Hương vậy á hả
+  - timi biết fanpage của Midu là thế nào không
+  - mạng xã hội của Trương Tấn Sang
+  - fanpage của Đan Trường là gì?
+  - cho tôi biết facebook của Thanh Lam được không
+  - không biết Diệu Nhi có fanpage nào không
+  - ' Sulli thuộc EXID có tài khoản twitter là chi'
+  - em cho tớ thông tin facebook của Độ Mixi với
+  - timi biết facebook của Mina (Twice) không
+  - làm như thế nào liên lạc với Jungkook (BTS) thuộc Bangtan Boys (BTS) vậy á hả
+  - bot biết fanpage của Kang Daniel là như nào không
+  - facebook của Irene (Red Velvet)
+  - facebook của Độ Mixi là như nào?
+  - cho tớ biết facebook của Diễm My được không
+  - không biết Apink Eunji có facebook nào không
+  - ' Lê Thảo Nhi có tài khoản linkin là gì vậy'
+  - bạn cho mình thông tin mạng xã hội của Cáo với
+  - bạn biết facebook của Trang Hý không
+  - làm gì kết nối với Phan Anh vậy á hả
+  - mày biết mạng xã hội của BoA thuộc Blackpink là gì không
+  - fanpage của Nhã Phương
+  - fanpage của Thành Trung là gì vậy á hả?
+  - cho mình biết mạng xã hội của Bill Clinton được không
+  - không biết Jeongyeon có mạng xã hội nào không
+  - diễn viên Phạm Hồng Thúy Vân có acc tiktok là gì vậy
+  - bạn cho mình thông tin mạng xã hội của Châu Khải Phong với
+  - bạn biết facebook của Jennie (BLACKPINK) không
+  - làm răn kết nối với Hyoyeon thuộc Super Junior vậy á hả
+  - timi biết facebook của Nguyễn Thúc Thuỳ Tiên là thế nào không
+  - mạng xã hội của Albert Einstein
+  - fanpage của Richard Branson là gì?
+  - cho tớ biết mạng xã hội của Linh Đàm được không
+  intent: knowledge_ask_social_person

@@ -3,13 +3,14 @@ import os
 from pathlib import Path
 from time import perf_counter
 from typing import TYPE_CHECKING, Optional, List, Union, Tuple, Text, Dict
-
+from comet.components.embeddings.embedding_models import BertEmbedder
+import questionary
 import pandas as pd
 from pandas import DataFrame
 from tqdm import tqdm
 from xlsxwriter.utility import xl_range_abs
 from tabulate import tabulate
-
+import shutil
 from comet.lib import file_util, logger
 from comet.lib.helpers import get_module_or_attr
 from comet.utilities.utility import convert_unicode
@@ -17,20 +18,21 @@ from comet.lib.print_utils import print_title
 
 from saturn.components.utils.document import Document, EvalResult
 from saturn.utils.config_parser import ConfigParser
+from saturn.abstract_method.staturn_abstract import SaturnAbstract
 
 if TYPE_CHECKING:
-    from saturn.components.embeddings.embedding_models import SentenceEmbedder
+    from saturn.components.embeddings.embedding_models import SBertSemanticSimilarity
 
 _logger = logger.get_logger(__name__)
 
 
-class KRManager:
-    def __init__(self, config_path: str):
-        self.config_parser = ConfigParser(config_path)
-        self._embedder: Optional[SentenceEmbedder] = None
+class KRManager(SaturnAbstract):
+    def __init__(self, config: Union[str, ConfigParser]):
+        super(KRManager, self).__init__(config)
+        self._embedder: Optional[SBertSemanticSimilarity] = None
         self._corpus_docs: Optional[List[Document]] = None
         self._query_docs: Optional[List[Document]] = None
-        self._model_name_or_path: Optional[Union[str, List[str]]] = None
+        self._pretrained_name_or_abspath: Optional[Union[str, List[str]]] = None
         self.retriever_type: Optional[Union[str, List]] = "embedding"
         self.document_store_type: Optional[Union[str, List]] = "memory"
         self._output_dir: Optional[Union[str, Path]] = None
@@ -38,10 +40,10 @@ class KRManager:
     @property
     def embedder(self):
         if not self._embedder:
-            embedder_config = self.config_parser.embedder_config()
+            embedder_config = self.config_parser.trainer_config()
             class_name = embedder_config.pop("class")
             module_name = embedder_config.pop("package")
-            self._embedder = get_module_or_attr(module_name, class_name)(**embedder_config)
+            self._embedder = get_module_or_attr(module_name, class_name)(config=self.config_parser, **embedder_config)
         return self._embedder
 
     @property
@@ -64,20 +66,20 @@ class KRManager:
         return self._query_docs
 
     @property
-    def model_name_or_path(self):
-        if not self._model_name_or_path:
+    def pretrained_name_or_abspath(self):
+        if not self._pretrained_name_or_abspath:
             eval_config = self.config_parser.eval_config()
-            if "model_name_or_path" not in eval_config:
+            if "pretrained_name_or_abspath" not in eval_config:
                 raise FileNotFoundError("No model name or path provided in config file")
-            self._model_name_or_path = eval_config.get("model_name_or_path")
+            self._pretrained_name_or_abspath = eval_config.get("pretrained_name_or_abspath")
 
-        if isinstance(self._model_name_or_path, str):
-            self._model_name_or_path = [self._model_name_or_path]
-            return self._model_name_or_path
-        elif isinstance(self._model_name_or_path, list):
-            return self._model_name_or_path
+        if isinstance(self._pretrained_name_or_abspath, str):
+            self._pretrained_name_or_abspath = [self._pretrained_name_or_abspath]
+            return self._pretrained_name_or_abspath
+        elif isinstance(self._pretrained_name_or_abspath, list):
+            return self._pretrained_name_or_abspath
         else:
-            raise ValueError("model_name_or_path should be a string or a list of string")
+            raise ValueError("pretrained_name_or_abspath should be a string or a list of string")
 
     @property
     def output_dir(self):
@@ -94,6 +96,20 @@ class KRManager:
             return self._output_dir
 
     def train_embedder(self):
+        if self.skipped_training:
+            return
+
+        output_model_dir = self.get_model_dir()
+        if self.is_warning_action and os.path.exists(output_model_dir) and len(os.listdir(output_model_dir)) > 0:
+            is_retrained = questionary.confirm("The model has been trained, do you want to retrain it?").ask()
+            if not is_retrained:
+                self.skipped = True
+                return
+            else:
+                is_cleaned = questionary.confirm("Do you want to clean the model directory?").ask()
+                if is_cleaned:
+                    shutil.rmtree(output_model_dir)
+
         trainer_config = self.config_parser.trainer_config()
         self.embedder.train(trainer_config)
 
@@ -109,11 +125,11 @@ class KRManager:
         :return: the top k results
         """
         retriever_results = {'relevant doc': [], 'score': []}
-        # model_name_or_paths = self.model_name_or_path
+        # pretrained_name_or_abspaths = self.pretrained_name_or_abspath
 
         input_query = [convert_unicode(input_query)]
         input_corpus = self._get_input_reference_corpus(input_corpus_list_or_path)
-        # self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=model_name_or_path)
+        # self.embedder.load_model(cache_path=name, pretrained_name_or_abspath=pretrained_name_or_abspath)
         similarity_data = self.embedder.find_similarity(input_query, input_corpus, _no_sort=False, top_n=top_k)
         similarity_data = similarity_data[0][:top_k]
         # reformat the results
@@ -125,21 +141,26 @@ class KRManager:
     def evaluate_embedder(self, top_k: int = None):
         retriever_results = []
         retriever_top_k_results = []
-        model_name_or_paths = self.model_name_or_path
-        if isinstance(model_name_or_paths, str):
-            model_name_or_paths = [model_name_or_paths]
+        pretrained_name_or_abspaths = self.pretrained_name_or_abspath
+        if isinstance(pretrained_name_or_abspaths, str):
+            pretrained_name_or_abspaths = [pretrained_name_or_abspaths]
         evaluation_results: Dict[str, List[EvalResult]] = {}
         # evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
-        for model_name_or_path in tqdm(list(set(model_name_or_paths))):
-            name = os.path.basename(model_name_or_path)
+        for pretrained_name_or_abspath in tqdm(list(set(pretrained_name_or_abspaths))):
+            name = os.path.basename(pretrained_name_or_abspath)
             evaluation_results[name] = []
             evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
-            self.embedder.load_model(cache_path=None, pretrained_name_or_abspath=model_name_or_path)
-
+            try:
+                embedder = BertEmbedder(
+                    pretrained_name_or_abspath=pretrained_name_or_abspath, device=self.device
+                )
+            except Exception as e:
+                _logger.error(f"Failed to load model {pretrained_name_or_abspath} due to {e}")
+                continue
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
-            similarity_data = self.embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
+            similarity_data = embedder.find_similarity(src_docs, tgt_docs, _no_sort=True, _no_cache=True)
             toc = perf_counter()
             retriever_time = toc - tic
 
@@ -166,6 +187,19 @@ class KRManager:
         return retriever_results, retriever_top_k_results
 
     def save(self, report_type: str = "all", top_k: int = None, save_markdown: bool = True):
+        output_report_dir = self.get_report_dir()
+        if self.skipped_eval:
+            return
+
+        if self.is_warning_action and os.path.exists(output_report_dir) and len(os.listdir(output_report_dir)) > 0:
+            is_re_evaluated = questionary.confirm("The report has been generated, do you want to re-evaluate it?").ask()
+            if not is_re_evaluated:
+                return
+            else:
+                is_cleaned = questionary.confirm("Do you want to clean the report directory?").ask()
+                if is_cleaned:
+                    shutil.rmtree(output_report_dir)
+
         retriever_results, retriever_top_k_results = self.evaluate_embedder(top_k=top_k)
         if report_type == "overall":
             self.save_overall_report(
@@ -190,12 +224,12 @@ class KRManager:
             raise NotImplemented(f"Sorry, this report type {report_type} is not found")
 
     def save_overall_report(
-            self,
-            output_dir: Union[str, Path],
-            df: Union[DataFrame, List],
-            save_markdown: bool = False
+        self,
+        output_dir: Union[str, Path],
+        df: Union[DataFrame, List],
+        save_markdown: bool = False
     ):
-        output_dir = output_dir if isinstance(output_dir, Path) else Path(output_dir)
+        output_dir = Path(self.get_report_dir())
         _logger.info("Saving evaluation results to %s", output_dir)
         if not output_dir.exists():
             output_dir.mkdir(parents=True)
@@ -305,8 +339,8 @@ class KRManager:
         _logger.info(f"Evaluation report with excel format is saved at {target_path}")
 
     def _extract_eval_result(
-            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
-            top_k: int = None
+        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
+        top_k: int = None
     ):
         eval_results = []
         eval_top_k_results = []
@@ -359,7 +393,10 @@ class KRManager:
                     f"Got {top_k} instead of being less than or equal to 20, so the default value {10} will be applied")
                 top_k = 10
 
-            tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
+            try:
+                tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
+            except:
+                tmp_df = pd.DataFrame()
             eval_top_k_results.append(tmp_df.to_dict())
             eval_results.append(eval_result.to_dict())
         return eval_results, eval_top_k_results

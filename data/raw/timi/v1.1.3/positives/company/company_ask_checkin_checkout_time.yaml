@@ -1,0 +1,353 @@
+positives:
+- examples:
+  - hôm kìa chấm công lúc nào thế
+  - mình đã chấm công chưa hè
+  - thứ tư, 19/1 mình chấm công mấy giờ đó
+  - ôi mình checkin rồi chứ nhỉ
+  - thứ hai 30/4 tớ có chấm công hông
+  - tớ đã checkin chưa bot nhỉ
+  - bot cho tớ biết thời gian checkin hum ni được khum
+  - mi check giúp tôi thời gian checkin với
+  - timi biết thời gian chấm công của toai hôm thứ 3 không
+  - ngày hôm nay tớ chấm công lúc mấy giờ vậy
+  - ngay hôm nay mình đã chấm công chưa bot nhỉ
+  - ngay tới checkin lúc nào thế
+  - mình đã checkout chưa hè
+  - thứ hai 25/12 mình checkin mấy giờ đó bạn
+  - ôi mình chấm công rồi chứ nhỉ
+  - thứ sáu 30-5 tớ có chấm công không
+  - tôi đã chấm công chưa bot nhỉ
+  - cậu cho mình biết thời gian checkin hum nay được khum
+  - bot check giúp tôi thời gian checkin với
+  - bot biết thời gian chấm công của mình hôm chủ nhật ko
+  - hum nay mình checkin lúc mấy giờ voại
+  - hôm ni tớ đã checkin chưa cậu nhỉ
+  - ngay kia chấm công lúc nào thế
+  - mình đã checkout chưa hả
+  - thứ năm, 31/07 tớ checkin mấy giờ đó
+  - thứ tư, 27/10 tớ có chấm công không
+  - tớ đã chấm công chưa mi nhỉ
+  - bot cho toai biết thời gian checkin hum nay được ko
+  - em check giúp tớ thời gian chấm công với
+  - cậu biết thời gian chấm công của toai hôm chủ nhật khum
+  - hôm ni tôi chấm công lúc mấy giờ voại
+  - ngay hôm nay toai đã checkin chưa timi nhỉ
+  - ngay tới chấm công lúc nào thế
+  - mình đã chấm công chưa hả
+  - thứ tư, ngày 30-6 tui chấm công mấy giờ đó
+  - thứ tư ngay 02-09 tớ có checkout hông
+  - tớ đã chấm công chưa timi nhỉ
+  - cậu cho tớ biết thời gian checkin hum nay được ko
+  - bot check giúp tớ thời gian chấm công với
+  - timi biết thời gian chấm công của tớ hôm thứ 6 ko
+  - ngày hôm nay tớ chấm công lúc mấy giờ voại
+  - hum ni toai đã checkin chưa m nhỉ
+  - ngay kia checkin lúc nào thế
+  - mình đã chấm công chưa hửm
+  - thứ tư, ngay 3-11 tớ checkin mấy giờ đó
+  - thứ hai 30/10 tớ có chấm công k
+  - mình đã checkin chưa bạn nhỉ
+  - chú em cho tớ biết thời gian chấm công hum nay được hông
+  - chú em check giúp tớ thời gian checkin với
+  - cậu biết thời gian chấm công của tôi hôm chủ nhật hông
+  - hum ni tui checkin lúc mấy giờ vậy
+  - hôm ni tôi đã checkin chưa bot nhỉ
+  - hôm qua chấm công lúc nào thế
+  - mình đã checkout chưa hửm
+  - thứ ba 30-01 toai checkin mấy giờ đó bot
+  - thứ ba, ngay 30-11 tớ có chấm công hông
+  - toai đã checkin chưa chú em nhỉ
+  - bot cho tớ biết thời gian checkin hum ni được hông
+  - bot check giúp tui thời gian chấm công với
+  - cậu biết thời gian chấm công của mình hôm thứ 4 k
+  - hum ni tôi checkout lúc mấy giờ voại
+  - ngay hôm nay tớ đã chấm công chưa bot nhỉ
+  - ngày kia chấm công lúc nào thế
+  - thứ năm ngày 30-10 mình chấm công mấy giờ đó bạn
+  - thứ tư, ngày 31/08 tớ có checkout khum
+  - toai đã checkin chưa bạn nhỉ
+  - m cho tớ biết thời gian checkin ngày hôm nay được ko
+  - cậu check giúp toai thời gian checkin với
+  - timi biết thời gian chấm công của tớ hôm thứ sáu khum
+  - hum nay tớ checkin lúc mấy giờ voại
+  - hum nay mình đã checkin chưa e nhỉ
+  - ngày tới chấm công lúc nào thế
+  - thứ ba, ngay 30/12 tớ chấm công mấy giờ đó
+  - thứ năm, ngày 26/10 mình có chấm công ko
+  - tớ đã checkin chưa timi nhỉ
+  - cậu cho mình biết thời gian chấm công hôm ni được k
+  - e check giúp tui thời gian chấm công với
+  - cậu biết thời gian chấm công của tớ hôm thứ 2 khum
+  - hum nay tớ chấm công lúc mấy giờ vậy
+  - hum nay tôi đã chấm công chưa timi nhỉ
+  - hôm kia chấm công lúc nào thế
+  - thứ hai ngày 31/01 tớ checkin mấy giờ đó
+  - thứ tư ngay 30-02 tôi có checkout ko
+  - toai đã chấm công chưa e nhỉ
+  - cậu cho tớ biết thời gian chấm công ngày hôm nay được khum
+  - bot check giúp mình thời gian checkin với
+  - chú em biết thời gian chấm công của tớ hôm chủ nhật ko
+  - hum nay tớ chấm công lúc mấy giờ voại
+  - hum nay tôi đã chấm công chưa cậu nhỉ
+  - hôm qua checkin lúc nào thế
+  - thứ ba, ngay 07-11 tớ checkin mấy giờ đó
+  - thứ ba 30-06 tui có chấm công ko
+  - mình đã checkin chưa cậu nhỉ
+  - timi cho tôi biết thời gian chấm công ngay hôm nay được k
+  - bot check giúp tớ thời gian checkin với
+  - bạn biết thời gian chấm công của tui hôm thứ ba khum
+  - hôm ni mình chấm công lúc mấy giờ voại
+  - hum ni tớ đã checkin chưa timi nhỉ
+  - hôm kia checkin lúc nào thế
+  - thứ bảy, 30-09 tui chấm công mấy giờ đó timi
+  - thứ năm 30-10 tôi có chấm công k
+  - tớ đã checkin chưa bạn nhỉ
+  - m cho tớ biết thời gian checkin hôm ni được k
+  - mày check giúp tui thời gian chấm công với
+  - timi biết thời gian checkout của tớ hôm thứ 6 khum
+  - hum nay tớ checkin lúc mấy giờ vậy
+  - hum ni mình đã checkin chưa bot nhỉ
+  - ngày kìa chấm công lúc nào thế
+  - thứ năm 30/4 tớ checkin mấy giờ đó bot
+  - thứ ba ngày 08-10 toai có chấm công ko
+  - tui đã chấm công chưa m nhỉ
+  - cậu cho tớ biết thời gian chấm công hum ni được khum
+  - timi check giúp tui thời gian chấm công với
+  - cậu biết thời gian checkin của tôi hôm chủ nhật không
+  - hôm nay tôi chấm công lúc mấy giờ voại
+  - hôm nay tớ đã checkin chưa bot nhỉ
+  - ngay mai chấm công lúc nào thế
+  - thứ tư, ngay 30-11 toai chấm công mấy giờ đó
+  - thứ ba 09/11 toai có checkout không
+  - tui đã chấm công chưa cậu nhỉ
+  - mi cho tớ biết thời gian checkin hum nay được k
+  - bạn check giúp tớ thời gian checkin với
+  - mi biết thời gian checkout của tớ hôm thứ 4 k
+  - hum ni tôi chấm công lúc mấy giờ vậy
+  - hum ni tớ đã chấm công chưa bot nhỉ
+  - ngày mai checkin lúc nào thế
+  - thứ năm, ngày 09-12 tui chấm công mấy giờ đó chú em
+  - thứ năm 29/1 mình có checkout hông
+  - tôi đã chấm công chưa timi nhỉ
+  - bạn cho tớ biết thời gian chấm công hum ni được ko
+  - bạn check giúp tớ thời gian chấm công với
+  - timi biết thời gian chấm công của tớ hôm thứ 3 hông
+  - hôm nay tớ chấm công lúc mấy giờ vậy
+  - hum ni toai đã checkin chưa bạn nhỉ
+  - ngày kìa checkin lúc nào thế
+  - thứ ba ngay 28/3 tui checkin mấy giờ đó
+  - thứ tư 31/8 tui có checkout hông
+  - mình đã chấm công chưa bạn nhỉ
+  - cậu cho tớ biết thời gian chấm công hum ni được không
+  - mầy check giúp tớ thời gian chấm công với
+  - bot biết thời gian chấm công của mình hôm chủ nhật khum
+  - hum nay tôi chấm công lúc mấy giờ voại
+  - hum ni tớ đã chấm công chưa cậu nhỉ
+  - ngay kìa checkin lúc nào thế
+  - thứ sáu, ngày 31/05 tớ checkin mấy giờ đó cậu
+  - thứ bảy, 30/07 tớ có chấm công k
+  - tớ đã checkin chưa cậu nhỉ
+  - timi cho tớ biết thời gian chấm công hôm ni được ko
+  - bot check giúp tui thời gian checkin với
+  - bạn biết thời gian chấm công của tớ hôm chủ nhật không
+  - hum nay mình chấm công lúc mấy giờ vậy
+  - ngày hôm nay tui đã checkin chưa bạn nhỉ
+  - hôm nay checkin lúc nào thế
+  - thứ hai, 30/04 tôi checkin mấy giờ đó bot
+  - thứ bảy, ngày 12-3 toai có checkout ko
+  - tớ đã chấm công chưa bot nhỉ
+  - bot cho tớ biết thời gian chấm công hum nay được khum
+  - chú em check giúp tôi thời gian chấm công với
+  - bot biết thời gian chấm công của toai hôm chủ nhật không
+  - hum nay toai checkin lúc mấy giờ voại
+  - ngày hôm nay tớ đã chấm công chưa chú em nhỉ
+  - ngày kia checkin lúc nào thế
+  - thứ tư 30/12 tớ checkin mấy giờ đó
+  - thứ năm 31-01 tôi có chấm công hông
+  - tôi đã checkin chưa bot nhỉ
+  - timi cho tớ biết thời gian chấm công hôm ni được khum
+  - bạn check giúp mình thời gian checkin với
+  - mầy biết thời gian chấm công của tớ hôm thứ sáu hông
+  - hôm nay toai chấm công lúc mấy giờ vậy
+  - hôm nay tui đã chấm công chưa bạn nhỉ
+  - hôm kìa checkin lúc nào thế
+  - thứ sáu 31/08 tớ chấm công mấy giờ đó
+  - thứ ba, 30-11 tớ có checkout khum
+  - toai đã chấm công chưa timi nhỉ
+  - bot cho tớ biết thời gian checkin hôm ni được k
+  - timi check giúp tôi thời gian checkin với
+  - timi biết thời gian checkout của tôi hôm thứ 3 hông
+  - hôm ni tôi checkin lúc mấy giờ voại
+  - hum ni tôi đã checkin chưa timi nhỉ
+  - ngay kìa chấm công lúc nào thế
+  - thứ tư 4/12 tớ checkin mấy giờ đó timi
+  - thứ ba 06/12 tớ có chấm công hông
+  - tớ đã chấm công chưa mày nhỉ
+  - timi cho tớ biết thời gian checkin hôm nay được khum
+  - e check giúp tôi thời gian chấm công với
+  - bot biết thời gian chấm công của mình hôm thứ 3 hông
+  - hôm nay tớ checkin lúc mấy giờ vậy
+  - hum ni mình đã checkin chưa bạn nhỉ
+  - hôm nay chấm công lúc nào thế
+  - thứ ba ngay 30/12 tớ chấm công mấy giờ đó mày
+  - thứ tư, 28/10 toai có checkout hông
+  - tớ đã checkin chưa mầy nhỉ
+  - m cho tôi biết thời gian checkin hôm ni được không
+  - bạn check giúp tui thời gian checkin với
+  - bạn biết thời gian checkout của tớ hôm chủ nhật ko
+  - hum nay mình checkout lúc mấy giờ voại
+  - hôm nay tôi đã checkin chưa bạn nhỉ
+  - ngày tới checkin lúc nào thế
+  - thứ bảy 30-12 tớ checkin mấy giờ đó
+  - thứ tư, 13-9 tớ có checkout k
+  - tui đã checkin chưa mầy nhỉ
+  - bot cho tôi biết thời gian chấm công ngay hôm nay được ko
+  - timi check giúp tớ thời gian chấm công với
+  - mày biết thời gian checkin của tớ hôm thứ 6 khum
+  - ngày hôm nay toai chấm công lúc mấy giờ voại
+  - hum ni tớ đã checkin chưa e nhỉ
+  - ngày mai chấm công lúc nào thế
+  - thứ bảy ngày 30-10 tớ chấm công mấy giờ đó
+  - thứ bảy ngay 31-8 tớ có chấm công k
+  - tui đã chấm công chưa timi nhỉ
+  - bot cho tớ biết thời gian chấm công hôm nay được hông
+  - timi check giúp tớ thời gian checkin với
+  - timi biết thời gian checkin của toai hôm thứ năm không
+  - hum nay tui chấm công lúc mấy giờ vậy
+  - hum ni tớ đã checkin chưa bot nhỉ
+  - ngay mai checkin lúc nào thế
+  - thứ ba 1/11 toai chấm công mấy giờ đó bot
+  - thứ tư ngày 30-5 tớ có chấm công hông
+  - toai đã chấm công chưa chú em nhỉ
+  - timi cho tôi biết thời gian checkin ngày hôm nay được không
+  - mầy check giúp tớ thời gian checkin với
+  - cậu biết thời gian checkin của tôi hôm chủ nhật khum
+  - hum nay tớ checkout lúc mấy giờ voại
+  - hôm ni mình đã chấm công chưa bạn nhỉ
+  - hôm trước chấm công lúc nào thế
+  - thứ bảy, ngay 31/3 toai checkin mấy giờ đó
+  - thứ hai, 03/12 tui có checkout hông
+  - tui đã chấm công chưa bạn nhỉ
+  - mi cho toai biết thời gian chấm công hum ni được ko
+  - mày check giúp toai thời gian chấm công với
+  - timi biết thời gian chấm công của toai hôm thứ 6 không
+  - hum ni tớ checkout lúc mấy giờ vậy
+  - hôm ni toai đã chấm công chưa bạn nhỉ
+  - thứ ba, 30/2 tớ chấm công mấy giờ đó em
+  - thứ tư, 03-10 tớ có checkout khum
+  - tớ đã chấm công chưa mầy nhỉ
+  - bạn cho tớ biết thời gian checkin ngay hôm nay được hông
+  - cậu check giúp tớ thời gian checkin với
+  - bot biết thời gian chấm công của tớ hôm chủ nhật ko
+  - hum ni tôi checkin lúc mấy giờ vậy
+  - ngay hôm nay tớ đã checkin chưa bot nhỉ
+  - hôm trước checkin lúc nào thế
+  - thứ sáu, 31-12 tớ checkin mấy giờ đó
+  - thứ bảy, 31/5 tớ có chấm công hông
+  - tớ đã chấm công chưa chú em nhỉ
+  - bạn cho tôi biết thời gian checkin hum ni được ko
+  - cậu check giúp tớ thời gian chấm công với
+  - bot biết thời gian chấm công của tớ hôm thứ tư ko
+  - hum ni tớ chấm công lúc mấy giờ voại
+  - hôm ni toai đã checkin chưa bot nhỉ
+  - thứ hai, ngay 30/2 mình chấm công mấy giờ đó
+  - thứ sáu, ngay 8-12 tui có chấm công khum
+  - tớ đã chấm công chưa m nhỉ
+  - timi cho tớ biết thời gian chấm công hôm nay được khum
+  - m check giúp tui thời gian checkin với
+  - timi biết thời gian checkout của mình hôm thứ hai khum
+  - hum nay mình chấm công lúc mấy giờ voại
+  - hôm ni tớ đã checkin chưa bot nhỉ
+  - thứ năm ngay 24-9 tôi checkin mấy giờ đó timi
+  - thứ bảy, 03/12 tui có checkout khum
+  - tớ đã chấm công chưa cậu nhỉ
+  - bot cho tớ biết thời gian checkin ngày hôm nay được không
+  - bạn check giúp toai thời gian checkin với
+  - e biết thời gian checkout của tớ hôm chủ nhật hông
+  - hum ni tôi chấm công lúc mấy giờ voại
+  - hôm nay tớ đã checkin chưa cậu nhỉ
+  - thứ năm 07-11 tui checkin mấy giờ đó timi
+  - thứ tư, ngay 12/1 toai có chấm công không
+  - tui đã checkin chưa m nhỉ
+  - timi cho tôi biết thời gian checkin hum nay được không
+  - m check giúp tớ thời gian checkin với
+  - mi biết thời gian checkout của tớ hôm thứ 2 hông
+  - hôm ni tớ chấm công lúc mấy giờ voại
+  - hum nay tui đã chấm công chưa timi nhỉ
+  - thứ năm, ngày 30-08 toai chấm công mấy giờ đó bạn
+  - thứ năm, 24-4 mình có chấm công không
+  - mình đã checkin chưa bot nhỉ
+  - bot cho tui biết thời gian chấm công hum nay được hông
+  - cậu check giúp tôi thời gian chấm công với
+  - bot biết thời gian checkout của tui hôm chủ nhật k
+  - ngày hôm nay tôi checkout lúc mấy giờ voại
+  - hum ni tui đã checkin chưa bot nhỉ
+  - thứ năm, 30/5 tôi chấm công mấy giờ đó timi
+  - thứ hai 30-11 mình có checkout hông
+  - toai đã chấm công chưa em nhỉ
+  - mầy cho tớ biết thời gian chấm công ngày hôm nay được k
+  - timi check giúp tui thời gian checkin với
+  - timi biết thời gian checkout của tôi hôm thứ 2 khum
+  - hôm nay tớ checkout lúc mấy giờ vậy
+  - hôm ni toai đã chấm công chưa timi nhỉ
+  - thứ sáu, ngày 06/10 tui checkin mấy giờ đó mày
+  - thứ hai, 31/12 tớ có checkout ko
+  - toai đã chấm công chưa bạn nhỉ
+  - bot cho mình biết thời gian chấm công hôm ni được k
+  - chú em check giúp toai thời gian chấm công với
+  - timi biết thời gian chấm công của toai hôm thứ 2 hông
+  - hôm nay tui checkin lúc mấy giờ vậy
+  - hum nay tớ đã checkin chưa timi nhỉ
+  - thứ tư, ngày 30/11 tớ chấm công mấy giờ đó
+  - thứ ba, ngay 30/12 tớ có chấm công hông
+  - tui đã chấm công chưa bot nhỉ
+  - bot cho tớ biết thời gian chấm công hôm nay được k
+  - timi check giúp toai thời gian checkin với
+  - timi biết thời gian checkin của tớ hôm chủ nhật khum
+  - ngay hôm nay tớ chấm công lúc mấy giờ voại
+  - ngày hôm nay mình đã checkin chưa chú em nhỉ
+  - thứ ba, 31-12 tớ checkin mấy giờ đó m
+  - thứ bảy, ngày 02/10 tôi có chấm công k
+  - toai đã checkin chưa cậu nhỉ
+  - bạn cho tớ biết thời gian chấm công hum nay được không
+  - mi check giúp mình thời gian chấm công với
+  - bạn biết thời gian checkout của mình hôm thứ 2 khum
+  - hum nay tôi checkin lúc mấy giờ vậy
+  - hum nay tớ đã checkin chưa chú em nhỉ
+  - thứ hai 30/6 tớ chấm công mấy giờ đó cậu
+  - thứ tư, ngay 30-1 tớ có checkout không
+  - mình đã checkin chưa mi nhỉ
+  - mi cho tớ biết thời gian checkin hôm ni được hông
+  - timi check giúp mình thời gian checkin với
+  - timi biết thời gian checkin của tớ hôm thứ 6 k
+  - hôm nay tôi checkout lúc mấy giờ voại
+  - hôm ni tớ đã chấm công chưa cậu nhỉ
+  - thứ ba 30/10 tui chấm công mấy giờ đó timi
+  - thứ hai, 30-11 toai có chấm công hông
+  - tớ đã checkin chưa mi nhỉ
+  - mi cho tớ biết thời gian checkin hum ni được ko
+  - mi check giúp mình thời gian checkin với
+  - bot biết thời gian chấm công của tôi hôm thứ ba hông
+  - ngay hôm nay tôi checkout lúc mấy giờ voại
+  - ngày hôm nay tôi đã checkin chưa timi nhỉ
+  - thứ năm 7/07 toai checkin mấy giờ đó
+  - thứ ba, ngày 01-1 tớ có chấm công ko
+  - mình đã checkin chưa timi nhỉ
+  - cậu cho toai biết thời gian chấm công ngay hôm nay được khum
+  - mày check giúp tôi thời gian checkin với
+  - bot biết thời gian chấm công của tớ hôm chủ nhật hông
+  - hum nay tớ checkout lúc mấy giờ vậy
+  - hum ni mình đã chấm công chưa timi nhỉ
+  - thứ sáu, 31/05 tớ chấm công mấy giờ đó timi
+  - thứ ba, 31-5 toai có chấm công ko
+  - toai đã checkin chưa timi nhỉ
+  - chú em cho tớ biết thời gian chấm công hum nay được không
+  - mày check giúp tớ thời gian checkin với
+  - timi biết thời gian chấm công của tớ hôm thứ bảy ko
+  - ngày hôm nay tôi chấm công lúc mấy giờ voại
+  - ngày hôm nay tôi đã chấm công chưa bot nhỉ
+  - thứ sáu ngay 30/10 tớ chấm công mấy giờ đó timi
+  - thứ tư, ngay 28-5 tui có chấm công ko
+  - tớ đã chấm công chưa e nhỉ
+  - bot cho tui biết thời gian chấm công ngay hôm nay được hông
+  intent: company_ask_checkin_checkout_time

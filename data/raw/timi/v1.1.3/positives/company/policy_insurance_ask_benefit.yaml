@@ -1,0 +1,308 @@
+positives:
+- examples:
+  - nghỉ theo chế độ BHXH là lương theo bảo hiểm hả
+  - BHYT nó trợ cấp những khoản nào
+  - lợi ích khi đóng BHTN là gì ạ
+  - mức bảo hiểm y tế của cty kinh đô mình được hưởng những gì
+  - đóng bảo hiểm xã hội ích lợi gì
+  - đóng bảo hiểm thất ngiệp thì được hưởng quyền lợi gì
+  - BHTN có nhiều phúc lợi ko
+  - khi đóng BHXH thì có những lợi ích gì ạ
+  - đóng BHXH được bao nhiêu phúc lợi
+  - điều kiện gì để được hưởng bảo hiểm
+  - cho mình xin thông tin phúc lọi bảo hiểm
+  - đóng bảo hiểm thì được quyền lợi gì
+  - quyền lợi BHTNLD có gì
+  - bảo hiểm xã hội là mình được hưởng gì
+  - đóng bảo hiểm xã hội thì có những ích lợi gì ạ
+  - có BHTNLD là được giảm tiền viện phí khi nằm viên đúng ko
+  - tớ muốn hỏi khi đóng bảo hiểm tai nạn lao động thì có những ích lợi gì ạ
+  - nghỉ theo chế độ bảo hiểm y tế là lương theo bảo hiểm hả
+  - bảo hiểm xã hội nó trợ cấp những khoản nào
+  - lợi ích khi đóng BHTNLD là gì ạ
+  - mức BHYT của công ty mình được hưởng những gì
+  - đóng BHXH hưởng ích lợi gì
+  - đóng bảo hiểm y tế thì được hưởng ích lợi gì
+  - bảo hiểm thất ngiệp có nhiều phúc lợi ko
+  - khi đóng bảo hiểm tai nạn lao động thì có những lợi ích gì ạ
+  - đóng bảo hiểm được bao nhiêu phúc lợi
+  - đóng bảo hiểm xã hội thì được quyền lợi gì
+  - quyền lợi BHYT có gì
+  - bảo hiểm y tế là mình được hưởng gì
+  - đóng bảo hiểm xã hội thì có những lợi ích gì ạ
+  - có bảo hiểm thất ngiệp là được giảm tiền viện phí khi nằm viên đúng ko
+  - cho mình hỏi khi đóng bảo hiểm thất ngiệp thì có những ích lợi gì ạ
+  - nghỉ theo chế độ bảo hiểm thất ngiệp là lương theo bảo hiểm hả
+  - bảo hiểm thất ngiệp nó trợ cấp những khoản nào
+  - ích lợi khi đóng bảo hiểm y tế là gì ạ
+  - mức BHYT của cty FLC mình được hưởng những gì
+  - đóng BHXH quyền lợi gì
+  - đóng bảo hiểm thất ngiệp thì được ích lợi gì
+  - bảo hiểm xã hội có nhiều phúc lợi ko
+  - khi đóng bảo hiểm xã hội thì có những lợi ích gì ạ
+  - đóng bảo hiểm xã hội được bao nhiêu phúc lợi
+  - đóng bảo hiểm thì được hưởng quyền lợi gì
+  - quyền lợi bảo hiểm thất ngiệp có gì
+  - BHTN là mình được hưởng gì
+  - đóng BHTNLD thì có những lợi ích gì ạ
+  - có BHXH là được giảm tiền viện phí khi nằm viên đúng ko
+  - tớ muốn hỏi khi đóng bảo hiểm y tế thì có những quyền lợi gì ạ
+  - nghỉ theo chế độ BHTN là lương theo bảo hiểm hả
+  - BHTN nó trợ cấp những khoản nào
+  - quyền lợi khi đóng BHTN là gì ạ
+  - mức BHTN của tập đoàn Tài chính-Bảo hiểm Bảo Việt mình được hưởng những gì
+  - đóng BHXH ích lợi gì
+  - đóng BHTNLD thì được hưởng ích lợi gì
+  - bảo hiểm tai nạn lao động có nhiều phúc lợi ko
+  - khi đóng bảo hiểm y tế thì có những quyền lợi gì ạ
+  - đóng BHXH thì được hưởng lợi ích gì
+  - quyền lợi BHXH có gì
+  - BHTNLD là mình được hưởng gì
+  - đóng BHYT thì có những quyền lợi gì ạ
+  - có BHYT là được giảm tiền viện phí khi nằm viên đúng ko
+  - tôi muốn hỏi khi đóng bảo hiểm thất ngiệp thì có những ích lợi gì ạ
+  - nghỉ theo chế độ bảo hiểm tai nạn lao động là lương theo bảo hiểm hả
+  - BHXH nó trợ cấp những khoản nào
+  - lợi ích khi đóng bảo hiểm thất ngiệp là gì ạ
+  - mức bảo hiểm thất ngiệp của tập đoàn Điện lực Việt Nam mình được hưởng những gì
+  - đóng BHXH lợi ích gì
+  - đóng BHTN thì được hưởng ích lợi gì
+  - BHXH có nhiều phúc lợi ko
+  - khi đóng bảo hiểm y tế thì có những ích lợi gì ạ
+  - đóng bảo hiểm thì được lợi ích gì
+  - quyền lợi bảo hiểm y tế có gì
+  - BHYT là mình được hưởng gì
+  - đóng bảo hiểm tai nạn lao động thì có những quyền lợi gì ạ
+  - có bảo hiểm xã hội là được giảm tiền viện phí khi nằm viên đúng ko
+  - cho tớ hỏi khi đóng bảo hiểm y tế thì có những lợi ích gì ạ
+  - nghỉ theo chế độ BHYT là lương theo bảo hiểm hả
+  - bảo hiểm tai nạn lao động nó trợ cấp những khoản nào
+  - quyền lợi khi đóng bảo hiểm tai nạn lao động là gì ạ
+  - mức BHYT của tập đoàn Điện lực Việt Nam mình được hưởng những gì
+  - đóng bảo hiểm xã hội hưởng quyền lợi gì
+  - đóng bảo hiểm xã hội thì được hưởng quyền lợi gì
+  - BHYT có nhiều phúc lợi ko
+  - khi đóng bảo hiểm xã hội thì có những ích lợi gì ạ
+  - đóng bảo hiểm xã hội thì được ích lợi gì
+  - quyền lợi BHTN có gì
+  - BHXH là mình được hưởng gì
+  - đóng BHTN thì có những lợi ích gì ạ
+  - có bảo hiểm y tế là được giảm tiền viện phí khi nằm viên đúng ko
+  - cho tớ hỏi khi đóng BHTN thì có những lợi ích gì ạ
+  - nghỉ theo chế độ bảo hiểm xã hội là lương theo bảo hiểm hả
+  - BHTNLD nó trợ cấp những khoản nào
+  - ích lợi khi đóng bảo hiểm tai nạn lao động là gì ạ
+  - mức bảo hiểm xã hội của công ty mình được hưởng những gì
+  - đóng BHXH hưởng quyền lợi gì
+  - đóng BHXH thì được ích lợi gì
+  - bảo hiểm y tế có nhiều phúc lợi ko
+  - khi đóng BHYT thì có những lợi ích gì ạ
+  - đóng BHXH thì được lợi ích gì
+  - quyền lợi bảo hiểm tai nạn lao động có gì
+  - bảo hiểm thất ngiệp là mình được hưởng gì
+  - đóng bảo hiểm tai nạn lao động thì có những ích lợi gì ạ
+  - có bảo hiểm tai nạn lao động là được giảm tiền viện phí khi nằm viên đúng ko
+  - tớ muốn hỏi khi đóng BHTN thì có những ích lợi gì ạ
+  - nghỉ theo chế độ BHTNLD là lương theo bảo hiểm hả
+  - bảo hiểm y tế nó trợ cấp những khoản nào
+  - quyền lợi khi đóng BHYT là gì ạ
+  - mức BHTN của công ty mình được hưởng những gì
+  - đóng bảo hiểm xã hội quyền lợi gì
+  - đóng bảo hiểm tai nạn lao động thì được hưởng quyền lợi gì
+  - BHTNLD có nhiều phúc lợi ko
+  - khi đóng bảo hiểm thất ngiệp thì có những quyền lợi gì ạ
+  - đóng bảo hiểm thì được hưởng lợi ích gì
+  - quyền lợi bảo hiểm xã hội có gì
+  - bảo hiểm tai nạn lao động là mình được hưởng gì
+  - đóng bảo hiểm thất ngiệp thì có những lợi ích gì ạ
+  - có BHTN là được giảm tiền viện phí khi nằm viên đúng ko
+  - cho tớ hỏi khi đóng bảo hiểm y tế thì có những quyền lợi gì ạ
+  - lợi ích khi đóng BHYT là gì ạ
+  - mức BHTNLD của cty VietJet AiR mình được hưởng những gì
+  - đóng bảo hiểm xã hội hưởng lợi ích gì
+  - đóng bảo hiểm tai nạn lao động thì được hưởng ích lợi gì
+  - khi đóng BHXH thì có những quyền lợi gì ạ
+  - đóng bảo hiểm thì được hưởng ích lợi gì
+  - đóng bảo hiểm y tế thì có những quyền lợi gì ạ
+  - mình muốn hỏi khi đóng bảo hiểm thất ngiệp thì có những quyền lợi gì ạ
+  - lợi ích khi đóng bảo hiểm xã hội là gì ạ
+  - mức bảo hiểm xã hội của cty VNG mình được hưởng những gì
+  - đóng BHXH hưởng lợi ích gì
+  - đóng BHXH thì được hưởng ích lợi gì
+  - khi đóng bảo hiểm thất ngiệp thì có những ích lợi gì ạ
+  - đóng bảo hiểm thì được ích lợi gì
+  - đóng BHXH thì có những quyền lợi gì ạ
+  - tớ muốn hỏi khi đóng BHTN thì có những quyền lợi gì ạ
+  - ích lợi khi đóng BHTNLD là gì ạ
+  - mức BHTN của công ty ftech mình được hưởng những gì
+  - đóng bảo hiểm xã hội hưởng ích lợi gì
+  - đóng bảo hiểm tai nạn lao động thì được hưởng lợi ích gì
+  - khi đóng BHTN thì có những ích lợi gì ạ
+  - đóng bảo hiểm xã hội thì được hưởng lợi ích gì
+  - đóng bảo hiểm xã hội thì có những quyền lợi gì ạ
+  - cho tớ hỏi khi đóng bảo hiểm tai nạn lao động thì có những quyền lợi gì ạ
+  - lợi ích khi đóng bảo hiểm tai nạn lao động là gì ạ
+  - mức bảo hiểm tai nạn lao động của công ty Vietsoftware mình được hưởng những gì
+  - đóng bảo hiểm xã hội lợi ích gì
+  - đóng bảo hiểm thất ngiệp thì được quyền lợi gì
+  - khi đóng BHTNLD thì có những quyền lợi gì ạ
+  - đóng bảo hiểm xã hội thì được lợi ích gì
+  - đóng BHTNLD thì có những ích lợi gì ạ
+  - tớ muốn hỏi khi đóng BHTN thì có những lợi ích gì ạ
+  - quyền lợi khi đóng bảo hiểm thất ngiệp là gì ạ
+  - mức bảo hiểm tai nạn lao động của công ty ftech mình được hưởng những gì
+  - đóng bảo hiểm tai nạn lao động thì được quyền lợi gì
+  - khi đóng bảo hiểm tai nạn lao động thì có những quyền lợi gì ạ
+  - đóng BHXH thì được quyền lợi gì
+  - đóng BHXH thì có những lợi ích gì ạ
+  - cho tôi hỏi khi đóng bảo hiểm xã hội thì có những lợi ích gì ạ
+  - ích lợi khi đóng bảo hiểm thất ngiệp là gì ạ
+  - mức BHTNLD của công ty mình được hưởng những gì
+  - đóng BHTNLD thì được quyền lợi gì
+  - khi đóng BHYT thì có những quyền lợi gì ạ
+  - đóng bảo hiểm xã hội thì được hưởng ích lợi gì
+  - đóng BHTNLD thì có những quyền lợi gì ạ
+  - tôi muốn hỏi khi đóng BHTN thì có những ích lợi gì ạ
+  - ích lợi khi đóng BHXH là gì ạ
+  - mức BHXH của công ty mình được hưởng những gì
+  - đóng bảo hiểm y tế thì được ích lợi gì
+  - khi đóng BHTNLD thì có những ích lợi gì ạ
+  - đóng BHTN thì có những ích lợi gì ạ
+  - tớ muốn hỏi khi đóng BHXH thì có những lợi ích gì ạ
+  - quyền lợi khi đóng BHTNLD là gì ạ
+  - mức BHXH của công ty hải hà mình được hưởng những gì
+  - đóng BHXH thì được hưởng quyền lợi gì
+  - khi đóng BHTN thì có những lợi ích gì ạ
+  - đóng BHXH thì có những ích lợi gì ạ
+  - cho mình hỏi khi đóng BHTNLD thì có những quyền lợi gì ạ
+  - quyền lợi khi đóng BHXH là gì ạ
+  - mức bảo hiểm tai nạn lao động của công ty mình được hưởng những gì
+  - đóng BHTNLD thì được hưởng quyền lợi gì
+  - khi đóng bảo hiểm tai nạn lao động thì có những ích lợi gì ạ
+  - đóng bảo hiểm thất ngiệp thì có những ích lợi gì ạ
+  - cho tớ hỏi khi đóng bảo hiểm xã hội thì có những ích lợi gì ạ
+  - ích lợi khi đóng bảo hiểm xã hội là gì ạ
+  - mức BHXH của tập đoàn Vingroup mình được hưởng những gì
+  - đóng bảo hiểm thất ngiệp thì được lợi ích gì
+  - khi đóng bảo hiểm xã hội thì có những quyền lợi gì ạ
+  - đóng bảo hiểm y tế thì có những lợi ích gì ạ
+  - cho tớ hỏi khi đóng bảo hiểm thất ngiệp thì có những quyền lợi gì ạ
+  - lợi ích khi đóng BHXH là gì ạ
+  - mức BHXH của công ty ftech mình được hưởng những gì
+  - đóng BHYT thì được ích lợi gì
+  - khi đóng bảo hiểm y tế thì có những lợi ích gì ạ
+  - đóng bảo hiểm y tế thì có những ích lợi gì ạ
+  - mình muốn hỏi khi đóng bảo hiểm tai nạn lao động thì có những lợi ích gì ạ
+  - lợi ích khi đóng bảo hiểm y tế là gì ạ
+  - mức bảo hiểm y tế của tập đoàn Hòa Phát mình được hưởng những gì
+  - đóng BHYT thì được quyền lợi gì
+  - khi đóng BHXH thì có những ích lợi gì ạ
+  - đóng BHYT thì có những lợi ích gì ạ
+  - tôi muốn hỏi khi đóng bảo hiểm y tế thì có những lợi ích gì ạ
+  - quyền lợi khi đóng bảo hiểm y tế là gì ạ
+  - mức bảo hiểm thất ngiệp của công ty f-tech mình được hưởng những gì
+  - đóng BHYT thì được lợi ích gì
+  - khi đóng bảo hiểm thất ngiệp thì có những lợi ích gì ạ
+  - đóng BHYT thì có những ích lợi gì ạ
+  - tôi muốn hỏi khi đóng bảo hiểm thất ngiệp thì có những lợi ích gì ạ
+  - mức bảo hiểm thất ngiệp của công ty f tech mình được hưởng những gì
+  - đóng bảo hiểm thất ngiệp thì được hưởng lợi ích gì
+  - khi đóng BHTN thì có những quyền lợi gì ạ
+  - đóng bảo hiểm thất ngiệp thì có những quyền lợi gì ạ
+  - tôi muốn hỏi khi đóng BHTNLD thì có những lợi ích gì ạ
+  - quyền lợi khi đóng bảo hiểm xã hội là gì ạ
+  - mức bảo hiểm y tế của công ty cổ phần chứng Khoán Biển Việt mình được hưởng những
+    gì
+  - đóng BHTNLD thì được hưởng lợi ích gì
+  - khi đóng BHTNLD thì có những lợi ích gì ạ
+  - đóng bảo hiểm tai nạn lao động thì có những lợi ích gì ạ
+  - tớ muốn hỏi khi đóng bảo hiểm tai nạn lao động thì có những quyền lợi gì ạ
+  - ích lợi khi đóng BHTN là gì ạ
+  - mức bảo hiểm y tế của công ty ftech mình được hưởng những gì
+  - đóng bảo hiểm y tế thì được hưởng quyền lợi gì
+  - đóng BHTN thì có những quyền lợi gì ạ
+  - cho tớ hỏi khi đóng bảo hiểm tai nạn lao động thì có những ích lợi gì ạ
+  - ích lợi khi đóng BHYT là gì ạ
+  - mức BHYT của tập đoàn Vingroup mình được hưởng những gì
+  - đóng BHTNLD thì được lợi ích gì
+  - khi đóng BHYT thì có những ích lợi gì ạ
+  - cho tớ hỏi khi đóng BHTN thì có những quyền lợi gì ạ
+  - mức BHTNLD của công ty ftech mình được hưởng những gì
+  - đóng BHTNLD thì được ích lợi gì
+  - cho tớ hỏi khi đóng BHTNLD thì có những quyền lợi gì ạ
+  - mức BHTNLD của công ty f tech mình được hưởng những gì
+  - đóng bảo hiểm tai nạn lao động thì được lợi ích gì
+  - mình muốn hỏi khi đóng bảo hiểm y tế thì có những lợi ích gì ạ
+  - mức bảo hiểm tai nạn lao động của công ty f-tech mình được hưởng những gì
+  - đóng bảo hiểm tai nạn lao động thì được ích lợi gì
+  - mình muốn hỏi khi đóng bảo hiểm thất ngiệp thì có những ích lợi gì ạ
+  - mức BHXH của công ty tinh vân mình được hưởng những gì
+  - đóng bảo hiểm thất ngiệp thì được hưởng ích lợi gì
+  - tôi muốn hỏi khi đóng BHYT thì có những ích lợi gì ạ
+  - mức BHTN của công ty minh long mình được hưởng những gì
+  - đóng BHTN thì được quyền lợi gì
+  - cho mình hỏi khi đóng bảo hiểm xã hội thì có những ích lợi gì ạ
+  - mức bảo hiểm y tế của công ty f tech mình được hưởng những gì
+  - đóng bảo hiểm y tế thì được hưởng lợi ích gì
+  - cho tôi hỏi khi đóng BHXH thì có những lợi ích gì ạ
+  - mức bảo hiểm thất ngiệp của công ty mình được hưởng những gì
+  - đóng BHTN thì được lợi ích gì
+  - mình muốn hỏi khi đóng bảo hiểm xã hội thì có những quyền lợi gì ạ
+  - mức BHTN của ngân hàng tpbank mình được hưởng những gì
+  - đóng bảo hiểm y tế thì được quyền lợi gì
+  - cho mình hỏi khi đóng bảo hiểm tai nạn lao động thì có những quyền lợi gì ạ
+  - mức bảo hiểm xã hội của công ty f tech mình được hưởng những gì
+  - đóng BHTN thì được hưởng quyền lợi gì
+  - tớ muốn hỏi khi đóng bảo hiểm xã hội thì có những lợi ích gì ạ
+  - mức BHTNLD của công ty tinh vân mình được hưởng những gì
+  - đóng BHYT thì được hưởng ích lợi gì
+  - cho tớ hỏi khi đóng bảo hiểm xã hội thì có những quyền lợi gì ạ
+  - mức BHTN của công ty f-tech mình được hưởng những gì
+  - đóng BHTN thì được hưởng lợi ích gì
+  - cho mình hỏi khi đóng BHYT thì có những lợi ích gì ạ
+  - mức bảo hiểm xã hội của công ty long thành mình được hưởng những gì
+  - đóng BHYT thì được hưởng lợi ích gì
+  - mình muốn hỏi khi đóng BHYT thì có những ích lợi gì ạ
+  - mức bảo hiểm xã hội của cty tcom mình được hưởng những gì
+  - đóng bảo hiểm y tế thì được lợi ích gì
+  - cho tớ hỏi khi đóng bảo hiểm xã hội thì có những lợi ích gì ạ
+  - mức bảo hiểm y tế của công ty mình được hưởng những gì
+  - cho tớ hỏi khi đóng bảo hiểm tai nạn lao động thì có những lợi ích gì ạ
+  - mức BHXH của cty kinh đô mình được hưởng những gì
+  - đóng BHYT thì được hưởng quyền lợi gì
+  - tớ muốn hỏi khi đóng bảo hiểm tai nạn lao động thì có những lợi ích gì ạ
+  - mức BHYT của công ty f-tech mình được hưởng những gì
+  - tớ muốn hỏi khi đóng BHXH thì có những quyền lợi gì ạ
+  - mức bảo hiểm xã hội của cty phương đông mình được hưởng những gì
+  - cho tớ hỏi khi đóng BHTNLD thì có những ích lợi gì ạ
+  - mức BHXH của tập đoàn Tài chính-Bảo hiểm Bảo Việt mình được hưởng những gì
+  - tớ muốn hỏi khi đóng bảo hiểm y tế thì có những lợi ích gì ạ
+  - mức bảo hiểm y tế của cty CỔ PHẦN PHẦN MỀM FPT SOFTWARE mình được hưởng những
+    gì
+  - tôi muốn hỏi khi đóng BHYT thì có những lợi ích gì ạ
+  - mức BHXH của cty vantix mình được hưởng những gì
+  - đóng BHTN thì được ích lợi gì
+  - tớ muốn hỏi khi đóng BHYT thì có những quyền lợi gì ạ
+  - mức bảo hiểm tai nạn lao động của cty Hãng hàng không Quốc gia Việt Nam mình được
+    hưởng những gì
+  - cho mình hỏi khi đóng BHYT thì có những ích lợi gì ạ
+  - mức BHTNLD của cty ftech mình được hưởng những gì
+  - tớ muốn hỏi khi đóng BHYT thì có những lợi ích gì ạ
+  - mức bảo hiểm y tế của cty Truyền thông đa phương tiện VTC mình được hưởng những
+    gì
+  - cho tôi hỏi khi đóng bảo hiểm y tế thì có những quyền lợi gì ạ
+  - mức bảo hiểm tai nạn lao động của công ty Đông Tây Promotion mình được hưởng những
+    gì
+  - cho mình hỏi khi đóng BHXH thì có những ích lợi gì ạ
+  - mức BHYT của cty aimesoft mình được hưởng những gì
+  - cho tớ hỏi khi đóng bảo hiểm y tế thì có những ích lợi gì ạ
+  - mức BHYT của cty cổ phần Kinh Đô mình được hưởng những gì
+  - cho tôi hỏi khi đóng BHTNLD thì có những ích lợi gì ạ
+  - mức bảo hiểm y tế của công ty f-tech mình được hưởng những gì
+  - cho tớ hỏi khi đóng BHXH thì có những quyền lợi gì ạ
+  - mức BHXH của ngân hàng techcombank mình được hưởng những gì
+  - tớ muốn hỏi khi đóng bảo hiểm y tế thì có những ích lợi gì ạ
+  - mức bảo hiểm tai nạn lao động của công ty f tech mình được hưởng những gì
+  - mình muốn hỏi khi đóng BHTNLD thì có những ích lợi gì ạ
+  - mức bảo hiểm xã hội của cty google mình được hưởng những gì
+  intent: policy_insurance_ask_benefit

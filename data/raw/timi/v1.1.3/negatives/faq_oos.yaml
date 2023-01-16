@@ -1,0 +1,1263 @@
+negatives:
+- examples:
+  - chiều nay về số gì
+  - cho hỏi xổ số miền bắc hôm nay về số gì
+  - cho tôi xin con số
+  - có bí quyết gì để giàu có không
+  - có bí quyết gì để nổi tiếng không
+  - có bí quyết gì để xinh đẹp không
+  - có bí quyết gì để đẹp trai không
+  - làm sao để trở nên giàu có
+  - làm sao để trở nên nổi tiếng
+  - làm sao để trở nên xinh đẹp
+  - làm sao để trở nên đẹp trai
+  - muốn giàu có thì làm thế nào
+  - muốn nổi tiếng thì làm thế nào
+  - muốn trở thành người nổi tiếng
+  - muốn trở thành tỉ phú
+  - muốn xinh đẹp thì làm thế nào
+  - muốn đi chơi
+  - muốn được nghỉ
+  - muốn đẹp trai thì làm thế nào
+  - mình muốn có công việc tốt
+  - mình muốn có nhiều tiền
+  - mình muốn có nhà lầu
+  - mình muốn có năng lực như doctor strange
+  - mình muốn có năng lực như superman
+  - mình muốn có siêu năng lực
+  - mình muốn có xe hơi
+  - mình muốn học AI
+  - mình muốn học công nghệ thông tin
+  - mình muốn học hát
+  - mình muốn học kinh tết
+  - mình muốn học lập trình
+  - mình muốn học lập trình web
+  - mình muốn học vẽ tranh
+  - mình muốn học đầu tư tài chính
+  - mình muốn làm game
+  - mình muốn mình có thể bay
+  - mình muốn mình có thể bay như chim
+  - mình muốn mình có thể chạy nhanh như oto
+  - mình muốn mình có thể nhớ mọi thứ
+  - mình muốn mình có thể tiêu tiền không hết
+  - mình muốn mình có thể tàn hình
+  - mình muốn mình có thể tàng hình
+  - mình muốn mình có thể ăn không béo
+  - mình muốn mình có thể ăn không chán
+  - mình muốn mình có thể đi xuyên tường
+  - mình muốn trở nên giàu có
+  - mình muốn trở nên xinh đẹp
+  - mình muốn trở nên đẹp trai
+  - mình muốn trở thành ca sĩ
+  - mình muốn trở thành công an
+  - mình muốn trở thành diễn viên
+  - mình muốn trở thành giám đốc
+  - mình muốn trở thành kỹ sư
+  - mình muốn trở thành kỹ sư AI
+  - mình muốn trở thành mc
+  - mình muốn trở thành người giàu nhất thế giới
+  - mình muốn trở thành người nổi tiếng
+  - mình muốn trở thành nhạc sĩ
+  - mình muốn trở thành rapper
+  - mình muốn trở thành streamer
+  - mình muốn trở thành triệu phú
+  - mình muốn trở thành tỉ phú
+  - mình muốn đi chơi
+  - mình muốn được nghỉ
+  - tui muốn có công việc tốt
+  - tui muốn có nhiều tiền
+  - tui muốn có nhà lầu
+  - tui muốn có năng lực như doctor strange
+  - tui muốn có năng lực như superman
+  - tui muốn có siêu năng lực
+  - tui muốn có xe hơi
+  - tui muốn học AI
+  - tui muốn học công nghệ thông tin
+  - tui muốn học hát
+  - tui muốn học kinh tết
+  - tui muốn học lập trình
+  - tui muốn học lập trình web
+  - tui muốn học vẽ tranh
+  - tui muốn học đầu tư tài chính
+  - tui muốn mình có thể bay
+  - tui muốn mình có thể bay như chim
+  - tui muốn mình có thể chạy nhanh như oto
+  - tui muốn mình có thể nhớ mọi thứ
+  - tui muốn mình có thể tiêu tiền không hết
+  - tui muốn mình có thể tàn hình
+  - tui muốn mình có thể tàng hình
+  - tui muốn mình có thể ăn không béo
+  - tui muốn mình có thể ăn không chán
+  - tui muốn mình có thể đi xuyên tường
+  - tui muốn trở nên giàu có
+  - tui muốn trở nên xinh đẹp
+  - tui muốn trở nên đẹp trai
+  - tui muốn trở thành ca sĩ
+  - tui muốn trở thành công an
+  - tui muốn trở thành diễn viên
+  - tui muốn trở thành giám đốc
+  - tui muốn trở thành kỹ sư
+  - tui muốn trở thành kỹ sư AI
+  - tui muốn trở thành mc
+  - tui muốn trở thành người giàu nhất thế giới
+  - tui muốn trở thành người nổi tiếng
+  - tui muốn trở thành nhạc sĩ
+  - tui muốn trở thành rapper
+  - tui muốn trở thành streamer
+  - tui muốn trở thành triệu phú
+  - tui muốn trở thành tỉ phú
+  - tui muốn đi chơi
+  - tui muốn được nghỉ
+  - tôi muốn có công việc tốt
+  - tôi muốn có nhiều tiền
+  - tôi muốn có nhà lầu
+  - tôi muốn có năng lực như doctor strange
+  - tôi muốn có năng lực như superman
+  - tôi muốn có siêu năng lực
+  - tôi muốn có xe hơi
+  - tôi muốn học AI
+  - tôi muốn học công nghệ thông tin
+  - tôi muốn học hát
+  - tôi muốn học kinh tết
+  - tôi muốn học lập trình
+  - tôi muốn học lập trình web
+  - tôi muốn học vẽ tranh
+  - tôi muốn học đầu tư tài chính
+  - tôi muốn mình có thể bay
+  - tôi muốn mình có thể bay như chim
+  - tôi muốn mình có thể chạy nhanh như oto
+  - tôi muốn mình có thể nhớ mọi thứ
+  - tôi muốn mình có thể tiêu tiền không hết
+  - tôi muốn mình có thể tàn hình
+  - tôi muốn mình có thể tàng hình
+  - tôi muốn mình có thể ăn không béo
+  - tôi muốn mình có thể ăn không chán
+  - tôi muốn mình có thể đi xuyên tường
+  - tôi muốn trở nên giàu có
+  - tôi muốn trở nên xinh đẹp
+  - tôi muốn trở nên đẹp trai
+  - tôi muốn trở thành ca sĩ
+  - tôi muốn trở thành công an
+  - tôi muốn trở thành diễn viên
+  - tôi muốn trở thành giám đốc
+  - tôi muốn trở thành kỹ sư
+  - tôi muốn trở thành kỹ sư AI
+  - tôi muốn trở thành mc
+  - tôi muốn trở thành người giàu nhất thế giới
+  - tôi muốn trở thành người nổi tiếng
+  - tôi muốn trở thành nhạc sĩ
+  - tôi muốn trở thành rapper
+  - tôi muốn trở thành streamer
+  - tôi muốn trở thành triệu phú
+  - tôi muốn trở thành tỉ phú
+  - tôi muốn đi chơi
+  - tôi muốn được nghỉ
+  - tớ muốn có công việc tốt
+  - tớ muốn có nhiều tiền
+  - tớ muốn có nhà lầu
+  - tớ muốn có năng lực như doctor strange
+  - tớ muốn có năng lực như superman
+  - tớ muốn có siêu năng lực
+  - tớ muốn có xe hơi
+  - tớ muốn học AI
+  - tớ muốn học công nghệ thông tin
+  - tớ muốn học hát
+  - tớ muốn học kinh tết
+  - tớ muốn học lập trình
+  - tớ muốn học lập trình web
+  - tớ muốn học vẽ tranh
+  - tớ muốn học đầu tư tài chính
+  - tớ muốn mình có thể bay
+  - tớ muốn mình có thể bay như chim
+  - tớ muốn mình có thể chạy nhanh như oto
+  - tớ muốn mình có thể nhớ mọi thứ
+  - tớ muốn mình có thể tiêu tiền không hết
+  - tớ muốn mình có thể tàn hình
+  - tớ muốn mình có thể tàng hình
+  - tớ muốn mình có thể ăn không béo
+  - tớ muốn mình có thể ăn không chán
+  - tớ muốn mình có thể đi xuyên tường
+  - tớ muốn trở nên giàu có
+  - tớ muốn trở nên xinh đẹp
+  - tớ muốn trở nên đẹp trai
+  - tớ muốn trở thành ca sĩ
+  - tớ muốn trở thành công an
+  - tớ muốn trở thành diễn viên
+  - tớ muốn trở thành giám đốc
+  - tớ muốn trở thành kỹ sư
+  - tớ muốn trở thành kỹ sư AI
+  - tớ muốn trở thành mc
+  - tớ muốn trở thành người giàu nhất thế giới
+  - tớ muốn trở thành người nổi tiếng
+  - tớ muốn trở thành nhạc sĩ
+  - tớ muốn trở thành rapper
+  - tớ muốn trở thành streamer
+  - tớ muốn trở thành triệu phú
+  - tớ muốn trở thành tỉ phú
+  - tớ muốn đi chơi
+  - tớ muốn được nghỉ
+  - có mấy phòng họp
+  - anh muốn xin cấp thiết bị làm việc thì xin ở đâu
+  - tớ muốn xin cấp thiết bị làm việc thì xin ở đâu
+  - chị muốn xin cấp thiết bị làm việc thì xin ở đâu
+  - phòng họp ở tầng nào
+  - phòng họp ở đâu
+  - mình muốn xin cấp thiết bị làm việc thì xin ở đâu
+  - dẫn mình đến phòng phòng applications
+  - giảm nhiệt độ điều hòa được không bạn
+  - dẫn mình đến phòng phòng hạ tầng
+  - bot biết pha cà phê thế nào không
+  - đường xuống tầng năm thế nào timi
+  - dẫn mình đến phòng phòng ban TT Ai
+  - dẫn mình đến phòng phòng kinh doanh
+  - dẫn mình đến phòng bộ phận kinh doanh
+  - tăng nhiệt độ điều hòa được không cậu
+  - tăng nhiệt độ điều hòa được không e
+  - dẫn mình đến phòng phòng ban chăm sóc khách hàng
+  - dẫn mình đến phòng phòng ban platform
+  - dẫn mình đến phòng phòng Trung tâm AI
+  - đường xuống tầng năm thế nào m
+  - bot có đi được không
+  - dẫn mình đến phòng phòng ban it support
+  - Bạn có thể vui lòng gửi cho tôi một uber được không
+  - b có đi được không
+  - dẫn mình đến phòng team hr admin
+  - dẫn mình đến phòng bộ phận AI
+  - dẫn mình đến phòng bộ phận tài chính
+  - dẫn mình đến phòng phòng business
+  - timi nhắc chấm công trước khi về cũng được đấy
+  - tăng nhiệt độ điều hòa được không bạn
+  - dẫn mình đến phòng phòng TT Ai
+  - lấy cho chị cái quạt
+  - dẫn mình đến phòng bộ phận sản phẩm
+  - tắt điều hòa giúp tôi
+  - dẫn mình đến phòng phòng ban Marketing
+  - dẫn mình đến phòng bộ phận chăm sóc khách hàng
+  - dẫn mình đến phòng phòng ban application
+  - dẫn mình đến phòng phòng sản phẩm
+  - dẫn mình đến phòng bộ phận hạ tầng
+  - timi nhắc tui chấm công trước khi về cũng được đấy
+  - dẫn mình đến phòng bộ phận TT Ai
+  - dẫn mình đến phòng phòng nghiên cứu
+  - giảm nhiệt độ điều hòa được không em
+  - dẫn mình đến phòng team vệ sinh
+  - dẫn mình đến phòng phòng hệ thống cơ sở hạ tầng
+  - đi theo mình được không
+  - dẫn mình đến phòng phòng ban lễ tân
+  - tăng nhiệt độ điều hòa được không b
+  - mở của giúp tớ với
+  - c có đi được không
+  - dẫn mình đến phòng phòng ban kinh doanh
+  - dẫn mình đến phòng team nhân sự
+  - lấy cho chị con dao
+  - dẫn mình đến phòng phòng ban nhân sự
+  - dẫn mình đến phòng phòng ban thu mua
+  - dẫn mình đến phòng bộ phận applications
+  - lấy cho mình con dao
+  - dẫn mình đến phòng phòng kiểm toán
+  - dẫn mình đến phòng phòng vệ sinh
+  - điều chỉnh nhiệt độ điều hòa được không mày
+  - dẫn mình đến phòng phòng AI
+  - dẫn mình đến phòng bộ phận hệ thống system
+  - dẫn mình đến phòng phòng it support
+  - lấy cho chị cái kéo
+  - dẫn mình đến phòng phòng ban game và design
+  - mời tôi bữa trưa
+  - dẫn mình đến phòng bộ phận application
+  - dẫn mình đến phòng bộ phận game
+  - điều chỉnh nhiệt độ điều hòa được không cậu
+  - Bạn có thể làm bánh mì sandwich không?
+  - dẫn mình đến phòng bộ phận thu mua
+  - timi nhắc mình chấm công trước khi về cũng được đấy
+  - lấy cho anh con dao
+  - có thể giảm nhiệt độ điều hòa không
+  - tăng nhiệt độ điều hòa được không bot
+  - tăng nhiệt độ điều hòa được không m
+  - dẫn mình đến phòng phòng bảo vệ
+  - dẫn mình đến phòng bộ phận lễ tân
+  - dẫn mình đến phòng bộ phận platforms
+  - dẫn mình đến phòng phòng ban tài chính
+  - dẫn mình đến phòng bộ phận hành chính nhân sự
+  - dẫn mình đến phòng phòng AI center
+  - điều chỉnh nhiệt độ điều hòa được không chú em
+  - dẫn mình đến phòng bộ phận kiểm toán
+  - mở của giúp mình với
+  - Tôi có thể lấy một cái bánh hamburger không?
+  - dẫn mình đến phòng phòng ban Trung tâm AI
+  - dẫn mình đến phòng phòng lễ tân
+  - dẫn mình đến phòng phòng application
+  - điều chỉnh nhiệt độ điều hòa được không m
+  - dẫn mình đến phòng team công đoàn
+  - dẫn mình đến phòng team tài chính
+  - dẫn mình đến phòng team bảo trì
+  - giảm nhiệt độ điều hòa được không cậu
+  - dẫn mình đến phòng phòng ban AI center
+  - mở của giúp anh với
+  - cậu có đi được không
+  - dẫn mình đến phòng phòng nhân sự
+  - đường xuống tầng năm thế nào e
+  - e có đi được không
+  - lấy cho anh cái quạt
+  - dẫn mình đến phòng phòng ban hệ thống cơ sở hạ tầng
+  - dẫn mình đến phòng team Trung tâm AI
+  - tăng nhiệt độ điều hòa được không timi
+  - dẫn mình đến phòng phòng ban platforms
+  - m có đi được không
+  - dẫn mình đến phòng bộ phận Trung tâm AI
+  - dẫn mình đến phòng team product
+  - đường xuống tầng năm thế nào c
+  - giảm nhiệt độ điều hòa được không bot
+  - dẫn mình đến phòng phòng platforms
+  - dẫn mình đến phòng bộ phận nghiên cứu
+  - dẫn mình đến phòng phòng ban kế toán
+  - dẫn mình đến phòng team bảo vệ
+  - lấy cho tớ cái kéo
+  - dẫn mình đến phòng phòng hành chính nhân sự
+  - dẫn mình đến phòng phòng ban công đoàn
+  - dẫn mình đến phòng team sản phẩm
+  - timi nhắc tôi chấm công trước khi về cũng được đấy
+  - giảm nhiệt độ điều hòa được không e
+  - dẫn mình đến phòng phòng ban hr admin
+  - dẫn mình đến phòng phòng ban hành chính nhân sự
+  - dẫn mình đến phòng team kinh doanh
+  - dẫn mình đến phòng team hệ thống system
+  - dẫn mình đến phòng team kế toán
+  - tăng nhiệt độ điều hòa được không c
+  - lấy cho tớ cái quạt
+  - dẫn mình đến phòng phòng kế toán
+  - đi theo tớ được không
+  - dẫn mình đến phòng team hành chính nhân sự
+  - dẫn mình đến phòng phòng ban vệ sinh
+  - dẫn mình đến phòng phòng chăm sóc khách hàng
+  - điều chỉnh nhiệt độ điều hòa được không mi
+  - dẫn mình đến phòng team applications
+  - dẫn mình đến phòng team game
+  - điều chỉnh nhiệt độ điều hòa được không bot
+  - dẫn mình đến phòng bộ phận kế toán
+  - dẫn mình đến phòng bộ phận trung tâm ai
+  - dẫn mình đến phòng team thu mua
+  - giảm nhiệt độ điều hòa được không timi
+  - dẫn mình đến phòng bộ phận AI center
+  - dẫn mình đến phòng bộ phận bảo trì
+  - dẫn mình đến phòng phòng ban nghiên cứu
+  - lấy cho anh cái kéo
+  - dẫn mình đến phòng phòng hệ thống system
+  - lấy cho tớ con dao
+  - điều chỉnh nhiệt độ điều hòa được không b
+  - mi có đi được không
+  - dẫn mình đến phòng phòng ban sản phẩm
+  - dẫn mình đến phòng team kiểm toán
+  - dẫn mình đến phòng team chăm sóc khách hàng
+  - dẫn mình đến phòng team platforms
+  - em có đi được không
+  - mở của giúp chị với
+  - dẫn mình đến phòng phòng platform
+  - dẫn mình đến phòng team lễ tân
+  - Sắp tới công ty có những hoạt động nào timi có biết không?
+  - dẫn mình đến phòng bộ phận product
+  - giảm nhiệt độ điều hòa được không mày
+  - dẫn mình đến phòng team game và design
+  - dẫn mình đến phòng phòng Marketing
+  - dẫn mình đến phòng phòng hr admin
+  - dẫn mình đến phòng team AI center
+  - đường xuống tầng năm thế nào bot
+  - dẫn mình đến phòng team platform
+  - dẫn mình đến phòng phòng ban hệ thống system
+  - đường xuống tầng năm thế nào mi
+  - tắt điều hòa giúp tui
+  - dẫn mình đến phòng team it support
+  - dẫn mình đến phòng phòng ban product
+  - dẫn mình đến phòng bộ phận nhân sự
+  - đi theo anh được không
+  - dẫn mình đến phòng bộ phận platform
+  - timi nhắc nhở chấm công trước khi về cũng được đấy
+  - điều chỉnh nhiệt độ điều hòa được không timi
+  - dẫn mình đến phòng bộ phận it support
+  - dẫn mình đến phòng bộ phận vệ sinh
+  - điều chỉnh nhiệt độ điều hòa được không em
+  - dẫn mình đến phòng phòng ban business
+  - đường xuống tầng năm thế nào chú em
+  - dẫn mình đến phòng phòng trung tâm ai
+  - dẫn mình đến phòng team hệ thống cơ sở hạ tầng
+  - tăng nhiệt độ điều hòa được không em
+  - dẫn mình đến phòng bộ phận hệ thống cơ sở hạ tầng
+  - dẫn mình đến phòng phòng thu mua
+  - dẫn mình đến phòng phòng tài chính
+  - dẫn mình đến phòng phòng ban AI
+  - lấy cho mình cái quạt
+  - dẫn mình đến phòng bộ phận hr admin
+  - giảm nhiệt độ điều hòa được không c
+  - tắt điều hòa giúp mình
+  - tăng nhiệt độ điều hòa được không mi
+  - giảm nhiệt độ điều hòa được không mi
+  - dẫn mình đến phòng phòng ban applications
+  - lấy cho mình cái kéo
+  - dẫn mình đến phòng team Marketing
+  - timi có đi được không
+  - dẫn mình đến phòng team hỗ trợ it
+  - tăng nhiệt độ điều hòa được không mày
+  - đường xuống tầng năm thế nào b
+  - đường xuống tầng năm thế nào cậu
+  - dẫn mình đến phòng team TT Ai
+  - dẫn mình đến phòng bộ phận Marketing
+  - chú em có đi được không
+  - Bạn có thể gọi lại cho tôi được không ?
+  - dẫn mình đến phòng phòng ban kiểm toán
+  - có mình bao nhiêu cân không
+  - biết tui đang ở đâu không
+  - có biết tui làm nghề gì không
+  - có tôi cao bao nhiêu không
+  - tôi có phải là nhân viên công ty hay không
+  - biết tôi ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - có tớ ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - có biết tôi ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - có tớ cao bao nhiêu không
+  - tớ có phải là nhân viên công ty hay không
+  - biết tui ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - biết tôi làm nghề gì không
+  - biết tớ cao bao nhiêu không
+  - có tôi bao nhiêu cân không
+  - có biết tớ bao nhiêu cân không
+  - có mình ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - có tôi ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - có biết tớ ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - có tớ đang ở đâu không
+  - có biết mình cao bao nhiêu không
+  - có tôi ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - biết mình làm nghề gì không
+  - có biết mình đang ở đâu không
+  - có tui ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - có biết tôi làm nghề gì không
+  - có mình ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - có biết tui ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - biết tôi ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - có tôi làm nghề gì không
+  - có biết tôi cao bao nhiêu không
+  - có tớ ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - có biết tớ ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - có biết mình ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - biết tớ làm nghề gì không
+  - có tôi ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - có biết tui bao nhiêu cân không
+  - biết tớ đang ở đâu không
+  - biết mình ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - biết tui ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - fwork của mình là gì ?
+  - biết mình ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - biết tui ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - có biết tui cao bao nhiêu không
+  - có tớ ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - có tui ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - có mình ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - biết tớ ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - có biết tôi ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - có mình làm nghề gì không
+  - có tui làm nghề gì không
+  - biết tôi ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - có biết tôi bao nhiêu cân không
+  - biết tớ bao nhiêu cân không
+  - biết mình ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - có biết tớ ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - có tui bao nhiêu cân không
+  - có tôi ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - có biết mình bao nhiêu cân không
+  - biết tui bao nhiêu cân không
+  - biết tớ ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - có biết tớ đang ở đâu không
+  - mình có phải là nhân viên công ty hay không
+  - biết mình bao nhiêu cân không
+  - có tớ ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - có mình cao bao nhiêu không
+  - biết tui cao bao nhiêu không
+  - có biết tớ ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - có biết tôi ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - biết tôi bao nhiêu cân không
+  - có tui ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - biết tui làm nghề gì không
+  - có tui ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - có biết tui ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - biết tớ ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - có biết mình làm nghề gì không
+  - biết tớ ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - biết mình cao bao nhiêu không
+  - có biết mình ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - có mình đang ở đâu không
+  - biết tôi đang ở đâu không
+  - biết tôi cao bao nhiêu không
+  - có biết tui ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - có tui đang ở đâu không
+  - có biết tớ làm nghề gì không
+  - biết mình ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - có mình ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - có biết tôi ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - biết mình đang ở đâu không
+  - có biết tôi đang ở đâu không
+  - có biết mình ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - biết tôi ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - biết tui ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - có biết mình ngồi ở vị trí nào mình ngồi ở vị trí nào
+  - có biết tui đang ở đâu không
+  - có biết tớ cao bao nhiêu không
+  - tui có phải là nhân viên công ty hay không
+  - có biết tui ngồi ở vị trí nào tui ngồi ở vị trí nào
+  - có tớ làm nghề gì không
+  - có tui cao bao nhiêu không
+  - có tớ bao nhiêu cân không
+  - có tôi đang ở đâu không
+  - mày biết hát không
+  - mi thường làm gì trong giờ làm việc
+  - c có biết search google không ?
+  - bot hỏi nhảy tik tok không?
+  - cậu có não không
+  - c có bao tử không
+  - c biết hát không
+  - timi code được không
+  - m code được không
+  - timi hỏi hát không
+  - bot có biết search google không ?
+  - bạn biết nhảy tik tok không?
+  - bạn có não không
+  - bot hỏi hát không
+  - cậu hỏi hát không
+  - chú em biết nhảy tik tok không?
+  - chú em có bao tử không
+  - timi có bao tử không
+  - mi biết hát không
+  - bot code được không
+  - e thường làm gì trong giờ làm việc
+  - b code được không
+  - cậu chạy bằng cơm à
+  - b hỏi nhảy tik tok không?
+  - b có não không
+  - em chạy bằng cơm à
+  - cậu biết nhảy tik tok không?
+  - cậu biết hát không
+  - bạn hỏi nhảy tik tok không?
+  - timi chạy bằng cơm à
+  - timi hỏi nhảy tik tok không?
+  - bot có não không
+  - bạn chạy bằng cơm à
+  - em có biết search google không ?
+  - m có biết search google không ?
+  - timi thường làm gì trong giờ làm việc
+  - e biết hát không
+  - b biết nhảy tik tok không?
+  - e có bao tử không
+  - e hỏi hát không
+  - em có não không
+  - chú em có biết search google không ?
+  - em hỏi hát không
+  - chú em thường làm gì trong giờ làm việc
+  - c hỏi hát không
+  - mi biết nhảy tik tok không?
+  - mi có não không
+  - b chạy bằng cơm à
+  - mi hỏi nhảy tik tok không?
+  - bạn hỏi hát không
+  - mày biết nhảy tik tok không?
+  - timi có biết search google không ?
+  - mày có bao tử không
+  - em có bao tử không
+  - m có bao tử không
+  - bot thường làm gì trong giờ làm việc
+  - chú em hỏi nhảy tik tok không?
+  - e hỏi nhảy tik tok không?
+  - e có não không
+  - m hỏi nhảy tik tok không?
+  - chú em biết hát không
+  - m biết hát không
+  - mày có biết search google không ?
+  - cậu có hỏi search google không ?
+  - em biết hát không
+  - b có biết search google không ?
+  - b biết hát không
+  - e code được không
+  - b có bao tử không
+  - cậu code được không
+  - em thường làm gì trong giờ làm việc
+  - e có hỏi search google không ?
+  - e biết nhảy tik tok không?
+  - b có hỏi search google không ?
+  - bạn có biết search google không ?
+  - bạn code được không
+  - bạn có bao tử không
+  - b thường làm gì trong giờ làm việc
+  - bạn có hỏi search google không ?
+  - chú em có não không
+  - m hỏi hát không
+  - e chạy bằng cơm à
+  - mày hỏi hát không
+  - mi chạy bằng cơm à
+  - c code được không
+  - mi hỏi hát không
+  - chú em chạy bằng cơm à
+  - m thường làm gì trong giờ làm việc
+  - bot chạy bằng cơm à
+  - m có não không
+  - mày thường làm gì trong giờ làm việc
+  - m biết nhảy tik tok không?
+  - m chạy bằng cơm à
+  - mi code được không
+  - mày có não không
+  - timi biết hát không
+  - em code được không
+  - c chạy bằng cơm à
+  - mi có bao tử không
+  - em có hỏi search google không ?
+  - timi có hỏi search google không ?
+  - b hỏi hát không
+  - m có hỏi search google không ?
+  - c có hỏi search google không ?
+  - chú em hỏi hát không
+  - chú em có hỏi search google không ?
+  - bot biết hát không
+  - c có não không
+  - bot biết nhảy tik tok không?
+  - bạn biết hát không
+  - mi có hỏi search google không ?
+  - c thường làm gì trong giờ làm việc
+  - mày code được không
+  - cậu có bao tử không
+  - chú em code được không
+  - c biết nhảy tik tok không?
+  - cậu có biết search google không ?
+  - c hỏi nhảy tik tok không?
+  - e có biết search google không ?
+  - bot có bao tử không
+  - mày chạy bằng cơm à
+  - timi biết nhảy tik tok không?
+  - cậu hỏi nhảy tik tok không?
+  - timi có não không
+  - mày có hỏi search google không ?
+  - mi có biết search google không ?
+  - mày hỏi nhảy tik tok không?
+  - em hỏi nhảy tik tok không?
+  - bot có hỏi search google không ?
+  - em biết nhảy tik tok không?
+  - cậu thường làm gì trong giờ làm việc
+  - bạn thường làm gì trong giờ làm việc
+  - team bộ phận kinh doanh có bao nhiêu fresher
+  - bộ phận nào ít người nhất ftech vậy
+  - ' số lượng số lượng junior tại chi nhánh hà nội là bao nhiêu người'
+  - số lượng số lượng fresher tại trụ sở thủ đức là bao nhiêu
+  - có bao nhiêu cv trong công ty
+  - công ty bot có nhiều nhân viên nữ không
+  - thế số lượng fulltime trong công ty là bao nhiêu
+  - cơ sở hà nội có mấy ai engineer
+  - số lượng blockchain thuộc phòng ban team game là bao nhiêu
+  - số lượng backend dev thuộc phòng ban phòng ban platforms tại trụ sở nam trung
+    bộ là mấy
+  - công ty có nhiều nữ không
+  - business support china có bao nhiêu người vậy hả
+  - số lượng người làm ai là mấy
+  - ' số lượng java develop là bao nhiêu'
+  - thế ftech có bao nhiêu thực tập sinh
+  - ở cơ sở hà nội công ty có mấy fulltime
+  - hiện công ty có bao nhiêu intern
+  - AI center có bao nhiêu thử việc
+  - phòng nào ít người nhất ftech hả
+  - hiện số lượng số lượng fulltime tại văn phòng đà nẵng là bao nhiêu người
+  - số lượng số lượng fulltime tại cơ sở hà nội là bao nhiêu
+  - có bao nhiêu fulltime trong công ty
+  - công ty b có nhiều thành viên nữ không
+  - thế số lượng intern trong công ty là bao nhiêu
+  - văn phòng hà nội có mấy ai
+  - số lượng database engineer thuộc bộ phận bộ phận business là bao nhiêu vậy hả
+  - số lượng product analysts thuộc AI center tại chi nhánh đà nẵng là bao nhiêu
+  - senior có bao nhiêu người
+  - số lượng người làm product analyst là bao nhiêu
+  - hiện số lượng business analyst là bao nhiêu
+  - ' ftech có bao nhiêu pre-senior'
+  - ở văn phòng hồ chí minh có mấy cv engineer
+  - hiện tại công ty có bao nhiêu fresher
+  - phòng ban phòng ban game và design có bao nhiêu công tác diên
+  - bộ phận nào đông người nhất ftech
+  - ' số lượng số lượng junior tại văn phòng hồ chí minh là bao nhiêu người'
+  - số lượng số lượng junior tại trụ sở tây nguyên là mấy
+  - có bao nhiêu business support china trong công ty
+  - công ty bạn có nhiều nhận sự nữ không
+  - ' số lượng fulltime trong công ty là bao nhiêu'
+  - chi nhánh đà nẵng có mấy ai engineering
+  - số lượng fresher thuộc team phòng game là bao nhiêu vậy hả
+  - số lượng nhân viên soạn ndung giáo dục thuộc team bộ phận game và design tại trụ
+    sở Việt Nam là bao nhiêu
+  - game 2d product có bao nhiêu người
+  - số lượng người làm backend dev là bao nhiêu
+  - ' số lượng android develop là mấy'
+  - thế ftech có bao nhiêu business support china
+  - ở trụ sở hà nội có bao nhiêu pre-senior
+  - hiện tại công ty có bao nhiêu junior
+  - TT Ai có bao nhiêu thử việc
+  - phòng nào đông người nhất ftech vậy
+  - ' số lượng số lượng senior tại cơ sở hà nội là bao nhiêu người'
+  - số lượng số lượng fulltime tại trụ sở Lào là mấy
+  - có bao nhiêu golang developer trong công ty
+  - công ty bạn có nhiều nhân viên nữ không
+  - ' số lượng senior trong công ty là bao nhiêu'
+  - trụ sở bà rịa - vũng tàu có bao nhiêu ai research
+  - số lượng fulltime thuộc AI là bao nhiêu hả
+  - số lượng cầu thủ đá banh thuộc TT Ai tại cơ sở sài gòn là mấy
+  - 3d product có bao nhiêu người
+  - số lượng người làm business analyst là mấy
+  - hiện số lượng nhân viên soạn ndung giáo dục là bao nhiêu
+  - thế ftech có bao nhiêu thử việc
+  - tại hội an có bao nhiêu junior
+  - hiện tại công ty có bao nhiêu thử việc
+  - phòng bộ phận bảo vệ có bao nhiêu internship
+  - phòng nào đông người nhất ftech
+  - hiện nay số lượng số lượng fulltime tại chi nhánh Việt Nam là bao nhiêu người
+  - số lượng số lượng fulltime tại trụ sở hà nội là bao nhiêu
+  - có bao nhiêu game 2d trong công ty
+  - công ty bạn có nhiều thành viên nữ không
+  - ' số lượng thử việc trong công ty là bao nhiêu'
+  - trụ sở đà nẵng có mấy ai engineering
+  - số lượng product analysts thuộc AI là bao nhiêu vậy
+  - số lượng golang dev thuộc team bộ phận nhân sự tại văn phòng vịnh hạ long là mấy
+  - hành chính nhân sự có bao nhiêu người vậy hả
+  - số lượng người làm game 2d developer là mấy
+  - ' số lượng product owner là bao nhiêu'
+  - ' ftech có bao nhiêu system administrator'
+  - tại Thổ Nhĩ Kỳ có mấy nlp engineer
+  - ' công ty có bao nhiêu fullstack'
+  - AI có bao nhiêu junior
+  - bộ phận nào đông người nhất ftech vậy hả
+  - hiện tại số lượng số lượng junior tại trụ sở hà nội là bao nhiêu người
+  - số lượng số lượng fulltime tại trụ sở miền nam là mấy
+  - có bao nhiêu .net developer trong công ty
+  - công ty m có nhiều thành viên nữ không
+  - thế số lượng senior trong công ty là bao nhiêu
+  - trụ sở vịnh hạ long có mấy ai engineer
+  - số lượng data engineer thuộc AI là bao nhiêu
+  - số lượng .net developer thuộc team team applications tại trụ sở sài gòn là bao
+    nhiêu
+  - game 3d artist có bao nhiêu người hả
+  - số lượng người làm iso dev là bao nhiêu
+  - hiện nay số lượng nlp engineering là bao nhiêu
+  - ' ftech có bao nhiêu react native developer'
+  - ở văn phòng long an công ty có bao nhiêu odoo engineer
+  - hiện công ty có bao nhiêu backend dev
+  - team phòng ban nhân sự có bao nhiêu fulltime
+  - phòng nào ít người nhất ftech vậy hả
+  - ' số lượng số lượng cộng tác viên tại trụ sở long an là bao nhiêu người'
+  - số lượng số lượng junior tại văn phòng hồ chí minh là mấy
+  - có bao nhiêu pre-senior trong công ty
+  - công ty mày có nhiều nhân viên nữ không
+  - thế số lượng soạn nội dung giáo dục trong công ty là bao nhiêu
+  - chi nhánh Việt Nam có bao nhiêu ai research
+  - số lượng người dẫn chương trình thuộc trung tâm ai là bao nhiêu
+  - số lượng 2d art thuộc AI center tại cơ sở đà nẵng là bao nhiêu
+  - nlp có bao nhiêu người
+  - số lượng người làm iso developer là mấy
+  - ' số lượng QA Tester là mấy'
+  - thế ftech có bao nhiêu pre-senior
+  - tại sài gòn có mấy product analysts
+  - ' công ty có bao nhiêu fresher'
+  - TT Ai có bao nhiêu junior
+  - phòng nào ít người nhất ftech
+  - hiện nay số lượng số lượng thử việc tại trụ sở Việt Nam là bao nhiêu người
+  - số lượng số lượng sinh viên thực tập tại văn phòng hồ chí minh là mấy
+  - có bao nhiêu pentest trong công ty
+  - công ty m có nhiều nhận sự nữ không
+  - ' số lượng junior trong công ty là bao nhiêu'
+  - chi nhánh miền bắc có bao nhiêu ai engineering
+  - số lượng tay vợt chuyền thuộc team team kinh doanh là bao nhiêu
+  - số lượng C# develop thuộc phòng team AI tại trụ sở lạng sơn là mấy
+  - junior có bao nhiêu người hả
+  - số lượng người làm data analyst là mấy
+  - hiện số lượng 3d product là bao nhiêu
+  - ' ftech có bao nhiêu game 3d product'
+  - ở văn phòng đồng bằng sông cưu long công ty có mấy java
+  - ' công ty có bao nhiêu sinh viên thực tập'
+  - phòng bộ phận hành chính nhân sự có bao nhiêu junior
+  - phòng nào đông người nhất ftech hả
+  - ' số lượng số lượng thử việc tại chi nhánh bắc ninh là bao nhiêu người'
+  - số lượng số lượng pre-senior tại văn phòng sài gòn là bao nhiêu
+  - có bao nhiêu junior trong công ty
+  - công ty bot có nhiều nhận sự nữ không
+  - thế số lượng thực tập sinh trong công ty là bao nhiêu
+  - văn phòng vịnh hạ long có bao nhiêu ai research
+  - số lượng thử việc thuộc phòng ban phòng ban sản phẩm là bao nhiêu
+  - số lượng hr thuộc phòng ban phòng ban game tại văn phòng hà nội là bao nhiêu
+  - junior có bao nhiêu người
+  - số lượng người làm graphic design là bao nhiêu
+  - ' số lượng fullstack dev là bao nhiêu'
+  - ' ftech có bao nhiêu lập trình viên android'
+  - tại chi nhánh bắc ninh công ty có bao nhiêu fresher
+  - hiện tại công ty có bao nhiêu nlp engineer
+  - phòng phòng platform có bao nhiêu cộng tác viên
+  - bộ phận nào đông người nhất ftech hả
+  - hiện tại số lượng số lượng thử việc tại chi nhánh côn đảo là bao nhiêu người
+  - số lượng số lượng fresher tại văn phòng củ chi là bao nhiêu
+  - có bao nhiêu thử việc trong công ty
+  - công ty bot có nhiều thành viên nữ không
+  - thế số lượng thử việc trong công ty là bao nhiêu
+  - văn phòng miền trung có bao nhiêu ai engineer
+  - số lượng công tác diên thuộc trung tâm ai là bao nhiêu hả
+  - số lượng fullstack developer thuộc TT Ai tại văn phòng sapa là mấy
+  - công tác diên có bao nhiêu người
+  - số lượng người làm graphic design là mấy
+  - hiện tại số lượng development and operations là bao nhiêu
+  - ' ftech có bao nhiêu fresher'
+  - ở đà nẵng công ty có mấy fulltime
+  - hiện nay công ty có bao nhiêu fulltime
+  - Trung tâm AI có bao nhiêu junior
+  - bộ phận nào ít người nhất ftech
+  - ' số lượng số lượng fresher tại trụ sở ninh thuận là bao nhiêu người'
+  - số lượng số lượng cộng tác viên tại chi nhánh thái nguyên là mấy
+  - có bao nhiêu thiết kế nội dung giáo dục trong công ty
+  - công ty timi có nhiều thành viên nữ không
+  - thế số lượng VFX Animator trong công ty là bao nhiêu
+  - văn phòng hà nội có bao nhiêu ai engineering
+  - số lượng thử việc thuộc AI là bao nhiêu
+  - số lượng cv thuộc TT Ai tại cơ sở Hàn là bao nhiêu
+  - back end dev có bao nhiêu người
+  - số lượng người làm golang dev là mấy
+  - hiện nay số lượng graphic design là bao nhiêu
+  - ' ftech có bao nhiêu system network'
+  - ở trụ sở đà nẵng có mấy VFX Animator
+  - hiện nay công ty có bao nhiêu fresher
+  - trung tâm ai có bao nhiêu pre-senior
+  - phòng nào đông người nhất ftech vậy hả
+  - hiện nay số lượng số lượng senior tại cơ sở Tác bản giốc là bao nhiêu người
+  - số lượng số lượng fresher tại cơ sở đà lạt là mấy
+  - có bao nhiêu android trong công ty
+  - công ty mi có nhiều nhận sự nữ không
+  - thế số lượng junior trong công ty là bao nhiêu
+  - chi nhánh hà nội có bao nhiêu ai engineer
+  - số lượng junior thuộc AI center là bao nhiêu
+  - số lượng java developer thuộc TT Ai tại trụ sở hà nội là mấy
+  - cầu thủ có bao nhiêu người
+  - số lượng người làm hr là bao nhiêu
+  - hiện tại số lượng data analyst là bao nhiêu
+  - ' ftech có bao nhiêu fulltime'
+  - tại Tam đảo công ty có bao nhiêu cộng tác viên
+  - ' công ty có bao nhiêu cv'
+  - TT Ai có bao nhiêu fresher
+  - bộ phận nào đông người nhất ftech vậy
+  - ' số lượng số lượng pre-senior tại trụ sở tây nam bộ là bao nhiêu người'
+  - số lượng số lượng sinh viên thực tập tại trụ sở đà nẵng là mấy
+  - có bao nhiêu data engineer trong công ty
+  - công ty c có nhiều thành viên nữ không
+  - ' số lượng .net develop trong công ty là bao nhiêu'
+  intent: faq_oos
+- examples:
+  - công ty có đóng thuế không
+  - nhân viên phải đóng thuế thế nào
+  - level công tác diên có mấy bậc
+  - bạn biết nhân viên phải đóng thuế như thế nào không
+  - mi biết nhân viên phải đóng thuế thế nào không
+  - m biết nhân viên phải đóng thuế thế nào không
+  - bot có biết nhân viên phải đóng thuế như nào không
+  - mình muốn nói chuyện khác trước khi hỏi về công ty được không?
+  - chú em có biết nhân viên phải đóng thuế như thế nào không
+  - nhân viên có phải nộp thuế không
+  - cậu biết nhân viên phải đóng thuế thế nào không
+  - timi biết nhân viên phải đóng thuế như thế nào không
+  - bậc công tác diên có mấy bậc
+  - bạn có biết nhân viên phải đóng thuế như nào không
+  - bậc intern có mấy bậc
+  - mày có biết nhân viên phải đóng thuế thế nào không
+  - timi biết nhân viên phải đóng thuế thế nào không
+  - có phải nộp thuế lao động không
+  - e có biết nhân viên phải đóng thuế thế nào không
+  - e biết nhân viên phải đóng thuế như thế nào không
+  - ồ mình là người quen của bot nè
+  - bạn biết nhân viên phải đóng thuế như nào không
+  - bot biết nhân viên phải đóng thuế thế nào không
+  - b biết nhân viên phải đóng thuế như thế nào không
+  - level thực tập sinh có mấy bậc
+  - bot biết nhân viên phải đóng thuế như nào không
+  - em biết nhân viên phải đóng thuế thế nào không
+  - mày biết nhân viên phải đóng thuế như thế nào không
+  - cậu có biết nhân viên phải đóng thuế thế nào không
+  - m có biết nhân viên phải đóng thuế thế nào không
+  - c biết nhân viên phải đóng thuế như thế nào không
+  - m biết nhân viên phải đóng thuế như nào không
+  - bậc senior có mấy bậc
+  - tớ nghỉ việc được không
+  - bậc fresher có mấy bậc
+  - chưa upate quy định rồi
+  - bạn biết nhân viên phải đóng thuế thế nào không
+  - bậc junior có mấy bậc
+  - quy định đóng thuế của công ty thế nào
+  - m có biết nhân viên phải đóng thuế như nào không
+  - e biết nhân viên phải đóng thuế như nào không
+  - m biết nhân viên phải đóng thuế như thế nào không
+  - bot biết nhân viên phải đóng thuế như thế nào không
+  - cậu có biết nhân viên phải đóng thuế như nào không
+  - nhân viên phải đóng thuế như thế nào
+  - em có biết nhân viên phải đóng thuế thế nào không
+  - Làm như nào để quên hết được mọi người trong công ty
+  - em biết nhân viên phải đóng thuế như nào không
+  - level internship có mấy bậc
+  - công ty có nhiều tiền không
+  - mày có biết nhân viên phải đóng thuế như thế nào không
+  - mi có biết nhân viên phải đóng thuế như thế nào không
+  - m có biết nhân viên phải đóng thuế như thế nào không
+  - e có biết nhân viên phải đóng thuế như nào không
+  - b có biết nhân viên phải đóng thuế thế nào không
+  - mi có biết nhân viên phải đóng thuế thế nào không
+  - cậu có biết nhân viên phải đóng thuế như thế nào không
+  - bậc pre-senior có mấy bậc
+  - timi có biết nhân viên phải đóng thuế thế nào không
+  - nhân viên công ty có phải đóng thuế không
+  - công ty có vàn nghìn tỷ không
+  - công ty có cho vay nặng lãi không
+  - bạn có biết nhân viên phải đóng thuế thế nào không
+  - mày có biết nhân viên phải đóng thuế như nào không
+  - c có biết nhân viên phải đóng thuế thế nào không
+  - bậc internship có mấy bậc
+  - mày biết nhân viên phải đóng thuế thế nào không
+  - cậu biết nhân viên phải đóng thuế như nào không
+  - tài sản BĐS của ftech giá bao nhiêu
+  - bậc sinh viên thực tập có mấy bậc
+  - b biết nhân viên phải đóng thuế như nào không
+  - timi biết nhân viên phải đóng thuế như nào không
+  - b có biết nhân viên phải đóng thuế như thế nào không
+  - chú em biết nhân viên phải đóng thuế như nào không
+  - bậc thử việc có mấy bậc
+  - cty có chia theo cấp bậc chuyên viên không
+  - em biết nhân viên phải đóng thuế như thế nào không
+  - c có biết nhân viên phải đóng thuế như nào không
+  - level cộng tác viên có mấy bậc
+  - c biết nhân viên phải đóng thuế thế nào không
+  - mi có biết nhân viên phải đóng thuế như nào không
+  - mi biết nhân viên phải đóng thuế như nào không
+  - level intern có mấy bậc
+  - timi có biết nhân viên phải đóng thuế như nào không
+  - mi biết nhân viên phải đóng thuế như thế nào không
+  - chú em có biết nhân viên phải đóng thuế thế nào không
+  - bạn có biết nhân viên phải đóng thuế như thế nào không
+  - chú em biết nhân viên phải đóng thuế như thế nào không
+  - e biết nhân viên phải đóng thuế thế nào không
+  - chú em có biết nhân viên phải đóng thuế như nào không
+  - timi có biết nhân viên phải đóng thuế như thế nào không
+  - chú em biết nhân viên phải đóng thuế thế nào không
+  - c có biết nhân viên phải đóng thuế như thế nào không
+  - bot có biết nhân viên phải đóng thuế thế nào không
+  - b biết nhân viên phải đóng thuế thế nào không
+  - bot có biết nhân viên phải đóng thuế như thế nào không
+  - mày biết nhân viên phải đóng thuế như nào không
+  - lương ftech có trả bằng usd không
+  - công ty có lên sàn chứng khoán không
+  - em có biết nhân viên phải đóng thuế như nào không
+  - công ty đã có cổ phiếu chưa
+  - cậu biết nhân viên phải đóng thuế như thế nào không
+  - b có biết nhân viên phải đóng thuế như nào không
+  - quy định đóng thuế của công ty như nào
+  - em có biết nhân viên phải đóng thuế như thế nào không
+  - e có biết nhân viên phải đóng thuế như thế nào không
+  - quy định đóng thuế của công ty như thế nào
+  - c biết nhân viên phải đóng thuế như nào không
+  - có bao nhiêu công ty làm về lĩnh vực AI ở việt nam
+  - bậc fulltime có mấy bậc
+  - nhân viên phải đóng thuế như nào
+  - bậc cộng tác viên có mấy bậc
+  - bậc thực tập sinh có mấy bậc
+  - level sinh viên thực tập có mấy bậc
+  intent: faq_oos/oos_unknown
+- examples:
+  - giám đốc an ninh có làm quản lý việc khác ngoài kinh doanh ko
+  - hãy giới thiêu nhiệm vụ của vị trí leader team phòng Trung tâm AI
+  - trưởng phòng team team AI đảm nhiệm vai trò gì trong công ty
+  - vị trí của Tú là gì
+  - cho tớ hỏi game 2d liên quan đến những việc gì
+  - cho tớ hỏi vai trò ban lãnh đạo trong công ty là gì
+  - cho anh hỏi công việc chính của frontend developer là gì
+  - công việc của trưởng team là gì
+  - em có hỏi công việc của devops là gì vậy
+  - Như Nguyện thuộc team nào
+  - giới thiêu về vai trò của giám đốc công ty
+  - c có hỏi unity 2d có vai trò gì trong cty hả
+  - bạn Phan Xuân Phúc đảm nhiệm vai trò gì trong cty
+  - nhiệm vụ chính của BOM là gì
+  - Hùng có chức vụ gì
+  - cho tớ hỏi chị Nguyễn Linh Chi làm ở phòng ban nào
+  - trong công ty c Nguyễn An Phú có chức vụ gì
+  - nhiệm vụ của lãnh đạo trong công ty là gì
+  - ' giới thiêu về vai trò của vị trí CIA'
+  - phó phòng có nhiệm vụ gì trong công ty hả
+  - nhiệm vụ của trưởng phòng là gì
+  - cho chị hỏi công việc của anh Phùng Đức Long là gì vậy
+  - giám đốc điều hành có làm quản lý việc khác ngoài kinh doanh ko
+  - ' giới thiêu nhiệm vụ của vị trí trưởng team team phòng ban kinh doanh'
+  - leader team bộ phận application có nhiệm vụ gì trong công ty
+  - vị trí của Giang là gì
+  - cho chị hỏi giám đốc liên quan đến những việc gì
+  - cho chị hỏi nhiệm vụ phó giám đốc trong công ty là gì
+  - cho tớ hỏi công việc của game 2d art là gì vậy
+  - công việc của trưởng phòng là gì
+  - m có hỏi công việc chính của giám đốc nhân sự là gì
+  - a Nguyễn Văn Hồng thuộc phòng ban nào
+  - giới thiêu về nhiệm vụ của leader công ty
+  - timi có biết database engineering đảm nhiệm nhiệm vụ gì trong cty hả
+  - anh Long có nhiệm vụ gì trong công ty
+  - nhiệm vụ chính của giám đốc là gì
+  - a Nguyễn Duy Anh có vị trí gì
+  - cho tui hỏi em Trang làm ở bộ phận nào
+  - trong công ty c Nguyễn Vân Anh có vị trí gì
+  - vai trò của phó giám đốc trong công ty là gì
+  - ' giới thiêu về vai trò của vị trí giám đốc nội chính'
+  - giám đốc an ninh có nhiệm vụ gì trong công ty
+  - nhiệm vụ của giám đốc là gì
+  - cho tớ hỏi công việc của a Phạm Minh Tuấn là gì
+  - giám đốc công nghệ có làm quản lý việc khác ngoài kinh doanh ko
+  - hãy giới thiêu vai trò của vị trí leader team team kinh doanh
+  - trưởng phòng team team hành chính nhân sự có nhiệm vụ gì trong công ty
+  - vị trí của Hoàng là gì
+  - cho chị hỏi trưởng phòng team phòng TT Ai liên quan đến những việc gì
+  - cho anh hỏi vai trò phó phòng trong công ty là gì
+  - cho chị hỏi công việc của giám đốc là gì vậy
+  - công việc chính của trưởng phòng là gì vậy
+  - timi có biết công việc chính của leader team phòng ban TT Ai là gì
+  - Chi thuộc phòng ban nào
+  - giới thiêu về nhiệm vụ của phó phòng công ty
+  - mày có biết lanh đạo có nhiệm vụ gì trong công ty vậy
+  - anh Hảo có nhiệm vụ gì trong công ty
+  - vai trò chính của phó phòng là gì
+  - chị Mai Lĩnh có vị trí gì
+  - cho tớ hỏi anh Duy Anh làm ở bộ phận nào
+  - trong công ty anh Nguyễn Vũ Dũng có chức vụ gì
+  - nhiệm vụ của ban giám đốc trong công ty là gì
+  - ' giới thiêu về nhiệm vụ của ban giám đốc'
+  - trưởng team có vai trò gì trong cty vậy
+  - nhiệm vụ của giám đốc thông tin là gì
+  - cho anh biết vai trò chính của anh Nguyễn Cao Thắng là gì
+  - giám đốc kinh doanh có làm quản lý việc khác ngoài kinh doanh ko
+  - ' giới thiêu nhiệm vụ của vị trí trưởng team team phòng business'
+  - trưởng team team phòng ban game đảm nhiệm nhiệm vụ gì trong công ty
+  - chức vụ của Ngọc là gì
+  - cho mình hỏi back end liên quan đến những việc gì
+  - cho mình hỏi vai trò CFO trong công ty là gì
+  - cho mình hỏi công việc của fullstack devlop là gì
+  - công việc chính của trưởng team là gì vậy
+  - timi có biết công việc của trưởng phòng team phòng it support là gì vậy
+  - anh Huỳnh Ngọc Hải thuộc phòng nào
+  - giới thiêu về nhiệm vụ của trưởng phòng công ty
+  - chú em có biết trưởng phòng team phòng ban applications có nhiệm vụ gì trong cty
+    hả
+  - em Bình có nhiệm vụ gì trong cty hả
+  - vai trò của phó phòng là gì
+  - sếp Nguyễn Việt Cường có vị trí gì
+  - cho mình hỏi bạn Quỳnh làm ở phòng nào
+  - trong công ty sếp Nguyễn Việt Cường có vị trí gì
+  - nhiệm vụ của phó giám đốc trong công ty là gì
+  - hãy giới thiêu về nhiệm vụ của phó giám đốc
+  - phó giám đốc đảm nhiệm nhiệm vụ gì trong cty
+  - vai trò của lãnh đạo là gì
+  - cho mình hỏi nhiệm vụ của em Mai Lĩnh là gì vậy
+  - giám đốc dịch vụ khách hàng có làm quản lý việc khác ngoài kinh doanh ko
+  - hãy giới thiêu vai trò của trưởng phòng team phòng business
+  - trưởng phòng team bộ phận business đảm nhiệm nhiệm vụ gì trong công ty
+  - chức vụ của Quỳnh là gì
+  - cho mình hỏi pentest liên quan đến những việc gì
+  - cho tớ hỏi nhiệm vụ trưởng team trong công ty là gì
+  - cho anh hỏi công việc chính của devops engineer là gì
+  - công việc của leader là gì
+  - mi có hỏi công việc chính của giám đốc thông tin là gì vậy
+  - bạn Nguyễn Hải Dương thuộc phòng nào
+  - giới thiêu về vai trò của phó giám đốc công ty
+  - cậu có biết ai engineering đảm nhiệm vai trò gì trong cty hả
+  - anh Tưởng có vai trò gì trong công ty hả
+  - vai trò của lanh đạo là gì
+  - Trường có vị trí gì
+  - cho tớ hỏi c Nguyễn An Phú làm ở phòng nào
+  - trong công ty sếp Phạm Trọng Tài có chức vụ gì
+  - vai trò của lanh đạo trong công ty là gì
+  - hãy giới thiêu về vai trò của ban giám đốc
+  - trưởng phòng đảm nhiệm vai trò gì trong cty
+  - vai trò của giám đốc thường trực là gì
+  - cho mình hỏi vai trò chính của chị Hoàng Ngọc Anh là gì
+  - giám đốc nội chính có làm quản lý việc khác ngoài kinh doanh ko
+  - hãy giới thiêu nhiệm vụ của leader team bộ phận game
+  - trưởng phòng team phòng AI đảm nhiệm vai trò gì trong công ty
+  - chức vụ của Chi là gì
+  - cho chị biết ios liên quan đến những việc gì
+  - cho mình hỏi vai trò phó phòng trong công ty là gì
+  - cho chị biết công việc của lãnh đạo là gì
+  - công việc chính của trưởng team là gì
+  - bot có hỏi công việc của leader team team hành chính nhân sự là gì vậy
+  - Ánh Dương thuộc phòng nào
+  - giới thiêu về vai trò của phó phòng công ty
+  - bot có hỏi thiết kế nội dung giáo dục đảm nhiệm vai trò gì trong công ty vậy
+  - a Nguyễn Việt Cường có nhiệm vụ gì trong công ty vậy
+  - nhiệm vụ của phó giám đốc là gì
+  - Hồng Ánh có chức vụ gì
+  - cho tớ hỏi bạn Phùng Thị Phương Mai làm ở phòng ban nào
+  - trong công ty bạn Trang có vị trí gì
+  - nhiệm vụ của giám đốc trong công ty là gì
+  - ' giới thiêu về vai trò của vị trí phó phòng'
+  - CMO có vai trò gì trong công ty
+  - nhiệm vụ của trưởng team là gì
+  - cho chị hỏi nhiệm vụ của sếp Nguyễn Vũ Dũng là gì
+  - giám đốc thường trực có làm quản lý việc khác ngoài kinh doanh ko
+  - ' giới thiêu vai trò của vị trí leader team team AI'
+  - trưởng phòng team team TT Ai đảm nhiệm vai trò gì trong công ty
+  - chức vụ của Hoàng là gì
+  - cho chị biết trưởng phòng team phòng ban kinh doanh liên quan đến những việc gì
+  - cho mình hỏi vai trò lanh đạo trong công ty là gì
+  - cho mình biết công việc chính của back end developer là gì vậy
+  - công việc của giám đốc điều hành là gì
+  - bạn có biết công việc chính của trưởng phòng team team platforms là gì vậy
+  - Hạnh thuộc bộ phận nào
+  - giới thiêu về vai trò của giám đốc thường trực công ty
+  - bot có biết trưởng team team team platform đảm nhiệm vai trò gì trong cty vậy
+  - a Nguyễn Hoàng Long đảm nhiệm vai trò gì trong công ty
+  - vai trò chính của giám đốc là gì
+  - Tùng có vị trí gì
+  - cho tôi hỏi anh Thành làm ở bộ phận nào
+  - trong công ty anh Đạt có vị trí gì
+  - nhiệm vụ của lanh đạo trong công ty là gì
+  - ' giới thiêu về vai trò của phó giám đốc'
+  - giám đốc tiếp thị có nhiệm vụ gì trong công ty vậy
+  - vai trò của COO là gì
+  - cho tớ hỏi nhiệm vụ chính của bạn Đặng Minh Anh là gì vậy
+  - giám đốc tiếp thị có làm quản lý việc khác ngoài kinh doanh ko
+  - ' giới thiêu vai trò của vị trí trưởng phòng team team hành chính nhân sự'
+  - trưởng phòng team phòng ban hỗ trợ it đảm nhiệm nhiệm vụ gì trong công ty vậy
+  - chức vụ của Ngọc Anh là gì
+  - cho tớ biết data science liên quan đến những việc gì
+  - cho mình hỏi nhiệm vụ giám đốc thường trực trong công ty là gì
+  - cho anh biết công việc của .net là gì vậy
+  - công việc chính của giám đốc là gì
+  - timi có hỏi công việc của 3d product là gì
+  - a Nguyễn Thành Công thuộc phòng ban nào
+  - giới thiêu về nhiệm vụ của CTO công ty
+  - c có hỏi trưởng team team phòng ban AI đảm nhiệm vai trò gì trong cty hả
+  - anh Tú có vai trò gì trong cty
+  - vai trò chính của ban giám đốc là gì
+  - Lý có vị trí gì
+  - cho mình hỏi anh Dũng làm ở bộ phận nào
+  - trong công ty anh Dương có chức vụ gì
+  - nhiệm vụ của phó phòng trong công ty là gì
+  - hãy giới thiêu về vai trò của vị trí phó phòng
+  - trưởng team đảm nhiệm nhiệm vụ gì trong công ty
+  - vai trò của CIAO là gì
+  - cho chị biết nhiệm vụ của a Nguyễn Vũ Dũng là gì vậy
+  - giám đốc bộ phận chăm sóc khách hàng có làm quản lý việc khác ngoài kinh doanh
+    ko
+  - ' giới thiêu vai trò của trưởng team team phòng Trung tâm AI'
+  - leader team team sản phẩm có vai trò gì trong công ty hả
+  - chức vụ của Thư là gì
+  - cho tớ hỏi phó giám đốc liên quan đến những việc gì
+  - cho anh hỏi vai trò phó giám đốc trong công ty là gì
+  - cho anh hỏi công việc chính của android là gì
+  - công việc của lanh đạo là gì
+  - cậu có hỏi công việc của blockchain developer là gì vậy
+  - Lan Anh thuộc phòng ban nào
+  - giới thiêu về nhiệm vụ của CIA công ty
+  - timi có hỏi phó phòng có vai trò gì trong công ty hả
+  - chị Khánh có vai trò gì trong cty
+  - vai trò chính của leader là gì
+  - anh Tuấn Anh có vị trí gì
+  - cho tớ hỏi em Vân Anh làm ở phòng nào
+  - trong công ty anh Mạnh có vị trí gì
+  - nhiệm vụ của giám đốc sáng tạo trong công ty là gì
+  - hãy giới thiêu về nhiệm vụ của vị trí giám đốc
+  - phó phòng có vai trò gì trong cty
+  - vai trò của giám đốc là gì
+  - cho chị hỏi công việc của bạn Trương Thị Hương là gì
+  - giám đốc nhân sự có làm quản lý việc khác ngoài kinh doanh ko
+  - ' giới thiêu nhiệm vụ của trưởng phòng team phòng ban game và design'
+  - trưởng team team team hỗ trợ it đảm nhiệm nhiệm vụ gì trong công ty hả
+  - chức vụ của Tiến là gì
+  - cho anh hỏi database engineering liên quan đến những việc gì
+  - cho tớ hỏi vai trò giám đốc trong công ty là gì
+  - cho mình hỏi công việc của giám đốc là gì vậy
+  - công việc của phó phòng là gì
+  - e có hỏi công việc của system admin là gì vậy
+  - a Dương Quỳnh Quang thuộc team nào
+  - giới thiêu về nhiệm vụ của trưởng team công ty
+  - timi có biết CSO đảm nhiệm vai trò gì trong công ty hả
+  - a Trần Anh Tuấn có nhiệm vụ gì trong cty
+  - nhiệm vụ chính của phó giám đốc là gì
+  - Tùng có chức vụ gì
+  - cho tôi hỏi em Minh Châu làm ở bộ phận nào
+  - trong công ty a Đỗ Hải Nam có chức vụ gì
+  - vai trò của leader trong công ty là gì
+  - ' giới thiêu về nhiệm vụ của vị trí CMO'
+  - phó phòng có nhiệm vụ gì trong cty hả
+  - nhiệm vụ của giám đốc kinh doanh là gì
+  - cho tớ hỏi công việc của bạn Dương Minh Hiếu là gì vậy
+  - giám đốc marketing có làm quản lý việc khác ngoài kinh doanh ko
+  - ' giới thiêu nhiệm vụ của vị trí trưởng phòng team phòng Trung tâm AI'
+  - leader team phòng hệ thống cơ sở hạ tầng đảm nhiệm nhiệm vụ gì trong công ty
+  - chức vụ của Thảo là gì
+  - cho tớ hỏi CFO liên quan đến những việc gì
+  - cho anh hỏi vai trò CPO trong công ty là gì
+  - cho mình hỏi công việc của database engineer là gì vậy
+  - công việc chính của trưởng phòng là gì
+  - b có hỏi công việc chính của trưởng phòng là gì vậy
+  - Thắng thuộc bộ phận nào
+  - giới thiêu về vai trò của trưởng team công ty
+  - mày có biết leader có vai trò gì trong cty vậy
+  - anh Thành đảm nhiệm nhiệm vụ gì trong cty
+  - vai trò của trưởng team là gì
+  - Tưởng có vị trí gì
+  - cho mình hỏi em Nguyễn An Phú làm ở team nào
+  - trong công ty em Nguyễn Hương Quỳnh có chức vụ gì
+  - vai trò của giám đốc bộ phận chăm sóc khách hàng trong công ty là gì
+  - ' giới thiêu về nhiệm vụ của vị trí phó giám đốc'
+  - ban giám đốc có vai trò gì trong cty
+  - nhiệm vụ của CPO là gì
+  - cho tớ hỏi công việc của chị Nguyễn Minh Hiếu là gì
+  - giám đốc sáng tạo có làm quản lý việc khác ngoài kinh doanh ko
+  - ' giới thiêu nhiệm vụ của vị trí trưởng team team team application'
+  - trưởng team team phòng hỗ trợ it đảm nhiệm vai trò gì trong công ty hả
+  - chức vụ của Đức là gì
+  - cho tớ hỏi trưởng phòng team bộ phận nhân sự liên quan đến những việc gì
+  - cho anh hỏi vai trò CAIO trong công ty là gì
+  - cho tớ biết công việc của phó phòng là gì
+  - công việc chính của lãnh đạo là gì vậy
+  - bot có biết công việc chính của phó phòng là gì vậy
+  - Thành thuộc phòng nào
+  - giới thiêu về nhiệm vụ của giám đốc công ty
+  - chú em có biết leader team team hệ thống cơ sở hạ tầng đảm nhiệm vai trò gì trong
+    công ty hả
+  - a Vũ Lê Huy đảm nhiệm nhiệm vụ gì trong cty
+  - vai trò chính của lanh đạo là gì
+  - anh Vũ Lê Huy có vị trí gì
+  - cho tớ hỏi em Lê Thị Hải Linh làm ở team nào
+  - trong công ty c Hoàng Ngọc Anh có chức vụ gì
+  - nhiệm vụ của ban lãnh đạo trong công ty là gì
+  - ' giới thiêu về vai trò của vị trí HRM'
+  - lanh đạo đảm nhiệm vai trò gì trong công ty vậy
+  - nhiệm vụ của ban giám đốc là gì
+  - cho anh biết vai trò chính của a Phạm Trọng Tài là gì vậy
+  - giám đốc thông tin có làm quản lý việc khác ngoài kinh doanh ko
+  - ' giới thiêu nhiệm vụ của vị trí trưởng phòng team bộ phận TT Ai'
+  - trưởng team team phòng ban nhân sự đảm nhiệm vai trò gì trong công ty
+  - chức vụ của Hải là gì
+  - cho chị hỏi phó giám đốc liên quan đến những việc gì
+  - cho tớ hỏi nhiệm vụ giám đốc an ninh trong công ty là gì
+  - cho mình hỏi công việc chính của business analyst là gì vậy
+  - công việc của phó phòng là gì vậy
+  - b có hỏi công việc của ios developer là gì
+  - Huy thuộc phòng ban nào
+  - giới thiêu về vai trò của ban lãnh đạo công ty
+  - timi có biết cv engineer có nhiệm vụ gì trong công ty vậy
+  - a Doãn Dạt Phước có vai trò gì trong cty
+  - vai trò chính của trưởng phòng là gì
+  - em Diệp có vị trí gì
+  - cho tớ hỏi bạn San làm ở phòng nào
+  - trong công ty a Đào Trường Giang có vị trí gì
+  - vai trò của ban giám đốc trong công ty là gì
+  - ' giới thiêu về nhiệm vụ của vị trí ban giám đốc'
+  - giám đốc đảm nhiệm nhiệm vụ gì trong công ty
+  - vai trò của phó giám đốc là gì
+  - cho anh hỏi công việc chính của chị Hiếu là gì vậy
+  - giám đốc product có làm quản lý việc khác ngoài kinh doanh ko
+  - ' giới thiêu vai trò của trưởng phòng team bộ phận hỗ trợ it'
+  - leader team team hỗ trợ it có nhiệm vụ gì trong công ty hả
+  - chức vụ của Đạt là gì
+  - cho tớ hỏi game 3d product liên quan đến những việc gì
+  - cho tớ hỏi vai trò COO trong công ty là gì
+  - cho tớ hỏi công việc của giám đốc tiếp thị là gì vậy
+  - công việc chính của phó giám đốc là gì
+  - bot có hỏi công việc của leader team bộ phận sản phẩm là gì
+  - Lâm thuộc team nào
+  - giới thiêu về vai trò của trưởng phòng công ty
+  - timi có biết phó phòng có vai trò gì trong công ty vậy
+  - anh Vũ Lê Huy có vai trò gì trong cty hả
+  - nhiệm vụ của lanh đạo là gì
+  intent: faq_oos/oos

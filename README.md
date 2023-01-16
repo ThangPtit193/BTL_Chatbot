@@ -19,15 +19,23 @@ in Venus hub to provide unique search experiences and allow your users to query 
 
 # **Contents**
 
-* [Core Feature](#core-features)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Data Preparation](#data-preparation)
-* [Services](#services)
-* [Information Retriveal Metrics](#ir-metrics)
-* [Experiments](#expriments)
-* [Reference](#reference)
-* [Contributors](#contributors)
+- [**Contents**](#contents)
+  - [Core Features ](#core-features-)
+  - [💾 Installation ](#-installation-)
+    - [Install from repository](#install-from-repository)
+    - [Conda](#conda)
+  - [Configuration ](#configuration-)
+  - [Data Preparation ](#data-preparation-)
+  - [Services ](#services-)
+  - [Information Retrieval Metrics ](#information-retrieval-metrics-)
+  - [Command Line Interface ](#command-line-interface-)
+      - [Training](#training)
+      - [Evaluation](#evaluation)
+      - [Inference](#inference)
+      - [Push and pull model to/from Axiom Hub](#push-and-pull-model-tofrom-axiom-hub)
+  - [Experiments ](#experiments-)
+  - [Reference ](#reference-)
+  - [Code Contributors ](#code-contributors-)
 
 
 ## Core Features <div id="core-features"></div>
@@ -129,10 +137,45 @@ EVALUATION:
   type: "evaluation_pipeline"
   corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
   query_name_or_path: "data/eval-data/dummy/query_docs.json"
-  model_name_or_path: [ "fschool-distilbert-multilingual-faq-v8.0.0"]
+  pretrained_name_or_abspath: [ "fschool-distilbert-multilingual-faq-v8.0.0"]
   output_dir: "reports"
+```
+
+Sample configuration for quadruplet-loss
+```yaml
+GENERAL:
+  run_mode: inference
+
+EMBEDDER:
+  class: QuadrupletEmbedder
+  package: saturn.components.embeddings.embedding_models
+  pretrained_name_or_abspath: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  TRAINER:
+    quadruplet_data_path:
+      - data/train_data/dummy/quadruples/quadruples_30.json
+    model_save_path: models/quad
+    n_samples: 10
+    batch_size: 256
+    epochs: 10
+    warmup_steps: 5000
+    evaluation_steps: 2000
+    weight_decay: 0.01
+    max_grad_norm: 1.0
+    use_amp: True
+    save_best_model: True
+    show_progress_bar: True
+    checkpoint_path: models/quad/checkpoints
+    checkpoint_save_epoch: 1
+    checkpoint_save_total_limit: 2
+    save_by_epoch: 1
 
 
+EVALUATION:
+  type: "evaluation_pipeline"
+  corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
+  query_name_or_path: "data/eval-data/dummy/query_docs.json"
+  pretrained_name_or_abspath:
+    - models/quad/epoch-0
 ```
 
 ## Data Preparation <div id="data-preparation"></div>

@@ -1,0 +1,303 @@
+positives:
+- examples:
+  - thèm ăn miến lươn
+  - tớ ngán món của người Việt rồi, cho tớ ăn đồ Mĩ đi á
+  - bot cho tớ hỏi thèm món của người Thái thì nên ăn gì
+  - tôi thích đồ Tây
+  - có gì healthy để uống hân bạn
+  - tui muốn uống Nước ép thế
+  - bot gợi ý Ăn vặt cho tớ đi
+  - tớ muốn ăn Thức uống
+  - thèm ăn sườn nướng
+  - mình ngán Món Thái Lan rồi, cho tớ ăn đồ Áo đi á
+  - cậu cho tui hỏi thèm đồ Tây thì nên ăn nào
+  - tui thích Món Âu
+  - có gì healthy để uống hân bot
+  - tớ muốn uống rượu vang quá
+  - bot gợi ý món của Thái lan cho tôi đi
+  - tớ muốn ăn món chay trường
+  - thèm ăn sushi
+  - tớ ngán món của Việt Nam rồi, cho tớ ăn đồ Phần Lan đi á
+  - timi cho tớ hỏi thèm Món Thái Lan thì nên ăn nào
+  - tui thích Món Nhật
+  - có gì healthy để uống hân timi
+  - mình muốn uống Sinh tố thế
+  - timi gợi ý món của người Việt cho tớ đi
+  - mình muốn ăn món của Thái lan
+  - thèm ăn Bún cá
+  - tớ ngán món của Thái lan rồi, cho tớ ăn đồ Ấn Độ đi á
+  - bot cho tớ hỏi thèm món của Thái lan thì nên ăn nào
+  - tôi thích món chay trường
+  - có gì healthy để uống hân cậu
+  - tui muốn uống Trà xanh chanh leo kim quất mật ong quá
+  - em gợi ý heo thì cho tôi đi
+  - tôi muốn ăn Món Thái Lan
+  - thèm ăn Thịt Heo Xiên Viên Nướng
+  - tớ ngán Ăn vặt rồi, cho tớ ăn đồ Hàn đi á
+  - timi cho tớ hỏi thèm Món Việt Nam thì nên ăn nào
+  - mình thích Món Thái
+  - có gì healthy để uống hân mi
+  - mình muốn uống Sữa đậu nành quá
+  - mi gợi ý đồ Tây cho tớ đi
+  - mình muốn ăn Bimbimbap
+  - thèm ăn Miến trộn Hàn Quốc
+  - tớ ngán Món Hàn rồi, cho tớ ăn đồ Hoa Kỳ đi á
+  - bot cho tớ hỏi thèm Món Âu thì nên ăn gì
+  - tui thích món của người Thái
+  - có gì healthy để uống hân mày
+  - tui muốn uống nước dừa thế
+  - bot gợi ý Món Thái cho tôi đi
+  - tớ muốn ăn heo thì
+  - thèm ăn bún thang
+  - tớ ngán Món Hàn Quốc rồi, cho tui ăn đồ Thái Lan đi á
+  - bạn cho mình hỏi thèm món của người nhật thì nên ăn nào
+  - tôi thích món của người Việt
+  - có gì healthy để uống hân mầy
+  - tui muốn uống Cookie Cream thế
+  - bot gợi ý Món Âu cho tui đi
+  - tớ muốn ăn bánh đa cua
+  - thèm ăn cao lầu
+  - tui ngán món của hàn quốc rồi, cho tui ăn đồ Hoa Kỳ đi á
+  - mi cho tớ hỏi thèm Món Hàn thì nên ăn nào
+  - mình thích heo thì
+  - có gì healthy để uống hân chú em
+  - tớ muốn uống Nước chanh thế
+  - chú em gợi ý Món Hàn Quốc cho tớ đi
+  - mình muốn ăn bún chả cá
+  - thèm ăn Hải Sản
+  - tôi ngán món của người nhật rồi, cho tớ ăn đồ Singapo đi á
+  - timi cho mình hỏi thèm món của người Việt thì nên ăn nào
+  - mình thích Món Nhật
+  - có gì healthy để uống hân em
+  - tớ muốn uống Sữa tươi trân châu đường đen quá
+  - bot gợi ý Món Thái Lan cho tớ đi
+  - tớ muốn ăn Bún cá
+  - thèm ăn mì quảng
+  - tui ngán Thức uống rồi, cho tớ ăn đồ Mỹ đi á
+  - iem cho tui hỏi thèm món chay trường thì nên ăn gì
+  - tôi thích món chay
+  - có gì healthy để uống hân iem
+  - mình muốn uống Trà đào chanh sả thế
+  - bot gợi ý Món Thái cho tớ đi
+  - tớ muốn ăn bún riêu cua
+  - thèm ăn Naengmyeon
+  - tớ ngán haelthy rồi, cho tớ ăn đồ Thái Lan đi á
+  - timi cho tôi hỏi thèm Món Thái Lan thì nên ăn gì
+  - tui thích món của Việt Nam
+  - tớ muốn uống nước mía quá
+  - bạn gợi ý món của Việt Nam cho tớ đi
+  - tớ muốn ăn haelthy
+  - thèm ăn bún đậu mắm tôm
+  - tôi ngán Món Việt Nam rồi, cho tớ ăn đồ Mexico đi á
+  - cậu cho tui hỏi thèm healthy thì nên ăn nào
+  - mình thích món của Việt Nam
+  - tôi muốn uống Trà phô mai kem sữa thế
+  - bot gợi ý món của người Hàn cho tớ đi
+  - mình muốn ăn món của VN
+  - thèm ăn Kem Trà Sữa Trân Châu
+  - tớ ngán món chay rồi, cho tui ăn đồ Armenia đi á
+  - bạn cho tui hỏi thèm món của người Hàn thì nên ăn nào
+  - tui thích món chay trường
+  - tớ muốn uống Trà hoa quả quá
+  - em gợi ý món của người Thái cho tui đi
+  - tui muốn ăn Món Việt Nam
+  - thèm ăn pizza
+  - tui ngán Món Nhật Bản rồi, cho mình ăn đồ Phần Lan đi á
+  - chú em cho tớ hỏi thèm món của người Việt thì nên ăn gì
+  - tôi thích đồ uống
+  - tui muốn uống rượu vang thế
+  - timi gợi ý Món Thái cho tớ đi
+  - tớ muốn ăn món của hàn quốc
+  - thèm ăn Soda Dâu
+  - tớ ngán món của nhật bản rồi, cho mình ăn đồ Mĩ đi á
+  - bot cho tớ hỏi thèm món chay thì nên ăn gì
+  - tôi thích Món Nhật Bản
+  - tui muốn uống Trà phô mai kem sữa thế
+  - mày gợi ý món của VN cho tớ đi
+  - tui muốn ăn mì xào
+  - thèm ăn bún mọc
+  - tôi ngán món của người Hàn rồi, cho tôi ăn đồ Na Uy đi á
+  - cậu cho tớ hỏi thèm Món Âu thì nên ăn gì
+  - tôi thích món của HQ
+  - tớ muốn uống Smoothies thế
+  - bot gợi ý heo thì cho mình đi
+  - tớ muốn ăn món chay
+  - thèm ăn Samgyetang
+  - tớ ngán đồ uống rồi, cho tớ ăn đồ Hà Lan đi á
+  - timi cho tớ hỏi thèm món của hàn quốc thì nên ăn gì
+  - mình thích Món Hàn Quốc
+  - tớ muốn uống Sinh tố thế
+  - mày gợi ý Ăn vặt cho tôi đi
+  - tôi muốn ăn món của người Thái
+  - thèm ăn phở
+  - tớ ngán món của Việt Nam rồi, cho tớ ăn đồ Ấn Độ đi á
+  - iem cho tui hỏi thèm heo thì thì nên ăn nào
+  - tôi thích món của hàn quốc
+  - tui muốn uống nước mía thế
+  - bot gợi ý Món Nhật cho tui đi
+  - tớ muốn ăn bún chạo tôm
+  - thèm ăn Cơm trộn
+  - tớ ngán món của Việt Nam rồi, cho tui ăn đồ Canada đi á
+  - bot cho tớ hỏi thèm đồ uống thì nên ăn gì
+  - tôi thích món của nhật bản
+  - tui muốn uống rượu vang quá
+  - bạn gợi ý healthy cho mình đi
+  - tui muốn ăn Món Việt
+  - thèm ăn bánh canh
+  - mình ngán đồ Tây rồi, cho tui ăn đồ Mỹ đi á
+  - bot cho tớ hỏi thèm Món Việt Nam thì nên ăn nào
+  - tôi thích Món Thái Lan
+  - mình muốn uống Cookie Cream quá
+  - bạn gợi ý món của nhật bản cho tớ đi
+  - tui muốn ăn bún chả cá
+  - thèm ăn bún chả
+  - tôi ngán món của Thái lan rồi, cho mình ăn đồ Thái đi á
+  - chú em cho tớ hỏi thèm heo thì thì nên ăn gì
+  - mình thích món của người Hàn
+  - tớ muốn uống nước dừa quá
+  - timi gợi ý Món Nhật cho tớ đi
+  - tôi muốn ăn đồ Tây
+  - thèm ăn Mỳ lạnh
+  - tôi ngán Món Nhật rồi, cho mình ăn đồ Trung Quốc đi á
+  - bot cho tớ hỏi thèm healthy thì nên ăn gì
+  - tui thích món của người Hàn
+  - mình muốn uống Socola đá xay quá
+  - bot gợi ý đồ uống cho mình đi
+  - mình muốn ăn mì xào giòn
+  - thèm ăn Cơm cuốn lá rong biển
+  - tui ngán haelthy rồi, cho tôi ăn đồ Nga đi á
+  - timi cho tớ hỏi thèm Món Hàn Quốc thì nên ăn nào
+  - tôi thích món của Thái lan
+  - tớ muốn uống Cookie Cream quá
+  - em gợi ý đồ uống cho tớ đi
+  - tui muốn ăn Samgyetang
+  - thèm ăn Bulgogi
+  - tớ ngán món của người Việt rồi, cho tôi ăn đồ Áo đi á
+  - cậu cho tớ hỏi thèm món của nhật bản thì nên ăn gì
+  - mình thích Món Hàn
+  - tớ muốn uống rượu vang thế
+  - bot gợi ý món của Thái lan cho tui đi
+  - tôi muốn ăn Mỳ lạnh
+  - thèm ăn Bánh hải sản Hàn Quốc
+  - mình ngán đồ Tây rồi, cho tôi ăn đồ Sing đi á
+  - timi cho tớ hỏi thèm món chay trường thì nên ăn gì
+  - tui thích Món Hàn
+  - mình muốn uống trà bí đao thế
+  - bot gợi ý Món Nhật cho tớ đi
+  - tui muốn ăn Kimchi Hàn Quốc
+  - thèm ăn Bún bung
+  - tui ngán đồ uống rồi, cho tui ăn đồ Australia đi á
+  - bot cho mình hỏi thèm món của người Việt thì nên ăn nào
+  - tôi thích Món Việt Nam
+  - tớ muốn uống Trà atiso quá
+  - timi gợi ý Ăn vặt cho tớ đi
+  - tớ muốn ăn món của người Việt
+  - thèm ăn Cơm nướng Nhật Bản Kiritanpo
+  - tớ ngán Món Việt rồi, cho tớ ăn đồ Thụy Điển đi á
+  - timi cho mình hỏi thèm Món Việt thì nên ăn gì
+  - mình thích đồ Tây
+  - mình muốn uống Trà tắc thế
+  - bot gợi ý Món Nhật Bản cho tôi đi
+  - tui muốn ăn Naengmyeon
+  - thèm ăn Gimbap
+  - tớ ngán haelthy rồi, cho tôi ăn đồ Hàn đi á
+  - bạn cho tớ hỏi thèm Món Nhật Bản thì nên ăn nào
+  - tôi thích Thức uống
+  - tớ muốn uống Trà hoa đậu biếc quá
+  - cậu gợi ý món ăn Âu-Úc cho tôi đi
+  - tui muốn ăn miến lươn
+  - thèm ăn Đậu phụ hầm cay
+  - tớ ngán món của người Việt rồi, cho tớ ăn đồ Áo đi á
+  - timi cho tớ hỏi thèm Món Âu thì nên ăn nào
+  - tui thích Món Việt Nam
+  - mình muốn uống Socola đá xay thế
+  - bạn gợi ý món chay cho tớ đi
+  - tớ muốn ăn Món Thái
+  - thèm ăn mì xào giòn
+  - tui ngán đồ uống rồi, cho mình ăn đồ Phần Lan đi á
+  - bạn cho tớ hỏi thèm món của người Hàn thì nên ăn nào
+  - tôi thích món của người nhật
+  - mình muốn uống Smoothies quá
+  - bạn gợi ý món của VN cho tôi đi
+  - tớ muốn ăn đồ Tây
+  - thèm ăn bún bò Huế
+  - tui ngán Món Hàn Quốc rồi, cho mình ăn đồ Hoa Kỳ đi á
+  - em cho tớ hỏi thèm món của HQ thì nên ăn nào
+  - mình thích Thức uống
+  - tôi muốn uống Sữa tươi trân châu đường đen quá
+  - bot gợi ý Món Nhật cho tôi đi
+  - tui muốn ăn Thức uống
+  - thèm ăn Chè Trân Châu Củ Năng
+  - tôi ngán món của người Thái rồi, cho tớ ăn đồ Hàn Quốc đi á
+  - cậu cho mình hỏi thèm Món Thái thì nên ăn nào
+  - tôi thích haelthy
+  - tớ muốn uống Sữa tươi trân châu đường đen thế
+  - bot gợi ý món của người Việt cho tớ đi
+  - tôi muốn ăn món của người nhật
+  - thèm ăn bún ốc
+  - tớ ngán món chay rồi, cho tớ ăn đồ Đài Loan đi á
+  - timi cho tớ hỏi thèm haelthy thì nên ăn gì
+  - mình thích món của VN
+  - mình muốn uống Trà hoa cúc thế
+  - mày gợi ý healthy cho tôi đi
+  - tớ muốn ăn Món Nhật Bản
+  - thèm ăn bún riêu cua
+  - tui ngán Ăn vặt rồi, cho tớ ăn đồ Hong Kong đi á
+  - bot cho tôi hỏi thèm món của Thái lan thì nên ăn gì
+  - tui thích món của Thái lan
+  - tui muốn uống nước mía quá
+  - cậu gợi ý đồ uống cho tớ đi
+  - tui muốn ăn Bimbimbap
+  - thèm ăn Gà tần sâm
+  - tớ ngán món của người nhật rồi, cho tui ăn đồ Mỹ đi á
+  - bot cho tôi hỏi thèm Món Âu thì nên ăn gì
+  - tôi thích món của VN
+  - tui muốn uống Nước ép quá
+  - mầy gợi ý Món Hàn Quốc cho tớ đi
+  - tôi muốn ăn món của HQ
+  - thèm ăn bún măng vịt
+  - tớ ngán heo thì rồi, cho tôi ăn đồ Hàn Xẻn đi á
+  - timi cho tôi hỏi thèm Món Hàn thì nên ăn nào
+  - tui thích món của HQ
+  - tớ muốn uống nước dừa thế
+  - timi gợi ý món của người nhật cho mình đi
+  - tớ muốn ăn đồ uống
+  - thèm ăn bánh đa cua
+  - tớ ngán món của người Việt rồi, cho tớ ăn đồ Sing đi á
+  - cậu cho tôi hỏi thèm đồ Tây thì nên ăn gì
+  - tui thích heo thì
+  - tôi muốn uống Socola đá xay thế
+  - timi gợi ý Món Thái Lan cho tớ đi
+  - tớ muốn ăn Món Nhật
+  - thèm ăn Gỏi Đu Đủ
+  - tớ ngán haelthy rồi, cho tôi ăn đồ Hong Kong đi á
+  - timi cho tớ hỏi thèm món của người Thái thì nên ăn gì
+  - tui thích haelthy
+  - tui muốn uống Smoothies thế
+  - timi gợi ý đồ uống cho tôi đi
+  - tớ muốn ăn Cơm nướng Nhật Bản Kiritanpo
+  - thèm ăn bánh tằm cà ri
+  - tui ngán Món Nhật rồi, cho tớ ăn đồ Nga đi á
+  - mầy cho mình hỏi thèm đồ Tây thì nên ăn nào
+  - mình thích healthy
+  - tôi muốn uống Trà atiso quá
+  - mi gợi ý món của nhật bản cho tớ đi
+  - tui muốn ăn Miến trộn Hàn Quốc
+  - thèm ăn Bimbimbap
+  - tui ngán Món Thái rồi, cho tớ ăn đồ Armenia đi á
+  - iem cho tớ hỏi thèm món của người Thái thì nên ăn gì
+  - mình thích món của Thái lan
+  - tôi muốn uống Trà hoa cúc thế
+  - bạn gợi ý haelthy cho tớ đi
+  - tớ muốn ăn sushi
+  - thèm ăn bún chạo tôm
+  - tui ngán healthy rồi, cho tớ ăn đồ Ukraine đi á
+  - chú em cho tớ hỏi thèm món của người Hàn thì nên ăn nào
+  - mình thích Món Việt Nam
+  - tui muốn uống Sữa tươi trân châu đường đen quá
+  - timi gợi ý món của người Thái cho tớ đi
+  - mình muốn ăn mì xào
+  - thèm ăn bún mắm
+  - tôi ngán món của người nhật rồi, cho mình ăn đồ Thái Lan đi á
+  - mày cho tui hỏi thèm đồ Tây thì nên ăn gì
+  intent: recsys_request_food_type
