@@ -108,74 +108,76 @@ path
 Sample configuration
 ```yaml
 GENERAL:
-  run_mode: inference
+  device: cuda
+  project: dummy
+  version: v1.0.0
+  is_warning_action: True
+  output_data: assets
+  output_model: models
+  output_report: reports
 
-EMBEDDER:
-  class: SentenceEmbedder
+  # Skipped signal
+  skipped_gen_data: False
+  skipped_training: False
+  skipped_eval: True
+
+DATA_GENERATION:
+  data_dir: data/raw/dummy
+  search_mode: bm25_embedder
+  embedding_batch_size: 100
+  neg_sim_batch_size: 10
+  max_triple_per_file: 50
+  max_sentence_repeated: 2
+  EMBEDDER:
+    cache_path: ./embedder_caches
+    pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+#  COMBINER:
+
+
+TRAINER:
+  class: SBertSemanticSimilarity
   package: saturn.components.embeddings.embedding_models
-
-  TRAINER:
-    triplets_data_path:
-      - data/train_data/dummy/triples/triples_10.json
-    pretrained_model: vinai/phobert-base
-    model_save_path: models
-    n_samples: 10
-    batch_size: 128
-    epochs: 10
-    warmup_steps: 5000
-    evaluation_steps: 2000
-    weight_decay: 0.01
-    max_grad_norm: 1.0
-    use_amp: True
-    save_best_model: True
-    show_progress_bar: True
-    checkpoint_path: models/checkpoints
-    checkpoint_save_epoch: 50
-    checkpoint_save_total_limit: 3
-
-EVALUATION:
-  type: "evaluation_pipeline"
-  corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
-  query_name_or_path: "data/eval-data/dummy/query_docs.json"
-  pretrained_name_or_abspath: [ "fschool-distilbert-multilingual-faq-v8.0.0"]
-  output_dir: "reports"
-```
-
-Sample configuration for quadruplet-loss
-```yaml
-GENERAL:
-  run_mode: inference
-
-EMBEDDER:
-  class: QuadrupletEmbedder
-  package: saturn.components.embeddings.embedding_models
-  pretrained_name_or_abspath: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
-  TRAINER:
-    quadruplet_data_path:
-      - data/train_data/dummy/quadruples/quadruples_30.json
-    model_save_path: models/quad
-    n_samples: 10
-    batch_size: 256
-    epochs: 10
-    warmup_steps: 5000
-    evaluation_steps: 2000
-    weight_decay: 0.01
-    max_grad_norm: 1.0
-    use_amp: True
-    save_best_model: True
-    show_progress_bar: True
-    checkpoint_path: models/quad/checkpoints
-    checkpoint_save_epoch: 1
-    checkpoint_save_total_limit: 2
-    save_by_epoch: 1
-
+  pretrained_name_or_abspath: keepitreal/vietnamese-sbert
+  n_samples: 10
+  batch_size: 256
+  epochs: 20
+  warmup_steps: 5000
+  evaluation_steps: 2000
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  use_amp: True
+  save_best_model: True
+  show_progress_bar: True
+  checkpoint_save_epoch: 4
+  checkpoint_save_total_limit: 10
+  save_by_epoch: 4
+#    resume_from_checkpoint: checkpoints/epoch-14/checkpoint.pt
 
 EVALUATION:
   type: "evaluation_pipeline"
   corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
   query_name_or_path: "data/eval-data/dummy/query_docs.json"
   pretrained_name_or_abspath:
-    - models/quad/epoch-0
+    - models/dummy/v1.0.0/epoch-15
+
+RELEASE:
+  model_path: models
+  pretrained_model: MiniLM-L12-H384-uncased
+  version: v1.0.0
+  data_size: 9M
+```
+
+Sample configuration for quadruplet-loss
+```yaml
+...
+
+TRAINER:
+  class: QuadrupletSemanticSimilarity
+  package: saturn.components.embeddings.embedding_models
+  pretrained_name_or_abspath: keepitreal/vietnamese-sbert
+  n_samples: 10
+  batch_size: 256
+  ...
 ```
 
 ## Data Preparation <div id="data-preparation"></div>
@@ -215,15 +217,21 @@ models, Learn more: [IR metrics](https://docs.google.com/document/d/1bTPGMUd4q05
 
 ## Command Line Interface <div id="cli"></div>
 
-#### Training
+#### Run end to end
 
-To train a model, run:
+To run e2e:
+
+```shell
+saturn run-e2e -c <config/config.yaml>
+```
+
+#### Training only
 
 ```shell
 saturn train -c <config/config.yaml>
 ```
 
-#### Evaluation
+#### Evaluation only
 
 To evaluate a model, run:
 
