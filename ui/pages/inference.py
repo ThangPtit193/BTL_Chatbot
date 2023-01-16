@@ -18,7 +18,7 @@ DEFAULT_MAX_WORDS = os.getenv("DEFAULT_MAX_WORDS_AT_STARTUP", 50)
 # INPUT query
 DEFAULT_INPUT_QUERY = os.getenv("DEFAULT_INPUT_QUERY", "Hôm nay tôi đi học")
 # INPUT corpus
-DEFAULT_INPUT_CORPUS = os.getenv("DEFAULT_INPUT_CORPUS", "data/sample_corpus.txt")
+DEFAULT_INPUT_CORPUS = os.getenv("DEFAULT_INPUT_CORPUS", "ui/sample_data/sample_inference.txt")
 
 
 def set_state_if_absent(key, value):
@@ -48,7 +48,7 @@ def main():
         st.markdown("")
     with st.expander("📂 Download sample files", expanded=False):
         st.markdown("You can download sample txt file here")
-        with open("data/sample_corpus.txt", "r") as f:
+        with open(DEFAULT_INPUT_CORPUS, "r") as f:
             st.download_button("Download sample txt file", f, key="sample_file")
 
     st.markdown("")

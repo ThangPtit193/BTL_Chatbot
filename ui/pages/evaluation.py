@@ -47,24 +47,7 @@ with st.expander("ℹ️ Introduce", expanded=True):
     st.markdown("### Evaluation - Knowledge Retrieval ### ")
     st.markdown('INSTRUCTION: Select models, query and corpus to evaluate')
     st.markdown("""Query and corpus must be in json format""")
-    st.markdown("""
-    ```yaml
-    {
-    "science.ask_application.VIRUS": [
-        "Cho biết  1 số ưng dụng of vi rút"
-    ],
-    "science.ask_role.DI_TRUYEN_LIEN_KET": [
-        "ad cho t hỏi về ý nghĩa của di truyền liên kết",
-        "ad cho tôi hỏi về v/trò của di truyen lieen kết"
-    ],
-    "chemistry.ask_nature_state.SILIC": [
-        "Silic có trang thái tn ra sao",
-        "Silic có trang thái tu nhien như răng"
-    ]
-    }
-    ```
-    """
-    )
+
 with st.expander("📂 Download sample files", expanded=False):
     st.markdown("You can download sample json file here")
     with open("data/eval-data/dummy/corpus_docs.json", "r") as f:
@@ -106,7 +89,7 @@ def lazy_init():
     queries = load_docs(queries_json, corpus_json)
     corpus = load_docs(corpus_json)
 
-    kr._model_name_or_path = models_name
+    kr._pretrained_name_or_abspath = models_name
     kr._corpus_docs = None
     kr._corpus_docs = corpus
     kr._query_docs = None
