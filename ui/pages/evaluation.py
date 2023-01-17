@@ -10,7 +10,7 @@ import pandas as pd
 import streamlit as st
 from comet.lib.file_util import zip_folder
 from streamlit_tags import st_tags
-from st_aggrid import AgGrid, GridOptionsBuilder, DataReturnMode
+from st_aggrid import AgGrid, GridOptionsBuilder, DataReturnMode, JsCode
 
 from saturn.kr_manager import KRManager
 from ui import MODELS
@@ -125,7 +125,11 @@ if result_type == "Display overall result":
         st.success('Compute metrics done!')
     else:
         st.error('No file to show', icon="🚨")
-
+def format_color_groups(values):
+    if isinstance(values, float) and values > 0:
+        return  'color:red;border-collapse: collapse; border: 1px solid black;'
+    else:
+        return 'border-collapse: collapse; border: 1px solid black;'
 if result_type == "Display detail report":
     theme = st.sidebar.selectbox('Theme', ['light', 'dark', 'blue', 'fresh', 'material'], key='5')
     grid_options = {
@@ -159,20 +163,47 @@ if result_type == "Display detail report":
                         f"<h2 style='text-align: center; color: red; font-size:20px;'>Results for {model}</h2>",
                         unsafe_allow_html=True)
                     df_merged = pd.DataFrame(df.to_dict('records'))
-                    ob = GridOptionsBuilder.from_dataframe(df_merged)
-                    ob.configure_column('query', header_name='query', rowGroup=True, enableRowGroup=True,
-                                        dragAndDrop=True, tooltip=True)
-                    ob.configure_side_bar()
-                    ob.configure_selection("single")
-                    ob.configure_pagination(paginationAutoPageSize=False, paginationPageSize=10)
-                    gridOptions = ob.build()
-                    AgGrid(df_merged,
-                           gridOptions=gridOptions,
-                           data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
-                           allow_unsafe_jscode=True,
-                           theme=theme,
-                           key=random(),
-                           enable_enterprise_modules=True)
+                    # df_merged = df_merged.style.highlight_max(axis=0)
+                    # df_merged = df_merged.style.applymap(format_color_groups)
+                    select_option = st.selectbox('Select option', ['Show group', 'Show all with wrong results'], key='6')
+                    if select_option == 'Show group':
+                        ob = GridOptionsBuilder.from_dataframe(df_merged)
+                        ob.configure_column('query', header_name='query', rowGroup=True, enableRowGroup=True,
+                                            dragAndDrop=True, tooltip=True)
+                        ob.configure_side_bar()
+                        ob.configure_selection("single")
+                        ob.configure_pagination(paginationAutoPageSize=False, paginationPageSize=10)
+                        gridOptions = ob.build()
+                        AgGrid(df_merged,
+                            gridOptions=gridOptions,
+                            data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
+                            allow_unsafe_jscode=True,
+                            theme=theme,
+                            key=random(),
+                            enable_enterprise_modules=True)
+                    if select_option == 'Show all with wrong results':
+                        ob = GridOptionsBuilder.from_dataframe(df_merged)
+                        cellstyle_jscode = JsCode("""
+                        function(params) {
+                            console.log(params);
+                            if (params.data.predicted_labels != params.data.label) {
+                                return {
+                                    'color': 'red',
+                                }
+                            }
+                        }
+                        """)
+                        
+                        ob.configure_grid_options(getRowStyle=cellstyle_jscode)
+                        gridOptions = ob.build()
+                        AgGrid(df_merged,
+                            gridOptions=gridOptions,
+                            data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
+                            allow_unsafe_jscode=True,
+                            theme=theme,
+                            key=random(),
+                            enable_enterprise_modules=True)
+
         st.success('Compute metrics done!')
     else:
         st.error('No file to show', icon="🚨")
