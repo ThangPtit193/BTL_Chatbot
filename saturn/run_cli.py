@@ -9,7 +9,6 @@ from saturn.data_generation.tripple_generator import TripleGenerator
 from saturn.kr_manager import KRManager
 from saturn.utils.config_parser import ConfigParser
 from .version import get_saturn_version
-from comet.shared.model_hub import ModelHub
 
 logger.configure_logger("DEBUG")
 _logger = logger.get_logger(__name__)
@@ -51,6 +50,7 @@ def run_e2e(config):
 @click.command()
 @click.option('--config', '-c', required=True, default="config/config.yaml")
 def release(config):
+    from venus.wrapper import axiom_wrapper
     config_parser: ConfigParser = ConfigParser(config)
     release_config = config_parser.release_config()
     if not release_config:
@@ -81,7 +81,7 @@ def release(config):
         f"Are you sure to upload the model from '{model_path}' with name: '{name}' to model hub?"
     ).ask()
     if is_agree_upload:
-        ModelHub().upload_model(model_name=name, model_path=model_path, force=False)
+        axiom_wrapper.upload_model(model_name=name, dir_path=model_path, replace=True)
     else:
         print("Aborting...")
         return
