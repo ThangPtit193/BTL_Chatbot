@@ -125,11 +125,7 @@ if result_type == "Display overall result":
         st.success('Compute metrics done!')
     else:
         st.error('No file to show', icon="🚨")
-def format_color_groups(values):
-    if isinstance(values, float) and values > 0:
-        return  'color:red;border-collapse: collapse; border: 1px solid black;'
-    else:
-        return 'border-collapse: collapse; border: 1px solid black;'
+
 if result_type == "Display detail report":
     theme = st.sidebar.selectbox('Theme', ['light', 'dark', 'blue', 'fresh', 'material'], key='5')
     grid_options = {
@@ -163,8 +159,6 @@ if result_type == "Display detail report":
                         f"<h2 style='text-align: center; color: red; font-size:20px;'>Results for {model}</h2>",
                         unsafe_allow_html=True)
                     df_merged = pd.DataFrame(df.to_dict('records'))
-                    # df_merged = df_merged.style.highlight_max(axis=0)
-                    # df_merged = df_merged.style.applymap(format_color_groups)
                     select_option = st.selectbox('Select option', ['Show group', 'Show all with wrong results'], key='6')
                     if select_option == 'Show group':
                         ob = GridOptionsBuilder.from_dataframe(df_merged)
@@ -185,7 +179,6 @@ if result_type == "Display detail report":
                         ob = GridOptionsBuilder.from_dataframe(df_merged)
                         cellstyle_jscode = JsCode("""
                         function(params) {
-                            console.log(params);
                             if (params.data.predicted_labels != params.data.label) {
                                 return {
                                     'color': 'red',
