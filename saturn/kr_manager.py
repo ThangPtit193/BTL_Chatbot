@@ -187,7 +187,8 @@ class KRManager(SaturnAbstract):
         return retriever_results, retriever_top_k_results
 
     def save(self, report_type: str = "all", top_k: int = None, save_markdown: bool = True):
-        output_report_dir = self.get_report_dir()
+        output_report_dir = Path(self.get_report_dir())
+        detail_dir = os.path.join(Path(self.get_report_dir(), 'details'))
         if self.skipped_eval:
             return
 
@@ -202,34 +203,40 @@ class KRManager(SaturnAbstract):
 
         retriever_results, retriever_top_k_results = self.evaluate_embedder(top_k=top_k)
         if report_type == "overall":
-            self.save_overall_report(
-                output_dir=self.output_dir,
-                df=pd.DataFrame(retriever_results),
-                save_markdown=save_markdown
-            )
+            if retriever_results:
+                self.save_overall_report(
+                    output_dir=output_report_dir,
+                    df=pd.DataFrame(retriever_results),
+                    save_markdown=save_markdown
+                )
+            else:
+                _logger.warning("No evaluation results to export report")
         elif report_type == "detail":
             for models in retriever_top_k_results:
                 for model, data in models.items():
-                    self.save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
+                    self.save_detail_report(output_dir=detail_dir, model_name=model, df=data)
         elif report_type == "all":
-            self.save_overall_report(
-                output_dir=self.output_dir,
-                df=pd.DataFrame(retriever_results),
-                save_markdown=save_markdown
-            )
-            for models in retriever_top_k_results:
-                for model, data in models.items():
-                    self.save_detail_report(output_dir=self.output_dir, model_name=model, df=data)
+            if retriever_results:
+                self.save_overall_report(
+                    output_dir=output_report_dir,
+                    df=pd.DataFrame(retriever_results),
+                    save_markdown=save_markdown
+                )
+                for models in retriever_top_k_results:
+                    for model, data in models.items():
+                        self.save_detail_report(output_dir=detail_dir, model_name=model, df=data)
+            else:
+                _logger.warning("No evaluation results to export report")
         else:
             raise NotImplemented(f"Sorry, this report type {report_type} is not found")
 
     def save_overall_report(
-        self,
-        output_dir: Union[str, Path],
-        df: Union[DataFrame, List],
-        save_markdown: bool = False
+            self,
+            output_dir: Union[str, Path],
+            df: Union[DataFrame, List],
+            save_markdown: bool = False
     ):
-        output_dir = Path(self.get_report_dir())
+        # output_dir = Path(self.get_report_dir())
         _logger.info("Saving evaluation results to %s", output_dir)
         if not output_dir.exists():
             output_dir.mkdir(parents=True)
@@ -294,6 +301,7 @@ class KRManager(SaturnAbstract):
         bg_format_odd = workbook.add_format({'bg_color': '#cfe2f3', 'border': 1})
         bg_format_even = workbook.add_format({'bg_color': '#FFFFFF', 'border': 1})
         bg_format_wrong = workbook.add_format({'font_color': 'red'})
+        bg_best_score = workbook.add_format({'bold': True})
 
         for idx in df_merged['index'].unique():
             # find indices and add one to account for header
@@ -308,18 +316,23 @@ class KRManager(SaturnAbstract):
                 worksheet.conditional_format(cell_range, {'type': 'no_blanks',
                                                           'format': bg_format_even})
             for i in u:
-                if df_merged['label'][i - 1] != df_merged['predicted_labels'][i - 1]:
+                if df_merged['gt_label'][i - 1] != df_merged['predicted_label'][i - 1]:
                     # wrong_label_range = xl_range_abs(i, df_merged.columns.get_loc('most_relevant_docs'),
                     #                                  i, df_merged.shape[1])
                     worksheet.write(
-                        i, df_merged.columns.get_loc('most_relevant_docs'),
-                        df_merged['most_relevant_docs'][i-1], bg_format_wrong)
+                        i, df_merged.columns.get_loc('relevant_docs'),
+                        df_merged['relevant_docs'][i - 1], bg_format_wrong)
                     worksheet.write(
-                        i, df_merged.columns.get_loc('predicted_labels'),
-                        df_merged['predicted_labels'][i-1], bg_format_wrong)
+                        i, df_merged.columns.get_loc('predicted_label'),
+                        df_merged['predicted_label'][i - 1], bg_format_wrong)
                     worksheet.write(
-                        i, df_merged.columns.get_loc('relevant_doc_scores'),
-                        df_merged['relevant_doc_scores'][i-1], bg_format_wrong)
+                        i, df_merged.columns.get_loc('score'),
+                        df_merged['score'][i - 1], bg_format_wrong)
+                else:
+                    if float(df_merged['score'][i - 1]) >= 0.9:
+                        worksheet.write(
+                            i, df_merged.columns.get_loc('score'),
+                            df_merged['score'][i - 1], bg_best_score)
 
             if len(u) < 2:
                 pass  # do not merge cells if there is only one row
@@ -327,10 +340,10 @@ class KRManager(SaturnAbstract):
                 column_index = {
                     'index': 0,
                     'query': 1,
-                    'label': 2,
-                    'top_k_relevant': 3,
-                    'rr_score': 4,
-                    'ap_score': 5
+                    'gt_label': 2,
+                    'top_k': 3,
+                    'rr': 4,
+                    'ap': 5
                 }
                 # merge cells using the first and last indices
                 for key, index in column_index.items():
@@ -346,8 +359,8 @@ class KRManager(SaturnAbstract):
         _logger.info(f"Evaluation report with excel format is saved at {target_path}")
 
     def _extract_eval_result(
-        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
-        top_k: int = None
+            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
+            top_k: int = None
     ):
         eval_results = []
         eval_top_k_results = []
@@ -402,7 +415,12 @@ class KRManager(SaturnAbstract):
 
             try:
                 tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
+
+                # restructure dataframe
+                tmp_df.insert(5, 'score', tmp_df.pop('relevant_doc_scores'))
+                tmp_df.columns = ['query', 'gt_label', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
             except:
+                _logger.warning(f"Bad data: {src_doc} so returning null")
                 tmp_df = pd.DataFrame()
             eval_top_k_results.append(tmp_df.to_dict())
             eval_results.append(eval_result.to_dict())
