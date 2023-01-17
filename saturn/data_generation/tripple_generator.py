@@ -10,7 +10,10 @@ from saturn.abstract_method.staturn_abstract import SaturnAbstract
 from saturn.data_generation import constants
 from saturn.data_generation.document_store.in_mem_store import InmemoryDocumentStore
 from saturn.utils.config_parser import ConfigParser
+from collections import Counter
 
+if TYPE_CHECKING:
+    from saturn.data_generation.document_store.document import Document
 _logger = logger.get_logger(__name__)
 
 
@@ -23,6 +26,7 @@ class TripleGenerator(SaturnAbstract):
         self.document_store: InmemoryDocumentStore = InmemoryDocumentStore(
             self.config_parser
         )
+        self.doc_ids_counter: Counter = Counter()
         self.initialize()
 
     def initialize(self):
@@ -75,13 +79,16 @@ class TripleGenerator(SaturnAbstract):
         for document in tqdm(documents):
             negatives_data = [{k: val} for k, val in document.negatives_ids.items()]
             positive_ids = sorted(document.positive_ids)
-            # if len of positive_ids greater than max_sentence_repeated, we will rmove proceesed positive_ids
-            # if len(positive_ids) > self.max_sentence_repeated:
-            #     positive_ids = list(set(positive_ids) - processed_positive_ids)
             # Get cache of positive ids
             for idx, positive_id in enumerate(positive_ids):
-                if idx >= self.max_sentence_repeated:
+                # if anchor is reached max sentence, break
+                if self._doc_reached_max_sentence(document.id):
                     break
+
+                # If positive is reached max sentence, continue
+                if self._doc_reached_max_sentence(positive_id):
+                    continue
+
                 anchor = document.text
                 positive = self.document_store.documents[positive_id].text
                 processed_positive_ids.add(positive_id)
@@ -96,6 +103,9 @@ class TripleGenerator(SaturnAbstract):
                     self.save(triples, f"triples_{check_point}.json", mode="triple")
                     counter = 0
                     triples = []
+                # Update positive and anchor counter
+                self._update_doc_counter(document.id)
+                self._update_doc_counter(positive_id)
 
         check_point += len(triples)
         self.save(triples, f"triples_{check_point}.json", mode='triple')
@@ -170,3 +180,9 @@ class TripleGenerator(SaturnAbstract):
                 }
                 rendered_data["data"].append(dict_quadruplet)
         return rendered_data
+
+    def _update_doc_counter(self, doc_id: Text):
+        self.doc_ids_counter[doc_id] += 1
+
+    def _doc_reached_max_sentence(self, doc_id: Text):
+        return self.doc_ids_counter[doc_id] >= self.max_sentence_repeated
