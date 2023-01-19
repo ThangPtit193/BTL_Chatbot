@@ -395,6 +395,22 @@ class SBertSemanticSimilarity(SemanticSimilarity):
         # if not os.path.exists(save_best_model_path):
         #     os.makedirs(save_best_model_path)
         # self.learner.save(save_best_model_path)
+        # Save the model config
+        self._dump_config(self.get_model_dir())
+        # Get all dirs in the model dir using os
+        models_dir = os.listdir(self.get_model_dir())
+        for model_dir in models_dir:
+            config_path = os.path.join(self.get_model_dir(), model_dir)
+            if os.path.isdir(config_path):
+                self._dump_config(config_path)
+
+    def _dump_config(self, directory: Text = None):
+        if not directory:
+            raise ValueError("directory must be provided")
+        file_util.write_json_beautifier(
+            os.path.join(directory, "kr_config.yml"),
+            self.config_parser.config_data
+        )
 
 
 class NLISemanticSimilarity(SemanticSimilarity):

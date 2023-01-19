@@ -234,23 +234,6 @@ class CustomSentenceTransformer(SentenceTransformer):
             )
             epoch_offset = checkpoints["epoch"]
             self.load_state_dict(checkpoints["model_state_dict"])
-        #     param_optimizer = list(loss_model.named_parameters())
-        #
-        #     no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
-        #     optimizer_grouped_parameters = [
-        #         {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)],
-        #          'weight_decay': weight_decay},
-        #         {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
-        #     ]
-        #     optimizer = optimizer_class(optimizer_grouped_parameters, **optimizer_params)
-        #     scheduler_obj = self._get_scheduler(optimizer, scheduler=scheduler, warmup_steps=warmup_steps,
-        #                                         t_total=num_train_steps)
-        #     optimizers = [optimizer.load_state_dict(optimizer_state)
-        #                   for optimizer_state in checkpoints["optimizers_state_dict"]]
-        #     schedulers = [scheduler_obj.load_state_dict(scheduler_state)
-        #                   for scheduler_state in checkpoints["schedulers_state_dict"]]
-        #     epoch_offset = checkpoints["epoch"]
-        # else:
         for idx, loss_model in enumerate(loss_models):
             param_optimizer = list(loss_model.named_parameters())
 

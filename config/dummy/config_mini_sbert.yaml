@@ -8,8 +8,8 @@ GENERAL:
   output_report: reports
 
   # Skipped signal
-  skipped_gen_data: False
-  skipped_training: True
+  skipped_gen_data: True
+  skipped_training: False
   skipped_eval: True
 
 DATA_GENERATION:
@@ -31,7 +31,7 @@ TRAINER:
   pretrained_name_or_abspath: keepitreal/vietnamese-sbert
   n_samples: 10
   batch_size: 256
-  epochs: 20
+  epochs: 2
   warmup_steps: 5000
   evaluation_steps: 2000
   weight_decay: 0.01
