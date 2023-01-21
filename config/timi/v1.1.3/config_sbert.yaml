@@ -1,14 +1,14 @@
 GENERAL:
-  device: cuda:1
+  device: cuda:0
   project: timi
-  version: v1.1.3
+  version: v1.1.3_limit_20
   output_data: assets
   output_model: models
   output_report: reports
 
   # Skipped signal
-  skipped_gen_data: True
-  skipped_training: True
+  skipped_gen_data: False
+  skipped_training: False
   skipped_eval: False
 
 DATA_GENERATION:
@@ -17,10 +17,11 @@ DATA_GENERATION:
   embedding_batch_size: 100
   neg_sim_batch_size: 200
   max_triple_per_file: 2000000
-  max_sentence_repeated: 50
+  max_sentence_repeated: 20
   EMBEDDER:
     cache_path: ./embedder_caches
     pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+    batch_size: 256
 #  COMBINER:
 
 
@@ -48,29 +49,32 @@ TRAINER:
 
 EVALUATION:
   type: "evaluation_pipeline"
-  corpus_name_or_path: "data/eval-data/timi/v1.0.0/corpus.json"
-  query_name_or_path: "data/eval-data/timi/v1.0.0/query.json"
+#  corpus_name_or_path: "data/eval-data/timi/v1.0.0/corpus.json"
+#  query_name_or_path: "data/eval-data/timi/v1.0.0/query.json"
+  corpus_name_or_path: "data/raw/timi/v1.1.3/eval/corpus.json"
+  query_name_or_path: "data/raw/timi/v1.1.3/eval/query.json"
   pretrained_name_or_abspath:
-#    - models/timi/v1.1.3/epoch-1
-#    - models/timi/v1.1.3/epoch-2
-#    - models/timi/v1.1.3/epoch-3
-#    - models/timi/v1.1.3/epoch-4
-#    - models/timi/v1.1.3/epoch-5
-#    - models/timi/v1.1.3/epoch-6
-#    - models/timi/v1.1.3/epoch-7
-#    - models/timi/v1.1.3/epoch-8
-#    - models/timi/v1.1.3/epoch-9
-#    - models/timi/v1.1.3/epoch-10
-#    - models/timi/v1.1.3/epoch-11
-#    - models/timi/v1.1.3/epoch-12
-#    - models/timi/v1.1.3/epoch-13
-#    - models/timi/v1.1.3/epoch-14
-#    - models/timi/v1.1.3/epoch-15
-#    - models/timi/v1.1.3/epoch-16
-#    - models/timi/v1.1.3/epoch-17
-#    - models/timi/v1.1.3/epoch-18
-#    - models/timi/v1.1.3/epoch-19
-    - timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+#    - models/timi/v1.1.3_limit_20/epoch-1
+#    - models/timi/v1.1.3_limit_20/epoch-2
+#    - models/timi/v1.1.3_limit_20/epoch-3
+#    - models/timi/v1.1.3_limit_20/epoch-4
+#    - models/timi/v1.1.3_limit_20/epoch-5
+#    - models/timi/v1.1.3_limit_20/epoch-6
+#    - timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+    - timi-keepitreal-H768-faq-2M-v1.1.3
+#    - models/timi/v1.1.3_limit_20/epoch-7
+#    - models/timi/v1.1.3_limit_20/epoch-8
+#    - models/timi/v1.1.3_limit_20/epoch-9
+#    - models/timi/v1.1.3_limit_20/epoch-10
+#    - models/timi/v1.1.3_limit_20/epoch-11
+#    - models/timi/v1.1.3_limit_20/epoch-12
+#    - models/timi/v1.1.3_limit_20/epoch-13
+#    - models/timi/v1.1.3_limit_20/epoch-14
+#    - models/timi/v1.1.3_limit_20/epoch-15
+#    - models/timi/v1.1.3_limit_20/epoch-16
+#    - models/timi/v1.1.3_limit_20/epoch-17
+#    - models/timi/v1.1.3_limit_20/epoch-18
+#    - models/timi/v1.1.3_limit_20/epoch-19
 
 RELEASE:
   model_path: models
