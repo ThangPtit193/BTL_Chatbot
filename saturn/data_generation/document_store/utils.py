@@ -36,3 +36,17 @@ def fast_argsort_bottleneck(arrays: np.ndarray, axis=None, top_k: int = 1):
     ind_part = np.argsort(arrays, axis=axis)
     indices = np.take_along_axis(indices, ind_part, axis=axis)
     return indices
+
+
+def fast_argsort_1d_bottleneck(arrays: np.ndarray, axis=None, top_k: int = 1):
+    # arrays *= -1
+    arrays *= -1
+    top_k = min(top_k, len(arrays)) - 1
+    indices = bn.argpartition(arrays, top_k, axis=axis)
+    indices = np.take(indices, np.arange(top_k + 1), axis=axis)
+    arrays = np.take_along_axis(arrays, indices, axis=axis)
+
+    # sort within k elements
+    ind_part = np.argsort(arrays, axis=axis)
+    indices = np.take_along_axis(indices, ind_part, axis=axis)
+    return indices

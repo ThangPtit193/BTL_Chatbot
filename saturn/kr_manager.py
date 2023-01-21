@@ -19,6 +19,11 @@ from comet.lib.print_utils import print_title
 from saturn.components.utils.document import Document, EvalResult
 from saturn.utils.config_parser import ConfigParser
 from saturn.abstract_method.staturn_abstract import SaturnAbstract
+import numpy as np
+from saturn.data_generation.document_store.utils import fast_argsort, fast_argsort_1d_bottleneck
+from tqdm.contrib import tzip
+import time
+import torch
 
 if TYPE_CHECKING:
     from saturn.components.embeddings.embedding_models import SBertSemanticSimilarity
@@ -146,13 +151,14 @@ class KRManager(SaturnAbstract):
             pretrained_name_or_abspaths = [pretrained_name_or_abspaths]
         evaluation_results: Dict[str, List[EvalResult]] = {}
         # evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
-        for pretrained_name_or_abspath in tqdm(list(set(pretrained_name_or_abspaths))):
+        for pretrained_name_or_abspath in tqdm(list(pretrained_name_or_abspaths)):
             name = os.path.basename(pretrained_name_or_abspath)
             evaluation_results[name] = []
             evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
             try:
+                batch_size = 256 if torch.cuda.is_available() else 8
                 embedder = BertEmbedder(
-                    pretrained_name_or_abspath=pretrained_name_or_abspath, device=self.device
+                    pretrained_name_or_abspath=pretrained_name_or_abspath, device=self.device, batch_size=batch_size
                 )
             except Exception as e:
                 _logger.error(f"Failed to load model {pretrained_name_or_abspath} due to {e}")
@@ -160,9 +166,11 @@ class KRManager(SaturnAbstract):
             tic = perf_counter()
             tgt_docs = [convert_unicode(doc.text) for doc in self.corpus_docs]
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
+
             similarity_data = embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
             toc = perf_counter()
             retriever_time = toc - tic
+            print(f"Retriever time: {retriever_time}")
 
             eval_results, eval_top_k_results = self._extract_eval_result(self.query_docs,
                                                                          tgt_docs,
@@ -172,6 +180,8 @@ class KRManager(SaturnAbstract):
             evaluation_top_k_results[name] = eval_top_k_results
             retriever_top_k_results.append(evaluation_top_k_results)
             df = pd.DataFrame(evaluation_results[name])
+            _logger.info(f"Retriever results for '{name}': map: {round(df['ap_score'].mean(), 2)}, "
+                         f"mrr: {round(df['rr_score'].mean(), 2)}")
 
             records = {
                 "model_name": name,
@@ -231,10 +241,10 @@ class KRManager(SaturnAbstract):
             raise NotImplemented(f"Sorry, this report type {report_type} is not found")
 
     def save_overall_report(
-            self,
-            output_dir: Union[str, Path],
-            df: Union[DataFrame, List],
-            save_markdown: bool = False
+        self,
+        output_dir: Union[str, Path],
+        df: Union[DataFrame, List],
+        save_markdown: bool = False
     ):
         # output_dir = Path(self.get_report_dir())
         _logger.info("Saving evaluation results to %s", output_dir)
@@ -359,14 +369,13 @@ class KRManager(SaturnAbstract):
         _logger.info(f"Evaluation report with excel format is saved at {target_path}")
 
     def _extract_eval_result(
-            self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
-            top_k: int = None
+        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
+        top_k: int = None
     ):
         eval_results = []
         eval_top_k_results = []
 
-        for src_doc, similarities in zip(src_docs, similarity_data_2d):
-            indices = self._arg_sort(similarities)
+        for src_doc, similarities in tzip(src_docs, similarity_data_2d):
             rr_score = 0
             ap_score = 0
             ap = 0
@@ -375,15 +384,24 @@ class KRManager(SaturnAbstract):
             top_k_relevant_docs = []
             relevant_doc_scores = []
             predicted_labels = []
+            top_k = top_k if top_k in range(1, src_doc.num_relevant) else src_doc.num_relevant
+            top_k = min(top_k, 20)
+            # indices = self._arg_sort(similarities)
+
+            scores = np.array([score for _, score in similarities])
+            indices = fast_argsort_1d_bottleneck(scores, axis=0, top_k=src_doc.num_relevant).tolist()
 
             # Get score of each relevant doc
-
             for i in indices[:src_doc.num_relevant]:
                 top_k_relevant_docs.append(tgt_docs[i])
-                for id, answer in enumerate(similarities):
-                    if tgt_docs[i] == answer[0]:
-                        relevant_doc_scores.append(str(answer[1]))
-                        predicted_labels.extend([doc.label for doc in self.corpus_docs if doc.text == answer[0]])
+                sim_score = similarities[i][1]
+                relevant_doc_scores.append(sim_score)
+                predicted_labels.append(self.corpus_docs[i].label)
+                # for id, answer in enumerate(similarities):
+                #     if tgt_docs[i] == answer[0]:
+                #         relevant_doc_scores.append(str(answer[1]))
+                #         predicted_labels.extend([doc.label for doc in self.corpus_docs if doc.text == answer[0]])
+                # tgt_doc = self.corpus_docs[i]
 
             ground_truths = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
             for idx, relevant_doc in enumerate(top_k_relevant_docs):
@@ -395,33 +413,20 @@ class KRManager(SaturnAbstract):
                 else:
                     rr_score = rr_score
                 ap_score += ap / (int(idx) + 1)
-
             eval_result = EvalResult(
                 query=src_doc.text,
                 label=src_doc.label,
                 rr_score=rr_score,
                 ap_score=round((ap_score / src_doc.num_relevant), 2),
                 top_k_relevant=src_doc.num_relevant,
-                most_relevant_docs=top_k_relevant_docs,
-                relevant_doc_scores=relevant_doc_scores,
-                predicted_labels=predicted_labels
+                most_relevant_docs=top_k_relevant_docs[:top_k],
+                relevant_doc_scores=relevant_doc_scores[:top_k],
+                predicted_labels=predicted_labels[:top_k]
 
             )
-            top_k = top_k if top_k in range(1, src_doc.num_relevant) else src_doc.num_relevant
-            if top_k > 20:
-                _logger.warning(
-                    f"Got {top_k} instead of being less than or equal to 20, so the default value {10} will be applied")
-                top_k = 10
-
-            try:
-                tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
-
-                # restructure dataframe
-                tmp_df.insert(5, 'score', tmp_df.pop('relevant_doc_scores'))
-                tmp_df.columns = ['query', 'gt_label', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
-            except:
-                _logger.warning(f"Bad data: {src_doc} so returning null")
-                tmp_df = pd.DataFrame()
+            tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
+            tmp_df.insert(5, 'score', tmp_df.pop('relevant_doc_scores'))
+            tmp_df.columns = ['query', 'gt_label', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
             eval_top_k_results.append(tmp_df.to_dict())
             eval_results.append(eval_result.to_dict())
         return eval_results, eval_top_k_results
