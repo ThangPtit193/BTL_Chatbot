@@ -239,7 +239,7 @@ class KRManager(SaturnAbstract):
                     os.path.join(self.output_dir, 'details', f'{name}.json'), evaluation_results[name])
 
         if save_report:
-            # compute information retrieval
+            # compute information retrieval metrics
             metrics = self.compute_ir_metrics(eval_results=evaluation_results)  # type: ignore
 
             # export information retrieval summaries
