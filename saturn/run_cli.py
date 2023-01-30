@@ -43,7 +43,7 @@ def run_e2e(config):
 
     # Evaluate the model
     print_utils.print_line(f"Starting evaluate the model")
-    kr_manager.save()
+    kr_manager.evaluate()
     print_utils.print_line(f"DONE evaluate the model")
 
 

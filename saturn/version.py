@@ -1,4 +1,4 @@
-__version__ = 'v1.0.0.rc1'
+__version__ = 'v1.0.1.rc1'
 
 
 def get_saturn_version():

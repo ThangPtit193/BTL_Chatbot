@@ -2,10 +2,13 @@ import codecs
 import json
 import os
 import sys
-from typing import Dict, Text
+from pathlib import Path
+from typing import Dict, Text, Union, List
 
 import jsbeautifier
+import pandas as pd
 import requests
+from pandas import DataFrame
 from tqdm import tqdm
 
 
@@ -46,6 +49,33 @@ def write_json_beautifier(file_path: Text, dict_info: Dict) -> None:
     dict_ = jsbeautifier.beautify(json.dumps(dict_info, ensure_ascii=False), opts)
     with codecs.open(file_path, 'w', 'utf-8') as f:
         f.write(dict_)
+
+
+def write_csv(out_dir: Union[Text, Path], file_name: str, data: Union[List, DataFrame]):
+    file_path = os.path.join(out_dir, file_name)
+    if not Path(out_dir).exists():
+        Path(out_dir).mkdir(parents=True)
+    if isinstance(data, list):
+        data = pd.DataFrame(data)
+
+    if file_path.lower().endswith('.csv'):
+        return data.to_csv(file_path)
+    else:
+        raise ValueError(f'File path must be a csv file')
+
+
+def write_md(out_dir: Union[Text, Path], file_name: str, data: Union[List, DataFrame]):
+    file_path = os.path.join(out_dir, file_name)
+    if not Path(out_dir).exists():
+        Path(out_dir).mkdir(parents=True)
+    if isinstance(data, list):
+        data = pd.DataFrame(data)
+
+    if file_path.lower().endswith('.md'):
+        with open(file_path, "w") as f:
+            f.write(str(data.to_markdown()))
+    else:
+        raise ValueError(f'File path must be a md file')
 
 
 def http_get(url, path):

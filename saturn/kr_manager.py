@@ -3,14 +3,19 @@ import os
 from pathlib import Path
 from time import perf_counter
 from typing import TYPE_CHECKING, Optional, List, Union, Tuple, Text, Dict
+
 from comet.components.embeddings.embedding_models import BertEmbedder
 import questionary
 import pandas as pd
 from pandas import DataFrame
+import numpy as np
 from tqdm import tqdm
+from tqdm.contrib import tzip
 from xlsxwriter.utility import xl_range_abs
 from tabulate import tabulate
 import shutil
+import torch
+
 from comet.lib import file_util, logger
 from comet.lib.helpers import get_module_or_attr
 from comet.utilities.utility import convert_unicode
@@ -19,11 +24,8 @@ from comet.lib.print_utils import print_title
 from saturn.components.utils.document import Document, EvalResult
 from saturn.utils.config_parser import ConfigParser
 from saturn.abstract_method.staturn_abstract import SaturnAbstract
-import numpy as np
-from saturn.data_generation.document_store.utils import fast_argsort, fast_argsort_1d_bottleneck
-from tqdm.contrib import tzip
-import time
-import torch
+from saturn.utils.io import write_csv, write_md, write_json_beautifier
+from saturn.data_generation.document_store.utils import fast_argsort_1d_bottleneck
 
 if TYPE_CHECKING:
     from saturn.components.embeddings.embedding_models import SBertSemanticSimilarity
@@ -41,6 +43,14 @@ class KRManager(SaturnAbstract):
         self.retriever_type: Optional[Union[str, List]] = "embedding"
         self.document_store_type: Optional[Union[str, List]] = "memory"
         self._output_dir: Optional[Union[str, Path]] = None
+        self._top_k: Optional[int] = None
+        self._retriever_threshold: Optional[float] = None
+        self._default_faq_label: Optional[str] = "faq/out_of_scope"
+
+        try:
+            self.eval_config = self.config_parser.eval_config()
+        except:
+            _logger.error(f"Failed to load general config")
 
     @property
     def embedder(self):
@@ -88,17 +98,51 @@ class KRManager(SaturnAbstract):
 
     @property
     def output_dir(self):
+        """
+        Path to save report with convention: reports/project/version/sub_folder
+        """
         if not self._output_dir:
-            eval_config = self.config_parser.eval_config()
-            if "output_dir" not in eval_config:
+            general_config = self.config_parser.general_config()
+            if "output_report" not in general_config:
                 self._output_dir = "reports"
                 return self._output_dir
-            self._output_dir = eval_config.get("output_dir")
+            self._output_dir = os.path.join(general_config.get("output_report"), general_config.get("project"),
+                                            general_config.get("version"))
             return self._output_dir
-        else:
-            _logger.warning("No specific output direction so that the report will be saved at `./reports`")
-            self._output_dir = "reports"
-            return self._output_dir
+        return self._output_dir
+
+    @property
+    def top_k(self):
+        if not self._top_k:
+            if 'top_k' not in self.eval_config:
+                _logger.warning('Not found to get top_k, so the default value will be applied')
+                self._top_k = 5
+                return self._top_k
+            self._top_k = self.eval_config.get('top_k')
+            return self._top_k
+        return self._top_k
+
+    @property
+    def retriever_threshold(self):
+        if not self._retriever_threshold:
+            if 'retriever_threshold' not in self.eval_config:
+                _logger.warning('Not found to get retriever_threshold, so the default value will be applied')
+                self._retriever_threshold = 0.5
+                return self._retriever_threshold
+            self._retriever_threshold = self.eval_config.get('retriever_threshold')
+            return self._retriever_threshold
+        return self._retriever_threshold
+
+    @property
+    def default_faq_label(self):
+        if not self._default_faq_label:
+            if 'default_faq_label' not in self.eval_config:
+                _logger.warning('Not found to get default_faq_label, so the default value will be applied')
+                self._default_faq_label = 'faq/out_of_scope'
+                return self._default_faq_label
+            self._default_faq_label = self.eval_config.get('default_faq_label')
+            return self._default_faq_label
+        return self._default_faq_label
 
     def train_embedder(self):
         if self.skipped_training:
@@ -143,18 +187,24 @@ class KRManager(SaturnAbstract):
             retriever_results['score'].append(score)
         return retriever_results
 
-    def evaluate_embedder(self, top_k: int = None):
-        retriever_results = []
-        retriever_top_k_results = []
+    def evaluate(self,
+                 top_k: int = None,
+                 retriever_threshold: float = None,
+                 default_faq_label: str = None,
+                 save_report: bool = True):
+
+        top_k = top_k if top_k else self.top_k
+        retriever_threshold = retriever_threshold if retriever_threshold else self.retriever_threshold
+        default_faq_label = default_faq_label if default_faq_label else self.default_faq_label
+
         pretrained_name_or_abspaths = self.pretrained_name_or_abspath
         if isinstance(pretrained_name_or_abspaths, str):
             pretrained_name_or_abspaths = [pretrained_name_or_abspaths]
-        evaluation_results: Dict[str, List[EvalResult]] = {}
-        # evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
+        evaluation_results: Dict[Dict[str, List[EvalResult]]] = {}
+
         for pretrained_name_or_abspath in tqdm(list(pretrained_name_or_abspaths)):
             name = os.path.basename(pretrained_name_or_abspath)
-            evaluation_results[name] = []
-            evaluation_top_k_results: Dict[str, List[EvalResult]] = {}
+            evaluation_results[name] = {}
             try:
                 batch_size = 256 if torch.cuda.is_available() else 8
                 embedder = BertEmbedder(
@@ -168,113 +218,115 @@ class KRManager(SaturnAbstract):
             src_docs = [convert_unicode(doc.text) for doc in self.query_docs]
 
             similarity_data = embedder.find_similarity(src_docs, tgt_docs, _no_sort=True)
+
             toc = perf_counter()
             retriever_time = toc - tic
-            print(f"Retriever time: {retriever_time}")
 
-            eval_results, eval_top_k_results = self._extract_eval_result(self.query_docs,
-                                                                         tgt_docs,
-                                                                         similarity_data,
-                                                                         top_k=top_k)
-            evaluation_results[name].extend(eval_results)
-            evaluation_top_k_results[name] = eval_top_k_results
-            retriever_top_k_results.append(evaluation_top_k_results)
-            df = pd.DataFrame(evaluation_results[name])
-            _logger.info(f"Retriever results for '{name}': map: {round(df['ap_score'].mean(), 2)}, "
-                         f"mrr: {round(df['rr_score'].mean(), 2)}")
+            eval_results = self._extract_eval_result(self.query_docs,
+                                                     tgt_docs,
+                                                     similarity_data,
+                                                     top_k=top_k,
+                                                     retriever_threshold=retriever_threshold,
+                                                     default_faq_label=default_faq_label)
 
+            evaluation_results[name]["retriever_docs"] = eval_results
+            evaluation_results[name]["retriever_time"] = round(retriever_time, 2)
+            evaluation_results[name]["query_numbers"] = len(src_docs)
+
+            if save_report:
+                self.save_detail_report(model_name=name, df=evaluation_results[name])
+                write_json_beautifier(
+                    os.path.join(self.output_dir, 'details', f'{name}.json'), evaluation_results[name])
+
+        if save_report:
+            # compute information retrieval
+            metrics = self.compute_ir_metrics(eval_results=evaluation_results)  # type: ignore
+
+            # export information retrieval summaries
+            write_csv(self.output_dir, 'model_ir_summary.csv', metrics)
+            write_md(self.output_dir, 'model_ir_summary.md', metrics)
+
+        return evaluation_results
+
+    def compute_ir_metrics(self, eval_results: Dict[str, Dict[str, List[EvalResult]]] = None) -> List:
+        """
+        Compute information retrieval metrics such as mean average precision (mAP), mean reciprocal rank (mRR)
+        To see detail, please visit here: https://amitness.com/2020/08/information-retrieval-evaluation/
+
+        :param eval_results: evaluation results to compute metrics
+        """
+        metrics = []
+        if not eval_results:
+            raise ValueError(f"Failed to write results with empty data")
+
+        for model_name, eval_result in eval_results.items():
+            df = pd.DataFrame(eval_result["retriever_docs"])
+            df = df.apply(pd.Series.explode)
+            df.insert(5, 'score', df.pop('relevant_doc_scores'))
+            df.columns = ['query', 'gt_label', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
+            _logger.info(f"Retriever results for '{model_name}': map: {round(df['ap'].mean(), 2)}, "
+                         f"mrr: {round(df['rr'].mean(), 2)}")
             records = {
-                "model_name": name,
-                "query_numbers": len(src_docs),
-                "retriever_time": round(retriever_time, 2),
-                "query_per_second": round(retriever_time / len(src_docs), 2),
-                "map": round(df["ap_score"].mean(), 2),
-                "mrr": round(df["rr_score"].mean(), 2),
+                "model_name": model_name,
+                "query_numbers": eval_result["query_numbers"],
+                "retriever_time": eval_result["retriever_time"],
+                "query_per_second": round(
+                    float(eval_result["retriever_time"] / eval_result["query_numbers"]), 2),
+                "map": round(df["ap"].mean(), 2),
+                "mrr": round(df["rr"].mean(), 2),
                 "date_time": datetime.datetime.now()
             }
-            retriever_results.append(records)
+            metrics.append(records)
 
-        return retriever_results, retriever_top_k_results
-
-    def save(self, report_type: str = "all", top_k: int = None, save_markdown: bool = True):
-        output_report_dir = Path(self.get_report_dir())
-        detail_dir = os.path.join(Path(self.get_report_dir(), 'details'))
-        if self.skipped_eval:
-            return
-
-        if self.is_warning_action and os.path.exists(output_report_dir) and len(os.listdir(output_report_dir)) > 0:
-            is_re_evaluated = questionary.confirm("The report has been generated, do you want to re-evaluate it?").ask()
-            if not is_re_evaluated:
-                return
-            else:
-                is_cleaned = questionary.confirm("Do you want to clean the report directory?").ask()
-                if is_cleaned:
-                    shutil.rmtree(output_report_dir)
-
-        retriever_results, retriever_top_k_results = self.evaluate_embedder(top_k=top_k)
-        if report_type == "overall":
-            if retriever_results:
-                self.save_overall_report(
-                    output_dir=output_report_dir,
-                    df=pd.DataFrame(retriever_results),
-                    save_markdown=save_markdown
-                )
-            else:
-                _logger.warning("No evaluation results to export report")
-        elif report_type == "detail":
-            for models in retriever_top_k_results:
-                for model, data in models.items():
-                    self.save_detail_report(output_dir=detail_dir, model_name=model, df=data)
-        elif report_type == "all":
-            if retriever_results:
-                self.save_overall_report(
-                    output_dir=output_report_dir,
-                    df=pd.DataFrame(retriever_results),
-                    save_markdown=save_markdown
-                )
-                for models in retriever_top_k_results:
-                    for model, data in models.items():
-                        self.save_detail_report(output_dir=detail_dir, model_name=model, df=data)
-            else:
-                _logger.warning("No evaluation results to export report")
-        else:
-            raise NotImplemented(f"Sorry, this report type {report_type} is not found")
+        measurer = np.vectorize(len)
+        scale = sum(measurer(pd.DataFrame(metrics).values.astype(str)).max(axis=0)) + 25
+        print_title(text="Knowledge Retrieval Overall Results", scale=scale, color='purple')
+        print(tabulate(pd.DataFrame(metrics), headers='keys', tablefmt='pretty'))
+        return metrics
 
     def save_overall_report(
-        self,
-        output_dir: Union[str, Path],
-        df: Union[DataFrame, List],
-        save_markdown: bool = False
+            self,
+            output_dir: Union[str, Path],
+            df: Union[DataFrame, List],
+            report_type: Optional[str] = 'csv',
+            report_name: Optional[str] = None,
     ):
         # output_dir = Path(self.get_report_dir())
+        _logger.warn('This function will be deprecated in version 0.1.2 and above. Please use io.write_csv() instead',
+                     DeprecationWarning, stacklevel=2)
         _logger.info("Saving evaluation results to %s", output_dir)
-        if not output_dir.exists():
-            output_dir.mkdir(parents=True)
-
-        target_path = os.path.join(output_dir, "knowledge_retrieval.csv")
+        if not Path(output_dir).exists():
+            Path(output_dir).mkdir(parents=True)
 
         retriever_df = pd.DataFrame.from_records(df)
-        retriever_df = retriever_df.sort_values(by="map")
-        retriever_df.to_csv(target_path)
+        if report_type == 'csv':
+            report_name = report_name if report_name else 'knowledge_retrieval'
+            target_path = os.path.join(output_dir, f"{report_name}.csv")
+            retriever_df.to_csv(target_path)
 
-        if save_markdown:
-            md_file = target_path.replace(".csv", ".md")
+        elif report_type == 'markdown':
+            md_file = os.path.join(output_dir, f"{report_name}.md")
             with open(md_file, "w") as f:
                 f.write(str(retriever_df.to_markdown()))
+        else:
+            raise NotImplemented(f"This format {report_type} has not supported yet.")
 
-        print_title(text="Knowledge Retrieval Overall Results", scale=110, color='purple')
-        print(tabulate(retriever_df, headers='keys', tablefmt='pretty'))
-
-    def save_detail_report(self, output_dir: Union[str, Path], model_name: str, df: Union[DataFrame, List]):
+    def save_detail_report(self,
+                           model_name: str,
+                           df: Union[DataFrame, List],
+                           output_dir: Optional[Union[str, Path]] = None
+                           ):
         """
         Saves the evaluation result.
         The result of each node is saved in a separate csv with file name {node_name}.csv to the output_dir folder.
 
-        :param output_dir: Path to the target folder the csvs will be saved.
         :param model_name: Model name to benchmark
-        :param df: Evaluation result
+        :param df: Evaluation results
+        :param output_dir: Path to the target folder the csvs will be saved.
         """
+        output_dir = output_dir if output_dir else self.output_dir
         output_dir = output_dir if isinstance(output_dir, Path) else Path(output_dir)
+        output_dir = Path(os.path.join(output_dir, 'details'))
         _logger.info("Saving evaluation results to %s", output_dir)
         if not output_dir.exists():
             output_dir.mkdir(parents=True)
@@ -283,18 +335,30 @@ class KRManager(SaturnAbstract):
 
         if isinstance(df, list):
             df = pd.DataFrame(df)
-        # df = df.drop(columns=['query_id'])
-        df.insert(loc=0, column='index', value=df.index)
 
+        df = pd.DataFrame(df["retriever_docs"])
+        df.insert(loc=0, column='index', value=df.index)
+        df.insert(6, 'score', df.pop('relevant_doc_scores'))
+        df.columns = ['index', 'query', 'gt_label', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
         # explode lists of corpus to row
         df = df.apply(pd.Series.explode)
+
         df_merged = pd.DataFrame(df.to_dict('records'))
+        df_merged.score = df_merged.score.round(decimals=2)
+
+        df_merged_wrong_queries = pd.DataFrame(df.to_dict('records'))
+        df_merged_wrong_queries = df_merged_wrong_queries[
+            df_merged_wrong_queries['gt_label'] != df_merged_wrong_queries['predicted_label']]
+        df_merged_wrong_queries = df_merged_wrong_queries.reset_index()
+        df_merged_wrong_queries.pop('level_0')
+        df_merged_wrong_queries.score = df_merged_wrong_queries.score.round(decimals=2)
 
         writer = pd.ExcelWriter(f'{target_path}', engine='xlsxwriter')
         df_merged.to_excel(writer, sheet_name='Detail_Report', index=False)
+        df_merged_wrong_queries.to_excel(writer, sheet_name='Wrong_Query', index=False)
 
         workbook = writer.book
-        worksheet = writer.sheets['Detail_Report']
+
         header_format = workbook.add_format(
             {
                 'align': 'center',
@@ -303,9 +367,6 @@ class KRManager(SaturnAbstract):
                 'bg_color': '#fff2cc'
             }
         )
-        header_range = xl_range_abs(0, 0, 0, df_merged.shape[1] - 1)
-        worksheet.conditional_format(header_range, {'type': 'no_blanks',
-                                                    'format': header_format})
 
         merge_format = workbook.add_format({'align': 'center', 'valign': 'vcenter', 'border': 1})
         bg_format_odd = workbook.add_format({'bg_color': '#cfe2f3', 'border': 1})
@@ -313,67 +374,81 @@ class KRManager(SaturnAbstract):
         bg_format_wrong = workbook.add_format({'font_color': 'red'})
         bg_best_score = workbook.add_format({'bold': True})
 
-        for idx in df_merged['index'].unique():
-            # find indices and add one to account for header
-            u = df_merged.loc[df_merged['index'] == idx].index.values + 1
+        def formatter(dt, sheet_name: str):
+            worksheet = writer.sheets[sheet_name]
+            header_range = xl_range_abs(0, 0, 0, dt.shape[1] - 1)
+            worksheet.conditional_format(header_range, {'type': 'no_blanks',
+                                                        'format': header_format})
+            for idx in dt['index'].unique():
+                # find indices and add one to account for header
+                u = dt.loc[dt['index'] == idx].index.values + 1
 
-            cell_range = xl_range_abs(u[0], 0, u[0] + len(u) - 1, df_merged.shape[1])
+                cell_range = xl_range_abs(u[0], 0, u[0] + len(u) - 1, dt.shape[1])
 
-            if idx % 2 == 0:
-                worksheet.conditional_format(cell_range, {'type': 'no_blanks',
-                                                          'format': bg_format_odd})
-            else:
-                worksheet.conditional_format(cell_range, {'type': 'no_blanks',
-                                                          'format': bg_format_even})
-            for i in u:
-                if df_merged['gt_label'][i - 1] != df_merged['predicted_label'][i - 1]:
-                    # wrong_label_range = xl_range_abs(i, df_merged.columns.get_loc('most_relevant_docs'),
-                    #                                  i, df_merged.shape[1])
-                    worksheet.write(
-                        i, df_merged.columns.get_loc('relevant_docs'),
-                        df_merged['relevant_docs'][i - 1], bg_format_wrong)
-                    worksheet.write(
-                        i, df_merged.columns.get_loc('predicted_label'),
-                        df_merged['predicted_label'][i - 1], bg_format_wrong)
-                    worksheet.write(
-                        i, df_merged.columns.get_loc('score'),
-                        df_merged['score'][i - 1], bg_format_wrong)
+                if idx % 2 == 0:
+                    worksheet.conditional_format(cell_range, {'type': 'no_blanks',
+                                                              'format': bg_format_odd})
                 else:
-                    if float(df_merged['score'][i - 1]) >= 0.9:
+                    worksheet.conditional_format(cell_range, {'type': 'no_blanks',
+                                                              'format': bg_format_even})
+                for i in u:
+                    if dt['gt_label'][i - 1] != dt['predicted_label'][i - 1]:
+                        # wrong_label_range = xl_range_abs(i, dt.columns.get_loc('most_relevant_docs'),
+                        #                                  i, dt.shape[1])
                         worksheet.write(
-                            i, df_merged.columns.get_loc('score'),
-                            df_merged['score'][i - 1], bg_best_score)
+                            i, dt.columns.get_loc('relevant_docs'),
+                            dt['relevant_docs'][i - 1], bg_format_wrong)
+                        worksheet.write(
+                            i, dt.columns.get_loc('predicted_label'),
+                            dt['predicted_label'][i - 1], bg_format_wrong)
+                        worksheet.write(
+                            i, dt.columns.get_loc('score'),
+                            dt['score'][i - 1], bg_format_wrong)
+                    else:
+                        if float(dt['score'][i - 1]) >= 0.9:
+                            worksheet.write(
+                                i, dt.columns.get_loc('score'),
+                                dt['score'][i - 1], bg_best_score)
+                        else:
+                            pass
 
-            if len(u) < 2:
-                pass  # do not merge cells if there is only one row
-            else:
-                column_index = {
-                    'index': 0,
-                    'query': 1,
-                    'gt_label': 2,
-                    'top_k': 3,
-                    'rr': 4,
-                    'ap': 5
-                }
-                # merge cells using the first and last indices
-                for key, index in column_index.items():
-                    worksheet.merge_range(u[0], index, u[-1], index, df_merged.loc[u[0], f'{key}'], merge_format)
+                if len(u) < 2:
+                    pass  # do not merge cells if there is only one row
+                else:
+                    column_index = {
+                        'index': 0,
+                        'query': 1,
+                        'gt_label': 2,
+                        'top_k': 3,
+                        'rr': 4,
+                        'ap': 5
+                    }
+                    # merge cells using the first and last indices
+                    for key, index in column_index.items():
+                        worksheet.merge_range(u[0], index, u[-1], index, dt.loc[u[0], f'{key}'], merge_format)
 
         # auto-adjust column size
         for column in df:
             column_width = max(df[column].astype(str).map(len).max(), len(column))
             col_idx = df.columns.get_loc(column)
             writer.sheets['Detail_Report'].set_column(col_idx, col_idx, column_width)
+            writer.sheets['Wrong_Query'].set_column(col_idx, col_idx, column_width)
 
+        formatter(df_merged, 'Detail_Report')
+        formatter(df_merged_wrong_queries, 'Wrong_Query')
         writer.save()
         _logger.info(f"Evaluation report with excel format is saved at {target_path}")
 
     def _extract_eval_result(
-        self, src_docs: List[Document], tgt_docs, similarity_data_2d: List[List[Tuple[Text, float]]],
-        top_k: int = None
-    ):
+            self,
+            src_docs: List[Document],
+            tgt_docs,
+            similarity_data_2d: List[List[Tuple[Text, float]]],
+            top_k: int = None,
+            retriever_threshold: float = None,
+            default_faq_label: str = None
+    ) -> List:
         eval_results = []
-        eval_top_k_results = []
 
         for src_doc, similarities in tzip(src_docs, similarity_data_2d):
             rr_score = 0
@@ -384,9 +459,7 @@ class KRManager(SaturnAbstract):
             top_k_relevant_docs = []
             relevant_doc_scores = []
             predicted_labels = []
-            top_k = top_k if top_k in range(1, src_doc.num_relevant) else src_doc.num_relevant
             top_k = min(top_k, 20)
-            # indices = self._arg_sort(similarities)
 
             scores = np.array([score for _, score in similarities])
             indices = fast_argsort_1d_bottleneck(scores, axis=0, top_k=src_doc.num_relevant).tolist()
@@ -397,11 +470,6 @@ class KRManager(SaturnAbstract):
                 sim_score = similarities[i][1]
                 relevant_doc_scores.append(sim_score)
                 predicted_labels.append(self.corpus_docs[i].label)
-                # for id, answer in enumerate(similarities):
-                #     if tgt_docs[i] == answer[0]:
-                #         relevant_doc_scores.append(str(answer[1]))
-                #         predicted_labels.extend([doc.label for doc in self.corpus_docs if doc.text == answer[0]])
-                # tgt_doc = self.corpus_docs[i]
 
             ground_truths = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
             for idx, relevant_doc in enumerate(top_k_relevant_docs):
@@ -422,26 +490,13 @@ class KRManager(SaturnAbstract):
                 most_relevant_docs=top_k_relevant_docs[:top_k],
                 relevant_doc_scores=relevant_doc_scores[:top_k],
                 predicted_labels=predicted_labels[:top_k]
-
             )
-            tmp_df = pd.DataFrame(eval_result.to_dict()).head(top_k)
-            tmp_df.insert(5, 'score', tmp_df.pop('relevant_doc_scores'))
-            tmp_df.columns = ['query', 'gt_label', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
-            eval_top_k_results.append(tmp_df.to_dict())
-            eval_results.append(eval_result.to_dict())
-        return eval_results, eval_top_k_results
-
-    @staticmethod
-    def _arg_sort(similarities: List[Tuple[Text, float]]) -> List[int]:
-        """
-
-        :param similarities:
-        :return:
-        """
-        import numpy as np
-        scores = [score for _, score in similarities]
-        indices = np.argsort(scores)[::-1].tolist()
-        return indices
+            # eval_results.append(eval_result.to_dict())
+            df = pd.DataFrame(eval_result.to_dict())
+            df = df.apply(pd.Series.explode)
+            df.loc[df['relevant_doc_scores'] <= retriever_threshold, 'predicted_labels'] = default_faq_label
+            eval_results.append(df.to_dict())
+        return eval_results
 
     @staticmethod
     def _get_input_reference_corpus(list_or_path: str) -> List[str]:
