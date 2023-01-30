@@ -4,6 +4,8 @@ import click
 import questionary
 
 from comet.lib import logger, print_utils
+from termcolor import colored
+
 from saturn.cli.model import model
 from saturn.data_generation.tripple_generator import TripleGenerator
 from saturn.kr_manager import KRManager
@@ -29,22 +31,32 @@ def version():
 @click.option('--config', '-c', required=True, default="config/config.yaml")
 def run_e2e(config):
     config_parser: ConfigParser = ConfigParser(config)
-    print_utils.print_line(f"Starting generate triples")
-    triple_generator = TripleGenerator(config=config_parser)
-    triple_generator.load()
-    triple_generator.generate_triples()
-    print_utils.print_line(f"DONE generate triples")
+    kr_manager = KRManager(config=config_parser)
+    general_config = config_parser.general_config()
+    if not general_config.get('skipped_gen_data'):
+        print_utils.print_line(f"Starting generate triples")
+        triple_generator = TripleGenerator(config=config_parser)
+        triple_generator.load()
+        triple_generator.generate_triples()
+        print_utils.print_line(f"✅ ✅ ✅ DONE generate triples ✅ ✅ ✅")
+    else:
+        print(colored('Data Generation is skipped', 'red'))
 
     # Train the model
-    print_utils.print_line(f"Starting train the model")
-    kr_manager = KRManager(config=config_parser)
-    kr_manager.train_embedder()
-    print_utils.print_line(f"DONE train the model")
+    if not general_config.get('skipped_training'):
+        print_utils.print_line(f"Starting train the model")
+        kr_manager.train_embedder()
+        print_utils.print_line(f"✅ ✅ ✅  DONE train the model ✅ ✅ ✅")
+    else:
+        print(colored('Training model is skipped', 'red'))
 
     # Evaluate the model
-    print_utils.print_line(f"Starting evaluate the model")
-    kr_manager.evaluate()
-    print_utils.print_line(f"DONE evaluate the model")
+    if not general_config.get('skipped_eval'):
+        print_utils.print_line(f"Starting evaluate the model")
+        kr_manager.evaluate()
+        print_utils.print_line(f"✅ ✅ ✅ DONE evaluate the model ✅ ✅ ✅")
+    else:
+        print(colored('Evaluating model is skipped', 'red'))
 
 
 @click.command()
