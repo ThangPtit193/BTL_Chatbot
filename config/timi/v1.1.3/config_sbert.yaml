@@ -1,7 +1,7 @@
 GENERAL:
   device: cuda:0
   project: timi
-  version: v1.1.3_limit_20
+  version: v1.1.3_limit_30
   output_data: assets
   output_model: models
   output_report: reports
@@ -17,7 +17,8 @@ DATA_GENERATION:
   embedding_batch_size: 100
   neg_sim_batch_size: 200
   max_triple_per_file: 2000000
-  max_sentence_repeated: 20
+  max_sentence_repeated: 30
+  remove_duplicate_doc: True
   EMBEDDER:
     cache_path: ./embedder_caches
     pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0

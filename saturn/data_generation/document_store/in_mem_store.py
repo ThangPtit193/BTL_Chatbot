@@ -1,4 +1,5 @@
 import math
+import pprint
 import random
 from functools import lru_cache
 from typing import *
@@ -36,6 +37,15 @@ class InmemoryDocumentStore(SaturnAbstract):
     embedding_batch_size = 1000
     neg_sim_batch_size = 10000
     search_mode = "random"
+    # Remove duplicate mode: maybe: "EM", "fuzzy"
+    remove_duplicate_doc = None
+    # All positive intent in this list, will be used to generate as negative samples
+    skipped_positives_of_intent = None
+    # Split main intent and sub intent separated by "/"
+    split_intent_by_slash = True
+
+    # The intent name mapping using for generate from e2e result
+    intent_field_map = {}
 
     def __init__(self, config_parser: ConfigParser, use_embedding=True):
         """
@@ -88,6 +98,10 @@ class InmemoryDocumentStore(SaturnAbstract):
             positive_docs = self.get_documents(type=constants.KEY_POSITIVE)
             positive_documents = [doc.meta for doc in positive_docs]
             self._positive_intents = ps.uniq(ps.map_(positive_documents, constants.KEY_INTENT))
+        # Filter positive intents
+        if self.skipped_positives_of_intent:
+            self._positive_intents = [positive_intent for positive_intent in self._positive_intents
+                                      if positive_intent not in self.skipped_positives_of_intent]
         return self._positive_intents
 
     @decorator.performance
@@ -297,6 +311,7 @@ class InmemoryDocumentStore(SaturnAbstract):
         # Method 4: Using custom argsort
         vectors_tgt = np.array([doc.embedding for doc in tgt_docs])
         vector_srcs = np.array([src_doc.embedding for src_doc in src_docs])
+
         new_scores = cosine_similarity(vector_srcs, vectors_tgt)
         new_score_indices = fast_argsort_bottleneck(new_scores, axis=1, top_k=top_k)
         tops = [len(doc.positive_ids) for doc in src_docs]
@@ -368,6 +383,90 @@ class InmemoryDocumentStore(SaturnAbstract):
             data = file_util.load_yaml_fast(file)
             self._load(data)
 
+        # Load document from e2e result
+        self._load_from_e2e_result()
+
+        # Remove duplicate
+        if self.remove_duplicate_doc:
+            self._remove_duplicate()
+
+        # Update the embeddings
+        self._update_embeddings()
+
+    def _remove_duplicate(self):
+        """
+        Remove duplicate documents
+        Returns:
+
+        """
+        _logger.info("Removing duplicate documents")
+        unique_docs = []
+        duplicate_texts = []
+        for doc in tqdm(self.documents.values()):
+            if doc not in unique_docs:
+                unique_docs.append(doc)
+            else:
+                duplicate_texts.append(doc.text)
+        _logger.warning(f"Duplicate texts detected: {len(duplicate_texts)}")
+        pprint.pprint(duplicate_texts)
+        self.documents = {doc.id: doc for doc in unique_docs}
+
+    def _load_from_e2e_result(self):
+        """
+        Load data from e2e result
+        Returns:
+
+        """
+        _logger.info("Loading data from e2e result")
+        from_e2e_config = self.config_parser.data_generation_config().get("FROM_E2E", {})
+        e2e_result_paths = from_e2e_config.get("e2e_eval_result_path")
+        if not e2e_result_paths:
+            return
+
+        if not isinstance(e2e_result_paths, List):
+            e2e_result_paths = [e2e_result_paths]
+        for e2e_result_path in e2e_result_paths:
+            rows = self._read_e2e_result(e2e_result_path)
+            for row in rows:
+                text = convert_unicode(row["text"])
+                target_faq = row["target_faq"]
+                target_faq = self.intent_field_map.get(target_faq, target_faq)
+                # Get main intent and sub intent
+                if self.split_intent_by_slash and "/" in target_faq:
+                    main_intent, sub_intent = target_faq.split("/")
+                else:
+                    main_intent, sub_intent = target_faq, None
+                metadata = {
+                    "main_intent": main_intent,
+                    "sub_intent": sub_intent,
+                    "type": constants.KEY_POSITIVE
+                }
+
+                doc = Document.from_dict({"text": text, **metadata})
+                self.documents.update({doc.id: doc})
+            _logger.info(f"Loaded {len(rows)} documents from {e2e_result_path}")
+
+    def _update_embeddings(self):
+        if constants.KEY_EMBEDDER not in self.search_mode:
+            _logger.info("Skip update embeddings because search mode is not 'embedder'")
+            return
+        _logger.info("Updating embeddings")
+        # get all examples from documents
+        examples = [doc.text for doc in self.documents.values()]
+        doc_ids = self.documents.keys()
+        examples_embedding = []
+        # get all embeddings
+        _logger.info(f"Get embeddings for '{len(examples)}' documents")
+        iterators = batch(examples, n=self.embedding_batch_size)
+        for _batch in tqdm(iterators, desc="Update embeddings", total=len(examples) / self.embedding_batch_size):
+            embeddings = self.embedder.get_encodings(_batch)
+            examples_embedding.extend(embeddings)
+        # update embeddings
+        for doc_id, embedding in zip(doc_ids, examples_embedding):
+            self.documents[doc_id].embedding = embedding
+        # dump cache
+        self.embedder.dump_cache()
+
     @decorator.performance
     def _load(self, data: Dict):
         """
@@ -400,15 +499,15 @@ class InmemoryDocumentStore(SaturnAbstract):
                 # }
                 # metadata.update({"type": constants.KEY_POSITIVE})
                 iterators = batch(examples, n=self.embedding_batch_size)
-                desc = f"{i}/{len(positives_data)} Loading positives {metadata[constants.KEY_INTENT]}"
-                for _batch in tqdm(iterators, desc=desc, total=len(examples) / self.embedding_batch_size):
-
-                    if constants.KEY_EMBEDDER in self.search_mode:
-                        embeddings = self.embedder.get_encodings(_batch)
-                        docs = [Document.from_dict({"text": example, "embedding": embedding, **metadata})
-                                for example, embedding in zip(_batch, embeddings)]
-                    else:
-                        docs = [Document.from_dict({"text": example, **metadata}) for example in _batch]
+                # desc = f"{i}/{len(positives_data)} Loading positives {metadata[constants.KEY_INTENT]}"
+                for _batch in iterators:
+                    # if constants.KEY_EMBEDDER in self.search_mode:
+                    #     embeddings = self.embedder.get_encodings(_batch)
+                    #     docs = [Document.from_dict({"text": example, "embedding": embedding, **metadata})
+                    #             for example, embedding in zip(_batch, embeddings)]
+                    # else:
+                    #     docs = [Document.from_dict({"text": example, **metadata}) for example in _batch]
+                    docs = [Document.from_dict({"text": example, **metadata}) for example in _batch]
                     docs_dict = {doc.id: doc for doc in docs}
                     self.documents.update(docs_dict)
         elif constants.KEY_NEGATIVES in data:
@@ -419,20 +518,37 @@ class InmemoryDocumentStore(SaturnAbstract):
                 metadata = self._get_metadata(negative_data, constants.KEY_NEGATIVE)
                 # metadata.update({"type": constants.KEY_NEGATIVE})
                 iterators = batch(examples, n=self.embedding_batch_size)
-                desc = f"{i}/{len(negatives_data)} Loading negatives {metadata[constants.KEY_INTENT]}"
-                for _batch in tqdm(iterators, desc=desc, total=len(examples) / self.embedding_batch_size):
-                    if constants.KEY_EMBEDDER in self.search_mode:
-                        embeddings = self.embedder.get_encodings(_batch)
-                        docs = [Document.from_dict({"text": example, "embedding": embedding, **metadata})
-                                for example, embedding in zip(_batch, embeddings)]
-                    else:
-                        docs = [Document.from_dict({"text": example, **metadata}) for example in _batch]
+                # desc = f"{i}/{len(negatives_data)} Loading negatives {metadata[constants.KEY_INTENT]}"
+                for _batch in iterators:
+                    # if constants.KEY_EMBEDDER in self.search_mode:
+                    #     embeddings = self.embedder.get_encodings(_batch)
+                    #     docs = [Document.from_dict({"text": example, "embedding": embedding, **metadata})
+                    #             for example, embedding in zip(_batch, embeddings)]
+                    # else:
+                    #     docs = [Document.from_dict({"text": example, **metadata}) for example in _batch]
+                    docs = [Document.from_dict({"text": example, **metadata}) for example in _batch]
                     docs_dict = {doc.id: doc for doc in docs}
                     self.documents.update(docs_dict)
-        self.embedder.dump_cache()
 
     @staticmethod
-    def _get_metadata(positive_data: Dict, data_type: Text):
+    def _read_e2e_result(file_path: Text) -> List[Dict]:
+        import csv
+
+        with open(file_path, 'r') as f:
+            # Read the csv file as a dictionary only field names: ['text', 'label]
+            reader = csv.DictReader(f)
+            rows = list(reader)
+        assert "target_faq" in rows[0], "target_faq is not in the csv file"
+        assert "predict_faq" in rows[0], "predict_faq is not in the csv file"
+        assert "text" in rows[0], "text is not in the csv file"
+
+        eval_data = []
+        for row in rows:
+            if row['target_faq'] != row['predict_faq']:
+                eval_data.append(ps.pick(row, 'text', 'target_faq', 'predict_faq'))
+        return eval_data
+
+    def _get_metadata(self, positive_data: Dict, data_type: Text):
         """
         Get metadata from positive data
         Args:
@@ -443,7 +559,7 @@ class InmemoryDocumentStore(SaturnAbstract):
 
         """
         # Get main intent and sub intent
-        if "/" in positive_data["intent"]:
+        if self.split_intent_by_slash and "/" in positive_data["intent"]:
             main_intent, sub_intent = positive_data["intent"].split("/")
         else:
             main_intent, sub_intent = positive_data["intent"], None
