@@ -128,7 +128,7 @@ def train(config):
 def test(config, rtype, top_k, save_md):
     config_parser: ConfigParser = ConfigParser(config)
     kr_manager = KRManager(config=config_parser)
-    kr_manager.save(report_type=rtype, top_k=top_k, save_markdown=save_md)
+    kr_manager.evaluate()
 
 
 @click.command()

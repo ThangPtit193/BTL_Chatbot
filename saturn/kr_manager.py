@@ -24,8 +24,9 @@ from comet.lib.print_utils import print_title
 from saturn.components.utils.document import Document, EvalResult
 from saturn.utils.config_parser import ConfigParser
 from saturn.abstract_method.staturn_abstract import SaturnAbstract
-from saturn.utils.io import write_csv, write_md, write_json_beautifier
+from saturn.utils.io import write_csv, write_md, write_json_beautifier, write_json
 from saturn.data_generation.document_store.utils import fast_argsort_1d_bottleneck
+from saturn.utils.reflection import timeit
 
 if TYPE_CHECKING:
     from saturn.components.embeddings.embedding_models import SBertSemanticSimilarity
@@ -235,8 +236,8 @@ class KRManager(SaturnAbstract):
 
             if save_report:
                 self.save_detail_report(model_name=name, df=evaluation_results[name])
-                write_json_beautifier(
-                    os.path.join(self.output_dir, 'details', f'{name}.json'), evaluation_results[name])
+                write_json(
+                    pd.DataFrame(eval_results).to_dict(), os.path.join(self.output_dir, 'details', f'{name}.json'))
 
         if save_report:
             # compute information retrieval metrics
@@ -248,6 +249,7 @@ class KRManager(SaturnAbstract):
 
         return evaluation_results
 
+    @timeit
     def compute_ir_metrics(self, eval_results: Dict[str, Dict[str, List[EvalResult]]] = None) -> List:
         """
         Compute information retrieval metrics such as mean average precision (mAP), mean reciprocal rank (mRR)
@@ -311,6 +313,7 @@ class KRManager(SaturnAbstract):
         else:
             raise NotImplemented(f"This format {report_type} has not supported yet.")
 
+    @timeit
     def save_detail_report(self,
                            model_name: str,
                            df: Union[DataFrame, List],
@@ -439,6 +442,7 @@ class KRManager(SaturnAbstract):
         writer.save()
         _logger.info(f"Evaluation report with excel format is saved at {target_path}")
 
+    @timeit
     def _extract_eval_result(
             self,
             src_docs: List[Document],
@@ -506,7 +510,6 @@ class KRManager(SaturnAbstract):
         :return: list of corpus
         raise FileNotFoundError: If the given path is not found
         """
-        # print(list_or_path)
         if isinstance(list_or_path, str):
             if not os.path.isfile(list_or_path):
                 raise FileNotFoundError(f"File {list_or_path} does not exist")

@@ -7,8 +7,8 @@ GENERAL:
   output_report: reports
 
   # Skipped signal
-  skipped_gen_data: False
-  skipped_training: False
+  skipped_gen_data: True
+  skipped_training: True
   skipped_eval: False
 
 DATA_GENERATION:
@@ -74,6 +74,9 @@ EVALUATION:
 #    - models/timi/v1.1.4/epoch-17
 #    - models/timi/v1.1.4/epoch-18
 #    - models/timi/v1.1.4/epoch-19
+  top_k: 10
+  retriever_threshold: 0.7
+  default_faq_label: 'faq/out_of_scope'
 RELEASE:
   model_path: models
   pretrained_model: MiniLM-L12-H384-uncased
