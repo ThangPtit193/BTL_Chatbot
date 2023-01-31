@@ -1,7 +1,8 @@
-from typing import Optional, Dict, Any
+from typing import *
 from uuid import uuid4
 
 import numpy as np
+from fuzzywuzzy import fuzz
 
 
 class Document:
@@ -64,8 +65,31 @@ class Document:
 
         return cls(**_new_doc)
 
+    @staticmethod
+    def fuzzy_similarity(text1: Text, text2: Text):
+        """
+        Calculate the similarity between two texts using fuzzywuzzy
+        Args:
+            text1: text1 as str
+            text2: text2 as str
+
+        Returns: similarity score as float between 0 and 1
+
+        """
+        return fuzz.ratio(text1, text2) / 100.0
+
+    def __eq__(self, other: "Document"):
+        return self.text == other.text
+        # return self.fuzzy_similarity(self.text, other.text) > 0.95
+
     def __repr__(self):
         return str(self.to_dict())
 
     def __str__(self):
         return str(self.to_dict())
+
+
+if __name__ == "__main__":
+    doc = Document(text="test", id="123")
+    print(doc.to_dict())
+    print(doc.fuzzy_similarity("test", "test"))

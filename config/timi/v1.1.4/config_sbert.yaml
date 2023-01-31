@@ -1,5 +1,5 @@
 GENERAL:
-  device: cuda:0
+  device: cuda:1
   project: timi
   version: v1.1.4
   output_data: assets
@@ -8,8 +8,8 @@ GENERAL:
 
   # Skipped signal
   skipped_gen_data: False
-  skipped_training: False
-  skipped_eval: False
+  skipped_training: True
+  skipped_eval: True
 
 DATA_GENERATION:
   data_dir: data/raw/timi/v1.1.3
@@ -18,12 +18,17 @@ DATA_GENERATION:
   neg_sim_batch_size: 200
   max_triple_per_file: 2000000
   max_sentence_repeated: 50
+  skipped_positives_of_intent: null
+  remove_duplicate_doc: False
   EMBEDDER:
     cache_path: ./embedder_caches
     pretrained_name_or_abspath: timi-keepitreal-H768-faq-2M-v1.1.3
     batch_size: 128
     device: cuda:1
-#  COMBINER:
+  FROM_E2E:
+    e2e_eval_result_path: processed_all.csv
+    intent_field_map: {}
+  COMBINER: {}
 
 
 TRAINER:

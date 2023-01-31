@@ -14,14 +14,15 @@ GENERAL:
 
 DATA_GENERATION:
   data_dir: data/raw/dummy
-  search_mode: bm25_embedder
-  embedding_batch_size: 100
+#  search_mode: bm25_embedder
+  search_mode: embedder
+  embedding_batch_size: 10
   neg_sim_batch_size: 10
   max_triple_per_file: 50
   max_sentence_repeated: 2
   EMBEDDER:
     cache_path: ./embedder_caches
-    pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+    pretrained_name_or_abspath: all-MiniLM-L6-v2
 #  COMBINER:
 
 
