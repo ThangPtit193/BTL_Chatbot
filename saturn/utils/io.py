@@ -30,6 +30,7 @@ def load_json(file_path: Text) -> Dict:
     return config
 
 
+@timeit
 def write_json(data, file_path, encoding='utf-8'):
     with open(file_path, 'w', encoding=encoding) as pf:
         json.dump(data, pf, ensure_ascii=False, indent=4)
