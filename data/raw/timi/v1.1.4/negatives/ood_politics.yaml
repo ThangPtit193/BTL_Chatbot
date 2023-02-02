@@ -1,0 +1,93 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: ood_politics
+  examples:
+  - bộ xậy dựng giữ vài trò gì trong cơ quan nhà nước vậy
+  - bộ tự pháp nắm vài trò gì trong cơ quan nhà nước vậy
+  - bộ giáo dục nắm vài trò gì trong hệ thống chính trị vậy
+  - bộ xậy dựng nắm vài trò gì trong cơ quan nhà nước vậy
+  - bộ tự pháp giữ vài trò gì trong hệ thống chính trị vậy
+  - bộ giao thông vận tải nắm vài trò gì trong hệ thống chính trị vậy
+  - bộ xậy dựng giữ vài trò gì trong cơ quan chính trị vậy
+  - có những tổ chức nào bị xử phạt vì tham nhũng rồi
+  - bộ giao thông vận tải nắm vài trò gì trong hệ thống nhà nước vậy
+  - chuyến công du sang Mỹ của thủ các nguyên thủ quốc gia diễn ra trong tháng tới
+    hả
+  - bộ quốc phòng nắm vài trò gì trong cơ quan chính trị vậy
+  - chuyến công du sang Anh của thủ các nguyên thủ quốc gia diễn ra trong quý tới
+    hả
+  - bộ quốc phòng nắm vài trò gì trong cơ quan nhà nước vậy
+  - bộ ngoại giao giữ vài trò gì trong cơ quan chính trị vậy
+  - bộ xậy dựng nắm vài trò gì trong hệ thống chính trị vậy
+  - có những quan chức nào bị xử phạt vì tham nhũng rồi
+  - chuyến công du sang Cuba của thủ thủ tướng Phạm Minh Chính diễn ra trong quý tới
+    hả
+  - bộ tự pháp giữ vài trò gì trong cơ quan chính trị vậy
+  - bộ công thương giữ vài trò gì trong cơ quan nhà nước vậy
+  - bộ giao thông vận tải giữ vài trò gì trong hệ thống chính trị vậy
+  - bộ giáo dục nắm vài trò gì trong hệ thống nhà nước vậy
+  - bộ giao thông vận tải giữ vài trò gì trong hệ thống nhà nước vậy
+  - chuyến công du sang Mỹ của thủ thủ tướng Phạm Minh Chính diễn ra trong tháng tới
+    hả
+  - chuyến công du sang Mỹ của thủ thủ tướng Nguyễn Xuân Phúc diễn ra trong quý tới
+    hả
+  - tổng bí thư nhà nước là ai
+  - bộ ngoại giao nắm vài trò gì trong hệ thống chính trị vậy
+  - bộ giáo dục nắm vài trò gì trong cơ quan nhà nước vậy
+  - bộ xậy dựng nắm vài trò gì trong cơ quan chính trị vậy
+  - chuyến công du sang Nhật của thủ thủ tướng Phạm Minh Chính diễn ra trong tháng
+    tới hả
+  - có những cán bộ nào bị xử phạt vì tham nhũng rồi
+  - chuyến công du sang Cuba của thủ thủ tướng Nguyễn Xuân Phúc diễn ra trong quý
+    tới hả
+  - bộ công thương nắm vài trò gì trong hệ thống nhà nước vậy
+  - chuyến công du sang Nhật của thủ các nguyên thủ quốc gia diễn ra trong quý tới
+    hả
+  - bộ giáo dục giữ vài trò gì trong cơ quan nhà nước vậy
+  - bộ quốc phòng giữ vài trò gì trong hệ thống chính trị vậy
+  - chuyến công du sang Anh của thủ các nguyên thủ quốc gia diễn ra trong tháng tới
+    hả
+  - chuyến công du sang Anh của thủ thủ tướng Phạm Minh Chính diễn ra trong quý tới
+    hả
+  - bộ giáo dục nắm vài trò gì trong cơ quan chính trị vậy
+  - bộ ngoại giao nắm vài trò gì trong hệ thống nhà nước vậy
+  - có những quan chức nào bị xử phạt vì lạm dụng quyền hạn rồi
+  - bộ ngoại giao giữ vài trò gì trong hệ thống chính trị vậy
+  - bộ xậy dựng nắm vài trò gì trong hệ thống nhà nước vậy
+  - bộ giáo dục giữ vài trò gì trong cơ quan chính trị vậy
+  - bộ xậy dựng giữ vài trò gì trong hệ thống nhà nước vậy
+  - bộ công thương giữ vài trò gì trong cơ quan chính trị vậy
+  - bộ giao thông vận tải giữ vài trò gì trong cơ quan chính trị vậy
+  - bộ xậy dựng giữ vài trò gì trong hệ thống chính trị vậy
+  - bộ tự pháp nắm vài trò gì trong cơ quan chính trị vậy
+  - chuyến công du sang Cuba của thủ thủ tướng Nguyễn Xuân Phúc diễn ra trong tháng
+    tới hả
+  - chuyến công du sang Cuba của thủ các nguyên thủ quốc gia diễn ra trong tháng tới
+    hả
+  - bộ quốc phòng nắm vài trò gì trong hệ thống nhà nước vậy
+  - có những quan chức nào bị xử phạt vì lạm phát rồi
+  - có những tổ chức nào bị xử phạt vì lạm dụng quyền hạn rồi
+  - có những tổ chức nào bị xử phạt vì lạm phát rồi
+  - bộ tự pháp giữ vài trò gì trong hệ thống nhà nước vậy
+  - bộ quốc phòng giữ vài trò gì trong cơ quan nhà nước vậy
+  - chuyến công du sang Nhật của thủ thủ tướng Nguyễn Xuân Phúc diễn ra trong tháng
+    tới hả
+  - bộ giao thông vận tải nắm vài trò gì trong cơ quan chính trị vậy
+  - bộ công thương nắm vài trò gì trong cơ quan nhà nước vậy
+  - chuyến công du sang Nhật của thủ thủ tướng Phạm Minh Chính diễn ra trong quý tới
+    hả
+  - bộ quốc phòng giữ vài trò gì trong hệ thống nhà nước vậy
+  - bộ tự pháp nắm vài trò gì trong hệ thống chính trị vậy
+  - chuyến công du sang Mỹ của thủ thủ tướng Phạm Minh Chính diễn ra trong quý tới
+    hả
+  - chuyến công du sang Mỹ của thủ thủ tướng Nguyễn Xuân Phúc diễn ra trong tháng
+    tới hả
+  - chuyến công du sang Nhật của thủ thủ tướng Nguyễn Xuân Phúc diễn ra trong quý
+    tới hả
+  - bộ công thương giữ vài trò gì trong hệ thống chính trị vậy
+  - bộ tự pháp nắm vài trò gì trong hệ thống nhà nước vậy
+  - bộ công thương nắm vài trò gì trong hệ thống chính trị vậy
+  - bộ công thương nắm vài trò gì trong cơ quan chính trị vậy
+  - bộ giáo dục giữ vài trò gì trong hệ thống nhà nước vậy

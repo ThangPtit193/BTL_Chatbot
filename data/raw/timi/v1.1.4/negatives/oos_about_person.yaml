@@ -1,0 +1,525 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: oos_about_person
+  examples:
+  - tớ có thể đầu tư đồng mã hóa nào
+  - tiền số coin nào xuống giá cả cao nhất thế
+  - ' digibyte có đáng đầu tư không'
+  - tiền mã hóa nào mình nên chơi
+  - loại tiền nào đang trending nhiều nhất
+  - tính ổn đinh lên giá tiền loại đồng bitcoin
+  - 10 năm tới nên chơi loại tiền nào
+  - loại đồng USDT nó có thể tăng không
+  - giá tiền đồng XLM so với đồng polkadot
+  - loại đồng dogecoin giảm
+  - litecoin tăng tốt không
+  - cho hỏi loại tiền LTC có đang tăng hay ko
+  - hôm trước tiền mã hóa nào giá tiền sập sàn nhỉ
+  - top top_number tiền số xu hướng nhất hiện nay
+  - chơi đồng BCH có nguy hiểm ko
+  - cho hỏi xu hướng đồng nào đang tốt nhất
+  - coin có tăng
+  - mình nên chơi đồng nào
+  - thông tin tiền mã hóa tăng mạnh sắp tới
+  - nên chơi loại tiền nào mà không bị mất giá
+  - thời điểm hiện tại xu hướng đồng mã hóa coin nào đang là xu hướng tăng
+  - xu hướng của tiền số USDT nó như nào
+  - cho em xin thông tin các tiền số có thể tăng mạnh
+  - loại đồng nào đang được mọi người chơi
+  - liệu có thể đầu tư loại tiền USDT được ko
+  - coin nào hiện đang top vậy
+  - ' LTC giảm xuống 49 bảng anh rồi nhở'
+  - anh có thể đầu tư đồng mã hóa nào
+  - loại tiền nào xuống giá cao nhất hôm qua thế
+  - tiền mã hóa stellar có đáng đầu tư không
+  - đồng mã hóa nào tôi nên chơi
+  - đồng nào đang trending nhiều nhất
+  - tính ngoại lệ lên giá tiền tiền số BTC
+  - 5 năm tới nên đầu tư tiền mã hóa nào nhỉ
+  - tiền số bitcoin nó có thể tăng không
+  - giá tiền của BTC so với đồng tether
+  - đồng mã hóa XLM tăng
+  - tether tăng tốt không
+  - cho hỏi tiền số coin có đang tăng hay ko
+  - ngày mai đồng mã hóa nào giá thấp nhất nhở
+  - top top_number đồng trending nhất bây giờ
+  - chơi tiền số coin có rủi ro không
+  - cho hỏi xu hướng loại tiền nào đang tốt nhất
+  - BTC có tăng
+  - tớ nên chơi đồng mã hóa nào
+  - thông tin tiền số tăng mạnh sắp tới
+  - nên chơi loại đồng nào mà ko bị mất giá
+  - hôm qua xu hướng loại tiền coin nào đang là top
+  - xu hướng của đồng dogecoin nó ra sao
+  - cho tớ xin thông tin các đồng mã hóa có thể tăng mạnh
+  - loại đồng nào đang được mọi người trading
+  - liệu tao có thể chơi loại tiền bitcoin được ko
+  - đồng coin nào đang top
+  - ' DOGE giảm xuống 42 EUR rồi ư'
+  - anh có thể chơi đồng nào
+  - loại tiền coin nào xuống giá thấp nhất thời điểm hiện tại thế
+  - ' BNB có nên chơi ko'
+  - loại tiền nào em nên đầu tư
+  - tiền mã hóa nào đang trending nhiều nhất
+  - tốc động tăng trưởng lên giá cả đồng mã hóa tether
+  - 5 năm tới nên chơi đồng mã hóa nào nhở mày
+  - loại đồng coin nó có thể tăng ko
+  - giá cả đồng bitcoin hiện tại so với LTC
+  - tiền số tether tăng
+  - bitcoin cash tăng tốt ko
+  - cho hỏi tiền mã hóa DGB có đang tăng hay ko
+  - tuần trước loại tiền nào giá cao nhất nhỉ
+  - top top_number đồng trending nhất hiện nay
+  - chơi đồng DGB có rủi ro không
+  - cho hỏi xu hướng đồng coin nào đang tăng mãnh nhiệt nhất
+  - tether có giảm
+  - chị nên đầu tư vào đồng nào
+  - thông tin loại đồng tăng mạnh sắp tới
+  - nên chơi tiền mã hóa nào mà ko bị lỗ
+  - hôm qua xu hướng đồng mã hóa coin nào đang là xu hướng tăng
+  - xu hướng của loại đồng XRP nó như nào
+  - cho tao xin thông tin các đồng mã hóa có thể tăng mạnh
+  - loại đồng nào đang được mọi người tin tưởng
+  - liệu có thể chơi đồng mã hóa bitcoin cash được ko
+  - đồng bitcoin nào hiện đang trending vậy
+  - ' XLM giảm xuống 69 M rồi ư'
+  - ta có thể đầu tư đồng mã hóa nào
+  - loại tiền bitcoin nào lên giá tiền cao nhất thế
+  - loại đồng bitcoin có đáng chơi không
+  - đồng mã hóa nào tao nên chơi
+  - loại đồng nào đang trending nhiều nhất
+  - tính ngoại lệ lên giá cả tiền số DGB
+  - 10 năm tới nên chơi tiền số nào ha
+  - loại đồng ADA nó có thể tăng ko
+  - giá cả đồng BNB hiện tại so với BNB
+  - tiền mã hóa litecoin giảm
+  - BNB tăng tốt không
+  - cho hỏi loại đồng DGB có đang tăng hay không
+  - hôm qua đồng mã hóa nào có tiền thấp nhất nhở
+  - top tiền số trending nhất hiện nay
+  - đầu tư tiền số bitcoin có nguy hiểm ko
+  - cho hỏi xu hướng tiền mã hóa nào đang được trading nhiều nhất
+  - BTC có giảm
+  - ta nên chơi tiền số nào
+  - thông tin đồng tăng mạnh sắp tới
+  - nên đầu tư đồng mã hóa nào mà ko bị mất giá
+  - hôm trước xu hướng đồng nào đang là tốt nhất
+  - xu hướng của loại đồng bitcoin nó ra sao
+  - cho ta xin thông tin các đồng mã hóa có thể tăng mạnh
+  - đồng mã hóa nào đang được mọi người tin tưởng
+  - liệu có thể chơi đồng mã hóa coin được ko
+  - đồng coin nào đang trending
+  - loại đồng litecoin tăng lên 54 M rồi nhở
+  - em có thể đầu tư loại tiền nào
+  - đồng nào xuống giá tiền thấp nhất ngày mai thế
+  - tiền mã hóa uniswap có nên đầu tư ko
+  - tiền số nào em nên đầu tư
+  - tiền số nào đang trending nhiều nhất
+  - tính ổn đinh lên tiền đồng cardano
+  - 10 năm tới nên chơi tiền số nào mày
+  - loại tiền ethereum nó có thể tăng không
+  - giá XRP hiện tại so với XLM
+  - loại tiền polkadot giảm
+  - BCH tăng tốt không
+  - cho hỏi đồng mã hóa ripple có đang tăng hay không
+  - dạo này đồng mã hóa nào giá cao nhất nhỉ
+  - top loại đồng xu hướng nhất hiện nay
+  - đầu tư loại đồng polkadot có nguy hiểm ko
+  - cho hỏi xu hướng đồng nào đang xu hướng tăng
+  - LTC có tăng
+  - ta nên đầu tư vào tiền số nào
+  - thông tin loại tiền tăng mạnh sắp tới
+  - nên đầu tư đồng nào mà không bị lỗ
+  - thời điểm hiện tại xu hướng tiền số coin nào đang là xu hướng tăng
+  - xu hướng của đồng DOT nó ra sao
+  - cho xin thông tin các loại tiền có thể tăng mạnh
+  - tiền số nào đang được các doanh nghiệp chơi
+  - liệu ta có thể đầu tư loại tiền ripple được ko
+  - đồng coin nào hiện đang thịnh hành vậy
+  - ' UNI tăng lên 85 bảng anh rồi ư'
+  - chị có thể đầu tư tiền mã hóa nào
+  - tiền số bitcoin nào lên giá tiền thấp nhất thế
+  - ' dogecoin có đáng đầu tư không'
+  - đồng nào tớ nên đầu tư
+  - đồng mã hóa nào đang trending nhiều nhất
+  - tính ngoại lệ lên giá tiền tiền số litecoin
+  - 10 năm tới nên chơi loại đồng nào
+  - loại đồng uniswap nó có thể tăng không
+  - giá cả của đồng cardano hiện tại so với polkadot
+  - loại đồng XLM giảm
+  - DOT tăng tốt không
+  - cho hỏi đồng mã hóa XRP có đang tăng hay ko
+  - hôm qua đồng mã hóa nào có giá thấp nhất nhỉ
+  - top top_number loại đồng trending nhất hiện nay
+  - đầu tư tiền mã hóa polkadot có rủi ro không
+  - cho hỏi xu hướng tiền số nào đang xu hướng tăng
+  - ADA có tăng
+  - mình nên đầu tư vào đồng mã hóa nào
+  - thông tin đồng mã hóa tăng mạnh sắp tới
+  - nên chơi đồng mã hóa nào mà không bị mất giá
+  - hôm nay xu hướng tiền mã hóa nào đang là tốt nhất
+  - xu hướng của loại tiền near nó ra sao
+  - cho tớ xin thông tin các tiền mã hóa có thể tăng mạnh
+  - loại đồng nào đang được thế giời chơi
+  - liệu ta có thể đầu tư đồng mã hóa coin được không
+  - đồng coin nào đang thịnh hành
+  - ' bitcoin giảm xuống 21 bảng anh rồi nhở'
+  - ta có thể đầu tư tiền mã hóa nào
+  - đồng nào xuống tiền cao nhất thế
+  - đồng ETH có nên đầu tư ko
+  - loại tiền nào tao nên đầu tư
+  - tính ổn đinh lên giá cả loại tiền bitcoin
+  - vài năm tới nên đầu tư loại tiền nào bot
+  - đồng mã hóa DOT nó có thể tăng không
+  - giá của bitcoin hiện tại so với DOGE
+  - loại đồng near giảm
+  - coin tăng tốt ko
+  - cho hỏi đồng XRP có đang tăng hay ko
+  - hôm trước tiền mã hóa nào giá tiền lên đỉnh nhở
+  - top loại tiền trending nhất bây giờ
+  - chơi đồng mã hóa digibyte có rủi ro ko
+  - cho hỏi xu hướng tiền số coin nào đang tốt nhất
+  - coin có giảm
+  - tớ nên đầu tư vào tiền mã hóa nào
+  - nên chơi loại đồng nào mà không bị mất giá
+  - hôm nay xu hướng đồng coin nào đang là tốt nhất
+  - xu hướng của đồng mã hóa ripple nó như nào
+  - cho xin thông tin các đồng mã hóa có thể tăng mạnh
+  - loại tiền nào đang được các công ty tin tưởng
+  - liệu có thể đầu tư loại tiền ripple được không
+  - đồng bitcoin nào hiện đang thịnh hành vậy
+  - đồng bitcoin giảm xuống 54 VND rồi ư
+  - tôi có thể chơi đồng mã hóa nào
+  - đồng mã hóa bitcoin nào lên tiền thấp nhất hôm kia thế
+  - loại tiền bitcoin có đáng chơi không
+  - tiền mã hóa nào tớ nên đầu tư
+  - tính ngoại lệ lên giá tiền tiền mã hóa BCH
+  - 10 năm tới nên đầu tư đồng mã hóa nào
+  - tiền mã hóa ripple nó có thể tăng ko
+  - giá tiền của litecoin so với stellar
+  - tiền mã hóa bitcoin cash giảm
+  - LTC tăng tốt ko
+  - cho hỏi loại đồng coin có đang tăng hay ko
+  - bây giờ tiền số nào giá cả thấp nhất nhỉ
+  - top đồng xu hướng nhất hiện nay
+  - chơi loại tiền BCH có nguy hiểm không
+  - cho hỏi xu hướng loại tiền coin nào đang tốt nhất
+  - bitcoin có giảm
+  - em nên chơi tiền mã hóa nào
+  - nên đầu tư tiền mã hóa nào mà ko bị mất giá
+  - dạo này xu hướng đồng mã hóa nào đang là top
+  - xu hướng của tiền số BTC nó như nào
+  - cho chị xin thông tin các loại đồng có thể tăng mạnh
+  - đồng mã hóa nào đang được các công ty tin tưởng
+  - liệu chị có thể đầu tư tiền số XLM được ko
+  - coin nào hiện đang trending
+  - loại tiền binance tăng lên 37 bảng anh rồi nhở
+  - mình có thể đầu tư loại đồng nào
+  - tiền số nào lên tiền thấp nhất thế
+  - ' stellar có đáng đầu tư ko'
+  - loại tiền nào tao nên chơi
+  - tốc động tăng trưởng lên giá đồng mã hóa near protocal
+  - 10 năm tới nên chơi đồng mã hóa nào nhỉ mày
+  - đồng mã hóa DGB nó có thể tăng không
+  - giá tiền đồng near protocal so với bitcoin
+  - tiền số DOT tăng
+  - UNI tăng tốt ko
+  - cho hỏi loại tiền LTC có đang tăng hay không
+  - hôm trước tiền mã hóa nào giá tiền thấp nhất nhỉ
+  - top tiền số thịnh hành nhất bây giờ
+  - đầu tư tiền số ETH có rủi ro không
+  - cho hỏi xu hướng tiền mã hóa nào đang tốt nhất
+  - near protocal có giảm
+  - tớ nên chơi loại tiền nào
+  - nên đầu tư loại tiền nào mà không bị mất giá
+  - ngày mai xu hướng đồng mã hóa nào đang là được trading nhiều nhất
+  - xu hướng của loại đồng DOGE nó như nào
+  - cho chị xin thông tin các đồng có thể tăng mạnh
+  - tiền mã hóa nào đang được các công ty tin tưởng
+  - liệu tao có thể chơi đồng bitcoin cash được không
+  - đồng bitcoin nào đang top
+  - loại đồng XRP tăng lên 85 EUR rồi nhở
+  - ta có thể chơi đồng nào
+  - loại tiền coin nào lên giá cả thấp nhất thế
+  - ' bitcoin có đáng đầu tư không'
+  - tiền số nào chị nên đầu tư
+  - tính ngoại lệ lên tiền tiền số LTC
+  - 10 năm tới nên đầu tư loại đồng nào nhở bạn
+  - đồng mã hóa uniswap nó có thể tăng ko
+  - tiền của ripple hiện tại so với XRP
+  - loại tiền cardano tăng
+  - uniswap tăng tốt không
+  - cho hỏi đồng mã hóa XLM có đang tăng hay không
+  - ngày mai đồng nào có giá cả thấp nhất ha
+  - top tiền số xu hướng nhất bây giờ
+  - đầu tư tiền số digibyte có nguy hiểm ko
+  - cho hỏi xu hướng loại đồng nào đang top
+  - BCH có tăng
+  - em nên đầu tư vào tiền số nào
+  - nên đầu tư tiền mã hóa nào mà không bị mất giá
+  - hôm nay xu hướng tiền mã hóa nào đang là tăng mãnh nhiệt nhất
+  - xu hướng của đồng cardano nó ra sao
+  - cho tôi xin thông tin các đồng có thể tăng mạnh
+  - loại tiền nào đang được thế giời tin tưởng
+  - liệu có thể đầu tư loại tiền DGB được không
+  - coin nào đang trending
+  - đồng mã hóa DOT giảm xuống 69 EUR rồi nhở
+  - em có thể đầu tư đồng nào
+  - đồng mã hóa bitcoin nào xuống tiền cao nhất thế
+  - ' USDT có đáng chơi ko'
+  - tiền mã hóa nào chị nên đầu tư
+  - tính ngoại lệ lên giá tiền số bitcoin
+  - vài năm tới nên chơi loại đồng nào
+  - đồng mã hóa BTC nó có thể tăng ko
+  - giá của đồng near protocal hiện tại so với DOGE
+  - đồng mã hóa uniswap tăng
+  - DOGE tăng tốt ko
+  - cho hỏi tiền số BCH có đang tăng hay ko
+  - tuần trước đồng nào tiền thấp nhất ha
+  - top top_number loại đồng xu hướng nhất bây giờ
+  - đầu tư đồng BNB có rủi ro ko
+  - cho hỏi xu hướng loại tiền nào đang top
+  - bitcoin có tăng
+  - chị nên đầu tư vào đồng mã hóa nào
+  - nên chơi tiền số nào mà ko bị lỗ
+  - hôm kia xu hướng loại tiền coin nào đang là tăng mãnh nhiệt nhất
+  - xu hướng của tiền số litecoin nó ra sao
+  - cho xin thông tin các tiền số có thể tăng mạnh
+  - loại tiền nào đang được thế giời trading
+  - liệu có thể đầu tư loại tiền stellar được ko
+  - đồng coin nào đang top vậy
+  - ' BCH giảm xuống 54 đ rồi ư'
+  - em có thể đầu tư đồng mã hóa nào
+  - loại tiền nào lên giá tiền thấp nhất thế
+  - loại tiền ETH có nên đầu tư ko
+  - tiền mã hóa nào em nên đầu tư
+  - tốc động tăng trưởng lên tiền đồng UNI
+  - 5 năm tới nên đầu tư loại tiền nào nhở
+  - đồng cardano nó có thể tăng ko
+  - giá của đồng near protocal so với đồng bitcoin
+  - tiền số DOGE giảm
+  - tether tăng tốt ko
+  - cho hỏi đồng mã hóa ethereum có đang tăng hay không
+  - tuần trước tiền mã hóa nào giá cả lên đỉnh nhở
+  - top top_number tiền số xu hướng nhất bây giờ
+  - đầu tư loại tiền uniswap có nguy hiểm không
+  - cho hỏi xu hướng loại đồng coin nào đang xu hướng tăng
+  - USDT có tăng
+  - anh nên đầu tư vào đồng mã hóa nào
+  - nên đầu tư đồng mã hóa nào mà ko bị lỗ
+  - ngay lúc này xu hướng đồng mã hóa coin nào đang là top
+  - xu hướng của đồng mã hóa near nó ra sao
+  - cho tôi xin thông tin các tiền số có thể tăng mạnh
+  - đồng mã hóa nào đang được mọi người chơi
+  - liệu có thể chơi loại tiền near được không
+  - đồng coin nào hiện đang trending vậy
+  - ' ETH tăng lên 100 EUR rồi ư'
+  - anh có thể chơi tiền mã hóa nào
+  - tiền mã hóa nào xuống giá tiền thấp nhất thế
+  - ' binance có nên đầu tư không'
+  - đồng nào tao nên chơi
+  - tốc động tăng trưởng lên giá tiền tiền số bitcoin cash
+  - 5 năm tới nên chơi tiền số nào nhở cậu
+  - tiền số bitcoin cash nó có thể tăng ko
+  - giá tiền của đồng DOT hiện tại so với đồng XRP
+  - tiền số cardano giảm
+  - DOGE tăng tốt không
+  - cho hỏi đồng bitcoin có đang tăng hay không
+  - ngay lúc này loại đồng nào giá tiền sập sàn nhỉ
+  - top top_number loại tiền trending nhất bây giờ
+  - đầu tư loại tiền BTC có rủi ro không
+  - cho hỏi xu hướng đồng coin nào đang tốt nhất
+  - dogecoin có giảm
+  - anh nên chơi tiền mã hóa nào
+  - nên đầu tư tiền số nào mà không bị mất giá
+  - hôm kia xu hướng loại tiền nào đang là tốt nhất
+  - xu hướng của tiền số DOT nó ra sao
+  - cho tớ xin thông tin các loại đồng có thể tăng mạnh
+  - tiền mã hóa nào đang được các công ty trading
+  - liệu anh có thể đầu tư đồng mã hóa bitcoin được không
+  - coin nào đang trending vậy
+  - loại tiền bitcoin tăng lên 91 VND rồi nhở
+  - tớ có thể chơi tiền số nào
+  - tiền số nào xuống giá cao nhất hôm kia thế
+  - tiền mã hóa near có đáng đầu tư không
+  - đồng nào anh nên chơi
+  - tính ngoại lệ lên giá tiền loại tiền digibyte
+  - 5 năm tới nên đầu tư tiền số nào nhở
+  - loại đồng bitcoin nó có thể tăng không
+  - giá cả của đồng DOGE hiện tại so với đồng XRP
+  - tiền mã hóa BTC tăng
+  - bitcoin tăng tốt không
+  - cho hỏi đồng mã hóa uniswap có đang tăng hay không
+  - hôm nay loại tiền nào có giá sập sàn nhở
+  - top top_number tiền mã hóa thịnh hành nhất bây giờ
+  - vi mạch là dự án của nhà khoa học người [Anh](location) chính xác không
+  - biết ai phát minh ra bánh xe ko cậu
+  - ai chế tạo ra điện
+  - biết ai là cha đẻ của nền văn học hiện nay ko
+  - động cơ đốt trong là sản phẩm của nhà khoa học người [Việt](location) đúng ko
+  - bt ai phát minh ra bánh xe ko cậu
+  - ai sáng chế ra điện
+  - bt ai là cha đẻ của nền văn học hiện nay không
+  - tủ lạnh là dự án của nhà khoa học người [Na Uy](location) đung ko
+  - biết ai phát minh ra động cơ đốt trong không bạn
+  - ai phát minh ra điện
+  - bt ai là cha đẻ của nền văn học hiện nay ko
+  - bàn tính là sp của nhà khoa học người [Canada](location) chuẩn ko
+  - bt ai phát minh ra dây kéo ko mày
+  - biết ai là cha đẻ của nền văn học hiện nay không
+  - mã vạch là sản phẩm của nhà khoa học người [VN](location) chuẩn ko
+  - biết ai phát minh ra tủ lạnh không cậu
+  - xe đạp là sản phẩm của nhà khoa học người [Canada](location) chuẩn chỉ không
+  - biết ai phát minh ra thuốc ngừa thai không chú em
+  - máy laser là dự án của nhà khoa học người [Việt](location) chuẩn chỉ không
+  - biết ai phát minh ra internet ko bạn
+  - dây kéo là dự án của nhà khoa học người [Việt](location) đung không
+  - bt ai phát minh ra máy in không timi
+  - thuốc ngừa thai là sp của nhà khoa học người [Việt Nam](location) đung ko
+  - biết ai phát minh ra internet không bot
+  - internet là sản phẩm của nhà khoa học người [Việt Nam](location) đung ko
+  - biết ai phát minh ra vi mạch ko bot
+  - ổ khoá là sp của nhà khoa học người [VN](location) đung không
+  - bt ai phát minh ra internet ko bạn
+  - giấy là dự án của nhà khoa học người [Sing](location) chính xác không
+  - chắc chắn [Wonho](person_name) thuộc [SEVENTEEN](person_name) thuộc cung hoàng
+    đạo Sagittarius
+  - mày bt [Lay (EXO)](person_name) thuộc [NCT](person_name) thuộc cung hoàng đạo
+    nào chuẩn chỉ ko
+  - mày bt [Kim da-mi](person_name) thuộc cung hoàng đạo nào không
+  - '[Trịnh Công Sơn](person_name) thuộc cung hoàng đạo Sagittarius đung không'
+  - '[Đàm tổng](person_name) thuộc cung hoàng đạo nào'
+  - mình mún bt cung hoàng đạo của [Nguyễn Đăng Quang](person_name)
+  - tớ nghĩ [Minh Hằng](person_name) thuộc cung hoàng đạo Aries thế
+  - cung hoàng đạo của [Huỳnh Phạm Thủy Tiên](person_name) là gì vậy
+  - Leo là tên cung hoàng đạo của [Thu Hoài](person_name) chuẩn chỉ ko
+  - chắc chắn [Rosa Parks](person_name) thuộc cung hoàng đạo Scorpio
+  - timi bt [Khả Ngân](person_name) thuộc cung hoàng đạo nào chuẩn không
+  - bot bt [Vân Trang](person_name) thuộc cung hoàng đạo nào ko
+  - '[Jennie](person_name) thuộc cung hoàng đạo Song Tử đung ko'
+  - '[Nguyễn Đăng Quang](person_name) thuộc cung hoàng đạo nào'
+  - tớ muốn biết cung hoàng đạo của [Nguyễn Thùy Lâm](person_name)
+  - tớ nghĩ [Phan Anh](person_name) thuộc cung hoàng đạo Leo đấy
+  - cung hoàng đạo của [Hồ Ngọc Hà](person_name) là thế nào
+  - Ma Kết là tên cung hoàng đạo của [Thành Trung](person_name) chuẩn ko
+  - chắc chắn [Linh Đàm](person_name) thuộc cung hoàng đạo Capricorn
+  - timi bt [Quỳnh Kool](person_name) thuộc cung hoàng đạo nào đung ko
+  - timi bt [Mina (Twice)](person_name) thuộc cung hoàng đạo nào ko
+  - '[Donald Trump](person_name) thuộc cung hoàng đạo Capricorn đúng ko'
+  - '[Đỗ Khánh Vân](person_name) thuộc cung hoàng đạo nào'
+  - tớ mún biết cung hoàng đạo của [Wheein (Mamamoo)](person_name)
+  - tớ nghĩ [Lisa (BLACKPINK)](person_name) thuộc [TVXQ (DBSK)](person_name) thuộc
+    cung hoàng đạo Leo đó
+  - cung hoàng đạo của [Bích Phương](person_name) là gì
+  - Cự Giải là tên cung hoàng đạo của [Richard Branson](person_name) chính xác không
+  - chắc chắn [Leonardo da Vinci](person_name) thuộc cung hoàng đạo Thiên Bình
+  - chú em bt [Midu](person_name) thuộc cung hoàng đạo nào đúng ko
+  - timi biết [Lan Ngọc](person_name) thuộc cung hoàng đạo nào ko
+  - '[Thuỳ Tiên](person_name) thuộc cung hoàng đạo Thiên Bình chuẩn chỉ ko'
+  - '[Linh Đàm](person_name) thuộc cung hoàng đạo nào'
+  - mình muốn bt cung hoàng đạo của [Richard Branson](person_name)
+  - tớ nghĩ [Midu](person_name) thuộc cung hoàng đạo Scorpio hả
+  - cung hoàng đạo của [Phan Anh](person_name) là gì
+  - Gemini là tên cung hoàng đạo của [Võ Chí Công](person_name) chính xác ko
+  - chắc chắn [Độ Mixi](person_name) thuộc cung hoàng đạo Pisces
+  - timi biết [Yuta (NCT)](person_name) thuộc cung hoàng đạo nào chuẩn ko
+  - em bt [Quyền Linh](person_name) thuộc cung hoàng đạo nào không
+  - '[Công Tố](person_name) thuộc cung hoàng đạo Song Ngư chuẩn chỉ ko'
+  - '[Hồ Quỳnh Hương](person_name) thuộc cung hoàng đạo nào'
+  - tôi muốn biết cung hoàng đạo của [Nguyễn Hữu Thọ](person_name)
+  - tôi nghĩ [Hani (EXID)](person_name) thuộc [Davichi](person_name) thuộc cung hoàng
+    đạo Song Ngư hả
+  - cung hoàng đạo của [Martin Van Buren](person_name) là gì
+  - Song Tử là tên cung hoàng đạo của [Yuta (NCT)](person_name) thuộc [T-ara](person_name)
+    chính xác không
+  - chắc chắn [Linh Đàm](person_name) thuộc cung hoàng đạo Cự Giải
+  - bot biết [Albert Einstein](person_name) thuộc cung hoàng đạo nào chuẩn chỉ ko
+  - cậu bt [Mina (Twice)](person_name) thuộc [Blackpink](person_name) thuộc cung hoàng
+    đạo nào ko
+  - '[George Washington](person_name) thuộc cung hoàng đạo Thiên Yết chuẩn chỉ ko'
+  - '[Thanh Lam](person_name) thuộc cung hoàng đạo nào'
+  - '[Mina (Twice)](person_name) thuộc [Bangtan Boys (BTS)](person_name) học ở [Thái
+    Lan](location) đung không'
+  - giải thưởng mà [Trấn Thành](person_name) đạt được là như thế nào
+  - '[Phan Mạnh Quỳnh](person_name) là chủ nhân của cúp nhạc sĩ của năm hả bot'
+  - '[Khánh Vy IELTS](person_name) có được tiến cử webchoice ko timi'
+  - '[Đàm tổng](person_name) có thành tựu gì đặc biết không'
+  - '[Trấn Thành](person_name) từng đạt giải nhất vietnam got talent đúng ko'
+  - chủ nhân của cúp vietnam got talent là của [Thuỳ Tiên](person_name) hử
+  - '[Sơn Tùng MTP](person_name) học ở [Việt Nam](location) đung ko'
+  - thành tựu [Leonardo da Vinci](person_name) đạt được là như thế nào
+  - '[Vương Anh Tú](person_name) là chủ nhân của cúp ca sĩ của năm hả'
+  - '[Hoàng Thuỳ Linh](person_name) có được nhận tiến cử webchoice ko'
+  - '[Yuta (NCT)](person_name) có thành tích gì đặc biết không'
+  - '[Uyên Linh](person_name) từng đạt giải nhì sao mai điện ảnh đúng không'
+  - chủ nhân của huy chương nhạc sĩ của năm là của [Nguyên Khang](person_name) hả
+  - '[Nguyên Khang](person_name) học ở [Macau](location) đung ko'
+  - thành tích [Đàm Phương Linh](person_name) đạt được trong sự nghiệp là như thế
+    nào
+  - '[Hương Giang](person_name) là chủ nhân của cúp oscar hả'
+  - '[Thu Hoài](person_name) có được đề cử thạc sĩ ko'
+  - '[Kyuhyun (Super Junior)](person_name) thuộc [Blackpink](person_name) có thành
+    tựu gì đặc biết ko'
+  - '[H''Hen Niê](person_name) từng đạt giải thưởng ca sĩ của năm đúng không'
+  - chủ nhân của huy chương oscar là của [Cẩm Ly](person_name) hử
+  - '[Richard Branson](person_name) học ở [Việt](location) đung ko'
+  - thành tích [Xoài Non](person_name) đạt được trong sự nghiệp là gì
+  - '[Trần Tiểu Vy](person_name) là chủ nhân của cúp vietnam got talent hả'
+  - '[Hà Tăng](person_name) có được đề cử thạc sĩ ko timi'
+  - '[Hồ Chí Minh](person_name) có thành tích gì đặc biết không'
+  - '[Nguyên Khang](person_name) từng đạt giải nhì vietnam got talent đúng ko'
+  - chủ nhân của cúp oscar là của [Đinh Ngọc Diệp](person_name) hử
+  - '[Phạm Hồng Thúy Vân](person_name) học ở [Thụy Điển](location) chuẩn ko'
+  - thành tích [Thảo Tâm](person_name) đạt được là như thế nào
+  - không bt bạn trai của [Phạm Nhật Vượng](person_name) là ai ha
+  - ko bt [Jennie (BLACKPINK)](person_name) kết hôn rồi chứ nhỉ
+  - bạn [BoA](person_name) thuộc [Bangtan Boys (BTS)](person_name) có bạn trai chưa
+  - bot bt tình trạng hôn nhân của [Trường Giang](person_name) thế nào rồi không
+  - bà xã của [Hồ Ngọc Hà](person_name) là ai?
+  - ko biết người yêu của [Xoài Non](person_name) là ai nhở
+  - ko biết [Lại Văn Sâm](person_name) cưới chồng rồi chứ nhỉ
+  - bạn [Lại Văn Sâm](person_name) có bà xã chưa
+  - chú em bt tình trạng hôn nhân của [Đinh Ngọc Diệp](person_name) ntn rồi ko
+  - bạn gái của [Thành Trung](person_name) là ai?
+  - không bt vợ của [George H. W. Bush](person_name) là ai nhỉ
+  - không biết [HỒ HÙNG ANH](person_name) lấy vợ rồi chứ nhỉ
+  - cậu [Hyeri](person_name) có người yêu chưa
+  - mày bt trạng thái hôn nhân của [Hồ Ngọc Hà](person_name) như nào rồi không
+  - gấu của [Độ Mixi](person_name) là ai?
+  - timi cho tớ information mạng xã hội của [Trần Tiểu Vy](person_name) với
+  - không biết [Diễm My 9x](person_name) có fb nào không
+  - fb của [Jimin (BTS)](person_name)
+  - timi biết page của [Jungwoo (NCT)](person_name) là thế nào không
+  - làm như thế nào trao đổi với [Paul McCartney](person_name) vậy hả
+  - face của [John Adams](person_name) là gì?
+  - bot biết fanpage của [Võ Hoàng Yến](person_name) ko
+  - ca sĩ [Yeji](person_name) thuộc [Bangtan Boys (BTS)](person_name) có acc whatsapp
+    là gì á
+  - cho tôi biết page của [Quyền Linh](person_name) được không
+  - bot cho tôi thông tin fanpage của [Thomas Edison](person_name) với
+  - không bt [Taeyeon (SNSD)](person_name) thuộc [Black pink](person_name) có fb nào
+    ko
+  - fb của [Jisoo (BLACKPINK)](person_name) thuộc [Girls' Generation](person_name)
+  - mi bt facebook của [Michael Jackson](person_name) là gì ko
+  - làm gì connect với [Lee Hyori](person_name) thuộc [2NE1](person_name) vậy hả
+  - fanpage của [Phạm Thị Hương](person_name) là thế nào?
+  - mi biết fanpage của [Đông Nhi](person_name) không
+  - ' [Bill Clinton](person_name) có tài khoản tiktok là gì vậy'
+  - cho tôi bt facebook của [Elon Musk](person_name) được ko
+  - bạn cho tôi info page của [Kyuhyun (Super Junior)](person_name) với
+  - không biết [Phan Anh](person_name) có facebook nào ko
+  - mạng xã hội của [Cáo](person_name)
+  - chú em bt fanpage của [Xoài Non](person_name) là gì ko
+  - làm như nào liên hệ với [Sơn Tùng](person_name) hả
+  - face của [Đào Phương Anh](person_name) là gì hả?
+  - bot bt fb của [Thomas Jefferson](person_name) ko
+  - hoa hậu [Ten (NCT)](person_name) thuộc [SEVENTEEN](person_name) có acc whatsapp
+    là gì vậy
+  - cho tớ bt facebook của [Jungkook (BTS)](person_name) thuộc [Black pink](person_name)
+    được ko
+  - bạn cho tớ info face của [Khánh Vy](person_name) với
+  - ko biết [Nayeon (Twice)](person_name) thuộc [TVXQ (DBSK)](person_name) có page
+    nào không
+  - face của [Jack](person_name)

@@ -1,0 +1,24 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: ood_health
+  examples:
+  - Người bệnh tháo đường nên điều chỉnh chế độ ăn và vận động như nào?
+  - Người bệnh tháo đường nên điều chỉnh chế độ ăn và vận động thế nào?
+  - Người bệnh tháo đường nên điều chỉnh chế độ ăn và vận động như thế nào?
+  - cách chữa nóng rát dạ dày tại nhà
+  - Cho mình hỏi về khẩu phần ăn của bệnh nhân sau đột quỵ ạ?
+  - Cho tôi hỏi đột quỵ có triệu chứng không?
+  - Cho mình hỏi đột quỵ có triệu chứng không?
+  - Đột quỵ có thể dùng các thuốc đông y để cho cấp cứu không?
+  - Cho tui hỏi về khẩu phần ăn của bệnh nhân sau đột quỵ ạ?
+  - Cho tôi hỏi về khẩu phần ăn của bệnh nhân sau đột quỵ ạ?
+  - Cho tớ hỏi đột quỵ có triệu chứng không?
+  - Cho tui hỏi đột quỵ có triệu chứng không?
+  - Đau thần kinh tam thoa nên được điều trị như nào?
+  - Thuốc trị bệnh bàng quang kích thích có phải là thuốc kháng sinh không ạ?
+  - Đau thần kinh tam thoa nên được điều trị như thế nào?
+  - Mất nước cấp tính ở trẻ đang bú gồm những dấu hiệu nào?
+  - Đau thần kinh tam thoa nên được điều trị thế nào?
+  - Cho tớ hỏi về khẩu phần ăn của bệnh nhân sau đột quỵ ạ?

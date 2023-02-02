@@ -1,0 +1,21 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: ood_going_abroad
+  examples:
+  - Học bổng du học Mỹ của Google là bao nhiêu?
+  - xuất khẩu lao động là gì?
+  - Tại sao lại du học ở nước ngoài?
+  - Các yêu cầu đầu vào cho chương trình học tập ở nước ngoài là gì?
+  - Học bổng du học Úc được Samsung tài trợ bao nhiêu phần trăm
+  - Có cần nộp trước lệ phí tuyển sinh cho các trung tâm tư vấn du học không?
+  - Tôi có thể học bổng du học ở nước ngoài không?
+  - Chỉ có bằng tốt nghiệp cấp 2 có đi được xuất khẩu lao động được không?
+  - Quy trình tham gia chương trình xuất khẩu lao động như thế nào?
+  - Tiền chống trốn xuất khẩu lao động là gì?
+  - du học Thạc sĩ bên Anh cần phải đạt những điều kiện chi
+  - Xin visa du học bây giờ có khó không
+  - học bổng du học của doanh nghiệp và của chính phủ khác gì nhau
+  - Du học sinh Việt Nam ở Mỹ mỗi tháng sinh hoạt hết bao nhiêu
+  - Đi lao động ở nước nào thì lương cao và điều kiện làm việc tốt nhất?
