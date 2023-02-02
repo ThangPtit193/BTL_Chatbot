@@ -21,7 +21,7 @@ in Venus hub to provide unique search experiences and allow your users to query 
 
 - [**Contents**](#contents)
   - [Core Features ](#core-features-)
-  - [💾 Installation ](#-installation-)
+  - [Installation ](#-installation-)
     - [Install from repository](#install-from-repository)
     - [Conda](#conda)
   - [Configuration ](#configuration-)
@@ -52,7 +52,7 @@ in Venus hub to provide unique search experiences and allow your users to query 
 - [ ] **RestAPI**: Coming soon ...
 - [x] **Streamlit**: [https://saturn.dev.ftech.ai/home](http://192.168.1.11:8501/)
 
-## 💾 Installation <div id="core-features"></div>
+## Installation <div id="core-features"></div>
 
 The following command will install the latest version of Saturn from the main branch.
 You can install a basic version of Saturn's latest release by using [pip](https://github.com/pypa/pip).
@@ -111,15 +111,15 @@ GENERAL:
   device: cuda
   project: dummy
   version: v1.0.0
-  is_warning_action: True
+  is_warning_action: False
   output_data: assets
   output_model: models
   output_report: reports
 
   # Skipped signal
-  skipped_gen_data: False
-  skipped_training: False
-  skipped_eval: True
+  skipped_gen_data: True
+  skipped_training: True
+  skipped_eval: False
 
 DATA_GENERATION:
   data_dir: data/raw/dummy
@@ -140,7 +140,7 @@ TRAINER:
   pretrained_name_or_abspath: keepitreal/vietnamese-sbert
   n_samples: 10
   batch_size: 256
-  epochs: 20
+  epochs: 2
   warmup_steps: 5000
   evaluation_steps: 2000
   weight_decay: 0.01
@@ -158,12 +158,15 @@ EVALUATION:
   corpus_name_or_path: "data/eval-data/dummy/corpus_docs.json"
   query_name_or_path: "data/eval-data/dummy/query_docs.json"
   pretrained_name_or_abspath:
-    - models/dummy/v1.0.0/epoch-15
+    - timi-keepitreal-H768-faq-2M-v1.1.3
+    - timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+  top_k: 10
+  retriever_threshold: 0.7
+  default_faq_label: 'faq/out_of_scope'
 
 RELEASE:
   model_path: models
   pretrained_model: MiniLM-L12-H384-uncased
-  version: v1.0.0
   data_size: 9M
 ```
 

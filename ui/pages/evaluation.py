@@ -26,7 +26,6 @@ if 'detail_report' not in st.session_state:
 if 'Download all reports' not in st.session_state:
     st.session_state['Download_all_reports'] = None
 
-
 kr = KRManager(DEFAULT_CONFIG_AT_STARTUP)
 
 
@@ -43,7 +42,7 @@ st.set_page_config(
 )
 
 st.title("🤖 Evaluation")
-with st.expander("ℹ️ Introduce", expanded=True):
+with st.expander("ℹ️ Introduction", expanded=True):
     st.markdown("### Evaluation - Knowledge Retrieval ### ")
     st.markdown('INSTRUCTION: Select models, query and corpus to evaluate')
     st.markdown("""Query and corpus must be in json format""")
@@ -54,7 +53,6 @@ with st.expander("📂 Download sample files", expanded=False):
         st.download_button("Download corpus file", f.read(), file_name="corpus_docs.json", mime="application/json")
     with open("data/eval-data/dummy/query_docs.json", "r") as f:
         st.download_button("Download query file", f.read(), file_name="query_docs.json", mime="application/json")
-    
 
 with st.form("eval model") as eval_form:
     eval_models = st_tags(
@@ -78,7 +76,7 @@ with st.form("eval model") as eval_form:
             key='3',
             accept_multiple_files=True
         )
-    summit_button = st.form_submit_button(label = 'Evaluate')
+    summit_button = st.form_submit_button(label='Evaluate')
 
 
 # @st.experimental_singleton
@@ -107,27 +105,58 @@ result_type = st.selectbox('Select result type', ['',
 
 if summit_button:
     if len(eval_query) == 0 or len(eval_corpus) == 0:
-        st.error('Please upload query and corpus file', icon="🚨")
+        st.error('Please upload query and corpus file')
         st.stop()
     kr = lazy_init()
-    retriever_results, retriever_top_k_results = kr.evaluate_embedder()
+    retriever_results = kr.evaluate(save_report=False)
     st.success('Evaluate done! please check the result below')
     st.session_state['overall_report'] = retriever_results
-    st.session_state['detail_report'] = retriever_top_k_results
+    st.session_state['detail_report'] = retriever_results
     st.session_state['Download_all_reports'] = True
-
 
 if result_type == "Display overall result":
     if st.session_state['overall_report'] is not None:
         results = st.session_state['overall_report']
-        df = pd.DataFrame(results)
+        metrics = kr.compute_ir_metrics(eval_results=results)
+        df = pd.DataFrame(metrics)
         AgGrid(df, key=random())
         st.success('Compute metrics done!')
     else:
-        st.error('No file to show', icon="🚨")
+        st.error('No file to show')
 
 if result_type == "Display detail report":
     theme = st.sidebar.selectbox('Theme', ['light', 'dark', 'blue', 'fresh', 'material'], key='5')
+
+    tooltip_component = JsCode("""
+            class CustomTooltip {
+           init(params) {
+               const eGui = this.eGui = document.createElement('div');
+               const color = params.color || 'white';
+               const data = params.api.getDisplayedRowAtIndex(params.rowIndex).data;
+        
+               eGui.classList.add('custom-tooltip');
+               eGui.style['background-color'] = color;
+               eGui.innerHTML = `
+                   <p>
+                       <span class"name">${data.athlete}</span>
+                   </p>
+                   <p>
+                       <span>Country: </span>
+                       ${data.country}
+                   </p>
+                   <p>
+                       <span>Total: </span>
+                       ${data.total}
+                   </p>
+               `;
+           }
+        
+           getGui() {
+               return this.eGui;
+           }
+        }
+    """)
+
     grid_options = {
         "columnDefs": [
             {
@@ -146,20 +175,20 @@ if result_type == "Display detail report":
         for idx, models in enumerate(results):
             percentage = (idx + 1) / len(results)
             my_bar.progress(percentage)
-            for model, df in models.items():
-                if isinstance(df, list):
-                    df = pd.DataFrame(df)
-                # df = df.drop(columns=['query_id'])
-                df.insert(loc=0, column='index', value=df.index)
-
-                # explode lists of corpus to row
+            for model_name, eval_result in results.items():
+                df = pd.DataFrame(eval_result["retriever_docs"])
                 df = df.apply(pd.Series.explode)
+                df.insert(5, 'score', df.pop('relevant_doc_scores'))
+                df.columns = ['query', 'gt_label', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
+
                 with st.container():
                     st.write(
-                        f"<h2 style='text-align: center; color: red; font-size:20px;'>Results for {model}</h2>",
+                        f"<h2 style='text-align: center; color: red; font-size:20px;'>Results for {model_name}</h2>",
                         unsafe_allow_html=True)
                     df_merged = pd.DataFrame(df.to_dict('records'))
-                    select_option = st.selectbox('Select option', ['Show group', 'Show all with wrong results'], key='6')
+                    df_merged.score = df_merged.score.round(decimals=2)
+                    select_option = st.selectbox('Select option', ['Show group', 'Show all with wrong results'],
+                                                 key='6')
                     if select_option == 'Show group':
                         ob = GridOptionsBuilder.from_dataframe(df_merged)
                         ob.configure_column('query', header_name='query', rowGroup=True, enableRowGroup=True,
@@ -169,37 +198,26 @@ if result_type == "Display detail report":
                         ob.configure_pagination(paginationAutoPageSize=False, paginationPageSize=10)
                         gridOptions = ob.build()
                         AgGrid(df_merged,
-                            gridOptions=gridOptions,
-                            data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
-                            allow_unsafe_jscode=True,
-                            theme=theme,
-                            key=random(),
-                            enable_enterprise_modules=True)
+                               gridOptions=gridOptions,
+                               data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
+                               allow_unsafe_jscode=True,
+                               theme=theme,
+                               key=random(),
+                               enable_enterprise_modules=True)
                     if select_option == 'Show all with wrong results':
                         ob = GridOptionsBuilder.from_dataframe(df_merged)
-                        cellstyle_jscode = JsCode("""
-                        function(params) {
-                            if (params.data.predicted_labels != params.data.label) {
-                                return {
-                                    'color': 'red',
-                                }
-                            }
-                        }
-                        """)
-                        
-                        ob.configure_grid_options(getRowStyle=cellstyle_jscode)
                         gridOptions = ob.build()
                         AgGrid(df_merged,
-                            gridOptions=gridOptions,
-                            data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
-                            allow_unsafe_jscode=True,
-                            theme=theme,
-                            key=random(),
-                            enable_enterprise_modules=True)
+                               gridOptions=gridOptions,
+                               data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
+                               allow_unsafe_jscode=True,
+                               theme=theme,
+                               key=random(),
+                               enable_enterprise_modules=True)
 
         st.success('Compute metrics done!')
     else:
-        st.error('No file to show', icon="🚨")
+        st.error('No file to show')
 
 if result_type == 'Download overall report':
     if st.session_state['overall_report'] is not None:
@@ -208,7 +226,7 @@ if result_type == 'Download overall report':
                            data=df,
                            file_name='knowledge_retrieval.csv')
     else:
-        st.error('No file to download', icon="🚨")
+        st.error('No file to download')
 
 if result_type == 'Download detail report':
     if st.session_state['detail_report'] is not None:
@@ -234,7 +252,7 @@ if result_type == 'Download detail report':
                 on_click=trigger_on_click(temp_path)
             )
     else:
-        st.error('No file to download', icon="🚨")
+        st.error('No file to download')
 
 if result_type == "Download all reports":
     if st.session_state['Download_all_reports'] is not None:
@@ -263,4 +281,4 @@ if result_type == "Download all reports":
                 on_click=trigger_on_click(temp_path)
             )
     else:
-        st.error('No file to download', icon="🚨")
+        st.error('No file to download')
