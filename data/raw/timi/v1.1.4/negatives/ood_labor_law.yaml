@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_labor_law
+- intent: faq/ood_labor_law
   examples:
   - luật lao động có bao nhiêu điều khoản
   - Những trường hợp nào người lao động được tạm hoãn hợp đồng lao động?

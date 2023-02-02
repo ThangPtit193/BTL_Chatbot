@@ -1,5 +1,5 @@
 positives:
-- intent: rule_timekeeping_ask_form
+- intent: faq/rule_timekeeping_ask_form
   examples:
   - chấm công vân tay có bắt buộc không
   - m cho tôi hỏi [f-tech](work_unit) chấm công bằng quẹt thẻ à

@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_going_abroad
+- intent: faq/ood_going_abroad
   examples:
   - Học bổng du học Mỹ của Google là bao nhiêu?
   - xuất khẩu lao động là gì?

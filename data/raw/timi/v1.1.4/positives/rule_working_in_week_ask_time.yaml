@@ -1,5 +1,5 @@
 positives:
-- intent: rule_working_in_week_ask_time
+- intent: faq/rule_working_in_week_ask_time
   examples:
   - thời gian làm của công ty thế nào
   - ' bắt đầu làm việc vào buổi sáng lúc mấy giờ'

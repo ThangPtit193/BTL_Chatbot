@@ -1,5 +1,5 @@
 positives:
-- intent: company_ask_partner
+- intent: faq/company_ask_partner
   examples:
   - khách hàng của [f tech](work_unit) gồm những ai
   - những công ty hợp tác kinh doanh với [f-tech](work_unit) là ntn

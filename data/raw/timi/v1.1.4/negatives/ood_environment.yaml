@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_environment
+- intent: faq/ood_environment
   examples:
   - Chất độc màu da cam huỷ diệt môi trường ở [Macau](location) như thế nào?
   - Chất độc màu da cam huỷ diệt môi trường ở [Mexico](location) như thế nào?

@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_sport
+- intent: faq/ood_sport
   examples:
   - câu lạc bộ nào lâu đời nhất thế giới
   - Môn thể thao nào được gọi là thể thao vua

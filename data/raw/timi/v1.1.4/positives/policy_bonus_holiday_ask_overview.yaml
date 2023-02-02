@@ -1,5 +1,5 @@
 positives:
-- intent: policy_bonus_holiday_ask_overview
+- intent: faq/policy_bonus_holiday_ask_overview
   examples:
   - vào dịp lễ tết công ty tiền thưởng được tính ra sao?
   - cho tôi hỏi công ty có cách tính thưởng tết như thế nào

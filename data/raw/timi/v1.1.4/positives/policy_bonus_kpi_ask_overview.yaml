@@ -1,5 +1,5 @@
 positives:
-- intent: policy_bonus_kpi_ask_overview
+- intent: faq/policy_bonus_kpi_ask_overview
   examples:
   - thưởng KPI là như nào đó
   - nói rõ hơn về bonus KPI đi

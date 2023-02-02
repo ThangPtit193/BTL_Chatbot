@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_hobby
+- intent: faq/self_ask_hobby
   examples:
   - Nấu ăn mày có thích không
   - đồ ăn yêu thích là gì hả?

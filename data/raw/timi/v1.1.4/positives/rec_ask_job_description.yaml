@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_job_description
+- intent: faq/rec_ask_job_description
   examples:
   - tớ muốn job description [thử việc](level_position) [quản lý nhân sự](position)
   - cho tớ hỏi [fresher](level_position) [ai research](position) làm gì vậy hả

@@ -1,5 +1,5 @@
 positives:
-- intent: general_deny
+- intent: faq/general_deny
   examples:
   - chưa được, ko chính xác cậu
   - không, không chuẩn chỉ rồi timi

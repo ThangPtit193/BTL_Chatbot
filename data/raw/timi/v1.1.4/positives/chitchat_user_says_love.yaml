@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_user_says_love
+- intent: faq/chitchat_user_says_love
   examples:
   - mình yêu timi lắm
   - muốn chiếm lấy bot làm bạn gái

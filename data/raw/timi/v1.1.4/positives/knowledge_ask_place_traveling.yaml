@@ -1,5 +1,5 @@
 positives:
-- intent: knowledge_ask_place_traveling
+- intent: faq/knowledge_ask_place_traveling
   examples:
   - ' suy nghĩ xem nên đi đâu ở [lâm đồng](location) giờ ha'
   - '[bình thuận](location) có như thế nào mới lạ ko nhở'

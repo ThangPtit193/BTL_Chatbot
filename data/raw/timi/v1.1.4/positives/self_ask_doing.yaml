@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_doing
+- intent: faq/self_ask_doing
   examples:
   - em cho mình hỏi đang rảnh chứ
   - timi cho tớ hỏi đang rảnh phải không

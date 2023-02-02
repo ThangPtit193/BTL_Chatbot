@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_user_feel_hungry
+- intent: faq/chitchat_user_feel_hungry
   examples:
   - Sáng mình chưa ăn giờ bụng tui kêu liên hồi rồi bạn ơi
   - Sáng tớ chưa ăn giờ bụng tui kêu liên hồi rồi m ơi

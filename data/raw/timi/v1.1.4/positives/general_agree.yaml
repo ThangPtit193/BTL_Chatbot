@@ -1,5 +1,5 @@
 positives:
-- intent: general_agree
+- intent: faq/general_agree
   examples:
   - ừm chính xác rồi nha timi
   - đúng rồi timi

@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_job_requirement
+- intent: faq/rec_ask_job_requirement
   examples:
   - ko giỏi có vô công ty làm [2d product](position) được không
   - mình học trái ngành tại [Đại học UTC](work_unit) và muốn apply [thử việc](level_position)

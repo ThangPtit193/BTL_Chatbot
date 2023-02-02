@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_birthday
+- intent: faq/self_ask_birthday
   examples:
   - có thể cho tui hỏi sinh nhật của bạn tháng nào
   - có thể cho tui hỏi hiện tại bạn bao nhiêu tuổi hả

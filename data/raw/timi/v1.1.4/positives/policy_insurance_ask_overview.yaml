@@ -1,5 +1,5 @@
 positives:
-- intent: policy_insurance_ask_overview
+- intent: faq/policy_insurance_ask_overview
   examples:
   - BHXH bên công ty đóng theo mức nào ạ?
   - Chính sách chung cho chế độ bảo hiểm của công ty như nào

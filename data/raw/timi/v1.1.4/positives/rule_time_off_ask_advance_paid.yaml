@@ -1,5 +1,5 @@
 positives:
-- intent: rule_time_off_ask_advance_paid
+- intent: faq/rule_time_off_ask_advance_paid
   examples:
   - đố cậu công ty có chế độ ứng phép ko đó
   - ứng phép tối đa mấy tuần hả

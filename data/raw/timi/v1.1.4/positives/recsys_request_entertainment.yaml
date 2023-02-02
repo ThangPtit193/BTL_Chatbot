@@ -1,5 +1,5 @@
 positives:
-- intent: recsys_request_entertainment
+- intent: faq/recsys_request_entertainment
   examples:
   - bùn chán quá, có phim gì xem không mi
   - cho tôi xin link xem film với

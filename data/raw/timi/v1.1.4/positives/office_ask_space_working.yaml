@@ -1,5 +1,5 @@
 positives:
-- intent: office_ask_space_working
+- intent: faq/office_ask_space_working
   examples:
   - cho tớ hỏi không gian giao tiếp ở công ty thế nào
   - ko biết làm việc ở công ty có hòa đồng không

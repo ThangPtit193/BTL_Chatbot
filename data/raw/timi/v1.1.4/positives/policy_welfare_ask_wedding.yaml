@@ -1,5 +1,5 @@
 positives:
-- intent: policy_welfare_ask_wedding
+- intent: faq/policy_welfare_ask_wedding
   examples:
   - Khi cưới chồng thì có những chế độ đãi ngộ gì
   - Khi cưới chồng thì có những chế độ đãi ngộ gì bot

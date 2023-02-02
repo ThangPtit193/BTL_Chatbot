@@ -1,5 +1,5 @@
 positives:
-- intent: department_ask_overview
+- intent: faq/department_ask_overview
   examples:
   - có những team nào trong công ty
   - văn phòng [QN](location) có bao nhiu team

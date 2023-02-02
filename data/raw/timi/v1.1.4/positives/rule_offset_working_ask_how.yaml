@@ -1,5 +1,5 @@
 positives:
-- intent: rule_offset_working_ask_how
+- intent: faq/rule_offset_working_ask_how
   examples:
   - nội quy về làm bù giờ thế nào
   - công ty có quy định làm bù giờ khi đi trễ ko

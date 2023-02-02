@@ -1,5 +1,5 @@
 positives:
-- intent: rule_time_off_ask_salary
+- intent: faq/rule_time_off_ask_salary
   examples:
   - ' Nghỉ phép thì vẫn được lương chứ'
   - Nghỉ phép có được lương ko

@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_user_feel_sleepy
+- intent: faq/chitchat_user_feel_sleepy
   examples:
   - chị muốn ngủ thế đi mất
   - tớ đang buồn ngủ quá

@@ -1,5 +1,5 @@
 positives:
-- intent: policy_welfare_ask_overview
+- intent: faq/policy_welfare_ask_overview
   examples:
   - hàng năm công ty thường tổ chức đi du lịch ở đâu
   - phúc lợi của [nexttech](work_unit) thế nào

@@ -1,5 +1,5 @@
 positives:
-- intent: rule_ask_uniform
+- intent: faq/rule_ask_uniform
   examples:
   - cho mình hỏi người có cần mặc đồng phục đi làm ko
   - mang váy ngắn đi làm có được không

@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_user_feel_thirsty
+- intent: faq/chitchat_user_feel_thirsty
   examples:
   - khát nước
   - vì sao tớ lại khát nước như hở

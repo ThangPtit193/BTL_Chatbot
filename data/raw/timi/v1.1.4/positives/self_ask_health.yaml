@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_health
+- intent: faq/self_ask_health
   examples:
   - cho tớ hỏi sức khỏe bạn có tốt không
   - em ngu ơi dạo ni mày ổn phải không

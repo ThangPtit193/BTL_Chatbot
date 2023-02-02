@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_financial_law
+- intent: faq/ood_financial_law
   examples:
   - Phân biệt người chịu thuế, người nộp thuế?
   - So sánh chi đầu tư phát triển và chi thường xuyên?

@@ -1,5 +1,5 @@
 positives:
-- intent: policy_ask_bonus_december
+- intent: faq/policy_ask_bonus_december
   examples:
   - cho tôi hỏi mình có thưởng tháng 13 không ạ?
   - Chế độ thưởng tháng 13 bên tôi như thế nào nhỉ?

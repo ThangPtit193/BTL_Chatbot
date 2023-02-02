@@ -1,5 +1,5 @@
 positives:
-- intent: company_ask_checkin_checkout_time
+- intent: faq/company_ask_checkin_checkout_time
   examples:
   - tớ đã checkin chưa timi nhỉ
   - ' mình đã checkout chưa nhở'

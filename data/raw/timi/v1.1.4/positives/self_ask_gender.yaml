@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_gender
+- intent: faq/self_ask_gender
   examples:
   - giới tính của em có phải là nam không
   - m là đồng tính à

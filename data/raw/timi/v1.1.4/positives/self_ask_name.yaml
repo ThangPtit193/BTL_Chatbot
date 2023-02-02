@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_name
+- intent: faq/self_ask_name
   examples:
   - cậu có thể cho tôi hỏi tên đủ đầy của cậu là gì
   - cho tui hỏi bạn tên là mô

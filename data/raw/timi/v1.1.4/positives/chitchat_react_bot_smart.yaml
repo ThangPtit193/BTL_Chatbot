@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_react_bot_smart
+- intent: faq/chitchat_react_bot_smart
   examples:
   - tốt lắm em
   - tốt vậy á hả

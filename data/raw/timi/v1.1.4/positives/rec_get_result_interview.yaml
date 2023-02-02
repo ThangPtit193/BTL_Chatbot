@@ -1,5 +1,5 @@
 positives:
-- intent: rec_get_result_interview
+- intent: faq/rec_get_result_interview
   examples:
   - cho mình hỏi có kết quả phỏng vấn có lâu không
   - phỏng vấn xong thì bao lâu biết kết quả bot nhỉ

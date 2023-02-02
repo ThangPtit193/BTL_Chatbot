@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_contact_info
+- intent: faq/rec_ask_contact_info
   examples:
   - hotline recruitment công ty là gì thế?
   - tớ muốn gọi điện thoại đến công ty [f tech](work_unit)

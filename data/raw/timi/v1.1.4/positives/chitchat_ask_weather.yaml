@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_ask_weather
+- intent: faq/chitchat_ask_weather
   examples:
   - trong [ngày 30/4](time) không khí như nào
   - trời đang bão à m

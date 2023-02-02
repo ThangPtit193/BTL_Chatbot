@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_weight
+- intent: faq/self_ask_weight
   examples:
   - được bao nhiêu ký hả mày
   - em được mấy kg

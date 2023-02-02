@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_user_want_lover
+- intent: faq/chitchat_user_want_lover
   examples:
   - có nơi đâu phát bạn gái không
   - timi ơi tớ muốn có chồng quá ạ

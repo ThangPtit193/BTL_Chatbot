@@ -1,5 +1,5 @@
 positives:
-- intent: company_ask_overview
+- intent: faq/company_ask_overview
   examples:
   - em có thể cho c xin thông tin về công ty đc không
   - '[ftech](work_unit) là công ty gì vậy'

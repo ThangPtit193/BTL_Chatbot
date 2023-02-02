@@ -1,5 +1,5 @@
 positives:
-- intent: company_ask_slogan
+- intent: faq/company_ask_slogan
   examples:
   - slogan của công ty là touch your future chính xác ko
   - cho mình hỏi khẩu ngữ của công ty là như nào mày

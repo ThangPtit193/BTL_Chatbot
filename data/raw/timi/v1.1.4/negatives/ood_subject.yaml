@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_subject
+- intent: faq/ood_subject
   examples:
   - viết công thức giúp em ạ nhiều điểm ấy
   - Vô hạn tuần hoàn là gì

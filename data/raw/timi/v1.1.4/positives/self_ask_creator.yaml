@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_creator
+- intent: faq/self_ask_creator
   examples:
   - công ty nào đã làm ra bạn vậy
   - bot có người thân không

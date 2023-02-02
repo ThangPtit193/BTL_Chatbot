@@ -1,5 +1,5 @@
 positives:
-- intent: product_ask_info
+- intent: faq/product_ask_info
   examples:
   - liệt kê một số dự án của công ty
   - công ty hiện tại có sản phẩm gì vậy m

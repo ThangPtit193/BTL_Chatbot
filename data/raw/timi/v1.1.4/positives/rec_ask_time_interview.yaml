@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_time_interview
+- intent: faq/rec_ask_time_interview
   examples:
   - gửi tớ thông tin về thời gian được gọi đi phỏng vấn sau khi gửi hồ sơ với
   - tôi phải đợi bao lâu mới được tham gia phỏng vấn vậy

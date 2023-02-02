@@ -1,5 +1,5 @@
 positives:
-- intent: company_ask_core_values
+- intent: faq/company_ask_core_values
   examples:
   - những giá trị core mà công ty mang lại là gì
   - giá trị core của công ty là thế nào hả mầy

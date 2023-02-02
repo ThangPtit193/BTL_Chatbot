@@ -1,5 +1,5 @@
 positives:
-- intent: rule_ask_violation
+- intent: faq/rule_ask_violation
   examples:
   - cho mình hỏi khi làm việc ở công ty những hành động xẽ bị xử phạt
   - '[ftech](work_unit) coi các hành động nào là vi phạm kỷ luật ha'

@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_interview_language
+- intent: faq/rec_ask_interview_language
   examples:
   - mình hơi gà Tiếng Đức nên phỏng vấn tiếng Việt được ko
   - ' [f tech](work_unit) [hồ chí minh](location) sử dụng language gì để phỏng vấn

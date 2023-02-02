@@ -1,5 +1,5 @@
 positives:
-- intent: policy_salary_ask_calculate
+- intent: faq/policy_salary_ask_calculate
   examples:
   - người có những khoản salary nào khác?
   - salary thực nhận hay salary tổng trên giấy

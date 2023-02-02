@@ -1,5 +1,5 @@
 positives:
-- intent: rule_paid_time_off_ask_overview
+- intent: faq/rule_paid_time_off_ask_overview
   examples:
   - nếu không sử dụng hết thời gian nghỉ phép thì có được cộng dồn sang năm tiếp theo
     không

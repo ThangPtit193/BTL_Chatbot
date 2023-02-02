@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_health
+- intent: faq/ood_health
   examples:
   - Người bệnh tháo đường nên điều chỉnh chế độ ăn và vận động như nào?
   - Người bệnh tháo đường nên điều chỉnh chế độ ăn và vận động thế nào?

@@ -1,5 +1,5 @@
 negatives:
-- intent: oos_about_person
+- intent: faq/oos_about_person
   examples:
   - tớ có thể đầu tư đồng mã hóa nào
   - tiền số coin nào xuống giá cả cao nhất thế

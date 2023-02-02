@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_traffic
+- intent: faq/ood_traffic
   examples:
   - Năm 2022 có bao nhiêu sân bay nội địa mới đưa vào hoạt động
   - xe máy được chạy tối đa bao nhiêu trong thành phố

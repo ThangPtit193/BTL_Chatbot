@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_real_estate
+- intent: faq/ood_real_estate
   examples:
   - vị trí của khu căn hộ cao cấp Louis City Xuân Phương như thế nào
   - vị trí của dự án khu chung cư V Melody Villas như thế nào

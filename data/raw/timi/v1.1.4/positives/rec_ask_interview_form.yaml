@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_interview_form
+- intent: faq/rec_ask_interview_form
   examples:
   - công ty [ftech](work_unit) phỏng vấn meet hay offline hả?
   - công ty hay phỏng vấn bằng cách thức nào

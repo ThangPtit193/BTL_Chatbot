@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_interview_criteria
+- intent: faq/rec_ask_interview_criteria
   examples:
   - làm gì biết tớ có pass sau phỏng vấn
   - cho mình xin tiêu chuẩn của [f-tech](work_unit) để lựa chọn candidate pass phỏng

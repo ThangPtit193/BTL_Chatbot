@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_character
+- intent: faq/self_ask_character
   examples:
   - làm gì để biết tính cách của m nhỉ
   - tớ mong là bạn nết na

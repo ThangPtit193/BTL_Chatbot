@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_intro
+- intent: faq/self_ask_intro
   examples:
   - thế em là đứa nào hả
   - cậu giới thiệu về bản thân cho tớ

@@ -1,5 +1,5 @@
 positives:
-- intent: knowledge_ask_hot_new
+- intent: faq/knowledge_ask_hot_new
   examples:
   - mày gửi tớ thông tin [hôm nay](time) với
   - timi biết tin gì đang đặc sắc không

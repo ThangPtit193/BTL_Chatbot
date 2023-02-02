@@ -1,5 +1,5 @@
 positives:
-- intent: policy_ask_review_salary
+- intent: faq/policy_ask_review_salary
   examples:
   - cho tôi hỏi nếu mà chưa làm đủ 6 tháng thì có được review tăng lương không
   - sau bao lâu sẽ được review tăng lương

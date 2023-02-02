@@ -1,5 +1,5 @@
 negatives:
-- intent: oos_unknown
+- intent: faq/oos_unknown
   examples:
   - mình muốn mình có thể bay
   - tớ muốn trở nên xinh đẹp

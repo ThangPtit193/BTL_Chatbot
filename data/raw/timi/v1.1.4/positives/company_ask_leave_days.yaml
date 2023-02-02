@@ -1,5 +1,5 @@
 positives:
-- intent: company_ask_leave_days
+- intent: faq/company_ask_leave_days
   examples:
   - '[chủ nhật](time) [tuânf tới đây](time) và [thứ năm](time) [tuânf tới nữa](time)
     tớ đến làm trễ giờ buổi nào không'

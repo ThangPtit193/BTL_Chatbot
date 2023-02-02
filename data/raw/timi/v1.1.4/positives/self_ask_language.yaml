@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_language
+- intent: faq/self_ask_language
   examples:
   - nói 1 câu [tiếng trung](language) nghe thử mày
   - tớ chat với m bằng [tiếng trung](language) được không

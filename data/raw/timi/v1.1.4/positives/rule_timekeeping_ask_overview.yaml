@@ -1,5 +1,5 @@
 positives:
-- intent: rule_timekeeping_ask_overview
+- intent: faq/rule_timekeeping_ask_overview
   examples:
   - nếu mình về trước 5h thì được công ty tính là đi làm về sớm đúng không bạn
   - thời gian chấm công bên công ty như thế nào vậy

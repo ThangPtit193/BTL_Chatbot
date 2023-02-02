@@ -1,5 +1,5 @@
 positives:
-- intent: rule_pregnant_ask_time
+- intent: faq/rule_pregnant_ask_time
   examples:
   - '[f-tech](work_unit) có nội quy gì về thời gian làm việc cho phụ nữ mang thai
     ko ha'

@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_user_feel_angry
+- intent: faq/chitchat_user_feel_angry
   examples:
   - tức quá
   - tao đang tức đây

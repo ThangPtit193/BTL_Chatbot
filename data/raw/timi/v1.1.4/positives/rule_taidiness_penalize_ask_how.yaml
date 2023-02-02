@@ -1,5 +1,5 @@
 positives:
-- intent: rule_taidiness_penalize_ask_how
+- intent: faq/rule_taidiness_penalize_ask_how
   examples:
   - đi muộn có bị phạt ko bot
   - quy chế xử phạt đi muộn giờ quy định thế nào

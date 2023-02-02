@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_economy
+- intent: faq/ood_economy
   examples:
   - Những vấn đề khó khăn đang gặp phải của kinh tế Việt Nam
   - Nước nào đang có thu nhập GDP đầu người cao nhất

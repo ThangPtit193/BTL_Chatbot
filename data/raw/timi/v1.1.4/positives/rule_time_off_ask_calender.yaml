@@ -1,5 +1,5 @@
 positives:
-- intent: rule_time_off_ask_calender
+- intent: faq/rule_time_off_ask_calender
   examples:
   - công ty được nghỉ lễ vào các ngày nào đó
   - '[ngày quốc tế phụ nữ](time) công ty có cho nhân viên nghỉ ko'

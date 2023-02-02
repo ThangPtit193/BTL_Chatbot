@@ -1,5 +1,5 @@
 positives:
-- intent: policy_insurance_ask_maternity
+- intent: faq/policy_insurance_ask_maternity
   examples:
   - công ty có bao nhiêu loại chính sách thai sản
   - chế độ thai sản thế nào ạ

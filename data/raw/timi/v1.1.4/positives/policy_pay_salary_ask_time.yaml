@@ -1,5 +1,5 @@
 positives:
-- intent: policy_pay_salary_ask_time
+- intent: faq/policy_pay_salary_ask_time
   examples:
   - hàng tháng trả salary vào ngày bao nhiêu
   - hàng tháng trả lương vào đầu tháng hay cuối tháng

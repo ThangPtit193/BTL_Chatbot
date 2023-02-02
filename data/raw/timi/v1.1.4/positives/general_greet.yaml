@@ -1,5 +1,5 @@
 positives:
-- intent: general_greet
+- intent: faq/general_greet
   examples:
   - cậu cho mình hỏi chút được ko
   - bot giúp tui việc này được không

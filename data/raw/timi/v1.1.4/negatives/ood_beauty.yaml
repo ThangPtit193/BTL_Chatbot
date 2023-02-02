@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_beauty
+- intent: faq/ood_beauty
   examples:
   - muốn mặc giống với [Apink Eunji](person_name) [SHINee](person_name)
   - style tóc tai thể thao

@@ -1,5 +1,5 @@
 positives:
-- intent: policy_training_ask_overview
+- intent: faq/policy_training_ask_overview
   examples:
   - chính sách đào tạo kỹ năng công ty
   - chính sách đào tạo nâng cao chuyên môn là gì

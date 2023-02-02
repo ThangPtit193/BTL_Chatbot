@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_smart
+- intent: faq/self_ask_smart
   examples:
   - tao muốn hỏi m hay quá hay không
   - m đánh giá bản thân mấy điểm trên thang điểm 10 về độ thông minh

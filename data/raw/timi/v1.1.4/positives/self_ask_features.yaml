@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_features
+- intent: faq/self_ask_features
   examples:
   - cậu biết được những gì rồi
   - thế cậu biết thêm được những gì

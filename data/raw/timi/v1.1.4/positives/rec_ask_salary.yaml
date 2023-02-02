@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_salary
+- intent: faq/rec_ask_salary
   examples:
   - lương thưởng của công ty như nào
   - công ty trả lương cho [sinh viên thực tập](level_position) có cao ko

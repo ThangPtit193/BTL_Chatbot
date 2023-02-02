@@ -1,5 +1,5 @@
 positives:
-- intent: rule_timekeeping_ask_forgot
+- intent: faq/rule_timekeeping_ask_forgot
   examples:
   - '[senior](level_position) quên chấm công thì có bị sao không ạ'
   - nếu quên checkout thì sẽ được xử lý như thế nào

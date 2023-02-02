@@ -1,5 +1,5 @@
 positives:
-- intent: policy_ask_ot
+- intent: faq/policy_ask_ot
   examples:
   - '[thử việc](level_position) có Over time thường xuyên ko?'
   - qui định về Over time ở công ty thế nào

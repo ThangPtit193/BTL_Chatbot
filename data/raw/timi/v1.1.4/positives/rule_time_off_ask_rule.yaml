@@ -1,5 +1,5 @@
 positives:
-- intent: rule_time_off_ask_rule
+- intent: faq/rule_time_off_ask_rule
   examples:
   - quy chế về xin ra giữa giờ như thế nào
   - tớ xin đi ra ngoài thì chỉ cần báo leader thôi phải không

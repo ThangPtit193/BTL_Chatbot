@@ -1,5 +1,5 @@
 positives:
-- intent: rule_ask_discipline
+- intent: faq/rule_ask_discipline
   examples:
   - '[ftech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật không nhể'
   - công ty có những hình thức xử phạt như nào đối với các hành động vi phạm kỷ luật

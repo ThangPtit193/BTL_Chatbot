@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_user_feel_lonely
+- intent: faq/chitchat_user_feel_lonely
   examples:
   - tao cô đơn quá đi
   - cô độc làm ntn mày

@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_dislike
+- intent: faq/self_ask_dislike
   examples:
   - bot ghét làm gì vào mùa đông
   - mày có sợ bóng đêm không

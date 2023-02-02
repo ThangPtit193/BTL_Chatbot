@@ -1,5 +1,5 @@
 positives:
-- intent: company_ask_hour_of_furlough
+- intent: faq/company_ask_hour_of_furlough
   examples:
   - bạn tra cứu xem tớ còn mấy ngày phép vậy
   - ' cho tui hỏi là tớ còn mấy ngày phép nhỉ'

@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_culture
+- intent: faq/ood_culture
   examples:
   - chỗ nào phát triển dệt tơ lụa lâu đời
   - chỗ nào phát triển làm gốm lâu đời

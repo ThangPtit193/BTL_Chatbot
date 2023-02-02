@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_interview_panel
+- intent: faq/rec_ask_interview_panel
   examples:
   - lúc phỏng vấn có nhiều người tham gia không
   - có nhiều người tham dự khi phỏng vấn ko

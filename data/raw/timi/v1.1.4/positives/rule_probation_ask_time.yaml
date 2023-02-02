@@ -1,5 +1,5 @@
 positives:
-- intent: rule_probation_ask_time
+- intent: faq/rule_probation_ask_time
   examples:
   - cho tớ hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
   - cho tôi hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy

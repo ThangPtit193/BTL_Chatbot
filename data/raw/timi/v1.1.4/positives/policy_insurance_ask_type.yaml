@@ -1,5 +1,5 @@
 positives:
-- intent: policy_insurance_ask_type
+- intent: faq/policy_insurance_ask_type
   examples:
   - Có những gì trong gói bảo hiểm xã hội ở ftech
   - bảo hiểm có những loại gì thế

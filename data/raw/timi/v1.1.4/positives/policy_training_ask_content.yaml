@@ -1,5 +1,5 @@
 positives:
-- intent: policy_training_ask_content
+- intent: faq/policy_training_ask_content
   examples:
   - huấn luyện nội dung gì cho nhân viên hả bạn
   - nếu đào tạo công ty sẽ đào tạo về cái gì?

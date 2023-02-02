@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_react_bot_stupid
+- intent: faq/chitchat_react_bot_stupid
   examples:
   - đần thế à
   - lúc nào cũng tôi không hiểu bạn nói gì

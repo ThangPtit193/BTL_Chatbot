@@ -1,5 +1,5 @@
 positives:
-- intent: policy_insurance_ask_benefit
+- intent: faq/policy_insurance_ask_benefit
   examples:
   - bảo hiểm tai nạn lao động có nhiều phúc lợi ko
   - bảo hiểm tai nạn lao động là mình được hưởng gì

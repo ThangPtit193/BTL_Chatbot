@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_user_feel_tired
+- intent: faq/chitchat_user_feel_tired
   examples:
   - sao mà mệt thế
   - mình không khỏe

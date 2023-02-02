@@ -1,5 +1,5 @@
 positives:
-- intent: general_thank
+- intent: faq/general_thank
   examples:
   - tớ cảm ơn nhiều
   - thank bot nhiều nha

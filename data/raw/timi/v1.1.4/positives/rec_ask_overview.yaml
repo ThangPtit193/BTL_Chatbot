@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_overview
+- intent: faq/rec_ask_overview
   examples:
   - hiện tại công ty đang tuyển các ngành nghề gì vậy?
   - ' phòng ban [game và design](department) ở [sài gòn](location) có đang tuyển [react

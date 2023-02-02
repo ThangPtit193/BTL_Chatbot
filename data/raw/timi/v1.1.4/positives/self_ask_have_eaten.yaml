@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_have_eaten
+- intent: faq/self_ask_have_eaten
   examples:
   - chắc timi chưa ăn nào đâu nhể
   - ' ăn cơm chưa'

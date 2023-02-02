@@ -1,5 +1,5 @@
 positives:
-- intent: chitchat_user_feel_sick
+- intent: faq/chitchat_user_feel_sick
   examples:
   - chắc tớ bị khó thở rùi
   - tớ đang bị đau đầu

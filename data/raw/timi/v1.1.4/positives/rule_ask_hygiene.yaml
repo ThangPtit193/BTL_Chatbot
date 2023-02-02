@@ -1,5 +1,5 @@
 positives:
-- intent: rule_ask_hygiene
+- intent: faq/rule_ask_hygiene
   examples:
   - nội quy về xài máy móc của công ty như thế nào
   - tôi muốn hỏi về quy định giữ gìn vệ sinh chung của công ty như thế nào

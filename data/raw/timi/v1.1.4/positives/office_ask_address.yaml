@@ -1,5 +1,5 @@
 positives:
-- intent: office_ask_address
+- intent: faq/office_ask_address
   examples:
   - công ty có bao nhiêu cơ sở
   - địa chỉ làm việc ở [huế](location)

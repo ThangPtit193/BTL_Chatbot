@@ -1,5 +1,5 @@
 positives:
-- intent: knowledge_ask_coin_price
+- intent: faq/knowledge_ask_coin_price
   examples:
   - giá cả loại tiền coin thời điểm hiện tại là ra sao
   - ' BCH được giao bán với giá tiền như nào'

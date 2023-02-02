@@ -1,5 +1,5 @@
 positives:
-- intent: knowledge_ask_ftecher
+- intent: faq/knowledge_ask_ftecher
   examples:
   - giới thiệu về [Nguyễn Thúc Thuỳ Tiên](person_name) đi
   - có bt nhóm [EXID](person_name) ko vậy

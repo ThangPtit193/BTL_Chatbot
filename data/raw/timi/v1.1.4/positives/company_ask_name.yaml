@@ -1,5 +1,5 @@
 positives:
-- intent: company_ask_name
+- intent: faq/company_ask_name
   examples:
   - công ty bên mầy tên đầy đủ là [công nghệ và gia đình](work_unit) hà
   - tên đầy đủ của công ty là gì bạn

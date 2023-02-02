@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_introduce_candidate
+- intent: faq/rec_ask_introduce_candidate
   examples:
   - '[f-tech](work_unit) trả tiền ref có cao không'
   - tớ muốn có thêm information về việc nhận tiền bên bạn

@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_working_place
+- intent: faq/rec_ask_working_place
   examples:
   - '[full-stack](position) làm ở đâu'
   - mình ứng tuyển vị trí [blockchain](position) thì làm việc tại đâu nhể

@@ -1,5 +1,5 @@
 positives:
-- intent: self_ask_have_lover
+- intent: faq/self_ask_have_lover
   examples:
   - có người yêu chưa bot
   - bạn có chồng chưa

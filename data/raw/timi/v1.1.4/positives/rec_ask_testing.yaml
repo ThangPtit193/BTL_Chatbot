@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_testing
+- intent: faq/rec_ask_testing
   examples:
   - Có testing tư duy lập trình phỏng vấn ko
   - '[anh](pronoun) có phải test ngoại ngữ khi vào công ty [f-tech](work_unit) không'

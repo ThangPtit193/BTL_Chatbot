@@ -1,5 +1,5 @@
 positives:
-- intent: company_ask_size
+- intent: faq/company_ask_size
   examples:
   - em cho chị hỏi về quy mô công ty mình nha
   - '[f tech](work_unit) có mấy nhân viên'

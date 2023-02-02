@@ -1,5 +1,5 @@
 positives:
-- intent: rec_ask_remote
+- intent: faq/rec_ask_remote
   examples:
   - phòng ban [kế toán](department) có tuyển nhân sự làm từ xa
   - có vị trí nào không bắt buộc on site không

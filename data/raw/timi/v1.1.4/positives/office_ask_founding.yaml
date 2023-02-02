@@ -1,5 +1,5 @@
 positives:
-- intent: office_ask_founding
+- intent: faq/office_ask_founding
   examples:
   - cho tớ hỏi công ty thành lập khi nào
   - công ty sáng lập từ bao giờ vậy hả

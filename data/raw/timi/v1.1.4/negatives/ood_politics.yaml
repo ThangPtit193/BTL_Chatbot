@@ -1,5 +1,5 @@
 negatives:
-- intent: ood_politics
+- intent: faq/ood_politics
   examples:
   - bộ xậy dựng giữ vài trò gì trong cơ quan nhà nước vậy
   - bộ tự pháp nắm vài trò gì trong cơ quan nhà nước vậy

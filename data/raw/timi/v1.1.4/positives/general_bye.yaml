@@ -1,5 +1,5 @@
 positives:
-- intent: general_bye
+- intent: faq/general_bye
   examples:
   - thôi tạm biệt cậu
   - thôi bye bye bạn

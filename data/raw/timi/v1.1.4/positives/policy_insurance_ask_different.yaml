@@ -1,5 +1,5 @@
 positives:
-- intent: policy_insurance_ask_different
+- intent: faq/policy_insurance_ask_different
   examples:
   - ai là người được đóng bảo hiểm xã hội cao cấp thế
   - ngoài bảo hiểm xã hội thì có các gói bảo hiểm xã hội cao cấp khác không

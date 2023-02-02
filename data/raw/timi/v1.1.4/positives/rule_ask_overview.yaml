@@ -1,5 +1,5 @@
 positives:
-- intent: rule_ask_overview
+- intent: faq/rule_ask_overview
   examples:
   - rule thế nào
   - cho tôi hỏi quy định công ty
