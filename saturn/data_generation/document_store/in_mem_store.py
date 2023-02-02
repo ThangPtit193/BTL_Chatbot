@@ -42,7 +42,7 @@ class InmemoryDocumentStore(SaturnAbstract):
     # All positive intent in this list, will be used to generate as negative samples
     skipped_positives_of_intent = None
     # Split main intent and sub intent separated by "/"
-    split_intent_by_slash = True
+    split_intent_by_slash = False
 
     # The intent name mapping using for generate from e2e result
     intent_field_map = {}
@@ -277,6 +277,9 @@ class InmemoryDocumentStore(SaturnAbstract):
         """
         if not isinstance(src_docs, List):
             src_docs = [src_docs]
+
+        assert len(src_docs) > 0, "The src_docs can not be empty."
+        assert len(tgt_docs) > 0, "The tgt_docs can not be empty."
         # Method 1: Naive cosine similarity
         # t0 = time.time()
         # vectors_store = np.vstack([doc.embedding for doc in tgt_docs])
@@ -311,7 +314,6 @@ class InmemoryDocumentStore(SaturnAbstract):
         # Method 4: Using custom argsort
         vectors_tgt = np.array([doc.embedding for doc in tgt_docs])
         vector_srcs = np.array([src_doc.embedding for src_doc in src_docs])
-
         new_scores = cosine_similarity(vector_srcs, vectors_tgt)
         new_score_indices = fast_argsort_bottleneck(new_scores, axis=1, top_k=top_k)
         tops = [len(doc.positive_ids) for doc in src_docs]
@@ -571,8 +573,7 @@ class InmemoryDocumentStore(SaturnAbstract):
         }
         return metadata
 
-    @staticmethod
-    def _get_main_sub_intent(intent: str):
+    def _get_main_sub_intent(self, intent: str):
         """
         Get main intent and sub intent
         Args:
@@ -581,7 +582,7 @@ class InmemoryDocumentStore(SaturnAbstract):
         Returns:
 
         """
-        if "/" in intent:
+        if self.split_intent_by_slash and "/" in intent:
             main_intent, sub_intent = intent.split("/")
         else:
             main_intent, sub_intent = intent, None

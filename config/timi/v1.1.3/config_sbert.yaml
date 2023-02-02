@@ -18,7 +18,7 @@ DATA_GENERATION:
   neg_sim_batch_size: 200
   max_triple_per_file: 2000000
   max_sentence_repeated: 30
-  remove_duplicate_doc: True
+  remove_duplicate_doc: False
   EMBEDDER:
     cache_path: ./embedder_caches
     pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
