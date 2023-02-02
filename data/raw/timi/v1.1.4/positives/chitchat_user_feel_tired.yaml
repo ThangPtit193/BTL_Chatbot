@@ -1,0 +1,203 @@
+positives:
+- intent: faq/chitchat_user_feel_tired
+  examples:
+  - sao mà mệt thế
+  - mình không khỏe
+  - '[hôm nay](time) tôi thấy hơi mệt'
+  - tớ hơi yếu
+  - mệt mỏi
+  - chị cảm thấy trong người không được khỏe
+  - anh cảm thấy hơi mỏi
+  - mình không còn chút sức lực gì rồi
+  - quá đỗi là mệt mỏi
+  - '[ngày hôm nay](time) tôi mỏi thế'
+  - tớ mỏi thế bot ơi
+  - ' hôm nay mỏi quá'
+  - mệt mỏi chết mất
+  - dạo này trong người cứ thấy mệt
+  - mệt thật sự luôn ấy
+  - mỏi thế
+  - anh hôm nay khó chịu trong người quá
+  - '[ngày hôm nay,](time) mình mệt'
+  - mệt mỏi thực sự
+  - tớ căng thẳng thế
+  - chị mệt thế
+  - tui bị áp lực rồi m ơi
+  - em ơi, anh mệt mỏi thế
+  - sáng ra đã thấy uể oải rồi đây này !
+  - tự dưng mệt mỏi không lý do mày à
+  - pronoun đang mỏi đây
+  - thực sự là mỏi
+  - tớ mỏi thế đi
+  - thế mệt
+  - sao mà mệt quá
+  - tớ cảm thấy không khỏe rồi
+  - '[ngày hôm nay](time) tôi thấy hơi mệt'
+  - tớ hơi mệt
+  - căng thẳng
+  - mình thấy trong người không khỏe
+  - tớ cảm thấy hơi mệt mỏi
+  - tao không còn sức lực gì rồi
+  - thế đỗi là mệt mỏi
+  - '[hôm nay](time) mình mỏi quá'
+  - ' mỏi thế m ơi'
+  - mình hôm nay mỏi thế
+  - căng thẳng chết mất
+  - dạo này trong người cứ thấy mệt mỏi
+  - mỏi kinh khủng
+  - mệt mỏi quá
+  - ' hôm nay khó chịu trong người quá'
+  - '[hôm nay,](time) tao mệt'
+  - mệt mỏi thế đi
+  - tôi căng thẳng thế
+  - mình mệt quá
+  - tớ bị stress rồi em ơi
+  - timi ơi, chị mệt mỏi quá
+  - tự dưng mệt mỏi không lý do em à
+  - pronoun đang mệt đây
+  - thực sự là mệt mỏi
+  - anh cảm thấy mỏi quá
+  - thế là mệt mỏi
+  - sao mà mệt mỏi thế
+  - tớ thấy không khỏe rùi
+  - '[ngày hôm nay](time) tớ thấy hơi mỏi'
+  - mình hơi yếu
+  - lo âu
+  - anh cảm thấy trong người không được khỏe
+  - chị cảm thấy hơi mỏi
+  - tao không còn chút sức lực gì rồi
+  - thế đỗi là mỏi
+  - '[hôm nay](time) tôi mệt mỏi quá'
+  - ' mỏi thế em ơi'
+  - anh hôm nay mệt quá
+  - lo âu chết mất
+  - dạo này trong người cứ thấy mỏi
+  - mệt mỏi kinh khủng luôn
+  - mệt thế
+  - tớ hôm nay khó chịu trong người quá
+  - '[hôm nay,](time) mình mệt mỏi'
+  - mỏi ghê
+  - tớ lo âu thế
+  - tớ mệt thế
+  - tớ bị căng thẳng rồi cậu ơi
+  - em ơi, chị mỏi thế
+  - tự dưng mệt mỏi không lý do timi à
+  - pronoun đang mệt đó
+  - thực sự là mệt
+  - chị mỏi quá
+  - rất mỏi
+  - sao mà mỏi quá
+  - chị không khỏe
+  - '[hôm nay](time) tớ thấy hơi mỏi'
+  - mình hơi mệt
+  - stress
+  - tớ thấy trong người không khỏe
+  - mình thấy hơi mỏi
+  - mình không còn sức lực gì rồi
+  - thế đỗi là mệt
+  - '[hôm nay](time) mình mệt mỏi thế'
+  - ' mỏi quá mày ơi'
+  - ' hôm nay mỏi thế'
+  - áp lực chết mất
+  - mỏi thật sự luôn ấy
+  - mỏi quá
+  - chị hôm nay khó chịu trong người quá
+  - '[ngày hôm nay,](time) tao mệt'
+  - mệt mỏi thế
+  - mình stress quá
+  - mình mệt thế
+  - tớ bị áp lực rùi m ơi
+  - timi ơi, anh mệt mỏi thế
+  - tự dưng mệt mỏi không lý do bạn à
+  - pronoun đang mệt
+  - tớ mỏi thực sự
+  - rất là mỏi
+  - sao mà mỏi thế
+  - anh thấy không được khỏe rùi
+  - '[ngày hôm nay](time) mình thấy hơi mỏi'
+  - tui hơi yếu
+  - áp lực
+  - tớ thấy trong người không được khỏe
+  - tớ thấy hơi mệt
+  - quá đỗi là mỏi
+  - '[ngày hôm nay](time) tớ mệt mỏi quá'
+  - mình mỏi quá bot ơi
+  - ' hôm nay mệt mỏi quá'
+  - stress chết mất
+  - mỏi kinh khủng luôn
+  - mệt quá
+  - anh hôm nay khó chịu trong người thế
+  - '[ngày hôm nay,](time) tao mệt mỏi'
+  - mỏi quá đi
+  - tui lo âu quá
+  - anh mệt quá
+  - tao bị áp lực rồi timi ơi
+  - em ơi, anh mỏi quá
+  - tự dưng mệt mỏi không lý do m à
+  - pronoun đang mỏi
+  - anh mệt mỏi thế đi
+  - rất mệt mỏi
+  - sao mà mệt mỏi quá
+  - anh cảm thấy không được khỏe
+  - '[hôm nay](time) tao thấy hơi mệt'
+  - tao hơi mệt
+  - chị thấy trong người không được khỏe
+  - tớ thấy hơi mệt mỏi
+  - quá đỗi là mệt
+  - '[ngày hôm nay](time) tớ mỏi thế'
+  - anh mỏi quá cậu ơi
+  - mình hôm nay mệt mỏi thế
+  - mệt ghê á
+  - ' hôm nay khó chịu trong người thế'
+  - '[hôm nay,](time) tao mỏi'
+  - mệt quá đi
+  - tui căng thẳng thế
+  - tớ mệt quá
+  - tao bị áp lực rùi bạn ơi
+  - timi ơi, anh mệt thế
+  - tự dưng mệt mỏi không lý do bot à
+  - pronoun đang mệt mỏi
+  - mình mệt mỏi thế
+  - quá là mệt mỏi
+  - anh thấy không được khỏe
+  - '[ngày hôm nay](time) tớ thấy hơi mệt'
+  - tôi hơi yếu
+  - tớ cảm thấy trong người không được khỏe
+  - anh cảm thấy hơi mệt mỏi
+  - '[ngày hôm nay](time) tao mệt mỏi quá'
+  - ' mỏi thế timi ơi'
+  - tớ hôm nay mệt mỏi quá
+  - mệt kinh khủng
+  - chị hôm nay khó chịu trong người thế
+  - '[ngày hôm nay,](time) mình mệt mỏi'
+  - mệt thế đi
+  - mình lo âu quá
+  - anh mệt thế
+  - tớ bị mệt mỏi rồi bot ơi
+  - timi ơi, chị mệt quá
+  - tự dưng mệt mỏi không lý do cậu à
+  - pronoun đang mệt mỏi đó
+  - anh mỏi thế đi
+  - rất là mệt
+  - anh cảm thấy không được khỏe rồi
+  - '[hôm nay](time) tôi thấy hơi mỏi'
+  - tôi hơi mệt
+  - mình cảm thấy trong người không khỏe
+  - tớ cảm thấy hơi mệt
+  - '[ngày hôm nay](time) tớ mệt mỏi thế'
+  - ' mỏi quá bạn ơi'
+  - ' hôm nay mệt thế'
+  - mệt kinh khủng luôn
+  - mình hôm nay khó chịu trong người thế
+  - '[ngày hôm nay,](time) mình mỏi'
+  - mỏi thực sự
+  - mình lo âu thế
+  - chị mệt quá
+  - mình bị áp lực rùi cậu ơi
+  - timi ơi, chị mỏi quá
+  - pronoun đang mệt mỏi đây
+  - chị mệt mỏi thế
+  - quá mỏi
+  - mình không được khỏe
+  - '[hôm nay](time) tui thấy hơi mỏi'
+  - tui hơi mệt

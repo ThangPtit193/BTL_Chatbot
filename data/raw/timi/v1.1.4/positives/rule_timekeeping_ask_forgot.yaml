@@ -1,0 +1,203 @@
+positives:
+- intent: faq/rule_timekeeping_ask_forgot
+  examples:
+  - '[senior](level_position) quên chấm công thì có bị sao không ạ'
+  - nếu quên checkout thì sẽ được xử lý như thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhân viên không em
+  - nếu tôi quên checkout thì có bị sao ko ạ
+  - nếu quên checkout thì bị gì ạ
+  - nhân viên cần làm gì nếu quên chấm công
+  - cậu có biết công ty sẽ xử lý như nào khi quên chấm công ko nhể
+  - nếu quên chấm công thì phải làm gì
+  - ban [giám đốc](bod) quên chấm công thì có bị sao ko ạ
+  - mình quên chấm công là đi luôn tiền lương ngày hôm đó ạ
+  - cách công ty xử lý khi người quên công là như thế nào vậy
+  - công ty sẽ xử lý như thế nào khi quên checkout
+  - nếu quên chấm công thì có bị sao không ạ
+  - quên check in thì có được xử lý không
+  - '[full-time](level_position) quên chấm công thì có bị sao ko ạ'
+  - nếu quên chấm công thì sẽ được xử lý thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhân viên không mầy
+  - nếu tớ quên chấm công thì có bị sao không ạ
+  - nếu quên chấm công thì bị gì ạ
+  - nhận sự cần làm gì nếu quên chấm công
+  - mày có biết công ty sẽ xử lý như thế nào khi quên checkin không nhỉ
+  - nếu quên checkout thì phải làm gì
+  - '[giám đốc nhân sự](bod) quên chấm công thì có bị sao ko ạ'
+  - tôi quên chấm công là đi luôn tiền lương ngày hôm hả ạ
+  - cách công ty xử lý khi nhận sự quên công là như nào thế
+  - công ty sẽ xử lý thế nào khi quên checkin
+  - nếu quên chấm công thì có bị sao ko ạ
+  - quên chấm công thì có được xử lý ko
+  - '[trainee](level_position) quên chấm công thì có bị sao ko ạ'
+  - nếu quên check in thì sẽ được xử lý thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhân viên không mày
+  - nếu mình quên check-in thì có bị sao ko ạ
+  - nếu quên checkin thì bị gì ạ
+  - thành viên cần làm gì nếu quên chấm công
+  - mầy có biết công ty sẽ xử lý như thế nào khi quên checkin ko nhể
+  - nếu quên check in thì phải làm gì
+  - '[giám đốc an ninh](bod) quên chấm công thì có bị sao ko ạ'
+  - tôi quên chấm công là đi luôn tiền lương ngày hôm thế ạ
+  - cách công ty xử lý khi người quên công là như nào thế
+  - công ty sẽ xử lý như thế nào khi quên chấm công
+  - nếu quên checkin thì có bị sao ko ạ
+  - quên chấm công thì có được xử lý không
+  - '[fresher](level_position) quên chấm công thì có bị sao ko ạ'
+  - nếu quên checkin thì sẽ được xử lý thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhận sự không timi
+  - nếu tớ quên check in thì có bị sao không ạ
+  - nếu quên check-in thì bị gì ạ
+  - người cần làm gì nếu quên chấm công
+  - bot có biết công ty sẽ xử lý thế nào khi quên checkin không nhỉ
+  - nếu quên check-in thì phải làm gì
+  - lãnh đạo quên chấm công thì có bị sao không ạ
+  - tớ quên chấm công là đi luôn tiền lương ngày hôm hả ạ
+  - cách công ty xử lý khi người quên công là như nào đấy
+  - công ty sẽ xử lý thế nào khi quên chấm công
+  - nếu quên check-in thì có bị sao ko ạ
+  - quên checkin thì có được xử lý không
+  - '[sinh viên thực tập](level_position) quên chấm công thì có bị sao không ạ'
+  - nếu quên checkout thì sẽ được xử lý như nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhân viên không m
+  - nếu mình quên checkout thì có bị sao không ạ
+  - nếu quên check in thì bị gì ạ
+  - m có biết công ty sẽ xử lý như thế nào khi quên chấm công không ha
+  - nếu quên checkin thì phải làm gì
+  - '[phó phòng](bod) quên chấm công thì có bị sao ko ạ'
+  - tớ quên chấm công là đi luôn tiền lương ngày hôm thế ạ
+  - cách công ty xử lý khi thành viên quên công là như thế nào hả
+  - công ty sẽ xử lý thế nào khi quên checkout
+  - nếu quên checkin thì có bị sao không ạ
+  - quên check-in thì có được xử lý ko
+  - '[fulltime](level_position) quên chấm công thì có bị sao không ạ'
+  - nếu quên check in thì sẽ được xử lý như thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của người không mầy
+  - nếu tôi quên check in thì có bị sao không ạ
+  - bạn có biết công ty sẽ xử lý như nào khi quên chấm công không ha
+  - '[giám đốc sản phẩm](bod) quên chấm công thì có bị sao không ạ'
+  - tôi quên chấm công là đi luôn tiền lương ngày hôm vậy ạ
+  - cách công ty xử lý khi nhân viên quên công là như thế nào thế
+  - công ty sẽ xử lý như nào khi quên checkout
+  - nếu quên check in thì có bị sao không ạ
+  - quên check in thì có được xử lý ko
+  - '[tts](level_position) quên chấm công thì có bị sao ko ạ'
+  - nếu quên checkout thì sẽ được xử lý thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của người không em
+  - nếu tớ quên check in thì có bị sao ko ạ
+  - timi có biết công ty sẽ xử lý như thế nào khi quên checkout ko ha
+  - '[phó phòng](bod) quên chấm công thì có bị sao không ạ'
+  - mình quên chấm công là đi luôn tiền lương ngày hôm thế ạ
+  - cách công ty xử lý khi thành viên quên công là như thế nào đấy
+  - công ty sẽ xử lý như nào khi quên chấm công
+  - nếu quên check in thì có bị sao ko ạ
+  - quên checkin thì có được xử lý ko
+  - '[internship](level_position) quên chấm công thì có bị sao không ạ'
+  - nếu quên chấm công thì sẽ được xử lý như thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của thành viên không cậu
+  - nếu mình quên chấm công thì có bị sao không ạ
+  - em có biết công ty sẽ xử lý như nào khi quên checkout ko nhỉ
+  - '[CBO](bod) quên chấm công thì có bị sao ko ạ'
+  - mình quên chấm công là đi luôn tiền lương ngày hôm đấy ạ
+  - cách công ty xử lý khi người quên công là như thế nào hả
+  - công ty sẽ xử lý như nào khi quên check-in
+  - nếu quên check-in thì có bị sao không ạ
+  - quên checkout thì có được xử lý ko
+  - '[full time](level_position) quên chấm công thì có bị sao không ạ'
+  - nếu quên check-in thì sẽ được xử lý như nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhân viên không bot
+  - nếu tớ quên checkin thì có bị sao ko ạ
+  - bạn có biết công ty sẽ xử lý thế nào khi quên checkout ko nhỉ
+  - '[CSO](bod) quên chấm công thì có bị sao ko ạ'
+  - tôi quên chấm công là đi luôn tiền lương ngày hôm đó ạ
+  - cách công ty xử lý khi nhân viên quên công là như nào hả
+  - công ty sẽ xử lý thế nào khi quên check in
+  - nếu quên checkout thì có bị sao ko ạ
+  - quên check-in thì có được xử lý không
+  - '[pre-senior](level_position) quên chấm công thì có bị sao không ạ'
+  - nếu quên check-in thì sẽ được xử lý thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của người không mày
+  - nếu tớ quên checkout thì có bị sao không ạ
+  - bot có biết công ty sẽ xử lý như thế nào khi quên checkout không ha
+  - '[giám đốc product](bod) quên chấm công thì có bị sao không ạ'
+  - mình quên chấm công là đi luôn tiền lương ngày hôm hả ạ
+  - cách công ty xử lý khi nhận sự quên công là như thế nào hả
+  - công ty sẽ xử lý thế nào khi quên check-in
+  - nếu quên checkout thì có bị sao không ạ
+  - quên checkout thì có được xử lý không
+  - '[fulltime](level_position) quên chấm công thì có bị sao ko ạ'
+  - nếu quên chấm công thì sẽ được xử lý như nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của người không timi
+  - nếu tớ quên chấm công thì có bị sao ko ạ
+  - mầy có biết công ty sẽ xử lý như thế nào khi quên checkout không nhỉ
+  - ban lãnh đạo quên chấm công thì có bị sao ko ạ
+  - tớ quên chấm công là đi luôn tiền lương ngày hôm vậy ạ
+  - cách công ty xử lý khi thành viên quên công là như nào vậy
+  - công ty sẽ xử lý như thế nào khi quên check-in
+  - '[thử việc](level_position) quên chấm công thì có bị sao không ạ'
+  - nếu quên checkin thì sẽ được xử lý như thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của người không m
+  - nếu mình quên chấm công thì có bị sao ko ạ
+  - m có biết công ty sẽ xử lý như thế nào khi quên check-in ko nhể
+  - '[trưởng phòng](bod) quên chấm công thì có bị sao không ạ'
+  - tôi quên chấm công là đi luôn tiền lương ngày hôm đấy ạ
+  - cách công ty xử lý khi thành viên quên công là như nào thế
+  - '[cộng tác viên](level_position) quên chấm công thì có bị sao ko ạ'
+  - nếu quên checkin thì sẽ được xử lý như nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhận sự không bot
+  - nếu tớ quên check-in thì có bị sao không ạ
+  - m có biết công ty sẽ xử lý như thế nào khi quên checkin không nhể
+  - '[leader](bod) quên chấm công thì có bị sao không ạ'
+  - tớ quên chấm công là đi luôn tiền lương ngày hôm đó ạ
+  - cách công ty xử lý khi nhận sự quên công là thế nào thế
+  - công ty sẽ xử lý như thế nào khi quên check in
+  - '[sinh viên thực tập](level_position) quên chấm công thì có bị sao ko ạ'
+  - nếu quên check-in thì sẽ được xử lý như thế nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhân viên không cậu
+  - nếu tớ quên check-in thì có bị sao ko ạ
+  - cậu có biết công ty sẽ xử lý như thế nào khi quên chấm công không nhể
+  - '[phó giám đốc](bod) quên chấm công thì có bị sao không ạ'
+  - tớ quên chấm công là đi luôn tiền lương ngày hôm đấy ạ
+  - cách công ty xử lý khi nhận sự quên công là như nào đấy
+  - công ty sẽ xử lý như thế nào khi quên checkin
+  - '[junior](level_position) quên chấm công thì có bị sao ko ạ'
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhận sự không mày
+  - nếu tớ quên checkout thì có bị sao ko ạ
+  - cậu có biết công ty sẽ xử lý thế nào khi quên chấm công không nhể
+  - '[giám đốc](bod) quên chấm công thì có bị sao ko ạ'
+  - cách công ty xử lý khi nhân viên quên công là như thế nào đó
+  - công ty sẽ xử lý như nào khi quên check in
+  - '[junior](level_position) quên chấm công thì có bị sao không ạ'
+  - quên chấm công có ảnh hưởng gì đến tiền lương của người không bot
+  - nếu tôi quên chấm công thì có bị sao không ạ
+  - mày có biết công ty sẽ xử lý như nào khi quên checkin ko ha
+  - '[giám đốc marketing](bod) quên chấm công thì có bị sao không ạ'
+  - mình quên chấm công là đi luôn tiền lương ngày hôm vậy ạ
+  - cách công ty xử lý khi thành viên quên công là như thế nào vậy
+  - công ty sẽ xử lý như nào khi quên checkin
+  - '[senior](level_position) quên chấm công thì có bị sao ko ạ'
+  - nếu quên check in thì sẽ được xử lý như nào
+  - quên chấm công có ảnh hưởng gì đến tiền lương của thành viên không bot
+  - nếu mình quên checkin thì có bị sao ko ạ
+  - em có biết công ty sẽ xử lý thế nào khi quên check-in ko ha
+  - '[CSO](bod) quên chấm công thì có bị sao không ạ'
+  - cách công ty xử lý khi thành viên quên công là thế nào thế
+  - '[fresher](level_position) quên chấm công thì có bị sao không ạ'
+  - quên chấm công có ảnh hưởng gì đến tiền lương của thành viên không timi
+  - nếu mình quên checkout thì có bị sao ko ạ
+  - timi có biết công ty sẽ xử lý thế nào khi quên checkout ko nhỉ
+  - ban lãnh đạo quên chấm công thì có bị sao không ạ
+  - cách công ty xử lý khi nhân viên quên công là thế nào đấy
+  - '[intern](level_position) quên chấm công thì có bị sao không ạ'
+  - quên chấm công có ảnh hưởng gì đến tiền lương của nhận sự không mầy
+  - nếu tôi quên checkout thì có bị sao không ạ
+  - timi có biết công ty sẽ xử lý như nào khi quên checkout không nhỉ
+  - '[leader](bod) quên chấm công thì có bị sao ko ạ'
+  - cách công ty xử lý khi nhận sự quên công là như nào hả
+  - '[thử việc](level_position) quên chấm công thì có bị sao ko ạ'
+  - quên chấm công có ảnh hưởng gì đến tiền lương của thành viên không em
+  - nếu mình quên check in thì có bị sao ko ạ
+  - mày có biết công ty sẽ xử lý thế nào khi quên checkout ko ha
+  - '[phó giám đốc](bod) quên chấm công thì có bị sao ko ạ'
+  - cách công ty xử lý khi người quên công là như nào vậy
+  - '[pre-senior](level_position) quên chấm công thì có bị sao ko ạ'

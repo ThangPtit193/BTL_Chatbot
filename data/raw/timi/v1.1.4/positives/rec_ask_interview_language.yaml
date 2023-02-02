@@ -1,0 +1,299 @@
+positives:
+- intent: faq/rec_ask_interview_language
+  examples:
+  - mình hơi gà Tiếng Đức nên phỏng vấn tiếng Việt được ko
+  - ' [f tech](work_unit) [hồ chí minh](location) sử dụng language gì để phỏng vấn
+    người mới'
+  - công ty có nói Tiếng Trung ko
+  - công ty có hỏi bằng Tiếng Việt ko
+  - nghe đồn bên tôi phỏng vấn ứng viên bằng Tiếng Anh ạ
+  - công ty [f tech](work_unit) phỏng vấn candidate bằng ngôn ngữ gì vậy?
+  - tớ ko giỏi giao tiếp bằng Tiếng Trung, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - mình xin công ty cho phỏng vấn bằng Tiếng Việt được ko
+  - tôi apply làm [soạn nội dung giáo dục](position) của [ftech](work_unit) thì khi
+    phỏng vấn có cần giao tiếp bằng Tiếng Trung không
+  - vậy hả có phỏng vấn Tiếng Trung ko
+  - tớ không biết ngôn ngữnhật thì có phỏng vấn đc không
+  - tôi pass hồ sơ rồi nhưng lăn tăn không biết bên tớ phỏng vấn bằng tiếng gì để
+    ôn bài í
+  - tớ muốn phỏng vấn bằng Tiếng Pháp thì có được không?
+  - có bắt nói Tiếng Việt không bạn
+  - ko biết bên bạn sử dụng ngôn ngữ nào để phỏng vấn nhỉ
+  - '[mình](pronoun) tham gia phỏng vấn bằng Tiếng Đức được không'
+  - bộ phận team [product](department) phỏng vấn bằng tiếng gì
+  - khi phỏng vấn có yêu cầu bắt buộc phải nói Tiếng Việt không
+  - công ty sử dụng ngôn ngữ nào để phỏng vấn candidate vậy?
+  - công ty phỏng vấn bằng Tiếng Nga à?
+  - tớ muốn hỏi [f tech](work_unit) phỏng vấn người mới bằng ngôn ngữ gì
+  - tớ hơi gà Tiếng Pháp nên phỏng vấn tiếng Việt được ko
+  - công ty [đất Việt](location) sử dụng language gì để phỏng vấn candidate mới
+  - công ty có nói Tiếng Anh ko
+  - công ty có hỏi bằng Tiếng Pháp ko
+  - nghe đồn bên mình phỏng vấn người xin việc bằng Tiếng Trung ạ
+  - ' [f-tech](work_unit) phỏng vấn candidate bằng ngôn ngữ gì vậy?'
+  - mình ko giỏi giao tiếp bằng Tiếng Anh, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - mình xin công ty cho phỏng vấn bằng Tiếng Đức được ko
+  - tớ apply làm [react native developer](position) của [f-tech](work_unit) thì khi
+    phỏng vấn có cần giao tiếp bằng Tiếng Anh không
+  - hả có phỏng vấn Tiếng Đức ko
+  - mình ko biết tiếngtrung thì có phỏng vấn được không
+  - mình pass hồ sơ rồi nhưng lăn tăn không biết bên tớ phỏng vấn bằng tiếng gì để
+    ôn bài í
+  - tớ muốn phỏng vấn bằng Tiếng Anh thì có được không?
+  - có bắt nói Tiếng Nga không bạn
+  - '[a](pronoun) interview bằng Tiếng Việt được không'
+  - '[AI center](department) phỏng vấn bằng ngôn ngữ chi'
+  - khi phỏng vấn có yêu cầu bắt buộc phải nói Tiếng Trung không
+  - công ty [f tech](work_unit) sử dụng ngôn ngữ nào để phỏng vấn người xin việc vậy?
+  - ' có phỏng vấn bằng Tiếng Trung à?'
+  - tớ muốn hỏi công ty phỏng vấn mới bằng tiếng chi
+  - mình hơi gà Tiếng Nga nên phỏng vấn tiếng Việt được ko
+  - ' [BN](location) sử dụng language gì để phỏng vấn người mới'
+  - công ty có nói Tiếng Đức ko
+  - công ty có hỏi bằng Tiếng Anh ko
+  - nghe đồn bên tớ phỏng vấn người xin việc bằng Tiếng Pháp ạ
+  - ' [ftech](work_unit) phỏng vấn người xin việc bằng ngôn ngữ gì vậy?'
+  - mình ko giỏi giao tiếp bằng Tiếng Nga, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - tôi xin công ty cho phỏng vấn bằng Tiếng Việt được ko ha
+  - tớ apply làm [system admin](position) của [f tech](work_unit) thì khi phỏng vấn
+    có cần giao tiếp bằng Tiếng Đức không
+  - hả có phỏng vấn Tiếng Trung ko
+  - tôi không biết ngôn ngữpháp thì có tham gia phỏng vấn đc không
+  - mình pass sơ yếu lý lịch rồi nhưng lăn tăn không biết bên tôi phỏng vấn bằng tiếng
+    gì để ôn bài í
+  - tớ muốn phỏng vấn bằng Tiếng Trung thì có được không?
+  - có bắt nói Tiếng Anh không bạn
+  - '[chị](pronoun) interview bằng Tiếng Việt được không'
+  - '[AI center](department) phỏng vấn bằng ngôn ngữ chi hả'
+  - khi phỏng vấn có yêu cầu bắt buộc phải nói Tiếng Pháp không
+  - công ty [f-tech](work_unit) sử dụng ngôn ngữ nào để phỏng vấn candidate vậy?
+  - công ty phỏng vấn Tiếng Anh à?
+  - tôi muốn hỏi công ty phỏng vấn mới bằng ngôn ngữ gì
+  - tôi hơi gà Tiếng Đức nên phỏng vấn tiếng Việt được ko
+  - công ty [đất Việt](location) sử dụng tiếng gì để phỏng vấn candidate mới
+  - công ty có nói Tiếng Nga ko
+  - công ty có hỏi bằng Tiếng Trung ko
+  - nghe đồn bên mình phỏng vấn ứng viên xin việc bằng Tiếng Pháp ạ
+  - công ty phỏng vấn người xin việc bằng ngôn ngữ gì vậy?
+  - mình ko giỏi giao tiếp bằng Tiếng Pháp, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - tôi xin công ty cho phỏng vấn bằng Tiếng Nga được ko nhể
+  - tôi apply làm [android developer](position) của [f-tech](work_unit) thì khi phỏng
+    vấn có cần giao tiếp bằng Tiếng Đức ko
+  - hả có phỏng vấn Tiếng Anh ko
+  - mình ko biết ngôn ngữanh thì có phỏng vấn được không
+  - tớ pass sơ yếu lý lịch rồi nhưng lăn tăn không biết bên tớ phỏng vấn bằng tiếng
+    gì để ôn bài í
+  - tôi muốn phỏng vấn bằng Tiếng Nga thì có được không?
+  - có bắt nói Tiếng Đức không bạn
+  - '[ta](pronoun) đi interview bằng Tiếng Việt đc không'
+  - chi nhánh [đà nẵng](location) phỏng vấn bằng tiếng chi
+  - khi phỏng vấn có yêu cầu bắt buộc phải nói Tiếng Nga không
+  - công ty sử dụng ngôn ngữ nào để phỏng vấn người xin việc vậy?
+  - ' có phỏng vấn Tiếng Việt à?'
+  - tớ muốn hỏi công ty phỏng vấn nhân viên mới bằng tiếng gì
+  - tớ hơi gà Tiếng Anh nên phỏng vấn tiếng Việt được ko
+  - công ty [Đài Loan](location) sử dụng language gì để phỏng vấn thí sinh mới
+  - công ty có nói Tiếng Việt ko
+  - công ty có hỏi bằng Tiếng Nga ko
+  - nghe đồn bên tớ phỏng vấn ứng viên bằng Tiếng Nga ạ
+  - công ty [f tech](work_unit) phỏng vấn ứng viên xin việc bằng ngôn ngữ gì vậy?
+  - tớ ko giỏi giao tiếp bằng Tiếng Nga, không biết có gây khó khăn gì khi phỏng vấn
+    ko ạ
+  - tớ xin công ty cho phỏng vấn bằng Tiếng Nga được ko nhỉ
+  - tớ apply làm [C# developer](position) của [f tech](work_unit) thì khi phỏng vấn
+    có cần giao tiếp bằng Tiếng Việt không
+  - vậy có phỏng vấn Tiếng Pháp ko
+  - mình ko biết tiếngnhật thì có phỏng vấn đc ko
+  - mình pass curriculum vitae rồi nhưng lăn tăn không biết bên tớ phỏng vấn bằng
+    tiếng gì để ôn bài í
+  - mình muốn phỏng vấn bằng Tiếng Đức thì có được không?
+  - có bắt nói Tiếng Trung không bạn
+  - '[tôi](pronoun) interview bằng Tiếng Nga được không'
+  - phòng ban team [game và design](department) phỏng vấn bằng tiếng gì vậy
+  - khi phỏng vấn có yêu cầu bắt buộc phải nói Tiếng Đức không
+  - công ty sử dụng ngôn ngữ gì để phỏng vấn ứng viên xin việc vậy?
+  - công ty có phỏng vấn bằng Tiếng Đức à?
+  - tớ muốn hỏi công ty phỏng vấn mới bằng ngôn ngữ chi
+  - tớ hơi gà Tiếng Trung nên phỏng vấn tiếng Việt được ko
+  - ' [BG](location) sử dụng language gì phỏng vấn người xin việc mới'
+  - công ty có nói Tiếng Pháp ko
+  - công ty có hỏi bằng Tiếng Đức ko
+  - nghe đồn bên tớ phỏng vấn người xin việc bằng Tiếng Trung ạ
+  - công ty phỏng vấn ứng viên bằng ngôn ngữ gì vậy?
+  - tớ ko giỏi giao tiếp bằng Tiếng Đức, không biết có gây khó khăn gì khi phỏng vấn
+    ko ạ
+  - tớ xin công ty cho phỏng vấn bằng Tiếng Đức được ko nhể
+  - tớ apply làm [golang develop](position) của [f tech](work_unit) thì khi phỏng
+    vấn có cần giao tiếp bằng Tiếng Trung không
+  - hả có phỏng vấn Tiếng Pháp không
+  - tớ ko biết tiếngtrung thì có phỏng vấn được không
+  - tớ pass hồ sơ rồi nhưng lăn tăn không biết bên tớ phỏng vấn bằng tiếng gì để ôn
+    bài í
+  - mình muốn phỏng vấn bằng Tiếng Nga thì có được không?
+  - có bắt nói Tiếng Pháp không bạn
+  - '[chị](pronoun) interview bằng Tiếng Pháp được ko'
+  - bộ phận team [game và design](department) phỏng vấn bằng ngôn ngữ gì hả
+  - khi phỏng vấn có yêu cầu bắt buộc phải nói Tiếng Anh không
+  - ' [f-tech](work_unit) sử dụng ngôn ngữ nào để phỏng vấn người xin việc vậy?'
+  - ' phỏng vấn bằng Tiếng Pháp à?'
+  - cho tôi hỏi [f tech](work_unit) phỏng vấn mới bằng ngôn ngữ chi
+  - tớ hơi gà Tiếng Nga nên phỏng vấn tiếng Việt được ko
+  - ' [ftech](work_unit) [Đảo Nam Du](location) dùng tiếng gì để phỏng vấn người mới'
+  - nghe đồn bên tớ phỏng vấn candidate bằng Tiếng Pháp ạ
+  - công ty [ftech](work_unit) phỏng vấn người xin việc bằng ngôn ngữ gì vậy?
+  - tớ ko giỏi giao tiếp bằng Tiếng Anh, không biết có gây khó khăn gì khi phỏng vấn
+    ko ạ
+  - tôi xin công ty cho phỏng vấn bằng Tiếng Anh được ko
+  - tôi apply làm [nhân sự](position) của [ftech](work_unit) thì khi phỏng vấn có
+    cần giao tiếp bằng Tiếng Anh không
+  - vậy có phỏng vấn Tiếng Đức ko
+  - tớ ko biết ngôn ngữanh thì có phỏng vấn đc không
+  - tôi pass curriculum vitae rồi nhưng lăn tăn không biết bên tôi phỏng vấn bằng
+    tiếng gì để ôn bài í
+  - tớ muốn phỏng vấn bằng Tiếng Nga thì có được không?
+  - '[c](pronoun) đi interview bằng Tiếng Đức được không'
+  - trụ sở [TH](location) phỏng vấn bằng tiếng gì
+  - công ty [f tech](work_unit) sử dụng ngôn ngữ nào để phỏng vấn thí sinh vậy?
+  - ' [ftech](work_unit) có phỏng vấn Tiếng Việt à?'
+  - cho mình hỏi công ty [f tech](work_unit) phỏng vấn nhận sự mới bằng ngôn ngữ gì
+  - tớ hơi gà Tiếng Đức nên phỏng vấn tiếng Việt được ko
+  - công ty [sài gòn](location) sử dụng tiếng gì phỏng vấn ứng viên xin việc mới
+  - nghe đồn bên tớ phỏng vấn người xin việc bằng Tiếng Anh ạ
+  - công ty phỏng vấn candidate bằng ngôn ngữ gì vậy?
+  - tớ ko giỏi giao tiếp bằng Tiếng Pháp, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - tớ xin công ty cho phỏng vấn bằng Tiếng Trung được ko
+  - tớ apply làm [data engineers](position) của [f tech](work_unit) thì khi phỏng
+    vấn có cần giao tiếp bằng Tiếng Việt ko
+  - hả có phỏng vấn Tiếng Nga không
+  - mình ko biết tiếngtrung thì có phỏng vấn được ko
+  - tớ pass sơ yếu lý lịch rồi nhưng lăn tăn không biết bên tôi phỏng vấn bằng tiếng
+    gì để ôn bài í
+  - tớ muốn phỏng vấn bằng Tiếng Việt thì có được không?
+  - '[m](pronoun) interview bằng Tiếng Nga đc ko'
+  - phòng phòng [game & design](department) phỏng vấn bằng tiếng gì vậy hả
+  - công ty [f-tech](work_unit) sử dụng ngôn ngữ nào để phỏng vấn ứng viên vậy?
+  - ' phỏng vấn bằng Tiếng Việt à?'
+  - tớ muốn hỏi phỏng vấn người mới bằng tiếng chi
+  - mình hơi gà Tiếng Anh nên phỏng vấn tiếng Việt được ko
+  - công ty [f tech](work_unit) [hà nội](location) sử dụng ngôn ngữ gì phỏng vấn người
+    mới
+  - nghe đồn bên tớ phỏng vấn ứng viên xin việc bằng Tiếng Việt ạ
+  - công ty phỏng vấn thí sinh bằng ngôn ngữ gì vậy?
+  - tôi ko giỏi giao tiếp bằng Tiếng Trung, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - tớ xin công ty cho phỏng vấn bằng Tiếng Anh được ko ha
+  - tớ apply làm [front end develop](position) của [ftech](work_unit) thì khi phỏng
+    vấn có cần giao tiếp bằng Tiếng Anh không
+  - vậy hả có phỏng vấn Tiếng Việt không
+  - tớ ko biết ngôn ngữhàn thì có đi phỏng vấn đc không
+  - tớ pass CV rồi nhưng lăn tăn không biết bên mình phỏng vấn bằng tiếng gì để ôn
+    bài í
+  - mình muốn phỏng vấn bằng Tiếng Anh thì có được không?
+  - '[c](pronoun) phỏng vấn bằng Tiếng Nga được không'
+  - phòng bộ phận [platform](department) phỏng vấn bằng ngôn ngữ gì vậy
+  - ' [f-tech](work_unit) sử dụng ngôn ngữ gì để phỏng vấn candidate vậy?'
+  - công ty [f-tech](work_unit) có phỏng vấn bằng Tiếng Trung à?
+  - cho tôi hỏi công ty phỏng vấn mới bằng tiếng gì
+  - tôi hơi gà Tiếng Anh nên phỏng vấn tiếng Việt được ko
+  - ' [bắc trung bộ](location) dùng language gì để phỏng vấn ứng viên xin việc mới'
+  - nghe đồn bên mình phỏng vấn candidate bằng Tiếng Pháp ạ
+  - ' phỏng vấn candidate bằng ngôn ngữ gì vậy?'
+  - tôi ko giỏi giao tiếp bằng Tiếng Đức, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - tôi xin công ty cho phỏng vấn bằng Tiếng Việt được ko
+  - tôi apply làm [hr manager](position) của [f-tech](work_unit) thì khi phỏng vấn
+    có cần giao tiếp bằng Tiếng Pháp ko
+  - vậy hả có phỏng vấn Tiếng Việt ko
+  - tớ ko biết tiếngtrung thì có tham gia phỏng vấn đc không
+  - tôi pass CV rồi nhưng lăn tăn không biết bên tôi phỏng vấn bằng tiếng gì để ôn
+    bài í
+  - tôi muốn phỏng vấn bằng Tiếng Trung thì có được không?
+  - '[m](pronoun) đi phỏng vấn bằng Tiếng Pháp đc ko'
+  - team team [nhân sự](department) phỏng vấn bằng ngôn ngữ gì
+  - công ty [f-tech](work_unit) sử dụng ngôn ngữ gì để phỏng vấn candidate vậy?
+  - ' [ftech](work_unit) có phỏng vấn Tiếng Trung à?'
+  - tớ muốn hỏi [f-tech](work_unit) phỏng vấn mới bằng tiếng gì
+  - tôi hơi gà Tiếng Nga nên phỏng vấn tiếng Việt được ko
+  - ' [f-tech](work_unit) [ninh bình](location) sử dụng tiếng gì để phỏng vấn người
+    mới'
+  - nghe đồn bên mình phỏng vấn thí sinh bằng Tiếng Việt ạ
+  - ' phỏng vấn ứng viên bằng ngôn ngữ gì vậy?'
+  - mình ko giỏi giao tiếp bằng Tiếng Đức, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - mình xin công ty cho phỏng vấn bằng Tiếng Anh được ko
+  - tôi apply làm [C++ develop](position) của [f tech](work_unit) thì khi phỏng vấn
+    có cần giao tiếp bằng Tiếng Anh không
+  - vậy hả có phỏng vấn Tiếng Pháp ko
+  - tôi không biết ngôn ngữanh thì có phỏng vấn đc không
+  - tôi pass sơ yếu lý lịch rồi nhưng lăn tăn không biết bên tớ phỏng vấn bằng tiếng
+    gì để ôn bài í
+  - tớ muốn phỏng vấn bằng Tiếng Đức thì có được không?
+  - '[m](pronoun) tham gia interview bằng Tiếng Việt được ko'
+  - '[AI center](department) phỏng vấn bằng ngôn ngữ gì'
+  - công ty sử dụng ngôn ngữ gì để phỏng vấn ứng viên vậy?
+  - công ty phỏng vấn Tiếng Việt à?
+  - tớ muốn hỏi công ty [f-tech](work_unit) phỏng vấn mới bằng ngôn ngữ chi
+  - tôi hơi gà Tiếng Trung nên phỏng vấn tiếng Việt được ko
+  - ' [f-tech](work_unit) [đn](location) sử dụng tiếng gì để phỏng vấn thí sinh mới'
+  - nghe đồn bên tôi phỏng vấn người xin việc bằng Tiếng Trung ạ
+  - ' [ftech](work_unit) phỏng vấn candidate bằng ngôn ngữ gì vậy?'
+  - tôi ko giỏi giao tiếp bằng Tiếng Pháp, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - tớ xin công ty cho phỏng vấn bằng Tiếng Nga được ko ha
+  - tớ apply làm [lập trình ios](position) của [ftech](work_unit) thì khi phỏng vấn
+    có cần giao tiếp bằng Tiếng Đức ko
+  - vậy hả có phỏng vấn Tiếng Anh ko
+  - mình ko biết ngôn ngữanh thì có tham gia phỏng vấn đc không
+  - tôi pass curriculum vitae rồi nhưng lăn tăn không biết bên tớ phỏng vấn bằng tiếng
+    gì để ôn bài í
+  - mình muốn phỏng vấn bằng Tiếng Pháp thì có được không?
+  - '[anh](pronoun) phỏng vấn bằng Tiếng Trung được không'
+  - phòng ban team [hệ thống cơ sở hạ tầng](department) phỏng vấn bằng tiếng chi
+  - ' sử dụng ngôn ngữ nào để phỏng vấn người xin việc vậy?'
+  - ' phỏng vấn bằng Tiếng Đức à?'
+  - tôi muốn hỏi công ty [f-tech](work_unit) phỏng vấn mới bằng tiếng gì
+  - mình hơi gà Tiếng Trung nên phỏng vấn tiếng Việt được ko
+  - ' [f tech](work_unit) [Đảo Nam Du](location) sử dụng tiếng gì để phỏng vấn người
+    mới'
+  - nghe đồn bên mình phỏng vấn candidate bằng Tiếng Anh ạ
+  - công ty [ftech](work_unit) phỏng vấn ứng viên bằng ngôn ngữ gì vậy?
+  - tôi ko giỏi giao tiếp bằng Tiếng Anh, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - mình xin công ty cho phỏng vấn bằng Tiếng Anh được ko nhỉ
+  - tớ apply làm [db engineer](position) của [f-tech](work_unit) thì khi phỏng vấn
+    có cần giao tiếp bằng Tiếng Nga không
+  - vậy có phỏng vấn Tiếng Anh không
+  - tôi ko biết tiếngtrung thì có phỏng vấn được ko
+  - mình pass sơ yếu lý lịch rồi nhưng lăn tăn không biết bên tớ phỏng vấn bằng tiếng
+    gì để ôn bài í
+  - tôi muốn phỏng vấn bằng Tiếng Việt thì có được không?
+  - '[anh](pronoun) đi interview bằng Tiếng Trung đc không'
+  - bộ phận phòng [it support](department) phỏng vấn bằng ngôn ngữ gì
+  - ' [ftech](work_unit) sử dụng ngôn ngữ gì để phỏng vấn thí sinh vậy?'
+  - công ty [ftech](work_unit) phỏng vấn bằng Tiếng Nga à?
+  - cho tớ hỏi phỏng vấn nhân viên mới bằng ngôn ngữ gì
+  - mình hơi gà Tiếng Pháp nên phỏng vấn tiếng Việt được ko
+  - ' [f tech](work_unit) [đà lạt](location) sử dụng tiếng gì phỏng vấn người mới'
+  - nghe đồn bên tớ phỏng vấn candidate bằng Tiếng Nga ạ
+  - công ty [f-tech](work_unit) phỏng vấn ứng viên bằng ngôn ngữ gì vậy?
+  - tôi ko giỏi giao tiếp bằng Tiếng Việt, không biết có gây khó khăn gì khi phỏng
+    vấn ko ạ
+  - tôi xin công ty cho phỏng vấn bằng Tiếng Anh được ko nhỉ
+  - tôi apply làm [game 3d prod](position) của [ftech](work_unit) thì khi phỏng vấn
+    có cần giao tiếp bằng Tiếng Nga không
+  - hả có phỏng vấn Tiếng Nga ko
+  - tớ ko biết tiếngpháp thì có tham gia phỏng vấn được không
+  - tôi pass curriculum vitae rồi nhưng lăn tăn không biết bên mình phỏng vấn bằng
+    tiếng gì để ôn bài í
+  - tôi muốn phỏng vấn bằng Tiếng Đức thì có được không?
+  - '[t](pronoun) interview bằng Tiếng Trung đc không'
+  - phòng phòng [CSKH](department) phỏng vấn bằng tiếng gì hả
+  - công ty sử dụng ngôn ngữ nào để phỏng vấn ứng viên vậy?
+  - ' có phỏng vấn bằng Tiếng Anh à?'
+  - tôi muốn hỏi công ty phỏng vấn người mới bằng ngôn ngữ gì
+  - tôi hơi gà Tiếng Pháp nên phỏng vấn tiếng Việt được ko

@@ -1,0 +1,303 @@
+positives:
+- intent: faq/company_ask_partner
+  examples:
+  - khách hàng của [f tech](work_unit) gồm những ai
+  - những công ty hợp tác kinh doanh với [f-tech](work_unit) là ntn
+  - công ty làm chung với các khách hàng tiềm năng như thế nào vậy hả
+  - công ty đang là đối tác của ai đó
+  - công ty đã bán sản phẩm cho đối tượng nào chưa vậy
+  - công ty đang liên kết với những đối tác kinh doanh nào đó
+  - công ty hợp tác với những công ty nào đó mầy
+  - công ty làm việc với ai
+  - partner của công ty là những công ty nào ạ
+  - công ty có hợp tác kinh doanh với công ty khác ko
+  - tôi muốn biết info đối tác làm ăn của công ty
+  - bên timi làm dự án cùng các công ty nào thế
+  - ai là đối tượng của công ty
+  - công ty đang là partner của những công ty nào đó timi
+  - mình muốn hỏi công ty đang làm việc với công ty nào thế
+  - công ty hiện đang kết hợp với những doanh nghiệp nào
+  - '[aimesoft](work_unit) có làm việc với công ty ko'
+  - đối tác kinh doanh [f-tech](work_unit) như nào đó
+  - khách hàng của bạn là ai
+  - cho tớ hỏi đối tác làm ăn của công ty là những công ty ạ
+  - hiện tại công ty nào đang hợp tác với [ftech](work_unit) ạ
+  - '[mobifone](work_unit) là đối tượng của công ty à'
+  - khách hàng của [f-tech](work_unit) gồm những ai
+  - những công ty hợp tác với [f-tech](work_unit) là thế nào hả
+  - công ty làm chung với các khách hàng tiềm năng thế nào hả
+  - công ty đang là đối tác kinh doanh của ai đó mày
+  - công ty đã bán sản phẩm cho client nào chưa vậy
+  - công ty đang liên kết với những đối tác nào mày
+  - công ty hợp tác kinh doanh với những công ty nào đó mày
+  - công ty làm với ai
+  - đối tác của công ty là những công ty nào
+  - '[ftech](work_unit) có liên kết với công ty khác không'
+  - tớ muốn hỏi information đối tác của công ty
+  - bên cậu làm dự án cùng các doanh nghiệp nào thế
+  - ai là khách hàng tiềm năng của công ty
+  - công ty đang là đối tác làm ăn của những công ty nào đó timi
+  - tôi muốn hỏi công ty đang làm việc với công ty nào vậy
+  - công ty hiện đang kết hợp với những doanh nghiệp gì
+  - '[vccorp](work_unit) có làm việc với công ty ko'
+  - partner [f tech](work_unit) như nào đó
+  - cho mình hỏi đối tác kinh doanh của công ty là những công ty ạ
+  - hiện tại công ty nào đang hợp tác làm ăn với [ftech](work_unit) ạ
+  - '[samsung](work_unit) là client của công ty à'
+  - client của [f-tech](work_unit) gồm những ai
+  - những công ty liên kết với [f-tech](work_unit) là thế nào vậy hả
+  - công ty làm chung với các khách hàng như nào vậy
+  - công ty đang là đối tác của ai đó bot
+  - công ty đã bán sản phẩm cho đối tượng nào chưa hả
+  - công ty đang hợp tác làm ăn với những đối tác làm ăn nào đó em
+  - công ty hợp tác làm ăn với những công ty nào đó timi
+  - partner của công ty gồm những công ty nào ạ
+  - công ty có hợp tác với công ty khác không
+  - tôi muốn hỏi info partner của công ty
+  - bên m làm dự án cùng các doanh nghiệp nào thế
+  - ai là client của công ty
+  - công ty đang là đối tác kinh doanh của những công ty nào đó
+  - tôi muốn hỏi công ty đang làm việc với bên nào vậy
+  - công ty hiện đang hợp tác với những công ty gì
+  - '[mdc software](work_unit) có làm việc với công ty không'
+  - partner [f-tech](work_unit) như thế nào đó
+  - cho tớ hỏi đối tác kinh doanh của công ty là những công ty ạ
+  - hiện tại công ty nào đang hợp tác kinh doanh với [f tech](work_unit) ạ
+  - '[vbee](work_unit) là khách hàng tiềm năng của công ty phải ko'
+  - đối tượng khách hàng của [ftech](work_unit) gồm những ai
+  - những công ty hợp tác kinh doanh với [f tech](work_unit) là như thế nào
+  - công ty làm chung với các đối tượng khách hàng thế nào hả
+  - công ty đang là partner của ai
+  - công ty đã bán sản phẩm cho bên nào chưa hả
+  - công ty đang hợp tác với những đối tác nào timi
+  - công ty hợp tác kinh doanh với những công ty nào đó mầy
+  - đối tác của công ty gồm những ai
+  - công ty có liên kết với công ty khác ko
+  - tớ muốn hỏi info đối tác kinh doanh của công ty
+  - bên bạn làm dự án cùng các doanh nghiệp nào thế
+  - ai là khách hàng của công ty
+  - công ty đang là đối tác của những công ty nào mầy
+  - tớ muốn hỏi công ty đang làm việc với bên nào thế
+  - công ty hiện đang kết hợp với những công ty nào
+  - '[htc-itc](work_unit) có làm việc với công ty không'
+  - đối tác kinh doanh [f-tech](work_unit) như thế nào đó
+  - cho tớ hỏi đối tác kinh doanh của công ty là ai ạ
+  - hiện tại công ty nào đang hợp tác kinh doanh với [ftech](work_unit) ạ
+  - '[FTS](work_unit) là client của công ty à'
+  - client của [f tech](work_unit) gồm những ai
+  - những công ty hợp tác kinh doanh với [f-tech](work_unit) là thế nào vậy hả
+  - công ty làm chung với các đối tượng thế nào hả
+  - công ty đang là đối tác làm ăn của ai đó bot
+  - công ty đã bán sản phẩm cho bên nào chưa vậy
+  - công ty đang liên kết với những đối tác nào đó
+  - công ty hợp tác làm ăn với những công ty nào đó m
+  - partner của công ty gồm những ai
+  - '[f-tech](work_unit) có hợp tác kinh doanh với công ty khác ko'
+  - tôi muốn hỏi thông tin đối tác của công ty
+  - bên timi làm dự án cùng các doanh nghiệp nào thế
+  - ai là đối tượng khách hàng của công ty
+  - công ty đang là đối tác kinh doanh của những công ty nào
+  - cho mình hỏi công ty đang làm việc với công ty nào thế
+  - công ty hiện đang hợp tác với những doanh nghiệp gì
+  - '[rikkeisoft](work_unit) có làm việc với công ty không'
+  - đối tác làm ăn [ftech](work_unit) như thế nào đó
+  - cho tớ hỏi đối tác kinh doanh làm ăn của công ty là những công ty ạ
+  - hiện tại công ty nào đang hợp tác kinh doanh với [f-tech](work_unit) ạ
+  - '[Vinacafe](work_unit) là khách hàng tiềm năng của công ty phải không'
+  - khách hàng của [ftech](work_unit) gồm những ai
+  - những công ty liên kết với [ftech](work_unit) là gì vậy hả vậy hả
+  - công ty làm chung với các đối tượng khách hàng như thế nào hả
+  - công ty đang là partner của ai đó m
+  - công ty đã bán sản phẩm cho bên nào chưa vậy hả
+  - công ty đang hợp tác với những đối tác làm ăn nào đó
+  - công ty hợp tác kinh doanh với những công ty nào đó bot
+  - đối tác kinh doanh của công ty gồm những công ty nào
+  - '[ftech](work_unit) có hợp tác làm ăn với công ty khác không'
+  - tớ muốn biết information đối tác làm ăn của công ty
+  - bên em làm dự án cùng các công ty nào thế
+  - công ty đang là partner của những công ty nào bot
+  - cho tớ hỏi công ty đang làm việc với công ty nào vậy
+  - công ty hiện đang kết hợp với những công ty gì
+  - '[dell](work_unit) có làm việc với công ty không'
+  - đối tác [ftech](work_unit) như nào đó
+  - cho mình hỏi đối tác làm ăn của công ty là những công ty ạ
+  - hiện tại công ty nào đang liên kết với [f tech](work_unit) ạ
+  - '[Vietsoftware](work_unit) là đối tượng khách hàng của công ty phải không'
+  - đối tượng của [ftech](work_unit) gồm những ai
+  - những công ty hợp tác làm ăn với [ftech](work_unit) là thế nào
+  - công ty làm chung với các đối tượng khách hàng thế nào vậy
+  - công ty đang là đối tác của ai đó mày
+  - công ty đã bán sản phẩm cho khách hàng nào chưa vậy
+  - công ty đang hợp tác kinh doanh với những partner nào đó
+  - công ty hợp tác với những công ty nào đó timi
+  - đối tác làm ăn của công ty là những ai ạ
+  - '[f tech](work_unit) có hợp tác kinh doanh với công ty khác ko'
+  - tớ muốn hỏi information partner của công ty
+  - bên mày làm dự án cùng các doanh nghiệp nào thế
+  - công ty đang là đối tác làm ăn của những công ty nào
+  - tớ muốn hỏi công ty đang làm việc với công ty nào vậy
+  - công ty hiện đang hợp tác với những doanh nghiệp nào
+  - '[FLC](work_unit) có làm việc với công ty không'
+  - đối tác làm ăn [f tech](work_unit) như thế nào đó
+  - cho tớ hỏi partner làm ăn của công ty là những công ty ạ
+  - hiện tại công ty nào đang hợp tác làm ăn với [f-tech](work_unit) ạ
+  - '[VTC](work_unit) là đối tượng khách hàng của công ty phải k'
+  - khách hàng tiềm năng của [ftech](work_unit) gồm những ai
+  - những công ty hợp tác làm ăn với [f tech](work_unit) là gì vậy
+  - công ty làm chung với các client như nào hả
+  - công ty đang là partner của ai mầy
+  - công ty đã bán sản phẩm cho khách hàng nào chưa vậy hả
+  - công ty đang hợp tác kinh doanh với những đối tác kinh doanh nào đó
+  - công ty liên kết với những công ty nào đó m
+  - đối tác kinh doanh của công ty là những ai ạ
+  - '[f-tech](work_unit) có hợp tác kinh doanh với công ty khác không'
+  - mình muốn hỏi information đối tác làm ăn của công ty
+  - bên bot làm dự án cùng các công ty nào thế
+  - công ty đang là đối tác làm ăn của những công ty nào đó
+  - cho tớ hỏi công ty đang làm việc với bên nào thế
+  - công ty hiện đang hợp tác với những công ty nào
+  - '[VinTech](work_unit) có làm việc với công ty ko'
+  - đối tác kinh doanh [f-tech](work_unit) thế nào đó
+  - cho tôi hỏi đối tác làm ăn của công ty là ai ạ
+  - hiện tại công ty nào đang hợp tác với [f tech](work_unit) ạ
+  - '[HiPT](work_unit) là khách hàng tiềm năng của công ty phải ko'
+  - khách hàng tiềm năng của [f tech](work_unit) gồm những ai
+  - những công ty hợp tác với [f-tech](work_unit) là như thế nào
+  - công ty làm chung với các khách hàng như thế nào vậy
+  - công ty đang là đối tác của ai đó bạn
+  - công ty đã bán sản phẩm cho khách hàng nào chưa hả
+  - công ty đang hợp tác kinh doanh với những partner nào
+  - công ty hợp tác với những công ty nào đó m
+  - đối tác của công ty là những ai ạ
+  - công ty có hợp tác với công ty khác ko
+  - tớ muốn hỏi information đối tác làm ăn của công ty
+  - bên mầy làm dự án cùng các công ty nào thế
+  - công ty đang là đối tác của những công ty nào
+  - tớ muốn hỏi công ty đang làm việc với bên nào vậy
+  - '[Vietnam Airlines](work_unit) có làm việc với công ty không'
+  - partner [f-tech](work_unit) như nào đó
+  - cho tôi hỏi đối tác kinh doanh làm ăn của công ty là ai ạ
+  - hiện tại công ty nào đang hợp tác làm ăn với [f tech](work_unit) ạ
+  - '[FLC](work_unit) là client của công ty hả'
+  - đối tượng của [f tech](work_unit) gồm những ai
+  - những công ty hợp tác với [f tech](work_unit) là như thế nào
+  - công ty làm chung với các khách hàng tiềm năng như thế nào vậy
+  - công ty đang là đối tác kinh doanh của ai đó
+  - công ty đã bán sản phẩm cho khách hàng tiềm năng nào chưa hả
+  - công ty đang liên kết với những partner nào đó cậu
+  - công ty hợp tác làm ăn với những công ty nào đó em
+  - đối tác kinh doanh của công ty gồm những ai ạ
+  - '[f tech](work_unit) có liên kết với công ty khác không'
+  - mình muốn biết thông tin partner của công ty
+  - bên cậu làm dự án cùng các công ty nào thế
+  - công ty đang là đối tác kinh doanh của những công ty nào m
+  - cho mình hỏi công ty đang làm việc với công ty nào vậy
+  - '[ftech](work_unit) có làm việc với công ty không'
+  - đối tác làm ăn [f tech](work_unit) như nào đó
+  - cho tôi hỏi đối tác làm ăn làm ăn của công ty là ai ạ
+  - hiện tại công ty nào đang hợp tác với [f-tech](work_unit) ạ
+  - '[fpt](work_unit) là khách hàng tiềm năng của công ty phải không'
+  - đối tượng của [f-tech](work_unit) gồm những ai
+  - những công ty hợp tác kinh doanh với [ftech](work_unit) là gì vậy hả
+  - công ty làm chung với các khách hàng tiềm năng như nào vậy hả
+  - công ty đang là đối tác làm ăn của ai
+  - công ty đã bán sản phẩm cho đối tượng khách hàng nào chưa hả
+  - công ty đang hợp tác làm ăn với những partner nào đó
+  - công ty liên kết với những công ty nào đó mầy
+  - đối tác của công ty gồm những công ty nào
+  - '[f tech](work_unit) có hợp tác làm ăn với công ty khác ko'
+  - mình muốn hỏi thông tin đối tác làm ăn của công ty
+  - bên m làm dự án cùng các công ty nào thế
+  - công ty đang là đối tác làm ăn của những công ty nào bạn
+  - cho tôi hỏi công ty đang làm việc với công ty nào thế
+  - '[facebook](work_unit) có làm việc với công ty không'
+  - đối tác kinh doanh [ftech](work_unit) thế nào đó
+  - cho tớ hỏi đối tác của công ty là ai ạ
+  - hiện tại công ty nào đang liên kết với [ftech](work_unit) ạ
+  - '[spotify](work_unit) là đối tượng của công ty à'
+  - client của [ftech](work_unit) gồm những ai
+  - những công ty hợp tác với [ftech](work_unit) là như nào
+  - công ty làm chung với các đối tượng như nào vậy hả
+  - công ty đang là partner của ai đó
+  - công ty đã bán sản phẩm cho client nào chưa hả
+  - công ty đang hợp tác làm ăn với những đối tác làm ăn nào
+  - công ty liên kết với những công ty nào đó bạn
+  - đối tác làm ăn của công ty là những ai
+  - công ty có hợp tác kinh doanh với công ty khác không
+  - tớ muốn hỏi information đối tác kinh doanh của công ty
+  - bên em làm dự án cùng các doanh nghiệp nào thế
+  - công ty đang là đối tác kinh doanh của những công ty nào bot
+  - mình muốn hỏi công ty đang làm việc với bên nào vậy
+  - '[VNPT](work_unit) có làm việc với công ty không'
+  - partner [ftech](work_unit) như nào đó
+  - cho tôi hỏi đối tác làm ăn làm ăn của công ty là những công ty ạ
+  - hiện tại công ty nào đang liên kết với [f-tech](work_unit) ạ
+  - '[nexttech](work_unit) là khách hàng của công ty hả'
+  - đối tượng khách hàng của [f-tech](work_unit) gồm những ai
+  - những công ty hợp tác làm ăn với [f tech](work_unit) là thế nào
+  - công ty làm chung với các khách hàng như nào hả
+  - công ty đang là đối tác của ai
+  - công ty đã bán sản phẩm cho client nào chưa vậy hả
+  - công ty đang hợp tác làm ăn với những partner nào bạn
+  - công ty hợp tác kinh doanh với những công ty nào đó bạn
+  - partner của công ty là những công ty nào
+  - công ty có hợp tác làm ăn với công ty khác không
+  - tớ muốn biết info đối tác làm ăn của công ty
+  - bên bot làm dự án cùng các doanh nghiệp nào thế
+  - công ty đang là partner của những công ty nào đó
+  - tôi muốn hỏi công ty đang làm việc với công ty nào thế
+  - '[FTS](work_unit) có làm việc với công ty không'
+  - đối tác kinh doanh [ftech](work_unit) như nào đó
+  - cho mình hỏi đối tác của công ty là ai ạ
+  - '[google](work_unit) là đối tượng của công ty phải ko'
+  - khách hàng tiềm năng của [f-tech](work_unit) gồm những ai
+  - những công ty liên kết với [ftech](work_unit) là gì hả
+  - công ty làm chung với các đối tượng thế nào vậy hả
+  - công ty đang là đối tác làm ăn của ai m
+  - công ty đã bán sản phẩm cho đối tượng nào chưa vậy hả
+  - công ty đang hợp tác với những đối tác nào đó
+  - công ty hợp tác làm ăn với những công ty nào đó mầy
+  - đối tác kinh doanh của công ty là những ai
+  - '[f-tech](work_unit) có hợp tác với công ty khác ko'
+  - tớ muốn biết thông tin partner của công ty
+  - bên mầy làm dự án cùng các doanh nghiệp nào thế
+  - công ty đang là đối tác của những công ty nào đó mầy
+  - mình muốn hỏi công ty đang làm việc với bên nào thế
+  - '[VTC](work_unit) có làm việc với công ty ko'
+  - đối tác làm ăn [f-tech](work_unit) như thế nào đó
+  - cho mình hỏi đối tác kinh doanh làm ăn của công ty là ai ạ
+  - '[FLC](work_unit) là client của công ty phải k'
+  - đối tượng khách hàng của [f tech](work_unit) gồm những ai
+  - những công ty hợp tác kinh doanh với [f tech](work_unit) là gì vậy hả
+  - công ty làm chung với các client như thế nào vậy
+  - công ty đang là đối tác kinh doanh của ai đó bot
+  - công ty đã bán sản phẩm cho đối tượng khách hàng nào chưa vậy hả
+  - công ty đang hợp tác làm ăn với những partner nào đó mày
+  - công ty hợp tác kinh doanh với những công ty nào đó timi
+  - đối tác kinh doanh của công ty là những công ty nào
+  - '[f-tech](work_unit) có hợp tác làm ăn với công ty khác không'
+  - tôi muốn hỏi info đối tác của công ty
+  - bên mày làm dự án cùng các công ty nào thế
+  - công ty đang là đối tác của những công ty nào đó bạn
+  - mình muốn hỏi công ty đang làm việc với công ty nào vậy
+  - '[spotify](work_unit) có làm việc với công ty ko'
+  - đối tác làm ăn [f tech](work_unit) thế nào đó
+  - cho tớ hỏi đối tác kinh doanh làm ăn của công ty là ai ạ
+  - '[got it](work_unit) là đối tượng khách hàng của công ty à'
+  - những công ty hợp tác kinh doanh với [f-tech](work_unit) là như nào hả
+  - công ty làm chung với các khách hàng tiềm năng như thế nào hả
+  - công ty đang là partner của ai timi
+  - công ty đang hợp tác với những đối tác nào
+  - công ty liên kết với những công ty nào đó cậu
+  - đối tác của công ty là những công ty nào ạ
+  - '[f-tech](work_unit) có hợp tác làm ăn với công ty khác ko'
+  - tớ muốn biết information partner của công ty
+  - bên bạn làm dự án cùng các công ty nào thế
+  - công ty đang là partner của những công ty nào timi
+  - cho mình hỏi công ty đang làm việc với bên nào vậy
+  - '[svmc](work_unit) có làm việc với công ty ko'
+  - đối tác kinh doanh [f tech](work_unit) thế nào đó
+  - cho mình hỏi đối tác kinh doanh của công ty là ai ạ
+  - '[google](work_unit) là client của công ty hả'
+  - những công ty hợp tác với [f tech](work_unit) là thế nào vậy hả
+  - công ty làm chung với các đối tượng như nào hả

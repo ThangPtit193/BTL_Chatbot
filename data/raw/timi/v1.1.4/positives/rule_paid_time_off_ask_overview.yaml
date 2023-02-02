@@ -1,0 +1,826 @@
+positives:
+- intent: faq/rule_paid_time_off_ask_overview
+  examples:
+  - nếu không sử dụng hết thời gian nghỉ phép thì có được cộng dồn sang năm tiếp theo
+    không
+  - cho tớ hỏi Phép năm dùng không hết thì sẽ xử lý như nào?
+  - bot cho tôi hỏi cách tính ngày phép dư như nào thế
+  - mình muốn hỏi Phép năm dùng không hết thì sẽ xử lý thế nào?
+  - tớ ko dùng ứng phép thì nó sẽ như thế nào
+  - nếu tôi không sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh toán
+    bằng tiền ko
+  - nếu mình ko sử dụng hết thời gian nghỉ phép trong một năm thì mình có được công
+    ty thanh toán bằng tiền không
+  - nếu mình ko sử dụng hết thời gian nghỉ phép trong một năm thì tôi có được công
+    ty thanh toán bằng tiền không
+  - timi cho mình hỏi cách tính ngày phép dư thế nào thế
+  - Một năm ko nghỉ hết 12 ngày phép năm tớ có được công ty thanh toán bằng tiền không
+  - nếu tôi ko sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh toán
+    bằng tiền không
+  - nếu tôi không sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán
+    bằng tiền ko
+  - nếu tớ không sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán
+    bằng tiền ko
+  - mình dư ngày phép thì công ty có thưởng hay bonus gì thêm ko
+  - nếu tôi không sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán
+    bằng tiền không
+  - tôi có cộng dồn ngày phép sang năm tiếp theo được không
+  - nếu không sử dụng hết thời gian nghỉ phép thì sẽ xử lý như nào?
+  - Hết năm ko nghỉ hết số ngày phép, mình có được tính vào năm tiếp theo không ?
+  - tôi muốn hỏi Phép năm dùng không hết thì sẽ xử lý như thế nào?
+  - em cho mình hỏi cách tính ngày phép dư như thế nào thế
+  - nếu mình ko sử dụng hết thời gian nghỉ phép trong một năm thì mình có được công
+    ty thanh toán bằng tiền ko
+  - Phép năm dùng ko hết thì sẽ xử lý như thế nào?
+  - tôi ko dùng ứng phép thì nó sẽ như thế nào
+  - cậu cho mình hỏi cách tính ngày phép dư thế nào thế
+  - bạn cho tớ hỏi cách tính ngày phép dư thế nào thế
+  - bạn cho mình hỏi cách tính ngày phép dư như thế nào thế
+  - Một năm không nghỉ hết 12 ngày phép năm chị có được công ty thanh toán bằng tiền
+    không
+  - cho tôi hỏi cách tính ngày phép dư như thế nào thế
+  - bạn cho tớ hỏi cách tính ngày phép dư như thế nào thế
+  - nếu không sử dụng hết thời gian nghỉ phép thì sẽ xử lý như thế nào?
+  - nếu mình không sử dụng hết thời gian nghỉ phép trong một năm thì số ngày phép
+    đó được xử lý như nào
+  - tớ có cộng dồn ngày phép sang năm tiếp theo đc không
+  - timi cho tôi hỏi cách tính ngày phép dư như nào thế
+  - mình dư ngày phép thì công ty có thưởng hay bonus gì thêm không
+  - hết một năm mà không sử dụng hết thời gian nghỉ phép thì sẽ xử lý như nào?
+  - hết một năm mà ko sử dụng hết thời gian nghỉ phép thì sẽ xử lý thế nào?
+  - cho mình hỏi cách tính ngày phép dư thế nào thế
+  - mình không dùng ứng phép thì nó sẽ như thế nào
+  - nếu mình ko sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công
+    ty thanh toán bằng tiền không
+  - nếu mình ko sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán
+    bằng tiền không
+  - nếu mình ko sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán
+    bằng tiền ko
+  - nếu không sử dụng hết thời gian nghỉ phép thì có được cộng dồn sang năm tiếp theo
+    ko
+  - bot cho mình hỏi cách tính ngày phép dư như thế nào thế
+  - nếu tôi không sử dụng hết thời gian nghỉ phép trong một năm thì mình có được công
+    ty thanh toán bằng tiền ko
+  - Hết năm không nghỉ hết số ngày phép, chị có được tính tiếp vào năm tiếp theo ko
+  - nếu ko sử dụng hết thời gian nghỉ phép thì có được cộng dồn sang năm tiếp theo
+    ko
+  - tớ có cộng dồn ngày phép sang năm tiếp theo được ko
+  - nếu mình không sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán
+    bằng tiền ko
+  - tôi có cộng dồn ngày phép sang năm tiếp theo đc không
+  - nếu mình ko sử dụng hết thời gian nghỉ phép trong một năm thì số ngày phép đó
+    được xử lý như thế nào
+  - Hết năm không nghỉ hết số ngày phép, anh có được tính tiếp vào năm tiếp theo không
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công ty
+    thanh toán bằng tiền không
+  - nếu tôi ko sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công ty
+    thanh toán bằng tiền không
+  - mầy cho tôi hỏi cách tính ngày phép dư thế nào thế
+  - nếu ko sử dụng hết thời gian nghỉ phép thì có được cộng dồn sang năm tiếp theo
+    không
+  - em cho tớ hỏi cách tính ngày phép dư như thế nào thế
+  - timi cho tôi hỏi cách tính ngày phép dư như thế nào thế
+  - m cho mình hỏi cách tính ngày phép dư như thế nào thế
+  - Một năm không nghỉ hết 12 ngày phép năm có được công ty thanh toán bằng tiền ko
+  - nếu mình ko sử dụng hết thời gian nghỉ phép trong một năm thì tôi có được công
+    ty thanh toán bằng tiền ko
+  - mình có cộng dồn ngày phép sang năm tiếp theo được không
+  - nếu mình ko sử dụng hết thời gian nghỉ phép thì số ngày phép đó được xử lý như
+    thế nào
+  - bot cho tớ hỏi cách tính ngày phép dư như nào thế
+  - bot cho tôi hỏi cách tính ngày phép dư thế nào thế
+  - ngày phép dư sẽ được tính thế nào
+  - tôi dư ngày phép thì công ty có thưởng hay bonus gì thêm không
+  - nếu không sử dụng hết thời gian nghỉ phép trong một năm thì sẽ xử lý như thế nào?
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán bằng
+    tiền ko
+  - m cho tôi hỏi cách tính ngày phép dư như thế nào thế
+  - Hết năm ko nghỉ hết số ngày phép, tớ có được tính tiếp vào năm tiếp theo không
+  - Hết năm không nghỉ hết số ngày phép, tớ có được tính tiếp vào năm tiếp theo ko
+  - Một năm ko nghỉ hết 12 ngày phép năm chị có được công ty thanh toán bằng tiền
+    ko
+  - bot cho tớ hỏi cách tính ngày phép dư thế nào thế
+  - tớ không dùng ứng phép thì nó sẽ thế nào
+  - tớ muốn hỏi Phép năm dùng không hết thì sẽ xử lý như thế nào?
+  - cậu cho tớ hỏi cách tính ngày phép dư thế nào thế
+  - Một năm không nghỉ hết 12 ngày phép năm chị có được công ty thanh toán bằng tiền
+    ko
+  - nếu mình không sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công
+    ty thanh toán bằng tiền không
+  - nếu tôi ko sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán
+    bằng tiền không
+  - Một năm không nghỉ hết 12 ngày phép năm anh có được công ty thanh toán bằng tiền
+    không
+  - em cho tớ hỏi cách tính ngày phép dư thế nào thế
+  - mày cho tôi hỏi cách tính ngày phép dư như thế nào thế
+  - nếu ko sử dụng hết thời gian nghỉ phép thì sẽ xử lý thế nào?
+  - tôi không dùng ứng phép thì nó sẽ thế nào
+  - nếu tôi ko sử dụng hết thời gian nghỉ phép trong một năm thì mình có được công
+    ty thanh toán bằng tiền không
+  - m cho tôi hỏi cách tính ngày phép dư như nào thế
+  - nếu tôi không sử dụng hết thời gian nghỉ phép trong một năm thì tôi có được công
+    ty thanh toán bằng tiền không
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công ty
+    thanh toán bằng tiền ko
+  - hết một năm mà ko sử dụng hết thời gian nghỉ phép thì sẽ xử lý như thế nào?
+  - công ty có quy đổi ngày nghỉ phép dư sang tiền mặt ko
+  - nếu tớ không sử dụng hết thời gian nghỉ phép trong một năm thì mình có được công
+    ty thanh toán bằng tiền không
+  - nếu mình ko sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh toán
+    bằng tiền không
+  - nếu mình ko sử dụng hết thời gian nghỉ phép thì số ngày phép đó được xử lý như
+    nào
+  - mình không dùng ứng phép thì nó sẽ như nào
+  - Một năm không nghỉ hết 12 ngày phép năm anh có được công ty thanh toán bằng tiền
+    ko
+  - cậu cho mình hỏi cách tính ngày phép dư như nào thế
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh toán
+    bằng tiền không
+  - mầy cho mình hỏi cách tính ngày phép dư như thế nào thế
+  - Một năm ko nghỉ hết 12 ngày phép năm có được công ty thanh toán bằng tiền ko
+  - Hết năm không nghỉ hết số ngày phép, anh có được tính tiếp vào năm tiếp theo ko
+  - nếu mình không sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán
+    bằng tiền ko
+  - nếu mình không sử dụng hết thời gian nghỉ phép thì số ngày phép đó được xử lý
+    thế nào
+  - mày cho tôi hỏi cách tính ngày phép dư thế nào thế
+  - Phép năm dùng không hết thì sẽ xử lý như thế nào?
+  - cậu cho mình hỏi cách tính ngày phép dư như thế nào thế
+  - cho mình hỏi Phép năm dùng không hết thì sẽ xử lý như thế nào?
+  - Phép năm dùng không hết thì sẽ xử lý như nào?
+  - em cho tôi hỏi cách tính ngày phép dư như thế nào thế
+  - tớ ko dùng ứng phép thì nó sẽ như nào
+  - cho tớ hỏi Phép năm dùng không hết thì sẽ xử lý thế nào?
+  - tôi muốn hỏi Phép năm dùng không hết thì sẽ xử lý như nào?
+  - nếu mình không sử dụng hết thời gian nghỉ phép trong một năm thì số ngày phép
+    đó được xử lý thế nào
+  - nếu ko sử dụng hết thời gian nghỉ phép trong một năm thì sẽ xử lý như nào?
+  - nếu tôi ko sử dụng hết thời gian nghỉ phép trong một năm thì tôi có được công
+    ty thanh toán bằng tiền không
+  - nếu mình không sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán
+    bằng tiền không
+  - nếu tôi ko sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán bằng
+    tiền không
+  - mình ko dùng ứng phép thì nó sẽ như nào
+  - Một năm ko nghỉ hết 12 ngày phép năm có được công ty thanh toán bằng tiền không
+  - cho mình hỏi cách tính ngày phép dư như thế nào thế
+  - mày cho tôi hỏi cách tính ngày phép dư như nào thế
+  - công ty có quy đổi ngày nghỉ phép dư sang tiền mặt không
+  - m cho tớ hỏi cách tính ngày phép dư như nào thế
+  - timi cho tớ hỏi cách tính ngày phép dư như nào thế
+  - m cho tôi hỏi cách tính ngày phép dư thế nào thế
+  - bạn cho tớ hỏi cách tính ngày phép dư như nào thế
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép trong một năm thì tôi có được công ty
+    thanh toán bằng tiền không
+  - m cho tớ hỏi cách tính ngày phép dư như thế nào thế
+  - tớ không dùng ứng phép thì nó sẽ như nào
+  - mày cho tớ hỏi cách tính ngày phép dư thế nào thế
+  - tôi có cộng dồn ngày phép sang năm tiếp theo đc ko
+  - cho tôi hỏi cách tính ngày phép dư như nào thế
+  - tôi không dùng ứng phép thì nó sẽ như thế nào
+  - cậu cho tớ hỏi cách tính ngày phép dư như nào thế
+  - Phép năm dùng ko hết thì sẽ xử lý thế nào?
+  - em cho mình hỏi cách tính ngày phép dư như nào thế
+  - Một năm ko nghỉ hết 12 ngày phép năm mình có được công ty thanh toán bằng tiền
+    không
+  - nếu tớ không sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán
+    bằng tiền không
+  - cho mình hỏi cách tính ngày phép dư như nào thế
+  - cho mình hỏi Phép năm dùng không hết thì sẽ xử lý thế nào?
+  - mình ko dùng ứng phép thì nó sẽ như thế nào
+  - nếu tớ không sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh toán
+    bằng tiền ko
+  - nếu mình không sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh
+    toán bằng tiền không
+  - cậu cho tớ hỏi cách tính ngày phép dư như thế nào thế
+  - nếu tôi không sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công
+    ty thanh toán bằng tiền ko
+  - mày cho mình hỏi cách tính ngày phép dư thế nào thế
+  - cho tôi hỏi cách tính ngày phép dư thế nào thế
+  - Hết năm ko nghỉ hết số ngày phép, tớ có được tính tiếp vào năm tiếp theo ko
+  - nếu tớ không sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán
+    bằng tiền không
+  - timi cho tôi hỏi cách tính ngày phép dư thế nào thế
+  - tớ không dùng ứng phép thì nó sẽ như thế nào
+  - nếu ko sử dụng hết thời gian nghỉ phép trong một năm thì sẽ xử lý như thế nào?
+  - nếu mình ko sử dụng hết thời gian nghỉ phép trong một năm thì số ngày phép đó
+    được xử lý như nào
+  - nếu tôi không sử dụng hết thời gian nghỉ phép trong một năm thì mình có được công
+    ty thanh toán bằng tiền không
+  - Hết năm không nghỉ hết số ngày phép, mình có được tính vào năm tiếp theo không
+    ?
+  - cậu cho tôi hỏi cách tính ngày phép dư như nào thế
+  - Một năm không nghỉ hết 12 ngày phép năm tớ có được công ty thanh toán bằng tiền
+    không
+  - tôi không dùng ứng phép thì nó sẽ như nào
+  - Một năm ko nghỉ hết 12 ngày phép năm tớ có được công ty thanh toán bằng tiền ko
+  - tôi dư ngày phép thì công ty có thưởng hay bonus gì thêm ko
+  - Hết năm không nghỉ hết số ngày phép, mình có được tính tiếp vào năm tiếp theo
+    ko
+  - mầy cho mình hỏi cách tính ngày phép dư như nào thế
+  - mình ko dùng ứng phép thì nó sẽ thế nào
+  - tôi ko dùng ứng phép thì nó sẽ thế nào
+  - mầy cho tôi hỏi cách tính ngày phép dư như thế nào thế
+  - cậu cho tôi hỏi cách tính ngày phép dư như thế nào thế
+  - timi cho mình hỏi cách tính ngày phép dư như nào thế
+  - tôi ko dùng ứng phép thì nó sẽ như nào
+  - nếu tôi ko sử dụng hết thời gian nghỉ phép trong một năm thì mình có được công
+    ty thanh toán bằng tiền ko
+  - nếu mình không sử dụng hết thời gian nghỉ phép trong một năm thì tôi có được công
+    ty thanh toán bằng tiền ko
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán bằng
+    tiền không
+  - nếu mình ko sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh toán
+    bằng tiền ko
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh toán
+    bằng tiền ko
+  - Hết năm ko nghỉ hết số ngày phép, mình có được tính tiếp vào năm tiếp theo không
+  - tớ dư ngày phép thì công ty có thưởng hay bonus gì thêm không
+  - nếu tôi không sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán
+    bằng tiền không
+  - Thời gian clear phép năm cũ là tới lúc nào?
+  - nếu mình không sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán
+    bằng tiền không
+  - nếu mình không sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công
+    ty thanh toán bằng tiền ko
+  - nếu tôi không sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công
+    ty thanh toán bằng tiền không
+  - nếu không sử dụng hết thời gian nghỉ phép trong một năm thì sẽ xử lý thế nào?
+  - Hết năm ko nghỉ hết số ngày phép, chị có được tính tiếp vào năm tiếp theo ko
+  - Phép năm dùng không hết thì sẽ xử lý thế nào?
+  - mình muốn hỏi Phép năm dùng không hết thì sẽ xử lý như thế nào?
+  - nếu tôi không sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh toán
+    bằng tiền không
+  - mầy cho tớ hỏi cách tính ngày phép dư như nào thế
+  - cho tớ hỏi cách tính ngày phép dư như nào thế
+  - mình có cộng dồn ngày phép sang năm tiếp theo đc ko
+  - cho tớ hỏi cách tính ngày phép dư như thế nào thế
+  - nếu tớ không sử dụng hết thời gian nghỉ phép thì mình có được công ty thanh toán
+    bằng tiền không
+  - nếu ko sử dụng hết thời gian nghỉ phép thì sẽ xử lý như nào?
+  - bot cho mình hỏi cách tính ngày phép dư như nào thế
+  - bạn cho mình hỏi cách tính ngày phép dư thế nào thế
+  - tớ muốn hỏi Phép năm dùng không hết thì sẽ xử lý thế nào?
+  - nếu ko sử dụng hết thời gian nghỉ phép thì sẽ xử lý như thế nào?
+  - cậu cho tôi hỏi cách tính ngày phép dư thế nào thế
+  - m cho mình hỏi cách tính ngày phép dư như nào thế
+  - nếu tớ không sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công
+    ty thanh toán bằng tiền ko
+  - nếu tôi ko sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán
+    bằng tiền ko
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép trong một năm thì mình có được công
+    ty thanh toán bằng tiền ko
+  - m cho mình hỏi cách tính ngày phép dư thế nào thế
+  - bot cho mình hỏi cách tính ngày phép dư thế nào thế
+  - Một năm không nghỉ hết 12 ngày phép năm tớ có được công ty thanh toán bằng tiền
+    ko
+  - tớ dư ngày phép thì công ty có thưởng hay bonus gì thêm ko
+  - mình có cộng dồn ngày phép sang năm tiếp theo được ko
+  - Một năm ko nghỉ hết 12 ngày phép năm mình có được công ty thanh toán bằng tiền
+    ko
+  - nếu mình ko sử dụng hết thời gian nghỉ phép trong một năm thì tớ có được công
+    ty thanh toán bằng tiền ko
+  - mình muốn hỏi Phép năm dùng không hết thì sẽ xử lý như nào?
+  - nếu mình không sử dụng hết thời gian nghỉ phép trong một năm thì mình có được
+    công ty thanh toán bằng tiền ko
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép trong một năm thì tôi có được công ty
+    thanh toán bằng tiền ko
+  - Hết năm ko nghỉ hết số ngày phép, anh có được tính tiếp vào năm tiếp theo không
+  - Một năm không nghỉ hết 12 ngày phép năm có được công ty thanh toán bằng tiền không
+  - nếu mình không sử dụng hết thời gian nghỉ phép trong một năm thì mình có được
+    công ty thanh toán bằng tiền không
+  - nếu tớ không sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán
+    bằng tiền ko
+  - công ty có cho dồn ngày phép dư sang năm sau ko
+  - em cho mình hỏi cách tính ngày phép dư thế nào thế
+  - Hết năm không nghỉ hết số ngày phép, mình có được tính vào năm tiếp theo ko ?
+  - timi cho mình hỏi cách tính ngày phép dư như thế nào thế
+  - Hết năm không nghỉ hết số ngày phép, tớ có được tính tiếp vào năm tiếp theo không
+  - mầy cho tôi hỏi cách tính ngày phép dư như nào thế
+  - mày cho tớ hỏi cách tính ngày phép dư như nào thế
+  - mầy cho tớ hỏi cách tính ngày phép dư như thế nào thế
+  - em cho tôi hỏi cách tính ngày phép dư như nào thế
+  - cho tớ hỏi cách tính ngày phép dư thế nào thế
+  - nếu mình ko sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán
+    bằng tiền không
+  - cho mình hỏi Phép năm dùng không hết thì sẽ xử lý như nào?
+  - cho tớ hỏi Phép năm dùng không hết thì sẽ xử lý như thế nào?
+  - nếu mình không sử dụng hết thời gian nghỉ phép thì số ngày phép đó được xử lý
+    như thế nào
+  - Hết năm không nghỉ hết số ngày phép, chị có được tính tiếp vào năm tiếp theo không
+  - tớ ko dùng ứng phép thì nó sẽ thế nào
+  - nếu tôi không sử dụng hết thời gian nghỉ phép thì tớ có được công ty thanh toán
+    bằng tiền ko
+  - timi cho tớ hỏi cách tính ngày phép dư thế nào thế
+  - mầy cho tớ hỏi cách tính ngày phép dư thế nào thế
+  - nếu mình không sử dụng hết thời gian nghỉ phép thì số ngày phép đó được xử lý
+    như nào
+  - tôi muốn hỏi Phép năm dùng không hết thì sẽ xử lý thế nào?
+  - ngày phép dư sẽ được tính như nào
+  - mình có cộng dồn ngày phép sang năm tiếp theo đc không
+  - tôi có cộng dồn ngày phép sang năm tiếp theo được ko
+  - Một năm không nghỉ hết 12 ngày phép năm mình có được công ty thanh toán bằng tiền
+    ko
+  - nếu mình không sử dụng hết thời gian nghỉ phép trong một năm thì số ngày phép
+    đó được xử lý như thế nào
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép thì tôi có được công ty thanh toán bằng
+    tiền không
+  - nếu không sử dụng hết thời gian nghỉ phép trong một năm thì sẽ xử lý như nào?
+  - tớ có cộng dồn ngày phép sang năm tiếp theo được không
+  - nếu ko sử dụng hết thời gian nghỉ phép trong một năm thì sẽ xử lý thế nào?
+  - cho tôi hỏi Phép năm dùng không hết thì sẽ xử lý như nào?
+  - mình không dùng ứng phép thì nó sẽ thế nào
+  - mầy cho mình hỏi cách tính ngày phép dư thế nào thế
+  - bạn cho tôi hỏi cách tính ngày phép dư như thế nào thế
+  - nếu tớ ko sử dụng hết thời gian nghỉ phép trong một năm thì mình có được công
+    ty thanh toán bằng tiền không
+  - Một năm ko nghỉ hết 12 ngày phép năm anh có được công ty thanh toán bằng tiền
+    ko
+  - hết một năm mà không sử dụng hết thời gian nghỉ phép thì sẽ xử lý thế nào?
+  - một tháng có bao nhiêu buổi phép
+  - làm thế nào mà xin nghỉ phép vẫn có lương
+  - tổng số buổi phép của một thành viên trong một năm là bao nhiu
+  - một năm thành viên có số ngày phép là bao nhiu
+  - thời gian nghỉ phép của nhận sự là bao nhiêu ngày
+  - tổng số ngày phép của một người là bao nhiu
+  - tớ muốn hỏi [svtt](level_position) [ja-va develop](position) có bao nhiu ngày
+    phép có lương ha
+  - một tháng nhận sự có bao nhiêu ngày phép
+  - số ngày phép năm phụ thuộc gì
+  - quy định về thời gian nghỉ phép hàng năm của công ty thế nào
+  - số ngày phép công ty dành cho [junior](level_position) [nhà khoa học](position)
+    thế nào
+  - công ty có quy chế về thời gian nghỉ việc riêng cho [thử việc](level_position)
+    [database engineering](position) không
+  - số off có lương hàng năm công ty dành cho [cộng tác viên](level_position) là mấy
+  - nội quy phép năm công ty ra sao
+  - như nào là nghỉ phép có lương
+  - nội quy về ngày nghỉ phép hàng năm như nào
+  - công ty có mấy ngày nghỉ phép cho thành viên [svtt](level_position) [back-end
+    develop](position) hả
+  - tớ muốn hỏi về rule thời gian nghỉ phép của công ty cho [DE](position) như nào
+  - '[junior](level_position) có bao nhiêu buổi phép có lương'
+  - nội quy về thời gian nghỉ phép hưởng lương dành cho [sinh viên thực tập](level_position)
+    [os admin](position) như nào
+  - công ty có mấy ngày nghỉ phép cho nhận sự vậy hả
+  - số ngày phép hằng năm của một nhận sự trong một năm là bao nhiu
+  - tớ muốn biết [junior](level_position) có mấy buổi phép có lương hả
+  - thời gian nghỉ phép hàng năm công ty thế nào
+  - một tháng thành viên phải làm ít nhất bao nhiu buổi
+  - tôi muốn biết về quy chế nghỉ có lương của công ty như nào
+  - mình muốn biết về nội quy nghỉ có lương của công ty dành cho [senior](level_position)
+    thế nào
+  - mày cho tôi hỏi nội quy phép năm ở công ty như thế nào
+  - công ty có ban hành nội quy về thời gian nghỉ việc riêng không
+  - công ty có nội quy về thời gian nghỉ việc riêng ko
+  - quy định về ngày nghỉ phép hàng năm của công ty như thế nào
+  - một năm được nghỉ phép mấy ngày phép
+  - công ty có ban hành quy định về thời gian nghỉ việc riêng cho [junior](level_position)
+    ko
+  - thời gian nghỉ phép hàng năm như nào
+  - ' người được nghỉ phép mấy ngày'
+  - rule về thời gian nghỉ việc riêng của [fulltime](level_position) như thế nào
+  - một năm [fresher](level_position) được nghỉ bao nhiêu ngày phép vậy
+  - cho tớ hỏi về quy chế số ngày nghỉ phép của [junior](level_position) [devops](position)
+    tại công ty như nào
+  - cho tớ hỏi về quy định thời gian nghỉ phép của công ty như nào
+  - đối với [fresher](level_position) thì công ty được nghỉ mấy ngày phép
+  - một năm thành viên có bao nhiêu buổi phép
+  - cho tớ hỏi về nội quy số ngày nghỉ phép của công ty
+  - 1 năm công ty được nghỉ bao nhiu ngày phép
+  - quy định về thời gian nghỉ phép hưởng lương thế nào
+  - quy định về thời gian nghỉ việc riêng của công ty như thế nào
+  - số ngày được nghỉ phép của người là bao nhiêu
+  - tớ muốn hỏi công ty cho [pretrain](level_position) mấy ngày phép có lương vậy
+    hả
+  - nhận sự có bao nhiu buổi phép trong một năm
+  - Số ngày phép của người là bao nhiu nhỉ
+  - công ty bố trí cho [cộng tác viên](level_position) bao nhiu ngày phép không trừ
+    lương trong tuần vậy hả
+  - số ngày được nghỉ phép hằng năm cho [VFX Animators](position) là bao nhiêu
+  - '[product owners](position) [pre-senior](level_position) được nghỉ mấy ngày hả'
+  - một năm thời gian nghỉ phép của nhận sự là bao nhiu ngày
+  - công ty có quy chế cho [thử việc](level_position) bao nhiêu ngày phép ko
+  - thời gian nghỉ phép của [full-time](level_position) tại công ty thế nào
+  - quy định về số ngày nghỉ phép của công ty
+  - một tháng có bao nhiêu ngày phép
+  - làm như thế nào mà xin nghỉ phép vẫn có lương
+  - tổng số buổi phép của một thành viên trong một năm là bao nhiêu
+  - một năm nhận sự có số giờ phép là bao nhiêu
+  - thời gian nghỉ phép của nhận sự là bao nhiu giờ
+  - tổng số giờ phép hàng năm của một người là mấy
+  - tớ muốn hỏi [fresher](level_position) [game 2d art](position) có bao nhiu buổi
+    phép có lương nhể
+  - một tháng nhân viên có bao nhiu buổi phép
+  - nội quy về thời gian nghỉ phép hàng năm của công ty như thế nào
+  - số ngày phép công ty dành cho [junior](level_position) [odoo engineer](position)
+    thế nào
+  - công ty có quy định về thời gian nghỉ việc riêng cho [pre-senior](level_position)
+    [java develop](position) không
+  - số ngày phép hàng năm công ty dành cho [full time](level_position) là mấy
+  - quy chế phép năm công ty ra sao
+  - như thế nào là nghỉ phép có lương
+  - nội quy về ngày nghỉ phép hàng năm như thế nào
+  - công ty có mấy ngày nghỉ phép cho người [senior](level_position) [pentest](position)
+    vậy
+  - cho tớ hỏi về quy định thời gian nghỉ phép hàng năm của công ty cho [pentesters](position)
+    như thế nào
+  - '[senior](level_position) có bao nhiu ngày phép có lương'
+  - quy định về thời gian nghỉ phép hưởng lương dành cho [junior](level_position)
+    [graphic design](position) như nào
+  - công ty có mấy ngày nghỉ phép cho nhận sự vậy
+  - số buổi phép hàng năm của một thành viên trong một năm là bao nhiu
+  - tớ muốn hỏi [thử việc](level_position) có bao nhiu ngày phép có lương hả
+  - thời gian nghỉ phép hằng năm công ty như nào
+  - một tháng người phải làm việc ít nhất bao nhiêu ngày
+  - tôi muốn biết về rule nghỉ có lương của công ty như nào
+  - tớ muốn biết về nội quy nghỉ có lương của công ty dành cho [junior](level_position)
+    thế nào
+  - bạn cho mình hỏi quy chế phép năm ở công ty thế nào
+  - công ty có ban hành rule về thời gian nghỉ việc riêng ko
+  - công ty có rule về thời gian nghỉ việc riêng ko
+  - rule về ngày nghỉ phép hàng năm của công ty như thế nào
+  - một năm được nghỉ phép bao nhiu buổi phép
+  - công ty có ban hành quy chế về thời gian nghỉ việc riêng cho [full time](level_position)
+    ko
+  - thời gian nghỉ phép hàng năm như nào vậy hả
+  - ' nhận sự được nghỉ phép bao nhiu ngày'
+  - quy định về thời gian nghỉ việc riêng của [thử việc](level_position) như thế nào
+  - một năm [senior](level_position) được nghỉ bao nhiu ngày phép vậy
+  - tớ muốn hỏi về quy chế số ngày nghỉ phép của [junior](level_position) [golang](position)
+    tại công ty thế nào
+  - tôi muốn hỏi về quy định thời gian nghỉ phép của công ty
+  - đối với [ctv](level_position) thì hằng năm công ty được nghỉ bao nhiêu ngày phép
+  - một năm người có mấy giờ phép
+  - tôi muốn hỏi về quy chế số ngày nghỉ phép của công ty
+  - 1 năm công ty được nghỉ mấy ngày phép
+  - quy chế về thời gian nghỉ phép hưởng lương như nào
+  - quy chế về thời gian nghỉ việc riêng của công ty như thế nào
+  - số buổi được nghỉ phép của là bao nhiêu
+  - mình muốn hỏi công ty cho [intern](level_position) mấy ngày phép có lương vậy
+    hả
+  - nhân viên có bao nhiêu ngày phép trong một năm
+  - Số ngày phép của người là bao nhiêu nhể
+  - công ty bố trí cho [thử việc](level_position) mấy ngày phép ko trừ lương trong
+    năm vậy
+  - số ngày được nghỉ phép hằng năm cho [VFX Animators](position) là mấy
+  - '[fe dev](position) [fresher](level_position) được nghỉ mấy ngày vậy hả'
+  - một năm thời gian nghỉ phép của thành viên là bao nhiu buổi
+  - công ty có quy chế cho [pre-senior](level_position) bao nhiu ngày phép không
+  - thời gian nghỉ phép của [junior](level_position) tại công ty thế nào
+  - nội quy về số ngày nghỉ phép hằng năm của công ty
+  - một tháng có bao nhiu ngày phép
+  - làm như nào mà xin nghỉ phép vẫn có lương
+  - tổng số buổi phép của một nhân viên trong một năm là mấy
+  - một năm nhân viên có số giờ phép là bao nhiu
+  - thời gian nghỉ phép của người là mấy giờ
+  - tổng số buổi phép hàng năm của một nhận sự là bao nhiu
+  - tôi muốn hỏi [full-time](level_position) [nhân viên kinh doanh thị trường China](position)
+    có bao nhiu ngày phép có lương nhỉ
+  - một tháng nhân viên có bao nhiêu ngày phép
+  - quy định về thời gian nghỉ phép của công ty thế nào
+  - số ngày nghỉ có lương công ty dành cho [senior](level_position) [back-end developer](position)
+    như thế nào
+  - công ty có rule về thời gian nghỉ việc riêng cho [fresher](level_position) [pentester](position)
+    ko
+  - số ngày phép công ty dành cho [full-time](level_position) là bao nhiêu
+  - quy định phép năm công ty ra sao
+  - thế nào là nghỉ phép có lương
+  - quy định về ngày nghỉ phép hàng năm như thế nào
+  - công ty có mấy ngày nghỉ phép cho nhận sự [pre-senior](level_position) [QA](position)
+    hả
+  - mình muốn hỏi về quy chế thời gian nghỉ phép của công ty cho [blockchain engineer](position)
+    như nào
+  - '[fulltime](level_position) có bao nhiêu buổi phép có lương'
+  - quy định về thời gian nghỉ phép hưởng lương dành cho [internship](level_position)
+    [thiết kế nội dung giáo dục](position) như thế nào
+  - công ty có mấy ngày nghỉ phép cho nhân viên vậy
+  - số buổi phép của một nhân viên trong một năm là bao nhiu
+  - tớ muốn biết [junior](level_position) có bao nhiêu ngày phép có lương vậy hả
+  - thời gian nghỉ phép công ty như thế nào
+  - một tháng người phải làm ít nhất mấy ngày
+  - tớ muốn biết về nội quy nghỉ có lương của công ty thế nào
+  - mình muốn biết về nội quy nghỉ có lương của công ty dành cho [junior](level_position)
+    như nào
+  - ' cho mình hỏi quy định phép năm ở công ty như nào'
+  - công ty có ban hành quy định về thời gian nghỉ việc riêng không
+  - công ty có quy định về thời gian nghỉ việc riêng ko
+  - rule về ngày nghỉ phép hàng năm của công ty thế nào
+  - một năm được nghỉ phép mấy buổi phép
+  - công ty có ban hành quy định về thời gian nghỉ việc riêng cho [sinh viên thực
+    tập](level_position) ko
+  - thời gian nghỉ phép hằng năm như nào
+  - hằng năm nhân viên được nghỉ phép mấy buổi
+  - rule về thời gian nghỉ việc riêng của [junior](level_position) như thế nào
+  - 1 năm [thực tập sinh](level_position) được nghỉ bao nhiêu ngày phép vậy
+  - tớ muốn hỏi về quy định số ngày nghỉ phép hằng năm của [fresher](level_position)
+    [unity 3d dev](position) tại công ty
+  - tôi muốn hỏi về nội quy thời gian nghỉ phép của công ty như thế nào
+  - đối với [junior](level_position) thì hàng năm công ty được nghỉ bao nhiu ngày
+    phép
+  - một năm thành viên có bao nhiu buổi phép
+  - cho mình hỏi về nội quy số ngày nghỉ phép của công ty
+  - 1 năm công ty được nghỉ bao nhiêu ngày phép
+  - rule về thời gian nghỉ phép hưởng lương như nào
+  - nội quy về thời gian nghỉ việc riêng của công ty thế nào
+  - số buổi được nghỉ phép hàng năm của là mấy
+  - mình muốn hỏi công ty cho [thử việc](level_position) bao nhiêu buổi phép có lương
+    vậy hả
+  - nhận sự có mấy ngày phép trong một năm
+  - Số ngày phép của nhận sự là bao nhiu nhỉ mày
+  - công ty bố trí cho [fresher](level_position) mấy ngày phép có lương trong năm
+    hả
+  - số buổi được nghỉ phép hàng năm cho [product analyst](position) là bao nhiêu
+  - '[Quality Assurance](position) [thử việc](level_position) được nghỉ bao nhiêu
+    ngày vậy'
+  - một năm thời gian nghỉ phép của người là bao nhiu buổi
+  - công ty có rule cho [junior](level_position) mấy buổi phép không
+  - thời gian nghỉ phép hằng năm của [full-time](level_position) tại công ty như thế
+    nào
+  - quy định về số ngày nghỉ phép hằng năm của công ty
+  - một tháng có mấy ngày phép
+  - tổng số ngày phép của một nhân viên trong một năm là bao nhiêu
+  - một năm người có số buổi phép là bao nhiêu
+  - thời gian nghỉ phép hàng năm của nhận sự là mấy ngày
+  - tổng số buổi phép của một nhân viên là mấy
+  - tớ muốn hỏi [pretrain](level_position) [java develop](position) có bao nhiu ngày
+    phép có lương ha
+  - một tháng thành viên có bao nhiêu ngày phép
+  - quy chế về thời gian nghỉ phép hàng năm của công ty như nào
+  - số ngày phép hằng năm công ty dành cho [thử việc](level_position) [game designer](position)
+    như nào
+  - công ty có nội quy về thời gian nghỉ việc riêng cho [ctv](level_position) [react
+    develop](position) ko
+  - số ngày phép hằng năm công ty dành cho [ctv](level_position) là bao nhiu
+  - rule phép năm công ty ra sao
+  - quy chế về ngày nghỉ phép hàng năm như nào
+  - công ty có mấy ngày nghỉ phép cho thành viên [thử việc](level_position) [2d product](position)
+    vậy hả
+  - tớ muốn hỏi về nội quy thời gian nghỉ phép hàng năm của công ty cho [nhân sự](position)
+  - '[junior](level_position) có bao nhiêu ngày phép có lương'
+  - quy định về thời gian nghỉ phép hưởng lương dành cho [junior](level_position)
+    [thị giác máy tính](position) thế nào
+  - công ty có mấy ngày nghỉ phép cho thành viên hả
+  - số giờ phép của một nhân viên trong một năm là bao nhiêu
+  - tớ muốn biết [full time](level_position) có bao nhiêu buổi phép có lương hả
+  - thời gian nghỉ phép hằng năm công ty thế nào
+  - một tháng người phải làm ít nhất bao nhiêu buổi
+  - tớ muốn hỏi về nội quy nghỉ có lương của công ty như nào
+  - tớ muốn hỏi về quy định nghỉ có lương của công ty dành cho [pre-senior](level_position)
+    như thế nào
+  - ' cho mình hỏi rule phép năm ở công ty như nào'
+  - công ty có ban hành quy định về thời gian nghỉ việc riêng ko
+  - công ty có nội quy về thời gian nghỉ việc riêng không
+  - rule về ngày nghỉ phép hàng năm của công ty như nào
+  - một năm được nghỉ phép bao nhiu ngày phép
+  - công ty có ban hành quy định về thời gian nghỉ việc riêng cho [thử việc](level_position)
+    không
+  - thời gian nghỉ phép hàng năm như nào vậy
+  - ' nhân viên được nghỉ phép bao nhiêu buổi'
+  - quy chế về thời gian nghỉ việc riêng của [fulltime](level_position) như thế nào
+  - một năm [intern](level_position) được nghỉ bao nhiu ngày phép vậy hả
+  - tớ muốn hỏi về quy chế số ngày nghỉ phép hàng năm của [junior](level_position)
+    [business analysts](position) tại công ty như thế nào
+  - cho tớ hỏi về quy chế thời gian nghỉ phép hàng năm của công ty
+  - đối với [pre-senior](level_position) thì công ty được nghỉ mấy ngày phép
+  - một năm thành viên có bao nhiêu giờ phép
+  - cho tớ hỏi về rule số ngày nghỉ phép của công ty
+  - quy chế về thời gian nghỉ phép hưởng lương thế nào
+  - rule về thời gian nghỉ việc riêng của công ty như thế nào
+  - số buổi được nghỉ phép hằng năm của là mấy
+  - tớ muốn hỏi công ty cho [fresher](level_position) mấy buổi phép có lương vậy hả
+  - thành viên có mấy ngày phép trong một năm
+  - Số ngày phép của nhận sự là bao nhiu nhỉ
+  - công ty bố trí cho [full time](level_position) mấy ngày phép ko trừ lương trong
+    tuần vậy hả
+  - số ngày được nghỉ phép hàng năm cho [lập trình android](position) là bao nhiu
+  - '[nhân viên kinh doanh thị trường China](position) [pre-senior](level_position)
+    được nghỉ bao nhiêu ngày hả'
+  - một năm thời gian nghỉ phép của nhận sự là mấy ngày
+  - công ty có nội quy cho [fresher](level_position) mấy ngày phép không
+  - thời gian nghỉ phép hàng năm của [pre-senior](level_position) tại công ty như
+    nào
+  - nội quy về số ngày nghỉ phép của công ty
+  - một tháng có mấy buổi phép
+  - tổng số buổi phép hàng năm của một nhân viên trong một năm là bao nhiêu
+  - một năm người có số ngày phép là mấy
+  - thời gian nghỉ phép hằng năm của thành viên là bao nhiu buổi
+  - tổng số ngày phép của một nhận sự là bao nhiu
+  - mình muốn hỏi [senior](level_position) [go-lang dev](position) có mấy ngày phép
+    có lương nhể
+  - một tháng nhận sự có mấy ngày phép
+  - quy chế về thời gian nghỉ phép hằng năm của công ty thế nào
+  - số ngày phép công ty dành cho [senior](level_position) [game 3d prod](position)
+    thế nào
+  - công ty có quy định về thời gian nghỉ việc riêng cho [thử việc](level_position)
+    [ba](position) không
+  - số ngày nghỉ có lương hàng năm công ty dành cho [junior](level_position) là bao
+    nhiêu
+  - rule về ngày nghỉ phép hàng năm như nào
+  - công ty có mấy ngày nghỉ phép cho người [pre-senior](level_position) [.net dev](position)
+    vậy
+  - mình muốn hỏi về quy định thời gian nghỉ phép của công ty cho [game unity 2d developer](position)
+  - '[full-time](level_position) có bao nhiu ngày phép có lương'
+  - quy chế về thời gian nghỉ phép hưởng lương dành cho [fresher](level_position)
+    [back end develop](position) như nào
+  - công ty có mấy ngày nghỉ phép cho người vậy
+  - số ngày phép của một nhận sự trong một năm là bao nhiu
+  - tớ muốn biết [ctv](level_position) có bao nhiêu buổi phép có lương hả
+  - thời gian nghỉ phép công ty như nào
+  - một tháng người phải làm việc ít nhất bao nhiêu buổi
+  - tớ muốn biết về quy chế nghỉ có lương của công ty như nào
+  - tớ muốn hỏi về quy chế nghỉ có lương của công ty dành cho [senior](level_position)
+    như thế nào
+  - timi cho tớ hỏi rule phép năm ở công ty như thế nào
+  - công ty có ban hành nội quy về thời gian nghỉ việc riêng ko
+  - công ty có quy định về thời gian nghỉ việc riêng không
+  - quy chế về ngày nghỉ phép hàng năm của công ty như nào
+  - một năm được nghỉ phép bao nhiêu ngày phép
+  - công ty có ban hành nội quy về thời gian nghỉ việc riêng cho [fulltime](level_position)
+    ko
+  - thời gian nghỉ phép thế nào
+  - ' nhân viên được nghỉ phép mấy ngày'
+  - rule về thời gian nghỉ việc riêng của [fresher](level_position) như nào
+  - một năm [senior](level_position) được nghỉ bao nhiu ngày phép hả
+  - tớ muốn hỏi về rule số ngày nghỉ phép của [thử việc](level_position) [game unity
+    2d dev](position) tại công ty
+  - cho tôi hỏi về quy định thời gian nghỉ phép của công ty như nào
+  - đối với [senior](level_position) thì công ty được nghỉ mấy ngày phép
+  - một năm nhân viên có mấy ngày phép
+  - cho tớ hỏi về rule số ngày nghỉ phép hàng năm của công ty thế nào
+  - nội quy về thời gian nghỉ phép hưởng lương như thế nào
+  - quy chế về thời gian nghỉ việc riêng của công ty thế nào
+  - số ngày được nghỉ phép hàng năm của là bao nhiêu
+  - tôi muốn hỏi công ty cho [full time](level_position) bao nhiu ngày phép có lương
+    vậy
+  - thành viên có bao nhiu buổi phép trong một năm
+  - Số ngày phép của nhân viên là bao nhiêu nhể em
+  - công ty bố trí cho [fresher](level_position) bao nhiêu ngày phép ko trừ lương
+    trong tuần vậy hả
+  - số buổi được nghỉ phép hàng năm cho [data engineering](position) là bao nhiêu
+  - '[python engineer](position) [junior](level_position) được nghỉ bao nhiêu ngày
+    vậy hả'
+  - một năm thời gian nghỉ phép của nhân viên là mấy buổi
+  - công ty có quy chế cho [pre-senior](level_position) bao nhiêu buổi phép không
+  - thời gian nghỉ phép của [senior](level_position) tại công ty như nào
+  - quy chế về số ngày nghỉ phép hằng năm của công ty
+  - một tháng có bao nhiu buổi phép
+  - tổng số buổi phép hằng năm của một người trong một năm là mấy
+  - một năm nhân viên có số giờ phép là mấy
+  - thời gian nghỉ phép của người là bao nhiu ngày
+  - tổng số giờ phép của một nhân viên là bao nhiêu
+  - tớ muốn hỏi [full time](level_position) [data engineer](position) có mấy ngày
+    phép có lương ha
+  - một tháng nhân viên có mấy ngày phép
+  - nội quy về thời gian nghỉ phép của công ty thế nào
+  - số ngày phép công ty dành cho [full-time](level_position) [cv engineering](position)
+    thế nào
+  - công ty có quy chế về thời gian nghỉ việc riêng cho [thử việc](level_position)
+    [be developer](position) ko
+  - số ngày phép công ty dành cho [thử việc](level_position) là bao nhiu
+  - rule về ngày nghỉ phép hàng năm thế nào
+  - công ty có mấy ngày nghỉ phép cho nhận sự [junior](level_position) [.net](position)
+    vậy
+  - cho tớ hỏi về nội quy thời gian nghỉ phép hàng năm của công ty cho [pentest](position)
+  - '[thực tập sinh](level_position) có bao nhiêu ngày phép có lương'
+  - rule về thời gian nghỉ phép hưởng lương dành cho [fresher](level_position) [backend
+    developer](position) như thế nào
+  - công ty có mấy ngày nghỉ phép cho người vậy hả
+  - số giờ phép hằng năm của một thành viên trong một năm là bao nhiêu
+  - mình muốn hỏi [junior](level_position) có bao nhiu ngày phép có lương hả
+  - thời gian nghỉ phép công ty thế nào
+  - một tháng thành viên phải làm ít nhất bao nhiu ngày
+  - tớ muốn hỏi về quy chế nghỉ có lương của công ty thế nào
+  - tớ muốn hỏi về quy định nghỉ có lương của công ty dành cho [senior](level_position)
+    như thế nào
+  - cậu cho tôi hỏi quy định phép năm ở công ty như nào
+  - công ty có ban hành quy chế về thời gian nghỉ việc riêng không
+  - công ty có quy chế về thời gian nghỉ việc riêng ko
+  - quy định về ngày nghỉ phép hàng năm của công ty thế nào
+  - một năm được nghỉ phép bao nhiêu buổi phép
+  - công ty có ban hành quy định về thời gian nghỉ việc riêng cho [fresher](level_position)
+    không
+  - thời gian nghỉ phép thế nào hả
+  - hằng năm người được nghỉ phép mấy ngày
+  - nội quy về thời gian nghỉ việc riêng của [fulltime](level_position) như nào
+  - một năm [junior](level_position) được nghỉ bao nhiu ngày phép vậy
+  - cho tôi hỏi về rule số ngày nghỉ phép hằng năm của [cộng tác viên](level_position)
+    [pentest](position) tại công ty
+  - cho tớ hỏi về rule thời gian nghỉ phép của công ty như thế nào
+  - đối với [full-time](level_position) thì công ty được nghỉ mấy ngày phép
+  - một năm nhận sự có mấy ngày phép
+  - tôi muốn hỏi về nội quy số ngày nghỉ phép của công ty như nào
+  - quy định về thời gian nghỉ phép hưởng lương như thế nào
+  - nội quy về thời gian nghỉ việc riêng của công ty như nào
+  - số ngày được nghỉ phép của nhân viên là bao nhiêu
+  - tôi muốn hỏi công ty cho [full-time](level_position) bao nhiêu ngày phép có lương
+    vậy
+  - thành viên có bao nhiêu ngày phép trong một năm
+  - Số ngày phép của người là bao nhiu ha em
+  - công ty bố trí cho [junior](level_position) mấy ngày phép không trừ lương trong
+    năm hả
+  - số buổi được nghỉ phép cho [nv lễ tân](position) là bao nhiu
+  - '[dotnet developer](position) [full time](level_position) được nghỉ bao nhiêu
+    ngày vậy'
+  - một năm thời gian nghỉ phép của nhân viên là bao nhiu ngày
+  - công ty có quy chế cho [fresher](level_position) bao nhiu buổi phép ko
+  - thời gian nghỉ phép hằng năm của [fresher](level_position) tại công ty thế nào
+  - rule về số ngày nghỉ phép hàng năm của công ty
+  - tổng số buổi phép hàng năm của một thành viên trong một năm là mấy
+  - một năm nhận sự có số ngày phép là bao nhiu
+  - thời gian nghỉ phép của nhân viên là bao nhiêu giờ
+  - tổng số giờ phép hàng năm của một nhân viên là bao nhiêu
+  - tôi muốn hỏi [fulltime](level_position) [DE](position) có bao nhiêu buổi phép
+    có lương nhỉ
+  - một tháng nhận sự có bao nhiu buổi phép
+  - rule về thời gian nghỉ phép của công ty thế nào
+  - số off có lương hàng năm công ty dành cho [sinh viên thực tập](level_position)
+    [người chăm sóc khách hàng](position) như thế nào
+  - công ty có nội quy về thời gian nghỉ việc riêng cho [fresher](level_position)
+    [data science](position) không
+  - số ngày phép hàng năm công ty dành cho [fresher](level_position) là bao nhiu
+  - nội quy về ngày nghỉ phép hàng năm thế nào
+  - công ty có mấy ngày nghỉ phép cho thành viên [thử việc](level_position) [pentesters](position)
+    hả
+  - cho mình hỏi về quy định thời gian nghỉ phép hàng năm của công ty cho [android
+    developer](position) như nào
+  - '[ctv](level_position) có mấy ngày phép có lương'
+  - quy định về thời gian nghỉ phép hưởng lương dành cho [pre-senior](level_position)
+    [product analysts](position) như thế nào
+  - công ty có mấy ngày nghỉ phép cho nhân viên vậy hả
+  - số buổi phép hằng năm của một nhận sự trong một năm là bao nhiu
+  - tôi muốn biết [full-time](level_position) có bao nhiu buổi phép có lương hả
+  - thời gian nghỉ phép hằng năm công ty như thế nào
+  - một tháng người phải làm việc ít nhất bao nhiu ngày
+  - tớ muốn hỏi về quy chế nghỉ có lương của công ty như thế nào
+  - tớ muốn hỏi về rule nghỉ có lương của công ty dành cho [thử việc](level_position)
+    thế nào
+  - ' cho tớ hỏi quy chế phép năm ở công ty thế nào'
+  - công ty có ban hành rule về thời gian nghỉ việc riêng không
+  - công ty có quy chế về thời gian nghỉ việc riêng không
+  - nội quy về ngày nghỉ phép hàng năm của công ty thế nào
+  - công ty có ban hành nội quy về thời gian nghỉ việc riêng cho [junior](level_position)
+    ko
+  - thời gian nghỉ phép như thế nào vậy hả
+  - ' nhận sự được nghỉ phép mấy buổi'
+  - quy chế về thời gian nghỉ việc riêng của [full time](level_position) như thế nào
+  - 1 năm [thử việc](level_position) được nghỉ bao nhiu ngày phép vậy
+  - cho tớ hỏi về nội quy số ngày nghỉ phép hằng năm của [ctv](level_position) [business
+    support thị trường TQ](position) tại công ty thế nào
+  - cho tôi hỏi về quy chế thời gian nghỉ phép hằng năm của công ty
+  - đối với [junior](level_position) thì hằng năm công ty được nghỉ mấy ngày phép
+  - một năm nhận sự có bao nhiu giờ phép
+  - cho tớ hỏi về quy chế số ngày nghỉ phép hằng năm của công ty như nào
+  - quy định về thời gian nghỉ phép hưởng lương như nào
+  - rule về thời gian nghỉ việc riêng của công ty như nào
+  - số ngày được nghỉ phép hàng năm của nhận sự là mấy
+  - tớ muốn hỏi công ty cho [pre-senior](level_position) mấy buổi phép có lương vậy
+  - thành viên có bao nhiêu buổi phép trong một năm
+  - Số ngày phép của người là bao nhiêu nhỉ
+  - công ty bố trí cho [senior](level_position) mấy ngày phép không trừ lương trong
+    năm hả
+  - số ngày được nghỉ phép hàng năm cho [go-lang](position) là mấy
+  - '[ios develop](position) [fresher](level_position) được nghỉ bao nhiu ngày vậy
+    hả'
+  - một năm thời gian nghỉ phép của người là bao nhiêu giờ
+  - công ty có quy chế cho [junior](level_position) mấy ngày phép không
+  - thời gian nghỉ phép của [fresher](level_position) tại công ty thế nào
+  - quy chế về số ngày nghỉ phép hàng năm của công ty
+  - tổng số giờ phép của một thành viên trong một năm là bao nhiêu
+  - một năm nhận sự có số buổi phép là bao nhiu
+  - thời gian nghỉ phép hằng năm của người là mấy ngày
+  - tổng số buổi phép của một người là bao nhiêu
+  - cho tớ hỏi [thử việc](level_position) [nlp engineer](position) có bao nhiu ngày
+    phép có lương ha
+  - một tháng thành viên có bao nhiêu buổi phép
+  - quy chế về thời gian nghỉ phép của công ty thế nào
+  - số ngày phép hằng năm công ty dành cho [fresher](level_position) [blockchain develop](position)
+    thế nào
+  - công ty có quy định về thời gian nghỉ việc riêng cho [fulltime](level_position)
+    [thị giác máy tính](position) không
+  - số ngày phép công ty dành cho [junior](level_position) là bao nhiu
+  - quy định về ngày nghỉ phép hàng năm như nào
+  - công ty có mấy ngày nghỉ phép cho nhân viên [full-time](level_position) [front
+    end dev](position) vậy hả
+  - cho mình hỏi về quy chế thời gian nghỉ phép hằng năm của công ty cho [devops engineer](position)
+  - '[fresher](level_position) có bao nhiêu ngày phép có lương'
+  - rule về thời gian nghỉ phép hưởng lương dành cho [fresher](level_position) [development
+    and operations](position) thế nào
+  - công ty có mấy ngày nghỉ phép cho người hả
+  - số ngày phép của một nhân viên trong một năm là bao nhiêu
+  - tớ muốn biết [junior](level_position) có bao nhiu ngày phép có lương vậy hả
+  - thời gian nghỉ phép hàng năm công ty như thế nào
+  - một tháng thành viên phải làm việc ít nhất bao nhiêu ngày
+  - mình muốn hỏi về quy chế nghỉ có lương của công ty như thế nào
+  - mình muốn biết về quy chế nghỉ có lương của công ty dành cho [full-time](level_position)
+    như thế nào
+  - bot cho tớ hỏi rule phép năm ở công ty như thế nào
+  - công ty có ban hành quy chế về thời gian nghỉ việc riêng ko
+  - công ty có rule về thời gian nghỉ việc riêng không
+  - quy định về ngày nghỉ phép hàng năm của công ty như nào
+  - công ty có ban hành quy chế về thời gian nghỉ việc riêng cho [fresher](level_position)
+    không
+  - thời gian nghỉ phép hàng năm thế nào vậy
+  - ' người được nghỉ phép bao nhiêu ngày'
+  - quy chế về thời gian nghỉ việc riêng của [senior](level_position) như thế nào
+  - 1 năm [thử việc](level_position) được nghỉ bao nhiêu ngày phép vậy hả

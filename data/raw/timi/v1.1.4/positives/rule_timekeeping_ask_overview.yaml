@@ -1,0 +1,258 @@
+positives:
+- intent: faq/rule_timekeeping_ask_overview
+  examples:
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm đúng không bạn
+  - thời gian chấm công bên công ty như thế nào vậy
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ ko timi
+  - rule thời gian checkout như thế nào
+  - tớ muốn hỏi về quy chế chấm công của công ty
+  - checkin sau bao nhiu giờ thì bị coi đi muộn
+  - chấm công sau mấy giờ thì bị coi đi muộn
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ không
+    m
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chính xác không
+    cậu
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm đúng ko mầy
+  - mình muốn hỏi về quy chế chấm công của công ty đi
+  - chấm công sau bao nhiu phút thì bị coi đi muộn
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko m
+  - rule thời gian check-in như nào
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm chính xác ko bot
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chính xác không bot
+  - rule check in của công ty như thế nào
+  - quy định check in của công ty như thế nào
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm đúng ko bạn
+  - chấm công lúc mấy giờ
+  - thời gian chấm công bên công ty như nào vậy
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm đúng ko timi
+  - mình muốn hỏi về quy định chấm công của công ty đi
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chính xác không
+    bot
+  - checkin sau bao nhiêu tiếng thì được tính là đi muộn
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chính xác ko cậu
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ ko mầy
+  - sau mấy tiếng thì được tính là đi muộn
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ không mày
+  - công ty có nội quy check-in như thế nào
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ ko cậu
+  - chấm công sau bao nhiêu phút thì được tính là đi muộn
+  - nội quy chấm công của công ty thế nào
+  - quy định thời gian check-in như nào
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ ko mầy
+  - tớ muốn hỏi về nội quy chấm công của công ty đi
+  - quy chế thời gian checkin thế nào
+  - công ty có những quy định gì về checkin
+  - thời gian chấm công bên công ty thế nào vậy
+  - thời gian checkout như thế nào
+  - công ty có rule check in thế nào
+  - rule check-in của công ty thế nào
+  - công ty có quy định check-in thế nào
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn không bạn
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ không cậu
+  - công ty có những quy định gì về chấm công
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko bạn
+  - nội quy chấm công của công ty như thế nào
+  - checkin sau bao nhiêu phút thì bị coi đi muộn
+  - thời gian chấm công như nào
+  - check in sau bao nhiêu phút thì được tính là đi muộn
+  - checkin sau thời gian thì bị coi đi muộn
+  - nội quy thời gian checkout như thế nào
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko em
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko em
+  - chấm công sau mấy tiếng thì bị coi đi muộn
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm đúng ko mầy
+  - công ty checkout lúc mấy giờ
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn không em
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ ko bạn
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm đúng ko em
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ ko bạn
+  - thời gian check-in thế nào
+  - rule thời gian chấm công như nào
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm đúng không mầy
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chính xác không bot
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm đúng ko bot
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chính xác ko mày
+  - công ty có rule checkout như thế nào
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chính xác ko cậu
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm đúng không bot
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn không em
+  - chấm công sau giờ nào thì bị coi đi muộn
+  - công ty có quy định checkout như thế nào
+  - chấm công sau bao nhiêu phút thì bị coi đi muộn
+  - quy định check in của công ty thế nào
+  - check-in sau mấy giờ thì được tính là đi muộn
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ không cậu
+  - quy định thời gian checkout như thế nào
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm đúng không m
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chính xác ko cậu
+  - thời gian checkout thế nào
+  - đi làm sau 9h thì được công ty tính là đi muộn ạ?
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm đúng không em
+  - công ty có nội quy check in như nào
+  - quy định thời gian checkout như nào
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chính xác không
+    mầy
+  - công ty có nội quy checkin thế nào
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chuẩn không mày
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm đúng ko mầy
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko mày
+  - quy chế checkout của công ty như thế nào
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko mầy
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn không cậu
+  - sau mấy giờ thì được tính là đi muộn
+  - bị coi đi muộn sau mấy giờ
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm đúng ko m
+  - công ty có quy định check-in như nào
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm đúng không timi
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ không mầy
+  - công ty có quy chế chấm công như nào
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ ko m
+  - quy chế check in của công ty thế nào
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm đúng ko mày
+  - tôi muốn hỏi về quy chế chấm công của công ty
+  - cho mình hỏi về quy định chấm công của công ty đi
+  - chấm công sau mấy tiếng thì được tính là đi muộn
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm đúng ko em
+  - công ty có những nội quy gì về checkin
+  - check-in sau bao nhiu tiếng thì được tính là đi muộn
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm đúng không bạn
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ ko mày
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ không bạn
+  - nội quy checkin của công ty như thế nào
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm đúng không cậu
+  - quy định thời gian check in như thế nào
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ ko cậu
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chính xác ko bot
+  - quy định thời gian chấm công thế nào
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ không bot
+  - công ty có rule checkin như thế nào
+  - quy chế thời gian chấm công như thế nào
+  - rule thời gian checkin thế nào
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm đúng không bot
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko timi
+  - công ty có những rule gì về checkin
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko m
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko mầy
+  - nội quy chấm công của công ty như nào
+  - tớ muốn hỏi về quy định chấm công của công ty đi
+  - công ty có quy định check in như nào
+  - nội quy thời gian check in như thế nào
+  - nội quy thời gian check-in thế nào
+  - được tính là đi muộn mấy giờ
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko mầy
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ không mày
+  - check-in sau bao nhiu phút thì được tính là đi muộn
+  - thời gian checkin thế nào
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm đúng không mầy
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ ko m
+  - quy chế thời gian check-in thế nào
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ không timi
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko bot
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ không
+    bot
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chính xác không mày
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ không m
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ ko timi
+  - tôi muốn hỏi về quy chế chấm công của công ty đi
+  - tôi muốn hỏi về quy định chấm công của công ty đi
+  - công ty có những quy chế gì về checkout
+  - thời gian chấm công bên công ty thế nào đó
+  - check in sau bao nhiu tiếng thì bị coi đi muộn
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chính xác không bạn
+  - check in sau bao nhiêu tiếng thì được tính là đi muộn
+  - thời gian check-in như nào
+  - cho mình hỏi về rule chấm công của công ty đi
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm chính xác ko mày
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko timi
+  - quy định checkin của công ty thế nào
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko bạn
+  - thời gian chấm công bên công ty như nào đó
+  - thời gian check in như nào
+  - chấm công sau mấy phút thì bị coi đi muộn
+  - thời gian checkin như thế nào
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm đúng không bot
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko mầy
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ ko mày
+  - nội quy thời gian checkout thế nào
+  - thời gian chấm công bên công ty như thế nào đấy
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chính xác ko cậu
+  - check in sau thời gian thì được tính là đi muộn
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ không bạn
+  - thời gian check in thế nào
+  - cho tớ hỏi về nội quy chấm công của công ty đi
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm đúng không cậu
+  - check-in sau bao nhiêu phút thì được tính là đi muộn
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chuẩn không mầy
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko m
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko bot
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm đúng ko cậu
+  - check-in sau bao nhiêu giờ thì bị coi đi muộn
+  - quy chế thời gian check in thế nào
+  - công ty có những nội quy gì về check in
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chuẩn không cậu
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm đúng không mày
+  - quy chế thời gian checkin như nào
+  - cho tôi hỏi về nội quy chấm công của công ty đi
+  - nội quy thời gian checkin thế nào
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chính xác không em
+  - công ty có quy chế check-in thế nào
+  - check in sau mấy phút thì bị coi đi muộn
+  - sau mấy tiếng thì bị coi đi muộn
+  - công ty có quy định checkin như thế nào
+  - check in sau giờ nào thì được tính là đi muộn
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm đúng ko timi
+  - chấm công sau giờ nào thì được tính là đi muộn
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm đúng ko em
+  - sau mấy phút thì bị coi đi muộn
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm đúng không em
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko mày
+  - checkin sau mấy tiếng thì bị coi đi muộn
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chính xác không bạn
+  - quy chế checkout của công ty như nào
+  - check-in sau bao nhiu giờ thì bị coi đi muộn
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chính xác ko mầy
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko timi
+  - công ty có quy định checkout thế nào
+  - công ty có rule check-in thế nào
+  - mình muốn hỏi về nội quy chấm công của công ty
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm đúng ko m
+  - checkin sau bao nhiêu giờ thì bị coi đi muộn
+  - rule check in của công ty như nào
+  - chấm công sau thời gian thì được tính là đi muộn
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn ko m
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ ko mầy
+  - công ty có những rule gì về check-in
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chính xác ko mày
+  - rule thời gian check in thế nào
+  - công ty có quy chế checkout như thế nào
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chính xác ko mày
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn ko bạn
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ không m
+  - check in sau bao nhiêu phút thì bị coi đi muộn
+  - thời gian chấm công bên công ty như thế nào thế
+  - công ty có nội quy checkout như nào
+  - chấm công sau bao nhiêu giờ thì được tính là đi muộn
+  - checkin sau giờ nào thì bị coi đi muộn
+  - check-in sau bao nhiêu giờ thì được tính là đi muộn
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm chuẩn không bot
+  - nội quy thời gian check in thế nào
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm đúng không mầy
+  - quy chế check-in của công ty thế nào
+  - công ty có những rule gì về check in
+  - nếu tớ về trước 5h thì được công ty tính là đi làm về sớm đúng không m
+  - rule thời gian checkout như nào
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chính xác không em
+  - quy định thời gian check-in như thế nào
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chính xác không cậu
+  - công ty có nội quy check-in như nào
+  - nếu tớ về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn chỉ ko mầy
+  - thời gian chấm công bên công ty thế nào thế
+  - nếu mình về trước 5h thì được công ty tính là đi làm về sớm chuẩn chỉ ko em
+  - checkin sau bao nhiu giờ thì được tính là đi muộn
+  - check-in sau mấy tiếng thì được tính là đi muộn
+  - rule thời gian chấm công thế nào
+  - thời gian chấm công bên công ty như nào hả
+  - nếu mình về trước 5h30 thì được công ty tính là đi làm về sớm chuẩn không mày
+  - công ty có nội quy checkin như thế nào
+  - nếu tôi về trước 5h thì được công ty tính là đi làm về sớm chính xác ko m
+  - nếu tôi về trước 5h30 thì được công ty tính là đi làm về sớm chính xác ko mầy

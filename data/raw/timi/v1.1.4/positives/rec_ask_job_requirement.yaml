@@ -1,0 +1,779 @@
+positives:
+- intent: faq/rec_ask_job_requirement
+  examples:
+  - ko giỏi có vô công ty làm [2d product](position) được không
+  - mình học trái ngành tại [Đại học UTC](work_unit) và muốn apply [thử việc](level_position)
+    thì cần các requirement ra sao
+  - điều kiện apply vị trí [ctv](level_position) [hành chính nhân sự](position) là
+    gì
+  - vị trí [full time](level_position) [cv researcher](position) cần mình phải biết
+    những gì
+  - công vịêc [Quality Assurance](position) này cần kinh nghiệm không
+  - công ty có tuyển những người chưa có khinh nghiệm ko ạ
+  - cho xin yêu cầu công việc với
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí intern ai engineer tại [f tech](work_unit)
+  - ' mới học NLP sợ chưa đủ kiến thức thì có được nhận không ạ'
+  - ' [development and operations](position) yêu cầu gì ở ứng viên!'
+  - mình xin yêu cầu công việc của [fresher](level_position) [java develop](position)
+  - giới thiệu về requirement của [data analysts](position) cho tôi đi
+  - mình mới học năm 1 [Đại học HUS](work_unit) thì ứng tuyển được không
+  - tớ không có nhiều kinh nghiệm lắm thì apply vô [f-tech](work_unit) làm [junior](level_position)
+    được ko
+  - tớ mới học c++ thì có ứng tuyển được [tts](level_position) [ai engineer](position)
+    ko
+  - em cần những kĩ năng gì để ứng tuyển vị trí [junior](level_position) [pentesters](position)
+    ạ
+  - tớ chưa có kinh nghiệm mấy có ứng tuyển được ko
+  - vị trí [natural language processing](position) yêu cầu những gì ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [thủ môn](position) không ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [nv soạn nội dung
+    giáo dục](position) không?
+  - yêu cầu công việc [graphic designer](position)
+  - yêu cầu về [full time](level_position)
+  - skill cần để ứng tuyển [db engineer](position)
+  - admin cho hỏi tớ chỉ làm part time thì có ứng tuyển được không
+  - ' có ít kinh nghiệm làm việc thì có ứng tuyển đươc ko'
+  - những kĩ năng nào tôi cần có để làm tốt tại vị trí này
+  - tớ muốn hỏi [pre-senior](level_position) thì cần các yêu cầu công việc như nào
+  - công ty có yêu cầu biết php không
+  - mình mới làm về [ai research](position) thì có chuyển sang làm [VFX Animations](position)
+    được không
+  - mình chỉ biết php thì có làm [VFX Animators](position) được không
+  - có gì cần khi ứng tuyển [pre-senior](level_position) [odoo developer](position)
+  - ' [os network](position) cần mấy năm kinh nghiệm'
+  - tớ muốn hỏi về job requirement của [business analysts](position)
+  - em học [Y hà nội](work_unit) chỉ biết php em ứng tuyển vào công ty được không
+  - công ty có những yêu cầu gì?
+  - mình có 5 năm kinh nghiệm có thể ứng tuyển [senior](level_position) [3d prod](position)
+    được không
+  - công ty yêu cầu thế nào ở người xin việc!
+  - ' chưa có kinh nghiệm có đc nhận ko ạ'
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [DA](position) tại [f tech](work_unit)
+  - với vị trí [full-stack](position) mình cần có những gì
+  - cho mình hỏi [thử việc](level_position) [.net](position) thì có job requirement
+    ra sao
+  - e chỉ biết C làm [java developer](position) được ko
+  - mình muốn nộp đơn vào [ftech](work_unit) vị trí [full-time](level_position) [unity
+    2d dev](position) nhưng lại không biết bên bạn cần các điều kiện ứng tuyển ra
+    sao
+  - mình xin yêu cầu công việc [game unity 3d](position)
+  - '[senior](level_position) [data analyst](position) có cần kinh nghiệm không'
+  - em chỉ biết ruby thôi có thể ứng tuyển được không ạ
+  - tớ muốn biết yêu cầu năng lực tại vị trí [thử việc](level_position) [vẽ 3d](position)
+  - mình cần gì khi ứng tuyển [lập trình android](position)
+  - ko biết [fresher](level_position) cần các job requirement nào nhỉ
+  - ' mới làm về [ai](position) thì có ứng tuyển được ko'
+  - cho em hỏi job [be developer](position) cần kĩ năng gì ạ?
+  - làm [ctv](level_position) [vẽ 2d](position) yêu cầu những gì
+  - mình ko giỏi lắm thì có apply vị trí [pre-senior](level_position) [net](position)
+    đc không
+  - làm [development and operations](position) thì cần gì nhỉ
+  - tớ muốn hỏi về requirement của [ftech](work_unit) với
+  - ' mới học php sợ chưa đủ kiến thức thì công ty có tuyển được ko'
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [db engineer](position)
+  - ko biết làm [product owners](position) thì có requirement như thế nào
+  - '[cô](pronoun) cần chuẩn bị những gì để đáp ứng yêu cầu công việc của [f tech](work_unit)
+    vậy hả'
+  - năm 1 có thể xin [thực tập sinh](level_position) không
+  - tôi chưa có kinh nghiệm thì công ty có tuyển ko ạ
+  - tôi apply vị trí [senior](level_position) thì có những requirement ra sao
+  - ko giỏi có vô công ty làm [unity 2d develop](position) được không
+  - mình học trái ngành tại [Tài chính](work_unit) và muốn ứng tuyển [senior](level_position)
+    thì cần các requirement ra sao
+  - điều kiện apply vị trí [game 3d products](position) là gì
+  - vị trí [3d prod](position) cần mình phải biết những gì
+  - công vịêc [product owner](position) này cần kinh nghiệm không
+  - công ty có tuyển những người chưa có khinh nghiệm không ạ
+  - cho xin requirement với
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí intern ai engineer tại [ftech](work_unit)
+  - ' mới học php sợ chưa đủ kiến thức thì có được nhận không ạ'
+  - ' [db engineering](position) yêu cầu gì ở ứng viên xin việc!'
+  - mình xin yêu cầu công việc của [sinh viên thực tập](level_position) [business
+    analysts](position)
+  - giới thiệu về job requirement của [fresher](level_position) [business analyst](position)
+    cho mình đi đc không
+  - mình mới học năm 2 [Đại học ptit](work_unit) thì ứng tuyển đc không
+  - ' không có nhiều kinh nghiệm lắm thì apply vô [f tech](work_unit) làm [thử việc](level_position)
+    được ko'
+  - tớ mới học odoo thì có ứng tuyển được [trainee](level_position) [ai research](position)
+    ko
+  - em cần những skill gì để ứng tuyển vị trí [nhân viên kinh doanh thị trường Trung
+    QUốc](position) ạ
+  - ' chưa có kinh nghiệm mấy có ứng tuyển được ko'
+  - vị trí [fresher](level_position) [game 2d product](position) yêu cầu những gì
+    ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [full-stack](position) ko ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [business support
+    thị trường china](position) không?
+  - yêu cầu công việc [game 2d unity developer](position)
+  - yêu cầu về [thử việc](level_position)
+  - kĩ năng cần để ứng tuyển [pre-senior](level_position) [game UI/UX designer](position)
+  - ad cho hỏi tớ chỉ làm part time thì có ứng tuyển được không
+  - tớ có ít kinh nghiệm làm việc thì có ứng tuyển đươc ko
+  - mình muốn hỏi [thử việc](level_position) thì cần các job requirement như thế nào
+  - công ty có yêu cầu biết python không
+  - tớ mới làm về [ai](position) thì có chuyển sang làm [react native](position) được
+    ko
+  - mình chỉ biết java thì có làm [fresher](level_position) [game 3d developer](position)
+    được không
+  - có gì cần khi ứng tuyển [VFX Animations](position)
+  - ' [game 3d](position) cần mấy năm kinh nghiệm'
+  - tôi muốn hỏi về yêu cầu công việc của [nv thiết kế nội dung giáo dục](position)
+  - em học [Tài chính](work_unit) chỉ biết php em ứng tuyển vào công ty được ko
+  - công ty có những yêu cầu skill gì?
+  - tôi có 5 năm kinh nghiệm có thể ứng tuyển [senior](level_position) [db engineer](position)
+    được không
+  - công ty yêu cầu thế nào ở candidate!
+  - ' chưa có kinh nghiệm có đc nhận không ạ'
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [pentester](position) tại [f tech](work_unit)
+  - với vị trí [3d product](position) mình cần có những gì
+  - mình muốn hỏi [2d art](position) thì có yêu cầu công việc ra sao
+  - e chỉ biết java làm [hành chính nhân sự](position) được ko
+  - tớ muốn nộp đơn vào [f-tech](work_unit) vị trí [senior](level_position) [data
+    analysts](position) nhưng lại không biết bên bạn cần các điều kiện ứng tuyển ra
+    sao
+  - mình xin yêu cầu công việc [pentest](position)
+  - ' [business support thị trường TQ](position) có cần kinh nghiệm không'
+  - em chỉ biết C++ thôi có thể ứng tuyển được ko ạ
+  - tôi muốn hỏi yêu cầu năng lực tại vị trí [react native developer](position) đc
+    ko
+  - mình cần gì khi ứng tuyển [business analysts](position)
+  - không biết level [junior](level_position) cần các job requirement nào ha
+  - tớ mới làm về [ai](position) thì có ứng tuyển được không
+  - cho em hỏi job [C# dev](position) cần kĩ năng gì ạ?
+  - làm [cv engineer](position) yêu cầu những gì
+  - tôi ko giỏi lắm thì có apply vị trí [react-native developer](position) được không
+  - làm [pentest](position) thì cần gì nhỉ
+  - cho tớ hỏi về job requirement của [f tech](work_unit) với
+  - tớ mới học c++ sợ chưa đủ kiến thức thì công ty có tuyển được không
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [graphic design](position)
+  - ko biết làm [react dev](position) thì có yêu cầu công việc thế nào
+  - '[t](pronoun) cần chuẩn bị những gì để đáp ứng requirement của [ftech](work_unit)
+    vậy hả'
+  - năm 1 có thể xin [trainee](level_position) không
+  - ' chưa có kinh nghiệm thì công ty có tuyển không ạ'
+  - mình apply vị trí [thử việc](level_position) thì có những requirement ra sao
+  - không giỏi có vô công ty làm [junior](level_position) [product owners](position)
+    được ko
+  - tớ học trái ngành tại [Đại học AOF](work_unit) và muốn apply [full-time](level_position)
+    thì cần các job requirement ra sao
+  - điều kiện apply vị trí [game 3d product](position) là gì
+  - vị trí [full time](level_position) [game unity 3d dev](position) cần mình phải
+    biết những gì
+  - công vịêc [VFX Animators](position) này cần kinh nghiệm ko
+  - cho xin job requirement với
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí intern ai engineer tại [f-tech](work_unit)
+  - tớ mới học deep learning sợ chưa đủ kiến thức thì có được nhận ko ạ
+  - ' [game designer](position) yêu cầu skill gì ở thí sinh!'
+  - mình xin yêu cầu công việc của [ctv](level_position) [back end dev](position)
+  - giới thiệu về job requirement của [fresher](level_position) [ios dev](position)
+    cho tôi đi
+  - tớ mới học năm 3 [Khoa học Tự nhiên](work_unit) thì ứng tuyển được ko
+  - mình không có nhiều kinh nghiệm lắm thì apply vô [ftech](work_unit) làm [ctv](level_position)
+    được ko
+  - mình mới học năm năm thì có ứng tuyển được [thực tập sinh](level_position) [ai](position)
+    ko
+  - em cần những kĩ năng gì để ứng tuyển vị trí [lập trình viên fullstack](position)
+    ạ
+  - tôi chưa có kinh nghiệm mấy có ứng tuyển được không
+  - vị trí [cộng tác viên](level_position) [3d artist](position) yêu cầu những gì
+    ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [cầu thủ đá banh](position) ko ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [react dev](position)
+    không?
+  - yêu cầu công việc [QA Tester](position)
+  - yêu cầu về [junior](level_position)
+  - kĩ năng cần để ứng tuyển [junior](level_position) [os network](position)
+  - admin cho hỏi chỉ làm part time thì có ứng tuyển được không
+  - mình có ít kinh nghiệm làm việc thì có ứng tuyển đươc ko
+  - cho tôi hỏi [pretrain](level_position) thì cần những yêu cầu công việc như nào
+  - công ty có yêu cầu biết java không
+  - tớ mới làm về [ai research](position) thì có chuyển sang làm [os network](position)
+    được ko
+  - mình chỉ biết php thì có làm [thử việc](level_position) [VFX Animator](position)
+    được không
+  - có gì cần khi ứng tuyển [internship](level_position) [development and operations](position)
+  - '[senior](level_position) [game 2d prod](position) cần mấy năm kinh nghiệm'
+  - mình muốn hỏi về yêu cầu công việc của [junior](level_position) [ai research](position)
+  - em học [Học viện Ngân hàng](work_unit) chỉ biết C++ em ứng tuyển vào công ty được
+    không
+  - công ty có những yêu cầu kĩ năng gì?
+  - ' có 5 năm kinh nghiệm có thể ứng tuyển [senior](level_position) [development
+    and operations](position) được không'
+  - công ty yêu cầu kĩ năng thế nào ở ứng viên xin việc!
+  - mình chưa có kinh nghiệm có đc nhận không ạ
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [data analysts](position) tại
+    [ftech](work_unit)
+  - với vị trí [ja-va dev](position) mình cần có những gì
+  - cho tớ hỏi [full-time](level_position) [game unity 3d](position) thì có requirement
+    ra sao
+  - e chỉ biết php làm [front end](position) được ko
+  - ' muốn nộp đơn vào [f tech](work_unit) vị trí [svtt](level_position) [devops](position)
+    nhưng lại không biết bên bạn cần các điều kiện ứng tuyển ra sao'
+  - mình xin yêu cầu công việc [product owner](position)
+  - ' [graphic designers](position) có cần kinh nghiệm không'
+  - em chỉ biết C# thôi có thể ứng tuyển được không ạ
+  - tớ muốn hỏi yêu cầu công việc tại vị trí [PA](position) đc không
+  - mình cần gì khi ứng tuyển [thử việc](level_position) [ba](position)
+  - không biết level [fresher](level_position) cần các requirement nào nhỉ
+  - tôi mới làm về [ai engineering](position) thì có ứng tuyển được ko
+  - cho em hỏi job [pentester](position) cần kĩ năng gì ạ?
+  - làm [2d art](position) yêu cầu những gì
+  - tớ ko giỏi lắm thì có ứng tuyển [senior](level_position) [product analyst](position)
+    được không
+  - làm [pre-senior](level_position) [php dev](position) thì cần gì nhỉ
+  - mình muốn hỏi về requirement của [ftech](work_unit) với
+  - ' mới học golang sợ chưa đủ kiến thức thì công ty có tuyển được ko'
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [graphic](position)
+  - không biết làm [unity 3d](position) thì có yêu cầu công việc như thế nào
+  - '[cô](pronoun) cần chuẩn bị những gì để đáp ứng job requirement của [f-tech](work_unit)
+    vậy'
+  - năm 1 có thể xin [svtt](level_position) không
+  - tớ chưa có kinh nghiệm thì công ty có tuyển không ạ
+  - mình apply vị trí [pretrain](level_position) thì có những requirement ra sao
+  - không giỏi có vô công ty làm [unity 3d develop](position) được ko
+  - tôi học trái ngành tại [Đại học HUS](work_unit) và muốn apply [junior](level_position)
+    thì cần các requirement ra sao
+  - điều kiện apply vị trí [pentester](position) là gì
+  - vị trí [system administrator](position) cần mình phải biết những gì
+  - công vịêc [quản lý nhân sự](position) này cần kinh nghiệm không
+  - ' mới học odoo sợ chưa đủ kiến thức thì có được nhận ko ạ'
+  - '[junior](level_position) [data engineers](position) yêu cầu skill gì ở ứng viên
+    xin việc!'
+  - mình xin yêu cầu công việc của [pentesters](position)
+  - giới thiệu về yêu cầu công việc của [fresher](level_position) [game 3d art](position)
+    cho mình đi được ko
+  - tớ mới học năm 5 [Đại học haui](work_unit) thì ứng tuyển đc không
+  - ' không có nhiều kinh nghiệm lắm thì apply vô [f-tech](work_unit) làm [full time](level_position)
+    được ko'
+  - mình mới học NLP thì có ứng tuyển được [trainee](level_position) [ai engineer](position)
+    ko
+  - em cần những kĩ năng gì để ứng tuyển vị trí [cộng tác viên](level_position) [dotnet
+    dev](position) ạ
+  - mình chưa có kinh nghiệm mấy có ứng tuyển được ko
+  - vị trí [PA](position) yêu cầu những gì ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [android dev](position) không ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [2d product](position)
+    không?
+  - yêu cầu công việc [junior](level_position) [PA](position)
+  - yêu cầu về [senior](level_position)
+  - kĩ năng cần để ứng tuyển [fresher](level_position) [hành chính nhân sự](position)
+  - ad cho hỏi chỉ làm part time thì có ứng tuyển được ko
+  - ' có ít kinh nghiệm làm việc thì có ứng tuyển đươc không'
+  - cho tớ hỏi [fresher](level_position) thì cần những yêu cầu công việc thế nào
+  - công ty có yêu cầu biết C# không
+  - tớ mới làm về [ai research](position) thì có chuyển sang làm [unity 2d develop](position)
+    được ko
+  - mình chỉ biết Ruby thì có làm [full-stack developer](position) được không
+  - có gì cần khi ứng tuyển [thử việc](level_position) [ai engineering](position)
+  - ' [VFX Animation](position) cần mấy năm kinh nghiệm'
+  - mình muốn hỏi về requirement của [trainee](level_position) [cv engineering](position)
+  - em học [Đại học Công nghệ](work_unit) chỉ biết C++ em ứng tuyển vào công ty được
+    không
+  - ' có 5 năm kinh nghiệm có thể ứng tuyển [pre-senior](level_position) [ai engineer](position)
+    được không'
+  - công ty yêu cầu thế nào ở ứng viên!
+  - tớ chưa có kinh nghiệm có đc nhận không ạ
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [go-lang dev](position) tại [f-tech](work_unit)
+  - với vị trí [pre-senior](level_position) [nhân sự](position) mình cần có những
+    gì
+  - mình muốn hỏi [thử việc](level_position) [react native](position) thì có requirement
+    ra sao
+  - e chỉ biết golang làm [fresher](level_position) [graphic design](position) được
+    ko
+  - ' muốn nộp đơn vào [ftech](work_unit) vị trí [thử việc](level_position) [python
+    engineer](position) nhưng lại không biết bên bạn cần các điều kiện ứng tuyển ra
+    sao'
+  - mình xin yêu cầu công việc [backend develop](position)
+  - ' [QA Tester](position) có cần kinh nghiệm không'
+  - em chỉ biết java thôi có thể ứng tuyển được ko ạ
+  - mình muốn hỏi yêu cầu công việc tại vị trí [full time](level_position) [game 2d
+    dev](position)
+  - mình cần gì khi ứng tuyển [thử việc](level_position) [blockchain engineer](position)
+  - không biết level [ctv](level_position) cần các job requirement gì ha
+  - ' mới làm về [ai research](position) thì có ứng tuyển được ko'
+  - cho em hỏi job [thử việc](level_position) [3d dev](position) cần kĩ năng gì ạ?
+  - làm [fulltime](level_position) [react native develop](position) yêu cầu những
+    gì
+  - tớ không giỏi lắm thì có ứng tuyển vị trí [.net dev](position) đc không
+  - làm [fresher](level_position) [os network](position) thì cần gì nhỉ
+  - tớ muốn hỏi về yêu cầu công việc của [ftech](work_unit) với
+  - ' mới học năm hai sợ chưa đủ kiến thức thì công ty có tuyển được không'
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [senior](level_position)
+    [3d product](position)
+  - ko biết làm [C# engineer](position) thì có requirement như thế nào
+  - '[tao](pronoun) cần chuẩn bị những gì để đáp ứng job requirement của [f-tech](work_unit)
+    vậy hả'
+  - năm 1 có thể xin [intern](level_position) không
+  - ' chưa có kinh nghiệm thì công ty có tuyển ko ạ'
+  - mình apply vị trí [fulltime](level_position) thì có những yêu cầu công việc ra
+    sao
+  - ko giỏi có vô công ty làm [full-time](level_position) [DE](position) được ko
+  - tớ học trái ngành tại [Học viện Tài chính](work_unit) và muốn apply [thử việc](level_position)
+    thì cần các requirement ra sao
+  - điều kiện apply vị trí [svtt](level_position) [full stack](position) là gì
+  - vị trí [diễn viên](position) cần mình phải biết những gì
+  - công vịêc [data scientist](position) này cần kinh nghiệm ko
+  - tớ mới học python sợ chưa đủ kiến thức thì có được nhận ko ạ
+  - ' [ai research](position) yêu cầu skill gì ở ứng viên xin việc!'
+  - mình xin yêu cầu công việc của [nhân sự](position)
+  - giới thiệu về requirement của [product analysts](position) cho tớ đi được ko
+  - mình mới học năm 2 [Giao thông Vận tải](work_unit) thì ứng tuyển được không
+  - ' không có nhiều kinh nghiệm lắm thì apply vô [ftech](work_unit) làm [internship](level_position)
+    được ko'
+  - ' mới học năm nhất thì có ứng tuyển được [thực tập sinh](level_position) [ai engineering](position)
+    ko'
+  - em cần những kĩ năng gì để ứng tuyển vị trí [data engineers](position) ạ
+  - tôi chưa có kinh nghiệm mấy có ứng tuyển được ko
+  - vị trí [devops](position) yêu cầu những gì ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [business support china](position)
+    không ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [business support
+    thị trường TQ](position) không?
+  - yêu cầu công việc [junior](level_position) [game 3d](position)
+  - yêu cầu về [fresher](level_position)
+  - kĩ năng cần để ứng tuyển [ai engineer](position)
+  - ad cho hỏi tôi chỉ làm part time thì có ứng tuyển được ko
+  - tôi có ít kinh nghiệm làm việc thì có ứng tuyển đươc không
+  - tôi muốn hỏi [pretrain](level_position) thì cần các requirement như nào
+  - công ty có yêu cầu biết golang không
+  - ' mới làm về [ai engineer](position) thì có chuyển sang làm [graphic designer](position)
+    được ko'
+  - mình chỉ biết java thì có làm [DE](position) được không
+  - có gì cần khi ứng tuyển [nhân viên kinh doanh thị trường Trung QUốc](position)
+  - ' [blockchain dev](position) cần mấy năm kinh nghiệm'
+  - tôi muốn hỏi về requirement của [senior](level_position) [database engineering](position)
+  - em học [Đại học AOF](work_unit) chỉ biết python em ứng tuyển vào công ty được
+    ko
+  - ' có 5 năm kinh nghiệm có thể ứng tuyển [senior](level_position) [blockchain engineer](position)
+    được không'
+  - công ty yêu cầu thế nào ở thí sinh!
+  - mình chưa có kinh nghiệm có đc nhận ko ạ
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [pentest](position) tại [f tech](work_unit)
+  - với vị trí [product owners](position) mình cần có những gì
+  - tớ muốn hỏi [junior](level_position) [game 2d art](position) thì có job requirement
+    ra sao
+  - e chỉ biết C làm [svtt](level_position) [be develop](position) được ko
+  - tôi muốn nộp đơn vào [ftech](work_unit) vị trí [thử việc](level_position) [unity
+    2d developer](position) nhưng lại không biết bên bạn cần các điều kiện ứng tuyển
+    ra sao
+  - mình xin yêu cầu công việc [ai research](position)
+  - '[junior](level_position) [go-lang](position) có cần kinh nghiệm không'
+  - em chỉ biết php thôi có thể ứng tuyển được không ạ
+  - tớ muốn biết yêu cầu năng lực tại vị trí [fresher](level_position) [database engineer](position)
+  - mình cần gì khi ứng tuyển [graphic](position)
+  - không biết [fresher](level_position) cần các job requirement nào nhể
+  - tớ mới làm về [ai engineering](position) thì có ứng tuyển được ko
+  - cho em hỏi job [thử việc](level_position) [unity 3d develop](position) cần kĩ
+    năng gì ạ?
+  - làm [development and operations](position) yêu cầu những gì
+  - tớ không giỏi lắm thì có ứng tuyển [react developer](position) đc ko
+  - làm [thử việc](level_position) [game unity 3d developer](position) thì cần gì
+    nhỉ
+  - cho tôi hỏi về yêu cầu công việc của [f-tech](work_unit) với
+  - ' mới học năm tư sợ chưa đủ kiến thức thì công ty có tuyển được ko'
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [cộng tác
+    viên](level_position) [2d product](position)
+  - ko biết làm [ja-va develop](position) thì có yêu cầu công việc thế nào ha
+  - '[tui](pronoun) cần chuẩn bị những gì để đáp ứng yêu cầu công việc của [f-tech](work_unit)
+    vậy hả'
+  - năm 1 có thể xin [pretrain](level_position) không
+  - tớ chưa có kinh nghiệm thì công ty có tuyển ko ạ
+  - tôi apply vị trí [cộng tác viên](level_position) thì có những job requirement
+    ra sao
+  - không giỏi có vô công ty làm [db engineering](position) được ko
+  - tớ học trái ngành tại [Đại học Thương mại](work_unit) và muốn ứng tuyển [full
+    time](level_position) thì cần các job requirement ra sao
+  - điều kiện apply vị trí [product owners](position) là gì
+  - vị trí [senior](level_position) [DA](position) cần mình phải biết những gì
+  - công vịêc [fe dev](position) này cần kinh nghiệm ko
+  - ' mới học NLP sợ chưa đủ kiến thức thì có được nhận ko ạ'
+  - '[fresher](level_position) [golang develop](position) yêu cầu kĩ năng gì ở candidate!'
+  - mình xin yêu cầu công việc của [fulltime](level_position) [react-native dev](position)
+  - giới thiệu về job requirement của [business analyst](position) cho mình đi
+  - tớ mới học năm 2 [Đại học HUS](work_unit) thì ứng tuyển đc không
+  - ' không có nhiều kinh nghiệm lắm thì apply vô [ftech](work_unit) làm [fulltime](level_position)
+    được ko'
+  - ' mới học php thì có ứng tuyển được [intern](level_position) [ai research](position)
+    ko'
+  - em cần những skill gì để ứng tuyển vị trí [blockchain develop](position) ạ
+  - ' chưa có kinh nghiệm mấy có ứng tuyển được không'
+  - vị trí [cộng tác viên](level_position) [front-end](position) yêu cầu những gì
+    ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [3d art](position) ko ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [DA](position)
+    không?
+  - yêu cầu công việc [full time](level_position) [game UI/UX designers](position)
+  - yêu cầu về [pre-senior](level_position)
+  - skill cần để ứng tuyển [fresher](level_position) [game 2d unity](position)
+  - ad cho hỏi mình chỉ làm part time thì có ứng tuyển được không
+  - tớ có ít kinh nghiệm làm việc thì có ứng tuyển đươc không
+  - tôi muốn hỏi [thử việc](level_position) thì cần các yêu cầu công việc thế nào
+  - công ty có yêu cầu biết Ruby không
+  - ' mới làm về [ai engineer](position) thì có chuyển sang làm [nhân viên soạn nội
+    dung giáo dục](position) được ko'
+  - mình chỉ biết C# thì có làm [trainee](level_position) [front end develop](position)
+    được không
+  - có gì cần khi ứng tuyển [trainee](level_position) [back end](position)
+  - '[fresher](level_position) [vẽ 3d](position) cần mấy năm kinh nghiệm'
+  - tớ muốn hỏi về requirement của [senior](level_position) [ios develop](position)
+  - em học [Đại học Ngoại thương](work_unit) chỉ biết css em ứng tuyển vào công ty
+    được ko
+  - ' có 5 năm kinh nghiệm có thể ứng tuyển [senior](level_position) [unity 3d developer](position)
+    được không'
+  - công ty yêu cầu thế nào ở ứng viên xin việc!
+  - tớ chưa có kinh nghiệm có đc nhận ko ạ
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [ja-va dev](position) tại [f-tech](work_unit)
+  - với vị trí [devops](position) mình cần có những gì
+  - cho tớ hỏi [computer vision engineer](position) thì có yêu cầu công việc ra sao
+  - e chỉ biết php làm [fresher](level_position) [vẽ game 3d](position) được ko
+  - tớ muốn nộp đơn vào [f-tech](work_unit) vị trí [thử việc](level_position) [DA](position)
+    nhưng lại không biết bên bạn cần các điều kiện ứng tuyển ra sao
+  - mình xin yêu cầu công việc [natural language processing](position)
+  - '[pre-senior](level_position) [pentester](position) có cần kinh nghiệm không'
+  - em chỉ biết Go thôi có thể ứng tuyển được ko ạ
+  - mình muốn hỏi yêu cầu công việc tại vị trí [os admin](position) được không
+  - mình cần gì khi ứng tuyển [fresher](level_position) [product owners](position)
+  - không biết level [pre-senior](level_position) cần các job requirement nào nhể
+  - mình mới làm về [ai research](position) thì có ứng tuyển được không
+  - cho em hỏi job [php developer](position) cần kĩ năng gì ạ?
+  - làm [cộng tác viên](level_position) [go lang dev](position) yêu cầu những gì
+  - tớ không giỏi lắm thì có apply [junior](level_position) [ai engineering](position)
+    đc không
+  - làm [full stack](position) thì cần gì nhỉ
+  - tôi muốn hỏi về requirement của [ftech](work_unit) với
+  - ' mới học NLP sợ chưa đủ kiến thức thì công ty có tuyển được không'
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [junior](level_position)
+    [system admin](position)
+  - không biết làm [hành chính nhân sự](position) thì có job requirement như nào nhỉ
+  - '[tao](pronoun) cần chuẩn bị những gì để đáp ứng yêu cầu công việc của [ftech](work_unit)
+    vậy'
+  - năm 1 có thể xin [tts](level_position) không
+  - mình chưa có kinh nghiệm thì công ty có tuyển ko ạ
+  - mình apply vị trí [sinh viên thực tập](level_position) thì có những yêu cầu công
+    việc ra sao
+  - ko giỏi có vô công ty làm [DA](position) được không
+  - mình học trái ngành tại [Bách khoa Hà Nội](work_unit) và muốn apply [cộng tác
+    viên](level_position) thì cần các requirement ra sao
+  - điều kiện apply vị trí [junior](level_position) [nv an ninh](position) là gì
+  - vị trí [fresher](level_position) [3d artist](position) cần mình phải biết những
+    gì
+  - công vịêc [ai research](position) này cần kinh nghiệm ko
+  - mình mới học C# sợ chưa đủ kiến thức thì có được nhận ko ạ
+  - ' [game 2d artist](position) yêu cầu skill gì ở candidate!'
+  - mình xin yêu cầu công việc của [fresher](level_position) [nhân viên lễ tân](position)
+  - giới thiệu về requirement của [svtt](level_position) [blockchain dev](position)
+    cho tôi đi được không
+  - mình mới học năm 4 [Đại học UET](work_unit) thì ứng tuyển đc ko
+  - mình không có nhiều kinh nghiệm lắm thì apply vô [f-tech](work_unit) làm [senior](level_position)
+    được ko
+  - tớ mới học deep learning thì có ứng tuyển được [thực tập sinh](level_position)
+    [ai engineering](position) ko
+  - em cần những kĩ năng gì để ứng tuyển vị trí [db engineering](position) ạ
+  - tớ chưa có kinh nghiệm mấy có ứng tuyển được không
+  - vị trí [sinh viên thực tập](level_position) [devops engineer](position) yêu cầu
+    những gì ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [ai research](position) không ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [data engineer](position)
+    không?
+  - yêu cầu công việc [game design](position)
+  - yêu cầu về [thực tập sinh](level_position)
+  - kĩ năng cần để ứng tuyển [junior](level_position) [ba](position)
+  - admin cho hỏi tôi chỉ làm part time thì có ứng tuyển được ko
+  - mình muốn hỏi [intern](level_position) thì cần những requirement như thế nào
+  - công ty có yêu cầu biết c++ không
+  - tôi mới làm về [ai](position) thì có chuyển sang làm [blockchain engineer](position)
+    được ko
+  - mình chỉ biết java thì có làm [go-lang dev](position) được không
+  - có gì cần khi ứng tuyển [pentesters](position)
+  - '[fulltime](level_position) [data scientists](position) cần mấy năm kinh nghiệm'
+  - tớ muốn hỏi về job requirement của [pentester](position)
+  - em học [Ngoại thương](work_unit) chỉ biết ruby em ứng tuyển vào công ty được không
+  - ' có 5 năm kinh nghiệm có thể ứng tuyển [senior](level_position) [VFX Animation](position)
+    được không'
+  - công ty yêu cầu kĩ năng thế nào ở người xin việc!
+  - tôi chưa có kinh nghiệm có đc nhận ko ạ
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [ai](position) tại [f tech](work_unit)
+  - với vị trí [thử việc](level_position) [ios developer](position) mình cần có những
+    gì
+  - cho tớ hỏi [ai engineer](position) thì có yêu cầu công việc ra sao
+  - e chỉ biết java làm [junior](level_position) [blockchain dev](position) được ko
+  - tớ muốn nộp đơn vào [f tech](work_unit) vị trí [thử việc](level_position) [android
+    develop](position) nhưng lại không biết bên bạn cần các điều kiện ứng tuyển ra
+    sao
+  - mình xin yêu cầu công việc [junior](level_position) [VFX Animations](position)
+  - ' [MC](position) có cần kinh nghiệm không'
+  - em chỉ biết Go thôi có thể ứng tuyển được không ạ
+  - tớ muốn biết yêu cầu năng lực tại vị trí [ios develop](position)
+  - mình cần gì khi ứng tuyển [junior](level_position) [data science](position)
+  - không biết level [svtt](level_position) cần các yêu cầu công việc nào nhỉ
+  - tớ mới làm về [ai engineer](position) thì có ứng tuyển được ko
+  - cho em hỏi job [business supporter china](position) cần kĩ năng gì ạ?
+  - làm [fulltime](level_position) [DE](position) yêu cầu những gì
+  - tớ ko giỏi lắm thì có ứng tuyển vị trí [junior](level_position) [graphic designers](position)
+    đc không
+  - làm [fulltime](level_position) [game 2d](position) thì cần gì nhỉ
+  - cho tớ hỏi về requirement của [ftech](work_unit) với
+  - ' mới học c++ sợ chưa đủ kiến thức thì công ty có tuyển được ko'
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [intern](level_position)
+    [product analyst](position)
+  - không biết làm [os network](position) thì có requirement như nào nhể
+  - '[a](pronoun) cần chuẩn bị những gì để đáp ứng yêu cầu công việc của [f-tech](work_unit)
+    hả'
+  - năm 1 có thể xin [internship](level_position) không
+  - mình chưa có kinh nghiệm thì công ty có tuyển không ạ
+  - mình apply vị trí [junior](level_position) thì có những yêu cầu công việc ra sao
+  - ko giỏi có vô công ty làm [ios develop](position) được ko
+  - tôi học trái ngành tại [Y hà nội](work_unit) và muốn ứng tuyển [thử việc](level_position)
+    thì cần các yêu cầu công việc ra sao
+  - điều kiện apply vị trí [game 2d product](position) là gì
+  - vị trí [junior](level_position) [3d artist](position) cần mình phải biết những
+    gì
+  - công vịêc [blockchain develop](position) này cần kinh nghiệm ko
+  - ' mới học c++ sợ chưa đủ kiến thức thì có được nhận không ạ'
+  - '[junior](level_position) [blockchain develop](position) yêu cầu gì ở thí sinh!'
+  - mình xin yêu cầu công việc của [senior](level_position) [frontend dev](position)
+  - giới thiệu về yêu cầu công việc của [db engineer](position) cho tớ đi
+  - tớ mới học năm 3 [Đại học HUST](work_unit) thì ứng tuyển đc không
+  - ' không có nhiều kinh nghiệm lắm thì apply vô [ftech](work_unit) làm [fresher](level_position)
+    được ko'
+  - ' mới học NLP thì có ứng tuyển được [svtt](level_position) [ai engineering](position)
+    ko'
+  - em cần những kĩ năng gì để ứng tuyển vị trí [graphic designer](position) ạ
+  - mình chưa có kinh nghiệm mấy có ứng tuyển được không
+  - vị trí [thử việc](level_position) [backend developer](position) yêu cầu những
+    gì ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [ja-va develop](position) ko ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [game 3d unity
+    develop](position) không?
+  - yêu cầu công việc [go lang developer](position)
+  - yêu cầu về [internship](level_position)
+  - kĩ năng cần để ứng tuyển [junior](level_position) [golang develop](position)
+  - admin cho hỏi tớ chỉ làm part time thì có ứng tuyển được ko
+  - mình có ít kinh nghiệm làm việc thì có ứng tuyển đươc không
+  - cho tôi hỏi [internship](level_position) thì cần các requirement như thế nào
+  - công ty có yêu cầu biết C không
+  - ' mới làm về [ai](position) thì có chuyển sang làm [biên soạn nội dung giáo dục](position)
+    được không'
+  - mình chỉ biết C thì có làm [ctv](level_position) [game 3d unity dev](position)
+    được không
+  - có gì cần khi ứng tuyển [trainee](level_position) [ai engineer](position)
+  - '[thử việc](level_position) [product analyst](position) cần mấy năm kinh nghiệm'
+  - mình muốn hỏi về requirement của [go lang](position)
+  - em học [Khoa học Xã hội và Nhân văn](work_unit) chỉ biết Go em ứng tuyển vào công
+    ty được ko
+  - ' có 5 năm kinh nghiệm có thể ứng tuyển [pre-senior](level_position) [computer
+    vision engineer](position) được không'
+  - công ty yêu cầu kĩ năng thế nào ở ứng viên!
+  - tôi chưa có kinh nghiệm có đc nhận không ạ
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [3d artist](position) tại [f tech](work_unit)
+  - với vị trí [fresher](level_position) [game UI/UX design](position) mình cần có
+    những gì
+  - cho tôi hỏi [senior](level_position) [C++ engineer](position) thì có yêu cầu công
+    việc ra sao
+  - e chỉ biết c++ làm [data scientist](position) được ko
+  - mình muốn nộp đơn vào [f-tech](work_unit) vị trí [fresher](level_position) [game
+    3d products](position) nhưng lại không biết bên bạn cần các điều kiện ứng tuyển
+    ra sao
+  - mình xin yêu cầu công việc [fulltime](level_position) [business analyst](position)
+  - '[fresher](level_position) [game unity 2d](position) có cần kinh nghiệm không'
+  - em chỉ biết C++ thôi có thể ứng tuyển được không ạ
+  - mình muốn hỏi yêu cầu năng lực tại vị trí [thử việc](level_position) [unity 3d
+    develop](position)
+  - mình cần gì khi ứng tuyển [vẽ game 3d](position)
+  - ko biết level [pre-senior](level_position) cần các yêu cầu công việc gì nhể
+  - ' mới làm về [ai engineering](position) thì có ứng tuyển được không'
+  - cho em hỏi job [game designer](position) cần kĩ năng gì ạ?
+  - làm [fresher](level_position) [ios dev](position) yêu cầu những gì
+  - tớ ko giỏi lắm thì có apply vị trí [senior](level_position) [full-stack dev](position)
+    được không
+  - làm [database engineer](position) thì cần gì nhỉ
+  - tôi muốn hỏi về yêu cầu công việc của [f-tech](work_unit) với
+  - ' mới học C sợ chưa đủ kiến thức thì công ty có tuyển được không'
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [development
+    and operations](position)
+  - ko biết làm [graphic design](position) thì có job requirement thế nào
+  - '[anh](pronoun) cần chuẩn bị những gì để đáp ứng requirement của [f-tech](work_unit)
+    vậy hả'
+  - năm 1 có thể xin [sinh viên thực tập](level_position) không
+  - tôi chưa có kinh nghiệm thì công ty có tuyển không ạ
+  - tôi apply vị trí [fresher](level_position) thì có những job requirement ra sao
+  - ko giỏi có vô công ty làm [blockchain](position) được không
+  - tớ học trái ngành tại [Đại học uneti](work_unit) và muốn apply [junior](level_position)
+    thì cần các requirement ra sao
+  - điều kiện apply vị trí [full-time](level_position) [db engineer](position) là
+    gì
+  - vị trí [data engineering](position) cần mình phải biết những gì
+  - công vịêc [business support china](position) này cần kinh nghiệm không
+  - tớ mới học php sợ chưa đủ kiến thức thì có được nhận ko ạ
+  - '[trainee](level_position) [ba](position) yêu cầu gì ở người xin việc!'
+  - mình xin yêu cầu công việc của [data analyst](position)
+  - giới thiệu về yêu cầu công việc của [2d product](position) cho tôi đi
+  - tôi mới học năm 2 [Đại học ftu](work_unit) thì ứng tuyển được ko
+  - ' không có nhiều kinh nghiệm lắm thì apply vô [f-tech](work_unit) làm [thử việc](level_position)
+    được ko'
+  - tôi mới học odoo thì có ứng tuyển được [tts](level_position) [ai engineering](position)
+    ko
+  - em cần những skill gì để ứng tuyển vị trí [fulltime](level_position) [cv engineering](position)
+    ạ
+  - vị trí [business analysts](position) yêu cầu những gì ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [system network](position) ko ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [business analysts](position)
+    không?
+  - yêu cầu công việc [junior](level_position) [graphic](position)
+  - yêu cầu về [sinh viên thực tập](level_position)
+  - skill cần để ứng tuyển [fresher](level_position) [2d prod](position)
+  - ad cho hỏi tớ chỉ làm part time thì có ứng tuyển được ko
+  - cho tớ hỏi [thử việc](level_position) thì cần những yêu cầu công việc như thế
+    nào
+  - tớ mới làm về [ai engineering](position) thì có chuyển sang làm [ai engineering](position)
+    được không
+  - mình chỉ biết php thì có làm [full-time](level_position) [front-end developer](position)
+    được không
+  - có gì cần khi ứng tuyển [game 2d products](position)
+  - ' [game designs](position) cần mấy năm kinh nghiệm'
+  - tớ muốn hỏi về requirement của [business supporter china](position)
+  - em học [Đại học Khoa học Xã hội và Nhân văn](work_unit) chỉ biết css em ứng tuyển
+    vào công ty được không
+  - ' có 5 năm kinh nghiệm có thể ứng tuyển [pre-senior](level_position) [back end
+    develop](position) được không'
+  - công ty yêu cầu skill thế nào ở thí sinh!
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [pentester](position) tại [ftech](work_unit)
+  - với vị trí [junior](level_position) [ja-va dev](position) mình cần có những gì
+  - cho mình hỏi [thử việc](level_position) [unity 2d](position) thì có requirement
+    ra sao
+  - e chỉ biết java làm [ios](position) được ko
+  - tớ muốn nộp đơn vào [ftech](work_unit) vị trí [senior](level_position) [pentest](position)
+    nhưng lại không biết bên bạn cần các điều kiện ứng tuyển ra sao
+  - mình xin yêu cầu công việc [fresher](level_position) [game 2d artist](position)
+  - '[full time](level_position) [game 3d products](position) có cần kinh nghiệm không'
+  - em chỉ biết php thôi có thể ứng tuyển được ko ạ
+  - tôi muốn hỏi yêu cầu năng lực tại vị trí [vận động viên](position) được không
+  - mình cần gì khi ứng tuyển [game 2d art](position)
+  - ko biết level [fresher](level_position) cần các job requirement nào nhể
+  - mình mới làm về [ai research](position) thì có ứng tuyển được ko
+  - cho em hỏi job [ja-va](position) cần kĩ năng gì ạ?
+  - làm [thử việc](level_position) [natural language processing](position) yêu cầu
+    những gì
+  - mình không giỏi lắm thì có ứng tuyển [fresher](level_position) [3d artist](position)
+    được ko
+  - làm [front-end](position) thì cần gì nhỉ
+  - tớ muốn hỏi về requirement của [f-tech](work_unit) với
+  - mình mới học java sợ chưa đủ kiến thức thì công ty có tuyển được ko
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [senior](level_position)
+    [product owners](position)
+  - ko biết làm [fulltime](level_position) [product analyst](position) thì có job
+    requirement như thế nào
+  - '[anh](pronoun) cần chuẩn bị những gì để đáp ứng job requirement của [f-tech](work_unit)
+    hả'
+  - mình apply vị trí [junior](level_position) thì có những requirement ra sao
+  - không giỏi có vô công ty làm [ios developer](position) được không
+  - tớ học trái ngành tại [Đại học USSH](work_unit) và muốn ứng tuyển [fresher](level_position)
+    thì cần các requirement ra sao
+  - điều kiện apply vị trí [game 3d prod](position) là gì
+  - vị trí [vẽ game 3d](position) cần mình phải biết những gì
+  - công vịêc [pentest](position) này cần kinh nghiệm không
+  - tôi mới học php sợ chưa đủ kiến thức thì có được nhận ko ạ
+  - ' [python develop](position) yêu cầu gì ở thí sinh!'
+  - mình xin yêu cầu công việc của [product analyst](position)
+  - giới thiệu về yêu cầu công việc của [ios](position) cho mình đi
+  - mình mới học năm 2 [Bưu chính Viễn thông](work_unit) thì ứng tuyển đc không
+  - ' không có nhiều kinh nghiệm lắm thì apply vô [ftech](work_unit) làm [full-time](level_position)
+    được ko'
+  - ' mới học c++ thì có ứng tuyển được [internship](level_position) [ai engineering](position)
+    ko'
+  - em cần những skill gì để ứng tuyển vị trí [go lang](position) ạ
+  - vị trí [PO](position) yêu cầu những gì ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [nhân sự](position) không ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [vận động viên](position)
+    không?
+  - yêu cầu công việc [soạn nội dung giáo dục](position)
+  - yêu cầu về [trainee](level_position)
+  - kĩ năng cần để ứng tuyển [full time](level_position) [java](position)
+  - ad cho hỏi mình chỉ làm part time thì có ứng tuyển được ko
+  - tôi có ít kinh nghiệm làm việc thì có ứng tuyển đươc ko
+  - tớ muốn hỏi [fresher](level_position) thì cần những yêu cầu công việc như thế
+    nào
+  - ' mới làm về [ai engineer](position) thì có chuyển sang làm [QA Tester](position)
+    được ko'
+  - mình chỉ biết golang thì có làm [go lang dev](position) được không
+  - có gì cần khi ứng tuyển [ai](position)
+  - '[thử việc](level_position) [PO](position) cần mấy năm kinh nghiệm'
+  - tớ muốn hỏi về job requirement của [junior](level_position) [3d dev](position)
+  - em học [Đại học Thương mại](work_unit) chỉ biết C# em ứng tuyển vào công ty được
+    không
+  - tôi có 5 năm kinh nghiệm có thể ứng tuyển [senior](level_position) [system network](position)
+    được không
+  - công ty yêu cầu skill thế nào ở ứng viên xin việc!
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [react native developer](position)
+    tại [f-tech](work_unit)
+  - với vị trí [cv](position) mình cần có những gì
+  - cho mình hỏi [fresher](level_position) [nv soạn nội dung giáo dục](position) thì
+    có requirement ra sao
+  - e chỉ biết golang làm [game 2d unity dev](position) được ko
+  - ' muốn nộp đơn vào [f tech](work_unit) vị trí [full time](level_position) [3d
+    product](position) nhưng lại không biết bên bạn cần các điều kiện ứng tuyển ra
+    sao'
+  - mình xin yêu cầu công việc [react native](position)
+  - '[full time](level_position) [game unity 3d developer](position) có cần kinh nghiệm
+    không'
+  - em chỉ biết css thôi có thể ứng tuyển được không ạ
+  - mình muốn hỏi yêu cầu công việc tại vị trí [ctv](level_position) [net develop](position)
+    được không
+  - mình cần gì khi ứng tuyển [junior](level_position) [dotnet develop](position)
+  - ko biết [full-time](level_position) cần các requirement gì nhể
+  - ' mới làm về [ai](position) thì có ứng tuyển được không'
+  - cho em hỏi job [nv soạn nội dung giáo dục](position) cần kĩ năng gì ạ?
+  - làm [fresher](level_position) [thị giác máy tính](position) yêu cầu những gì
+  - mình không giỏi lắm thì có ứng tuyển vị trí [cv](position) được không
+  - làm [tts](level_position) [VFX Animators](position) thì cần gì nhỉ
+  - cho mình hỏi về yêu cầu công việc của [ftech](work_unit) với
+  - tớ mới học Machine learning sợ chưa đủ kiến thức thì công ty có tuyển được không
+  - mình xin thông tin các yêu cầu cần đáp ứng khi ứng tuyển vào vị trí [junior](level_position)
+    [java develop](position)
+  - ko biết làm [android](position) thì có yêu cầu công việc như thế nào
+  - '[mình](pronoun) cần chuẩn bị những gì để đáp ứng job requirement của [ftech](work_unit)
+    hả'
+  - mình apply vị trí [full time](level_position) thì có những requirement ra sao
+  - ko giỏi có vô công ty làm [tts](level_position) [product analysts](position) được
+    không
+  - tớ học trái ngành tại [Đại học AOF](work_unit) và muốn ứng tuyển [cộng tác viên](level_position)
+    thì cần các job requirement ra sao
+  - điều kiện apply vị trí [quản lý nhân sự](position) là gì
+  - vị trí [thử việc](level_position) [front end](position) cần mình phải biết những
+    gì
+  - công vịêc [business supporter china](position) này cần kinh nghiệm ko
+  - tớ mới học Machine learning sợ chưa đủ kiến thức thì có được nhận ko ạ
+  - '[full-time](level_position) [product owner](position) yêu cầu gì ở thí sinh!'
+  - mình xin yêu cầu công việc của [thử việc](level_position) [game 3d products](position)
+  - giới thiệu về yêu cầu công việc của [soạn nội dung giáo dục](position) cho tôi
+    đi
+  - mình mới học năm 2 [Đại học Khoa học Tự nhiên](work_unit) thì ứng tuyển đc không
+  - ' không có nhiều kinh nghiệm lắm thì apply vô [ftech](work_unit) làm [ctv](level_position)
+    được ko'
+  - ' mới học deep learning thì có ứng tuyển được [pretrain](level_position) [ai engineer](position)
+    ko'
+  - em cần những skill gì để ứng tuyển vị trí [Ruby engineer](position) ạ
+  - vị trí [3d prod](position) yêu cầu những gì ở ứng viên
+  - em mới ra trường thì có ứng tuyển được vị trí [front end dev](position) không
+    ạ
+  - công ty có yêu cầu số năm kinh nghiệm tối thiểu để apply vị trí [3d art](position)
+    không?
+  - yêu cầu công việc [pre-senior](level_position) [PA](position)
+  - yêu cầu về [svtt](level_position)
+  - kĩ năng cần để ứng tuyển [fe develop](position)
+  - ad cho hỏi tôi chỉ làm part time thì có ứng tuyển được không
+  - mình muốn hỏi [fresher](level_position) thì cần các yêu cầu công việc như thế
+    nào
+  - tôi mới làm về [ai](position) thì có chuyển sang làm [game 3d unity](position)
+    được ko
+  - mình chỉ biết C# thì có làm [business analysts](position) được không
+  - có gì cần khi ứng tuyển [junior](level_position) [react native developer](position)
+  - ' [game 3d art](position) cần mấy năm kinh nghiệm'
+  - tớ muốn hỏi về requirement của [nlp](position)
+  - em học [dược hà nội](work_unit) chỉ biết java em ứng tuyển vào công ty được không
+  - tớ có 5 năm kinh nghiệm có thể ứng tuyển [senior](level_position) [2d art](position)
+    được không
+  - công ty yêu cầu kĩ năng thế nào ở thí sinh!
+  - tôi cần những kỹ năng gì để đáp ứng được vị trí [game 3d products](position) tại
+    [ftech](work_unit)

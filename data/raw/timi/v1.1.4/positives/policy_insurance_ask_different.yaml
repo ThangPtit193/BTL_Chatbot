@@ -1,0 +1,187 @@
+positives:
+- intent: faq/policy_insurance_ask_different
+  examples:
+  - ai là người được đóng bảo hiểm xã hội cao cấp thế
+  - ngoài bảo hiểm xã hội thì có các gói bảo hiểm xã hội cao cấp khác không
+  - làm bao lâu thì được đóng gói bảo hiểm y tế cao cấp
+  - bảo hiểm tai nạn lao động luxury là loại nào
+  - cho mình hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    không ạ
+  - gói bảo hiểm xã hội xịn là gói bảo hiểm xã hội bên Bảo Việt hả
+  - gói bảo hiểm thất ngiệp xịn là gói bảo hiểm y tế bên Bảo Việt hả
+  - công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội không
+  - tôi muốn hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội không
+  - tớ muốn hỏi về các gói bảo hiểm cao cấp thì bên mình có không ạ
+  - gói bảo hiểm y tế xịn là gói bảo hiểm y tế bên Bảo Việt hả
+  - công ty có đóng bảo hiểm y tế toàn phần ko
+  - công ty có gói bảo hiểm xã hội cao cấp cho nhân viên ko
+  - cho mình hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên không
+    ạ
+  - tớ muốn hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có không ạ
+  - cho tớ hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có ko ạ
+  - công ty có đóng bảo hiểm tai nạn lao động Bảo Việt ko
+  - cho mình hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có ko ạ
+  - cho mình hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên ko ạ
+  - làm bao lâu thì được đóng gói bảo hiểm thất ngiệp cao cấp
+  - cho tôi hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có không ạ
+  - tôi muốn hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội ko
+  - cho mình hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội ko
+  - tớ muốn hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội ko
+  - cho tớ hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có không ạ
+  - mình muốn hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên ko ạ
+  - gói bảo hiểm xã hội xịn là gói bảo hiểm thất ngiệp bên Bảo Việt hả
+  - bảo hiểm thất ngiệp cao cấp chỉ dành cho chức vụ cao hả
+  - tớ muốn hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên ko ạ
+  - gói bảo hiểm tai nạn lao động xịn là gói bảo hiểm thất ngiệp bên Bảo Việt hả
+  - công ty khác có bảo hiểm xã hội cao cấp bên công ty có không
+  - gói bảo hiểm y tế xịn là gói bảo hiểm thất ngiệp bên Bảo Việt hả
+  - công ty có các gói bảo hiểm xã hội nào khác ngoài bảo hiểm xã hội ko
+  - ngoài bảo hiểm xã hội thì có các gói bảo hiểm xã hội cao cấp khác ko
+  - công ty có gói bảo hiểm tai nạn lao động cao cấp cho nhân viên ko
+  - chính sách bảo hiểm tai nạn lao động xịn xò công ty công ty có ko nhỉ
+  - công ty khác có bảo hiểm cao cấp bên công ty có không
+  - chính sách bảo hiểm y tế xịn xò công ty công ty có ko nhỉ
+  - mình muốn hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có không ạ
+  - tôi muốn hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    không ạ
+  - bảo hiểm tai nạn lao động cao cấp chỉ dành cho chức vụ cao hả
+  - tớ muốn hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    không ạ
+  - mình muốn hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội không
+  - tớ muốn hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    ko ạ
+  - cho tôi hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên ko ạ
+  - cho tôi hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội không
+  - cho tớ hỏi về các gói bảo hiểm cao cấp thì bên mình có không ạ
+  - mình muốn hỏi về các gói bảo hiểm cao cấp thì bên mình có ko ạ
+  - tớ muốn hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội không
+  - cho tôi hỏi về các gói bảo hiểm cao cấp thì bên mình có không ạ
+  - nghe nói công ty có bảo hiểm thất ngiệp cao cấp hả
+  - gói bảo hiểm thất ngiệp xịn là gói bảo hiểm xã hội bên Bảo Việt hả
+  - tớ muốn hỏi về các gói bảo hiểm cao cấp thì bên mình có ko ạ
+  - tôi muốn hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội ko
+  - tôi muốn hỏi về các gói bảo hiểm cao cấp thì bên mình có không ạ
+  - cho mình hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội không
+  - cho tôi hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội ko
+  - cho tôi hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội không
+  - bảo hiểm xã hội luxury là loại nào
+  - cho tớ hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã hội
+    không
+  - mình muốn hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có ko ạ
+  - bảo hiểm xã hội cao cấp chỉ dành cho chức vụ cao hả
+  - công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã hội ko
+  - công ty có đóng bảo hiểm thất ngiệp toàn phần ko
+  - cho tớ hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội ko
+  - công ty có các gói bảo hiểm cao cấp khác dành cho nhân viên công ty không
+  - công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội ko
+  - cho tôi hỏi về các gói bảo hiểm cao cấp thì bên mình có ko ạ
+  - mình muốn hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    không ạ
+  - ngoài bảo hiểm xã hội thì có các gói bảo hiểm cao cấp khác không
+  - công ty có các gói bảo hiểm nào khác ngoài bảo hiểm xã hội ko
+  - tớ muốn hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có ko ạ
+  - công ty có các gói bảo hiểm cao cấp khác dành cho nhân viên công ty ko
+  - mình muốn hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội ko
+  - bảo hiểm y tế cao cấp chỉ dành cho chức vụ cao hả
+  - cho tớ hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên không
+    ạ
+  - công ty có các gói bảo hiểm nào khác ngoài bảo hiểm xã hội không
+  - cho mình hỏi về các gói bảo hiểm cao cấp thì bên mình có không ạ
+  - cho tớ hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên ko
+    ạ
+  - gói bảo hiểm tai nạn lao động xịn là gói bảo hiểm tai nạn lao động bên Bảo Việt
+    hả
+  - tôi muốn hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    ko ạ
+  - ai là người được đóng bảo hiểm y tế cao cấp thế
+  - gói bảo hiểm tai nạn lao động xịn là gói bảo hiểm y tế bên Bảo Việt hả
+  - chuyên viên cấp bậc nào thì sẽ được đóng bảo hiểm tai nạn lao động cao cấp
+  - chính sách bảo hiểm xã hội xịn xò công ty công ty có ko nhỉ
+  - cho mình hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội không
+  - gói bảo hiểm thất ngiệp xịn là gói bảo hiểm tai nạn lao động bên Bảo Việt hả
+  - công ty có đóng bảo hiểm xã hội toàn phần ko
+  - chuyên viên cấp bậc nào thì sẽ được đóng bảo hiểm xã hội cao cấp
+  - đối tượng được hưởng bảo hiểm thất ngiệp cao cấp ở ftech
+  - mình muốn hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội không
+  - tớ muốn hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội không
+  - làm bao lâu thì được đóng gói bảo hiểm tai nạn lao động cao cấp
+  - cho tớ hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội không
+  - cho tôi hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có ko ạ
+  - tớ muốn hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội ko
+  - gói bảo hiểm y tế xịn là gói bảo hiểm tai nạn lao động bên Bảo Việt hả
+  - đối tượng được hưởng bảo hiểm xã hội cao cấp ở ftech
+  - đối tượng được hưởng bảo hiểm y tế cao cấp ở ftech
+  - công ty có đóng bảo hiểm thất ngiệp Bảo Việt ko
+  - công ty có đóng bảo hiểm tai nạn lao động toàn phần ko
+  - công ty có bảo hiểm xã hội nào xịn hơn bảo hiểm xã hội ko
+  - nhân viên lâu năm thì có gói bảo hiểm xã hội nào khác loại qui định nhà nước ko
+  - mình muốn hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội ko
+  - làm bao lâu thì được đóng gói bảo hiểm xã hội cao cấp
+  - gói bảo hiểm xã hội xịn là gói bảo hiểm y tế bên Bảo Việt hả
+  - gói bảo hiểm tai nạn lao động xịn là gói bảo hiểm xã hội bên Bảo Việt hả
+  - cho mình hỏi về các gói bảo hiểm cao cấp thì bên mình có ko ạ
+  - tôi muốn hỏi về các gói bảo hiểm cao cấp thì bên mình có ko ạ
+  - ngoài bảo hiểm xã hội thì có các gói bảo hiểm cao cấp khác ko
+  - gói bảo hiểm y tế xịn là gói bảo hiểm xã hội bên Bảo Việt hả
+  - bảo hiểm y tế luxury là loại nào
+  - công ty có các gói bảo hiểm xã hội cao cấp khác dành cho nhân viên công ty không
+  - công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã hội không
+  - chính sách bảo hiểm thất ngiệp xịn xò công ty công ty có ko nhỉ
+  - ai là người được đóng bảo hiểm thất ngiệp cao cấp thế
+  - cho tớ hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên không ạ
+  - cho tôi hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên không ạ
+  - chuyên viên cấp bậc nào thì sẽ được đóng bảo hiểm y tế cao cấp
+  - đối tượng được hưởng bảo hiểm tai nạn lao động cao cấp ở ftech
+  - cho tớ hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên ko ạ
+  - bảo hiểm thì có gói nào cao cấp hơn gói thông thường ko
+  - công ty có các gói bảo hiểm xã hội nào khác ngoài bảo hiểm xã hội không
+  - có bảo hiểm xã hội xịn xò ko
+  - bảo hiểm thất ngiệp luxury là loại nào
+  - nghe nói công ty có bảo hiểm xã hội cao cấp hả
+  - cho mình hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội ko
+  - tôi muốn hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên không
+    ạ
+  - cho tớ hỏi về các gói bảo hiểm cao cấp thì bên mình có ko ạ
+  - tớ muốn hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên không ạ
+  - cho tôi hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã
+    hội ko
+  - nghe nói công ty có bảo hiểm y tế cao cấp hả
+  - tôi muốn hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên ko ạ
+  - cho tôi hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    ko ạ
+  - cho tôi hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    không ạ
+  - công ty có đóng bảo hiểm y tế Bảo Việt ko
+  - nghe nói công ty có bảo hiểm tai nạn lao động cao cấp hả
+  - mình muốn hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    ko ạ
+  - chuyên viên cấp bậc nào thì sẽ được đóng bảo hiểm thất ngiệp cao cấp
+  - cho mình hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có không ạ
+  - mình muốn hỏi về các gói bảo hiểm cao cấp thì bên mình có không ạ
+  - ai là người được đóng bảo hiểm tai nạn lao động cao cấp thế
+  - công ty có các gói bảo hiểm xã hội cao cấp khác dành cho nhân viên công ty ko
+  - bảo hiểm xã hội thì có gói nào cao cấp hơn gói thông thường ko
+  - gói bảo hiểm xã hội xịn là gói bảo hiểm tai nạn lao động bên Bảo Việt hả
+  - tôi muốn hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có không ạ
+  - công ty có đóng bảo hiểm xã hội Bảo Việt ko
+  - gói bảo hiểm thất ngiệp xịn là gói bảo hiểm thất ngiệp bên Bảo Việt hả
+  - công ty có bảo hiểm nào xịn hơn bảo hiểm xã hội ko
+  - tôi muốn hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội không
+  - cho tớ hỏi công ty có các gói bảo hiểm xã hội cao cấp khác ngoài bảo hiểm xã hội
+    ko
+  - công ty có gói bảo hiểm thất ngiệp cao cấp cho nhân viên ko
+  - mình muốn hỏi thêm là bên mình có các gói bảo hiểm cao cấp cho nhân viên không
+    ạ
+  - công ty có gói bảo hiểm y tế cao cấp cho nhân viên ko
+  - cho mình hỏi thêm là bên mình có các gói bảo hiểm xã hội cao cấp cho nhân viên
+    ko ạ
+  - tôi muốn hỏi về các gói bảo hiểm xã hội cao cấp thì bên mình có ko ạ

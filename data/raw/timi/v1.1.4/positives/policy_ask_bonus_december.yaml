@@ -1,0 +1,394 @@
+positives:
+- intent: faq/policy_ask_bonus_december
+  examples:
+  - cho tôi hỏi mình có thưởng tháng 13 không ạ?
+  - Chế độ thưởng tháng 13 bên tôi như thế nào nhỉ?
+  - có lương tháng 13 không
+  - chế độ thưởng tháng 13 bên mình như nào?
+  - '[internship](level_position) có chế độ bonus tháng thứ 13 như thế nào'
+  - cho mình hỏi về chế độ bonus tháng 13 bên tớ
+  - mầy ơi, bên [f tech](work_unit) có thưởng tháng thứ 13 ko
+  - chế độ bonus tháng 13
+  - Mình cần biết về chế độ thưởng tháng 13 bên bạn
+  - Bên mình chế độ thưởng tháng thứ 13 như nào?
+  - bên tớ chế độ thưởng tháng 13 thế nào
+  - chế độ bonus tháng thứ 13 dành cho [tts](level_position) thế nào ạ
+  - ' công ty chế độ thưởng tháng thứ 13 thế nào?'
+  - Kể mình nghe về chế độ bonus tháng 13 bên mình
+  - công ty có thưởng lương tháng 13 không?
+  - cho tớ hỏi chế độ bonus tháng 13 của [sinh viên thực tập](level_position)
+  - công ty bonus tháng thứ 13 thế nào?
+  - chế độ bonus tháng 13 của công ty dành cho [svtt](level_position) như thế nào
+    ạ
+  - bên mình có bonus lương tháng 13 không ạ?
+  - mình có bonus tháng 13 ko ạ?
+  - '[svtt](level_position) có được thưởng tháng thứ 13 không'
+  - công ty có lương tháng 13 không
+  - công ty có thưởng tháng thứ 13 không?
+  - có bonus tháng thứ 13 ko
+  - công ty có chế độ bonus tháng thứ 13 như thế nào dành cho [internship](level_position)
+  - với [svtt](level_position) thì công ty có chế độ thưởng tháng thứ 13 như thế nào
+  - công ty có bonus tháng thứ 13 ko
+  - chế độ thưởng tháng 13 công ty nhiều không
+  - công ty có tháng 13 ko
+  - tớ muốn hỏi công ty có thưởng tháng thứ 13 không ạ?
+  - Chế độ thưởng tháng 13 bên tôi như nào nhỉ?
+  - chế độ bonus tháng 13 bên bạn nhiều không?
+  - '[sinh viên thực tập](level_position) có chế độ bonus tháng 13 như thế nào'
+  - cho mình hỏi thêm về chế độ thưởng tháng thứ 13 bên tớ
+  - em ơi, bên [f tech](work_unit) có thưởng tháng 13 không
+  - chế độ thưởng tháng thứ 13
+  - Mình cần biết về chế độ thưởng tháng 13 công ty
+  - Bên mình chế độ bonus tháng thứ 13 như thế nào?
+  - bên tớ chế độ thưởng tháng thứ 13 ra sao
+  - chế độ thưởng tháng thứ 13 dành cho [intern](level_position) như nào ạ
+  - Ở bên mình chế độ bonus tháng thứ 13 như nào?
+  - Kể chị nghe đôi nét chế độ bonus tháng thứ 13 bên bạn
+  - công ty có bonus lương tháng thứ 13 không?
+  - cho tớ hỏi chế độ thưởng tháng thứ 13 của [svtt](level_position)
+  - bên bạn thưởng tháng 13 như nào?
+  - chế độ thưởng tháng thứ 13 của công ty dành cho [trainee](level_position) như
+    thế nào ạ
+  - mình có bonus lương tháng 13 không ạ?
+  - mình có bonus tháng thứ 13 ko ạ?
+  - '[thực tập sinh](level_position) có được bonus tháng thứ 13 ko'
+  - công ty có thưởng tháng 13 không?
+  - có bonus tháng 13 ko
+  - công ty có chế độ bonus tháng thứ 13 như thế nào dành cho [thực tập sinh](level_position)
+  - với [trainee](level_position) thì công ty có chế độ bonus tháng thứ 13 như thế
+    nào
+  - công ty có thưởng tháng 13 cho nhân viên ko
+  - chính sách bonus tháng thứ 13 của bên bạn ra sao
+  - công ty có tháng thứ 13 ko
+  - cho tớ hỏi mình có thưởng tháng thứ 13 không ạ?
+  - Chế độ thưởng tháng thứ 13 bên tớ như nào?
+  - chế độ bonus tháng 13 bên mình như thế nào?
+  - '[sinh viên thực tập](level_position) có chế độ thưởng tháng 13 như thế nào'
+  - cho mình hỏi thêm về chế độ thưởng tháng 13 bên mình
+  - timi ơi, bên [f-tech](work_unit) có thưởng tháng 13 không
+  - chế độ thưởng tháng 13
+  - Mình cần biết về chế độ thưởng tháng thứ 13 của mình
+  - Bên mình chế độ thưởng tháng 13 ntn?
+  - bên mình chế độ bonus tháng thứ 13 ntn
+  - chế độ thưởng tháng thứ 13 dành cho [intern](level_position) thế nào ạ
+  - ' công ty chế độ thưởng tháng 13 như nào?'
+  - Kể chị nghe đôi nét chế độ bonus tháng thứ 13 của công ty
+  - công ty có bonus lương tháng 13 không?
+  - cho mình hỏi chế độ thưởng tháng thứ 13 của [tts](level_position)
+  - bên mình bonus tháng 13 như nào?
+  - chế độ bonus tháng 13 của công ty dành cho [pretrain](level_position) như nào
+    ạ
+  - công ty có thưởng lương tháng 13 ko ạ?
+  - bên bạn có bonus tháng thứ 13 không ạ?
+  - '[pretrain](level_position) có được bonus tháng 13 không'
+  - công ty có bonus tháng thứ 13 không?
+  - có thưởng tháng thứ 13 ko
+  - công ty có chế độ thưởng tháng 13 như thế nào dành cho [pretrain](level_position)
+  - với [sinh viên thực tập](level_position) thì công ty có chế độ thưởng tháng 13
+    như thế nào
+  - công ty có thưởng tháng thứ 13 cho nhân viên ko
+  - chế độ bonus tháng 13 của mình như nào
+  - tôi muốn hỏi bên bạn có bonus tháng thứ 13 ko ạ?
+  - Chế độ thưởng tháng 13 bên tôi như nào?
+  - chế độ thưởng tháng thứ 13 công ty ổn chứ?
+  - '[pretrain](level_position) có chế độ thưởng tháng thứ 13 như thế nào'
+  - cho tớ hỏi về chế độ thưởng tháng 13 bên tớ
+  - em ơi, bên [ftech](work_unit) có thưởng tháng 13 không
+  - chế độ bonus tháng thứ 13
+  - Mình cần biết về chế độ bonus tháng 13 của công ty
+  - Bên mình chế độ thưởng tháng 13 như thế nào?
+  - bên tớ chế độ bonus tháng thứ 13 ra sao
+  - chế độ bonus tháng 13 dành cho [thực tập sinh](level_position) thế nào ạ
+  - ' công ty chế độ thưởng tháng 13 ra sao?'
+  - Kể mình nghe về chế độ thưởng tháng thứ 13 của mình
+  - công ty có thưởng lương tháng thứ 13 không?
+  - cho mình hỏi chế độ thưởng tháng 13 của [tts](level_position)
+  - bên mình bonus tháng 13 ra sao?
+  - chế độ thưởng tháng 13 của công ty dành cho [svtt](level_position) như nào ạ
+  - công ty có bonus lương tháng thứ 13 không ạ?
+  - công ty có bonus tháng 13 không ạ?
+  - '[pretrain](level_position) có được thưởng tháng thứ 13 ko'
+  - công ty có bonus tháng 13 không?
+  - có thưởng tháng 13 ko
+  - công ty có chế độ thưởng tháng thứ 13 như thế nào dành cho [sinh viên thực tập](level_position)
+  - với [trainee](level_position) thì công ty có chế độ thưởng tháng 13 như thế nào
+  - công ty có bonus tháng 13 cho nhân viên ko
+  - chính sách bonus tháng 13 của bên bạn như nào
+  - tớ muốn hỏi công ty có thưởng tháng thứ 13 ko ạ?
+  - Chế độ thưởng tháng thứ 13 bên tớ như thế nào nhỉ?
+  - chế độ bonus tháng 13 bên bạn ổn chứ?
+  - '[svtt](level_position) có chế độ thưởng tháng thứ 13 như thế nào'
+  - cho tớ hỏi về chế độ bonus tháng thứ 13 bên tôi
+  - cậu ơi, bên [ftech](work_unit) có thưởng tháng 13 ko
+  - Mình cần biết về chế độ thưởng tháng 13 của công ty
+  - Bên mình chế độ bonus tháng thứ 13 ntn?
+  - bên tớ chế độ thưởng tháng 13 như nào nhỉ
+  - chế độ bonus tháng 13 dành cho [pretrain](level_position) thế nào ạ
+  - ' bên bạn chế độ thưởng tháng thứ 13 như thế nào?'
+  - Kể mình nghe về chế độ bonus tháng 13 của công ty
+  - cho tớ hỏi chế độ bonus tháng 13 của [thực tập sinh](level_position)
+  - công ty thưởng tháng thứ 13 thế nào?
+  - chế độ thưởng tháng thứ 13 của công ty dành cho [sinh viên thực tập](level_position)
+    như nào ạ
+  - bên mình có thưởng lương tháng 13 ko ạ?
+  - bên mình có thưởng tháng 13 ko ạ?
+  - '[internship](level_position) có được thưởng tháng 13 ko'
+  - công ty có chế độ bonus tháng 13 như thế nào dành cho [internship](level_position)
+  - với [tts](level_position) thì công ty có chế độ thưởng tháng 13 như thế nào
+  - công ty có bonus tháng thứ 13 cho nhân viên ko
+  - chế độ thưởng tháng thứ 13 công ty thế nào
+  - tớ muốn hỏi công ty có bonus tháng thứ 13 ko ạ?
+  - Chế độ bonus tháng 13 bên tôi ra sao nhỉ?
+  - chế độ bonus tháng thứ 13 bên bạn ra sao?
+  - '[intern](level_position) có chế độ thưởng tháng 13 như thế nào'
+  - cho tôi hỏi về chế độ bonus tháng 13 bên mình
+  - cậu ơi, bên [f-tech](work_unit) có thưởng tháng thứ 13 ko
+  - Mình cần biết về chế độ bonus tháng 13 công ty
+  - Bên mình chế độ bonus tháng 13 như thế nào?
+  - bên mình chế độ thưởng tháng 13 ra sao
+  - chế độ bonus tháng thứ 13 dành cho [internship](level_position) như thế nào ạ
+  - Ở công ty chế độ thưởng tháng 13 ra sao?
+  - Kể mình nghe đôi nét chế độ bonus tháng 13 của công ty
+  - cho tớ hỏi chế độ thưởng tháng 13 của [svtt](level_position)
+  - công ty bonus tháng 13 nhiều không?
+  - chế độ bonus tháng thứ 13 của công ty dành cho [trainee](level_position) như thế
+    nào ạ
+  - công ty có bonus lương tháng 13 không ạ?
+  - bên bạn có thưởng tháng 13 không ạ?
+  - '[sinh viên thực tập](level_position) có được bonus tháng 13 ko'
+  - công ty có chế độ bonus tháng 13 như thế nào dành cho [tts](level_position)
+  - với [tts](level_position) thì công ty có chế độ bonus tháng thứ 13 như thế nào
+  - công ty có bonus tháng 13 cho nhân viên không
+  - chế độ bonus tháng 13 công ty thế nào
+  - cho tôi hỏi công ty có thưởng tháng 13 ko ạ?
+  - Chế độ thưởng tháng 13 bên tớ như thế nào?
+  - chế độ bonus tháng thứ 13 bên bạn như thế nào?
+  - '[internship](level_position) có chế độ thưởng tháng 13 như thế nào'
+  - cho tớ hỏi thêm về chế độ bonus tháng thứ 13 bên tớ
+  - mầy ơi, bên [ftech](work_unit) có thưởng tháng 13 ko
+  - Mình cần biết về chế độ bonus tháng thứ 13 bên mình
+  - Bên mình chế độ thưởng tháng 13 như nào?
+  - bên mình chế độ thưởng tháng thứ 13 ra sao nhỉ
+  - chế độ bonus tháng thứ 13 dành cho [intern](level_position) thế nào ạ
+  - ' công ty chế độ bonus tháng 13 như thế nào?'
+  - Kể mình nghe về chế độ thưởng tháng thứ 13 bên bạn
+  - cho tôi hỏi chế độ thưởng tháng 13 của [sinh viên thực tập](level_position)
+  - công ty bonus tháng thứ 13 như nào?
+  - chế độ bonus tháng 13 của công ty dành cho [thực tập sinh](level_position) thế
+    nào ạ
+  - công ty có bonus lương tháng 13 ko ạ?
+  - công ty có bonus tháng thứ 13 ko ạ?
+  - '[sinh viên thực tập](level_position) có được bonus tháng 13 không'
+  - công ty có chế độ bonus tháng 13 như thế nào dành cho [pretrain](level_position)
+  - với [svtt](level_position) thì công ty có chế độ bonus tháng thứ 13 như thế nào
+  - công ty có thưởng tháng 13 cho nhân viên không
+  - chế độ bonus tháng thứ 13 công ty như nào
+  - mình muốn hỏi bên mình có thưởng tháng 13 không ạ?
+  - Chế độ thưởng tháng 13 bên tớ như nào?
+  - chế độ thưởng tháng 13 công ty ổn chứ?
+  - '[tts](level_position) có chế độ thưởng tháng thứ 13 như thế nào'
+  - cho tôi hỏi thêm về chế độ thưởng tháng 13 bên tớ
+  - bot ơi, bên [ftech](work_unit) có thưởng tháng thứ 13 không
+  - Mình cần biết về chế độ bonus tháng 13 bên bạn
+  - Bên mình chế độ bonus tháng 13 ra sao?
+  - bên mình chế độ bonus tháng thứ 13 như thế nào
+  - chế độ thưởng tháng 13 dành cho [svtt](level_position) như thế nào ạ
+  - Ở công ty chế độ bonus tháng 13 ra sao?
+  - Kể tớ nghe về chế độ bonus tháng thứ 13 công ty
+  - cho tớ hỏi chế độ bonus tháng 13 của [intern](level_position)
+  - công ty bonus tháng 13 như nào?
+  - chế độ thưởng tháng 13 của công ty dành cho [tts](level_position) như nào ạ
+  - bên bạn có thưởng lương tháng 13 ko ạ?
+  - bên mình có bonus tháng 13 không ạ?
+  - '[tts](level_position) có được thưởng tháng thứ 13 ko'
+  - công ty có chế độ thưởng tháng thứ 13 như thế nào dành cho [tts](level_position)
+  - với [thực tập sinh](level_position) thì công ty có chế độ bonus tháng 13 như thế
+    nào
+  - công ty có bonus tháng 13 ko
+  - chính sách thưởng tháng thứ 13 của mình như nào
+  - cho tớ hỏi bên mình có thưởng tháng 13 ko ạ?
+  - Chế độ thưởng tháng thứ 13 bên tớ như nào nhỉ?
+  - chế độ bonus tháng thứ 13 công ty ra sao?
+  - '[thực tập sinh](level_position) có chế độ bonus tháng thứ 13 như thế nào'
+  - cho tớ hỏi về chế độ bonus tháng thứ 13 bên mình
+  - em ơi, bên [ftech](work_unit) có thưởng tháng thứ 13 không
+  - Mình cần biết về chế độ bonus tháng thứ 13 của bên mình
+  - Bên mình chế độ thưởng tháng thứ 13 như thế nào?
+  - bên tớ chế độ thưởng tháng thứ 13 như thế nào nhỉ
+  - chế độ thưởng tháng 13 dành cho [intern](level_position) như nào ạ
+  - Ở bên bạn chế độ bonus tháng 13 ra sao?
+  - Kể mình nghe về chế độ thưởng tháng thứ 13 của công ty
+  - cho mình hỏi chế độ thưởng tháng 13 của [intern](level_position)
+  - mình thưởng tháng thứ 13 như nào?
+  - chế độ bonus tháng 13 của công ty dành cho [internship](level_position) như nào
+    ạ
+  - mình có thưởng lương tháng 13 ko ạ?
+  - bên mình có bonus tháng 13 ko ạ?
+  - '[internship](level_position) có được bonus tháng 13 không'
+  - công ty có chế độ bonus tháng 13 như thế nào dành cho [thực tập sinh](level_position)
+  - với [intern](level_position) thì công ty có chế độ thưởng tháng thứ 13 như thế
+    nào
+  - công ty có thưởng tháng thứ 13 ko
+  - chế độ bonus tháng thứ 13 công ty ra sao
+  - cho tớ hỏi công ty có bonus tháng thứ 13 không ạ?
+  - Chế độ thưởng tháng thứ 13 bên tớ ntn?
+  - chế độ bonus tháng thứ 13 mình như nào?
+  - '[trainee](level_position) có chế độ bonus tháng thứ 13 như thế nào'
+  - cho tớ hỏi thêm về chế độ thưởng tháng thứ 13 bên tớ
+  - bot ơi, bên [f-tech](work_unit) có thưởng tháng thứ 13 ko
+  - Mình cần biết về chế độ thưởng tháng thứ 13 của công ty
+  - Bên mình chế độ bonus tháng thứ 13 ra sao?
+  - bên tớ chế độ bonus tháng thứ 13 ntn
+  - chế độ thưởng tháng 13 dành cho [pretrain](level_position) thế nào ạ
+  - ' công ty chế độ bonus tháng thứ 13 thế nào?'
+  - Kể mình nghe đôi nét chế độ thưởng tháng thứ 13 của bên bạn
+  - cho mình hỏi chế độ thưởng tháng 13 của [thực tập sinh](level_position)
+  - mình thưởng tháng thứ 13 như thế nào?
+  - chế độ thưởng tháng 13 của công ty dành cho [pretrain](level_position) như nào
+    ạ
+  - công ty có thưởng lương tháng thứ 13 không ạ?
+  - mình có thưởng tháng 13 không ạ?
+  - '[intern](level_position) có được bonus tháng thứ 13 ko'
+  - công ty có chế độ thưởng tháng thứ 13 như thế nào dành cho [internship](level_position)
+  - với [svtt](level_position) thì công ty có chế độ thưởng tháng 13 như thế nào
+  - công ty có thưởng tháng 13 không
+  - chính sách bonus tháng 13 công ty như nào
+  - cho tớ hỏi bên bạn có thưởng tháng thứ 13 không ạ?
+  - Chế độ bonus tháng 13 bên mình như thế nào?
+  - chế độ thưởng tháng 13 công ty thế nào?
+  - '[intern](level_position) có chế độ bonus tháng 13 như thế nào'
+  - cho tớ hỏi thêm về chế độ thưởng tháng 13 bên tôi
+  - em ơi, bên [f tech](work_unit) có thưởng tháng thứ 13 không
+  - Mình cần biết về chế độ thưởng tháng thứ 13 công ty
+  - Bên mình chế độ bonus tháng thứ 13 như nào?
+  - bên mình chế độ bonus tháng 13 thế nào nhỉ
+  - chế độ bonus tháng 13 dành cho [sinh viên thực tập](level_position) thế nào ạ
+  - ' công ty chế độ thưởng tháng thứ 13 như nào?'
+  - Kể anh nghe đôi nét chế độ thưởng tháng thứ 13 công ty
+  - cho tôi hỏi chế độ bonus tháng thứ 13 của [pretrain](level_position)
+  - công ty thưởng tháng 13 ra sao?
+  - chế độ thưởng tháng 13 của công ty dành cho [intern](level_position) như nào ạ
+  - bên bạn có thưởng lương tháng 13 không ạ?
+  - bên mình có thưởng tháng thứ 13 ko ạ?
+  - '[trainee](level_position) có được thưởng tháng thứ 13 ko'
+  - công ty có chế độ thưởng tháng 13 như thế nào dành cho [tts](level_position)
+  - với [pretrain](level_position) thì công ty có chế độ bonus tháng 13 như thế nào
+  - công ty có bonus tháng thứ 13 không
+  - chế độ thưởng tháng 13 mình ổn chứ
+  - cho tớ hỏi công ty có thưởng tháng 13 ko ạ?
+  - Chế độ thưởng tháng thứ 13 bên tớ ra sao nhỉ?
+  - chế độ thưởng tháng 13 mình thế nào?
+  - '[intern](level_position) có chế độ bonus tháng thứ 13 như thế nào'
+  - cho mình hỏi về chế độ bonus tháng thứ 13 bên tớ
+  - bot ơi, bên [f tech](work_unit) có thưởng tháng 13 ko
+  - Mình cần biết về chế độ bonus tháng thứ 13 của công ty
+  - Bên mình chế độ thưởng tháng thứ 13 ra sao?
+  - bên tớ chế độ bonus tháng 13 như nào
+  - chế độ bonus tháng 13 dành cho [internship](level_position) như thế nào ạ
+  - ' bên mình chế độ thưởng tháng thứ 13 như nào?'
+  - Kể chị nghe về chế độ bonus tháng 13 của công ty
+  - cho mình hỏi chế độ thưởng tháng thứ 13 của [intern](level_position)
+  - mình thưởng tháng 13 như thế nào?
+  - chế độ bonus tháng thứ 13 của công ty dành cho [pretrain](level_position) như
+    thế nào ạ
+  - bên mình có bonus lương tháng thứ 13 không ạ?
+  - mình có bonus tháng thứ 13 không ạ?
+  - '[sinh viên thực tập](level_position) có được thưởng tháng 13 ko'
+  - công ty có chế độ thưởng tháng 13 như thế nào dành cho [thực tập sinh](level_position)
+  - với [sinh viên thực tập](level_position) thì công ty có chế độ bonus tháng 13
+    như thế nào
+  - công ty có thưởng tháng thứ 13 không
+  - chế độ bonus tháng thứ 13 của công ty thế nào
+  - tớ muốn hỏi bên mình có bonus tháng thứ 13 ko ạ?
+  - Chế độ thưởng tháng thứ 13 bên mình ra sao nhỉ?
+  - chế độ bonus tháng 13 công ty ổn chứ?
+  - '[trainee](level_position) có chế độ bonus tháng 13 như thế nào'
+  - cho tớ hỏi về chế độ bonus tháng 13 bên tớ
+  - mày ơi, bên [ftech](work_unit) có thưởng tháng 13 không
+  - Mình cần biết về chế độ bonus tháng 13 bên mình
+  - Bên mình chế độ thưởng tháng 13 ra sao?
+  - bên tớ chế độ bonus tháng thứ 13 ntn nhỉ
+  - chế độ bonus tháng 13 dành cho [intern](level_position) như nào ạ
+  - ' mình chế độ thưởng tháng thứ 13 như thế nào?'
+  - Kể chị nghe về chế độ bonus tháng 13 công ty
+  - cho tôi hỏi chế độ bonus tháng 13 của [pretrain](level_position)
+  - công ty thưởng tháng 13 nhiều không?
+  - chế độ bonus tháng thứ 13 của công ty dành cho [internship](level_position) như
+    nào ạ
+  - công ty có thưởng lương tháng thứ 13 ko ạ?
+  - bonus mấy tháng tháng 13
+  - bonus mấy tháng tháng thứ 13
+  - các bậc khác nhau thì lương tháng 13 khác nhau đúng ko
+  - các bậc khác nhau thì lương tháng thứ 13 khác nhau đúng ko
+  - cách tính lương tháng 13
+  - cách tính lương tháng thứ 13
+  - công ty bonus mấy tháng tháng 13
+  - công ty bonus mấy tháng tháng thứ 13
+  - công ty thưởng mấy tháng tháng 13
+  - công ty thưởng mấy tháng tháng thứ 13
+  - công ty trả lương tháng 13 mấy triệu
+  - công ty trả lương tháng thứ 13 mấy triệu
+  - dựa vào đâu bên bạn tính tiền bonus tháng 13
+  - dựa vào đâu bên bạn tính tiền bonus tháng thứ 13
+  - dựa vào đâu bên bạn tính tiền thưởng tháng 13
+  - dựa vào đâu bên bạn tính tiền thưởng tháng thứ 13
+  - dựa vào đâu bên mình tính tiền bonus tháng 13
+  - dựa vào đâu bên mình tính tiền bonus tháng thứ 13
+  - dựa vào đâu bên mình tính tiền thưởng tháng 13
+  - dựa vào đâu bên mình tính tiền thưởng tháng thứ 13
+  - dựa vào đâu công ty tính tiền bonus tháng 13
+  - dựa vào đâu công ty tính tiền bonus tháng thứ 13
+  - dựa vào đâu công ty tính tiền thưởng tháng 13
+  - dựa vào đâu công ty tính tiền thưởng tháng thứ 13
+  - dựa vào đâu mình tính tiền bonus tháng 13
+  - dựa vào đâu mình tính tiền bonus tháng thứ 13
+  - dựa vào đâu mình tính tiền thưởng tháng 13
+  - dựa vào đâu mình tính tiền thưởng tháng thứ 13
+  - '[intern](level_position) được thưởng tháng 13 bao nhiêu'
+  - '[intern](level_position) được thưởng tháng thứ 13 bao nhiêu'
+  - '[internship](level_position) được thưởng tháng 13 bao nhiêu'
+  - '[internship](level_position) được thưởng tháng thứ 13 bao nhiêu'
+  - làm thế nào bên bạn tính tiền bonus tháng 13
+  - làm thế nào bên bạn tính tiền bonus tháng thứ 13
+  - làm thế nào bên bạn tính tiền thưởng tháng 13
+  - làm thế nào bên bạn tính tiền thưởng tháng thứ 13
+  - làm thế nào bên mình tính tiền bonus tháng 13
+  - làm thế nào bên mình tính tiền bonus tháng thứ 13
+  - làm thế nào bên mình tính tiền thưởng tháng 13
+  - làm thế nào bên mình tính tiền thưởng tháng thứ 13
+  - làm thế nào công ty tính tiền bonus tháng 13
+  - làm thế nào công ty tính tiền bonus tháng thứ 13
+  - làm thế nào công ty tính tiền thưởng tháng 13
+  - làm thế nào công ty tính tiền thưởng tháng thứ 13
+  - làm thế nào mình tính tiền bonus tháng 13
+  - làm thế nào mình tính tiền bonus tháng thứ 13
+  - làm thế nào mình tính tiền thưởng tháng 13
+  - làm thế nào mình tính tiền thưởng tháng thứ 13
+  - mức chi trả của cho tháng 13 là bao nhiêu
+  - mức chi trả của cho tháng thứ 13 là bao nhiêu
+  - mức chi trả của công ty cho tháng 13 là bao nhiêu
+  - mức chi trả của công ty cho tháng thứ 13 là bao nhiêu
+  - mức lương tháng 13 là bao nhiêu
+  - mức lương tháng thứ 13 là bao nhiêu
+  - '[pretrain](level_position) được thưởng tháng 13 bao nhiêu'
+  - '[pretrain](level_position) được thưởng tháng thứ 13 bao nhiêu'
+  - '[sinh viên thực tập](level_position) được thưởng tháng 13 bao nhiêu'
+  - '[sinh viên thực tập](level_position) được thưởng tháng thứ 13 bao nhiêu'
+  - '[svtt](level_position) được thưởng tháng 13 bao nhiêu'
+  - '[svtt](level_position) được thưởng tháng thứ 13 bao nhiêu'
+  - thưởng mấy tháng tháng 13
+  - thưởng mấy tháng tháng thứ 13
+  - '[thực tập sinh](level_position) được thưởng tháng 13 bao nhiêu'
+  - '[thực tập sinh](level_position) được thưởng tháng thứ 13 bao nhiêu'
+  - '[trainee](level_position) được thưởng tháng 13 bao nhiêu'
+  - '[trainee](level_position) được thưởng tháng thứ 13 bao nhiêu'
+  - trả lương tháng 13 mấy triệu
+  - trả lương tháng thứ 13 mấy triệu
+  - '[tts](level_position) được thưởng tháng 13 bao nhiêu'
+  - '[tts](level_position) được thưởng tháng thứ 13 bao nhiêu'
+  - đối tượng khác nhau thì bonus tháng 13 khác nhau hả
+  - đối tượng khác nhau thì bonus tháng thứ 13 khác nhau hả
+  - đối tượng khác nhau thì tháng 13 khác nhau hả
+  - đối tượng khác nhau thì tháng thứ 13 khác nhau hả
+  - đối tượng khác nhau thì thưởng tháng 13 khác nhau hả
+  - đối tượng khác nhau thì thưởng tháng thứ 13 khác nhau hả

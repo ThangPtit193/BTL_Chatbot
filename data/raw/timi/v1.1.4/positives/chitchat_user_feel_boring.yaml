@@ -1,0 +1,203 @@
+positives:
+- intent: faq/chitchat_user_feel_boring
+  examples:
+  - Chán quá
+  - anh buồn quá đi
+  - tui đang buồn chán
+  - mẹ mày đang cảm thấy rất chán
+  - anh đang cảm thấy buồn chán quá
+  - Buồn chán quá
+  - rầu quá đi
+  - muốn khóc quá
+  - dạo này chán quá
+  - mày làm tớ buồn đây
+  - buồn rầu quá
+  - Chán quá đi!
+  - khóc
+  - chán ghê
+  - tớ thấy choán quá đi
+  - nhưng hôm nay tui không thấy vui
+  - mình buồn chán quá
+  - sao mà buồn thế
+  - chán nản thế nhờ
+  - nhưng hôm nay tớ không vui
+  - Thấy chán làm ghê
+  - buồn chán thật
+  - buồn thật sự
+  - cuộc sống dạo này buồn chán quá
+  - quá choán
+  - choán vãi
+  - tớ khóc bây giờ
+  - tớ muốn khóc quá
+  - hôm nay tao không thấy vui
+  - hôm nay mình không vui
+  - mẹ mày choán quá đi
+  - hôm nay tớ chán quá
+  - choán quá
+  - Tự dưng chán
+  - từ dưng thấy chán
+  - chị choán quá
+  - mình buồn mình chán
+  - choán thì làm thế nào nhỉ cậu
+  - công việc dạo này chán quá
+  - sao mà buồn chán quá
+  - tớ đang rất choán
+  - khóc mất thôi
+  - chán nản quá
+  - sao hôm nay tớ chán quá
+  - hôm nay tớ cảm thấy buồn quá
+  - tớ buồn quá
+  - rất là buồn chán
+  - chị đang buồn
+  - hôm nay tớ cảm thấy hơi buồn
+  - mình chán quá
+  - tớ đang buồn
+  - mẹ mày đang thấy rất buồn chán
+  - chị đang cảm thấy chán quá
+  - rầu quá
+  - dạo này choán quá
+  - em làm tớ buồn đây
+  - buồn rầu quá đi
+  - choán ghê
+  - tớ thấy chán quá đi
+  - nhưng hôm nay tớ không thấy vui
+  - tớ choán quá
+  - sao mà chán nhỉ
+  - nhưng hôm nay mình không vui
+  - choán thật
+  - cuộc sống dạo này buồn quá đi
+  - quá buồn
+  - buồn vãi
+  - tôi khóc bây giờ
+  - tôi muốn khóc quá
+  - hôm nay mình không thấy vui
+  - hôm nay tớ không vui
+  - tao choán quá đi
+  - hôm nay tui chán quá
+  - buồn chán quá đi
+  - từ dưng cảm thấy chán
+  - anh buồn chán quá đi
+  - choán thì làm răng nhỉ cậu
+  - công việc dạo này buồn chán quá
+  - vì sao mà chán thế nhỉ
+  - tui đang cảm thấy rất buồn
+  - chán nản quá đi
+  - sao hôm nay mình chán quá
+  - hôm nay mình cảm thấy buồn quá đi
+  - tui buồn quá
+  - rất là choán
+  - chị đang buồn chán
+  - hôm nay tao thấy hơi buồn
+  - chị buồn quá đi
+  - tớ đang buồn chán
+  - tao đang choán
+  - tớ đang cảm thấy chán quá đi
+  - dạo này buồn quá đi
+  - timi làm tớ buồn đây
+  - buồn chán ghê
+  - tớ thấy choán quá
+  - nhưng hôm nay tôi không thấy vui
+  - tui chán quá đi
+  - sao mà buồn quá đi
+  - nhưng hôm nay tui không vui
+  - buồn thật
+  - cuộc sống dạo này buồn quá
+  - quá buồn chán
+  - buồn chán vãi
+  - mình khóc bây giờ
+  - tao muốn khóc quá
+  - hôm nay tôi không thấy vui
+  - hôm nay tao không vui
+  - tao chán quá đi
+  - hôm nay mình chán quá đi
+  - buồn chán quá
+  - từ dưng thấy buồn
+  - chị buồn quá
+  - buồn thì làm như nào nhỉ em
+  - công việc dạo này buồn quá
+  - vì sao mà buồn quá
+  - tớ đang rất chán
+  - sao hôm nay tớ buồn quá
+  - hôm nay tớ thấy buồn quá
+  - mình buồn quá
+  - rất là buồn
+  - anh đang buồn
+  - hôm nay mình thấy hơi buồn
+  - mình choán quá
+  - tôi đang choán
+  - tao đang rất choán
+  - tớ đang thấy buồn chán quá đi
+  - dạo này choán quá đi
+  - m làm tớ buồn đây
+  - buồn ghê
+  - tao thấy buồn chán quá
+  - nhưng hôm nay tao không thấy vui
+  - tui buồn chán quá đi
+  - sao mà buồn nhỉ
+  - nhưng hôm nay tôi không vui
+  - chán thật
+  - cuộc sống dạo này chán quá
+  - quá chán
+  - chán vãi
+  - tui khóc bây giờ
+  - mình muốn khóc quá
+  - hôm nay tui không thấy vui
+  - hôm nay tôi không vui
+  - mẹ mày chán quá
+  - hôm nay tớ buồn chán quá
+  - choán quá đi
+  - từ dưng cảm thấy buồn
+  - chị chán quá
+  - buồn thì làm thế nào nhỉ em
+  - công việc dạo này choán quá
+  - sao mà chán quá đi
+  - mình đang chán
+  - sao hôm nay tôi buồn quá
+  - hôm nay tôi thấy buồn quá
+  - tôi buồn quá
+  - rất là chán
+  - anh đang cảm thấy buồn
+  - hôm nay mình cảm thấy hơi buồn
+  - chị buồn chán quá
+  - tôi đang buồn
+  - bố mày đang cảm thấy chán
+  - chị đang thấy buồn chán quá
+  - dạo này buồn chán quá
+  - bot làm tớ buồn đây
+  - tớ thấy buồn quá đi
+  - nhưng hôm nay mình không thấy vui
+  - mình choán quá đi
+  - sao mà chán quá
+  - nhưng hôm nay tao không vui
+  - cuộc sống dạo này buồn chán quá đi
+  - tao khóc bây giờ
+  - tui muốn khóc quá
+  - hôm nay tớ không thấy vui
+  - hôm nay tui không vui
+  - bố mày buồn quá đi
+  - hôm nay tui choán quá đi
+  - buồn quá
+  - chị choán quá đi
+  - buồn thì làm như nào nhể bot
+  - công việc dạo này buồn quá đi
+  - vì sao mà buồn quá đi
+  - mình đang cảm thấy choán
+  - sao hôm nay tôi chán quá
+  - hôm nay tui thấy buồn quá
+  - tao buồn quá
+  - anh đang thấy rất buồn chán
+  - hôm nay tao cảm thấy hơi buồn
+  - tớ buồn chán quá
+  - tao đang buồn chán
+  - bố mày đang cảm thấy buồn chán
+  - mình đang buồn quá đi
+  - dạo này chán quá đi
+  - cậu làm tao buồn đây
+  - tao thấy choán quá
+  - tớ chán quá
+  - sao mà buồn quá
+  - cuộc sống dạo này choán quá
+  - tao buồn quá đi
+  - hôm nay tôi buồn chán quá
+  - buồn quá đi
+  - anh chán quá

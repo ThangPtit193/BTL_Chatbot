@@ -1,0 +1,153 @@
+positives:
+- intent: faq/chitchat_user_says_love
+  examples:
+  - mình yêu timi lắm
+  - muốn chiếm lấy bot làm bạn gái
+  - anh mến mộ em
+  - tớ muốn tán tỉnh mày
+  - mày có thầm thương trộm nhớ tui không
+  - thầm thương trộm nhớ mày
+  - chồng mến mộ vợ
+  - tôi nhớ bạn
+  - i love you
+  - làm chồng anh nhá baby
+  - m có muốn lấy mình không
+  - tui là bạn gái của mày được không
+  - bot yêu tôi đi
+  - mình yêu nhau đi
+  - vì sao không yêu thích tôi
+  - sao không làm người yêu tớ được hở
+  - giờ tôi thích bạn thế rùi, phải làm sao làm thế nào?
+  - m có muốn cưới tao không
+  - tớ yêu bạn
+  - làm bạn gái tôi nha
+  - yêu mình đi
+  - tớ yêu đương cậu
+  - muốn chiếm lấy cậu làm bạn gái
+  - anh yêu thích em
+  - tớ muốn cầu hôn mày
+  - bot có yêu tui không
+  - yêu mày
+  - chồng yêu thích vợ
+  - tôi nhớ m
+  - làm bạn trai anh nhá baby
+  - em có muốn lấy tui không
+  - tớ là bạn gái của cậu được không
+  - bạn yêu tôi đi
+  - sao bạn không thích mình
+  - vì sao bạn không làm bồ tui được hở
+  - giờ tao thích timi quá rồi, phải làm như nào làm như thế nào?
+  - timi có muốn cưới tui không
+  - tớ yêu cậu
+  - làm bạn trai tớ nha
+  - yêu tớ đi timi
+  - tớ thích m lắm
+  - muốn chiếm lấy bot làm chồng
+  - anh yêu đương em
+  - tao muốn tán tỉnh em
+  - bạn có thầm thương trộm nhớ mình không
+  - thầm thương trộm nhớ m
+  - chồng thích vợ
+  - tôi nhớ timi
+  - làm vợ anh nhá baby
+  - bot có muốn lấy tao không
+  - tao là bạn gái của timi được không
+  - bạn yêu mình đi
+  - vì sao timi không mến mộ tớ
+  - tại sao timi không làm bạn gái tớ được hả
+  - giờ tao thích m thế rùi, phải làm răng làm như nào?
+  - bạn có muốn cưới tớ không
+  - tớ yêu đương bạn
+  - làm người yêu tao nha
+  - yêu tớ đi bạn
+  - tớ yêu đương mày lắm
+  - muốn chiếm lấy timi làm người yêu
+  - anh yêu em
+  - tôi muốn tán tỉnh mày
+  - cậu có yêu đương tôi không
+  - thầm thương trộm nhớ em
+  - chồng thầm thương trộm nhớ vợ
+  - tớ nhớ timi
+  - làm bạn trai anh nhá
+  - em có muốn lấy mình không
+  - tao là bồ của m được không
+  - cậu yêu tao đi
+  - vì sao m không thích tớ
+  - sao không làm bạn gái tôi được vậy hả
+  - giờ tui thích em quá rùi, phải làm thế nào làm ntn?
+  - bạn có muốn cưới tao không
+  - tớ mến mộ bạn
+  - làm chồng tao nha
+  - yêu tao đi
+  - tui yêu thích bot lắm
+  - muốn chiếm lấy m làm bạn gái
+  - anh thích em
+  - tớ muốn tán tỉnh timi
+  - em có yêu tớ không
+  - yêu thích em
+  - chồng yêu vợ
+  - tớ nhớ bạn
+  - làm người yêu anh nhá
+  - mày có muốn lấy mình không
+  - tớ là bồ của mày được không
+  - em yêu tớ đi
+  - vì sao cậu không thích tao
+  - sao không làm bạn gái tui được vậy hả
+  - giờ tui thích m quá rùi, phải làm răng làm như thế nào?
+  - em có muốn cưới tớ không
+  - tớ yêu thích cậu
+  - làm bồ tớ nha
+  - yêu mình đi timi
+  - tui thích bot lắm
+  - muốn chiếm lấy m làm người yêu
+  - tớ muốn tán tỉnh bạn
+  - bạn có yêu tao không
+  - thích bot
+  - chồng yêu đương vợ
+  - tui nhớ m
+  - làm người yêu anh nhá baby
+  - m có muốn lấy tui không
+  - tớ là người yêu của em được không
+  - mày yêu tao đi
+  - vì sao không thầm thương trộm nhớ tớ
+  - sao không làm vợ mình được vậy
+  - giờ tớ thích bạn thế rùi, phải làm như nào làm sao?
+  - bot có muốn cưới tôi không
+  - tớ mến mộ cậu
+  - làm bạn trai tôi nha
+  - yêu tớ đi m
+  - mình yêu thích cậu
+  - muốn chiếm lấy mày làm bạn trai
+  - anh thầm thương trộm nhớ em
+  - tao muốn cầu hôn mày
+  - mày có thích tớ không
+  - thích cậu
+  - tớ nhớ mày
+  - làm bồ anh nhá baby
+  - em có muốn lấy tao không
+  - tớ là vợ của mày được không
+  - bot yêu tớ đi
+  - sao em không yêu thích tớ
+  - tại sao không làm người yêu tui được vậy hả
+  - giờ tớ thích bot thế rồi, phải làm răng làm sao?
+  - bot có muốn cưới tui không
+  - tớ thầm thương trộm nhớ bạn
+  - làm chồng tui nha
+  - yêu tớ đi
+  - tôi yêu mày
+  - muốn chiếm lấy cậu làm người yêu
+  - tớ muốn cầu hôn m
+  - timi có mến mộ tớ không
+  - yêu bot
+  - tao nhớ mày
+  - làm chồng anh nhá
+  - bạn có muốn lấy tao không
+  - tao là bạn gái của m được không
+  - cậu yêu tớ đi
+  - sao không yêu đương tớ
+  - vì sao bạn không làm vợ tôi được vậy
+  - giờ tôi thích cậu quá rồi, phải làm răng làm sao?
+  - mày có muốn cưới tui không
+  - tớ thích cậu
+  - làm bồ mình nha
+  - yêu tui đi bạn

@@ -1,0 +1,121 @@
+positives:
+- intent: faq/rec_ask_time_interview
+  examples:
+  - gửi tớ thông tin về thời gian được gọi đi phỏng vấn sau khi gửi hồ sơ với
+  - tôi phải đợi bao lâu mới được tham gia phỏng vấn vậy
+  - nộp resume rồi thì khi nào đi phỏng vấn vậy ạ
+  - nộp resume có được kêu liền không
+  - tôi muốn biết thời gian [f tech](work_unit) gọi ứng viên đi phỏng vấn sau khi
+    xem xét resume ạ
+  - '[ftech](work_unit) gọi đi phỏng vấn có chậm không'
+  - tớ gửi hồ sơ cho [nhân sự](department) rồi, bao giờ thì tớ được đi phỏng vấn hả
+  - sau khi gửi hồ sơ cho công ty thì bao lâu sẽ đến round interview
+  - đợi bao lâu mới đi phỏng vấn
+  - tớ gửi resume cho hr rồi nhưng lâu quá ko thấy gọi phỏng vấn ạ
+  - cho tớ xin information gọi đi phỏng vấn sau khi gửi resume với
+  - quá trình từ lúc nộp sơ yếu lý lịch đến phỏng vấn là mấy ngày
+  - gửi tôi information về thời gian được gọi đi phỏng vấn sau khi gửi hồ sơ với
+  - tôi phải đợi bao lâu mới được gọi đi phỏng vấn
+  - nộp curriculum vitae rồi thì khi nào đi phỏng vấn vậy ạ
+  - nộp hồ sơ có được kêu liền không
+  - mình muốn biết thời gian [f tech](work_unit) gọi thí sinh đi phỏng vấn sau khi
+    xem xét CV ạ
+  - '[f-tech](work_unit) gọi tham gia phỏng vấn có nhanh ko'
+  - tớ apply curriculum vitae cho [hành chính nhân sự](department) rồi, bao lâu thì
+    tớ sẽ được đi phỏng vấn vậy hả
+  - sau khi gửi curriculum vitae cho công ty thì bao lâu sẽ đến round interview
+  - đợi bao lâu mới đi phỏng vấn hả
+  - tôi gửi sơ yếu lý lịch cho hr rồi nhưng lâu quá ko thấy gọi phỏng vấn ạ
+  - cho tớ xin info gọi đi phỏng vấn sau khi gửi hồ sơ với
+  - quy trình từ lúc nộp sơ yếu lý lịch đến interview là bao nhiu ngày
+  - gửi tôi info về thời gian được gọi đi phỏng vấn sau khi gửi curriculum vitae với
+  - mình phải đợi bao lâu mới được tham gia phỏng vấn
+  - nộp hồ sơ rồi thì khi nào đi phỏng vấn vậy ạ
+  - nộp curriculum vitae có được kêu liền không
+  - tớ muốn biết thời gian [ftech](work_unit) gọi người xin việc đi phỏng vấn sau
+    khi xem xét curriculum vitae ạ
+  - '[f-tech](work_unit) gọi tham dự phỏng vấn có nhanh không'
+  - mình nộp hồ sơ cho [hành chính nhân sự](department) rồi, bao giờ thì mình được
+    đi phỏng vấn vậy hả
+  - sau khi gửi sơ yếu lý lịch cho công ty thì bao lâu sẽ đến vòng phỏng vấn
+  - đợi bao lâu mới đi phỏng vấn vậy hả
+  - tớ gửi hồ sơ cho hr rồi nhưng lâu quá ko thấy gọi phỏng vấn ạ
+  - cho mình xin thông tin gọi đi phỏng vấn sau khi gửi resume với
+  - quá trình từ lúc gửi sơ yếu lý lịch đến interview là bao nhiêu ngày
+  - gửi mình thông tin về thời gian được gọi đi phỏng vấn sau khi gửi resume với
+  - mình phải đợi bao lâu mới được đi phỏng vấn vậy
+  - nộp CV rồi thì khi nào đi phỏng vấn vậy ạ
+  - nộp sơ yếu lý lịch có được kêu liền không
+  - mình muốn biết thời gian [f-tech](work_unit) gọi ứng viên xin việc đi phỏng vấn
+    sau khi xem xét curriculum vitae ạ
+  - '[ftech](work_unit) gọi tham gia phỏng vấn có lâu không'
+  - tôi gửi curriculum vitae cho [nhân sự](department) rồi, khi nào thì tớ được đi
+    phỏng vấn hả
+  - sau khi gửi sơ yếu lý lịch cho công ty thì bao lâu sẽ đến lượt phỏng vấn
+  - đợi bao lâu mới gọi đi phỏng vấn vậy hả
+  - mình gửi hồ sơ cho hr rồi nhưng lâu quá ko thấy gọi phỏng vấn ạ
+  - cho tớ xin thông tin gọi đi phỏng vấn sau khi gửi hồ sơ với
+  - tiến trình từ lúc nộp resume đến phỏng vấn là bao nhiu ngày
+  - gửi mình thông tin về thời gian được gọi đi phỏng vấn sau khi gửi sơ yếu lý lịch
+    với
+  - tôi phải đợi bao lâu mới được tham dự phỏng vấn vậy hả
+  - nộp sơ yếu lý lịch rồi thì khi nào đi phỏng vấn vậy ạ
+  - nộp CV có được kêu liền không
+  - mình muốn biết thời gian [ftech](work_unit) gọi người xin việc đi phỏng vấn sau
+    khi xem xét resume ạ
+  - '[f tech](work_unit) gọi đi phỏng vấn có nhanh không'
+  - tớ nộp resume cho [hành chính nhân sự](department) rồi, bao giờ thì tớ sẽ được
+    đi phỏng vấn vậy hả
+  - sau khi gửi hồ sơ cho công ty thì bao lâu sẽ đến lần phỏng vấn
+  - đợi bao lâu mới tham dự phỏng vấn
+  - mình gửi curriculum vitae cho hr rồi nhưng lâu quá ko thấy gọi phỏng vấn ạ
+  - cho tớ xin information gọi đi phỏng vấn sau khi gửi sơ yếu lý lịch với
+  - quá trình từ lúc nộp curriculum vitae đến interview là mấy ngày
+  - gửi mình thông tin về thời gian được gọi đi phỏng vấn sau khi gửi hồ sơ với
+  - tôi phải đợi bao lâu mới được tham gia phỏng vấn
+  - mình muốn biết thời gian [ftech](work_unit) gọi ứng viên đi phỏng vấn sau khi
+    xem xét curriculum vitae ạ
+  - '[f-tech](work_unit) gọi đi phỏng vấn có chậm không'
+  - mình apply curriculum vitae cho [hành chính nhân sự](department) rồi, bao lâu
+    thì tớ sẽ được đi phỏng vấn vậy
+  - sau khi gửi sơ yếu lý lịch cho công ty thì bao lâu sẽ đến vòng interview
+  - đợi bao lâu mới gọi đi phỏng vấn
+  - tớ gửi CV cho hr rồi nhưng lâu quá ko thấy gọi phỏng vấn ạ
+  - cho tớ xin info gọi đi phỏng vấn sau khi gửi sơ yếu lý lịch với
+  - tiến trình từ lúc nộp curriculum vitae đến phỏng vấn là bao nhiu ngày
+  - gửi mình info về thời gian được gọi đi phỏng vấn sau khi gửi CV với
+  - mình phải đợi bao lâu mới được tham dự phỏng vấn
+  - mình muốn biết thời gian [f tech](work_unit) gọi người xin việc đi phỏng vấn sau
+    khi xem xét resume ạ
+  - '[f-tech](work_unit) gọi tham dự phỏng vấn có chậm không'
+  - tớ apply curriculum vitae cho [hr admin](department) rồi, bao giờ thì mình được
+    đi phỏng vấn vậy
+  - sau khi gửi hồ sơ cho công ty thì bao lâu sẽ đến vòng phỏng vấn
+  - đợi bao lâu mới tham gia phỏng vấn vậy
+  - tôi gửi resume cho hr rồi nhưng lâu quá ko thấy gọi phỏng vấn ạ
+  - cho tôi xin thông tin gọi đi phỏng vấn sau khi gửi curriculum vitae với
+  - quy trình từ lúc gửi sơ yếu lý lịch đến phỏng vấn là bao nhiêu ngày
+  - gửi tớ info về thời gian được gọi đi phỏng vấn sau khi gửi sơ yếu lý lịch với
+  - tôi phải đợi bao lâu mới được tham dự phỏng vấn hả
+  - tôi muốn biết thời gian [ftech](work_unit) gọi ứng viên xin việc đi phỏng vấn
+    sau khi xem xét sơ yếu lý lịch ạ
+  - '[f-tech](work_unit) gọi đi phỏng vấn có lâu không'
+  - mình apply sơ yếu lý lịch cho [nhân sự](department) rồi, bao lâu thì tôi sẽ được
+    đi phỏng vấn vậy
+  - sau khi gửi curriculum vitae cho công ty thì bao lâu sẽ đến vòng phỏng vấn
+  - đợi bao lâu mới tham gia phỏng vấn
+  - tớ gửi curriculum vitae cho hr rồi nhưng lâu quá ko thấy gọi phỏng vấn ạ
+  - cho tớ xin information gọi đi phỏng vấn sau khi gửi hồ sơ với
+  - tiến trình từ lúc apply resume đến interview là bao nhiu ngày
+  - gửi tớ information về thời gian được gọi đi phỏng vấn sau khi gửi resume với
+  - tôi phải đợi bao lâu mới được đi phỏng vấn vậy hả
+  - mình muốn biết thời gian [ftech](work_unit) gọi ứng viên xin việc đi phỏng vấn
+    sau khi xem xét resume ạ
+  - '[f-tech](work_unit) gọi gọi đi phỏng vấn có nhanh không'
+  - tớ gửi hồ sơ cho [nhân sự](department) rồi, bao lâu thì tớ sẽ được đi phỏng vấn
+    vậy
+  - sau khi gửi curriculum vitae cho công ty thì bao lâu sẽ đến round phỏng vấn
+  - đợi bao lâu mới gọi đi phỏng vấn vậy
+  - tớ gửi sơ yếu lý lịch cho hr rồi nhưng lâu quá ko thấy gọi phỏng vấn ạ
+  - cho tớ xin thông tin gọi đi phỏng vấn sau khi gửi curriculum vitae với
+  - quy trình từ lúc gửi sơ yếu lý lịch đến interview là bao nhiu ngày

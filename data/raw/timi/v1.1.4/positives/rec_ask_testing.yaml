@@ -1,0 +1,394 @@
+positives:
+- intent: faq/rec_ask_testing
+  examples:
+  - Có testing tư duy lập trình phỏng vấn ko
+  - '[anh](pronoun) có phải test ngoại ngữ khi vào công ty [f-tech](work_unit) không'
+  - tớ có cần ôn kỹ năng mềm khi đi phỏng vấn ko
+  - tớ ứng tuyển vào [android developer](position) [junior](level_position) thì có
+    cần testing không
+  - có mấy bài test tư duy lập trình phỏng vấn đó mầy
+  - có bài testing kỹ năng mềm lúc phỏng vấn không
+  - phỏng vấn có bài testing không
+  - cần làm bao nhiêu bài testing phỏng vấn ạ
+  - ' [ftech](work_unit) ở [hà nội](location) có testing thí sinh ko'
+  - có bài test phỏng vấn không
+  - công ty [f tech](work_unit) có testing của ứng viên ko
+  - khi phỏng vấn cần làm bao nhiu bài testing tư duy lập trình phỏng vấn ạ
+  - phỏng vấn xong có test ngoại ngữ không
+  - cho mình hỏi information về các Tiếng Việt khi phỏng vấn với đc không
+  - phỏng vấn thì cần làm bao nhiu bài kiểm tra ngoại ngữ ạ
+  - lúc phỏng vấn có kiểm tra ngoại ngữ ko
+  - phỏng vấn có cần làm bài testing không
+  - phỏng vấn có testing thuật toánkhông
+  - có bài testing lúc phỏng vấn ko
+  - khi phỏng vấn thì có phải làm bài kiểm tra ko
+  - Có kiểm tra tư duy lập trình phỏng vấn không
+  - '[ta](pronoun) có phải testing khi vào công ty [f-tech](work_unit) không'
+  - tôi có cần ôn coding khi phỏng vấn không
+  - tớ apply vào [php dev](position) mức [fulltime](level_position) thì có cần kiểm
+    tra ko
+  - có bao nhiêu bài kiểm tra phỏng vấn đó cậu
+  - có test lúc phỏng vấn ko
+  - phỏng vấn có bài kiểm tra kỹ năng mềm không
+  - cần làm bao nhiu bài kiểm tra Tiếng Anh phỏng vấn ạ
+  - công ty [f-tech](work_unit) [TH](location) có kiểm tra candidate không
+  - có kiểm tra tư duy logic phỏng vấn ko
+  - công ty [f-tech](work_unit) có testing không
+  - khi phỏng vấn cần làm bao nhiu bài kiểm tra phỏng vấn ạ
+  - phỏng vấn xong có testing tư duy lập trình ko
+  - mình muốn hỏi information về các khi interview
+  - phỏng vấn thì cần làm bao nhiêu bài testing ạ
+  - lúc phỏng vấn có testing ko
+  - interview có cần làm bài test tư duy logic không
+  - phỏng vấn có bài kiểm tra thuật toánko
+  - có bài test lúc phỏng vấn không
+  - khi phỏng vấn thì có phải làm bài kiểm tra ngoại ngữ ko
+  - Có test phỏng vấn ko
+  - '[mình](pronoun) có phải testing khi vào [f-tech](work_unit) ko'
+  - mình có cần ôn ngoại ngữ khi đi phỏng vấn không
+  - tớ apply vào [ai](position) level [senior](level_position) thì có cần test tư
+    duy logic ko
+  - có bao nhiêu bài test phỏng vấn đó bạn
+  - có testing tư duy thuật toán lúc phỏng vấn không
+  - phỏng vấn có bài kiểm tra ko
+  - cần làm bao nhiu bài test phỏng vấn ạ
+  - công ty [f-tech](work_unit) [đn](location) có kiểm tra thuật toán candidate ko
+  - có bài testing phỏng vấn không
+  - công ty [f tech](work_unit) có test kỹ năng mềm của ứng viên không
+  - khi phỏng vấn cần làm bao nhiêu bài testing phỏng vấn ạ
+  - phỏng vấn xong có test không
+  - tớ muốn hỏi information về các khi interview với
+  - phỏng vấn thì cần làm mấy bài kiểm tra tư duy logic ạ
+  - Lúc phỏng vấn có test ko
+  - interview có cần làm bài kiểm tra không
+  - phỏng vấn có testing tư duy thuật toánkhông
+  - Có bài test lúc phỏng vấn không
+  - khi phỏng vấn thì có phải làm bài testing kỹ năng mềm ko
+  - Có testing coding phỏng vấn không
+  - '[t](pronoun) có phải testing ngoại ngữ khi vào công ty [ftech](work_unit) không'
+  - tớ có cần ôn tư duy logic khi đi phỏng vấn không
+  - tớ ứng tuyển vào [2d art](position) vị trí [full time](level_position) thì có
+    cần testing tư duy thuật toán không
+  - có bao nhiu bài test phỏng vấn đó em
+  - có testing lúc phỏng vấn ko
+  - phỏng vấn có bài kiểm tra tư duy thuật toán không
+  - cần làm mấy bài kiểm tra Tiếng Việt phỏng vấn ạ
+  - công ty [ftech](work_unit) [lạng sơn](location) có test thuật toán thí sinh ko
+  - có bài testing kỹ năng mềm phỏng vấn không
+  - ' [f-tech](work_unit) có test không'
+  - khi phỏng vấn cần làm bao nhiu bài test tư duy logic phỏng vấn ạ
+  - phỏng vấn xong có test tư duy logic ko
+  - tớ muốn hỏi info về các coding khi interview
+  - phỏng vấn thì cần làm bao nhiêu bài test kỹ năng mềm ạ
+  - lúc phỏng vấn có test ko
+  - phỏng vấn có cần làm bài kiểm tra không
+  - phỏng vấn có bài testkhông
+  - Có bài testing coding lúc phỏng vấn không
+  - khi phỏng vấn thì có phải làm bài test ko
+  - Có testing tư duy logic phỏng vấn không
+  - '[chị](pronoun) có phải test kỹ năng mềm khi vào [f tech](work_unit) không'
+  - mình có cần ôn khi đi phỏng vấn không
+  - mình nộp đơn vào [be developer](position) level [fulltime](level_position) thì
+    có cần kiểm tra tư duy logic không ha
+  - có mấy bài kiểm tra kỹ năng mềm phỏng vấn đó bot
+  - có test tư duy lập trình lúc phỏng vấn ko
+  - phỏng vấn có bài kiểm tra không
+  - cần làm bao nhiêu bài kiểm tra phỏng vấn ạ
+  - ' [f-tech](work_unit) [sài gòn](location) có testing kỹ năng mềm candidate không'
+  - có bài kiểm tra phỏng vấn không
+  - ' [f-tech](work_unit) có testing ngoại ngữ của thí sinh ko'
+  - khi phỏng vấn cần làm bao nhiu bài test phỏng vấn ạ
+  - phỏng vấn xong có testing ko
+  - cho tớ hỏi info về các kỹ năng mềm khi interview được không
+  - phỏng vấn thì cần làm mấy bài testing Tiếng Trung ạ
+  - lúc phỏng vấn có testing không
+  - interview có cần thực hiện bài test tư duy thuật toán ko
+  - phỏng vấn có testingko
+  - có bài test kỹ năng mềm lúc phỏng vấn ko
+  - khi phỏng vấn thì có phải làm bài kiểm tra tư duy code ko
+  - Có test phỏng vấn không
+  - '[tao](pronoun) có phải test khi vào [f-tech](work_unit) không'
+  - tớ có cần ôn thuật toán khi phỏng vấn không
+  - tớ apply vào [ba](position) mức [thử việc](level_position) thì có cần kiểm tra
+    ko
+  - có mấy bài test kỹ năng mềm phỏng vấn đó timi
+  - có kiểm tra kỹ năng mềm lúc phỏng vấn ko
+  - phỏng vấn có bài test tư duy logic ko
+  - cần làm mấy bài testing phỏng vấn ạ
+  - công ty [f tech](work_unit) [hà nội](location) có test ứng viên xin việc không
+  - có kiểm tra tư duy code phỏng vấn ko
+  - công ty [f-tech](work_unit) có kiểm tra của ứng viên ko
+  - khi phỏng vấn cần làm bao nhiu bài kiểm tra kỹ năng mềm phỏng vấn ạ
+  - phỏng vấn xong có test coding không
+  - tớ muốn hỏi info về các khi interview
+  - phỏng vấn thì cần làm mấy bài testing ạ
+  - lúc phỏng vấn có testing tư duy logic không
+  - phỏng vấn có cần làm bài kiểm tra ko
+  - phỏng vấn có bài testing tư duy lập trìnhko
+  - có bài testing coding lúc phỏng vấn không
+  - khi phỏng vấn thì có phải làm bài kiểm tra không
+  - Có testing thuật toán phỏng vấn không
+  - '[a](pronoun) có phải test khi vào công ty [f tech](work_unit) ko'
+  - tôi có cần ôn khi phỏng vấn không
+  - mình ứng tuyển vào [ja-va developer](position) [sinh viên thực tập](level_position)
+    thì có cần testing tư duy thuật toán không ha
+  - có bao nhiu bài test phỏng vấn đó timi
+  - có bài kiểm tra tư duy code lúc phỏng vấn ko
+  - phỏng vấn có bài test Tiếng Pháp ko
+  - cần làm bao nhiêu bài test phỏng vấn ạ
+  - ' [ftech](work_unit) ở [Macau](location) có test kỹ năng mềm thí sinh không'
+  - có kiểm tra Tiếng Pháp phỏng vấn ko
+  - ' [f tech](work_unit) có testing của candidate ko'
+  - khi phỏng vấn cần làm bao nhiêu bài kiểm tra phỏng vấn ạ
+  - phỏng vấn xong có kiểm tra không
+  - cho tớ hỏi information về các kỹ năng mềm khi interview với đc ko
+  - phỏng vấn thì cần làm mấy bài kiểm tra tư duy lập trình ạ
+  - lúc phỏng vấn có kiểm tra ko
+  - phỏng vấn có cần làm bài test ko
+  - phỏng vấn có bài kiểm tra tư duy logicko
+  - Có bài test tư duy lập trình lúc phỏng vấn ko
+  - khi phỏng vấn thì có phải làm bài test kỹ năng mềm ko
+  - Có kiểm tra coding phỏng vấn ko
+  - '[m](pronoun) có phải kiểm tra Tiếng Việt khi vào [ftech](work_unit) ko'
+  - tớ có cần ôn tư duy logic khi phỏng vấn ko
+  - tớ ứng tuyển vào [soạn nội dung giáo dục](position) mức [fresher](level_position)
+    thì có cần testing ko
+  - có bao nhiu bài test tư duy logic phỏng vấn đó cậu
+  - có bài kiểm tra lúc phỏng vấn ko
+  - phỏng vấn có bài test ko
+  - cần làm bao nhiu bài kiểm tra tư duy logic phỏng vấn ạ
+  - ' [f tech](work_unit) tại [sài gòn](location) có test coding candidate không'
+  - có bài testing phỏng vấn ko
+  - tôi có phải vượt qua bài lập trình không
+  - testing thuật toán sẽ phải thực hành đúng ko ạ
+  - '[anh](pronoun) phải share code trong buổi interview à'
+  - em phải live code trước hội đồng hay chỉ cần hoàn thành bài trong giới hạn thời
+    gian nhỉ
+  - level [full time](level_position) thì có share code khi phỏng vấn không
+  - tớ có cần share screen trước hội đồng tuyển không
+  - ' [tớ](pronoun) apply [pentester](position) thì có chia sẻ camera lúc code không'
+  - em apply [business analyst](position) thì có cần code trực tiếp cho hđồng ko ạ
+  - khi phỏng vấn có cần live code cho hđồng phỏng vấn xem ko ạ
+  - công ty [ftech](work_unit) có codelive không vậy?
+  - '[ftech](work_unit) phỏng vấn có share màn hình không'
+  - mình có phải vượt qua bài share code không
+  - kiểm tra thuật toán sẽ phải code trực tiếp đúng ko ạ
+  - '[ta](pronoun) phải share màn hình trong buổi interview à'
+  - em phải code live trước hội đồng hay chỉ cần hoàn thành bài trong giới hạn thời
+    gian nhỉ
+  - ' [senior](level_position) thì có coding live khi phỏng vấn không'
+  - tớ có cần code trực tiếp trước hội đồng tuyển dụng nhân sự ko
+  - nếu [cô](pronoun) ứng tuyển [người dẫn chương trình](position) thì có chia sẻ
+    camera lúc code không
+  - em apply [ca sĩ](position) thì có cần chia sẻ camera lúc code cho hđồng ko ạ
+  - khi phỏng vấn có cần share màn hình cho hđồng phỏng vấn xem không ạ
+  - ' [f tech](work_unit) có thực hành code ko vậy?'
+  - '[f tech](work_unit) phỏng vấn có coding live ko'
+  - tôi có phải vượt qua bài chia sẻ camera lúc code ko
+  - testing thuật toán sẽ phải live code đúng ko ạ
+  - '[tui](pronoun) phải share màn hình trong buổi interview à'
+  - em phải lập trình trước hội đồng hay chỉ cần hoàn thành bài trong giới hạn thời
+    gian nhỉ
+  - ' [fresher](level_position) thì có share màn hình khi phỏng vấn ko'
+  - tớ có cần thực hành code trước hội đồng recruitment không
+  - ' [tui](pronoun) apply [product owner](position) thì có codelive không'
+  - em apply [game 2d developer](position) thì có cần share screen cho hđồng ko ạ
+  - khi phỏng vấn có cần thực hành cho hđồng phỏng vấn xem ko ạ
+  - ' [f tech](work_unit) có live coding không hả?'
+  - '[f-tech](work_unit) phỏng vấn có share screen ko'
+  - tôi có phải vượt qua bài chia sẻ camera lúc code không
+  - kiểm tra thuật toán sẽ phải live code đúng ko ạ
+  - '[t](pronoun) phải live coding trong buổi interview à'
+  - em phải share màn hình trước hội đồng hay chỉ cần hoàn thành bài trong giới hạn
+    thời gian nhỉ
+  - level [fresher](level_position) thì có share screen khi interview không
+  - mình có cần share màn hình trước hội đồng recruitment không
+  - ' [chị](pronoun) apply [người bảo vệ](position) thì có share màn hình ko'
+  - em apply [product owner](position) thì có cần share màn hình cho hđồng ko ạ
+  - khi phỏng vấn có cần chia sẻ màn hình cho hđồng phỏng vấn xem không ạ
+  - ' [f tech](work_unit) có share màn hình ko vậy?'
+  - '[f tech](work_unit) phỏng vấn có live code ko'
+  - mình có phải vượt qua bài share screen ko
+  - testing thuật toán sẽ phải share màn hình đúng ko ạ
+  - '[tớ](pronoun) phải lập trình trong buổi phỏng vấn à'
+  - em phải coding live trước hội đồng hay chỉ cần hoàn thành bài trong giới hạn thời
+    gian nhỉ
+  - ' [fresher](level_position) thì có live coding khi phỏng vấn không'
+  - tớ có cần share screen trước hội đồng tuyển dụng ko
+  - nếu [tao](pronoun) apply [pentester](position) thì có chia sẻ màn hình ko
+  - em apply [blockchain](position) thì có cần share screen cho hđồng ko ạ
+  - khi phỏng vấn có cần chia sẻ màn hình cho hđồng phỏng vấn xem ko ạ
+  - công ty [f-tech](work_unit) có lập trình ko vậy?
+  - '[ftech](work_unit) interview có live coding ko'
+  - tôi có phải vượt qua bài code live ko
+  - test thuật toán sẽ phải thực hành đúng ko ạ
+  - '[chị](pronoun) phải share code trong buổi interview à'
+  - em phải thực hành trước hội đồng hay chỉ cần hoàn thành bài trong giới hạn thời
+    gian nhỉ
+  - level [fresher](level_position) thì có thực hành khi interview ko
+  - '[ftech](work_unit) phỏng vấn khó không'
+  - tớ tò mò ko biết phỏng vấn [ai engineering](position) thì bài testing có khó lắm
+    không
+  - bài kiểm tra [f-tech](work_unit) có khó ko
+  - mức độ bài kiểm tra ra sao
+  - công ty có đánh đố ứng viên xin việc nhiều không
+  - bài test như nào hử
+  - chắc [ftech](work_unit) phỏng vấn khó lắm nhỉ
+  - test thuật toán của [f tech](work_unit) khó ko
+  - bài kiểm tra của công ty [ftech](work_unit) thế nào?
+  - testing kĩ năng lập trình có khó không
+  - tớ mới biết căn bản thì có đậu bài test tuyển dụng của công ty [f tech](work_unit)
+    không
+  - tôi muốn biết thêm thông tin về bài testing đầu vào công ty [f-tech](work_unit)
+  - mình cần ôn code đến level nào mới tự tin apply bên bạn nhỉ
+  - không biết [f-tech](work_unit) ra bài test khi tuyển dụng có khó hay dễ
+  - phỏng vấn [C# develop](position) chắc ghê lắm đúng ko
+  - sv thì có làm nổi bài test của công ty [ftech](work_unit) không
+  - bài interview có dễ ko
+  - level [junior](level_position) thì bài test có khó không nhỉ
+  - làm thế nào để qua bài test
+  - cho mình xin information về level các bài testing năng lực ứng viên xin việc với
+  - ' qua resume rồi, làm sao để làm dc bài kiểm tra'
+  - tôi thắc mắc về mức độ các bài test của [f-tech](work_unit)
+  - tôi apply [fresher](level_position) [ai](position) thì testing đầu vào có khó
+    ko
+  - '[f tech](work_unit) phỏng vấn khó không'
+  - tôi tò mò không biết phỏng vấn [ai engineer](position) thì bài testing có khó
+    lắm không
+  - bài test [f-tech](work_unit) có khó không
+  - mức độ bài kiểm tra thuật toán ra sao
+  - công ty có đánh đố thí sinh nhiều không
+  - bài testing như thế nào hả
+  - chắc [ftech](work_unit) phỏng vấn gắt gao lắm ha
+  - kiểm tra thuật toán của [ftech](work_unit) khó ko
+  - bài test tuyển dụng của công ty [f-tech](work_unit) thế nào?
+  - testing kĩ năng coding có khó ko
+  - tôi mới biết căn bản thì có pass bài test tuyển dụng của công ty [f tech](work_unit)
+    ko
+  - tớ muốn biết thêm thông tin về bài testing đầu vào của công ty [f tech](work_unit)
+  - tớ cần ôn code đến level nào mới tự tin apply bên bạn nhỉ
+  - không biết [f-tech](work_unit) ra bài testing khi tuyển dụng có khó hay dễ
+  - phỏng vấn [2d develop](position) chắc dễ lắm chuẩn chỉ không
+  - sv thì có làm nổi bài kiểm tra của [f-tech](work_unit) ko
+  - bài phỏng vấn có khó không
+  - level [senior](level_position) thì bài test có khó không nhể
+  - làm như nào để làm nổi bài kiểm tra tư duy lập trình
+  - cho tôi xin info về level các bài testing năng lực ứng viên xin việc với
+  - ' qua CV rồi, làm sao để làm nổi các bài test'
+  - tôi thắc mắc về mức độ các bài kiểm tra của [f-tech](work_unit)
+  - tớ apply [fresher](level_position) [ai research](position) thì kiểm tra đầu vào
+    có khó ko nhỉ
+  - '[f-tech](work_unit) phỏng vấn khó không'
+  - mình tò mò không biết phỏng vấn [ai engineer](position) thì bài test có khó lắm
+    không
+  - bài kiểm tra [ftech](work_unit) có khó không
+  - mức độ bài testing tư duy thuật toán ra sao
+  - công ty có đánh đố candidate nhiều ko
+  - bài kiểm tra như nào hử
+  - chắc công ty [ftech](work_unit) phỏng vấn gắt gao lắm nhỉ
+  - test thuật toán của [f-tech](work_unit) khó ko
+  - bài kiểm tra của công ty [f tech](work_unit) thế nào?
+  - kiểm tra kĩ năng coding có khó không
+  - tớ mới biết căn bản thì có làm được bài kiểm tra tuyển dụng của [f tech](work_unit)
+    không
+  - tôi muốn biết thêm info về level bài testing đầu vào của công ty [f-tech](work_unit)
+  - tôi cần ôn code đến level nào mới tự tin apply bên bạn nhỉ
+  - ko biết [f tech](work_unit) ra bài test khi tuyển dụng có khó hay dễ
+  - phỏng vấn [Quality Assurance](position) chắc gắt lắm chuẩn chỉ ko
+  - sinh viên thì có làm nổi bài kiểm tra của công ty [f-tech](work_unit) ko
+  - bài interview có dễ không
+  - level [ctv](level_position) thì bài testing có khó không nhể
+  - làm như nào để làm nổi bài testing thuật toán
+  - cho mình xin information về level các bài test năng lực người xin việc với
+  - '[tớ](pronoun) được chọn sơ yếu lý lịch rồi, làm như nào để pass các bài testing'
+  - mình thắc mắc về mức độ các bài testing của [ftech](work_unit)
+  - tôi apply [fresher](level_position) [ai](position) thì test đầu vào có khó ko
+  - mình tò mò không biết phỏng vấn [ai engineer](position) thì bài testing có khó
+    lắm ko
+  - bài testing [ftech](work_unit) có khó không
+  - mức độ bài test tư duy thuật toán ra sao
+  - công ty có đánh đố ứng viên xin việc nhiều ko
+  - bài test tư duy code như thế nào hả
+  - chắc [ftech](work_unit) interview gắt gao lắm ha
+  - test thuật toán của [ftech](work_unit) khó ko
+  - bài test tuyển dụng của công ty [ftech](work_unit) thế nào?
+  - testing kĩ năng thuật toán có khó ko
+  - tớ mới biết căn bản thì có pass bài testing tuyển dụng của [f-tech](work_unit)
+    không ha
+  - tớ muốn hỏi thêm information về độ khó bài kiểm tra đầu vào của công ty [ftech](work_unit)
+  - ko biết [f-tech](work_unit) ra bài test khi tuyển dụng có khó hay dễ ha
+  - phỏng vấn [devops engineer](position) chắc ghê lắm chính xác không
+  - sv thì có làm nổi bài test của công ty [f tech](work_unit) không
+  - bài interview có khó ko
+  - level [senior](level_position) thì bài kiểm tra có khó không ha
+  - làm như nào để làm nổi vòng kiểm tra ngoại ngữ
+  - cho tớ xin info về level các bài testing năng lực ứng viên với
+  - '[tôi](pronoun) được chọn CV rồi, làm gì để pass các bài test'
+  - mình thắc mắc về mức độ các bài kiểm tra của [f tech](work_unit)
+  - tôi apply [fresher](level_position) [ai research](position) thì testing đầu vào
+    có khó ko
+  - tớ tò mò không biết phỏng vấn [ai](position) thì bài test có khó lắm không
+  - bài test [ftech](work_unit) có khó ko
+  - mức độ bài test tư duy lập trình ra sao
+  - công ty có đánh đố thí sinh nhiều ko
+  - bài testing coding như thế nào hử
+  - chắc [f tech](work_unit) interview khó lắm nhỉ
+  - kiểm tra thuật toán của [f tech](work_unit) khó ko
+  - bài test của công ty [f-tech](work_unit) như thế nào?
+  - kiểm tra kĩ năng coding có khó ko
+  - tớ mới biết căn bản thì có đậu bài test tuyển dụng của [f-tech](work_unit) ko
+  - tớ muốn hỏi thêm information về bài kiểm tra đầu vào của công ty [f tech](work_unit)
+  - không biết [f-tech](work_unit) ra bài kiểm tra khi tuyển dụng có khó hay dễ nhể
+  - phỏng vấn [game designs](position) chắc gắt lắm chính xác không
+  - sv thì có làm nổi bài kiểm tra của [ftech](work_unit) không
+  - bài phỏng vấn có dễ không
+  - level [cộng tác viên](level_position) thì bài kiểm tra có khó không nhỉ
+  - làm như nào để làm nổi bài kiểm tra tư duy thuật toán
+  - cho tớ xin info về level các bài testing năng lực thí sinh với
+  - '[tôi](pronoun) đậu CV rồi, làm sao để qua bài kiểm tra'
+  - tớ thắc mắc về mức độ các bài testing của [f-tech](work_unit)
+  - tớ apply [fresher](level_position) [ai engineering](position) thì testing đầu
+    vào có khó ko nhỉ
+  - tớ tò mò không biết phỏng vấn [ai engineering](position) thì bài testing có khó
+    lắm ko
+  - bài test [f tech](work_unit) có khó không
+  - mức độ bài kiểm tra coding ra sao
+  - công ty có đánh đố người xin việc nhiều không
+  - bài testing như nào hử
+  - chắc [f tech](work_unit) phỏng vấn khó lắm ha
+  - kiểm tra thuật toán của [f-tech](work_unit) khó ko
+  - bài kiểm tra phỏng vấn của [ftech](work_unit) như nào?
+  - test kĩ năng code có khó ko
+  - mình mới biết căn bản thì có đậu bài kiểm tra tuyển dụng của [ftech](work_unit)
+    ko
+  - mình muốn biết thêm thông tin về level bài test đầu vào của công ty [f tech](work_unit)
+  - ko biết [ftech](work_unit) ra bài test khi tuyển dụng có khó hay dễ
+  - phỏng vấn [game UI/UX designer](position) chắc ghê lắm chuẩn chỉ không
+  - sinh viên thì có làm nổi bài test của công ty [f-tech](work_unit) không
+  - bài phỏng vấn có dễ ko
+  - level [junior](level_position) thì bài testing có khó không nhể
+  - làm như nào để làm được vòng kiểm tra Tiếng Nga
+  - cho mình xin thông tin về level các bài test năng lực ứng viên với
+  - '[a](pronoun) pass sơ yếu lý lịch rồi, làm gì để pass bài testing'
+  - tôi thắc mắc về mức độ các bài test của [ftech](work_unit)
+  - mình apply [fresher](level_position) [ai engineering](position) thì test đầu vào
+    có khó ko ha
+  - mình tò mò ko biết phỏng vấn [ai research](position) thì bài testing có khó lắm
+    không
+  - bài testing [ftech](work_unit) có khó ko
+  - mức độ bài testing ra sao
+  - công ty có đánh đố ứng viên nhiều không
+  - bài testing ngoại ngữ thế nào hử
+  - chắc công ty [ftech](work_unit) interview gắt lắm nhể
+  - testing thuật toán của [f tech](work_unit) khó ko
+  - bài testing phỏng vấn của công ty [f-tech](work_unit) thế nào?
+  - testing kĩ năng lập trình có khó ko
+  - tớ mới biết căn bản thì có đậu bài testing tuyển dụng của [ftech](work_unit) ko
+  - mình muốn biết thêm information về mức độ bài test đầu vào công ty [ftech](work_unit)
+  - không biết [f-tech](work_unit) ra bài kiểm tra khi tuyển dụng có khó hay dễ
+  - phỏng vấn [ja-va develop](position) chắc gắt lắm chuẩn chỉ ko
+  - sinh viên thì có làm nổi bài kiểm tra của [f tech](work_unit) không
+  - bài interview có khó không
+  - level [pre-senior](level_position) thì bài testing có khó ko nhỉ
+  - làm sao để làm đc bài testing tư duy thuật toán
+  - cho mình xin thông tin về level các bài testing năng lực candidate với

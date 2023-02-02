@@ -1,0 +1,774 @@
+positives:
+- intent: faq/rec_ask_overview
+  examples:
+  - hiện tại công ty đang tuyển các ngành nghề gì vậy?
+  - ' phòng ban [game và design](department) ở [sài gòn](location) có đang tuyển [react
+    dev](position) ko'
+  - tư vấn cho tôi job [game UI/UX designer](position)
+  - bên cậu có tuyển [pre-senior](level_position) ở [hn](location) không
+  - bên mầy có tuyển [game 3d products](position) [fresher](level_position) không
+    vậy
+  - tư vấn cho tớ job [fresher](level_position) [ai](position)
+  - có job nào đang tuyển ko
+  - ko biết [pre-senior](level_position) [system administrator](position) [cù lao
+    chàm](location) có đang tuyển dụng không nhỉ
+  - cho mình xin thông tin về tuyển dụng chi nhánh [hà nội](location)
+  - tuyển dụng nhân sự tại [Singapo](location)
+  - team [AI center](department) có còn tuyển nhân sự nữa ko
+  - bộ phận [hạ tầng](department) có tuyển [full-time](level_position) ko
+  - có tuyển [cộng tác viên](level_position) làm về [business analysts](position)
+    không
+  - công ty có tuyển [business analysts](position) không
+  - ko biết ở [tây nguyên](location) có đang tuyển vị trí [pentesters](position) [fresher](level_position)
+  - tuyển dụng của công ty như thế nào
+  - phòng [application](department) có tuyển [pre-senior](level_position) nữa không
+  - các thầy giới thiệu tôi sang [intern,](level_position) không biết cty có tuyển
+    [junior](level_position) [ios develop](position) không nhỉ?
+  - bộ phận có tuyển [senior](level_position) [cầu thủ bóng đá](position) ko
+  - tôi xin thông tin tuyển dụng ở [đông nam bộ](location) với
+  - nghe đồn bên bộ phận [hạ tầng](department) đang tuyển [pre-senior](level_position)
+    [data science](position) hử
+  - bộ phận [sản phẩm](department) có còn tuyển nhân sự nữa không
+  - công ty đang tuyển vị trí nào ở [đồng bằng bắc bộ](location) hả
+  - phòng [product](department) có tuyển thêm [junior](level_position) nữa ko
+  - vị trí nào làm ở [hn](location)
+  - nghe đồn bên bạn đang thiếu [game 3d prod](position) hả?
+  - team [application](department) có tuyển vị trí [full-stack](position) nữa ko
+  - ' muốn làm [vẽ game 3d](position) tại [f-tech?](work_unit)'
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí [nv soạn
+    nội dung giáo dục](position) vậy cho e ứng tuyển với ạ
+  - công ty đang tuyển vị trí nào
+  - tôi muốn apply vị trí [fresher](level_position) [ai engineering](position) đc
+    ko ạ
+  - thông tin tuyển dụng
+  - tớ thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí [ai research](position)
+    của ftech
+  - phòng [game và design](department) có tuyển vị trí [react](position) nữa không
+  - tớ muốn tìm hiểu về tuyển dụng của công ty
+  - job [svtt](level_position) [ios dev](position) [hn](location) như nào
+  - công ty có đang tuyển nhận sự ko
+  - '[f tech](work_unit) còn trống vị trí [fresher](level_position) [PO](position)
+    ko nhỉ'
+  - Dạ chào bạn mình muốn ứng tuyển vào vị trị [trưởng team](bod) [game 3d prod](position)
+    ạ, rất hi vọng bạn phản hồi sớm ạ
+  - '[TH](location) có đang tuyển [fresher](level_position) hay ko'
+  - cho mình xin thông tin về tuyển dụng
+  - công ty có ứng tuyển [trainee](level_position) [game dev](position) ko
+  - công ty đang có đang tuyển [db engineer](position) không
+  - phòng [game](department) có tuyển [thử việc](level_position) vị trí [system network](position)
+    nữa không
+  - ở [sài gòn](location) thông tin tuyển dụng như thế nào
+  - tuyển dụng công ty tại [đà nẵng](location)
+  - có công việc nào liên quan đến [backend developer](position) không
+  - ở [cù lao chàm](location) có đang tuyển vị trí nào không
+  - có vị trí nào trống tại [đất Việt](location) ko
+  - mình muốn hỏi thông tin tuyển dụng tại [hồ chí minh](location) [internship](level_position)
+    [ai](position)
+  - ' có ứng tuyển [junior](level_position) [ai](position) không'
+  - mình xin các vị trí tuyển dụng
+  - '[fresher](level_position) có đang open không vậy'
+  - có công việc nào liên quan đến [fresher](level_position) không em
+  - bên mình có làm về [graphic designer](position) không
+  - công ty có recruitment thêm người tại [đồng bằng bắc bộ](location) không
+  - bên team [cơ sở hạ tầng](department) có tuyển [nhân sự](position) tại [bắc ninh](location)
+    ko nhỉ
+  - ứng tuyển công ty
+  - '[2d art](position)'
+  - cho e xin làm [sinh viên thực tập](level_position) không lương kiếm kinh nghiệm
+    được không
+  - ' thấy FB thông báo bên [ai research](position) Hà Nội đang open đúng không bot?'
+  - làm thế nào để apply vào một vị trí thế
+  - có tuyển [thử việc](level_position) vị trí [game 2d products](position) không
+    m
+  - công ty đang có job gì ko
+  - '[hồ chí minh](location) có đang tuyển [system administrator](position) [thử việc](level_position)
+    ko'
+  - công ty có tuyển [junior](level_position) [ai engineering](position) ko
+  - tớ muốn làm [product owner,](position) ko biết vị trí này có tuyển [junior](level_position)
+  - phòng [AI center](department) có tuyển thêm [ai](position) nữa không
+  - bên bạn có đang tuyển vị trí [game 2d artist](position) ko bạn
+  - cho a xin thông tin về tuyển dụng ở [đồng tháp](location) đi
+  - ' muốn tìm hiểu về tuyển dụng của công ty'
+  - công ty có tuyển [ctv](level_position) không
+  - tớ ở [nam trung bộ](location) muốn apply [thử việc](level_position) [.net developer](position)
+  - vị trí [lập trình viên android](position) làm ở [Đài Loan](location) hả
+  - bộ phận [sản phẩm](department) có tuyển thêm [Machine learning](position) nữa
+    không
+  - tuyển dụng job [blockchain dev](position) [an giang](location)
+  - chi tiết về việc ứng tuyển là như nào đó
+  - tớ muốn biết thông tin tuyển dụng [full stack developer](position) của bộ phận
+    [trung tâm ai](department) tại [miền bắc](location)
+  - '[senior](level_position)'
+  - công ty có tuyển [junior](level_position) [data engineers](position) ko
+  - e chào a/c ạ, e là sinh viên năm 4 học bên [Y hà nội,](work_unit) e thấy bên tớ
+    đang tuyển [sinh viên thực tập](level_position) [full stack dev](position) đúng
+    không ạ, cho e xin ứng tuyển với ạ
+  - tuyển dụng của công ty
+  - những vị trí nào đang tuyển dụng tại [sài gòn](location)
+  - cho tớ xin thông tin job [ai engineer](position)
+  - tuyển dụng nhân sự
+  - cho c xin thông tin về tuyển dụng
+  - team [cơ sở hạ tầng](department) có tuyển [devops engineer](position) không
+  - ở [Tam đảo](location) có đang tuyển vị trí [business support thị trường TQ](position)
+    không
+  - tôi xin thông tin tuyển dụng
+  - '[QB](location) có tuyển [nhân sự](position) ko bác ơi'
+  - ' phòng ban [hệ thống system](department) ở [đn](location) có đang tuyển [product
+    analyst](position) ko'
+  - tư vấn cho tôi job [.net developer](position)
+  - bên mầy có tuyển [fresher](level_position) ở [NB](location) không
+  - bên bạn có tuyển [lập trình viên android](position) [senior](level_position) ko
+    hả
+  - tư vấn cho job [thử việc](level_position) [ai engineer](position)
+  - có vị trí nào đang tuyển không
+  - ko biết [fresher](level_position) [product analysts](position) [TH](location)
+    có đang tuyển dụng ko nhỉ
+  - cho tớ xin thông tin về tuyển dụng chi nhánh [Tràng An](location)
+  - tuyển dụng nhân sự tại [cố đô huế](location)
+  - phòng ban [AI center](department) có còn tuyển nhân sự nữa ko
+  - phòng [hỗ trợ it](department) có tuyển [ctv](level_position) ko
+  - có tuyển [ctv](level_position) làm về [db engineering](position) không
+  - công ty có tuyển [business support thị trường china](position) ko
+  - ko biết ở [TH](location) có đang tuyển vị trí [business analysts](position) level
+    [fresher](level_position)
+  - bộ phận [application](department) có tuyển [full-time](level_position) nữa không
+  - các thầy giới thiệu sang [tts,](level_position) không biết cty có tuyển [junior](level_position)
+    [data engineering](position) không nhỉ?
+  - bên có tuyển [thử việc](level_position) [data engineering](position) không
+  - mình xin thông tin tuyển dụng ở [BG](location) với
+  - nghe đồn bên phòng [hành chính nhân sự](department) đang tuyển [fresher](level_position)
+    [3d dev](position) hả
+  - team [product](department) có còn tuyển nhân sự nữa không
+  - công ty đang tuyển vị trí nào ở [Việt Nam](location) vậy
+  - bộ phận [product](department) có tuyển thêm [pre-senior](level_position) nữa không
+  - vị trí nào làm ở [hồ chí minh](location)
+  - nghe đồn bên bạn đang thiếu [data engineering](position) hả?
+  - bộ phận [application](department) có tuyển vị trí [nhân viên soạn nội dung giáo
+    dục](position) nữa không
+  - ' muốn làm [người vệ sinh](position) tại [f-tech?](work_unit)'
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí [DE](position)
+    vậy cho e ứng tuyển với ạ
+  - ' muốn apply vị trí [cộng tác viên](level_position) [ai engineer](position) đc
+    ko ạ'
+  - ' thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí [ai](position)
+    của ftech'
+  - phòng [game](department) có tuyển vị trí [VFX Animations](position) nữa không
+  - tôi muốn tìm hiểu về tuyển dụng của công ty
+  - job [full time](level_position) [.net dev](position) [đồng bằng sông cưu long](location)
+    như thế nào
+  - công ty có đang tuyển thành viên không
+  - '[ftech](work_unit) còn trống vị trí [full-time](level_position) [go lang](position)
+    ko nhỉ'
+  - Dạ chào bạn muốn ứng tuyển vào vị trị [trưởng team](bod) [hr manager](position)
+    ạ, rất hi vọng bạn phản hồi sớm ạ
+  - '[tây nguyên](location) có đang tuyển [cộng tác viên](level_position) hay ko'
+  - cho tôi xin thông tin về tuyển dụng
+  - ' có ứng tuyển [trainee](level_position) [soạn nội dung giáo dục](position) không'
+  - công ty đang có đang tuyển [3d artist](position) không
+  - bộ phận [game](department) có tuyển [cộng tác viên](level_position) vị trí [data
+    engineer](position) nữa không
+  - ở [Canada](location) thông tin tuyển dụng như nào
+  - tuyển dụng công ty tại [đông bắc bộ](location)
+  - có công việc nào liên quan đến [backend develop](position) ko
+  - ở [hải dương](location) có đang tuyển vị trí nào không
+  - có vị trí nào trống tại [cố đô huế](location) ko
+  - mình muốn biết thông tin tuyển dụng tại [tây ninh](location) vị trí [thử việc](level_position)
+    [ai research](position)
+  - ' có ứng tuyển [internship](level_position) [ai engineer](position) ko'
+  - anh xin các vị trí tuyển dụng
+  - '[senior](level_position) có đang tuyển ko vậy'
+  - có công việc nào liên quan đến [full time](level_position) không
+  - bên mình có làm về [nv bảo vệ](position) ko
+  - công ty có tuyển thêm nhận sự tại [sapa](location) ko
+  - bên team [trung tâm ai](department) có tuyển [devops engineer](position) tại [thủ
+    đức](location) không nhỉ
+  - '[product analyst](position)'
+  - cho e xin làm [svtt](level_position) không lương kiếm kinh nghiệm được không
+  - ' thấy FB thông báo bên [ai](position) Hà Nội đang open đúng không bot?'
+  - có tuyển [fresher](level_position) vị trí [full stack devlop](position) ko
+  - công ty đang có job gì không
+  - '[tây nguyên](location) có đang tuyển [blockchain](position) [fulltime](level_position)
+    ko'
+  - công ty có tuyển [thử việc](level_position) [ai research](position) ko
+  - tớ muốn làm [data scientist,](position) ko biết vị trí này có tuyển [pre-senior](level_position)
+    ko
+  - phòng [trung tâm ai](department) có tuyển thêm [ai engineer](position) nữa ko
+  - bên bạn có đang tuyển vị trí [người an ninh](position) ko timi
+  - cho c xin thông tin về tuyển dụng ở [hn](location) đi
+  - mình muốn tìm hiểu về tuyển dụng của công ty
+  - công ty có tuyển [tts](level_position) không
+  - tớ ở [sài gòn](location) muốn apply [full time](level_position) [game 3d product](position)
+  - vị trí [dotnet dev](position) làm ở [hà nội](location) hả
+  - team [product](department) có tuyển thêm [game UI/UX designs](position) nữa không
+  - tuyển dụng nghề [tay vợt chuyền](position) [hồ chí minh](location)
+  - tớ muốn hỏi thông tin tuyển dụng [natural language processing](position) của team
+    [vệ sinh](department) tại [đà nẵng](location)
+  - '[ctv](level_position)'
+  - công ty có tuyển [junior](level_position) [lập trình viên](position) ko
+  - e chào a/c ạ, e là sinh viên năm 4 học bên [Học viện Kỹ thuật Mật mã,](work_unit)
+    e thấy bên đang tuyển [fresher](level_position) [biên soạn nội dung giáo dục](position)
+    đúng không ạ, cho e xin ứng tuyển với ạ
+  - những vị trí nào đang tuyển dụng tại [hn](location)
+  - cho anh xin information job [ai research](position)
+  - cho chị xin thông tin về tuyển dụng
+  - phòng ban [hạ tầng](department) có tuyển [devops engineer](position) ko
+  - ở [đồng bằng bắc bộ](location) có đang tuyển vị trí [unity 2d dev](position) không
+  - tớ xin thông tin tuyển dụng
+  - '[đn](location) có tuyển [VFX Animators](position) ko bác ơi'
+  - phòng ban phòng ban [hệ thống system](department) ở [dn](location) có đang tuyển
+    [lập trình viên ios](position) không
+  - tư vấn cho job [ja-va](position)
+  - bên bot có tuyển [junior](level_position) ở [hn](location) ko
+  - bên cậu có tuyển [thử việc](level_position) [ai](position) ko hả
+  - tư vấn cho tôi job [fulltime](level_position) [ai](position)
+  - có vị trí nào đang tuyển ko
+  - ko biết [thử việc](level_position) [game 2d unity](position) [BN](location) có
+    đang tuyển dụng ko nhỉ
+  - cho tôi xin thông tin về tuyển dụng chi nhánh [hn](location)
+  - tuyển dụng nhân sự tại [phú quốc](location)
+  - phòng [trung tâm ai](department) có còn tuyển nhân sự nữa ko
+  - phòng ban [cơ sở hạ tầng](department) có tuyển [fresher](level_position) ko
+  - có tuyển [ctv](level_position) làm về [pentester](position) ko
+  - công ty có tuyển [game 2d product](position) ko
+  - ko biết ở [pắc pó](location) có đang tuyển [dotnet develop](position) level [cộng
+    tác viên](level_position) không
+  - phòng [application](department) có tuyển [thử việc](level_position) nữa không
+  - các thầy giới thiệu tôi sang [intern,](level_position) không biết cty có tuyển
+    [sinh viên thực tập](level_position) [nv soạn nội dung giáo dục](position) không
+    nhỉ?
+  - bộ phận có tuyển [internship](level_position) [PO](position) ko
+  - mình xin thông tin tuyển dụng ở [đất Việt](location) với
+  - nghe đồn bên bộ phận [it support](department) đang tuyển [thử việc](level_position)
+    [graphic designers](position) hả
+  - bộ phận [application](department) có còn tuyển nhân sự nữa ko
+  - công ty đang tuyển vị trí nào ở [Thái Lan](location) vậy
+  - phòng ban [product](department) có tuyển thêm [pre-senior](level_position) nữa
+    ko
+  - vị trí nào làm ở [tuyên quang](location)
+  - nghe đồn bên bạn đang thiếu [2d developer](position) hả?
+  - team [application](department) có tuyển vị trí [business support thị trường TQ](position)
+    nữa không
+  - ' muốn làm [product owner](position) tại [f tech?](work_unit)'
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí [back-end
+    dev](position) vậy cho e ứng tuyển với ạ
+  - ' muốn apply vị trí [thử việc](level_position) [ai engineering](position) đc ko
+    ạ'
+  - tớ thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí [blockchain
+    engineer](position) của ftech
+  - team [game & design](department) có tuyển vị trí [data engineering](position)
+    nữa không
+  - job [thử việc](level_position) [devops engineer](position) [củ chi](location)
+    như nào
+  - công ty có đang tuyển thành viên ko
+  - '[f-tech](work_unit) còn trống vị trí [trainee](level_position) [người dẫn chương
+    trình](position) ko nhỉ'
+  - Dạ chào bạn muốn ứng tuyển vào vị trị [trưởng phòng](bod) [game 3d artist](position)
+    ạ, rất hi vọng bạn phản hồi sớm ạ
+  - '[huế](location) có đang tuyển [fresher](level_position) hay ko'
+  - cho tớ xin thông tin về tuyển dụng
+  - ' có ứng tuyển [sinh viên thực tập](level_position) [nv](position) ko'
+  - công ty đang có đang tuyển [go-lang dev](position) không
+  - bộ phận [game và design](department) có tuyển [fresher](level_position) vị trí
+    [computer vision engineer](position) nữa không
+  - ở [đn](location) thông tin tuyển dụng như thế nào
+  - tuyển dụng công ty tại [Việt Nam](location)
+  - có công việc nào liên quan đến [pentester](position) không
+  - ở [HG](location) có đang tuyển vị trí nào ko
+  - có vị trí nào trống tại [đà nẵng](location) không
+  - mình muốn hỏi thông tin tuyển dụng tại [VN](location) [cộng tác viên](level_position)
+    [ai engineering](position)
+  - công ty có ứng tuyển [full time](level_position) [ai engineering](position) không
+  - tớ xin các vị trí tuyển dụng
+  - '[thử việc](level_position) có đang tuyển không vậy hả'
+  - có công việc nào liên quan đến [senior](level_position) không
+  - bên mình có làm về [graphic designers](position) không
+  - công ty có tuyển chọn nhân sự thêm thành viên tại [mộc châu](location) không
+  - bên phòng [hành chính nhân sự](department) có tuyển [ai engineer](position) tại
+    [hcm](location) không nhỉ
+  - '[nhân viên kinh doanh thị trường Trung QUốc](position)'
+  - cho e xin làm [internship](level_position) không lương kiếm kinh nghiệm được không
+  - mình thấy FB thông báo bên [ai engineer](position) Hà Nội đang open đúng không
+    bot?
+  - có tuyển [junior](level_position) vị trí [game 2d unity develop](position) ko
+  - '[hn](location) có đang tuyển [ds](position) [full-time](level_position) không'
+  - công ty có tuyển [fresher](level_position) [ai research](position) không
+  - tớ muốn làm [system admin,](position) không biết vị trí này có tuyển [pre-senior](level_position)
+  - team [AI center](department) có tuyển thêm [ai](position) nữa không
+  - bên bạn có đang tuyển vị trí [vẽ game 2d](position) ko
+  - cho anh xin thông tin về tuyển dụng ở [BG](location) đi
+  - công ty có tuyển [sinh viên thực tập](level_position) ko
+  - mình ở [cù lao chàm](location) muốn apply [fresher](level_position) [product owner](position)
+  - vị trí [android](position) làm ở [đông nam bộ](location) hả
+  - bộ phận [product](department) có tuyển thêm [devops](position) nữa không
+  - tuyển dụng vị trí [3d develop](position) [lạng sơn](location)
+  - mình muốn hỏi thông tin tuyển dụng [ios dev](position) của team [it support](department)
+    tại [NB](location)
+  - '[thử việc](level_position)'
+  - công ty có tuyển [pre-senior](level_position) [front-end develop](position) ko
+  - e chào a/c ạ, e là sinh viên năm 4 học bên [Công nghệ Bưu chính Viễn thông,](work_unit)
+    e thấy bên tôi đang tuyển [senior](level_position) [deep learning](position) đúng
+    không ạ, cho e xin ứng tuyển với ạ
+  - những vị trí nào đang tuyển dụng tại [hà nội](location)
+  - cho tớ xin information job [ai research](position)
+  - cho anh xin thông tin về tuyển dụng
+  - team [cơ sở hạ tầng](department) có tuyển [game UI/UX designer](position) không
+  - ở [hà nội](location) có đang tuyển vị trí [dotnet developer](position) không
+  - mình xin thông tin tuyển dụng
+  - '[VL](location) có tuyển [react native develop](position) không bác ơi'
+  - ' team [AI center](department) ở [hà tĩnh](location) có đang tuyển [frontend developer](position)
+    không'
+  - tư vấn cho tớ job [devops](position)
+  - bên mày có tuyển [thử việc](level_position) ở [Ukraine](location) không
+  - bên m có tuyển [product analysts](position) [thử việc](level_position) ko vậy
+  - tư vấn cho job [full-time](level_position) [ai research](position)
+  - có job nào đang tuyển không
+  - ko biết [ctv](level_position) [ds](position) [dn](location) có đang tuyển dụng
+    ko nhỉ
+  - cho tớ xin thông tin về tuyển dụng chi nhánh [miền tây](location)
+  - tuyển dụng nhân sự tại [hồ chí minh](location)
+  - bộ phận [AI center](department) có còn tuyển nhân sự nữa ko
+  - team [cơ sở hạ tầng](department) có tuyển [full-time](level_position) không
+  - có tuyển [cộng tác viên](level_position) làm về [net](position) không
+  - công ty có tuyển [vẽ 2d](position) ko
+  - ko biết ở [sài gòn](location) có đang tuyển [business analysts](position) [pre-senior](level_position)
+  - phòng ban [application](department) có tuyển [pre-senior](level_position) nữa
+    ko
+  - các thầy giới thiệu tớ sang [tts,](level_position) không biết cty có tuyển [fresher](level_position)
+    [game developer](position) không nhỉ?
+  - ban có tuyển [fresher](level_position) [devops](position) ko
+  - tớ xin thông tin tuyển dụng ở [đà nẵng](location) với
+  - nghe đồn bên team [application](department) đang tuyển [data analysts](position)
+    [thử việc](level_position) hử
+  - bộ phận [kinh doanh](department) có còn tuyển nhân sự nữa ko
+  - công ty đang tuyển vị trí nào ở [tp hồ chí minh](location) vậy hả
+  - phòng ban [product](department) có tuyển thêm [fulltime](level_position) nữa không
+  - vị trí nào làm ở [sài gòn](location)
+  - nghe đồn bên bạn đang thiếu [database engineering](position) hả?
+  - bộ phận [application](department) có tuyển vị trí [ai](position) nữa không
+  - ' muốn làm [vẽ game 3d](position) tại [ftech?](work_unit)'
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của mình đang ứng tuyển vị trí [nhân
+    viên soạn nội dung giáo dục](position) vậy cho e ứng tuyển với ạ
+  - tớ muốn apply vị trí [thử việc](level_position) [ai engineer](position) đc ko
+    ạ
+  - tớ thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí [ai](position)
+    của ftech
+  - phòng ban [game và design](department) có tuyển vị trí [2d artist](position) nữa
+    không
+  - job [junior](level_position) [golang develop](position) [Đan Mạch](location) thế
+    nào
+  - công ty có đang tuyển nhân viên ko
+  - '[f-tech](work_unit) còn trống vị trí [cộng tác viên](level_position) [data engineering](position)
+    ko nhỉ'
+  - Dạ chào bạn muốn ứng tuyển vào vị trị [trưởng phòng](bod) [3d art](position) ạ,
+    rất hi vọng bạn phản hồi sớm ạ
+  - '[Mĩ](location) có đang tuyển [full time](level_position) hay không'
+  - công ty có ứng tuyển [trainee](level_position) [product owner](position) ko
+  - công ty đang có đang tuyển [java develop](position) ko
+  - phòng ban [game](department) có tuyển [junior](level_position) vị trí [VFX Animators](position)
+    nữa không
+  - ở [miền nam](location) thông tin tuyển dụng như nào
+  - tuyển dụng công ty tại [Phong Nha-Kẻ Bàng](location)
+  - có công việc nào liên quan đến [QA Tester](position) không
+  - ở [VN](location) có đang tuyển vị trí nào không
+  - có vị trí nào trống tại [Việt Nam](location) không
+  - mình muốn biết thông tin tuyển dụng tại [đn](location) [full time](level_position)
+    [ai](position)
+  - công ty có ứng tuyển [pretrain](level_position) [ai](position) không
+  - chị xin các vị trí tuyển dụng
+  - '[junior](level_position) có đang open ko vậy'
+  - có công việc nào liên quan đến [pre-senior](level_position) không em
+  - bên mình có làm về [fe develop](position) không
+  - công ty có tuyển nhân viên thêm nhân viên tại [miền tây](location) ko
+  - bên bộ phận [application](department) có tuyển [go lang dev](position) tại [VN](location)
+    không nhỉ
+  - '[database engineering](position)'
+  - cho e xin làm [intern](level_position) không lương kiếm kinh nghiệm được không
+  - ' thấy FB thông báo bên [ai engineer](position) Hà Nội đang open đúng không bot?'
+  - có tuyển [fresher](level_position) vị trí [nhân sự](position) không
+  - '[TH](location) có đang tuyển [python develop](position) [senior](level_position)
+    ko'
+  - công ty có tuyển [full time](level_position) [ai engineering](position) ko
+  - tớ muốn làm [devops engineer,](position) ko biết vị trí này có tuyển [thử việc](level_position)
+    không
+  - phòng ban [AI center](department) có tuyển thêm [ai](position) nữa không
+  - bên bạn có đang tuyển vị trí [business support thị trường Trung quốc](position)
+    ko em
+  - cho c xin thông tin về tuyển dụng ở [NB](location) đi
+  - công ty có tuyển [svtt](level_position) không
+  - tớ ở [bình định](location) muốn apply [cộng tác viên](level_position) [db engineering](position)
+  - vị trí [product analysts](position) làm ở [sóc trăng](location) hả
+  - phòng [sản phẩm](department) có tuyển thêm [back end](position) nữa ko
+  - tuyển dụng job [nhân sự](position) [Thụy Sĩ](location)
+  - tôi muốn biết thông tin tuyển dụng [business analysts](position) của phòng [kiểm
+    toán](department) tại [sóc trăng](location)
+  - '[fresher](level_position)'
+  - công ty có tuyển [fulltime](level_position) [full-stack](position) không
+  - e chào a/c ạ, e là sinh viên năm 4 học bên [Đại học ULIS,](work_unit) e thấy bên
+    đang tuyển [junior](level_position) [data engineering](position) đúng không ạ,
+    cho e xin ứng tuyển với ạ
+  - những vị trí nào đang tuyển dụng tại [đắk lắk](location)
+  - cho mình xin thông tin job [ai engineer](position)
+  - cho a xin thông tin về tuyển dụng
+  - team [hệ thống cơ sở hạ tầng](department) có tuyển [DA](position) ko
+  - ở [Hong Kong](location) có đang tuyển [business support thị trường TQ](position)
+    không
+  - '[hcm](location) có tuyển [android dev](position) ko bác ơi'
+  - phòng ban team [sản phẩm](department) ở [đồng bằng sông cưu long](location) có
+    đang tuyển [golang developer](position) không
+  - tư vấn cho job [PO](position)
+  - bên em có tuyển [junior](level_position) ở [bạc liệu](location) ko
+  - bên bạn có tuyển [DA](position) [svtt](level_position) ko vậy hả
+  - tư vấn cho job [cộng tác viên](level_position) [ai research](position)
+  - không biết [fresher](level_position) [VFX Animations](position) [hang sơn đoòng](location)
+    có đang tuyển dụng ko nhỉ
+  - cho tớ xin thông tin về tuyển dụng chi nhánh [hn](location)
+  - tuyển dụng nhân sự tại [Phan Thiết](location)
+  - bộ phận [trung tâm ai](department) có còn tuyển nhân sự nữa ko
+  - phòng ban [hỗ trợ it](department) có tuyển [full-time](level_position) ko
+  - có tuyển [ctv](level_position) làm về [game 2d prod](position) không
+  - công ty có tuyển [game 2d art](position) không
+  - ko biết ở [sài gòn](location) có đang tuyển vị trí [pentester](position) level
+    [fresher](level_position) không
+  - bộ phận [application](department) có tuyển [sinh viên thực tập](level_position)
+    nữa không
+  - các thầy giới thiệu tớ sang [intern,](level_position) không biết cty có tuyển
+    [fresher](level_position) [product analyst](position) không nhỉ?
+  - bên có tuyển [tts](level_position) [VFX Animations](position) ko
+  - tớ xin thông tin tuyển dụng ở [côn đảo](location) với
+  - nghe đồn bên phòng ban [hành chính nhân sự](department) đang tuyển [full-time](level_position)
+    [blockchain engineer](position) hả
+  - bộ phận [kinh doanh](department) có còn tuyển nhân sự nữa không
+  - công ty đang tuyển vị trí nào ở [hn](location) vậy hả
+  - phòng ban [sản phẩm](department) có tuyển thêm [senior](level_position) nữa ko
+  - vị trí nào làm ở [VL](location)
+  - nghe đồn bên bạn đang thiếu [PA](position) hả?
+  - team [application](department) có tuyển vị trí [game 2d artist](position) nữa
+    ko
+  - tôi muốn làm [full stack developer](position) tại [f-tech?](work_unit)
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí [android
+    developer](position) vậy cho e ứng tuyển với ạ
+  - ' muốn apply vị trí [fulltime](level_position) [ai research](position) đc ko ạ'
+  - tớ thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí [ba](position)
+    của ftech
+  - bộ phận [game & design](department) có tuyển vị trí [nv an ninh](position) nữa
+    ko
+  - job [junior](level_position) [graphic](position) [TV](location) như thế nào
+  - công ty có đang tuyển nhân viên không
+  - '[f tech](work_unit) còn trống vị trí [senior](level_position) [blockchain dev](position)
+    ko nhỉ'
+  - Dạ chào bạn muốn ứng tuyển vào vị trị [leader](bod) [VFX Animator](position) ạ,
+    rất hi vọng bạn phản hồi sớm ạ
+  - '[HG](location) có đang tuyển [cộng tác viên](level_position) hay ko'
+  - ' có ứng tuyển [svtt](level_position) [C++ engineer](position) không'
+  - công ty đang có đang tuyển [C# engineer](position) không
+  - phòng [game](department) có tuyển [trainee](level_position) vị trí [blockchain
+    develop](position) nữa ko
+  - ở [hà nội](location) thông tin tuyển dụng thế nào
+  - tuyển dụng công ty tại [Campuchia](location)
+  - có công việc nào liên quan đến [QA](position) ko cậu
+  - ở [dn](location) có đang tuyển vị trí nào ko
+  - có vị trí nào trống tại [hồ chí minh](location) không
+  - tôi muốn biết thông tin tuyển dụng tại [hà nội](location) [pre-senior](level_position)
+    [ai engineer](position)
+  - công ty có ứng tuyển [svtt](level_position) [ai research](position) ko
+  - '[junior](level_position) có đang open không vậy'
+  - có công việc nào liên quan đến [fulltime](level_position) không timi
+  - bên mình có làm về [ja-va](position) không
+  - công ty có tuyển dụng thêm người tại [phú thọ](location) không
+  - bên bộ phận [product](department) có tuyển [net](position) tại [hcm](location)
+    ko nhỉ
+  - '[lập trình viên ios](position)'
+  - cho e xin làm [tts](level_position) không lương kiếm kinh nghiệm được không
+  - tớ thấy FB thông báo bên [ai engineer](position) Hà Nội đang open đúng không bot?
+  - có tuyển [fresher](level_position) vị trí [unity 3d](position) không mầy
+  - '[quy nhơn](location) có đang tuyển [nlp](position) [cộng tác viên](level_position)
+    không'
+  - công ty có tuyển [svtt](level_position) [ai research](position) không
+  - mình muốn làm [pentest,](position) không biết vị trí này có tuyển [junior](level_position)
+  - phòng [trung tâm ai](department) có tuyển thêm [ai engineering](position) nữa
+    ko
+  - bên bạn có đang tuyển vị trí [blockchain engineer](position) ko
+  - cho c xin thông tin về tuyển dụng ở [BN](location) đi
+  - công ty có tuyển [cộng tác viên](level_position) không
+  - tớ ở [QB](location) muốn apply [fresher](level_position) [front-end develop](position)
+  - vị trí [backend dev](position) làm ở [đà nẵng](location) hả
+  - team [product](department) có tuyển thêm [full stack devlop](position) nữa không
+  - tuyển dụng vị trí [game UI/UX design](position) [hn](location)
+  - tớ muốn biết thông tin tuyển dụng [.net developer](position) của team [hành chính
+    nhân sự](department) tại [Thụy Sĩ](location)
+  - '[junior](level_position)'
+  - công ty có tuyển [thử việc](level_position) [nv thiết kế nội dung giáo dục](position)
+    ko
+  - e chào a/c ạ, e là sinh viên năm 4 học bên [Đại học FPT,](work_unit) e thấy bên
+    mình đang tuyển [pre-senior](level_position) [MC](position) đúng không ạ, cho
+    e xin ứng tuyển với ạ
+  - những vị trí nào đang tuyển dụng tại [đà nẵng](location)
+  - cho tớ xin information job [ai engineer](position)
+  - phòng ban [cơ sở hạ tầng](department) có tuyển [VFX Animation](position) ko
+  - ở [đn](location) có đang tuyển [system admin](position) không
+  - '[lâm đồng](location) có tuyển [game 2d developer](position) ko bác ơi'
+  - bộ phận bộ phận [trung tâm ai](department) ở [pắc pó](location) có đang tuyển
+    [os network](position) ko
+  - tư vấn cho tớ job [game 2d unity](position)
+  - bên em có tuyển [junior](level_position) ở [Áo](location) không
+  - bên bạn có tuyển [nlp](position) [fresher](level_position) không hả
+  - tư vấn cho tớ job [fulltime](level_position) [ai engineer](position)
+  - ko biết [pre-senior](level_position) [product owner](position) [hồ chí minh](location)
+    có đang tuyển dụng không nhỉ
+  - cho tớ xin thông tin về tuyển dụng chi nhánh [quảng ngãi](location)
+  - tuyển dụng nhân sự tại [gia lai](location)
+  - team [trung tâm ai](department) có còn tuyển nhân sự nữa ko
+  - phòng [cơ sở hạ tầng](department) có tuyển [fulltime](level_position) không
+  - có tuyển [ctv](level_position) làm về [ai engineer](position) không
+  - công ty có tuyển [net](position) ko
+  - ko biết ở [dn](location) có đang tuyển [graphic design](position) level [fresher](level_position)
+    ko
+  - bộ phận [application](department) có tuyển [fresher](level_position) nữa không
+  - các thầy giới thiệu tớ sang [pretrain,](level_position) không biết cty có tuyển
+    [fresher](level_position) [biên soạn nội dung giáo dục](position) không nhỉ?
+  - bộ phận có tuyển [junior](level_position) [db engineering](position) ko
+  - tớ xin thông tin tuyển dụng ở [hà nội](location) với
+  - nghe đồn bên bộ phận [business](department) đang tuyển [ds](position) [internship](level_position)
+    hả
+  - phòng ban [application](department) có còn tuyển nhân sự nữa ko
+  - công ty đang tuyển vị trí nào ở [hồ chí minh](location) vậy
+  - team [sản phẩm](department) có tuyển thêm [pre-senior](level_position) nữa không
+  - vị trí nào làm ở [nghệ an](location)
+  - nghe đồn bên bạn đang thiếu [product owners](position) hả?
+  - phòng [application](department) có tuyển vị trí [react-native dev](position) nữa
+    ko
+  - mình muốn làm [business analyst](position) tại [ftech?](work_unit)
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của tớ đang ứng tuyển vị trí [VFX
+    Animation](position) vậy cho e ứng tuyển với ạ
+  - ' muốn apply vị trí [ctv](level_position) [ai engineering](position) đc ko ạ'
+  - ' thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí [ai engineering](position)
+    của ftech'
+  - bộ phận [game & design](department) có tuyển vị trí [development and operations](position)
+    nữa không
+  - job [thực tập sinh](level_position) [game 3d prod](position) [TV](location) thế
+    nào
+  - công ty có đang tuyển người ko
+  - '[ftech](work_unit) còn trống vị trí [full time](level_position) [graphic design](position)
+    ko nhỉ'
+  - Dạ chào bạn muốn ứng tuyển vào vị trị [leader](bod) [2d unity](position) ạ, rất
+    hi vọng bạn phản hồi sớm ạ
+  - '[dn](location) có đang tuyển [fulltime](level_position) hay ko'
+  - công ty có ứng tuyển [svtt](level_position) [ja-va develop](position) không
+  - công ty đang có đang tuyển [ja-va develop](position) ko
+  - team [game](department) có tuyển [pre-senior](level_position) vị trí [ai engineer](position)
+    nữa không
+  - ở [hn](location) thông tin tuyển dụng thế nào
+  - tuyển dụng công ty tại [nam định](location)
+  - có công việc nào liên quan đến [2d art](position) không
+  - ở [sài gòn](location) có đang tuyển vị trí nào không
+  - có vị trí nào trống tại [bạc liệu](location) không
+  - tôi muốn hỏi thông tin tuyển dụng tại [đất Việt](location) vị trí [thử việc](level_position)
+    [ai engineer](position)
+  - ' có ứng tuyển [pre-senior](level_position) [ai engineer](position) không'
+  - '[trainee](level_position) có đang open không hả'
+  - có công việc nào liên quan đến [junior](level_position) ko
+  - bên mình có làm về [android](position) ko
+  - công ty có tuyển dụng thêm thành viên tại [sài gòn](location) ko
+  - bên bộ phận [AI center](department) có tuyển [go lang develop](position) tại [đn](location)
+    không nhỉ
+  - '[hr manager](position)'
+  - cho e xin làm [pretrain](level_position) không lương kiếm kinh nghiệm được không
+  - ' thấy FB thông báo bên [ai engineering](position) Hà Nội đang open đúng không
+    bot?'
+  - có tuyển [full time](level_position) vị trí [cv researcher](position) ko em
+  - '[hồ chí minh](location) có đang tuyển [system administrator](position) [fresher](level_position)
+    không'
+  - công ty có tuyển [fresher](level_position) [ai engineering](position) không
+  - tớ muốn làm [QA,](position) không biết vị trí này có tuyển [fresher](level_position)
+  - phòng ban [trung tâm ai](department) có tuyển thêm [ai engineering](position)
+    nữa không
+  - bên bạn có đang tuyển vị trí [business support thị trường TQ](position) ko
+  - cho a xin thông tin về tuyển dụng ở [Tam đảo](location) đi
+  - công ty có tuyển [pretrain](level_position) không
+  - tớ ở [miền nam](location) muốn apply [thực tập sinh](level_position) [devops engineer](position)
+  - vị trí [dotnet developer](position) làm ở [phú yên](location) hả
+  - bộ phận [product](department) có tuyển thêm [data engineers](position) nữa ko
+  - tuyển dụng vị trí [ai research](position) [đà nẵng](location)
+  - tôi muốn biết thông tin tuyển dụng [ai research](position) của phòng [platform](department)
+    tại [miền tây](location)
+  - '[thực tập sinh](level_position)'
+  - công ty có tuyển [junior](level_position) [business analyst](position) không
+  - e chào a/c ạ, e là sinh viên năm 4 học bên [Đại học ftu,](work_unit) e thấy bên
+    tớ đang tuyển [fresher](level_position) [nv soạn nội dung giáo dục](position)
+    đúng không ạ, cho e xin ứng tuyển với ạ
+  - những vị trí nào đang tuyển dụng tại [quảng ngãi](location)
+  - cho chị xin information job [ai](position)
+  - phòng ban [hạ tầng](department) có tuyển [cv researcher](position) ko
+  - ở [TH](location) có đang tuyển vị trí [C engineer](position) ko
+  - '[pắc pó](location) có tuyển [VFX Animator](position) không bác ơi'
+  - phòng ban phòng ban [sản phẩm](department) ở [nam trung bộ](location) có đang
+    tuyển [ios develop](position) ko
+  - tư vấn cho tớ job [nv soạn nội dung giáo dục](position)
+  - bên timi có tuyển [fulltime](level_position) ở [Thổ Nhĩ Kỳ](location) ko
+  - bên mầy có tuyển [thử việc](level_position) [ai engineer](position) ko vậy hả
+  - tư vấn cho tôi job [pretrain](level_position) [ai](position)
+  - ko biết [full-time](level_position) [game 3d products](position) [hồ chí minh](location)
+    có đang tuyển dụng không nhỉ
+  - cho tôi xin thông tin về tuyển dụng chi nhánh [đông nam bộ](location)
+  - tuyển dụng nhân sự tại [ninh thuận](location)
+  - phòng [AI center](department) có còn tuyển nhân sự nữa ko
+  - phòng [hệ thống cơ sở hạ tầng](department) có tuyển [junior](level_position) không
+  - có tuyển [sinh viên thực tập](level_position) làm về [vẽ 2d](position) ko
+  - công ty có tuyển [go lang](position) không
+  - không biết ở [VN](location) có đang tuyển [backend develop](position) [senior](level_position)
+  - team [application](department) có tuyển [junior](level_position) nữa không
+  - các thầy giới thiệu tớ sang [intern,](level_position) không biết cty có tuyển
+    [fresher](level_position) [db engineering](position) không nhỉ?
+  - bộ phận có tuyển [full-time](level_position) [ai engineering](position) không
+  - tớ xin thông tin tuyển dụng ở [VN](location) với
+  - nghe đồn bên bộ phận [hỗ trợ it](department) đang tuyển [game 3d artist](position)
+    [junior](level_position) hử
+  - phòng ban [sản phẩm](department) có còn tuyển nhân sự nữa không
+  - công ty đang tuyển vị trí nào ở [sài gòn](location) vậy hả
+  - phòng [product](department) có tuyển thêm [junior](level_position) nữa không
+  - vị trí nào làm ở [hcm](location)
+  - nghe đồn bên bạn đang thiếu [data analyst](position) hả?
+  - phòng ban [application](department) có tuyển vị trí [VFX Animation](position)
+    nữa không
+  - tôi muốn làm [ai](position) tại [f tech?](work_unit)
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí [game
+    developer](position) vậy cho e ứng tuyển với ạ
+  - tớ muốn apply vị trí [pre-senior](level_position) [ai engineering](position) đc
+    ko ạ
+  - ' thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí [ai engineer](position)
+    của ftech'
+  - team [game](department) có tuyển vị trí [java develop](position) nữa ko
+  - job [fulltime](level_position) [data scientists](position) [đà nẵng](location)
+    như nào
+  - công ty có đang tuyển nhận sự không
+  - '[f-tech](work_unit) còn trống vị trí [thử việc](level_position) [fe develop](position)
+    ko nhỉ'
+  - Dạ chào bạn mình muốn ứng tuyển vào vị trị [leader](bod) [product analyst](position)
+    ạ, rất hi vọng bạn phản hồi sớm ạ
+  - '[miền bắc](location) có đang tuyển [senior](level_position) hay không'
+  - công ty có ứng tuyển [pretrain](level_position) [game 2d unity](position) không
+  - công ty đang có đang tuyển [pentesters](position) ko
+  - phòng ban [game](department) có tuyển [junior](level_position) vị trí [net develop](position)
+    nữa không
+  - ở [HD](location) thông tin tuyển dụng thế nào
+  - tuyển dụng công ty tại [duyên hải miền trung](location)
+  - có công việc nào liên quan đến [be develop](position) ko timi
+  - ở [bắc trung bộ](location) có đang tuyển vị trí nào không
+  - có vị trí nào trống tại [dn](location) ko
+  - tôi muốn hỏi thông tin tuyển dụng tại [phú thọ](location) vị trí [thực tập sinh](level_position)
+    [ai engineer](position)
+  - ' có ứng tuyển [fulltime](level_position) [ai engineering](position) ko'
+  - '[fulltime](level_position) có đang tuyển không vậy'
+  - có công việc nào liên quan đến [fresher](level_position) không
+  - bên mình có làm về [pentester](position) ko
+  - công ty có tuyển dụng nhân sự thêm thành viên tại [miền bắc](location) không
+  - bên team [Marketing](department) có tuyển [game 3d prod](position) tại [LS](location)
+    không nhỉ
+  - '[product owner](position)'
+  - cho e xin làm [trainee](level_position) không lương kiếm kinh nghiệm được không
+  - tôi thấy FB thông báo bên [ai research](position) Hà Nội đang open đúng không
+    bot?
+  - có tuyển [thử việc](level_position) vị trí [ios dev](position) ko bạn
+  - '[đồng bằng sông hồng](location) có đang tuyển [android develop](position) [junior](level_position)
+    không'
+  - công ty có tuyển [cộng tác viên](level_position) [ai](position) không
+  - mình muốn làm [front-end develop,](position) không biết vị trí này có tuyển [thử
+    việc](level_position) không
+  - phòng [trung tâm ai](department) có tuyển thêm [ai engineer](position) nữa không
+  - bên bạn có đang tuyển vị trí [fe develop](position) ko mày
+  - cho chị xin thông tin về tuyển dụng ở [bắc trung bộ](location) đi
+  - công ty có tuyển [internship](level_position) không
+  - tớ ở [yên bái](location) muốn apply [thử việc](level_position) [android developer](position)
+  - vị trí [data analyst](position) làm ở [Việt Nam](location) hả
+  - phòng ban [product](department) có tuyển thêm [game 3d products](position) nữa
+    ko
+  - tuyển dụng ngành [nv an ninh](position) [dn](location)
+  - tôi muốn hỏi thông tin tuyển dụng [db engineering](position) của team [it support](department)
+    tại [Phan Thiết](location)
+  - '[pretrain](level_position)'
+  - công ty có tuyển [pre-senior](level_position) [pentest](position) không
+  - e chào a/c ạ, e là sinh viên năm 4 học bên [Đại học Duy Tân,](work_unit) e thấy
+    bên tớ đang tuyển [thử việc](level_position) [DA](position) đúng không ạ, cho
+    e xin ứng tuyển với ạ
+  - những vị trí nào đang tuyển dụng tại [đồng bằng bắc bộ](location)
+  - cho mình xin info job [ai](position)
+  - bộ phận [cơ sở hạ tầng](department) có tuyển [react develop](position) ko
+  - ở [BN](location) có đang tuyển vị trí [system admin](position) không
+  - '[hn](location) có tuyển [game design](position) ko bác ơi'
+  - phòng ban phòng ban [it support](department) ở [đất Việt](location) có đang tuyển
+    [natural language processing](position) ko
+  - tư vấn cho mình job [nv thiết kế nội dung giáo dục](position)
+  - bên bạn có tuyển [fresher](level_position) ở [sài gòn](location) ko
+  - bên timi có tuyển [internship](level_position) [ai engineer](position) không vậy
+    hả
+  - tư vấn cho job [full time](level_position) [ai research](position)
+  - ko biết [fresher](level_position) [ai engineering](position) [dn](location) có
+    đang tuyển dụng ko nhỉ
+  - cho tôi xin thông tin về tuyển dụng chi nhánh [miền nam](location)
+  - tuyển dụng nhân sự tại [Ukraine](location)
+  - phòng ban [trung tâm ai](department) có còn tuyển nhân sự nữa ko
+  - bộ phận [it support](department) có tuyển [senior](level_position) ko
+  - có tuyển [pretrain](level_position) làm về [ios dev](position) không
+  - công ty có tuyển [java dev](position) ko
+  - ko biết ở [nam trung bộ](location) có đang tuyển vị trí [quản lý nhân sự](position)
+    [pre-senior](level_position) ko
+  - team [application](department) có tuyển [thử việc](level_position) nữa không
+  - các thầy giới thiệu tớ sang [svtt,](level_position) không biết cty có tuyển [fulltime](level_position)
+    [Ruby dev](position) không nhỉ?
+  - bên có tuyển [thử việc](level_position) [data analyst](position) không
+  - tớ xin thông tin tuyển dụng ở [dn](location) với
+  - nghe đồn bên bộ phận [game](department) đang tuyển [junior](level_position) [blockchain
+    dev](position) hả
+  - phòng ban [công đoàn](department) có còn tuyển nhân sự nữa không
+  - công ty đang tuyển vị trí nào ở [BN](location) vậy
+  - phòng ban [sản phẩm](department) có tuyển thêm [junior](level_position) nữa ko
+  - vị trí nào làm ở [đn](location)
+  - nghe đồn bên bạn đang thiếu [cv engineer](position) hả?
+  - phòng ban [application](department) có tuyển vị trí [ai engineering](position)
+    nữa không
+  - tôi muốn làm [game 2d artist](position) tại [f-tech?](work_unit)
+  - em chào a chị ạ, e thấy trên trang tuyển dụng của đang ứng tuyển vị trí [game
+    2d prod](position) vậy cho e ứng tuyển với ạ
+  - tớ muốn apply vị trí [fulltime](level_position) [ai engineer](position) đc ko
+    ạ
+  - ' thấy bạn đăng tin tuyển dụng trên topcv nên muốn apply vào vị trí [C# develop](position)
+    của ftech'
+  - bộ phận [game & design](department) có tuyển vị trí [vẽ game 2d](position) nữa
+    ko
+  - job [junior](level_position) [business analysts](position) [hn](location) thế
+    nào
+  - công ty có đang tuyển người không
+  - '[ftech](work_unit) còn trống vị trí [fresher](level_position) [android develop](position)
+    ko nhỉ'
+  - Dạ chào bạn muốn ứng tuyển vào vị trị [leader](bod) [product analysts](position)
+    ạ, rất hi vọng bạn phản hồi sớm ạ
+  - '[NB](location) có đang tuyển [junior](level_position) hay ko'
+  - ' có ứng tuyển [thực tập sinh](level_position) [game 2d unity](position) không'
+  - công ty đang có đang tuyển [.net developer](position) ko
+  - bộ phận [game và design](department) có tuyển [pretrain](level_position) vị trí
+    [game develop](position) nữa không
+  - ở [VN](location) thông tin tuyển dụng thế nào
+  - tuyển dụng công ty tại [HG](location)
+  - có công việc nào liên quan đến [system network](position) không
+  - ở [hồ chí minh](location) có đang tuyển vị trí nào không
+  - có vị trí nào trống tại [phú yên](location) không
+  - mình muốn hỏi thông tin tuyển dụng tại [huế](location) vị trí [fulltime](level_position)
+    [ai engineering](position)
+  - ' có ứng tuyển [fresher](level_position) [ai research](position) ko'
+  - '[junior](level_position) có đang tuyển ko vậy'
+  - có công việc nào liên quan đến [svtt](level_position) ko
+  - bên mình có làm về [hr manager](position) ko
+  - công ty có tuyển dụng nhân sự thêm thành viên tại [hn](location) không
+  - bên phòng ban [hành chính nhân sự](department) có tuyển [ios dev](position) tại
+    [dn](location) ko nhỉ
+  - '[graphic designers](position)'
+  - cho e xin làm [thực tập sinh](level_position) không lương kiếm kinh nghiệm được
+    không
+  - mình thấy FB thông báo bên [ai](position) Hà Nội đang open đúng không bot?
+  - có tuyển [senior](level_position) vị trí [nv soạn nội dung giáo dục](position)
+    không bạn
+  - '[Phan Thiết](location) có đang tuyển [database engineer](position) [thử việc](level_position)
+    không'
+  - công ty có tuyển [fulltime](level_position) [ai research](position) ko
+  - mình muốn làm [go lang developer,](position) không biết vị trí này có tuyển [fulltime](level_position)
+    không

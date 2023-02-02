@@ -1,0 +1,323 @@
+positives:
+- intent: faq/self_ask_hobby
+  examples:
+  - Nấu ăn mày có thích không
+  - đồ ăn yêu thích là gì hả?
+  - ' có thích chơi thể thao không'
+  - mày thích bài hát gì nhất
+  - cậu có thích xem [phim 3d](entertainment_type)
+  - cậu có thích chơi bơi không
+  - loại nhạc mày hay nghe là như thế nào
+  - màu nào là màu timi thích nhất
+  - ' có hay đi xem film không'
+  - ' có biết đọc sách không'
+  - loại game nào mày thích chơi nhất
+  - Mình chơi war3, cậu chơi không
+  - ' thích xem film như thế nào'
+  - loại truyện nào mày thích nhất
+  - ăn bưởi không bạn
+  - bot thích chơi môn thể thao nào
+  - timi có ưa thích việc vào bếp không
+  - m thích chơi game gì nhất
+  - con gái hay thích màu hồng vậy mày có thích không
+  - bida bot có thích không
+  - timi có thường xuyên xem phim không
+  - timi có hay xem [phim cổ trang](entertainment_type)
+  - ' thích uống pepsi không'
+  - mày thích màu hồng không
+  - timi thích ăn món không
+  - ' hay chơi môn thể thao nào'
+  - timi thích bóng đá không
+  - timi có thích xem thể thao không
+  - sách lĩnh vực nào thì bot thích đọc nhất
+  - timi có là tín đồ du lịch không
+  - m thích nghe nhạc không lời không
+  - Game phiêu lưu timi có thích chơi không
+  - bạn thích xem những loại film nào
+  - ' cho tôi hỏi sở thích của cậu là mô hả'
+  - những loại sách nào cậu thích đọc
+  - em thích phim gì nhất
+  - ' có hay chơi bơi lội không'
+  - em có đọc sách lịch sử không
+  - bạn thích ăn cơm hay bún
+  - timi ăn shit không
+  - đam mê timi là gì thế
+  - bạn thích đi dâu nhất
+  - mày có đọc truyện tranh không
+  - '[film khoa học-viễn tưởng](entertainment_type) m có thích xem không'
+  - bot thích light novel không
+  - bạn thích đi du lịch không
+  - timi có biết chơi bóng chuyền không
+  - em có thích thể thao không
+  - timi thích đi xem phim không
+  - thể thao nào cậu thích nhất
+  - loại phim timi hay coi là gì
+  - phim hài em có thích không
+  - timi thích ăn gì
+  - bot thích những lại đồ ăn như nào
+  - timi có thích làm bánh in không
+  - ' thích ăn bánh ngọt không'
+  - sở thích của cậu là mô
+  - ' hay đi xem thể loại film nào nhất'
+  - m chơi pubg không
+  - ' hay thích đọc loại sách gì'
+  - em thích gì nhất
+  - bot thích ăn món gì
+  - đồ ăn gì timi thích nhất
+  - timi thích đi du lịch ở đâu nhất
+  - ' thích xem film mô'
+  - timi có thích đọc truyện ngôn tình không
+  - bạn có thích chơi thể thao không
+  - m thích làm gì
+  - món chay thì bạn có thích không
+  - ' có thích xem film không'
+  - bạn thích những gì
+  - em thích những gì
+  - màu đen huyền bí có hợp gu của bot không
+  - m thích đi du lịch ở những đâu
+  - ' có hay đọc sách không'
+  - sở thích của timi là mô
+  - m có thích sách không
+  - cậu có biết chơi môn thể thao nào không
+  - món nào cậu thích nhất
+  - timi thích đi du lịch ở đâu không
+  - ' chơi những môn thể thao nào'
+  - cho tớ hỏi cậu thích gì được không
+  - timi khoái phim nào nhất
+  - môn thể thao nào bot thích nhất
+  - nếu chọn trong các màu xanh đỏ hồng bot chọn màu nào
+  - ' thích uống gì nhất'
+  - bạn có thích harry potter không
+  - bạn thích uống nước gì
+  - mày có thích đi du lịch không
+  - Nấu ăn timi có thích không
+  - đồ ăn yêu thích là gì?
+  - ' thích chơi thể thao không'
+  - bot thích bài hát gì nhất
+  - ' có thích xem [phim boy love](entertainment_type)'
+  - mày có thích chơi cầu mây không
+  - loại nhạc em hay nghe là gì vậy hả
+  - màu nào là màu em thích nhất
+  - ' có hay đi xem phim ở rạp không'
+  - cậu có biết đọc sách không
+  - loại game nào bạn thích chơi nhất
+  - Mình chơi war3, em chơi không
+  - m thích xem film ntn
+  - loại truyện nào m thích nhất
+  - ăn bưởi không mày
+  - m thích chơi môn thể thao nào
+  - m có ưa thích việc vào bếp không
+  - mày thích chơi game gì nhất
+  - con gái hay thích màu hồng vậy cậu có thích không
+  - bida cậu có thích không
+  - bạn có thường xuyên xem phim không
+  - bot có hay xem [phim huyền thoại](entertainment_type)
+  - ' thích uống coca không'
+  - bot thích màu hồng không
+  - cậu thích ăn món không
+  - bạn hay chơi môn thể thao nào
+  - em thích bóng đá không
+  - ' có thích xem thể thao không'
+  - sách lĩnh vực nào thì em thích đọc nhất
+  - bạn có là tín đồ du lịch không
+  - timi thích nghe nhạc không lời không
+  - Game phiêu lưu mày có thích chơi không
+  - ' thích xem những loại film nào'
+  - có thể cho tao hỏi sở thích của cậu là nào đó
+  - những loại sách nào em thích đọc
+  - mày thích phim gì nhất
+  - cậu có hay chơi chạy không
+  - cậu có đọc sách lịch sử không
+  - cậu thích ăn cơm hay bún
+  - bot ăn shit không
+  - đam mê bạn là mô đó
+  - em thích đi dâu nhất
+  - bot có đọc truyện tranh không
+  - '[film 3d](entertainment_type) em có thích xem không'
+  - mày thích light novel không
+  - cậu thích đi du lịch không
+  - ' có biết chơi bóng rổ không'
+  - mày có thích thể thao không
+  - ' thích đi xem phim không'
+  - thể thao nào m thích nhất
+  - loại phim bot hay coi là gì
+  - phim hài cậu có thích không
+  - em thích ăn gì
+  - em thích những lại ẩm thực như nào
+  - bot có thích làm bánh in không
+  - mày thích ăn gà rán không
+  - sở thích của bạn là chi
+  - mày hay đi xem thể loại film nào nhất
+  - em chơi pubg không
+  - em hay thích đọc loại sách nào
+  - bạn thích gì nhất
+  - bạn thích ăn món gì
+  - đồ ăn gì bạn thích nhất
+  - em thích đi du lịch ở đâu nhất
+  - ' thích xem phim gì'
+  - bot có thích đọc sách tôn giáo không
+  - mày có thích chơi thể thao không
+  - bot thích làm gì
+  - các món truyền thống thì cậu có thích không
+  - cậu có thích xem film không
+  - em thích chi
+  - mày thích những gì vậy
+  - màu đen huyền bí có hợp gu của m không
+  - timi thích đi du lịch ở những đâu
+  - bạn có hay đọc sách không
+  - sở thích mày là gì
+  - em có thích đọc không
+  - em có biết chơi môn thể thao nào không
+  - món nào em thích nhất
+  - mày thích đi du lịch ở đâu không
+  - em chơi những môn thể thao nào
+  - cho tui hỏi bot thích gì được không
+  - bạn khoái phim nào nhất
+  - môn thể thao nào em thích nhất
+  - nếu chọn trong các màu xanh đỏ hồng mày chọn màu nào
+  - bạn thích uống gì nhất
+  - bot có thích harry potter không
+  - m thích uống nước gì
+  - cậu có thích đi du lịch không
+  - Nấu ăn bot có thích không
+  - món ăn yêu thích là như nào?
+  - cậu có thích chơi thể thao không
+  - bạn thích bài hát gì nhất
+  - ' có thích xem [video hài hước](entertainment_type)'
+  - timi có thích chơi bơi lội không
+  - loại nhạc cậu hay nghe là như thế nào
+  - màu nào là màu cậu thích nhất
+  - mày có hay đi xem film ở rạp không
+  - mày có biết đọc sách không
+  - loại game nào bot thích chơi nhất
+  - Mình chơi war3, timi chơi không
+  - timi thích xem phim thế nào
+  - loại truyện nào em thích nhất
+  - ăn bưởi không m
+  - ' thích chơi môn thể thao nào'
+  - cậu có ưa thích việc vào bếp không
+  - em thích chơi game gì nhất
+  - con gái hay thích màu hồng vậy timi có thích không
+  - bida bạn có thích không
+  - ' có thường xuyên xem phim không'
+  - ' có hay xem [film khoa học-viễn tưởng](entertainment_type)'
+  - bot thích uống nước lọc không
+  - em thích màu hồng không
+  - mày thích ăn món không
+  - cậu hay chơi môn thể thao nào
+  - cậu thích bóng đá không
+  - bot có thích xem thể thao không
+  - sách lĩnh vực nào thì mày thích đọc nhất
+  - mày có là tín đồ du lịch không
+  - cậu thích nghe nhạc không lời không
+  - Game phiêu lưu bạn có thích chơi không
+  - m thích xem những loại phim nào
+  - ' cho mình hỏi đam mê của cậu là mô'
+  - những loại sách nào timi thích đọc
+  - bot thích phim gì nhất
+  - ' có hay chơi bơi không'
+  - m có đọc sách lịch sử không
+  - mày thích ăn cơm hay bún
+  - bạn ăn shit không
+  - đam mê của em là nào
+  - mày thích đi dâu nhất
+  - cậu có đọc truyện tranh không
+  - '[film kinh dị](entertainment_type) bot có thích xem không'
+  - em thích light novel không
+  - bot thích đi du lịch không
+  - cậu có biết chơi cầu mây không
+  - ' có thích thể thao không'
+  - ' thích đi xem film không'
+  - thể thao nào bot thích nhất
+  - loại phim timi hay coi là gì hả
+  - phim hài bạn có thích không
+  - m thích ăn gì
+  - m thích những lại đồ ăn như nào
+  - bạn có thích làm bánh in không
+  - m thích ăn sườn nướng không
+  - sở thích em là chi vậy
+  - mày hay đi xem thể loại phim nào nhất
+  - bạn chơi pubg không
+  - m hay thích đọc loại sách nào
+  - bot thích gì nhất
+  - ' thích ăn món gì'
+  - món ăn gì bot thích nhất
+  - bot thích đi du lịch ở đâu nhất
+  - bạn thích xem film mô
+  - ' có thích đọc sách tình cảm không'
+  - timi có thích chơi thể thao không
+  - em thích làm gì
+  - rau thì mày có thích không
+  - ' có thích xem phim không'
+  - mày thích mô đấy
+  - bot thích những gì
+  - màu đen huyền bí có hợp gu của cậu không
+  - bot thích đi du lịch ở những đâu
+  - em có hay đọc sách không
+  - sở thích của cậu là mô đấy
+  - bot có thích đọc không
+  - bạn có biết chơi môn thể thao nào không
+  - món nào timi thích nhất
+  - cậu thích đi du lịch ở đâu không
+  - timi chơi những môn thể thao nào
+  - cho tui hỏi bạn thích gì được không
+  - em khoái phim nào nhất
+  - môn thể thao nào bạn thích nhất
+  - nếu chọn trong các màu xanh đỏ hồng timi chọn màu nào
+  - ' thích ăn gì nhất'
+  - em có thích harry potter không
+  - bot thích uống nước gì
+  - bot có thích đi du lịch không
+  - Nấu ăn em có thích không
+  - đồ ăn yêu thích là gì vậy?
+  - em có thích chơi thể thao không
+  - timi thích bài hát gì nhất
+  - ' có thích xem [film siêu anh hùng](entertainment_type)'
+  - bot có thích chơi cầu mây không
+  - loại nhạc m hay nghe là gì
+  - màu nào là màu bot thích nhất
+  - ' có hay đi xem film ở rạp không'
+  - bot có biết đọc sách không
+  - loại game nào em thích chơi nhất
+  - Mình chơi war3, mày chơi không
+  - timi thích xem phim ntn
+  - loại truyện nào bạn thích nhất
+  - ăn bưởi không timi
+  - timi thích chơi môn thể thao nào
+  - bot có ưa thích việc vào bếp không
+  - bot thích chơi game gì nhất
+  - con gái hay thích màu hồng vậy em có thích không
+  - bida timi có thích không
+  - m có thường xuyên xem phim không
+  - ' có hay xem [phim boy love](entertainment_type)'
+  - bạn thích uống nước không
+  - bạn thích màu hồng không
+  - bạn thích ăn món không
+  - m hay chơi môn thể thao nào
+  - mày thích bóng đá không
+  - em có thích xem thể thao không
+  - sách lĩnh vực nào thì m thích đọc nhất
+  - em có là tín đồ du lịch không
+  - mày thích nghe nhạc không lời không
+  - Game phiêu lưu cậu có thích chơi không
+  - bot thích xem những loại film nào
+  - có thể cho tớ hỏi đam mê của cậu là mô
+  - những loại sách nào bạn thích đọc
+  - m thích phim gì nhất
+  - em có hay chơi chạy không
+  - bạn có đọc sách lịch sử không
+  - timi thích ăn cơm hay bún
+  - cậu ăn shit không
+  - đam mê của em là gì
+  - timi thích đi dâu nhất
+  - bạn có đọc truyện tranh không
+  - '[phim Mỹ](entertainment_type) bạn có thích xem không'
+  - timi thích light novel không
+  - timi thích đi du lịch không
+  - cậu có biết chơi chạy không
+  - cậu có thích thể thao không
+  - m thích đi xem phim không
+  - thể thao nào bạn thích nhất
+  - loại phim bạn hay coi là thế nào
+  - phim hài m có thích không
+  - bot thích ăn gì

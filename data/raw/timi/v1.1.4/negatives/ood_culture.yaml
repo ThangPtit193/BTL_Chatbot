@@ -1,0 +1,309 @@
+negatives:
+- intent: faq/ood_culture
+  examples:
+  - chỗ nào phát triển dệt tơ lụa lâu đời
+  - chỗ nào phát triển làm gốm lâu đời
+  - Cho xin danh sách các làng nghề lâu đời
+  - Ở đâu phát huy thêu ren lâu đời
+  - Ở đâu phát huy thêu ren cổ xưa
+  - Ở đâu còn duy trì thêu ren cổ truyền
+  - Đàn T’Rưng là gì
+  - Nghề hát ca trù cổ truyền có thể bị mai một không
+  - chỗ nào phát huy thêu ren lâu đời
+  - Ở đâu phát huy thêu ren truyền thống
+  - Tín ngưỡng phồn thực ở Việt Nam còn tồn tại?
+  - chỗ nào phát huy thêu ren cổ xưa
+  - chỗ nào còn phát huy thêu ren lâu đời
+  - chỗ nào phát huy hát dân ca quan họ cổ truyền
+  - Ở đâu phát triển vẽ tranh sơn mài lâu đời
+  - chỗ nào duy trì thêu ren truyền thống
+  - chỗ nào phát triển hát ca trù cổ truyền
+  - Nghề làm chiếu cói cổ xưa có thể bị mai một không
+  - Nghề vẽ tranh sơn mài truyền thống có thể bị quên lãng không
+  - nhạc cụ Đàn tỳ bà có còn được biết đến không
+  - chỗ nào còn phát triển khảm trai cổ xưa
+  - Ở đâu còn phát huy làm gốm cổ truyền
+  - Đàn bầu có còn hứng thú
+  - Miếng trầu đầu câu chuyện có sự tích lịch sử ra sao?
+  - Ở đâu phát triển làm gốm cổ xưa
+  - nhạc cụ Đàn tranh có còn được biết đến không
+  - Ở đâu phát triển khảm trai cổ xưa
+  - chỗ nào còn phát triển làm chiếu cói lâu đời
+  - Ðàn đáy có còn hứng thú
+  - Nghe bảo ăn trầu của Việt Nam đang bị quên lãng
+  - văn hóa lúa nước và cồng chiêng có liên quan gì đến nhau?
+  - cho hỏi đưa ông Táo về trời phát triển không
+  - Ở đâu còn phát triển đan tre mây cổ xưa
+  - chỗ nào phát huy đan tre mây truyền thống
+  - chỗ nào duy trì khảm trai cổ xưa
+  - các lễ hội cổ truyền có thể giúp cho các nghề truyền thống phát triển không?
+  - Tại sao người Việt lại từng dùng đồng tiền đá?
+  - Ở đâu còn phát triển hát dân ca quan họ lâu đời
+  - chỗ nào phát huy hát dân ca quan họ cổ xưa
+  - Ở đâu phát huy làm chiếu cói truyền thống
+  - nhạc cụ Ðàn đáy có còn hứng thú
+  - nhạc cụ Đàn nhị có còn hứng thú
+  - Ở đâu duy trì thêu ren truyền thống
+  - chỗ nào còn phát huy vẽ tranh sơn mài lâu đời
+  - Đàn bầu là gì
+  - chỗ nào còn phát huy hát dân ca quan họ cổ xưa
+  - Nghề hát ca trù truyền thống có thể bị quên lãng không
+  - Ở đâu phát huy làm gốm lâu đời
+  - nhạc cụ Đàn tam là gì
+  - Ở đâu còn duy trì làm gốm lâu đời
+  - chỗ nào duy trì vẽ tranh sơn mài lâu đời
+  - chỗ nào phát huy vẽ tranh sơn mài lâu đời
+  - Ở đâu phát huy dệt tơ lụa lâu đời
+  - Ở đâu còn phát huy khảm trai cổ xưa
+  - Ở đâu còn phát huy thêu ren truyền thống
+  - chỗ nào còn duy trì dệt tơ lụa lâu đời
+  - Việt nam ta đã làm gì trong việc bảo tồn và duy trì các phố hàng truyền thống
+  - Ở đâu phát huy vẽ tranh sơn mài cổ truyền
+  - chỗ nào còn phát huy làm gốm lâu đời
+  - Ở đâu còn phát triển dệt tơ lụa cổ xưa
+  - chỗ nào phát triển thêu ren cổ xưa
+  - chỗ nào còn duy trì dệt tơ lụa cổ xưa
+  - Sự đô thị hóa ảnh hưởng đến hoạt động của các nghề truyền thống như thế nào?
+  - chỗ nào còn duy trì vẽ tranh sơn mài lâu đời
+  - Nghề vẽ tranh sơn mài cổ xưa có thể bị mai một không
+  - Các nhạc cụ truyền thống như sao trúc, đàn nhị, ... liệu giới trẻ có còn hứng
+    thú
+  - Ở đâu phát triển hát dân ca quan họ lâu đời
+  - Ở đâu còn phát triển thêu ren lâu đời
+  - cho hỏi cúng giao thừa phát triển không
+  - Ở đâu còn duy trì đan tre mây lâu đời
+  - chỗ nào còn phát huy làm chiếu cói cổ truyền
+  - chỗ nào phát triển hát dân ca quan họ lâu đời
+  - Lễ hội chọi trâu đã bị hủy bỏ rồi à
+  - Ở đâu phát huy hát ca trù lâu đời
+  - Ở đâu còn duy trì làm chiếu cói lâu đời
+  - chỗ nào còn phát triển hát ca trù cổ truyền
+  - Ở đâu phát huy vẽ tranh sơn mài truyền thống
+  - Đàn tranh là gì
+  - Đàn gáo có còn hứng thú
+  - nhạc cụ Đàn tam có còn được biết đến không
+  - Ở đâu còn duy trì hát ca trù lâu đời
+  - Ở đâu duy trì khảm trai lâu đời
+  - Ở đâu còn duy trì vẽ tranh sơn mài lâu đời
+  - Nghề thêu ren cổ xưa có thể bị quên lãng không
+  - chỗ nào còn phát huy thêu ren cổ truyền
+  - Ở đâu phát huy khảm trai cổ truyền
+  - Ở đâu còn phát triển thêu ren cổ xưa
+  - cho hỏi xông đất phát triển không
+  - chỗ nào còn phát triển làm gốm cổ truyền
+  - Ở đâu phát triển thêu ren cổ truyền
+  - Ở đâu duy trì làm chiếu cói cổ truyền
+  - chỗ nào phát huy làm gốm truyền thống
+  - Ở đâu duy trì dệt tơ lụa cổ xưa
+  - chỗ nào còn phát huy dệt tơ lụa cổ xưa
+  - nhạc cụ Đàn gáo có còn hứng thú
+  - Nghề hát dân ca quan họ lâu đời có thể bị quên lãng không
+  - Ở đâu còn phát triển hát dân ca quan họ cổ xưa
+  - Văn hóa mặc Việt Nam có gì hay?
+  - Tại sao cúng ông Táo lại có cá chép?
+  - chỗ nào phát triển vẽ tranh sơn mài lâu đời
+  - Ở đâu còn phát huy khảm trai cổ truyền
+  - Tại sao trước Tết, người Việt lại dọn dẹp nhà cửa?
+  - Ở đâu phát triển thêu ren cổ xưa
+  - Ở đâu còn phát triển làm gốm truyền thống
+  - Nghề đan tre mây cổ truyền có thể bị mai một không
+  - Ở đâu còn duy trì hát dân ca quan họ cổ xưa
+  - nhạc cụ Đàn nhị là gì
+  - Ở đâu còn phát triển hát dân ca quan họ truyền thống
+  - Nghề đan tre mây cổ truyền có thể bị quên lãng không
+  - Ðàn đáy là gì
+  - Nghề làm gốm lâu đời có thể bị quên lãng không
+  - Ở đâu còn phát triển khảm trai cổ xưa
+  - chỗ nào duy trì dệt tơ lụa truyền thống
+  - Cho xin danh sách các làng nghề truyền thống
+  - Ở đâu còn phát triển làm gốm cổ truyền
+  - Ở đâu còn duy trì làm gốm cổ xưa
+  - Ở đâu còn phát huy thêu ren cổ truyền
+  - Ở đâu còn phát triển dệt tơ lụa lâu đời
+  - Để có thể phát triển các nghề truyền thống, chúng ta cần hướng tới thay đổi những
+    phương diện nào?
+  - Đàn đá có còn được biết đến không
+  - Ở đâu duy trì đan tre mây cổ truyền
+  - Nghe bảo cúng giao thừa của Việt Nam đang bị mai một
+  - Ở đâu còn phát triển vẽ tranh sơn mài truyền thống
+  - Ở đâu phát huy dệt tơ lụa cổ truyền
+  - chỗ nào còn duy trì khảm trai cổ xưa
+  - chỗ nào duy trì làm gốm cổ truyền
+  - Ở đâu duy trì làm gốm truyền thống
+  - chỗ nào phát triển hát dân ca quan họ cổ truyền
+  - Khèn có còn hứng thú
+  - Ở đâu còn duy trì dệt tơ lụa cổ truyền
+  - Ở đâu phát huy hát dân ca quan họ lâu đời
+  - nhạc cụ Đàn sến có còn hứng thú
+  - chỗ nào phát huy làm gốm lâu đời
+  - nhạc cụ Đàn đoản có còn được biết đến không
+  - nhạc cụ Đàn T’Rưng có còn hứng thú
+  - chỗ nào còn phát huy làm chiếu cói cổ xưa
+  - Ở đâu duy trì làm gốm cổ truyền
+  - chỗ nào còn phát triển dệt tơ lụa lâu đời
+  - Ở đâu còn duy trì hát dân ca quan họ truyền thống
+  - chỗ nào còn phát huy làm chiếu cói lâu đời
+  - nhạc cụ Đờn cò có còn hứng thú
+  - chỗ nào còn phát huy làm chiếu cói truyền thống
+  - chỗ nào phát huy khảm trai cổ xưa
+  - Ở đâu còn duy trì làm gốm cổ truyền
+  - Đàn tam có còn hứng thú
+  - Ở đâu còn duy trì hát dân ca quan họ cổ truyền
+  - chỗ nào phát triển đan tre mây cổ xưa
+  - nhạc cụ Đàn nguyệt có còn được biết đến không
+  - Ở đâu phát huy hát ca trù cổ xưa
+  - Nghe bảo cúng giao thừa của Việt Nam đang bị quên lãng
+  - chỗ nào phát triển làm chiếu cói cổ xưa
+  - chỗ nào phát triển đan tre mây cổ truyền
+  - Nghề khảm trai cổ xưa có thể bị mai một không
+  - chỗ nào còn phát huy vẽ tranh sơn mài cổ truyền
+  - Trang phục truyền thống mang bản sắc văn hóa Việt là gì?
+  - chỗ nào còn duy trì thêu ren cổ xưa
+  - nhạc cụ Đờn cò có còn được biết đến không
+  - Trong đám tang, tại sao chắt, chút khi để tang cho cụ, kị lại đội khăn đỏ, khăn
+    vàng?
+  - Cho xin danh sách các phố hàng cổ xưa
+  - chỗ nào phát huy làm chiếu cói truyền thống
+  - Đàn tỳ bà là gì
+  - Ở đâu duy trì hát dân ca quan họ lâu đời
+  - Ở đâu còn phát triển hát ca trù cổ xưa
+  - chỗ nào còn duy trì dệt tơ lụa cổ truyền
+  - Nghề làm chiếu cói lâu đời có thể bị quên lãng không
+  - Khèn có còn được biết đến không
+  - Nghề đan tre mây lâu đời có thể bị quên lãng không
+  - Ở đâu duy trì làm chiếu cói lâu đời
+  - làm chiếu cói Bắc Ninh có từ bao giờ
+  - Ở đâu duy trì làm gốm lâu đời
+  - chỗ nào còn phát huy hát ca trù cổ xưa
+  - Ở đâu còn phát triển đan tre mây cổ truyền
+  - Ở đâu phát triển dệt tơ lụa cổ xưa
+  - khảm trai Bắc Ninh có từ bao giờ
+  - Đàn đoản có còn được biết đến không
+  - Có ai còn làm nghề truyền thống trong các thành phố lớn không?
+  - chỗ nào còn phát triển vẽ tranh sơn mài truyền thống
+  - chỗ nào phát triển vẽ tranh sơn mài truyền thống
+  - chỗ nào còn phát triển dệt tơ lụa truyền thống
+  - Ở đâu duy trì khảm trai cổ xưa
+  - Nghề hát ca trù truyền thống có thể bị mai một không
+  - Khèn là gì
+  - Nghề vẽ tranh sơn mài cổ truyền có thể bị mai một không
+  - chỗ nào còn phát huy làm gốm cổ xưa
+  - Ở đâu còn phát triển khảm trai truyền thống
+  - Ở đâu phát huy làm gốm truyền thống
+  - chỗ nào còn phát huy làm gốm cổ truyền
+  - Nghề làm chiếu cói cổ truyền có thể bị quên lãng không
+  - Ở đâu phát triển làm gốm truyền thống
+  - Nghề đan tre mây cổ xưa có thể bị mai một không
+  - Đàn đá có còn hứng thú
+  - Ở đâu duy trì thêu ren cổ xưa
+  - Loại đàn một dây của người Việt, gảy bằng que hoặc miếng gảy. Đàn có hai loại
+    là đàn thân tre và đàn hộp gỗ. Đàn này được sử dụng để chơi nhạc trong các lễ
+    hội cổ truyền. Đàn này có tên gọi là gì?
+  - nhạc cụ Đàn nguyệt có còn hứng thú
+  - chỗ nào duy trì hát ca trù lâu đời
+  - chỗ nào duy trì vẽ tranh sơn mài cổ xưa
+  - chỗ nào còn duy trì hát ca trù cổ truyền
+  - chỗ nào còn phát huy làm gốm truyền thống
+  - Nghề đan tre mây truyền thống có thể bị mai một không
+  - chỗ nào còn phát triển làm gốm lâu đời
+  - Ở đâu còn phát huy hát dân ca quan họ lâu đời
+  - chỗ nào còn duy trì làm chiếu cói cổ truyền
+  - Ở đâu phát triển khảm trai lâu đời
+  - Ở đâu còn phát triển thêu ren truyền thống
+  - hát dân ca quan họ Bắc Ninh có từ bao giờ
+  - nhạc cụ Đàn tỳ bà là gì
+  - Ở đâu duy trì hát ca trù cổ truyền
+  - Tục ăn trầu câu tại đám cưới xuất hiện lâu chưa
+  - Ở đâu còn phát triển làm gốm cổ xưa
+  - đưa ông Táo về trời là gì
+  - chỗ nào duy trì làm gốm cổ xưa
+  - Đàn nguyệt có còn được biết đến không
+  - chỗ nào còn duy trì làm gốm truyền thống
+  - chỗ nào còn phát triển hát ca trù cổ xưa
+  - chỗ nào còn phát triển hát dân ca quan họ cổ xưa
+  - Ở đâu phát huy hát dân ca quan họ cổ xưa
+  - Ở đâu phát huy hát dân ca quan họ truyền thống
+  - Các loại hình nghệ thuật lâu đời của Việt Nam
+  - chỗ nào phát huy hát dân ca quan họ lâu đời
+  - Nghề làm chiếu cói truyền thống có thể bị quên lãng không
+  - chỗ nào còn duy trì làm gốm lâu đời
+  - Ở đâu còn duy trì dệt tơ lụa lâu đời
+  - Ở đâu duy trì thêu ren lâu đời
+  - Đạp đất và xông đất có diễn ra ở các vùng miền núi phía bắc?
+  - cho hỏi chưng mâm ngũ quả phát triển không
+  - Ở đâu phát triển thêu ren lâu đời
+  - nhạc cụ Đàn nhị có còn được biết đến không
+  - chỗ nào phát huy đan tre mây cổ xưa
+  - Đàn tranh có còn hứng thú
+  - Nghề hát ca trù cổ xưa có thể bị quên lãng không
+  - Nghề thêu ren truyền thống có thể bị quên lãng không
+  - chỗ nào còn phát triển hát dân ca quan họ lâu đời
+  - nhạc cụ Khèn có còn được biết đến không
+  - chỗ nào còn phát triển thêu ren truyền thống
+  - Nghe bảo gói bánh Chưng, bánh Tét của Việt Nam đang bị mai một
+  - Ở đâu phát huy đan tre mây cổ truyền
+  - Các loại hình nghệ thuật cổ truyền của Việt Nam
+  - chỗ nào còn phát triển hát ca trù lâu đời
+  - Tại sao màu đỏ trong dân gian hay bị gọi thành đen?
+  - chỗ nào còn phát huy dệt tơ lụa truyền thống
+  - chỗ nào phát huy hát dân ca quan họ truyền thống
+  - nhạc cụ thổi hơi có từ thời kỳ cổ đại, rất nhiều nước trên thế giới sử dụng sáo
+    với nhiều hình dáng và cấu tạo có thể khác nhau?
+  - Nghe bảo chưng mâm ngũ quả của Việt Nam đang bị mai một
+  - Ở đâu phát huy đan tre mây truyền thống
+  - chỗ nào phát huy thêu ren cổ truyền
+  - Ở đâu còn phát huy hát dân ca quan họ cổ truyền
+  - làm gốm Bắc Ninh có từ bao giờ
+  - chỗ nào phát triển khảm trai lâu đời
+  - Ở đâu phát huy khảm trai lâu đời
+  - Vị khách đầu tiên đến nhà chúc Tết được gọi là gì?
+  - Ở đâu phát huy làm gốm cổ truyền
+  - chỗ nào phát huy làm chiếu cói cổ truyền
+  - nhạc cụ Đàn đá có còn hứng thú
+  - chỗ nào còn duy trì khảm trai cổ truyền
+  - Ở đâu còn duy trì dệt tơ lụa truyền thống
+  - Nghề làm chiếu cói truyền thống có thể bị mai một không
+  - Ở đâu còn phát triển hát ca trù truyền thống
+  - chỗ nào còn phát huy hát ca trù cổ truyền
+  - chỗ nào còn phát huy thêu ren truyền thống
+  - Ở đâu còn phát huy đan tre mây truyền thống
+  - chỗ nào phát huy đan tre mây cổ truyền
+  - Ở đâu phát huy khảm trai truyền thống
+  - xông đất là gì
+  - Đàn bầu có còn được biết đến không
+  - Ở đâu phát triển dệt tơ lụa lâu đời
+  - Ở đâu còn phát huy đan tre mây lâu đời
+  - Ở đâu còn duy trì khảm trai lâu đời
+  - chỗ nào còn phát triển vẽ tranh sơn mài cổ truyền
+  - Ở đâu phát triển dệt tơ lụa truyền thống
+  - Ở đâu phát triển hát dân ca quan họ cổ truyền
+  - Ở đâu duy trì dệt tơ lụa truyền thống
+  - nhạc cụ Cồng chiêng là gì
+  - chỗ nào còn duy trì làm gốm cổ truyền
+  - chỗ nào còn phát huy hát ca trù lâu đời
+  - Ở đâu còn phát huy làm gốm lâu đời
+  - Ở đâu phát triển hát ca trù cổ xưa
+  - chỗ nào phát triển làm chiếu cói truyền thống
+  - chỗ nào phát huy dệt tơ lụa lâu đời
+  - Nghe bảo xông đất của Việt Nam đang bị mai một
+  - Nghề hát dân ca quan họ truyền thống có thể bị mai một không
+  - chỗ nào duy trì thêu ren cổ xưa
+  - chưng mâm ngũ quả là gì
+  - Nghề làm gốm cổ truyền có thể bị mai một không
+  - cho hỏi tảo mộ phát triển không
+  - Nghề khảm trai cổ truyền có thể bị quên lãng không
+  - Nghề hát ca trù lâu đời có thể bị quên lãng không
+  - Ở đâu phát triển đan tre mây cổ xưa
+  - Ở đâu phát triển hát ca trù cổ truyền
+  - Ở đâu phát triển đan tre mây lâu đời
+  - Nghe bảo xuất hành đầu năm của Việt Nam đang bị quên lãng
+  - chỗ nào phát triển hát ca trù cổ xưa
+  - Ở đâu còn phát triển khảm trai cổ truyền
+  - Nghề làm gốm lâu đời có thể bị mai một không
+  - chỗ nào còn phát huy đan tre mây cổ truyền
+  - Ở đâu còn phát triển dệt tơ lụa cổ truyền
+  - Con gì tới 12h đêm giao thừa thì thay đổi hình dạng?
+  - Hiện nay giới trẻ có còn quan tâm đến các lễ hội cổ truyền không?
+  - Các loại hình nghệ thuật truyền thống của Việt Nam
+  - chỗ nào còn duy trì hát dân ca quan họ lâu đời
+  - chỗ nào còn phát triển đan tre mây cổ truyền

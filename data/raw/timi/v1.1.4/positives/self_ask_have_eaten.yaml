@@ -1,0 +1,153 @@
+positives:
+- intent: faq/self_ask_have_eaten
+  examples:
+  - chắc timi chưa ăn nào đâu nhể
+  - ' ăn cơm chưa'
+  - cậu đã ăn được chưa
+  - đang chuẩn bị ăn hử
+  - uống chi chưa bot
+  - em ăn rùi chuẩn không
+  - bữa trưa ngon lắm chuẩn chỉ không
+  - ban nãy ăn có thấy ngon không
+  - cậu có ăn bữa xế không
+  - ăn mô chưa vậy á hả cậu
+  - nãy mày bảo đã ăn rùi đúng không nhỉ
+  - nãy mày ăn có ngon miêng không
+  - sáng nay bot có ăn không
+  - bot uống tối chưa
+  - chắc em chưa ăn nào đâu nhỉ
+  - bot ăn cơm chưa
+  - m đã ăn được chưa
+  - đang chuẩn bị ăn tối hử
+  - ăn chi chưa cậu
+  - mày ăn rồi đúng không
+  - bữa tối ngon lắm chuẩn không
+  - ban nãy ăn trưa có thấy ngon không
+  - timi có ăn bữa xế không
+  - ăn gì chưa vậy á hả bot
+  - nãy em kêu đã ăn rùi chính xác không nhể
+  - nãy em ăn có ngon miêng không
+  - trưa nay bot có ăn không
+  - bạn ăn tối chưa
+  - chắc em chưa ăn gì đâu nhỉ
+  - bạn ăn cơm chưa
+  - bạn đã ăn được chưa
+  - đang chuẩn bị ăn tối hả
+  - ăn nào chưa bot
+  - bot ăn tối rồi chuẩn chỉ không
+  - bữa sáng ngon lắm đúng không
+  - ban nãy ăn tối có thấy ngon không
+  - bạn có ăn bữa xế không
+  - ăn nào chưa hả mày
+  - nãy timi bảo đã ăn rùi chuẩn không nhỉ
+  - nãy cậu ăn có ngon miêng không
+  - tối nay cậu có ăn không
+  - bạn uống sáng chưa
+  - chắc mày chưa ăn gì đâu nhỉ
+  - em ăn cơm chưa
+  - bot đã ăn được chưa
+  - đang chuẩn bị ăn trưa hả
+  - uống nào chưa mày
+  - bạn ăn sáng rùi chính xác không
+  - bữa sáng ngon lắm chuẩn không
+  - ban nãy ăn sáng có thấy ngon không
+  - mày có ăn bữa xế không
+  - ăn mô chưa hả m
+  - nãy em kêu đã ăn rồi đúng không nhể
+  - nãy bot ăn có ngon miêng không
+  - trưa nay cậu có ăn không
+  - bạn ăn sáng chưa
+  - chắc m chưa ăn mô đâu nhể
+  - cậu ăn cơm chưa
+  - em đã ăn được chưa
+  - đang chuẩn bị ăn sáng hả
+  - ăn gì chưa bạn
+  - cậu ăn sáng rùi đúng không
+  - bữa trưa ngon lắm chuẩn không
+  - bot có ăn bữa xế không
+  - ăn nào chưa vậy mày
+  - nãy bot bảo đã ăn rồi chuẩn không nhỉ
+  - nãy m ăn có ngon miêng không
+  - tối nay bạn có ăn không
+  - timi ăn trưa chưa
+  - chắc bạn chưa ăn gì đâu nhể
+  - timi ăn cơm chưa
+  - mày đã ăn được chưa
+  - đang chuẩn bị ăn hả
+  - ăn mô chưa timi
+  - mày ăn rồi chính xác không
+  - bữa trưa ngon lắm đúng không
+  - em có ăn bữa xế không
+  - ăn chi chưa vậy mày
+  - nãy m bảo đã ăn rùi chuẩn không nhể
+  - nãy timi ăn có ngon miêng không
+  - sáng nay em có ăn không
+  - bạn uống trưa chưa
+  - chắc bot chưa ăn chi đâu nhỉ
+  - timi đã ăn được chưa
+  - đang chuẩn bị ăn trưa hử
+  - ăn chi chưa bot
+  - cậu ăn tối rồi chính xác không
+  - bữa tối ngon lắm chuẩn chỉ không
+  - m có ăn bữa xế không
+  - ăn gì chưa vậy m
+  - nãy timi kêu đã ăn rùi chính xác không nhể
+  - nãy bạn ăn có ngon miêng không
+  - tối nay timi có ăn không
+  - mày ăn sáng chưa
+  - chắc timi chưa ăn mô đâu nhể
+  - m ăn cơm chưa
+  - đang chuẩn bị ăn sáng hử
+  - ăn gì chưa mày
+  - em ăn rùi chuẩn chỉ không
+  - bữa trưa ngon lắm chính xác không
+  - ăn mô chưa vậy á hả m
+  - nãy m kêu đã ăn rùi chuẩn chỉ không nhỉ
+  - trưa nay timi có ăn không
+  - timi ăn sáng chưa
+  - chắc timi chưa ăn gì đâu nhể
+  - mày ăn cơm chưa
+  - ăn mô chưa bạn
+  - em ăn tối rồi đúng không
+  - bữa tối ngon lắm đúng không
+  - ăn chi chưa vậy á hả cậu
+  - nãy mày kêu đã ăn rùi chuẩn không nhỉ
+  - tối nay mày có ăn không
+  - bot ăn trưa chưa
+  - chắc cậu chưa ăn nào đâu nhỉ
+  - uống nào chưa bot
+  - mày ăn tối rùi chuẩn chỉ không
+  - bữa tối ngon lắm chính xác không
+  - ăn gì chưa hở m
+  - nãy bạn kêu đã ăn rồi đúng không nhể
+  - sáng nay cậu có ăn không
+  - mày ăn trưa chưa
+  - chắc em chưa ăn nào đâu nhể
+  - uống chi chưa timi
+  - timi ăn rồi chính xác không
+  - bữa sáng ngon lắm chuẩn chỉ không
+  - ăn chi chưa vậy hả mày
+  - nãy m kêu đã ăn rồi chuẩn chỉ không nhể
+  - trưa nay mày có ăn không
+  - cậu ăn trưa chưa
+  - chắc bạn chưa ăn nào đâu nhỉ
+  - uống mô chưa bot
+  - bot ăn tối rồi đúng không
+  - bữa sáng ngon lắm chính xác không
+  - ăn gì chưa hở cậu
+  - nãy em bảo đã ăn rùi chuẩn chỉ không nhể
+  - tối nay em có ăn không
+  - bạn ăn trưa chưa
+  - chắc bot chưa ăn gì đâu nhỉ
+  - uống gì chưa cậu
+  - mày ăn sáng rùi chuẩn chỉ không
+  - ăn nào chưa vậy em
+  - nãy bạn kêu đã ăn rùi đúng không nhỉ
+  - trưa nay em có ăn không
+  - cậu uống trưa chưa
+  - chắc bạn chưa ăn mô đâu nhỉ
+  - ăn gì chưa bot
+  - bạn ăn trưa rồi chuẩn chỉ không
+  - ăn mô chưa vậy hả timi
+  - nãy em bảo đã ăn rùi chuẩn không nhỉ
+  - sáng nay m có ăn không

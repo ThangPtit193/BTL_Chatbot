@@ -1,0 +1,203 @@
+positives:
+- intent: faq/knowledge_ask_coin_price
+  examples:
+  - giá cả loại tiền coin thời điểm hiện tại là ra sao
+  - ' BCH được giao bán với giá tiền như nào'
+  - giá coin dạo này
+  - thông tin về tiền đồng mã hóa coin dạo này bao nhiêu
+  - ' tiền DOGE không'
+  - tiền mã hóa BNB tăng lên bao nhiêu rồi
+  - mình muốn biết về tiền mua vào của tiền số cardano
+  - coin đang được bán ra với giá mấy
+  - biết giá tiền tiền mã hóa coin là bao nhiêu không em
+  - ' ETH tuần trước là ra sao'
+  - giá tiền đồng coin đang giảm là mấy
+  - 89 K là giá tiền dạo này của đồng mã hóa ETH nhở
+  - biết thông tin về loại đồng USDT có giá như thế nào ko cô
+  - tiền bán ra? của loại đồng XLM ngày mai ra sao ha
+  - cho tao xin thông tin về giá ADA
+  - giá cả ETH thời điểm hiện tại là mấy nhỉ
+  - tiền mã hóa bitcoin được giao bán với tiền ra sao
+  - tiền tiền số bitcoin cash dạo này
+  - thông tin về giá tiền đồng XRP ngày mai ra sao
+  - ' biết tiền đồng mã hóa ADA ngay lúc này ko'
+  - đồng dogecoin tăng lên mấy rồi
+  - em muốn biết thông tin về giá tiền bán ra của DOT
+  - DOGE đang được mua vào với giá tiền ra sao
+  - biết giá coin là bao nhiêu ko em
+  - ' ethereum tuần trước là bao nhiêu'
+  - giá cả tiền mã hóa coin đang giảm là như nào
+  - 54 M là tiền ngày mai của đồng UNI ư
+  - biết thông tin về litecoin có giá cả như thế nào không
+  - giá tiền mua vào? của loại đồng DOGE mấy nhỉ
+  - cho mình xin thông tin về giá đồng coin
+  - giá cả dogecoin ngay lúc này là ra sao
+  - tiền số stellar được giao dịch với giá tiền bao nhiu
+  - giá cả BCH ngày mai
+  - thông tin về giá cả USDT hôm qua như nào
+  - ' giá cả loại tiền ADA ko'
+  - tiền số binance coin giảm xuống ra sao rồi
+  - em muốn biết thông tin về tiền bán ra của tiền số binance coin
+  - coin đang được bán ra với giá tiền như nào
+  - biết giá tiền mã hóa coin hôm nay là bao nhiêu không mi
+  - đồng mã hóa near protocal hôm kia là ra sao
+  - tiền coin đang tụt dốc là như nào
+  - 37 K là giá cả hôm kia của tiền số litecoin nhở
+  - biết thông tin về USDT có giá tiền cụ thể không
+  - tiền bán ra? của đồng DGB tuần trước bao nhiu
+  - cho em xin thông tin về giá cả bitcoin cash
+  - giá tiền loại tiền ripple dạo này là mấy nhỉ
+  - ' BTC được giao bán với tiền như nào'
+  - giá cả tiền số USDT tuần trước
+  - thông tin về giá tiền USDT hôm qua ra sao
+  - ' giá ADA hôm trước ko'
+  - loại đồng UNI tăng lên bao nhiu rồi
+  - tôi muốn biết thông tin về giá cả mua vào của tiền mã hóa bitcoin
+  - BCH đang được bán ra với giá bao nhiu
+  - biết giá tiền loại đồng coin là bao nhiêu ko cô
+  - ' bitcoin hôm qua là ra sao'
+  - tiền tiền số coin đang leo thang là bao nhiêu
+  - 21 M là giá tiền hôm nay của đồng BTC ư
+  - biết thông tin về đồng mã hóa DOGE có giá cụ thể không
+  - tiền bán ra? của đồng ADA như nào nhỉ
+  - cho chị xin thông tin về giá cả loại tiền coin
+  - tiền tiền số XRP tuần trước là bao nhiu
+  - loại đồng ETH được giao bán với tiền mấy
+  - giá tiền loại tiền cardano
+  - thông tin về giá loại đồng coin tuần trước ra sao
+  - có bt giá tiền số litecoin dạo này ko
+  - đồng bitcoin giảm xuống như nào rồi
+  - em muốn biết về giá tiền bán ra của tiền số LTC
+  - digibyte đang được bán ra với giá như nào
+  - biết giá coin là bao nhiêu ko chú
+  - ' BCH hôm trước là như nào'
+  - giá cả coin đang leo thang là bao nhiu
+  - 42 VND là tiền ngày mai của tiền số bitcoin ư
+  - biết thông tin về uniswap có giá cả như thế nào không cô
+  - giá tiền bán ra? của loại đồng bitcoin cash hôm kia bao nhiu
+  - cho anh xin thông tin về giá tiền tiền số ETH
+  - giá tiền stellar hôm trước là như nào
+  - ' DOT được giao bán với giá tiền bao nhiu'
+  - giá cả ripple
+  - thông tin về giá cả binance coin hôm kia bao nhiu
+  - có giá LTC không
+  - tiền mã hóa digibyte tăng lên như nào rồi
+  - em muốn biết về giá tiền của loại đồng near
+  - UNI đang được mua vào với giá ra sao
+  - biết giá tiền loại đồng coin hôm nay là bao nhiêu ko chú
+  - đồng ethereum ngày mai là bao nhiêu
+  - giá tiền coin đang lên đỉnh là mấy
+  - 100 VND là tiền hôm nay của tiền mã hóa digibyte nhở
+  - biết thông tin về USDT có giá cụ thể ko cô
+  - giá tiền mua vào? của đồng mã hóa polkadot mấy
+  - cho ta xin thông tin về giá cả BNB
+  - giá cả polkadot bây giờ là như nào ha
+  - tiền mã hóa DOGE được giao bán với giá như nào
+  - giá tiền DGB
+  - thông tin về tiền tiền mã hóa bitcoin tuần trước ra sao
+  - có giá cả coin ko
+  - tiền mã hóa ethereum giảm xuống ra sao rồi
+  - chị muốn biết về tiền của tiền số DGB
+  - digibyte đang được mua vào với giá tiền ra sao
+  - biết giá tiền coin ngay lúc này là bao nhiêu ko chú em
+  - đồng mã hóa XLM dạo này là như nào
+  - tiền coin đang leo thang là bao nhiêu
+  - 37 bảng anh là giá cả dạo này của đồng mã hóa XLM nhở
+  - biết thông tin về bitcoin có giá cả cụ thể ko
+  - giá mua vào? của coin mấy nhỉ
+  - cho tao xin thông tin về giá tiền cardano
+  - giá binance dạo này là như nào nhỉ
+  - ' near protocal được giao bán với giá bao nhiêu'
+  - giá tiền tiền số binance bây giờ
+  - thông tin về tiền bitcoin cash ngay lúc này bao nhiu
+  - có bt tiền tiền mã hóa DGB thời điểm hiện tại ko
+  - loại đồng DGB tăng lên như nào rồi
+  - anh muốn biết về tiền của tiền mã hóa bitcoin cash
+  - bitcoin cash đang được bán ra với giá như nào
+  - biết giá cả đồng coin là bao nhiêu không chị
+  - ' ADA bây giờ là bao nhiu'
+  - giá tiền coin đang leo thang là ra sao
+  - 25 VND là giá cả tuần trước của đồng mã hóa DGB nhở
+  - biết thông tin về tiền mã hóa coin có tiền cụ thể ko
+  - giá mua vào? của ethereum ra sao
+  - cho chị xin thông tin về giá XRP
+  - giá loại đồng near protocal bây giờ là ra sao nhỉ
+  - ' USDT được giao bán với giá tiền mấy'
+  - giá cả tiền mã hóa DGB
+  - thông tin về giá ethereum tuần trước bao nhiu
+  - có biết giá tiền tiền số LTC thời điểm hiện tại không
+  - đồng bitcoin giảm xuống ra sao rồi
+  - chị muốn biết về tiền mua vào của loại đồng DOGE
+  - XRP đang được mua vào với giá như nào
+  - biết tiền coin là bao nhiêu không bạn
+  - ' bitcoin dạo này là mấy'
+  - giá coin đang giảm là ra sao
+  - 34 M là giá cả tuần trước của loại đồng BNB ư
+  - biết thông tin về tiền số uniswap có giá cả như thế nào ko mày
+  - giá cả bán ra? của dogecoin mấy ha
+  - cho tớ xin thông tin về giá cả bitcoin
+  - giá cả bitcoin hôm qua là bao nhiu nhở
+  - ' XLM được giao bán với giá bao nhiêu'
+  - giá loại đồng dogecoin
+  - thông tin về giá loại đồng BCH ngay lúc này như nào
+  - ' tiền đồng stellar không'
+  - loại tiền coin giảm xuống ra sao rồi
+  - mình muốn biết thông tin về tiền mua vào của đồng mã hóa stellar
+  - coin đang được mua vào với giá bao nhiu
+  - biết giá coin bây giờ là bao nhiêu không em
+  - tiền mã hóa dogecoin ngay lúc này là mấy
+  - giá loại đồng coin đang tụt dốc là ra sao
+  - 77 EUR là giá cả ngay lúc này của tiền số bitcoin nhở
+  - biết thông tin về tiền số cardano có giá như thế nào không
+  - tiền mua vào? của digibyte bao nhiu ha
+  - cho ta xin thông tin về giá tiền tiền mã hóa bitcoin cash
+  - giá loại tiền ETH hôm trước là ra sao
+  - ' DOGE được giao dịch với giá tiền như nào'
+  - giá digibyte
+  - thông tin về giá cả bitcoin dạo này ra sao
+  - có giá loại tiền DGB ko
+  - tiền số near tăng lên bao nhiu rồi
+  - tao muốn biết thông tin về tiền mua vào của coin
+  - ADA đang được bán ra với giá như nào
+  - biết giá tiền coin là bao nhiêu không cô
+  - tiền số LTC ngay lúc này là ra sao
+  - giá cả loại tiền coin đang tăng là như nào
+  - 30 M là giá cả ngày mai của loại tiền bitcoin nhở
+  - biết thông tin về tiền mã hóa XRP có tiền như thế nào không
+  - giá tiền bán ra? của loại tiền XLM như nào
+  - cho mình xin thông tin về tiền tiền số bitcoin
+  - tiền binance thời điểm hiện tại là như nào nhỉ
+  - loại tiền uniswap được giao bán với giá cả như nào
+  - giá tiền litecoin hôm trước
+  - thông tin về giá cả DOT bây giờ bao nhiu
+  - có giá cả tiền mã hóa litecoin tuần trước không
+  - loại đồng BCH giảm xuống ra sao rồi
+  - anh muốn biết về giá tiền của ripple
+  - near protocal đang được mua vào với giá như nào
+  - biết giá tiền tiền số coin bây giờ là bao nhiêu không chú em
+  - ' USDT tuần trước là ra sao'
+  - giá coin đang tụt dốc là như nào
+  - 51 EUR là giá hôm qua của đồng mã hóa BCH ư
+  - biết thông tin về tiền mã hóa near protocal có giá như thế nào ko chị
+  - giá cả bán ra? của bitcoin cash ngay lúc này mấy
+  - cho tôi xin thông tin về giá tiền ripple
+  - giá đồng mã hóa dogecoin tuần trước là như nào ha
+  - đồng BCH được giao bán với giá cả như nào
+  - giá tiền loại tiền BTC
+  - thông tin về giá tiền cardano bây giờ như nào
+  - ' tiền đồng near protocal tuần trước ko'
+  - đồng mã hóa BCH tăng lên như nào rồi
+  - tớ muốn biết về giá cả mua vào của loại tiền uniswap
+  - DOGE đang được bán ra với giá ra sao
+  - biết giá đồng mã hóa coin ngay lúc này là bao nhiêu ko cô
+  - ' bitcoin hôm nay là ra sao'
+  - giá coin đang giảm là bao nhiu
+  - 25 bảng anh là tiền hôm trước của đồng bitcoin ư
+  - biết thông tin về UNI có giá tiền cụ thể ko em
+  - giá cả mua vào? của loại đồng coin ra sao nhỉ
+  - cho anh xin thông tin về giá tiền digibyte
+  - tiền polkadot dạo này là như nào ha
+  - tiền mã hóa cardano được giao dịch với tiền mấy
+  - tiền BTC hôm kia
+  - thông tin về giá cả coin hôm trước mấy
+  - có giá cả DGB không

@@ -1,0 +1,729 @@
+positives:
+- intent: faq/office_ask_space_working
+  examples:
+  - cho tớ hỏi không gian giao tiếp ở công ty thế nào
+  - ko biết làm việc ở công ty có hòa đồng không
+  - giao tiếp giữa các thành viên trong công ty có dễ dàng ko
+  - cảm giác của nhận sự khi hoạt động ở [f-tech](work_unit) như thế nào
+  - nhận sự có trẻ trung ko
+  - công ty có sếp giỏi ko
+  - những người làm việc ở [hn](location) ntn
+  - công ty có không gian công việc thế nào
+  - môi trường làm việc có tự do ko
+  - nhận sự có hăng hái làm việc ko
+  - môi trường team work ở [f tech](work_unit) ra sao
+  - tính cách thành viên tại công ty thế nào
+  - nhận sự tại công ty như thế nào
+  - công ty có khiến nhận sự mệt mỏi ko
+  - làm việc trong [f tech](work_unit) có thoải mái ko
+  - môi trường làm việc công ty có thoải mái ko
+  - công ty tạo không khí tự do cho nhân viên không
+  - '[f-tech](work_unit) làm việc có áp lực ko'
+  - công ty làm việc nhàn lắm hả?
+  - không khí làm việc có hòa đồng ko
+  - không gian làm việc công ty như nào hả
+  - môi trường làm việc của công ty có dễ dàng không mày
+  - tôi thích một không khí làm việc tràn đầy năng lượng, không biết công ty tớ thế
+    nào
+  - các thức giao tiếp giữa các thành viên trong công ty như thế nào
+  - không gian làm việc trong công ty như thế nào hả ạ
+  - nơi làm có stress không
+  - tôi thích một không gian làm việc áp lực để trở nên chuyên nghiệp hơn và phát
+    triển tốt hơn. không biết không khí trong công ty có phù hợp với tôi ko
+  - khi hoạt động ở [f-tech](work_unit) sẽ có những cảm giác thú vụ gì
+  - công ty rộng ko
+  - môi trường làm việc như nào vậy hả
+  - con người [f tech](work_unit) có thân thiện ko mầy
+  - không khí công việc thế nào hả
+  - yếu tố gì của [f-tech](work_unit) để tạo một môi trường làm việc thoải mái cho
+    nhận sự
+  - công ty có thoải mái không
+  - công ty làm việc có sấp mặt không
+  - công ty có căng thẳng, chạy task sấp mặt không?
+  - làm việc ở [hồ chí minh](location) nghe nói nhàn lắm hả?
+  - nhận sự công ty có năng động không
+  - người dễ dàng chứ bạn
+  - giao tiếp giữa các team trong công ty như thế nào
+  - không gian hoạt động doanh nghiệp thế nào
+  - các công việc mang tính chất tự do và linh động được công ty bố trí như thế nào
+  - leader có khó khăn trong công việc ko
+  - giới thiệu đôi chút về không gian làm việc của công ty được ko
+  - tớ thích một không khí làm việc tràn đầy năng lượng, ko biết công ty mình thế
+    nào
+  - giao tiếp giữa sếp và nhân viên như thế nào
+  - em giới thiệu về không gian làm việc của công ty với
+  - công ty có tạo môi trường hòa đồng để nhận sự làm việc hiệu quả ko
+  - ở công ty mọi người có trao đổi công việc với nhau không
+  - tớ muốn hỏi về môi trường làm việc của công ty
+  - cho tớ hỏi không gian công việc ở công ty như nào vậy
+  - ko biết làm việc ở công ty có thoải mái ko
+  - giao tiếp giữa các thành viên trong công ty có thoải mái không
+  - cảm giác của người khi làm việc ở [ftech](work_unit) thế nào
+  - nhân viên công ty có năng động không
+  - công ty có sếp giỏi không
+  - những người làm việc ở [tuyên quang](location) ntn hả
+  - công ty có không khí giao tiếp như nào
+  - không gian làm việc có tự do ko
+  - nhận sự công ty có hăng hái làm việc không
+  - không gian team work ở [f tech](work_unit) ra sao
+  - tính cách người tại công ty thế nào
+  - thành viên tại công ty thế nào
+  - công ty có khiến người mệt mỏi không
+  - làm việc trong [ftech](work_unit) có thoải mái không
+  - không khí làm việc công ty có năng động ko
+  - công ty tạo không gian tự do cho nhân viên không
+  - '[f tech](work_unit) làm việc có áp lực không'
+  - công ty làm việc thoải mái lắm hả?
+  - không gian làm việc có dễ dàng không
+  - không gian làm việc công ty thế nào vậy
+  - môi trường làm việc của công ty có dễ dàng ko
+  - mình thích một không gian làm việc tràn đầy năng lượng, ko biết công ty tôi thế
+    nào
+  - các thức giao tiếp giữa các thành viên trong công ty thế nào
+  - môi trường làm việc trong công ty như thế nào hả ạ
+  - nơi làm có áp lực không
+  - tớ thích một không gian làm việc áp lực để trở nên chuyên nghiệp hơn và phát triển
+    tốt hơn. ko biết không gian trong công ty có phù hợp với mình không
+  - khi hoạt động ở [ftech](work_unit) sẽ có những cảm giác thú vụ gì
+  - công ty rộng không
+  - môi trường làm việc như nào
+  - con người [f-tech](work_unit) có thân thiện ko cậu
+  - môi trường giao tiếp thế nào em
+  - yếu tố gì của [f tech](work_unit) để tạo một môi trường làm việc thoải mái cho
+    nhận sự
+  - công ty có dễ dàng không
+  - công ty làm việc có stress không
+  - công ty có stress, chạy task sấp mặt ko?
+  - làm việc ở [sài gòn](location) nghe nói thoải mái lắm hả?
+  - người có sáng tạo không
+  - nhân viên trẻ trung chứ cậu
+  - giao tiếp giữa các phòng ban trong công ty có thoải mái ko
+  - không khí hoạt động ftech như nào
+  - các công việc mang tính chất tự do và linh động được công ty bố trí như nào
+  - lãnh đạo có khó khăn trong công việc ko
+  - giới thiệu đôi chút về môi trường làm việc của công ty được không
+  - tớ thích một môi trường làm việc tràn đầy năng lượng, không biết công ty mình
+    như nào
+  - giao tiếp giữa boss và nhân viên như thế nào
+  - mầy giới thiệu về không khí làm việc của công ty với
+  - công ty có tạo môi trường trẻ trung để người làm việc hiệu quả không
+  - ở công ty mọi người có trao đổi công việc với nhau ko
+  - chị muốn hỏi về không khí làm việc của công ty
+  - cho tớ hỏi không gian làm việc ở công ty như nào
+  - ko biết làm việc ở công ty có hòa đồng ko
+  - giao tiếp giữa các thành viên trong công ty có thoải mái ko
+  - cảm giác của nhân viên khi làm việc ở [ftech](work_unit) thế nào
+  - người có năng động ko
+  - công ty có sếp ghê không
+  - những người làm việc ở [NB](location) như thế nào
+  - công ty có không gian làm việc như thế nào
+  - không gian làm việc có tự do không
+  - thành viên có hăng hái làm việc ko
+  - môi trường team work ở [ftech](work_unit) ra sao
+  - tính cách nhân viên tại công ty thế nào
+  - nhận sự tại công ty như nào
+  - công ty có khiến người lo âu không
+  - làm việc trong [ftech](work_unit) có thoải mái ko
+  - không khí làm việc công ty có thoải mái không
+  - công ty tạo không gian tự do cho nhân viên ko
+  - '[f tech](work_unit) làm việc có stress không'
+  - công ty làm việc sướng lắm hả?
+  - không khí làm việc có dễ dàng không
+  - không gian làm việc công ty như nào vậy hả
+  - môi trường làm việc của công ty có hòa đồng ko mày
+  - mình thích một không khí làm việc tràn đầy năng lượng, ko biết công ty tớ như
+    nào
+  - các thức giao tiếp giữa các thành viên trong công ty như nào
+  - không gian làm việc trong công ty thế nào hả ạ
+  - nơi làm việc có cực không
+  - tôi thích một không gian làm việc áp lực để trở nên chuyên nghiệp hơn và phát
+    triển tốt hơn. không biết không khí trong công ty có phù hợp với mình không
+  - khi làm việc ở [f-tech](work_unit) sẽ có những cảm giác thú vụ gì
+  - môi trường làm việc như thế nào vậy hả
+  - con người [ftech](work_unit) có thân thiện không m
+  - không khí hoạt động thế nào hả mầy
+  - yếu tố gì của [ftech](work_unit) để tạo một môi trường làm việc thoải mái cho
+    người
+  - công ty có hòa đồng ko
+  - công ty làm việc có áp lực không
+  - công ty có căng thẳng, chạy task sấp mặt ko?
+  - làm việc ở [Thái Lan](location) nghe nói nhàn lắm hả?
+  - nhận sự có sáng tạo ko
+  - nhận sự năng động chứ cậu
+  - giao tiếp giữa các phòng trong công ty như thế nào
+  - không khí giao tiếp của công ty như nào
+  - các công việc mang tính chất tự do và linh động được công ty bố trí thế nào
+  - sếp có khó khăn trong công việc không
+  - giới thiệu đôi chút về môi trường làm việc của công ty được ko
+  - tớ thích một môi trường làm việc tràn đầy năng lượng, không biết công ty mình
+    như thế nào
+  - giao tiếp giữa sếp và nhân viên có thoải mái không
+  - bạn giới thiệu về không gian làm việc của công ty với
+  - công ty có tạo môi trường thoải mái để nhân viên làm việc hiệu quả không
+  - anh muốn hỏi về không khí làm việc của công ty
+  - cho mình hỏi không khí hoạt động ở công ty như thế nào vậy
+  - không biết làm việc ở công ty có thoải mái ko
+  - giao tiếp giữa các thành viên trong công ty như thế nào
+  - cảm giác của nhân viên khi hoạt động ở [f tech](work_unit) thế nào
+  - nhân viên công ty có active ko
+  - công ty có sếp ghê ko
+  - những người làm việc ở [Phong Nha-Kẻ Bàng](location) ntn hả
+  - công ty có không khí làm việc thế nào
+  - môi trường làm việc có tự do không
+  - thành viên công ty có hăng hái làm việc không
+  - không gian team work ở [f-tech](work_unit) ra sao
+  - tính cách nhận sự tại công ty thế nào
+  - nhân viên tại công ty thế nào
+  - công ty có khiến nhân viên áp lực không
+  - làm việc trong [f-tech](work_unit) có thoải mái không
+  - môi trường làm việc công ty có hòa đồng không
+  - công ty tạo môi trường tự do cho nhân viên không
+  - '[f-tech](work_unit) làm việc có stress không'
+  - công ty làm việc khỏe lắm hả?
+  - môi trường làm việc có thoải mái không
+  - môi trường làm việc công ty như thế nào hả
+  - không khí làm việc của công ty có active không cậu
+  - mình thích một không gian làm việc tràn đầy năng lượng, không biết công ty tớ
+    như thế nào
+  - môi trường làm việc trong công ty như nào hả ạ
+  - nơi làm việc có stress ko
+  - tớ thích một môi trường làm việc áp lực để trở nên chuyên nghiệp hơn và phát triển
+    tốt hơn. ko biết môi trường trong công ty có phù hợp với tôi ko
+  - khi làm việc ở [ftech](work_unit) sẽ có những cảm giác thú vụ gì
+  - không gian làm việc như thế nào hả
+  - con người [f-tech](work_unit) có thân thiện ko bot
+  - không gian giao tiếp như nào bot
+  - yếu tố gì của [f tech](work_unit) để tạo một môi trường làm việc thoải mái cho
+    người
+  - công ty có trẻ trung không
+  - công ty làm việc có cực không
+  - công ty có lo âu, chạy task sấp mặt không?
+  - làm việc ở [điện biên](location) nghe nói khỏe lắm hả?
+  - thành viên có năng động ko
+  - người công ty hòa đồng chứ timi
+  - giao tiếp giữa các phòng ban trong công ty có dễ dàng không
+  - môi trường hoạt động doanh nghiệp thế nào
+  - leader có khó khăn trong công việc không
+  - giới thiệu đôi chút về không khí làm việc của công ty được ko
+  - mình thích một không gian làm việc tràn đầy năng lượng, không biết công ty mình
+    như thế nào
+  - giao tiếp giữa boss và nhân viên có thoải mái ko
+  - bot giới thiệu về không gian làm việc của công ty với
+  - công ty có tạo môi trường trẻ trung để thành viên làm việc hiệu quả ko
+  - chị muốn hỏi về không gian làm việc của công ty
+  - cho tớ hỏi không gian hoạt động ở công ty như thế nào
+  - ko biết làm việc ở công ty có thoải mái không
+  - giao tiếp giữa các thành viên trong công ty có dễ dàng không
+  - cảm giác của nhân viên khi hoạt động ở [f tech](work_unit) như thế nào
+  - nhận sự có trẻ trung không
+  - những người làm việc ở [đn](location) như thế nào vậy
+  - công ty có môi trường làm việc thế nào
+  - không khí làm việc có tự do ko
+  - người có hăng hái làm việc không
+  - môi trường team work ở [f-tech](work_unit) ra sao
+  - người tại công ty như nào
+  - công ty có khiến thành viên mệt mỏi không
+  - làm việc trong [f-tech](work_unit) có thoải mái ko
+  - không khí làm việc công ty có năng động không
+  - công ty tạo không khí tự do cho nhân viên ko
+  - '[f-tech](work_unit) làm việc có cực không'
+  - không gian làm việc có hòa đồng ko
+  - không khí làm việc công ty như thế nào vậy hả
+  - môi trường làm việc của công ty có năng động không m
+  - tôi thích một không gian làm việc tràn đầy năng lượng, không biết công ty mình
+    thế nào
+  - môi trường làm việc trong công ty như thế nào vậy hả ạ
+  - nơi làm việc có cực ko vậy
+  - mình thích một môi trường làm việc áp lực để trở nên chuyên nghiệp hơn và phát
+    triển tốt hơn. không biết môi trường trong công ty có phù hợp với tớ ko
+  - khi hoạt động ở [f tech](work_unit) sẽ có những cảm giác thú vụ gì
+  - môi trường làm việc như thế nào hả
+  - con người [ftech](work_unit) có thân thiện không bot
+  - không khí công việc thế nào hử
+  - yếu tố gì của [f-tech](work_unit) để tạo một môi trường làm việc thoải mái cho
+    người
+  - công ty có trẻ trung ko
+  - công ty làm việc có sấp mặt ko
+  - công ty có áp lực, chạy task sấp mặt ko?
+  - làm việc ở [Phan Thiết](location) nghe nói thoải mái lắm hả?
+  - nhận sự có năng động ko
+  - thành viên công ty dễ dàng chứ bot
+  - giao tiếp giữa các bộ phận trong công ty có thoải mái không
+  - không khí công việc công ty ftech thế nào
+  - sếp có khó khăn trong công việc ko
+  - giới thiệu đôi chút về không khí làm việc của công ty được không
+  - tớ thích một không gian làm việc tràn đầy năng lượng, không biết công ty mình
+    như nào
+  - giao tiếp giữa boss và nhân viên có dễ dàng ko
+  - cậu giới thiệu về không khí làm việc của công ty với
+  - công ty có tạo môi trường hòa đồng để nhân viên làm việc hiệu quả ko
+  - mình muốn hỏi về không gian làm việc của công ty
+  - cho tớ hỏi không gian giao tiếp ở công ty thế nào vậy
+  - không biết làm việc ở công ty có hòa đồng không
+  - cảm giác của thành viên khi hoạt động ở [ftech](work_unit) thế nào
+  - người có dễ dàng ko
+  - những người làm việc ở [VN](location) ntn vậy hả
+  - công ty có môi trường hoạt động như thế nào
+  - người có hăng hái làm việc ko
+  - không khí team work ở [f-tech](work_unit) ra sao
+  - người tại công ty thế nào
+  - công ty có khiến nhân viên áp lực ko
+  - làm việc trong [f tech](work_unit) có thoải mái không
+  - không gian làm việc công ty có trẻ trung ko
+  - công ty tạo môi trường tự do cho nhân viên ko
+  - '[f-tech](work_unit) làm việc có áp lực không'
+  - môi trường làm việc có năng động ko
+  - không gian làm việc công ty như thế nào vậy
+  - không gian làm việc của công ty có trẻ trung không timi
+  - mình thích một không khí làm việc tràn đầy năng lượng, ko biết công ty mình như
+    nào
+  - không gian làm việc trong công ty như thế nào vậy ạ
+  - nơi làm có stress không vậy hả
+  - tớ thích một môi trường làm việc áp lực để trở nên chuyên nghiệp hơn và phát triển
+    tốt hơn. ko biết môi trường trong công ty có phù hợp với tớ không
+  - không gian làm việc như nào vậy
+  - con người [f-tech](work_unit) có thân thiện không m
+  - không khí công việc thế nào hả mầy
+  - yếu tố gì của [f-tech](work_unit) để tạo một môi trường làm việc thoải mái cho
+    thành viên
+  - công ty có hòa đồng không
+  - công ty làm việc có áp lực ko
+  - công ty có mệt mỏi, chạy task sấp mặt ko?
+  - làm việc ở [thái bình](location) nghe nói thoải mái lắm hả?
+  - người có active ko
+  - nhận sự công ty trẻ trung chứ m
+  - giao tiếp giữa các phòng ban trong công ty có dễ dàng ko
+  - không khí hoạt động của công ty như nào
+  - lãnh đạo có khó khăn trong công việc không
+  - giới thiệu đôi chút về không gian làm việc của công ty được không
+  - tớ thích một không khí làm việc tràn đầy năng lượng, ko biết công ty mình như
+    nào
+  - giao tiếp giữa boss và nhân viên có thoải mái không
+  - bot giới thiệu về không khí làm việc của công ty với
+  - công ty có tạo môi trường sáng tạo để nhân viên làm việc hiệu quả không
+  - mình muốn hỏi về môi trường làm việc của công ty
+  - cho anh hỏi không khí giao tiếp ở công ty như thế nào
+  - không biết làm việc ở công ty có thoải mái không
+  - cảm giác của nhận sự khi hoạt động ở [ftech](work_unit) như nào
+  - nhận sự công ty có dễ dàng ko
+  - những người làm việc ở [sapa](location) ntn
+  - công ty có không khí giao tiếp như thế nào
+  - không khí làm việc có tự do không
+  - nhận sự công ty có hăng hái làm việc ko
+  - không khí team work ở [ftech](work_unit) ra sao
+  - nhân viên tại công ty như nào
+  - công ty có khiến người stress không
+  - không gian làm việc công ty có sáng tạo ko
+  - '[f tech](work_unit) làm việc có stress ko'
+  - môi trường làm việc có sáng tạo không
+  - môi trường làm việc công ty như thế nào
+  - môi trường làm việc của công ty có active không bot
+  - tớ thích một không khí làm việc tràn đầy năng lượng, không biết công ty tớ thế
+    nào
+  - không khí làm việc trong công ty như nào vậy hả ạ
+  - nơi làm việc có áp lực không
+  - tớ thích một không khí làm việc áp lực để trở nên chuyên nghiệp hơn và phát triển
+    tốt hơn. không biết môi trường trong công ty có phù hợp với mình ko
+  - khi làm việc ở [f tech](work_unit) sẽ có những cảm giác thú vụ gì
+  - không khí làm việc như thế nào vậy hả
+  - con người [ftech](work_unit) có thân thiện ko bạn
+  - '[sài gòn](location) mới đổi chỗ làm việc chật hơn à'
+  - '[hồ chí minh](location) ít người thì văn phòng nó bé hả'
+  - gửi cho anh picture về văn phòng [sa đéc](location)
+  - cho tớ xin vài pic ở chi nhánh [hn](location)
+  - cho tớ hỏi cơ sở công ty trông như thế nào
+  - không gian làm việc của công ty như thế nào
+  - mô tả đôi nét không gian cơ sở [sài gòn](location) cho mình với
+  - mình xin ít ảnh về cty
+  - timi ơi tớ muốn hỏi chi nhánh công ty có mới không
+  - cho mình xin pic văn phòng [LS](location)
+  - văn phòng ngoài [hồ chí minh](location) có hiện đại không
+  - phong cách thiết kế chi nhánh thế nào
+  - cho mình hỏi chi nhánh [đất Việt](location) trông như thế nào
+  - không gian làm việc có rộng ko
+  - chi nhánh [sài gòn](location) ra sao vậy ạ?
+  - thấy bảo văn phòng công ty hiện đại lắm phải ko
+  - m miêu tả cho tớ biết về văn phòng công ty chút nha
+  - gửi bức view cho anh về chi nhánh [NB](location)
+  - xin ảnh công ty ở [sài gòn](location)
+  - timi mô tả không gian làm việc của nhân viên trong công ty đi
+  - công ty mình có đẹp không
+  - tớ muốn hỏi văn phòng công ty có mới không
+  - em mô tả không gian văn phòng công ty cho tớ với
+  - nhân viên công ty có không gian làm việc thoáng mát không
+  - mô tả không gian văn phòng [quy nhơn](location) đi bạn
+  - khu làm việc cho nhân viên trông ổn chứ
+  - gửi vài picture về công ty xem nào
+  - khu làm việc có gọn gàng và khang trang không
+  - FTECH [đà nẵng](location) có sang xịn mịn không?
+  - trụ sở công ty như thế nào
+  - văn phòng [Phong Nha-Kẻ Bàng](location) trông như thế nào
+  - miêu tả chi nhánh công ty được không
+  - mô tả đôi nét không gian trụ sở công ty đi mày
+  - '[đồng bằng sông cưu long](location) mới đổi chỗ làm việc chật hơn à'
+  - '[sài gòn](location) ít người thì chi nhánh nó bé hả'
+  - gửi cho tớ ảnh về chi nhánh [Canada](location)
+  - cho tớ xin vài pic ở trụ sở [đn](location)
+  - cho mình hỏi văn phòng công ty như thế nào
+  - không gian làm việc của công ty có khang trang và sạch sẽ ko
+  - mô tả đôi nét không gian trụ sở [sapa](location) cho tôi với
+  - mình xin ít picture về cty
+  - timi ơi mình muốn hỏi văn phòng công ty có mới không
+  - cho tớ xin ảnh chi nhánh [hòa bình](location)
+  - văn phòng ngoài [Tràng An](location) có mát không
+  - phong cách thiết kế văn phòng thế nào
+  - cho tớ hỏi chi nhánh [BN](location) như thế nào
+  - không gian làm việc có hiện đại không
+  - chi nhánh [đn](location) ra sao vậy ạ?
+  - thấy bảo văn phòng công ty xin xò lắm phải không bot
+  - bạn miêu tả cho tớ biết về cơ sở cty chút nha
+  - gửi bức tranh cho chị về văn phòng [hcm](location)
+  - xin ảnh công ty ở [miền bắc](location)
+  - bot mô tả không gian làm việc của nhân viên trong công ty đi
+  - công ty mình đẹp không
+  - mình muốn hỏi chi nhánh công ty có rộng rãi và mới không
+  - mầy mô tả không gian cơ sở công ty cho tớ với
+  - nhân viên công ty có không gian làm việc sạch sẽ ko
+  - mô tả không gian cơ sở [dn](location) đi cậu
+  - không gian làm việc của nhân viên có nhiều không gian xanh không
+  - gửi vài pic về công ty xem nào
+  - khu vực làm việc có khang trang và hiện đại ko
+  - FTECH [hcm](location) có sang xịn mịn không?
+  - cơ sở công ty như thế nào
+  - văn phòng [Việt Nam](location) trông như thế nào
+  - mô tả chi nhánh được ko
+  - mô tả đôi nét không gian văn phòng công ty cho mình với
+  - '[BG](location) mới đổi chỗ làm việc rộng hơn à'
+  - '[sài gòn](location) ít người thì cơ sở nó bé hả'
+  - gửi cho anh bức view về văn phòng [tây bắc bộ](location)
+  - cho tôi xin vài pic ở văn phòng [nam trung bộ](location)
+  - cho mình hỏi cơ sở công ty trông như thế nào
+  - khu vực làm việc của công ty có thoáng ko
+  - mô tả đôi nét không gian trụ sở [Thái Lan](location) đi cậu
+  - mình xin ít bức tranh về trụ sở
+  - timi ơi tôi muốn hỏi cơ sở công ty có mới không
+  - cho mình xin bức ảnh văn phòng [HG](location)
+  - văn phòng ngoài [pắc pó](location) có trẻ trung và hiện đại ko
+  - phong cách thiết kế cơ sở thế nào
+  - cho tớ hỏi chi nhánh [miền nam](location) trông như thế nào
+  - khu vực làm việc có nhiều không gian xanh ko
+  - chi nhánh [Việt Nam](location) ra sao vậy ạ?
+  - thấy bảo cơ sở công ty hiện đại lắm phải không
+  - cậu miêu tả cho tớ biết về cơ sở công ty chút nha
+  - gửi pic cho anh về văn phòng [hcm](location)
+  - xin ảnh công ty ở [hồ chí minh](location)
+  - timi mô tả khu làm việc của nhân viên trong công ty đi
+  - tớ muốn hỏi văn phòng công ty có mát không
+  - mầy mô tả không gian chi nhánh công ty cho mình với
+  - nhân viên công ty có không gian làm việc rộng rãi không
+  - mô tả không gian cơ sở [sài gòn](location) đi em
+  - khu làm việc của nhân viên có yên tĩnh ko
+  - khu vực làm việc có hiện đại và khang trang không
+  - FTECH [QB](location) có sang xịn mịn không?
+  - văn phòng công ty như thế nào
+  - văn phòng [BN](location) như thế nào
+  - mô tả văn phòng được ko
+  - mô tả đôi nét không gian cơ sở công ty cho mình với
+  - '[hồ chí minh](location) mới đổi chỗ làm việc hẹp hơn à'
+  - '[hồ chí minh](location) ít người thì cơ sở nó bé hả'
+  - gửi cho tớ ảnh về chi nhánh [Tác bản giốc](location)
+  - cho tôi xin vài pic ở văn phòng [sài gòn](location)
+  - cho tôi hỏi trụ sở công ty như thế nào
+  - khu làm việc của công ty có yên tĩnh sạch sẽ không
+  - mô tả đôi nét không gian chi nhánh [hn](location) đi cậu
+  - mình xin ít bức view về nơi làm việc
+  - timi ơi, tôi muốn hỏi trụ sở công ty đẹp lắm phải không
+  - cho chị xin ít picture chi nhánh [NB](location)
+  - văn phòng ngoài [Mexico](location) có yên tĩnh không
+  - phong cách thiết kế trụ sở thế nào
+  - cho tớ hỏi cơ sở [HY](location) như thế nào
+  - khu vực làm việc bố trí như nào
+  - chi nhánh [Australia](location) ra sao vậy ạ?
+  - thấy bảo văn phòng công ty mới lắm phải ko mầy
+  - timi mô tả cho tôi biết về cơ sở công ty chút nha
+  - gửi ảnh cho chị về chi nhánh [hải dương](location)
+  - xin ảnh công ty ở [Mexico](location)
+  - mầy mô tả không gian làm việc của nhân viên trong công ty đi
+  - mình muốn hỏi chi nhánh công ty đẹp ko
+  - m mô tả không gian chi nhánh công ty cho mình với
+  - nhân viên công ty có không gian làm việc sạch sẽ không
+  - mô tả không gian chi nhánh [QB](location) đi mầy
+  - không gian làm việc của nhân viên có yên tĩnh sạch sẽ ko
+  - khu vực làm việc có yên tĩnh và sạch sẽ không
+  - FTECH [sài gòn](location) có sang xịn mịn không?
+  - văn phòng công ty trông như thế nào
+  - trụ sở [HG](location) trông như thế nào
+  - miêu tả chi nhánh được ko
+  - mô tả đôi nét không gian chi nhánh công ty cho mình với
+  - '[quảng ninh](location) mới đổi chỗ làm việc chật hơn à'
+  - '[hcm](location) ít người thì trụ sở nó bé hả'
+  - gửi cho anh bức ảnh về chi nhánh [tây bắc bộ](location)
+  - cho mình xin vài picture ở chi nhánh [hà nội](location)
+  - cho tớ hỏi văn phòng công ty trông như thế nào
+  - khu làm việc của công ty trang trí có gì nổi bật không
+  - mô tả đôi nét không gian chi nhánh [Việt Nam](location) đi bot
+  - mình xin ít ảnh về nơi làm việc
+  - timi ơi, tớ muốn hỏi trụ sở công ty bố trí thế nào
+  - cho anh xin ít bức ảnh văn phòng [vĩnh long](location)
+  - văn phòng trong [dn](location) có rộng rãi và mới không
+  - cho tớ hỏi trụ sở [QN](location) như thế nào
+  - khu làm việc có rộng rãi và mới ko
+  - chi nhánh [đồng tháp](location) ra sao vậy ạ?
+  - thấy bảo cơ sở công ty hiện đại lắm phải ko mầy
+  - mầy mô tả cho tôi biết về trụ sở công ty chút nha
+  - gửi bức view cho chị về văn phòng [TH](location)
+  - xin ảnh công ty ở [hn](location)
+  - cậu mô tả không gian làm việc của nhân viên trong công ty đi
+  - tớ muốn hỏi cơ sở công ty có nhiều không gian xanh ko
+  - timi mô tả không gian cơ sở công ty cho tôi với
+  - nhân viên có không gian làm việc đẹp ko
+  - mô tả không gian trụ sở [Đảo Nam Du](location) đi em
+  - khu vực làm việc của nhân viên có mới ko
+  - khu vực làm việc có rộng rãi và hiện đại không
+  - FTECH [TH](location) có sang xịn mịn không?
+  - chi nhánh công ty trông như thế nào
+  - chi nhánh [lào cai](location) trông như thế nào
+  - mô tả chi nhánh công ty được ko
+  - mô tả đôi nét không gian văn phòng công ty cho tớ với
+  - '[Hong Kong](location) mới đổi chỗ làm việc hẹp hơn à'
+  - '[sài gòn](location) ít người thì văn phòng nó bé hả'
+  - gửi cho chị ảnh về văn phòng [hồ chí minh](location)
+  - cho tôi xin vài picture ở văn phòng [hà nội](location)
+  - cho tớ hỏi trụ sở công ty trông như thế nào
+  - khu vực làm việc của công ty có yên tĩnh sạch sẽ ko
+  - mô tả đôi nét không gian cơ sở [đồng bằng sông cưu long](location) cho tớ với
+  - mình xin ít bức view về khu vực làm việc
+  - timi ơi, tớ muốn hỏi chi nhánh công ty có rộng rãi ko
+  - cho tớ xin pic chi nhánh [đồng bằng bắc bộ](location)
+  - văn phòng ngoài [Trung Quốc](location) có hiện đại không
+  - cho mình hỏi văn phòng [hcm](location) trông như thế nào
+  - khu làm việc trông ổn chứ
+  - chi nhánh [TH](location) ra sao vậy ạ?
+  - thấy bảo chi nhánh công ty xin xò lắm phải ko timi
+  - mày mô tả cho mình biết về chi nhánh cty chút nha
+  - gửi bức tranh cho anh về chi nhánh [đn](location)
+  - xin ảnh công ty ở [hcm](location)
+  - cậu mô tả khu vực làm việc của nhân viên trong công ty đi
+  - tôi muốn hỏi văn phòng công ty nhìn đẹp không
+  - em mô tả không gian trụ sở công ty cho mình với
+  - nhân viên công ty có không gian làm việc khang trang ko
+  - mô tả không gian trụ sở [hồ chí minh](location) đi mầy
+  - khu vực làm việc cho nhân viên có đẹp và trẻ trung lắm không
+  - khu vực làm việc có yên tĩnh và rộng rãi không
+  - FTECH [hn](location) có sang xịn mịn không?
+  - trụ sở công ty trông như thế nào
+  - chi nhánh [Đan Mạch](location) trông như thế nào
+  - mô tả văn phòng công ty được ko
+  - mô tả đôi nét không gian trụ sở công ty cho mình với
+  - '[đất Việt](location) mới đổi chỗ làm việc rộng hơn à'
+  - '[hcm](location) ít người thì văn phòng nó bé hả'
+  - gửi cho anh ảnh về chi nhánh [đà nẵng](location)
+  - cho mình xin vài picture ở chi nhánh [hải phòng](location)
+  - cho tớ hỏi trụ sở công ty như thế nào
+  - không gian làm việc của công ty có trẻ trung và hiện đại không
+  - mô tả đôi nét không gian trụ sở [hồ chí minh](location) cho tôi với
+  - mình xin ít bức ảnh về khu vực làm việc
+  - timi ơi tớ muốn hỏi chi nhánh công ty có trẻ trung và hiện đại không
+  - cho anh xin pic văn phòng [huế](location)
+  - văn phòng ngoài [Singapore](location) có yên tĩnh sạch sẽ không
+  - cho mình hỏi văn phòng [QN](location) trông như thế nào
+  - khu vực làm việc có rộng rãi ko
+  - chi nhánh [VN](location) ra sao vậy ạ?
+  - thấy bảo trụ sở công ty xin xò lắm phải ko m
+  - cậu mô tả cho tớ biết về trụ sở cty chút nha
+  - gửi bức tranh cho tớ về văn phòng [miền nam](location)
+  - xin ảnh công ty ở [đn](location)
+  - mày mô tả khu vực làm việc của nhân viên trong công ty đi
+  - tớ muốn hỏi chi nhánh công ty trông ổn chứ
+  - cậu mô tả không gian văn phòng công ty cho tớ với
+  - nhân viên công ty có không gian làm việc thoải mái không
+  - mô tả không gian cơ sở [huế](location) đi bạn
+  - khu vực làm việc cho nhân viên trông đẹp lắm phải ko
+  - khu làm việc có gọn gàng và khang trang ko
+  - FTECH [hà nam](location) có sang xịn mịn không?
+  - chi nhánh công ty như thế nào
+  - chi nhánh [QB](location) trông như thế nào
+  - miêu tả cơ sở công ty được không
+  - mô tả đôi nét không gian văn phòng công ty cho tôi với
+  - '[dn](location) mới đổi chỗ làm việc chật hơn à'
+  - '[hồ chí minh](location) ít người thì chi nhánh nó bé hả'
+  - gửi cho chị bức view về văn phòng [Việt Nam](location)
+  - cho tớ xin vài picture ở trụ sở [Việt Nam](location)
+  - cho mình hỏi trụ sở công ty như thế nào
+  - không gian làm việc của công ty có rộng ko
+  - mô tả đôi nét không gian trụ sở [BN](location) cho mình với
+  - mình xin ít pic về khu vực làm việc
+  - timi ơi tớ muốn hỏi văn phòng công ty trông như thế nào
+  - cho tớ xin pic văn phòng [đà nẵng](location)
+  - văn phòng trong [TH](location) bố trí thế nào
+  - cho tớ hỏi cơ sở [đn](location) trông như thế nào
+  - không gian làm việc có thoáng mát ko
+  - chi nhánh [đất Việt](location) ra sao vậy ạ?
+  - thấy bảo trụ sở công ty xin xò lắm phải không cậu
+  - bot miêu tả cho tôi biết về cơ sở công ty chút nha
+  - gửi bức view cho tớ về văn phòng [khánh hoà](location)
+  - xin ảnh công ty ở [tây nam bộ](location)
+  - mầy mô tả khu làm việc của nhân viên trong công ty đi
+  - mình muốn hỏi văn phòng công ty có mới không
+  - mầy mô tả không gian văn phòng công ty cho tôi với
+  - nhân viên có không gian làm việc hiện đại không
+  - mô tả không gian chi nhánh [đà nẵng](location) đi bot
+  - khu làm việc cho nhân viên có yên tĩnh sạch sẽ ko
+  - khu vực làm việc có sạch sẽ và hiện đại không
+  - FTECH [Lào](location) có sang xịn mịn không?
+  - cơ sở công ty trông như thế nào
+  - văn phòng [quảng ngãi](location) trông như thế nào
+  - miêu tả văn phòng được không
+  - mô tả đôi nét không gian trụ sở công ty đi bạn
+  - '[hcm](location) mới đổi chỗ làm việc rộng hơn à'
+  - '[hcm](location) ít người thì chi nhánh nó bé hả'
+  - gửi cho mình bức view về chi nhánh [tiền giang](location)
+  - cho tớ xin vài picture ở trụ sở [sơn la](location)
+  - cho tớ hỏi chi nhánh công ty như thế nào
+  - không gian làm việc của công ty có trẻ trung và hiện đại ko
+  - mô tả đôi nét không gian chi nhánh [sài gòn](location) cho tớ với
+  - mình xin ít ảnh về cơ sở
+  - timi ơi tôi muốn hỏi chi nhánh công ty có trẻ trung và hiện đại ko
+  - cho tớ xin bức view văn phòng [huế](location)
+  - văn phòng ngoài [Hàn](location) như thế nào
+  - cho tớ hỏi trụ sở [hậu giang](location) trông như thế nào
+  - không gian làm việc cố rộng và thoáng mát không
+  - chi nhánh [miền tây](location) ra sao vậy ạ?
+  - thấy bảo cơ sở công ty xin xò lắm phải ko timi
+  - mầy mô tả cho tôi biết về văn phòng cty chút nha
+  - gửi pic cho anh về văn phòng [nam trung bộ](location)
+  - xin ảnh công ty ở [hà nội](location)
+  - mày mô tả khu làm việc của nhân viên trong công ty đi
+  - tớ muốn hỏi chi nhánh công ty có nhiều không gian xanh không
+  - timi mô tả không gian cơ sở công ty cho tớ với
+  - nhân viên có không gian làm việc yên tĩnh ko
+  - mô tả không gian cơ sở [cà mau](location) đi mầy
+  - khu vực làm việc cho nhân viên có yên tĩnh ko
+  - không gian làm việc có khang trang và thoải mái ko
+  - FTECH [hòa bình](location) có sang xịn mịn không?
+  - chi nhánh [hà nội](location) trông như thế nào
+  - miêu tả trụ sở được không
+  - mô tả đôi nét không gian cơ sở công ty đi em
+  - '[hà nội](location) mới đổi chỗ làm việc chật hơn à'
+  - '[hồ chí minh](location) ít người thì trụ sở nó bé hả'
+  - gửi cho tớ bức ảnh về văn phòng [LS](location)
+  - cho tớ xin vài pic ở văn phòng [sa đéc](location)
+  - cho tôi hỏi chi nhánh công ty như thế nào
+  - không gian làm việc của công ty có yên tĩnh không
+  - mô tả đôi nét không gian cơ sở [hcm](location) đi em
+  - mình xin ít bức tranh về khu vực làm việc
+  - timi ơi, tôi muốn hỏi chi nhánh công ty trông đẹp lắm phải ko
+  - cho tớ xin bức view văn phòng [hà nội](location)
+  - văn phòng ngoài [TH](location) có nhiều không gian xanh ko
+  - cho mình hỏi cơ sở [cà mau](location) trông như thế nào
+  - không gian làm việc đẹp ko
+  - chi nhánh [tây nguyên](location) ra sao vậy ạ?
+  - thấy bảo trụ sở công ty xin xò lắm phải không
+  - cậu mô tả cho tớ biết về cơ sở công ty chút nha
+  - gửi picture cho tớ về văn phòng [cố đô huế](location)
+  - xin ảnh công ty ở [LS](location)
+  - bot mô tả khu làm việc của nhân viên trong công ty đi
+  - mình muốn hỏi trụ sở công ty đẹp ko
+  - m mô tả không gian cơ sở công ty cho tớ với
+  - nhân viên có không gian làm việc sạch sẽ không
+  - mô tả không gian văn phòng [đắk lắk](location) đi bạn
+  - không gian làm việc cho nhân viên nhìn đẹp không
+  - khu vực làm việc có sạch sẽ và gọn gàng ko
+  - FTECH [QN](location) có sang xịn mịn không?
+  - chi nhánh [hồ chí minh](location) trông như thế nào
+  - miêu tả trụ sở công ty được ko
+  - mô tả đôi nét không gian văn phòng công ty đi bạn
+  - '[thủ đức](location) mới đổi chỗ làm việc rộng hơn à'
+  - '[sài gòn](location) ít người thì trụ sở nó bé hả'
+  - gửi cho anh bức ảnh về văn phòng [đất Việt](location)
+  - cho tớ xin vài picture ở chi nhánh [thái bình](location)
+  - cho tớ hỏi văn phòng công ty như thế nào
+  - khu vực làm việc của công ty có khang trang và sạch sẽ không
+  - mô tả đôi nét không gian trụ sở [cố đô huế](location) cho mình với
+  - mình xin ít bức ảnh về nơi làm việc
+  - timi ơi, mình muốn hỏi chi nhánh công ty có hiện đại không
+  - cho mình xin ít bức ảnh văn phòng [TV](location)
+  - văn phòng trong [thừa thiên huế](location) trông như nào
+  - cho tớ hỏi trụ sở [dn](location) như thế nào
+  - khu làm việc có mát ko
+  - chi nhánh [hà nội](location) ra sao vậy ạ?
+  - thấy bảo chi nhánh công ty xin xò lắm phải ko
+  - bạn miêu tả cho tôi biết về cơ sở công ty chút nha
+  - gửi picture cho chị về văn phòng [Việt Nam](location)
+  - xin ảnh công ty ở [Hà Lan](location)
+  - mày mô tả không gian làm việc của nhân viên trong công ty đi
+  - tôi muốn hỏi văn phòng công ty như thế nào
+  - em mô tả không gian chi nhánh công ty cho tôi với
+  - nhân viên có không gian làm việc đẹp không
+  - mô tả không gian chi nhánh [đông bắc bộ](location) đi bạn
+  - khu vực làm việc cho nhân viên có nhiều cây xanh không
+  - khu vực làm việc có đẹp và yên tĩnh không
+  - FTECH [đn](location) có sang xịn mịn không?
+  - cơ sở [hn](location) như thế nào
+  - mô tả chi nhánh công ty được không
+  - mô tả đôi nét không gian văn phòng công ty đi m
+  - '[hn](location) mới đổi chỗ làm việc chật hơn à'
+  - '[hcm](location) ít người thì cơ sở nó bé hả'
+  - gửi cho mình bức tranh về chi nhánh [hà nội](location)
+  - cho tớ xin vài picture ở trụ sở [sài gòn](location)
+  - cho tôi hỏi trụ sở công ty trông như thế nào
+  - khu vực làm việc của công ty đẹp ko
+  - mô tả đôi nét không gian chi nhánh [VN](location) cho mình với
+  - mình xin ít picture về khu vực làm việc
+  - timi ơi tôi muốn hỏi văn phòng công ty có nóng ko
+  - cho chị xin ít ảnh chi nhánh [bắc kạn](location)
+  - văn phòng trong [hn](location) có khang trang và sạch sẽ không
+  - cho tôi hỏi chi nhánh [HY](location) trông như thế nào
+  - không gian làm việc có đẹp và trẻ trung lắm ko
+  - chi nhánh [hn](location) ra sao vậy ạ?
+  - thấy bảo trụ sở công ty đẹp lắm phải ko
+  - timi miêu tả cho tôi biết về văn phòng cty chút nha
+  - gửi bức tranh cho tớ về văn phòng [TH](location)
+  - xin ảnh công ty ở [VL](location)
+  - timi mô tả khu vực làm việc của nhân viên trong công ty đi
+  - mình muốn hỏi văn phòng công ty có nóng không
+  - bạn mô tả không gian cơ sở công ty cho tôi với
+  - nhân viên có không gian làm việc rộng rãi không
+  - mô tả không gian văn phòng [củ chi](location) đi timi
+  - không gian làm việc cho nhân viên có thoáng ko
+  - không gian làm việc có rộng rãi và yên tĩnh ko
+  - FTECH [lạng sơn](location) có sang xịn mịn không?
+  - trụ sở [tây nam bộ](location) như thế nào
+  - miêu tả trụ sở được ko
+  - mô tả đôi nét không gian chi nhánh công ty đi em
+  - '[Na Uy](location) mới đổi chỗ làm việc chật hơn à'
+  - gửi cho chị ảnh về văn phòng [vịnh hạ long](location)
+  - cho tớ xin vài pic ở chi nhánh [khánh hoà](location)
+  - cho mình hỏi trụ sở công ty trông như thế nào
+  - khu làm việc của công ty có nhiều cây xanh không
+  - mô tả đôi nét không gian chi nhánh [NB](location) đi mày
+  - mình xin ít picture về nơi làm việc
+  - timi ơi mình muốn hỏi văn phòng công ty có hiện đại ko
+  - cho tớ xin ảnh chi nhánh [HD](location)
+  - văn phòng ngoài [đn](location) có rộng rãi và mới không
+  - cho tớ hỏi văn phòng [hn](location) như thế nào
+  - khu làm việc đẹp lắm phải ko
+  - chi nhánh [vĩnh long](location) ra sao vậy ạ?
+  - thấy bảo chi nhánh công ty hiện đại lắm phải không
+  - bạn miêu tả cho tớ biết về trụ sở cty chút nha
+  - gửi bức ảnh cho anh về chi nhánh [tây nam bộ](location)
+  - xin ảnh công ty ở [thanh hóa](location)
+  - em mô tả khu làm việc của nhân viên trong công ty đi
+  - tớ muốn hỏi trụ sở công ty có khang trang và sạch sẽ ko
+  - timi mô tả không gian văn phòng công ty cho tớ với
+  - nhân viên có không gian làm việc thoải mái không
+  - mô tả không gian trụ sở [miền tây](location) đi em
+  - khu làm việc cho nhân viên nhìn ổn chứ
+  - khu vực làm việc có hiện đại và yên tĩnh ko
+  - FTECH [Sing](location) có sang xịn mịn không?
+  - trụ sở [QB](location) như thế nào
+  - miêu tả chi nhánh được không
+  - mô tả đôi nét không gian chi nhánh công ty cho tôi với
+  - '[bình định](location) mới đổi chỗ làm việc rộng hơn à'
+  - gửi cho chị bức view về chi nhánh [Canada](location)
+  - cho tớ xin vài picture ở văn phòng [tp hồ chí minh](location)
+  - cho mình hỏi chi nhánh công ty như thế nào
+  - không gian làm việc của công ty trang trí có gì nổi bật không
+  - mô tả đôi nét không gian trụ sở [hồ chí minh](location) đi mày
+  - mình xin ít bức view về cty
+  - timi ơi, mình muốn hỏi cơ sở công ty cố rộng và thoáng mát ko

@@ -1,0 +1,253 @@
+positives:
+- intent: faq/rule_time_off_ask_advance_paid
+  examples:
+  - đố cậu công ty có chế độ ứng phép ko đó
+  - ứng phép tối đa mấy tuần hả
+  - tôi do con đau nên muốn ứng phép sớm được
+  - tôi do bị ốm nên muốn ứng phép sớm được ko
+  - đố em công ty có chế độ ứng phép không hả
+  - mình do đau nên muốn ứng phép sớm được không
+  - '[f tech](work_unit) cho ứng phép chuẩn không'
+  - '[ftech](work_unit) cho ứng phép chuẩn không'
+  - cho tôi hỏi công ty có chế độ ứng phép không?
+  - đố mầy công ty có chế độ ứng phép không hả
+  - đố em công ty có chế độ ứng phép ko vậy
+  - công ty có cho nhân viên ứng phép trước ko nhể
+  - đố bạn công ty có chế độ ứng phép không đấy
+  - công ty có cho thành viên ứng phép trước không nhỉ
+  - công ty cho nhân viên ứng phép trước mấy ngày đấy
+  - cho tớ hỏi công ty có chế độ ứng phép ko?
+  - tôi có được ứng phép trước không ha
+  - đố timi công ty có chế độ ứng phép không đó
+  - tôi muốn hỏi có chế độ ứng phép ko?
+  - tớ do có việc nên muốn ứng phép sớm được không
+  - mình muốn hỏi công ty có cho ứng phép ko
+  - đố bạn công ty có chế độ ứng phép ko đấy
+  - đố mày công ty có chế độ ứng phép không đó
+  - đố bot công ty có chế độ ứng phép ko đấy
+  - đố timi công ty có chế độ ứng phép ko vậy
+  - tớ vì gặp đối tác nên muốn ứng phép sớm được ko
+  - mình vì bị ốm nên muốn ứng phép sớm được ko
+  - đố cậu công ty có chế độ ứng phép ko thế
+  - tôi muốn hỏi công ty có chế độ ứng phép không?
+  - mình vì đau nên muốn ứng phép sớm được không
+  - tôi vì xe hỏng nên muốn ứng phép sớm được ko
+  - công ty cho người ứng phép trước mấy tháng đó
+  - tôi vì có việc nên muốn ứng phép sớm được ko
+  - mình vì có việc cá nhân nên muốn ứng phép sớm được không
+  - đố mầy công ty có chế độ ứng phép không vậy
+  - tôi do bận việc nên muốn ứng phép sớm được không
+  - tôi vì con đau nên muốn ứng phép sớm được ko
+  - tớ do đi du lịch nên muốn ứng phép sớm được
+  - thành viên có được ứng phép trước ko
+  - tôi vì gặp đối tác nên muốn ứng phép sớm được không
+  - tôi do đau nên muốn ứng phép sớm được không
+  - tớ do đau nên muốn ứng phép sớm được ko
+  - tôi do bận việc nên muốn ứng phép sớm được ko
+  - công ty cho nhận sự ứng phép trước mấy tháng đấy
+  - mình vì đi du lịch nên muốn ứng phép sớm được ko
+  - công ty có cho nhân viên ứng phép trước không nhể
+  - đố mầy công ty có chế độ ứng phép không đó
+  - công ty có cho thành viên ứng phép trước ko nhể
+  - đố bot công ty có chế độ ứng phép ko đó
+  - tớ vì con đau nên muốn ứng phép sớm được
+  - công ty cho nhận sự ứng phép trước mấy ngày thế
+  - mình muốn hỏi công ty có chế độ ứng phép ko?
+  - cho mình hỏi có chế độ ứng phép ko?
+  - mình có được ứng phép trước không ha
+  - công ty có cho người ứng phép trước không ha
+  - tớ vì bận việc nên muốn ứng phép sớm được
+  - tớ muốn hỏi công ty có cho ứng phép không
+  - tớ vì xe hỏng nên muốn ứng phép sớm được ko
+  - tôi do có việc cá nhân nên muốn ứng phép sớm được không
+  - đố m công ty có chế độ ứng phép ko đó
+  - công ty cho nhận sự ứng phép trước mấy tháng vậy
+  - mình do gặp đối tác nên muốn ứng phép sớm được
+  - tôi do gặp đối tác nên muốn ứng phép sớm được
+  - tớ do gặp đối tác nên muốn ứng phép sớm được không
+  - công ty cho nhân viên ứng phép trước mấy tháng vậy
+  - mình vì bận việc nên muốn ứng phép sớm được
+  - mình muốn hỏi có chế độ ứng phép không?
+  - tôi vì bận việc nên muốn ứng phép sớm được
+  - công ty có cho nhận sự ứng phép trước ko nhể
+  - mình vì bị ốm nên muốn ứng phép sớm được
+  - tôi vì xe hỏng nên muốn ứng phép sớm được không
+  - mình do đi về quê nên muốn ứng phép sớm được ko
+  - tớ do có việc cá nhân nên muốn ứng phép sớm được
+  - công ty cho người ứng phép trước mấy tháng hả
+  - tôi vì gặp đối tác nên muốn ứng phép sớm được ko
+  - tớ vì đau nên muốn ứng phép sớm được ko
+  - tôi do đi du lịch nên muốn ứng phép sớm được không
+  - mình do bị ốm nên muốn ứng phép sớm được
+  - cho tớ hỏi công ty có chế độ ứng phép không?
+  - tôi do có việc nên muốn ứng phép sớm được ko
+  - công ty có cho người ứng phép trước ko nhể
+  - mình vì xe hỏng nên muốn ứng phép sớm được
+  - tớ do bị ốm nên muốn ứng phép sớm được
+  - công ty cho nhận sự ứng phép trước mấy ngày đó
+  - đố mầy công ty có chế độ ứng phép ko hả
+  - công ty cho nhận sự ứng phép trước mấy ngày đấy
+  - đố m công ty có chế độ ứng phép không vậy
+  - tớ do bận việc nên muốn ứng phép sớm được không
+  - tớ vì có việc nên muốn ứng phép sớm được
+  - công ty cho thành viên ứng phép trước mấy tháng đó
+  - tôi vì bị ốm nên muốn ứng phép sớm được
+  - mình vì có việc nên muốn ứng phép sớm được không
+  - đố em công ty có chế độ ứng phép ko đó
+  - mình vì đi du lịch nên muốn ứng phép sớm được không
+  - tớ muốn biết công ty có cho ứng phép không
+  - đố bạn công ty có chế độ ứng phép không vậy
+  - tôi vì đau nên muốn ứng phép sớm được không
+  - tôi vì bị ốm nên muốn ứng phép sớm được ko
+  - tôi do xe hỏng nên muốn ứng phép sớm được ko
+  - công ty cho người ứng phép trước mấy ngày đó
+  - tớ vì bị ốm nên muốn ứng phép sớm được
+  - mình muốn hỏi có chế độ ứng phép ko?
+  - thành viên có được ứng phép trước không
+  - ứng phép có giới hạn số lần không
+  - mình muốn hỏi công ty có chế độ ứng phép không?
+  - mình do đi du lịch nên muốn ứng phép sớm được ko
+  - '[ftech](work_unit) cho ứng phép đúng ko'
+  - '[ftech](work_unit) cho ứng phép chuẩn ko'
+  - công ty có cho thành viên ứng phép trước không nhể
+  - có được ứng phép trước ko?
+  - tớ vì con đau nên muốn ứng phép sớm được ko
+  - '[f tech](work_unit) cho ứng phép chính xác ko'
+  - mình do có việc cá nhân nên muốn ứng phép sớm được
+  - tôi vì gặp đối tác nên muốn ứng phép sớm được
+  - công ty cho thành viên ứng phép trước mấy ngày thế
+  - tớ do có việc cá nhân nên muốn ứng phép sớm được ko
+  - '[f-tech](work_unit) cho ứng phép chính xác ko'
+  - đố bạn công ty có chế độ ứng phép không đó
+  - tôi muốn biết công ty có cho ứng phép không
+  - đố m công ty có chế độ ứng phép không hả
+  - tớ vì có việc cá nhân nên muốn ứng phép sớm được không
+  - công ty cho thành viên ứng phép trước mấy ngày vậy
+  - công ty cho người ứng phép trước mấy ngày vậy
+  - đố cậu công ty có chế độ ứng phép không thế
+  - công ty có cho nhân viên ứng phép trước ko nhỉ
+  - ứng phép tối đa mấy tuần vậy
+  - đố em công ty có chế độ ứng phép không đó
+  - công ty có cho nhân viên ứng phép trước không ha
+  - tớ muốn biết công ty có cho ứng phép ko
+  - tôi do đi về quê nên muốn ứng phép sớm được không
+  - tớ vì bị ốm nên muốn ứng phép sớm được ko
+  - đố em công ty có chế độ ứng phép ko thế
+  - tôi do bị ốm nên muốn ứng phép sớm được
+  - công ty cho nhận sự ứng phép trước mấy ngày vậy
+  - công ty cho người ứng phép trước mấy ngày thế
+  - '[f-tech](work_unit) cho ứng phép chuẩn chỉ không'
+  - tôi vì đi du lịch nên muốn ứng phép sớm được
+  - có hạn chế số lần ứng phép không
+  - mình do gặp đối tác nên muốn ứng phép sớm được ko
+  - cho tôi hỏi có chế độ ứng phép không?
+  - mình vì đi về quê nên muốn ứng phép sớm được không
+  - mình do xe hỏng nên muốn ứng phép sớm được
+  - đố em công ty có chế độ ứng phép không vậy
+  - cho tớ hỏi có chế độ ứng phép ko?
+  - tôi do đi du lịch nên muốn ứng phép sớm được
+  - tớ do đau nên muốn ứng phép sớm được không
+  - người có được ứng phép trước không
+  - tôi do đi du lịch nên muốn ứng phép sớm được ko
+  - mình vì gặp đối tác nên muốn ứng phép sớm được ko
+  - công ty cho nhân viên ứng phép trước mấy tháng hả
+  - tớ do con đau nên muốn ứng phép sớm được
+  - công ty cho thành viên ứng phép trước mấy ngày đấy
+  - mình do con đau nên muốn ứng phép sớm được ko
+  - tớ vì đau nên muốn ứng phép sớm được không
+  - mình vì đau nên muốn ứng phép sớm được
+  - đố bot công ty có chế độ ứng phép không đó
+  - đố mày công ty có chế độ ứng phép không hả
+  - đố mày công ty có chế độ ứng phép không thế
+  - mình do đi du lịch nên muốn ứng phép sớm được không
+  - có được ứng phép trước không?
+  - tôi do đau nên muốn ứng phép sớm được
+  - mình muốn biết công ty có cho ứng phép ko
+  - mình vì có việc cá nhân nên muốn ứng phép sớm được ko
+  - tôi do có việc nên muốn ứng phép sớm được không
+  - công ty có cho người ứng phép trước không nhể
+  - có hạn chế số lần ứng phép ko
+  - đố em công ty có chế độ ứng phép ko đấy
+  - đố cậu công ty có chế độ ứng phép không đấy
+  - mình do bận việc nên muốn ứng phép sớm được ko
+  - tớ vì con đau nên muốn ứng phép sớm được không
+  - tớ có được ứng phép trước ko nhỉ
+  - '[ftech](work_unit) cho ứng phép chính xác ko'
+  - tôi có được ứng phép trước không nhể
+  - tôi vì đi du lịch nên muốn ứng phép sớm được không
+  - tớ do xe hỏng nên muốn ứng phép sớm được ko
+  - tôi có được ứng phép trước ko nhể
+  - '[ftech](work_unit) cho ứng phép chuẩn chỉ không'
+  - đố mầy công ty có chế độ ứng phép không thế
+  - mình có được ứng phép trước không nhể
+  - tớ vì có việc cá nhân nên muốn ứng phép sớm được ko
+  - tôi do xe hỏng nên muốn ứng phép sớm được
+  - đố timi công ty có chế độ ứng phép không thế
+  - tớ có được ứng phép trước ko ha
+  - tớ do đi về quê nên muốn ứng phép sớm được ko
+  - tôi do đau nên muốn ứng phép sớm được ko
+  - đố mầy công ty có chế độ ứng phép không đấy
+  - đố mầy công ty có chế độ ứng phép ko đấy
+  - mình vì có việc cá nhân nên muốn ứng phép sớm được
+  - mình vì con đau nên muốn ứng phép sớm được
+  - tôi vì đi du lịch nên muốn ứng phép sớm được ko
+  - ứng phép tối đa mấy giờ
+  - tôi muốn hỏi công ty có cho ứng phép ko
+  - công ty cho nhân viên ứng phép trước mấy ngày thế
+  - mình do bận việc nên muốn ứng phép sớm được
+  - đố m công ty có chế độ ứng phép ko đấy
+  - cho mình hỏi có chế độ ứng phép không?
+  - công ty cho nhận sự ứng phép trước mấy tháng thế
+  - tớ do xe hỏng nên muốn ứng phép sớm được không
+  - mình do có việc nên muốn ứng phép sớm được ko
+  - đố bot công ty có chế độ ứng phép không đấy
+  - ứng phép tối đa mấy ngày vậy
+  - đố cậu công ty có chế độ ứng phép ko đấy
+  - đố timi công ty có chế độ ứng phép ko thế
+  - tôi vì bận việc nên muốn ứng phép sớm được ko
+  - đố mầy công ty có chế độ ứng phép ko vậy
+  - ứng phép tối đa mấy giờ vậy hả
+  - '[f tech](work_unit) cho ứng phép chuẩn chỉ ko'
+  - đố mày công ty có chế độ ứng phép ko đấy
+  - mình do bị ốm nên muốn ứng phép sớm được ko
+  - công ty có cho nhận sự ứng phép trước ko nhỉ
+  - tớ do bị ốm nên muốn ứng phép sớm được ko
+  - công ty cho nhân viên ứng phép trước mấy tháng đó
+  - tôi vì bị ốm nên muốn ứng phép sớm được không
+  - tớ do đau nên muốn ứng phép sớm được
+  - tớ do con đau nên muốn ứng phép sớm được ko
+  - công ty cho nhận sự ứng phép trước mấy tháng đó
+  - công ty cho người ứng phép trước mấy tháng vậy
+  - công ty có cho nhận sự ứng phép trước không nhỉ
+  - mình do bị ốm nên muốn ứng phép sớm được không
+  - công ty có cho ứng phép trước không
+  - '[ftech](work_unit) cho ứng phép chính xác không'
+  - mình do đi du lịch nên muốn ứng phép sớm được
+  - tớ vì gặp đối tác nên muốn ứng phép sớm được không
+  - tớ do đi về quê nên muốn ứng phép sớm được
+  - tớ vì có việc cá nhân nên muốn ứng phép sớm được
+  - công ty có cho người ứng phép trước ko nhỉ
+  - tớ vì bận việc nên muốn ứng phép sớm được không
+  - công ty cho thành viên ứng phép trước mấy tháng thế
+  - tớ do có việc cá nhân nên muốn ứng phép sớm được không
+  - nhân viên có được ứng phép trước không
+  - tôi muốn hỏi công ty có cho ứng phép không
+  - tôi vì đi về quê nên muốn ứng phép sớm được không
+  - mình vì xe hỏng nên muốn ứng phép sớm được không
+  - tớ vì đi về quê nên muốn ứng phép sớm được ko
+  - tôi vì có việc cá nhân nên muốn ứng phép sớm được ko
+  - tớ có được ứng phép trước ko nhể
+  - công ty có cho người ứng phép trước ko ha
+  - công ty cho nhận sự ứng phép trước mấy ngày hả
+  - đố bot công ty có chế độ ứng phép ko thế
+  - tôi muốn hỏi công ty có chế độ ứng phép ko?
+  - tôi do con đau nên muốn ứng phép sớm được không
+  - tớ có được ứng phép trước không nhỉ
+  - công ty cho thành viên ứng phép trước mấy tháng đấy
+  - mình do con đau nên muốn ứng phép sớm được
+  - công ty cho nhân viên ứng phép trước mấy ngày đó
+  - '[f tech](work_unit) cho ứng phép chuẩn chỉ không'
+  - mình do có việc cá nhân nên muốn ứng phép sớm được không
+  - đố bạn công ty có chế độ ứng phép ko thế
+  - đố timi công ty có chế độ ứng phép ko đấy
+  - '[ftech](work_unit) cho ứng phép đúng không'

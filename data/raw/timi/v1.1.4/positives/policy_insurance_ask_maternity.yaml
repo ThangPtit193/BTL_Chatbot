@@ -1,0 +1,86 @@
+positives:
+- intent: faq/policy_insurance_ask_maternity
+  examples:
+  - công ty có bao nhiêu loại chính sách thai sản
+  - chế độ thai sản thế nào ạ
+  - tôi muốn hỏi chế độ thai sản bền mình như thế nào ạ
+  - cho mình hỏi chế độ thai sản bền công ty mình thế nào ạ
+  - cho tôi hỏi chế độ thai sản bền công ty mình thế nào ạ
+  - tớ muốn hỏi chế độ thai sản bền mình thế nào ạ
+  - cho tớ hỏi chế độ thai sản bền mình thế nào ạ
+  - chế độ thai sản bên công ty mình như thế nào ạ
+  - cho mình hỏi chế độ thai sản bền công ty mình như thế nào ạ
+  - tớ muốn hỏi chế độ thai sản bền công ty mình thế nào ạ
+  - mình muốn hỏi chế độ thai sản bền công ty mình thế nào ạ
+  - chính sách thai sản như nào
+  - tớ muốn hỏi chế độ thai sản bền công ty mình như nào ạ
+  - chính sách cho phụ nữ có con nhỏ của công ty thế nào ạ
+  - con nhỏ dưới mấy tháng thì nghỉ việc vẫn có lương
+  - có 1 cái chính sách dành cho thai sản thôi hả
+  - cho tớ hỏi chế độ thai sản bền công ty mình như thế nào ạ
+  - tôi muốn hỏi chế độ thai sản bền công ty mình thế nào ạ
+  - tớ muốn hỏi chế độ thai sản bền mình như thế nào ạ
+  - tôi muốn hỏi chế độ thai sản bền công ty mình như thế nào ạ
+  - cho tôi hỏi chế độ thai sản bền công ty mình như nào ạ
+  - chế độ bảo hiểm xã hội thai sản của công ty như thế nào
+  - công ty có chế độ thai sản như nào ạ
+  - chính sách cho người mang thai ở công ty có xịn ko
+  - chế độ thai sản như thế nào ạ
+  - nghỉ thai sản nuôi con nhỏ vẫn có lương chứ
+  - chính sách cho thai sản của công ty như nào ạ
+  - cho mình xin thông tin mô tả chính sách thai sản
+  - người mang bầu và nuôi con nhỏ chính sách như nhau phải ko
+  - cho tôi hỏi chế độ thai sản bền mình như thế nào ạ
+  - cho tớ hỏi chế độ thai sản bền mình như nào ạ
+  - chế độ thai sản bên mình như nào ạ
+  - công ty có chế độ bảo hiểm tai nạn lao động thai sản ko
+  - công ty có ưu đãi về bảo hiểm cho người mang thai ko
+  - chế độ thai sản bên mình như thế nào ạ
+  - cho tôi hỏi chế độ thai sản bền mình thế nào ạ
+  - chính sách cho phụ nữ có con nhỏ của công ty như nào ạ
+  - người nghỉ việc do mang thai thì có đãi ngộ nào
+  - chế độ thai sản bên công ty mình như nào ạ
+  - cho tôi hỏi chế độ thai sản bền công ty mình như thế nào ạ
+  - chính sách cho thai sản như nào ạ
+  - chế độ thai sản của công ty như thế nào ạ
+  - cho tớ hỏi chế độ thai sản bền công ty mình như nào ạ
+  - tôi muốn hỏi chế độ thai sản bền mình như nào ạ
+  - chính sách cho thai sản như thế nào ạ
+  - tôi muốn hỏi chế độ thai sản bền công ty mình như nào ạ
+  - chế độ thai sản của công ty như nào ạ
+  - chế độ bảo hiểm thai sản của công ty như thế nào
+  - chế độ thai sản bên mình thế nào ạ
+  - công ty có chế độ thai sản thế nào ạ
+  - công ty có ưu đãi về bảo hiểm xã hội cho người mang thai ko
+  - chính sách cho phụ nữ có thai của công ty như thế nào ạ
+  - cho mình hỏi chế độ thai sản bền mình như nào ạ
+  - chính sách cho phụ nữ có thai của công ty như nào ạ
+  - mình muốn hỏi chế độ thai sản bền mình thế nào ạ
+  - chế độ thai sản của công ty thế nào ạ
+  - cho tớ hỏi chế độ thai sản bền mình như thế nào ạ
+  - chính sách cho phụ nữ có con nhỏ của công ty như thế nào ạ
+  - cho tớ hỏi chế độ thai sản bền công ty mình thế nào ạ
+  - mình muốn hỏi chế độ thai sản bền công ty mình như nào ạ
+  - chính sách cho phụ nữ có thai của công ty thế nào ạ
+  - công ty có chế độ thai sản như thế nào ạ
+  - công ty chắc có chính sách riêng dành cho người mang bầu chứ
+  - công ty có chế độ bảo hiểm y tế thai sản ko
+  - chính sách cho thai sản thế nào ạ
+  - chính sách cho thai sản của công ty thế nào ạ
+  - mang bầu được nghỉ bao nhiêu ngày
+  - chế độ thai sản như nào ạ
+  - công ty có chế độ bảo hiểm thất ngiệp thai sản ko
+  - tớ muốn hỏi chế độ thai sản bền công ty mình như thế nào ạ
+  - công ty có chế độ bảo hiểm xã hội thai sản ko
+  - cho tôi hỏi chế độ thai sản bền mình như nào ạ
+  - cho mình hỏi chế độ thai sản bền mình thế nào ạ
+  - mình muốn hỏi chế độ thai sản bền mình như thế nào ạ
+  - chế độ thai sản bên công ty mình thế nào ạ
+  - chính sách thai sản là gì
+  - cho mình hỏi chế độ thai sản bền công ty mình như nào ạ
+  - cho mình hỏi chế độ thai sản bền mình như thế nào ạ
+  - chính sách cho thai sản của công ty như thế nào ạ
+  - tôi muốn hỏi chế độ thai sản bền mình thế nào ạ
+  - tớ muốn hỏi chế độ thai sản bền mình như nào ạ
+  - mình muốn hỏi chế độ thai sản bền mình như nào ạ
+  - mình muốn hỏi chế độ thai sản bền công ty mình như thế nào ạ

@@ -1,0 +1,303 @@
+positives:
+- intent: faq/policy_bonus_holiday_ask_overview
+  examples:
+  - vào dịp lễ tết công ty tiền thưởng được tính ra sao?
+  - cho tôi hỏi công ty có cách tính thưởng tết như thế nào
+  - cho mình hỏi công ty có cách tính thưởng tết như thế nào
+  - có thưởng cho nhân viên vào [tết âm](time) không
+  - cho tớ hỏi công ty có thưởng lễ tết gì không
+  - có thưởng vào [ngày 1/1](time) ko
+  - công ty có thưởng vào [ngày quốc thế lao động](time) ko
+  - công ty có thưởng cho nhân viên vào [30/4](time) không
+  - có thưởng vào [10/3](time) không
+  - công ty có thưởng vào [ngày 1/1](time) không
+  - cách tính thưởng tết của công ty như thế nào
+  - bên mình có thưởng lễ tết ko ạ?
+  - có thưởng cho nhân viên vào [ngày quốc khánh](time) ko
+  - có thưởng cho nhân viên vào [ngày 30/4](time) ko
+  - công ty có thưởng cho nhân viên vào [10/3](time) không
+  - làm thế nào công ty tính tiền bonus các dịp lễ tết?
+  - có thưởng vào [tết âm](time) ko
+  - có thưởng vào [1/1](time) không
+  - công ty có thưởng cho nhân viên vào [ngày 30/4](time) ko
+  - Quốc Khánh có thưởng không
+  - vào dịp lễ tết bên bạn tiền bonus được tính như nào?
+  - tôi muốn hỏi công ty có cách tính thưởng tết như nào
+  - vào dịp lễ tết công ty tiền thưởng được tính thế nào?
+  - có thưởng cho nhân viên vào [ngày 1/1](time) ko
+  - có thưởng cho nhân viên vào [30/4](time) ko
+  - cho tớ hỏi thưởng tết được tính như nào
+  - cho mình hỏi công ty có thưởng lễ tết gì ko
+  - vào dịp lễ tết công ty tiền bonus được tính thế nào?
+  - bonus lễ tết được tính ra sao ạ?
+  - thưởng lễ tết được tính như thế nào ạ?
+  - có thưởng vào [tết dương](time) không
+  - công ty có thưởng cho nhân viên vào [tết dương lịch](time) ko
+  - công ty có thưởng cho nhân viên vào [ngày quốc thế lao động](time) không
+  - công ty có thưởng lễ tết hàng năm ko
+  - tôi muốn hỏi thưởng tết được tính như thế nào
+  - cho tôi hỏi thưởng tết được tính như nào
+  - tớ muốn hỏi thưởng tết được tính thế nào
+  - bên mình có bonus lễ tết ko ạ?
+  - có thưởng cho nhân viên vào [tết dương lịch](time) ko
+  - có thưởng cho nhân viên vào [ngày 30/4](time) không
+  - có thưởng vào [tết dương](time) ko
+  - những ngày lễ trong năm công ty có thưởng gì không
+  - vào dịp lễ tết bên bạn tiền thưởng được tính như thế nào?
+  - tớ muốn hỏi công ty có thưởng lễ tết gì ko
+  - có thưởng vào [2/9](time) ko
+  - công ty có thưởng cho nhân viên vào [ngày 1/5](time) không
+  - bên bạn có thưởng lễ tết ko ạ?
+  - thưởng lễ tết hàng năm như thế nào
+  - công ty có thưởng vào [10/3](time) ko
+  - tôi muốn hỏi công ty có thưởng lễ tết gì ko
+  - làm thế nào bên mình tính tiền bonus các dịp lễ tết?
+  - làm thế nào công ty tính tiền thưởng các dịp lễ tết?
+  - cho tôi hỏi thưởng tết được tính như thế nào
+  - công ty có cách tính thưởng tết như nào
+  - công ty có thưởng lễ ko
+  - mình muốn hỏi công ty có thưởng lễ tết gì không
+  - công ty có thưởng vào [ngày quốc thế lao động](time) không
+  - có thưởng cho nhân viên vào [quốc khánh](time) không
+  - có thưởng cho nhân viên vào [ngày quốc thế lao động](time) không
+  - công ty có thưởng vào [ngày 1/5](time) ko
+  - công ty có thưởng cho nhân viên vào [ngày 10/3](time) ko
+  - cho tớ hỏi công ty có cách tính thưởng tết như thế nào
+  - công ty có thưởng cho nhân viên vào [tết âm](time) không
+  - tớ muốn hỏi thưởng tết được tính như thế nào
+  - vào dịp lễ tết bên mình tiền bonus được tính ra sao?
+  - tớ muốn hỏi công ty có cách tính thưởng tết như nào
+  - vào dịp lễ tết mình tiền thưởng được tính như nào?
+  - dựa vào đâu mình tính tiền thưởng các dịp lễ tết?
+  - công ty có thưởng cho nhân viên vào [1/1](time) không
+  - có thưởng vào [ngày 2/9](time) ko
+  - có thưởng vào [ngày 1/5](time) ko
+  - dựa vào đâu công ty tính tiền thưởng các dịp lễ tết?
+  - công ty có thưởng cho nhân viên vào [quốc khánh](time) ko
+  - vào dịp lễ tết mình tiền bonus được tính thế nào?
+  - mức thưởng lễ là bao nhiêu
+  - vào dịp lễ tết công ty tiền bonus được tính ra sao?
+  - công ty có thưởng vào [ngày quốc khánh](time) ko
+  - vào dịp lễ tết công ty tiền bonus được tính như nào?
+  - bonus lễ tết được tính như nào ạ?
+  - cho tôi hỏi công ty có thưởng lễ tết gì ko
+  - công ty có bonus lễ tết không ạ?
+  - có thưởng vào [tết âm](time) không
+  - tôi muốn hỏi công ty có cách tính thưởng tết như thế nào
+  - dựa vào đâu công ty tính tiền bonus các dịp lễ tết?
+  - công ty có thưởng vào [2/9](time) ko
+  - lễ tết có được thưởng ko ạ?
+  - công ty có thưởng vào [ngày chiến thắng](time) ko
+  - bonus lễ tết được tính như thế nào ạ?
+  - công ty có thưởng vào [ngày 2/9](time) không
+  - tôi muốn hỏi công ty có thưởng lễ tết gì không
+  - công ty có thưởng lễ tết hàng năm không
+  - 30/4 có bonus ko
+  - vào dịp lễ tết bên mình tiền thưởng được tính như nào?
+  - mình muốn hỏi thưởng tết được tính như nào
+  - công ty có thưởng vào [tết dương](time) không
+  - giổ tổ Hùng Vương công ty có cho thưởng
+  - Thưởng tết được tính thế nào ạ?
+  - công ty có thưởng vào [2/9](time) không
+  - công ty có thưởng vào [tết dương lịch](time) không
+  - vào dịp lễ tết mình tiền bonus được tính như nào?
+  - công ty có thưởng cho nhân viên vào [ngày 30/4](time) không
+  - công ty có thưởng cho nhân viên vào [ngày 1/5](time) ko
+  - có thưởng cho nhân viên vào [tết dương](time) ko
+  - dựa vào đâu bên mình tính tiền thưởng các dịp lễ tết?
+  - bên mình có thưởng lễ tết không ạ?
+  - mình muốn hỏi thưởng tết được tính thế nào
+  - có thưởng cho nhân viên vào [giỗ tổ hồng vương](time) ko
+  - có thưởng cho nhân viên vào [ngày 1/5](time) ko
+  - các ngày lễ tết bên công ty có thưởng không ạ?
+  - có thưởng vào [1/1](time) ko
+  - lễ nào công ty sẽ thưởng
+  - có thưởng vào [ngày chiến thắng](time) không
+  - vào dịp lễ tết công ty tiền thưởng được tính như nào?
+  - cách tính thưởng tết thế nào
+  - công ty có thưởng cho nhân viên vào [tết dương](time) không
+  - mình muốn hỏi công ty có cách tính thưởng tết thế nào
+  - vào dịp lễ tết bên mình tiền thưởng được tính như thế nào?
+  - có thưởng cho nhân viên vào [ngày quốc thế lao động](time) ko
+  - có thưởng cho nhân viên vào [giỗ tổ hồng vương](time) không
+  - bên bạn có thưởng lễ tết không ạ?
+  - công ty có thưởng vào [ngày 10/3](time) ko
+  - có thưởng vào [ngày 30/4](time) không
+  - thưởng tết như thế nào
+  - có thưởng vào [giỗ tổ hồng vương](time) không
+  - vào dịp lễ tết mình tiền thưởng được tính như thế nào?
+  - công ty có thưởng lễ tết hàng năm cho nhân viên ko
+  - công ty có thưởng cho nhân viên vào [giỗ tổ hồng vương](time) ko
+  - công ty có thưởng vào [1/1](time) không
+  - vào dịp lễ tết công ty tiền bonus được tính như thế nào?
+  - tớ muốn hỏi công ty có cách tính thưởng tết thế nào
+  - công ty có thưởng cho nhân viên vào [2/9](time) ko
+  - cho mình hỏi thưởng tết được tính như thế nào
+  - tớ muốn hỏi thưởng tết được tính như nào
+  - có thưởng cho nhân viên vào [2/9](time) ko
+  - lễ tết có được bonus ko ạ?
+  - cho tớ hỏi công ty có cách tính thưởng tết thế nào
+  - cách tính thưởng tết của công ty như nào
+  - có thưởng cho nhân viên vào [ngày 1/5](time) không
+  - công ty có thưởng vào [tết âm](time) ko
+  - mình muốn hỏi thưởng tết được tính như thế nào
+  - có thưởng vào [ngày chiến thắng](time) ko
+  - có thưởng vào [30/4](time) ko
+  - tôi muốn hỏi công ty có cách tính thưởng tết thế nào
+  - làm thế nào mình tính tiền thưởng các dịp lễ tết?
+  - công ty có thưởng cho nhân viên vào [giỗ tổ hồng vương](time) không
+  - có thưởng vào [ngày 1/5](time) không
+  - công ty có thưởng lễ tết hàng năm cho nhân viên không
+  - có thưởng cho nhân viên vào [ngày chiến thắng](time) không
+  - công ty có thưởng vào [tết dương lịch](time) ko
+  - công ty có thưởng cho nhân viên vào [tết dương](time) ko
+  - công ty có thưởng vào [tết âm](time) không
+  - vào dịp lễ tết mình tiền thưởng được tính ra sao?
+  - công ty có thưởng vào [ngày chiến thắng](time) không
+  - công ty có thưởng cho nhân viên vào [ngày quốc khánh](time) ko
+  - có thưởng vào [tết dương lịch](time) ko
+  - có thưởng vào [ngày 1/1](time) không
+  - có thưởng cho nhân viên vào [ngày 10/3](time) ko
+  - công ty có cách tính thưởng tết thế nào
+  - có thưởng cho nhân viên vào [tết dương lịch](time) không
+  - mình muốn hỏi công ty có cách tính thưởng tết như nào
+  - công ty có thưởng vào [ngày quốc khánh](time) không
+  - thưởng lễ tết ra sao
+  - có thưởng vào [ngày quốc khánh](time) ko
+  - có thưởng cho nhân viên vào [1/5](time) ko
+  - vào dịp lễ tết bên bạn tiền thưởng được tính như nào?
+  - vào dịp lễ tết mình tiền bonus được tính ra sao?
+  - mình có bonus lễ tết ko ạ?
+  - dựa vào đâu bên mình tính tiền bonus các dịp lễ tết?
+  - cho tớ hỏi công ty có thưởng lễ tết gì ko
+  - mình có thưởng lễ tết ko ạ?
+  - mình có bonus lễ tết không ạ?
+  - công ty có thưởng vào [30/4](time) không
+  - có thưởng cho nhân viên vào [1/5](time) không
+  - Thưởng tết được tính như nào ạ?
+  - bên bạn có bonus lễ tết ko ạ?
+  - công ty có thưởng cho nhân viên vào [tết dương lịch](time) không
+  - có thưởng cho nhân viên vào [10/3](time) không
+  - Thưởng tết được tính như thế nào ạ?
+  - làm thế nào bên bạn tính tiền bonus các dịp lễ tết?
+  - có thưởng vào [ngày 30/4](time) ko
+  - có thưởng cho nhân viên vào [ngày 1/1](time) không
+  - công ty có thưởng vào [quốc khánh](time) ko
+  - có thưởng cho nhân viên vào [ngày 10/3](time) không
+  - có thưởng vào [1/5](time) không
+  - những ngày lễ trong năm có thưởng gì ko
+  - có thưởng cho nhân viên vào [ngày 2/9](time) ko
+  - 30/4 1/5 là lễ lớn công ty có thưởng chứ
+  - vào các ngày lễ tết công ty có thưởng gì không
+  - cho mình hỏi công ty có cách tính thưởng tết như nào
+  - vào các ngày lễ tết công ty có thưởng gì ko
+  - vào dịp lễ tết bên bạn tiền bonus được tính ra sao?
+  - có thưởng cho nhân viên vào [1/1](time) ko
+  - công ty có thưởng cho nhân viên vào [1/5](time) không
+  - vào dịp lễ tết bên mình tiền bonus được tính như thế nào?
+  - công ty có thưởng vào [ngày 1/5](time) không
+  - vào dịp lễ tết bên bạn tiền thưởng được tính ra sao?
+  - cho tôi hỏi công ty có thưởng lễ tết gì không
+  - công ty có thưởng cho nhân viên vào [ngày 1/1](time) ko
+  - có thưởng vào [ngày quốc thế lao động](time) không
+  - có thưởng vào [ngày 10/3](time) ko
+  - có thưởng vào [ngày quốc thế lao động](time) ko
+  - công ty có thưởng vào [1/1](time) ko
+  - bonus lễ tết được tính thế nào ạ?
+  - thưởng lễ tết được tính thế nào ạ?
+  - có thưởng cho nhân viên vào [1/1](time) không
+  - mình có thưởng lễ tết không ạ?
+  - cho tớ hỏi thưởng tết được tính thế nào
+  - công ty có qui định về số tiền thưởng thuộc loại lễ hội không
+  - những ngày lễ trong năm có thưởng gì không
+  - công ty có thưởng cho nhân viên vào [ngày quốc khánh](time) không
+  - công ty có thưởng cho nhân viên vào [1/1](time) ko
+  - thưởng tết thì theo tháng hay full lương nhỉ?
+  - có thưởng vào [quốc khánh](time) không
+  - công ty có thưởng cho nhân viên vào [quốc khánh](time) không
+  - vào dịp lễ tết công ty tiền thưởng được tính như thế nào?
+  - làm thế nào bên bạn tính tiền thưởng các dịp lễ tết?
+  - có thưởng cho nhân viên vào [tết âm](time) ko
+  - công ty có thưởng vào [10/3](time) không
+  - có thưởng vào [30/4](time) không
+  - cho mình hỏi công ty có thưởng lễ tết gì không
+  - vào dịp lễ tết bên mình tiền bonus được tính thế nào?
+  - có thưởng lễ tết hàng năm ko
+  - cho mình hỏi thưởng tết được tính thế nào
+  - có thưởng lễ tết hàng năm không
+  - công ty có cách tính thưởng tết của công ty
+  - lễ tết có được thưởng không ạ?
+  - làm thế nào bên mình tính tiền thưởng các dịp lễ tết?
+  - cho tôi hỏi công ty có cách tính thưởng tết như nào
+  - vào dịp lễ tết mình tiền bonus được tính như thế nào?
+  - cho mình hỏi công ty có cách tính thưởng tết thế nào
+  - có thưởng vào [quốc khánh](time) ko
+  - có thưởng vào [ngày 2/9](time) không
+  - công ty có thưởng vào [ngày 2/9](time) ko
+  - công ty có thưởng lễ tết không ạ?
+  - công ty có thưởng cho nhân viên vào [ngày 2/9](time) không
+  - công ty có thưởng cho nhân viên vào [1/5](time) ko
+  - công ty có thưởng vào [ngày 1/1](time) ko
+  - công ty có thưởng cho nhân viên vào [10/3](time) ko
+  - mình muốn hỏi công ty có cách tính thưởng tết như thế nào
+  - cho tôi hỏi công ty có cách tính thưởng tết thế nào
+  - có thưởng vào [tết dương lịch](time) không
+  - lễ tết có được bonus không ạ?
+  - có thưởng vào [1/5](time) ko
+  - vào dịp lễ tết mình tiền thưởng được tính thế nào?
+  - dựa vào đâu mình tính tiền bonus các dịp lễ tết?
+  - có thưởng vào [2/9](time) không
+  - công ty có thưởng cho nhân viên vào [ngày quốc thế lao động](time) ko
+  - công ty có thưởng vào [giỗ tổ hồng vương](time) không
+  - công ty có thưởng vào [ngày 30/4](time) không
+  - có thưởng cho nhân viên vào [ngày chiến thắng](time) ko
+  - có thưởng cho nhân viên vào [ngày 2/9](time) không
+  - vào dịp lễ tết bên mình tiền thưởng được tính thế nào?
+  - tôi muốn hỏi thưởng tết được tính như nào
+  - các ngày lễ nào công ty có thưởng
+  - bên bạn có bonus lễ tết không ạ?
+  - công ty có thưởng ăn tết ko
+  - công ty có thưởng cho nhân viên vào [ngày chiến thắng](time) ko
+  - thưởng lễ tết được tính ra sao ạ?
+  - có thưởng cho nhân viên vào [tết dương](time) không
+  - vào dịp lễ tết bên mình tiền bonus được tính như nào?
+  - có thưởng cho nhân viên vào [2/9](time) không
+  - vào dịp lễ tết bên mình tiền thưởng được tính ra sao?
+  - các ngày lễ tết bên công ty có bonus không ạ?
+  - vào dịp lễ tết bên bạn tiền thưởng được tính thế nào?
+  - thưởng lễ công ty qui định thế nào
+  - công ty có thưởng cho nhân viên vào [tết âm](time) ko
+  - cách tính thưởng tết của công ty thế nào
+  - có thưởng cho nhân viên vào [30/4](time) không
+  - bên mình có bonus lễ tết không ạ?
+  - công ty có bonus lễ tết ko ạ?
+  - công ty có thưởng cho nhân viên vào [ngày 10/3](time) không
+  - tớ muốn hỏi công ty có thưởng lễ tết gì không
+  - có thưởng cho nhân viên vào [10/3](time) ko
+  - công ty có thưởng vào [1/5](time) ko
+  - cách tính thưởng tết như thế nào
+  - công ty có cách tính thưởng tết như thế nào
+  - có thưởng cho nhân viên vào [ngày quốc khánh](time) không
+  - có thưởng lễ tết hàng năm cho nhân viên ko
+  - cách tính thưởng tết như nào
+  - công ty có thưởng vào [ngày 30/4](time) ko
+  - tôi muốn hỏi thưởng tết được tính thế nào
+  - vào dịp lễ tết bên bạn tiền bonus được tính thế nào?
+  - có thưởng lễ tết hàng năm cho nhân viên không
+  - dựa vào đâu bên bạn tính tiền thưởng các dịp lễ tết?
+  - công ty có thưởng vào [ngày 10/3](time) không
+  - lễ hội lớn thì công ty mới thưởng đúng ko
+  - tớ muốn hỏi công ty có cách tính thưởng tết như thế nào
+  - cho mình hỏi thưởng tết được tính như nào
+  - có thưởng vào [ngày 10/3](time) không
+  - công ty có thưởng cho nhân viên vào [ngày 1/1](time) không
+  - công ty thưởng ăn tết âm lịch nhiều ko
+  - cho tớ hỏi thưởng tết được tính như thế nào
+  - có thưởng vào [ngày quốc khánh](time) không
+  - công ty có thưởng cho nhân viên vào [2/9](time) không
+  - công ty có thưởng vào [giỗ tổ hồng vương](time) ko
+  - mình muốn hỏi công ty có thưởng lễ tết gì ko
+  - có thưởng vào [giỗ tổ hồng vương](time) ko
+  - làm thế nào mình tính tiền bonus các dịp lễ tết?
+  - công ty có thưởng cho nhân viên vào [ngày chiến thắng](time) không
+  - công ty có thưởng lễ tết ko ạ?

@@ -1,0 +1,653 @@
+positives:
+- intent: faq/company_ask_leave_days
+  examples:
+  - '[chủ nhật](time) [tuânf tới đây](time) và [thứ năm](time) [tuânf tới nữa](time)
+    tớ đến làm trễ giờ buổi nào không'
+  - trong [thứ bảy](time) [tuaanf trước nữa](time) và [thứ 2](time) [tuần vừa rồi](time)
+    tớ đã đi muộn bao nhiu hôm rồi
+  - tớ có đi làm muộn buổi nào trong [chủ nhật](time) [tuaan này](time) và [thứ hai](time)
+    [tuaan trước nữa](time) không nhở
+  - số buổi tui đi làm trễ giờ trong [ngày kia](time)
+  - '[thứ tư](time) [tuan trước](time) tớ xin đến muộn bao nhiêu bữa vậy'
+  - '[thứ ba](time) và [thứ bảy](time) [tuan trước](time) mình xin phép trễ giờ vì
+    con ốm nhiêu bữa vậy'
+  - '[thagn 9](time) năm trước mình đi muộn mấy buổi vậy timi'
+  - '[thứ năm 31/1](time) [năm rồi](time) tớ có trễ giờ không'
+  - cho mình biết [chủ nhật](time) [chủ nhật](time) và [thứ 7](time) [tuaanf trước](time)
+    này tớ xin trễ làm nhiu bữa được không
+  - tôi đến làm muộn mấy bữa rồi bot
+  - '[tháng này](time) tớ có đi làm trễ buổi nào không'
+  - '[thágn rồi](time) tớ đi làm trễ mấy buổi vậy'
+  - tuần ni mình đi làm trễ mấy hôm rồi bot
+  - '[chủ nhật](time) [tuaan trước](time) và [thứ 3](time) [tuan rồi](time) trễ giờ
+    nhiu lần ta'
+  - tui trễ giờ nhiêu bữa rồi hì
+  - '[namw ngày trước](time) tớ bị đến làm trễ bữa nào không'
+  - trong [5 ngày trước](time) tớ đến làm trễ mấy hôm rồi
+  - tớ có đi trễ buổi nào trong [hai ngay nữa](time) không nhở
+  - số buổi tớ bị đi làm muộn trong [thứ tư](time) và [thứ 5](time) [tuan tới nữa](time)
+  - '[thứ tư](time) [tuân trước nữa](time) và [thứ 7](time) [tuần trước](time) tớ
+    trễ giờ làm nhiêu buổi vậy'
+  - '[chiều](time) [chủ nhật](time) [tuan tới nữa](time) tớ xin đi làm trễ tại việc
+    gia đình mấy buổi vậy'
+  - '[thasgn ba](time) năm trước mình đi muộn bao nhiêu hôm vậy timi'
+  - '[hôm 30-10](time) và [4-04](time) tớ có trễ làm không'
+  - cho mình biết [2 ngày tới](time) này tớ xin trễ giờ bao nhiêu bữa đi
+  - ta đến làm trễ mấy bữa rồi timi
+  - '[thng trước nữa](time) tui có đi làm muộn ngày nào không'
+  - '[tháng này](time) tớ đi làm trễ bao nhiêu buổi vậy'
+  - tuần trước mình đi làm trễ mấy bữa rồi timi
+  - '[hôm kìa](time) đi làm trễ giờ nhiu hôm ta'
+  - tui đến làm trễ giờ mấy hôm rồi hì
+  - '[thứ ba](time) [tuan tới](time) và [chủ nhật](time) [tuần tới nữa](time) tớ đến
+    làm muộn giờ lần nào không'
+  - trong [ngày này](time) [tuaan trước nữa](time) tôi trễ giờ làm mấy lần rồi
+  - tôi có bị đến làm trễ buổi nào trong [chủ nhật,](time) [thứ 2](time) và [thứ ba](time)
+    [tuần trước](time) không nhở
+  - số buổi tui đến muộn trong [chủ nhật](time) [tuaan tới đây](time) và [chủ nhật](time)
+    [tuaanf sắp tới](time)
+  - '[chiều](time) [chủ nhật](time) [tuaanf sắp tới](time) tớ trễ giờ làm bao nhiu
+    buổi vậy'
+  - '[tám ngay trước](time) tớ đến làm muộn giờ vì con bị ốm mấy lần vậy'
+  - '[thagn sáu](time) mình đi trễ bao nhiêu buổi vậy timi'
+  - '[thứ ba, ngay 30-5](time) tớ có đi làm muộn giờ không'
+  - cho tớ biết [chủ nhật](time) và [thứ bảy](time) [tuan tới](time) này mình đã xin
+    đi làm trễ giờ nhiêu bữa được không
+  - ta đến làm muộn mấy bữa rồi bot
+  - '[thng rồi](time) tui có đi làm muộn buổi nào không'
+  - '[thagn mười hai](time) tớ đi làm muộn bao nhiêu buổi vậy'
+  - tuần này mình đi làm trễ mấy hôm rồi timi
+  - '[bay ngày tới](time) đến làm muộn nhiu hôm ta'
+  - tớ đến muộn bao nhiêu hôm rồi hì
+  - '[chủ nhật](time) [tuan vừa rồi](time) và [chủ nhật](time) [tuần vừa rồi](time)
+    tớ có đi làm muộn giờ buổi nào không'
+  - trong [ngay này](time) [tuân trước](time) tớ đi muộn mấy lần rồi
+  - tớ có đi làm muộn giờ hôm nào trong [thứ tư](time) [tuânf sắp tới](time) và [thứ
+    năm](time) [tuânf tới nữa](time) không nhở
+  - số lần tui bị trễ giờ làm trong [ngày này](time) [thasgn vừa rồi](time)
+  - '[hai ngay nữa](time) tớ đi trễ mấy bữa vậy'
+  - '[hôm kìa](time) tui xin trễ giờ do con ốm bao nhiu bữa vậy'
+  - '[thangs mười một](time) năm ngoái mình đi muộn mấy hôm vậy bot'
+  - '[mùng 1-9](time) và [ngay mùng 1-9](time) [thágn mười](time) [năm 2027](time)
+    tớ bị trễ giờ không'
+  - cho tớ biết [thứ tư](time) [tuânf tới](time) này tớ xin đi muộn mấy hôm đi
+  - mình đến làm trễ mấy bữa rồi bot
+  - '[thagn mười hai](time) mình có đi làm muộn buổi nào không'
+  - '[thang vừa qua](time) tui đi làm trễ bao nhiêu buổi vậy'
+  - tháng ni mình đi làm trễ mấy bữa rồi bot
+  - '[chiều](time) [chủ nhật](time) [tuan rồi](time) trễ giờ mấy hôm ta'
+  - tớ đến làm muộn giờ bao nhiêu bữa rồi hì
+  - '[thứ bảy](time) [tuaanf tới đây](time) và [thứ 7](time) [tuần tới nữa](time)
+    tớ có đi làm trễ lần nào không'
+  - trong [thứ tư](time) [tuân vừa qua](time) và [thứ bảy](time) [tuânf vừa qua](time)
+    tôi đến làm trễ nhiu bữa rồi
+  - tôi có đi trễ hôm nào trong [thứ 2](time) và [chủ nhật](time) [tuaanf vừa rồi](time)
+    không nhở
+  - số lần tôi bị đi làm muộn trong [thứ hai](time) [tuân trước](time) và [thứ bảy](time)
+    [tuân vừa qua](time)
+  - '[thứ hai](time) [tuan tới đây](time) và [thứ 5](time) [tuânf này](time) tớ xin
+    phép đi làm muộn giờ nhiu lần vậy'
+  - '[hai ngay trước](time) tớ đến làm muộn vì việc bận nhiêu lần vậy'
+  - '[tháng 8](time) mình đi trễ mấy hôm vậy timi'
+  - '[02-08](time) tui đi làm muộn giờ không'
+  - cho tớ biết [ngay này](time) [thágn trước](time) này tớ đã xin đi làm muộn nhiu
+    hôm được không
+  - ta đến làm muộn mấy bữa rồi timi
+  - '[thasgn vừa rồi](time) tớ có đi làm muộn ngày nào không'
+  - '[thágn trước nữa](time) tôi đi làm trễ bao nhiêu hôm vậy'
+  - tuần trước mình đi làm muộn mấy bữa rồi bot
+  - '[chủ nhật](time) [tuần sắp tới](time) và [chủ nhật](time) [tuân tới nữa](time)
+    đi làm trễ bao nhiu buổi ta'
+  - tôi đi làm trễ giờ nhiêu buổi rồi hì
+  - '[ngày này](time) [tuaanf rồi](time) mình đi muộn hôm nào không'
+  - trong [thứ 3](time) [tuaan tới nữa](time) và [chủ nhật](time) [tuaan tới](time)
+    tui đến làm muộn bao nhiu buổi rồi
+  - tôi có đi làm muộn hôm nào trong [chiều](time) [chủ nhật](time) [tuan tới đây](time)
+    không nhở
+  - số buổi tui đi muộn trong [bảy ngay trước](time)
+  - '[thứ 6](time) [tuaanf trước nữa](time) và [chủ nhật](time) [tuânf này](time)
+    tớ xin phép trễ giờ nhiêu bữa vậy'
+  - '[chiều](time) [thứ bảy](time) [tuan tới nữa](time) tôi xin phép đi trễ tại sức
+    khỏe bao nhiu bữa vậy'
+  - '[thasgn 10](time) mình đi trễ mấy hôm vậy timi'
+  - '[30-05-2023](time) và [30/11-2020](time) tớ trễ giờ không'
+  - cho mình biết [chủ nhật](time) [tuaan tới nữa](time) và [thứ ba](time) [tuaanf
+    tới](time) này tôi đã đi làm muộn giờ bao nhiêu hôm được không
+  - tôi đến làm muộn mấy bữa rồi timi
+  - '[tháng này](time) tôi có đi làm trễ ngày nào không'
+  - '[tháng này](time) tớ đi làm trễ mấy hôm vậy'
+  - tháng quá mình đi làm trễ mấy hôm rồi bot
+  - '[4 ngay trước](time) đi làm trễ giờ nhiu lần ta'
+  - tui trễ giờ làm mấy bữa rồi hì
+  - '[sáng](time) [thứ 3](time) [tuần sắp tới](time) tui có đi làm trễ bữa nào không'
+  - trong [5 ngày trước](time) mình đi làm muộn giờ mấy hôm rồi
+  - tớ có đi làm muộn bữa nào trong [chủ nhật](time) và [chủ nhật](time) [tuaan tới
+    nữa](time) không nhở
+  - số lần tôi bị đi làm muộn giờ trong [thứ 7,](time) [thứ tư](time) và [thứ 5](time)
+    [tuânf vừa qua](time)
+  - '[5 ngày trước](time) tớ đi trễ nhiêu hôm vậy'
+  - '[thứ 6](time) [tuan vừa qua](time) và [thứ 3](time) [tuan này](time) tôi xin
+    đến muộn tại sức khỏe nhiêu lần vậy'
+  - '[tháng 12](time) năm trước mình đi trễ mấy hôm vậy timi'
+  - '[thứ năm 30/8](time) tui đến muộn không'
+  - cho tớ biết [thứ ba](time) [tuân này](time) và [chủ nhật](time) [tuaan tới](time)
+    này tớ đã đi làm muộn giờ nhiêu hôm đi
+  - tôi đến làm trễ mấy bữa rồi timi
+  - '[tháng 12](time) mình có đi làm muộn ngày nào không'
+  - '[thágn mười](time) tớ đi làm trễ mấy buổi vậy'
+  - tuần trước mình đi làm trễ mấy hôm rồi timi
+  - '[thứ 2](time) [tuaanf vừa rồi](time) và [thứ ba](time) [tuan rồi](time) trễ giờ
+    làm nhiêu lần ta'
+  - tớ đến làm trễ giờ mấy buổi rồi hì
+  - '[chủ nhật](time) [tuaanf này](time) và [chủ nhật](time) [tuân tới đây](time)
+    mình bị trễ giờ làm hôm nào không'
+  - trong [ngay này](time) [tuân này](time) tớ bị đến làm muộn giờ bao nhiêu hôm rồi
+  - tôi có bị trễ giờ làm lần nào trong [5 ngay tới](time) không nhở
+  - số buổi tớ đi làm trễ giờ trong [thứ 3](time) [thứ tư](time) và [thứ 5](time)
+    [tuaanf này](time)
+  - '[thứ sáu](time) [tuần trước nữa](time) và [chủ nhật](time) [tuan rồi](time) tôi
+    trễ giờ làm nhiêu buổi vậy'
+  - '[thứ 3](time) và [thứ 2](time) [tuần tới đây](time) tớ trễ làm do sức khỏe bao
+    nhiu buổi vậy'
+  - '[thangs 10](time) mình đi trễ bao nhiêu buổi vậy bot'
+  - '[ngay 3](time) và [ngày 10](time) [thng bảy](time) tôi trễ làm không'
+  - cho tui biết [thứ hai](time) [tuaanf tới đây](time) này tớ đã xin trễ làm bao
+    nhiu lần được không
+  - tôi đến làm trễ mấy bữa rồi bot
+  - '[tháng này](time) tớ có đi làm muộn ngày nào không'
+  - '[thangs 10](time) mình đi làm trễ mấy hôm vậy'
+  - tuần quá mình đi làm muộn mấy hôm rồi bot
+  - '[chủ nhật](time) [tuaan vừa rồi](time) và [thứ 6](time) [tuân trước](time) trễ
+    giờ làm nhiêu lần ta'
+  - tớ đến làm muộn nhiêu bữa rồi hì
+  - '[namw ngay tới](time) tui bị đến làm muộn lần nào không'
+  - trong [bốn ngày nữa](time) tui đến muộn mấy hôm rồi
+  - mình có đi làm trễ giờ bữa nào trong [chủ nhật](time) và [chủ nhật](time) [tuânf
+    vừa rồi](time) không nhở
+  - số bữa tôi trễ làm trong [ngay này](time) [tuân vừa rồi](time)
+  - '[ngày này](time) [tuaanf rồi](time) tớ trễ làm bao nhiêu hôm vậy'
+  - '[thứ sáu](time) và [chủ nhật](time) [tuan rồi](time) mình xin đi làm trễ do sức
+    khỏe mấy lần vậy'
+  - '[thágn mười hai](time) năm trước mình đi trễ mấy hôm vậy timi'
+  - '[mùng 1-9](time) và [mùng 1-9](time) [thangs mười hai](time) [năm 2029](time)
+    tớ trễ giờ không'
+  - cho tôi biết [sáng](time) [thứ hai](time) [tuan rồi](time) này tôi đã đến muộn
+    nhiu buổi đi
+  - mình đến làm muộn mấy bữa rồi bot
+  - '[tháng này](time) mình có đi làm trễ ngày nào không'
+  - '[tháng này](time) tớ đi làm muộn mấy buổi vậy'
+  - tháng trước mình đi làm muộn mấy hôm rồi bot
+  - '[thứ tư](time) và [thứ 5](time) [tuaanf vừa rồi](time) trễ làm mấy bữa ta'
+  - tớ trễ giờ mấy buổi rồi hì
+  - '[thứ hai](time) và [thứ 2](time) [tuần này](time) tớ có đến làm muộn hôm nào
+    không'
+  - trong [ngay này](time) [tuânf này](time) tớ đã đến muộn nhiêu lần rồi
+  - tớ có bị đến làm muộn hôm nào trong [ngay kìa](time) không nhở
+  - số buổi tớ đến làm muộn trong [thứ năm](time) [chủ nhật](time) và [chủ nhật](time)
+    [tuânf vừa qua](time)
+  - '[thứ bảy](time) [tuânf tới](time) tớ xin phép trễ giờ làm nhiu bữa vậy'
+  - '[namw ngày nữa](time) mình đến làm muộn do việc gia đình nhiu bữa vậy'
+  - '[thang 12](time) mình đi trễ mấy buổi vậy timi'
+  - '[hôm 31-10-2029](time) và [30-1-2025](time) tớ trễ giờ làm không'
+  - cho tui biết [4 ngày trước](time) này tớ đã xin trễ giờ nhiêu hôm được không
+  - mình đến làm trễ mấy bữa rồi timi
+  - '[tháng rồi](time) tôi có đi làm trễ buổi nào không'
+  - '[thágn vừa rồi](time) tớ đi làm trễ bao nhiêu buổi vậy'
+  - tháng ni mình đi làm muộn mấy hôm rồi timi
+  - '[hôm nay](time) đến làm muộn bao nhiu buổi ta'
+  - mình trễ giờ mấy lần rồi hì
+  - '[tam ngay nữa](time) tớ có trễ giờ lần nào không'
+  - trong [sáng](time) [thứ 4](time) [tuaan vừa qua](time) tớ đến làm muộn giờ bao
+    nhiu buổi rồi
+  - tớ có đến làm muộn hôm nào trong [3 ngay trước](time) không nhở
+  - số buổi tớ bị đi làm muộn giờ trong [thứ bảy](time) [tuânf sắp tới](time) và [chủ
+    nhật](time) [tuânf sắp tới](time)
+  - '[chiều](time) [thứ ba](time) [tuân rồi](time) tớ xin phép trễ làm nhiêu lần vậy'
+  - '[thứ 7](time) [tuaanf vừa rồi](time) và [thứ bảy](time) [tuaanf vừa qua](time)
+    tui trễ giờ làm tại bị sốt nhiu buổi vậy'
+  - '[thasgn 3](time) năm trước mình đi trễ mấy hôm vậy timi'
+  - '[2029/8-30](time) và [2025-11-1](time) tớ bị đến trễ không'
+  - cho tớ biết [chủ nhật](time) [thứ 4](time) và [chủ nhật](time) [tuần này](time)
+    này mình đã đi làm muộn bao nhiu bữa đi
+  - ta đến làm trễ mấy bữa rồi bot
+  - '[thangs 11](time) tớ có đi làm muộn ngày nào không'
+  - '[tháng này](time) tôi đi làm trễ bao nhiêu buổi vậy'
+  - tháng ni mình đi làm trễ mấy bữa rồi timi
+  - '[ngày mai](time) đến làm muộn giờ mấy lần ta'
+  - tớ đi muộn nhiêu hôm rồi hì
+  - '[7 ngay tới](time) tớ có đi trễ bữa nào không'
+  - trong [namw ngay trước](time) tớ đã đi làm muộn nhiêu buổi rồi
+  - tôi có bị đi trễ bữa nào trong [5 ngày tới](time) không nhở
+  - số lần tớ đi muộn trong [ngay này](time) [thang vừa rồi](time)
+  - '[thứ hai](time) [tuan này](time) và [thứ hai](time) [tuan tới nữa](time) mình
+    đến làm muộn giờ nhiu hôm vậy'
+  - '[3 ngày trước](time) tớ đến trễ tại việc gia đình mấy hôm vậy'
+  - '[thágn mười hai](time) mình đi muộn mấy hôm vậy bot'
+  - '[hôm 30-3](time) tớ trễ giờ không'
+  - cho tớ biết [một ngay trước](time) này tớ đã xin đến làm muộn mấy hôm được không
+  - mình đến làm muộn mấy bữa rồi timi
+  - '[tháng này](time) tôi có đi làm trễ buổi nào không'
+  - '[thagn 2](time) tớ đi làm trễ bao nhiêu buổi vậy'
+  - tuần quá mình đi làm muộn mấy bữa rồi timi
+  - '[hôm nay](time) đi muộn nhiêu lần ta'
+  - tớ trễ giờ làm mấy hôm rồi hì
+  - '[thứ 4](time) [tuânf vừa qua](time) tớ trễ giờ làm hôm nào không'
+  - trong [chủ nhật](time) [tuaanf vừa qua](time) tui đã đến làm muộn nhiêu bữa rồi
+  - tớ có trễ giờ làm lần nào trong [ngay kia](time) không nhở
+  - số hôm tui bị đến làm muộn giờ trong [chủ nhật](time) và [thứ 5](time) [tuânf
+    tới](time)
+  - '[8 ngay trước](time) tớ đi làm trễ mấy buổi vậy'
+  - '[thứ 6,](time) [chủ nhật](time) và [thứ 4](time) [tuaanf sắp tới](time) mình
+    trễ làm tại việc gia đình nhiêu lần vậy'
+  - '[thasgn mười một](time) mình đi muộn mấy buổi vậy bot'
+  - '[2027-11-19](time) tớ đến làm muộn không'
+  - cho tui biết [2 ngay tới](time) này tớ đã đi làm trễ giờ nhiêu lần đi
+  - '[tháng này](time) mình có đi làm trễ buổi nào không'
+  - '[thágn 12](time) tôi đi làm trễ mấy buổi vậy'
+  - tháng trước mình đi làm muộn mấy bữa rồi timi
+  - '[bay ngay trước](time) đi trễ nhiêu hôm ta'
+  - tớ đến làm muộn bao nhiu bữa rồi hì
+  - '[năm ngay trước](time) tớ có đến làm muộn bữa nào không'
+  - trong [môt ngay nữa](time) mình trễ giờ nhiu hôm rồi
+  - tớ có bị đi làm muộn giờ hôm nào trong [ngày này](time) [thangs vừa rồi](time)
+    không nhở
+  - số bữa tớ bị đi trễ trong [sáu ngay tới](time)
+  - '[thứ ba](time) và [thứ 7](time) [tuần này](time) tớ xin đi làm muộn giờ mấy lần
+    vậy'
+  - '[ba ngày tới](time) tôi đến làm muộn giờ do đi khám sức khỏe nhiêu bữa vậy'
+  - mình xin phép về trước nhiêu bữa rồi nhỉ
+  - '[05/11](time) tớ có về trước giờ vì con bị cảm không'
+  - cho mình biết [ngày này](time) [tuan vừa rồi](time) tớ có làm về trước giờ quy
+    định hôm nào không
+  - '[ngày 2021/07/31](time) và [hôm 2029-04-30](time) tớ có về trước giờ không'
+  - tui có xin làm về sớm buổi nào trong [thứ ba](time) [chủ nhật](time) và [chủ nhật](time)
+    [tuaan trước](time) không
+  - '[tháng vừa rồi](time) mình đi về trước giờ mấy hôm vậy'
+  - '[thứ năm](time) và [chủ nhật](time) [tuaan này](time) tớ về sớm tại ốm mấy buổi
+    vậy'
+  - '[thứ 6](time) [tuânf trước](time) và [chủ nhật](time) [tuần vừa qua](time) tớ
+    có về trước giờ quy định bữa nào không nữa'
+  - '[thứ 3](time) [tuaanf rồi](time) và [thứ bảy](time) [tuân này](time) tôi về trước
+    giờ mấy lần vậy'
+  - mình muốn biết số buổi mà tớ về sớm trong [5 ngày trước](time)
+  - '[tháng này](time) tôi có về trước giờ quy định buổi nào không'
+  - tui có xin bỏ về trước bữa nào không nhở
+  - tớ xin về trước nhiêu hôm rồi nhỉ
+  - '[hôm 26/4-2021](time) và [hôm 11-9-2021](time) mình có về sớm do việc gia đình
+    không'
+  - cho tui biết [tam ngày nữa](time) tớ có làm về sớm hôm nào không
+  - '[31/10/2027](time) tôi có về trước giờ không'
+  - tớ có xin về trước giờ quy định lần nào trong [bốn ngay trước](time) không
+  - '[tháng này](time) tui đi bỏ về trước mấy buổi vậy'
+  - '[thứ sáu](time) [thứ hai](time) và [thứ 7](time) [tuaanf rồi](time) mình làm
+    về trước giờ do đi khám sức khỏe nhiêu bữa vậy'
+  - '[thứ bảy](time) [tuaan vừa rồi](time) và [thứ 6](time) [tuaanf vừa rồi](time)
+    tui có làm về sớm lần nào không nữa'
+  - '[thứ ba](time) và [thứ 5](time) [tuaan sắp tới](time) tớ về trước giờ quy định
+    bao nhiêu lần vậy'
+  - mình muốn biết số hôm mà tớ về trước giờ trong [7 ngay trước](time)
+  - '[thng mười hai](time) mình có về trước giờ ngày nào không'
+  - tớ có xin bỏ về trước hôm nào không nhở
+  - tớ về sớm bao nhiêu lần rồi nhỉ
+  - '[mùng 1-9](time) và [ngày 26](time) [thágn mười môt](time) [năm vừa qua](time)
+    tớ có bỏ về trước giờ tại con bị sốt không'
+  - cho tui biết [chiều](time) [thứ ba](time) [tuaan này](time) tớ có làm về trước
+    giờ quy định hôm nào không
+  - '[ngay 31](time) và [ngày mùng 1-9](time) [thang tới](time) tôi có về sớm không'
+  - tui có xin làm về trước giờ bữa nào trong [thứ hai,](time) [chủ nhật](time) và
+    [thứ 6](time) [tuaan sắp tới](time) không
+  - '[thangs 1](time) tớ đi làm về trước giờ bao nhiêu buổi vậy'
+  - '[thứ ba](time) và [thứ 3](time) [tuân này](time) tớ bỏ về trước giờ tại con cảm
+    bao nhiêu buổi vậy'
+  - '[thứ bảy](time) [tuânf tới](time) và [chủ nhật](time) [tuaanf này](time) tớ có
+    làm về trước giờ lần nào không nữa'
+  - '[chiều](time) [chủ nhật](time) [tuan rồi](time) mình xin phép về trước giờ quy
+    định nhiu hôm vậy'
+  - tôi muốn biết số hôm mà tui làm về trước giờ trong [thứ tư](time) và [thứ ba](time)
+    [tuaan rồi](time)
+  - '[tháng này](time) mình có làm về trước giờ quy định buổi nào không'
+  - mình có xin về trước giờ buổi nào không nhở
+  - tôi về trước nhiu lần rồi nhỉ
+  - '[3-12-2028](time) tui có làm về trước giờ quy định do việc gia đình không'
+  - cho mình biết [ngay này](time) [thang trước](time) tôi có làm về trước giờ bữa
+    nào không
+  - '[2022-06-30](time) và [ngày 2029/07-30](time) tớ có làm về sớm không'
+  - tôi có xin về sớm hôm nào trong [thứ 6,](time) [thứ hai](time) và [thứ 5](time)
+    [tuần này](time) không
+  - '[thangs mười một](time) mình đi làm về sớm bao nhiêu buổi vậy'
+  - '[thứ 3,](time) [chủ nhật](time) và [chủ nhật](time) [tuan vừa rồi](time) tôi
+    bỏ về trước giờ tại việc gia đình bao nhiu hôm vậy'
+  - '[hôm qua](time) tui có làm về sớm hôm nào không nữa'
+  - '[ngày này](time) [tuaanf này](time) tôi xin làm về trước giờ nhiêu buổi vậy'
+  - tui muốn biết số buổi mà tớ làm về sớm trong [chủ nhật](time) [tuaan này](time)
+  - '[thang mười moot](time) tớ có làm về trước giờ quy định ngày nào không'
+  - tớ có xin làm về sớm buổi nào không nhở
+  - tớ xin phép về sớm mấy lần rồi nhỉ
+  - '[hôm 03/2/2022](time) và [ngày 17/10/2025](time) tôi có bỏ về trước do việc đột
+    xuất không'
+  - cho tớ biết [chủ nhật](time) [tuần vừa rồi](time) và [chủ nhật](time) [tuânf trước](time)
+    tớ có về trước giờ bữa nào không
+  - '[thứ hai 30-05](time) và [thứ ba 30-01](time) tôi có về sớm không'
+  - tui có xin phép về trước giờ lần nào trong [chins ngày trước](time) không
+  - '[tháng này](time) tôi đi về trước giờ mấy buổi vậy'
+  - '[sáng](time) [thứ bảy](time) [tuaanf tới đây](time) tui làm về trước giờ quy
+    định tại việc đột xuất bao nhiêu hôm vậy'
+  - '[thứ 4](time) và [thứ năm](time) [tuaanf tới](time) tớ có bỏ về trước lần nào
+    không nữa'
+  - '[thứ sáu](time) [tuân tới nữa](time) và [thứ 6](time) [tuân tới đây](time) tôi
+    làm về sớm nhiu hôm vậy'
+  - mình muốn biết số bữa mà tôi bỏ về trước trong [tám ngay trước](time)
+  - '[thagn năm](time) tớ có về trước giờ ngày nào không'
+  - tớ có xin về trước giờ buổi nào không nhở
+  - tôi về trước mấy bữa rồi nhỉ
+  - '[hôm 2029-10/31](time) và [2025/9-30](time) tui có về trước giờ tại việc gia
+    đình không'
+  - cho tui biết [thứ bảy](time) [tuân vừa qua](time) tui có làm về sớm buổi nào không
+  - '[ngày 13](time) [thang 10](time) tớ có về trước giờ không'
+  - tớ có xin phép bỏ về trước bữa nào trong [8 ngày tới](time) không
+  - '[thng trước](time) tớ đi làm về trước giờ mấy buổi vậy'
+  - '[6 ngay trước](time) tui làm về trước giờ quy định do con ốm nhiêu lần vậy'
+  - '[ngay kìa](time) mình có về sớm hôm nào không nữa'
+  - '[ngày này](time) [thang vừa rồi](time) mình làm về sớm nhiu lần vậy'
+  - tớ muốn biết số hôm mà tớ làm về sớm trong [chủ nhật](time) và [chủ nhật](time)
+    [tuan sắp tới](time)
+  - '[thagn chin](time) tui có về trước giờ buổi nào không'
+  - tớ có xin bỏ về trước bữa nào không nhở
+  - tớ xin về sớm nhiêu buổi rồi nhỉ
+  - '[ngày 17](time) [thasgn mười moot](time) [năm trước nữa](time) tớ có bỏ về trước
+    giờ vì bị sốt không'
+  - cho tớ biết [thứ ba](time) [tuân tới](time) tớ có bỏ về trước giờ lần nào không
+  - '[hôm 2022/10/30](time) tớ có bỏ về trước giờ không'
+  - tớ có xin phép về trước giờ lần nào trong [thứ tư](time) [tuânf rồi](time) và
+    [thứ ba](time) [tuânf trước nữa](time) không
+  - '[thágn vừa rồi](time) tớ đi về trước giờ bao nhiêu buổi vậy'
+  - '[thứ năm](time) [tuaanf tới](time) và [chủ nhật](time) [tuânf tới đây](time)
+    tớ làm về trước giờ tại việc gia đình nhiêu bữa vậy'
+  - '[hai ngày trước](time) tôi có làm về trước giờ hôm nào không nữa'
+  - '[5 ngày trước](time) tớ xin phép về trước giờ mấy buổi vậy'
+  - tui muốn biết số lần mà tớ làm về trước giờ trong [thứ tư](time) và [chủ nhật](time)
+    [tuaanf vừa rồi](time)
+  - '[thangs rồi](time) tớ có về trước giờ quy định ngày nào không'
+  - tớ có xin làm về trước giờ lần nào không nhở
+  - tớ về trước bao nhiêu hôm rồi nhỉ
+  - '[29-4-2024](time) mình có bỏ về trước giờ do việc cá nhân không'
+  - cho tớ biết [4 ngay tới](time) tui có về trước giờ buổi nào không
+  - '[ngay 02](time) [thágn 12](time) [năm 2023](time) tui có bỏ về trước giờ không'
+  - tớ có xin phép bỏ về trước lần nào trong [thứ 3](time) [chủ nhật](time) và [thứ
+    ba](time) [tuaanf tới](time) không
+  - '[tháng này](time) tớ đi làm về trước giờ bao nhiêu hôm vậy'
+  - '[ngay mai](time) mình làm về trước giờ do sức khỏe nhiu hôm vậy'
+  - '[thứ 4](time) [tuaanf vừa qua](time) và [thứ tư](time) [tuần trước](time) tớ
+    có làm về sớm buổi nào không nữa'
+  - '[thứ tư](time) [tuân vừa qua](time) tớ xin phép về trước giờ bao nhiu hôm vậy'
+  - tôi muốn biết số bữa mà tôi làm về sớm trong [hôm kia](time)
+  - '[thng vừa qua](time) tôi có về trước giờ quy định buổi nào không'
+  - tớ có xin về trước giờ quy định bữa nào không nhở
+  - tôi về trước mấy lần rồi nhỉ
+  - '[2021-02/30](time) và [hôm 2021/03-30](time) tớ có bỏ về trước vì việc riêng
+    không'
+  - cho tui biết [hôm qua](time) tớ có về trước giờ lần nào không
+  - '[ngay 28/6-2024](time) và [ngày 30/02-2021](time) tui có làm về trước giờ quy
+    định không'
+  - tớ ra ngoài mấy hôm trong [hôm qua](time)
+  - tháng ni đi công tác bao nhiêu hôm timi ơi
+  - tuần trước có ra ngoài bữa nào hông nhỉ
+  - tôi có ra ngoài bữa nào trong [thứ 3](time) [tuan vừa rồi](time) và [thứ 4](time)
+    [tuaanf trước](time) không nhở
+  - '[bảy ngày tới](time) tôi tự ra ngoài giữa giờ làm mấy lần vậy'
+  - '[chủ nhật](time) [tuân rồi](time) mình có ra ngoài giữa chừng mấy lần'
+  - '[thứ năm](time) [tuan tới đây](time) và [thứ ba](time) [tuaanf tới](time) tớ
+    ra ngoài giữa chừng vì có việc riêng mấy lần vậy'
+  - '[ngay 26-1/2026](time) và [13-10-2021](time) tớ có ra ngoài giữa giờ làm không'
+  - tháng này tôi đi hết mấy buổi gặp đối tác
+  - cho tôi biết số bữa mình ra ngoài giữa buổi trong [tam ngày trước](time) với
+  - tôi ra ngoài giữa giờ làm mấy buổi trong [thứ 2](time) [tuaan tới](time) và [thứ
+    tư](time) [tuần này](time)
+  - tuần này gặp khách hàng mấy lần bot
+  - tuần trước có ra ngoài bữa nào k nhỉ
+  - tớ có ra ngoài buổi nào trong [thứ hai](time) và [chủ nhật](time) [tuân rồi](time)
+    không nhở
+  - '[thứ 4](time) và [thứ 3](time) [tuaan tới nữa](time) tớ ra ngoài nhiu hôm vậy'
+  - '[7 ngày trước](time) tui có ra ngoài mấy bữa'
+  - '[chín ngay trước](time) tớ ra ngoài giữa giờ do có việc cá nhân nhiêu buổi vậy'
+  - '[thứ hai ngay 5-05](time) [năm 2020](time) tớ có ra ngoài không'
+  - tuần trước tớ đi hết bao nhiêu buổi gặp đối tác
+  - cho tớ biết số buổi mà tui ra ngoài giữa buổi trong [ngay kia](time) với
+  - tui ra ngoài giữa giờ làm mấy buổi trong [thứ 5](time) [tuần sắp tới](time) và
+    [thứ sáu](time) [tuaan này](time)
+  - tháng này đi công tác bao nhiêu hôm timi
+  - tháng rồi có ra ngoài bữa nào khum nhỉ
+  - tớ có ra ngoài giữa giờ làm bữa nào trong [ngay này](time) [tuân này](time) không
+    nhở
+  - '[thứ 6](time) [tuan tới](time) và [thứ năm](time) [tuaanf này](time) tớ ra ngoài
+    bao nhiêu lần vậy'
+  - '[tam ngày tới](time) tớ có ra ngoài giữa buổi mấy buổi'
+  - '[ngày mai](time) tôi ra ngoài vì lấy đồ ship mấy lần vậy'
+  - '[ngay 30/01](time) và [hôm 30/06](time) mình có ra ngoài giữa giờ không'
+  - tháng rồi mình đi hết mấy buổi công tác
+  - cho tui biết số hôm mà tớ ra ngoài trong [bốn ngay tới](time) với
+  - tớ ra ngoài mấy bữa trong [ngay này](time) [tuan rồi](time)
+  - tuần trước đi công tác bao nhiêu bữa bot ơi
+  - tuần rồi có ra ngoài bữa nào không nhỉ
+  - tớ có ra ngoài giữa giờ làm bữa nào trong [5 ngay trước](time) không nhở
+  - '[5 ngày trước](time) tôi tự ra ngoài bao nhiu bữa vậy'
+  - '[ngay này](time) [tuânf trước](time) mình có ra ngoài giữa buổi mấy buổi'
+  - '[6 ngày nữa](time) mình ra ngoài giữa chừng tại lấy đồ ship nhiêu buổi vậy'
+  - '[thứ sáu, 30/5](time) tôi có ra ngoài giữa giờ làm không'
+  - tháng rồi tôi đi hết mấy buổi gặp đối tác
+  - cho tớ biết số hôm tui ra ngoài giữa giờ làm trong [thứ 4](time) [tuaan tới](time)
+    và [thứ 5](time) [tuan sắp tới](time) với
+  - tôi ra ngoài mấy hôm trong [thứ sáu](time) [tuaanf trước](time)
+  - tháng trước đi công tác bao nhiêu lần bot
+  - tuần trước có ra ngoài buổi nào khum nhỉ
+  - tớ có ra ngoài giữa giờ làm buổi nào trong [chủ nhật](time) [tuânf sắp tới](time)
+    và [thứ hai](time) [tuan này](time) không nhở
+  - '[bảy ngay nữa](time) tớ ra ngoài giữa giờ làm nhiu lần vậy'
+  - '[thứ ba](time) [tuânf trước nữa](time) và [thứ ba](time) [tuaanf trước nữa](time)
+    mình có ra ngoài giữa giờ làm mấy hôm'
+  - '[chủ nhật](time) [tuânf tới đây](time) và [chủ nhật](time) [tuân tới](time) tôi
+    ra ngoài giữa giờ tại có việc cá nhân mấy buổi vậy'
+  - '[ngay 30](time) [thng mười một](time) [năm tới đây](time) tớ có ra ngoài không'
+  - tháng này mình đi hết mấy buổi gặp đối tác
+  - cho tớ biết số buổi tui ra ngoài trong [thứ năm](time) [tuần này](time) và [chủ
+    nhật](time) [tuân rồi](time) với
+  - tớ ra ngoài mấy lần trong [chủ nhật](time) [tuânf trước nữa](time) và [thứ tư](time)
+    [tuaan trước](time)
+  - tuần này gặp khách hàng mấy bữa bot ơi
+  - tháng trước có ra ngoài bữa nào hông nhỉ
+  - tớ có ra ngoài giữa chừng lần nào trong [5 ngay trước](time) không nhở
+  - '[ngày này](time) [thasgn vừa rồi](time) tớ xin phép ra ngoài bao nhiêu hôm vậy'
+  - '[hôm kia](time) tớ có ra ngoài giữa giờ làm mấy buổi'
+  - '[thứ 2](time) [tuần này](time) và [chủ nhật](time) [tuaan tới nữa](time) mình
+    ra ngoài vì có việc riêng mấy bữa vậy'
+  - '[mùng 1-9](time) và [ngay 07](time) [thang tám](time) tớ có ra ngoài giữa giờ
+    làm không'
+  - tháng này mình đi hết bao nhiêu buổi gặp đối tác
+  - cho tớ biết số hôm mà tôi ra ngoài giữa giờ làm trong [bay ngày tới](time) với
+  - tớ ra ngoài mấy buổi trong [thứ bảy](time) [tuânf này](time) và [thứ ba](time)
+    [tuaanf này](time)
+  - tháng ni đi công tác bao nhiêu lần bot ơi
+  - tháng trước có ra ngoài bữa nào k nhỉ
+  - tớ có ra ngoài buổi nào trong [chủ nhật](time) [tuần vừa qua](time) không nhở
+  - '[thứ 2](time) và [thứ hai](time) [tuânf tới đây](time) tớ ra ngoài giữa giờ làm
+    bao nhiu buổi vậy'
+  - '[ngày này](time) [tháng vừa qua](time) mình có ra ngoài giữa giờ mấy hôm'
+  - '[bay ngay trước](time) tớ ra ngoài giữa buổi tại lấy đồ uống nhiêu bữa vậy'
+  - '[ngay 31](time) [thasgn mười hai](time) [năm vừa qua](time) tớ có ra ngoài giữa
+    chừng không'
+  - tháng rồi tớ đi hết mấy buổi công tác
+  - cho tớ biết số bữa tớ ra ngoài giữa giờ làm trong [thứ tư](time) [thứ bảy](time)
+    và [thứ 3](time) [tuaanf trước nữa](time) với
+  - tớ ra ngoài giữa chừng mấy hôm trong [thứ 7](time) [tuân vừa qua](time) và [thứ
+    5](time) [tuaan vừa rồi](time)
+  - tháng rồi đi công tác mấy lần bot ơi
+  - tuần này có ra ngoài bữa nào k nhỉ
+  - mình có ra ngoài giữa chừng lần nào trong [thứ hai](time) và [chủ nhật](time)
+    [tuan tới](time) không nhở
+  - '[chins ngày nữa](time) tớ ra ngoài mấy lần vậy'
+  - '[hôm kia](time) tôi có ra ngoài giữa buổi mấy buổi'
+  - '[ngày này](time) [tuan vừa rồi](time) tui ra ngoài vì lấy đồ ăn nhiu hôm vậy'
+  - '[hôm 2026-3/24](time) và [2022/02/03](time) tớ có ra ngoài giữa giờ làm không'
+  - tháng này tớ đi hết mấy buổi gặp khách hàng
+  - cho mình biết số bữa mà tớ ra ngoài trong [ngay kia](time) với
+  - tôi ra ngoài giữa giờ làm mấy hôm trong [chủ nhật](time) [tuần này](time)
+  - tháng rồi gặp đối tác bao nhiêu lần timi ơi
+  - tuần này có ra ngoài bữa nào ko nhỉ
+  - mình có ra ngoài giữa giờ lần nào trong [thứ năm](time) [tuaanf rồi](time) và
+    [thứ 6](time) [tuần vừa qua](time) không nhở
+  - '[chủ nhật](time) [tuan tới](time) và [thứ 2](time) [tuânf sắp tới](time) tôi
+    ra ngoài nhiu bữa vậy'
+  - '[ngay này](time) [thng vừa rồi](time) tui có ra ngoài giữa chừng mấy buổi'
+  - '[ngay này](time) [thagn trước](time) tớ ra ngoài giữa giờ làm do  bao nhiu buổi
+    vậy'
+  - '[24-8](time) và [ngay 31-10](time) tớ có ra ngoài giữa buổi không'
+  - tháng trước tớ đi hết mấy buổi công tác
+  - cho tớ biết số hôm tớ ra ngoài giữa giờ làm trong [chín ngày trước](time) với
+  - tớ ra ngoài giữa buổi mấy hôm trong [chủ nhật](time) [tuân rồi](time) và [chủ
+    nhật](time) [tuaanf vừa rồi](time)
+  - tháng trước đi công tác mấy hôm timi ơi
+  - tuần này có ra ngoài lần nào không nhỉ
+  - tớ có ra ngoài giữa giờ làm lần nào trong [tam ngay nữa](time) không nhở
+  - '[2 ngay tới](time) mình tự ra ngoài giữa giờ làm mấy bữa vậy'
+  - '[thứ ba](time) [tuần trước nữa](time) và [thứ 7](time) [tuânf trước nữa](time)
+    tớ có ra ngoài giữa giờ làm mấy buổi'
+  - '[thứ 3](time) [tuan trước nữa](time) và [thứ 7](time) [tuan này](time) tớ ra
+    ngoài do lấy quà bao nhiu bữa vậy'
+  - '[2029/02-30](time) và [ngày 2024/11/30](time) tôi có ra ngoài không'
+  - tháng này mình đi hết bao nhiêu buổi gặp khách hàng
+  - cho tui biết số lần tớ ra ngoài trong [thứ 7](time) [tuần tới](time) và [thứ 6](time)
+    [tuần tới](time) với
+  - '[bôn ngay tới](time) tớ nghỉ nhiu buổi vậy'
+  - '[4 ngày nữa](time) tôi không đi làm tại lấy đồ ship nhiêu lần vậy'
+  - '[hôm 13/6](time) tui có không làm việc không'
+  - '[chủ nhật](time) [tuan tới đây](time) và [chủ nhật](time) [tuan tới](time) tui
+    có nghỉ đột xuất nhiều không ta'
+  - có biết số bữa tớ xin nghỉ đột xuất trong [chủ nhật](time) [tuaan tới](time) không
+  - tớ đã không làm việc mấy bữa trong [namw ngày trước](time) rồi
+  - tui có nghỉ đột xuất buổi nào trong [thứ 2,](time) [thứ 6](time) và [thứ bảy](time)
+    [tuaan này](time) không nhở
+  - bữa rồi mình có nghỉ không
+  - '[ngày này](time) [tuaan này](time) tớ xin nghỉ ở nhà nhiêu hôm vậy'
+  - '[tam ngày nữa](time) tui nghỉ tại lấy đồ ship nhiêu bữa vậy'
+  - '[ngày 2025-7-30](time) và [2025-07/30](time) tớ có nghỉ không'
+  - '[sáng](time) [thứ sáu](time) [tuân tới đây](time) tớ có nghỉ nhiều không ta'
+  - có biết số lần mình xin nghỉ trong [7 ngày trước](time) không
+  - tớ đã nghỉ mấy hôm trong [7 ngay trước](time) rồi
+  - tớ có offline hôm nào trong [hôm kia](time) không nhở
+  - bữa này mình có nghỉ không
+  - '[9 ngày nữa](time) tớ nghỉ ở nhà mấy lần vậy'
+  - '[5 ngày trước](time) tớ nghỉ đột xuất vì lấy đồ ship bao nhiêu hôm vậy'
+  - '[hôm 2024/8-30](time) tui có nghỉ ở nhà không'
+  - '[hôm kia](time) mình có không làm việc nhiều không ta'
+  - có biết số hôm tớ xin nghỉ trong [chủ nhật](time) [tuaan trước](time) không
+  - tớ đã nghỉ ở nhà mấy buổi trong [ngay này](time) [thng rồi](time) rồi
+  - tôi có nghỉ đột xuất hôm nào trong [chin ngay trước](time) không nhở
+  - ngày ni tớ có off không
+  - '[ngay này](time) [tháng này](time) tớ off mấy buổi vậy'
+  - '[2 ngay nữa](time) tôi offline do việc riêng mấy bữa vậy'
+  - '[hôm 2023-10/02](time) tui có không đi làm không'
+  - '[thứ 6](time) [tuânf tới đây](time) và [thứ sáu](time) [tuân sắp tới](time) mình
+    có nghỉ nhiều không ta'
+  - có biết số lần tớ xin nghỉ ở nhà trong [saus ngày nữa](time) không
+  - tớ đã không đi làm mấy hôm trong [ngày này](time) [tuần trước](time) rồi
+  - tôi có nghỉ đột xuất buổi nào trong [sáng](time) [chủ nhật](time) [tuan này](time)
+    không nhở
+  - ngày ni tớ có nghỉ không
+  - '[chủ nhật](time) [chủ nhật](time) và [thứ 4](time) [tuânf tới nữa](time) tui
+    xin nghỉ đột xuất mấy hôm vậy'
+  - '[thứ 3](time) và [thứ bảy](time) [tuan trước](time) mình nghỉ tại có việc cá
+    nhân nhiu bữa vậy'
+  - '[thứ sáu ngay 06/7](time) tớ có off không'
+  - '[hôm qua](time) tôi có nghỉ đột xuất nhiều không ta'
+  - có biết số bữa tớ xin không đi làm trong [ngay này](time) [tuaanf vừa qua](time)
+    không
+  - tôi đã nghỉ ở nhà mấy buổi trong [thứ hai](time) [tuân trước nữa](time) và [thứ
+    hai](time) [tuần vừa rồi](time) rồi
+  - tôi có không đi làm hôm nào trong [ngay này](time) [thangs vừa qua](time) không
+    nhở
+  - ngày ni mình có off không
+  - '[ngày tới](time) tôi xin phép nghỉ đột xuất nhiêu buổi vậy'
+  - '[ngay này](time) [tháng trước nữa](time) tớ nghỉ đột xuất vì lấy đồ ăn nhiu bữa
+    vậy'
+  - '[thứ năm 30-06](time) tớ có off không'
+  - '[chủ nhật](time) [tuân này](time) và [chủ nhật](time) [tuần tới đây](time) mình
+    có nghỉ nhiều không ta'
+  - có biết số lần tôi đã off trong [2 ngày tới](time) không
+  - tớ đã không làm việc mấy hôm trong [2 ngày trước](time) rồi
+  - tôi có không đi làm buổi nào trong [ngày này](time) [thng này](time) không nhở
+  - bữa ni tôi có nghỉ không
+  - '[hai ngay nữa](time) tôi offline nhiêu hôm vậy'
+  - '[bay ngay trước](time) tớ không đi làm do lấy quà nhiêu buổi vậy'
+  - '[hôm 2025/03/30](time) và [2025/10-23](time) tôi có không đi làm không'
+  - '[thứ 7](time) [thứ bảy](time) và [thứ năm](time) [tuaanf này](time) tớ có off
+    nhiều không ta'
+  - có biết số hôm tớ đã off trong [thứ 4](time) và [thứ 6](time) [tuaanf trước](time)
+    không
+  - tôi đã nghỉ ở nhà mấy buổi trong [thứ tư,](time) [thứ sáu](time) và [thứ 3](time)
+    [tuaanf sắp tới](time) rồi
+  - mình có không đi làm bữa nào trong [thứ hai](time) [tuan vừa qua](time) không
+    nhở
+  - bữa trước tôi có off không
+  - '[thứ 6](time) và [chủ nhật](time) [tuânf trước](time) tui nghỉ ở nhà nhiêu bữa
+    vậy'
+  - '[ngày kìa](time) tui nghỉ ở nhà vì lấy đồ ăn bao nhiu lần vậy'
+  - '[ngay 30/1/2022](time) tôi có không đi làm không'
+  - '[chiều](time) [thứ hai](time) [tuân này](time) tôi có nghỉ đột xuất nhiều không
+    ta'
+  - có biết số hôm tui xin nghỉ trong [ngày kìa](time) không
+  - tớ đã nghỉ mấy hôm trong [ngay kia](time) rồi
+  - tui có nghỉ đột xuất buổi nào trong [thứ ba](time) [tuân sắp tới](time) và [thứ
+    5](time) [tuaanf này](time) không nhở
+  - hôm trước mình có off không
+  - '[chủ nhật](time) [tuaan tới đây](time) và [thứ năm](time) [tuaanf này](time)
+    tôi không đi làm bao nhiêu buổi vậy'
+  - '[moot ngày tới](time) tớ không đi làm tại có việc cá nhân nhiêu bữa vậy'
+  - '[4/6/2029](time) và [27-10/2026](time) mình có nghỉ đột xuất không'
+  - '[sáng](time) [thứ 4](time) [tuan vừa rồi](time) tớ có không làm việc nhiều không
+    ta'
+  - có biết số buổi tôi đã nghỉ ở nhà trong [chủ nhật](time) và [thứ 4](time) [tuần
+    này](time) không
+  - tôi đã không làm việc mấy bữa trong [thứ 2](time) [thứ 4](time) và [chủ nhật](time)
+    [tuânf sắp tới](time) rồi
+  - tớ có off buổi nào trong [thứ sáu](time) [tuaan này](time) và [thứ 3](time) [tuan
+    tới nữa](time) không nhở
+  - bữa ni tớ có nghỉ không
+  - '[ngày này](time) [tuaanf vừa rồi](time) tớ nghỉ ở nhà mấy buổi vậy'
+  - '[thứ 4](time) và [thứ hai](time) [tuaanf trước nữa](time) mình không làm việc
+    tại lấy đồ uống mấy buổi vậy'
+  - '[thứ hai 20/12](time) [năm tới nữa](time) tớ có offline không'
+  - '[ngay mai](time) tớ có nghỉ nhiều không ta'
+  - có biết số lần tớ xin off trong [chủ nhật](time) [thứ 3](time) và [chủ nhật](time)
+    [tuânf tới](time) không
+  - tớ đã off mấy buổi trong [ngày này](time) [tuan rồi](time) rồi
+  - mình có không đi làm lần nào trong [bốn ngày nữa](time) không nhở
+  - ngày này tôi có off không
+  - '[9 ngày tới](time) tớ không đi làm nhiêu hôm vậy'
+  - '[tám ngày tới](time) tui không đi làm do lấy quà nhiêu bữa vậy'
+  - '[1-11](time) tớ có nghỉ đột xuất không'
+  - '[saus ngày nữa](time) tớ có nghỉ đột xuất nhiều không ta'
+  - có biết số bữa mình xin off trong [8 ngay nữa](time) không
+  - mình đã nghỉ ở nhà mấy bữa trong [chiều](time) [thứ hai](time) [tuânf rồi](time)
+    rồi
+  - tôi có không đi làm hôm nào trong [thứ sáu](time) [tuaanf tới đây](time) và [thứ
+    2](time) [tuan tới](time) không nhở
+  - hôm này tôi có off không
+  - '[thứ 3](time) [tuânf tới](time) và [thứ 2](time) [tuan sắp tới](time) tớ nghỉ
+    ở nhà nhiêu buổi vậy'
+  - '[thứ 4](time) [chủ nhật](time) và [thứ 7](time) [tuần này](time) tôi không đi
+    làm vì  mấy lần vậy'
+  - '[17-1](time) mình có off không'
+  - '[hôm kia](time) tui có nghỉ nhiều không ta'
+  - có biết số lần tôi đã nghỉ ở nhà trong [chủ nhật,](time) [chủ nhật](time) và [thứ
+    hai](time) [tuaan này](time) không
+  - tớ đã nghỉ mấy lần trong [thứ năm](time) [tuần vừa qua](time) và [thứ 6](time)
+    [tuaan vừa rồi](time) rồi
+  - tôi có nghỉ đột xuất lần nào trong [ngay này](time) [tuaan vừa qua](time) không
+    nhở
+  - ngày rồi mình có nghỉ không
+  - '[ngay này](time) [thangs vừa qua](time) tui nghỉ mấy lần vậy'
+  - '[ba ngày trước](time) tôi nghỉ ở nhà do lấy quà bao nhiêu buổi vậy'
+  - '[ngay 26](time) và [ngay 14](time) [thágn tamf](time) [năm rồi](time) tớ có nghỉ
+    ở nhà không'
+  - '[thứ 4](time) [tuần vừa qua](time) và [thứ 4](time) [tuânf trước nữa](time) tớ
+    có không làm việc nhiều không ta'

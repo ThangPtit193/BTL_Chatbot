@@ -1,0 +1,203 @@
+positives:
+- intent: faq/rule_time_off_ask_calender
+  examples:
+  - công ty được nghỉ lễ vào các ngày nào đó
+  - '[ngày quốc tế phụ nữ](time) công ty có cho nhân viên nghỉ ko'
+  - Các ngày lễ nào thì được nghỉ hả
+  - được nghỉ những ngày lễ nào trong năm
+  - Một năm được nghỉ các ngày lễ nào
+  - lịch nghỉ lễ của công ty có giống nhà nước không
+  - những ngày lễ nào trong năm thì được nghỉ
+  - công ty cho nghỉ những ngày lễ nào trong năm ạ
+  - công ty có quy chế về lễ nghỉ như nào
+  - người có được nghỉ vào [ngày cá tháng 4](time) không
+  - được nghỉ những ngày lễ nào hả
+  - người công ty được nghỉ lễ vào các ngày nào vậy
+  - thường công ty được nghỉ những ngày lễ nào ạ
+  - hàng năm công ty sẽ cho nghỉ những ngày lễ nào
+  - '[thử việc](level_position) công ty được nghỉ lễ vào các ngày nào vậy'
+  - công ty cho nhân viên nghỉ các ngày lễ nào hả
+  - thông thường công ty cho nhận sự nghỉ lễ ngày nào đấy
+  - công ty được nghỉ lễ vào những ngày nào vậy
+  - '[rằm tháng một](time) công ty có cho thành viên nghỉ không'
+  - Các ngày lễ nào thì được nghỉ hả bạn
+  - Một năm được nghỉ các ngày lễ nào bot
+  - lịch nghỉ lễ của công ty có giống nhà nước ko
+  - công ty cho nghỉ những ngày lễ nào ạ
+  - công ty có quy chế về lễ nghỉ như thế nào
+  - nhân viên có được nghỉ vào [tết việt nam](time) không
+  - nhân viên công ty được nghỉ lễ vào các ngày nào hả
+  - '[pre-senior](level_position) công ty được nghỉ lễ vào các ngày nào hả'
+  - công ty cho nhân viên nghỉ các ngày lễ nào vậy hả
+  - thông thường công ty cho thành viên nghỉ lễ ngày gì vậy
+  - công ty được nghỉ lễ vào các ngày nào hả
+  - '[ngày tết đoan ngọ](time) công ty có cho thành viên nghỉ không'
+  - Các ngày lễ nào thì được nghỉ hả mày
+  - Một năm được nghỉ các ngày lễ nào mày
+  - công ty có quy định về lễ nghỉ như nào
+  - thành viên có được nghỉ vào [ngày quốc khánh](time) không
+  - người công ty được nghỉ lễ vào các ngày nào hả
+  - '[full time](level_position) công ty được nghỉ lễ vào các ngày nào thế'
+  - công ty cho nhân viên nghỉ các ngày lễ nào vậy
+  - thông thường công ty cho thành viên nghỉ lễ ngày nào vậy
+  - công ty được nghỉ lễ vào những ngày nào thế
+  - '[ngày valentine](time) công ty có cho nhân viên nghỉ ko'
+  - Các ngày lễ nào thì được nghỉ hả mầy
+  - Một năm được nghỉ các ngày lễ nào mầy
+  - công ty có quy chế về lễ nghỉ thế nào
+  - người có được nghỉ vào [ngày giải phóng hoàn toàn miền nam](time) không
+  - nhân viên công ty được nghỉ lễ vào những ngày nào đó
+  - '[cộng tác viên](level_position) công ty được nghỉ lễ vào các ngày nào thế'
+  - công ty cho người nghỉ những ngày lễ nào vậy hả
+  - thông thường công ty cho người nghỉ lễ ngày gì vậy
+  - công ty được nghỉ lễ vào những ngày nào đó
+  - '[ngày thống nhất](time) công ty có cho nhận sự nghỉ không'
+  - Các ngày lễ nào thì được nghỉ hả em
+  - Một năm được nghỉ các ngày lễ nào bạn
+  - công ty có nội quy về lễ nghỉ thế nào
+  - nhân viên có được nghỉ vào [ngày thống nhất đất nước](time) không
+  - nhân viên công ty được nghỉ lễ vào các ngày nào thế
+  - '[fresher](level_position) công ty được nghỉ lễ vào các ngày nào đấy'
+  - công ty cho thành viên nghỉ những ngày lễ nào vậy
+  - thông thường công ty cho nhận sự nghỉ lễ ngày gì đó
+  - công ty được nghỉ lễ vào các ngày nào đấy
+  - '[ngày giỗ tổ](time) công ty có cho người nghỉ ko'
+  - Các ngày lễ nào thì được nghỉ hả timi
+  - Một năm được nghỉ các ngày lễ nào em
+  - công ty có rule về lễ nghỉ như thế nào
+  - nhận sự có được nghỉ vào [ngày ngưu lang chức nữ](time) không
+  - nhận sự công ty được nghỉ lễ vào các ngày nào đấy
+  - '[fresher](level_position) công ty được nghỉ lễ vào các ngày nào hả'
+  - công ty cho nhận sự nghỉ các ngày lễ nào hả
+  - thông thường công ty cho nhân viên nghỉ lễ ngày gì vậy
+  - công ty được nghỉ lễ vào những ngày nào đấy
+  - '[tết hàn thực](time) công ty có cho nhân viên nghỉ không'
+  - Các ngày lễ nào thì được nghỉ hả bot
+  - Một năm được nghỉ các ngày lễ nào cậu
+  - công ty có rule về lễ nghỉ như nào
+  - nhân viên có được nghỉ vào [ngày phụ nữ việt nam](time) ko
+  - thành viên công ty được nghỉ lễ vào các ngày nào hả
+  - '[ctv](level_position) công ty được nghỉ lễ vào những ngày nào vậy'
+  - công ty cho nhận sự nghỉ các ngày lễ nào vậy
+  - thông thường công ty cho thành viên nghỉ lễ ngày gì đấy
+  - công ty được nghỉ lễ vào các ngày nào thế
+  - '[tết nguyên tiêu](time) công ty có cho thành viên nghỉ không'
+  - Một năm được nghỉ các ngày lễ nào timi
+  - công ty có quy định về lễ nghỉ thế nào
+  - người có được nghỉ vào [tết việt nam](time) không
+  - thành viên công ty được nghỉ lễ vào các ngày nào vậy
+  - '[thử việc](level_position) công ty được nghỉ lễ vào các ngày nào đấy'
+  - công ty cho người nghỉ các ngày lễ nào vậy hả
+  - thông thường công ty cho thành viên nghỉ lễ ngày nào hả
+  - công ty được nghỉ lễ vào những ngày nào hả
+  - '[ngày thầy thuốc việt nam](time) công ty có cho người nghỉ ko'
+  - Các ngày lễ nào thì được nghỉ hả m
+  - công ty có nội quy về lễ nghỉ như nào
+  - người có được nghỉ vào [ngày cá tháng 4](time) ko
+  - nhận sự công ty được nghỉ lễ vào các ngày nào vậy
+  - '[full time](level_position) công ty được nghỉ lễ vào các ngày nào vậy'
+  - công ty cho nhân viên nghỉ những ngày lễ nào vậy hả
+  - thông thường công ty cho người nghỉ lễ ngày nào hả
+  - '[ngày lễ tình yêu](time) công ty có cho người nghỉ không'
+  - công ty có nội quy về lễ nghỉ như thế nào
+  - người có được nghỉ vào [tết nguyên đán](time) ko
+  - nhận sự công ty được nghỉ lễ vào những ngày nào vậy
+  - '[junior](level_position) công ty được nghỉ lễ vào các ngày nào hả'
+  - công ty cho thành viên nghỉ các ngày lễ nào vậy hả
+  - thông thường công ty cho người nghỉ lễ ngày nào đó
+  - công ty được nghỉ lễ vào các ngày nào vậy
+  - '[ngày giáng sinh](time) công ty có cho nhân viên nghỉ không'
+  - Các ngày lễ nào thì được nghỉ hả cậu
+  - công ty có quy định về lễ nghỉ như thế nào
+  - nhân viên có được nghỉ vào [ngày chiến thắng](time) không
+  - người công ty được nghỉ lễ vào những ngày nào hả
+  - '[fresher](level_position) công ty được nghỉ lễ vào những ngày nào đó'
+  - công ty cho nhân viên nghỉ những ngày lễ nào hả
+  - thông thường công ty cho thành viên nghỉ lễ ngày gì đó
+  - '[ngày quốc tế cô đơn](time) công ty có cho nhận sự nghỉ không'
+  - Một năm được nghỉ các ngày lễ nào m
+  - công ty có rule về lễ nghỉ thế nào
+  - thành viên có được nghỉ vào [ngày lễ vu lan](time) ko
+  - nhân viên công ty được nghỉ lễ vào các ngày nào đấy
+  - '[thử việc](level_position) công ty được nghỉ lễ vào các ngày nào hả'
+  - công ty cho người nghỉ những ngày lễ nào hả
+  - thông thường công ty cho nhận sự nghỉ lễ ngày gì thế
+  - '[tết đoan ngọ](time) công ty có cho nhân viên nghỉ không'
+  - nhận sự có được nghỉ vào [ngày giải phóng miền nam](time) không
+  - nhận sự công ty được nghỉ lễ vào các ngày nào đó
+  - '[tts](level_position) công ty được nghỉ lễ vào những ngày nào vậy'
+  - công ty cho nhận sự nghỉ các ngày lễ nào vậy hả
+  - thông thường công ty cho nhân viên nghỉ lễ ngày nào đó
+  - '[ngày trung thu](time) công ty có cho nhận sự nghỉ ko'
+  - thành viên có được nghỉ vào [ngày nhà giáo việt nam](time) không
+  - người công ty được nghỉ lễ vào những ngày nào vậy
+  - '[junior](level_position) công ty được nghỉ lễ vào những ngày nào đó'
+  - công ty cho người nghỉ những ngày lễ nào vậy
+  - thông thường công ty cho nhân viên nghỉ lễ ngày gì thế
+  - '[rằm tháng giêng](time) công ty có cho người nghỉ ko'
+  - người có được nghỉ vào [ngày tết hàn thực](time) ko
+  - nhận sự công ty được nghỉ lễ vào các ngày nào hả
+  - '[thử việc](level_position) công ty được nghỉ lễ vào những ngày nào hả'
+  - công ty cho thành viên nghỉ những ngày lễ nào hả
+  - thông thường công ty cho thành viên nghỉ lễ ngày nào đó
+  - '[tết hàn thực](time) công ty có cho nhận sự nghỉ không'
+  - nhận sự có được nghỉ vào [ngày chiến thắng](time) không
+  - thành viên công ty được nghỉ lễ vào các ngày nào đấy
+  - '[cộng tác viên](level_position) công ty được nghỉ lễ vào những ngày nào hả'
+  - công ty cho thành viên nghỉ các ngày lễ nào hả
+  - thông thường công ty cho nhận sự nghỉ lễ ngày gì hả
+  - '[ngày cá tháng tư](time) công ty có cho nhân viên nghỉ ko'
+  - nhân viên có được nghỉ vào [tết nguyên tiêu](time) không
+  - người công ty được nghỉ lễ vào các ngày nào thế
+  - '[junior](level_position) công ty được nghỉ lễ vào các ngày nào vậy'
+  - công ty cho nhận sự nghỉ những ngày lễ nào hả
+  - thông thường công ty cho thành viên nghỉ lễ ngày nào thế
+  - '[ngày thầy thuốc việt nam](time) công ty có cho nhân viên nghỉ không'
+  - người có được nghỉ vào [ngày lễ tình yêu](time) không
+  - nhận sự công ty được nghỉ lễ vào các ngày nào thế
+  - '[full-time](level_position) công ty được nghỉ lễ vào các ngày nào đó'
+  - công ty cho người nghỉ các ngày lễ nào hả
+  - thông thường công ty cho nhận sự nghỉ lễ ngày nào vậy
+  - '[ngày cô đơn](time) công ty có cho nhận sự nghỉ ko'
+  - nhân viên có được nghỉ vào [tết cổ truyền](time) không
+  - nhân viên công ty được nghỉ lễ vào các ngày nào đó
+  - '[senior](level_position) công ty được nghỉ lễ vào các ngày nào vậy'
+  - công ty cho thành viên nghỉ những ngày lễ nào vậy hả
+  - thông thường công ty cho thành viên nghỉ lễ ngày nào đấy
+  - '[lễ giáng sinh](time) công ty có cho người nghỉ không'
+  - thành viên có được nghỉ vào [ngày phụ nữ việt nam](time) không
+  - người công ty được nghỉ lễ vào các ngày nào đấy
+  - '[fresher](level_position) công ty được nghỉ lễ vào những ngày nào thế'
+  - công ty cho người nghỉ các ngày lễ nào vậy
+  - thông thường công ty cho nhân viên nghỉ lễ ngày nào thế
+  - '[ngày tết hàn thực](time) công ty có cho người nghỉ ko'
+  - nhân viên có được nghỉ vào [tết hàn thực](time) không
+  - người công ty được nghỉ lễ vào các ngày nào đó
+  - '[fresher](level_position) công ty được nghỉ lễ vào những ngày nào đấy'
+  - công ty cho nhận sự nghỉ những ngày lễ nào vậy hả
+  - thông thường công ty cho người nghỉ lễ ngày gì thế
+  - '[ngày lễ vu lan](time) công ty có cho thành viên nghỉ không'
+  - nhân viên có được nghỉ vào [ngày ngưu lang chức nữ](time) ko
+  - nhận sự công ty được nghỉ lễ vào những ngày nào thế
+  - '[senior](level_position) công ty được nghỉ lễ vào những ngày nào thế'
+  - công ty cho thành viên nghỉ các ngày lễ nào vậy
+  - thông thường công ty cho nhận sự nghỉ lễ ngày gì đấy
+  - '[ngày gia đình việt nam](time) công ty có cho nhân viên nghỉ không'
+  - nhân viên có được nghỉ vào [ngày trung thu](time) không
+  - thành viên công ty được nghỉ lễ vào những ngày nào đấy
+  - '[fulltime](level_position) công ty được nghỉ lễ vào các ngày nào đó'
+  - thông thường công ty cho nhận sự nghỉ lễ ngày nào hả
+  - '[ngày phụ nữ việt nam](time) công ty có cho nhận sự nghỉ không'
+  - nhân viên có được nghỉ vào [ngày quốc khánh](time) ko
+  - nhận sự công ty được nghỉ lễ vào những ngày nào hả
+  - '[junior](level_position) công ty được nghỉ lễ vào các ngày nào đấy'
+  - thông thường công ty cho nhân viên nghỉ lễ ngày nào vậy
+  - '[ngày ngưu lang chức nữ](time) công ty có cho nhận sự nghỉ ko'
+  - người có được nghỉ vào [ngày ngưu lang chức nữ](time) không
+  - người công ty được nghỉ lễ vào những ngày nào đó
+  - '[pre-senior](level_position) công ty được nghỉ lễ vào những ngày nào đấy'
+  - công ty cho nhân viên nghỉ những ngày lễ nào vậy
+  - thông thường công ty cho nhân viên nghỉ lễ ngày gì hả
+  - '[ngày quốc khánh](time) công ty có cho nhận sự nghỉ không'
+  - thành viên có được nghỉ vào [ngày thống nhất đất nước](time) không
+  - nhận sự công ty được nghỉ lễ vào những ngày nào đấy

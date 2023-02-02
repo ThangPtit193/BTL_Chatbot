@@ -1,0 +1,255 @@
+positives:
+- intent: faq/rule_time_off_ask_rule
+  examples:
+  - quy chế về xin ra giữa giờ như thế nào
+  - tớ xin đi ra ngoài thì chỉ cần báo leader thôi phải không
+  - cho tớ hỏi quy định xin nghỉ sơm của công ty
+  - công ty có quy định gì về việc xin ra ngoài
+  - có được xin về sớm khi có việc bận ko
+  - xin nghỉ phép thế nào
+  - do xe hỏng nên trễ giờ đi làm thì phải làm như thế nào
+  - tôi xin nghỉ đi du lịch có cần gửi gmail cho công ty không
+  - tớ muốn hướng dẫn thì phải làm sao
+  - hướng dẫn về xin phép off
+  - có được xin đi muộn ko
+  - tôi muốn xin đi trễ giờ thì cần phải làm gì
+  - xin nghỉ sơm như nào vậy bot
+  - có được xin ra ngoài trong giời làm không
+  - công ty có yêu cầu người phải báo trước vài tiếng trước khi xin phép off không
+  - xin phép có khó ko
+  - nếu tớ muốn xin nghỉ dài ngày thì phải báo trước cho ai vậy hả timi
+  - công ty có rule thời gian tối thiểu phải báo trước khi xin nghỉ sơm không
+  - hướng dẫn cách xin phép đi bạn
+  - nội quy về xin nghỉ sơm như thế nào
+  - mình xin đi muộn thì chỉ cần báo lãnh đạo thôi phải không
+  - cho tớ hỏi nội quy xin nghỉ phép của công ty
+  - công ty có nội quy gì về việc xin ra giữa giờ
+  - có được xin đi muộn khi có việc bận không
+  - xin ra giữa giờ như thế nào
+  - vì bận việc nên trễ giờ đi làm thì phải làm như thế nào
+  - tôi xin nghỉ đi du lịch có cần gửi mail cho công ty ko
+  - tớ muốn hướng dẫn thì phải làm như nào
+  - hướng dẫn về xin nghỉ
+  - có được xin đi muộn không
+  - tôi muốn xin đi muộn giờ thì cần phải làm gì
+  - xin nghỉ phép như thế nào thế mày
+  - có được xin ra ngoài trong giời làm ko
+  - công ty có yêu cầu người phải báo trước vài tiếng trước khi xin off sớm ko
+  - xin ra ngoài có khó không
+  - nếu tớ muốn xin nghỉ phép dài ngày thì phải báo trước cho ai vậy hả mày
+  - công ty có nội quy thời gian tối thiểu phải báo trước khi xin ra giữa giờ ko
+  - hướng dẫn cách xin ra giữa giờ đi em
+  - quy chế về xin ra giữa giờ như nào
+  - tớ xin đi trễ thì chỉ cần báo lãnh đạo thôi phải không
+  - cho mình hỏi quy định xin ra giữa giờ của công ty
+  - công ty có quy chế gì về việc xin off sớm
+  - có được xin đi muộn khi có việc bận ko
+  - xin ra ngoài như nào
+  - vì bị ốm nên muộn giờ đi làm thì phải làm sao
+  - tôi xin phép đi du lịch có cần gửi gmail cho công ty ko
+  - tớ muốn hướng dẫn thì phải làm gì
+  - hướng dẫn về xin nghỉ phép
+  - tớ muốn xin đi muộn giờ thì cần phải làm gì
+  - xin phép off thế nào vậy bạn
+  - công ty có yêu cầu người phải báo trước vài tiếng trước khi xin ra ngoài không
+  - xin off sớm có khó ko
+  - nếu tớ muốn xin nghỉ phép dài ngày thì phải báo trước cho ai vậy em
+  - công ty có rule thời gian tối thiểu phải báo trước khi xin ra ngoài không
+  - hướng dẫn cách xin phép off đi m
+  - nội quy về xin ra ngoài như thế nào
+  - tôi xin đi trễ thì chỉ cần báo leader thôi phải không
+  - cho mình hỏi quy định xin phép off của công ty
+  - công ty có rule gì về việc xin off sớm
+  - có được xin về sớm khi có việc bận không
+  - xin ra giữa giờ thế nào
+  - vì có việc cá nhân nên trễ giờ đi làm thì phải làm sao
+  - tớ xin nghỉ đi du lịch có cần gửi email cho công ty không
+  - tớ muốn hướng dẫn thì phải làm thế nào
+  - hướng dẫn về xin phép
+  - tớ muốn xin đi trễ giờ thì cần phải làm gì
+  - xin off sớm như thế nào đó mầy
+  - công ty có yêu cầu thành viên phải báo trước vài tiếng trước khi xin phép ko
+  - xin nghỉ phép có khó ko
+  - nếu tớ muốn xin phép dài ngày thì phải báo trước cho ai hả cậu
+  - công ty có nội quy thời gian tối thiểu phải báo trước khi xin ra giữa giờ không
+  - hướng dẫn cách xin phép off đi bot
+  - quy chế về xin phép off thế nào
+  - tớ xin đi muộn thì chỉ cần báo leader thôi phải ko
+  - cho mình hỏi rule xin nghỉ phép của công ty
+  - công ty có rule gì về việc xin phép
+  - xin ra giữa giờ như nào
+  - vì bị ốm nên muộn giờ đi làm thì phải làm như thế nào
+  - mình xin phép off đi du lịch có cần gửi email cho công ty ko
+  - tôi muốn hướng dẫn thì phải làm sao
+  - mình muốn xin đi trễ giờ thì cần phải làm gì
+  - xin off sớm như thế nào hả bot
+  - công ty có yêu cầu nhận sự phải báo trước vài tiếng trước khi xin nghỉ phép không
+  - xin ra ngoài có khó ko
+  - nếu tôi muốn xin nghỉ dài ngày thì phải báo trước cho ai vậy hả timi
+  - công ty có quy chế thời gian tối thiểu phải báo trước khi xin nghỉ sơm không
+  - hướng dẫn cách xin ra giữa giờ đi bạn
+  - quy chế về xin nghỉ thế nào
+  - tớ xin đi trễ thì chỉ cần báo leader thôi phải không
+  - cho mình hỏi quy định xin ra ngoài của công ty
+  - công ty có quy chế gì về việc xin ra ngoài
+  - xin nghỉ phép như thế nào
+  - vì đau nên muộn giờ đi làm thì phải làm sao
+  - tớ xin nghỉ phép đi du lịch có cần gửi mail cho công ty ko
+  - tôi muốn hướng dẫn thì phải làm thế nào
+  - mình muốn xin đi muộn giờ thì cần phải làm gì
+  - xin nghỉ phép như thế nào đấy bot
+  - công ty có yêu cầu nhân viên phải báo trước vài tiếng trước khi xin nghỉ ko
+  - xin nghỉ sơm có khó không
+  - nếu tớ muốn xin nghỉ dài ngày thì phải báo trước cho ai hả bạn
+  - công ty có nội quy thời gian tối thiểu phải báo trước khi xin off sớm không
+  - hướng dẫn cách xin ra ngoài đi mầy
+  - quy định về xin ra ngoài như thế nào
+  - mình xin đi muộn thì chỉ cần báo leader thôi phải không
+  - cho tớ hỏi quy định xin phép của công ty
+  - công ty có quy chế gì về việc xin nghỉ phép
+  - xin nghỉ sơm thế nào
+  - do gặp đối tác nên trễ giờ đi làm thì phải làm sao
+  - tớ xin nghỉ đi du lịch có cần gửi mail cho công ty ko
+  - tôi muốn hướng dẫn thì phải làm như nào
+  - xin nghỉ phép như nào thế mày
+  - công ty có yêu cầu nhận sự phải báo trước vài tiếng trước khi xin ra giữa giờ
+    không
+  - xin nghỉ có khó ko
+  - nếu tôi muốn xin phép off dài ngày thì phải báo trước cho ai vậy hả em
+  - công ty có quy định thời gian tối thiểu phải báo trước khi xin phép không
+  - hướng dẫn cách xin ra giữa giờ đi bot
+  - quy chế về xin nghỉ phép như nào
+  - tớ xin đi ra ngoài thì chỉ cần báo lãnh đạo thôi phải không
+  - cho tớ hỏi quy định xin nghỉ phép của công ty
+  - công ty có quy định gì về việc xin phép off
+  - xin ra ngoài thế nào
+  - do gặp đối tác nên muộn giờ đi làm thì phải làm sao
+  - mình xin phép off đi du lịch có cần gửi mail cho công ty ko
+  - tôi muốn hướng dẫn thì phải làm như thế nào
+  - xin ra ngoài thế nào đó cậu
+  - công ty có yêu cầu nhận sự phải báo trước vài tiếng trước khi xin ra giữa giờ
+    ko
+  - xin off sớm có khó không
+  - nếu tôi muốn xin nghỉ phép dài ngày thì phải báo trước cho ai vậy bot
+  - công ty có quy chế thời gian tối thiểu phải báo trước khi xin nghỉ sơm ko
+  - hướng dẫn cách xin ra ngoài đi m
+  - rule về xin nghỉ sơm như nào
+  - mình xin đi trễ thì chỉ cần báo leader thôi phải ko
+  - cho mình hỏi quy định xin off sớm của công ty
+  - công ty có quy chế gì về việc xin ra giữa giờ
+  - xin nghỉ như thế nào
+  - vì xe hỏng nên muộn giờ đi làm thì phải làm như thế nào
+  - tớ xin nghỉ đi du lịch có cần gửi gmail cho công ty không
+  - tôi muốn hướng dẫn thì phải làm gì
+  - xin ra giữa giờ như nào vậy timi
+  - công ty có yêu cầu thành viên phải báo trước vài tiếng trước khi xin off sớm không
+  - xin ra giữa giờ có khó ko
+  - nếu mình muốn xin phép dài ngày thì phải báo trước cho ai vậy hả m
+  - công ty có quy định thời gian tối thiểu phải báo trước khi xin phép ko
+  - hướng dẫn cách xin nghỉ phép đi mầy
+  - quy định về xin phép như nào
+  - mình xin đi ra ngoài thì chỉ cần báo lãnh đạo thôi phải ko
+  - cho mình hỏi rule xin nghỉ của công ty
+  - công ty có nội quy gì về việc xin phép
+  - xin phép như thế nào
+  - do đau nên muộn giờ đi làm thì phải làm như thế nào
+  - mình xin nghỉ đi du lịch có cần gửi mail cho công ty không
+  - mình muốn hướng dẫn thì phải làm sao
+  - xin nghỉ như nào hả bạn
+  - công ty có yêu cầu nhân viên phải báo trước vài tiếng trước khi xin ra ngoài ko
+  - xin nghỉ sơm có khó ko
+  - nếu tớ muốn xin nghỉ dài ngày thì phải báo trước cho ai vậy m
+  - công ty có nội quy thời gian tối thiểu phải báo trước khi xin ra ngoài không
+  - hướng dẫn cách xin ra giữa giờ đi mầy
+  - quy định về xin off sớm thế nào
+  - tớ xin đi muộn thì chỉ cần báo lãnh đạo thôi phải không
+  - cho mình hỏi quy chế xin phép off của công ty
+  - công ty có quy định gì về việc xin nghỉ sơm
+  - xin nghỉ như nào
+  - do đi về quê nên muộn giờ đi làm thì phải làm sao
+  - tớ xin phép off đi du lịch có cần gửi email cho công ty không
+  - mình muốn hướng dẫn thì phải làm gì
+  - xin phép thế nào thế cậu
+  - công ty có yêu cầu nhân viên phải báo trước vài tiếng trước khi xin off sớm không
+  - xin nghỉ phép có khó không
+  - nếu tôi muốn xin phép off dài ngày thì phải báo trước cho ai hả timi
+  - công ty có quy chế thời gian tối thiểu phải báo trước khi xin ra ngoài ko
+  - hướng dẫn cách xin off sớm đi bot
+  - quy chế về xin phép như nào
+  - tôi xin đi trễ thì chỉ cần báo lãnh đạo thôi phải không
+  - cho mình hỏi quy chế xin nghỉ phép của công ty
+  - công ty có nội quy gì về việc xin nghỉ sơm
+  - xin phép như nào
+  - do đi du lịch nên trễ giờ đi làm thì phải làm như thế nào
+  - tớ xin phép đi du lịch có cần gửi gmail cho công ty ko
+  - xin ra ngoài như nào vậy timi
+  - công ty có yêu cầu người phải báo trước vài tiếng trước khi xin ra ngoài ko
+  - xin phép off có khó ko
+  - nếu tớ muốn xin phép off dài ngày thì phải báo trước cho ai vậy mầy
+  - công ty có rule thời gian tối thiểu phải báo trước khi xin ra giữa giờ ko
+  - hướng dẫn cách xin phép off đi bạn
+  - nội quy về xin phép như nào
+  - tớ xin đi trễ thì chỉ cần báo leader thôi phải ko
+  - cho tôi hỏi rule xin off sớm của công ty
+  - công ty có nội quy gì về việc xin off sớm
+  - xin phép off thế nào
+  - vì có việc nên trễ giờ đi làm thì phải làm như thế nào
+  - tôi xin nghỉ phép đi du lịch có cần gửi gmail cho công ty ko
+  - mình muốn hướng dẫn thì phải làm như thế nào
+  - xin nghỉ phép như thế nào vậy bạn
+  - công ty có yêu cầu nhận sự phải báo trước vài tiếng trước khi xin off sớm không
+  - xin ra giữa giờ có khó không
+  - nếu mình muốn xin phép dài ngày thì phải báo trước cho ai vậy hả em
+  - công ty có rule thời gian tối thiểu phải báo trước khi xin nghỉ phép không
+  - hướng dẫn cách xin off sớm đi bạn
+  - nội quy về xin phép off thế nào
+  - tôi xin đi ra ngoài thì chỉ cần báo leader thôi phải ko
+  - cho tôi hỏi quy định xin nghỉ sơm của công ty
+  - công ty có quy định gì về việc xin ra giữa giờ
+  - xin nghỉ sơm như nào
+  - do đau nên trễ giờ đi làm thì phải làm như thế nào
+  - mình xin phép off đi du lịch có cần gửi mail cho công ty không
+  - mình muốn hướng dẫn thì phải làm như nào
+  - xin phép như thế nào đó cậu
+  - công ty có yêu cầu người phải báo trước vài tiếng trước khi xin phép ko
+  - xin phép off có khó không
+  - nếu mình muốn xin nghỉ dài ngày thì phải báo trước cho ai vậy em
+  - công ty có nội quy thời gian tối thiểu phải báo trước khi xin nghỉ sơm không
+  - hướng dẫn cách xin ra giữa giờ đi cậu
+  - nội quy về xin ra ngoài như nào
+  - tôi xin đi trễ thì chỉ cần báo lãnh đạo thôi phải ko
+  - cho tớ hỏi rule xin phép off của công ty
+  - công ty có nội quy gì về việc xin ra ngoài
+  - xin off sớm thế nào
+  - do xe hỏng nên muộn giờ đi làm thì phải làm sao
+  - tớ xin phép đi du lịch có cần gửi email cho công ty ko
+  - tớ muốn hướng dẫn thì phải làm như thế nào
+  - xin ra giữa giờ thế nào thế bot
+  - công ty có yêu cầu người phải báo trước vài tiếng trước khi xin off sớm không
+  - xin phép có khó không
+  - nếu mình muốn xin nghỉ phép dài ngày thì phải báo trước cho ai vậy mày
+  - công ty có nội quy thời gian tối thiểu phải báo trước khi xin nghỉ ko
+  - hướng dẫn cách xin phép off đi mầy
+  - rule về xin nghỉ thế nào
+  - mình xin đi trễ thì chỉ cần báo lãnh đạo thôi phải không
+  - cho tớ hỏi quy định xin ra ngoài của công ty
+  - công ty có quy chế gì về việc xin nghỉ sơm
+  - xin nghỉ sơm như thế nào
+  - do bận việc nên muộn giờ đi làm thì phải làm sao
+  - tớ xin nghỉ phép đi du lịch có cần gửi gmail cho công ty ko
+  - mình muốn hướng dẫn thì phải làm thế nào
+  - xin nghỉ phép thế nào hả em
+  - công ty có yêu cầu nhận sự phải báo trước vài tiếng trước khi xin phép off không
+  - xin nghỉ có khó không
+  - nếu tôi muốn xin phép dài ngày thì phải báo trước cho ai vậy hả mày
+  - công ty có quy định thời gian tối thiểu phải báo trước khi xin nghỉ sơm không
+  - hướng dẫn cách xin ra ngoài đi bạn
+  - quy chế về xin off sớm như nào
+  - mình xin đi muộn thì chỉ cần báo leader thôi phải ko
+  - cho tớ hỏi quy định xin off sớm của công ty
+  - công ty có rule gì về việc xin ra ngoài
+  - xin phép thế nào
+  - do có việc cá nhân nên muộn giờ đi làm thì phải làm sao
+  - mình xin phép đi du lịch có cần gửi mail cho công ty ko
+  - xin ra giữa giờ như nào đó timi
+  - công ty có yêu cầu người phải báo trước vài tiếng trước khi xin nghỉ sơm không

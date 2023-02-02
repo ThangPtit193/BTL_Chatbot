@@ -1,0 +1,468 @@
+positives:
+- intent: faq/office_ask_founding
+  examples:
+  - cho tớ hỏi công ty thành lập khi nào
+  - công ty sáng lập từ bao giờ vậy hả
+  - '[f-tech](work_unit) được 2 tuổi rồi nhỉ'
+  - '[f tech](work_unit) hoạt động năm nào ?'
+  - công ty được thành lập khi nào vậy
+  - '[f tech](work_unit) thành lập được 4 ngày rồi nhể'
+  - công ty thành lập vào năm bao nhiêu
+  - công ty đi vào hoạt động được 3 năm chưa nhể
+  - năm bao nhiêu thì công ty được thành lập
+  - '[f tech](work_unit) mở được lâu chưa'
+  - văn phòng [f-tech](work_unit) [mộc châu](location) sáng lập khi nào đó m
+  - em biết [ftech](work_unit) đi vào hoạt động lúc nào không
+  - '[f-tech](work_unit) xuất phát điểm từ khi nào'
+  - '[f-tech](work_unit) sáng lập được lâu chưa'
+  - chi nhánh [ftech](work_unit) [hội an](location) được thành lập vào năm bao nhiêu
+  - văn phòng công ty ở [hồ chí minh](location) thành lập khi nào ạ
+  - mày cho mình hỏi công ty thành lập từ bao giờ
+  - công ty mình được sáng lập từ năm nào vậy hả
+  - công ty thành lập từ bao giờ hả
+  - công ty được sáng lập từ năm nào
+  - chi nhánh [f tech](work_unit) [thủ đức](location) sinh nhật vào ngày mấy?
+  - công ty đi vào hoạt động khi nào
+  - chắc công ty cũng hơn 3 tuổi rồi nhể
+  - timi cho tớ hỏi chi nhánh [ftech](work_unit) [điện biên](location) thành lập khi
+    nào
+  - bạn biết công ty thành lập từ bao giờ không
+  - em cho mình hỏi [ftech](work_unit) đi vào hoạt động từ bao giờ
+  - '[ftech](work_unit) hoạt động được bao lâu rồi'
+  - mình muốn hỏi công ty thành lập từ khi nào
+  - công ty xuất phát điểm khi nào
+  - hiện tại văn phòng [f tech](work_unit) [cố đô huế](location) được mấy tuổi rồi
+    ha
+  - cho mình hỏi công ty thành lập từ bao giờ
+  - công ty thành lập từ khi nào
+  - '[f tech](work_unit) được 2 năm rồi nhể'
+  - '[f-tech](work_unit) hoạt động năm nào ?'
+  - công ty được thành lập từ bao giờ vậy hả
+  - '[ftech](work_unit) ra đời được 4 tháng rồi ha'
+  - công ty sáng lập vào năm bao nhiêu
+  - công ty đi vào hoạt động được 3 tháng chưa nhỉ
+  - năm bao nhiêu thì công ty được sáng lập
+  - '[f-tech](work_unit) mở được lâu chưa vậy hả'
+  - văn phòng [đn](location) thành lập từ khi nào đó cậu
+  - bot biết [f-tech](work_unit) đi vào hoạt động lúc nào không
+  - '[f-tech](work_unit) xuất phát điểm từ bao giờ'
+  - '[f-tech](work_unit) ra đời được lâu chưa hả'
+  - văn phòng [ftech](work_unit) [Mỹ](location) được thành lập vào năm bao nhiêu
+  - văn phòng công ty ở [bắc ninh](location) thành lập khi nào ạ
+  - cậu cho tớ hỏi công ty thành lập khi nào
+  - công ty mình được sáng lập từ năm bao nhiêu vậy hả
+  - công ty được thành lập từ khi nào vậy hả
+  - công ty được thành lập từ năm nào
+  - chi nhánh [Ấn Độ](location) sinh nhật vào ngày mấy?
+  - chắc công ty cũng hơn 2 tuổi rồi nhỉ
+  - mầy cho tớ hỏi văn phòng [đất Việt](location) thành lập từ bao giờ
+  - mày có biết công ty thành lập từ khi nào không
+  - bạn cho tớ hỏi [f-tech](work_unit) đi vào hoạt động khi nào
+  - '[f-tech](work_unit) hoạt động được bao lâu rồi'
+  - mình muốn hỏi công ty sáng lập khi nào
+  - công ty xuất phát điểm từ bao giờ
+  - hiện tại văn phòng [ftech](work_unit) [hn](location) được mấy tuổi rồi ha
+  - cho mình hỏi công ty thành lập từ khi nào
+  - công ty thành lập khi nào vậy
+  - '[f-tech](work_unit) được 1 năm rồi ha'
+  - '[ftech](work_unit) hoạt động năm nào ?'
+  - công ty được sáng lập từ bao giờ vậy
+  - '[ftech](work_unit) ra đời chắc được 3 ngày rồi nhể'
+  - công ty thành lập vào năm nào
+  - công ty đi vào hoạt động được 3 năm chưa ha
+  - năm bao nhiêu thì công ty được thành lập vậy hả
+  - '[f tech](work_unit) mở được lâu chưa vậy'
+  - chi nhánh [ftech](work_unit) [Singapo](location) sáng lập từ khi nào đó em
+  - bot biết [ftech](work_unit) đi vào hoạt động lúc nào không
+  - '[ftech](work_unit) xuất phát điểm khi nào'
+  - '[ftech](work_unit) thành lập được lâu chưa'
+  - văn phòng [điện biên](location) được sáng lập vào năm bao nhiêu
+  - văn phòng công ty ở [Campuchia](location) thành lập khi nào ạ
+  - bạn cho tớ hỏi công ty thành lập từ bao giờ
+  - công ty mình thành lập từ năm nào hả
+  - công ty được thành lập từ khi nào vậy
+  - công ty được sáng lập từ năm bao nhiêu vậy hả
+  - chi nhánh [miền bắc](location) sinh nhật vào ngày mấy?
+  - chắc công ty cũng hơn 1 tuổi rồi nhỉ
+  - mầy cho tớ hỏi chi nhánh [ftech](work_unit) [tây bắc bộ](location) thành lập từ
+    bao giờ
+  - bot biết công ty thành lập khi nào ko
+  - bot cho tớ hỏi [f-tech](work_unit) đi vào hoạt động từ khi nào
+  - '[f tech](work_unit) hoạt động được bao lâu rồi'
+  - mình muốn hỏi công ty thành lập từ bao giờ
+  - công ty xuất phát điểm từ khi nào
+  - hiện tại chi nhánh [ftech](work_unit) [dn](location) được mấy tuổi rồi nhể
+  - cho tớ hỏi công ty thành lập từ bao giờ
+  - công ty thành lập khi nào
+  - '[ftech](work_unit) được 2 năm rồi ha'
+  - '[f tech](work_unit) hoạt động tháng nào ?'
+  - công ty được sáng lập từ bao giờ vậy hả
+  - '[f tech](work_unit) chào đời chắc được 2 ngày rồi ha'
+  - công ty sáng lập từ năm bao nhiêu vậy
+  - công ty đi vào hoạt động được 4 năm chưa ha
+  - năm bao nhiêu thì công ty được thành lập hả
+  - '[ftech](work_unit) mở được lâu chưa vậy'
+  - chi nhánh [VN](location) sáng lập từ khi nào đó em
+  - bot biết [f-tech](work_unit) đi vào hoạt động lúc nào ko
+  - '[ftech](work_unit) xuất phát điểm từ bao giờ'
+  - '[ftech](work_unit) khai sinh được lâu chưa'
+  - văn phòng [ninh thuận](location) được thành lập vào năm bao nhiêu
+  - văn phòng công ty ở [đà nẵng](location) thành lập khi nào ạ
+  - timi cho tớ hỏi công ty sáng lập từ bao giờ
+  - công ty mình thành lập vào năm bao nhiêu hả
+  - công ty sáng lập từ khi nào vậy
+  - công ty được sáng lập từ năm nào vậy
+  - văn phòng [ftech](work_unit) [hcm](location) sinh nhật vào ngày mấy?
+  - chắc hẳn công ty cũng hơn 3 tuổi rồi ha
+  - mầy cho tớ hỏi chi nhánh [Úc](location) sáng lập từ bao giờ
+  - bạn biết công ty thành lập từ khi nào ko
+  - timi cho tớ hỏi [f tech](work_unit) đi vào hoạt động khi nào
+  - tớ muốn hỏi công ty sáng lập khi nào
+  - bây giờ chi nhánh [ftech](work_unit) [hn](location) được mấy tuổi rồi ha
+  - cho tôi hỏi công ty sáng lập khi nào
+  - công ty sáng lập từ bao giờ hả
+  - '[ftech](work_unit) được 2 tuổi rồi nhể'
+  - '[f-tech](work_unit) hoạt động tháng nào ?'
+  - công ty được sáng lập từ khi nào vậy
+  - '[ftech](work_unit) ra đời chắc được 2 tháng rồi nhể'
+  - công ty thành lập từ năm nào vậy
+  - công ty đi vào hoạt động được 4 tháng chưa ha
+  - năm nào thì công ty được sáng lập
+  - '[f-tech](work_unit) mở được lâu chưa'
+  - chi nhánh [VN](location) sáng lập khi nào đó em
+  - bạn biết [f-tech](work_unit) đi vào hoạt động lúc nào không
+  - '[ftech](work_unit) xuất phát điểm từ khi nào'
+  - '[ftech](work_unit) ra đời được lâu chưa hả'
+  - chi nhánh [BN](location) được thành lập vào năm bao nhiêu
+  - chi nhánh công ty ở [hn](location) thành lập khi nào ạ
+  - em cho tớ hỏi công ty thành lập từ bao giờ
+  - công ty mình được sáng lập từ năm nào
+  - công ty được thành lập từ bao giờ hả
+  - công ty được thành lập từ năm bao nhiêu vậy hả
+  - chi nhánh [f tech](work_unit) [sài gòn](location) sinh nhật vào ngày mấy?
+  - chắc công ty cũng hơn 1 tuổi rồi ha
+  - timi cho mình hỏi chi nhánh [f-tech](work_unit) [hà nội](location) thành lập từ
+    bao giờ
+  - em có biết công ty sáng lập khi nào ko
+  - em cho tôi hỏi [ftech](work_unit) đi vào hoạt động khi nào
+  - tôi muốn hỏi công ty thành lập từ khi nào
+  - hiện tại văn phòng [trà vinh](location) được mấy tuổi rồi nhể
+  - cho mình hỏi công ty sáng lập từ bao giờ
+  - công ty sáng lập khi nào
+  - '[f tech](work_unit) được 2 tuổi rồi nhể'
+  - '[ftech](work_unit) hoạt động tháng nào ?'
+  - công ty được sáng lập khi nào
+  - '[ftech](work_unit) ra đời được 2 ngày rồi ha'
+  - công ty thành lập vào năm bao nhiêu hả
+  - công ty đi vào hoạt động được 4 tháng chưa nhỉ
+  - năm bao nhiêu thì công ty được thành lập vậy
+  - '[ftech](work_unit) mở được lâu chưa'
+  - chi nhánh [ftech](work_unit) [hn](location) sáng lập khi nào đó mày
+  - bạn biết [ftech](work_unit) đi vào hoạt động lúc nào ko
+  - '[f-tech](work_unit) xuất phát điểm khi nào'
+  - '[ftech](work_unit) khai sinh được lâu chưa vậy'
+  - văn phòng [f-tech](work_unit) [đà nẵng](location) được thành lập vào năm bao nhiêu
+  - văn phòng công ty ở [dn](location) thành lập khi nào ạ
+  - bot cho tôi hỏi công ty sáng lập khi nào
+  - công ty mình được thành lập vào năm bao nhiêu vậy
+  - công ty được thành lập khi nào hả
+  - công ty được thành lập từ năm bao nhiêu hả
+  - chi nhánh [duyên hải miền trung](location) sinh nhật vào ngày mấy?
+  - chắc công ty cũng hơn 1 tuổi rồi nhể
+  - cậu cho mình hỏi chi nhánh [f-tech](work_unit) [đà nẵng](location) thành lập từ
+    khi nào
+  - cậu có biết công ty thành lập từ khi nào không
+  - mày cho tớ hỏi [f tech](work_unit) đi vào hoạt động từ bao giờ
+  - tớ muốn hỏi công ty thành lập từ bao giờ
+  - hiện tại văn phòng [VN](location) được mấy tuổi rồi nhỉ
+  - cho mình hỏi công ty thành lập khi nào
+  - công ty sáng lập từ khi nào
+  - '[f tech](work_unit) được 2 năm rồi ha'
+  - công ty được sáng lập từ khi nào hả
+  - '[f tech](work_unit) ra đời được 4 ngày rồi nhỉ'
+  - công ty sáng lập từ năm nào vậy hả
+  - công ty đi vào hoạt động được 2 tháng chưa ha
+  - năm nào thì công ty được sáng lập hả
+  - '[ftech](work_unit) mở được lâu chưa hả'
+  - văn phòng [ftech](work_unit) [hcm](location) thành lập từ khi nào đó cậu
+  - mầy biết [f-tech](work_unit) đi vào hoạt động lúc nào ko
+  - '[f tech](work_unit) xuất phát điểm từ bao giờ'
+  - '[f tech](work_unit) thành lập được lâu chưa'
+  - chi nhánh [nam trung bộ](location) được sáng lập vào năm bao nhiêu
+  - văn phòng công ty ở [thanh hóa](location) thành lập khi nào ạ
+  - m cho tớ hỏi công ty thành lập khi nào
+  - công ty mình thành lập từ năm bao nhiêu vậy
+  - công ty được thành lập từ bao giờ vậy
+  - công ty được thành lập từ năm nào hả
+  - chi nhánh [đà nẵng](location) sinh nhật vào ngày mấy?
+  - chắc hẳn công ty cũng hơn 2 tuổi rồi ha
+  - timi cho mình hỏi chi nhánh [f tech](work_unit) [sapa](location) sáng lập từ bao
+    giờ
+  - timi có biết công ty sáng lập khi nào ko
+  - cậu cho tớ hỏi [f tech](work_unit) đi vào hoạt động từ bao giờ
+  - mình muốn hỏi công ty sáng lập từ khi nào
+  - hiện tại chi nhánh [f-tech](work_unit) [miền nam](location) được mấy tuổi rồi
+    nhể
+  - cho tôi hỏi công ty sáng lập từ bao giờ
+  - công ty thành lập từ bao giờ vậy hả
+  - '[ftech](work_unit) được 2 năm rồi nhỉ'
+  - công ty được thành lập khi nào
+  - '[ftech](work_unit) khai sinh chắc được 2 tháng rồi nhỉ'
+  - công ty thành lập vào năm bao nhiêu vậy
+  - công ty đi vào hoạt động được 2 năm chưa nhể
+  - năm nào thì công ty được thành lập hả
+  - '[f-tech](work_unit) mở được lâu chưa hả'
+  - chi nhánh [ftech](work_unit) [sa đéc](location) thành lập từ khi nào đó cậu
+  - timi biết [f-tech](work_unit) đi vào hoạt động lúc nào không
+  - '[f tech](work_unit) xuất phát điểm khi nào'
+  - '[ftech](work_unit) khai sinh được lâu chưa vậy hả'
+  - chi nhánh [ftech](work_unit) [đồng bằng bắc bộ](location) được sáng lập vào năm
+    nào
+  - chi nhánh công ty ở [thừa thiên huế](location) thành lập khi nào ạ
+  - bot cho mình hỏi công ty sáng lập từ khi nào
+  - công ty mình thành lập từ năm bao nhiêu
+  - công ty thành lập khi nào hả
+  - công ty được thành lập từ năm bao nhiêu
+  - văn phòng [sơn la](location) sinh nhật vào ngày mấy?
+  - chắc hẳn công ty cũng hơn 2 tuổi rồi nhỉ
+  - mầy cho tớ hỏi chi nhánh [bắc giang](location) sáng lập khi nào
+  - timi có biết công ty thành lập từ khi nào ko
+  - timi cho tớ hỏi [f-tech](work_unit) đi vào hoạt động từ bao giờ
+  - tớ muốn hỏi công ty thành lập từ khi nào
+  - hiện tại văn phòng [miền nam](location) được mấy tuổi rồi nhể
+  - cho mình hỏi công ty sáng lập khi nào
+  - công ty thành lập từ khi nào vậy
+  - '[f tech](work_unit) được 2 năm rồi nhỉ'
+  - công ty được thành lập từ bao giờ
+  - '[f-tech](work_unit) thành lập được 3 tháng rồi nhể'
+  - công ty sáng lập vào năm bao nhiêu vậy
+  - công ty đi vào hoạt động được 4 tháng chưa nhể
+  - năm nào thì công ty được thành lập vậy hả
+  - '[f-tech](work_unit) mở được lâu chưa vậy'
+  - văn phòng [TV](location) thành lập từ khi nào đó mày
+  - mày biết [f-tech](work_unit) đi vào hoạt động lúc nào không
+  - '[f tech](work_unit) xuất phát điểm từ khi nào'
+  - '[f-tech](work_unit) thành lập được lâu chưa vậy'
+  - văn phòng [ftech](work_unit) [BG](location) được thành lập vào năm nào
+  - văn phòng công ty ở [sa đéc](location) thành lập khi nào ạ
+  - bạn cho tôi hỏi công ty thành lập từ bao giờ
+  - công ty mình được thành lập từ năm nào
+  - công ty được sáng lập từ khi nào vậy hả
+  - công ty được thành lập từ năm nào vậy
+  - chi nhánh [f-tech](work_unit) [đồng tháp](location) sinh nhật vào ngày mấy?
+  - chắc công ty cũng hơn 3 tuổi rồi ha
+  - m cho mình hỏi chi nhánh [f tech](work_unit) [đà nẵng](location) sáng lập khi
+    nào
+  - cậu biết công ty sáng lập từ khi nào ko
+  - m cho mình hỏi [ftech](work_unit) đi vào hoạt động từ bao giờ
+  - tớ muốn hỏi công ty thành lập khi nào
+  - bây giờ văn phòng [ftech](work_unit) [Tràng An](location) được mấy tuổi rồi nhể
+  - cho mình hỏi công ty sáng lập từ khi nào
+  - công ty sáng lập từ bao giờ vậy
+  - '[f-tech](work_unit) được 1 năm rồi nhỉ'
+  - công ty được sáng lập từ bao giờ
+  - '[f tech](work_unit) ra đời chắc được 2 tháng rồi ha'
+  - công ty thành lập từ năm nào hả
+  - công ty đi vào hoạt động được 3 tháng chưa nhể
+  - năm nào thì công ty được thành lập
+  - '[ftech](work_unit) mở được lâu chưa vậy hả'
+  - chi nhánh [hồ chí minh](location) sáng lập từ khi nào đó timi
+  - mày biết [ftech](work_unit) đi vào hoạt động lúc nào không
+  - '[f-tech](work_unit) ra đời được lâu chưa'
+  - chi nhánh [f-tech](work_unit) [hà nội](location) được sáng lập vào năm nào
+  - chi nhánh công ty ở [đà nẵng](location) thành lập khi nào ạ
+  - cậu cho tớ hỏi công ty sáng lập khi nào
+  - công ty mình được thành lập vào năm bao nhiêu
+  - công ty sáng lập từ khi nào vậy hả
+  - công ty được sáng lập từ năm bao nhiêu
+  - văn phòng [HD](location) sinh nhật vào ngày mấy?
+  - chắc công ty cũng hơn 3 tuổi rồi nhỉ
+  - em cho tôi hỏi văn phòng [hn](location) sáng lập khi nào
+  - bot có biết công ty sáng lập từ khi nào ko
+  - bot cho tớ hỏi [ftech](work_unit) đi vào hoạt động từ bao giờ
+  - tôi muốn hỏi công ty thành lập từ bao giờ
+  - hiện tại văn phòng [HG](location) được mấy tuổi rồi nhể
+  - cho tớ hỏi công ty sáng lập khi nào
+  - công ty sáng lập từ bao giờ
+  - '[f tech](work_unit) được 1 năm rồi ha'
+  - công ty được thành lập khi nào vậy hả
+  - '[f tech](work_unit) khai sinh được 4 tháng rồi ha'
+  - công ty thành lập từ năm nào vậy hả
+  - công ty đi vào hoạt động được 2 năm chưa nhỉ
+  - năm bao nhiêu thì công ty được sáng lập vậy hả
+  - '[f tech](work_unit) mở được lâu chưa hả'
+  - chi nhánh [ftech](work_unit) [HD](location) thành lập từ khi nào đó bot
+  - em biết [f-tech](work_unit) đi vào hoạt động lúc nào ko
+  - '[f tech](work_unit) ra đời được lâu chưa'
+  - chi nhánh [hn](location) được sáng lập vào năm bao nhiêu
+  - văn phòng công ty ở [miền bắc](location) thành lập khi nào ạ
+  - timi cho tôi hỏi công ty thành lập từ khi nào
+  - công ty được sáng lập vào năm bao nhiêu vậy
+  - công ty thành lập khi nào vậy hả
+  - công ty được sáng lập từ năm nào vậy hả
+  - chi nhánh [ftech](work_unit) [an giang](location) sinh nhật vào ngày mấy?
+  - chắc hẳn công ty cũng hơn 2 tuổi rồi nhể
+  - timi cho tớ hỏi văn phòng [f tech](work_unit) [miền nam](location) thành lập từ
+    khi nào
+  - mầy biết công ty sáng lập từ khi nào ko
+  - em cho tôi hỏi [ftech](work_unit) đi vào hoạt động từ khi nào
+  - tôi muốn hỏi công ty sáng lập từ bao giờ
+  - bây giờ chi nhánh [VN](location) được mấy tuổi rồi ha
+  - cho tôi hỏi công ty thành lập từ bao giờ
+  - công ty thành lập từ bao giờ vậy
+  - '[ftech](work_unit) được 2 năm rồi nhể'
+  - công ty được thành lập từ khi nào
+  - '[f-tech](work_unit) thành lập chắc được 4 tháng rồi nhỉ'
+  - công ty sáng lập từ năm bao nhiêu
+  - công ty đi vào hoạt động được 2 tháng chưa nhể
+  - năm bao nhiêu thì công ty được sáng lập vậy
+  - '[f tech](work_unit) mở được lâu chưa vậy hả'
+  - chi nhánh [tp hồ chí minh](location) sáng lập khi nào đó mầy
+  - bạn biết [ftech](work_unit) đi vào hoạt động lúc nào không
+  - '[ftech](work_unit) chào đời được lâu chưa hả'
+  - chi nhánh [f-tech](work_unit) [đn](location) được thành lập vào năm bao nhiêu
+  - văn phòng công ty ở [cao bằng](location) thành lập khi nào ạ
+  - cậu cho tớ hỏi công ty thành lập từ khi nào
+  - công ty mình được thành lập vào năm nào
+  - công ty được sáng lập từ khi nào
+  - công ty được sáng lập từ năm bao nhiêu hả
+  - chi nhánh [f-tech](work_unit) [đồng bằng sông cưu long](location) sinh nhật vào
+    ngày mấy?
+  - chắc hẳn công ty cũng hơn 1 tuổi rồi ha
+  - m cho tớ hỏi chi nhánh [ftech](work_unit) [bắc trung bộ](location) sáng lập từ
+    bao giờ
+  - em biết công ty sáng lập từ bao giờ ko
+  - m cho tớ hỏi [ftech](work_unit) đi vào hoạt động khi nào
+  - tớ muốn hỏi công ty sáng lập từ khi nào
+  - bây giờ chi nhánh [f tech](work_unit) [tây nguyên](location) được mấy tuổi rồi
+    nhỉ
+  - cho tớ hỏi công ty thành lập từ khi nào
+  - công ty sáng lập từ khi nào hả
+  - '[ftech](work_unit) được 2 tuổi rồi ha'
+  - '[f-tech](work_unit) chào đời được 3 ngày rồi nhỉ'
+  - công ty sáng lập vào năm nào vậy
+  - công ty đi vào hoạt động được 3 tháng chưa ha
+  - năm bao nhiêu thì công ty được sáng lập hả
+  - văn phòng [f-tech](work_unit) [miền bắc](location) sáng lập khi nào đó mày
+  - bạn biết [f-tech](work_unit) đi vào hoạt động lúc nào ko
+  - '[ftech](work_unit) sáng lập được lâu chưa'
+  - chi nhánh [sài gòn](location) được sáng lập vào năm nào
+  - chi nhánh công ty ở [đn](location) thành lập khi nào ạ
+  - timi cho mình hỏi công ty thành lập khi nào
+  - công ty thành lập vào năm nào vậy
+  - công ty thành lập từ bao giờ
+  - công ty được thành lập từ năm nào vậy hả
+  - văn phòng [ftech](work_unit) [VN](location) sinh nhật vào ngày mấy?
+  - chắc công ty cũng hơn 2 tuổi rồi nhể
+  - m cho tôi hỏi chi nhánh [f-tech](work_unit) [HD](location) sáng lập khi nào
+  - mày có biết công ty thành lập từ khi nào ko
+  - em cho tôi hỏi [f-tech](work_unit) đi vào hoạt động khi nào
+  - mình muốn hỏi công ty sáng lập từ bao giờ
+  - hiện tại văn phòng [đà nẵng](location) được mấy tuổi rồi ha
+  - cho tôi hỏi công ty sáng lập từ khi nào
+  - công ty sáng lập khi nào hả
+  - '[f tech](work_unit) được 2 tuổi rồi ha'
+  - công ty được sáng lập từ bao giờ hả
+  - '[f tech](work_unit) khai sinh được 3 ngày rồi ha'
+  - công ty sáng lập từ năm nào
+  - công ty đi vào hoạt động được 4 năm chưa nhỉ
+  - năm nào thì công ty được sáng lập vậy
+  - chi nhánh [đồng bằng sông cưu long](location) sáng lập khi nào đó m
+  - mầy biết [f tech](work_unit) đi vào hoạt động lúc nào không
+  - '[f-tech](work_unit) thành lập được lâu chưa hả'
+  - chi nhánh [f tech](work_unit) [bắc giang](location) được thành lập vào năm nào
+  - chi nhánh công ty ở [dn](location) thành lập khi nào ạ
+  - bot cho tớ hỏi công ty thành lập từ khi nào
+  - công ty mình thành lập từ năm bao nhiêu hả
+  - công ty được thành lập từ năm bao nhiêu vậy
+  - văn phòng [cố đô huế](location) sinh nhật vào ngày mấy?
+  - chắc hẳn công ty cũng hơn 1 tuổi rồi nhỉ
+  - em cho tớ hỏi văn phòng [hà nội](location) sáng lập khi nào
+  - mầy biết công ty thành lập từ bao giờ không
+  - bot cho tớ hỏi [f-tech](work_unit) đi vào hoạt động từ bao giờ
+  - mình muốn hỏi công ty thành lập khi nào
+  - bây giờ văn phòng [LS](location) được mấy tuổi rồi nhỉ
+  - cho tôi hỏi công ty thành lập khi nào
+  - công ty thành lập từ khi nào vậy hả
+  - '[f-tech](work_unit) được 1 tuổi rồi ha'
+  - công ty được sáng lập khi nào vậy hả
+  - '[ftech](work_unit) chào đời được 3 ngày rồi nhể'
+  - công ty thành lập từ năm nào
+  - công ty đi vào hoạt động được 2 tháng chưa nhỉ
+  - năm nào thì công ty được sáng lập vậy hả
+  - văn phòng [BN](location) thành lập khi nào đó cậu
+  - m biết [ftech](work_unit) đi vào hoạt động lúc nào không
+  - '[f tech](work_unit) khai sinh được lâu chưa hả'
+  - chi nhánh [f tech](work_unit) [hà nội](location) được sáng lập vào năm bao nhiêu
+  - văn phòng công ty ở [pắc pó](location) thành lập khi nào ạ
+  - bot cho mình hỏi công ty thành lập khi nào
+  - công ty mình được thành lập từ năm bao nhiêu
+  - công ty sáng lập khi nào vậy
+  - công ty được sáng lập từ năm bao nhiêu vậy
+  - văn phòng [miền bắc](location) sinh nhật vào ngày mấy?
+  - chắc công ty cũng hơn 2 tuổi rồi ha
+  - bot cho tớ hỏi chi nhánh [f-tech](work_unit) [Việt Nam](location) thành lập khi
+    nào
+  - timi biết công ty sáng lập từ khi nào không
+  - em cho tớ hỏi [f-tech](work_unit) đi vào hoạt động khi nào
+  - tớ muốn hỏi công ty sáng lập từ bao giờ
+  - bây giờ văn phòng [f tech](work_unit) [VN](location) được mấy tuổi rồi ha
+  - cho tớ hỏi công ty sáng lập từ khi nào
+  - '[f-tech](work_unit) được 2 năm rồi ha'
+  - công ty được sáng lập khi nào vậy
+  - '[f-tech](work_unit) ra đời chắc được 2 tháng rồi nhỉ'
+  - công ty thành lập từ năm bao nhiêu
+  - công ty đi vào hoạt động được 3 năm chưa nhỉ
+  - năm nào thì công ty được thành lập vậy
+  - văn phòng [ftech](work_unit) [đn](location) sáng lập khi nào đó m
+  - bạn biết [f tech](work_unit) đi vào hoạt động lúc nào không
+  - '[ftech](work_unit) chào đời được lâu chưa'
+  - chi nhánh [f-tech](work_unit) [BN](location) được sáng lập vào năm bao nhiêu
+  - văn phòng công ty ở [phú yên](location) thành lập khi nào ạ
+  - em cho tớ hỏi công ty sáng lập khi nào
+  - công ty mình được sáng lập vào năm nào
+  - công ty được sáng lập từ năm nào hả
+  - văn phòng [f-tech](work_unit) [hn](location) sinh nhật vào ngày mấy?
+  - chắc hẳn công ty cũng hơn 1 tuổi rồi nhể
+  - mầy cho mình hỏi văn phòng [ftech](work_unit) [đồng bằng bắc bộ](location) sáng
+    lập từ khi nào
+  - bạn biết công ty thành lập từ khi nào không
+  - cậu cho tớ hỏi [ftech](work_unit) đi vào hoạt động từ bao giờ
+  - tôi muốn hỏi công ty sáng lập khi nào
+  - hiện tại chi nhánh [miền tây](location) được mấy tuổi rồi nhỉ
+  - cho tớ hỏi công ty sáng lập từ bao giờ
+  - công ty thành lập từ khi nào hả
+  - '[f-tech](work_unit) được 2 năm rồi nhỉ'
+  - công ty được thành lập từ khi nào hả
+  - '[f tech](work_unit) khai sinh chắc được 2 năm rồi ha'
+  - công ty sáng lập vào năm nào
+  - công ty đi vào hoạt động được 2 năm chưa ha
+  - văn phòng [f tech](work_unit) [hn](location) sáng lập khi nào đó mày
+  - em biết [f tech](work_unit) đi vào hoạt động lúc nào ko
+  - '[f-tech](work_unit) chào đời được lâu chưa'
+  - văn phòng [ftech](work_unit) [hn](location) được thành lập vào năm bao nhiêu
+  - văn phòng công ty ở [BN](location) thành lập khi nào ạ
+  - em cho mình hỏi công ty sáng lập từ bao giờ
+  - công ty thành lập từ năm bao nhiêu vậy hả
+  - văn phòng [đồng bằng sông cưu long](location) sinh nhật vào ngày mấy?
+  - chắc hẳn công ty cũng hơn 3 tuổi rồi nhể
+  - mầy cho tớ hỏi chi nhánh [f tech](work_unit) [TV](location) sáng lập từ khi nào
+  - mầy có biết công ty sáng lập từ bao giờ ko
+  - m cho tớ hỏi [f tech](work_unit) đi vào hoạt động khi nào
+  - tôi muốn hỏi công ty thành lập khi nào
+  - bây giờ chi nhánh [f-tech](work_unit) [đà nẵng](location) được mấy tuổi rồi ha
+  - cho tôi hỏi công ty thành lập từ khi nào
+  - '[f tech](work_unit) được 1 năm rồi nhể'
+  - '[f tech](work_unit) ra đời chắc được 3 tháng rồi nhể'
+  - công ty thành lập vào năm nào vậy hả
+  - văn phòng [Trung Quốc](location) sáng lập khi nào đó bạn
+  - m biết [f-tech](work_unit) đi vào hoạt động lúc nào ko
+  - '[ftech](work_unit) chào đời được lâu chưa vậy hả'
+  - chi nhánh [f-tech](work_unit) [Hàn](location) được thành lập vào năm bao nhiêu
+  - chi nhánh công ty ở [thái bình](location) thành lập khi nào ạ
+  - bot cho mình hỏi công ty thành lập từ bao giờ
+  - công ty mình sáng lập từ năm nào vậy hả
+  - công ty sáng lập khi nào vậy hả
+  - văn phòng [VN](location) sinh nhật vào ngày mấy?
+  - chắc hẳn công ty cũng hơn 3 tuổi rồi nhỉ
+  - mày cho tớ hỏi chi nhánh [Mỹ](location) sáng lập từ khi nào

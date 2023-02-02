@@ -1,0 +1,123 @@
+positives:
+- intent: faq/rec_ask_interview_criteria
+  examples:
+  - làm gì biết tớ có pass sau phỏng vấn
+  - cho mình xin tiêu chuẩn của [f-tech](work_unit) để lựa chọn candidate pass phỏng
+    vấn với
+  - công ty có chuẩn mực gì để đánh giá ứng viên không
+  - có cách nào để ứng viên tự xếp loại bản thân sau khi phỏng vấn ở [f-tech](work_unit)
+    ko ạ
+  - công ty có tiêu chí gì để đánh giá [junior](level_position) không
+  - dựa vào điều gì để biết mình được chọn nhỉ
+  - tôi muốn hỏi chuẩn mực đánh giá người xin việc của công ty [f tech](work_unit)
+    được không
+  - chỉ tiêu đánh giá candidate của công ty [f-tech](work_unit) có gắt không
+  - các tiêu chí đánh giá [senior](level_position)
+  - sao tôi biết mình là người được chọn vào công ty [f-tech](work_unit) vậy hả
+  - mình xin tiêu chi đánh giá [fresher](level_position)
+  - cho tôi hỏi tiêu chuẩn chọn thí sinh của bên em với
+  - làm gì biết tớ có đạt sau phỏng vấn
+  - cho tớ xin tiêu chuẩn của [f-tech](work_unit) để lựa chọn ứng viên xin việc pass
+    phỏng vấn với
+  - công ty có chỉ tiêu gì để đánh giá candidate ko
+  - có cách nào để candidate tự xếp loại bản thân sau khi phỏng vấn ở [f tech](work_unit)
+    ko ạ
+  - công ty có tiêu chuẩn gì để đánh giá [thử việc](level_position) không
+  - dựa vào cái gì để biết bản thân fail ha
+  - tớ muốn hỏi chuẩn đánh giá ứng viên xin việc của [f tech](work_unit)
+  - chuẩn đánh giá ứng viên xin việc của [f tech](work_unit) có cao ko
+  - các tiêu chí đánh giá [fresher](level_position)
+  - răng tôi biết mình là người được chọn vào công ty [ftech](work_unit) hả
+  - mình xin tiêu chi đánh giá [pre-senior](level_position)
+  - cho mình hỏi tiêu chí chọn ứng viên xin việc của bên mày
+  - làm như nào biết tôi có pass sau phỏng vấn
+  - cho tớ xin tiêu chuẩn của [f-tech](work_unit) để lựa chọn thí sinh pass phỏng
+    vấn với
+  - công ty có chuẩn mực gì để đánh giá người xin việc ko
+  - có cách nào để người xin việc tự xếp loại bản thân sau khi phỏng vấn ở [ftech](work_unit)
+    ko ạ
+  - công ty có chuẩn mực gì để đánh giá [sinh viên thực tập](level_position) ko
+  - dựa vào đâu để biết mình bị loại ha
+  - tớ muốn biết chỉ tiêu đánh giá ứng viên xin việc của [f tech](work_unit)
+  - chuẩn mực đánh giá người xin việc của [ftech](work_unit) có ghê không
+  - các tiêu chí đánh giá [junior](level_position)
+  - răn tôi biết bản thân là người được chọn vào công ty [ftech](work_unit) hả
+  - mình xin tiêu chi đánh giá [full-time](level_position)
+  - tôi muốn hỏi chuẩn mực chọn lọc ứng viên của bên timi với
+  - làm như thế nào biết tớ có đậu sau phỏng vấn
+  - cho mình xin tiêu chuẩn của [f tech](work_unit) để lựa chọn candidate pass phỏng
+    vấn với
+  - công ty có tiêu chuẩn gì để đánh giá thí sinh không
+  - có cách nào để thí sinh tự xếp loại bản thân sau khi phỏng vấn ở [f-tech](work_unit)
+    ko ạ
+  - công ty có chuẩn gì để đánh giá [thử việc](level_position) ko
+  - dựa vào điều gì để biết bản thân bị loại ha
+  - mình muốn biết chuẩn đánh giá người xin việc của công ty [f-tech](work_unit)
+  - tiêu chuẩn đánh giá candidate của [f-tech](work_unit) có gắt không
+  - các tiêu chí đánh giá [thử việc](level_position)
+  - sao mình biết mình là người được chọn vào công ty [f-tech](work_unit) vậy
+  - mình xin tiêu chi đánh giá [cộng tác viên](level_position)
+  - cho tớ hỏi tiêu chí chọn ứng viên xin việc của bên bạn
+  - làm như nào biết mình có đạt sau phỏng vấn
+  - cho tớ xin tiêu chuẩn của [f tech](work_unit) để lựa chọn ứng viên pass phỏng
+    vấn với
+  - công ty có tiêu chuẩn gì để đánh giá thí sinh ko
+  - có cách nào để ứng viên tự xếp loại bản thân sau khi phỏng vấn ở [f tech](work_unit)
+    ko ạ
+  - công ty có chuẩn mực gì để đánh giá [sinh viên thực tập](level_position) không
+  - dựa vào chuẩn mực gì để biết mình fail nhỉ
+  - tớ muốn biết chỉ tiêu đánh giá candidate của [ftech](work_unit) được không
+  - chỉ tiêu đánh giá người xin việc của công ty [ftech](work_unit) có ghê không
+  - các tiêu chí đánh giá [fulltime](level_position)
+  - răng tôi biết mình là người được chọn vào công ty [f tech](work_unit) vậy
+  - mình xin tiêu chi đánh giá [junior](level_position)
+  - mình muốn hỏi chuẩn mực chọn lọc người xin việc của bên bạn
+  - làm thế nào biết tớ có pass sau phỏng vấn
+  - cho tớ xin tiêu chuẩn của [f-tech](work_unit) để lựa chọn candidate pass phỏng
+    vấn với
+  - công ty có tiêu chuẩn gì để đánh giá ứng viên xin việc ko
+  - có cách nào để người xin việc tự xếp loại bản thân sau khi phỏng vấn ở [f tech](work_unit)
+    ko ạ
+  - công ty có chỉ tiêu gì để đánh giá [thử việc](level_position) không
+  - dựa vào chuẩn mực gì để biết bản thân đậu ha
+  - mình muốn hỏi chuẩn mực đánh giá ứng viên xin việc của công ty [f-tech](work_unit)
+    đc ko
+  - chuẩn đánh giá người xin việc của [ftech](work_unit) có khó không
+  - các tiêu chí đánh giá [full time](level_position)
+  - sao mình biết mình là trúng tuyển công ty [f-tech](work_unit) vậy hả
+  - mình xin tiêu chi đánh giá [thử việc](level_position)
+  - tôi muốn hỏi tiêu chuẩn chọn lọc người xin việc của bên cậu
+  - làm như thế nào biết tớ có pass sau phỏng vấn
+  - cho tớ xin tiêu chuẩn của [ftech](work_unit) để lựa chọn ứng viên xin việc pass
+    phỏng vấn với
+  - công ty có chỉ tiêu gì để đánh giá candidate không
+  - có cách nào để người xin việc tự xếp loại bản thân sau khi phỏng vấn ở [f-tech](work_unit)
+    ko ạ
+  - công ty có chỉ tiêu gì để đánh giá [svtt](level_position) ko
+  - dựa vào đâu để biết bản thân trượt nhể
+  - tôi muốn hỏi tiêu chuẩn đánh giá candidate của [f-tech](work_unit) đc ko
+  - chỉ tiêu đánh giá ứng viên của công ty [ftech](work_unit) có khó không
+  - các tiêu chí đánh giá [pre-senior](level_position)
+  - răng mình biết mình là trúng tuyển vào công ty [f tech](work_unit) hả
+  - mình xin tiêu chi đánh giá [fulltime](level_position)
+  - cho tôi hỏi chỉ tiêu chọn lọc ứng viên xin việc của bên timi với
+  - làm thế nào biết tôi có đạt sau phỏng vấn
+  - cho tôi xin tiêu chuẩn của [f tech](work_unit) để lựa chọn người xin việc pass
+    phỏng vấn với
+  - công ty có tiêu chuẩn gì để đánh giá người xin việc không
+  - có cách nào để thí sinh tự xếp loại bản thân sau khi phỏng vấn ở [f tech](work_unit)
+    ko ạ
+  - công ty có tiêu chuẩn gì để đánh giá [fresher](level_position) không
+  - dựa vào cái gì để biết bản thân trượt nhỉ
+  - mình muốn hỏi chuẩn đánh giá candidate của công ty [f tech](work_unit) đc không
+  - tiêu chí đánh giá người xin việc của công ty [ftech](work_unit) có khó ko
+  - các tiêu chí đánh giá [trainee](level_position)
+  - răng tôi biết mình là trúng tuyển vào công ty [f tech](work_unit) hả
+  - mình xin tiêu chi đánh giá [senior](level_position)
+  - cho mình hỏi tiêu chuẩn chọn lọc thí sinh của bên m
+  - làm như thế nào biết tôi có đạt sau phỏng vấn
+  - cho tôi xin tiêu chuẩn của [f-tech](work_unit) để lựa chọn ứng viên pass phỏng
+    vấn với
+  - công ty có chuẩn mực gì để đánh giá ứng viên xin việc ko
+  - có cách nào để ứng viên xin việc tự xếp loại bản thân sau khi phỏng vấn ở [f tech](work_unit)
+    ko ạ

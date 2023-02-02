@@ -1,0 +1,336 @@
+positives:
+- intent: faq/rec_ask_introduce_candidate
+  examples:
+  - '[f-tech](work_unit) trả tiền ref có cao không'
+  - tớ muốn có thêm information về việc nhận tiền bên bạn
+  - giới thiêu candidate cho cho công ty là như thế nào đó mày
+  - cho tớ hỏi gửi resume người xin việc cho [f-tech](work_unit) thì có được nhận
+    tiền không
+  - chế độ giới thiệu nhân viên như thế nào
+  - công ty có thưởng tiền ref ko
+  - công ty có đãi ngộ giới thiệu nhân viên không
+  - bạn có biết khi giới thiêu ứng viên xin việc cho cho công ty thì có được bonus
+    gì không
+  - đãi ngộ của công ty như nào khi chị giới thiệu ứng viên xin việc cho công ty
+  - '[f-tech](work_unit) có chính sách nào cho vấn đề tuyển dụng nhân sự'
+  - cho xin ít thong tin về việc giới thiệu người xin việc với
+  - anh xin chính sách trợ cấp giới thiệu thí sinh
+  - công ty trợ cấp như thế nào khi chị giới thiệu [internship](level_position) vào
+    làm
+  - '[f-tech](work_unit) có thưởng reference ứng viên'
+  - ' giới thiệu [tts](level_position) có được tiền bonus không'
+  - tớ gửi CV ứng viên cho [f-tech](work_unit) thì có được nhận tiền không
+  - giới thiệu candidate có nhận được tiền
+  - ' tớ giới thiệu thí sinh cho công ty thì như thế nào'
+  - người ngoài giới thiệu ứng viên có nhận được gì không
+  - có tiền giới thiệu khi gửi curriculum vitae ko
+  - khi giới thiệu ứng viên xin việc vào làm có được gì ko
+  - giới thiệu người vào [f tech](work_unit) có được gì không
+  - gửi người vào làm cho [f-tech](work_unit) có được hưởng hoa hồng không
+  - chế độ bonus khi giới thiệu [trainee](level_position) ntn
+  - tớ giới thiệu [svtt](level_position) thì được nhận mức bonus như nào
+  - tôi muốn hỏi về cái giới thiêu ứng viên xin việc cho cho công ty là như nào
+  - cho tôi xin information các hỗ trợ khi giới thiệu người vào làm cho [f tech](work_unit)
+  - anh giới thiệu nhân viên thì được thưởng bao nhiêu
+  - gửi curriculum vitae của [trainee](level_position) cho [HR and Admin](department)
+    có được tiền
+  - cho mình hỏi là khi giới thiệu nhân viên vào làm có được đãi ngộ ko
+  - mình giới thiệu nhân viên có được nhân bonus ko
+  - '[f-tech](work_unit) trả tiền reference có cao không'
+  - mình muốn có thêm thông tin về việc nhận tiền bên bạn
+  - giới thiêu ứng viên xin việc cho vào làm là thế nào đó bạn
+  - tôi muốn hỏi gửi CV candidate cho [f-tech](work_unit) thì có được nhận tiền reference
+    không
+  - chế độ giới thiệu nhân viên ntn
+  - công ty có thưởng tiền ref
+  - công ty có bonus giới thiệu ứng viên xin việc ko
+  - bạn có biết khi giới thiêu ứng viên xin việc cho vào làm thì có được trợ cấp gì
+    ko
+  - đãi ngộ của công ty như nào khi mình giới thiệu candidate vào làm
+  - '[f tech](work_unit) có chính sách nào cho vấn đề tuyển chọn nhân sự không'
+  - cho xin ít thong tin về việc giới thiệu candidate với
+  - ' xin chính sách bonus giới thiệu nhân viên'
+  - công ty thưởng như nào khi mình giới thiệu ứng viên xin việc cho công ty
+  - '[ftech](work_unit) có cho tiền ref thí sinh'
+  - tớ giới thiệu nhân viên có được tiền thưởng ko
+  - mình gửi curriculum vitae ứng viên xin việc cho [f tech](work_unit) thì có được
+    nhận tiền reference không
+  - giới thiệu thí sinh có nhận được tiền
+  - ' giới thiệu người vào làm cho công ty thì như nào'
+  - người ngoài giới thiệu ứng viên xin việc có nhận được gì không
+  - có tiền giới thiệu khi gửi hồ sơ không
+  - khi giới thiệu nhân viên vào làm có được trợ cấp không
+  - giới thiệu người vào [ftech](work_unit) có được nhận gì không
+  - gửi người vào làm cho [f-tech](work_unit) có được hưởng hoa hồng ko
+  - chế độ đãi ngộ khi giới thiệu ứng viên ntn
+  - ' giới thiệu candidate thì được nhận mức bonus như nào'
+  - mình muốn hỏi về cái giới thiêu candidate cho cho công ty là thế nào
+  - cho tôi xin thông tin các quyền lợi khi giới thiệu người vào làm cho [f-tech](work_unit)
+  - tớ giới thiệu nhân viên thì được phúc lợi bao nhiêu
+  - gửi sơ yếu lý lịch của [junior](level_position) cho [nhân sự](department) có được
+    tiền không
+  - cho mình hỏi là khi giới thiệu nhân viên vào làm có được thưởng tiền không
+  - ' giới thiệu [trainee](level_position) có được nhân trợ cấp không'
+  - '[f-tech](work_unit) trả tiền có cao không'
+  - tớ muốn có thêm info về việc nhận tiền bên bạn
+  - giới thiêu người xin việc cho vào làm là như thế nào đó cậu
+  - cho tôi hỏi gửi CV ứng viên cho [f-tech](work_unit) thì có được nhận tiền ko
+  - chế độ giới thiệu [thực tập sinh](level_position) ntn
+  - công ty có thưởng tiền reference ko
+  - công ty có thưởng giới thiệu [intern](level_position) không
+  - m có biết khi giới thiêu ứng viên cho cho công ty thì có được bonus gì ko
+  - đãi ngộ của công ty như nào khi tớ giới thiệu [intern](level_position) cho công
+    ty
+  - '[f-tech](work_unit) có chính sách nào cho vấn đề tuyển ko'
+  - cho xin ít thong tin về việc giới thiệu ứng viên xin việc với
+  - ' xin chính sách phúc lợi giới thiệu [internship](level_position)'
+  - công ty bonus như nào khi chị giới thiệu nhân viên cho công ty
+  - '[f tech](work_unit) có thưởng reference candidate ko'
+  - ' giới thiệu ứng viên có được tiền thưởng không'
+  - tớ gửi sơ yếu lý lịch thí sinh cho [ftech](work_unit) thì có được nhận tiền reference
+    ko
+  - giới thiệu người xin việc có nhận được phúc lợi
+  - nếu giới thiệu ứng viên xin việc cho công ty thì như nào
+  - người ngoài giới thiệu người vào làm có nhận được gì ko
+  - có tiền giới thiệu khi gửi resume ko
+  - khi giới thiệu candidate vào làm có được thưởng tiền không
+  - giới thiệu nhận sự vào [f tech](work_unit) có được nhận gì không
+  - gửi người vào làm cho [f-tech](work_unit) có được hưởng hoa hồng
+  - chế độ benefit khi giới thiệu nhân viên ntn
+  - ' giới thiệu ứng viên xin việc thì được nhận mức trợ cấp như nào'
+  - tôi muốn hỏi về cái giới thiêu người xin việc cho vào làm là như nào
+  - cho tôi xin information các chính sách khi giới thiệu ứng viên cho [f-tech](work_unit)
+  - anh giới thiệu ứng viên thì được thưởng bao nhiêu
+  - gửi hồ sơ của [senior](level_position) cho [HR and Admin](department) có được
+    tiền ref ko
+  - cho mình hỏi là khi giới thiệu thí sinh vào làm có được thưởng tiền không
+  - ' giới thiệu nhân viên có được nhân trợ cấp không'
+  - '[ftech](work_unit) trả tiền có cao ko'
+  - tớ muốn có thêm thông tin về việc nhận tiền bên bạn
+  - giới thiêu ứng viên cho cho công ty là thế nào đó timi
+  - tớ muốn hỏi gửi resume ứng viên cho [f tech](work_unit) thì có được nhận tiền
+    không
+  - chế độ giới thiệu ứng viên ntn
+  - công ty có thưởng tiền reference không
+  - công ty có đãi ngộ giới thiệu [thực tập sinh](level_position) ko
+  - m có biết khi giới thiêu ứng viên xin việc cho cho công ty thì có được benefit
+    gì ko
+  - đãi ngộ của công ty thế nào khi tớ giới thiệu [internship](level_position) vào
+    làm
+  - '[f-tech](work_unit) có chính sách nào cho vấn đề tuyển nhân sự ko'
+  - cho xin ít thong tin về việc giới thiệu thí sinh với
+  - anh xin chính sách phúc lợi giới thiệu nhân viên
+  - công ty phúc lợi thế nào khi mình giới thiệu [tts](level_position) vào làm
+  - '[f-tech](work_unit) có cho tiền ref ứng viên xin việc'
+  - chị giới thiệu nhân viên có được tiền bonus ko
+  - mình gửi curriculum vitae candidate cho [ftech](work_unit) thì có được nhận tiền
+    ko
+  - giới thiệu candidate có nhận được trợ cấp ko
+  - nếu giới thiệu người vào làm cho công ty thì thế nào
+  - người ngoài giới thiệu người vào làm có nhận được gì không
+  - có tiền giới thiệu khi gửi CV ko
+  - khi giới thiệu [tts](level_position) vào làm có được thưởng tiền ko
+  - giới thiệu người vào [f tech](work_unit) có được nhận gì không
+  - gửi người vào làm cho [f tech](work_unit) có được hưởng hoa hồng không
+  - chế độ trợ cấp khi giới thiệu [svtt](level_position) ntn
+  - tớ giới thiệu nhân viên thì được nhận mức bonus như nào
+  - tớ muốn hỏi về cái giới thiêu thí sinh cho vào làm là như thế nào
+  - cho tôi xin thông tin các hỗ trợ khi giới thiệu người vào làm cho [f-tech](work_unit)
+  - tớ giới thiệu candidate thì được đãi ngộ bao nhiêu
+  - gửi resume của [fulltime](level_position) cho [HR and Admin](department) có được
+    tiền reference
+  - cho anh hỏi là khi giới thiệu nhân viên vào làm có được thưởng tiền ko
+  - ' giới thiệu [thực tập sinh](level_position) có được nhân bonus không'
+  - '[f tech](work_unit) trả tiền có cao ko'
+  - tớ muốn có thêm thông tin về việc nhận tiền ref bên bạn
+  - giới thiêu candidate cho cho công ty là thế nào đó cậu
+  - tớ muốn hỏi gửi curriculum vitae người xin việc cho [f-tech](work_unit) thì có
+    được nhận tiền không
+  - chế độ giới thiệu candidate như thế nào
+  - công ty có thưởng tiền ref không
+  - công ty có thưởng giới thiệu ứng viên không
+  - bot có biết khi giới thiêu người xin việc cho vào làm thì có được benefit gì không
+  - đãi ngộ của công ty thế nào khi mình giới thiệu thí sinh cho công ty
+  - '[f tech](work_unit) có chính sách nào cho vấn đề tuyển ko'
+  - cho xin ít thong tin về việc giới thiệu ứng viên với
+  - ' xin chính sách phúc lợi giới thiệu người xin việc'
+  - công ty thưởng như thế nào khi tớ giới thiệu [thực tập sinh](level_position) cho
+    công ty
+  - '[f-tech](work_unit) có thưởng ref ứng viên xin việc'
+  - ' giới thiệu ứng viên xin việc có được tiền thưởng ko'
+  - tớ gửi CV candidate cho [ftech](work_unit) thì có được nhận tiền ref ko
+  - giới thiệu thí sinh có nhận được đãi ngộ ko
+  - nếu giới thiệu người vào làm cho công ty thì như nào
+  - người ngoài giới thiệu ứng viên xin việc có nhận được gì ko
+  - có tiền giới thiệu khi gửi sơ yếu lý lịch ko
+  - khi giới thiệu nhân viên vào làm có được trợ cấp ko
+  - giới thiệu nhân viên vào [f-tech](work_unit) có được nhận gì ko
+  - gửi thí sinh cho [ftech](work_unit) có được hưởng hoa hồng
+  - chế độ đãi ngộ khi giới thiệu người xin việc ntn
+  - mình giới thiệu nhân viên thì được nhận mức trợ cấp như nào
+  - mình muốn hỏi về cái giới thiêu ứng viên cho cho công ty là thế nào
+  - cho tớ xin info các phúc lợi khi giới thiệu ứng viên cho [f tech](work_unit)
+  - ' giới thiệu nhân viên thì được thưởng bao nhiêu'
+  - gửi sơ yếu lý lịch của [fresher](level_position) cho [nhân sự](department) có
+    được tiền
+  - cho mình hỏi là khi giới thiệu candidate vào làm có được thưởng tiền ko
+  - anh giới thiệu [internship](level_position) có được nhân trợ cấp ko
+  - '[ftech](work_unit) trả tiền có cao không'
+  - tôi muốn có thêm information về việc nhận tiền ref bên bạn
+  - giới thiêu thí sinh cho cho công ty là như thế nào đó mày
+  - tớ muốn hỏi gửi sơ yếu lý lịch candidate cho [f tech](work_unit) thì có được nhận
+    tiền không
+  - chế độ giới thiệu ứng viên xin việc như thế nào
+  - công ty có thưởng tiền reference
+  - công ty có phúc lợi giới thiệu người xin việc ko
+  - timi có biết khi giới thiêu ứng viên cho cho công ty thì có được trợ cấp gì ko
+  - đãi ngộ của công ty thế nào khi mình giới thiệu candidate cho công ty
+  - '[f tech](work_unit) có chính sách nào cho vấn đề tuyển dụng nhân sự ko'
+  - chị xin chính sách đãi ngộ giới thiệu người xin việc
+  - công ty thưởng như thế nào khi mình giới thiệu ứng viên vào làm
+  - '[f tech](work_unit) có thưởng reference người xin việc'
+  - anh giới thiệu [intern](level_position) có được tiền bonus ko
+  - mình gửi sơ yếu lý lịch ứng viên xin việc cho [f-tech](work_unit) thì có được
+    nhận tiền reference không
+  - giới thiệu ứng viên xin việc có nhận được đãi ngộ không
+  - nếu tôi giới thiệu thí sinh cho công ty thì như thế nào
+  - người ngoài giới thiệu ứng viên có nhận được gì ko
+  - có tiền giới thiệu khi gửi CV không
+  - khi giới thiệu [thực tập sinh](level_position) vào làm có được gì không
+  - giới thiệu thành viên vào [f-tech](work_unit) có được gì không
+  - gửi người xin việc cho [f-tech](work_unit) có được hưởng hoa hồng không
+  - chế độ phúc lợi khi giới thiệu nhân viên ntn
+  - anh giới thiệu ứng viên thì được nhận mức đãi ngộ như nào
+  - mình muốn hỏi về cái giới thiêu candidate cho vào làm là như nào
+  - cho tớ xin info các phúc lợi khi giới thiệu người vào làm cho [f tech](work_unit)
+  - ' giới thiệu [pretrain](level_position) thì được phúc lợi bao nhiêu'
+  - gửi hồ sơ của [fresher](level_position) cho [hành chính nhân sự](department) có
+    được tiền ko
+  - cho chị hỏi là khi giới thiệu ứng viên vào làm có được thưởng tiền không
+  - mình giới thiệu nhân viên có được nhân benefit ko
+  - '[f tech](work_unit) trả tiền ref có cao ko'
+  - tôi muốn có thêm thông tin về việc nhận tiền bên bạn
+  - giới thiêu người xin việc cho vào làm là như nào đó mầy
+  - mình muốn hỏi gửi sơ yếu lý lịch candidate cho [f-tech](work_unit) thì có được
+    nhận tiền reference ko
+  - chế độ giới thiệu [intern](level_position) như thế nào
+  - công ty có bonus giới thiệu ứng viên ko
+  - em có biết khi giới thiêu ứng viên xin việc cho cho công ty thì có được thưởng
+    gì ko
+  - đãi ngộ của công ty như nào khi chị giới thiệu nhân viên cho công ty
+  - '[f tech](work_unit) có chính sách nào cho vấn đề tuyển dụng nhân sự'
+  - ' xin chính sách đãi ngộ giới thiệu candidate'
+  - công ty đãi ngộ như thế nào khi chị giới thiệu nhân viên vào làm
+  - '[f tech](work_unit) có cho tiền ref ứng viên xin việc ko'
+  - ' giới thiệu [internship](level_position) có được tiền thưởng ko'
+  - tớ gửi curriculum vitae ứng viên cho [f tech](work_unit) thì có được nhận tiền
+    không
+  - giới thiệu candidate có nhận được bonus không
+  - nếu mình giới thiệu thí sinh cho công ty thì thế nào
+  - người ngoài giới thiệu thí sinh có nhận được gì ko
+  - có tiền giới thiệu khi gửi resume không
+  - khi giới thiệu [intern](level_position) vào làm có được thưởng tiền không
+  - giới thiệu nhân viên vào [f tech](work_unit) có được gì ko
+  - gửi người vào làm cho [ftech](work_unit) có được hưởng hoa hồng không
+  - chế độ trợ cấp khi giới thiệu nhân viên ntn
+  - mình giới thiệu [internship](level_position) thì được nhận mức trợ cấp như nào
+  - tớ muốn hỏi về cái giới thiêu ứng viên cho vào làm là thế nào
+  - cho tớ xin information các quyền lợi khi giới thiệu ứng viên cho [f tech](work_unit)
+  - anh giới thiệu nhân viên thì được phúc lợi bao nhiêu
+  - gửi curriculum vitae của [full-time](level_position) cho [hành chính nhân sự](department)
+    có được tiền reference
+  - cho mình hỏi là khi giới thiệu ứng viên vào làm có được trợ cấp ko
+  - anh giới thiệu thí sinh có được nhân benefit ko
+  - '[f tech](work_unit) trả tiền ref có cao không'
+  - tôi muốn có thêm information về việc nhận tiền bên bạn
+  - giới thiêu ứng viên cho vào làm là thế nào đó bot
+  - tớ muốn hỏi gửi curriculum vitae ứng viên cho [f-tech](work_unit) thì có được
+    nhận tiền ref không
+  - chế độ giới thiệu ứng viên như thế nào
+  - công ty có thưởng giới thiệu [tts](level_position) ko
+  - timi có biết khi giới thiêu ứng viên xin việc cho cho công ty thì có được thưởng
+    gì không
+  - đãi ngộ của công ty như nào khi tớ giới thiệu ứng viên xin việc vào làm
+  - '[ftech](work_unit) có chính sách nào cho vấn đề tuyển nhân viên'
+  - chị xin chính sách trợ cấp giới thiệu [thực tập sinh](level_position)
+  - công ty phúc lợi như thế nào khi chị giới thiệu [sinh viên thực tập](level_position)
+    cho công ty
+  - '[ftech](work_unit) có cho tiền ref ứng viên xin việc không'
+  - anh giới thiệu thí sinh có được tiền bonus ko
+  - tớ gửi sơ yếu lý lịch candidate cho [f-tech](work_unit) thì có được nhận tiền
+    ko
+  - giới thiệu candidate có nhận được benefit
+  - nếu tớ giới thiệu thí sinh cho công ty thì như thế nào
+  - người ngoài giới thiệu thí sinh có nhận được gì không
+  - có tiền giới thiệu khi gửi hồ sơ ko
+  - khi giới thiệu ứng viên xin việc vào làm có được gì không
+  - giới thiệu nhận sự vào [ftech](work_unit) có được nhận gì ko
+  - gửi ứng viên xin việc cho [f-tech](work_unit) có được hưởng hoa hồng
+  - chế độ phúc lợi khi giới thiệu thí sinh ntn
+  - ' giới thiệu nhân viên thì được nhận mức bonus như nào'
+  - mình muốn hỏi về cái giới thiêu người xin việc cho cho công ty là như nào
+  - cho tớ xin information các chính sách khi giới thiệu người vào làm cho [f-tech](work_unit)
+  - anh giới thiệu [intern](level_position) thì được thưởng bao nhiêu
+  - gửi resume của [fresher](level_position) cho [nhân sự](department) có được tiền
+  - cho mình hỏi là khi giới thiệu nhân viên vào làm có được benefit không
+  - ' giới thiệu nhân viên có được nhân bonus không'
+  - '[f-tech](work_unit) trả tiền ref có cao ko'
+  - mình muốn có thêm info về việc nhận tiền bên bạn
+  - giới thiêu người xin việc cho cho công ty là thế nào đó timi
+  - mình muốn hỏi gửi hồ sơ người xin việc cho [ftech](work_unit) thì có được nhận
+    tiền reference ko
+  - chế độ giới thiệu [thực tập sinh](level_position) như thế nào
+  - công ty có benefit giới thiệu [trainee](level_position) không
+  - m có biết khi giới thiêu ứng viên cho vào làm thì có được bonus gì ko
+  - đãi ngộ của công ty như nào khi chị giới thiệu ứng viên xin việc vào làm
+  - '[f tech](work_unit) có chính sách nào cho vấn đề recruitment không'
+  - chị xin chính sách phúc lợi giới thiệu [thực tập sinh](level_position)
+  - công ty bonus thế nào khi mình giới thiệu [svtt](level_position) cho công ty
+  - '[f tech](work_unit) có cho tiền ref thí sinh'
+  - ' giới thiệu nhân viên có được tiền bonus ko'
+  - tớ gửi CV candidate cho [ftech](work_unit) thì có được nhận tiền không
+  - giới thiệu ứng viên có nhận được thưởng ko
+  - nếu tớ giới thiệu ứng viên xin việc cho công ty thì như nào
+  - người ngoài giới thiệu candidate có nhận được gì ko
+  - có tiền giới thiệu khi gửi sơ yếu lý lịch không
+  - khi giới thiệu người xin việc vào làm có được gì ko
+  - giới thiệu nhận sự vào [ftech](work_unit) có được gì ko
+  - gửi ứng viên cho [f tech](work_unit) có được hưởng hoa hồng
+  - chế độ đãi ngộ khi giới thiệu [trainee](level_position) ntn
+  - ' giới thiệu thí sinh thì được nhận mức bonus như nào'
+  - mình muốn hỏi về cái giới thiêu ứng viên cho cho công ty là như thế nào
+  - cho mình xin thông tin các hỗ trợ khi giới thiệu thí sinh cho [f-tech](work_unit)
+  - mình giới thiệu nhân viên thì được thưởng bao nhiêu
+  - gửi CV của [junior](level_position) cho [hr admin](department) có được tiền reference
+  - cho anh hỏi là khi giới thiệu candidate vào làm có được thưởng tiền không
+  - tớ giới thiệu nhân viên có được nhân benefit không
+  - '[ftech](work_unit) trả tiền reference có cao ko'
+  - tôi muốn có thêm info về việc nhận tiền bên bạn
+  - giới thiêu ứng viên xin việc cho vào làm là như thế nào đó m
+  - tớ muốn hỏi gửi CV ứng viên cho [f tech](work_unit) thì có được nhận tiền ko
+  - chế độ giới thiệu [internship](level_position) ntn
+  - công ty có phúc lợi giới thiệu ứng viên xin việc không
+  - timi có biết khi giới thiêu thí sinh cho vào làm thì có được thưởng gì ko
+  - đãi ngộ của công ty như nào khi tớ giới thiệu ứng viên vào làm
+  - '[ftech](work_unit) có chính sách nào cho vấn đề recruitment ko'
+  - ' xin chính sách đãi ngộ giới thiệu người xin việc'
+  - công ty thưởng thế nào khi mình giới thiệu [svtt](level_position) cho công ty
+  - '[f-tech](work_unit) có thưởng reference candidate'
+  - mình giới thiệu [sinh viên thực tập](level_position) có được tiền thưởng ko
+  - tôi gửi sơ yếu lý lịch ứng viên xin việc cho [f-tech](work_unit) thì có được nhận
+    tiền reference không
+  - giới thiệu ứng viên có nhận được thưởng không
+  - nếu giới thiệu người vào làm cho công ty thì như thế nào
+  - người ngoài giới thiệu candidate có nhận được gì không
+  - có tiền giới thiệu khi gửi curriculum vitae không
+  - khi giới thiệu [intern](level_position) vào làm có được bonus ko
+  - giới thiệu nhận sự vào [f-tech](work_unit) có được gì không
+  - gửi người xin việc cho [f tech](work_unit) có được hưởng hoa hồng
+  - chế độ bonus khi giới thiệu [pretrain](level_position) ntn
+  - ' giới thiệu nhân viên thì được nhận mức trợ cấp như nào'
+  - tớ muốn hỏi về cái giới thiêu candidate cho vào làm là như nào
+  - cho tớ xin info các hỗ trợ khi giới thiệu người xin việc cho [f tech](work_unit)
+  - ' giới thiệu người xin việc thì được bonus bao nhiêu'
+  - gửi sơ yếu lý lịch của [full time](level_position) cho [hr admin](department)
+    có được tiền ko
+  - cho mình hỏi là khi giới thiệu người xin việc vào làm có được thưởng tiền không
