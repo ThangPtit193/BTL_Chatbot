@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_leave_days
   examples:
   - '[chủ nhật](time) [tuânf tới đây](time) và [thứ năm](time) [tuânf tới nữa](time)

@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rec_ask_remote
   examples:
   - phòng ban [kế toán](department) có tuyển nhân sự làm từ xa

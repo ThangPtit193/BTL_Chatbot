@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+negatives:
 - intent: ood_real_estate
   examples:
   - vị trí của khu căn hộ cao cấp Louis City Xuân Phương như thế nào

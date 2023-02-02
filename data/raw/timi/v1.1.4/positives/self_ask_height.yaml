@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: self_ask_height
   examples:
   - chiều cao của em chắc tầm mét mốt không hả

@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+negatives:
 - intent: ood_politics
   examples:
   - bộ xậy dựng giữ vài trò gì trong cơ quan nhà nước vậy

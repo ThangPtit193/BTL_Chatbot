@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: knowledge_ask_place_traveling
   examples:
   - ' suy nghĩ xem nên đi đâu ở [lâm đồng](location) giờ ha'

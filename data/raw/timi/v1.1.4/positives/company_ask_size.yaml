@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_size
   examples:
   - em cho chị hỏi về quy mô công ty mình nha

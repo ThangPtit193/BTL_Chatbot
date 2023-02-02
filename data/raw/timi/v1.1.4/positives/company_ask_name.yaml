@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_name
   examples:
   - công ty bên mầy tên đầy đủ là [công nghệ và gia đình](work_unit) hà

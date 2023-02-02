@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+negatives:
 - intent: ood_economy
   examples:
   - Những vấn đề khó khăn đang gặp phải của kinh tế Việt Nam

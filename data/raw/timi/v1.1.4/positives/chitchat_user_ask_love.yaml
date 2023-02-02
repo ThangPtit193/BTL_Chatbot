@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: chitchat_user_ask_love
   examples:
   - m hỏi tình yêu khác với tình thương là gì không

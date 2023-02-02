@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: chitchat_user_want_lover
   examples:
   - có nơi đâu phát bạn gái không

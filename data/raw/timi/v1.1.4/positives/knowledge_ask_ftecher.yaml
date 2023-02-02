@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: knowledge_ask_ftecher
   examples:
   - giới thiệu về [Nguyễn Thúc Thuỳ Tiên](person_name) đi

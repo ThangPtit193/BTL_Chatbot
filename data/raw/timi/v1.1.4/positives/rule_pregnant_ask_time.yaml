@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_pregnant_ask_time
   examples:
   - '[f-tech](work_unit) có nội quy gì về thời gian làm việc cho phụ nữ mang thai

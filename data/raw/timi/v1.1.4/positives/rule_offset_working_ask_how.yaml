@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_offset_working_ask_how
   examples:
   - nội quy về làm bù giờ thế nào

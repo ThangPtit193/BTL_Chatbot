@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_insurance_ask_different
   examples:
   - ai là người được đóng bảo hiểm xã hội cao cấp thế

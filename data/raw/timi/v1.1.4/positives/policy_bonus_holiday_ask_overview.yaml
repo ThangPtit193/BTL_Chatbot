@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_bonus_holiday_ask_overview
   examples:
   - vào dịp lễ tết công ty tiền thưởng được tính ra sao?

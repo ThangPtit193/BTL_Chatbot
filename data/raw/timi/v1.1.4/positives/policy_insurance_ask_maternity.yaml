@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_insurance_ask_maternity
   examples:
   - công ty có bao nhiêu loại chính sách thai sản

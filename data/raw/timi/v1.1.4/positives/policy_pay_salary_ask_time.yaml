@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_pay_salary_ask_time
   examples:
   - hàng tháng trả salary vào ngày bao nhiêu

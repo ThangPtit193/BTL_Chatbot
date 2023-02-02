@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_time_off_ask_rule
   examples:
   - quy chế về xin ra giữa giờ như thế nào

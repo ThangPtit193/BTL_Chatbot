@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_overview
   examples:
   - em có thể cho c xin thông tin về công ty đc không

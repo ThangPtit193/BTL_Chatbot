@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: knowledge_ask_coin_price
   examples:
   - giá cả loại tiền coin thời điểm hiện tại là ra sao

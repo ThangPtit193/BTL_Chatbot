@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rec_ask_job_description
   examples:
   - tớ muốn job description [thử việc](level_position) [quản lý nhân sự](position)

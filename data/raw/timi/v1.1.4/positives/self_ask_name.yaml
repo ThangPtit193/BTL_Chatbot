@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: self_ask_name
   examples:
   - cậu có thể cho tôi hỏi tên đủ đầy của cậu là gì

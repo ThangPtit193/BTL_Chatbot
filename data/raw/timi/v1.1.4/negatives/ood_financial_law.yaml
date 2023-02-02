@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+negatives:
 - intent: ood_financial_law
   examples:
   - Phân biệt người chịu thuế, người nộp thuế?

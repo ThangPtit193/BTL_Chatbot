@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+negatives:
 - intent: ood_traffic
   examples:
   - Năm 2022 có bao nhiêu sân bay nội địa mới đưa vào hoạt động

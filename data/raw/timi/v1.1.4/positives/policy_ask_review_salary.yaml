@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_ask_review_salary
   examples:
   - cho tôi hỏi nếu mà chưa làm đủ 6 tháng thì có được review tăng lương không

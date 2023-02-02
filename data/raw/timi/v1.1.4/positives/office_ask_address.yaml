@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: office_ask_address
   examples:
   - công ty có bao nhiêu cơ sở

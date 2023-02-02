@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: self_ask_health
   examples:
   - cho tớ hỏi sức khỏe bạn có tốt không

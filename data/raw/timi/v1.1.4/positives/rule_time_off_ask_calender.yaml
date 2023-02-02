@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_time_off_ask_calender
   examples:
   - công ty được nghỉ lễ vào các ngày nào đó

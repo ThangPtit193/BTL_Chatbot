@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_ask_uniform
   examples:
   - cho mình hỏi người có cần mặc đồng phục đi làm ko

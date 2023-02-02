@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: self_ask_have_eaten
   examples:
   - chắc timi chưa ăn nào đâu nhể

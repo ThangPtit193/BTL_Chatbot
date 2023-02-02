@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_timekeeping_ask_forgot
   examples:
   - '[senior](level_position) quên chấm công thì có bị sao không ạ'

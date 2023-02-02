@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+negatives:
 - intent: oos_about_person
   examples:
   - tớ có thể đầu tư đồng mã hóa nào

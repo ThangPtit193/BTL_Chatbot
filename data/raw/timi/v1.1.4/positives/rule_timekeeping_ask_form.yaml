@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_timekeeping_ask_form
   examples:
   - chấm công vân tay có bắt buộc không

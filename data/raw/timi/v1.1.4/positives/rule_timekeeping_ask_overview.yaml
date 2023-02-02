@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_timekeeping_ask_overview
   examples:
   - nếu mình về trước 5h thì được công ty tính là đi làm về sớm đúng không bạn

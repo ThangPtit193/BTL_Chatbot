@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_ask_discipline
   examples:
   - '[ftech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật không nhể'

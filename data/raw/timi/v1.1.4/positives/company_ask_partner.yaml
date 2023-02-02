@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_partner
   examples:
   - khách hàng của [f tech](work_unit) gồm những ai

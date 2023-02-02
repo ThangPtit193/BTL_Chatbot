@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+negatives:
 - intent: ood_culture
   examples:
   - chỗ nào phát triển dệt tơ lụa lâu đời

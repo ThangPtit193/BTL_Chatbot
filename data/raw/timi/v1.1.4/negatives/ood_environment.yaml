@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+negatives:
 - intent: ood_environment
   examples:
   - Chất độc màu da cam huỷ diệt môi trường ở [Macau](location) như thế nào?

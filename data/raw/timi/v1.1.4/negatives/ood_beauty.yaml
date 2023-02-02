@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+negatives:
 - intent: ood_beauty
   examples:
   - muốn mặc giống với [Apink Eunji](person_name) [SHINee](person_name)
