@@ -1,0 +1,206 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: chitchat_user_ask_love
+  examples:
+  - m hỏi tình yêu khác với tình thương là gì không
+  - hơi thế gian thầm thương trộm nhớ là thế nào
+  - timi biết yêu thích không nhỉ
+  - ' có hỏi tình yêu không'
+  - bot có biết mối tình đầu là gì không
+  - bạn có mối tình đầu không
+  - bot hiểu ntn về yêu
+  - m biết tình yêu là gì không
+  - bot có hỏi thế nào là yêu đương không
+  - timi hỏi yêu sét đánh không
+  - m biết gì yêu đương là gì không
+  - cậu biết tình cảm nam nữ là gì không
+  - cậu có biết tình yêu không phân biệt giữa người và máy không
+  - yêu đương là gì m nhỉ
+  - m chắc có hiểu về thầm thương trộm nhớ đấy chứ
+  - yêu đương vui lắm em hỏi không
+  - ngốc tầm bạn chắc chả hỏi dề yêu đương đâu nhể
+  - khái niệm của yêu đương
+  - đố mày hỏi yêu đương ntn
+  - bot có hỏi thế nào là yêu thương không
+  - hãy nói cho tôi biết như thế nào là tình yêu đi
+  - timi hỏi gì về yêu
+  - cậu biết tình yêu khác với tình thương là gì không
+  - hơi nhân gian thầm thương trộm nhớ là gì
+  - timi hỏi thích không nhỉ
+  - bạn có biết tình thương không
+  - ' có biết mối tình đầu là gì không'
+  - timi có mối tình đầu không
+  - mày hiểu thế nào về yêu
+  - mày biết tình yêu là gì không
+  - bot có biết thế nào là yêu đương không
+  - timi biết yêu sét đánh không
+  - bot hỏi gì yêu là gì không
+  - em hỏi tình cảm nam nữ là gì không
+  - em có hỏi tình yêu không phân biệt giữa người và máy không
+  - yêu đương là gì cậu nhỉ
+  - m chắc có hiểu về mến mộ đấy chứ
+  - yêu đương vui lắm timi biết không
+  - ngu tầm cậu chắc chẳng biết dề yêu đương đâu nhỉ
+  - ý niệm yêu đương
+  - đố hỏi tình yêu như thế nào
+  - m có biết thế nào là thương yêu không
+  - hãy nói cho tớ hỏi như nào là tình yêu đi
+  - mày biết gì về yêu đương
+  - em hỏi tình yêu khác với tình thương là gì không
+  - hơi ai ơi thầm thương trộm nhớ là gì
+  - bot hỏi yêu thích không nhể
+  - ' có hỏi yêu thương không'
+  - ' có hỏi mối tình đầu là gì không'
+  - m có mối tình đầu không
+  - timi hiểu như nào về tình yêu
+  - m biết yêu đương là gì không
+  - bạn có biết thế nào là tình yêu không
+  - cậu biết yêu đương sét đánh không
+  - cậu biết gì yêu đương là gì không
+  - bot biết tình cảm nam nữ là gì không
+  - bạn có hỏi tình yêu không phân biệt giữa người và máy không
+  - yêu là gì timi nhỉ
+  - mày chắc có rành về thích chứ nhỉ
+  - tình yêu vui lắm em hỏi không
+  - đần tầm bot chắc chả hỏi dề yêu đâu nhể
+  - ý niệm yêu
+  - thách hỏi yêu đương là gì hả
+  - ' có hỏi thế nào là tình thương không'
+  - hãy nói cho tôi biết như nào là tình yêu đi
+  - bạn biết gì về tình yêu
+  - cậu hỏi tình yêu khác với tình thương là gì không
+  - hơi nhân gian thầm thương trộm nhớ là như thế nào
+  - m biết yêu đương không nhể
+  - bot có hỏi yêu không
+  - ' có hỏi tình yêu sét đánh là gì không'
+  - em có mối tình đầu không
+  - em hiểu như nào về yêu đương
+  - cậu biết yêu là gì không
+  - em có hỏi thế nào là yêu đương không
+  - m hỏi yêu sét đánh không
+  - cậu hỏi gì yêu đương là gì không
+  - mày biết tình cảm nam nữ là gì không
+  - ' có biết tình yêu không phân biệt giữa người và máy không'
+  - tình yêu là gì m nhỉ
+  - bot chắc có rành về mến mộ chứ nhỉ
+  - yêu vui lắm em hỏi không
+  - ngu tầm m chắc chả hỏi dề tình yêu đâu nhể
+  - khái niệm của tình yêu
+  - đố hỏi yêu thế nào
+  - bạn có hỏi thế nào là yêu thương không
+  - hãy nói cho tớ biết như nào là tình yêu đi
+  - bot biết gì về yêu
+  - m biết tình yêu khác với tình thương là gì không
+  - hơi ai ơi yêu là như nào
+  - mày biết yêu không nhể
+  - ' có hỏi yêu không'
+  - bạn có biết mối tình đầu là gì không
+  - cậu có mối tình đầu không
+  - mày hiểu thế nào về tình yêu
+  - bot biết yêu đương là gì không
+  - bạn có hỏi thế nào là tình yêu không
+  - cậu biết yêu sét đánh không
+  - cậu biết gì yêu là gì không
+  - m hỏi tình cảm nam nữ là gì không
+  - timi có biết tình yêu không phân biệt giữa người và máy không
+  - tình yêu là gì bot nhỉ
+  - bạn chắc có rành về thích phết nhỉ
+  - tình yêu vui lắm m biết không
+  - đần tầm bot chắc chẳng hỏi dề yêu đương đâu nhỉ
+  - khái niệm của yêu
+  - thách cậu biết yêu là như nào
+  - em có biết thế nào là yêu thương không
+  - hãy nói cho tôi hỏi ntn là yêu đi
+  - m hỏi gì về yêu đương
+  - timi biết tình yêu khác với tình thương là gì không
+  - hơi ai ơi thích là gì
+  - bạn biết yêu không nhể
+  - ' có biết yêu thương không'
+  - em có biết mối tình đầu là gì không
+  - mày có mối tình đầu không
+  - mày hiểu thế nào về yêu đương
+  - bot hỏi yêu đương là gì không
+  - timi có hỏi thế nào là yêu đương không
+  - bot biết tình yêu sét đánh không
+  - bot hỏi gì yêu đương là gì không
+  - timi hỏi tình cảm nam nữ là gì không
+  - em có biết tình yêu không phân biệt giữa người và máy không
+  - yêu là gì cậu nhỉ
+  - mày chắc có rành về mến mộ chứ nhỉ
+  - tình yêu vui lắm bạn hỏi không
+  - ngốc tầm bot chắc không hỏi dề yêu đâu nhể
+  - định nghĩa của yêu
+  - đố hỏi yêu đương như thế nào
+  - ' có biết thế nào là yêu thương không'
+  - hãy nói cho tớ biết ntn là yêu đi
+  - bạn hỏi gì về yêu đương
+  - em biết tình yêu khác với tình thương là gì không
+  - hơi nhân gian thích là như thế nào
+  - cậu hỏi yêu đương không nhỉ
+  - ' có hỏi thương yêu không'
+  - em có hỏi tình yêu sét đánh là gì không
+  - bot có mối tình đầu không
+  - timi hiểu thế nào về tình yêu
+  - bot biết tình yêu là gì không
+  - bạn có biết thế nào là yêu đương không
+  - timi hỏi tình yêu sét đánh không
+  - em hỏi gì tình yêu là gì không
+  - m biết tình cảm nam nữ là gì không
+  - ' có hỏi tình yêu không phân biệt giữa người và máy không'
+  - yêu đương là gì em nhỉ
+  - timi chắc có tìm tòi về thầm thương trộm nhớ đấy chứ
+  - yêu đương hạnh phúc lắm cậu biết không
+  - ngu tầm timi chắc chẳng biết dề tình yêu đâu nhỉ
+  - định nghĩa tình yêu
+  - thách mày hỏi yêu đương là như nào
+  - m có hỏi thế nào là tình thương không
+  - hãy nói cho tớ hỏi như nào là yêu đương đi
+  - em hỏi gì về yêu đương
+  - mày biết tình yêu khác với tình thương là gì không
+  - hơi ai ơi mến mộ là gì hả
+  - timi biết yêu đương không nhể
+  - em có biết yêu thương không
+  - cậu có biết mối tình đầu là gì không
+  - em hiểu thế nào về yêu đương
+  - cậu hỏi tình yêu là gì không
+  - timi có biết thế nào là yêu không
+  - m biết tình yêu sét đánh không
+  - em hỏi gì yêu là gì không
+  - bạn hỏi tình cảm nam nữ là gì không
+  - bot có biết tình yêu không phân biệt giữa người và máy không
+  - tình yêu là gì cậu nhỉ
+  - bot chắc có rành về yêu đương chứ nhỉ
+  - yêu hạnh phúc lắm m biết không
+  - đần tầm mày chắc không hỏi dề yêu đâu nhỉ
+  - ý nghĩa yêu
+  - thách biết tình yêu là thế nào
+  - ' có hỏi thế nào là tri kỷ không'
+  - hãy nói cho tớ biết ntn là tình yêu đi
+  - cậu hỏi gì về yêu đương
+  - timi hỏi tình yêu khác với tình thương là gì không
+  - hơi thế gian thầm thương trộm nhớ là gì
+  - bạn biết mến mộ không nhể
+  - ' có hỏi tri kỷ không'
+  - ' có biết tình yêu sét đánh là gì không'
+  - cậu hiểu như thế nào về tình yêu
+  - bạn biết yêu đương là gì không
+  - m có biết thế nào là yêu đương không
+  - m biết yêu đương sét đánh không
+  - timi biết gì yêu là gì không
+  - mày hỏi tình cảm nam nữ là gì không
+  - m có hỏi tình yêu không phân biệt giữa người và máy không
+  - yêu là gì bạn nhỉ
+  - bot chắc có tìm tòi về yêu đương đấy chứ
+  - yêu đương vui lắm cậu biết không
+  - đần tầm m chắc không biết dề yêu đâu nhỉ
+  - ý niệm của yêu
+  - đố cậu biết yêu là gì
+  - bạn có hỏi thế nào là thương không
+  - hãy nói cho tớ hỏi thế nào là yêu đi
+  - bot biết gì về tình yêu
+  - bot hỏi tình yêu khác với tình thương là gì không
+  - hơi ai ơi thầm thương trộm nhớ là như nào
+  - cậu hỏi thích không nhể
+  - ' có biết tình thương không'

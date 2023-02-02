@@ -1,0 +1,923 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: knowledge_ask_ftecher
+  examples:
+  - giới thiệu về [Nguyễn Thúc Thuỳ Tiên](person_name) đi
+  - có bt nhóm [EXID](person_name) ko vậy
+  - bt gì về nhóm nhạc đình đám nhóm [NCT](person_name)
+  - giới thiệu về [Đặng Thị Ngọc Hân](person_name) đi
+  - có bt nhóm [Girls' Generation](person_name) ko hả
+  - bt gì về nhóm nhạc nhóm [2NE1](person_name)
+  - giới thiệu về [Đặng Thu Thảo](person_name) đi
+  - có bt nhóm [SNSD](person_name) không thế
+  - bt gì về nhóm nhạc đình đám nhóm [Girls' Generation](person_name)
+  - giới thiệu về [Gerald Ford](person_name) đi
+  - '[nhân viên vệ sinh](position) nổi tiếng nhất [Mỹ](location) là ai'
+  - biết [Bích Phương](person_name) ko
+  - người mẫu nổi tiếng là ai vậy bot
+  - biết [Khánh Vy](person_name) là ai ko
+  - '[Phạm Hồng Thúy Vân](person_name) là ai đó'
+  - '[Leonardo da Vinci](person_name) là ai'
+  - bot có biết [Wendy (Red Velvet)](person_name) không?
+  - '[cầu thủ](position) nổi tiếng nhất [Việt Nam](location) là ai'
+  - bt [Nguyễn Thúc Thuỳ Tiên](person_name) ko
+  - hoa hậu nổi tiếng là ai vậy bot
+  - biết [Thanh Bạch](person_name) là ai ko
+  - '[Park Jihoon](person_name) là ai nhỉ'
+  - '[Franklin D. Roosevelt](person_name) là ai'
+  - bot có biết [Apink Eunji](person_name) ko?
+  - '[nhân viên quét dọn](position) nổi tiếng nhất [VN](location) là ai'
+  - biết [Xoài Non](person_name) không
+  - biết [Lê Thảo Nhi](person_name) là ai ko
+  - '[Đàm Phương Linh](person_name) là ai chứ nhỉ'
+  - '[Angelina Jolie](person_name) là ai'
+  - timi có bt [G-Dragon (Big Bang)](person_name) không?
+  - '[người an ninh](position) nổi tiếng nhất [Việt](location) là ai'
+  - biết [Thanh Hương](person_name) ko
+  - biết [Thành Trung](person_name) là ai không
+  - '[Đặng Thị Ngọc Thịnh](person_name) là ai đấy chứ'
+  - '[Babe Ruth](person_name) là ai'
+  - cậu có biết [D.O. (EXO)](person_name) ko?
+  - '[diễn viên](position) nổi tiếng nhất [Việt](location) là ai'
+  - bt [Erik](person_name) ko
+  - biết [Tuấn Hưng](person_name) là ai ko
+  - '[Đặng Thu Thảo](person_name) là ai đấy'
+  - '[Steve Jobs](person_name) là ai'
+  - timi có bt [Lee Hyori](person_name) ko?
+  - '[người mẫu](position) nổi tiếng nhất [Việt Nam](location) là ai'
+  - biết [Thành Trung](person_name) không
+  - bt [Hồ Quang Hiếu](person_name) là ai không
+  - '[IU](person_name) thuộc [EXID](person_name) là ai đó'
+  - '[Bill Gates](person_name) là ai'
+  - bot có bt [Kyuhyun (Super Junior)](person_name) không?
+  - '[mc dẫn chương trình](position) nổi tiếng nhất [VN](location) là ai'
+  - bt [Wonho](person_name) thuộc [Blackpink](person_name) không
+  - timi bt [Công Tố](person_name) sinh vào ngày nào không?
+  - bot biết [Lisa (BLACKPINK)](person_name) thuộc [EXID](person_name) mấy tuổi không?
+  - sinh nhật của [Độ Mixi](person_name) là
+  - cho tôi bt ngày sinh của [Soyeon ((G)I-DLE)](person_name)
+  - '[Võ Chí Công](person_name) sinh vào ngày nào?'
+  - em có bt [Kaity Nguyễn](person_name) sinh năm bao nhiêu
+  - '[Sulli](person_name) sinh vào tháng nào'
+  - tớ muốn bt [Đặng Thị Ngọc Thịnh](person_name) sinh vào ngày nào?
+  - làm gì để bt sinh nhật của [Tóc Tiên](person_name)
+  - bạn bt [D.O. (EXO)](person_name) thuộc [TVXQ (DBSK)](person_name) sinh vào ngày
+    nào không?
+  - bot bt [Minh Hằng](person_name) mấy tuổi ko?
+  - sinh nhật của [Bác Hồ](person_name) là
+  - cho tớ biết ngày sinh của [Tôn Đức Thắng](person_name)
+  - '[Độ Mixi](person_name) sinh vào ngày nào?'
+  - bot có bt [Linh Đàm](person_name) sinh ngày nào
+  - '[Lee Hyori](person_name) sinh nhật vào ngày nào'
+  - tớ muốn biết [Rosa Parks](person_name) sinh vào ngày nào?
+  - làm sao để bt ngày sinh của [Linh Đàm](person_name)
+  - em biết [Steve Jobs](person_name) sinh vào ngày nào không?
+  - timi bt [Jungwoo (NCT)](person_name) mấy tuổi không?
+  - sinh nhật của [Lisa (BLACKPINK)](person_name)
+  - cho tớ biết sinh nhật của [Jeongyeon](person_name)
+  - '[Lại Văn Sâm](person_name) sinh vào ngày nào?'
+  - mày có bt [Lionel Messi](person_name) sinh ngày nào
+  - '[Phạm Thị Hương](person_name) sinh năm bao nhiêu'
+  - tớ mún biết [Phan Anh](person_name) sinh vào ngày nào?
+  - làm sao để biết ngày sinh của [Trương Tấn Sang](person_name)
+  - chú em bt [Đàm tổng](person_name) sinh vào ngày nào không?
+  - timi bt [Jisoo (BLACKPINK)](person_name) thuộc [Blackpink](person_name) mấy tuổi
+    không?
+  - ngày sinh của [Phương Ly](person_name)
+  - cho tớ bt sinh nhật của [Đỗ Thị Hà](person_name)
+  - '[Midu](person_name) sinh vào ngày nào?'
+  - bot có bt [Suga (BTS)](person_name) sinh vào tháng nào
+  - '[Thảo Tâm](person_name) sinh vào tháng nào'
+  - tớ mún biết [Công Tố](person_name) sinh vào ngày nào?
+  - làm thế nào để biết ngày sinh của [Phương Oanh](person_name)
+  - timi bt [Huỳnh Phạm Thủy Tiên](person_name) sinh vào ngày nào không?
+  - timi bt [Trung Quân](person_name) mấy tuổi không?
+  - sinh nhật của [Soobin Hoàng Sơn](person_name) là
+  - cho tớ biết sinh nhật của [Bill Clinton](person_name)
+  - '[Trường Giang](person_name) sinh vào ngày nào?'
+  - em có biết [Công Tố](person_name) sinh ngày nào
+  - '[Sulli](person_name) thuộc [SNSD](person_name) sinh vào tháng nào'
+  - tôi mún bt [Phạm Nhật Vượng](person_name) sinh vào ngày nào?
+  - làm như nào để biết ngày sinh của [Thanh Bạch](person_name)
+  - cậu biết [Bảo Thy](person_name) sinh vào ngày nào không?
+  - bot biết [Nguyên Khang](person_name) mấy tuổi ko?
+  - sinh nhật của [Trần Đức Lương](person_name) là
+  - cho tớ biết ngày sinh của [Khánh Vy IELTS](person_name)
+  - '[Ngô Thanh Vân](person_name) sinh vào ngày nào?'
+  - đố bạn bt [Suga (BTS)](person_name) thuộc [EXO](person_name) là đồng tính nữ hay
+    bthuong
+  - '[G-Dragon (Big Bang)](person_name) là đàn ông hay phụ nữ đấy chú em'
+  - theo bạn thì [Taeyang (Big Bang)](person_name) là đông tính nam hay bình thường
+  - '[Phương Ly](person_name) là đông tính nam nhỉ'
+  - '[Đào Phương Anh](person_name) có giới tính như thế nào hả'
+  - tớ hỏi về giới tính của [Midu](person_name)
+  - ủa bot ơi, [Xoài Non](person_name) là con trai hả
+  - giới tính của [Babe Ruth](person_name)
+  - mình muốn biết [Richard Branson](person_name) là trai hay gái
+  - bot bt giới tính của [Vân Trang](person_name) ko
+  - đố timi biết [Mai Phương Thúy](person_name) là đàn ông hay phụ nữ
+  - '[Marie Curie](person_name) là đàn ông hay phụ nữ vậy chú em'
+  - theo mày thì [Lisa (BLACKPINK)](person_name) là nam hay nữ
+  - '[James Monroe](person_name) là đàn bà nhở'
+  - '[Độ Mixi](person_name) là giới tính như thế nào hả'
+  - mình hỏi về giới tính của [Công Tố](person_name)
+  - ủa timi ơi, [Phan Anh](person_name) là con gái hả
+  - giới tính của [Đàm tổng](person_name)
+  - mình mún biết [Phan Anh](person_name) là đàn ông hay phụ nữ
+  - bot bt giới tính của [Diệu Nhi](person_name) không
+  - đố timi [Midu](person_name) là trai hay gái
+  - '[Ngô Thanh Vân](person_name) là trai hay gái thế mày'
+  - theo cậu thì [Khởi My](person_name) là trai hay gái
+  - '[Nguyễn Cao Kỳ Duyên](person_name) là đàn ông nhỉ'
+  - '[Trần Tiểu Vy](person_name) là giới tính gì vậy'
+  - mình hỏi về giới tính của [Trúc Anh](person_name)
+  - ủa cậu ơi, [Nguyễn Cao Kỳ Duyên](person_name) là đàn ông hả
+  - giới tính của [Đàm Phương Linh](person_name)
+  - tớ mún biết [Steve Jobs](person_name) là đàn ông hay phụ nữ
+  - mi bt giới tính của [Marilyn Monroe](person_name) không
+  - đố timi [Apink Eunji](person_name) thuộc [EXID](person_name) là nam hay nữ
+  - '[Ten](person_name) thuộc [Blackpink](person_name) là trai hay gái hả bot'
+  - theo em thì [Khánh Vy](person_name) là đàn ông hay phụ nữ
+  - '[Đặng Thị Ngọc Hân](person_name) là phụ nữ nhở'
+  - '[Lee Hyori](person_name) thuộc [Girls'' Generation](person_name) có giới tính
+    gì hả'
+  - mình hỏi về giới tính của [Lisa (BLACKPINK)](person_name)
+  - ủa bot ơi, [Linh Đàm](person_name) là gay hả
+  - giới tính của [Sulli](person_name)
+  - tôi mún bt [Nguyên Khang](person_name) là đàn ông hay phụ nữ
+  - chú em bt giới tính của [Thanh Bạch](person_name) ko
+  - đố em bt [Đức Phúc](person_name) là nam hay nữ
+  - '[CL](person_name) thuộc [SHINee](person_name) là đồng tính hay bth hả timi'
+  - theo chú em thì [Elon Musk](person_name) là bê đê hay bthuong
+  - '[Quỳnh Kool](person_name) là đàn ông ha'
+  - '[Nguyễn Thị Ngọc Châu](person_name) có giới tính gì hả'
+  - mình hỏi về giới tính của [Độ Mixi](person_name)
+  - ủa bot ơi, [Đàm Phương Linh](person_name) là gay hả
+  - giới tính của [Pope Francis](person_name)
+  - tớ mún bt [Trấn Thành](person_name) là bê đê hay bthuong
+  - bạn biết giới tính của [Paul McCartney](person_name) không
+  - đố bot biết [RUBINA DILAIK](person_name) là trai hay gái
+  - '[Đỗ Khánh Vân](person_name) là bê đê hay bthuong vậy hả cậu'
+  - theo timi thì [Nhã Phương](person_name) là nam hay nữ
+  - '[Michael Jackson](person_name) là con trai nhỉ'
+  - '[Diệu Nhi](person_name) có giới tính như thế nào vậy hả'
+  - tớ hỏi về giới tính của [Park Jihoon](person_name) thuộc [EXO](person_name)
+  - ủa timi ơi, [Lee Hyori](person_name) thuộc [NCT](person_name) là đàn bà hả
+  - giới tính của [Thiều Bảo Trâm](person_name)
+  - tớ mún bt [Rosa Parks](person_name) là trai hay gái
+  - timi bt giới tính của [George Washington](person_name) ko
+  - đố bot biết [James Madison](person_name) là nam hay nữ
+  - '[Hà Hồ](person_name) là nam hay nữ vậy timi'
+  - theo mày thì [Huỳnh Phạm Thủy Tiên](person_name) là đồng tính nữ hay bình thường
+  - '[Hyoyeon (SNSD)](person_name) thuộc [BTS](person_name) là con trai nhỉ'
+  - '[George H. W. Bush](person_name) có giới tính gì vậy'
+  - mình hỏi về giới tính của [Noo Phước Thịnh](person_name)
+  - ủa bot ơi, [Vincent Van Gogh](person_name) là con gái hả
+  - giới tính của [Ribi Sachi](person_name)
+  - tớ muốn biết [Jimin (BTS)](person_name) là nam hay nữ
+  - mi bt giới tính của [Naeun (Apink)](person_name) không
+  - cậu bt [Nayeon (Twice)](person_name) quê ở đâu ko?
+  - '[Phạm Nhật Vượng](person_name) quê ở đâu vậy cậu bt ko?'
+  - quê của [Kim da-mi](person_name) thuộc [BTS](person_name) ở [hậu giang](location)
+    đung không?
+  - '[James Monroe](person_name) quê ở đâu?'
+  - '[Miu Lê](person_name) quê ở [Việt](location) chính xác không?'
+  - bạn bt [Coco Chanel](person_name) quê ở đâu ko?
+  - '[Khánh Vy](person_name) quê ở đâu hả bot bt không?'
+  - quê của [Nayeon (Twice)](person_name) thuộc [Black pink](person_name) ở [vĩnh
+    phúc](location) chuẩn chỉ ko?
+  - '[Tóc Tiên](person_name) quê ở đâu?'
+  - '[Nguyễn Cao Kỳ Duyên](person_name) quê ở [Canada](location) đúng ko?'
+  - timi biết [Coco Chanel](person_name) quê ở đâu không?
+  - '[Hồ Quang Hiếu](person_name) quê ở ạ vậy bot biết không?'
+  - quê của [John Quincy Adams](person_name) ở [điện biên](location) chuẩn không?
+  - '[Thanh Bạch](person_name) quê ở đâu?'
+  - '[Phan Anh](person_name) quê ở [Việt](location) chuẩn không?'
+  - bot biết [Vương Anh Tú](person_name) quê ở đâu không?
+  - '[Steve Jobs](person_name) quê ở ạ hả bot bt ko?'
+  - quê của [Suzy](person_name) thuộc [Bigbang](person_name) ở [bạc liệu](location)
+    chính xác không?
+  - '[Chi Pu](person_name) quê ở đâu?'
+  - '[Trần Thị Thùy Dung](person_name) quê ở [Ấn Độ](location) chuẩn không?'
+  - bot biết [Trần Tiểu Vy](person_name) quê ở đâu không?
+  - '[John Quincy Adams](person_name) quê ở ạ vậy bạn biết không?'
+  - quê của [Xoài Non](person_name) ở [quảng ninh](location) đúng ko?
+  - '[Sơn Tùng MTP](person_name) quê ở đâu?'
+  - '[Xoài Non](person_name) quê ở [sóc trăng](location) đung không?'
+  - timi biết [CL](person_name) thuộc [NCT](person_name) quê ở đâu không?
+  - '[Cáo](person_name) quê ở ạ hả timi biết ko?'
+  - quê của [Đỗ Mỹ Linh](person_name) ở [hải dương](location) chuẩn không?
+  - '[Bill Gates](person_name) quê ở đâu?'
+  - '[Nguyên Khang](person_name) quê ở [Thái](location) đung ko?'
+  - bạn bt [Đàm tổng](person_name) quê ở đâu ko?
+  - '[Thu Hoài](person_name) quê ở ạ vậy hả cậu biết không?'
+  - quê của [Andrew Jackson](person_name) ở [VN](location) chính xác ko?
+  - '[Jack](person_name) quê ở đâu?'
+  - '[Lê Hiếu](person_name) quê ở [Ukraine](location) đúng không?'
+  - bot bt [Đàm tổng](person_name) quê ở đâu không?
+  - '[Đào Phương Anh](person_name) quê ở nhé vậy timi biết ko?'
+  - quê của [Công Tố](person_name) ở [Việt Nam](location) đung ko?
+  - '[Nguyễn Đăng Quang](person_name) quê ở đâu?'
+  - '[Nguyễn Trần Khánh Vân](person_name) quê ở [Việt Nam](location) chuẩn không?'
+  - chắc timi bt hotline của hoa hậu [Nguyễn Thúc Thuỳ Tiên](person_name)
+  - xin số hotline của [Mai Phương Thúy](person_name) với
+  - bạn biết số của MC [Khánh Vy](person_name) ko
+  - cho mình sdt của [Hani (EXID)](person_name) thuộc [Girls' Generation](person_name)
+    nha
+  - chắc bạn bt số hotline của hoa hậu [Phạm Hồng Thúy Vân](person_name)
+  - xin số phone của [Quỳnh Kool](person_name) với
+  - bạn bt số hotline của MC [Thu Hoài](person_name) ko
+  - cho tôi số điện thoại của [Paul McCartney](person_name) nhé
+  - chắc mi bt hotline của hoa hậu [Huỳnh Phạm Thủy Tiên](person_name)
+  - xin hotline [Angelina Jolie](person_name) với
+  - bạn biết số điện thoại của MC [Khánh Vy IELTS](person_name) ko
+  - cho mình số của [Jimmy Carter](person_name) nha
+  - chắc cậu biết hotline của hoa hậu [Võ Hoàng Yến](person_name)
+  - xin số phone [G-Dragon (Big Bang)](person_name) thuộc [NCT](person_name) với
+  - bạn biết hotline của MC [Nguyên Khang](person_name) không
+  - xin profile của [trưởng team](bod) công ty
+  - công ty có người điều hành không? nếu có thì là ai ,chức vụ gì
+  - '[CSO](bod) gồm có những vị trí nào'
+  - tôi muốn biết hiện nhận sự đảm nhận chức vụ [phó giám đốc](bod) của công ty
+  - '[cio](bod) của công ty là những ai'
+  - cho chị hỏi [giám đốc](bod) công ty là ai
+  - cho tớ hỏi về [leader](bod) của công ty
+  - '[phó giám đốc](bod) công ty mình là ai'
+  - '[cio](bod) là những ai'
+  - cho anh hỏi [giám đốc product](bod) gồm ai nhỉ
+  - cho anh hỏi [CIA](bod) là ai hử
+  - công ty có ban lãnh đạo không
+  - mày có biết [giám đốc](bod) công ty là ai không hả m
+  - liệt kê các thành viên trong [giám đốc](bod) của công ty
+  - em [Hồng Ánh](person_name) là [phó phòng](bod) của công ty à
+  - công ty hiện có bao nhiêu [CTO](bod)
+  - timi có biết [giám đốc c.nghệ](bod) là ai không
+  - giới thiệu về [leader](bod) của công ty đc không
+  - '[phó phòng](bod) của [f tech](work_unit) gồm những vị nào hả bạn'
+  - giới thiệu cho tớ ban giám đốc đc ko
+  - giới thiệu cho tôi về các anh trong [phó phòng](bod) của công ty
+  - ban lãnh đạo của công ty là a [Nguyễn Hoàng Long](person_name) chính xác ko
+  - '[trưởng phòng](bod) là ai'
+  - hãy giới thiệu về [giám đốc dịch vụ khách hàng](bod) công ty đi
+  - cho anh xin ít thông tin về các thành viên trong [giám đốc thường trực](bod) công
+    ty
+  - ban giám đốc gồm những thành viên nào
+  - các vị trí trong [phó phòng](bod) công ty bao gồm những ai
+  - công ty hiện có bao nhiêu [giám đốc](bod)
+  - mầy có biết [leader](bod) của công ty gồm những anh nào không
+  - gửi cho mình list các thành viên trong ban giám đốc
+  - boss của công ty là ai
+  - '[giám đốc tiếp thị](bod) có bao nhiêu thành viên'
+  - giới thiệu cho tớ về [phó giám đốc](bod) công ty
+  - cậu có thể cung cấp thông tin về ban lãnh đạo công ty được ko
+  - giới thiệu về các thành viên trong [phó phòng](bod) của công ty
+  - cho chị xin profile của ban lãnh đạo công ty
+  - gửi cho tớ thông tin của [phó giám đốc](bod)
+  - cho anh xin profile của [phó giám đốc](bod)
+  - '[giám đốc tiếp thị](bod) công ty gồm có ai'
+  - ' giới thiệu về [phó giám đốc](bod)'
+  - có những vị trí nào trong [giám đốc product](bod)
+  - ban giám đốc gồm có ai nhỉ
+  - có những ai thuộc [CEO](bod) công ty
+  - giới thiệu cho tớ về ban lãnh đạo công ty đc không
+  - mình nhớ hình như anh [Long](person_name) gì đó làm [giám đốc kinh doanh](bod)
+    hả
+  - giới thiệu các vị trí trong [giám đốc thông tin](bod) của công ty
+  - cho chị hỏi về các vị trí trong [trưởng team](bod) của công ty
+  - giới thiệu cho tớ về lãnh đạo đi
+  - nói cho tớ biết về [giám đốc](bod) đi cậu
+  - '[trưởng phòng](bod) công ty là ai'
+  - cho anh hỏi [CBO](bod) công ty là ai
+  - ai là [giám đốc](bod) của công ty thế
+  - cho tớ hỏi lãnh đạo công ty mình là ai
+  - cho tớ hỏi [phó phòng](bod) gồm những ai
+  - ai là [phó giám đốc](bod) của công ty
+  - giới thiệu cho tớ [phó phòng](bod)
+  - bạn hãy giới thiệu về [cio](bod) công ty đi
+  - '[giám đốc](bod) của công ty là ai'
+  - ' liệt kê các anh trong lãnh đạo công ty'
+  - giới thiệu về các anh trong [giám đốc](bod) của công ty đi
+  - ai đang là người điều hành công ty
+  - cho tớ hỏi thông tin về [trưởng phòng](bod) của công ty được ko
+  - những ai là [giám đốc an ninh](bod) của công ty của công ty
+  - có biết [CFO](bod) là ai không
+  - ban lãnh đạo gồm có những anh nào
+  - có bao nhiêu người trong [giám đốc](bod)
+  - cho chị xin ít thông tin về [phó giám đốc](bod) của công ty
+  - người đứng đầu công ty là ai
+  - cho mình hỏi [giám đốc dịch vụ khách hàng](bod) công ty bao gồm những ai
+  - tớ muốn tìm hiểu về anh [Giang](person_name) ban lãnh đạo của
+  - hãy giới thiệu cho tớ về [trưởng team](bod) công ty
+  - bạn có biết các anh trong [giám đốc tiếp thị](bod) bao gồm những ai ko
+  - xin profile của [phó giám đốc](bod)
+  - cho chị xin ít thông tin về ban lãnh đạo
+  - ' giới thiệu [trưởng team](bod) công ty'
+  - ' giới thiệu về các anh trong [phó phòng](bod) công ty'
+  - gửi cho anh thông tin của ban giám đốc công ty
+  - Ai điều hành công ty
+  - '[CEO](bod) công ty bao gồm những ai'
+  - list các vị trí trong ban [giám đốc](bod) của công ty gồm những ai
+  - ban giám đốc công ty là ai
+  - tớ muốn hỏi danh sách của ban [giám đốc](bod)
+  - danh sách các vị trí trong [giám đốc](bod) của công ty
+  - ' giới thiệu về anh [Huỳnh Ngọc Hải](person_name) [trưởng team](bod) của công
+    ty'
+  - cho mình hỏi thông tin của ai đảm nhận chức vụ [trưởng team](bod) với
+  - không biết [CIAO](bod) gồm những ai
+  - giới thiệu về [giám đốc](bod) công ty
+  - anh [Huỳnh Ngọc Hải](person_name) [phó giám đốc](bod) là ai
+  - giới thiệu [phó phòng](bod) của công ty
+  - tớ thắc mắc ko biết [trưởng phòng](bod) của công ty
+  - gửi cho tớ thông tin ban giám đốc công ty được không bot
+  - '[HRM](bod) của [f tech](work_unit) đông ko'
+  - ai là [leader](bod) công ty
+  - những ai nằm trong [CFO](bod) của công ty
+  - hãy giới thiệu về [phó giám đốc](bod) công ty đc ko
+  - '[trưởng phòng](bod) của công ty là ai'
+  - hình như bạn [Hạnh](person_name) là ban lãnh đạo của công ty hả
+  - ' giới thiệu về [phó giám đốc](bod) công ty'
+  - tớ muốn hỏi ai đang làm [CPO](bod)
+  - người điều hành công ty là ai
+  - cậu có biết [trưởng team](bod) công ty là ai ko
+  - xin profile của [leader](bod) công ty
+  - công ty có người điều hành ko? nếu có thì là ai ,chức vụ gì
+  - lãnh đạo bao gồm những ai
+  - mình muốn biết hiện người nào đảm nhận chức vụ [CPO](bod) của công ty
+  - '[leader](bod) của công ty là những ai'
+  - cho tớ hỏi [giám đốc](bod) công ty là ai
+  - cho tớ hỏi về [giám đốc thường trực](bod) của công ty
+  - '[trưởng team](bod) công ty mình là ai'
+  - '[trưởng team](bod) là những ai'
+  - cho chị hỏi [phó phòng](bod) gồm vị trí nào nhỉ
+  - cho tớ hỏi [phó phòng](bod) là ai hử
+  - công ty có [giám đốc](bod) ko
+  - timi có biết [phó giám đốc](bod) công ty là ai không hả timi
+  - liệt kê các thành viên trong [trưởng phòng](bod) của công ty
+  - anh [Tạ Đặng Quân](person_name) là [giám đốc](bod) của công ty hả
+  - công ty hiện có bao nhiêu [phó phòng](bod)
+  - cậu có biết [trưởng phòng](bod) là ai không
+  - giới thiệu về [trưởng phòng](bod) của công ty đc ko
+  - '[phó phòng](bod) của [f-tech](work_unit) gồm những vị nào vậy m'
+  - giới thiệu cho tớ [ceo](bod) được ko mầy
+  - giới thiệu cho tớ về các anh trong [giám đốc](bod) công ty
+  - '[leader](bod) của công ty là anh [Trần Ngọc Cương](person_name) chuẩn ko'
+  - '[CAIO](bod) là ai'
+  - ' giới thiệu về [phó giám đốc](bod) đi'
+  - cho chị xin ít thông tin về các thành viên trong [giám đốc product](bod) công
+    ty
+  - '[trưởng phòng](bod) gồm những ai'
+  - các vị trí trong [CFO](bod) của công ty bao gồm những ai
+  - công ty có bao nhiêu [giám đốc](bod)
+  - bot có biết [phó giám đốc](bod) của công ty bao gồm những vị trí nào ko
+  - gửi cho tớ danh sách các anh trong [giám đốc thường trực](bod)
+  - '[BOD](bod) có bao nhiêu thành viên'
+  - giới thiệu cho tớ [BOD](bod)
+  - bot có thể cung cấp thông tin về [COO](bod) công ty được ko
+  - giới thiệu về các vị trí trong [phó phòng](bod) công ty
+  - cho mình xin profile của [phó phòng](bod)
+  - gửi tớ thông tin của [phó giám đốc](bod)
+  - cho mình xin profile của [giám đốc nội chính](bod)
+  - '[phó giám đốc](bod) công ty gồm có vị trí nào'
+  - hãy giới thiệu [phó giám đốc](bod)
+  - có những vị trí nào trong [phó phòng](bod)
+  - ban lãnh đạo gồm có vị trí nào nhỉ
+  - có những ai thuộc [phó phòng](bod) công ty
+  - giới thiệu cho tớ về [CAIO](bod) công ty đc không
+  - mình nhớ hình như anh [Đức](person_name) gì đó làm [giám đốc c.nghệ](bod) hả
+  - giới thiệu các anh trong [leader](bod) của công ty
+  - cho tớ hỏi về các anh trong [leader](bod) của công ty
+  - giới thiệu cho tôi về [cto](bod) đi
+  - nói cho tớ biết về [leader](bod) đi
+  - '[phó giám đốc](bod) công ty là ai'
+  - cho anh hỏi [cto](bod) công ty là ai
+  - ai là ban [giám đốc](bod) của công ty thế
+  - cho mình hỏi [giám đốc điều hành](bod) công ty mình là ai
+  - cho anh hỏi ban [giám đốc](bod) gồm những ai
+  - ai là [phó phòng](bod) của công ty
+  - giới thiệu cho tôi [CCO](bod)
+  - mày hãy giới thiệu về [COO](bod) công ty đi
+  - '[CTO](bod) của công ty là ai'
+  - hãy liệt kê các vị trí trong [giám đốc nhân sự](bod) của công ty
+  - giới thiệu về các vị trí trong ban [giám đốc](bod) của công ty đi
+  - tớ muốn hỏi thông tin về [giám đốc điều hành](bod) của công ty được ko
+  - những ai là [CBO](bod) của công ty của công ty
+  - có biết [phó giám đốc](bod) là ai không
+  - '[leader](bod) gồm có những vị trí nào'
+  - có bao nhiêu người trong [phó phòng](bod)
+  - cho tớ xin ít thông tin về ban giám đốc công ty
+  - cho tớ hỏi [phó phòng](bod) công ty bao gồm những vị trí nào
+  - ' muốn tìm hiểu về anh [Huy](person_name) [giám đốc](bod) của công ty'
+  - hãy giới thiệu cho tớ về [giám đốc](bod) công ty
+  - mày có biết các anh trong [phó phòng](bod) bao gồm những ai ko
+  - xin profile của [CFO](bod)
+  - cho tớ xin ít thông tin về [giám đốc](bod)
+  - ' giới thiệu ban [giám đốc](bod)'
+  - ' giới thiệu về các thành viên trong [giám đốc c.nghệ](bod) của công ty'
+  - gửi tớ thông tin [giám đốc](bod) công ty
+  - '[giám đốc](bod) công ty gồm những ai'
+  - list các anh trong [giám đốc](bod) của công ty bao gồm những ai
+  - '[giám đốc](bod) công ty là ai'
+  - tớ muốn hỏi list của thành viên lãnh đạo
+  - list các vị trí trong [phó giám đốc](bod) công ty
+  - hãy giới thiệu về a [Trần Ngọc Cương](person_name) [trưởng phòng](bod) của công
+    ty
+  - cho mình hỏi thông tin của vị trí chức vụ [trưởng phòng](bod) với
+  - không biết [phó phòng](bod) gồm những ai
+  - giới thiệu về [giám đốc c.nghệ](bod) công ty
+  - anh [Đào Trường Giang](person_name) [CBO](bod) là ai
+  - giới thiệu [trưởng team](bod) của công ty
+  - tớ thắc mắc không biết ban [giám đốc](bod) của công ty
+  - gửi cho tớ thông tin của [phó giám đốc](bod) công ty được ko timi
+  - '[phó phòng](bod) của [f-tech](work_unit) đông ko'
+  - ai là [giám đốc](bod) công ty
+  - những ai nằm trong [phó phòng](bod) của công ty
+  - hãy giới thiệu về [phó giám đốc](bod) đc ko mầy
+  - '[giám đốc an ninh](bod) của công ty là ai'
+  - hình như bạn [Nguyễn Ngọc Anh](person_name) là [giám đốc sản phẩm](bod) của công
+    ty hử
+  - hãy giới thiệu về ban giám đốc công ty
+  - tôi muốn hỏi ai đang làm [phó giám đốc](bod)
+  - bạn có biết [phó giám đốc](bod) của công ty là ai không
+  - xin profile của [CAIO](bod)
+  - '[CMO](bod) gồm những vị trí nào'
+  - tớ muốn hỏi hiện người nào đảm nhận chức vụ [trưởng phòng](bod) của công ty
+  - '[giám đốc](bod) của công ty là những ai'
+  - cho anh hỏi [giám đốc](bod) công ty là ai
+  - cho chị hỏi về [giám đốc](bod) của công ty
+  - '[trưởng phòng](bod) công ty mình là ai'
+  - '[giám đốc nhân sự](bod) là những ai'
+  - cho tớ hỏi [HRD](bod) gồm ai nhỉ
+  - cho anh hỏi [CBO](bod) là ai
+  - công ty có [phó giám đốc](bod) không
+  - mầy có biết [phó phòng](bod) của công ty là ai không hả bạn
+  - liệt kê các thành viên trong [giám đốc information](bod) của công ty
+  - bạn [Mỹ Hạnh](person_name) là [CFO](bod) của công ty hả
+  - công ty có bao nhiêu [trưởng phòng](bod)
+  - cậu có biết [BOM](bod) là ai ko
+  - giới thiệu về [trưởng phòng](bod) công ty đc không
+  - ban giám đốc của [f-tech](work_unit) gồm những vị nào vậy hả bạn
+  - giới thiệu cho tớ [leader](bod) đc ko
+  - giới thiệu cho tớ về các vị trí trong [giám đốc](bod) của công ty
+  - '[phó giám đốc](bod) của công ty là sếp [Doãn Dạt Phước](person_name) chuẩn chỉ
+    ko'
+  - '[CTO](bod) là ai hả'
+  - ' giới thiệu về [giám đốc dịch vụ khách hàng](bod) đi'
+  - cho tớ xin ít thông tin về các thành viên trong [giám đốc](bod) công ty
+  - '[phó phòng](bod) gồm những anh nào'
+  - các thành viên trong [leader](bod) công ty bao gồm những ai
+  - cậu có biết [giám đốc an ninh](bod) của công ty bao gồm những ai ko
+  - gửi cho tớ danh sách các anh trong [giám đốc](bod)
+  - lãnh đạo có bao nhiêu người
+  - giới thiệu cho mình [phó giám đốc](bod)
+  - mầy có thể cung cấp thông tin về [leader](bod) công ty được ko
+  - giới thiệu về các thành viên trong ban lãnh đạo công ty
+  - cho mình xin profile của ban giám đốc công ty
+  - gửi cho chị thông tin [giám đốc c.nghệ](bod)
+  - cho mình xin profile của [giám đốc](bod)
+  - '[phó phòng](bod) công ty gồm có vị trí nào'
+  - ' giới thiệu [trưởng phòng](bod)'
+  - có những vị trí nào trong [BOM](bod)
+  - '[giám đốc điều hành](bod) gồm có vị trí nào nhỉ'
+  - có những ai thuộc [phó giám đốc](bod) công ty
+  - giới thiệu cho mình về [giám đốc](bod) của công ty được không
+  - mình nhớ hình như anh [Hưng](person_name) gì đó làm [giám đốc sáng tạo](bod) hả
+  - giới thiệu các vị trí trong [giám đốc](bod) công ty
+  - cho anh hỏi về các vị trí trong [giám đốc điều hành](bod) công ty
+  - giới thiệu cho tôi về ban lãnh đạo đi
+  - nói cho tớ biết về [phó phòng](bod) đi bạn
+  - '[trưởng team](bod) công ty là ai'
+  - cho chị hỏi [giám đốc tiếp thị](bod) công ty là ai
+  - ai là [giám đốc sáng tạo](bod) của công ty thế
+  - cho mình hỏi [BOM](bod) của công ty mình là ai
+  - cho tớ hỏi [leader](bod) có những ai
+  - ai là lãnh đạo của công ty
+  - giới thiệu cho tôi về [phó giám đốc](bod)
+  - cậu hãy giới thiệu về [phó phòng](bod) công ty đi
+  - '[phó giám đốc](bod) của công ty là ai'
+  - hãy liệt kê các anh trong ban giám đốc của công ty
+  - giới thiệu về các thành viên trong [giám đốc](bod) công ty đi
+  - cho tớ hỏi thông tin về [trưởng team](bod) đc ko
+  - những ai là lãnh đạo của công ty của công ty
+  - có biết [CFO](bod) là ai ko
+  - '[phó giám đốc](bod) bao gồm có những ai'
+  - có bao nhiêu người trong ban lãnh đạo
+  - cho anh xin ít thông tin về [giám đốc](bod) của công ty
+  - cho tớ hỏi [giám đốc](bod) công ty bao gồm những anh nào
+  - mình muốn tìm hiểu về anh [Cương](person_name) [HRM](bod) của công ty
+  - ' giới thiệu cho tôi về [trưởng team](bod) công ty'
+  - bot có biết các anh trong [giám đốc](bod) bao gồm những ai không
+  - xin profile của [giám đốc điều hành](bod)
+  - cho mình xin ít thông tin về [phó giám đốc](bod)
+  - ' giới thiệu về [phó phòng](bod) công ty'
+  - hãy giới thiệu về các vị trí trong [trưởng team](bod) của công ty
+  - gửi cho chị thông tin [phó giám đốc](bod) công ty
+  - '[giám đốc kinh doanh](bod) công ty gồm những ai'
+  - list các thành viên trong [giám đốc nội chính](bod) công ty bao gồm những ai
+  - ban lãnh đạo công ty là ai
+  - tớ muốn hỏi danh sách của các anh ban lãnh đạo
+  - list các thành viên trong [phó phòng](bod) của công ty
+  - hãy giới thiệu về a [Nguyễn Vũ Dũng](person_name) [CMO](bod) của công ty
+  - cho tớ hỏi thông tin của thành viên chức vụ [trưởng phòng](bod) với
+  - ko biết [giám đốc sáng tạo](bod) gồm những ai
+  - giới thiệu về [CBO](bod) công ty
+  - anh [Trần Ngọc Cương](person_name) [CFO](bod) là ai
+  - giới thiệu [giám đốc](bod) của công ty
+  - tôi thắc mắc không biết lãnh đạo của công ty
+  - gửi cho anh thông tin của [HRM](bod) công ty được không
+  - '[phó giám đốc](bod) của [ftech](work_unit) đông không'
+  - ai là [giám đốc c.nghệ](bod) công ty
+  - những ai nằm trong [giám đốc nhân sự](bod) của công ty
+  - ' giới thiệu về [leader](bod) công ty được ko bạn'
+  - '[giám đốc công nghệ](bod) của công ty là ai'
+  - hình như c [Hoàng Ngọc Anh](person_name) là [giám đốc dịch vụ khách hàng](bod)
+    của công ty hả
+  - hãy giới thiệu về ban [giám đốc](bod) của công ty
+  - cho tớ hỏi ai đang làm [HRD](bod)
+  - cậu có biết [giám đốc điều hành](bod) công ty là ai ko
+  - xin profile của [giám đốc](bod) công ty
+  - '[phó phòng](bod) bao gồm những anh nào'
+  - tôi muốn biết hiện nhân viên đảm nhận chức vụ [CFO](bod) của công ty
+  - '[phó phòng](bod) của công ty là những ai'
+  - cho mình hỏi [giám đốc](bod) công ty là ai
+  - cho tớ hỏi về [trưởng team](bod) công ty
+  - '[phó giám đốc](bod) của công ty mình là ai'
+  - '[giám đốc](bod) là những ai'
+  - cho chị hỏi [phó phòng](bod) gồm ai nhỉ
+  - cho mình hỏi [HRM](bod) là ai hử
+  - công ty có [CCO](bod) không
+  - bot có biết ban [giám đốc](bod) công ty là ai không hả em
+  - liệt kê các thành viên trong [ciao](bod) của công ty
+  - em [Hà Thiên Hương](person_name) là [giám đốc an ninh](bod) của công ty à
+  - công ty có bao nhiêu [phó giám đốc](bod)
+  - bot có biết ban lãnh đạo là ai không
+  - giới thiệu về [leader](bod) công ty được không
+  - '[giám đốc tiếp thị](bod) của [f tech](work_unit) gồm những vị nào vậy mầy'
+  - giới thiệu cho mình về [phó phòng](bod) đc không
+  - giới thiệu cho tớ về các anh trong [trưởng phòng](bod) công ty
+  - '[phó phòng](bod) của công ty là anh [Lê Trọng Hoàng](person_name) đúng ko'
+  - '[CIA](bod) là ai'
+  - ' giới thiệu [giám đốc](bod) đi'
+  - cho mình xin ít thông tin về các thành viên trong [giám đốc kinh doanh](bod) công
+    ty
+  - '[phó giám đốc](bod) gồm những thành viên nào'
+  - các anh trong [phó giám đốc](bod) của công ty bao gồm những ai
+  - timi có biết [trưởng team](bod) của công ty gồm những ai không
+  - gửi cho tớ danh sách các thành viên trong [giám đốc kinh doanh](bod)
+  - '[giám đốc](bod) có bao nhiêu người'
+  - giới thiệu cho mình [CIAO](bod)
+  - mày có thể cung cấp thông tin về [giám đốc](bod) công ty được ko
+  - giới thiệu về các thành viên trong [CFO](bod) công ty
+  - cho tớ xin profile của [giám đốc sáng tạo](bod) công ty
+  - gửi chị thông tin của [giám đốc](bod)
+  - cho mình xin profile của ban giám đốc
+  - '[giám đốc sáng tạo](bod) công ty bao gồm có ai'
+  - hãy giới thiệu về [phó phòng](bod)
+  - có những chức vụ nào trong [phó giám đốc](bod)
+  - '[BOD](bod) bao gồm có vị trí nào nhỉ'
+  - có những ai thuộc [giám đốc](bod) công ty
+  - giới thiệu cho tôi về [leader](bod) của công ty được không
+  - mình nhớ hình như anh [Trường](person_name) gì đó làm [giám đốc thường trực](bod)
+    hả
+  - giới thiệu các vị trí trong lãnh đạo công ty
+  - cho mình hỏi về các vị trí trong [leader](bod) công ty
+  - giới thiệu cho tớ về [trưởng phòng](bod) đi
+  - nói cho mình biết về [CFO](bod) đi
+  - '[phó phòng](bod) công ty là ai'
+  - cho mình hỏi [giám đốc nhân sự](bod) công ty là ai
+  - ai là [phó giám đốc](bod) công ty thế
+  - cho mình hỏi [giám đốc stao](bod) của công ty mình là ai
+  - cho tớ hỏi [giám đốc nhân sự](bod) gồm những anh nào
+  - ai là [trưởng phòng](bod) của công ty
+  - giới thiệu cho mình ban lãnh đạo
+  - cậu hãy giới thiệu về [trưởng team](bod) công ty đi
+  - lãnh đạo của công ty là ai
+  - ' liệt kê các anh trong [giám đốc điều hành](bod) công ty'
+  - giới thiệu về các vị trí trong [phó phòng](bod) của công ty đi
+  - tớ muốn hỏi thông tin về [phó phòng](bod) đc không
+  - những ai là [phó giám đốc](bod) của công ty của công ty
+  - biết [giám đốc kinh doanh](bod) là ai không
+  - '[giám đốc kinh doanh](bod) bao gồm có những vị trí nào'
+  - có bao nhiêu thành viên trong [phó phòng](bod)
+  - cho mình xin ít thông tin về [cio](bod) công ty
+  - cho chị hỏi [giám đốc](bod) công ty bao gồm những anh nào
+  - ' muốn tìm hiểu về anh [Dũng](person_name) [trưởng phòng](bod) của công ty'
+  - hãy giới thiệu cho tôi về [leader](bod) công ty
+  - em có biết các anh trong [giám đốc](bod) bao gồm những ai không
+  - xin profile của [giám đốc](bod)
+  - cho mình xin ít thông tin về [phó phòng](bod)
+  - ' giới thiệu [BOM](bod)'
+  - ' giới thiệu về các vị trí trong [giám đốc](bod) của công ty'
+  - gửi cho anh thông tin của [phó phòng](bod) công ty
+  - '[leader](bod) công ty gồm những ai'
+  - danh sách các thành viên trong ban lãnh đạo công ty bao gồm những ai
+  - lãnh đạo công ty là ai
+  - tớ muốn biết list của các anh [phó giám đốc](bod)
+  - list các thành viên trong [phó phòng](bod) công ty
+  - ' giới thiệu về anh [Nguyễn Vũ Dũng](person_name) [trưởng phòng](bod) của công
+    ty'
+  - cho mình hỏi thông tin của ai đảm nhận chức vụ [phó giám đốc](bod) với
+  - không biết [phó giám đốc](bod) gồm những ai
+  - giới thiệu về [phó giám đốc](bod) của công ty
+  - a [Phạm Trọng Tài](person_name) [phó giám đốc](bod) là ai
+  - giới thiệu [giám đốc](bod) công ty
+  - tôi thắc mắc ko biết [phó giám đốc](bod) của công ty
+  - gửi cho mình thông tin của [phó phòng](bod) công ty được không
+  - '[leader](bod) của [ftech](work_unit) đông không'
+  - ai là [phó phòng](bod) công ty
+  - những ai nằm trong [trưởng team](bod) công ty
+  - ' giới thiệu [phó phòng](bod) đc không'
+  - '[phó phòng](bod) của công ty là ai'
+  - hình như chị [Nguyễn Khánh Ngọc](person_name) là [leader](bod) của công ty hả
+  - ' giới thiệu về [trưởng team](bod) của công ty'
+  - cho tớ hỏi ai đang làm [trưởng team](bod)
+  - cậu có biết [phó phòng](bod) của công ty là ai không
+  - xin profile của ban giám đốc công ty
+  - '[giám đốc information](bod) gồm có những anh nào'
+  - tớ muốn biết hiện thành viên đảm nhận chức vụ [phó phòng](bod) của công ty
+  - '[CPO](bod) của công ty là những ai'
+  - cho tớ hỏi về [phó phòng](bod) công ty
+  - '[phó phòng](bod) công ty mình là ai'
+  - '[phó giám đốc](bod) là những ai'
+  - cho mình hỏi [leader](bod) gồm anh nào nhỉ
+  - cho mình hỏi [giám đốc kinh doanh](bod) là ai
+  - công ty có lãnh đạo không
+  - em có biết lãnh đạo của công ty là ai ko hả cậu
+  - liệt kê các thành viên trong [giám đốc dịch vụ khách hàng](bod) của công ty
+  - a [Nguyễn Đức Tiến](person_name) là [phó giám đốc](bod) của công ty à
+  - công ty hiện có bao nhiêu [giám đốc dịch vụ khách hàng](bod)
+  - mày có biết [trưởng team](bod) là ai ko
+  - giới thiệu về ban giám đốc công ty đc ko
+  - '[phó phòng](bod) của [ftech](work_unit) gồm những vị nào vậy hả bạn'
+  - giới thiệu cho tớ [giám đốc](bod) công ty đc ko mày
+  - giới thiệu cho mình về các vị trí trong [giám đốc sản phẩm](bod) của công ty
+  - '[phó giám đốc](bod) của công ty là chị [Trần Thị Mỹ Hạnh](person_name) chuẩn
+    không'
+  - '[phó giám đốc](bod) là ai'
+  - hãy giới thiệu [giám đốc](bod) đi
+  - cho mình xin ít thông tin về các thành viên trong [giám đốc an ninh](bod) công
+    ty
+  - '[giám đốc kinh doanh](bod) gồm những anh nào'
+  - các thành viên trong [giám đốc điều hành](bod) công ty bao gồm những ai
+  - mày có biết [leader](bod) công ty bao gồm những vị trí nào ko
+  - gửi cho tớ list các anh trong [phó phòng](bod)
+  - '[ceo](bod) có bao nhiêu thành viên'
+  - giới thiệu cho tớ về [giám đốc kinh doanh](bod)
+  - m có thể cung cấp thông tin về ban giám đốc công ty được ko
+  - giới thiệu về các thành viên trong [giám đốc](bod) của công ty
+  - cho anh xin profile của ban [giám đốc](bod) công ty
+  - gửi cho anh thông tin của [phó giám đốc](bod)
+  - cho chị xin profile của [phó giám đốc](bod)
+  - '[giám đốc](bod) công ty bao gồm có ai'
+  - ' giới thiệu [giám đốc nhân sự](bod)'
+  - có những vị trí nào trong [CIA](bod)
+  - '[phó phòng](bod) bao gồm có ai nhỉ'
+  - có những ai thuộc [giám đốc điều hành](bod) công ty
+  - giới thiệu cho mình về [phó giám đốc](bod) của công ty đc ko
+  - mình nhớ hình như anh [Quang](person_name) gì đó làm [giám đốc marketing](bod)
+    hả
+  - giới thiệu các vị trí trong ban giám đốc công ty
+  - cho tớ hỏi về các anh trong [CFO](bod) của công ty
+  - giới thiệu cho mình về [HRD](bod) đi
+  - nói cho mình biết về [CIAO](bod) đi
+  - '[CPO](bod) công ty là ai'
+  - cho chị hỏi lãnh đạo công ty là ai
+  - ai là [giám đốc nhân sự](bod) của công ty thế
+  - cho anh hỏi [giám đốc](bod) của công ty mình là ai
+  - cho chị hỏi [giám đốc bộ phận chăm sóc khách hàng](bod) có những vị trí nào
+  - ai là [CFO](bod) của công ty
+  - giới thiệu cho mình [trưởng team](bod)
+  - timi hãy giới thiệu về [phó phòng](bod) công ty đi
+  - '[CFO](bod) của công ty là ai'
+  - hãy liệt kê các thành viên trong ban giám đốc của công ty
+  - giới thiệu về các vị trí trong [leader](bod) của công ty đi
+  - cho tớ hỏi thông tin về [giám đốc](bod) đc ko
+  - những ai là [phó phòng](bod) của công ty của công ty
+  - có biết [phó phòng](bod) là ai ko
+  - lãnh đạo gồm có những vị trí nào
+  - có bao nhiêu thành viên trong [trưởng team](bod)
+  - cho mình xin ít thông tin về [phó phòng](bod) của công ty
+  - cho tớ hỏi [BOD](bod) công ty bao gồm những ai
+  - tớ muốn tìm hiểu về anh [Giang](person_name) [giám đốc](bod) của
+  - hãy giới thiệu cho mình về [CBO](bod) công ty
+  - Bạn [2d art](position) có người yêu chưa?
+  - cho xin info về anh [Doãn Dạt Phước](person_name) [phó giám đốc](bod) của công
+    ty
+  - dự án [game city](product) ai là [trưởng phòng](bod) hử
+  - có những ai đang là [leader](bod) trong công ty
+  - '[AI center](department) có ai tên là [Nguyễn Ngọc Diệp](person_name) không'
+  - người nào xinh nhất công ty
+  - sếp nào khó tính nhất
+  - người yêu của anh [Tạ Đặng Quân](person_name) là ai đấy
+  - bạn biết anh [Phương](person_name) [computer vision engineer](position) không
+  - xin profile của [giám đốc](bod) [trung tâm ai](department)
+  - ' giới thiệu về chị [Vũ Nguyễn Giang Linh](person_name)'
+  - '[Lộc](person_name) là thằng nào ?'
+  - hãy giới thiệu về a [Nguyễn Quang Thuyên](person_name)
+  - ai điên loạn nhất công ty
+  - mầy hỏi [Lan Anh](person_name) không
+  - nhận sự nào đẹp trai nhất công ty
+  - Anh [Nguyễn Duy Thành](person_name) nhà ở đâu
+  - ' muốn tìm hiểu về bạn [Nguyễn Hồng Cường](person_name)'
+  - công ty có ai là [Chi](person_name) ko
+  - em [Nguyễn Minh Hiếu](person_name) thuộc phòng bộ phận [it support](department)
+    có trình độ chuyên môn thế nào
+  - ngày sinh của sếp [Nguyễn Tuấn Quang](person_name) là gì hả
+  - hỏi [An Phú](person_name) không
+  - hotline của anh [Bùi Việt Anh](person_name) là ntn
+  - mày giới thiệu cho 1 người đi?
+  - ai khó tính nhất công ty
+  - người nào sợ vợ nhất công ty
+  - cho hỏi anh [Vũ](person_name) kết hôn khi nào
+  - cho em hỏi chị [Lê Thị Lan](person_name) trong công ty
+  - sếp nào sợ vợ nhất công ty
+  - bạn có biết em [Phùng Thị Phương Mai](person_name) phòng phòng ban [cơ sở hạ tầng](department)
+    không
+  - ai nghèo nhất phòng ban phòng ban [business](department)
+  - cho xin thông tin về chị [Nguyễn Thị Hải Yến](person_name) team bộ phận [application](department)
+  - gửi cho tớ info anh [Nguyễn Tiến Vượng](person_name) đi
+  - cậu có hỏi chị [Nguyễn Linh Chi](person_name) không hả
+  - xin profile của [phó giám đốc](bod) [trung tâm ai](department)
+  - có hỏi sếp [Tạ Đặng Quân](person_name) không
+  - ai đáng yêu nhất công ty
+  - m giới thiệu về a [Tạ Đặng Quân](person_name) đi
+  - Bạn [lập trình viên fullstack](position) có bồ chưa?
+  - cho anh xin thông tin về anh [Tạ Đặng Quân](person_name) [giám đốc](bod) của công
+    ty
+  - dự án [LTA](product) ai là [trưởng phòng](bod)
+  - có những ai đang là [trưởng phòng](bod) trong công ty
+  - '[trung tâm ai](department) có ai tên là [Dương Minh Trí](person_name) ko'
+  - nhận sự nào xinh nhất công ty
+  - người yêu của anh [Nguyễn Duy Anh](person_name) là ai đấy
+  - bạn hỏi anh [Ngọc Anh](person_name) [game 3d](position) không
+  - xin profile của [giám đốc](bod) [AI center](department)
+  - ' giới thiệu về chị [Hoàng Thị Tuyết](person_name)'
+  - '[Minh](person_name) là thằng nào ?'
+  - ' giới thiệu về anh [Trần Khánh Toàn](person_name)'
+  - ai sợ vợ nhất công ty
+  - bot biết [Thư](person_name) không
+  - người nào đẹp trai nhất công ty
+  - Anh [Phùng Đức Long](person_name) nhà ở đâu
+  - tôi muốn tìm hiểu về bạn [Lê Thị Ngọc Hải](person_name)
+  - công ty có ai là [Như Nguyện](person_name) ko
+  - a [Nguyễn Văn Tú](person_name) có trình độ chuyên môn thế nào
+  - ngày sinh của sếp [Vũ Lê Huy](person_name) là gì
+  - biết [Phương Mai](person_name) không
+  - số hotline của anh [Bùi Việt Anh](person_name) là thế nào
+  - timi giới thiệu cho 1 người đi?
+  - nhân viên nào lùn nhất công ty
+  - cho hỏi anh [Nguyễn Như Quỳnh](person_name) lấy vợ khi nào
+  - cho mình hỏi chị [Nguyễn Hồng Hạnh](person_name) trong công ty
+  - mày có biết chị [Trần Thị Mỹ Hạnh](person_name) bộ phận bộ phận [kinh doanh](department)
+    ko
+  - ai nghèo nhất phòng team [trung tâm ai](department)
+  - cho xin info về chị [Nguyễn Hương Quỳnh](person_name) bộ phận phòng ban [trung
+    tâm ai](department)
+  - gửi cho anh info anh [Nguyễn Văn Tú](person_name) đi
+  - cậu có biết a [Doãn Dạt Phước](person_name) không vậy
+  - xin profile của [phó giám đốc](bod) [AI center](department)
+  - có hỏi a [Tạ Đặng Quân](person_name) ko
+  - timi kể về anh [Doãn Dạt Phước](person_name) đi
+  - Bạn [soạn nội dung giáo dục](position) có bồ chưa?
+  - cho xin info về anh [Nguyễn Việt Cường](person_name) lãnh đạo của công ty
+  - dự án [f-bang](product) ai là [leader](bod)
+  - có những ai đang là [trưởng team](bod) trong công ty
+  - '[AI center](department) có ai tên là [Hưng](person_name) không'
+  - nhân viên nào xinh nhất công ty
+  - bồ của a [Quân](person_name) là ai đấy
+  - bạn hỏi anh [Toàn](person_name) [python develop](position) ko
+  - ' giới thiệu về chị [Doãn Hoài Linh](person_name)'
+  - '[vũ](person_name) là thằng nào ?'
+  - hãy giới thiệu về anh [Vũ Lê Huy](person_name)
+  - ai đẹp trai nhất công ty
+  - em biết [Dương Đức Chính](person_name) không
+  - nhân viên nào đẹp trai nhất công ty
+  - Anh [Phạm Quốc Đạt](person_name) nhà ở đâu
+  - ' muốn tìm hiểu về bạn [Bùi Quỳnh Anh](person_name)'
+  - công ty có ai là [Mạc Trung Tình](person_name) không
+  - c [Trang](person_name) có trình độ chuyên môn như thế nào
+  - ngày sinh của sếp [Phạm Trọng Tài](person_name) là gì hả
+  - biết [Chiến](person_name) không
+  - sdt của anh [Lê Thị Ngọc Hải](person_name) là gì vậy
+  - m giới thiệu cho 1 người đi?
+  - người nào béo nhất công ty
+  - cho hỏi anh [Quang](person_name) cưới vợ khi nào
+  - cho tớ hỏi chị [Phạm Thị Minh Châu](person_name) trong công ty
+  - ' có biết chị [Nguyễn Hương Quỳnh](person_name) phòng ban phòng ban [hr admin](department)
+    không'
+  - ai nghèo nhất phòng phòng [product](department)
+  - cho chị xin thông tin về chị [Đậu Thị Vân Anh](person_name) team bộ phận [CSKH](department)
+  - gửi cho tớ information anh [Nguyễn Văn Hảo](person_name) đi
+  - ' biết em [Đào Thị Hoàng Nga](person_name) không nhỉ'
+  - có hỏi a [Nguyễn Vũ Dũng](person_name) ko
+  - bạn giới thiệu về anh [Nguyễn Tuấn Quang](person_name) đi
+  - Bạn [C# dev](position) có người yêu chưa?
+  - cho xin thông tin về anh [Phạm Trọng Tài](person_name) [phó giám đốc](bod) của
+    công ty
+  - dự án [fbang](product) ai là [trưởng team](bod)
+  - '[trung tâm ai](department) có ai tên là [Hoàng Gia Bảo](person_name) ko'
+  - thành viên nào xinh nhất công ty
+  - người yêu của anh [Nguyễn Văn Hảo](person_name) là ai đấy
+  - bạn hỏi anh [Quang](person_name) [nhà phát minh](position) ko
+  - ' giới thiệu về chị [Nguyễn Thị San](person_name)'
+  - '[Dương](person_name) là thằng nào ?'
+  - hãy giới thiệu về anh [Trần Mạnh Hùng](person_name)
+  - ai cục xúc nhất công ty
+  - bot biết [Nguyễn Thành Thái](person_name) không
+  - thành viên nào đẹp trai nhất công ty
+  - Anh [Doãn Đạt Phước](person_name) nhà ở đâu
+  - ' muốn tìm hiểu về bạn [Nguyễn Đức Anh](person_name)'
+  - công ty có ai là [Hoàng](person_name) không
+  - a [Nguyễn Huy Tưởng](person_name) có trình độ chuyên môn như thế nào
+  - ngày sinh của sếp [Nguyễn Tuấn Quang](person_name) là thế nào
+  - hỏi [Mai Anh](person_name) không
+  - số hotline của anh [Lê Thị Hải Linh](person_name) là ntn
+  - bạn giới thiệu cho 1 người đi?
+  - nhân viên nào béo nhất công ty
+  - cho hỏi anh [Tùng](person_name) lấy vợ khi nào
+  - cho em hỏi chị [Nguyễn Thị Hải Yến](person_name) trong công ty
+  - bạn có hỏi bạn [Đào Thị Hoàng Nga](person_name) team team [bảo trì](department)
+    ko
+  - ai nghèo nhất phòng phòng ban [product](department)
+  - cho xin information về chị [Doãn Hoài Linh](person_name) bộ phận bộ phận [HR and
+    Admin](department)
+  - gửi cho anh info anh [Đinh Trọng Liên](person_name) đi
+  - cậu có hỏi c [Đào Thị Hoàng Nga](person_name) ko hả
+  - biết sếp [Nguyễn Vũ Dũng](person_name) ko
+  - cậu kể về anh [Nguyễn Việt Cường](person_name) đi
+  - Bạn [unity 3d](position) có người yêu chưa?
+  - cho tớ xin information về anh [Nguyễn Vũ Dũng](person_name) [giám đốc](bod) của
+    công ty
+  - dự án [f-cake](product) ai là [leader](bod) hả
+  - '[trung tâm ai](department) có ai tên là [Khánh](person_name) không'
+  - bồ của c [Trần Thị Hậu](person_name) là ai đấy
+  - bạn biết anh [Thành](person_name) [product analyst](position) không
+  - ' giới thiệu về chị [Lâm Thị Anh](person_name)'
+  - '[Tình](person_name) là thằng nào ?'
+  - hãy giới thiệu về anh [Phí Anh Tú](person_name)
+  - ai lùn nhất công ty
+  - mầy biết [Nguyễn Cao Thắng](person_name) không
+  - Anh [Nguyễn Văn Hảo](person_name) nhà ở đâu
+  - ' muốn tìm hiểu về bạn [Long](person_name)'
+  - công ty có ai là [Long](person_name) không
+  - c [Hương](person_name) thuộc bộ phận phòng ban [AI center](department) có trình
+    độ chuyên môn như thế nào
+  - ngày sinh của sếp [Nguyễn Vũ Dũng](person_name) là gì vậy hả
+  - biết [Quyết](person_name) không
+  - số phone của anh [Nguyễn Duy Thành](person_name) là gì hả
+  - em giới thiệu cho 1 người đi?
+  - thành viên nào nhiều tiền nhất công ty
+  - cho hỏi anh [Phương](person_name) lấy vợ khi nào
+  - cho hỏi chị [Nguyễn Thị Nga Ngọc](person_name) trong công ty
+  - timi có hỏi em [Doãn Hoài Linh](person_name) bộ phận bộ phận [application](department)
+    ko
+  - ai nghèo nhất team phòng ban [kinh doanh](department)
+  - cho xin thông tin về chị [Nguyễn Thị Hải Yến](person_name) bộ phận bộ phận [cơ
+    sở hạ tầng](department)
+  - gửi cho anh info anh [Nguyễn Văn Đạt](person_name) đi
+  - cậu có hỏi a [Tạ Đặng Quân](person_name) ko nhỉ
+  - có hỏi sếp [Nguyễn Duy Anh](person_name) ko
+  - em giới thiệu về anh [Đào Trường Giang](person_name) đi
+  - Bạn [data science](position) có người yêu chưa?
+  - cho xin thông tin về anh [Nguyễn Tuấn Quang](person_name) [giám đốc info](bod)
+    của công ty
+  - dự án [FID](product) ai là [trưởng phòng](bod) hả
+  - '[trung tâm ai](department) có ai tên là [Nguyễn Tiến Vượng](person_name) ko'
+  - người yêu của em [Giang Linh](person_name) thuộc phòng bộ phận [kinh doanh](department)
+    là ai đấy
+  - bạn hỏi anh [Nguyễn Lê Tới](person_name) [nlp](position) không
+  - hãy giới thiệu về chị [Hoàng Thị Tuyết](person_name)
+  - '[Duy](person_name) là thằng nào ?'
+  - ' giới thiệu về anh [Nguyễn Huy Tưởng](person_name)'
+  - ai giàu nhất công ty
+  - mầy biết [Phạm Anh Tú](person_name) không
+  - Anh [Phan Xuân Phúc](person_name) nhà ở đâu
+  - ' muốn tìm hiểu về bạn [Mai Lĩnh](person_name)'
+  - công ty có ai là [Nguyễn Hồng Quang](person_name) không
+  - chị [Hoàng Nga](person_name) bộ phận bộ phận [platform](department) có trình độ
+    chuyên môn thế nào
+  - ngày sinh của sếp [Nguyễn Duy Anh](person_name) là thế nào
+  - hỏi [Minh Châu](person_name) không
+  - số điện thoại của anh [Trần Thị Mỹ Hạnh](person_name) là thế nào
+  - cậu giới thiệu cho 1 người đi?
+  - nhận sự nào cao nhất công ty
+  - cho hỏi anh [Nam](person_name) lấy chồng khi nào
+  - cho mình hỏi chị [Đậu Thị Vân Anh](person_name) trong công ty
+  - ' có hỏi em [Nguyễn Hồng Hạnh](person_name) phòng team [kiểm toán](department)
+    không'
+  - ai nghèo nhất phòng phòng [cơ sở hạ tầng](department)
+  - cho xin thông tin về chị [Đỗ Linh Chi](person_name) phòng ban team [business](department)
+  - gửi cho chị information anh [Nguyễn Tiến Vượng](person_name) đi
+  - bạn có hỏi em [An Phú](person_name) ko hả
+  - có hỏi anh [Huỳnh Ngọc Hải](person_name) ko
+  - cậu kể về a [Trần Ngọc Cương](person_name) đi
+  - Bạn [react](position) có người yêu chưa?
+  - cho chị xin information về anh [Đào Trường Giang](person_name) [giám đốc thông
+    tin](bod) của công ty
+  - dự án [cổng game](product) ai là [trưởng team](bod)
+  - '[trung tâm ai](department) có ai tên là [Nguyễn Thành Long](person_name) không'
+  - người yêu của anh [Phước](person_name) là ai đấy
+  - bạn biết anh [Đặng Huỳnh Khánh Ly](person_name) [development and operations](position)
+    ko
+  - ' giới thiệu về chị [Nguyễn Ngọc Diệp](person_name)'

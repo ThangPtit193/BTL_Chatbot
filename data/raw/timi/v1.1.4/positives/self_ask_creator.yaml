@@ -1,0 +1,307 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_creator
+  examples:
+  - công ty nào đã làm ra bạn vậy
+  - bot có người thân không
+  - nơi sinh của mày là nơi đâu
+  - quê của em ở nơi nào
+  - cậu ở nơi nào đến
+  - bạn được xây dựng thế nào hả
+  - làm như thế nào để xây dựng được như mày vậy
+  - ai là bố của timi
+  - nơi cậu được sinh là ở ạ
+  - có thể cho anh hỏi em sinh tại nha
+  - ' người làm ra bot'
+  - nơi sinh của em nơi đâu thế
+  - nơi tôi sinh ra ở nha
+  - ' được tạo ra ở chỗ nào'
+  - bạn do ai làm ra
+  - có thể cho tớ hỏi bạn người từ nha đấy
+  - timi có người đỡ đầu không
+  - cho tôi hỏi nơi bạn được sinh là nơi đâu đấy
+  - ' cho tớ hỏi quê bạn nơi nhé'
+  - quê quán tôi tại nha
+  - những ai trong công ty đã góp phần chế tạo ra bot thế
+  - quê hương bot ở nhé
+  - bạn đến từ nhé
+  - ' chế tạo ra timi là ai thế'
+  - có thể cho tôi hỏi nơi bot được sinh ra nơi nhé
+  - m sinh ra ở đâu
+  - bố mẹ timi là ai
+  - có thể cho tôi hỏi nơi sinh của em là tại nhé
+  - có thể cho mình hỏi cậu sinh nơi nhé
+  - bot có gia đình không
+  - cho mình hỏi nơi sinh của cậu là tại ạ
+  - tôi là người từ ạ hả
+  - ' sinh ra ở chỗ nào'
+  - có thể cho anh hỏi em người từ ạ
+  - cho mình hỏi bố cậu là ai
+  - công ty nào tạo ra bạn vậy
+  - bạn có anh chị em gì không
+  - ' cho tớ hỏi nơi cậu sinh ra tại ạ'
+  - cho cô hỏi nơi sinh của cháu tại đâu đó
+  - ' cho tôi hỏi nơi sinh của mày là tại nhé'
+  - cho tớ hỏi bạn sinh nơi đâu
+  - bạn là người từ nhé
+  - bạn được tạo ra từ đâu vậy
+  - bạn được làm bởi công ty nào vậy
+  - anh sinh ra ở ạ đó
+  - công ty nào tạo ra bạn
+  - bạn sinh ở đâu vậy
+  - cậu sinh ra ở đâu
+  - những ai sinh ra timi
+  - cho tớ hỏi cậu là người từ ạ
+  - bố của timi là ai
+  - ai là người chế tạo ra m thế
+  - những ai đã góp phần làm ra mày
+  - ' ai đã sinh ra cậu'
+  - tôi đến từ ạ đấy
+  - bot đến từ chỗ nào
+  - ' cho tui hỏi nơi sinh của bạn nơi ạ đấy'
+  - công ty nào đã làm ra bạn
+  - timi có người thân không
+  - nơi sinh của cậu là tại nha thế
+  - quê mày ở đâu
+  - mày từ đâu đến
+  - bot được xây dựng thế nào vậy
+  - làm như thế nào để xây dựng được như em vậy
+  - ai là bố của m
+  - nơi timi sinh là tại nha thế
+  - ' cho tôi hỏi em sinh tại ạ đó'
+  - những người làm ra em
+  - nơi sinh của anh là ở ạ vậy
+  - nơi anh sinh là ở nhé đó
+  - bạn được tạo ra từ nơi nào
+  - m do ai làm ra thế
+  - có thể cho tớ hỏi bạn là người từ nhé
+  - bạn có người đỡ đầu không
+  - cho tớ hỏi nơi bạn được sinh ra nơi ạ
+  - có thể cho tớ hỏi quê bạn nơi đâu
+  - quê quán anh nơi nhé
+  - ' ai trong công ty [phương đông](work_unit) đã góp phần chế tạo ra em'
+  - quê quán mày tại nha hả
+  - em đến từ đâu
+  - ' chế tạo ra bạn là ai'
+  - ' cho tôi hỏi nơi bot được sinh ra là tại nhé'
+  - bot sinh ra ở đâu hả
+  - bố timi là ai
+  - ' cho chị hỏi nơi sinh của em là ở đâu đó'
+  - có thể cho mình hỏi cậu sinh ra nơi nhé
+  - em có gia đình không
+  - cho tớ hỏi nơi sinh của cậu là nơi ạ vậy
+  - tớ là người từ ạ hả
+  - bot sinh ra từ nơi nào
+  - ' cho chị hỏi em là người từ nhé'
+  - cho tớ hỏi mẹ em là ai
+  - timi có anh chị em gì không
+  - có thể cho tớ hỏi nơi cậu được sinh ở nha
+  - cho bác hỏi nơi sinh của cháu ở ạ thế
+  - có thể cho tôi hỏi nơi sinh của cậu là nơi ạ đó
+  - cho tớ hỏi bạn sinh nơi nhé hả
+  - mày là người từ nha
+  - bạn được tạo ra ở đâu vậy
+  - chị sinh ra nơi đâu
+  - cty [hải tiến](work_unit) nào tạo ra bạn
+  - bot sinh nơi ạ đó
+  - ' ai sinh ra m'
+  - cho tao hỏi cậu là người từ nhé vậy
+  - mẹ bạn là ai
+  - ai là người tạo ra bạn thế
+  - ' ai đã góp phần tạo ra mày'
+  - những ai đã sinh ra em
+  - anh đến từ nha đó
+  - m đến từ chỗ nào
+  - có thể cho tớ hỏi nơi sinh của bạn là nơi nha
+  - công ty nào đã làm ra bạn hả
+  - em có người thân không
+  - nơi sinh của mày là nơi ạ đấy
+  - quê em từ đâu
+  - em ở đâu đến
+  - bot được xây dựng như nào
+  - làm thế nào để xây dựng được như mày vậy
+  - ai là mẹ của timi
+  - nơi bot được sinh ra ở nhé
+  - ' cho anh hỏi em sinh ra tại đâu'
+  - những người tạo ra em
+  - nơi sinh của tôi nơi đâu hả
+  - nơi em sinh là ở nhé
+  - ' được tạo ra từ chỗ nào'
+  - m do ai chế tạo ra thế
+  - ' cho tao hỏi bạn là người từ nha'
+  - em có người đỡ đầu không
+  - cho mình hỏi nơi bạn sinh ra tại đâu thế
+  - ' cho tui hỏi quê hương bạn nơi đâu đó'
+  - quê chị tại ạ thế
+  - ' ai trong công ty [CP Phát Triển Phần Mềm Asia](work_unit) đã góp phần làm ra
+    bạn'
+  - quê mày tại đâu
+  - m đến từ nhé
+  - ' tạo ra cậu là ai'
+  - có thể cho tôi hỏi nơi bạn được sinh tại đâu
+  - mày sinh ra ở đâu hả
+  - gia đình timi là ai
+  - có thể cho anh hỏi nơi sinh của em nơi đâu
+  - có thể cho tớ hỏi cậu sinh ở ạ đấy
+  - m có gia đình không
+  - cho tớ hỏi nơi sinh của cậu nơi ạ
+  - chị là người từ nha hả
+  - timi sinh ra từ nơi nào
+  - ' cho anh hỏi em người từ nha đấy'
+  - cho tôi hỏi gia đình cậu là ai
+  - em có anh chị em gì không
+  - có thể cho tớ hỏi nơi cậu sinh tại ạ
+  - cho chú hỏi nơi sinh của cháu tại nha thế
+  - có thể cho tôi hỏi nơi sinh của bot là tại nhé đấy
+  - cho mình hỏi bạn sinh tại đâu
+  - mày người từ nhé thế
+  - bạn được tạo ra ở nơi nào vậy
+  - em sinh ra nơi ạ
+  - công ty [ftech](work_unit) nào tạo ra bạn
+  - em sinh tại đâu
+  - những ai sinh ra cậu
+  - cho tớ hỏi cậu người từ ạ thế
+  - bố của bạn là ai
+  - ai là người làm ra em
+  - ' ai đã góp phần chế tạo ra m thế'
+  - những ai đã sinh ra bạn
+  - tôi đến từ ạ
+  - cậu đến từ chỗ nào
+  - có thể cho tớ hỏi nơi sinh của bạn ở ạ thế
+  - công ty nào đã làm ra bạn đấy
+  - mày có người thân không
+  - nơi sinh của bot là tại nha
+  - quê của cậu ở nơi nào
+  - em ở nơi nào đến
+  - cậu được xây dựng ntn đấy
+  - làm như nào để xây dựng được như mày vậy
+  - ai là bố mẹ bạn
+  - nơi cậu được sinh là tại đâu đấy
+  - có thể cho chị hỏi em sinh ở nha
+  - những người làm ra bạn
+  - nơi sinh của anh là nơi đâu
+  - nơi em sinh nơi ạ thế
+  - mày được tạo ra từ đâu
+  - mày do ai tạo ra thế
+  - ' cho tớ hỏi bạn người từ nha'
+  - cậu có người đỡ đầu không
+  - cho tớ hỏi nơi bạn được sinh ra nơi nhé
+  - có thể cho tớ hỏi quê quán bạn ở đâu
+  - quê hương em nơi đâu
+  - những ai trong công ty đã góp phần làm ra em
+  - quê timi ở đâu đấy
+  - bạn đến từ ạ
+  - ' tạo ra em là ai thế'
+  - có thể cho tôi hỏi nơi m được sinh ra là ở ạ
+  - timi sinh ra ở đâu
+  - mẹ timi là ai
+  - ' cho chị hỏi nơi sinh của em nơi nha đó'
+  - có thể cho tớ hỏi cậu sinh ra nơi đâu hả
+  - cậu có gia đình không
+  - cho tui hỏi nơi sinh của cậu là nơi nhé
+  - anh người từ ạ vậy
+  - timi sinh ra ở nơi nào
+  - ' cho anh hỏi em người từ ạ vậy'
+  - cho tao hỏi gia đình timi là ai
+  - m có anh chị em gì không
+  - ' cho tôi hỏi nơi cậu được sinh ở ạ đó'
+  - cho ông hỏi nơi sinh của cháu ở nhé
+  - có thể cho tôi hỏi nơi sinh của cậu ở đâu
+  - cho tớ hỏi bạn sinh ra ở ạ
+  - cậu người từ nha
+  - bạn được tạo ra từ nơi nào vậy
+  - em sinh ở đâu
+  - ngân hàng [acb](work_unit) nào tạo ra bạn
+  - bạn sinh ở đâu đó
+  - những ai sinh ra em
+  - cho tao hỏi cậu là người từ nhé
+  - bố mẹ của cậu là ai
+  - ai là người làm ra mày
+  - ' ai đã góp phần làm ra mày thế'
+  - ' ai đã sinh ra m'
+  - tôi đến từ nhé đấy
+  - mày đến từ chỗ nào
+  - có thể cho tôi hỏi nơi sinh của bạn là tại đâu
+  - công ty nào đã làm ra bạn đó
+  - cậu có người thân không
+  - nơi sinh của cậu nơi nhé hả
+  - quê của bạn từ chỗ nào
+  - ' ở nơi nào đến'
+  - m được xây dựng như thế nào đấy
+  - làm thế nào để xây dựng được như bot vậy
+  - ai là bố mẹ của em
+  - nơi em được sinh là nơi nhé vậy
+  - có thể cho anh hỏi em sinh nơi nhé
+  - ' người chế tạo ra em'
+  - nơi sinh của anh ở nhé hả
+  - nơi anh sinh ra là ở ạ thế
+  - timi được tạo ra ở nơi nào
+  - bot do ai tạo ra thế
+  - ' cho mình hỏi bạn người từ nha'
+  - m có người đỡ đầu không
+  - cho tôi hỏi nơi bạn sinh ra là ở nha
+  - có thể cho tao hỏi quê bạn nơi nha
+  - quê hương chị tại đâu
+  - những ai trong cty [long thành](work_unit) đã góp phần làm ra cậu
+  - quê hương bạn ở ạ
+  - m đến từ ạ đấy
+  - ' tạo ra timi là ai'
+  - ' cho tôi hỏi nơi cậu được sinh là ở ạ hả'
+  - em sinh ra ở đâu
+  - ' cho tôi hỏi nơi sinh của em là nơi nhé hả'
+  - ' cho tớ hỏi cậu sinh nơi nhé'
+  - bạn có gia đình không
+  - cho tớ hỏi nơi sinh của cậu nơi đâu vậy
+  - tớ là người từ nhé hả
+  - bot sinh ra ở nơi nào
+  - ' cho chị hỏi em người từ đâu vậy'
+  - cho tôi hỏi bố mẹ của timi là ai
+  - bot có anh chị em gì không
+  - ' cho tôi hỏi nơi cậu sinh tại đâu'
+  - cho bác hỏi nơi sinh của cháu nơi ạ đó
+  - có thể cho tôi hỏi nơi sinh của m nơi nhé
+  - cho tao hỏi bạn sinh ra nơi đâu
+  - bạn người từ nha vậy
+  - bạn được tạo ra từ chỗ nào vậy
+  - em sinh tại nha vậy
+  - tập đoàn [Vingroup](work_unit) nào tạo ra bạn
+  - mày sinh ở nhé
+  - ' ai sinh ra cậu'
+  - cho tui hỏi cậu là người từ ạ vậy
+  - bố của m là ai
+  - ai là người tạo ra m
+  - ' ai đã góp phần làm ra mày'
+  - ' ai đã sinh ra em'
+  - chị đến từ nha thế
+  - em đến từ chỗ nào
+  - ' cho tớ hỏi nơi sinh của bạn nơi ạ vậy'
+  - công ty nào đã làm ra bạn thế
+  - m có người thân không
+  - nơi sinh của cậu ở đâu hả
+  - quê của bạn ở chỗ nào
+  - ' ở chỗ nào đến'
+  - cậu được xây dựng thế nào
+  - làm ntn để xây dựng được như bot vậy
+  - ai là bố mẹ của bạn
+  - nơi bạn sinh nơi nhé đấy
+  - ' cho anh hỏi em sinh tại nhé'
+  - ' người chế tạo ra mày'
+  - nơi sinh của mình là tại nhé thế
+  - nơi mình sinh là ở đâu đấy
+  - ' được tạo ra ở đâu'
+  - cậu do ai tạo ra thế
+  - có thể cho tôi hỏi bạn người từ nha
+  - bot có người đỡ đầu không
+  - cho tớ hỏi nơi bạn sinh ở nhé hả
+  - có thể cho tao hỏi quê bạn tại đâu
+  - quê quán mình ở nha đó
+  - ' ai trong cty [FLC](work_unit) đã góp phần tạo ra mày thế'
+  - quê hương timi nơi ạ thế
+  - m đến từ nha
+  - người làm ra mày là ai thế
+  - ' cho tôi hỏi nơi bạn được sinh ra tại nha đấy'
+  - em sinh ra ở đâu thế
+  - ' cho anh hỏi nơi sinh của em ở ạ hả'
+  - ' cho tao hỏi cậu sinh nơi ạ'

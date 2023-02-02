@@ -1,0 +1,719 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: rec_ask_contact_info
+  examples:
+  - hotline recruitment công ty là gì thế?
+  - tớ muốn gọi điện thoại đến công ty [f tech](work_unit)
+  - xin số
+  - cho xin số hotline đi
+  - ' tuyển nhân viên có số hotline để gọi ko'
+  - cho tớ hỏi thông tin số hotline với
+  - ê ơi, số hotline bên [ftech](work_unit) chi nhánh [đn](location) là gì vậy?
+  - có thể gửi tớ số recruitment của công ty ko
+  - cho tớ xin số của công ty đi?
+  - ' [f tech](work_unit) có sdt tuyển dụng'
+  - tớ xin số hotline tuyển dụng nhân sự của [ftech](work_unit)
+  - làm răng để gọi điện đến tuyển [f tech](work_unit)
+  - sdt tuyển nhân sự ra sao
+  - Gửi mình số phone được ko
+  - số hotline của công ty là gì
+  - tuyển dụng nhân sự công ty có sdt là thế nào thế
+  - '[VL](location) có số phone để tiện nói chuyện không'
+  - Gửi tôi số hotline của công ty nha
+  - cho hỏi có số không
+  - Gửi hotline hr đi
+  - Cho tớ xin sdt hr để tiện trao đổi?
+  - số [f-tech](work_unit)
+  - số công ty là gì thế?
+  - tớ muốn gọi điện đến công ty [f tech](work_unit)
+  - xin sdt
+  - cho xin số đi
+  - phòng ban tuyển nhân viên có sdt để liên hệ ko
+  - tớ muốn hỏi information số với đc không
+  - ê ơi, số điện thoại bên [f tech](work_unit) chi nhánh [đà nẵng](location) là gì
+    vậy?
+  - ' gửi tớ số điện thoại recruitment của công ty không'
+  - cho tôi xin sdt tuyển của công ty đi?
+  - công ty [f tech](work_unit) có số tuyển không
+  - mình xin số phone tuyển chọn nhân sự của [ftech](work_unit)
+  - làm sao để gọi điện đến tuyển dụng nhân sự [f tech](work_unit)
+  - số bên recruitment ra sao
+  - Gửi tớ số phone được ko
+  - số phone của công ty là gì
+  - tuyển nhân sự công ty có số hotline là thế nào
+  - '[đà lạt](location) có sdt để tiện trao đổi hơn'
+  - Gửi tớ số hotline của công ty nha
+  - cho hỏi có hotline không
+  - Gửi sdt hr đi
+  - Cho tớ xin số phone hr để tiện trao đổi?
+  - hotline [f-tech](work_unit)
+  - số phone tuyển dụng nhân sự công ty là gì thế?
+  - tôi muốn gọi điện thoại đến công ty [f tech](work_unit)
+  - xin số phone
+  - cho xin số điện thoại đi
+  - phòng ban tuyển dụng có hotline để liên hệ không
+  - cho tôi hỏi info số hotline tuyển với
+  - ê ơi, số phone bên [f tech](work_unit) chi nhánh [thanh hóa](location) là gì vậy?
+  - ' gửi mình số điện thoại của công ty ko'
+  - cho tớ xin số điện thoại tuyển dụng nhân sự của công ty đi?
+  - công ty [f tech](work_unit) có số hotline tuyển ko
+  - tớ muốn xin số phone tuyển nhân sự của [f-tech](work_unit)
+  - làm sao để gọi điện đến tuyển nhân sự [ftech](work_unit)
+  - số hotline phía tuyển chọn nhân sự ra sao
+  - Gửi tớ hotline được ko
+  - số của công ty là gì
+  - tuyển dụng nhân sự công ty có số điện thoại là gì
+  - '[hang sơn đoòng](location) có sdt để nói chuyện không'
+  - Gửi mình hotline của công ty nha
+  - cho hỏi có sdt không
+  - Gửi số điện thoại hr đi
+  - Cho tớ xin hotline hr để tiện trao đổi?
+  - hotline [f tech](work_unit)
+  - hotline tuyển dụng công ty là gì thế?
+  - tôi muốn gọi điện thoại đến [ftech](work_unit)
+  - xin hotline
+  - cho xin hotline đi
+  - ' tuyển dụng nhân sự có sdt để gọi ko'
+  - tôi muốn hỏi thông tin số được không
+  - ê ơi, số phone bên [ftech](work_unit) chi nhánh [đà nẵng](location) là gì vậy?
+  - có thể gửi tôi số điện thoại tuyển dụng nhân sự của công ty không
+  - cho tôi xin số phone của công ty đi?
+  - ' có số điện thoại tuyển'
+  - tớ muốn xin hotline tuyển chọn nhân sự của [ftech](work_unit)
+  - làm sao để gọi điện đến tuyển dụng nhân sự [f-tech](work_unit)
+  - sdt tuyển chọn nhân sự ra sao
+  - Gửi tớ số hotline được ko
+  - số điện thoại của công ty
+  - tuyển chọn nhân sự công ty có hotline là gì hả
+  - '[hcm](location) có số phone để tiện nói chuyện hơn'
+  - Gửi tôi số phone của công ty nha
+  - cho hỏi có số hotline không
+  - Gửi số hr đi
+  - Cho tôi xin số hotline hr để tiện trao đổi?
+  - số hotline [ftech](work_unit)
+  - số điện thoại tuyển dụng nhân sự công ty là gì thế?
+  - tôi muốn gọi điện đến [f tech](work_unit)
+  - xin số hotline
+  - cho xin số phone đi
+  - ' tuyển có hotline để gọi không'
+  - mình muốn hỏi info số phone với
+  - ê ơi, số hotline bên [f tech](work_unit) chi nhánh [bắc giang](location) là gì
+    vậy?
+  - ' gửi tôi sdt của công ty không'
+  - cho tớ xin sdt của công ty đi?
+  - ' [ftech](work_unit) có số phone tuyển dụng'
+  - mình muốn xin số hotline tuyển nhân viên của [f-tech](work_unit)
+  - làm răng để gọi điện đến tuyển dụng nhân sự [f tech](work_unit)
+  - '[tao](pronoun) ưng nói chuyện với bên tuyển dụng đc không'
+  - làm gì để trao đổi với bộ phận tuyển nhân sự
+  - mình muốn tiếp xúc để được phỏng vấn thì liên hệ qua đâu?
+  - muốn trao đổi trực tiếp thì cần làm gì
+  - giờ làm như răng để tớ contact với tuyển dụng đc cậu?
+  - contact với công ty qua các kênh nào hả
+  - Các kênh contact của của công ty là gì
+  - information tiếp xúc tại [NB](location)
+  - mình muốn contact với [HR and Admin](department)
+  - có thể gửi tớ cách thức liên hệ với người phụ trách tuyển nhân sự
+  - cho tôi hỏi info contact tuyển của [f tech](work_unit) đi nha
+  - muốn nói chuyện với bộ phận [nhân sự](department) thì phải làm như nào
+  - tuyển dụng nhân sự của công ty [f-tech](work_unit) có information liên lạc ko
+  - tiếp xúc với tuyển nhân sự tại [sa đéc](location) như nào
+  - tớ muốn contact với tuyển nhân sự bên bạn thì làm như thế nào
+  - có cách gì để liên lạc với bên tuyển chọn nhân sự [quảng nam](location) ko
+  - Gửi tớ các kênh tiếp xúc của công ty nha
+  - Làm thế nào để liên hệ phỏng vấn hả bạn
+  - tớ muốn trao đổi trực tiếp thì làm thế nào
+  - '[chị](pronoun) thích nói chuyện với bên tuyển nhân sự được không'
+  - làm như nào để liên hệ với bộ phận tuyển vậy
+  - tôi muốn trao đổi để được phỏng vấn thì trao đổi qua đâu?
+  - muốn liên lạc trực tiếp thì cần làm gì
+  - giờ làm như sao để tớ liên lạc với HCNS đc cậu?
+  - liên hệ với công ty qua các kênh nào hả
+  - Các kênh trao đổi của của công ty là gì
+  - thông tin liên hệ tại [hà nội](location)
+  - tôi muốn liên lạc với [HR and Admin](department)
+  - ' gửi tôi cách thức contact với phòng ban tuyển nhân sự đc ko'
+  - cho tớ hỏi thông tin liên hệ recruitment của [ftech](work_unit) đi nha
+  - muốn nói chuyện với [hr admin](department) thì phải làm gì
+  - tuyển dụng của công ty [f-tech](work_unit) có information contact
+  - trao đổi với tuyển dụng tại [yên bái](location) như nào
+  - mình muốn tiếp xúc với tuyển dụng nhân sự thì làm thế nào
+  - có cách nào để tiếp xúc với bên tuyển [miền nam](location)
+  - Gửi tớ các kênh liên lạc của công ty nha
+  - Làm thế nào để contact phỏng vấn hả bạn
+  - tớ muốn trao đổi trực tiếp thì làm như thế nào
+  - '[tớ](pronoun) thích nói chuyện với bên tuyển dụng nhân sự đc không'
+  - làm gì để contact với bộ phận tuyển dụng vậy
+  - tớ muốn contact để được phỏng vấn thì tiếp xúc qua đâu?
+  - muốn contact trực tiếp thì cần làm gì
+  - giờ làm như sao để tớ contact với tuyển dụng đc cậu?
+  - liên lạc với công ty qua các kênh nào hả
+  - Các kênh liên lạc của của công ty là gì
+  - info trao đổi tại [trung tâm ai](department)
+  - tớ muốn liên lạc với phòng ban [hr admin](department)
+  - ' gửi tôi cách thức liên hệ với bộ phận tuyển đc ko'
+  - cho tôi hỏi info liên hệ tuyển nhân viên của [f-tech](work_unit)
+  - muốn nói chuyện với [hành chính nhân sự](department) thì phải làm như nào
+  - tuyển chọn nhân sự của công ty [ftech](work_unit) có thông tin contact
+  - trao đổi với bộ phận recruitment tại [TH](location) như thế nào vậy
+  - mình muốn trao đổi với tuyển chọn nhân sự thì làm như nào
+  - có cách nào để contact với bên tuyển nhân sự [đồng tháp](location) ko
+  - Gửi mình các kênh trao đổi của công ty nha
+  - Làm thế nào để tiếp xúc phỏng vấn hả bạn
+  - tớ muốn tiếp xúc trực tiếp thì làm như nào
+  - '[tớ](pronoun) thích nói chuyện với bên tuyển nhân sự đc ko'
+  - làm như nào để liên hệ với bộ phận tuyển chọn nhân sự
+  - tôi muốn liên hệ để được phỏng vấn thì liên lạc qua đâu?
+  - muốn tiếp xúc trực tiếp thì cần làm gì
+  - giờ làm như sao để tớ liên hệ với hr đc cậu?
+  - trao đổi với công ty qua các kênh nào hả
+  - Các kênh liên hệ của của công ty là gì
+  - thông tin trao đổi tại [AI center](department)
+  - tớ muốn contact với [HR and Admin](department)
+  - ' gửi tớ cách thức trao đổi với bộ phận recruitment'
+  - tớ muốn hỏi info liên hệ tuyển nhân sự của [f-tech](work_unit) nhe
+  - muốn nói chuyện với [nhân sự](department) thì phải làm như thế nào
+  - tuyển chọn nhân sự của công ty [ftech](work_unit) có information liên hệ
+  - liên hệ với bộ phận tuyển dụng tại [hồ chí minh](location) như thế nào vậy
+  - tớ muốn liên hệ với tuyển nhân viên bên bạn thì làm như nào
+  - có cách nào để trao đổi với bên tuyển dụng nhân sự [Hàn Quốc](location)
+  - Gửi tớ các kênh liên hệ của công ty nha
+  - Làm thế nào để trao đổi phỏng vấn hả bạn
+  - tớ muốn liên lạc trực tiếp thì làm thế nào
+  - '[tui](pronoun) ưa nói chuyện với bên tuyển nhân sự được ko'
+  - làm sao để liên lạc với bộ phận tuyển dụng nhân sự
+  - tôi muốn liên lạc để được phỏng vấn thì trao đổi qua đâu?
+  - muốn liên hệ trực tiếp thì cần làm gì
+  - giờ làm như răng để tôi tiếp xúc với hr đc cậu?
+  - Các kênh tiếp xúc của của công ty là gì
+  - info contact tại [AI center](department)
+  - tớ muốn tiếp xúc với [hành chính nhân sự](department)
+  - có thể gửi mình cách thức liên lạc với phòng ban tuyển nhân viên được ko
+  - cho mình hỏi thông tin trao đổi tuyển chọn nhân sự của [ftech](work_unit) đi nha
+  - muốn nói chuyện với [hành chính nhân sự](department) thì phải làm sao
+  - recruitment của công ty [f tech](work_unit) có info liên hệ
+  - liên lạc với bộ phận tuyển tại [phú yên](location) thế nào vậy hả
+  - tớ muốn liên hệ với recruitment thì làm như nào
+  - có cách nào để trao đổi với bên tuyển nhân sự [hà nội](location) ko
+  - Gửi mình các kênh liên lạc của công ty nha
+  - Làm thế nào để liên lạc phỏng vấn hả bạn
+  - mình muốn contact trực tiếp thì làm như nào
+  - '[chị](pronoun) muốn nói chuyện với bên tuyển dụng đc không'
+  - làm như nào để contact với bộ phận tuyển chọn nhân sự vậy
+  - tôi muốn trao đổi để được phỏng vấn thì liên hệ qua đâu?
+  - giờ làm như sao để tôi tiếp xúc với hr đc cậu?
+  - tiếp xúc với công ty qua các kênh nào hả
+  - thông tin tiếp xúc tại [côn đảo](location)
+  - mình muốn tiếp xúc với phòng ban [HR and Admin](department)
+  - có thể gửi tôi cách thức tiếp xúc với bộ phận tuyển chọn nhân sự
+  - cho tớ hỏi thông tin liên hệ tuyển dụng của [f tech](work_unit) đi
+  - muốn nói chuyện với phòng ban [HR and Admin](department) thì phải làm như nào
+  - tuyển chọn nhân sự của công ty [ftech](work_unit) có info contact không
+  - tiếp xúc với tuyển nhân viên tại [hn](location) như thế nào
+  - tớ muốn contact với recruitment thì làm như thế nào
+  - có cách nào để liên hệ với bên tuyển dụng nhân sự [hn](location) ko
+  - Gửi mình các kênh liên hệ của công ty nha
+  - tôi muốn liên lạc trực tiếp thì làm như nào
+  - '[tao](pronoun) ưa nói chuyện với bên tuyển dụng đc ko'
+  - làm như nào để liên lạc với bộ phận tuyển chọn nhân sự
+  - tôi muốn tiếp xúc để được phỏng vấn thì tiếp xúc qua đâu?
+  - giờ làm như răng để tớ tiếp xúc với HCNS đc cậu?
+  - info liên lạc tại [đn](location)
+  - tớ muốn tiếp xúc với bộ phận [hr admin](department)
+  - có thể gửi tôi cách thức liên lạc với người phụ trách tuyển dụng nhân sự được
+    ko
+  - mình muốn hỏi info trao đổi tuyển dụng nhân sự của [ftech](work_unit) nhe
+  - muốn nói chuyện với [HR and Admin](department) thì phải làm sao
+  - tuyển nhân viên của công ty [f-tech](work_unit) có thông tin liên lạc không
+  - trao đổi với bộ phận tuyển dụng nhân sự tại [LS](location) như thế nào vậy
+  - tôi muốn trao đổi với recruitment bên bạn thì làm như thế nào
+  - có cách nào để trao đổi với bên tuyển dụng nhân sự [nam trung bộ](location)
+  - Gửi mình các kênh contact của công ty nha
+  - tớ muốn liên hệ trực tiếp thì làm như thế nào
+  - '[tui](pronoun) ưa nói chuyện với bên tuyển chọn nhân sự đc ko'
+  - làm như nào để tiếp xúc với bộ phận recruitment
+  - tớ muốn contact để được phỏng vấn thì contact qua đâu?
+  - giờ làm như sao để tớ liên lạc với hr đc cậu?
+  - thông tin liên lạc tại [hn](location)
+  - tớ muốn contact với [hr admin](department)
+  - ' gửi tớ cách thức contact với người phụ trách tuyển nhân viên đc không'
+  - cho tôi hỏi info trao đổi tuyển dụng của [f-tech](work_unit) đi nha
+  - muốn nói chuyện với [HR and Admin](department) thì phải làm như nào
+  - tuyển chọn nhân sự của công ty [f tech](work_unit) có information tiếp xúc ko
+  - trao đổi với tuyển dụng tại [LS](location) thế nào
+  - tớ muốn tiếp xúc với recruitment bên bạn thì làm thế nào
+  - có cách nào để trao đổi với bên recruitment [phú yên](location)
+  - Gửi tôi các kênh tiếp xúc của công ty nha
+  - tớ muốn liên lạc trực tiếp thì làm như nào
+  - '[tao](pronoun) thích nói chuyện với bên tuyển dụng nhân sự được không'
+  - làm như thế nào để liên lạc với bộ phận recruitment
+  - tớ muốn tiếp xúc để được phỏng vấn thì liên hệ qua đâu?
+  - giờ làm như sao để tôi contact với tuyển dụng đc cậu?
+  - information contact tại [AI center](department)
+  - tớ muốn trao đổi với bộ phận [HR and Admin](department)
+  - ' gửi tớ cách thức liên lạc với người phụ trách recruitment được ko'
+  - cho mình hỏi info liên lạc tuyển của [ftech](work_unit) nha
+  - muốn nói chuyện với team [nhân sự](department) thì phải làm gì
+  - tuyển nhân viên của công ty [ftech](work_unit) có thông tin tiếp xúc ko
+  - liên lạc với recruitment tại [hn](location) như nào
+  - mình muốn liên lạc với tuyển dụng nhân sự bên bạn thì làm thế nào
+  - có cách nào để trao đổi với bên tuyển nhân sự [gia lai](location) ko
+  - Gửi tôi các kênh contact của công ty nha
+  - mình muốn liên lạc trực tiếp thì làm như thế nào
+  - '[anh](pronoun) ưng nói chuyện với bên tuyển dụng nhân sự được ko'
+  - làm như nào để tiếp xúc với bộ phận tuyển nhân viên
+  - tôi muốn tiếp xúc để được phỏng vấn thì trao đổi qua đâu?
+  - giờ làm như răng để tôi liên lạc với hr đc cậu?
+  - thông tin liên hệ tại [AI center](department)
+  - mình muốn tiếp xúc với [HR and Admin](department)
+  - ' gửi tôi cách thức trao đổi với bộ phận recruitment'
+  - cho mình hỏi info contact tuyển nhân sự của [f tech](work_unit) đi
+  - muốn nói chuyện với phòng ban [nhân sự](department) thì phải làm như nào
+  - tuyển dụng của công ty [f tech](work_unit) có thông tin tiếp xúc
+  - trao đổi với bộ phận recruitment tại [lạng sơn](location) như nào hả
+  - tớ muốn liên lạc với tuyển nhân sự thì làm thế nào
+  - có cách nào để liên lạc với bên tuyển chọn nhân sự [hcm](location) không
+  - Gửi tớ các kênh trao đổi của công ty nha
+  - tớ muốn contact trực tiếp thì làm như thế nào
+  - '[t](pronoun) ưa nói chuyện với bên tuyển chọn nhân sự đc không'
+  - làm như nào để tiếp xúc với bộ phận tuyển dụng vậy
+  - tớ muốn trao đổi để được phỏng vấn thì liên lạc qua đâu?
+  - giờ làm như răng để tớ liên hệ với hr đc cậu?
+  - thông tin contact tại [AI center](department)
+  - mình muốn trao đổi với [hr admin](department)
+  - ' gửi mình cách thức liên lạc với phòng ban tuyển dụng được ko'
+  - tớ muốn hỏi info liên hệ tuyển chọn nhân sự của [f-tech](work_unit)
+  - muốn nói chuyện với bộ phận [hr admin](department) thì phải làm thế nào
+  - tuyển chọn nhân sự của công ty [f-tech](work_unit) có thông tin liên hệ ko
+  - liên hệ với bộ phận recruitment tại [Đan Mạch](location) như thế nào vậy
+  - mình muốn tiếp xúc với tuyển nhân viên bên bạn thì làm như nào
+  - có cách gì để contact với bên tuyển chọn nhân sự [lâm đồng](location)
+  - Gửi tớ các kênh contact của công ty nha
+  - tớ muốn liên lạc trực tiếp thì làm như thế nào
+  - '[t](pronoun) ưa nói chuyện với bên tuyển nhân sự được không'
+  - làm gì để liên lạc với bộ phận tuyển chọn nhân sự vậy
+  - tớ muốn liên hệ để được phỏng vấn thì trao đổi qua đâu?
+  - giờ làm như răng để tớ tiếp xúc với hr đc cậu?
+  - information liên hệ tại [AI center](department)
+  - tớ muốn tiếp xúc với phòng ban [HR and Admin](department)
+  - có thể gửi mình cách thức trao đổi với người phụ trách tuyển nhân sự được không
+  - tôi muốn hỏi thông tin liên lạc recruitment của [f tech](work_unit) đi nha
+  - muốn nói chuyện với phòng ban [HR and Admin](department) thì phải làm gì
+  - tuyển nhân viên của công ty [f-tech](work_unit) có thông tin liên lạc
+  - tiếp xúc với tuyển dụng nhân sự tại [ninh thuận](location) thế nào vậy
+  - tớ muốn tiếp xúc với tuyển dụng bên bạn thì làm thế nào
+  - có cách gì để tiếp xúc với bên tuyển nhân sự [HD](location) ko
+  - Gửi mình các kênh tiếp xúc của công ty nha
+  - tôi muốn tiếp xúc trực tiếp thì làm thế nào
+  - '[mình](pronoun) ưa nói chuyện với bên tuyển nhân sự được không'
+  - làm như thế nào để liên hệ với bộ phận tuyển nhân sự
+  - tôi muốn liên hệ để được phỏng vấn thì tiếp xúc qua đâu?
+  - giờ làm như răng để mình liên hệ với hr đc cậu?
+  - info tiếp xúc tại [trung tâm ai](department)
+  - mình muốn liên lạc với bộ phận [hr admin](department)
+  - có thể gửi tôi cách thức liên lạc với bộ phận tuyển nhân sự được ko
+  - mình muốn hỏi thông tin tiếp xúc tuyển dụng của [f tech](work_unit) đi
+  - muốn nói chuyện với [nhân sự](department) thì phải làm như nào
+  - tuyển nhân sự của công ty [f tech](work_unit) có information contact không
+  - contact với tuyển nhân viên tại [LS](location) như nào
+  - tớ muốn tiếp xúc với tuyển dụng thì làm như nào
+  - có cách nào để liên lạc với bên tuyển [đn](location) ko
+  - Gửi tôi các kênh liên lạc của công ty nha
+  - tôi muốn tiếp xúc trực tiếp thì làm như thế nào
+  - '[cô](pronoun) thích nói chuyện với bên tuyển được ko'
+  - làm như thế nào để liên hệ với bộ phận tuyển
+  - tớ muốn liên lạc để được phỏng vấn thì liên hệ qua đâu?
+  - giờ làm như răng để tớ contact với hr đc cậu?
+  - information contact tại [đắk nông](location)
+  - mình muốn trao đổi với [hành chính nhân sự](department)
+  - ' gửi mình cách thức tiếp xúc với người phụ trách tuyển dụng'
+  - cho tớ hỏi information trao đổi tuyển dụng nhân sự của [ftech](work_unit) đi
+  - muốn nói chuyện với [hành chính nhân sự](department) thì phải làm thế nào
+  - tuyển dụng của công ty [f-tech](work_unit) có thông tin liên hệ không
+  - tiếp xúc với bộ phận tuyển dụng tại [thừa thiên huế](location) như thế nào
+  - tôi muốn liên lạc với recruitment bên bạn thì làm như nào
+  - có cách gì để contact với bên tuyển nhân sự [Đảo Nam Du](location) không
+  - Gửi tôi các kênh liên hệ của công ty nha
+  - tôi muốn liên lạc trực tiếp thì làm như thế nào
+  - '[tôi](pronoun) muốn nói chuyện với bên tuyển nhân viên đc không'
+  - làm như thế nào để liên lạc với bộ phận tuyển nhân sự
+  - tớ muốn tiếp xúc để được phỏng vấn thì trao đổi qua đâu?
+  - giờ làm như sao để tôi liên lạc với tuyển dụng đc cậu?
+  - thông tin trao đổi tại [hn](location)
+  - tớ muốn contact với bộ phận [hành chính nhân sự](department)
+  - ' gửi tớ cách thức contact với phòng ban tuyển nhân sự được ko'
+  - cho mình hỏi info contact tuyển dụng của [f-tech](work_unit) đi nhe
+  - muốn nói chuyện với [hr admin](department) thì phải làm sao
+  - tuyển dụng của công ty [f-tech](work_unit) có thông tin liên hệ ko
+  - contact với tuyển tại [nam trung bộ](location) như thế nào
+  - tớ muốn liên hệ với tuyển dụng thì làm thế nào
+  - có cách nào để liên hệ với bên tuyển chọn nhân sự [sài gòn](location)
+  - mình muốn tiếp xúc trực tiếp thì làm thế nào
+  - '[ta](pronoun) ưng nói chuyện với bên tuyển nhân viên được ko'
+  - làm như nào để liên lạc với bộ phận tuyển dụng nhân sự
+  - tớ muốn trao đổi để được phỏng vấn thì contact qua đâu?
+  - giờ làm như sao để mình tiếp xúc với hr đc cậu?
+  - information liên hệ tại [NB](location)
+  - mình muốn contact với bộ phận [hr admin](department)
+  - tớ muốn gửi hồ sơ
+  - mầy ơi, gửi CV qua đâu đó
+  - ' [hồ chí minh](location) có nhận sơ yếu lý lịch không'
+  - Nộp sơ yếu lý lịch tại đâu vậy timi?
+  - ' [f tech](work_unit) nhận sơ yếu lý lịch ra sao'
+  - hướng dẫn cách nộp hồ sơ
+  - mình muốn gửi resume
+  - '[f tech](work_unit) nhận resume thế nào'
+  - mày ơi, hướng dẫn tôi nộp sơ yếu lý lịch được ko
+  - làm như nào để tuyển
+  - mình có hồ sơ đây mà chưa biết nộp như nào?
+  - Nhận CV cho công ty ở đâu hả
+  - '[tớ](pronoun) muốn gửi CV'
+  - tôi muốn ứng tuyển thế nào
+  - gửi hồ sơ đến chỗ nào đó cậu
+  - ' cho tớ gửi resume với'
+  - mình apply hồ sơ ở đâu đó cậu
+  - gửi hồ sơ qua đâu nhỉ
+  - nộp hồ sơ thì gửi vào đâu hả em
+  - vậy tớ làm sao có thể ứng tuyển vào công ty
+  - mình gửi CV cho phòng [hỗ trợ it](department) đc ko
+  - gửi sơ yếu lý lịch như thế nào
+  - hướng dẫn tớ gửi curriculum vitae được không
+  - tớ có thể apply sơ yếu lý lịch ở chỗ nào ạ
+  - mình có thể gửi hồ sơ qua đâu
+  - Nộp hồ sơ nơi đâu thế?
+  - xin số đường nộp CV
+  - làm như nào để gửi sơ yếu lý lịch cho công ty vậy
+  - có cách nào để phòng ban [hr admin](department) nhận được resume của tớ
+  - tôi có thể apply CV qua đâu được hả bạn
+  - tớ muốn gửi curriculum vitae
+  - cậu ơi, gửi resume qua đâu đó
+  - ' [tây ninh](location) có nhận hồ sơ ko'
+  - Nộp hồ sơ tại đâu vậy timi?
+  - ' [f-tech](work_unit) nhận sơ yếu lý lịch ra sao'
+  - hướng dẫn cách nộp sơ yếu lý lịch
+  - tôi muốn gửi hồ sơ
+  - '[f-tech](work_unit) nhận resume như nào'
+  - mày ơi, hướng dẫn tớ gửi resume được không
+  - làm gì để tuyển
+  - anh có curriculum vitae đây mà chưa biết nộp thế nào?
+  - Nhận sơ yếu lý lịch cho công ty ở đâu hả
+  - '[tui](pronoun) muốn gửi sơ yếu lý lịch'
+  - tớ muốn ứng tuyển thế nào
+  - nộp CV đến chỗ nào đó timi
+  - có thể cho tớ gửi hồ sơ với
+  - tôi apply hồ sơ ở đâu đó bot
+  - nộp hồ sơ qua đâu nhỉ
+  - nộp sơ yếu lý lịch thì nộp vào đâu hả m
+  - vậy hả tớ làm như nào có thể ứng tuyển vào công ty
+  - mình gửi curriculum vitae cho phòng ban [business](department) được không
+  - gửi resume ntn
+  - hướng dẫn tớ nộp curriculum vitae được ko
+  - tớ có thể apply CV ở chỗ nào ạ
+  - tớ có thể gửi CV qua đâu
+  - Nộp sơ yếu lý lịch nơi đâu thế?
+  - xin số nhà nộp resume
+  - làm sao để gửi sơ yếu lý lịch cho [f tech](work_unit) hả
+  - có cách nào để bộ phận [nhân sự](department) nhận được sơ yếu lý lịch của tớ
+  - tớ có thể apply curriculum vitae qua đâu được hả bạn
+  - tớ muốn nộp hồ sơ
+  - bot ơi, gửi sơ yếu lý lịch qua đâu đó
+  - '[f tech](work_unit) [tây nguyên](location) có nhận sơ yếu lý lịch ko'
+  - Nộp CV ở đâu vậy timi?
+  - công ty [f-tech](work_unit) nhận hồ sơ ra sao
+  - hướng dẫn cách gửi hồ sơ
+  - tớ muốn gửi sơ yếu lý lịch
+  - '[f tech](work_unit) nhận curriculum vitae như nào'
+  - mày ơi, hướng dẫn tớ gửi sơ yếu lý lịch được ko
+  - làm gì để ứng tuyển
+  - tớ có resume đây mà chưa biết nộp như thế nào?
+  - Nhận resume cho công ty ở đâu hả
+  - '[tôi](pronoun) muốn gửi sơ yếu lý lịch'
+  - mình muốn ứng tuyển thế nào
+  - gửi curriculum vitae đến chỗ nào đó cậu
+  - có thể cho tớ gửi resume
+  - tôi apply hồ sơ ở đâu đó em
+  - gửi CV qua đâu nhỉ
+  - nộp sơ yếu lý lịch thì gửi vào đâu hả em
+  - ' tôi làm như nào có thể ứng tuyển vào công ty'
+  - tớ gửi hồ sơ cho team [application](department) được không
+  - gửi CV như nào
+  - hướng dẫn tớ gửi CV được không
+  - mình có thể apply sơ yếu lý lịch ở chỗ nào ạ
+  - tôi có thể gửi sơ yếu lý lịch qua đâu
+  - Nộp resume tại đâu thế?
+  - xin số nhà nộp curriculum vitae
+  - làm như nào để gửi curriculum vitae cho [ftech](work_unit) vậy
+  - có cách gì để [nhân sự](department) nhận được sơ yếu lý lịch của tôi
+  - tôi có thể apply resume qua đâu được hả bạn
+  - mình muốn nộp hồ sơ
+  - bot ơi, gửi resume qua đâu đó
+  - '[f tech](work_unit) [Việt Nam](location) có nhận resume không'
+  - Nộp hồ sơ nơi đâu vậy timi?
+  - công ty [f-tech](work_unit) nhận sơ yếu lý lịch ra sao
+  - hướng dẫn cách gửi resume
+  - mình muốn gửi hồ sơ
+  - '[ftech](work_unit) nhận sơ yếu lý lịch như nào'
+  - em ơi, hướng dẫn tớ gửi resume được không
+  - làm sao để tuyển
+  - xin mail đi
+  - '[dn](location) có thông tin email tuyển dụng không vậy hả'
+  - cho xin gmail hr đi
+  - công ty [f tech](work_unit) có địa chỉ gmail không
+  - mình muốn hỏi địa chỉ mail tuyển dụng của [f-tech](work_unit) đi?
+  - gmail hr là gì
+  - Cho mình xin mail hr để tiện trao đổi?
+  - tôi muốn contact qua mail với [f-tech](work_unit)
+  - ' [hà nội](location) có gmail ko'
+  - tôi xin email để apply job
+  - công ty [ftech](work_unit) chi nhánh [thủ đức](location) có mail ko
+  - xin mail apply cái nào
+  - Gửi tớ email hr
+  - tư vấn thêm cho tớ qua mail được không
+  - cho tớ xin mail tuyển nhân sự của công ty đi?
+  - Gửi tớ email hr được ko
+  - gmail hr của công ty là gì
+  - tớ muốn gửi email cho team tuyển dụng nhân sự [ftech](work_unit)
+  - '[tui](pronoun) muốn tìm hiểu thêm bằng gmail được không'
+  - giờ liên hệ email đc không hả
+  - mail tuyển nhân sự công ty là gì
+  - cho tớ xin thêm thông tin về [ja-va dev](position) của [f tech](work_unit) thông
+    qua gmail nhé
+  - email của [f-tech](work_unit) là gì
+  - '[nhân sự](department) [ftech](work_unit) có mail để tiện trao đổi ko'
+  - xin email đi
+  - '[sài gòn](location) có gmail tuyển dụng ko vậy'
+  - cho xin mail hr đi
+  - công ty [ftech](work_unit) có địa chỉ email
+  - cho tớ hỏi địa chỉ gmail recruitment của [f tech](work_unit) đi?
+  - mail hr là gì
+  - Cho tớ xin email hr để tiện trao đổi?
+  - mình muốn liên lạc qua gmail với [f-tech](work_unit)
+  - ' [đồng bằng sông cưu long](location) có gmail ko hả'
+  - tớ xin email để apply job
+  - công ty [f tech](work_unit) chi nhánh [BG](location) có gmail ko
+  - xin email apply cái nào
+  - Gửi tôi email hr
+  - tư vấn thêm cho tớ qua email được không
+  - cho tớ xin địa chỉ mail tuyển của công ty đi?
+  - Gửi mình mail được ko
+  - email của công ty là gì
+  - mình muốn gửi mail cho tuyển chọn nhân sự [f-tech](work_unit)
+  - '[a](pronoun) muốn tìm hiểu thêm bằng mail được không'
+  - giờ tiếp xúc gmail được không
+  - gmail recruitment công ty là gì
+  - cho mình xin thêm thông tin về [game 3d dev](position) của [f-tech](work_unit)
+    qua mail nha
+  - mail của [ftech](work_unit) là gì
+  - '[hành chính nhân sự](department) công ty [ftech](work_unit) có mail để tiện trao
+    đổi không'
+  - xin gmail đi
+  - '[côn đảo](location) có thông tin email tuyển nhân sự ko hả'
+  - cho xin email hr đi
+  - công ty [f-tech](work_unit) có địa chỉ mail ko
+  - cho tôi hỏi địa chỉ mail tuyển nhân sự của [f-tech](work_unit) đi?
+  - email hr là gì
+  - Cho tớ xin gmail hr để tiện trao đổi?
+  - mình muốn tiếp xúc qua mail cùng [f-tech](work_unit)
+  - cơ sở [hcm](location) có gmail ko nhỉ
+  - tớ xin gmail để apply job
+  - công ty [ftech](work_unit) chi nhánh [mộc châu](location) có địa chỉ gmail ko
+  - xin gmail apply cái nào
+  - Gửi tôi mail hr
+  - tư vấn thêm cho tôi qua email được không
+  - cho tôi xin địa chỉ mail tuyển dụng của công ty đi?
+  - Gửi tớ gmail được ko
+  - mail hr của công ty là gì
+  - tớ muốn send email cho tuyển dụng nhân sự [f-tech](work_unit)
+  - '[tao](pronoun) muốn trò chuyện bằng email được ko'
+  - giờ liên lạc mail đc không vậy hả
+  - mail tuyển dụng nhân sự công ty là gì vậy
+  - cho tớ xin thêm info về [.net](position) của [ftech](work_unit) thông qua gmail
+    nhé
+  - gmail của [f tech](work_unit) là gì
+  - '[nhân sự](department) có email để tiện nói chuyện ko'
+  - '[đn](location) có thông tin mail tuyển dụng không'
+  - công ty [f tech](work_unit) có địa chỉ mail ko
+  - tôi muốn hỏi địa chỉ email tuyển nhân viên của [ftech](work_unit) đi?
+  - Cho mình xin gmail hr để tiện trao đổi?
+  - tôi muốn contact qua email cùng [f tech](work_unit)
+  - ' [đà nẵng](location) có mail không'
+  - tôi xin mail để apply job
+  - công ty [ftech](work_unit) chi nhánh [phú quốc](location) có địa chỉ gmail ko
+    vậy
+  - Gửi mình mail hr
+  - tư vấn thêm cho mình qua email được không
+  - cho tớ xin email tuyển dụng của công ty đi?
+  - Gửi tôi gmail được ko
+  - gmail của công ty là gì
+  - tớ muốn gửi gmail cho tuyển chọn nhân sự [f tech](work_unit)
+  - '[mình](pronoun) muốn hỏi chuyện bằng email được không'
+  - giờ trao đổi gmail đc không
+  - email tuyển dụng công ty là gì hả
+  - cho tớ xin thêm info về [game designer](position) của [f-tech](work_unit) thông
+    qua mail nha
+  - mail của [f tech](work_unit) là gì
+  - '[nhân sự](department) có gmail để tiện trao đổi không'
+  - '[lào cai](location) có thông tin gmail tuyển dụng ko vậy hả'
+  - công ty [ftech](work_unit) có địa chỉ gmail
+  - mình muốn hỏi email tuyển chọn nhân sự của [f-tech](work_unit) đi?
+  - Cho tôi xin email hr để tiện trao đổi?
+  - tôi muốn contact qua gmail cùng [f-tech](work_unit)
+  - cơ sở [hcm](location) có mail ko
+  - mình xin mail để apply job
+  - công ty [f tech](work_unit) chi nhánh [VN](location) có địa chỉ mail không
+  - tôi muốn tư vấn qua linkedin được ko
+  - có link mạng không
+  - facebook [ftech](work_unit) có chi hay ko
+  - mạng xã hội của công ty là ntn
+  - cho tôi xin page của công ty [ftech](work_unit) để tiện trò chuyện nha
+  - ' [ftech](work_unit) có sử dụng topcv không'
+  - m có fanpage ko
+  - link online của bên bạn như thế nào
+  - tớ tiếp xúc với công ty [ftech](work_unit) qua link mạng nhé
+  - ' tôi xin trang mạng của công ty [f tech](work_unit) để khám phá thêm thông tin
+    đi'
+  - có link online tuyển dụng công khai ko?
+  - '[mình](pronoun) inbox qua mạng xã hội để trao đổi nha'
+  - tớ muốn biết thêm thông tin qua link mạng được ko
+  - có topcv ko
+  - link mạng [f tech](work_unit) có gì hay không
+  - page của công ty là thế nào
+  - cho mình xin topcv của công ty [ftech](work_unit) để tiện trò chuyện nha
+  - công ty [f tech](work_unit) có sử dụng fanpage ko
+  - mày có fanpage không
+  - topcv của bên bạn trông thế nào
+  - tớ liên hệ với [f-tech](work_unit) qua linkedin nhé
+  - cho mình xin trang mạng của công ty [f-tech](work_unit) để tìm hiểu thêm thông
+    tin đi
+  - có linkedin tuyển dụng công khai không?
+  - '[tao](pronoun) inbox qua topcv [f tech](work_unit) để tìm hiểu nhé'
+  - tôi muốn tìm hiểu qua page được ko
+  - có linkedin không
+  - link mạng [ftech](work_unit) có gì hay không
+  - page của công ty là gì
+  - cho tôi xin link mạng của công ty [f-tech](work_unit) để tiện nói chuyện nhé
+  - công ty [f tech](work_unit) có sử dụng link mạng ko
+  - mầy có fanpage ko
+  - link mạng của bên công ty bạn trông thế nào
+  - tớ contact với công ty [f tech](work_unit) qua link online nhé
+  - ' mình thêm đường dẫn của công ty [f-tech](work_unit) để khám phá thêm information
+    đi'
+  - có fanpage tuyển dụng công khai không?
+  - '[tôi](pronoun) inbox qua linkedin [f-tech](work_unit) để trao đổi nhé'
+  - tôi muốn tư vấn qua linkedin được không
+  - có topcv không
+  - linkedin [f-tech](work_unit) có gì hay ko
+  - facebook của công ty là thế nào
+  - cho mình xin link mạng của [f-tech](work_unit) để tiện trò chuyện nhé
+  - công ty [f-tech](work_unit) có sử dụng link online ko
+  - mầy có fanpage không
+  - topcv của bên công ty bạn như nào
+  - tôi liên hệ với công ty [f-tech](work_unit) qua facebook nhe
+  - cho tôi xin trang mạng của công ty [f tech](work_unit) để khám phá thêm info đi
+  - có mạng xã hội tuyển dụng công khai ko?
+  - '[chị](pronoun) inbox qua linkedin để trao đổi nhe'
+  - mình muốn biết thêm information qua linkedin được ko
+  - có linkedin ko
+  - link online [f tech](work_unit) có update chi hay ho ko
+  - facebook của công ty là gì
+  - cho mình xin topcv của [ftech](work_unit) để tiện trao đổi nhe
+  - công ty [ftech](work_unit) có sử dụng topcv ko
+  - bot có facebook ko
+  - page của bên công ty bạn trông thế nào
+  - mình liên hệ với công ty [f-tech](work_unit) qua page nhé
+  - cho tôi xin trang mạng của công ty [f tech](work_unit) để biết thêm thông tin
+    đi
+  - có link mạng tuyển dụng công khai ko?
+  - '[tao](pronoun) inbox qua linkedin [f-tech](work_unit) để trao đổi nhé'
+  - tớ muốn biết thêm info qua topcv đc ko
+  - có mạng xã hội không
+  - topcv [f-tech](work_unit) có gì hay không
+  - fanpage của công ty là thế nào
+  - cho tôi xin link online của công ty [f-tech](work_unit) để tiện trò chuyện nhe
+  - công ty [ftech](work_unit) có sử dụng link mạng không
+  - bạn có fanpage ko
+  - topcv của bên công ty bạn trông như thế nào
+  - mình liên hệ với công ty [ftech](work_unit) qua link online nhe
+  - ' mình xin trang mạng của công ty [ftech](work_unit) để biết thêm info đi'
+  - có link online tuyển dụng công khai không?
+  - '[ta](pronoun) inbox qua link online để tìm hiểu nhé'
+  - tớ muốn tìm hiểu qua linkedin được ko
+  - có link online không
+  - topcv [ftech](work_unit) có chi hay không
+  - mạng xã hội của công ty là gì
+  - cho mình xin link online của [ftech](work_unit) để tiện trao đổi nha
+  - ' [f-tech](work_unit) có sử dụng linkedin không'
+  - mày có facebook không
+  - topcv của bên công ty bạn trông thế nào
+  - chuyển sang chế độ nhắn tin với human đi
+  - mình muốn trò chuyện với human
+  - tớ muốn gặp người
+  - người vào nói chuyện đi
+  - cho tui gặp con người
+  - gặp người được ko
+  - chuyển sang nói chuyện với con người đi
+  - chuyển sang chế độ nói chuyện với con người đi
+  - chuyển sang trò chuyện với con người đi
+  - tui cần gặp con người
+  - tôi muốn nói chuyện human
+  - tui muốn nhắn tin với người
+  - tui muốn nói chuyện con người
+  - tớ cần nói chuyện con người
+  - tớ muốn gặp human
+  - chuyển sang trò chuyện với human đi
+  - chuyển sang gặp con người được ko
+  - mình cần nói chuyện người
+  - cho tui gặp human
+  - tôi muốn nói chuyện con người
+  - mình muốn gặp người
+  - tôi muốn trò chuyện với human
+  - tôi muốn nói chuyện người
+  - chuyển sang chế độ trò chuyện với người đi
+  - mình cần gặp người
+  - tớ cần nói chuyện người
+  - tui muốn gặp với người thiệt kia
+  - chuyển sang nhắn tin với con người đi
+  - mình muốn nói chuyện con người
+  - tôi muốn nói chuyện với người
+  - tớ cần gặp con người
+  - tớ muốn nhắn tin với con người
+  - tôi muốn trò chuyện với con người
+  - tui muốn nhắn tin với human
+  - cho mình gặp người
+  - chuyển sang trò chuyện với người đi
+  - tôi muốn nói chuyện với con người
+  - tôi muốn gặp con người
+  - human vào nhắn tin đi
+  - chuyển sang nói chuyện với người đi
+  - cho gặp con người được không
+  - tui cần gặp human
+  - mình muốn nhắn tin với người
+  - tui muốn trò chuyện với human
+  - mình muốn nói chuyện người
+  - tớ muốn nói chuyện con người
+  - tôi muốn nói chuyện với human
+  - mình cần nói chuyện con người
+  - tớ muốn trò chuyện với con người
+  - tôi cần nói chuyện human
+  - tôi cần nói chuyện con người
+  - mình muốn nói chuyện với con người
+  - mình muốn nói chuyện với người
+  - con người vào trò chuyện đi
+  - con người vào nói chuyện đi
+  - tui muốn nói chuyện với người thiệt kia
+  - chuyển sang chế độ trò chuyện với human đi
+  - chuyển sang nhắn tin với người đi
+  - tớ muốn gặp con người
+  - cho gặp human được ko
+  - chuyển sang chế độ trò chuyện với con người đi
+  - cho gặp human đi
+  - chuyển sang gặp human được không
+  - chuyển sang gặp con người được không
+  - human vào trò chuyện đi
+  - chuyển sang chế độ nói chuyện với người đi
+  - tui cần gặp người
+  - chuyển sang chế độ nói chuyện với human đi
+  - tôi cần gặp người
+  - gọi bộ phận hỗ trợ ra đây đi, chứ bạn ngu vãi ra

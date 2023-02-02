@@ -1,0 +1,364 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: knowledge_ask_place_traveling
+  examples:
+  - ' suy nghĩ xem nên đi đâu ở [lâm đồng](location) giờ ha'
+  - '[bình thuận](location) có như thế nào mới lạ ko nhở'
+  - cho mình xin địa điểm các bạn hay đi cắm trại ở đây với
+  - bot bt địa điểm nào mới lạ ở [VN](location) ko?
+  - chán quá, muốn đi đâu đó thiệt xa
+  - timi giúp mình tìm chốn đi dã ngoại đi nhe
+  - '[VN](location) có gì để du lịch nghỉ dưỡng ko'
+  - phụ tôi tìm nơi tuần trăng mật nhé
+  - ko biết ở [hcm](location) thì nên đi những đâu nhở
+  - mi biết ở [hà nội](location) chỗ nào tuần trăng mật tốt nhở
+  - chú em bt địa điểm gì tuần trăng mật tốt không
+  - cho tớ xin vài nơi tắm biển ở [cao bằng](location) đi
+  - nên đi cắm trại ở đâu để tìm hiểu vườn cây ăn trái chú em
+  - buồn chán quá, đi đâu tuần trăng mật cho vui nhỉ em
+  - đi đâu tắm biển với 6 người trở lên ha cậu
+  - mình mún tìm chốn vui vui để cắm trại
+  - trời ơi sắp đi [Phần Lan](location) du lịch nghỉ dưỡng rồi mà chẳng biết nên đi
+    đâu
+  - '[sài gòn](location) có gì mới lạ ko ha'
+  - đến [Đan Mạch](location) thì nhất định phải đi những đâu nhỉ
+  - bạn giới thiệu cho tớ nơi nhất định phải đi khi đến [Việt](location)
+  - tớ sắp đến [Việt](location) du lịch, ko bt mi bt ở đó có như thế nào chơi ko?
+  - bot giới thiệu cho tôi vài địa chỉ dã ngoại ở [kon tum](location) đi
+  - '[đồng bằng sông cưu long](location) có gì chơi ko cậu?'
+  - mình đang tìm gì thế vui vui ở [sóc trăng](location)
+  - mùa đông này đi đâu chơi nhở
+  - tìm địa điểm chơi hay hay cho mình
+  - em có nơi nào du lịch hay ho vui vẻ làm chuyến đi thăm quan khám phá không
+  - gợi ý địa điểm du lịch tại [sài gòn](location)
+  - cho mình xin [tây bắc bộ](location) có như thế nào dã ngoại không bot?
+  - vùng trung du miền núi? phía bắc thành phố nào nên đặt chân nhất
+  - suggest cho tớ những chỗ đáng đi ở [New Zealand](location) với
+  - ' suy nghĩ xem nên đi đâu ở [lai châu](location) giờ ha'
+  - '[long an](location) có gì thú vị không ha'
+  - cho tôi xin chỗ các bạn hay đi thăm quan khám phá ở đây với
+  - timi biết địa điểm nào vui vui ở [Phần Lan](location) ko?
+  - chán quá, mún đi đâu đó thiệt xa
+  - bạn giúp tớ tìm chốn đi dã ngoại đi nhe
+  - '[côn đảo](location) có như thế nào để thăm quan khám phá ko'
+  - phụ tớ tìm địa điểm tuần trăng mật nhe
+  - không biết ở [hà nội](location) thì nên đi những đâu nhở
+  - mi bt ở [cố đô huế](location) chốn nào cắm trại tốt nhỉ
+  - bot biết chốn nào tuần trăng mật tốt không
+  - cho mình xin vài nơi cắm trại ở [bình thuận](location) đi
+  - nên đi thăm quan khám phá ở đâu để tìm hiểu vườn cây ăn trái mi
+  - chán quá, đi đâu thăm quan khám phá cho vui ha bạn
+  - đi đâu tuần trăng mật với 3 người trở lên ha mày
+  - tớ muốn tìm địa điểm vui vui để du lịch nghỉ dưỡng
+  - trời ơi sắp đi [Nhật Bản](location) du lịch nghỉ dưỡng rồi mà chả biết nên đi
+    đâu
+  - '[Việt Nam](location) có gì hay hay ko nhỉ'
+  - đến [Việt](location) thì nhất định phải đi những đâu nhỉ
+  - ' giới thiệu cho tớ cảnh đẹp nhất định phải đi khi đến [bình thuận](location)'
+  - tớ sắp đến [sóc trăng](location) du lịch, ko bt cậu bt ở đó có gì chơi ko?
+  - cậu giới thiệu cho tớ vài chốn dã ngoại ở [Việt](location) đi
+  - '[dn](location) có như thế nào chơi ko cậu?'
+  - tớ đang search như thế nào vậy hay hay ở [phú thọ](location)
+  - thu này đi đâu chơi nhở
+  - gợi ý nơi dã ngoạn vui vui cho tớ
+  - bạn có chốn nào hay ho vui vẻ làm chuyến đi tuần trăng mật ko
+  - gợi ý địa điểm du lịch tại [phú quốc](location)
+  - cho tôi hỏi [đà nẵng](location) có gì tắm biển không cậu?
+  - vùng miền núi? phía bắc nơi nào nên đi tắm biển nhất
+  - gợi ý cho tớ những chốn đáng đi ở [long an](location) với
+  - ' suy nghĩ xem nên đi đâu ở [Macau](location) nhở'
+  - '[Việt](location) có gì thú vị ko nhở'
+  - cho tôi hỏi chỗ các bạn hay đi thăm quan khám phá ở đây với
+  - bạn biết nơi nào mới lạ ở [Việt Nam](location) ko?
+  - mày giúp mình tìm nơi đi thăm quan khám phá đi nhé
+  - '[sài gòn](location) có gì để tuần trăng mật ko'
+  - phụ mình tìm nơi thăm quan khám phá ở đây nha
+  - ko bt ở [sài gòn](location) thì nên đi những đâu nhỉ
+  - timi biết ở [QN](location) địa điểm nào du lịch nghỉ dưỡng tốt nhỉ
+  - bạn bt địa điểm gì tuần trăng mật tốt không
+  - cho tôi hỏi vài chốn cắm trại ở [bình dương](location) đê
+  - nên đi tuần trăng mật ở đâu để tìm hiểu vườn cây ăn trái mi
+  - buồn chán quá, đi đâu tuần trăng mật cho vui ha timi
+  - đi đâu cắm trại với 3 người trở lên nhỉ timi
+  - tớ muốn tìm chốn mới lạ để tắm biển
+  - trời ơi sắp đi [bình thuận](location) dã ngoại rồi mà chẳng bt nên đi đâu
+  - '[dn](location) có gì mới lạ ko nhở'
+  - đến [Việt](location) thì nhất định phải đi những đâu nhở
+  - cậu giới thiệu cho tớ cảnh đẹp nhất định phải đi khi đến [Canada](location)
+  - tớ sắp đến [Đan Mạch](location) du lịch, không biết em bt ở đó có như thế nào
+    chơi không?
+  - ' giới thiệu cho tớ vài chỗ thăm quan khám phá ở [Pháp](location) đê'
+  - '[Việt Nam](location) có như thế nào chơi ko mày?'
+  - tớ đang tìm kiếm gì hả vui vui ở [VN](location)
+  - thu này đi đâu chơi ha
+  - gợi ý nơi nghỉ dưỡng vui vui cho tôi
+  - bot có chỗ gì hay ho vui vẻ làm chuyến đi cắm trại được ko
+  - gợi ý địa điểm du lịch tại [Đài Loan](location)
+  - cho tớ hỏi [đà nẵng](location) có gì tuần trăng mật không bot?
+  - miền bắc trung bộ tỉnh thành phố nào đáng đi nhất
+  - tìm cho tôi những chốn đáng đi ở [Việt Nam](location) với
+  - ' suy nghĩ xem nên đi đâu ở [Hà Lan](location) giờ nhỉ'
+  - '[Việt](location) có gì hay hay không nhở'
+  - cho tớ xin chốn các bạn hay đi dã ngoại ở đây với
+  - em biết chỗ nào hay hay ở [Canada](location) không?
+  - mi giúp tôi tìm chốn đi tắm biển đi nhé
+  - '[đà nẵng](location) có gì để dã ngoại ko'
+  - phụ tôi tìm chỗ du lịch nghỉ dưỡng nha
+  - ko biết ở [đồng văn](location) thì nên đi những đâu nhỉ
+  - mày biết ở [hồ chí minh](location) chỗ nào tắm biển tốt nhỉ
+  - bot biết chỗ nào cắm trại tốt không
+  - cho tớ xin vài nơi tuần trăng mật ở [bến tre](location) đê
+  - nên đi cắm trại ở đâu để khám phá vườn cây ăn trái mày
+  - buồn chán quá, đi đâu cắm trại cho vui ha timi
+  - đi đâu thăm quan khám phá với 4 người trở lên nhở timi
+  - tớ muốn tìm nơi vui vui để thăm quan khám phá
+  - trời ơi sắp đi [Việt](location) du lịch nghỉ dưỡng rồi mà chẳng biết nên đi đâu
+  - '[quảng ninh](location) có gì vui vui ko nhở'
+  - đến [hòa bình](location) thì nhất định phải đi những đâu ha
+  - ' giới thiệu cho tôi chỗ nhất định phải đi khi đến [bình dương](location)'
+  - tớ sắp đến [Hàn Quốc](location) du lịch, không biết mi biết ở đó có gì chơi ko?
+  - mi giới thiệu cho tôi vài địa chỉ tắm biển ở [trà vinh](location) đê
+  - '[Hà Lan](location) có như thế nào chơi không bot?'
+  - tôi đang tìm kiếm gì thế vui vui ở [hà tĩnh](location)
+  - mùa thu này đi đâu chơi nhở
+  - tìm chỗ ngoại khóa vui vui cho tôi
+  - bot có chỗ gì du lịch hay ho vui vẻ làm chuyến dã ngoại ko
+  - gợi ý địa điểm du lịch tại [HD](location)
+  - cho mình xin [nghệ an](location) có gì tắm biển ko bot?
+  - vùng đông bằng bắc bộ nơi nào nên đi nhất
+  - tìm cho mình những chỗ đáng đi ở [vĩnh long](location) với
+  - ' suy nghĩ xem nên đi đâu ở [đắk nông](location) giờ ha'
+  - '[Hà Lan](location) có gì vui vui ko ha'
+  - cho tớ hỏi chốn các bạn hay đi dã ngoại ở đây với
+  - timi biết chốn nào thú vị ở [Áo](location) không?
+  - timi giúp tớ tìm chốn đi dã ngoại đi nhé
+  - '[hcm](location) có như thế nào để dã ngoại không'
+  - phụ mình tìm nơi tắm biển nha
+  - ko bt ở [hà nội](location) thì nên đi những đâu nhở
+  - em biết ở [hà nội](location) chốn nào cắm trại tốt nhỉ
+  - chú em biết nơi gì thăm quan khám phá tốt ko
+  - cho mình xin vài nơi cắm trại ở [Hàn](location) đi
+  - nên đi dã ngoại ở đâu để tìm hiểu vườn cây ăn trái bạn
+  - bùn chán quá, đi đâu cắm trại cho vui nhỉ em
+  - đi đâu dã ngoại với 6 người trở lên nhỉ cậu
+  - mình mún tìm địa điểm vui vui để tuần trăng mật
+  - trời ơi sắp đi [quảng ninh](location) thăm quan khám phá rồi mà chả biết nên đi
+    đâu
+  - '[hà nội](location) có như thế nào hay hay không nhỉ'
+  - đến [Việt Nam](location) thì nhất định phải đi những đâu ha
+  - ' giới thiệu cho mình cảnh đẹp nhất định phải đi khi đến [bến tre](location)'
+  - tớ sắp đến [Ukraine](location) du lịch, không bt bot biết ở đó có gì chơi không?
+  - ' giới thiệu cho tớ vài chốn du lịch nghỉ dưỡng ở [Hong Kong](location) đi'
+  - '[Mĩ](location) có gì chơi ko bot?'
+  - tớ đang tìm kiếm như thế nào vậy thú vị ở [Mexico](location)
+  - đông này đi đâu chơi ha
+  - gợi ý nơi du lịch mới lạ cho tôi
+  - timi có nơi nào hay ho vui vẻ làm chuyến đi thăm quan khám phá được ko
+  - gợi ý địa điểm du lịch tại [hang sơn đoòng](location)
+  - cho mình hỏi [tây nam bộ](location) có gì thăm quan khám phá không bot?
+  - vùng bắc trung bộ chốn nào đáng đi nhất
+  - suggest cho tớ những chốn đáng đi ở [long an](location) với
+  - bot suy nghĩ xem nên đi đâu ở [tp hồ chí minh](location) giờ ha
+  - '[Australia](location) có gì hay hay ko ha'
+  - cho tớ hỏi chỗ các bạn hay đi tắm biển ở đây với
+  - chú em biết nơi nào mới lạ ở [hà tĩnh](location) ko?
+  - timi giúp tôi tìm chỗ đi thăm quan khám phá đi nha
+  - '[hồ chí minh](location) có như thế nào để cắm trại không'
+  - phụ tớ tìm nơi tắm biển ở đây nhé
+  - không biết ở [hcm](location) thì nên đi những đâu nhở
+  - bot biết ở [củ chi](location) chốn nào cắm trại tốt nhở
+  - timi biết chỗ nào tắm biển tốt ko
+  - cho tôi xin vài địa điểm du lịch nghỉ dưỡng ở [hà tĩnh](location) đi
+  - nên đi dã ngoại ở đâu để khám phá vườn cây ăn trái chú em
+  - chán quá, đi đâu cắm trại cho vui nhỉ timi
+  - đi đâu du lịch nghỉ dưỡng với 5 người trở lên nhỉ bạn
+  - tớ mún tìm địa điểm vui vui để thăm quan khám phá
+  - trời ơi sắp đi [bình dương](location) cắm trại rồi mà chẳng bt nên đi đâu
+  - '[tây ninh](location) có gì hay hay ko ha'
+  - đến [tp hồ chí minh](location) thì nhất định phải đi những đâu ha
+  - ' giới thiệu cho tớ cảnh đẹp nhất định phải đi khi đến [Trung Quốc](location)
+    với'
+  - tôi sắp đến [ninh bình](location) du lịch, ko biết cậu bt ở đó có như thế nào
+    chơi ko?
+  - timi giới thiệu cho tớ vài nơi dã ngoại ở [Lào](location) đi
+  - '[đà nẵng](location) có gì chơi ko cậu?'
+  - tớ đang tìm kiếm như thế nào thế vui vui ở [Việt Nam](location)
+  - thu này đi đâu chơi nhỉ
+  - gợi ý địa điểm nghỉ dưỡng vui vui cho tớ
+  - timi có địa điểm nào hay ho vui vẻ làm chuyến cắm trại được ko
+  - gợi ý địa điểm du lịch tại [Việt](location)
+  - cho mình hỏi [hậu giang](location) có gì tắm biển không bot?
+  - miền trung địa chỉ nào đáng đi nhất
+  - suggest cho tớ những chốn đáng đi ở [vĩnh phúc](location) với
+  - ' suy nghĩ xem nên đi đâu ở [Việt Nam](location) giờ nhỉ'
+  - '[VN](location) có như thế nào thú vị không nhở'
+  - cho tớ hỏi chốn các bạn hay đi cắm trại ở đây với
+  - bot biết chốn nào thú vị ở [Pháp](location) ko?
+  - mày giúp tớ tìm chốn đi du lịch nghỉ dưỡng đi nhe
+  - '[hn](location) có như thế nào để thăm quan khám phá ko'
+  - phụ mình tìm chỗ tắm biển nhé
+  - không biết ở [hcm](location) thì nên đi những đâu nhỉ
+  - mi biết ở [Ấn Độ](location) chốn nào tắm biển tốt nhỉ
+  - chú em biết chốn nào tắm biển tốt ko
+  - cho tớ xin vài địa điểm cắm trại ở [Thụy Sĩ](location) đê
+  - nên đi tắm biển ở đâu để khám phá vườn cây ăn trái em
+  - chán quá, đi đâu tắm biển cho vui nhỉ mi
+  - đi đâu dã ngoại với 6 người trở lên ha cậu
+  - tôi mún tìm nơi vui vui để tắm biển
+  - trời ơi sắp đi [tây ninh](location) du lịch nghỉ dưỡng rồi mà chả bt nên đi đâu
+  - '[dn](location) có gì mới lạ không ha'
+  - đến [nam định](location) thì nhất định phải đi những đâu nhỉ
+  - ' giới thiệu cho tớ cảnh đẹp nhất định phải đi khi đến [Anh](location)'
+  - tớ sắp đến [Ukraine](location) du lịch, không bt mày bt ở đó có gì chơi không?
+  - ' giới thiệu cho tớ vài nơi du lịch nghỉ dưỡng ở [cao bằng](location) đi'
+  - '[hà nội](location) có như thế nào chơi ko bot?'
+  - tớ đang tìm gì vậy vui vui ở [VN](location)
+  - hè này đi đâu chơi nhỉ
+  - gợi ý địa điểm chơi mới lạ cho tớ
+  - mày có địa điểm gì hay ho vui vẻ làm chuyến đi thăm quan khám phá ko
+  - gợi ý địa điểm du lịch tại [đà nẵng](location)
+  - cho tớ hỏi [hcm](location) có gì thăm quan khám phá ko bạn?
+  - vùng miền núi? phía bắc chốn nào đáng dừng chân nhất
+  - tìm cho tớ những chốn đáng đi ở [Thụy Điển](location) với
+  - ' suy nghĩ xem nên đi đâu ở [Áo](location) ha'
+  - '[Việt Nam](location) có như thế nào mới lạ ko nhở'
+  - cho tớ hỏi chốn các bạn hay đi tắm biển ở đây với
+  - bot bt chỗ nào vui vui ở [bình dương](location) không?
+  - bot giúp tớ tìm chốn đi thăm quan khám phá đi nhe
+  - '[Canada](location) có như thế nào để cắm trại không'
+  - phụ mình tìm nơi cắm trại nha
+  - ko biết ở [miền nam](location) thì nên đi những đâu nhỉ
+  - mi bt ở [đông bắc bộ](location) địa điểm nào tuần trăng mật tốt nhở
+  - bạn bt chốn gì cắm trại tốt ko
+  - cho mình hỏi vài nơi tuần trăng mật ở [cà mau](location) đi
+  - nên đi dã ngoại ở đâu để khám phá vườn cây ăn trái mi
+  - buồn chán quá, đi đâu du lịch nghỉ dưỡng cho vui nhỉ timi
+  - đi đâu tuần trăng mật với 6 người trở lên ha bot
+  - tớ muốn tìm địa điểm thú vị để dã ngoại
+  - trời ơi sắp đi [Macau](location) cắm trại rồi mà chả biết nên đi đâu
+  - '[hn](location) có gì hay hay ko nhở'
+  - đến [đồng tháp](location) thì nhất định phải đi những đâu nhở
+  - ' giới thiệu cho tôi nơi nhất định phải đi khi đến [nam định](location)'
+  - mình sắp đến [hải dương](location) du lịch, ko biết cậu biết ở đó có gì chơi không?
+  - ' giới thiệu cho tớ vài địa điểm tắm biển ở [Thái Lan](location) đi'
+  - '[hà nội](location) có như thế nào chơi không timi?'
+  - tôi đang tìm kiếm gì đấy vui vui ở [Việt](location)
+  - xuân này đi đâu chơi nhỉ
+  - gợi ý chỗ nghỉ dưỡng hay hay cho mình
+  - bot có địa điểm nào du lịch hay ho vui vẻ làm chuyến du lịch nghỉ dưỡng được ko
+  - gợi ý địa điểm du lịch tại [quảng bình](location)
+  - cho tớ xin [sài gòn](location) có gì dã ngoại không em?
+  - vùng tây nguyên địa điểm nào nên đặt chân nhất
+  - tìm cho tôi những chỗ đáng đi ở [bắc giang](location) với
+  - ' suy nghĩ xem nên đi đâu ở [tuyên quang](location) nhở'
+  - '[bình dương](location) có như thế nào hay hay ko nhở'
+  - cho tớ hỏi chỗ các bạn hay đi cắm trại ở đây với
+  - mi biết nơi nào thú vị ở [gia lai](location) không?
+  - mày giúp tôi tìm nơi đi thăm quan khám phá đi nhe
+  - '[đà nẵng](location) có như thế nào để tuần trăng mật không'
+  - phụ tôi tìm chỗ thăm quan khám phá nhe
+  - ko bt ở [hn](location) thì nên đi những đâu nhở
+  - em bt ở [Canada](location) chốn nào dã ngoại tốt nhỉ
+  - timi bt chỗ gì tuần trăng mật tốt ko
+  - cho tôi hỏi vài nơi dã ngoại ở [Pháp](location) đê
+  - nên đi cắm trại ở đâu để tìm hiểu vườn cây ăn trái em
+  - chán quá, đi đâu cắm trại cho vui nhở em
+  - đi đâu cắm trại với 3 người trở lên nhỉ bạn
+  - tôi mún tìm chốn mới lạ để du lịch nghỉ dưỡng
+  - trời ơi sắp đi [Việt](location) tuần trăng mật rồi mà không biết nên đi đâu
+  - '[hồ chí minh](location) có như thế nào vui vui không ha'
+  - đến [Hoa Kỳ](location) thì nhất định phải đi những đâu nhỉ
+  - ' giới thiệu cho tớ cảnh đẹp nhất định phải đi khi đến [kon tum](location) với'
+  - mình sắp đến [phú thọ](location) du lịch, không biết cậu biết ở đó có như thế
+    nào chơi ko?
+  - ' giới thiệu cho tớ vài chỗ du lịch nghỉ dưỡng ở [Trung Quốc](location) đi'
+  - '[TV](location) có gì chơi ko timi?'
+  - tôi đang tìm như thế nào thế mới lạ ở [bắc kạn](location)
+  - hè này đi đâu chơi ha
+  - gợi ý chỗ dã ngoạn hay hay cho tớ
+  - bot có địa điểm nào du lịch hay ho vui vẻ làm chuyến dã ngoại ko
+  - gợi ý địa điểm du lịch tại [VN](location)
+  - cho tớ hỏi [hồ chí minh](location) có như thế nào du lịch nghỉ dưỡng ko timi?
+  - miền trung du bắc bộ địa điểm nào đáng dừng chân nhất
+  - gợi ý cho mình những nơi đáng đi ở [Việt Nam](location) với
+  - ' suy nghĩ xem nên đi đâu ở [kon tum](location) nhở'
+  - '[long an](location) có gì vui vui không nhở'
+  - cho mình xin địa điểm các bạn hay đi dã ngoại ở đây với
+  - bot bt chốn nào mới lạ ở [bình dương](location) không?
+  - timi giúp tôi tìm chỗ đi tuần trăng mật đi nhe
+  - '[NB](location) có như thế nào để tắm biển không'
+  - phụ mình tìm chỗ tắm biển nhe
+  - không biết ở [hn](location) thì nên đi những đâu nhỉ
+  - mày biết ở [sài gòn](location) nơi nào cắm trại tốt ha
+  - mi biết chốn gì cắm trại tốt ko
+  - cho mình xin vài địa điểm dã ngoại ở [hà nội](location) đi
+  - nên đi tuần trăng mật ở đâu để khám phá vườn cây ăn trái bot
+  - chán quá, đi đâu cắm trại cho vui nhỉ mày
+  - đi đâu dã ngoại với 4 người trở lên ha timi
+  - mình mún tìm chỗ vui vui để dã ngoại
+  - trời ơi sắp đi [Thái Lan](location) dã ngoại rồi mà chẳng bt nên đi đâu
+  - '[dn](location) có gì vui vui ko ha'
+  - đến [thanh hóa](location) thì nhất định phải đi những đâu nhở
+  - ' giới thiệu cho tớ cảnh đẹp nhất định phải đi khi đến [lai châu](location) với'
+  - mình sắp đến [nam định](location) du lịch, không bt mày bt ở đó có gì chơi ko?
+  - bot giới thiệu cho tớ vài chốn dã ngoại ở [Hà Lan](location) đi
+  - '[QN](location) có như thế nào chơi ko cậu?'
+  - tớ đang tìm kiếm như thế nào thế mới lạ ở [Đan Mạch](location)
+  - đông này đi đâu chơi nhở
+  - tìm chỗ ngoại khóa thú vị cho tớ
+  - em có nơi gì hay ho vui vẻ làm chuyến thăm quan khám phá được ko
+  - gợi ý địa điểm du lịch tại [hưng yên](location)
+  - cho tớ hỏi [bà rịa - vũng tàu](location) có gì dã ngoại không timi?
+  - vùng trung du miền núi? phía bắc nơi nào đáng có mặt nhất
+  - gợi ý cho mình những địa điểm đáng đi ở [yên bái](location) với
+  - ' suy nghĩ xem nên đi đâu ở [thái nguyên](location) nhỉ'
+  - '[Việt](location) có gì mới lạ không ha'
+  - cho mình hỏi nơi các bạn hay đi tuần trăng mật ở đây với
+  - mày biết địa điểm nào vui vui ở [VN](location) không?
+  - timi giúp tớ tìm nơi đi tuần trăng mật đi nhé
+  - '[thái bình](location) có gì để thăm quan khám phá ko'
+  - phụ mình tìm chỗ cắm trại ở đây nhe
+  - không biết ở [hồ chí minh](location) thì nên đi những đâu ha
+  - bot biết ở [hà giang](location) nơi nào thăm quan khám phá tốt ha
+  - mi biết nơi nào dã ngoại tốt ko
+  - cho tôi xin vài chỗ tắm biển ở [Trung Quốc](location) đi
+  - nên đi cắm trại ở đâu để khám phá vườn cây ăn trái timi
+  - bùn chán quá, đi đâu dã ngoại cho vui ha mày
+  - đi đâu tuần trăng mật với 6 người trở lên nhở em
+  - mình muốn tìm chỗ thú vị để tuần trăng mật
+  - trời ơi sắp đi [hải phòng](location) tắm biển rồi mà chẳng biết nên đi đâu
+  - '[Việt](location) có gì thú vị không ha'
+  - đến [Việt](location) thì nhất định phải đi những đâu ha
+  - ' giới thiệu cho tớ cảnh đẹp nhất định phải đi khi đến [VN](location) với'
+  - tớ sắp đến [gia lai](location) du lịch, ko bt timi bt ở đó có như thế nào chơi
+    không?
+  - chú em giới thiệu cho tôi vài chỗ cắm trại ở [thái nguyên](location) đê
+  - '[hn](location) có gì chơi không cậu?'
+  - tớ đang tìm kiếm gì thế thú vị ở [Việt Nam](location)
+  - mùa xuân này đi đâu chơi nhở
+  - tìm nơi nghỉ dưỡng mới lạ cho tớ
+  - bạn có chỗ gì hay ho vui vẻ làm chuyến đi thăm quan khám phá không
+  - gợi ý địa điểm du lịch tại [hà nội](location)
+  - cho tớ xin [hcm](location) có như thế nào cắm trại ko bot?
+  - vùng duyên hải miền trung địa điểm nào nên dừng chân nhất
+  - tìm cho mình những chỗ đáng đi ở [quảng bình](location) với
+  - cậu suy nghĩ xem nên đi đâu ở [vĩnh long](location) giờ nhỉ
+  - '[Úc](location) có gì mới lạ ko nhở'
+  - cho tớ xin địa điểm các bạn hay đi thăm quan khám phá ở đây với
+  - bot bt chốn nào vui vui ở [hải dương](location) ko?
+  - em giúp tớ tìm địa điểm đi du lịch nghỉ dưỡng đi nha
+  - '[nha trang](location) có gì để tuần trăng mật không'
+  - phụ tôi tìm chốn du lịch nghỉ dưỡng nhe
+  - không biết ở [Hà Lan](location) thì nên đi những đâu nhở
+  - bot biết ở [dn](location) địa điểm nào thăm quan khám phá tốt ha
+  - bạn biết chốn gì du lịch nghỉ dưỡng tốt không
+  - cho tôi xin vài chỗ cắm trại ở [Thổ Nhĩ Kỳ](location) đê
+  - nên đi du lịch nghỉ dưỡng ở đâu để tìm hiểu vườn cây ăn trái bot
+  - chán quá, đi đâu tắm biển cho vui ha bot
+  - đi đâu tuần trăng mật với 6 người trở lên nhỉ bot
+  - mình mún tìm chỗ vui vui để tuần trăng mật
+  - trời ơi sắp đi [VN](location) cắm trại rồi mà chả bt nên đi đâu
+  - '[hà tĩnh](location) có như thế nào mới lạ ko nhỉ'
+  - đến [Ấn Độ](location) thì nhất định phải đi những đâu nhở

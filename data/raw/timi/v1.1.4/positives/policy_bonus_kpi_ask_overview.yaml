@@ -1,0 +1,306 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: policy_bonus_kpi_ask_overview
+  examples:
+  - thưởng KPI là như nào đó
+  - nói rõ hơn về bonus KPI đi
+  - công ty có thưởng KPI ko
+  - nói cho tớ biết thêm về thưởng quí đi
+  - công ty có chính sách phúc lợi quí ko
+  - bonus KPI là gì m
+  - max min thưởng quí như thế nào
+  - cho tôi hỏi công ty có thưởng KPI không
+  - ' có áp dụng đánh giá bằng kpi ko'
+  - cho mình hỏi bonus quí là như nào mầy
+  - làm việc tốt thì công ty có ghi nhận ko
+  - chế độ thưởng KPI thế nào
+  - cho mình hỏi công ty có thưởng quí không
+  - bonus quí là gì bot
+  - ' có áp kpi ko'
+  - chế độ bonus quí như thế nào
+  - công ty có chính sách khen thưởng thi đua làm tốt ko
+  - thưởng KPI được tính thế nào
+  - công ty đánh giá thái độ làm việc của nhân viên thế nào
+  - kpi để làm gì nhỉ
+  - công ty có benefit thưởng quí ko
+  - công ty có áp kpi để giám sát không
+  - công ty có sử dụng bonus quí để đánh giá nhân viên ko
+  - cho tớ hỏi bonus KPI là thế nào bạn
+  - công ty có bonus quí ko
+  - bonus quí là như thế nào hả bạn
+  - nói cho mình biết thêm về thưởng KPI đi
+  - công ty có áp đánh giá thông qua kpi không
+  - thưởng quí được tính thế nào
+  - nhân viên làm tốt thì có đãi ngộ thêm gì ko
+  - nói rõ hơn về thưởng quí đi
+  - công ty có áp dụng kpi để đánh giá không
+  - thưởng KPI là như nào mầy
+  - nói rõ hơn về thưởng KPI đi
+  - công ty có thưởng KPI không
+  - nói cho mình biết thêm về thưởng quí đi
+  - công ty có chính sách bonus quí ko
+  - bonus KPI là gì vậy mầy
+  - cho tớ hỏi công ty có thưởng KPI ko
+  - công ty có đánh giá bằng kpi ko
+  - cho mình hỏi bonus quí là thế nào hả em
+  - chế độ thưởng KPI như nào
+  - cho tớ hỏi công ty có thưởng quí không
+  - thưởng quí là gì
+  - công ty có áp dụng kpi không
+  - chế độ thưởng quí như thế nào
+  - thưởng KPI được tính như nào
+  - công ty có trợ cấp thưởng quí ko
+  - ' có áp kpi để giám sát ko'
+  - công ty có sử dụng trợ cấp quí để đánh giá nhân viên ko
+  - cho tôi hỏi bonus KPI là như nào hả
+  - công ty có thưởng quí ko
+  - bonus quí là thế nào bạn
+  - nói cho tôi biết thêm về thưởng KPI đi
+  - công ty có đánh giá thông qua kpi không
+  - thưởng quí được tính như thế nào
+  - nhân viên làm tốt thì có phúc lợi thêm gì ko
+  - nói rõ hơn về bonus quí đi
+  - công ty có áp kpi để đánh giá không
+  - bonus KPI là thế nào
+  - công ty có bonus KPI ko
+  - nói cho tớ biết thêm về bonus quí đi
+  - công ty có chính sách benefit quí ko
+  - bonus KPI là gì
+  - cho tớ hỏi công ty có bonus KPI ko
+  - ' có áp dụng đánh giá bằng kpi không'
+  - cho tôi hỏi bonus quí là như thế nào
+  - chế độ thưởng KPI như thế nào
+  - cho tôi hỏi công ty có bonus quí không
+  - bonus quí là gì thế cậu
+  - ' có áp kpi không'
+  - chế độ bonus quí thế nào
+  - bonus KPI được tính thế nào
+  - công ty có bonus thưởng quí ko
+  - công ty có áp dụng kpi để quản lý không
+  - công ty có sử dụng đãi ngộ quí để đánh giá nhân viên ko
+  - cho tớ hỏi thưởng KPI là thế nào
+  - công ty có thưởng quí không
+  - thưởng quí là như thế nào đấy m
+  - nói cho tớ biết thêm về thưởng KPI đi
+  - ' có áp đánh giá thông qua kpi không'
+  - bonus quí được tính như thế nào
+  - nhân viên làm tốt thì có trợ cấp thêm gì ko
+  - ' có áp kpi để đánh giá ko'
+  - thưởng KPI là thế nào mầy
+  - công ty có bonus KPI không
+  - nói cho tôi biết thêm về bonus quí đi
+  - công ty có chính sách trợ cấp quí ko
+  - thưởng KPI là gì hả
+  - cho mình hỏi công ty có bonus KPI ko
+  - công ty có áp dụng đánh giá bằng kpi không
+  - cho mình hỏi bonus quí là như nào
+  - chế độ bonus KPI như nào
+  - cho tôi hỏi công ty có thưởng quí không
+  - bonus quí là gì
+  - ' có áp dụng kpi không'
+  - chế độ thưởng quí như nào
+  - thưởng KPI được tính như thế nào
+  - công ty có đãi ngộ thưởng quí ko
+  - ' có áp dụng kpi để quản lý ko'
+  - công ty có sử dụng benefit quí để đánh giá nhân viên ko
+  - cho tôi hỏi bonus KPI là như thế nào vậy timi
+  - công ty có bonus quí không
+  - bonus quí là như thế nào hả
+  - nói cho tớ biết thêm về bonus KPI đi
+  - ' có đánh giá thông qua kpi không'
+  - bonus quí được tính như nào
+  - nhân viên làm tốt thì có benefit thêm gì ko
+  - ' có áp kpi để đánh giá không'
+  - bonus KPI là như nào bạn
+  - nói cho tôi biết thêm về thưởng quí đi
+  - công ty có chính sách đãi ngộ quí ko
+  - thưởng KPI là gì đó
+  - cho tớ hỏi công ty có bonus KPI không
+  - công ty có đánh giá bằng kpi không
+  - cho tôi hỏi thưởng quí là như thế nào
+  - chế độ bonus KPI thế nào
+  - cho tớ hỏi công ty có thưởng quí ko
+  - thưởng quí là gì bot
+  - công ty có áp kpi không
+  - chế độ thưởng quí thế nào
+  - bonus KPI được tính như thế nào
+  - công ty có phúc lợi thưởng quí ko
+  - ' có áp kpi để quản lý không'
+  - công ty có sử dụng phúc lợi quí để đánh giá nhân viên ko
+  - cho mình hỏi bonus KPI là như thế nào bạn
+  - bonus quí là thế nào vậy cậu
+  - nói cho tôi biết thêm về bonus KPI đi
+  - ' có đánh giá thông qua kpi ko'
+  - bonus quí được tính thế nào
+  - nhân viên làm tốt thì có bonus thêm gì ko
+  - ' có áp dụng kpi để đánh giá ko'
+  - thưởng KPI là như thế nào thế cậu
+  - nói cho mình biết thêm về bonus quí đi
+  - thưởng KPI là gì m
+  - cho mình hỏi công ty có thưởng KPI ko
+  - ' có đánh giá bằng kpi không'
+  - cho tớ hỏi bonus quí là thế nào đó
+  - chế độ bonus KPI như thế nào
+  - cho tớ hỏi công ty có bonus quí ko
+  - thưởng quí là gì m
+  - công ty có áp kpi ko
+  - chế độ bonus quí như nào
+  - bonus KPI được tính như nào
+  - công ty có áp kpi để quản lý ko
+  - cho tôi hỏi bonus KPI là như nào vậy
+  - thưởng quí là như nào hả
+  - công ty có đánh giá thông qua kpi ko
+  - thưởng quí được tính như nào
+  - công ty có áp kpi để đánh giá ko
+  - bonus KPI là như thế nào hả
+  - thưởng KPI là gì
+  - cho tôi hỏi công ty có bonus KPI không
+  - ' có đánh giá bằng kpi ko'
+  - cho tớ hỏi bonus quí là thế nào mày
+  - cho mình hỏi công ty có thưởng quí ko
+  - thưởng quí là gì vậy bạn
+  - ' có áp dụng kpi ko'
+  - công ty có áp kpi để quản lý không
+  - cho tớ hỏi bonus KPI là như thế nào đó
+  - bonus quí là như thế nào đó mày
+  - nói cho mình biết thêm về bonus KPI đi
+  - công ty có áp dụng đánh giá thông qua kpi không
+  - công ty có áp dụng kpi để đánh giá ko
+  - bonus KPI là như thế nào đó
+  - bonus KPI là gì thế m
+  - cho mình hỏi công ty có thưởng KPI không
+  - ' có áp đánh giá bằng kpi ko'
+  - cho mình hỏi thưởng quí là thế nào đấy
+  - cho tôi hỏi công ty có bonus quí ko
+  - thưởng quí là gì hả bot
+  - công ty có áp dụng kpi ko
+  - ' có áp kpi để giám sát không'
+  - cho tớ hỏi bonus KPI là như nào vậy mầy
+  - thưởng quí là như nào bạn
+  - công ty có áp đánh giá thông qua kpi ko
+  - ' có áp dụng kpi để đánh giá không'
+  - bonus KPI là như nào
+  - bonus KPI là gì hả
+  - cho tớ hỏi công ty có thưởng KPI không
+  - công ty có áp dụng đánh giá bằng kpi ko
+  - cho tớ hỏi bonus quí là như nào thế
+  - cho mình hỏi công ty có bonus quí ko
+  - thưởng quí là gì vậy em
+  - ' có áp dụng kpi để giám sát không'
+  - cho mình hỏi thưởng KPI là như nào em
+  - thưởng quí là thế nào hả
+  - ' có áp dụng đánh giá thông qua kpi không'
+  - thưởng KPI là thế nào thế bạn
+  - bonus KPI là gì thế
+  - cho tôi hỏi công ty có thưởng KPI ko
+  - ' có áp đánh giá bằng kpi không'
+  - cho mình hỏi bonus quí là thế nào thế
+  - cho mình hỏi công ty có bonus quí không
+  - bonus quí là gì timi
+  - ' có áp dụng kpi để giám sát ko'
+  - cho tớ hỏi thưởng KPI là thế nào hả timi
+  - thưởng quí là thế nào vậy m
+  - ' có áp dụng đánh giá thông qua kpi ko'
+  - thưởng KPI là như thế nào timi
+  - bonus KPI là gì vậy m
+  - cho mình hỏi công ty có bonus KPI không
+  - công ty có áp đánh giá bằng kpi ko
+  - cho tớ hỏi thưởng quí là thế nào đó em
+  - cho tớ hỏi công ty có bonus quí không
+  - thưởng quí là gì hả
+  - ' có áp dụng kpi để quản lý không'
+  - cho mình hỏi thưởng KPI là như nào
+  - thưởng quí là như nào thế
+  - công ty có áp dụng đánh giá thông qua kpi ko
+  - thưởng KPI là như nào vậy
+  - thưởng KPI là gì đấy bạn
+  - cho tôi hỏi công ty có bonus KPI ko
+  - cho mình hỏi bonus quí là như thế nào mầy
+  - thưởng quí là gì bạn
+  - ' có áp kpi để quản lý ko'
+  - cho tớ hỏi bonus KPI là như nào thế timi
+  - thưởng quí là thế nào
+  - ' có áp đánh giá thông qua kpi ko'
+  - thưởng KPI là như nào thế
+  - thưởng KPI là gì thế
+  - công ty có áp đánh giá bằng kpi không
+  - cho mình hỏi thưởng quí là như nào
+  - cho tôi hỏi công ty có thưởng quí ko
+  - bonus quí là gì m
+  - công ty có áp dụng kpi để giám sát ko
+  - cho tớ hỏi thưởng KPI là như thế nào m
+  - thưởng quí là như thế nào đó timi
+  - bonus KPI là như nào hả
+  - thưởng KPI là gì thế mày
+  - cho tớ hỏi thưởng quí là thế nào
+  - thưởng quí là gì đó mầy
+  - công ty có áp dụng kpi để quản lý ko
+  - cho tôi hỏi thưởng KPI là như thế nào bot
+  - thưởng quí là như nào đó
+  - thưởng KPI là thế nào đấy
+  - thưởng KPI là gì bot
+  - cho tôi hỏi bonus quí là thế nào mầy
+  - bonus quí là gì thế em
+  - công ty có áp dụng kpi để giám sát không
+  - cho mình hỏi bonus KPI là thế nào
+  - thưởng quí là như nào thế cậu
+  - bonus KPI là như thế nào đấy mày
+  - bonus KPI là gì vậy bot
+  - cho tớ hỏi bonus quí là như nào thế mầy
+  - bonus quí là gì em
+  - cho tớ hỏi bonus KPI là thế nào đó mày
+  - bonus quí là như thế nào hả cậu
+  - bonus KPI là thế nào hả em
+  - bonus KPI là gì em
+  - cho mình hỏi thưởng quí là thế nào
+  - thưởng quí là gì thế m
+  - công ty có áp kpi để giám sát ko
+  - cho mình hỏi bonus KPI là như thế nào đó
+  - bonus quí là như thế nào timi
+  - thưởng KPI là như thế nào đấy
+  - thưởng KPI là gì đấy
+  - cho tớ hỏi thưởng quí là như nào đó m
+  - bonus quí là gì đó
+  - cho tớ hỏi bonus KPI là như thế nào
+  - bonus quí là như thế nào em
+  - bonus KPI là thế nào em
+  - thưởng KPI là gì mầy
+  - cho tớ hỏi bonus quí là như thế nào hả bot
+  - thưởng quí là gì đấy em
+  - cho tớ hỏi bonus KPI là như thế nào hả
+  - thưởng quí là thế nào mày
+  - bonus KPI là như nào hả mày
+  - bonus KPI là gì vậy timi
+  - cho tôi hỏi thưởng quí là thế nào thế bot
+  - bonus quí là gì thế m
+  - cho tớ hỏi bonus KPI là thế nào
+  - bonus quí là thế nào hả
+  - bonus KPI là như thế nào cậu
+  - thưởng KPI là gì đó m
+  - cho tớ hỏi thưởng quí là như nào bạn
+  - thưởng quí là gì đó
+  - cho tớ hỏi bonus KPI là thế nào thế em
+  - bonus quí là như thế nào
+  - bonus KPI là như thế nào đó m
+  - bonus KPI là gì đó m
+  - cho mình hỏi bonus quí là như thế nào timi
+  - bonus quí là gì thế bạn
+  - cho tớ hỏi bonus KPI là thế nào đó
+  - thưởng quí là như thế nào
+  - thưởng KPI là như nào đấy bạn
+  - bonus KPI là gì thế em
+  - cho tớ hỏi thưởng quí là như thế nào mầy
+  - bonus quí là gì đấy
+  - cho tôi hỏi bonus KPI là thế nào bạn
+  - thưởng quí là thế nào bạn
+  - thưởng KPI là như nào m
+  - bonus KPI là gì đó
+  - cho tớ hỏi bonus quí là như nào
+  - bonus quí là gì bạn
+  - cho tớ hỏi thưởng KPI là như nào
+  - thưởng quí là như nào
+  - bonus KPI là như thế nào
+  - bonus KPI là gì đấy
+  - cho tớ hỏi bonus quí là như thế nào đấy

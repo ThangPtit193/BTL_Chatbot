@@ -1,0 +1,796 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: chitchat_ask_weather
+  examples:
+  - trong [ngày 30/4](time) không khí như nào
+  - trời đang bão à m
+  - '[hôm nay](time) trời thế nào'
+  - '[thứ ba](time) độ ẩm bao nhiêu'
+  - '[ngày quốc thế lao động](time) độ ẩm như thế nào'
+  - '[ngày hôm nay](time) trời có nắng to không biết nữa'
+  - '[ngày kia](time) bao nhiêu độ vậy mà sao nóng quá'
+  - '[ngày tới](time) có mưa không, tao thấy trời hơi âm u'
+  - nhiệt độ cuối tuần như nào
+  - nhiệt độ trong [ngày quốc khánh](time) như nào
+  - thời tiết [2/9](time) có mây ko
+  - '[thứ ba](time) thời tiết có sương chứ'
+  - trong [tết dương lịch](time) không khí như thế nào
+  - ngoài trời đang bão à bạn
+  - '[hôm nay](time) trời như thế nào nhỉ'
+  - đầu tuần tới nhiệt độ bao nhiêu
+  - cuối tuần độ ẩm thế nào
+  - '[ngày hôm nay](time) trời có bão không biết nữa'
+  - '[hôm kìa](time) nhiệt độ mấy vậy mà sao lạnh quá'
+  - '[ngày hôm nay](time) có mưa không, tao thấy trời hơi âm u'
+  - độ ẩm [ngày quốc khánh](time) ntn
+  - không khí trong [quốc khánh](time) ntn
+  - thời tiết [2/9](time) bão có to không
+  - '[mùng 1-9](time) thời tiết có sương chứ'
+  - trong [giỗ tổ hồng vương](time) không khí thế nào
+  - trời đang có tuyến à bạn
+  - '[ngày hôm nay](time) trời như thế nào'
+  - '[chủ nhật](time) độ ẩm bao nhiêu'
+  - '[chủ nhật](time) nhiệt độ như thế nào'
+  - '[hôm nay](time) trời có bão không biết nữa'
+  - '[ngày kia](time) mấy độ vậy mà sao lạnh quá'
+  - '[chiều nay](time) có mưa không, tớ thấy trời hơi âm u'
+  - nhiệt độ [1/1](time) như thế nào
+  - thời tiết trong [1/1](time) như nào
+  - thời tiết [chủ nhật](time) nhiệt độ như thế nào
+  - '[1/1](time) thời tiết có sương ư'
+  - trong [ngày 10/3](time) thời tiết ntn
+  - ngoài trời đang mưa à
+  - '[hôm nay](time) trời như thế nào'
+  - '[1/5](time) có mát lắm ko'
+  - cuối tuần độ ẩm như thế nào
+  - '[hôm nay](time) trời có nắng to không biết nữa'
+  - '[hôm nay](time) bao nhiêu độ vậy mà sao lạnh quá'
+  - '[ngày kìa](time) có mưa không, tớ thấy trời hơi âm u'
+  - nhiệt độ [ngày quốc thế lao động](time) ntn
+  - nhiệt độ trong [ngày quốc khánh](time) như thế nào
+  - thời tiết [hôm kia](time) có lạnh không
+  - '[tết dương](time) thời tiết có nhiệt độ là bao nhiêu'
+  - trong [ngày 1/5](time) không khí thế nào
+  - trời đang bão à
+  - '[hôm nay](time) trời như nào nhể'
+  - '[ngày 31](time) nhiệt độ bao nhiêu'
+  - '[10/3](time) thời tiết thế nào'
+  - '[hôm nay](time) trời có mưa không biết nữa'
+  - '[ngày kìa](time) nhiệt độ mấy vậy mà sao nóng quá'
+  - '[ngày kia](time) có mưa không, tôi thấy trời hơi âm u'
+  - thời tiết đầu tuần tới thế nào
+  - không khí trong [ngày 10/3](time) thế nào
+  - thời tiết [30/4](time) độ ẩm bao nhiêu
+  - '[hôm kia](time) thời tiết độ ẩm bao nhiêu'
+  - trong [1/1](time) thời tiết thế nào
+  - trời đang mưa à
+  - '[hôm nay](time) trời ntn'
+  - '[ngày mùng 1-9](time) có lạnh ko'
+  - '[ngày kìa](time) thời tiết thế nào'
+  - '[ngày hôm nay](time) trời có mưa không biết nữa'
+  - '[hôm qua](time) bao nhiêu độ vậy mà sao lạnh quá'
+  - '[ngày mai](time) có mưa không, tớ thấy trời hơi âm u'
+  - thời tiết [ngày 1/1](time) ntn
+  - nhiệt độ trong [30/4](time) thế nào
+  - thời tiết [hôm nay](time) nhiệt độ như thế nào
+  - cuối tuần thời tiết bao nhiêu độ C
+  - trong [1/1](time) không khí ntn
+  - trời đang nắng to à
+  - '[ngày hôm nay](time) trời thế nào nhỉ'
+  - '[mùng 1-9](time) có nóng ko'
+  - '[ngày 05](time) thời tiết thế nào'
+  - '[hôm qua](time) nhiệt độ mấy vậy mà sao lạnh quá'
+  - '[ngày mai](time) có mưa không, tôi thấy trời hơi âm u'
+  - thời tiết [ngày 1/1](time) như nào
+  - không khí trong [quốc khánh](time) như nào
+  - thời tiết cuối tuần độ ẩm bao nhiêu
+  - cuối tuần thời tiết có rét nhiều không
+  - trong [ngày 1/5](time) thời tiết như thế nào
+  - ngoài trời đang có tuyến à
+  - '[ngày hôm nay](time) trời như nào'
+  - '[ngày chiến thắng](time) bao nhiêu độ C'
+  - đầu tuần tới nhiệt độ ntn
+  - '[hôm kia](time) nhiệt độ mấy vậy mà sao lạnh quá'
+  - '[ngày tới](time) có mưa không, tớ thấy trời hơi âm u'
+  - độ ẩm [ngày mùng 1-9](time) như nào
+  - nhiệt độ trong [ngày quốc thế lao động](time) thế nào
+  - thời tiết [ngày mùng 1-9](time) có sương ư
+  - đầu tuần tới thời tiết có sương ư
+  - trong [giỗ tổ hồng vương](time) nhiệt độ như nào
+  - trời đang mưa à bạn
+  - '[ngày hôm nay](time) trời như thế nào nhỉ'
+  - '[ngày mùng 1-9](time) độ ẩm bao nhiêu'
+  - '[ngày 30](time) thời tiết như nào'
+  - '[ngày kia](time) mấy độ vậy mà sao nóng quá'
+  - '[sáng mai](time) có mưa không, tui thấy trời hơi âm u'
+  - nhiệt độ [hôm qua](time) thế nào
+  - nhiệt độ trong [ngày 1/5](time) ntn
+  - thời tiết cuối tuần có nhiệt độ là bao nhiêu
+  - '[hôm kìa](time) thời tiết có nhiệt độ là bao nhiêu'
+  - trong [tết dương](time) không khí như nào
+  - trời đang bão à em
+  - '[hôm nay](time) trời như nào'
+  - '[ngày 7](time) nóng hay lạnh'
+  - đầu tuần tới nhiệt độ như nào
+  - '[ngày mai](time) nhiệt độ mấy vậy mà sao nóng quá'
+  - '[ngày hôm nay](time) có mưa không, tớ thấy trời hơi âm u'
+  - thời tiết [30/4](time) thế nào
+  - nhiệt độ trong [10/3](time) như nào
+  - thời tiết đầu tuần tới bao nhiêu độ C
+  - '[chủ nhật](time) thời tiết có rét ko'
+  - trong [2/9](time) thời tiết như thế nào
+  - ngoài trời đang nắng to à
+  - '[ngày hôm nay](time) trời như nào nhể'
+  - '[thứ năm](time) có nhiệt độ là bao nhiêu'
+  - '[sài gòn](location) cuối tuần như thế nào'
+  - '[hà nội](location) có rét ko'
+  - '[tuần tới nữa](time) nhiệt độ [đà nẵng](location) như thế nào'
+  - thời tiết [đông bắc bộ](location) [thứ ba](time) độ ẩm bao nhiêu
+  - thời tiết [mộc châu](location) tốt không
+  - thời tiết [đà nẵng](location) có nhiệt độ là bao nhiêu
+  - thời tiết [đất Việt](location) cuối tuần có tốt không
+  - trong thành phố [hà nội](location) nhiệt độ ntn
+  - '[Mexico](location) [ngày 30](time) nắng hay mưa'
+  - '[tuần này](time) thời tiết [bình định](location) có mây ko'
+  - thời tiết cuối tuần tại [đà nẵng](location) như nào
+  - '[HD](location) [ngày kìa](time) ntn'
+  - '[hà nội](location) có lạnh ko'
+  - '[tết dương lịch](time) nhiệt độ [hà nội](location) ntn'
+  - thời tiết [hà nội](location) [tuần tới](time) như nào
+  - độ ẩm [miền trung](location) đẹp không
+  - thời tiết ở tỉnh [Thổ Nhĩ Kỳ](location) có nắng ko
+  - thời tiết [hang sơn đoòng](location) [hôm kia](time) có tốt không
+  - tại thành phố [vịnh hạ long](location) nhiệt độ ntn
+  - '[đà nẵng](location) [ngày chiến thắng](time) nắng hay mưa'
+  - '[hôm kia](time) không khí [hà nội](location) nhiệt độ ntn'
+  - nhiệt độ [thứ 3](time) ở [miền tây](location) thế nào
+  - '[đồng bằng bắc bộ](location) đầu tuần tới nhiệt độ ntn'
+  - '[điện biên](location) nhiệt độ bao nhiêu'
+  - đầu tuần tới không khí [hà nội](location) thế nào
+  - thời tiết [Việt Nam](location) [tuần này](time) như thế nào
+  - không khí [LS](location) ntn
+  - thời tiết tỉnh [QN](location) nhiệt độ bao nhiêu
+  - thời tiết [hà tĩnh](location) [ngày quốc khánh](time) có ổn không
+  - ở tp [hà nội](location) có mây lắm ko
+  - '[đà nẵng](location) [thứ tư](time) nóng hay lạnh'
+  - '[tuần tới](time) không khí [VL](location) bão có to không'
+  - thời tiết [thứ hai](time) tại [TV](location) như nào
+  - '[hà nội](location) [chủ nhật](time) như thế nào'
+  - '[hội an](location) có rét nhiều không'
+  - '[tuần tới](time) độ ẩm [đồng tháp](location) ntn'
+  - thời tiết [hồ chí minh](location) đầu tuần tới ntn
+  - thời tiết [quảng bình](location) đẹp không
+  - thời tiết trong tỉnh [sài gòn](location) có nhiệt độ là bao nhiêu
+  - thời tiết [hồ chí minh](location) [tết âm](time) có tốt không
+  - tại thành phố [sài gòn](location) bão có to không
+  - '[phú quốc](location) đầu tuần tới nóng hay lạnh'
+  - '[hôm kia](time) không khí [đất Việt](location) có mát không'
+  - độ ẩm [ngày 1/5](time) trong [long an](location) như nào
+  - '[Phan Thiết](location) cuối tuần nhiệt độ bao nhiêu'
+  - '[vĩnh phúc](location) có nhiệt độ là bao nhiêu'
+  - cuối tuần độ ẩm [sài gòn](location) thế nào
+  - thời tiết [đông bắc bộ](location) [hôm kia](time) có nhiệt độ là bao nhiêu
+  - thời tiết [côn đảo](location) nice không
+  - thời tiết ở [HG](location) có nhiệt độ là bao nhiêu
+  - thời tiết [duyên hải miền trung](location) đầu tuần tới có good không
+  - ở thành phố [phú quốc](location) có gió ko
+  - '[đà nẵng](location) cuối tuần nắng hay mưa'
+  - '[tết dương](time) thời tiết [hà nội](location) nhiệt độ ntn'
+  - không khí cuối tuần trong [tp hồ chí minh](location) như thế nào
+  - '[đà nẵng](location) [30/4](time) ntn'
+  - '[Phan Thiết](location) nhiệt độ như thế nào'
+  - '[thứ năm](time) độ ẩm [phú yên](location) ntn'
+  - thời tiết [đà nẵng](location) đầu tuần tới như nào
+  - thời tiết [hồ chí minh](location) ntn
+  - thời tiết tại [hồ chí minh](location) bao nhiêu độ C
+  - thời tiết [mộc châu](location) [thứ 7](time) có good không
+  - tại thành phố [đồng bằng bắc bộ](location) có nhiệt độ là bao nhiêu
+  - '[đà nẵng](location) [ngày quốc khánh](time) nắng hay mưa'
+  - '[tuần sắp tới](time) thời tiết [Mỹ](location) có nhiệt độ là bao nhiêu'
+  - không khí [ngày chiến thắng](time) ở [hà nội](location) như nào
+  - '[đà nẵng](location) cuối tuần như thế nào'
+  - '[hà nội](location) có mưa không'
+  - '[tết dương](time) thời tiết [pắc pó](location) ntn'
+  - thời tiết [Việt Nam](location) cuối tuần có tuyết ko
+  - nhiệt độ [HG](location) đẹp không
+  - thời tiết trong thành phố [miền bắc](location) có tuyết nhiều không
+  - thời tiết [Ấn Độ](location) cuối tuần có good không
+  - trong thành phố [hồ chí minh](location) có nhiệt độ là bao nhiêu
+  - '[sài gòn](location) [ngày 28](time) nắng hay mưa'
+  - cuối tuần thời tiết [TH](location) nhiệt độ bao nhiêu
+  - nhiệt độ [tết âm](time) ở [cố đô huế](location) thế nào
+  - '[đà lạt](location) [thứ ba](time) độ ẩm bao nhiêu'
+  - '[miền tây](location) có rét ko'
+  - '[ngày chiến thắng](time) thời tiết [LS](location) ntn'
+  - thời tiết [kon tum](location) [tuần tới](time) nhiệt độ ntn
+  - không khí [hà nội](location) đẹp không
+  - thời tiết khu vực [BN](location) bao nhiêu độ C
+  - thời tiết [QN](location) [thứ 3](time) có tốt không
+  - ở thành phố [Hoa Kỳ](location) có nóng nhiều không
+  - '[sóc trăng](location) cuối tuần nóng hay lạnh'
+  - '[tuần sắp tới](time) không khí [hồ chí minh](location) bao nhiêu độ C'
+  - độ ẩm [thứ 2](time) trong [đà nẵng](location) như thế nào
+  - '[HY](location) đầu tuần tới có nhiệt độ là bao nhiêu'
+  - '[phú quốc](location) có sương mù không'
+  - '[ngày 26](time) độ ẩm [đà nẵng](location) ntn'
+  - thời tiết [hà nội](location) [tuần tới đây](time) bao nhiêu độ C
+  - không khí [đà lạt](location) thế nào
+  - thời tiết tại [tây nam bộ](location) nóng hay lạnh
+  - thời tiết [hà nội](location) [ngày kìa](time) có nice không
+  - trong tp [Việt Nam](location) độ ẩm bao nhiêu
+  - '[đà nẵng](location) [tết dương lịch](time) nắng hay mưa'
+  - '[hôm nay](time) thời tiết [bình định](location) có nhiệt độ là bao nhiêu'
+  - không khí [mùng 1-9](time) trong [đất Việt](location) như nào
+  - '[sài gòn](location) [ngày 31](time) như nào'
+  - '[bắc trung bộ](location) bão có to không'
+  - '[tuần này](time) nhiệt độ [Hoa Kỳ](location) ntn'
+  - thời tiết [sài gòn](location) [mùng 1-9](time) như thế nào
+  - thời tiết [hà nội](location) good không
+  - thời tiết [sapa](location) bao nhiêu độ C
+  - thời tiết [hà nội](location) [tết dương](time) có ổn không
+  - trong thành phố [sài gòn](location) bão có to không
+  - '[Tràng An](location) [30/4](time) nắng hay mưa'
+  - '[tuần sắp tới](time) không khí [vĩnh phúc](location) có mây ko'
+  - nhiệt độ [ngày 1/1](time) trong [BN](location) ntn
+  - '[đà nẵng](location) đầu tuần tới bao nhiêu độ C'
+  - '[duyên hải miền trung](location) độ ẩm bao nhiêu'
+  - '[tuần sắp tới](time) thời tiết [đà nẵng](location) như nào'
+  - thời tiết [sài gòn](location) [tuần sắp tới](time) như nào
+  - thời tiết [sài gòn](location) ổn không
+  - thời tiết trong tp [hà nội](location) có lạnh ko
+  - thời tiết [sơn la](location) [thứ 7](time) có ổn không
+  - trong thành phố [đất Việt](location) nắng hay mưa
+  - '[hà nội](location) cuối tuần nắng hay mưa'
+  - '[ngày kia](time) không khí [đồng bằng sông cưu long](location) độ ẩm bao nhiêu'
+  - không khí cuối tuần tại [hà nội](location) ntn
+  - '[hải phòng](location) [ngày 30/4](time) bao nhiêu độ C'
+  - '[hà nội](location) bao nhiêu độ C'
+  - '[tuần này](time) thời tiết [HY](location) như nào'
+  - thời tiết [duyên hải miền trung](location) [tuần tới](time) như thế nào
+  - thời tiết [sài gòn](location) như thế nào
+  - thời tiết ở [hồ chí minh](location) nắng hay mưa
+  - thời tiết [hà nội](location) [mùng 1-9](time) có good không
+  - trong thành phố [tây ninh](location) nóng hay lạnh
+  - '[trà vinh](location) [1/5](time) nóng hay lạnh'
+  - '[ngày 31](time) không khí [đông nam bộ](location) nhiệt độ ntn'
+  - không khí [ngày chiến thắng](time) ở [miền trung](location) ntn
+  - '[nam trung bộ](location) [tết dương](time) như thế nào'
+  - '[hải phòng](location) bao nhiêu độ C'
+  - '[ngày mùng 1-9](time) nhiệt độ [sài gòn](location) như thế nào'
+  - '[16 rưỡi](time) [quốc khánh](time) [đà nẵng](location) thời tiết ntn'
+  - cậu [đà nẵng](location) [hôm nay](time) có sương chứ
+  - đầu tuần tới [quy nhơn](location) nhiệt độ như thế nào
+  - bây giờ ngoài trời nhiệt độ bao nhiêu nhỉ anh ở [yên bái](location)
+  - '[hôm nay](time) [pắc pó](location) bao nhiêu độ vậy'
+  - '[QB](location) [hôm trước](time) nhiệt độ như thế nào'
+  - '[miền bắc](location) đang có bão à'
+  - '[17h30p](time) cuối tuần thời tiết như nào'
+  - tao muốn biết thời tiết ở [đà nẵng](location) hiện giờ đang ntn
+  - có nắng ở [sài gòn](location) không
+  - '[đất Việt](location) [hôm nay](time) mưa chứ'
+  - ngoài trời mấy độ C nhỉ chị ở [NB](location)
+  - tớ muốn biết thời tiết ở [bạc liệu](location)
+  - '[10h30p](time) [hôm kia](time) [sài gòn](location) có nắng ko'
+  - mày [đà nẵng](location) [ngày hôm nay](time) có lạnh ko
+  - '[chủ nhật](time) [Tác bản giốc](location) nắng hay mưa'
+  - bây giờ ngoài trời bao nhiêu độ C nhỉ tớ ở [Anh](location)
+  - '[hôm nay](time) [hà nội](location) mấy độ vậy'
+  - '[Campuchia](location) [quốc khánh](time) mưa chứ'
+  - '[đà nẵng](location) đang mưa à bạn'
+  - '[14r](time) [ngày quốc khánh](time) có nhiệt độ là bao nhiêu'
+  - tớ muốn biết thời tiết ở [TH](location) hiện giờ đang thế nào
+  - có mưa ở [sài gòn](location) à
+  - '[bà rịa - vũng tàu](location) [hôm nay](time) mưa chứ'
+  - ngoài trời bao nhiêu độ C nhỉ mình ở [Mỹ](location)
+  - tớ muốn biết thời tiết ở [Đảo Nam Du](location)
+  - '[17h30](time) đầu tuần tới [đồng bằng bắc bộ](location) bao nhiêu độ C'
+  - timi [Na Uy](location) [hôm nay](time) có rét ko
+  - '[chủ nhật](time) [đà nẵng](location) nắng chứ'
+  - bây giờ ngoài trời nhiệt độ mấy nhỉ anh ở [hà nội](location)
+  - '[ngày hôm nay](time) [hà nội](location) mấy độ vậy'
+  - '[đà nẵng](location) [chủ nhật](time) có sương mù ko'
+  - '[đất Việt](location) đang mưa à'
+  - '[15r](time) [ngày kia](time) thời tiết thế nào'
+  - tao muốn biết thời tiết ở [sài gòn](location) hiện giờ đang ntn
+  - có bão ở [đà nẵng](location) ư
+  - '[nam trung bộ](location) [hôm nay](time) mưa chứ'
+  - ngoài trời mấy độ C nhỉ cô ở [đà nẵng](location)
+  - tôi muốn biết thời tiết ở [bình dương](location)
+  - '[17r](time) cuối tuần [hà nội](location) thời tiết như nào'
+  - em [đà nẵng](location) [hôm nay](time) nhiệt độ như thế nào
+  - đầu tuần tới [sài gòn](location) nắng ư
+  - bây giờ ngoài trời mấy độ C nhỉ chú ở [hà nội](location)
+  - '[hôm nay](time) [hồ chí minh](location) bao nhiêu độ vậy'
+  - '[đất Việt](location) [ngày 1/5](time) có rét ko'
+  - '[hà nội](location) đang mưa à'
+  - '[18 rưỡi](time) đầu tuần tới lạnh ư'
+  - mình muốn biết thời tiết ở [hồ chí minh](location) hiện giờ đang ntn
+  - có nắng ở [Đảo Nam Du](location) à
+  - '[VL](location) [hôm nay](time) mưa chứ'
+  - ngoài trời bao nhiêu độ C nhỉ tớ ở [vĩnh long](location)
+  - tôi muốn biết thời tiết ở [Mĩ](location)
+  - '[18 giờ](time) [giỗ tổ hồng vương](time) [Armenia](location) nhiệt độ ntn'
+  - bạn [Phong Nha-Kẻ Bàng](location) [hôm nay](time) có tuyết ư
+  - '[giỗ tổ hồng vương](time) [hồ chí minh](location) độ ẩm bao nhiêu'
+  - bây giờ ngoài trời nhiệt độ bao nhiêu nhỉ anh ở [miền tây](location)
+  - '[ngày hôm nay](time) [Áo](location) mấy độ vậy'
+  - '[tây nam bộ](location) [ngày mai](time) bão có to không'
+  - '[đồng bằng sông hồng](location) đang có bão à cậu'
+  - '[9:30p](time) [chủ nhật](time) thời tiết ntn'
+  - tôi muốn biết thời tiết ở [tuyên quang](location) hiện giờ đang ntn
+  - có nắng ở [an giang](location) à
+  - '[Tam đảo](location) [ngày hôm nay](time) mưa chứ'
+  - ngoài trời bao nhiêu độ C nhỉ tui ở [hà nội](location)
+  - tớ muốn biết thời tiết ở [hồ chí minh](location)
+  - '[16h30p](time) [hôm kìa](time) [Australia](location) thời tiết ntn'
+  - timi [đồng bằng sông hồng](location) [hôm nay](time) có nhiệt độ là bao nhiêu
+  - cuối tuần [sài gòn](location) bão có to không
+  - bây giờ ngoài trời nhiệt độ mấy nhỉ tôi ở [miền tây](location)
+  - '[ngày hôm nay](time) [đà nẵng](location) mấy độ vậy'
+  - '[Tràng An](location) [ngày 01](time) bão có to không'
+  - '[đất Việt](location) đang có bão à mày'
+  - '[12 giờ](time) [ngày 1/1](time) nắng chứ'
+  - tớ muốn biết thời tiết ở [hà nội](location) hiện giờ đang ntn
+  - có mưa ở [QN](location) không
+  - '[sài gòn](location) [hôm nay](time) mưa chứ'
+  - ngoài trời mấy độ C nhỉ tui ở [BG](location)
+  - tôi muốn biết thời tiết ở [bắc ninh](location)
+  - '[18g](time) [hôm qua](time) [hà nội](location) thời tiết ntn'
+  - bạn [long an](location) [hôm nay](time) có tuyết không
+  - '[tết dương lịch](time) [QN](location) độ ẩm bao nhiêu'
+  - bây giờ ngoài trời mấy độ C nhỉ mình ở [nghệ an](location)
+  - '[hôm nay](time) [TV](location) mấy độ vậy'
+  - '[bắc trung bộ](location) [ngày mai](time) bao nhiêu độ C'
+  - '[tây nam bộ](location) đang nắng à'
+  - '[11:30](time) [thứ tư](time) thời tiết ntn'
+  - tớ muốn biết thời tiết ở [hà nội](location) hiện giờ đang như thế nào
+  - có mưa ở [Mỹ](location) à
+  - '[đà nẵng](location) [ngày hôm nay](time) mưa chứ'
+  - ngoài trời bao nhiêu độ C nhỉ mình ở [sài gòn](location)
+  - tôi muốn biết thời tiết ở [đà nẵng](location)
+  - '[8:30p](time) cuối tuần [Nhật Bản](location) có nắng không'
+  - bạn [đà nẵng](location) [hôm nay](time) có nhiệt độ là bao nhiêu
+  - '[ngày mùng 1-9](time) [TV](location) có rét ko'
+  - bây giờ ngoài trời nhiệt độ mấy nhỉ tôi ở [đông bắc bộ](location)
+  - '[hôm nay](time) [Đảo Nam Du](location) mấy độ vậy'
+  - '[Hoa Kỳ](location) [hôm qua](time) có tuyết chứ'
+  - '[nha trang](location) đang có tuyết à'
+  - '[18 rưỡi](time) [ngày 02](time) có nhiệt độ là bao nhiêu'
+  - tôi muốn biết thời tiết ở [Tam đảo](location) hiện giờ đang thế nào
+  - có mưa ở [nam trung bộ](location) à
+  - '[huế](location) [ngày hôm nay](time) mưa chứ'
+  - ngoài trời mấy độ C nhỉ tôi ở [Lào](location)
+  - tui muốn biết thời tiết ở [TH](location)
+  - '[12h30p](time) [hôm kia](time) [hưng yên](location) có rét ko'
+  - em [hang sơn đoòng](location) [ngày hôm nay](time) nhiệt độ như thế nào
+  - '[thứ bảy](time) [Thái](location) nóng hay lạnh'
+  - bây giờ ngoài trời nhiệt độ bao nhiêu nhỉ chị ở [trà vinh](location)
+  - '[ngày hôm nay](time) [miền bắc](location) mấy độ vậy'
+  - '[tây bắc bộ](location) [chủ nhật](time) bão có to không'
+  - '[tây bắc bộ](location) đang có bão à'
+  - '[16h30p](time) [ngày chiến thắng](time) thời tiết như thế nào'
+  - tớ muốn biết thời tiết ở [an giang](location) hiện giờ đang như thế nào
+  - có nắng ở [đông nam bộ](location) ư
+  - '[thanh hóa](location) [hôm nay](time) mưa chứ'
+  - ngoài trời bao nhiêu độ C nhỉ tôi ở [hà nội](location)
+  - tui muốn biết thời tiết ở [đà nẵng](location)
+  - '[14 rưỡi](time) [1/5](time) [Phong Nha-Kẻ Bàng](location) có tuyết ư'
+  - m [hà nội](location) [hôm nay](time) mưa ư
+  - '[hôm qua](time) [sài gòn](location) nhiệt độ bao nhiêu'
+  - bây giờ ngoài trời mấy độ C nhỉ tao ở [mộc châu](location)
+  - '[hôm nay](time) [đà nẵng](location) mấy độ vậy'
+  - '[BN](location) [ngày 03](time) bão có to không'
+  - '[Anh](location) đang có tuyết à cậu'
+  - '[14h30p](time) [ngày 27](time) nóng hay lạnh'
+  - tớ muốn biết thời tiết ở [Tam đảo](location) hiện giờ đang thế nào
+  - có nắng ở [BN](location) à
+  - '[đà nẵng](location) [hôm nay](time) mưa chứ'
+  - ngoài trời bao nhiêu độ C nhỉ tôi ở [miền nam](location)
+  - tao muốn biết thời tiết ở [Lào](location)
+  - '[15r](time) [thứ năm](time) [hà nội](location) thời tiết như nào'
+  - cậu [quy nhơn](location) [hôm nay](time) bao nhiêu độ C
+  - '[chủ nhật](time) [hồ chí minh](location) độ ẩm bao nhiêu'
+  - bây giờ ngoài trời nhiệt độ bao nhiêu nhỉ chị ở [cù lao chàm](location)
+  - '[hôm nay](time) [miền nam](location) bao nhiêu độ vậy'
+  - tôi nóng ướt hết áo rồi nóng ghê
+  - tôi nóng ướt hết áo rồi nắng gắt thế
+  - trời [hôm nay](time) nắng nóng quá
+  - nắng gắt ghê bot ơi
+  - nắng gắt thế timi ơi
+  - trời [hôm nay](time) nóng bức thật
+  - nắng gắt quá timi ơi
+  - tớ nóng ướt hết áo rồi oi bức ghê
+  - trời [hôm nay](time) nắng gắt thế
+  - tớ toát hết cả mồ hôi rồi nắng nóng quá
+  - trời [ngày hôm nay](time) nắng nóng vãi
+  - '[hôm nay](time) thời tiết mát mẻ thật đấy'
+  - nhiệt độ oi bức ghê
+  - nắng gắt thật đấy mày ơi
+  - tôi nóng ướt hết áo rồi nóng thật
+  - mình nóng ướt hết áo rồi
+  - trời này dễ chịu quá
+  - nóng bức quá timi ơi
+  - nắng nóng thế timi ơi
+  - tui nóng ướt hết áo rồi nắng gắt quá
+  - mình nóng ướt hết áo rồi nắng nóng thật đấy
+  - trời [hôm nay](time) nóng thật đấy
+  - '[ngày hôm nay](time) nóng bức thế'
+  - nắng gắt thật đấy
+  - nhiệt độ nắng nóng quá
+  - tao nóng ướt hết áo rồi nắng nóng ghê
+  - '[hôm nay](time) thời tiết mát mẻ thật'
+  - tui nóng ướt hết áo rồi nóng bức ghê
+  - '[hôm nay](time) trời đẹp thật'
+  - nóng ướt hết áo rồi
+  - nóng bức ghê cậu ơi
+  - trời [hôm nay](time) nóng bức vãi
+  - oi bức thật timi ơi
+  - '[ngày hôm nay](time) thời tiết dễ chịu quá'
+  - tui toát hết cả mồ hôi rồi nắng gắt thật đấy
+  - thời tiết chán thế
+  - trời [ngày hôm nay](time) nóng bức thật đấy
+  - trời ơi, nắng nóng ghê
+  - trời ơi, nắng gắt thật đấy
+  - trời nóng thật
+  - tui toát hết cả mồ hôi rồi nóng bức thế
+  - trời [hôm nay](time) nắng gắt ghê
+  - oi bức thế, chảy hết mỡ rồi
+  - nắng nóng quá timi ơi
+  - nóng bức ghê bạn ơi
+  - trời ơi, nóng thật đấy
+  - mình nóng ướt hết áo rồi nóng quá
+  - trời [hôm nay](time) nóng thật
+  - thời tiết nắng gắt thế
+  - nắng gắt thật mày ơi
+  - nắng nóng thật đấy m ơi
+  - nóng thế, toát hết cả mồ hôi rồi
+  - mát mẻ quá
+  - '[ngày hôm nay](time) nắng gắt thật'
+  - nóng bức thế, chảy hết mỡ rồi
+  - tao nóng ướt hết áo rồi nắng gắt thật
+  - trời ơi, nắng nóng thế
+  - trời [ngày hôm nay](time) nắng nóng quá
+  - tao toát hết cả mồ hôi rồi nắng nóng thế
+  - tôi toát hết cả mồ hôi rồi nắng gắt thật đấy
+  - nóng thật bot ơi
+  - mình toát hết cả mồ hôi rồi oi bức ghê
+  - nắng nóng thật đấy
+  - mình toát hết cả mồ hôi rồi nóng bức thật
+  - trời [hôm nay](time) nắng nóng thật đấy
+  - tui nóng ướt hết áo rồi nắng gắt thế
+  - tôi toát hết cả mồ hôi rồi nóng thế
+  - tao toát hết cả mồ hôi rồi nóng bức thế
+  - nắng nóng quá cậu ơi
+  - nóng bức quá em ơi
+  - trời [ngày hôm nay](time) oi bức ghê
+  - mình nóng ướt hết áo rồi nắng nóng ghê
+  - nóng ghê bot ơi
+  - tao toát hết cả mồ hôi rồi nóng quá
+  - nắng gắt ghê mày ơi
+  - trời [ngày hôm nay](time) oi bức thật đấy
+  - nóng thế timi ơi
+  - tui toát hết cả mồ hôi rồi oi bức ghê
+  - oi bức ghê
+  - tớ toát hết cả mồ hôi rồi nóng thật đấy
+  - tớ toát hết cả mồ hôi rồi nóng bức ghê
+  - nhiệt độ oi bức thế
+  - trời này thoải mái ghê
+  - nóng thật
+  - oi bức thật bot ơi
+  - nóng ghê cậu ơi
+  - mình toát hết cả mồ hôi rồi nắng nóng thế
+  - nắng nóng quá mày ơi
+  - nắng nóng ghê
+  - '[hôm nay](time) nóng thế'
+  - tớ nóng ướt hết áo rồi nắng gắt ghê
+  - '[ngày hôm nay](time) nóng bức thật'
+  - nóng thế em ơi
+  - '[hôm nay](time) thời tiết mát mẻ ghê'
+  - nóng bức quá ở trong nhà cũng khó chịu
+  - tui toát hết cả mồ hôi rồi nắng nóng ghê
+  - trời ơi, nắng nóng thật đấy
+  - nắng nóng thật đấy mày ơi
+  - trời ơi, nắng nóng thật
+  - '[hôm nay](time) thời tiết mát thật'
+  - '[ngày hôm nay](time) nóng quá'
+  - trời này thoải mái thật đấy
+  - nóng thế ai mà chịu được
+  - mình toát hết cả mồ hôi rồi nắng gắt quá
+  - tôi nóng ướt hết áo rồi nóng bức quá
+  - tao nóng ướt hết áo rồi oi bức ghê
+  - tui toát hết cả mồ hôi rồi nóng bức quá
+  - thời tiết nóng bức thế
+  - thời tiết kiểu gì mà nóng thế
+  - oi bức quá ở trong nhà cũng khó chịu
+  - mình nóng ướt hết áo rồi nắng nóng thật
+  - tui nóng ướt hết áo rồi nắng nóng thật đấy
+  - tui toát hết cả mồ hôi rồi nóng bức thật
+  - mình nóng ướt hết áo rồi oi bức quá
+  - trời [ngày hôm nay](time) nóng ghê
+  - thời tiết chán quá
+  - nóng bức thật đấy em ơi
+  - nóng bức thật đấy mày ơi
+  - tui nóng ướt hết áo rồi oi bức ghê
+  - tớ toát hết cả mồ hôi rồi oi bức quá
+  - tui nóng ướt hết áo rồi nắng nóng thật
+  - thời tiết oi bức thế
+  - nắng gắt thế cậu ơi
+  - nắng gắt thật
+  - '[ngày hôm nay](time) thời tiết dễ chịu thật'
+  - tao toát hết cả mồ hôi rồi nóng bức thật đấy
+  - thời tiết nắng gắt quá
+  - oi bức ghê em ơi
+  - '[hôm nay](time) nắng gắt thật'
+  - nắng nóng thật
+  - trời ơi, oi bức thật đấy
+  - trời nắng nóng ghê
+  - tui nóng ướt hết áo rồi nắng gắt ghê
+  - nắng nóng thật mày ơi
+  - oi bức thật đấy m ơi
+  - trời này sướng thế
+  - nắng nóng thế ai mà chịu được
+  - nóng thật đấy timi ơi
+  - nóng bức thế em ơi
+  - tao nóng ướt hết áo rồi nắng gắt thế
+  - tao nóng ướt hết áo rồi nắng gắt quá
+  - trời [hôm nay](time) oi bức thật đấy
+  - nóng bức ghê em ơi
+  - tao nóng ướt hết áo rồi
+  - nắng gắt thế em ơi
+  - tui nóng ướt hết áo rồi nóng bức thật
+  - nắng gắt quá, ra đường cũng sợ
+  - nắng gắt ghê cậu ơi
+  - nắng nóng quá ai mà chịu được
+  - tôi toát hết cả mồ hôi rồi nóng bức thế
+  - nắng nóng thế em ơi
+  - thời tiết nắng nóng thế
+  - nhiệt độ oi bức thật đấy
+  - tôi nóng ướt hết áo rồi nóng thật đấy
+  - nắng nóng thế
+  - trời nóng ghê
+  - '[ngày hôm nay](time) thời tiết mát quá'
+  - trời oi bức vãi
+  - trời oi bức thật đấy
+  - tớ nóng ướt hết áo rồi oi bức thật đấy
+  - oi bức thật đấy em ơi
+  - '[hôm nay](time) thời tiết mát thật đấy'
+  - tui toát hết cả mồ hôi rồi nóng quá
+  - tớ toát hết cả mồ hôi rồi nắng gắt thật đấy
+  - nóng thế bot ơi
+  - trời nắng nóng vãi
+  - mình toát hết cả mồ hôi rồi nóng quá
+  - oi bức thật đấy mày ơi
+  - mình toát hết cả mồ hôi rồi nắng gắt thế
+  - mát mẻ ghê
+  - nhiệt độ nắng nóng ghê
+  - mình nóng ướt hết áo rồi nắng gắt thế
+  - trời [hôm nay](time) oi bức vãi
+  - mình toát hết cả mồ hôi rồi nắng nóng thật
+  - nóng quá, ra đường cũng sợ
+  - trời này thoải mái thật
+  - '[hôm nay](time) oi bức thật đấy'
+  - trời này thích thật
+  - trời nắng nóng thật
+  - tôi toát hết cả mồ hôi rồi nắng gắt thế
+  - '[hôm nay](time) nóng thật đấy'
+  - tôi nóng ướt hết áo rồi nắng nóng thật
+  - tớ nóng ướt hết áo rồi nắng gắt thế
+  - oi bức thế em ơi
+  - sao mà nóng bức thế
+  - tao toát hết cả mồ hôi rồi
+  - tớ nóng ướt hết áo rồi oi bức quá
+  - tớ toát hết cả mồ hôi rồi nắng nóng thật
+  - trời đẹp thật đấy
+  - trời [hôm nay](time) nắng gắt quá
+  - mình toát hết cả mồ hôi rồi nắng gắt ghê
+  - trời [hôm nay](time) nóng ghê
+  - tôi toát hết cả mồ hôi rồi
+  - tui toát hết cả mồ hôi rồi nóng ghê
+  - nắng nóng thế bạn ơi
+  - trời [ngày hôm nay](time) oi bức quá
+  - trời này sướng thật
+  - sao mà oi bức thế nhỉ
+  - nắng nóng ghê bot ơi
+  - tớ toát hết cả mồ hôi rồi nóng bức thật
+  - se se lạnh quá người muốn đóng băng luôn
+  - buốt hết cả người
+  - thời tiết [hôm nay](time) dễ chịu quá
+  - tớ thấy se se lạnh thế
+  - ngày hôm trước em có thấy mưa to giống tớ không
+  - ngoài đường lạnh thế
+  - nhiệt độ dễ chịu ghê
+  - mát mẻ vãi bot ơi
+  - tớ đóng băng luôn rồi
+  - tôi lạnh quá
+  - trời nắng mấy ngày liền
+  - tớ đang rét run cầm cập đây
+  - trời lạnh thế
+  - sao mà lạnh quá
+  - không khí sướng ghê
+  - '[ngày hôm nay](time) rét thế'
+  - nhiệt độ se se lạnh thế
+  - rét run người
+  - trời cứ mưa suốt tuần nay nhỉ
+  - thời tiết [ngày hôm nay](time) mát ghê
+  - thời tiết hôm nào cũng như hôm nay thì sướng
+  - trời ơi rét quá
+  - giá quá
+  - bao giờ hết nắng đây
+  - thời tiết mát mẻ quá
+  - thời tiết rét buốt quá
+  - trời [hôm nay](time) rét buốt quá
+  - sao thời tiết rét quá
+  - rét buốt quá người muốn đóng băng luôn
+  - rét hết cả người
+  - thời tiết [ngày hôm nay](time) thoải mái thế
+  - tớ thấy giá thế
+  - ngày hum trước m có thấy mưa giống tớ không
+  - ngoài đường lạnh thật
+  - nhiệt độ dễ chịu thật
+  - rét vãi bạn ơi
+  - tui đóng băng luôn rồi
+  - tớ lạnh quá
+  - trời nắng mấy ngày trời
+  - tao đang rét run cầm cập đây
+  - trời buốt thế
+  - sao mà rét thế
+  - không khí dễ chịu thật đấy
+  - '[hôm nay](time) se se lạnh thế'
+  - nhiệt độ giá quá
+  - se se lạnh run người
+  - trời cứ mưa nặng hạt suốt tuần nay nhỉ
+  - thời tiết [ngày hôm nay](time) mát mẻ ghê
+  - thời tiết hôm nào cũng như hôm nay thì thích
+  - trời ơi lạnh thế
+  - giá thật đấy
+  - bao giờ ngớt nắng đây
+  - thời tiết dễ chịu quá
+  - thời tiết rét buốt thật đấy
+  - trời [hôm nay](time) rét ghê
+  - sao thời tiết se se lạnh thế
+  - rét quá người muốn đóng băng luôn
+  - lạnh hết cả người
+  - thời tiết [ngày hôm nay](time) thích thật đấy
+  - tui thấy se se lạnh quá
+  - ngày hum nay m có thấy nóng bức giống tớ không
+  - ngoài đường se se lạnh quá
+  - nhiệt độ dễ chịu thế
+  - nóng vãi mày ơi
+  - mình đóng băng luôn rồi
+  - tao lạnh quá
+  - trời gió mấy ngày trời
+  - tôi đang rét run cầm cập đây
+  - trời giá thật
+  - sao mà rét buốt quá
+  - không khí dễ chịu thật
+  - '[ngày hôm nay](time) buốt quá'
+  - nhiệt độ lạnh thế
+  - giá run người
+  - trời cứ mưa to suốt tuần nay nhể
+  - thời tiết [hôm nay](time) dễ chịu ghê
+  - thời tiết hôm nào cũng như hôm nay thì tốt
+  - trời ơi lạnh quá
+  - se se lạnh thật đấy
+  - khi nào ngớt nắng đây
+  - thời tiết mác mẻ quá
+  - thời tiết se se lạnh thế
+  - trời [hôm nay](time) se se lạnh quá
+  - sao thời tiết se se lạnh quá
+  - lạnh quá người muốn đóng băng luôn
+  - rét buốt hết cả người
+  - thời tiết [ngày hôm nay](time) thoải mái quá
+  - tớ thấy rét buốt quá
+  - ngày hôm nay m có thấy buốt giống tớ không
+  - ngoài đường rét buốt quá
+  - nhiệt độ thoải mái quá
+  - mát vãi timi ơi
+  - tôi đóng băng luôn rồi
+  - tui lạnh quá
+  - trời gió hoài dị
+  - tui đang rét run cầm cập đây
+  - trời giá quá
+  - sao mà se se lạnh thế
+  - không khí thích thế
+  - '[hôm nay](time) trời rét thế'
+  - nhiệt độ rét buốt thế
+  - rét buốt run người
+  - trời cứ mưa nặng hạc suốt tuần nay nhỉ
+  - thời tiết [hôm nay](time) mát ghê
+  - trời ơi rét thế
+  - se se lạnh ghê
+  - khi nào ngớt gió đây
+  - thời tiết mát quá
+  - thời tiết buốt quá
+  - trời [hôm nay](time) lạnh thế
+  - sao thời tiết lạnh quá
+  - giá quá người muốn đóng băng luôn
+  - se se lạnh hết cả người
+  - thời tiết [ngày hôm nay](time) dễ chịu thật đấy
+  - tớ thấy buốt quá
+  - ngày hum trước mày có thấy dễ chịu giống tớ không
+  - ngoài đường buốt thật
+  - nhiệt độ dễ chịu thật đấy
+  - nắng gắt vãi m ơi
+  - tao đóng băng luôn rồi
+  - mình lạnh quá
+  - trời gió mấy ngày liền
+  - mình đang rét run cầm cập đây
+  - trời rét thế
+  - sao mà se se lạnh quá
+  - không khí thoải mái ghê
+  - '[hôm nay](time) buốt thật'
+  - nhiệt độ rét buốt quá
+  - lạnh run người
+  - trời cứ mưa bay bay suốt tuần nay nhể
+  - thời tiết [ngày hôm nay](time) dễ chịu ghê
+  - trời ơi rét buốt thế
+  - lạnh ghê
+  - khi nào hết gió đây
+  - thời tiết rét buốt ghê
+  - trời [hôm nay](time) rét thật đấy
+  - sao thời tiết buốt quá
+  - buốt quá người muốn đóng băng luôn
+  - giá hết cả người
+  - thời tiết [hôm nay](time) thích thật
+  - tớ thấy rét quá
+  - ngày hôm trước timi có thấy nóng bức giống tôi không
+  - ngoài đường se se lạnh ghê
+  - nhiệt độ thoải mái ghê
+  - mát vãi mày ơi
+  - trời nắng hoài dị
+  - trời buốt thật
+  - sao mà lạnh thế
+  - không khí dễ chịu ghê
+  - '[hôm nay](time) trời rét buốt thế'
+  - nhiệt độ rét thế
+  - buốt run người
+  - trời cứ mưa nặng hạc suốt tuần nay nhể
+  - thời tiết [hôm nay](time) mác mẻ ghê
+  - trời ơi se se lạnh thế
+  - se se lạnh thế
+  - bao giờ hết mưa đây
+  - thời tiết rét buốt thật
+  - trời [hôm nay](time) rét buốt thật đấy
+  - sao thời tiết buốt thế
+  - thời tiết [ngày hôm nay](time) sướng thế
+  - tôi thấy se se lạnh quá
+  - ngày hôm nay mày có thấy mưa bay bay giống tớ không
+  - ngoài đường rét thật
+  - nhiệt độ dễ chịu quá
+  - nắng nóng vãi mày ơi
+  - trời mưa hoài dị
+  - trời rét buốt ghê
+  - sao mà rét quá
+  - không khí dễ chịu quá
+  - '[hôm nay](time) trời lạnh thật'
+  - nhiệt độ se se lạnh quá
+  - trời cứ mưa bay bay suốt tuần nay nhỉ
+  - thời tiết [hôm nay](time) mát mẻ ghê
+  - trời ơi giá quá
+  - lạnh quá
+  - bao giờ ngớt mưa đây
+  - thời tiết rét thật đấy
+  - trời [hôm nay](time) lạnh quá
+  - sao thời tiết giá thế
+  - thời tiết [ngày hôm nay](time) thích quá
+  - tôi thấy rét thế
+  - ngày hum trước bot có thấy nóng bức giống tớ không
+  - ngoài đường se se lạnh thật đấy
+  - nhiệt độ thoải mái thật đấy
+  - se se lạnh vãi bot ơi
+  - trời mưa mấy ngày trời
+  - trời giá thế
+  - sao mà giá quá
+  - không khí thích ghê
+  - '[hôm nay](time) trời rét thật'
+  - nhiệt độ buốt quá
+  - trời cứ mưa suốt tuần nay nhể
+  - trời ơi se se lạnh quá
+  - buốt quá
+  - khi nào hết mưa đây
+  - thời tiết lạnh thật đấy
+  - trời [hôm nay](time) lạnh thật
+  - sao thời tiết giá quá
+  - thời tiết [ngày hôm nay](time) sướng quá

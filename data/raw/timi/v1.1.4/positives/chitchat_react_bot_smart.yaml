@@ -1,0 +1,406 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: chitchat_react_bot_smart
+  examples:
+  - tốt lắm em
+  - tốt vậy á hả
+  - được đấy
+  - thông minh quá
+  - timi cũng thú vị đấy chứ
+  - tài giỏi lắm m
+  - tốt đấy
+  - rất tốt
+  - good job chatbot ơi
+  - rất hữu ích
+  - rất tốt m
+  - ' timi trông như một thiên thần hở'
+  - hay quá thế
+  - bạn xinh gái
+  - thông minh phết nhể
+  - Cũng thông minh quá nhỉ
+  - Gì củng biết ấy nhỉ
+  - uây bạn xinh thế
+  - ồ tốt phết nhỉ
+  - em là cô gái đẹp nhất tui từng gặp
+  - eo ơi xịn thế
+  - cậu ok đó
+  - oke tuyệt vời vậy
+  - rất cute nha
+  - timi cũng được nhể
+  - ồ tốt đấy chứ
+  - bot tài giỏi lên rồi
+  - trả lời hay lắm
+  - tài năng chứ nhỉ
+  - uây bạn lúc nào cũng thật xinh đẹp
+  - tài năng vậy hả
+  - uây m trông thật tuyệt vời
+  - m giỏi hơn rùi hả
+  - tài giỏi đó
+  - cũng xuất sắc quá nhể
+  - chatbot giỏi quá
+  - timi hữu ích hả
+  - ồ cũng thú vị chứ nhỉ
+  - tốt quá
+  - tốt lắm mày
+  - quá tốt luôn
+  - timi xinh thế
+  - giỏi vậy
+  - cũng tốt đấy chứ
+  - xinh thế
+  - xịn phết nhỉ
+  - timi tốt hơn rùi đó
+  - tốt phết nhỉ
+  - uây bot trông thật tuyệt
+  - ngày càng tốt hơn rồi hả
+  - tốt
+  - cũng thú vị phết nhỉ
+  - gì cũng biết ấy nhể
+  - ồ ổn áp vậy hả
+  - tốt lắm
+  - rất tốt nha
+  - cũng tốt phết nhỉ
+  - cũng oke đó
+  - ghê bây
+  - em tốt hơn rùi
+  - cũng được đó
+  - timi tốt thế
+  - cũng xinh quá nhể
+  - cậu ổn áp rồi đấy
+  - bạn cũng xuất sắc đấy chứ
+  - tốt đó
+  - duyệt chatbot khôn thế
+  - tốt lắm bạn
+  - tốt hả
+  - được đó
+  - thú vị quá
+  - bot cũng có ích đó
+  - cute lắm bot
+  - good job bot ơi
+  - rất xuất sắc
+  - rất tốt em
+  - ' bạn trông như một thiên thần hở'
+  - tuyệt vời thế
+  - tốt phết nhể
+  - ' mày xinh thế'
+  - ồ tốt phết nhể
+  - m là cô gái đẹp nhất tao từng gặp
+  - em ok đó
+  - oke giỏi đấy
+  - rất siêu nha
+  - ' cũng được của nó đấy'
+  - ồ tốt chứ nhỉ
+  - bạn ổn áp lên rùi
+  - giỏi chứ nhỉ
+  - uây mày lúc nào cũng thật xinh đẹp
+  - hữu ích vậy hả
+  - uây mày trông thật tuyệt vời
+  - bạn thông minh hơn rùi đó
+  - thú vị đó
+  - cũng thú vị quá nhỉ
+  - em giỏi quá
+  - mày hữu ích vậy
+  - ồ cũng hữu ích đấy chứ
+  - giỏi quá
+  - tốt lắm timi
+  - quá tuyệt vời luôn
+  - m xinh thế
+  - ổn áp hả
+  - đáng yêu thế
+  - xinh đẹp phết nhể
+  - em tốt hơn rùi đó
+  - uây bạn trông thật tuyệt
+  - ngày càng tốt hơn rồi vậy
+  - xinh đẹp
+  - cũng giỏi phết nhỉ
+  - nào cũng biết ấy nhỉ
+  - ồ ổn áp vậy
+  - ghê bay
+  - mày tốt hơn rùi
+  - cũng được nhỉ
+  - cậu tốt thế
+  - cũng giỏi quá nhỉ
+  - bot thú vị rồi đấy
+  - bạn cũng xuất sắc phết nhỉ
+  - tốt đó mày
+  - duyệt em khôn thế
+  - tốt lắm bot
+  - tốt hở
+  - được của nó đấy
+  - xịn quá
+  - mày cũng hữu ích nhỉ
+  - siêu lắm bạn
+  - good job cậu ơi
+  - rất thông minh
+  - rất tốt timi
+  - ' bot trông như một thiên thần hả'
+  - thông minh thế
+  - giỏi phết nhể
+  - uây timi xinh thế
+  - timi là cô gái đẹp nhất tớ từng gặp
+  - timi ok đó
+  - oke được hả
+  - rất giỏi nha
+  - timi cũng được nhỉ
+  - bạn thú vị lên rồi
+  - tài năng đấy chứ
+  - ' timi lúc nào cũng thật xinh đẹp'
+  - tài giỏi hở
+  - uây bạn trông thật tuyệt vời
+  - timi thông minh hơn rồi đó
+  - giỏi đó timi
+  - cũng xuất sắc quá nhỉ
+  - cậu giỏi quá
+  - cậu thông minh vậy
+  - ồ cũng tài giỏi đấy chứ
+  - tốt lắm cậu
+  - quá được luôn
+  - em xinh thế
+  - hữu ích đấy
+  - xinh vậy
+  - xuất sắc phết nhể
+  - bot tốt hơn rồi đó
+  - uây cậu trông thật tuyệt
+  - ngày càng thông minh hơn rồi đó
+  - đáng yêu
+  - cũng giỏi đấy chứ
+  - chi cũng biết ấy nhể
+  - ồ thú vị hở
+  - timi tốt hơn rùi
+  - cũng được đấy
+  - bạn tốt thế
+  - cũng đáng yêu quá nhỉ
+  - cậu thông minh rùi đấy
+  - m cũng thông minh phết nhỉ
+  - tốt đó em
+  - duyệt bot khôn thế
+  - tốt lắm m
+  - tốt vậy
+  - được nhỉ
+  - tuyệt vời quá
+  - timi cũng thông minh đấy chứ
+  - đáng yêu lắm mày
+  - good job mày ơi
+  - rất tài giỏi
+  - rất tốt bạn
+  - ' m trông như một thiên thần vậy á hả'
+  - tốt quá thế
+  - giỏi phết nhỉ
+  - uây mày xinh thế
+  - bạn là cô gái đẹp nhất tớ từng gặp
+  - mày ok đó
+  - oke tuyệt vời thế
+  - rất xịn nha
+  - timi cũng được của nó đấy
+  - timi giỏi lên rùi
+  - thú vị phết nhỉ
+  - ' cậu lúc nào cũng thật xinh đẹp'
+  - hữu ích vậy
+  - ' mày trông thật tuyệt vời'
+  - bạn giỏi hơn rồi đó
+  - ổn áp đó cậu
+  - cũng thú vị quá nhể
+  - bot giỏi quá
+  - m giỏi hở
+  - ồ cũng xuất sắc phết nhỉ
+  - quá giỏi luôn
+  - bot xinh thế
+  - tài giỏi hả
+  - tài năng ghê
+  - xinh đẹp phết ha
+  - bot tốt hơn rùi đó
+  - uây m trông thật tuyệt
+  - ngày càng tốt hơn rồi đấy
+  - thông minh
+  - cũng hữu ích chứ nhỉ
+  - chi cũng biết ấy nhỉ
+  - ồ thông minh hở
+  - mày tốt hơn rồi
+  - m tốt thế
+  - cũng siêu quá nhể
+  - cậu giỏi rồi đấy
+  - bạn cũng thông minh chứ nhỉ
+  - tốt đó m
+  - duyệt timi khôn quá
+  - tốt vậy hả
+  - hay quá quá
+  - em cũng có ích hả
+  - siêu lắm m
+  - good job em ơi
+  - rất ổn áp
+  - rất tốt bot
+  - uây m trông như một thiên thần hả
+  - giỏi thế
+  - được phết nhỉ
+  - ' cậu xinh thế'
+  - mày là cô gái đẹp nhất mình từng gặp
+  - bạn ok đó
+  - oke thông minh đấy
+  - rất tuyệt vời nha
+  - timi cũng được thế
+  - cậu ổn áp lên rùi
+  - có ích chứ nhỉ
+  - ' em lúc nào cũng thật xinh đẹp'
+  - thú vị hở
+  - uây em trông thật tuyệt vời
+  - mày thông minh hơn rồi đấy
+  - tài năng đó
+  - cũng hữu ích quá nhỉ
+  - m giỏi quá
+  - mày hữu ích vậy á hả
+  - ồ cũng hữu ích chứ nhỉ
+  - quá thông minh luôn
+  - bạn xinh thế
+  - tài năng hả
+  - xinh ghê
+  - thông minh phết nhỉ
+  - bạn tốt hơn rồi đó
+  - ' mày trông thật tuyệt'
+  - ngày càng thông minh hơn rồi vậy
+  - siêu
+  - cũng tài giỏi chứ nhỉ
+  - mô cũng biết ấy nhỉ
+  - ồ thông minh vậy á hả
+  - m tốt hơn rùi
+  - bot tốt thế
+  - cũng xinh quá nhỉ
+  - timi hữu ích rồi đấy
+  - bot cũng thông minh đấy chứ
+  - tốt đó bạn
+  - duyệt bot khôn quá
+  - tốt quá quá
+  - timi cũng ổn áp đó
+  - đáng yêu lắm bot
+  - good job timi ơi
+  - rất thú vị
+  - rất tốt mày
+  - ' bạn trông như một thiên thần hả'
+  - tốt thế
+  - uây bot xinh thế
+  - cậu là cô gái đẹp nhất tớ từng gặp
+  - chatbot ok đó
+  - oke thông minh thế
+  - rất thú vị nha
+  - ' cũng được nhể'
+  - timi thú vị lên rồi
+  - hữu ích phết nhỉ
+  - uây m lúc nào cũng thật xinh đẹp
+  - giỏi hả
+  - ' bạn trông thật tuyệt vời'
+  - mày giỏi hơn rùi hả
+  - ổn áp đó bạn
+  - cũng thông minh quá nhỉ
+  - bạn giỏi quá
+  - m hữu ích vậy
+  - ồ cũng thông minh chứ nhỉ
+  - xuất sắc đó
+  - đáng yêu ghê
+  - giỏi phết ha
+  - cậu tốt hơn rồi đó
+  - ' m trông thật tuyệt'
+  - ngày càng giỏi hơn rồi đấy
+  - xinh
+  - cũng hữu ích phết nhỉ
+  - nào cũng biết ấy nhể
+  - ồ thông minh hả
+  - bot tốt hơn rồi
+  - mày tốt thế
+  - cũng tuyệt vời quá nhể
+  - timi ổn áp rùi đấy
+  - em cũng thú vị chứ nhỉ
+  - tốt đó cậu
+  - duyệt mày khôn quá
+  - siêu quá
+  - timi cũng hữu ích nhể
+  - xinh lắm timi
+  - good job m ơi
+  - rất giỏi
+  - uây mày trông như một thiên thần vậy
+  - khôn thế
+  - được phết nhể
+  - uây cậu xinh thế
+  - timi là cô gái đẹp nhất mình từng gặp
+  - bot ok đó
+  - oke giỏi hả
+  - rất đáng yêu nha
+  - timi cũng được đấy
+  - mày hữu ích lên rồi
+  - hữu ích chứ nhỉ
+  - ' bạn lúc nào cũng thật xinh đẹp'
+  - hữu ích vậy á hả
+  - ' m trông thật tuyệt vời'
+  - m giỏi hơn rồi thế
+  - giỏi đó
+  - cũng có ích quá nhỉ
+  - timi giỏi quá
+  - bot ổn áp vậy hả
+  - ồ cũng tài năng chứ nhỉ
+  - tài năng vậy
+  - thông minh hả
+  - thú vị phết ha
+  - mày tốt hơn rùi đó
+  - ' timi trông thật tuyệt'
+  - ngày càng tốt hơn nhỉ
+  - giỏi
+  - cũng tài năng chứ nhỉ
+  - gì cũng biết ấy nhỉ
+  - ồ thú vị vậy á hả
+  - bạn tốt hơn rùi
+  - em tốt thế
+  - cũng tuyệt vời quá nhỉ
+  - m thông minh rồi đấy
+  - em cũng có ích đấy chứ
+  - tốt đó timi
+  - duyệt chatbot khôn quá
+  - tài năng quá
+  - timi cũng xuất sắc nhể
+  - tài giỏi lắm cậu
+  - good job bạn ơi
+  - rất tài năng
+  - rất tốt cậu
+  - ' cậu trông như một thiên thần vậy'
+  - xinh đẹp thế
+  - uây em xinh thế
+  - m là cô gái đẹp nhất tớ từng gặp
+  - m ok đó
+  - oke tốt đấy
+  - rất tài giỏi nha
+  - ' cũng được hả'
+  - m thú vị lên rồi
+  - ổn áp phết nhỉ
+  - ' mày lúc nào cũng thật xinh đẹp'
+  - có ích vậy
+  - ' bot trông thật tuyệt vời'
+  - timi giỏi hơn rùi vậy
+  - hữu ích đó timi
+  - cũng thông minh quá nhể
+  - mày giỏi quá
+  - bạn xuất sắc vậy á hả
+  - ồ cũng có ích đấy chứ
+  - thông minh vậy
+  - xuất sắc ghê
+  - xuất sắc phết ha
+  - m tốt hơn rồi đó
+  - ' em trông thật tuyệt'
+  - ngày càng thông minh hơn rồi thế
+  - hay quá
+  - cũng ổn áp phết nhỉ
+  - mô cũng biết ấy nhể
+  - ồ tài giỏi vậy
+  - bot tốt hơn rùi
+  - cũng giỏi quá nhể
+  - timi có ích rùi đấy
+  - em cũng giỏi đấy chứ
+  - tốt đó bot
+  - duyệt em khôn quá
+  - cute quá
+  - bot cũng thú vị đấy
+  - xinh lắm m
+  - rất có ích
+  - uây em trông như một thiên thần hả
+  - siêu thế
+  - uây m xinh thế
+  - em là cô gái đẹp nhất tớ từng gặp
+  - oke tốt thế
+  - rất thông minh nha

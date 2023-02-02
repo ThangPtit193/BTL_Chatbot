@@ -1,0 +1,194 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: rule_probation_ask_time
+  examples:
+  - cho tớ hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+  - cho tôi hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+  - cho tớ hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy hả
+  - cho tôi hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+  - tôi muốn hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu hả
+  - cho tớ hỏi công ty cho candidate [thử việc](level_position) trong bao lâu hả
+  - công ty có nội quy như nào về thời gian [thử việc](level_position)
+  - công ty có nội quy thế nào về thời gian [thử việc](level_position)
+  - tớ muốn hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+    hả
+  - mình muốn hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+  - tôi muốn hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy
+  - mình muốn hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+    hả
+  - cho mình hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy hả
+  - công ty có những quy chế nào về thời gian [thử việc](level_position)
+  - công ty cũng [thử việc](level_position) hết 3 tháng hả
+  - mình muốn hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+  - cho tôi hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu hả
+  - công ty có quy chế như thế nào về thời gian [thử việc](level_position)
+  - cho tớ hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu hả
+  - Thời gian [thử việc](level_position) bao lâu?
+  - cho tôi hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+  - cho mình hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+  - cho mình hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+    hả
+  - công ty kéo dài giai đoạn [thử việc](level_position) thế nào
+  - mình muốn hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+    hả
+  - tớ muốn hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+    hả
+  - chế độ [thử việc](level_position) của công ty như nào
+  - cho tớ hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu hả
+  - cho tớ hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy hả
+  - công ty cũng [thử việc](level_position) hết 2 tháng phải ko
+  - công ty cũng [thử việc](level_position) hết 4 tháng à
+  - công ty cũng [thử việc](level_position) hết 3 tháng phải k
+  - tớ muốn hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu hả
+  - công ty có quy chế thế nào về thời gian [thử việc](level_position)
+  - tớ muốn hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy
+  - tớ muốn hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu hả
+  - review [thử việc](level_position)
+  - công ty cũng [thử việc](level_position) hết 2 tháng hả
+  - tớ muốn hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy hả
+  - công ty có rule như thế nào về thời gian [thử việc](level_position)
+  - công ty cũng [thử việc](level_position) hết 3 tháng à
+  - tôi muốn hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+  - tớ muốn hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+  - mình muốn hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+    hả
+  - cho mình hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu hả
+  - mình muốn hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu hả
+  - cho mình hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+  - '[thử việc](level_position) bao lâu thì kết thúc'
+  - mình muốn hỏi công ty cho candidate [thử việc](level_position) trong bao lâu hả
+  - công ty có quy định như nào về thời gian [thử việc](level_position)
+  - cho mình hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+  - cho tớ hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy
+  - tớ muốn hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    hả
+  - mình muốn hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+  - tôi muốn hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+    hả
+  - '[thử việc](level_position) review'
+  - tớ muốn hỏi công ty cho candidate [thử việc](level_position) trong bao lâu hả
+  - cho tớ hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy hả
+  - mình muốn hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy
+  - cho tôi hỏi công ty cho candidate [thử việc](level_position) trong bao lâu hả
+  - cho tớ hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    hả
+  - tớ muốn hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+  - cho mình hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+    hả
+  - mình muốn hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu hả
+  - cho mình hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy
+  - cho tôi hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+    hả
+  - tôi muốn hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+    hả
+  - cho tôi hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu vậy
+    hả
+  - tớ muốn hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+    hả
+  - công ty cũng [thử việc](level_position) hết 4 tháng phải ko
+  - tớ muốn hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+  - review [thử việc](level_position) lúc nào
+  - '[thử việc](level_position) lúc nào lên chính thức'
+  - công ty có quy định như thế nào về thời gian [thử việc](level_position)
+  - cho mình hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy
+  - cho tôi hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu hả
+  - tôi muốn hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy hả
+  - công ty có rule như nào về thời gian [thử việc](level_position)
+  - mình muốn hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy hả
+  - cho tôi hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy hả
+  - công ty cũng [thử việc](level_position) hết 2 tháng phải không
+  - công ty có quy chế như nào về thời gian [thử việc](level_position)
+  - mình muốn hỏi công ty cho người xin việc [thử việc](level_position) trong bao
+    lâu vậy hả
+  - cho tôi hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy hả
+  - chế độ [thử việc](level_position) của công ty thế nào
+  - cho tôi hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+    hả
+  - chế độ [thử việc](level_position) của công ty như thế nào
+  - giai đoạn [thử việc](level_position) của công ty kéo dài bao lâu
+  - tôi muốn hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu hả
+  - mình muốn hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu hả
+  - công ty có những rule nào về thời gian [thử việc](level_position)
+  - tôi muốn hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy hả
+  - công ty cũng [thử việc](level_position) hết 3 tháng phải không
+  - công ty có rule thế nào về thời gian [thử việc](level_position)
+  - tớ muốn hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy
+  - tớ muốn hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy hả
+  - cho tôi hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy
+  - tôi muốn hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+  - tôi muốn hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+  - công ty cũng [thử việc](level_position) hết 4 tháng phải k
+  - tôi muốn hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    hả
+  - cho tôi hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy
+  - công ty có những quy định nào về thời gian [thử việc](level_position)
+  - tôi muốn hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+    hả
+  - tôi muốn hỏi công ty cho candidate [thử việc](level_position) trong bao lâu hả
+  - công ty có những nội quy nào về thời gian [thử việc](level_position)
+  - cho mình hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    hả
+  - cho tôi hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    hả
+  - mình muốn hỏi công ty cho người xin việc [thử việc](level_position) trong bao
+    lâu hả
+  - cho tớ hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+  - cho mình hỏi công ty cho candidate [thử việc](level_position) trong bao lâu hả
+  - công ty cũng [thử việc](level_position) hết 2 tháng à
+  - công ty kéo dài giai đoạn [thử việc](level_position) như nào
+  - '[thử việc](level_position) khi nào review'
+  - cho mình hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy hả
+  - cho tôi hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu hả
+  - công ty cũng [thử việc](level_position) hết 2 tháng phải k
+  - tôi muốn hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu hả
+  - công ty cũng [thử việc](level_position) hết 4 tháng hả
+  - cho tớ hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+    hả
+  - công ty kéo dài giai đoạn [thử việc](level_position) như thế nào
+  - cho mình hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu hả
+  - cho tớ hỏi công ty cho candidate [thử việc](level_position) trong bao lâu vậy
+  - tôi muốn hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu vậy
+  - mình muốn hỏi công ty cho người xin việc [thử việc](level_position) trong bao
+    lâu vậy
+  - công ty có nội quy như thế nào về thời gian [thử việc](level_position)
+  - cho tớ hỏi công ty cho ứng viên [thử việc](level_position) trong bao lâu hả
+  - cho tớ hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy hả
+  - cho mình hỏi công ty cho ứng viên xin việc [thử việc](level_position) trong bao
+    lâu hả
+  - công ty cũng [thử việc](level_position) hết 4 tháng phải không
+  - công ty có quy định thế nào về thời gian [thử việc](level_position)
+  - cho mình hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu vậy
+    hả
+  - tớ muốn hỏi công ty cho thí sinh [thử việc](level_position) trong bao lâu hả
+  - thời gian [thử việc](level_position) tại công ty ra sao
+  - công ty cũng [thử việc](level_position) hết 3 tháng phải ko
+  - cho tớ hỏi công ty cho người xin việc [thử việc](level_position) trong bao lâu
+    vậy

@@ -1,0 +1,206 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: company_ask_slogan
+  examples:
+  - slogan của công ty là touch your future chính xác ko
+  - cho mình hỏi khẩu ngữ của công ty là như nào mày
+  - '[f tech](work_unit) có slogan chứ nhỉ'
+  - công ty có khẩu hiệu là ntn đó cậu
+  - cậu điểm nhấn thương hiệu của công ty là thế nào
+  - vắn tắt thông điệp mà [f-tech](work_unit) muốn truyền tải là như nào
+  - slogan công ty thế nào
+  - công ty có slogan gì ko nhỉ
+  - cho tớ hỏi slogan của [ftech](work_unit) là gì vậy hả
+  - khẩu hiệu của công ty là như thế nào
+  - tớ muốn hỏi slogan của công ty
+  - ' nói cho tớ biết khẩu hiệu của công ty là thế nào được không'
+  - cho mình hỏi công ty có khẩu ngữ là như thế nào đó bot
+  - khẩu hiệu của công ty là chạm vào tương lai chuẩn ko
+  - cho tớ hỏi khẩu ngữ của công ty là gì vậy hả bot
+  - '[ftech](work_unit) có slogan chứ ha'
+  - công ty có slogan là như nào đó mầy
+  - cậu điểm nhấn thương hiệu của công ty là gì vậy hả
+  - vắn tắt thông điệp mà [f-tech](work_unit) muốn truyền tải là ntn
+  - khẩu ngữ công ty như thế nào
+  - công ty có khẩu hiệu gì không ha
+  - tớ muốn hỏi slogan của [f tech](work_unit) là thế nào
+  - khẩu ngữ của công ty là gì hả đó m
+  - tôi muốn biết khẩu hiệu của công ty
+  - em nói cho tôi biết khẩu ngữ của công ty là gì vậy hả được không
+  - cho tôi hỏi công ty có khẩu ngữ là gì đó
+  - khẩu hiệu của công ty là touch your future chính xác ko
+  - cho mình hỏi slogan của công ty là gì vậy cậu
+  - '[f-tech](work_unit) có slogan chứ nhể'
+  - công ty có khẩu hiệu là ntn đó mầy
+  - em điểm nhấn thương hiệu của [f tech](work_unit) là gì
+  - vắn tắt thông điệp mà [f tech](work_unit) muốn truyền tải là gì
+  - khẩu hiệu công ty thế nào
+  - công ty có khẩu ngữ gì không ha
+  - cho tớ hỏi slogan của [f tech](work_unit) là thế nào
+  - khẩu hiệu của công ty là thế nào mầy
+  - mình muốn hỏi khẩu ngữ của công ty
+  - ' nói cho tôi biết slogan của công ty là thế nào được không'
+  - cho tớ hỏi công ty có slogan là gì đó
+  - khẩu hiệu của công ty là touch your future chính xác không
+  - cho mình hỏi khẩu hiệu của công ty là gì m
+  - '[ftech](work_unit) có khẩu ngữ chứ nhỉ'
+  - công ty có khẩu hiệu là gì đó bạn
+  - ' điểm nhấn thương hiệu của [f-tech](work_unit) là thế nào vậy hả'
+  - vắn tắt thông điệp mà [ftech](work_unit) muốn truyền tải là thế nào
+  - khẩu ngữ công ty thế nào
+  - công ty có slogan gì không nhỉ
+  - tớ muốn hỏi slogan của [f tech](work_unit) là gì
+  - khẩu ngữ của công ty là thế nào đó
+  - tớ muốn hỏi khẩu hiệu của công ty
+  - ' nói cho mình biết khẩu hiệu của công ty là gì được ko'
+  - cho tớ hỏi công ty có khẩu ngữ là gì đó timi
+  - slogan của công ty là chạm vào tương lai chính xác không
+  - cho mình hỏi khẩu ngữ của công ty là gì hả
+  - '[f-tech](work_unit) có khẩu ngữ chứ nhể'
+  - công ty có khẩu hiệu là gì đó mầy
+  - mày điểm nhấn thương hiệu của [f-tech](work_unit) là thế nào hả
+  - vắn tắt thông điệp mà [f tech](work_unit) muốn truyền tải là gì vậy hả
+  - khẩu ngữ công ty như nào
+  - công ty có khẩu hiệu gì ko nhể
+  - tớ muốn hỏi slogan của [f tech](work_unit) là gì vậy hả
+  - slogan của công ty là thế nào
+  - tớ muốn biết slogan của công ty
+  - em nói cho tớ biết khẩu ngữ của công ty là gì được ko
+  - cho mình hỏi công ty có khẩu ngữ là như nào
+  - khẩu ngữ của công ty là chạm vào tương lai chuẩn ko
+  - cho mình hỏi khẩu ngữ của công ty là gì timi
+  - '[f tech](work_unit) có khẩu ngữ chứ ha'
+  - công ty có khẩu hiệu là gì vậy hả đó
+  - m điểm nhấn thương hiệu của công ty là gì vậy hả vậy hả
+  - vắn tắt thông điệp mà [ftech](work_unit) muốn truyền tải là gì
+  - slogan công ty như thế nào
+  - công ty có khẩu hiệu gì không nhể
+  - tôi muốn hỏi slogan của [f-tech](work_unit) là gì vậy
+  - khẩu hiệu của công ty là thế nào đó
+  - tôi muốn hỏi khẩu hiệu của công ty
+  - ' nói cho tớ biết khẩu hiệu của công ty là gì hả được ko'
+  - cho tớ hỏi công ty có khẩu ngữ là gì đó bạn
+  - khẩu hiệu của công ty là chạm vào tương lai chính xác không
+  - cho tớ hỏi khẩu ngữ của công ty là gì vậy em
+  - '[f-tech](work_unit) có khẩu hiệu chứ nhỉ'
+  - công ty có khẩu hiệu là thế nào đó
+  - ' điểm nhấn thương hiệu của [f tech](work_unit) là như thế nào vậy'
+  - vắn tắt thông điệp mà [f tech](work_unit) muốn truyền tải là ntn
+  - slogan công ty như nào
+  - công ty có slogan gì không nhể
+  - tôi muốn hỏi slogan của [f-tech](work_unit) là thế nào
+  - slogan của công ty là như nào đó
+  - mình muốn biết khẩu ngữ của công ty
+  - ' nói cho tớ biết slogan của công ty là gì vậy hả được ko'
+  - cho tôi hỏi công ty có khẩu hiệu là gì mày
+  - slogan của công ty là touch your future chuẩn chỉ không
+  - cho tớ hỏi khẩu hiệu của công ty là gì bạn
+  - '[ftech](work_unit) có khẩu hiệu chứ nhể'
+  - công ty có khẩu ngữ là ntn đó cậu
+  - em điểm nhấn thương hiệu của [ftech](work_unit) là gì vậy hả
+  - vắn tắt thông điệp mà [f tech](work_unit) muốn truyền tải là thế nào
+  - khẩu hiệu công ty như thế nào
+  - công ty có khẩu ngữ gì không nhỉ
+  - mình muốn hỏi slogan của [f tech](work_unit) là gì hả
+  - khẩu ngữ của công ty là gì vậy hả
+  - tớ muốn biết khẩu hiệu của công ty
+  - em nói cho tớ biết khẩu ngữ của công ty là gì hả được ko
+  - cho tớ hỏi công ty có khẩu ngữ là thế nào m
+  - khẩu hiệu của công ty là chạm vào tương lai đúng ko
+  - cho mình hỏi khẩu ngữ của công ty là gì
+  - '[f-tech](work_unit) có khẩu hiệu chứ ha'
+  - công ty có khẩu ngữ là gì đó mầy
+  - bot điểm nhấn thương hiệu của công ty là thế nào
+  - vắn tắt thông điệp mà [f tech](work_unit) muốn truyền tải là gì vậy
+  - khẩu hiệu công ty như nào
+  - công ty có khẩu hiệu gì ko nhỉ
+  - tôi muốn hỏi slogan của [f tech](work_unit) là thế nào
+  - slogan của công ty là gì hả em
+  - mình muốn hỏi khẩu hiệu của công ty
+  - ' nói cho mình biết slogan của công ty là như thế nào được ko'
+  - cho tớ hỏi công ty có slogan là gì vậy em
+  - slogan của công ty là touch your future chuẩn chỉ ko
+  - cho tớ hỏi khẩu ngữ của công ty là ntn
+  - '[f tech](work_unit) có khẩu hiệu chứ ha'
+  - công ty có khẩu hiệu là như nào đó bot
+  - ' điểm nhấn thương hiệu của [ftech](work_unit) là gì hả'
+  - vắn tắt thông điệp mà [f-tech](work_unit) muốn truyền tải là gì
+  - công ty có khẩu ngữ gì ko ha
+  - tôi muốn hỏi slogan của [f tech](work_unit) là gì
+  - khẩu hiệu của công ty là thế nào đó bạn
+  - tôi muốn biết khẩu ngữ của công ty
+  - bot nói cho tôi biết slogan của công ty là ntn được ko
+  - cho tớ hỏi công ty có khẩu ngữ là thế nào
+  - khẩu hiệu của công ty là chạm vào tương lai chính xác ko
+  - cho tôi hỏi slogan của công ty là gì vậy mày
+  - '[ftech](work_unit) có khẩu hiệu chứ ha'
+  - công ty có khẩu ngữ là như thế nào đó
+  - ' điểm nhấn thương hiệu của công ty là thế nào vậy hả'
+  - vắn tắt thông điệp mà [f tech](work_unit) muốn truyền tải là như thế nào
+  - công ty có khẩu ngữ gì không nhể
+  - cho tôi hỏi slogan của [ftech](work_unit) là gì hả
+  - khẩu ngữ của công ty là gì đó
+  - tớ muốn biết khẩu ngữ của công ty
+  - ' nói cho mình biết khẩu ngữ của công ty là như thế nào được ko'
+  - cho mình hỏi công ty có slogan là gì vậy hả đó mầy
+  - khẩu ngữ của công ty là chạm vào tương lai đúng ko
+  - cho mình hỏi khẩu ngữ của công ty là thế nào
+  - '[f tech](work_unit) có khẩu hiệu chứ nhể'
+  - công ty có khẩu ngữ là gì đó
+  - timi điểm nhấn thương hiệu của công ty là thế nào
+  - vắn tắt thông điệp mà [ftech](work_unit) muốn truyền tải là gì vậy
+  - công ty có khẩu ngữ gì ko nhể
+  - mình muốn hỏi slogan của [f tech](work_unit) là gì
+  - khẩu hiệu của công ty là như thế nào cậu
+  - tớ muốn hỏi khẩu ngữ của công ty
+  - ' nói cho tớ biết khẩu hiệu của công ty là thế nào được ko'
+  - cho tớ hỏi công ty có khẩu hiệu là gì đó em
+  - slogan của công ty là chạm vào tương lai chính xác ko
+  - cho tớ hỏi slogan của công ty là như nào
+  - '[f-tech](work_unit) có khẩu hiệu chứ nhể'
+  - công ty có slogan là gì đó mầy
+  - ' điểm nhấn thương hiệu của công ty là thế nào'
+  - vắn tắt thông điệp mà [f-tech](work_unit) muốn truyền tải là gì hả
+  - công ty có slogan gì ko nhể
+  - mình muốn hỏi slogan của [f-tech](work_unit) là ntn
+  - khẩu ngữ của công ty là gì bot
+  - tôi muốn biết slogan của công ty
+  - ' nói cho mình biết khẩu hiệu của công ty là gì vậy hả được ko'
+  - cho tớ hỏi công ty có slogan là gì hả đó
+  - slogan của công ty là touch your future chính xác không
+  - cho mình hỏi slogan của công ty là gì hả
+  - '[f tech](work_unit) có khẩu hiệu chứ nhỉ'
+  - công ty có slogan là gì đó
+  - ' điểm nhấn thương hiệu của [ftech](work_unit) là thế nào vậy hả'
+  - vắn tắt thông điệp mà [ftech](work_unit) muốn truyền tải là ntn
+  - công ty có slogan gì ko ha
+  - cho mình hỏi slogan của [ftech](work_unit) là ntn
+  - slogan của công ty là thế nào đó
+  - mình muốn hỏi slogan của công ty
+  - ' nói cho tớ biết khẩu ngữ của công ty là gì hả được ko'
+  - cho mình hỏi công ty có khẩu hiệu là thế nào đó mày
+  - khẩu ngữ của công ty là chạm vào tương lai đúng không
+  - cho mình hỏi slogan của công ty là gì vậy
+  - '[f tech](work_unit) có khẩu ngữ chứ nhể'
+  - công ty có khẩu hiệu là gì đó
+  - ' điểm nhấn thương hiệu của công ty là gì vậy hả vậy'
+  - vắn tắt thông điệp mà [f-tech](work_unit) muốn truyền tải là thế nào
+  - công ty có khẩu hiệu gì ko ha
+  - cho tớ hỏi slogan của [ftech](work_unit) là thế nào
+  - slogan của công ty là gì vậy bot
+  - mình muốn biết khẩu hiệu của công ty
+  - ' nói cho mình biết slogan của công ty là thế nào được ko'
+  - cho tớ hỏi công ty có khẩu hiệu là thế nào
+  - khẩu ngữ của công ty là chạm vào tương lai chuẩn chỉ ko
+  - cho tôi hỏi slogan của công ty là thế nào
+  - '[f-tech](work_unit) có slogan chứ ha'
+  - công ty có khẩu ngữ là gì đó bạn
+  - ' điểm nhấn thương hiệu của [f tech](work_unit) là gì vậy hả'
+  - vắn tắt thông điệp mà [f tech](work_unit) muốn truyền tải là gì hả
+  - công ty có slogan gì không ha
+  - cho tôi hỏi slogan của [f tech](work_unit) là như thế nào
+  - khẩu hiệu của công ty là gì vậy
+  - tôi muốn hỏi slogan của công ty
+  - m nói cho tớ biết khẩu hiệu của công ty là gì vậy được ko

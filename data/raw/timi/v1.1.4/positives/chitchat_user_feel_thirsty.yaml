@@ -1,0 +1,206 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: chitchat_user_feel_thirsty
+  examples:
+  - khát nước
+  - vì sao tớ lại khát nước như hở
+  - Trưa ăn đồ xíu mặn thế nên khát, giờ phải làm như nào m nhỉ
+  - khát nước uống nước chanh được không cậu
+  - tại sao lại khát như thế này
+  - khát nước chi đâu là khát nước
+  - khát ơi là khát
+  - khát chết mất thôi
+  - khát nước quá phải làm như nào cho đỡ đây
+  - tớ làm răng cho hết khát nước em nhỉ
+  - khát nước ghê
+  - thế khát
+  - mày ơi có gì uống không em
+  - khát
+  - mình đang khát ghê có gì uống không
+  - ' ơi tao khát nước quá'
+  - ' đang khát quá đi mày'
+  - khát nước thế bot ơi
+  - tao khát quá
+  - có gì uống không đang khát quá đi
+  - khát chịu không nổi
+  - m ơi đang khát nước quá đi
+  - Cảm giác khát thật là khó chịu
+  - ' khát nước thế'
+  - sao tao lại khát nước như hả
+  - Trưa ăn đồ xíu mặn thế nên khát nước, giờ phải làm sao mày nhỉ
+  - khát nước uống nước chanh được không mày
+  - sao lại khát nước như thế này
+  - khát nước mô đâu là khát
+  - khát nước ơi là khát
+  - khát nước chết mất thôi
+  - khát quá phải làm sao cho đỡ đây
+  - tớ làm thế nào cho hết khát bạn nhể
+  - khát nước quá đi
+  - quá khát nước
+  - ' ơi tớ có gì uống không bot'
+  - ' đang khát nước quá có gì uống không'
+  - timi ơi khát nước quá
+  - tui đang khát nước quá
+  - khát thế em ơi
+  - ' khát ghê'
+  - có gì uống không tui đang khát nước quá đi
+  - khát nước chịu không nổi
+  - cậu ơi tớ đang khát quá
+  - Cảm giác khát nước thật là khó chịu
+  - mình khát nước quá m
+  - vì sao tui lại khát như vậy á hả
+  - Trưa ăn đồ xíu mặn thế nên khát, giờ phải làm như nào timi nhỉ
+  - khát nước uống nước chanh được không timi
+  - vì sao lại khát như thế này
+  - khát nước gì đâu là khát nước
+  - khát nước ơi là khát nước
+  - khát nước quá phải làm sao cho đỡ đó
+  - tôi làm thế nào cho hết khát mày nhỉ
+  - khát nước quá
+  - quá khát
+  - cậu ơi có gì uống không timi
+  - ' đang khát nước quá đi có gì uống không em'
+  - ' ơi khát nước quá'
+  - ' đang khát quá đi bot'
+  - khát nước thế m ơi
+  - mình khát nước ghê
+  - có gì uống không tui đang khát quá đi
+  - m ơi đang khát quá
+  - tui khát nước thế
+  - vì sao tớ lại khát như vậy
+  - Trưa ăn đồ xíu mặn quá nên khát, giờ phải làm gì m nhể
+  - khát uống nước chanh được không cậu
+  - tại sao lại khát nước như thế này
+  - khát chi đâu là khát
+  - khát ơi là khát nước
+  - khát nước thế phải làm răng cho đỡ đó
+  - mình làm sao cho hết khát nước bot nhỉ
+  - khát quá
+  - thế khát nước
+  - bot ơi có gì uống không
+  - tớ đang khát quá đi có gì uống không
+  - ' ơi tôi khát quá'
+  - ' đang khát ghê m'
+  - khát nước quá m ơi
+  - tớ khát ghê
+  - có gì uống không đang khát nước ghê
+  - m ơi đang khát nước ghê
+  - ' khát nước thế timi'
+  - sao mình lại khát nước như vậy
+  - Trưa ăn đồ xíu mặn thế nên khát nước, giờ phải làm răng bạn nhể
+  - khát uống nước chanh được không em
+  - sao lại khát như thế này
+  - khát nào đâu là khát
+  - khát nước quá phải làm như nào cho đỡ đó
+  - tớ làm sao cho hết khát nước timi nhỉ
+  - khát nước quá em
+  - ' ơi có gì uống không m'
+  - ' đang khát quá đi có gì uống không'
+  - ' ơi khát quá'
+  - ' đang khát nước quá'
+  - khát quá timi ơi
+  - ' khát nước quá đi m'
+  - có gì uống không tớ đang khát ghê
+  - em ơi tao đang khát ghê
+  - ' khát thế'
+  - sao tớ lại khát như hở
+  - Trưa ăn đồ xíu mặn thế nên khát, giờ phải làm sao bạn nhể
+  - khát uống nước chanh được không bạn
+  - vì sao lại khát nước như thế này
+  - khát chi đâu là khát nước
+  - khát thế phải làm như nào cho đỡ đó
+  - tớ làm thế nào cho hết khát m nhể
+  - khát ghê cậu
+  - bot ơi mình có gì uống không bạn
+  - tui đang khát nước quá đi có gì uống không
+  - cậu ơi tớ khát quá
+  - tui đang khát quá đi timi
+  - khát quá cậu ơi
+  - ' khát quá đi'
+  - có gì uống không đang khát ghê
+  - ' ơi tớ đang khát nước ghê'
+  - ' khát nước thế mày'
+  - vì sao tao lại khát nước như hả
+  - Trưa ăn đồ xíu mặn thế nên khát nước, giờ phải làm gì bot nhỉ
+  - khát uống nước chanh được không m
+  - khát mô đâu là khát
+  - khát quá phải làm răng cho đỡ đó
+  - tôi làm như nào cho hết khát cậu nhể
+  - khát nước ghê timi
+  - bot ơi tao có gì uống không
+  - tao đang khát nước quá có gì uống không em
+  - cậu ơi tôi khát nước quá
+  - tớ đang khát quá đi
+  - khát quá bạn ơi
+  - tớ khát nước quá
+  - có gì uống không đang khát nước quá đi
+  - em ơi tớ đang khát nước quá
+  - tui khát nước quá
+  - sao mình lại khát như hả
+  - Trưa ăn đồ xíu mặn quá nên khát, giờ phải làm gì em nhể
+  - khát uống nước chanh được không timi
+  - khát nước nào đâu là khát nước
+  - khát quá phải làm thế nào cho đỡ đây
+  - tao làm gì cho hết khát bot nhể
+  - khát nước quá m
+  - ' ơi có gì uống không'
+  - ' đang khát quá có gì uống không timi'
+  - ' ơi tớ khát quá'
+  - ' đang khát quá đi bạn'
+  - khát thế cậu ơi
+  - tao khát nước quá đi cậu
+  - có gì uống không tui đang khát ghê
+  - mày ơi tao đang khát nước quá
+  - tớ khát thế em
+  - tại sao mình lại khát như hả
+  - Trưa ăn đồ xíu mặn thế nên khát nước, giờ phải làm gì bot nhể
+  - khát nước uống nước chanh được không em
+  - khát nước nào đâu là khát
+  - khát thế phải làm thế nào cho đỡ đây
+  - tớ làm như nào cho hết khát bạn nhể
+  - khát quá đi m
+  - ' ơi có gì uống không bot'
+  - ' đang khát ghê có gì uống không'
+  - bot ơi khát quá
+  - ' đang khát quá m'
+  - khát nước thế em ơi
+  - tui khát quá bot
+  - có gì uống không tui đang khát quá
+  - bot ơi đang khát nước ghê
+  - ' khát thế mày'
+  - tại sao tớ lại khát nước như vậy á hả
+  - Trưa ăn đồ xíu mặn thế nên khát, giờ phải làm như nào timi nhể
+  - khát uống nước chanh được không bot
+  - khát gì đâu là khát nước
+  - khát quá phải làm như nào cho đỡ đây
+  - tao làm gì cho hết khát nước bạn nhỉ
+  - khát ghê bot
+  - ' ơi tớ có gì uống không'
+  - tui đang khát quá đi có gì uống không
+  - bạn ơi khát nước quá
+  - tớ đang khát quá bot
+  - khát nước quá bot ơi
+  - tớ khát nước quá đi
+  - có gì uống không đang khát quá
+  - ' ơi đang khát quá'
+  - tớ khát quá
+  - sao tớ lại khát nước như hở
+  - Trưa ăn đồ xíu mặn thế nên khát nước, giờ phải làm ntn m nhỉ
+  - khát nước uống nước chanh được không bot
+  - khát nước gì đâu là khát
+  - khát thế phải làm như nào cho đỡ đây
+  - mình làm như nào cho hết khát mày nhỉ
+  - khát ghê bạn
+  - ' ơi có gì uống không em'
+  - tui đang khát nước quá đi có gì uống không cậu
+  - m ơi khát nước quá
+  - tớ đang khát nước ghê timi
+  - khát nước thế cậu ơi
+  - tao khát ghê timi
+  - có gì uống không tớ đang khát nước quá đi
+  - cậu ơi tôi đang khát quá
+  - tui khát nước thế mày
+  - tại sao tao lại khát như hả
+  - Trưa ăn đồ xíu mặn quá nên khát, giờ phải làm gì timi nhỉ

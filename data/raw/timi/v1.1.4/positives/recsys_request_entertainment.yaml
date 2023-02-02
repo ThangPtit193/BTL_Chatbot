@@ -1,0 +1,1636 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: recsys_request_entertainment
+  examples:
+  - bùn chán quá, có phim gì xem không mi
+  - cho tôi xin link xem film với
+  - có bộ phim nào ko gửi tớ đi
+  - cho tớ xin tên phim để xem với
+  - gửi tớ ít phim hay hay coi giải trí đi nè
+  - buồn quá tìm giúp mình vài phim đi
+  - cho link phim với
+  - ' biết phim nào hay không'
+  - gửi tôi vài phim vui vui
+  - có bộ film nào hay gợi ý xem đi
+  - tôi đang mún coi phim
+  - em bít bộ phim nào hay ko
+  - biết film nào không
+  - gợi ý phim đi bot
+  - có bộ film nào ko bot
+  - bùn chán quá, có phim gì xem ko em
+  - cho tôi xin link coi film với
+  - có film nào không gửi mình đi
+  - cho tôi xin link phim để coi với
+  - gửi tôi ít phim hay hay coi giải trí đi nè
+  - chán quá tìm giúp tớ vài phim đi
+  - cho link film với
+  - timi bít phim nào hay ko
+  - gửi mình vài film vui vui
+  - có film nào hay gợi ý xem đi
+  - tớ muốn coi film
+  - cậu bít bộ phim nào hay ko
+  - bít phim nào không
+  - gợi ý phim đi mày
+  - có phim nào ko
+  - chán quá, có phim gì xem ko chú em
+  - cho tớ link coi phim với
+  - có film nào ko gửi tớ đi
+  - cho tớ xin tên phim để coi với
+  - gửi mình ít phim hay hay coi giải trí đi nè
+  - buồn chán thế tìm giúp tớ vài film đi
+  - bạn biết film nào hay ko
+  - gửi tớ vài film vui vui
+  - có phim nào hay gợi ý xem đi
+  - mình đang muốn xem phim nè bạn
+  - bot bít bộ phim nào hay ko
+  - bít film nào không
+  - gợi ý phim đi em
+  - có film nào ko
+  - bùn chán quá, có phim gì xem ko cậu
+  - cho tớ link xem film với
+  - có phim nào không gửi mình đi
+  - cho mình xin link phim để coi với
+  - chán thế tìm giúp tớ vài phim đi
+  - ' bít phim nào hay ko'
+  - gửi tớ vài phim vui vui
+  - có bộ phim nào hay gợi ý xem đi
+  - tôi đang muốn xem film
+  - bạn bít bộ phim nào hay không
+  - biết phim nào không
+  - gợi ý phim đi chú em
+  - có film gì ko bot
+  - buồn chán quá, có phim gì xem ko em
+  - cho mình link coi film với
+  - có phim nào không gửi tớ đi
+  - cho tớ link phim để coi với
+  - buồn chán quá tìm giúp tớ vài film đi
+  - ' biết film nào hay không'
+  - gửi mình vài phim vui vui
+  - mình đang muốn coi film nè
+  - bạn biết bộ phim nào hay ko
+  - biết phim nào ko
+  - gợi ý phim đi timi
+  - có film nào ko mi
+  - bùn chán quá, có phim gì xem ko bạn
+  - cho tớ link xem phim với
+  - có bộ film nào không gửi mình đi
+  - cho tớ tên film để coi với
+  - buồn quá tìm giúp tớ vài film đi
+  - ' có bít film nào hay ko'
+  - gửi tôi vài film vui vui
+  - tôi đang mún xem film nè
+  - m biết bộ phim nào hay ko
+  - biết film nào ko
+  - gợi ý phim đi c
+  - có film gì ko b
+  - bùn chán quá, có phim gì xem không bot
+  - cho tớ xin link xem film với
+  - có phim nào không gửi tôi đi
+  - cho mình xin tên film để coi với
+  - buồn thế tìm giúp tôi vài film đi
+  - mầy bít film nào hay không
+  - mình đang muốn coi phim
+  - c biết bộ phim nào hay ko
+  - bít film nào ko
+  - gợi ý phim đi cậu
+  - có film gì ko
+  - bùn chán quá, có phim gì xem không c
+  - cho tớ xin link xem phim với
+  - có bộ phim nào không gửi tớ đi
+  - cho mình xin tên phim để coi với
+  - chán quá tìm giúp tôi vài film đi
+  - ' biết phim nào hay ko'
+  - tớ muốn coi film cậu
+  - bot bít bộ phim nào hay không
+  - bít phim nào ko
+  - gợi ý phim đi b
+  - có film gì không timi
+  - buồn chán quá, có phim gì xem không timi
+  - cho mình xin link coi film với
+  - có phim nào ko gửi tôi đi
+  - cho tôi link phim để coi với
+  - buồn quá tìm giúp mình vài film đi
+  - ' bít phim nào hay không'
+  - mình muốn coi film nè
+  - b bít bộ phim nào hay ko
+  - gợi ý phim đi mi
+  - có bộ phim nào không timi
+  - bùn chán quá, có phim gì xem không timi
+  - cho tôi xin link coi phim với
+  - có bộ film nào không gửi tớ đi
+  - cho tôi link phim để xem với
+  - buồn chán quá tìm giúp mình vài film đi
+  - bot bít phim nào hay không
+  - tớ đang mún xem phim nè timi
+  - em biết bộ phim nào hay không
+  - gợi ý phim đi mầy
+  - có phim nào ko chú em
+  - chán quá, có phim gì xem ko bot
+  - cho mình xin link coi phim với
+  - có phim nào ko gửi tớ đi
+  - cho tớ link film để xem với
+  - buồn chán thế tìm giúp tớ vài phim đi
+  - ' có biết phim nào hay không'
+  - tớ mún xem film bot
+  - mi bít bộ phim nào hay không
+  - có film gì không b
+  - buồn chán quá, có phim gì xem ko timi
+  - cho tôi link coi film với
+  - có bộ film nào ko gửi tôi đi
+  - cho tớ xin tên film để coi với
+  - buồn chán thế tìm giúp tôi vài phim đi
+  - ' bít film nào hay ko'
+  - tớ muốn coi film nè mi
+  - timi bít bộ phim nào hay không
+  - có bộ film nào không b
+  - buồn chán quá, có phim gì xem ko mầy
+  - cho tôi link xem film với
+  - có bộ phim nào không gửi tôi đi
+  - cho mình tên film để xem với
+  - bùn chán thế tìm giúp tớ vài phim đi
+  - bot có biết film nào hay ko
+  - tôi đang mún xem film m
+  - timi biết bộ phim nào hay ko
+  - gợi ý phim đi bạn
+  - có bộ film nào không
+  - buồn chán quá, có phim gì xem ko bot
+  - cho tớ link coi film với
+  - có bộ film nào không gửi tôi đi
+  - cho tớ link film để coi với
+  - buồn thế tìm giúp tớ vài phim đi
+  - timi có bít film nào hay không
+  - tớ muốn coi phim nè timi
+  - bot biết bộ phim nào hay ko
+  - gợi ý phim đi m
+  - có film nào không cậu
+  - buồn quá, có phim gì xem ko mi
+  - cho mình link xem phim với
+  - có film nào ko gửi tôi đi
+  - cho tôi link film để coi với
+  - chán quá tìm giúp tớ vài film đi
+  - mi có bít film nào hay ko
+  - tớ đang muốn xem film bot
+  - mầy bít bộ phim nào hay không
+  - có bộ film gì không
+  - chán quá, có phim gì xem không bạn
+  - cho tôi link coi phim với
+  - có bộ phim nào ko gửi mình đi
+  - cho tớ xin link phim để coi với
+  - buồn chán quá tìm giúp tôi vài phim đi
+  - bot có biết phim nào hay không
+  - mình đang mún coi phim nè mầy
+  - timi biết bộ phim nào hay không
+  - có bộ film nào ko c
+  - buồn quá, có phim gì xem không c
+  - cho mình link coi phim với
+  - có bộ film nào ko gửi tớ đi
+  - cho tớ tên phim để xem với
+  - buồn chán quá tìm giúp tớ vài phim đi
+  - bạn có biết film nào hay không
+  - tôi đang mún xem phim nè
+  - bạn biết bộ phim nào hay không
+  - có bộ phim gì không
+  - chán quá, có phim gì xem ko bạn
+  - cho tớ xin link coi phim với
+  - có film nào không gửi tôi đi
+  - cho mình tên phim để xem với
+  - bùn chán quá tìm giúp tôi vài phim đi
+  - ' có biết film nào hay ko'
+  - tớ đang mún xem film nè
+  - mi biết bộ phim nào hay không
+  - có film nào không
+  - bùn chán quá, có phim gì xem ko bot
+  - có film nào ko gửi mình đi
+  - cho tớ link phim để xem với
+  - mình cô đơn quá m có phim nào ko
+  - có bộ film nào phù hợp với tâm trạng tức của tớ
+  - mình thấy điên quá bot có phim nào ko
+  - có bộ phim nào phù hợp với tâm trạng buồn của tớ
+  - mình buồn chán có film nào ko
+  - có bộ phim nào phù hợp với tâm trạng bùn chán của tôi
+  - mình cảm thấy cô độc quá timi có bộ film nào không
+  - có bộ film nào phù hợp với tâm trạng đơn độc của tớ
+  - mình bùn chán timi có bộ film nào ko
+  - có bộ film nào phù hợp với tâm trạng yên bình của tớ
+  - mình cảm thấy sướng quá timi có bộ film nào ko
+  - có bộ phim nào phù hợp với tâm trạng sướng của tớ
+  - mình cảm thấy chán có bộ phim nào ko
+  - có phim nào phù hợp với tâm trạng tự do của tớ
+  - mình thấy bùn chán m có film nào không
+  - có film nào phù hợp với tâm trạng điên của tôi
+  - mình cảm thấy cô độc có film nào không
+  - có bộ phim nào phù hợp với tâm trạng buồn chán của tôi
+  - mình yêu đời quá có bộ film nào không
+  - có bộ film nào phù hợp với tâm trạng bực của mình
+  - mình thấy buồn chán timi có phim nào không
+  - có phim nào phù hợp với tâm trạng buồn chán của mình
+  - mình cảm thấy bực mình quá có phim nào ko
+  - có film nào phù hợp với tâm trạng cô độc của tớ
+  - mình bực có film nào không
+  - có phim nào phù hợp với tâm trạng buồn của tớ
+  - mình thấy bùn chán có phim nào không
+  - có phim nào phù hợp với tâm trạng yên bình của tớ
+  - mình cảm thấy đơn độc bot có film nào không
+  - có bộ film nào phù hợp với tâm trạng buồn của tôi
+  - mình sướng có bộ film nào ko
+  - có phim nào phù hợp với tâm trạng chán của mình
+  - mình cay bạn có bộ phim nào không
+  - có bộ phim nào phù hợp với tâm trạng cô độc của mình
+  - mình thấy bùn chán có film nào ko
+  - có phim nào phù hợp với tâm trạng buồn chán của tớ
+  - mình vui quá có bộ film nào không
+  - có phim nào phù hợp với tâm trạng tự do của tôi
+  - mình sung sướng quá bạn có bộ phim nào ko
+  - có phim nào phù hợp với tâm trạng đơn độc của tớ
+  - ' biết film nào đang mới mẻ hay không'
+  - những phim nào đang nổi bật trên bảng xếp hạng
+  - có phim nào đang hot ko
+  - c bít phim nào đang đặc sắc hay ko
+  - những phim nào đang nổi trội trên bảng xếp hạng
+  - có phim nào đang đặc sắc ko
+  - ' biết film nào đang nổi bật không'
+  - những phim nào đang đặc sắc trên bảng xếp hạng
+  - có film nào đang nổi không
+  - ' biết film nào đang nổi bật hay ko'
+  - những film nào đang mới mẻ trên bảng xếp hạng
+  - có film nào đang nổi trội không bot
+  - ' bít film nào đang nổi bật không'
+  - những phim nào đang nổi trên bxh
+  - có film nào đang mới mẻ ko bạn
+  - ' biết film nào đang nổi hay ko'
+  - những film nào đang nổi bật trên bảng xếp hạng
+  - có film nào đang hot không
+  - timi biết phim nào đang hot không
+  - những film nào đang đặc sắc trên bảng xếp hạng
+  - có film nào đang đặc sắc không
+  - bot bít phim nào đang nổi bật ko
+  - những film nào đang hot trên bảng xếp hạng
+  - có film nào đang hot không mi
+  - ' bít film nào đang nổi bật ko'
+  - những phim nào đang nổi trên bảng xếp hạng
+  - có phim nào đang nổi trội không b
+  - b biết phim nào đang hot không
+  - những phim nào đang đặc sắc trên bxh
+  - có phim nào đang nổi bật không bot
+  - ' biết phim nào đang hot ko'
+  - những phim nào đang hot trên bxh
+  - có film nào đang đặc sắc không mầy
+  - ' biết film nào đang nổi ko'
+  - những phim nào đang mới mẻ trên bxh
+  - có phim nào đang nổi bật không bạn
+  - cậu biết phim nào đang đặc sắc hay không
+  - những film nào đang nổi trội trên bxh
+  - có phim nào đang đặc sắc ko timi
+  - ' biết phim nào đang nổi không'
+  - muốn xem [phim siêu nhiên](entertainment_type) quá đi
+  - có biết [phim Thái Lan](entertainment_type) nào hay không gợi ý tôi với
+  - cho xin [phim tình yêu học đường](entertainment_type)
+  - có bít phim nào hài thì gửi tớ với
+  - gợi ý mình mấy bộ [phim kí sự](entertainment_type) hay hay được ko
+  - bot cho tớ xin [phim truyền hình](entertainment_type) với
+  - có bít [film Thái Lan](entertainment_type) nào hay ko
+  - gửi mình mấy bộ phim loại [film kinh dị-ma](entertainment_type)
+  - tớ muốn xem phim [film phiêu lưu](entertainment_type) nha
+  - có biết [phim siêu nhiên](entertainment_type) nào thì gửi mình với
+  - '[phim truyền hình](entertainment_type) nha'
+  - gửi link [film tài liệu](entertainment_type) nào hay đi
+  - tớ đang muốn xem [phim thần thoại](entertainment_type) có bít phim nào không
+  - muốn xem [film cổ trang](entertainment_type) quá đi
+  - có bít [phim tình cảm](entertainment_type) nào hay ko gợi ý mình với
+  - cho xin [film trinh thám](entertainment_type)
+  - có bít film nào hài thì gửi mình với
+  - gợi ý mình mấy bộ [phim phiêu lưu](entertainment_type) hay hay được ko
+  - bot cho xin [film bê đê](entertainment_type) với
+  - có bít [film Mỹ](entertainment_type) nào hay ko
+  - gửi mình mấy bộ phim loại [phim chiến tranh](entertainment_type)
+  - tôi mún xem [phim phép thuật](entertainment_type) nha
+  - có bít [phim boy love](entertainment_type) nào thì gửi tớ với
+  - '[film phiêu lưu](entertainment_type) nha'
+  - gửi link [phim khoa học viễn tưởng](entertainment_type) nào hay đi
+  - mình đang mún xem [phim cổ trang](entertainment_type) có bít phim nào ko
+  - muốn xem [phim 3d](entertainment_type) quá đi
+  - có biết [film khoa học-viễn tưởng](entertainment_type) nào hay ko gợi ý mình với
+  - cho mình xin [film kinh điển](entertainment_type)
+  - có biết film nào hài thì gửi tớ với
+  - gợi ý mình mấy bộ [film tâm lý-tình cảm](entertainment_type) hay hay được ko
+  - bot cho xin [phim Thái](entertainment_type) với
+  - có bít [film kungphu](entertainment_type) nào hay ko
+  - gửi mình mấy bộ phim loại [phim tâm lý-tình cảm](entertainment_type)
+  - tớ mún xem thể loại [phim phép thuật](entertainment_type) nha
+  - có bít [phim phiêu lưu](entertainment_type) nào thì gửi tớ với
+  - '[film boy love](entertainment_type) nhé'
+  - gửi link [phim kungphu](entertainment_type) nào hay đi
+  - tôi đang muốn xem [phim TQ](entertainment_type) có biết phim nào không
+  - muốn xem [phim Nhật](entertainment_type) quá đi
+  - có bít [film tình yêu học đường](entertainment_type) nào hay ko gợi ý tớ với
+  - cho tớ xin [film truyền hình](entertainment_type)
+  - có biết film nào hài thì gửi tôi với
+  - gợi ý tớ mấy bộ [film khoa học-viễn tưởng](entertainment_type) hay hay được không
+  - c cho xin [film hài hước](entertainment_type) với
+  - có bít [film Thái Lan](entertainment_type) nào hay không
+  - gửi tớ mấy bộ phim loại [film truyền hình](entertainment_type)
+  - mình mún xem phim thể loại [phim thần thoại](entertainment_type) nha
+  - có bít [phim đánh nhau](entertainment_type) nào thì gửi tôi với
+  - '[phim kiếm hiệp](entertainment_type) nha'
+  - gửi link [film hồng kông](entertainment_type) nào hay đi
+  - mình đang mún xem [film siu anh hùng](entertainment_type) có bít phim nào không
+  - muốn xem [phim phép thuật](entertainment_type) quá đi
+  - có biết [phim giật gân](entertainment_type) nào hay không gợi ý tớ với
+  - cho xin [phim hỉnh sự](entertainment_type)
+  - có biết phim nào hài thì gửi tớ với
+  - gợi ý tớ mấy bộ [film siu anh hùng](entertainment_type) hay hay được không
+  - mày cho xin [phim học đường](entertainment_type) với
+  - có biết [phim thần thoại](entertainment_type) nào hay không
+  - gửi mấy bộ phim loại [film cổ trang](entertainment_type)
+  - tớ mún xem phim thể loại [film hài hước viễn tưởng](entertainment_type) nha
+  - có bít [phim Nhật](entertainment_type) nào thì gửi tớ với
+  - '[film tình yêu học đường](entertainment_type) nhé'
+  - gửi link [film kungphu](entertainment_type) nào hay đi
+  - tôi đang muốn xem [film siêu nhiên](entertainment_type) có bít phim nào không
+  - muốn xem [phim boy love](entertainment_type) quá đi
+  - có bít [phim hài hước](entertainment_type) nào hay ko gợi ý tôi với
+  - cho tớ xin [phim hoạt hình](entertainment_type)
+  - có bít phim nào hài thì gửi mình với
+  - gợi ý mình mấy bộ [phim hỉnh sự](entertainment_type) hay hay được không
+  - timi cho xin [phim học đường](entertainment_type) với
+  - có biết [phim kinh dị-ma](entertainment_type) nào hay ko
+  - gửi mình mấy bộ phim loại [phim khoa học viễn tưởng](entertainment_type)
+  - tớ muốn xem [film tâm lý-tình cảm](entertainment_type) nha
+  - có biết [phim boy love](entertainment_type) nào thì gửi tớ với
+  - '[film phép thuật](entertainment_type) nhé'
+  - gửi link [phim giật gân](entertainment_type) nào hay đi
+  - tớ đang mún xem [film cổ trang](entertainment_type) có bít phim nào không
+  - muốn xem [phim hài hước](entertainment_type) quá đi
+  - có bít [phim boy love](entertainment_type) nào hay ko gợi ý mình với
+  - cho xin [phim cổ trang](entertainment_type)
+  - có biết film nào hài thì gửi mình với
+  - gợi ý tớ mấy bộ [phim kiếm hiệp](entertainment_type) hay hay được không
+  - cậu cho tớ xin [film huyền thoại](entertainment_type) với
+  - có bít [film dài tập](entertainment_type) nào hay ko
+  - gửi tôi mấy bộ phim loại [film hài hước](entertainment_type)
+  - tớ muốn xem film thể loại [film học đường](entertainment_type) nha
+  - có biết [film ký sự](entertainment_type) nào thì gửi tôi với
+  - '[phim trung quốc](entertainment_type) nhé'
+  - gửi link [film truyền hình](entertainment_type) nào hay đi
+  - mình đang mún xem [phim hỉnh sự](entertainment_type) có bít phim nào ko
+  - muốn xem [film truyền hình](entertainment_type) quá đi
+  - có bít [phim xxx](entertainment_type) nào hay không gợi ý tớ với
+  - cho xin [phim dài tập](entertainment_type)
+  - có bít phim nào hài thì gửi tôi với
+  - gợi ý mình mấy bộ [phim CN Animation](entertainment_type) hay hay được không
+  - b cho tớ xin [film hồng kông](entertainment_type) với
+  - có bít [film khoa học-viễn tưởng](entertainment_type) nào hay ko
+  - gửi mấy bộ phim loại [phim tình yêu học đường](entertainment_type)
+  - tớ mún xem phim [phim kinh điển](entertainment_type) nha
+  - có bít [phim chiến tranh](entertainment_type) nào thì gửi tôi với
+  - '[film kiếm hiệp](entertainment_type) nha'
+  - gửi link [film hành động](entertainment_type) nào hay đi
+  - tớ đang muốn xem [film phiêu lưu](entertainment_type) có biết phim nào không
+  - muốn xem [phim tài liệu](entertainment_type) quá đi
+  - có bít [phim ký sự](entertainment_type) nào hay ko gợi ý tôi với
+  - cho tôi xin [phim cổ trang](entertainment_type)
+  - có bít film nào hài thì gửi tôi với
+  - gợi ý tớ mấy bộ [film american](entertainment_type) hay hay được không
+  - bot cho tớ xin [phim ngôn tình](entertainment_type) với
+  - có biết [phim khoa học viễn tưởng](entertainment_type) nào hay ko
+  - gửi tớ mấy bộ phim loại [phim chín tranh](entertainment_type)
+  - tớ mún xem film thể loại [film kiếm hiệp](entertainment_type) nha
+  - có biết [phim ngôn tình](entertainment_type) nào thì gửi tôi với
+  - '[phim hành động](entertainment_type) nha'
+  - gửi link [video hài hước](entertainment_type) nào hay đi
+  - tớ đang mún xem [film Nhật bản](entertainment_type) có bít phim nào ko
+  - muốn xem [phim tội phạm](entertainment_type) quá đi
+  - có biết [phim kinh dị-ma](entertainment_type) nào hay không gợi ý tớ với
+  - cho tớ xin [film kinh điển](entertainment_type)
+  - có bít film nào hài thì gửi tớ với
+  - gợi ý tớ mấy bộ [film tâm lý](entertainment_type) hay hay được không
+  - c cho tớ xin [phim boy love](entertainment_type) với
+  - có biết [phim ký sự](entertainment_type) nào hay ko
+  - gửi tớ mấy bộ phim loại [film TV Show](entertainment_type)
+  - tớ mún xem thể loại [film hài hước viễn tưởng](entertainment_type) nha
+  - có bít [phim phép thuật](entertainment_type) nào thì gửi tớ với
+  - '[phim khoa học](entertainment_type) nha'
+  - gửi link [phim boy love](entertainment_type) nào hay đi
+  - mình đang mún xem [phim tình yêu học đường](entertainment_type) có biết phim nào
+    ko
+  - muốn xem [film siêu anh hùng](entertainment_type) quá đi
+  - có biết [film siêu nhiên](entertainment_type) nào hay ko gợi ý tớ với
+  - cho xin [phim phép thuật](entertainment_type)
+  - có biết phim nào hài thì gửi mình với
+  - gợi ý tôi mấy bộ [film CN Animation](entertainment_type) hay hay được ko
+  - c cho xin [film tình cảm](entertainment_type) với
+  - có biết [phim kinh dị](entertainment_type) nào hay không
+  - gửi mấy bộ phim loại [phim ngôn tình](entertainment_type)
+  - tớ muốn xem film [phim hoạt hình](entertainment_type) nha
+  - có bít [film hài hước viễn tưởng](entertainment_type) nào thì gửi tớ với
+  - '[film Mỹ](entertainment_type) nhé'
+  - gửi link [film lịch sử](entertainment_type) nào hay đi
+  - tớ đang muốn xem [phim phép thuật](entertainment_type) có bít phim nào ko
+  - muốn xem [phim tàu khựa](entertainment_type) quá đi
+  - có biết [phim Nhật](entertainment_type) nào hay ko gợi ý tớ với
+  - cho tớ xin [film phép thuật](entertainment_type)
+  - có biết phim nào hài thì gửi tôi với
+  - gợi ý tớ mấy bộ [phim 3d](entertainment_type) hay hay được không
+  - chú em cho tớ xin [film ký sự](entertainment_type) với
+  - có bít [film cổ trang](entertainment_type) nào hay không
+  - gửi mấy bộ phim loại [phim phiêu lưu](entertainment_type)
+  - mình muốn xem thể loại [phim 3d](entertainment_type) nha
+  - có biết [phim học đường](entertainment_type) nào thì gửi tớ với
+  - '[film hành động](entertainment_type) nha'
+  - gửi link [film khoa học-viễn tưởng](entertainment_type) nào hay đi
+  - tớ đang mún xem [film ma](entertainment_type) có bít phim nào ko
+  - muốn xem [film sex education](entertainment_type) quá đi
+  - có biết [film khoa học-viễn tưởng](entertainment_type) nào hay không gợi ý tớ
+    với
+  - cho xin [film cổ trang](entertainment_type)
+  - gợi ý mình mấy bộ [film siu anh hùng](entertainment_type) hay hay được ko
+  - mày cho tớ xin [film HQ](entertainment_type) với
+  - có biết [film thần thoại](entertainment_type) nào hay ko
+  - gửi mấy bộ phim loại [film Thái](entertainment_type)
+  - tôi mún xem film [TV Show](entertainment_type) nha
+  - có biết [film TV Show](entertainment_type) nào thì gửi tôi với
+  - '[film kinh điển](entertainment_type) nhé'
+  - gửi link [film boy love](entertainment_type) nào hay đi
+  - tớ đang muốn xem [film ngôn tình](entertainment_type) có biết phim nào ko
+  - muốn xem [TV Show](entertainment_type) quá đi
+  - có bít [film 18+](entertainment_type) nào hay không gợi ý mình với
+  - cho mình xin [phim truyền hình](entertainment_type)
+  - gợi ý tôi mấy bộ [film phiêu lưu](entertainment_type) hay hay được không
+  - bot cho xin [film Thái Lan](entertainment_type) với
+  - có biết [film 18+](entertainment_type) nào hay ko
+  - gửi tớ mấy bộ phim loại [phim kiếm hiệp](entertainment_type)
+  - tôi muốn xem thể loại [phim chín tranh](entertainment_type) nha
+  - có biết [phim hoạt hình](entertainment_type) nào thì gửi mình với
+  - '[phim trinh thám](entertainment_type) nhé'
+  - gửi link [phim siêu anh hùng](entertainment_type) nào hay đi
+  - tớ đang mún xem [film giả tưởng](entertainment_type) có biết phim nào không
+  - muốn xem [phim chiến tranh](entertainment_type) quá đi
+  - có biết [phim 3d](entertainment_type) nào hay không gợi ý tớ với
+  - cho xin [video hài hước](entertainment_type)
+  - gợi ý tớ mấy bộ [phim huyền thoại](entertainment_type) hay hay được không
+  - mày cho mình xin [film kungphu](entertainment_type) với
+  - có biết [phim siêu nhiên](entertainment_type) nào hay không
+  - gửi mấy bộ phim loại [film truyền hình](entertainment_type)
+  - tôi mún xem thể loại [hài hước](entertainment_type) nha
+  - có bít [phim khoa học viễn tưởng](entertainment_type) nào thì gửi tớ với
+  - '[film lãng mạn](entertainment_type) nhé'
+  - gửi link [film HQ](entertainment_type) nào hay đi
+  - tớ đang muốn xem [film hài](entertainment_type) có bít phim nào không
+  - muốn xem [film Mỹ](entertainment_type) quá đi
+  - có biết [film kinh điển](entertainment_type) nào hay ko gợi ý tớ với
+  - cho xin [film giả tưởng](entertainment_type)
+  - gợi ý tớ mấy bộ [phim hài](entertainment_type) hay hay được không
+  - mày cho xin [film cổ trang](entertainment_type) với
+  - có bít [phim Hàn](entertainment_type) nào hay không
+  - gửi mấy bộ phim loại [phim 3d](entertainment_type)
+  - tôi mún xem film [phim truyền hình](entertainment_type) nha
+  - film [khi ralph quậy](entertainment_name) được ko
+  - m có link của film [hãy để em yêu anh](entertainment_name) ko, gửi tớ đi
+  - tôi muốn xem [hồi ức alhambra](entertainment_name)
+  - gợi ý tôi [sa mạc định mệnh](entertainment_name) của [Minh Hằng](person_name)
+  - '[người trong giang hồ](entertainment_name) của diễn viên [Vân Trang](person_name)'
+  - tập? phim [cảnh sát tân binh](entertainment_name)
+  - bộ? film [tình xa vạn kiếp](entertainment_name) này có ko
+  - tớ xem [ngũ quỷ, 5 nàng phù thủy](entertainment_name) đây nhé
+  - film [khi đóa trà trổ bông](entertainment_name) đó
+  - ' cho tớ xin link của film [thế giới hôn nhân](entertainment_name) với'
+  - cho mình phim [bảy sát thủ](entertainment_name)
+  - 'phim [one piece: the movie](entertainment_name) được không'
+  - bạn có link của film [somos.](entertainment_name) không, gửi mình đi
+  - 'tớ muốn xem film [one piece film: strong world](entertainment_name)'
+  - cho tôi phim [giả danh anh hùng](entertainment_name)
+  - '[con tốt thí](entertainment_name) của [Cát Tường](person_name)'
+  - bộ? phim [the good detective](entertainment_name)
+  - tập? phim [quý cô bala](entertainment_name) này được ko
+  - tôi xem [thượng cổ tình ca](entertainment_name) đây nhé
+  - film [cuộc thập tự chinh cuối cùng](entertainment_name) đó
+  - mi cho tớ xin link của phim [chìa khóa về nhà tôi](entertainment_name) với
+  - cho tớ phim [bill ted giải cứu thế giới](entertainment_name)
+  - film [extracurricular](entertainment_name) được ko
+  - bot có link của phim [thiên tuế đại nhân không dễ chọc](entertainment_name) ko,
+    gửi mình đi
+  - tôi muốn xem [âm thanh của hoa](entertainment_name)
+  - gợi ý tôi [ma lực của thánh nữ là toàn năng](entertainment_name)
+  - '[hỗn thế tiểu ma đầu](entertainment_name) của [Thảo Tâm](person_name) nhé'
+  - cuốn? phim [khi ralph quậy](entertainment_name)
+  - tập? phim [hồi ức alhambra](entertainment_name) này có ko
+  - tớ xem [bằng chứng thép](entertainment_name) đây nhé
+  - film [khai tâm ma pháp](entertainment_name) đó
+  - cậu cho tớ xin link của phim [voice](entertainment_name) với
+  - cho mình phim [hồi ức alhambra](entertainment_name)
+  - film [nơi tình yêu dậy sóng](entertainment_name) được không
+  - bot có link của film [lãng khách](entertainment_name) không, gửi tớ đi
+  - mình mún xem [yêu trong đau thương](entertainment_name)
+  - gợi ý tớ đường dẫn [khai tâm ma pháp](entertainment_name) của [Kim Xuân](person_name)
+  - '[hỗn thế tiểu ma đầu](entertainment_name) của diễn viên [Kim Oanh](person_name)
+    nha'
+  - cuốn? phim [ngõ cụt](entertainment_name)
+  - tập? phim [khoảnh khắc ngọt ngào](entertainment_name) này được không
+  - tôi xem [khai tâm ma pháp](entertainment_name) đây nhé
+  - phim [bố tôi là mèo](entertainment_name) nha
+  - c cho mình xin link của film [kill it](entertainment_name) với
+  - cho mình film [chị đẹp mua cơm cho tôi](entertainment_name)
+  - phim [nữ chính diễn sâu lắm mối theo](entertainment_name) được ko
+  - timi có link của phim [quần long hí phụng](entertainment_name) ko, gửi tớ đi
+  - tớ mún xem phim [đội đặc nhiệm chống bắt cóc](entertainment_name)
+  - đưa tớ địa chỉ [cuộc thập tự chinh cuối cùng](entertainment_name) của [Hoàng Dũng](person_name)
+  - '[tunnel](entertainment_name) của diễn viên [Trang Hý](person_name)'
+  - tập? phim [chị chị em em](entertainment_name)
+  - bộ? film [cảnh báo tình yêu](entertainment_name) này được không
+  - tớ xem [tìm kiếm sự sống ngoài vũ trụ](entertainment_name) đây nha
+  - phim [tìm kiếm sự sống ngoài vũ trụ](entertainment_name) nhé
+  - ' cho tôi xin link của phim [tử thần vùng texas](entertainment_name) với'
+  - cho tớ film [chất dẻo bay](entertainment_name)
+  - film [người tình ma 2](entertainment_name) được ko
+  - timi có link của film [chị chị em em](entertainment_name) không, gửi tôi đi
+  - tôi muốn xem film [xã hội thượng lưu](entertainment_name)
+  - cho tớ địa chỉ film [khi đóa trà trổ bông](entertainment_name) của [Hà Tăng](person_name)
+  - '[cuộc sống hoang dã ở trung quốc](entertainment_name) của diễn viên [Bảo Thanh](person_name)'
+  - tập? phim [ngài không ngã rẽ](entertainment_name)
+  - 'bộ? film [lục vân tiên: tuyệt đỉnh kungfu](entertainment_name) này được ko'
+  - tôi xem [cô gái triệu đô](entertainment_name) đây nhé
+  - phim [tầng lớp itaewon](entertainment_name) đê
+  - ' cho tớ xin link của phim [cuộc thập tự chinh cuối cùng](entertainment_name)
+    với'
+  - cho mình phim [câu chuyện ly kỳ của tiểu thuyết gia](entertainment_name)
+  - phim [quái nhân](entertainment_name) được ko
+  - bot có link của film [vụ cướp đẫm máu](entertainment_name) không, gửi tớ đi
+  - tôi mún xem [chuyện tình vượt biên giới](entertainment_name)
+  - đưa tớ link [advenger](entertainment_name) của [Vân Trang](person_name)
+  - '[kẻ giết người hàng loạt](entertainment_name) của diễn viên [Hoài Linh](person_name)'
+  - bộ? phim [đương gia chủ mẫu](entertainment_name)
+  - bộ? film [kẻ giết người hàng loạt](entertainment_name) này được không
+  - mình xem [tạm biệt nhé thiếu niên](entertainment_name) đây nhé
+  - phim [người tình ma 2](entertainment_name) đó
+  - ' cho mình xin link của film [my id gangnam beauty](entertainment_name) với'
+  - cho mình film [người đẹp gangnam](entertainment_name)
+  - phim [bác sĩ vô danh](entertainment_name) được ko
+  - bạn có link của film [bằng chứng thép](entertainment_name) ko, gửi tớ đi
+  - mình muốn xem phim [một mình chống mafia](entertainment_name)
+  - cho mình film [người tình ma 2](entertainment_name) của [Kiều Thanh](person_name)
+  - '[vụ cướp đẫm máu](entertainment_name) của diễn viên [Trang Hý](person_name)'
+  - cuốn? film [nơi tình yêu dậy sóng](entertainment_name)
+  - bộ? film [đội đặc nhiệm chống bắt cóc](entertainment_name) này có ko
+  - tớ xem [thấy vui](entertainment_name) đây nha
+  - film [nữ điệp viên 009](entertainment_name) nhé
+  - ' cho tớ xin link của film [undercover](entertainment_name) với'
+  - cho tớ film [người tình ma 2](entertainment_name)
+  - film [thấy vui](entertainment_name) được ko
+  - timi có link của phim [watcher](entertainment_name) ko, gửi tớ đi
+  - mình muốn xem [quái nhân](entertainment_name)
+  - gửi mình [tình xa vạn kiếp](entertainment_name)
+  - '[khai tâm ma pháp](entertainment_name) của [Cao Minh Đạt](person_name)'
+  - bộ? film [thượng cổ tình ca](entertainment_name)
+  - bộ? film [thật không thể chịu nổi](entertainment_name) này được ko
+  - tớ xem [người đẹp gangnam](entertainment_name) đây nhé
+  - film [bố tôi là mèo](entertainment_name) đó
+  - bot cho tớ xin link của phim [partner for justice](entertainment_name) với
+  - 'cho tớ film [one piece film: strong world](entertainment_name)'
+  - film [the good detective](entertainment_name) được ko
+  - chú em có link của film [người đẹp gangnam](entertainment_name) không, gửi mình
+    đi
+  - 'tôi muốn xem film [the mole: ai là nội gián](entertainment_name)'
+  - gửi tớ địa chỉ [lời hồi đáp 1988](entertainment_name)
+  - '[voice](entertainment_name) của diễn viên [Hoàng Anh](person_name) nha'
+  - bộ? film [khoảnh khắc ngọt ngào](entertainment_name)
+  - bộ? phim [chào mẹ, tạm biệt](entertainment_name) này có không
+  - tớ xem [undercover](entertainment_name) đây nha
+  - phim [tạm biệt nhé thiếu niên](entertainment_name) đó
+  - bot cho tớ xin link của phim [hãy để em yêu anh](entertainment_name) với
+  - cho tớ phim [đương gia chủ mẫu](entertainment_name)
+  - phim [sa mạc định mệnh](entertainment_name) được không
+  - timi có link của film [vượt qua thử thách](entertainment_name) ko, gửi tôi đi
+  - tớ mún xem [watcher](entertainment_name)
+  - gửi tớ [con tốt thí](entertainment_name) của [Kim Ngọc](person_name)
+  - '[văn phòng nhân đạo](entertainment_name) của [Chí Trung](person_name)'
+  - tập? film [hỗn thế tiểu ma đầu](entertainment_name)
+  - 'bộ? phim [one piece film: strong world](entertainment_name) này có ko'
+  - mình xem [cuộc sống hoang dã ở trung quốc](entertainment_name) đây nhé
+  - film [vagabond](entertainment_name) đó
+  - timi cho tớ xin link của film [tầng lớp itaewon](entertainment_name) với
+  - cho mình phim [hãy để em yêu anh](entertainment_name)
+  - phim [yêu trong đau thương](entertainment_name) được ko
+  - bạn có link của film [ai là nữ hoàng](entertainment_name) không, gửi mình đi
+  - tớ mún xem [lãng khách](entertainment_name)
+  - cho mình đường dẫn film [my id gangnam beauty](entertainment_name)
+  - '[undercover](entertainment_name) của [Bảo Thanh](person_name)'
+  - cuốn? phim [nữ điệp viên 009](entertainment_name)
+  - bộ? film [trốn tìm](entertainment_name) này có không
+  - tớ xem [con tốt thí](entertainment_name) đây nhé
+  - film [cuộc phiêu lưu của dug](entertainment_name) nhá
+  - cậu cho mình xin link của film [bằng chứng thép](entertainment_name) với
+  - cho tớ film [cảnh báo tình yêu](entertainment_name)
+  - phim [partner for justice](entertainment_name) được không
+  - timi có link của film [thiên tuế đại nhân không dễ chọc](entertainment_name) không,
+    gửi mình đi
+  - tớ mún xem [thật không thể chịu nổi](entertainment_name)
+  - cho tôi link film [bánh cưới](entertainment_name) của [Hoàng Anh](person_name)
+  - '[cảnh sát tân binh](entertainment_name) của diễn viên [Kiều Oanh](person_name)
+    nhé'
+  - tập? phim [watcher](entertainment_name)
+  - bộ? film [hành vi phạm tội](entertainment_name) này có ko
+  - tớ xem [thượng cổ tình ca](entertainment_name) đây nhe
+  - phim [đánh mất trí nhớ](entertainment_name) đó
+  - cậu cho tôi xin link của phim [advenger](entertainment_name) với
+  - cho tôi film [quý cô bala](entertainment_name)
+  - phim [mối thù hoàng tộc](entertainment_name) được không
+  - timi có link của film [thiên tuế đại nhân không dễ chọc](entertainment_name) không,
+    gửi tớ đi
+  - mình mún xem [khách sạn ánh trăng](entertainment_name)
+  - gửi mình phim [kill it](entertainment_name) của [Ninh Dương Lan Ngọc](person_name)
+  - '[cua lại vợ bầu](entertainment_name) của [Hoàng Anh](person_name) nhé'
+  - tập? film [vụ cướp đẫm máu](entertainment_name)
+  - 'tập? phim [the mole: ai là nội gián](entertainment_name) này có không'
+  - tớ xem [yêu trong đau thương](entertainment_name) đây nha
+  - film [cảnh sát tân binh](entertainment_name) đê
+  - 'timi cho mình xin link của film [lục vân tiên: tuyệt đỉnh kungfu](entertainment_name)
+    với'
+  - cho tôi phim [người tình ma 2](entertainment_name)
+  - film [chị đẹp mua cơm cho tôi](entertainment_name) được ko
+  - em có link của film [nghệ thuật đối phó](entertainment_name) không, gửi tôi đi
+  - tớ muốn xem [khoảnh khắc ngọt ngào](entertainment_name)
+  - cho tôi link film [vagabond](entertainment_name)
+  - '[cuộc sống hoang dã ở trung quốc](entertainment_name) của diễn viên [Kim Tuyến](person_name)
+    nhá'
+  - tập? film [the good detective](entertainment_name)
+  - bộ? phim [cua lại vợ bầu](entertainment_name) này được không
+  - tôi xem [người đẹp gangnam](entertainment_name) đây nhé
+  - film [tử thần vùng texas](entertainment_name) đó
+  - em cho tớ xin link của phim [the legend of la llorona](entertainment_name) với
+  - cho tôi phim [ai là nữ hoàng](entertainment_name)
+  - phim [bánh cưới](entertainment_name) được ko
+  - 'mày có link của phim [one piece: the movie](entertainment_name) ko, gửi mình
+    đi'
+  - tôi mún xem phim [đại ca hóa soái ca](entertainment_name)
+  - cho tớ phim [mến gái miền tây](entertainment_name) của [Kim Tuyến](person_name)
+  - '[câu chuyện ly kỳ của tiểu thuyết gia](entertainment_name) của [Kim Xuân](person_name)
+    nhé'
+  - tập? film [cuộc thập tự chinh cuối cùng](entertainment_name)
+  - bộ? phim [mến gái miền tây](entertainment_name) này có không
+  - mình xem [my id gangnam beauty](entertainment_name) đây nhé
+  - film [chất dẻo bay](entertainment_name) đê
+  - timi cho mình xin link của film [mối thù hoàng tộc](entertainment_name) với
+  - cho tớ phim [đánh mất trí nhớ](entertainment_name)
+  - film [bố tôi là mèo](entertainment_name) được ko
+  - bot có link của film [bảy sát thủ](entertainment_name) ko, gửi tôi đi
+  - tớ mún xem film [chị đẹp mua cơm cho tôi](entertainment_name)
+  - gợi ý tớ link [yêu trong đau thương](entertainment_name) của [Tăng Thanh Hà](person_name)
+  - '[cuộc sống hoang dã ở trung quốc](entertainment_name) của diễn viên [Đỗ Khánh
+    Vân](person_name) nhá'
+  - tập? phim [khoảnh khắc ngọt ngào](entertainment_name)
+  - tập? phim [câu chuyện ly kỳ của tiểu thuyết gia](entertainment_name) này có không
+  - tớ xem [partner for justice](entertainment_name) đây nha
+  - film [đại ca hóa soái ca](entertainment_name) nhé
+  - ' cho tớ xin link của phim [lục vân tiên: tuyệt đỉnh kungfu](entertainment_name)
+    với'
+  - cho tớ film [stranger](entertainment_name)
+  - phim [chị chị em em](entertainment_name) được ko
+  - timi có link của phim [advenger](entertainment_name) không, gửi mình đi
+  - mình muốn xem [câu chuyện ly kỳ của tiểu thuyết gia](entertainment_name)
+  - gửi tớ phim [thấy vui](entertainment_name) của [Jun Vũ](person_name)
+  - '[khách sạn ánh trăng](entertainment_name) của [Kim Xuân](person_name) nhá'
+  - 'tập? phim [one piece: the movie](entertainment_name)'
+  - bộ? film [tạm biệt nhé thiếu niên](entertainment_name) này có không
+  - tớ xem [cuộc phiêu lưu của dug](entertainment_name) đây nha
+  - phim [hành vi phạm tội](entertainment_name) đê
+  - ' cho tôi xin link của phim [khi ralph quậy](entertainment_name) với'
+  - cho tôi film [tử thần vùng texas](entertainment_name)
+  - film [ngõ cụt](entertainment_name) được không
+  - bot có link của film [ngõ cụt](entertainment_name) ko, gửi mình đi
+  - tớ mún xem [người đẹp gangnam](entertainment_name)
+  - cho tớ địa chỉ [bill ted giải cứu thế giới](entertainment_name)
+  - '[kẻ giết người hàng loạt](entertainment_name) của [Chí Trung](person_name) nhé'
+  - cuốn? phim [watcher](entertainment_name)
+  - bộ? film [advenger](entertainment_name) này được không
+  - tớ xem [extracurricular](entertainment_name) đây nha
+  - film [hồi ức alhambra](entertainment_name) nha
+  - ' cho tớ xin link của film [quái nhân](entertainment_name) với'
+  - cho mình phim [tầng lớp itaewon](entertainment_name)
+  - film [quần long hí phụng](entertainment_name) được không
+  - timi có link của film [săn linh hồn](entertainment_name) ko, gửi tớ đi
+  - tôi mún xem phim [yêu dại khờ](entertainment_name)
+  - đưa tớ film [xuân quang xán lạn trư bát giới](entertainment_name) của [Bảo Hân](person_name)
+  - '[quái nhân](entertainment_name) của [Phương Oanh](person_name)'
+  - bộ? film [cuộc sống hoang dã ở trung quốc](entertainment_name)
+  - bộ? film [chuyện chàng nokdu](entertainment_name) này được không
+  - tớ xem [quần long hí phụng](entertainment_name) đây nhé
+  - phim [cảnh sát tân binh](entertainment_name) nhá
+  - ' cho tôi xin link của phim [lời hồi đáp 1988](entertainment_name) với'
+  - cho tớ phim [thế giới hôn nhân](entertainment_name)
+  - film [vượt qua thử thách](entertainment_name) được không
+  - timi có link của film [lời hồi đáp 1988](entertainment_name) không, gửi tớ đi
+  - tớ mún xem phim [tử thần vùng texas](entertainment_name)
+  - gửi tớ địa chỉ film [nơi tình yêu dậy sóng](entertainment_name)
+  - '[nguyện tái sinh gần bên em](entertainment_name) của [Công Lý](person_name) nhá'
+  - tập? film [đại ca hóa soái ca](entertainment_name)
+  - bộ? phim [ngài không ngã rẽ](entertainment_name) này có ko
+  - tôi xem [bánh cưới](entertainment_name) đây nha
+  - phim [người trong giang hồ](entertainment_name) đê
+  - bot cho tôi xin link của film [hãy để em yêu anh](entertainment_name) với
+  - cho tớ film [cô gái triệu đô](entertainment_name)
+  - phim [giả danh anh hùng](entertainment_name) được không
+  - cậu có link của phim [khai tâm ma pháp](entertainment_name) ko, gửi tớ đi
+  - tôi mún xem [partner for justice](entertainment_name)
+  - cho tôi địa chỉ [ai là nữ hoàng](entertainment_name)
+  - '[hồi ức alhambra](entertainment_name) của [Chí Tài](person_name) nha'
+  - tập? phim [train](entertainment_name)
+  - bộ? phim [ngài không ngã rẽ](entertainment_name) này được không
+  - tôi xem [the good detective](entertainment_name) đây nhé
+  - film [kill it](entertainment_name) nhé
+  - timi cho tôi xin link của film [tầng lớp itaewon](entertainment_name) với
+  - cho tớ film [khai tâm ma pháp](entertainment_name)
+  - film [tìm kiếm sự sống ngoài vũ trụ](entertainment_name) được ko
+  - mầy có link của phim [đại ca hóa soái ca](entertainment_name) ko, gửi tôi đi
+  - tớ mún xem [cuộc thập tự chinh cuối cùng](entertainment_name)
+  - gửi tôi đường dẫn phim [chị chị em em](entertainment_name) của [Công Dũng](person_name)
+  - '[tìm kiếm sự sống ngoài vũ trụ](entertainment_name) của [Bảo Hân](person_name)
+    nhé'
+  - tập? phim [ngũ quỷ, 5 nàng phù thủy](entertainment_name)
+  - tập? film [chuyện tình vượt biên giới](entertainment_name) này có không
+  - tôi xem [cuộc sống hoang dã ở trung quốc](entertainment_name) đây nhé
+  - film [chào mẹ, tạm biệt](entertainment_name) nha
+  - bot cho mình xin link của film [ngài không ngã rẽ](entertainment_name) với
+  - cho tớ phim [khoảnh khắc ngọt ngào](entertainment_name)
+  - phim [ngõ cụt](entertainment_name) được không
+  - timi có link của film [partner for justice](entertainment_name) không, gửi mình
+    đi
+  - tớ mún xem phim [bánh cưới](entertainment_name)
+  - gợi ý tớ film [thế giới hôn nhân](entertainment_name)
+  - '[sinh mệnh thân yêu](entertainment_name) của diễn viên [Bích Trâm](person_name)
+    nhá'
+  - cuốn? film [ma lực của thánh nữ là toàn năng](entertainment_name)
+  - tập? phim [bằng chứng thép](entertainment_name) này có không
+  - tớ xem [mến gái miền tây](entertainment_name) đây nha
+  - film [ngõ cụt](entertainment_name) đó
+  - bot cho mình xin link của film [partner for justice](entertainment_name) với
+  - cho tớ film [thấy vui](entertainment_name)
+  - film [xuân quang xán lạn trư bát giới](entertainment_name) được ko
+  - bot có link của film [ai là nữ hoàng](entertainment_name) không, gửi tớ đi
+  - tôi mún xem phim [tìm kiếm sự sống ngoài vũ trụ](entertainment_name)
+  - gửi mình film [khách sạn ánh trăng](entertainment_name)
+  - '[sống với giấc mơ](entertainment_name) của [Ngô Thanh Vân](person_name)'
+  - tập? film [cua lại vợ bầu](entertainment_name)
+  - bộ? phim [người đẹp gangnam](entertainment_name) này được ko
+  - tôi xem [văn phòng nhân đạo](entertainment_name) đây nha
+  - phim [trốn tìm](entertainment_name) nha
+  - m cho tôi xin link của film [khi ralph quậy](entertainment_name) với
+  - cho tớ phim [nghệ thuật đối phó](entertainment_name)
+  - phim [vượt qua thử thách](entertainment_name) được ko
+  - b có link của phim [khách sạn ánh trăng](entertainment_name) không, gửi tớ đi
+  - tớ muốn xem [lưu manh lên đời](entertainment_name)
+  - cho tớ film [thiên tuế đại nhân không dễ chọc](entertainment_name)
+  - '[ngõ cụt](entertainment_name) của [Cát Phượng](person_name) nha'
+  - tập? phim [một mình chống mafia](entertainment_name)
+  - tập? phim [người trong giang hồ](entertainment_name) này được ko
+  - tớ xem [nghệ thuật đối phó](entertainment_name) đây nhe
+  - phim [tình xa vạn kiếp](entertainment_name) đê
+  - ' cho mình xin link của phim [kill it](entertainment_name) với'
+  - 'cho tôi phim [one piece film: strong world](entertainment_name)'
+  - film [thế giới hôn nhân](entertainment_name) được không
+  - bot có link của phim [văn phòng nhân đạo](entertainment_name) ko, gửi mình đi
+  - tớ mún xem film [thật không thể chịu nổi](entertainment_name)
+  - đưa tớ [một mình chống mafia](entertainment_name) của [Bảo Thanh](person_name)
+  - '[ai là nữ hoàng](entertainment_name) của diễn viên [Quỳnh Nga](person_name)'
+  - bộ? film [mến gái miền tây](entertainment_name)
+  - bộ? phim [người trong giang hồ](entertainment_name) này được ko
+  - tớ xem [advenger](entertainment_name) đây nha
+  - phim [ngõ cụt](entertainment_name) đê
+  - ' cho mình xin link của film [bác sĩ vô danh](entertainment_name) với'
+  - cho tớ phim [một mình chống mafia](entertainment_name)
+  - 'film [one piece: the movie](entertainment_name) được ko'
+  - mày có link của phim [sinh mệnh thân yêu](entertainment_name) không, gửi mình
+    đi
+  - tớ mún xem [văn phòng nhân đạo](entertainment_name)
+  - '[Chiến Thắng](person_name) có phim nào về thể loại [film kiếm hiệp](entertainment_type)
+    ko'
+  - tớ muốn xem [film siêu anh hùng](entertainment_type) của [Midu](person_name)
+  - gợi ý film [phim phiêu lưu](entertainment_type) của [Hoài Lâm](person_name) đi
+  - có biết film nào của [Chí Tài](person_name) thì gửi tớ với
+  - film của diễn viên [Bảo Quốc](person_name)
+  - tớ muốn xem film của [Bảo Thanh](person_name) quá
+  - gửi link film nào của [Bảo Hân](person_name) hay đi
+  - tớ đang muốn xem phim của [Phương Anh Đào](person_name) có biết phim nào không
+  - bạn có biết film nào của [Kinh Quốc](person_name) hay ko
+  - film gì cũng được miễn là có [Jungkook (BTS)](person_name) là được
+  - gợi ý mình mấy bộ phim của [Diễm My](person_name) hay hay được không
+  - có biết phim nào của [Hoàng Anh](person_name) hay không gợi ý tớ với
+  - gợi ý cho tôi vài film của [Ribi Sachi](person_name) đi
+  - '[Ribi Sachi](person_name) có phim nào về thể loại [phim lịch sử](entertainment_type)
+    không'
+  - tớ mún xem [phim HQ](entertainment_type) của [Cao Thái Hà](person_name)
+  - gợi ý film [film kinh điển](entertainment_type) của [Ngô Thanh Vân](person_name)
+    đi
+  - có biết film nào của [Cát Phượng](person_name) thì gửi tôi với
+  - film của [Thanh Hương](person_name) nhé
+  - tớ mún xem film của [Cát Phượng](person_name)
+  - gửi link phim nào của [Kaity Nguyễn](person_name) hay đi
+  - tớ đang mún xem phim của [Phương Oanh](person_name) có bít phim nào ko
+  - mày có bít film nào của [Hà Tăng](person_name) hay không
+  - film nào cũng được miễn là có [Lee Hyori](person_name) là được
+  - gợi ý mình mấy bộ film của [Ninh Dương Lan Ngọc](person_name) hay hay được không
+  - có biết film nào của [Trang Hý](person_name) hay không gợi ý tớ với
+  - gợi ý cho mình vài phim của [Phương Anh Đào](person_name) đi
+  - '[Chánh Tín](person_name) có film nào về thể loại [phim dài tập](entertainment_type)
+    không'
+  - tớ mún xem [film truyền hình](entertainment_type) của [Chi Pu](person_name)
+  - gợi ý film [film kiếm hiệp](entertainment_type) của [Quỳnh Kool](person_name)
+    đi
+  - có biết phim nào của [Kiều Oanh](person_name) thì gửi tớ với
+  - phim của [Chánh Tín](person_name) nhá
+  - tớ mún xem phim của [Kiều Oanh](person_name) thế
+  - gửi link film nào của [Hoàng Anh](person_name) hay đi
+  - tớ đang mún xem film của [Hoài Tân](person_name) có bít phim nào ko
+  - b có biết phim nào của [Tăng Thanh Hà](person_name) hay không
+  - phim nào cũng được miễn là có [Suzy](person_name) là được
+  - gợi ý mình mấy bộ film của [Hà Tăng](person_name) hay hay được ko
+  - có bít film nào của [Diễm My 9x](person_name) hay ko gợi ý tớ với
+  - gợi ý cho mình vài phim của [Bảo Thanh](person_name) đi
+  - '[Công Dũng](person_name) có film nào về thể loại [phim boy love](entertainment_type)
+    không'
+  - tớ mún xem [phim kiếm hiệp](entertainment_type) của [Kim Tuyến](person_name)
+  - gợi ý phim [film chiến tranh](entertainment_type) của [Kim Oanh](person_name)
+    đi
+  - có bít phim nào của [Phương Anh Đào](person_name) thì gửi tôi với
+  - phim của [Hoài Tân](person_name) nhé
+  - mình mún xem phim của [Đỗ Khánh Vân](person_name)
+  - gửi link film nào của [Bình An](person_name) hay đi
+  - mình đang muốn xem film của [Bích Trâm](person_name) có biết phim nào ko
+  - timi có biết film nào của [Minh Hằng](person_name) hay không
+  - film nào cũng được miễn là có [Lay (EXO)](person_name) là được
+  - gợi ý mình mấy bộ phim của [Hoài Tân](person_name) hay hay được ko
+  - có bít phim nào của [Cát Tường](person_name) hay ko gợi ý tôi với
+  - gợi ý cho tớ vài film của [Trúc Anh](person_name) đi
+  - '[Hoài Linh](person_name) có phim nào về thể loại [film hành động](entertainment_type)
+    không'
+  - mình mún xem [phim huyền thoại](entertainment_type) của [Lan Ngọc](person_name)
+  - gợi ý film [phim huyền thoại](entertainment_type) của [Bảo Thanh](person_name)
+    đi
+  - có bít film nào của [Bích Trâm](person_name) thì gửi tớ với
+  - phim của [Ngô Thanh Vân](person_name) nhé
+  - mình mún xem film của [Quỳnh Kool](person_name) thế
+  - gửi link film nào của [Ngô Thanh Vân](person_name) hay đi
+  - tớ đang muốn xem phim của [Hoài Tân](person_name) có biết phim nào ko
+  - bot có bít phim nào của [Kinh Quốc](person_name) hay không
+  - phim gì cũng được miễn là có [IU](person_name) là được
+  - gợi ý mình mấy bộ phim của [Vân Trang](person_name) hay hay được ko
+  - có biết film nào của [Jun Vũ](person_name) hay không gợi ý mình với
+  - gợi ý cho tôi vài phim của [Chi Pu](person_name) đi
+  - '[Kaity Nguyễn](person_name) có film nào về thể loại [film bê đê](entertainment_type)
+    ko'
+  - tôi muốn xem [film hài](entertainment_type) của [Cát Tường](person_name)
+  - gợi ý phim [phim hài hước viễn tưởng](entertainment_type) của [Nhã Phương](person_name)
+    đi
+  - có bít phim nào của [Cao Minh Đạt](person_name) thì gửi tôi với
+  - film của [Kiều Thanh](person_name)
+  - tôi muốn xem film của [Phương Anh Đào](person_name) quá
+  - gửi link phim nào của [Ribi Sachi](person_name) hay đi
+  - tớ đang mún xem phim của [Angela Phương Trinh](person_name) có biết phim nào không
+  - bot có bít film nào của [Ribi Sachi](person_name) hay không
+  - film nào cũng được miễn là có [Jennie (BLACKPINK)](person_name) là được
+  - gợi ý mình mấy bộ phim của [Diệu Nhi](person_name) hay hay được ko
+  - có biết phim nào của [Quỳnh Nga](person_name) hay ko gợi ý tớ với
+  - gợi ý cho tớ vài phim của [Bích Trâm](person_name) đi
+  - '[Bảo Thanh](person_name) có phim nào về thể loại [phim ngôn tình](entertainment_type)
+    ko'
+  - tôi muốn xem [film khoa học-viễn tưởng](entertainment_type) của [Cao Thái Hà](person_name)
+  - gợi ý film [film phiêu lưu](entertainment_type) của [Thanh Hương](person_name)
+    đi
+  - có biết film nào của [Chí Tài](person_name) thì gửi mình với
+  - phim của diễn viên [Kim Tuyến](person_name)
+  - tớ mún xem phim của [Hoàng Anh](person_name) thế
+  - gửi link phim nào của [Hoàng Anh](person_name) hay đi
+  - mình đang muốn xem film của [Kim Ngọc](person_name) có bít phim nào ko
+  - cậu có bít phim nào của [Kim Tuyến](person_name) hay ko
+  - film gì cũng được miễn là có [Wheein (Mamamoo)](person_name) là được
+  - gợi ý mình mấy bộ film của [Đinh Ngọc Diệp](person_name) hay hay được không
+  - có bít phim nào của [Kim Oanh](person_name) hay không gợi ý tôi với
+  - gợi ý cho tớ vài film của [Cao Thái Hà](person_name) đi
+  - '[Kiều Thanh](person_name) có film nào về thể loại [phim tài liệu](entertainment_type)
+    ko'
+  - tớ muốn xem [film khoa học](entertainment_type) của [Bích Trâm](person_name)
+  - gợi ý phim [film hoạt hình](entertainment_type) của [Kim Ngọc](person_name) đi
+  - có bít phim nào của [Kim Oanh](person_name) thì gửi tớ với
+  - film của diễn viên [Công Dũng](person_name)
+  - tôi muốn xem phim của [Nhã Phương](person_name)
+  - gửi link phim nào của [Công Lý](person_name) hay đi
+  - mình đang mún xem film của [Trang Hý](person_name) có biết phim nào không
+  - c có bít phim nào của [Kim Tuyến](person_name) hay ko
+  - phim nào cũng được miễn là có [Yuta (NCT)](person_name) là được
+  - gợi ý mình mấy bộ phim của [Lan Ngọc](person_name) hay hay được không
+  - có bít phim nào của [Kim Ngọc](person_name) hay ko gợi ý tớ với
+  - gợi ý cho tôi vài film của [Công Dũng](person_name) đi
+  - '[Quỳnh Nga](person_name) có film nào về thể loại [film truyền hình](entertainment_type)
+    không'
+  - tớ muốn xem [film lãng mạn](entertainment_type) của [Hoài Tân](person_name)
+  - gợi ý phim [phim hoạt hình](entertainment_type) của [Diệu Nhi](person_name) đi
+  - có biết film nào của [Ngô Thanh Vân](person_name) thì gửi tớ với
+  - phim của [Hà Tăng](person_name) nhá
+  - tôi muốn xem film của [Hà Tăng](person_name) thế
+  - gửi link phim nào của [Jun Vũ](person_name) hay đi
+  - tớ đang mún xem phim của [Trúc Anh](person_name) có biết phim nào không
+  - mi có biết film nào của [Kim Ngọc](person_name) hay ko
+  - phim gì cũng được miễn là có [Rosé (BLACKPINK)](person_name) là được
+  - gợi ý mình mấy bộ film của [Khả Ngân](person_name) hay hay được không
+  - có bít film nào của [Chí Trung](person_name) hay ko gợi ý mình với
+  - gợi ý cho tớ vài film của [Quỳnh Nga](person_name) đi
+  - '[Thu Quỳnh](person_name) có phim nào về thể loại [film boy love](entertainment_type)
+    ko'
+  - tớ mún xem [film huyền thoại](entertainment_type) của [Hoàng Dũng](person_name)
+  - gợi ý phim [phim boy love](entertainment_type) của [Kim Xuân](person_name) đi
+  - có biết film nào của [Diễm My](person_name) thì gửi mình với
+  - phim của diễn viên [Vân Trang](person_name)
+  - tôi mún xem phim của [Cát Tường](person_name) quá
+  - gửi link film nào của [Jun Vũ](person_name) hay đi
+  - mình đang mún xem film của [Kiều Oanh](person_name) có biết phim nào không
+  - bot có bít phim nào của [Midu](person_name) hay không
+  - phim gì cũng được miễn là có [Jungwoo (NCT)](person_name) là được
+  - gợi ý mình mấy bộ phim của [Công Lý](person_name) hay hay được ko
+  - có biết phim nào của [Chánh Tín](person_name) hay không gợi ý tớ với
+  - gợi ý cho tớ vài film của [Bảo Thanh](person_name) đi
+  - '[Hoàng Anh](person_name) có phim nào về thể loại [film boy love](entertainment_type)
+    ko'
+  - tôi muốn xem [film hài hước](entertainment_type) của [Hoài Tân](person_name)
+  - gợi ý phim [film phiêu lưu](entertainment_type) của [Khả Ngân](person_name) đi
+  - có biết film nào của [Bảo Hân](person_name) thì gửi tớ với
+  - film của diễn viên [Thanh Hương](person_name)
+  - tôi mún xem phim của [Kiều Oanh](person_name) quá
+  - gửi link film nào của [Kiều Thanh](person_name) hay đi
+  - tôi đang mún xem phim của [Tăng Thanh Hà](person_name) có biết phim nào không
+  - timi có bít phim nào của [Hoài Lâm](person_name) hay không
+  - phim gì cũng được miễn là có [Taeyang (Big Bang)](person_name) là được
+  - gợi ý mình mấy bộ phim của [Kim Xuân](person_name) hay hay được ko
+  - có bít phim nào của [Chí Tài](person_name) hay không gợi ý tớ với
+  - gợi ý cho tôi vài phim của [Diệu Nhi](person_name) đi
+  - '[Hoài Lâm](person_name) có film nào về thể loại [phim boy love](entertainment_type)
+    ko'
+  - mình muốn xem [film hài hước](entertainment_type) của [Cát Phượng](person_name)
+  - gợi ý phim [phim kinh điển](entertainment_type) của [Vân Trang](person_name) đi
+  - có biết film nào của [Trang Hý](person_name) thì gửi tớ với
+  - film của diễn viên [Jun Vũ](person_name)
+  - tớ muốn xem film của [Thảo Tâm](person_name)
+  - gửi link film nào của [Cát Tường](person_name) hay đi
+  - tớ đang mún xem phim của [Cát Tường](person_name) có bít phim nào ko
+  - timi có bít film nào của [Ribi Sachi](person_name) hay ko
+  - film nào cũng được miễn là có [Jeongyeon](person_name) là được
+  - gợi ý mình mấy bộ film của [Thảo Tâm](person_name) hay hay được ko
+  - có bít phim nào của [Ribi Sachi](person_name) hay ko gợi ý mình với
+  - gợi ý cho tôi vài phim của [Cát Phượng](person_name) đi
+  - '[Chánh Tín](person_name) có film nào về thể loại [film hoạt hình anime](entertainment_type)
+    ko'
+  - mình muốn xem [TV Show](entertainment_type) của [Chi Pu](person_name)
+  - gợi ý phim [phim Thái](entertainment_type) của [Kinh Quốc](person_name) đi
+  - có biết film nào của [Phương Oanh](person_name) thì gửi tôi với
+  - film của diễn viên [Quỳnh Kool](person_name) nha
+  - tớ muốn xem phim của [Midu](person_name)
+  - gửi link phim nào của [Thu Quỳnh](person_name) hay đi
+  - mình đang muốn xem film của [Vân Trang](person_name) có biết phim nào ko
+  - timi có biết phim nào của [Đỗ Khánh Vân](person_name) hay ko
+  - phim gì cũng được miễn là có [Sulli](person_name) là được
+  - gợi ý mình mấy bộ film của [Nhã Phương](person_name) hay hay được ko
+  - có bít film nào của [Hà Tăng](person_name) hay ko gợi ý tớ với
+  - gợi ý cho mình vài phim của [Kiều Thanh](person_name) đi
+  - '[Bình An](person_name) có phim nào về thể loại [film hồng kông](entertainment_type)
+    không'
+  - mình mún xem [film cổ trang](entertainment_type) của [Hoàng Anh](person_name)
+  - gợi ý film [phim chiến tranh](entertainment_type) của [Cao Thái Hà](person_name)
+    đi
+  - có bít film nào của [Bảo Hân](person_name) thì gửi mình với
+  - film của diễn viên [Trúc Anh](person_name) nhá
+  - tôi mún xem phim của [Phương Oanh](person_name)
+  - gửi link film nào của [Hoài Linh](person_name) hay đi
+  - tớ đang mún xem phim của [Đào Phương Anh](person_name) có biết phim nào không
+  - b có biết phim nào của [Thảo Tâm](person_name) hay ko
+  - phim nào cũng được miễn là có [Sulli](person_name) là được
+  - gợi ý mình mấy bộ phim của [Chí Trung](person_name) hay hay được ko
+  - có biết phim nào của [Hoàng Anh](person_name) hay ko gợi ý tớ với
+  - gợi ý cho mình vài film của [Hà Tăng](person_name) đi
+  - '[Kinh Quốc](person_name) có phim nào về thể loại [phim võ thuật](entertainment_type)
+    không'
+  - tớ mún xem [film thần thoại](entertainment_type) của [Bích Trâm](person_name)
+  - gợi ý film [film giật gân](entertainment_type) của [Hoài Lâm](person_name) đi
+  - có biết phim nào của [Đào Phương Anh](person_name) thì gửi tớ với
+  - phim của [Hoài Linh](person_name) nha
+  - tớ mún xem phim của [Trúc Anh](person_name) quá
+  - gửi link film nào của [Kim Khánh](person_name) hay đi
+  - tớ đang mún xem phim của [Kim Khánh](person_name) có biết phim nào không
+  - bot có bít phim nào của [Ninh Dương Lan Ngọc](person_name) hay ko
+  - film gì cũng được miễn là có [IU](person_name) là được
+  - gợi ý mình mấy bộ film của [Tăng Thanh Hà](person_name) hay hay được không
+  - có biết film nào của [Cao Minh Đạt](person_name) hay ko gợi ý tôi với
+  - gợi ý cho mình vài film của [Cao Minh Đạt](person_name) đi
+  - '[Bảo Hân](person_name) có film nào về thể loại [film khoa học-viễn tưởng](entertainment_type)
+    không'
+  - tôi muốn xem [film ngôn tình](entertainment_type) của [Chí Thiện](person_name)
+  - gợi ý phim [phim 3d](entertainment_type) của [Kaity Nguyễn](person_name) đi
+  - có biết film nào của [Quỳnh Kool](person_name) thì gửi tớ với
+  - film của diễn viên [Quỳnh Nga](person_name)
+  - tớ mún xem phim của [Nhã Phương](person_name) thế
+  - gửi link phim nào của [Chí Thiện](person_name) hay đi
+  - tớ đang mún xem phim của [Quỳnh Nga](person_name) có biết phim nào ko
+  - mày có biết film nào của [Kim Oanh](person_name) hay không
+  - film nào cũng được miễn là có [Kang Daniel](person_name) là được
+  - gợi ý mình mấy bộ phim của [Cao Thái Hà](person_name) hay hay được không
+  - có bít phim nào của [Chí Trung](person_name) hay ko gợi ý tôi với
+  - gợi ý cho tôi vài phim của [Lan Ngọc](person_name) đi
+  - '[Diễm My](person_name) có film nào về thể loại [phim american](entertainment_type)
+    ko'
+  - tớ mún xem [phim thần thoại](entertainment_type) của [Đỗ Khánh Vân](person_name)
+  - gợi ý film [film truyền hình](entertainment_type) của [Đỗ Khánh Vân](person_name)
+    đi
+  - có biết phim nào của [Hoàng Anh](person_name) thì gửi mình với
+  - phim của diễn viên [Khả Ngân](person_name) nhá
+  - tớ muốn xem film của [Kaity Nguyễn](person_name)
+  - gửi link film nào của [Thanh Hương](person_name) hay đi
+  - mình đang mún xem phim của [Kiều Thanh](person_name) có bít phim nào ko
+  - m có biết phim nào của [Diệu Nhi](person_name) hay không
+  - film gì cũng được miễn là có [D.O. (EXO)](person_name) là được
+  - gợi ý mình mấy bộ film của [Quỳnh Nga](person_name) hay hay được không
+  - có bít film nào của [Chiến Thắng](person_name) hay ko gợi ý mình với
+  - gợi ý cho mình vài phim của [Angela Phương Trinh](person_name) đi
+  - '[Đỗ Khánh Vân](person_name) có phim nào về thể loại [phim phép thuật](entertainment_type)
+    ko'
+  - tớ mún xem [phim hài](entertainment_type) của [Hoài Tân](person_name)
+  - gợi ý phim [hài hước](entertainment_type) của [Kim Oanh](person_name) đi
+  - có bít film nào của [Đỗ Khánh Vân](person_name) thì gửi mình với
+  - phim của diễn viên [Công Lý](person_name)
+  - tôi muốn xem phim của [Bảo Thanh](person_name)
+  - gửi link film nào của [Minh Hằng](person_name) hay đi
+  - tớ đang mún xem film của [Bảo Thanh](person_name) có biết phim nào ko
+  - bot có bít phim nào của [Cát Tường](person_name) hay ko
+  - film gì cũng được miễn là có [Hyoyeon (SNSD)](person_name) là được
+  - gợi ý mình mấy bộ film của [Ngô Thanh Vân](person_name) hay hay được ko
+  - có biết film nào của [Jun Vũ](person_name) hay ko gợi ý tớ với
+  - gợi ý cho tôi vài phim của [Hoàng Dũng](person_name) đi
+  - '[Nhã Phương](person_name) có film nào về thể loại [phim kinh dị-ma](entertainment_type)
+    không'
+  - mình muốn xem [film huyền thoại](entertainment_type) của [Kaity Nguyễn](person_name)
+  - gợi ý film [phim phép thuật](entertainment_type) của [Tăng Thanh Hà](person_name)
+    đi
+  - có bít phim nào của [Minh Hằng](person_name) thì gửi tớ với
+  - film của diễn viên [Chi Pu](person_name) nha
+  - tớ mún xem film của [Kim Oanh](person_name) thế
+  - gửi link film nào của [Kim Oanh](person_name) hay đi
+  - tớ đang muốn xem phim của [Minh Hằng](person_name) có bít phim nào không
+  - cậu có biết phim nào của [Lan Ngọc](person_name) hay không
+  - phim nào cũng được miễn là có [Ten](person_name) là được
+  - gợi ý mình mấy bộ film của [Trúc Anh](person_name) hay hay được ko
+  - có biết phim nào của [Cao Thái Hà](person_name) hay ko gợi ý tôi với
+  - gợi ý cho mình vài film của [Kim Ngọc](person_name) đi
+  - '[Ribi Sachi](person_name) có phim nào về thể loại [film tội phạm](entertainment_type)
+    không'
+  - tớ muốn xem [phim hành động](entertainment_type) của [Chiến Thắng](person_name)
+  - gợi ý film [phim kinh điển](entertainment_type) của [Chi Pu](person_name) đi
+  - gửi nhạc mình với cậu ơi
+  - biết bài nào hay không chú em, gửi mình đi được ko
+  - muốn nghe nhạc quá đi
+  - xin link nhạc đi m
+  - gửi nhạc mình với bot ơi
+  - biết bài nào hay không bạn, gửi mình đi được ko
+  - mún nghe nhạc quá đi
+  - xin link nhạc đi em
+  - gửi nhạc mình với c ơi
+  - biết bài nào hay ko timi, gửi tớ đi được ko
+  - biết sing ko bot
+  - bot có biết hát ko
+  - can you sing a song
+  - bot cho hỏi bot có biết hát không
+  - sing nghe coi
+  - bot bạn hát như thế nào
+  - hát 1 bài đi
+  - ' hát được ko'
+  - bot hát bài nghe chơi
+  - hát một bài nghe nào bot
+  - tớ mún nghe hát dữ?
+  - biết sing không
+  - b có biết hát ko
+  - b cho hỏi bot có biết hát ko
+  - hát nghe coi
+  - ' bạn hát như thế nào'
+  - sing 1 bài đi
+  - ' sing được không'
+  - c hát bài nghe chơi
+  - sing một bài nghe nào
+  - tao mún nghe hát quá trời?
+  - biết sing ko
+  - b có biết hát không
+  - timi cho hỏi timi có biết hát ko
+  - ' bạn hát thế nào'
+  - bot hát được không
+  - ' hát bài nghe chơi nào'
+  - hát một bài nghe nào
+  - tao muốn nghe nhạc dữ?
+  - biết hát không mày
+  - bot có biết hát không
+  - ' cho hỏi bot có biết hát ko'
+  - ' bạn hát như nào'
+  - ' hát được không'
+  - timi hát bài nghe chơi
+  - hát một bài nghe nào timi
+  - mẹ mày mún nghe hát quá?
+  - biết hát ko
+  - chú em có biết hát ko
+  - ' cho hỏi bot có biết hát không'
+  - timi bạn hát thế nào
+  - timi sing được không
+  - ' hát bài nghe chơi'
+  - hát một bài nghe nào em
+  - mẹ mày muốn nghe hát quá?
+  - biết hát không cậu
+  - b có biết hát
+  - ' cho hỏi chú em có biết hát không'
+  - timi bạn hát như nào
+  - bot sing được ko
+  - b hát bài nghe chơi gì
+  - hát một bài nghe nào m
+  - bố mày muốn nghe nhạc dữ?
+  - biết hát không mi
+  - timi có biết hát
+  - timi cho hỏi b có biết hát không
+  - c bạn hát thế nào
+  - timi hát được ko
+  - b hát bài nghe chơi
+  - sing một bài nghe nào bot
+  - tao mún nghe hát quá?
+  - biết hát ko c
+  - chú em có biết hát
+  - c cho hỏi mầy có biết hát ko
+  - bot bạn hát ntn
+  - timi hát được không
+  - ' hát bài nghe chơi gì'
+  - hát một bài nghe nào mi
+  - tớ muốn nghe hát quá?
+  - biết hát không
+  - timi có biết hát không
+  - bot cho hỏi b có biết hát ko
+  - ' bạn hát ntn'
+  - ' sing được ko'
+  - bạn hát bài nghe chơi nào
+  - Trong năm 2022 có ca nhạc nổi trội ko
+  - top bài hát ấn tượng nhất năm timi biết ko
+  - cho top youtube bài hát nào
+  - bài hát nổi bật gợi ý cho mình đi
+  - ' gợi ý hộ tôi bài nào mới mẻ đi'
+  - c biết ca nhạc nào nổi bật ko gợi ý mình với
+  - bot có ca khúc nào nổi bật không
+  - ' biết bài hát nào nổi trội nhất năm'
+  - ' cho tôi xin social top bài'
+  - link ca khúc nổi bật trong năm 2022 là
+  - timi cho mình link bài hát đặc sắc trong năm 2022
+  - có ca nhạc nào đang nổi trên thị trường không
+  - youtube top ca khúc đi mầy
+  - c có biết link những ca nhạc đặc sắc
+  - timi cho tớ link top bài hát hay
+  - có ca khúc nào mới ko
+  - dạo này có bài hát nào nổi trội ko
+  - ' có biết top ca khúc đặc sắc nhất năm'
+  - Trong năm nay có ca khúc đáng chú ý
+  - top ca nhạc nổi trội nhất năm b biết không
+  - cho top link ca khúc gì
+  - ca nhạc đáng chú ý gợi ý cho tớ đi
+  - ' gợi ý hộ tớ ca khúc nào nổi bật đi'
+  - timi biết bài hát nào đặc sắc ko gợi ý mình với
+  - chú em có bài nào ấn tượng ko
+  - ' biết bài nào nổi trội nhất quý'
+  - ' cho xin link top ca nhạc'
+  - link ca khúc đáng chú ý trong năm 2022 là
+  - bot cho tôi link bài hát đáng chú ý trong năm 2021
+  - có bài hát nào đang nổi trên thị trường
+  - link top ca nhạc đi
+  - ' có biết link những ca khúc ấn tượng ko'
+  - em cho tớ link top ca nhạc nổi bật nhất năm
+  - có bài hát nào mới không
+  - dạo này có bài hát nào mới mẻ ko giới thiệu mình với
+  - c có biết top ca nhạc đáng chú ý nhất năm ko
+  - Trong năm nay có bài hát nổi trội
+  - top ca nhạc đáng chú ý nhất năm biết không
+  - cho top social ca nhạc nào
+  - bài ấn tượng gợi ý cho tớ đi
+  - bot gợi ý hộ tớ bài hát nào đặc sắc đi
+  - ' biết ca khúc nào nổi trội ko'
+  - ' có ca khúc nào nổi bật ko'
+  - ' biết ca nhạc nào nổi bật nhất tuần'
+  - ' cho tớ xin link top bài'
+  - link bài đáng chú ý trong năm nay là
+  - timi cho tôi link bài hát nổi trội trong năm 2021
+  - có ca nhạc nào đang nổi trên thị trường
+  - link top ca nhạc đi timi
+  - ' có biết link những ca khúc đáng chú ý ko'
+  - ' cho tớ link top ca nhạc ấn tượng'
+  - có ca nhạc nào mới
+  - dạo này có bài nào hot ko recommend mình với
+  - ' có biết top bài hát ấn tượng nhất năm'
+  - Trong năm nay có ca nhạc nổi bật không
+  - top ca khúc đáng chú ý nhất năm mày biết ko
+  - cho top link bài nào
+  - ca nhạc ấn tượng em gợi ý cho tớ đi
+  - ' gợi ý hộ tớ ca khúc nào nổi trội đi'
+  - ' biết ca khúc nào nổi trội ko gợi ý mình với'
+  - ' có ca khúc nào hay ko'
+  - mày biết ca khúc nào đặc sắc nhất quý
+  - ' cho tôi xin youtube top bài hát'
+  - link ca nhạc đáng chú ý trong năm nay là
+  - mầy cho tớ link bài hát nổi trội trong năm nay
+  - có bài hát nào nổi trên thị trường
+  - social top bài đi
+  - bot có biết link những bài nổi trội
+  - ' cho tôi link top ca khúc ấn tượng nhất năm'
+  - có ca khúc nào mới
+  - dạo này có bài nào đặc sắc ko gợi ý mình với
+  - bot có biết top bài ấn tượng nhất năm không
+  - Trong năm nay có ca khúc đặc sắc ko
+  - top bài hát nổi trội nhất năm biết ko
+  - cho top youtube bài nào
+  - ca khúc đáng chú ý bot gợi ý cho tớ đi
+  - c gợi ý hộ mình bài nào đặc sắc đi
+  - cậu biết ca nhạc nào hot ko
+  - bot có bài nào đáng chú ý không
+  - bot biết bài nào hay nhất tuần
+  - c cho tớ xin link top bài
+  - link bài nổi bật trong năm nay là nào
+  - timi cho mình link ca khúc đặc sắc trong năm nay
+  - có bài nào nổi trên thị trường không
+  - youtube top ca nhạc đi
+  - ' có biết link những ca nhạc nổi bật không'
+  - timi cho mình link top ca nhạc đặc sắc
+  - có ca nhạc nào mới không
+  - dạo này có bài nào nổi bật ko gợi ý mình với
+  - m có biết top bài hát nổi bật nhất năm ko
+  - Trong năm 2021 có ca nhạc đáng chú ý ko
+  - top ca khúc ấn tượng nhất năm em biết không
+  - cho top link bài hát nào
+  - bài nổi trội gợi ý cho tôi đi
+  - ' gợi ý hộ tôi bài nào nổi bật đi'
+  - c biết bài nào nổi không
+  - ' có bài nào hay không'
+  - ' biết ca nhạc nào hay nhất năm'
+  - chú em cho tôi xin link top bài
+  - link ca nhạc đáng chú ý trong năm 2022 là gì
+  - đang chia tay người yêu recommend bài hát xoa dịu tôi đi
+  - ' bật bài đi buồn quá'
+  - đang tập trung, gợi ý ca khúc nghe chơi
+  - tớ đang tập trung, bot gợi ý ca khúc nào phù hợp tâm trạng đi
+  - buồn quá thì nghe gì bây giờ nhể?
+  - tớ cần tập trung, timi mở bài hát nghe với
+  - tớ đang vui có ca khúc nào hot không gợi ý mình với
+  - có ca khúc nào chú em muốn gợi ý
+  - tâm trạng quá em có nào nghe cho tự tin ko đó?
+  - đang chia tay người yêu mở ca nhạc xoa dịu mình đi
+  - bạn recommend bài đi cô đơn quá
+  - đang thất tình, recommend ca khúc nghe chơi
+  - mình đang buồn, c mở bài nào phù hợp tâm trạng đi
+  - vừa bị bồ bỏ thì nghe nào bây giờ nhỉ?
+  - tớ cần tập trung, recommend bài hát nghe
+  - tớ đang buồn có ca khúc nào nổi trội ko gợi ý mình với
+  - có bài hát nào em mún gợi ý ko
+  - bực mình quá b có gì nghe cho hạ hỏa ko đó?
+  - đang chia tay người yêu bot bật ca khúc xoa dịu tớ đi
+  - em mở bài hát đi buồn quá
+  - đang cảm xúc ko tốt, gợi ý ca khúc nghe chơi
+  - mình đang không vui, bật ca nhạc nào phù hợp tâm trạng đi
+  - trời ưi vừa bị bồ bỏ thì nghe gì bây giờ nhỉ?
+  - mình cần tập trung, chú em gợi ý bài hát nghe với
+  - tớ đang thất tình có bài nào đặc sắc không gợi ý mình với
+  - có ca nhạc nào timi mún gợi ý ko
+  - căng thẳng quá c có gì nghe cho xoa dịu ko đó?
+  - đang chia tay người yêu gợi ý bài xoa dịu mình đi
+  - ' recommend bài đi mệt mỏi quá'
+  - đang thất tình, recommend bài hát nghe chơi
+  - mình đang thất tình, bot recommend ca nhạc nào phù hợp tâm trạng đi
+  - buồn quá thì nghe nào bây giờ ha?
+  - mình cần tập trung, mày mở bài hát nghe
+  - mình đang vui có ca khúc nào hot không
+  - có ca khúc nào timi mún gợi ý
+  - vừa bị bồ bỏ cậu có gì nghe cho tự tin ko đó?
+  - đang chia tay người yêu bật ca khúc xoa dịu tôi đi
+  - bot recommend ca khúc đi mệt quá
+  - đang mệt, mở bài hát nghe chơi
+  - tôi đang cô đơn, mở bài nào phù hợp tâm trạng đi
+  - vừa bị bồ bỏ thì nghe nào bây giờ ha?
+  - mình cần tập trung, recommend ca nhạc nghe
+  - mình đang buồn có bài hát nào hot ko gợi ý mình với
+  - có bài hát nào chú em muốn gợi ý
+  - khó ngủ quá mày có nào nghe cho năng lượng không đó?
+  - đang chia tay người yêu bot bật bài xoa dịu mình đi
+  - ' mở ca nhạc đi chia tay quá'
+  - đang thất tình, gợi ý bài nghe chơi
+  - tớ đang vui, mở bài hát nào phù hợp tâm trạng tớ đi
+  - buồn quá thì nghe nào bây giờ nhở?
+  - ' tớ nghe thể loại nhạc [thiếu nhi](entertainment_type) nhé'
+  - đang mệt mỏi nên yêu thích ca khúc nhạc [latin](entertainment_type)
+  - bài nhạc thể loại [nhạc về tình yêu](entertainment_type) đi
+  - ' thích nhất là nhạc [con gái](entertainment_type) của anh [Ngô Kiến Huy](person_name)'
+  - tớ thích nhạc [nhắn nhít](entertainment_type)
+  - ' thích nghe nhất là ca nhạc nhạc [trịnh](entertainment_type)'
+  - c bật nghe nhạc [hy vọng](entertainment_type) của anh [Rhymastic](person_name)
+    nghe thử coi
+  - ' thích bài nhạc [thiền](entertainment_type)'
+  - nhạc [rock việt](entertainment_type) là thể loại tớ thích nhất
+  - tôi thích thể loại nhạc [rap việt](entertainment_type)
+  - nhạc [tình yêu](entertainment_type) là được!
+  - tâm trạng tớ vui nên muốn nghe nhạc [mua sắm](entertainment_type)
+  - ' nhạc [buổi trưa](entertainment_type) đi'
+  - ' tớ nghe thể loại nhạc [cô đơn](entertainment_type) nhé'
+  - đang ko vui nên yêu thích  nhạc [cello](entertainment_type)
+  - bản nhạc thể loại [không lời](entertainment_type) đi
+  - tớ thích nhất là nhạc [chơi game](entertainment_type) của anh [Khánh Đơn](person_name)
+  - ' nghe nhạc [utaite](entertainment_type)'
+  - ' thích nghe nhất ca khúc nhạc [bất hủ](entertainment_type)'
+  - m bật nghe bài nhạc [rock việt](entertainment_type) của ông [Hồ Ngọc Hà](person_name)
+    nghe thử coi
+  - tôi thích bản nhạc thể loại [bất hủ](entertainment_type)
+  - nhạc [bất hủ](entertainment_type) là thể loại mình thích
+  - tớ thích thể loại nhạc [mùa thu](entertainment_type)
+  - nhạc [nhật bản](entertainment_type) là được!
+  - tâm trạng chia tay nên muốn nghe nhạc [piano](entertainment_type)
+  - ca khúc nhạc [soundtrack](entertainment_type) nhá
+  - mi tớ nghe thể loại nhạc [hoa lời việt](entertainment_type) nhé
+  - đang cô đơn nên yêu thích  nhạc [buổi tối](entertainment_type)
+  - bài nhạc thể loại [nhạc hot tháng](entertainment_type) nha
+  - tớ thích nhất là bản nhạc [chạy bộ](entertainment_type) của anh [Kim Tiểu Long](person_name)
+  - ' muốn nhạc [giáng sinh](entertainment_type)'
+  - tớ thích nghe nhất là nhạc [thiền](entertainment_type)
+  - bạn hát nghe bản nhạc [ngọt ngào](entertainment_type) của ông [Duy Mạnh](person_name)
+    nghe thử coi
+  - tớ thích nhạc thể loại [nhắn nhít](entertainment_type)
+  - nhạc [mùa thu](entertainment_type) là thể loại mình thích
+  - ' thích nhạc [xế chiều](entertainment_type)'
+  - nhạc [tập gym](entertainment_type) là được!
+  - tâm trạng tớ ko tập trung nên mún nghe nhạc [trịnh](entertainment_type)
+  - bài hát nhạc [shopping](entertainment_type) nha
+  - mầy mình nghe thể loại nhạc [shopping](entertainment_type) nhé
+  - đang thất tình nên tớ thích bài hát nhạc [nhạc phim](entertainment_type)
+  - 'bài nhạc [miền bắc](entertainment_type) '
+  - tớ thích nhất là bản nhạc [spa yoga](entertainment_type) của anh [Khánh Ngọc](person_name)
+  - ' nghe nhạc [ost](entertainment_type)'
+  - ' thích nhất là bản nhạc [utaite](entertainment_type)'
+  - mầy hát nghe nhạc [hip hop](entertainment_type) của ông [Lý Hải](person_name)
+    nghe thử coi
+  - ' thích bài nhạc thể loại [opera](entertainment_type)'
+  - nhạc [R&B](entertainment_type) là thể loại mình thích nhất
+  - tôi thích ca nhạc nhạc [latin](entertainment_type)
+  - nhạc [giải thưởng âm nhạc](entertainment_type) là được!
+  - tâm trạng tôi không tập trung nên muốn nghe nhạc [remix](entertainment_type)
+  - ca khúc nhạc [bolero](entertainment_type) nha
+  - c tớ nghe thể loại nhạc [shopping](entertainment_type) nhé
+  - đang tập trung nên yêu thích  nhạc [pop ballad](entertainment_type)
+  - nhạc [bé](entertainment_type) đi
+  - ' thích nhất là nhạc [âu mỹ](entertainment_type) của anh [Tiên Tiên](person_name)'
+  - ' thích nhạc [gia đình](entertainment_type)'
+  - ' thích nhất là  nhạc [rock](entertainment_type)'
+  - mi hát nghe nhạc [gia đình](entertainment_type) của anh [Võ Kiều Vân](person_name)
+    nghe thử coi
+  - mình thích bài nhạc [US-UK](entertainment_type)
+  - nhạc [khiêu vũ](entertainment_type) là thể loại tôi thích nhất
+  - ' thích thể loại nhạc [hòa tấu](entertainment_type)'
+  - nhạc [ngọt ngào](entertainment_type) là được!
+  - tâm trạng mình cô đơn nên mún nghe nhạc [aerobic](entertainment_type)
+  - ca nhạc nhạc [nhạc về tình yêu](entertainment_type) đi
+  - em tớ nghe thể loại nhạc [nhạc eo đương](entertainment_type) nhé
+  - đang yêu nên mình thích bài hát nhạc [rạp chiếu phim](entertainment_type)
+  - bài nhạc thể loại [du lịch](entertainment_type) đi
+  - ' thích nhất là nhạc [country](entertainment_type) của anh [Madonna](person_name)'
+  - ' thích nhạc [trữ tình](entertainment_type)'
+  - tôi thích nghe nhất là bản nhạc [yên tĩnh](entertainment_type)
+  - bạn hát nghe bản nhạc [nhạc hot tháng](entertainment_type) của ông [Mỹ Linh](person_name)
+    nghe thử coi
+  - tôi thích nhạc thể loại [hẹn hò](entertainment_type)
+  - nhạc [trung](entertainment_type) là thể loại tớ thích
+  - ' thích ca nhạc nhạc [buổi tối](entertainment_type)'
+  - nhạc [hưng phấn](entertainment_type) là được!
+  - tâm trạng tôi tập trung nên muốn nghe nhạc [thất tình](entertainment_type)
+  - ' nhạc [nhắn nhít](entertainment_type) nha'
+  - ' tớ nghe thể loại nhạc [opera](entertainment_type) nhé'
+  - đang không tập trung nên mình thích ca nhạc nhạc [aerobic](entertainment_type)
+  - nhạc thể loại [hoa lời việt](entertainment_type) nha
+  - tớ thích nhất là nhạc [giao hưởng classical](entertainment_type) của anh [Hương
+    Thủy](person_name)
+  - ' nghe nhạc [spa yoga](entertainment_type)'
+  - ' thích nhất  nhạc [sân trường](entertainment_type)'
+  - ' bật nghe nhạc [tết](entertainment_type) của anh [Hồ Quang Hiếu](person_name)
+    nghe thử coi'
+  - ' thích bài nhạc [đảng](entertainment_type)'
+  - nhạc [blues/jazz](entertainment_type) là thể loại tớ thích
+  - ' thích thể loại nhạc [rap việt](entertainment_type)'
+  - nhạc [đi dạo](entertainment_type) là được!
+  - tâm trạng mệt mỏi nên mún nghe nhạc [lái xe](entertainment_type)
+  - bài hát nhạc [song ca](entertainment_type) nhé
+  - bạn tớ nghe thể loại nhạc [âu mỹ khác](entertainment_type) nhé
+  - đang mệt nên tớ thích ca khúc nhạc [nhớ nhung](entertainment_type)
+  - 'bài nhạc [hoa lời việt](entertainment_type) '
+  - tớ thích nhất là nhạc [tết](entertainment_type) của anh [Lý Hải](person_name)
+  - tớ thích nhạc [buổi trưa](entertainment_type)
+  - tớ thích nhất là bài hát nhạc [trữ tình](entertainment_type)
+  - mày hát nghe bản nhạc [trữ tình](entertainment_type) của anh [Phan Đinh Tùng](person_name)
+    nghe thử coi
+  - ' thích nhạc [bé](entertainment_type)'
+  - nhạc [yên tĩnh](entertainment_type) là thể loại tớ thích nhất
+  - gợi ý cho tớ mấy bản nhạcbài của ca sĩ [Kiwi Ngô Mai Trang](person_name) đi
+  - nhạc của [JustaTee](person_name) nhá
+  - nghe nói [Hồ Quang Hiếu](person_name) vừa ra bài hát mới, hát nghe coi
+  - mở bài của [Tố My](person_name) giúp mình giảm mệt mỏi nhé
+  - c bật ca khúc của [Thủy Top](person_name) nghe thử xem có hay
+  - ca sĩ [Michael Jackson](person_name) có bài hát nào nổi bật
+  - ' có bản nhạcca nhạc nào mới mẻ của [Hoàng Thùy Linh](person_name) ko'
+  - cho bản nhạc của ca sĩ [Khánh Linh](person_name)
+  - '[Hương Giang](person_name) có nhạc nào hay ko'
+  - '[Phan Mạnh Quỳnh](person_name) đang có ca khúc nào hot vậy'
+  - ' đang thất tình mở bài hát của [Bing Crosby](person_name) đi'
+  - gợi ý mình nhạc của [Rhymastic](person_name) với
+  - mún nghe nhạc của [Như Ý](person_name)
+  - gợi ý cho tôi mấy nhạc của ca sĩ [Queen Latifah](person_name) đi
+  - bản nhạc của [Hà Anh Tuấn](person_name) nhé
+  - nghe nói [Mai Phương](person_name) vừa ra ca khúc mới, timi bật nghe coi
+  - mở bài hát của [Lê Cát Trọng Lý](person_name) giúp mình giảm mệt mỏi nhé
+  - ' hát bài của [Kiều Loan](person_name) nghe thử xem có hay'
+  - ca sĩ [Bruce Springsteen](person_name) có bài hát nào đặc sắc không
+  - bot có bản nhạc nào mới mẻ của [Đan Trường](person_name) ko
+  - cho bài hát của ca sĩ [Vũ Hà](person_name)
+  - '[Quỳnh Nga](person_name) có bài hát nào hay ko'
+  - '[Eminem](person_name) đang có bản nhạc nào mới vậy'
+  - tớ đang cảm xúc không tốt mở bài của [Khánh Ngọc](person_name) đi cậu
+  - bật mình bản nhạc của [Hồ Ngọc Hà](person_name) với
+  - muốn nghe bài nhạc của [Bruce Springsteen](person_name)
+  - gợi ý cho tớ mấy nhạcbài hát của ca sĩ [Đan Trường](person_name) đi
+  - bài của [Xuân Mai](person_name) nha
+  - nghe nói [Hương Giang](person_name) vừa ra ca nhạc mới, chú em mở nghe coi
+  - mở ca nhạc của [Ed Sheeran](person_name) giúp mình giảm mệt mỏi nhé
+  - m mở bài của [Xuân Mai](person_name) nghe thử xem có hay ko
+  - ca sĩ [Selena Gomez](person_name) có bài hát nào mới mẻ ko
+  - ' có bản nhạc nào nổi bật của [Bruno Mars](person_name) ko'
+  - cho bài hát của ca sĩ [Phạm Trưởng](person_name)
+  - '[Billy Joel](person_name) có ca khúc nào hay ko'
+  - '[Tóc Tiên](person_name) đang có bài nào mới vậy'
+  - tôi đang mệt mỏi mở ca nhạc của [Tony Việt](person_name) đi bot
+  - bật mình nhạc của [Erik](person_name) với
+  - mún nghe bài của [Mai Phương](person_name)
+  - gợi ý cho tớ mấy nhạcbài của ca sĩ [Kurt Cobain](person_name) đi
+  - bài nhạc của [Vũ Hà](person_name) nhé
+  - nghe nói [Bảo Thy](person_name) vừa ra ca khúc mới, hát nghe coi
+  - mở ca khúc của [Phương Vy](person_name) giúp mình bớt stress nhé
+  - timi mở ca khúc của [Hoàng Châu](person_name) nghe thử xem có hay
+  - ca sĩ [Trúc Nhân](person_name) có bài hát nào đặc sắc
+  - ' có bài nhạc nào mới mẻ của [Taylor Swift](person_name) không gợi ý mình với'
+  - cho bản nhạc của ca sĩ [Hạ Vy](person_name)
+  - '[Min](person_name) có bản nhạc nào hay không'
+  - '[Cẩm Ly](person_name) đang có ca khúc nào hot vậy'
+  - ' đang vui mở ca nhạc của [Đàm Vĩnh Hưng](person_name) đi bot'
+  - gợi ý mình bản nhạc của [Selena Gomez](person_name) với
+  - muốn nghe nhạc của [Min](person_name)
+  - gợi ý cho tớ mấy bài nhạcca nhạc của ca sĩ [Kurt Cobain](person_name) đi
+  - bài hát của [Ưng Đại Vệ](person_name) nhé
+  - nghe nói [Cao Thái Sơn](person_name) vừa ra bài mới, m bật nghe coi
+  - mở bài hát của [Lê Thiện Hiếu](person_name) giúp mình giảm mệt mỏi nhé
+  - ' mở bài của [Quang Anh](person_name) nghe thử xem có hay'
+  - ca sĩ [Lệ Quyên](person_name) có bài hát nào đặc sắc ko
+  - ' có bản nhạcca khúc nào hot của [Cao Thái Sơn](person_name) không gợi ý mình
+    với'
+  - cho ca khúc của ca sĩ [Ngô Kiến Huy](person_name)
+  - '[Mỹ Linh](person_name) có nhạc nào hay không'
+  - '[Queen Latifah](person_name) đang có nhạc nào hot vậy'
+  - ' đang tập trung mở bài hát của [Phi Nhung](person_name) đi bot'
+  - bật mình bài nhạc của [Bằng Kiều](person_name) với
+  - muốn nghe ca khúc của [Justin Randall Timberlake](person_name)
+  - gợi ý cho tôi mấy bản nhạcca khúc của ca sĩ [Quốc Thiên](person_name) đi
+  - ca khúc của [Hoài Lâm](person_name) nhá
+  - nghe nói [Chí Thiện](person_name) vừa ra ca nhạc mới, bot mở nghe coi
+  - mở bài hát của [Wanbi Tuấn Anh](person_name) giúp mình bớt mệt mỏi nhé
+  - bot bật bài của [Hương Tràm](person_name) nghe thử xem có hay không
+  - ca sĩ [Lâm Khánh Chi](person_name) có bài hát nào nổi
+  - ' có bản nhạcca nhạc nào nổi của [Hari Won](person_name) ko'
+  - cho bài nhạc của ca sĩ [Lưu Hương Giang](person_name)
+  - '[Kim Tiểu Long](person_name) có ca nhạc nào hay ko'
+  - '[Hòa Minzy](person_name) đang có ca nhạc nào hot vậy'
+  - ' đang buồn mở bài của [Phan Mạnh Quỳnh](person_name) đi c'
+  - gợi ý mình bài nhạc của [Queen Latifah](person_name) với
+  - mún nghe bài hát của [Đoan Trang](person_name)
+  - gợi ý cho mình mấy bài nhạc của ca sĩ [Travis Scott](person_name) đi
+  - ca khúc của [Châu Gia Kiệt](person_name) nhé
+  - nghe nói [Hoàng Quyên](person_name) vừa ra ca nhạc mới, hát nghe coi
+  - mở ca nhạc của [Phương Vy](person_name) giúp mình bớt mệt mỏi nhé
+  - b mở ca nhạc của [Quách Thành Danh](person_name) nghe thử xem có hay không
+  - ca sĩ [Hạ Vy](person_name) có bài hát nào nổi
+  - timi có nhạc nào nổi trội của [Đan Trường](person_name) ko gợi ý mình với
+  - cho ca nhạc của ca sĩ [Minh Vương](person_name)
+  - '[Châu Đăng Khoa](person_name) có ca nhạc nào hay ko'
+  - '[Saka Trương Tuyền](person_name) đang có bài nào hot vậy'
+  - ' đang thất tình mở bài của [Khởi My](person_name) đi'
+  - gợi ý mình bản nhạc của [Quốc Thiên](person_name) với
+  - muốn nghe bản nhạc của [Quang Anh](person_name)
+  - gợi ý cho tớ mấy bài nhạcbài của ca sĩ [Lê Uyên Nhi](person_name) đi
+  - bản nhạc của [Khởi My](person_name) nha
+  - nghe nói [Kyo York](person_name) vừa ra ca khúc mới, mở nghe coi
+  - mở ca nhạc của [Nhật Kim Anh](person_name) giúp mình bớt stress nhé
+  - ' mở bài hát của [Hoàng Thùy Linh](person_name) nghe thử xem có hay'
+  - ca sĩ [Tố My](person_name) có bài hát nào nổi bật
+  - b có bài nhạc nào nổi bật của [Celine Dion](person_name) không gợi ý mình với
+  - cho bản nhạc của ca sĩ [Madonna](person_name)
+  - '[Nguyễn Phi Hùng](person_name) có nhạc nào hay ko'
+  - timi có link của ca nhạc [đám cưới nha?](entertainment_name) không, gửi mình đi
+  - gợi ý mình bài [because of you](entertainment_name) của [Hari Won](person_name)
+    nha
+  - ca khúc [qua đêm nay](entertainment_name) nha
+  - ca nhạc [that's why we](entertainment_name) nha
+  - bot bật mình  [art of life](entertainment_name)
+  - ' cho tớ xin link của ca nhạc [art of life](entertainment_name) với'
+  - tôi mún nghe bài hát [giấc mơ vô thường](entertainment_name) của [Binz](person_name)
+  - link bài [chạy về khóc với anh](entertainment_name)
+  - cho tôi ca khúc [see you again](entertainment_name)
+  - ' [thói đời](entertainment_name) có ko'
+  - ' [giàu vị bạn, sang vì vợ](entertainment_name) hay đúng không'
+  - lên bài [thói đời](entertainment_name)
+  - bot có link của bài hát [art of life](entertainment_name) ko, gửi tớ đi
+  - gợi ý tớ ca nhạc [thói đời](entertainment_name) của [Nam Cường](person_name) nha
+  - ca nhạc [chú bé loắc choắc](entertainment_name) của [Minh Khang](person_name)
+    nha
+  - bài [em yêu anh](entertainment_name) nhé
+  - bạn bật mình bài nhạc [Don't let me down](entertainment_name)
+  - em cho tớ xin link của bài [i loved her first](entertainment_name) với
+  - tôi muốn nghe [em nên dừng lại](entertainment_name)
+  - đường dẫn bài [art of life](entertainment_name)
+  - cho mình bài [giàu vị bạn, sang vì vợ](entertainment_name)
+  - bài hát [chạy về khóc với anh](entertainment_name) được ko
+  - ca nhạc [nhà bao việc](entertainment_name) hay đúng ko
+  - xin bài hát [chuyện tình gió](entertainment_name) của [Lê Cát Trọng Lý](person_name)
+  - bạn có link của ca khúc [nhà bao việc](entertainment_name) không, gửi mình đi
+  - gợi ý tớ bài [giấc mơ vô thường](entertainment_name) của [Chí Thiện](person_name)
+    nhe
+  - bài hát [closer](entertainment_name) của [Hương Thủy](person_name) nha
+  - ca khúc [thói đời](entertainment_name) nhé
+  - timi bật mình bài nhạc [về bên anh](entertainment_name)
+  - bot cho tớ xin link của ca khúc [qua đêm nay](entertainment_name) với
+  - tớ muốn nghe ca khúc [qua đêm nay](entertainment_name) của [Minh Thuận](person_name)
+  - link bài [vì mẹ anh bắt chia tay](entertainment_name)
+  - cho mình ca nhạc [something just like this](entertainment_name)
+  - ' [Shape of you](entertainment_name) của [Phương Mỹ Chi](person_name) được ko'
+  - bài hát [anh yêu vội thế](entertainment_name) hay đúng không
+  - lên bài hát [art of life](entertainment_name) của [Rihanna](person_name)
+  - mi có link của bài [thương mẹ](entertainment_name) ko, gửi mình đi
+  - gợi ý tớ ca nhạc [because of you](entertainment_name) của [Chi Pu](person_name)
+  - ca nhạc [cơn bão tình yêu](entertainment_name) nha
+  - ca khúc [Don't let me down](entertainment_name) nhé
+  - bot bật mình bản nhạc [đừng vội vàng đổi thay cover](entertainment_name)
+  - ' cho tôi xin link của ca khúc [Shape of you](entertainment_name) với'
+  - tôi muốn nghe ca nhạc [giàu vị bạn, sang vì vợ](entertainment_name)
+  - link bài [giàu vị bạn, sang vì vợ](entertainment_name) của [Trúc Nhân](person_name)
+  - cho mình bài hát [Shape of you](entertainment_name)
+  - bài hát [dân chơi xóm](entertainment_name) của [Lý Hải](person_name) có ko
+  - ' [sớm nay mùa xuân](entertainment_name) hay đúng ko'
+  - lên bài [Don't let me down](entertainment_name) của [Kim Tiểu Long](person_name)
+  - bot có link của bài hát [sớm nay mùa xuân](entertainment_name) ko, gửi mình đi
+  - gợi ý mình bài [về bên anh](entertainment_name) của [Bruno Mars](person_name)
+  - ca khúc [friends](entertainment_name) nha
+  - ' [friends](entertainment_name) nha'
+  - em bật mình bài [miền đất hứa](entertainment_name)
+  - timi cho tớ xin link của ca nhạc [thương mẹ](entertainment_name) với
+  - mình muốn nghe [cơn bão tình yêu](entertainment_name) của [Phùng Ngọc Huy](person_name)
+  - link bài [em nên dừng lại](entertainment_name) của [Queen Latifah](person_name)
+  - cho tớ ca khúc [auld lang syne](entertainment_name)
+  - bài hát [rồi tới luôn](entertainment_name) có ko
+  - ca khúc [rồi tới luôn](entertainment_name) hay đúng ko
+  - lên bài [rồi tới luôn](entertainment_name) của [Mai Phương](person_name)
+  - em có link của bài hát [adventure](entertainment_name) không, gửi tớ đi
+  - gợi ý tớ bài hát [auld lang syne](entertainment_name) của [Lê Uyên Nhi](person_name)
+    nhé
+  - ca nhạc [thu cuối](entertainment_name) nha
+  - ' [em nên dừng lại](entertainment_name) nhá'
+  - bot bật mình  [anh yêu vội thế](entertainment_name)
+  - timi cho tớ xin link của bài hát [chuyện tình gió](entertainment_name) với
+  - tớ mún nghe [are you man enough](entertainment_name) của [Hương Tràm](person_name)
+  - link bài [qua đêm nay](entertainment_name)
+  - cho tôi bài [thu cuối](entertainment_name)
+  - bài [are you man enough](entertainment_name) của [Kendrick Lamar](person_name)
+    được ko
+  - ' [chạy về khóc với anh](entertainment_name) hay đúng không'
+  - xin ca khúc [đám cưới nha?](entertainment_name)
+  - b có link của bài [qua đêm nay](entertainment_name) không, gửi tớ đi
+  - gợi ý tôi bài [qua đêm nay](entertainment_name) của [Như Ý](person_name)
+  - ca nhạc [are you man enough](entertainment_name) của [Bảo Anh](person_name) nha
+  - ca nhạc [because of you](entertainment_name) nha
+  - bạn bật mình  [i loved her first](entertainment_name)
+  - ' cho mình xin link của ca khúc [that''s why we](entertainment_name) với'
+  - tớ muốn nghe [because of you](entertainment_name) của [Lil Wayne](person_name)
+  - đường dẫn bài [nhà bao việc](entertainment_name)
+  - cho tớ ca khúc [chạy về khóc với anh](entertainment_name)
+  - ' [chuyện tình gió](entertainment_name) của [Trúc Nhân](person_name) có không'
+  - bài hát [adventure](entertainment_name) hay đúng ko
+  - xin ca nhạc [friends](entertainment_name)
+  - bot có link của ca nhạc [tặng em](entertainment_name) không, gửi mình đi
+  - gợi ý tôi bài [bạn mới đến trường](entertainment_name) của [Nguyễn Phi Hùng](person_name)
+  - ca nhạc [that's why we](entertainment_name) của [Binz](person_name) nha
+  - ' [qua đêm nay](entertainment_name) nhá'
+  - c bật mình bài hát [i loved her first](entertainment_name)
+  - em cho tôi xin link của ca nhạc [anh yêu vội thế](entertainment_name) với
+  - tớ muốn nghe [Shape of you](entertainment_name)
+  - đường dẫn bài [đừng vội vàng đổi thay cover](entertainment_name)
+  - cho tớ bài [adventure](entertainment_name)
+  - bài [cơn bão tình yêu](entertainment_name) được ko
+  - ' [thương mẹ](entertainment_name) hay đúng không'
+  - lên ca nhạc [miền đất hứa](entertainment_name)
+  - timi có link của ca khúc [something just like this](entertainment_name) ko, gửi
+    tớ đi
+  - gợi ý tớ bài hát [cơn bão tình yêu](entertainment_name) của [Lê Uyên Nhi](person_name)
+    nhé
+  - ca nhạc [closer](entertainment_name) của [Minh Vương](person_name) nha
+  - ca khúc [chạy về khóc với anh](entertainment_name) nha

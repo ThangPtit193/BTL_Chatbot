@@ -1,0 +1,206 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: rule_taidiness_penalize_ask_how
+  examples:
+  - đi muộn có bị phạt ko bot
+  - quy chế xử phạt đi muộn giờ quy định thế nào
+  - cho chị hỏi về quy chế xử phạt đi muộn giờ làm của công ty
+  - công ty có những nội quy xử phạt gì khi đi làm trễ
+  - quy định xử phạt đi làm muộn của công ty như thế nào
+  - quy định xử phạt đi làm trễ là gì
+  - đi muộn sẽ ảnh hưởng như nào đến lương của nhân viên vậy
+  - đi làm trễ thì nhận sự sẽ bị thế nào
+  - nội quy xử phạt đi làm muộn của công ty như thế nào
+  - quy định xử phạt đi muộn giờ làm như thế nào
+  - đi trễ thì thành viên sẽ bị như thế nào
+  - đi làm muộn sẽ ảnh hưởng như nào đến lương của nhận sự vậy hả
+  - công ty có những rule xử phạt gì khi đi làm trễ
+  - nếu mình đi làm muộn thì sẽ bị phạt như thế nào
+  - quy chế xử phạt đi làm muộn là gì
+  - nếu tôi đi làm muộn thì sẽ bị phạt thế nào
+  - công ty có những quy chế xử phạt gì khi đi trễ
+  - quy chế xử phạt đi muộn của công ty như thế nào
+  - quy chế xử phạt khi đi muộn như thế nào
+  - cho chị hỏi về rule xử phạt đi trễ của công ty
+  - đi trễ thì người sẽ bị như nào
+  - về đi làm trễ thì công ty có những nội quy xử phạt thế nào
+  - cho anh hỏi về nội quy xử phạt đi muộn giờ quy định của công ty
+  - quy chế xử phạt đi làm muộn thế nào
+  - nhân viên đi làm trễ bị phạt gì ko
+  - về đi muộn giờ quy định thì công ty có những nội quy xử phạt thế nào
+  - công ty sẽ phạt gì khi đi làm muộn
+  - nếu mình đi muộn giờ quy định thì sẽ bị phạt như nào
+  - rule xử phạt đi muộn như thế nào
+  - đi trễ bị phạt như thế nào
+  - đi làm trễ có bị phạt ko cậu
+  - công ty có những quy chế xử phạt gì khi đi muộn
+  - đi muộn bị phạt thế nào hả
+  - đi muộn sẽ ảnh hưởng như thế nào đến lương của nhân viên vậy
+  - đi làm muộn có bị phạt ko m
+  - thành viên đi làm muộn bị phạt gì không
+  - mình đi muộn giờ làm có bị phạt ko
+  - nếu mình đi muộn giờ làm thì sẽ bị phạt thế nào
+  - nếu tớ đi trễ thì sẽ bị phạt như nào
+  - nhân viên đi muộn giờ làm bị phạt gì không
+  - đi muộn giờ làm bị phạt như nào vậy
+  - nếu tôi đi trễ thì sẽ bị phạt thế nào
+  - cho mình hỏi về nội quy xử phạt đi làm trễ của công ty
+  - nếu mình đi muộn thì sẽ bị phạt như nào
+  - đi muộn sẽ ảnh hưởng như nào đến lương của thành viên hả
+  - về đi muộn giờ quy định thì công ty có những quy định xử phạt thế nào
+  - cho anh hỏi về nội quy xử phạt đi muộn giờ làm của công ty
+  - đi làm muộn sẽ ảnh hưởng thế nào đến lương của thành viên vậy
+  - đi làm trễ bị phạt thế nào
+  - cho mình hỏi về rule xử phạt đi trễ của công ty
+  - mình muốn hỏi quy định của công ty về việc đi muộn
+  - đi làm muộn sẽ ảnh hưởng như nào đến lương của người vậy
+  - người đi muộn giờ làm bị phạt gì không
+  - đi làm muộn sẽ ảnh hưởng như nào đến lương của thành viên vậy
+  - về đi muộn giờ làm thì công ty có những rule xử phạt thế nào
+  - cho tớ hỏi về nội quy xử phạt đi muộn của công ty
+  - cho anh hỏi về quy chế xử phạt đi trễ của công ty
+  - đi muộn bị phạt như nào hả
+  - đi làm muộn 3 buổi có bị phạt ko
+  - mình đi muộn có bị phạt không
+  - quy chế xử phạt đi làm muộn của công ty thế nào
+  - thành viên đi muộn giờ làm bị phạt gì không
+  - đi làm trễ có bị phạt ko em
+  - đi muộn bị phạt như thế nào vậy
+  - rule xử phạt đi muộn giờ làm thế nào
+  - đi trễ thì thành viên sẽ bị thế nào
+  - đi muộn giờ làm có bị phạt ko bạn
+  - đi trễ có bị phạt ko bạn
+  - rule xử phạt đi làm trễ của công ty như nào
+  - đi trễ có bị phạt ko mày
+  - cho tớ hỏi về nội quy xử phạt đi muộn giờ làm của công ty
+  - tớ đi làm muộn có bị phạt không
+  - nội quy xử phạt đi làm trễ như thế nào
+  - chị đi làm trễ có bị phạt không
+  - đi làm trễ bị phạt như thế nào vậy
+  - quy chế xử phạt đi muộn như thế nào
+  - nội quy xử phạt đi muộn là gì
+  - về đi trễ thì công ty có những quy chế xử phạt thế nào
+  - cho anh hỏi về quy định xử phạt đi làm trễ của công ty
+  - nội quy xử phạt đi muộn giờ làm là gì
+  - quy định xử phạt đi muộn của công ty như thế nào
+  - về đi muộn thì công ty có những quy chế xử phạt như nào
+  - đi muộn giờ quy định 3 buổi có bị phạt ko
+  - quy định xử phạt đi muộn của công ty thế nào
+  - đi làm muộn sẽ ảnh hưởng như thế nào đến lương của thành viên hả
+  - quy định xử phạt đi làm trễ của công ty thế nào
+  - chị đi muộn có bị phạt ko
+  - công ty có những quy định xử phạt gì khi đi làm trễ
+  - rule xử phạt đi trễ như nào
+  - nhận sự đi trễ bị phạt gì ko
+  - nội quy xử phạt đi muộn giờ làm của công ty thế nào
+  - công ty có những rule xử phạt gì khi đi muộn giờ làm
+  - thành viên đi muộn giờ quy định bị phạt gì ko
+  - rule xử phạt đi làm muộn của công ty là gì
+  - về đi muộn giờ làm thì công ty có những rule xử phạt như nào
+  - chị đi làm trễ có bị phạt ko
+  - cho tớ hỏi về quy chế xử phạt đi muộn giờ làm của công ty
+  - về đi làm muộn thì công ty có những quy chế xử phạt như thế nào
+  - công ty có những quy chế xử phạt gì khi đi muộn giờ làm
+  - đi muộn giờ làm buổi đầu có bị phạt không
+  - nếu tôi đi làm trễ thì sẽ bị phạt như thế nào
+  - quy chế xử phạt khi đi trễ thế nào
+  - về đi muộn giờ làm thì công ty có những quy chế xử phạt thế nào
+  - đi muộn sẽ ảnh hưởng như thế nào đến lương của thành viên vậy
+  - tớ đi muộn giờ quy định có bị phạt ko
+  - nếu mình đi làm trễ thì sẽ bị phạt như thế nào
+  - quy chế xử phạt đi muộn giờ làm của công ty thế nào
+  - quy chế xử phạt đi muộn giờ làm của công ty như nào
+  - nội quy xử phạt đi muộn giờ làm như nào
+  - cho chị hỏi về rule xử phạt đi làm trễ của công ty
+  - đi trễ thì nhân viên sẽ bị như thế nào
+  - đi muộn bị phạt như thế nào hả
+  - nhân viên đi muộn bị phạt gì ko
+  - quy chế xử phạt khi đi muộn giờ quy định như thế nào
+  - đi làm muộn bị phạt như nào
+  - về đi muộn giờ làm thì công ty có những quy định xử phạt như thế nào
+  - quy chế xử phạt đi làm muộn như thế nào
+  - nếu tớ đi muộn giờ quy định thì sẽ bị phạt như thế nào
+  - công ty có những quy định xử phạt gì khi đi muộn giờ làm
+  - đi trễ thì người sẽ bị như thế nào
+  - cho mình hỏi rule của công ty về việc đi muộn
+  - đi muộn sẽ ảnh hưởng thế nào đến lương của người hả
+  - cho chị hỏi về rule xử phạt đi muộn giờ làm của công ty
+  - quy định xử phạt đi muộn giờ quy định là gì
+  - cho mình hỏi về rule xử phạt đi làm trễ của công ty
+  - nội quy xử phạt đi làm trễ của công ty như thế nào
+  - quy chế xử phạt khi đi muộn giờ làm như nào
+  - cho chị hỏi về quy định xử phạt đi trễ của công ty
+  - công ty sẽ phạt gì khi đi muộn giờ quy định
+  - đi muộn giờ làm bị phạt như thế nào vậy
+  - đi làm trễ bị phạt thế nào hả
+  - công ty sẽ có hình phạt gì khi đi muộn giờ làm
+  - công ty sẽ có hình phạt gì khi đi muộn giờ quy định
+  - quy chế xử phạt đi muộn giờ quy định là gì
+  - cho tớ hỏi về quy chế xử phạt đi muộn của công ty
+  - đi làm muộn bị phạt như thế nào hả
+  - nếu tớ đi muộn giờ làm thì sẽ bị phạt như thế nào
+  - cho tớ hỏi về rule xử phạt đi muộn giờ quy định của công ty
+  - về đi làm muộn thì công ty có những nội quy xử phạt thế nào
+  - quy định xử phạt đi trễ của công ty thế nào
+  - nội quy xử phạt đi trễ thế nào
+  - đi làm muộn có bị phạt ko
+  - rule xử phạt đi muộn như nào
+  - đi muộn thì người sẽ bị như thế nào
+  - đi làm trễ thì người sẽ bị như nào
+  - đi trễ có bị phạt ko em
+  - rule xử phạt đi muộn giờ quy định như nào
+  - đi trễ có bị phạt ko m
+  - đi làm muộn có bị phạt ko cậu
+  - anh đi muộn giờ quy định có bị phạt ko
+  - cho mình hỏi về nội quy xử phạt đi muộn giờ làm của công ty
+  - nhận sự đi làm trễ bị phạt gì không
+  - mình đi muộn thì có bị trừ lương không
+  - nhân viên đi muộn bị phạt gì không
+  - cho anh hỏi về rule xử phạt đi làm trễ của công ty
+  - nhận sự đi muộn giờ làm bị phạt gì không
+  - cho anh hỏi về quy chế xử phạt đi làm trễ của công ty
+  - cho chị hỏi về quy định xử phạt đi muộn của công ty
+  - đi muộn giờ quy định bị phạt thế nào vậy
+  - rule xử phạt đi làm muộn là gì
+  - đi muộn giờ làm bị phạt như nào
+  - nội quy xử phạt đi làm muộn là gì
+  - đi làm muộn sẽ ảnh hưởng thế nào đến lương của nhân viên hả
+  - cho tớ hỏi về rule xử phạt đi làm muộn của công ty
+  - tớ muốn hỏi rule của công ty về việc đi muộn
+  - đi muộn giờ quy định bị phạt như nào hả
+  - nội quy xử phạt đi trễ là gì
+  - đi trễ 3 buổi có bị phạt ko
+  - cho tớ hỏi về nội quy xử phạt đi trễ của công ty
+  - đi muộn giờ quy định bị phạt như thế nào hả
+  - đi muộn giờ quy định bị phạt như nào vậy hả
+  - đi trễ bị phạt như thế nào vậy
+  - quy chế xử phạt khi đi làm muộn thế nào
+  - đi muộn giờ làm bị phạt như nào vậy hả
+  - công ty có những quy định xử phạt gì khi đi muộn
+  - về đi làm muộn thì công ty có những quy định xử phạt thế nào
+  - tôi muốn hỏi quy định của công ty về việc đi muộn
+  - công ty có những nội quy xử phạt gì khi đi muộn giờ quy định
+  - nội quy xử phạt đi muộn của công ty như nào
+  - về đi muộn giờ làm thì công ty có những quy định xử phạt thế nào
+  - nếu tớ đi muộn thì sẽ bị phạt như nào
+  - mức phạt của công ty khi đi muộn giờ quy định là gì
+  - nếu tôi đi muộn giờ làm thì sẽ bị phạt như thế nào
+  - đi muộn sẽ ảnh hưởng như nào đến lương của nhận sự vậy hả
+  - quy định xử phạt đi làm trễ thế nào
+  - đi muộn sẽ ảnh hưởng thế nào đến lương của thành viên vậy hả
+  - đi muộn giờ quy định thì người sẽ bị như thế nào
+  - quy định xử phạt đi muộn giờ làm như nào
+  - đi muộn giờ quy định thì sẽ bị phạt như thế nào
+  - công ty sẽ phạt gì khi đi trễ
+  - đi muộn bị phạt như nào
+  - quy chế xử phạt đi làm trễ của công ty là gì
+  - về đi muộn giờ quy định thì công ty có những quy định xử phạt như thế nào
+  - nội quy xử phạt đi trễ của công ty như nào
+  - đi muộn giờ quy định buổi đầu có bị phạt không
+  - rule xử phạt đi muộn thế nào
+  - đi làm muộn sẽ ảnh hưởng như thế nào đến lương của nhận sự vậy
+  - đi trễ bị phạt như nào vậy
+  - quy định xử phạt đi làm trễ như nào
+  - cho mình hỏi về quy chế xử phạt đi muộn giờ quy định của công ty

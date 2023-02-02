@@ -1,0 +1,406 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: company_ask_checkin_checkout_time
+  examples:
+  - tớ đã checkin chưa timi nhỉ
+  - ' mình đã checkout chưa nhở'
+  - '[thứ ba](time) tháng rồi chấm công lúc mấy giờ ta'
+  - hôm qua checkout chưa nhỉ
+  - '[thứ hai 2/10](time) tôi có checkin hông'
+  - ôi mình chấm công rồi chứ nhỉ
+  - cậu check giúp tớ thời gian chấm công với
+  - mình đã checkout chưa hửm
+  - bot biết thời gian chấm công của mình hôm [thứ sáu](time) không
+  - '[hôm qua](time) checkout lúc nào thế'
+  - timi cho tớ biết thời gian checkout [hôm qua](time) được ko
+  - cho biết hôm trước tớ đã checkout chưa
+  - '[hôm 2025-3-31](time) tớ chấm công lúc nào mầy'
+  - tháng qua tôi có quên chấm công hôm nào không
+  - cho xin thời gian checkout [ngày 30-05](time) đi
+  - '[hôm nay](time) tui checkout chưa vậy'
+  - '[thứ hai 28/12](time) tôi có quên checkout không vậy'
+  - tớ đã checkin chưa bot nhỉ
+  - không biết đã chấm công chưa nhở
+  - '[chủ nhật](time) tháng trước checkin lúc mấy h vậy'
+  - qua chấm công chưa nhở
+  - '[thứ ba, ngay 14-10](time) tôi có checkin không'
+  - ôi mình checkout rồi chứ nhỉ
+  - bot check giúp tớ thời gian checkin với
+  - mình đã chấm công chưa hè
+  - cậu biết thời gian checkin của tớ hôm [chủ nhật](time) hông
+  - '[hôm qua](time) checkin lúc nào thế'
+  - bạn cho tớ biết thời gian chấm công [hôm kìa](time) được k
+  - cho biết qua tớ đã chấm công chưa
+  - '[hôm 31/1](time) tôi checkin lúc nào'
+  - tuần qua tớ có quên chấm công buổi nào không
+  - cho tớ xin thời gian checkout [hôm 30/07](time) đi
+  - '[hôm ni](time) tớ chấm công lúc mấy giờ vậy'
+  - '[thứ hai ngay 05/11](time) tớ có quên checkout không vậy'
+  - mình đã chấm công chưa bot nhỉ
+  - ' mình đã chấm công chưa nhở'
+  - '[thứ bảy](time) tuần rồi chấm công lúc mấy giờ vậy'
+  - xửa chấm công chưa nhở
+  - '[hum nay](time) tớ có checkout k'
+  - ôi mình checkin rồi chứ nhỉ
+  - cậu check giúp tớ thời gian checkout với
+  - mình đã checkout chưa hả
+  - bạn biết thời gian chấm công của mình hôm [chủ nhật](time) k
+  - '[hôm trước](time) checkout lúc nào thế'
+  - bạn cho mình biết thời gian checkout [hum ni](time) được hông
+  - cho mình biết hôm trước mình đã checkout chưa
+  - '[hôm 30/12](time) mình checkout mấy giờ đó'
+  - tuần này tôi có quên chấm công buổi nào không
+  - cho xin thời gian checkout [hôm 2022-05-30](time) đi
+  - '[hum ni](time) tớ checkout lúc mấy giờ vậy'
+  - '[thứ hai ngay 31-8](time) tớ có quên chấm công không vậy'
+  - tớ đã checkout chưa timi nhỉ
+  - ' đã chấm công chưa nhở'
+  - '[thứ 2](time) tháng rồi checkout lúc mấy giờ ta'
+  - hôm qua checkin chưa nhỉ
+  - '[hôm kia](time) tớ có chấm công khum'
+  - timi check giúp tui thời gian checkin với
+  - mình đã checkin chưa hửm
+  - chú em biết thời gian chấm công của tui hôm [thứ 2](time) k
+  - '[hôm trước](time) checkin lúc nào thế'
+  - bot cho tớ biết thời gian checkin [hum ni](time) được hông
+  - cho tớ biết qua tớ đã checkout chưa
+  - '[hôm 15/10](time) tớ checkin mấy h đó'
+  - tháng trước tớ có quên chấm công hôm nào không
+  - cho xin thời gian checkout [ngày 2029-08/30](time) đi
+  - '[hôm nay](time) tớ chấm công chưa em vậy'
+  - '[thứ tư ngày 5-11](time) mình có quên chấm công không vậy'
+  - tớ đã checkout chưa mầy nhỉ
+  - không biết đã checkout chưa nhở
+  - '[chủ nhật](time) tuần rồi checkin lúc mấy h vậy'
+  - hôm kia chấm công chưa ta
+  - '[thứ tư 18-9](time) tui có chấm công k'
+  - mày check giúp mình thời gian chấm công với
+  - mình đã checkout chưa hè
+  - m biết thời gian checkout của tớ hôm [chủ nhật](time) ko
+  - '[ngay mai](time) checkout lúc nào thế'
+  - bạn cho tui biết thời gian checkout [hôm kìa](time) được khum
+  - cho tớ biết nay mình đã checkout chưa
+  - '[ngay 25-10](time) tớ checkout mấy giờ đó cậu'
+  - tuần qua tôi có quên chấm công hôm nào không
+  - cho xin thời gian checkout [ngày 17/4](time) đi
+  - '[hôm nay](time) tớ chấm công lúc mấy giờ vậy'
+  - '[thứ sáu, 09-10](time) tớ có quên checkin không vậy'
+  - tớ đã chấm công chưa mi nhỉ
+  - ' tớ đã chấm công chưa nhở'
+  - '[thứ ba](time) tháng rồi chấm công lúc mấy h ta'
+  - nay chấm công chưa nhở
+  - '[ngày hôm nay](time) tui có checkout ko'
+  - mi check giúp tôi thời gian checkin với
+  - mình đã checkin chưa hè
+  - cậu biết thời gian checkin của tớ hôm [chủ nhật](time) ko
+  - '[ngay kia](time) checkin lúc nào thế'
+  - cậu cho tớ biết thời gian checkout [hôm kìa](time) được hông
+  - cho tớ biết qua mình đã checkout chưa
+  - '[ngay 2026-09-30](time) tớ checkout mấy giờ đó timi'
+  - tháng trước tớ có quên checkout buổi nào không
+  - cho xin thời gian chấm công [ngày 2022/05/31](time) đi
+  - '[hôm nay](time) tui chấm công lúc mấy giờ vậy'
+  - '[thứ sáu, 31/3](time) tôi có quên checkin không vậy'
+  - tôi đã chấm công chưa cậu nhỉ
+  - không biết đã checkin chưa nhở
+  - '[thứ tư](time) tuần trước checkout lúc mấy giờ vậy'
+  - xửa checkin chưa nhở
+  - '[thứ năm ngay 30/2](time) tớ có checkout hông'
+  - cậu check giúp tớ thời gian checkin với
+  - mình đã chấm công chưa hả
+  - timi biết thời gian chấm công của tớ hôm [thứ hai](time) không
+  - '[hôm kia](time) chấm công lúc nào thế'
+  - cậu cho tớ biết thời gian checkin [hum nay](time) được không
+  - cho mình biết hôm trước tớ đã chấm công chưa
+  - '[hôm 30-01](time) tớ chấm công mấy h đó bot'
+  - tháng trước tôi có quên chấm công buổi nào không
+  - cho mình xin thời gian chấm công [ngay 2021-04/30](time) đi
+  - '[hum nay](time) tui chấm công chưa m nhỉ'
+  - '[thứ sáu, 02-10](time) tớ có quên chấm công không vậy'
+  - tớ đã checkin chưa mi nhỉ
+  - không biết mình đã checkout chưa nhở
+  - '[thứ bảy](time) tháng rồi chấm công lúc mấy h vậy'
+  - xửa checkout chưa ta
+  - '[thứ tư, 30-11](time) tớ có chấm công ko'
+  - em check giúp tớ thời gian checkin với
+  - mình đã checkin chưa hả
+  - timi biết thời gian chấm công của tớ hôm [chủ nhật](time) hông
+  - '[ngay kìa](time) checkin lúc nào thế'
+  - m cho tớ biết thời gian checkin [ngay hôm nay](time) được k
+  - cho tôi biết hôm trước tôi đã chấm công chưa
+  - '[ngày 14-2](time) mình checkout lúc nào'
+  - tuần trước mình có quên chấm công hôm nào không
+  - cho tớ xin thời gian checkin [hôm 29-10](time) đi
+  - '[hôm ni](time) tui checkin chưa nhở'
+  - '[thứ ba, 31-08](time) tớ có quên chấm công không vậy'
+  - tớ đã chấm công chưa bạn nhỉ
+  - không biết mình đã chấm công chưa nhở
+  - '[chủ nhật](time) tháng rồi checkout lúc mấy giờ ta'
+  - '[hôm 31/05](time) chấm công chưa ta'
+  - '[hôm nay](time) tui có checkout không'
+  - e check giúp tớ thời gian chấm công với
+  - mình đã chấm công chưa hửm
+  - mày biết thời gian checkin của mình hôm [chủ nhật](time) k
+  - '[hôm kia](time) checkin lúc nào thế'
+  - timi cho tớ biết thời gian checkin [hum nay](time) được không
+  - cho tôi biết nay tôi đã checkin chưa
+  - '[ngay 21-12](time) tớ checkin lúc nào'
+  - tuần này mình có quên chấm công buổi nào không
+  - cho xin thời gian chấm công [ngay 22/7](time) đi
+  - '[ngay hôm nay](time) tớ chấm công lúc mấy giờ vậy'
+  - '[thứ năm, 09/3](time) tớ có quên checkout không vậy'
+  - tớ đã checkin chưa m nhỉ
+  - ' tớ đã checkin chưa nhở'
+  - '[thứ bảy](time) tuần rồi checkout lúc mấy h ta'
+  - hôm kia chấm công chưa nhỉ
+  - '[hôm nay](time) mình có checkin khum'
+  - timi check giúp tớ thời gian checkin với
+  - cậu biết thời gian checkout của tớ hôm [thứ sáu](time) không
+  - '[ngày tới](time) checkin lúc nào thế'
+  - cậu cho tớ biết thời gian checkin [hôm ni](time) được không
+  - cho biết hôm qua tôi đã checkin chưa
+  - '[ngay 27-10](time) tui chấm công lúc nào'
+  - tuần này mình có quên checkout buổi nào không
+  - cho tôi xin thời gian checkin [hôm 29-11](time) đi
+  - '[ngày hôm nay](time) tớ checkout lúc mấy giờ vậy'
+  - '[thứ bảy, 30-10](time) tôi có quên chấm công không vậy'
+  - tớ đã checkout chưa bạn nhỉ
+  - ' tớ đã checkout chưa nhở'
+  - '[chủ nhật](time) tháng trước chấm công lúc mấy giờ ta'
+  - qua chấm công chưa ta
+  - '[hôm kìa](time) mình có checkout khum'
+  - mày check giúp tớ thời gian chấm công với
+  - timi biết thời gian checkin của tớ hôm [thứ 4](time) k
+  - '[hôm kìa](time) chấm công lúc nào thế'
+  - cậu cho tui biết thời gian chấm công [hôm nay](time) được ko
+  - cho biết qua mình đã chấm công chưa
+  - '[ngày 2028-11-6](time) tớ checkin mấy giờ đó timi'
+  - tháng trước tớ có quên checkin hôm nào không
+  - cho tớ xin thời gian checkout [hôm 2027-8-30](time) đi
+  - '[ngay hôm nay](time) tớ checkin lúc mấy giờ vậy'
+  - '[thứ tư, ngay 15-12](time) tôi có quên checkout không vậy'
+  - mình đã checkout chưa timi nhỉ
+  - không biết tớ đã checkout chưa nhở
+  - '[chủ nhật](time) tuần trước chấm công lúc mấy h ta'
+  - xửa checkout chưa nhỉ
+  - '[thứ sáu, ngay 31-5](time) tớ có chấm công k'
+  - timi check giúp tớ thời gian chấm công với
+  - chú em biết thời gian chấm công của mình hôm [chủ nhật](time) không
+  - '[hôm nay](time) checkout lúc nào thế'
+  - chú em cho mình biết thời gian chấm công [ngay hôm nay](time) được k
+  - cho mình biết hôm trước mình đã checkin chưa
+  - '[hôm 2020-5-29](time) mình checkin lúc nào cậu'
+  - tháng qua tôi có quên checkout buổi nào không
+  - cho xin thời gian checkout [hôm 2029/6-30](time) đi
+  - '[hum nay](time) mình checkout lúc mấy giờ vậy'
+  - '[thứ hai, 30/1](time) tớ có quên checkin không vậy'
+  - tớ đã checkin chưa cậu nhỉ
+  - ' đã checkout chưa nhở'
+  - '[thứ 6](time) tuần rồi checkin lúc mấy giờ vậy'
+  - hôm qua chấm công chưa nhở
+  - '[hôm kìa](time) tôi có checkout khum'
+  - timi check giúp mình thời gian checkout với
+  - mi biết thời gian chấm công của tớ hôm [chủ nhật](time) hông
+  - '[ngày mai](time) checkout lúc nào thế'
+  - cậu cho tôi biết thời gian checkin [hôm qua](time) được k
+  - cho biết nay tớ đã checkin chưa
+  - '[hôm 2023-05/31](time) tui checkin lúc nào'
+  - tuần này tôi có quên checkout hôm nào không
+  - cho xin thời gian chấm công [hôm 30/06](time) đi
+  - '[hôm nay](time) tớ checkout chưa vậy'
+  - '[thứ năm, ngay 19-6](time) mình có quên chấm công không vậy'
+  - tôi đã chấm công chưa bot nhỉ
+  - ' đã checkin chưa nhở'
+  - '[thứ 5](time) tháng trước chấm công lúc mấy giờ ta'
+  - nay checkin chưa ta
+  - '[hôm kìa](time) tớ có checkin ko'
+  - bạn check giúp mình thời gian checkin với
+  - cậu biết thời gian checkin của tớ hôm [thứ bảy](time) hông
+  - '[ngay mai](time) chấm công lúc nào thế'
+  - e cho tớ biết thời gian checkin [hôm trước](time) được k
+  - cho biết hôm qua tôi đã checkout chưa
+  - '[ngày 30-12](time) mình chấm công lúc nào timi'
+  - tháng này tớ có quên chấm công buổi nào không
+  - cho mình xin thời gian checkin [hôm 2028/06/30](time) đi
+  - '[hum nay](time) tớ checkin lúc mấy giờ vậy'
+  - '[thứ năm ngày 30-12](time) tớ có quên checkout không vậy'
+  - tớ đã checkout chưa m nhỉ
+  - ' mình đã checkin chưa nhở'
+  - '[thứ 7](time) tuần trước chấm công lúc mấy h ta'
+  - nay chấm công chưa ta
+  - '[hôm kia](time) tớ có checkout hông'
+  - bạn check giúp tôi thời gian chấm công với
+  - bot biết thời gian checkin của mình hôm [chủ nhật](time) ko
+  - '[hôm kia](time) checkout lúc nào thế'
+  - bạn cho tớ biết thời gian chấm công [hôm kìa](time) được không
+  - cho tôi biết nay mình đã checkin chưa
+  - '[ngay 2026/1/13](time) tớ checkin lúc nào'
+  - tuần trước tớ có quên chấm công buổi nào không
+  - cho mình xin thời gian checkin [hôm 2024/10-21](time) đi
+  - '[ngày hôm nay](time) tôi checkin chưa bot nhỉ'
+  - '[thứ hai ngay 6/6](time) tớ có quên checkout không vậy'
+  - tớ đã chấm công chưa cậu nhỉ
+  - không biết tớ đã chấm công chưa nhở
+  - '[thứ tư](time) tuần trước chấm công lúc mấy h vậy'
+  - xửa checkout chưa nhở
+  - '[thứ bảy, 29/6](time) tớ có checkin ko'
+  - cậu check giúp mình thời gian checkin với
+  - bạn biết thời gian checkin của tớ hôm [thứ ba](time) khum
+  - '[ngay kìa](time) chấm công lúc nào thế'
+  - chú em cho tui biết thời gian chấm công [hôm nay](time) được k
+  - cho tôi biết hôm qua tớ đã chấm công chưa
+  - '[hôm 2024/09/09](time) tớ checkin mấy h đó cậu'
+  - tháng vừa rồi tớ có quên checkin hôm nào không
+  - cho tớ xin thời gian checkin [ngày 2028/8/31](time) đi
+  - '[hôm ni](time) tớ checkin lúc mấy giờ vậy'
+  - '[thứ ba, 5/6](time) tớ có quên checkout không vậy'
+  - tớ đã checkout chưa chú em nhỉ
+  - không biết tớ đã checkin chưa nhở
+  - '[thứ 7](time) tháng trước checkin lúc mấy giờ vậy'
+  - qua checkin chưa ta
+  - '[hum ni](time) tớ có checkout k'
+  - mầy check giúp tui thời gian checkin với
+  - cậu biết thời gian checkout của tui hôm [chủ nhật](time) k
+  - '[ngày kia](time) chấm công lúc nào thế'
+  - timi cho mình biết thời gian checkin [hum nay](time) được ko
+  - cho biết hôm trước mình đã chấm công chưa
+  - '[hôm 10/6](time) tui chấm công mấy giờ đó timi'
+  - tháng qua tớ có quên chấm công buổi nào không
+  - cho xin thời gian checkin [hôm 5/12](time) đi
+  - '[hôm ni](time) mình checkout chưa timi vậy'
+  - '[thứ ba ngay 3/04](time) tớ có quên chấm công không vậy'
+  - mình đã checkin chưa timi nhỉ
+  - không biết mình đã checkin chưa nhở
+  - '[chủ nhật](time) tuần trước chấm công lúc mấy h vậy'
+  - nay checkin chưa nhỉ
+  - '[hum nay](time) tớ có chấm công không'
+  - cậu check giúp tui thời gian chấm công với
+  - cậu biết thời gian checkin của tớ hôm [thứ hai](time) ko
+  - '[hôm qua](time) chấm công lúc nào thế'
+  - mầy cho mình biết thời gian checkin [hôm nay](time) được hông
+  - cho tớ biết nay mình đã checkin chưa
+  - '[ngay 30-4](time) mình chấm công lúc nào'
+  - tháng trước tôi có quên chấm công hôm nào không
+  - cho tôi xin thời gian checkin [ngay 2022/06/30](time) đi
+  - '[hum ni](time) tui checkin lúc mấy giờ vậy'
+  - '[thứ hai ngày 4-11](time) tớ có quên checkout không vậy'
+  - tui đã checkin chưa bot nhỉ
+  - '[thứ 5](time) tuần trước checkin lúc mấy giờ vậy'
+  - xửa checkin chưa nhỉ
+  - '[hum nay](time) mình có checkout khum'
+  - bạn check giúp tôi thời gian checkin với
+  - m biết thời gian chấm công của tớ hôm [chủ nhật](time) k
+  - '[ngày kìa](time) chấm công lúc nào thế'
+  - bot cho tớ biết thời gian chấm công [ngay hôm nay](time) được không
+  - cho mình biết nay tớ đã checkin chưa
+  - '[ngay 31/01](time) tớ checkin mấy h đó timi'
+  - tháng này tôi có quên chấm công hôm nào không
+  - cho tôi xin thời gian chấm công [hôm 2020-7/6](time) đi
+  - '[hôm ni](time) mình checkin lúc mấy giờ vậy'
+  - '[thứ bảy, ngay 30-1](time) tớ có quên checkout không vậy'
+  - mình đã chấm công chưa bạn nhỉ
+  - '[chủ nhật](time) tuần trước checkout lúc mấy h ta'
+  - xửa checkin chưa ta
+  - '[hôm kia](time) tớ có checkout k'
+  - cậu check giúp tôi thời gian checkin với
+  - mi biết thời gian chấm công của tớ hôm [thứ tư](time) k
+  - '[hôm kìa](time) checkin lúc nào thế'
+  - mi cho mình biết thời gian chấm công [ngay hôm nay](time) được hông
+  - cho biết hôm trước mình đã checkout chưa
+  - '[ngày 2021/10-19](time) tớ chấm công lúc nào'
+  - tuần qua tớ có quên checkout hôm nào không
+  - cho xin thời gian checkout [hôm 2020-11/30](time) đi
+  - '[ngày hôm nay](time) tớ checkin chưa vậy'
+  - '[thứ năm, ngay 1-12](time) tớ có quên chấm công không vậy'
+  - tui đã checkin chưa em nhỉ
+  - '[thứ 2](time) tuần trước checkout lúc mấy h vậy'
+  - '[ngay 2029-12-3](time) checkin chưa ta'
+  - '[hôm qua](time) tớ có checkin không'
+  - bạn check giúp tớ thời gian checkin với
+  - bot biết thời gian chấm công của tớ hôm [chủ nhật](time) hông
+  - '[ngày tới](time) chấm công lúc nào thế'
+  - bạn cho tui biết thời gian checkout [ngày hôm nay](time) được hông
+  - cho mình biết hôm trước mình đã chấm công chưa
+  - '[hôm 2026/10-08](time) tôi chấm công lúc nào'
+  - tháng này mình có quên checkout hôm nào không
+  - cho tôi xin thời gian chấm công [ngay 31-07](time) đi
+  - '[hôm nay](time) tôi checkin lúc mấy giờ vậy'
+  - '[thứ tư, ngay 30-12](time) tui có quên checkout không vậy'
+  - tui đã checkout chưa timi nhỉ
+  - '[chủ nhật](time) tháng trước checkin lúc mấy giờ ta'
+  - nay checkin chưa nhở
+  - '[ngày hôm nay](time) tớ có checkout ko'
+  - mi check giúp tui thời gian checkout với
+  - cậu biết thời gian chấm công của tớ hôm [thứ 4](time) ko
+  - '[ngay kìa](time) checkout lúc nào thế'
+  - cậu cho tớ biết thời gian checkin [hôm ni](time) được hông
+  - cho biết hôm qua tớ đã checkout chưa
+  - '[ngay 2022-9-25](time) tớ checkin lúc nào chú em'
+  - tháng qua mình có quên checkin hôm nào không
+  - cho xin thời gian checkin [ngay 2024/07/31](time) đi
+  - '[hum nay](time) mình checkin chưa bot vậy'
+  - '[thứ hai, ngay 31-01](time) tớ có quên chấm công không vậy'
+  - tôi đã checkout chưa timi nhỉ
+  - '[thứ 2](time) tuần rồi checkin lúc mấy giờ vậy'
+  - '[hôm 2023/5/31](time) chấm công chưa ta'
+  - '[hôm qua](time) tớ có checkout hông'
+  - cậu check giúp mình thời gian chấm công với
+  - em biết thời gian chấm công của tớ hôm [thứ 2](time) khum
+  - '[ngay tới](time) chấm công lúc nào thế'
+  - bot cho tớ biết thời gian checkin [hôm qua](time) được hông
+  - cho mình biết hôm trước tớ đã checkout chưa
+  - '[ngày 2024-10/4](time) tớ checkin lúc nào'
+  - tuần này mình có quên checkin hôm nào không
+  - cho tớ xin thời gian chấm công [ngày 2020-03/30](time) đi
+  - '[hum nay](time) tôi checkin lúc mấy giờ vậy'
+  - '[thứ bảy 31-07](time) tớ có quên chấm công không vậy'
+  - tớ đã chấm công chưa timi nhỉ
+  - '[thứ 4](time) tháng trước chấm công lúc mấy giờ ta'
+  - hôm qua checkout chưa nhở
+  - '[hôm nay](time) tôi có checkout k'
+  - chú em check giúp tôi thời gian chấm công với
+  - timi biết thời gian checkout của tui hôm [thứ 4](time) hông
+  - '[ngay mai](time) checkin lúc nào thế'
+  - cậu cho tui biết thời gian checkout [hôm kia](time) được khum
+  - cho tớ biết hôm trước mình đã checkout chưa
+  - '[hôm 09/6](time) mình checkout mấy giờ đó timi'
+  - tháng qua tớ có quên checkin hôm nào không
+  - cho mình xin thời gian chấm công [ngay 08-11](time) đi
+  - '[hum nay](time) tớ chấm công chưa vậy'
+  - '[thứ sáu, 31/1](time) tớ có quên checkin không vậy'
+  - tôi đã chấm công chưa bạn nhỉ
+  - '[thứ 5](time) tháng trước checkout lúc mấy giờ vậy'
+  - qua checkin chưa nhở
+  - '[thứ tư ngay 31-08](time) tớ có chấm công hông'
+  - bot check giúp tớ thời gian chấm công với
+  - timi biết thời gian checkout của tớ hôm [thứ ba](time) khum
+  - '[ngày kia](time) checkin lúc nào thế'
+  - bot cho tôi biết thời gian checkin [hôm ni](time) được k
+  - cho tôi biết qua mình đã checkin chưa
+  - '[ngày 31/05](time) tớ chấm công lúc nào timi'
+  - tuần qua tớ có quên chấm công hôm nào không
+  - cho xin thời gian checkin [hôm 30-10](time) đi
+  - '[hum ni](time) mình checkin lúc mấy giờ vậy'
+  - '[thứ sáu, ngày 30/01](time) tui có quên chấm công không vậy'
+  - mình đã checkin chưa e nhỉ
+  - '[thứ bảy](time) tháng rồi chấm công lúc mấy giờ ta'
+  - '[hôm 2021/7/31](time) checkin chưa nhở'
+  - '[hum ni](time) tui có checkout k'
+  - timi check giúp tớ thời gian checkout với
+  - mi biết thời gian checkout của tớ hôm [thứ hai](time) ko
+  - '[hôm kìa](time) checkout lúc nào thế'
+  - timi cho tớ biết thời gian chấm công [hôm kia](time) được khum
+  - cho mình biết qua tôi đã chấm công chưa
+  - '[hôm 30/04](time) tớ checkin mấy h đó'
+  - tuần vừa rồi mình có quên checkin buổi nào không
+  - cho xin thời gian checkout [ngày 2020/12-15](time) đi
+  - '[ngay hôm nay](time) tui checkout lúc mấy giờ vậy'
+  - '[thứ năm, 09-12](time) tớ có quên checkout không vậy'
+  - mình đã checkin chưa chú em nhỉ
+  - '[chủ nhật](time) tuần trước checkout lúc mấy giờ vậy'
+  - hôm kia checkout chưa nhở
+  - '[hum ni](time) mình có checkout khum'
+  - mày check giúp tui thời gian checkin với
+  - mầy biết thời gian checkin của tôi hôm [thứ 5](time) hông

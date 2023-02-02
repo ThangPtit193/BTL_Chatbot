@@ -1,0 +1,306 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_birthday
+  examples:
+  - có thể cho tui hỏi sinh nhật của bạn tháng nào
+  - có thể cho tui hỏi hiện tại bạn bao nhiêu tuổi hả
+  - ngày sinh của bạn vào ngày nào đó
+  - timi được mấy tuổi vậy á hả
+  - sinh nhật của timi vào tháng nào
+  - cho hỏi ngày sinh của cậu
+  - bot sinh ngày bao nhiêu
+  - mấy tuổi hở
+  - có thể cho mình hỏi bạn sinh vào ngày nào
+  - sinh nhật ngày nào
+  - ' cho chị biết em sinh vào tháng mấy thế'
+  - bạn sinh ngày nào vậy
+  - cậu bao nhiêu tuổi đấy
+  - mày sinh vào năm bao nhiêu
+  - ' được mấy mùa xuân rồi'
+  - năm sinh bạn là thế nào
+  - mấy tuổi
+  - cho tao hỏi sinh nhật của cậu
+  - mày sinh ngày mấy đấy
+  - m sinh nhật vào ngày gì thế
+  - ' tao muốn hỏi ngày sinh của bạn là thế nào'
+  - timi sinh ngày tháng mấy
+  - tao muốn hỏi cậu sinh vào tháng mấy
+  - tuổi của timi là bao nhiêu hả
+  - ' hiện tại mấy tuổi'
+  - timi được bao nhiêu mùa xuân hở
+  - sinh nhật của timi là tháng gì
+  - cho anh biết em sinh vào tháng mấy
+  - ' tớ muốn hỏi bạn sinh nhật vào ngày nào'
+  - m sinh ngày vào tháng mấy
+  - hiện tại bạn bao nhiêu tuổi hả
+  - có thể cho anh hỏi sinh nhật của em là gì hả hả
+  - cho tớ biết cậu sinh năm bao nhiêu
+  - sinh nhật vào năm nào
+  - cho tớ hỏi bot mấy tuổi
+  - chị muốn hỏi sinh nhật của timi là như nào
+  - cho hỏi ngày sinh của bạn là thế nào
+  - có thể cho tớ hỏi cậu sinh vào năm gì thế
+  - cho anh hỏi ngày sinh của timi
+  - cho tao biết ngày sinh của cậu là thế nào
+  - có thể cho tớ hỏi sinh nhật của bạn là tháng nào
+  - có thể cho tao hỏi em bao nhiêu tuổi
+  - ngày sinh của timi vào ngày nào hả
+  - timi được bao nhiêu tuổi hả
+  - sinh nhật của bạn vào tháng mấy
+  - cho hỏi sinh nhật của bạn
+  - timi sinh ngày bao nhiêu
+  - mấy tuổi vậy
+  - ' cho tao hỏi bạn sinh vào tháng nào'
+  - sinh nhật ngày nào hả
+  - ' chị muốn biết timi sinh vào tháng mấy'
+  - m sinh ngày nào đấy
+  - em bao nhiêu tuổi đó
+  - bot sinh vào năm bao nhiêu
+  - ' được bao nhiêu mùa xuân rồi'
+  - năm sinh bot là như nào
+  - bao nhiêu tuổi vậy
+  - cho tớ hỏi sinh nhật của cậu
+  - cậu sinh ngày bao nhiêu vậy
+  - em sinh vào tháng gì
+  - ' cho mình hỏi sinh nhật của bạn là gì'
+  - cậu sinh ngày tháng mấy
+  - cho tôi hỏi cậu sinh nhật vào ngày nào
+  - tuổi của timi là mấy vậy
+  - ' năm nay bao nhiêu tuổi'
+  - timi được mấy mùa xuân vậy
+  - sinh nhật bạn là ngày nào
+  - cho chị hỏi em sinh năm bao nhiêu
+  - ' cho tao hỏi cậu sinh vào tháng nào'
+  - timi sinh ngày vào tháng mấy
+  - hiện tại em mấy tuổi hở
+  - ' chị muốn hỏi sinh nhật của timi là như thế nào đấy'
+  - cho tôi hỏi cậu sinh năm bao nhiêu
+  - sinh vào ngày nào
+  - cho tao hỏi năm nay bạn bao nhiêu tuổi
+  - chị muốn hỏi sinh nhật của em là gì hở
+  - cho hỏi ngày sinh của timi là thế nào
+  - có thể cho tao hỏi timi sinh nhật vào ngày gì
+  - cho chị hỏi ngày sinh của em
+  - cho tao biết sinh nhật của cậu là gì
+  - có thể cho mình hỏi sinh nhật của bạn ngày gì
+  - có thể cho tao hỏi năm nay cậu mấy tuổi hả
+  - ngày sinh của bot vào ngày nào
+  - timi được bao nhiêu tuổi vậy hả
+  - sinh nhật của bot vào tháng nào
+  - cho hỏi ngày sinh của bạn
+  - m sinh ngày bao nhiêu
+  - mấy tuổi vậy hả
+  - có thể cho tớ hỏi bạn sinh vào ngày gì
+  - sinh nhật ngày nào thế
+  - có thể cho chị hỏi timi sinh nhật vào ngày nào
+  - mày sinh ngày nào
+  - timi bao nhiêu tuổi
+  - cậu sinh vào năm bao nhiêu
+  - timi được bao nhiêu mùa xuân rồi
+  - năm sinh mày là gì
+  - bao nhiêu tuổi vậy hả
+  - tao muốn hỏi sinh nhật của bạn
+  - cậu sinh ngày mấy thế
+  - cậu sinh nhật vào năm gì
+  - có thể mình muốn biết sinh nhật của cậu là gì hả đấy
+  - bạn sinh ngày tháng nào
+  - tớ muốn hỏi cậu sinh vào tháng mấy
+  - tuổi của m là bao nhiêu hả
+  - ' năm nay bao nhiêu tuổi vậy hả'
+  - timi được bao nhiêu mùa xuân vậy hả
+  - sinh nhật của timi là ngày nào
+  - cho anh biết em sinh vào tháng nào
+  - ' cho tớ biết cậu sinh nhật vào ngày nào'
+  - cậu sinh ngày vào tháng mấy
+  - hiện nay timi mấy tuổi vậy
+  - có thể anh muốn hỏi sinh nhật của em là gì đấy
+  - cho tớ biết cậu sinh vào tháng mấy
+  - sinh nhật vào tháng nào
+  - cho tôi hỏi cậu mấy tuổi hả
+  - cho chị hỏi ngày sinh của em là như thế nào
+  - cho biết sinh nhật của timi là thế nào
+  - ' cho tao hỏi m sinh vào ngày gì thế'
+  - cho chị hỏi ngày sinh của timi
+  - mình muốn hỏi sinh nhật của cậu là gì vậy hả
+  - có thể cho tao hỏi sinh nhật của bạn năm nào
+  - có thể cho tôi hỏi cậu mấy tuổi
+  - ngày sinh của cậu là ngày nào
+  - timi được bao nhiêu tuổi vậy
+  - sinh nhật của mày vào tháng nào
+  - cho hỏi sinh nhật của em
+  - cậu sinh ngày bao nhiêu
+  - mấy tuổi vậy á hả
+  - ' cho mình hỏi bạn sinh nhật vào ngày gì'
+  - sinh nhật ngày nào đó
+  - có thể cho chị biết timi sinh nhật vào ngày nào hả
+  - em sinh ngày nào
+  - ' bao nhiêu tuổi'
+  - em sinh vào năm bao nhiêu
+  - bot được mấy mùa xuân rồi
+  - năm sinh cậu là gì
+  - bao nhiêu tuổi hả
+  - cho tớ hỏi ngày sinh của cậu
+  - bot sinh ngày mấy thế
+  - m sinh nhật vào năm nào
+  - ' cho tui biết ngày sinh của bạn là thế nào'
+  - timi sinh ngày tháng nào
+  - cho tớ hỏi bạn sinh vào tháng mấy
+  - tuổi của mày là bao nhiêu hả
+  - bạn hiện nay mấy tuổi vậy
+  - timi được mấy mùa xuân hở
+  - sinh nhật bot ngày nào
+  - cho anh biết timi sinh vào tháng mấy
+  - ' mình muốn hỏi bạn sinh vào tháng nào'
+  - mày sinh ngày vào tháng mấy
+  - năm nay em bao nhiêu tuổi vậy hả
+  - ' chị muốn hỏi sinh nhật của em là như nào'
+  - cho tớ hỏi bạn sinh vào tháng nào
+  - sinh vào năm gì
+  - cho tớ hỏi timi mấy tuổi
+  - anh muốn hỏi sinh nhật của em là như nào
+  - cho biết ngày sinh của timi là gì vậy hả
+  - ' cho tớ hỏi mày sinh vào năm nào'
+  - cho anh hỏi sinh nhật của em
+  - tôi muốn biết sinh nhật của bạn là gì vậy
+  - có thể cho mình hỏi sinh nhật của bạn là năm gì
+  - ' cho tui hỏi năm nay cậu mấy tuổi'
+  - ngày sinh của bạn là ngày nào thế
+  - timi được bao nhiêu tuổi vậy á hả
+  - sinh nhật của em vào tháng mấy
+  - cho hỏi sinh nhật của cậu
+  - em sinh ngày bao nhiêu
+  - mấy tuổi hả
+  - ' cho tớ hỏi bạn sinh nhật vào năm gì'
+  - sinh nhật ngày nào đấy
+  - ' anh muốn hỏi em sinh vào tháng mấy'
+  - timi sinh ngày nào hả
+  - ' mấy tuổi đấy'
+  - timi sinh vào năm bao nhiêu
+  - em được mấy mùa xuân rồi
+  - năm sinh bạn là như nào
+  - bao nhiêu tuổi vậy á hả
+  - cho tui hỏi ngày sinh của bạn
+  - timi sinh ngày mấy đấy
+  - bot sinh nhật vào năm nào thế
+  - có thể cho tớ hỏi sinh nhật của cậu là gì
+  - mày sinh ngày tháng mấy
+  - tớ muốn hỏi bạn sinh vào tháng nào
+  - tuổi của bạn là mấy hở
+  - ' hiện tại mấy tuổi vậy hả'
+  - timi được mấy mùa xuân vậy hả
+  - sinh nhật cậu tháng gì
+  - cho chị hỏi em sinh nhật vào ngày nào
+  - có thể cho tao biết bạn sinh nhật vào ngày nào đấy
+  - bot sinh ngày vào tháng mấy
+  - hiện nay bot bao nhiêu tuổi vậy
+  - ' cho chị biết sinh nhật của timi là gì'
+  - cho tớ hỏi cậu sinh vào tháng nào
+  - sinh vào tháng nào
+  - cho tao hỏi m mấy tuổi vậy hả
+  - anh muốn biết sinh nhật của timi là như thế nào
+  - cho biết ngày sinh của timi là như nào
+  - ' cho tui hỏi em sinh nhật vào năm gì'
+  - cho anh hỏi sinh nhật của timi
+  - cho tớ biết sinh nhật của bạn là gì vậy hả
+  - ' cho tớ hỏi sinh nhật của bạn năm nào'
+  - ' cho tao hỏi bạn mấy tuổi vậy hả'
+  - ngày sinh của cậu là ngày nào đó
+  - timi được mấy tuổi hở
+  - sinh nhật của timi vào tháng mấy
+  - cho hỏi sinh nhật của m
+  - bạn sinh ngày bao nhiêu
+  - có thể cho tớ hỏi bạn sinh vào tháng gì
+  - sinh nhật ngày nào vậy
+  - có thể chị muốn hỏi timi sinh nhật vào ngày nào hả
+  - mày sinh ngày nào vậy
+  - m mấy tuổi đó
+  - bạn sinh vào năm bao nhiêu
+  - cậu được bao nhiêu mùa xuân rồi
+  - năm sinh cậu là như thế nào
+  - bao nhiêu tuổi hở
+  - tớ muốn hỏi ngày sinh của bạn
+  - bot sinh ngày bao nhiêu đó
+  - bạn sinh nhật vào năm gì thế
+  - ' tui muốn biết ngày sinh của bạn là như nào đó'
+  - m sinh ngày tháng nào
+  - cho tớ hỏi cậu sinh năm bao nhiêu
+  - tuổi của timi là mấy
+  - ' năm nay mấy tuổi'
+  - timi được bao nhiêu mùa xuân vậy á hả
+  - sinh nhật của bot ngày gì
+  - chị muốn biết timi sinh vào tháng nào
+  - ' tớ muốn biết bạn sinh năm bao nhiêu'
+  - em sinh ngày vào tháng mấy
+  - hiện tại mày bao nhiêu tuổi vậy á hả
+  - ' anh muốn hỏi ngày sinh của em là gì vậy hả vậy'
+  - mình muốn biết cậu sinh nhật vào ngày nào
+  - sinh nhật vào ngày nào
+  - cho tớ hỏi hiện nay m mấy tuổi vậy á hả
+  - cho chị biết sinh nhật của timi là gì vậy
+  - cho biết ngày sinh của bot là gì
+  - ' cho tớ hỏi mày sinh nhật vào ngày gì thế'
+  - chị muốn hỏi sinh nhật của timi
+  - cho tớ biết ngày sinh của cậu là gì hả
+  - có thể cho tớ hỏi sinh nhật của bạn là ngày nào
+  - có thể cho tớ hỏi hiện tại cậu bao nhiêu tuổi vậy
+  - ngày sinh của em là ngày nào đó
+  - timi được mấy tuổi vậy
+  - sinh nhật của bạn vào tháng nào
+  - cho hỏi ngày sinh của bot
+  - mày sinh ngày bao nhiêu
+  - ' cho tớ hỏi bạn sinh vào ngày gì'
+  - ' chị muốn biết em sinh năm bao nhiêu'
+  - timi sinh ngày nào
+  - ' bao nhiêu tuổi đó'
+  - m sinh vào năm bao nhiêu
+  - m được mấy mùa xuân rồi
+  - năm sinh m là gì
+  - tôi muốn hỏi sinh nhật của cậu
+  - cậu sinh ngày mấy đấy
+  - em sinh nhật vào ngày gì thế
+  - ' mình muốn hỏi sinh nhật của cậu là gì hở'
+  - cậu sinh ngày tháng nào
+  - tao muốn hỏi cậu sinh vào tháng nào
+  - tuổi của bạn là mấy vậy
+  - ' hiện nay mấy tuổi hở'
+  - timi được mấy mùa xuân vậy á hả
+  - sinh nhật bot là tháng gì
+  - chị muốn biết timi sinh năm bao nhiêu
+  - ' cho tớ biết cậu sinh vào tháng nào đó'
+  - bạn sinh ngày vào tháng mấy
+  - hiện nay em mấy tuổi hở
+  - ' chị muốn hỏi ngày sinh của timi là như nào'
+  - tao muốn biết cậu sinh vào tháng nào
+  - sinh vào năm nào
+  - cho tui hỏi năm nay bot bao nhiêu tuổi vậy hả
+  - cho anh hỏi sinh nhật của em là thế nào
+  - cho biết sinh nhật của cậu là gì hở
+  - có thể cho tớ hỏi bot sinh vào ngày gì
+  - chị muốn hỏi ngày sinh của timi
+  - tao muốn biết sinh nhật của cậu là như thế nào
+  - có thể cho tôi hỏi sinh nhật của bạn là năm gì
+  - ' cho tôi hỏi bạn bao nhiêu tuổi'
+  - ngày sinh của m là ngày nào vậy
+  - timi được mấy tuổi hả
+  - sinh nhật của mày vào tháng mấy
+  - cho hỏi sinh nhật của timi
+  - ' cho tui hỏi bạn sinh vào năm gì'
+  - có thể cho chị biết timi sinh vào tháng nào
+  - bạn sinh ngày nào hả
+  - bot bao nhiêu tuổi đó
+  - cậu được mấy mùa xuân rồi
+  - năm sinh m là gì hở
+  - cho mình hỏi ngày sinh của cậu
+  - bot sinh ngày mấy vậy
+  - cậu sinh nhật vào ngày nào thế
+  - ' cho tớ hỏi sinh nhật của cậu là gì đấy'
+  - bot sinh ngày tháng mấy
+  - cho tớ hỏi cậu sinh nhật vào ngày nào
+  - tuổi của em là mấy
+  - em hiện nay bao nhiêu tuổi
+  - timi được mấy mùa xuân hả
+  - sinh nhật của bạn năm gì
+  - cho anh hỏi timi sinh năm bao nhiêu
+  - có thể cho tớ biết cậu sinh vào tháng mấy

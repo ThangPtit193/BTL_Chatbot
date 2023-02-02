@@ -1,0 +1,179 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: rec_get_result_interview
+  examples:
+  - cho mình hỏi có kết quả phỏng vấn có lâu không
+  - phỏng vấn xong thì bao lâu biết kết quả bot nhỉ
+  - phỏng vấn xong thì sau bao nhiêu ngày nhận được kết quả
+  - sau bao lâu thì có kết quả phỏng vấn vậy cậu
+  - Trung bình 1 thí sinh bao lâu thì có kết quả ứng tuyển
+  - tớ muốn hỏi bao lâu công ty trả kết quả phỏng vấn ạ
+  - Một ứng viên xin việc mất bao lâu thì có thông báo kết quả ứng tuyển
+  - sau bao lâu thì có kết quả phỏng vấn vậy em
+  - tầm bao giời thì tớ nhận được kết quả phỏng vấn
+  - Timi cho mình hỏi thời gian nhận kết quả
+  - tầm bao lâu thì tôi nhận được kết quả phỏng vấn
+  - bao lâu thì có kết qủa phỏng vấn vậy timi
+  - Trung bình 1 ứng viên xin việc bao lâu thì có kết quả ứng tuyển
+  - Trung bình 1 ứng viên bao lâu thì có kết quả
+  - Một ứng viên mất bao lâu thì có kết quả ứng tuyển
+  - Trung bình 1 candidate bao lâu thì có thông báo kết quả ứng tuyển
+  - bao lâu thì có kết qủa phỏng vấn vậy m
+  - bao lâu thì có kết qủa phỏng vấn vậy bot
+  - thời gian trả kết quả phỏng vấn của [f-tech](work_unit) thường rơi vào giai đoạn
+    nào
+  - Trung bình 1 người xin việc bao lâu thì có kết quả ứng tuyển
+  - kết quả phỏng vấn bao lâu sẽ có
+  - phỏng vấn có kết quả liền không
+  - bao lâu thì có kết quả ứng tuyển?
+  - Trung bình 1 ứng viên bao lâu thì có thông báo kết quả ứng tuyển
+  - thời gian trả kết quả phỏng vấn của [f tech](work_unit) thường rơi vào giai đoạn
+    nào
+  - có kết quả phỏng vấn có lâu không
+  - sau bao lâu thì có kết quả phỏng vấn vậy timi
+  - Một thí sinh mất bao lâu thì có thông báo kết quả ứng tuyển
+  - tôi muốn hỏi bao lâu công ty trả kết quả phỏng vấn ạ
+  - sau bao lâu thì có kết quả phỏng vấn vậy mày
+  - Một người xin việc mất bao lâu thì có thông báo kết quả ứng tuyển
+  - Trung bình 1 ứng viên xin việc bao lâu thì có thông báo kết quả ứng tuyển
+  - Một candidate mất bao lâu thì có thông báo kết quả ứng tuyển
+  - Bao lâu phỏng vấn có kết quả
+  - Timi cho tôi hỏi thời gian nhận kết quả
+  - Trung bình 1 ứng viên xin việc bao lâu thì có kết quả
+  - Một người xin việc mất bao lâu thì có kết quả ứng tuyển
+  - bao lâu thì mình nhận được kết quả phỏng vấn
+  - Timi cho tớ hỏi thời gian nhận kết quả
+  - tầm bao lâu thì tớ nhận được kết quả phỏng vấn
+  - sau bao lâu thì có kết quả phỏng vấn vậy m
+  - cho tớ hỏi nhận được kết quả phỏng vấn có lâu không
+  - Trung bình 1 ứng viên bao lâu thì có kết quả ứng tuyển
+  - Trung bình 1 người xin việc bao lâu thì có kết quả
+  - tớ khi nào sẽ nhận đc kết quả phỏng vấn
+  - tầm bao giời thì mình nhận được kết quả phỏng vấn
+  - mình muốn hỏi bao lâu công ty trả kết quả phỏng vấn ạ
+  - bao lâu thì có thông báo kết quả ứng tuyển?
+  - Bao lâu có kết quả phỏng vấn
+  - bao lâu thì tôi nhận được kết quả phỏng vấn
+  - cho tớ hỏi có kết quả phỏng vấn có lâu không
+  - bao lâu thì có kết qủa phỏng vấn vậy em
+  - Một ứng viên xin việc mất bao lâu thì có kết quả ứng tuyển
+  - Bao lâu thì nhận được kết quả phỏng vấn thế
+  - bao lâu thì có kết qủa phỏng vấn vậy cậu
+  - tầm bao giời thì tôi nhận được kết quả phỏng vấn
+  - bao lâu thì có kết qủa phỏng vấn vậy bạn
+  - sau bao lâu thì có kết quả phỏng vấn vậy bot
+  - tầm bao giờ thì có phản hồi phỏng vấn
+  - mình khi nào sẽ nhận đc kết quả phỏng vấn
+  - Một ứng viên mất bao lâu thì có thông báo kết quả ứng tuyển
+  - Một thí sinh mất bao lâu thì có kết quả ứng tuyển
+  - tầm bao lâu thì mình nhận được kết quả phỏng vấn
+  - cho tôi hỏi nhận được kết quả phỏng vấn có lâu không
+  - bao lâu thì có kết qủa phỏng vấn vậy
+  - cho tôi hỏi có kết quả phỏng vấn có lâu không
+  - Trung bình 1 người xin việc bao lâu thì có thông báo kết quả ứng tuyển
+  - Trung bình 1 candidate bao lâu thì có kết quả ứng tuyển
+  - kết quả phỏng vấn lúc nào có
+  - phỏng vấn xong thì sau bao nhiêu ngày có kết quả
+  - phỏng vấn xong thì khi nào báo kết quả
+  - thời gian trả kết quả phỏng vấn của [ftech](work_unit) thường rơi vào giai đoạn
+    nào
+  - nhận được kết quả phỏng vấn sau bao nhiêu ngày
+  - tôi khi nào sẽ nhận đc kết quả phỏng vấn
+  - Một candidate mất bao lâu thì có kết quả ứng tuyển
+  - tầm bao giờ thì có kết quả phỏng vấn
+  - nhận được kết quả phỏng vấn có lâu không
+  - bao lâu thì tớ nhận được kết quả phỏng vấn
+  - Trung bình 1 candidate bao lâu thì có kết quả
+  - sau bao lâu thì có kết quả phỏng vấn vậy mầy
+  - Trung bình 1 thí sinh bao lâu thì có thông báo kết quả ứng tuyển
+  - Trung bình 1 thí sinh bao lâu thì có kết quả
+  - sau bao lâu thì có kết quả phỏng vấn vậy bạn
+  - có kết quả phỏng vấn sau bao nhiêu ngày
+  - bao lâu thì có kết qủa phỏng vấn vậy mày
+  - cho mình hỏi nhận được kết quả phỏng vấn có lâu không
+  - bao lâu thì có kết qủa phỏng vấn vậy mầy
+  - cho tôi hỏi về cách công ty thông báo kết quả cho ứng viên xin việc với ạ
+  - tớ phỏng vấn xong rồi, giờ đợi email để nhận kết quả hay sao ạ
+  - tôi nhận kết quả tuyển dụng bằng gì
+  - cho tớ xin thông tin về cách [f-tech](work_unit) trả kết quả phỏng vấn đi ạ
+  - kết quả trả về như thế nào
+  - công ty sẽ gọi điện để thông báo kết quả phỏng vấn nhỉ
+  - công ty trả kết quả bằng mail à
+  - nhận result qua đâu
+  - tớ muốn hỏi về cách thức trả kết quả phỏng vấn của bên bạn
+  - kết quả phỏng vấn xem trên trang chủ công ty hả
+  - ' [ftech](work_unit) trả result thông qua đâu?'
+  - tôi muốn hỏi thông tin trả result bên timi
+  - công ty trả kết quả phỏng vấn qua đâu
+  - ' [ftech](work_unit) trả kết quả phỏng vấn thế nào?'
+  - tôi chỉ cần check email để biết tình hình pass fail của tớ thôi hay sao ạ
+  - công ty thông báo kết quả qua fb được không
+  - làm thế nào để nhận kết quả vậy
+  - bên [hành chính nhân sự](department) có gọi để thông báo tình hình phỏng vấn cho
+    tôi ko nhỉ
+  - cho tớ hỏi về cách công ty thông báo kết quả cho ứng viên với ạ
+  - tớ phỏng vấn xong rồi, giờ đợi mail để nhận kết quả hay sao ạ
+  - tôi nhận kết quả phỏng vấn thế nào
+  - cho mình xin info về cách [ftech](work_unit) trả kết quả phỏng vấn đi ạ
+  - kết quả trả về như nào vậy
+  - công ty trả kết quả bằng email à
+  - nhận kết quả ở đâu
+  - tôi muốn hỏi về cách thức trả kết quả phỏng vấn của bên bạn
+  - công ty [ftech](work_unit) trả result thông qua đâu?
+  - mình muốn hỏi phương thức trả kết quả bên bạn
+  - công ty [ftech](work_unit) trả kết quả phỏng vấn như nào?
+  - tôi chỉ cần check mail để biết tình hình pass fail của tôi thôi hay sao ạ
+  - bên [HR and Admin](department) có gọi để thông báo tình hình phỏng vấn cho tôi
+    ko nhỉ
+  - cho mình hỏi về cách công ty thông báo kết quả cho thí sinh với ạ
+  - tớ phỏng vấn xong rồi, giờ đợi gmail để nhận kết quả hay sao ạ
+  - mình nhận result phỏng vấn thế nào
+  - cho tớ xin info về cách [f tech](work_unit) trả kết quả phỏng vấn đi ạ
+  - result trả về như thế nào vậy hả
+  - công ty trả result bằng email à
+  - nhận kết quả qua đâu
+  - mình muốn hỏi về cách thức trả kết quả phỏng vấn của bên bạn
+  - ' [f-tech](work_unit) trả kết quả thông qua đâu?'
+  - tôi muốn biết phương thức trả result bên em
+  - ' [f-tech](work_unit) trả result phỏng vấn như thế nào?'
+  - tôi chỉ cần check email để biết tình hình pass fail của tôi thôi hay sao ạ
+  - bên [hr admin](department) có gọi để thông báo tình hình phỏng vấn cho tôi ko
+    nhỉ
+  - cho mình hỏi về cách công ty thông báo kết quả cho người xin việc với ạ
+  - tôi phỏng vấn xong rồi, giờ đợi gmail để nhận kết quả hay sao ạ
+  - tôi nhận result tuyển dụng bằng gì
+  - cho tớ xin thông tin về cách [ftech](work_unit) trả kết quả phỏng vấn đi ạ
+  - result trả về thế nào
+  - công ty trả result bằng gmail à
+  - nhận result nơi đâu
+  - công ty [ftech](work_unit) trả kết quả thông qua đâu?
+  - tớ muốn biết phương thức trả result bên cậu
+  - ' [ftech](work_unit) trả kết quả phỏng vấn như thế nào?'
+  - tôi chỉ cần check mail để biết tình hình pass fail của tớ thôi hay sao ạ
+  - bên [nhân sự](department) có gọi để thông báo tình hình phỏng vấn cho tôi ko nhỉ
+  - cho tớ hỏi về cách công ty thông báo kết quả cho thí sinh với ạ
+  - mình phỏng vấn xong rồi, giờ đợi gmail để nhận kết quả hay sao ạ
+  - mình nhận kết quả phỏng vấn bằng gì
+  - cho tớ xin info về cách [ftech](work_unit) trả kết quả phỏng vấn đi ạ
+  - result trả về thế nào vậy hả
+  - công ty trả kết quả bằng gmail à
+  - nhận result ở đâu
+  - công ty [f-tech](work_unit) trả result thông qua đâu?
+  - tớ muốn hỏi thông tin trả result bên cậu
+  - ' [f tech](work_unit) trả kết quả phỏng vấn thế nào?'
+  - tôi chỉ cần check gmail để biết tình hình pass fail của tớ thôi hay sao ạ
+  - cho tớ hỏi về cách công ty thông báo kết quả cho người xin việc với ạ
+  - tôi phỏng vấn xong rồi, giờ đợi mail để nhận kết quả hay sao ạ
+  - mình nhận result tuyển dụng như thế nào
+  - cho mình xin information về cách [ftech](work_unit) trả kết quả phỏng vấn đi ạ
+  - kết quả trả về thế nào
+  - công ty trả result bằng mail à
+  - nhận kết quả tại đâu
+  - công ty [f-tech](work_unit) trả kết quả thông qua đâu?
+  - tôi muốn biết thông tin trả kết quả bên em
+  - ' [ftech](work_unit) trả result phỏng vấn như nào?'
+  - tôi chỉ cần check email để biết tình hình pass fail của mình thôi hay sao ạ
+  - cho mình hỏi về cách công ty thông báo kết quả cho candidate với ạ
+  - tôi phỏng vấn xong rồi, giờ đợi email để nhận kết quả hay sao ạ

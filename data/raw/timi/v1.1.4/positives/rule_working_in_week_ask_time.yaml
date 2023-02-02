@@ -1,0 +1,1016 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: rule_working_in_week_ask_time
+  examples:
+  - thời gian làm của công ty thế nào
+  - ' bắt đầu làm việc vào buổi sáng lúc mấy giờ'
+  - thời gian làm việc của công ty như thế nào
+  - công ty hết giờ làm vào lúc nào
+  - giờ làm việc của công ty như nào
+  - thời gian buổi chiều được về lúc mấy giờ
+  - cho chị hỏi thời gian làm thế nào vậy
+  - '[f-tech](work_unit) có cho nghỉ thứ 7 và cn không'
+  - vào buổi sáng công ty bắt đầu làm lúc mấy giờ
+  - người công ty khi nào được về
+  - thời gian kết thúc task vào lúc mấy giờ
+  - công ty có làm việc tăng ca vào buổi tối ko
+  - lịch của mình như nào?
+  - mấy giờ được về
+  - công ty làm việc vào ban ngày hay đêm vậy hả mày
+  - đi làm giờ nào
+  - mấy giờ công ty kết thúc làm bot
+  - thời gian làm việc như nào?
+  - công ty tan ca lúc 6h chính xác ko hả
+  - quy định về thời gian làm việc trong ngày của công ty
+  - buổi chiều công ty bắt đầu làm vào mấy giờ
+  - '[f tech](work_unit) thời gian làm việc như nào?'
+  - công ty làm 6 ngày/tuần à
+  - có phải công ty của bạn làm việc từ 8h30 đến 17h30 chuẩn ko
+  - chiều về mấy giờ
+  - công ty bắt đầu làm việc khi nào vậy hả
+  - công ty có ăn cơm trưa ko
+  - bot cho tớ hỏi thứ 7 có đi làm ko
+  - Thời gian làm việc bên mình như thế nào
+  - tớ muốn biết thời gian làm việc của công ty
+  - ' làm việc lúc mấy giờ m'
+  - nội quy giờ làm việc của công ty như thế nào
+  - thời gian mở cửa của công ty
+  - mình là nhận sự mới, tớ muốn biết thời gian làm việc của công ty
+  - thời gian bắt đầu làm việc từ khi nào bạn
+  - chiêu khi nào về
+  - công ty làm việc lúc mấy giờ
+  - làm việc thì thời khóa biểu như nào?
+  - một buổi nhân viên phải làm mấy tiếng
+  - cho tớ xin thông tin thời gian làm việc của công ty
+  - một buổi làm mấy tiếng
+  - công ty có nghỉ thứ 7 ko
+  - tháng làm bao nhiêu buổi thế
+  - thời gian làm như thế nào
+  - công ty tan làm có trễ không ạ
+  - công ty vô làm lúc 8h đúng ko
+  - cho mình hỏi quy định về thời gian làm việc của công ty thế nào
+  - giờ giải lao ở công ty
+  - cho chị hỏi thời gian làm việc của công ty như thế nào hả
+  - thường thì công ty công nghệ bắt đầu làm việc sớm phải không
+  - mấy giờ tan làm hả
+  - công ty bắt đầu làm lúc mấy giờ vào buổi chiều
+  - thời gian làm việc chính thức của công ty là từ 8h30 đến 17h30 hả
+  - Chủ nhật có được nhỉ ko
+  - công ty có quy định về thời gian làm cho nhận sự không bạn
+  - công ty buổi chiều được về lúc mấy giờ
+  - công ty hết giờ làm lúc mấy giờ
+  - người công ty khi nào đi làm về
+  - công ty vào làm lúc nào
+  - cho mình xin info thời gian làm
+  - tớ nghe bảo công ty vào làm việc lúc 8h chuẩn không em
+  - công ty mở cửa lúc mấy giờ thế
+  - công ty có thời gian biểu như nào?
+  - công ty làm việc từ mấy giờ đến mấy giờ
+  - thời gian đi làm về buổi chiều lúc mấy giờ
+  - công ty làm ngày mấy tiếng vậy hả
+  - Chủ nhật có được không ha
+  - công ty kết thúc làm lúc mấy giờ đấy
+  - công ty tan làm lúc 5h hay 6h30 hả
+  - công ty bắt đầu làm việc lúc mấy giờ
+  - nội quy về thời gian làm việc của công ty như thế nào
+  - nhân viên công ty buổi chiều được về lúc mấy giờ
+  - rule về thời gian làm việc thế nào
+  - chiều mấy giờ về
+  - mấy giờ công ty bắt đầu làm việc m
+  - cho tôi hỏi về thời gian làm việc của công ty đi nào em
+  - thời gian làm việc của công ty như nào
+  - công ty bắt đầu làm vào buổi sáng lúc mấy giờ
+  - thời gian làm việc của công ty thế nào
+  - giờ làm việc của công ty thế nào
+  - cho tớ hỏi thời gian làm như thế nào vậy
+  - '[f-tech](work_unit) có cho nghỉ thứ 7 và chủ nhật ko'
+  - vào buổi sáng công ty bắt đầu làm việc từ mấy giờ
+  - thành viên công ty khi nào được về
+  - thời gian kết thúc công việc vào lúc mấy giờ
+  - công ty có làm việc tăng ca vào buổi tối không
+  - lịch của công ty thế nào?
+  - công ty làm việc vào ban ngày hay đêm hả mầy
+  - mấy giờ kết thúc làm việc timi
+  - thời gian làm việc công ty như thế nào?
+  - công ty tan làm lúc 5h30 chính xác ko vậy hả
+  - rule về thời gian làm việc trong ngày của công ty
+  - buổi chiều công ty bắt đầu làm việc mấy giờ
+  - '[f-tech](work_unit) thời gian làm việc như thế nào?'
+  - công ty làm 7 ngày/tuần à
+  - có phải công ty của timi làm từ 8h30 đến 17h30 đúng không
+  - công ty bắt đầu làm việc khi nào hả
+  - công ty có ăn cơm trưa không
+  - mày cho mình hỏi cn có đi làm không
+  - Thời gian làm việc công ty như nào
+  - mình muốn biết thời gian làm việc của công ty
+  - ' bắt đầu làm lúc mấy giờ vậy hả'
+  - quy chế về giờ làm việc của công ty thế nào
+  - tớ là người mới, mình muốn biết thời gian làm việc của công ty
+  - thời gian bắt đầu làm việc từ khi nào cậu
+  - công ty làm từ mấy giờ
+  - làm việc thì thời gian ra sao?
+  - một ngày nhân viên phải làm mấy tiếng
+  - cho mình xin information thời gian làm của công ty
+  - một buổi làm bao nhiu giờ
+  - công ty có nghỉ chủ nhật ko
+  - tháng làm bao nhiêu buổi thế hả
+  - thời gian làm việc thế nào
+  - công ty tan làm có trễ ko ạ
+  - công ty vô làm lúc 8h30 đúng không
+  - cho tớ hỏi quy định thời gian làm việc của công ty thế nào
+  - cho chị hỏi thời gian làm của công ty như nào vậy hả
+  - thường thì công ty công nghệ bắt đầu làm việc muộn phải ko
+  - mấy giờ công ty tan làm vậy
+  - ' bắt đầu làm mấy giờ vào buổi chiều'
+  - thời gian làm chính thức của công ty là từ 8h30 đến 17h30 hả
+  - Chủ nhật có được nhể không
+  - công ty có quy chế về thời gian làm cho người không cậu
+  - thành viên công ty khi nào đi làm về
+  - cho mình xin information thời gian làm việc
+  - tôi nghe bảo công ty vào làm việc lúc 9h chuẩn chỉ không m
+  - công ty có thời khóa biểu như thế nào?
+  - công ty làm từ mấy giờ đến mấy giờ
+  - công ty làm ngày mấy tiếng vậy
+  - Chủ nhật có được ko nhỉ
+  - công ty kết thúc làm việc lúc mấy giờ đấy bot
+  - công ty tan làm lúc 5h30 hay 6h vậy
+  - công ty bắt đầu làm việc từ mấy giờ
+  - quy định về thời gian làm việc của công ty như nào
+  - thành viên công ty buổi chiều được về lúc mấy giờ
+  - nội quy thời gian làm việc thế nào vậy
+  - mấy giờ bắt đầu làm timi
+  - mình muốn hỏi về thời gian làm việc của công ty đi nào mày
+  - thời gian làm của công ty như thế nào
+  - công ty bắt đầu làm việc vào buổi sáng từ mấy giờ
+  - giờ làm việc của công ty như thế nào
+  - cho mình hỏi thời gian làm như nào vậy
+  - '[f tech](work_unit) có cho nghỉ thứ 7 và chủ nhật ko'
+  - vào buổi sáng công ty bắt đầu làm việc lúc mấy giờ
+  - nhân viên công ty khi nào được về
+  - thời gian kết thúc nhiệm vụ vào lúc mấy giờ
+  - giờ giấc của mình như nào?
+  - công ty làm việc vào ban ngày hay đêm vậy cậu
+  - mấy giờ công ty kết thúc làm việc cậu
+  - thời gian làm việc công ty như nào?
+  - công ty tan làm lúc 6h đúng không hả
+  - rule thời gian làm việc trong ngày của công ty
+  - buổi chiều làm mấy giờ
+  - '[f-tech](work_unit) thời gian làm việc ra sao?'
+  - công ty làm 5 ngày/tuần à
+  - có phải công ty của bạn làm việc từ 8h30 đến 17h30 chính xác không
+  - công ty bắt đầu làm việc khi nào vậy
+  - m cho tớ hỏi cn có đi làm ko
+  - Thời gian làm việc bên mình ra sao
+  - tôi muốn biết thời gian làm việc của công ty
+  - ' làm lúc mấy giờ'
+  - rule về giờ làm việc của công ty thế nào
+  - tôi là nhận sự mới, tớ muốn biết thời gian làm việc của công ty
+  - thời gian bắt đầu làm từ khi nào
+  - công ty làm lúc mấy giờ
+  - đi làm thì thời gian biểu ra sao?
+  - một ngày nhân viên phải làm mấy giờ
+  - cho tớ xin information thời gian làm việc của công ty
+  - một ngày làm mấy giờ
+  - công ty có nghỉ cn không
+  - tuần làm bao nhiêu buổi thế hử
+  - thời gian làm việc như thế nào
+  - công ty tan làm có sớm ko á
+  - công ty vô làm lúc 9h đúng ko
+  - cho tớ hỏi quy định thời gian làm việc của công ty
+  - cho tớ hỏi thời gian làm của công ty thế nào
+  - thường thì công ty công nghệ bắt đầu làm việc sớm phải ko
+  - mấy giờ công ty tan làm hả
+  - công ty làm việc mấy giờ vào buổi chiều
+  - thời gian làm việc chính thức của công ty là từ 8h30 đến 17h30 hử
+  - Chủ nhật có được ha không
+  - công ty có rule về thời gian làm việc cho nhận sự ko em
+  - nhận sự công ty khi nào đi làm về
+  - cho anh xin information thời gian làm việc
+  - tớ nghe bảo công ty vào ca lúc 8h30 chuẩn ko bạn
+  - công ty có giờ giấc thế nào?
+  - công ty làm ngày mấy giờ vậy hả
+  - Chủ nhật có được ko ha
+  - công ty kết thúc làm việc lúc mấy giờ đấy
+  - công ty tan ca lúc 5h hay 6h vậy
+  - công ty bắt đầu làm từ mấy giờ
+  - rule về thời gian làm việc của công ty như thế nào
+  - nhận sự công ty buổi chiều được về lúc mấy giờ
+  - quy chế về thời gian làm như thế nào vậy
+  - mấy giờ bắt đầu làm việc em
+  - cho tớ hỏi về thời gian làm việc của công ty đi nào em
+  - thời gian làm của công ty như nào
+  - ' bắt đầu làm vào buổi sáng từ mấy giờ'
+  - cho anh hỏi thời gian làm thế nào vậy
+  - '[f-tech](work_unit) có cho nghỉ thứ 7 và chủ nhật không'
+  - vào buổi sáng công ty bắt đầu làm từ mấy giờ
+  - nhận sự công ty khi nào được về
+  - giờ của công ty như nào?
+  - công ty làm việc vào ban ngày hay đêm hả timi
+  - mấy giờ công ty kết thúc làm timi
+  - thời gian làm việc công ty thế nào?
+  - công ty tan ca lúc 6h chuẩn chỉ ko vậy hả
+  - quy định thời gian làm việc trong ngày của công ty
+  - buổi chiều làm lúc mấy giờ
+  - '[f-tech](work_unit) thời gian làm việc ntn?'
+  - có phải công ty của m làm việc từ 8h30 đến 17h30 chuẩn chỉ không
+  - mày cho mình hỏi chủ nhật có đi làm không
+  - thời gian làm việc công ty ra sao
+  - ' làm việc mấy giờ'
+  - rule về giờ làm việc của công ty như nào
+  - tôi là thành viên mới, tôi muốn biết thời gian làm việc của công ty
+  - thời gian bắt đầu làm việc từ khi nào
+  - công ty làm việc từ mấy giờ
+  - đi làm thì giờ giấc như nào?
+  - một ngày người phải làm mấy tiếng
+  - cho anh xin info thời gian làm việc của công ty
+  - một buổi làm mấy giờ
+  - công ty có nghỉ thứ 7 không
+  - tuần làm bao nhiêu buổi thế
+  - thời gian làm việc thế nào vậy
+  - công ty tan ca có sớm ko á
+  - công ty vô làm lúc 8h30 chuẩn ko
+  - cho tớ hỏi quy định thời gian làm việc của công ty như thế nào
+  - cho chị hỏi thời gian làm của công ty thế nào
+  - thường thì công ty công nghệ bắt đầu làm việc muộn phải không
+  - mấy giờ tan làm vậy
+  - ' làm mấy giờ vào buổi chiều'
+  - thời gian làm chính thức của công ty là từ 8h30 đến 17h30 hử
+  - Chủ nhật có được ha ko
+  - công ty có quy định về thời gian làm việc cho nhận sự không mầy
+  - nhân viên công ty khi nào đi làm về
+  - cho tớ xin information thời gian làm
+  - tôi nghe bảo công ty vào ca lúc 8h30 chuẩn chỉ ko mầy
+  - bên bạn có thời gian biểu thế nào?
+  - công ty làm ngày mấy giờ hả
+  - Chủ nhật có được ko nhể
+  - công ty kết thúc làm lúc mấy giờ đấy mầy
+  - công ty tan làm lúc 5h hay 6h hả
+  - công ty bắt đầu làm mấy giờ
+  - nội quy về thời gian làm việc của công ty thế nào
+  - người công ty buổi chiều được về lúc mấy giờ
+  - quy định về thời gian làm như nào vậy hả
+  - mấy giờ công ty bắt đầu làm mày
+  - tớ muốn hỏi về thời gian làm việc của công ty đi nào m
+  - ' bắt đầu làm vào buổi sáng lúc mấy giờ'
+  - cho anh hỏi thời gian làm thế nào
+  - '[f tech](work_unit) có cho nghỉ thứ 7 và chủ nhật không'
+  - thời gian của bên bạn thế nào?
+  - công ty làm việc vào ban ngày hay đêm vậy timi
+  - mấy giờ kết thúc làm timi
+  - thời gian làm việc như thế nào?
+  - công ty tan ca lúc 5h chuẩn chỉ ko vậy hả
+  - nội quy thời gian làm việc trong ngày của công ty
+  - buổi chiều công ty làm việc vào mấy giờ
+  - '[f-tech](work_unit) thời gian làm việc như nào?'
+  - có phải công ty của mầy làm từ 8h30 đến 17h30 chuẩn ko
+  - bot cho tớ hỏi cn có đi làm không
+  - Thời gian làm việc công ty ra sao
+  - ' bắt đầu làm mấy giờ hả'
+  - nội quy giờ làm việc của công ty như nào
+  - tôi là người mới, tớ muốn biết thời gian làm việc của công ty
+  - thời gian bắt đầu làm từ khi nào bot
+  - làm việc thì thời gian như nào?
+  - một buổi người phải làm mấy tiếng
+  - cho tớ xin info thời gian làm việc của công ty
+  - một buổi làm bao nhiêu giờ
+  - công ty có nghỉ cn ko
+  - tháng làm bao nhiêu buổi thế hử
+  - thời gian làm như nào
+  - công ty tan ca có trễ không ạ
+  - công ty vô làm lúc 9h chuẩn chỉ không
+  - cho tớ hỏi quy định về thời gian làm việc của công ty
+  - cho chị hỏi thời gian làm của công ty như nào vậy
+  - mấy giờ công ty tan làm vậy hả
+  - công ty bắt đầu làm việc mấy giờ vào buổi chiều
+  - Chủ nhật có được nhỉ không
+  - công ty có quy định về thời gian làm cho thành viên ko bạn
+  - cho chị xin info thời gian làm việc
+  - tôi nghe bảo công ty vào ca lúc 9h chuẩn ko cậu
+  - công ty có thời khóa biểu như nào?
+  - công ty làm ngày mấy giờ vậy
+  - Chủ nhật có được không nhể
+  - công ty kết thúc làm lúc mấy giờ đấy bot
+  - công ty tan ca lúc 5h30 hay 6h30 vậy
+  - công ty bắt đầu làm lúc mấy giờ
+  - quy định thời gian làm việc của công ty như thế nào
+  - quy chế về thời gian làm việc như nào hả
+  - mấy giờ công ty bắt đầu làm mầy
+  - tôi muốn hỏi về thời gian làm việc của công ty đi nào m
+  - công ty bắt đầu làm vào buổi sáng từ mấy giờ
+  - cho tớ hỏi thời gian làm như nào
+  - '[ftech](work_unit) có cho nghỉ thứ 7 và chủ nhật không'
+  - giờ của bên mình ra sao?
+  - công ty làm việc vào ban ngày hay đêm vậy hả bạn
+  - mấy giờ công ty kết thúc làm việc bạn
+  - thời gian nghỉ trưa của công ty như nào vậy
+  - khoảng thời gian nghỉ trưa là như thế nào nhỉ em
+  - khoảng thời gian nghỉ trưa của công ty là như nào nhỉ em
+  - thông thường nhận sự sẽ được nghỉ trưa bao giờ hả
+  - công ty ăn trưa lúc 11h hay 12h hả
+  - quy định về thời gian nghỉ trưa như nào
+  - khoảng thời gian nghỉ trưa của công ty là như thế nào nhỉ timi
+  - khoảng thời gian nghỉ trưa của công ty là thế nào nhỉ cậu
+  - người sẽ ăn trưa lúc nào vậy
+  - công ty ăn trưa lúc 11h đúng không
+  - tớ muốn hỏi về quy định thời gian ăn trưa của công ty
+  - công ty nghỉ trưa lúc 11h chuẩn ko
+  - công ty nghỉ trưa lúc 12h chính xác ko
+  - nhận sự sẽ nghỉ trưa khi nào vậy hả
+  - cho anh hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ hả
+  - anh muốn hỏi thời gian nghỉ trưa như thế nào
+  - công ty nghỉ trưa lúc 11h đúng không
+  - quy định thời gian ăn trưa của công ty như nào
+  - được nghỉ trưa mấy tiếng vậy bot
+  - khoảng thời gian nghỉ trưa của công ty là thế nào nhỉ mầy
+  - thông thường thành viên sẽ được nghỉ trưa lúc nào vậy hả
+  - thời gian nghỉ trưa cho nhân viên vào thời gian nào hả
+  - mấy giờ thì được nghỉ giữa giờ vậy hả
+  - nhân viên sẽ ăn trưa lúc nào vậy hả
+  - nhận sự sẽ ăn trưa khi nào vậy hả
+  - mình muốn hỏi về quy định thời gian ăn trưa của công ty
+  - chiều làm lại từ 1 giờ hả
+  - thông thường thành viên sẽ được nghỉ trưa lúc nào vậy
+  - quy chế thời gian ăn trưa của công ty thế nào
+  - cho anh hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ
+  - khoảng thời gian nghỉ trưa là như nào nhỉ bạn
+  - quy định thời gian ăn trưa của công ty như thế nào
+  - người sẽ nghỉ trưa lúc nào vậy hả
+  - công ty ăn trưa lúc 11h hay 12h30 hả
+  - người sẽ ăn trưa khi nào vậy hả
+  - nghỉ trưa bao lâu
+  - công ty nghỉ trưa lúc 11h hay 12h30 vậy
+  - nhận sự sẽ nghỉ trưa khi nào hả
+  - rule thời gian ăn trưa của công ty như nào
+  - công ty nghỉ trưa lúc 12h chính xác không
+  - công ty nghỉ trưa lúc 11h30 hay 12h30 vậy hả
+  - người sẽ nghỉ trưa khi nào vậy hả
+  - thành viên sẽ nghỉ trưa khi nào vậy hả
+  - chị muốn hỏi thời gian nghỉ trưa như thế nào
+  - mấy giờ thì được ăn trưa
+  - người sẽ ăn trưa lúc nào hả
+  - cho anh hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ vậy hả
+  - thời gian nghỉ trưa là lúc nào vậy
+  - quy định thời gian nghỉ trưa của công ty như thế nào
+  - cho mình hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ
+  - được nghỉ trưa mấy tiếng vậy mày
+  - nội quy thời gian nghỉ trưa của công ty thế nào
+  - thông thường người sẽ được ăn trưa lúc nào vậy hả
+  - công ty ngủ trưa lúc 11h30 hay 12h30 hả
+  - lúc nào thì tôi được nghỉ ăn trưa đây
+  - thông thường người sẽ được nghỉ trưa lúc nào hả
+  - thông thường người sẽ được ăn trưa bao giờ vậy hả
+  - mấy giờ thì được ăn trưa vậy hả
+  - khoảng thời gian nghỉ trưa của công ty là thế nào nhỉ bạn
+  - nghỉ trưa đến mấy giờ nhỉ
+  - mấy giờ được nghỉ ăn trưa vậy cậu
+  - thời gian nghỉ trưa của công ty như thế nào vậy
+  - công ty ngủ trưa lúc 11h hay 12h30 vậy
+  - thông thường người sẽ được nghỉ trưa bao giờ vậy hả
+  - tôi muốn hỏi về nội quy thời gian nghỉ trưa của công ty
+  - cho mình hỏi về nội quy thời gian nghỉ trưa của công ty
+  - thời gian nghỉ trưa cho nhân viên vào thời gian nào vậy hả
+  - công ty nghỉ trưa lúc 11h chuẩn chỉ ko
+  - thời gian nghỉ trưa của công ty vào lúc mấy giờ
+  - thời gian nghỉ trưa vào thời gian nào vậy hả
+  - công ty ngủ trưa lúc 12h chuẩn chỉ ko
+  - được nghỉ trưa mấy tiếng vậy em
+  - thông thường thành viên sẽ được ăn trưa bao giờ hả
+  - tôi muốn hỏi về rule thời gian ăn trưa của công ty
+  - nhân viên sẽ ăn trưa lúc nào hả
+  - cho tớ hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ hả
+  - công ty nghỉ trưa lúc 11h hay 12h hả
+  - thời gian nghỉ trưa của công ty vào lúc mấy giờ vậy
+  - nội quy thời gian nghỉ trưa của công ty như nào
+  - công ty ăn trưa lúc 12h chuẩn chỉ không
+  - công ty ăn trưa lúc 12h chuẩn không
+  - cho mình hỏi về quy chế thời gian ăn trưa của công ty
+  - được nghỉ trưa mấy tiếng vậy cậu
+  - cho chị hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ vậy
+  - công ty ăn trưa lúc 12h chính xác không
+  - công ty nghỉ trưa lúc 11h đúng ko
+  - cho mình hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ vậy
+  - nghỉ trưa trong khoảng thời gian bao lâu
+  - mấy giờ thì được ăn trưa vậy
+  - thông thường người sẽ được ăn trưa bao giờ vậy
+  - cho anh hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ vậy
+  - người sẽ ăn trưa khi nào hả
+  - công ty ngủ trưa lúc 11h30 hay 12h vậy hả
+  - người sẽ nghỉ trưa lúc nào hả
+  - thông thường thành viên sẽ được nghỉ trưa bao giờ vậy hả
+  - công ty ăn trưa lúc 11h30 hay 12h vậy
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ m
+  - Nghỉ trưa vào thời gian nào vậy
+  - nhận sự sẽ ăn trưa khi nào vậy
+  - khoảng thời gian nghỉ trưa của công ty là thế nào nhỉ em
+  - nhân viên sẽ nghỉ trưa khi nào vậy
+  - quy định thời gian nghỉ trưa của công ty thế nào
+  - thành viên sẽ ăn trưa lúc nào vậy hả
+  - thông thường thành viên sẽ được nghỉ trưa bao giờ vậy
+  - thông thường nhân viên sẽ được nghỉ trưa lúc nào hả
+  - cho tớ hỏi về nội quy thời gian nghỉ trưa của công ty
+  - nội quy thời gian ăn trưa của công ty như nào
+  - quy chế thời gian ăn trưa của công ty như nào
+  - khoảng thời gian nghỉ trưa của công ty là thế nào nhỉ timi
+  - Nghỉ trưa vào thời gian nào vậy mầy
+  - quy định thời gian nghỉ trưa của công ty như nào
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ timi
+  - công ty ngủ trưa lúc 12h đúng không
+  - tớ muốn hỏi thời gian nghỉ trưa như thế nào
+  - cho tớ hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ vậy hả
+  - khoảng thời gian nghỉ trưa là như nào nhỉ mầy
+  - thời gian nghỉ trưa cho nhân viên như nào vậy
+  - công ty ăn trưa lúc 11h chính xác ko
+  - mình muốn hỏi thời gian nghỉ trưa như thế nào
+  - công ty nghỉ trưa lúc 11h hay 12h vậy hả
+  - khoảng thời gian nghỉ trưa của công ty là như thế nào nhỉ mày
+  - thời gian nghỉ trưa cho nhân viên vào thời gian nào
+  - buổi chiều làm lại từ 13 giờ hử
+  - nghỉ trưa bao lâu vậy
+  - quy chế thời gian nghỉ trưa của công ty như nào
+  - rule thời gian ăn trưa của công ty
+  - khoảng thời gian nghỉ trưa của công ty là thế nào nhỉ bot
+  - thông thường người sẽ được ăn trưa bao giờ hả
+  - thông thường nhận sự sẽ được ăn trưa lúc nào vậy
+  - thông thường thành viên sẽ được ăn trưa lúc nào vậy hả
+  - Nghỉ trưa vào thời gian nào vậy m
+  - thời gian nghỉ trưa của công ty như nào
+  - thời gian nghỉ trưa của công ty thế nào vậy hả
+  - khoảng thời gian nghỉ trưa là như thế nào nhỉ m
+  - Nghỉ trưa vào thời gian nào vậy em
+  - khoảng thời gian nghỉ trưa là như thế nào nhỉ timi
+  - khoảng thời gian nghỉ trưa là như thế nào nhỉ mày
+  - thông thường người sẽ được nghỉ trưa bao giờ vậy
+  - buổi chiều làm lại từ 1 giờ hả
+  - cho mình hỏi về quy định thời gian nghỉ trưa của công ty
+  - cho chị hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ hả
+  - thời gian nghỉ trưa cho nhân viên như thế nào
+  - mình muốn hỏi về rule thời gian ăn trưa của công ty
+  - thời gian nghỉ trưa của công ty như thế nào
+  - công ty nghỉ trưa lúc 11h hay 12h vậy
+  - thông thường nhân viên sẽ được ăn trưa bao giờ hả
+  - quy chế thời gian ăn trưa của công ty
+  - tớ muốn hỏi về quy chế thời gian ăn trưa của công ty
+  - thời gian nghỉ trưa của công ty thế nào hả
+  - thời gian nghỉ trưa của công ty là lúc nào hả
+  - công ty ngủ trưa lúc 12h chính xác ko
+  - thông thường nhân viên sẽ được ăn trưa bao giờ vậy
+  - mình muốn hỏi về quy định thời gian nghỉ trưa của công ty
+  - tớ muốn hỏi về rule thời gian ăn trưa của công ty
+  - công ty nghỉ trưa đến mấy giờ nhỉ
+  - thông thường người sẽ được ăn trưa lúc nào hả
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ bot
+  - nội quy thời gian nghỉ trưa của công ty như thế nào
+  - nhận sự sẽ ăn trưa lúc nào vậy
+  - cho tôi hỏi về quy chế thời gian ăn trưa của công ty
+  - tôi muốn hỏi về rule thời gian nghỉ trưa của công ty
+  - thời gian nghỉ trưa cho nhân viên như thế nào vậy hả
+  - nghỉ trưa bao lâu hả
+  - người sẽ ăn trưa lúc nào vậy hả
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ
+  - nội quy thời gian ăn trưa của công ty như thế nào
+  - công ty nghỉ trưa lúc 11h hay 12h30 hả
+  - thông thường nhận sự sẽ được nghỉ trưa lúc nào hả
+  - khoảng thời gian nghỉ trưa của công ty là như nào nhỉ mầy
+  - thông thường nhân viên sẽ được ăn trưa lúc nào hả
+  - thông thường nhân viên sẽ được nghỉ trưa bao giờ vậy hả
+  - thời gian nghỉ trưa cho nhân viên vào thời gian nào vậy
+  - tớ muốn hỏi về quy định thời gian nghỉ trưa của công ty
+  - mấy giờ được nghỉ ăn trưa vậy m
+  - công ty nghỉ trưa lúc 11h30 hay 12h30 vậy
+  - tớ muốn hỏi về nội quy thời gian ăn trưa của công ty
+  - quy chế thời gian nghỉ trưa của công ty thế nào
+  - thời gian nghỉ trưa như thế nào vậy hả
+  - thông thường nhận sự sẽ được ăn trưa lúc nào vậy hả
+  - công ty nghỉ trưa lúc 11h chuẩn chỉ không
+  - công ty ăn trưa lúc 12h đúng ko
+  - quy chế thời gian ăn trưa của công ty như thế nào
+  - công ty ngủ trưa lúc 12h chính xác không
+  - khoảng thời gian nghỉ trưa là như nào nhỉ
+  - cho mình hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ hả
+  - nhân viên sẽ nghỉ trưa khi nào vậy hả
+  - cho tôi hỏi về quy chế thời gian nghỉ trưa của công ty
+  - Nghỉ trưa vào thời gian nào vậy bot
+  - Nghỉ trưa vào thời gian nào vậy bạn
+  - thành viên sẽ nghỉ trưa khi nào hả
+  - quy định thời gian ăn trưa của công ty thế nào
+  - công ty ăn trưa lúc 11h đúng ko
+  - công ty mấy giờ thì được nghỉ trưa
+  - cho tôi hỏi về quy định thời gian ăn trưa của công ty
+  - khoảng thời gian nghỉ trưa của công ty là như thế nào nhỉ bot
+  - thông thường thành viên sẽ được ăn trưa lúc nào vậy
+  - công ty ăn trưa lúc 11h30 hay 12h30 vậy hả
+  - nhân viên sẽ ăn trưa lúc nào vậy
+  - giờ ăn trưa của công ty thế nào
+  - thời gian ăn trưa của công ty như thế nào
+  - thông thường người sẽ được nghỉ trưa lúc nào vậy hả
+  - khoảng thời gian nghỉ trưa là như nào nhỉ cậu
+  - công ty ăn trưa lúc 11h hay 12h vậy hả
+  - thời gian nghỉ trưa của công ty thế nào vậy
+  - khoảng thời gian nghỉ trưa của công ty là thế nào nhỉ m
+  - mình muốn hỏi về nội quy thời gian ăn trưa của công ty
+  - thời gian nghỉ trưa của công ty như nào vậy hả
+  - công ty nghỉ trưa lúc 11h chính xác ko
+  - khoảng thời gian nghỉ trưa là như nào nhỉ bot
+  - mình muốn hỏi về quy chế thời gian nghỉ trưa của công ty
+  - thời gian nghỉ trưa vào thời gian nào hả
+  - khoảng thời gian nghỉ trưa của công ty là như nào nhỉ
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ mầy
+  - buổi chiều làm lại từ 1 giờ hử
+  - công ty ăn trưa lúc 12h đúng không
+  - công ty ngủ trưa lúc 11h30 hay 12h vậy
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ cậu
+  - quy định thời gian ăn trưa của công ty
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ em
+  - mấy giờ thì được nghỉ giữa giờ hả
+  - khoảng thời gian nghỉ trưa của công ty là như nào nhỉ bot
+  - mấy giờ được nghỉ ăn trưa vậy mày
+  - công ty nghỉ trưa lúc 11h hay 12h30 vậy hả
+  - thời gian nghỉ trưa là lúc nào hả
+  - Nghỉ trưa vào thời gian nào vậy cậu
+  - công ty quy đinh thời gian nào thì nhân viện được nghỉ trưa
+  - thời gian nghỉ trưa thế nào
+  - thông thường nhân viên sẽ được nghỉ trưa lúc nào vậy hả
+  - thông thường nhận sự sẽ được ăn trưa bao giờ hả
+  - nghỉ trưa lúc vào thời gian nào
+  - cho mình hỏi về nội quy thời gian ăn trưa của công ty
+  - nhân viên sẽ nghỉ trưa lúc nào vậy
+  - thông thường nhận sự sẽ được nghỉ trưa bao giờ vậy
+  - chiều làm lại từ 13 giờ hả
+  - thành viên sẽ ăn trưa khi nào vậy
+  - thông thường thành viên sẽ được ăn trưa bao giờ vậy hả
+  - chiều làm lại từ 1 giờ hử
+  - mấy giờ thì được nghỉ trưa
+  - thông thường thành viên sẽ được ăn trưa bao giờ vậy
+  - khoảng thời gian nghỉ trưa của công ty là như nào nhỉ cậu
+  - mấy giờ được nghỉ ăn trưa vậy em
+  - công ty ăn trưa lúc 12h chuẩn chỉ ko
+  - nội quy thời gian ăn trưa của công ty thế nào
+  - tôi muốn hỏi về nội quy thời gian ăn trưa của công ty
+  - mấy giờ được nghỉ ăn trưa vậy bot
+  - thời gian nghỉ trưa như nào
+  - buổi sáng mấy giờ kết thúc
+  - cho mình hỏi thời gian nghỉ trưa của công ty vào lúc mấy giờ vậy hả
+  - khoảng thời gian nghỉ trưa là như nào nhỉ mày
+  - khoảng thời gian nghỉ trưa của công ty là như nào nhỉ bạn
+  - thời gian nghỉ trưa như thế nào
+  - cho tôi hỏi về rule thời gian nghỉ trưa của công ty
+  - cho mình hỏi về rule thời gian ăn trưa của công ty
+  - nhân viên sẽ ăn trưa khi nào vậy hả
+  - nhân viên sẽ nghỉ trưa khi nào hả
+  - Nghỉ trưa vào thời gian nào vậy mày
+  - nhận sự sẽ ăn trưa khi nào hả
+  - mấy giờ được nghỉ ăn trưa vậy bạn
+  - công ty ngủ trưa lúc 11h30 hay 12h30 vậy hả
+  - thời gian nghỉ trưa vào thời gian nào vậy
+  - quy định thời gian nghỉ trưa của công ty
+  - công ty ngủ trưa lúc 11h đúng ko
+  - thời gian nghỉ trưa của công ty như nào hả
+  - thời gian nghỉ giữa giờ là thế nào
+  - công ty ngủ trưa lúc 11h hay 12h hả
+  - khoảng thời gian nghỉ trưa của công ty là thế nào nhỉ
+  - Nghỉ trưa vào thời gian nào vậy timi
+  - thành viên sẽ nghỉ trưa lúc nào hả
+  - mình muốn hỏi về quy chế thời gian ăn trưa của công ty
+  - được nghỉ trưa mấy tiếng vậy m
+  - công ty nghỉ trưa lúc 12h đúng ko
+  - thời gian nghỉ trưa cho nhân viên như nào vậy hả
+  - người sẽ nghỉ trưa khi nào vậy
+  - khoảng thời gian nghỉ trưa của công ty là như thế nào nhỉ bạn
+  - rule thời gian ăn trưa của công ty như thế nào
+  - thời gian nghỉ trưa của công ty thế nào
+  - công ty ăn trưa lúc 11h30 hay 12h vậy hả
+  - khoảng thời gian nghỉ trưa là như nào nhỉ m
+  - công ty nghỉ trưa lúc nào
+  - chiều làm lại từ 13 giờ hử
+  - nhận sự sẽ nghỉ trưa khi nào vậy
+  - sáng mấy giờ hết giờ
+  - công ty nghỉ trưa lúc 12h chuẩn chỉ không
+  - thời gian nghỉ trưa vào thời gian nào
+  - cho tớ hỏi về quy chế thời gian nghỉ trưa của công ty
+  - công ty ngủ trưa lúc 12h chuẩn chỉ không
+  - công ty nghỉ trưa lúc 11h30 hay 12h hả
+  - khoảng thời gian nghỉ trưa của công ty là như thế nào nhỉ m
+  - công ty ngủ trưa lúc 11h30 hay 12h30 vậy
+  - khoảng thời gian nghỉ trưa của công ty là như thế nào nhỉ cậu
+  - thông thường thành viên sẽ được nghỉ trưa bao giờ hả
+  - công ty ngủ trưa lúc 11h30 hay 12h hả
+  - nội quy thời gian ăn trưa của công ty
+  - sáng mấy giờ kết thúc
+  - nhân viên sẽ ăn trưa khi nào hả
+  - nhân viên sẽ ăn trưa khi nào vậy
+  - công ty ngủ trưa lúc 11h chuẩn chỉ ko
+  - thành viên sẽ ăn trưa khi nào hả
+  - tớ muốn hỏi về nội quy thời gian nghỉ trưa của công ty
+  - khoảng thời gian nghỉ trưa là thế nào nhỉ mày
+  - công ty có làm việc cuối tuần không
+  - '[junior](level_position) có làm việc vào [thứ bảy](time) không ko bạn'
+  - quy định thời gian làm việc trong tuần của [junior](level_position) tại công ty
+  - cho tớ hỏi rule về số buổi làm việc trong tuần của công ty
+  - nv chính thức thì thời gian như thế nào
+  - nội quy về số buổi làm việc trong tuần của công ty
+  - một tháng phải làm ít nhất bao nhiêu buổi
+  - thành viên [full-time](level_position) phải làm việc bao nhiêu buổi một tuần
+  - cho tớ hỏi [junior](level_position) làm việc vào [thứ 7](time) không
+  - quy chế thời gian làm việc trong tuần của công ty như thế nào
+  - quy chế số buổi làm việc trong tuần của [fresher](level_position) ở công ty như
+    nào
+  - công ty làm việc bao nhiu ngày mỗi tuần
+  - '[pre-senior](level_position) thì số thời gian trên công ty là bao nhiêu'
+  - thời gian làm việc 1 tuần của [nhân viên kinh doanh thị trường TQ](position) [thực
+    tập sinh](level_position) thế nào
+  - người [ftech](work_unit) ở vị trí [full-time](level_position) phải đi làm từ thứ
+    mấy tới thứ mấy
+  - nv chính thức thì bắt buộc fulltime chứ
+  - '[fresher](level_position) làm việc ngày nào trong tuần'
+  - công ty cho nhận sự [full-time](level_position) làm mấy ngày một tuần
+  - '[thử việc](level_position) làm việc từ thứ mấy đến thứ mấy'
+  - cho tớ hỏi rule số buổi làm việc trong tuần của [pre-senior](level_position)
+  - 1 tuần làm việc mấy ngày
+  - '[full-time](level_position) 1 tuần làm bnh ngày'
+  - nhân viên công ty phải làm việc mấy buổi một tuần
+  - công ty làm từ thứ mấy đến thứ mấy
+  - '[fulltime](level_position) có làm việc cuối tuần không'
+  - tớ muốn hỏi rule thời gian làm việc trong tuần của [pre-senior](level_position)
+    tại công ty như nào
+  - '[thứ 7](time) [chủ nhật](time) có làm việc không'
+  - công ty làm ngày nào trong tuần
+  - '[thứ bảy](time) [junior](level_position) có làm ko vậy'
+  - ' cho tớ hỏi time làm việc của [svtt](level_position)'
+  - '[pretrain](level_position) phải làm việc ít nhất bao nhiu buổi một tuần'
+  - nhận sự công ty phải đi làm từ thứ mấy tới thứ mấy
+  - một tuần nhân viên [thử việc](level_position) phải làm việc bao nhiêu ngày
+  - công ty em làm cả ngày thứ bảy luôn hả
+  - một tuần nhân viên phải làm việc bao nhiu buổi
+  - '[business support thị trường TQ](position) [pre-senior](level_position) [thứ
+    bảy](time) [chủ nhật](time) có làm việc ko'
+  - tớ muốn hỏi thời gian làm việc trong tuần của công ty thế nào
+  - tớ muốn hỏi thời gian làm việc trong tuần của [fresher](level_position) của công
+    ty như thế nào
+  - thành viên [fresher](level_position) làm từ ngày nào đến ngày nào trong tuần
+  - cho chị hỏi công ty làm việc vào [thứ bảy](time) không vậy
+  - '[ctv](level_position) một tháng phải làm ít nhất bao nhiu ngày'
+  - tớ muốn biết [junior](level_position) phải đi làm mấy ngày trong tuần hả
+  - '[thứ 7](time) công ty có làm ko'
+  - công ty có quy chế một tuần làm việc mấy buổi cho [fulltime](level_position) không
+    vậy
+  - '[full time](level_position) có làm việc vào [thứ bảy](time) không'
+  - một tuần làm mấy buổi
+  - '[svtt](level_position) lên công ty bốn buổi trong tuần ạ'
+  - '[be dev](position) [fresher](level_position) vào ngày [chủ nhật](time) có làm
+    việc ko vậy'
+  - thời gian làm việc 1 tuần thế nào vậy hả
+  - '[junior](level_position) 1 tuần làm việc bao nhiu ngày'
+  - công ty 1 tuần làm việc bao nhiêu ngày
+  - thời gian trong tuần mà nhân viên [pre-senior](level_position) phải cam kết với
+    công ty như nào
+  - công ty bắt buộc phải lên công ty bao nhiêu buổi trong tuần
+  - công ty có nội quy số ngày bắt buộc đối với [pretrain](level_position) không
+  - công ty làm việc từ ngày nào đến ngày nào trong tuần
+  - công ty có làm [chủ nhật](time) không hả
+  - công ty có làm [thứ bảy](time) không hả
+  - '[thứ bảy](time) có làm việc không vậy hả'
+  - công ty có làm việc vào [chủ nhật](time) ko m
+  - công ty có làm vào [thứ bảy](time) ko
+  - ' có làm việc cuối tuần ko'
+  - '[senior](level_position) có làm việc vào [chủ nhật](time) ko ko'
+  - quy định thời gian làm việc trong tuần của [junior](level_position) tại công ty
+    như nào
+  - tôi muốn hỏi quy chế số ngày làm việc trong tuần của công ty
+  - nv chính thức thì thời gian làm việc như thế nào
+  - quy định số ngày làm việc trong tuần của công ty
+  - một tháng phải làm việc ít nhất bao nhiêu ngày
+  - nhận sự [junior](level_position) phải đi làm bao nhiu buổi một tuần
+  - cho mình hỏi [thử việc](level_position) làm việc vào [thứ bảy](time) ko hả
+  - quy định thời gian làm việc trong tuần của công ty thế nào
+  - nội quy số buổi làm việc trong tuần của [thử việc](level_position) ở công ty
+  - công ty làm việc mấy ngày một tuần
+  - '[junior](level_position) thì số time trên công ty là mấy'
+  - thời gian làm việc 1 tuần của [db engineering](position) [sinh viên thực tập](level_position)
+    như nào vậy
+  - nhân viên [f tech](work_unit) ở vị trí [junior](level_position) phải đi làm từ
+    thứ mấy tới thứ mấy
+  - nv chính thức thì bắt buộc full-time chứ
+  - '[sinh viên thực tập](level_position) làm việc ngày nào trong tuần'
+  - công ty cho nhận sự [senior](level_position) làm việc mấy ngày mỗi tuần
+  - '[full time](level_position) làm việc từ thứ mấy đến thứ mấy'
+  - cho tớ hỏi rule số buổi làm việc trong tuần của [full time](level_position)
+  - 1 tuần làm mấy buổi
+  - '[fulltime](level_position) 1 tuần làm việc bnh buổi'
+  - người công ty phải làm việc bao nhiêu buổi một tuần
+  - công ty làm việc từ thứ mấy đến thứ mấy
+  - '[full time](level_position) có làm việc cuối tuần ko'
+  - cho mình hỏi quy chế về thời gian làm việc trong tuần của [fresher](level_position)
+    tại công ty
+  - '[thứ bảy](time) [chủ nhật](time) có làm việc không'
+  - công ty làm việc ngày nào trong tuần
+  - '[chủ nhật](time) [thử việc](level_position) có làm không'
+  - ' cho tớ hỏi time làm của [thử việc](level_position)'
+  - '[tts](level_position) phải đi làm ít nhất mấy buổi một tuần'
+  - nhân viên công ty phải đi làm từ thứ mấy tới thứ mấy
+  - một tuần người [pre-senior](level_position) phải làm việc mấy ngày
+  - công ty m làm cả ngày thứ bảy luôn hả
+  - một tuần người phải làm việc mấy ngày
+  - '[PA](position) [junior](level_position) [thứ bảy](time) [chủ nhật](time) có làm
+    việc không hả'
+  - tôi muốn hỏi thời gian làm việc trong tuần của công ty thế nào
+  - mình muốn hỏi thời gian làm việc trong tuần của [pre-senior](level_position) của
+    công ty thế nào
+  - người [ctv](level_position) làm từ ngày nào đến ngày nào trong tuần
+  - cho mình hỏi công ty làm việc vào [chủ nhật](time) không
+  - '[pre-senior](level_position) một tháng phải làm việc ít nhất bao nhiêu ngày'
+  - mình muốn biết [thử việc](level_position) phải lên công ty bao nhiu ngày trong
+    tuần vậy
+  - '[thứ bảy](time) công ty có làm ko'
+  - công ty có quy chế một tuần làm việc bao nhiêu buổi cho [fresher](level_position)
+    ko vậy
+  - '[pre-senior](level_position) có làm vào [chủ nhật](time) không'
+  - một tuần làm mấy ngày
+  - '[sinh viên thực tập](level_position) đi làm năm ngày trong một tuần ạ'
+  - '[QA](position) [junior](level_position) vào ngày [thứ bảy](time) có làm việc
+    ko vậy'
+  - thời gian làm việc 1 tuần như nào
+  - '[thử việc](level_position) 1 tuần làm bao nhiêu buổi'
+  - công ty 1 tuần làm việc bao nhiêu buổi
+  - thời gian trong tuần mà nhân viên [full time](level_position) phải commit với
+    công ty thế nào
+  - công ty bắt buộc phải đi làm bao nhiu ngày trong tuần
+  - công ty có rule số ngày bắt buộc đối với [intern](level_position) ko
+  - công ty làm từ ngày nào đến ngày nào trong tuần
+  - công ty có làm [chủ nhật](time) không vậy hả
+  - công ty có làm [chủ nhật](time) không
+  - '[thứ bảy](time) có làm việc ko vậy hả'
+  - công ty có làm việc vào [thứ 7](time) không bạn
+  - công ty có làm việc vào [thứ 7](time) ko
+  - công ty có làm cuối tuần ko
+  - '[thử việc](level_position) có làm việc vào [chủ nhật](time) ko ko'
+  - nội quy về thời gian làm việc trong tuần của [pre-senior](level_position) tại
+    công ty như nào
+  - tớ muốn hỏi quy chế về số ngày làm việc trong tuần của công ty
+  - nhân viên chính thức thì thời gian làm việc như thế nào
+  - quy định về số buổi làm việc trong tuần của công ty
+  - một tháng phải làm ít nhất bao nhiu ngày
+  - nhân viên [ctv](level_position) phải làm việc bao nhiêu buổi một tuần
+  - cho chị hỏi [full time](level_position) làm việc vào [thứ 7](time) ko hả
+  - quy định về thời gian làm việc trong tuần của công ty
+  - quy chế về số buổi làm việc trong tuần của [fresher](level_position) ở công ty
+    như thế nào
+  - công ty làm việc mấy ngày mỗi tuần
+  - '[full-time](level_position) thì số thời gian trên công ty là bao nhiêu'
+  - thời gian làm việc 1 tuần của [ios develop](position) [thử việc](level_position)
+    như thế nào vậy hả
+  - nhận sự [ftech](work_unit) ở vị trí [senior](level_position) phải đi làm từ thứ
+    mấy tới thứ mấy
+  - nhân viên chính thức thì bắt buộc full-time chứ
+  - '[cộng tác viên](level_position) làm việc ngày nào trong tuần'
+  - công ty cho nhận sự [full time](level_position) làm bao nhiu ngày mỗi tuần
+  - '[ctv](level_position) làm việc từ thứ mấy đến thứ mấy'
+  - tớ muốn hỏi rule về số ngày làm việc trong tuần của [full-time](level_position)
+  - 1 tuần làm việc mấy buổi
+  - '[fresher](level_position) 1 tuần làm việc bnh buổi'
+  - thành viên công ty phải đi làm bao nhiu buổi một tuần
+  - '[junior](level_position) có làm cuối tuần không'
+  - cho mình hỏi quy định về thời gian làm việc trong tuần của [fresher](level_position)
+    tại công ty như nào
+  - '[thứ 7](time) [chủ nhật](time) có làm việc ko'
+  - '[thứ 7](time) [thử việc](level_position) có làm ko vậy'
+  - bot cho tớ hỏi thời gian làm của [full-time](level_position)
+  - '[tts](level_position) phải làm việc ít nhất bao nhiêu buổi một tuần'
+  - người công ty phải đi làm từ thứ mấy tới thứ mấy
+  - một tuần người [thử việc](level_position) phải làm mấy buổi
+  - công ty bạn làm cả ngày T7 luôn à
+  - một tuần thành viên phải làm việc mấy ngày
+  - '[fe dev](position) [fresher](level_position) [thứ 7](time) [chủ nhật](time) có
+    làm việc không'
+  - tớ muốn hỏi thời gian làm việc trong tuần của công ty như nào
+  - tớ muốn hỏi thời gian làm việc trong tuần của [thử việc](level_position) của công
+    ty như nào
+  - nhận sự [junior](level_position) làm từ ngày nào đến ngày nào trong tuần
+  - cho chị hỏi công ty làm việc vào [thứ 7](time) ko
+  - '[full time](level_position) một tháng phải làm ít nhất bao nhiêu buổi'
+  - tớ muốn biết [junior](level_position) phải lên công ty bao nhiu ngày trong tuần
+    hả
+  - '[chủ nhật](time) công ty có làm không hả'
+  - công ty có quy chế một tuần làm mấy buổi cho [junior](level_position) ko hả
+  - '[pre-senior](level_position) có làm vào [thứ 7](time) ko'
+  - một tuần làm việc mấy ngày
+  - '[pretrain](level_position) đi làm sáu ngày trong một tuần à'
+  - '[.net](position) [full time](level_position) vào ngày [thứ 7](time) có làm việc
+    ko'
+  - thời gian làm việc 1 tuần như nào hả
+  - '[ctv](level_position) 1 tuần làm mấy buổi'
+  - công ty 1 tuần làm bao nhiêu ngày
+  - thời gian trong một tuần mà nhân viên [full-time](level_position) phải commit
+    với công ty thế nào
+  - công ty bắt buộc phải lên công ty mấy buổi trong tuần
+  - công ty có quy chế số buổi bắt buộc đối với [intern](level_position) không
+  - công ty có làm [thứ 7](time) ko vậy hả
+  - công ty có làm [chủ nhật](time) ko vậy
+  - '[chủ nhật](time) có làm việc ko'
+  - công ty có làm việc vào [thứ bảy](time) ko
+  - công ty có làm việc vào [thứ bảy](time) không
+  - ' có làm cuối tuần ko'
+  - '[thử việc](level_position) có làm việc vào [thứ bảy](time) không ko bot'
+  - quy chế về thời gian làm việc trong tuần của [intern](level_position) tại công
+    ty
+  - cho mình hỏi quy định về số ngày làm việc trong tuần của công ty
+  - nhân viên chính thức thì thời gian như thế nào
+  - quy chế về số ngày làm việc trong tuần của công ty
+  - một tháng phải làm ít nhất mấy buổi
+  - người [fresher](level_position) phải đi làm bao nhiêu buổi một tuần
+  - cho chị hỏi [fulltime](level_position) làm việc vào [chủ nhật](time) không vậy
+    hả
+  - rule về thời gian làm việc trong tuần của công ty
+  - rule về số buổi làm việc trong tuần của [fresher](level_position) ở công ty như
+    nào
+  - công ty làm mấy ngày mỗi tuần
+  - '[thử việc](level_position) thì số time trên công ty là mấy'
+  - thời gian làm việc 1 tuần của [blockchain develop](position) [sinh viên thực tập](level_position)
+    như nào vậy hả
+  - thành viên [ftech](work_unit) ở vị trí [senior](level_position) phải đi làm từ
+    thứ mấy tới thứ mấy
+  - nhân viên chính thức thì bắt buộc fulltime chứ
+  - '[thử việc](level_position) làm việc ngày nào trong tuần'
+  - công ty cho nhân viên [junior](level_position) làm bao nhiu ngày mỗi tuần
+  - '[senior](level_position) làm từ thứ mấy đến thứ mấy'
+  - tôi muốn hỏi quy chế về số buổi làm việc trong tuần của [junior](level_position)
+  - 1 tuần làm mấy ngày
+  - '[junior](level_position) 1 tuần làm việc bnh buổi'
+  - nhận sự công ty phải làm việc bao nhiêu buổi một tuần
+  - '[full time](level_position) có làm việc cuối tuần không'
+  - tớ muốn hỏi rule về thời gian làm việc trong tuần của [fulltime](level_position)
+    tại công ty
+  - '[thứ 7](time) [chủ nhật](time) có làm việc ko vậy hả'
+  - '[thứ 7](time) [thử việc](level_position) có làm không'
+  - mầy cho mình hỏi time làm việc của [junior](level_position)
+  - '[pretrain](level_position) phải làm việc ít nhất mấy buổi một tuần'
+  - thành viên công ty phải đi làm từ thứ mấy tới thứ mấy
+  - một tuần nhân viên [full time](level_position) phải làm bao nhiêu buổi
+  - công ty bạn làm cả ngày thứ bảy luôn hả
+  - một tuần thành viên phải làm mấy ngày
+  - '[2d develop](position) [pre-senior](level_position) [thứ bảy](time) [chủ nhật](time)
+    có làm việc ko vậy'
+  - mình muốn hỏi thời gian làm việc trong tuần của công ty như thế nào
+  - tớ muốn hỏi thời gian làm việc trong tuần của [full time](level_position) của
+    công ty như thế nào
+  - người [thử việc](level_position) làm việc từ ngày nào đến ngày nào trong tuần
+  - cho anh hỏi công ty làm việc vào [thứ 7](time) không vậy
+  - '[pre-senior](level_position) một tháng phải làm ít nhất bao nhiu buổi'
+  - mình muốn biết [thử việc](level_position) phải lên công ty mấy ngày trong tuần
+    vậy
+  - '[thứ 7](time) công ty có làm không'
+  - công ty có quy chế một tuần làm việc mấy buổi cho [fresher](level_position) ko
+    vậy
+  - '[full-time](level_position) có làm vào [chủ nhật](time) không'
+  - một tuần làm bao nhiêu ngày
+  - '[tts](level_position) lên công ty bốn ngày trong một tuần ạ'
+  - '[ios develop](position) [intern](level_position) vào ngày [thứ bảy](time) có
+    làm việc không'
+  - thời gian làm việc 1 tuần như thế nào vậy hả
+  - '[junior](level_position) 1 tuần làm việc mấy buổi'
+  - công ty 1 tuần làm bao nhiêu buổi
+  - thời gian làm việc trong tuần mà người [senior](level_position) phải cam kết với
+    công ty thế nào
+  - công ty bắt buộc phải đi làm mấy ngày trong tuần
+  - công ty có rule số buổi bắt buộc đối với [svtt](level_position) không
+  - công ty có làm [chủ nhật](time) ko
+  - công ty có làm [thứ 7](time) không vậy
+  - '[thứ 7](time) có làm việc ko vậy hả'
+  - công ty có làm việc vào [thứ bảy](time) ko bạn
+  - công ty có làm việc vào [thứ 7](time) không
+  - công ty có làm cuối tuần không
+  - '[fresher](level_position) có làm việc vào [thứ bảy](time) ko không'
+  - rule về thời gian làm việc trong tuần của [ctv](level_position) tại công ty
+  - tớ muốn hỏi quy chế về số buổi làm việc trong tuần của công ty
+  - quy định số ngày làm việc trong tuần của công ty thế nào
+  - một tháng phải làm việc ít nhất mấy buổi
+  - người [senior](level_position) phải làm việc bao nhiu buổi một tuần
+  - cho tớ hỏi [pre-senior](level_position) làm việc vào [chủ nhật](time) ko vậy
+  - nội quy thời gian làm việc trong tuần của công ty
+  - quy định về số buổi làm việc trong tuần của [fresher](level_position) ở công ty
+    như nào
+  - công ty làm việc bao nhiêu ngày một tuần
+  - '[fresher](level_position) thì số time trên công ty là bao nhiêu'
+  - thời gian làm việc 1 tuần của [lập trình viên ios](position) [junior](level_position)
+    thế nào hả
+  - thành viên [f tech](work_unit) ở vị trí [full-time](level_position) phải đi làm
+    từ thứ mấy tới thứ mấy
+  - '[pre-senior](level_position) làm việc ngày nào trong tuần'
+  - công ty cho thành viên [pre-senior](level_position) làm việc bao nhiu ngày một
+    tuần
+  - '[pre-senior](level_position) làm việc từ thứ mấy đến thứ mấy'
+  - cho mình hỏi quy định về số ngày làm việc trong tuần của [fresher](level_position)
+  - '[fresher](level_position) 1 tuần làm bnh buổi'
+  - thành viên công ty phải đi làm bao nhiêu buổi một tuần
+  - '[thử việc](level_position) có làm việc cuối tuần không'
+  - cho tớ hỏi quy chế về thời gian làm việc trong tuần của [fresher](level_position)
+    tại công ty
+  - '[thứ bảy](time) [chủ nhật](time) có làm việc không vậy hả'
+  - '[chủ nhật](time) [junior](level_position) có làm không hả'
+  - ' cho tớ hỏi thời gian làm việc của [thử việc](level_position)'
+  - '[intern](level_position) phải làm việc ít nhất bao nhiu buổi một tuần'
+  - một tuần thành viên [fresher](level_position) phải làm mấy ngày
+  - công ty bot làm cả ngày T7 luôn hả
+  - một tuần thành viên phải làm việc mấy buổi
+  - '[vẽ 3d](position) [fresher](level_position) [thứ bảy](time) [chủ nhật](time)
+    có làm việc không'
+  - tôi muốn hỏi thời gian làm việc trong tuần của công ty như nào
+  - mình muốn hỏi thời gian làm việc trong tuần của [thử việc](level_position) của
+    công ty như nào
+  - người [full time](level_position) làm từ ngày nào đến ngày nào trong tuần
+  - cho tớ hỏi công ty làm việc vào [thứ bảy](time) ko
+  - '[junior](level_position) một tháng phải làm việc ít nhất bao nhiêu buổi'
+  - tớ muốn hỏi [fulltime](level_position) phải làm việc mấy ngày trong tuần hả
+  - '[thứ 7](time) công ty có làm ko vậy hả'
+  - công ty có rule một tuần làm việc mấy buổi cho [thử việc](level_position) không
+    hả
+  - '[thực tập sinh](level_position) có làm việc vào [thứ 7](time) ko'
+  - một tuần làm việc mấy buổi
+  - '[tts](level_position) lên công ty bốn ngày trong một tuần hà'
+  - '[người vệ sinh](position) [junior](level_position) vào ngày [thứ 7](time) có
+    làm việc không vậy hả'
+  - thời gian làm việc 1 tuần thế nào hả
+  - '[fresher](level_position) 1 tuần làm mấy buổi'
+  - thời gian làm việc trong tuần mà người [tts](level_position) phải cam kết với
+    công ty như nào
+  - công ty bắt buộc phải làm việc mấy ngày trong tuần
+  - công ty có rule số buổi bắt buộc đối với [thực tập sinh](level_position) ko
+  - công ty có làm [thứ bảy](time) ko
+  - công ty có làm [thứ bảy](time) không vậy hả
+  - '[thứ bảy](time) có làm việc không vậy'
+  - công ty có làm việc vào [thứ bảy](time) ko mày
+  - công ty có làm việc vào [chủ nhật](time) không
+  - ' có làm cuối tuần không'
+  - '[thử việc](level_position) có làm việc vào [thứ 7](time) không không'
+  - nội quy thời gian làm việc trong tuần của [thử việc](level_position) tại công
+    ty thế nào
+  - cho tôi hỏi rule về số ngày làm việc trong tuần của công ty
+  - quy chế số ngày làm việc trong tuần của công ty thế nào
+  - một tháng phải làm việc ít nhất bao nhiu buổi
+  - nhận sự [fulltime](level_position) phải đi làm bao nhiêu buổi một tuần
+  - cho chị hỏi [thử việc](level_position) làm việc vào [thứ bảy](time) ko
+  - rule thời gian làm việc trong tuần của công ty như nào
+  - rule về số buổi làm việc trong tuần của [tts](level_position) ở công ty thế nào
+  - công ty làm bao nhiêu ngày mỗi tuần
+  - '[cộng tác viên](level_position) thì số time trên công ty là bao nhiu'
+  - thời gian làm việc 1 tuần của [ios](position) [junior](level_position) như nào
+  - thành viên [f-tech](work_unit) ở vị trí [junior](level_position) phải đi làm từ
+    thứ mấy tới thứ mấy
+  - '[junior](level_position) làm việc ngày nào trong tuần'
+  - công ty cho nhân viên [junior](level_position) làm việc bao nhiu ngày một tuần
+  - '[fresher](level_position) làm việc từ thứ mấy đến thứ mấy'
+  - cho tớ hỏi rule số buổi làm việc trong tuần của [junior](level_position)
+  - '[full-time](level_position) 1 tuần làm bnh buổi'
+  - nhận sự công ty phải đi làm mấy buổi một tuần
+  - '[fulltime](level_position) có làm cuối tuần không'
+  - tớ muốn hỏi quy định về thời gian làm việc trong tuần của [fulltime](level_position)
+    tại công ty như thế nào
+  - '[thứ bảy](time) [chủ nhật](time) có làm việc ko'
+  - '[thứ 7](time) [full time](level_position) có làm không'
+  - bot cho mình hỏi time làm việc của [junior](level_position)
+  - '[tts](level_position) phải đi làm ít nhất bao nhiêu buổi một tuần'
+  - một tuần người [trainee](level_position) phải làm việc mấy ngày
+  - công ty mày làm cả ngày thứ 7 luôn ha
+  - một tuần nhân viên phải làm mấy ngày
+  - '[natural language processing](position) [svtt](level_position) [thứ 7](time)
+    [chủ nhật](time) có làm việc không vậy hả'
+  - tớ muốn hỏi thời gian làm việc trong tuần của công ty như thế nào
+  - mình muốn hỏi thời gian làm việc trong tuần của [junior](level_position) của công
+    ty thế nào
+  - thành viên [full time](level_position) làm từ ngày nào đến ngày nào trong tuần
+  - cho tớ hỏi công ty làm việc vào [thứ bảy](time) ko hả
+  - '[fresher](level_position) một tháng phải làm ít nhất bao nhiu buổi'
+  - tớ muốn hỏi [cộng tác viên](level_position) phải làm việc bao nhiu ngày trong
+    tuần
+  - '[chủ nhật](time) công ty có làm không vậy'
+  - công ty có rule một tuần làm mấy buổi cho [fresher](level_position) không vậy
+  - '[junior](level_position) có làm việc vào [thứ bảy](time) không'
+  - một tuần làm bao nhiêu buổi
+  - '[tts](level_position) đi làm bốn buổi trong một tuần ạ'
+  - '[db engineer](position) [senior](level_position) vào ngày [thứ 7](time) có làm
+    việc ko'
+  - thời gian làm việc 1 tuần như nào vậy
+  - '[full time](level_position) 1 tuần làm bao nhiêu buổi'
+  - thời gian trong một tuần mà thành viên [fresher](level_position) phải commit với
+    công ty như thế nào
+  - công ty bắt buộc phải đi làm bao nhiu buổi trong tuần
+  - công ty có nội quy số buổi bắt buộc đối với [pretrain](level_position) ko
+  - công ty có làm [thứ 7](time) không hả
+  - công ty có làm [thứ 7](time) không
+  - '[chủ nhật](time) có làm việc không vậy'
+  - công ty có làm việc vào [thứ 7](time) không m
+  - công ty có làm vào [thứ 7](time) không
+  - ' có làm việc cuối tuần không'
+  - '[fresher](level_position) có làm việc vào [thứ bảy](time) không không bạn'
+  - quy chế thời gian làm việc trong tuần của [ctv](level_position) tại công ty
+  - mình muốn hỏi nội quy về số ngày làm việc trong tuần của công ty
+  - nội quy về số ngày làm việc trong tuần của công ty thế nào
+  - một tháng phải làm ít nhất bao nhiu buổi
+  - nhân viên [pre-senior](level_position) phải đi làm bao nhiêu buổi một tuần
+  - cho chị hỏi [cộng tác viên](level_position) làm việc vào [chủ nhật](time) ko vậy
+    hả
+  - rule về thời gian làm việc trong tuần của công ty như nào
+  - nội quy về số ngày làm việc trong tuần của [thử việc](level_position) ở công ty
+  - công ty làm việc bao nhiêu ngày mỗi tuần
+  - '[thử việc](level_position) thì số time trên công ty là bao nhiu'

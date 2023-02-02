@@ -1,0 +1,206 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: chitchat_user_feel_angry
+  examples:
+  - tức quá
+  - tao đang tức đây
+  - bực rồi đấy
+  - mình bực mình hết sức luôn í
+  - bực hết cả tao
+  - chị đang khó ở con [Đặng Bảo Khánh](person_name) thế
+  - bực mình thế
+  - Bực mình ghê
+  - điên mất thôi
+  - bực mình quá
+  - tức mình thế
+  - mình đang cay anh [Nguyễn Thành Thái](person_name) thế
+  - Tức ghê
+  - đang bực mình
+  - mình đang sôi máu đây
+  - muốn điên lên được
+  - tao đang khó chịu đó
+  - mình đang rất nóng giận
+  - ' đang thấy khó chịu đây'
+  - máu của tao đang sôi lên não đó
+  - máu của tớ đang sôi lên não đây
+  - tớ đang sôi máu đây
+  - cáu quá
+  - bực mình ông [Nguyễn Nhật Anh](person_name) ghê
+  - mình giận m rùi vậy
+  - bực tớ thế nhờ
+  - điên đầu thế
+  - đừng động vào, tớ đang bực khó ở đây
+  - chị đang bực mình đó
+  - tức thế
+  - tao đang bực đây
+  - tớ bực mình hết sức luôn
+  - bực hết cả tôi
+  - em đang cay con [Lê Thị Lan](person_name) thế
+  - tức thế đi
+  - bực ghê
+  - tức mình quá
+  - tớ đang bực mình ông [Văn Hiền Thắng](person_name) thế
+  - đang khó chịu
+  - chị đang sôi máu đây
+  - bố mày đang bực mình đó
+  - tớ đang rất nóng giận
+  - mình đang thấy khó chịu đây
+  - máu của mình đang sôi lên não đó
+  - máu của anh đang sôi lên não đây
+  - tao đang sôi máu đây
+  - cáu thế
+  - bực mình ông [Văn Hiền Thắng](person_name) ghê
+  - tớ giận bot rùi đấy
+  - bực tui thế nhờ
+  - điên đầu quá
+  - đừng động vào, mình đang bực khó ở đây
+  - mình đang bực đó
+  - tôi đang điên đây
+  - tôi bực mình hết sức luôn í
+  - bực hết cả tớ
+  - bố mày đang khó chịu cô [Trần Thị Hậu](person_name) thế
+  - cay thế đi
+  - điên ghê
+  - tao đang bực mình chú [Phạm Hồng Đức](person_name) thế
+  - đang khó ở
+  - anh đang sôi máu đây
+  - chị đang cay đây
+  - tôi đang rất nóng giận
+  - ' đang thấy bực mình đây'
+  - máu của tui đang sôi lên não đây
+  - máu của mình đang sôi lên não đây
+  - tui đang sôi máu đây
+  - điên ông [Nguyễn Bình Minh](person_name) quá
+  - tao giận bot rồi đấy
+  - bực tôi thế nhờ
+  - đừng động vào, chị đang bực cay đây
+  - chị đang tức đó
+  - mình đang cay đây
+  - tớ bực mình hết sức luôn í
+  - bực hết cả tui
+  - tớ đang cay cô [Nguyễn Thị Hải Yến](person_name) thế
+  - điên thế
+  - cay thế
+  - bố mày đang khó ở anh [Nguyễn Văn Quyết](person_name) thế
+  - đang cay
+  - anh đang khó chịu đó
+  - tao đang rất nóng giận
+  - chị đang thấy bực mình đây
+  - máu của tôi đang sôi lên não đây
+  - máu của chị đang sôi lên não đó
+  - tôi đang sôi máu đây
+  - điên anh [Giang Công Nguyên](person_name) ghê
+  - tớ giận bạn rồi thế
+  - bực tao thế nhờ
+  - đừng động vào, mình đang bực khó chịu đó
+  - tớ đang điên đó
+  - tôi đang tức đây
+  - tao bực mình hết sức luôn
+  - bực hết cả mình
+  - em đang cay bà [Đặng Minh Anh](person_name) thế
+  - bực mình thế đi
+  - điên quá
+  - mình đang khó ở anh [Lê Tiến Kính](person_name) thế
+  - tớ đang bực mình đó
+  - tui đang rất nóng giận
+  - tớ đang thấy cay đây
+  - máu của tôi đang sôi lên não đó
+  - máu của tớ đang sôi lên não đó
+  - cay ông [Nguyễn Hồng Quang](person_name) quá
+  - tớ giận bạn rùi hả
+  - bực mình thế nhờ
+  - đừng động vào, tớ đang bực cay đó
+  - mình đang bực mình đây
+  - tui đang cay đây
+  - tao bực mình hết sức luôn í
+  - tớ đang cay cô [Phạm Thị Minh Châu](person_name) thế
+  - cay quá đi
+  - cay quá
+  - tớ đang bực mình thằng [Nguyễn Đức Giang](person_name) thế
+  - tớ đang bực mình đây
+  - ' đang thấy khó ở đây'
+  - máu của tao đang sôi lên não đây
+  - máu của chị đang sôi lên não đây
+  - bực mình ông [Vũ Lê Huy](person_name) quá
+  - tui giận timi rùi đó
+  - đừng động vào, chị đang bực khó chịu đây
+  - anh đang cay đây
+  - tao đang cay đây
+  - tui bực mình hết sức luôn
+  - chị đang cay bà [Nguyễn Linh Chi](person_name) thế
+  - bực thế
+  - tức ghê
+  - tao đang cay anh [Trần Gia Lộc](person_name) thế
+  - tớ đang khó chịu đây
+  - mình đang thấy cay đây
+  - máu của tui đang sôi lên não đó
+  - máu của anh đang sôi lên não đó
+  - bực ông [Đoàn Đắc Tuấn](person_name) ghê
+  - mình giận bạn rùi vậy
+  - đừng động vào, mình đang bực tui đó
+  - anh đang cay đó
+  - tao đang bực mình đây
+  - tui bực mình hết sức luôn í
+  - tao đang khó ở cô [Lê Thị Hải Linh](person_name) thế
+  - điên quá đi
+  - bực quá
+  - tớ đang khó ở chú [Lê Văn Thư](person_name) thế
+  - anh đang khó chịu đây
+  - tớ đang thấy khó ở đây
+  - bực mình anh [Ngô Quang Đảm](person_name) quá
+  - tớ giận timi rồi vậy
+  - đừng động vào, anh đang bực khó ở đó
+  - anh đang điên đó
+  - tui đang bực mình đây
+  - mình bực mình hết sức luôn
+  - tớ đang cay con [Đỗ Linh Chi](person_name) thế
+  - bực thế đi
+  - bực mình ghê
+  - tui đang khó ở thằng [Lê Văn Thư](person_name) thế
+  - bố mày đang cay đó
+  - tớ đang thấy bực mình đây
+  - cay ông [Nguyễn Lê Tới](person_name) thế
+  - tao giận timi rồi đó
+  - đừng động vào, mình đang bực khó chịu đây
+  - tớ đang cay đó
+  - tôi đang cay đây
+  - tôi bực mình hết sức luôn
+  - anh đang cay cô [Nguyễn Hương Quỳnh](person_name) thế
+  - bực quá đi
+  - cay ghê
+  - tớ đang cay thằng [Nguyễn Văn Tú](person_name) thế
+  - em đang cay đây
+  - anh đang thấy khó ở đây
+  - bực anh [Dương Minh Trí](person_name) ghê
+  - tớ giận m rồi đó
+  - đừng động vào, chị đang bực khó ở đây
+  - tớ đang cay đây
+  - tôi đang bực mình đây
+  - mình đang bực mình chị [Nguyễn Hương Quỳnh](person_name) thế
+  - tức quá đi
+  - em đang cay ông [Viên Quốc Anh](person_name) thế
+  - chị đang khó chịu đây
+  - anh đang thấy cay đây
+  - điên anh [Nguyễn Nhật Anh](person_name) quá
+  - tui giận bot rùi đó
+  - đừng động vào, tớ đang bực tớ đây
+  - chị đang cay đó
+  - tui đang bực đây
+  - mình đang khó chịu chị [Lâm Thị Anh](person_name) thế
+  - tớ đang cay thằng [Đồng Văn Tuyến](person_name) thế
+  - mình đang khó ở đó
+  - chị đang thấy cay đây
+  - điên ông [Đặng Nhật Quang](person_name) ghê
+  - tớ giận bot rùi vậy
+  - đừng động vào, tớ đang bực tao đây
+  - mình đang cay đó
+  - tôi đang bực đây
+  - chị đang cay bà [Nguyễn Hương Quỳnh](person_name) thế
+  - điên thế đi
+  - anh đang bực mình ông [Nguyễn Tuấn Đạt](person_name) thế
+  - em đang khó chịu đó
+  - ' đang thấy cay đây'
+  - tức ông [Nguyễn Thành Long](person_name) ghê
+  - mình giận bạn rùi đó

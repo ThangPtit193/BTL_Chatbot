@@ -1,0 +1,156 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_height
+  examples:
+  - chiều cao của em chắc tầm mét mốt không hả
+  - chiều cao của timi chắc tầm mét mốt chứ hả
+  - cao mấy thế hả bạn
+  - m được bao nhiêu mét
+  - mày cao mấy thế hả m
+  - chiều cao của m có được 1m50 không
+  - cao mấy thế hả m
+  - cậu được mấy mét
+  - chiều cao của bot chắc tầm 1 mét phải không hả
+  - m có cao tầm mét mốt không
+  - mày cao mấy thế hả cậu
+  - chiều cao của cậu chắc tầm 1 mét không hả
+  - cao bao nhiêu?
+  - chiều cao của mày có được mét mốt không
+  - m cao mấy thế
+  - mày cao trên mét mốt không
+  - chiều cao của cậu chắc tầm 1 mét chứ hả
+  - cao bao nhiêu thế
+  - chiều cao của bạn chắc tầm mét mốt chứ hả
+  - cậu có cao tầm 1m50 không
+  - chiều cao của bot chắc tầm mét mốt không hả
+  - bot được mấy cm
+  - chiều cao của m chắc tầm mét mốt chứ hả
+  - cậu có cao tầm 1 mét không
+  - chiều cao của cậu chắc tầm mét mốt phải không hả
+  - chiều cao của em chắc tầm mét mốt chớ hả
+  - cao bao nhiêu thế hả mày
+  - em có cao tầm 1m50 không
+  - chiều cao của bot chắc tầm 1 mét chớ hả
+  - cao mấy?
+  - chiều cao của bot chắc tầm mét mốt phải không hả
+  - em được mấy cm
+  - chiều cao của m chắc tầm 1 mét không hả
+  - mày cao mấy thế hả mày
+  - chiều cao của bot chắc tầm 1 mét không hả
+  - chiều cao của mày chắc tầm mét mốt chứ hả
+  - chiều cao của bạn có được 1m50 không
+  - chiều cao của em chắc tầm 1 mét chớ hả
+  - chiều cao của m chắc tầm mét mốt phải không hả
+  - chiều cao của timi chắc tầm mét mốt chớ hả
+  - chiều cao của em có được 1m50 không
+  - timi có cao tầm 1 mét không
+  - bot cao bao nhiêu thế
+  - bạn được mấy cm
+  - chiều cao của em chắc tầm 1m50 không hả
+  - mày được bao nhiêu mét
+  - chiều cao của m chắc tầm 1 mét chớ hả
+  - cao bao nhiêu thế hả em
+  - mày được mấy mét
+  - chiều cao của mày chắc tầm 1m50 phải không hả
+  - chiều cao của em chắc tầm 1m50 phải không hả
+  - chiều cao của em chắc tầm 1m50 chứ hả
+  - cậu cao mấy thế
+  - chiều cao của timi chắc tầm 1 mét chớ hả
+  - được mấy mét
+  - chiều cao của cậu có được mét mốt không
+  - chiều cao của timi chắc tầm 1 mét phải không hả
+  - em được bao nhiêu mét
+  - chiều cao của timi chắc tầm 1m50 không hả
+  - mày cao bao nhiêu thế hả em
+  - chiều cao của bot chắc tầm 1 mét chứ hả
+  - chiều cao của bot chắc tầm mét mốt chứ hả
+  - mày được bao nhiêu cm
+  - bạn có cao tầm 1 mét không
+  - bạn được mấy mét
+  - mày được mấy cm
+  - m cao trên 1m50 không
+  - chiều cao của bạn chắc tầm 1m50 phải không hả
+  - chiều cao của mày có được 1 mét không
+  - timi cao trên 1 mét không
+  - mày có cao tầm mét mốt không
+  - chiều cao của m có được mét mốt không
+  - em được bao nhiêu cm
+  - cao trên 1 mét không
+  - bạn cao trên 1 mét không
+  - chiều cao của em chắc tầm 1 mét chứ hả
+  - chiều cao của m chắc tầm 1 mét chứ hả
+  - cậu cao bao nhiêu thế
+  - chiều cao của bot chắc tầm 1m50 không hả
+  - mày cao bao nhiêu thế hả bot
+  - chiều cao của mày chắc tầm 1m50 không hả
+  - cao bao nhiêu thế hả m
+  - chiều cao của cậu chắc tầm 1m50 chớ hả
+  - chiều cao của bạn chắc tầm 1 mét phải không hả
+  - chiều cao của timi có được 1 mét không
+  - timi được mấy cm
+  - m cao trên mét mốt không
+  - chiều cao của bạn chắc tầm 1m50 không hả
+  - cao mấy thế hả cậu
+  - chiều cao của bạn chắc tầm 1 mét chứ hả
+  - bot cao trên 1m50 không
+  - mày cao bao nhiêu thế hả bạn
+  - chiều cao của mày chắc tầm 1 mét phải không hả
+  - chiều cao của bạn chắc tầm mét mốt chớ hả
+  - m được mấy cm
+  - chiều cao của mày chắc tầm 1m50 chớ hả
+  - bạn cao bao nhiêu thế
+  - bạn có cao tầm mét mốt không
+  - mày cao bao nhiêu thế hả cậu
+  - mày có cao tầm 1m50 không
+  - bạn có cao tầm 1m50 không
+  - timi cao bao nhiêu thế
+  - chiều cao của mày chắc tầm 1m50 chứ hả
+  - chiều cao của timi chắc tầm mét mốt phải không hả
+  - mày có cao tầm 1 mét không
+  - cao mấy thế
+  - mày cao mấy thế hả bạn
+  - chiều cao của em chắc tầm 1 mét không hả
+  - bạn được bao nhiêu cm
+  - cao mấy thế hả bot
+  - chiều cao của cậu chắc tầm 1 mét phải không hả
+  - chiều cao của timi có được 1m50 không
+  - cậu cao trên mét mốt không
+  - chiều cao của bot có được 1 mét không
+  - cao bao nhiêu thế hả bạn
+  - cậu cao trên 1 mét không
+  - cậu có cao tầm mét mốt không
+  - chiều cao của cậu chắc tầm mét mốt chứ hả
+  - cao bao nhiêu thế hả timi
+  - chiều cao của cậu chắc tầm 1 mét chớ hả
+  - bot được mấy mét
+  - mày cao bao nhiêu thế hả m
+  - m được bao nhiêu cm
+  - chiều cao của em chắc tầm 1 mét phải không hả
+  - chiều cao của bạn chắc tầm mét mốt không hả
+  - chiều cao của m chắc tầm 1m50 phải không hả
+  - chiều cao bao nhiêu?
+  - chiều cao của cậu chắc tầm mét mốt không hả
+  - chiều cao của m có được 1 mét không
+  - em cao mấy thế
+  - em cao bao nhiêu thế
+  - chiều cao của timi chắc tầm mét mốt không hả
+  - chiều cao của mày chắc tầm mét mốt không hả
+  - mày cao mấy thế hả em
+  - chiều cao của m chắc tầm mét mốt không hả
+  - chiều cao của m chắc tầm 1m50 chứ hả
+  - bot được bao nhiêu cm
+  - chiều cao của mày chắc tầm mét mốt chớ hả
+  - chiều cao của bot chắc tầm mét mốt chớ hả
+  - chiều cao của bạn chắc tầm mét mốt phải không hả
+  - bạn cao trên mét mốt không
+  - bot có cao tầm mét mốt không
+  - chiều cao của em có được 1 mét không
+  - chiều cao của mày chắc tầm 1 mét không hả
+  - timi cao mấy thế
+  - bot có cao tầm 1 mét không
+  - chiều cao của bot có được mét mốt không
+  - chiều cao của em chắc tầm mét mốt phải không hả
+  - bot có cao tầm 1m50 không
+  - m có cao tầm 1m50 không
