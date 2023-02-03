@@ -8,8 +8,8 @@ GENERAL:
   output_report: reports
 
   # Skipped signal
-  skipped_gen_data: True
-  skipped_training: True
+  skipped_gen_data: False
+  skipped_training: False
   skipped_eval: False
 
 DATA_GENERATION:
@@ -23,6 +23,8 @@ DATA_GENERATION:
   EMBEDDER:
     cache_path: ./embedder_caches
     pretrained_name_or_abspath: all-MiniLM-L6-v2
+  FROM_IR_EVAL:
+    ir_eval_result_path: data/raw/timi/v1.1.4/timi-keepitreal-H768-faq-900k-v1.1.4.json
 #  COMBINER:
 
 

@@ -312,6 +312,11 @@ class InmemoryDocumentStore(SaturnAbstract):
         # print(f"pytorch_cos_sim cost {time.time() - t0} seconds")
         # score_indices = torch.argsort(scores, dim=1, descending=True)[:, :top_k]
         # Method 4: Using custom argsort
+        # raise bug if shape of embedding is not the same
+        all_shape_tgt = set([doc.embedding.shape for doc in tgt_docs])
+        all_shape_src = set([doc.embedding.shape for doc in src_docs])
+        if len(all_shape_tgt) != 1 or len(all_shape_src) != 1:
+            raise ValueError("You have some documents with different embedding shape. Please check your caching.")
         vectors_tgt = np.array([doc.embedding for doc in tgt_docs])
         vector_srcs = np.array([src_doc.embedding for src_doc in src_docs])
         new_scores = cosine_similarity(vector_srcs, vectors_tgt)
@@ -387,6 +392,7 @@ class InmemoryDocumentStore(SaturnAbstract):
 
         # Load document from e2e result
         self._load_from_e2e_result()
+        self._load_from_ir_result()
 
         # Remove duplicate
         if self.remove_duplicate_doc:
@@ -438,6 +444,40 @@ class InmemoryDocumentStore(SaturnAbstract):
                     main_intent, sub_intent = target_faq.split("/")
                 else:
                     main_intent, sub_intent = target_faq, None
+                metadata = {
+                    "main_intent": main_intent,
+                    "sub_intent": sub_intent,
+                    "type": constants.KEY_POSITIVE
+                }
+
+                doc = Document.from_dict({"text": text, **metadata})
+                self.documents.update({doc.id: doc})
+            _logger.info(f"Loaded {len(rows)} documents from {e2e_result_path}")
+
+    def _load_from_ir_result(self):
+        """
+        Load data from e2e result
+        Returns:
+
+        """
+        _logger.info("Loading data from e2e result")
+        from_e2e_config = self.config_parser.data_generation_config().get("FROM_IR_EVAL", {})
+        ir_eval_result_path = from_e2e_config.get("ir_eval_result_path")
+        if not ir_eval_result_path:
+            return
+
+        if not isinstance(ir_eval_result_path, List):
+            ir_eval_result_path = [ir_eval_result_path]
+        for e2e_result_path in ir_eval_result_path:
+            rows = self._read_ir_result(e2e_result_path)
+            for row in rows:
+                text = convert_unicode(row["query"])
+                label = row["label"]
+                # Get main intent and sub intent
+                if self.split_intent_by_slash and "/" in label:
+                    main_intent, sub_intent = label.split("/")
+                else:
+                    main_intent, sub_intent = label, None
                 metadata = {
                     "main_intent": main_intent,
                     "sub_intent": sub_intent,
@@ -549,6 +589,63 @@ class InmemoryDocumentStore(SaturnAbstract):
             if row['target_faq'] != row['predict_faq']:
                 eval_data.append(ps.pick(row, 'text', 'target_faq', 'predict_faq'))
         return eval_data
+
+    def _read_ir_result(self, file_path: Text) -> List[Dict]:
+        """
+        Read IR result
+        Args:
+            file_path:
+
+        Returns: a list of row
+            {
+                "query": "query text",
+                "label": "label",
+            }
+
+        """
+        rows = []
+        # ir_data = file_util.load_json(file_path)
+        ir_data = self._load_and_render_ir_data(file_path)
+        query_data, relevant_data, predicted_labels, scores = \
+            ir_data["query"], ir_data['most_relevant_docs'], ir_data['predicted_labels'], \
+            ir_data['relevant_doc_scores']
+        query_data = ir_data["query"]
+        true_label_data = ir_data['label']
+        predicted_label_data = ir_data['predicted_labels']
+        relevant_data = ir_data['most_relevant_docs']
+        relevant_score_data = ir_data['relevant_doc_scores']
+
+        for index, queries in query_data.items():
+            first_query = queries[0]
+            true_label = true_label_data[index][0]
+
+            # If top 1 is not the true label, then it is a false negative
+            top_1_predicted_label = predicted_label_data[index][0]
+            if top_1_predicted_label != true_label:
+                rows.append({
+                    "query": first_query,
+                    "label": true_label,
+                })
+            # Add relevant data to rows
+            for r_idx, re_text in enumerate(relevant_data[index]):
+                rel_label = predicted_labels[index][r_idx]
+                # If the label is not the true label, and the score is greater than 0.85, then it is a false positive
+                rel_score = relevant_score_data[index][r_idx]
+                if rel_label != true_label and rel_score > 0.85:
+                    rows.append({
+                        "query": re_text,
+                        "label": rel_label,
+                    })
+        return rows
+
+    @staticmethod
+    def _load_and_render_ir_data(file_path: Text):
+        ir_data = file_util.load_json(file_path)
+
+        for name, data in ir_data.items():
+            for index, meta in data.items():
+                data[index] = list(meta.values())
+        return ir_data
 
     def _get_metadata(self, positive_data: Dict, data_type: Text):
         """

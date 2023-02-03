@@ -69,31 +69,14 @@ def release(config):
         raise ValueError("Release config is not found")
 
     model_path = release_config["model_path"]
-    version = release_config.get("version") or config_parser.general_config().get("version")
-    project_name = config_parser.general_config().get("project")
-    pretrained_model = release_config.get("pretrained_model")
-    data_size = release_config.get("data_size", None)
-
-    name = ""
-    if not project_name:
-        raise Exception("Project name is not defined")
-    name += project_name
-    if not pretrained_model:
-        raise Exception("Pretrained model is not defined")
-    name += f"-{pretrained_model}"
-    name += "-faq"
-    if data_size:
-        name += f"-{data_size}"
-    if version:
-        name += f"-{version}"
-
-    # Replace _ with - in name and " " by "-"
-    name = name.replace("_", "-").replace(" ", "-")
+    model_name = release_config.get("model_name")
+    assert model_path, "Model path is not found"
+    assert model_name, "Model name is not defined"
     is_agree_upload = questionary.confirm(
-        f"Are you sure to upload the model from '{model_path}' with name: '{name}' to model hub?"
+        f"Are you sure to upload the model from '{model_path}' with name: '{model_name}' to model hub?"
     ).ask()
     if is_agree_upload:
-        axiom_wrapper.upload_model(model_name=name, dir_path=model_path, replace=True)
+        axiom_wrapper.upload_model(model_name=model_name, dir_path=model_path, replace=True)
     else:
         print("Aborting...")
         return

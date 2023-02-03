@@ -1,7 +1,7 @@
 GENERAL:
-  device: cuda:0
+  device: cuda:1
   project: timi
-  version: v1.1.4
+  version: v1.1.5
   output_data: assets
   output_model: models
   output_report: reports
@@ -23,12 +23,13 @@ DATA_GENERATION:
   remove_duplicate_doc: True
   EMBEDDER:
     cache_path: ./embedder_caches
-    pretrained_name_or_abspath: timi-keepitreal-H768-faq-2M-v1.1.3
+    pretrained_name_or_abspath: timi-keepitreal-H768-faq-900k-v1.1.4
     batch_size: 128
-    device: cuda:1
-#  FROM_E2E:
-#    e2e_eval_result_path: data/raw/timi/v1.1.4/processed_all.csv
-#    intent_field_map: {}
+  FROM_E2E:
+    e2e_eval_result_path: data/raw/timi/v1.1.4/processed_all.csv
+    intent_field_map: {}
+  FROM_IR_EVAL:
+    ir_eval_result_path: data/raw/timi/v1.1.4/processed_all.csv
   COMBINER: {}
 
 
@@ -36,7 +37,7 @@ TRAINER:
   class: SBertSemanticSimilarity
   package: saturn.components.embeddings.embedding_models
   skipped: True
-  pretrained_name_or_abspath: timi-keepitreal-H768-faq-2M-v1.1.3
+  pretrained_name_or_abspath: timi-keepitreal-H768-faq-900k-v1.1.4
   model_save_path: models
   n_samples: 10
   batch_size: 256
