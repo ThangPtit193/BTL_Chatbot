@@ -134,16 +134,16 @@ class KRManager(SaturnAbstract):
             return self._retriever_threshold
         return self._retriever_threshold
 
-    @property
-    def default_faq_label(self):
-        if not self._default_faq_label:
-            if 'default_faq_label' not in self.eval_config:
-                _logger.warning('Not found to get default_faq_label, so the default value will be applied')
-                self._default_faq_label = 'faq/out_of_scope'
-                return self._default_faq_label
-            self._default_faq_label = self.eval_config.get('default_faq_label')
-            return self._default_faq_label
-        return self._default_faq_label
+    # @property
+    # def default_faq_label(self):
+    #     if not self._default_faq_label:
+    #         if 'default_faq_label' not in self.eval_config:
+    #             _logger.warning('Not found to get default_faq_label, so the default value will be applied')
+    #             self._default_faq_label = 'faq/out_of_scope'
+    #             return self._default_faq_label
+    #         self._default_faq_label = self.eval_config.get('default_faq_label')
+    #         return self._default_faq_label
+    #     return self._default_faq_label
 
     def train_embedder(self):
         if self.skipped_training:
@@ -196,7 +196,7 @@ class KRManager(SaturnAbstract):
 
         top_k = top_k if top_k else self.top_k
         retriever_threshold = retriever_threshold if retriever_threshold else self.retriever_threshold
-        default_faq_label = default_faq_label if default_faq_label else self.default_faq_label
+        # default_faq_label = default_faq_label if default_faq_label else self.default_faq_label
 
         pretrained_name_or_abspaths = self.pretrained_name_or_abspath
 
@@ -505,7 +505,7 @@ class KRManager(SaturnAbstract):
             # eval_results.append(eval_result.to_dict())
             df = pd.DataFrame(eval_result.to_dict())
             df = df.apply(pd.Series.explode)
-            df.loc[df['relevant_doc_scores'] <= retriever_threshold, 'predicted_labels'] = default_faq_label
+            # df.loc[df['relevant_doc_scores'] <= retriever_threshold, 'predicted_labels'] = default_faq_label
             eval_results.append(df.to_dict())
         return eval_results
 

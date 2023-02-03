@@ -473,10 +473,15 @@ class InmemoryDocumentStore(SaturnAbstract):
         if not isinstance(ir_eval_result_path, List):
             ir_eval_result_path = [ir_eval_result_path]
         for e2e_result_path in ir_eval_result_path:
+            data_save = {
+                constants.KEY_POSITIVE: {},
+                constants.KEY_NEGATIVE: {},
+            }
             rows = self._read_ir_result(e2e_result_path, **from_ir_eval_config)
             for row in rows:
                 text = convert_unicode(row["query"])
                 label = row["label"]
+                doc_type = row["doc_type"]
                 # Get main intent and sub intent
                 if self.split_intent_by_slash and "/" in label:
                     main_intent, sub_intent = label.split("/")
@@ -485,13 +490,21 @@ class InmemoryDocumentStore(SaturnAbstract):
                 metadata = {
                     "main_intent": main_intent,
                     "sub_intent": sub_intent,
-                    "type": row['doc_type'],
+                    "type": doc_type,
                     "intent": label,
                 }
 
                 doc = Document.from_dict({"text": text, **metadata})
                 self.documents.update({doc.id: doc})
+                if label not in data_save[doc_type]:
+                    data_save[doc_type][label] = []
+                data_save[doc_type][label].append(text)
             _logger.info(f"Loaded {len(rows)} documents from {e2e_result_path}")
+
+            # Save to file
+            out_path = e2e_result_path[:-4] + "_converted.json"
+            file_util.dump_obj_as_json_to_file(out_path, data_save)
+            _logger.info(f"Saved to {out_path}")
 
     def _update_embeddings(self):
         if constants.KEY_EMBEDDER not in self.search_mode:
@@ -636,6 +649,7 @@ class InmemoryDocumentStore(SaturnAbstract):
         for index, queries in query_data.items():
             first_query = queries[0]
             true_label = true_label_data[index][0]
+            score = relevant_score_data[index][0]
 
             # If top 1 is not the true label, then it is a false negative
             top_1_predicted_label = predicted_label_data[index][0]
@@ -649,27 +663,37 @@ class InmemoryDocumentStore(SaturnAbstract):
                     "label": true_label,
                     "doc_type": doc_type,
                 })
+            elif all([
+                top_1_predicted_label == true_label,
+                true_label not in oos_intents,
+                score <= 0.95
+            ]):
+                rows.append({
+                    "query": first_query,
+                    "label": true_label,
+                    "doc_type": constants.KEY_POSITIVE,
+                })
             # Add relevant data to rows
-            for r_idx, re_text in enumerate(relevant_data[index]):
-                rel_label = predicted_labels[index][r_idx]
-                # If the label is not the true label, and the score is greater than 0.85, then it is a false positive
-                rel_score = relevant_score_data[index][r_idx]
-                if rel_label != true_label and rel_score > 0.85:
-                    if rel_label not in oos_intents:
-                        doc_type = constants.KEY_POSITIVE
-                    else:
-                        doc_type = constants.KEY_NEGATIVE
-                    rows.append({
-                        "query": re_text,
-                        "label": rel_label,
-                        "doc_type": doc_type,
-                    })
-                elif rel_label == true_label and rel_score <= 0.9 and rel_label not in oos_intents:
-                    rows.append({
-                        "query": re_text,
-                        "label": rel_label,
-                        "doc_type": constants.KEY_POSITIVE,
-                    })
+            # for r_idx, re_text in enumerate(relevant_data[index]):
+            #     rel_label = predicted_labels[index][r_idx]
+            #     # If the label is not the true label, and the score is greater than 0.85, then it is a false positive
+            #     rel_score = relevant_score_data[index][r_idx]
+            #     if rel_label != true_label and rel_score > 0.85:
+            #         if rel_label not in oos_intents:
+            #             doc_type = constants.KEY_POSITIVE
+            #         else:
+            #             doc_type = constants.KEY_NEGATIVE
+            #         rows.append({
+            #             "query": re_text,
+            #             "label": rel_label,
+            #             "doc_type": doc_type,
+            #         })
+            #     elif rel_label == true_label and rel_score <= 0.9 and rel_label not in oos_intents:
+            #         rows.append({
+            #             "query": re_text,
+            #             "label": rel_label,
+            #             "doc_type": constants.KEY_POSITIVE,
+            #         })
 
         return rows
 
