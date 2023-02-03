@@ -25,7 +25,11 @@ DATA_GENERATION:
     pretrained_name_or_abspath: all-MiniLM-L6-v2
   FROM_IR_EVAL:
     ir_eval_result_path: data/raw/timi/v1.1.4/timi-keepitreal-H768-faq-900k-v1.1.4.json
-#  COMBINER:
+    oos_intents: [faq/oos]
+  FROM_E2E:
+    e2e_eval_result_path: data/raw/timi/v1.1.4/processed_all.csv
+    intent_field_map: {}
+  COMBINER: {}
 
 
 TRAINER:

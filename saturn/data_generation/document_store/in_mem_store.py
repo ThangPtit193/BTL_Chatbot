@@ -436,22 +436,22 @@ class InmemoryDocumentStore(SaturnAbstract):
         for e2e_result_path in e2e_result_paths:
             rows = self._read_e2e_result(e2e_result_path)
             for row in rows:
-                text = convert_unicode(row["text"])
-                target_faq = row["target_faq"]
-                target_faq = self.intent_field_map.get(target_faq, target_faq)
+                query = convert_unicode(row["query"])
+                label = row["label"]
+                label = self.intent_field_map.get(label, label)
                 # Get main intent and sub intent
-                if self.split_intent_by_slash and "/" in target_faq:
-                    main_intent, sub_intent = target_faq.split("/")
+                if self.split_intent_by_slash and "/" in label:
+                    main_intent, sub_intent = label.split("/")
                 else:
-                    main_intent, sub_intent = target_faq, None
+                    main_intent, sub_intent = label, None
                 metadata = {
                     "main_intent": main_intent,
                     "sub_intent": sub_intent,
-                    "type": constants.KEY_POSITIVE,
-                    "intent": target_faq,
+                    "type": row["doc_type"],
+                    "intent": label,
                 }
 
-                doc = Document.from_dict({"text": text, **metadata})
+                doc = Document.from_dict({"text": query, **metadata})
                 self.documents.update({doc.id: doc})
             _logger.info(f"Loaded {len(rows)} documents from {e2e_result_path}")
 
@@ -462,15 +462,15 @@ class InmemoryDocumentStore(SaturnAbstract):
 
         """
         _logger.info("Loading data from e2e result")
-        from_e2e_config = self.config_parser.data_generation_config().get("FROM_IR_EVAL", {})
-        ir_eval_result_path = from_e2e_config.get("ir_eval_result_path")
+        from_ir_eval_config = self.config_parser.data_generation_config().get("FROM_IR_EVAL", {})
+        ir_eval_result_path = from_ir_eval_config.get("ir_eval_result_path")
         if not ir_eval_result_path:
             return
 
         if not isinstance(ir_eval_result_path, List):
             ir_eval_result_path = [ir_eval_result_path]
         for e2e_result_path in ir_eval_result_path:
-            rows = self._read_ir_result(e2e_result_path)
+            rows = self._read_ir_result(e2e_result_path, **from_ir_eval_config)
             for row in rows:
                 text = convert_unicode(row["query"])
                 label = row["label"]
@@ -482,7 +482,7 @@ class InmemoryDocumentStore(SaturnAbstract):
                 metadata = {
                     "main_intent": main_intent,
                     "sub_intent": sub_intent,
-                    "type": constants.KEY_POSITIVE,
+                    "type": row['doc_type'],
                     "intent": label,
                 }
 
@@ -575,7 +575,7 @@ class InmemoryDocumentStore(SaturnAbstract):
                     self.documents.update(docs_dict)
 
     @staticmethod
-    def _read_e2e_result(file_path: Text) -> List[Dict]:
+    def _read_e2e_result(file_path: Text, **kwargs) -> List[Dict]:
         import csv
 
         with open(file_path, 'r') as f:
@@ -586,17 +586,30 @@ class InmemoryDocumentStore(SaturnAbstract):
         assert "predict_faq" in rows[0], "predict_faq is not in the csv file"
         assert "text" in rows[0], "text is not in the csv file"
 
+        oos_intents = kwargs.get("oos_intents", [])
         eval_data = []
         for row in rows:
-            if row['target_faq'] != row['predict_faq']:
+            target_faq = row['target_faq']
+            if target_faq != row['predict_faq']:
                 eval_data.append(ps.pick(row, 'text', 'target_faq', 'predict_faq'))
+                if target_faq in oos_intents:
+                    doc_type = constants.KEY_NEGATIVE
+                else:
+                    doc_type = constants.KEY_POSITIVE
+                eval_data.append({
+                    "query": row['text'],
+                    "label": target_faq,
+                    "doc_type": doc_type,
+                })
         return eval_data
 
-    def _read_ir_result(self, file_path: Text) -> List[Dict]:
+    def _read_ir_result(self, file_path: Text, **kwargs) -> List[Dict]:
         """
         Read IR result
         Args:
             file_path:
+            **kwargs:
+                oos_intents: list of out of scope intents
 
         Returns: a list of row
             {
@@ -605,6 +618,7 @@ class InmemoryDocumentStore(SaturnAbstract):
             }
 
         """
+        oos_intents = kwargs.get("oos_intents", [])
         rows = []
         # ir_data = file_util.load_json(file_path)
         ir_data = self._load_and_render_ir_data(file_path)
@@ -624,9 +638,14 @@ class InmemoryDocumentStore(SaturnAbstract):
             # If top 1 is not the true label, then it is a false negative
             top_1_predicted_label = predicted_label_data[index][0]
             if top_1_predicted_label != true_label:
+                if true_label not in oos_intents:
+                    doc_type = constants.KEY_POSITIVE
+                else:
+                    doc_type = constants.KEY_NEGATIVE
                 rows.append({
                     "query": first_query,
                     "label": true_label,
+                    "doc_type": doc_type,
                 })
             # Add relevant data to rows
             for r_idx, re_text in enumerate(relevant_data[index]):
@@ -634,9 +653,14 @@ class InmemoryDocumentStore(SaturnAbstract):
                 # If the label is not the true label, and the score is greater than 0.85, then it is a false positive
                 rel_score = relevant_score_data[index][r_idx]
                 if rel_label != true_label and rel_score > 0.85:
+                    if rel_label not in oos_intents:
+                        doc_type = constants.KEY_POSITIVE
+                    else:
+                        doc_type = constants.KEY_NEGATIVE
                     rows.append({
                         "query": re_text,
                         "label": rel_label,
+                        "doc_type": doc_type,
                     })
         return rows
 
