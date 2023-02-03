@@ -30,13 +30,11 @@ def load_json(file_path: Text) -> Dict:
     return config
 
 
-@timeit
 def write_json(data, file_path, encoding='utf-8'):
     with open(file_path, 'w', encoding=encoding) as pf:
         json.dump(data, pf, ensure_ascii=False, indent=4)
 
 
-@timeit
 def write_json_beautifier(file_path: Text, dict_info: Dict) -> None:
     """
     Write the content from dictionary into file with a beautiful format
@@ -55,7 +53,6 @@ def write_json_beautifier(file_path: Text, dict_info: Dict) -> None:
         f.write(dict_)
 
 
-@timeit
 def write_csv(out_dir: Union[Text, Path], file_name: str, data: Union[List, DataFrame]):
     file_path = os.path.join(out_dir, file_name)
     if not Path(out_dir).exists():
@@ -69,7 +66,6 @@ def write_csv(out_dir: Union[Text, Path], file_name: str, data: Union[List, Data
         raise ValueError(f'File path must be a csv file')
 
 
-@timeit
 def write_md(out_dir: Union[Text, Path], file_name: str, data: Union[List, DataFrame]):
     file_path = os.path.join(out_dir, file_name)
     if not Path(out_dir).exists():

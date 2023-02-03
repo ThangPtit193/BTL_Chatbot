@@ -4,7 +4,6 @@ from pathlib import Path
 from time import perf_counter
 from typing import TYPE_CHECKING, Optional, List, Union, Tuple, Text, Dict
 
-from comet.components.embeddings.embedding_models import BertEmbedder
 import questionary
 import pandas as pd
 from pandas import DataFrame
@@ -20,13 +19,14 @@ from comet.lib import file_util, logger
 from comet.lib.helpers import get_module_or_attr
 from comet.utilities.utility import convert_unicode
 from comet.lib.print_utils import print_title
+from comet.components.embeddings.embedding_models import BertEmbedder
 
 from saturn.components.utils.document import Document, EvalResult
 from saturn.utils.config_parser import ConfigParser
 from saturn.abstract_method.staturn_abstract import SaturnAbstract
-from saturn.utils.io import write_csv, write_md, write_json_beautifier, write_json
+from saturn.utils.io import write_csv, write_md, write_json
 from saturn.data_generation.document_store.utils import fast_argsort_1d_bottleneck
-from saturn.utils.reflection import timeit
+from saturn.utils.reflection import Style
 
 if TYPE_CHECKING:
     from saturn.components.embeddings.embedding_models import SBertSemanticSimilarity
@@ -199,12 +199,14 @@ class KRManager(SaturnAbstract):
         default_faq_label = default_faq_label if default_faq_label else self.default_faq_label
 
         pretrained_name_or_abspaths = self.pretrained_name_or_abspath
+
         if isinstance(pretrained_name_or_abspaths, str):
             pretrained_name_or_abspaths = [pretrained_name_or_abspaths]
         evaluation_results: Dict[Dict[str, List[EvalResult]]] = {}
 
         for pretrained_name_or_abspath in tqdm(list(pretrained_name_or_abspaths)):
             name = os.path.basename(pretrained_name_or_abspath)
+            self.print_line(name, Style.MAGENTA)
             evaluation_results[name] = {}
             try:
                 batch_size = 256 if torch.cuda.is_available() else 8
@@ -234,6 +236,14 @@ class KRManager(SaturnAbstract):
             evaluation_results[name]["retriever_time"] = round(retriever_time, 2)
             evaluation_results[name]["query_numbers"] = len(src_docs)
 
+            # log mrr and map metrics for tracing the evaluation
+            df = pd.DataFrame(eval_results)
+            df = df.apply(pd.Series.explode)
+            df.insert(5, 'score', df.pop('relevant_doc_scores'))
+            df.columns = ['query', 'gt_label', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
+            _logger.info(f"Retriever results for {Style.BLUE}{Style.BOLD}'{name}': map: {round(df['ap'].mean(), 2)}, "
+                         f"mrr: {round(df['rr'].mean(), 2)}")
+
             if save_report:
                 self.save_detail_report(model_name=name, df=evaluation_results[name])
                 write_json(
@@ -249,7 +259,6 @@ class KRManager(SaturnAbstract):
 
         return evaluation_results
 
-    @timeit
     def compute_ir_metrics(self, eval_results: Dict[str, Dict[str, List[EvalResult]]] = None) -> List:
         """
         Compute information retrieval metrics such as mean average precision (mAP), mean reciprocal rank (mRR)
@@ -266,8 +275,8 @@ class KRManager(SaturnAbstract):
             df = df.apply(pd.Series.explode)
             df.insert(5, 'score', df.pop('relevant_doc_scores'))
             df.columns = ['query', 'gt_label', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
-            _logger.info(f"Retriever results for '{model_name}': map: {round(df['ap'].mean(), 2)}, "
-                         f"mrr: {round(df['rr'].mean(), 2)}")
+            # _logger.info(f"Retriever results for '{model_name}': map: {round(df['ap'].mean(), 2)}, "
+            #              f"mrr: {round(df['rr'].mean(), 2)}")
             records = {
                 "model_name": model_name,
                 "query_numbers": eval_result["query_numbers"],
@@ -313,7 +322,6 @@ class KRManager(SaturnAbstract):
         else:
             raise NotImplemented(f"This format {report_type} has not supported yet.")
 
-    @timeit
     def save_detail_report(self,
                            model_name: str,
                            df: Union[DataFrame, List],
@@ -442,7 +450,6 @@ class KRManager(SaturnAbstract):
         writer.save()
         _logger.info(f"Evaluation report with excel format is saved at {target_path}")
 
-    @timeit
     def _extract_eval_result(
             self,
             src_docs: List[Document],
@@ -555,3 +562,7 @@ class KRManager(SaturnAbstract):
                     num_relevant=num_relevant,
                 ))
         return docs
+
+    @staticmethod
+    def print_line(text, style):
+        print("😹 😹 😹 😹 😹 😹 😹 😹 😹 😹 {} 😹 😹 😹 😹 😹 😹 😹 😹 😹 😹".format(f'{style}{text.upper()}'))
