@@ -73,5 +73,5 @@ EVALUATION:
   retriever_threshold: 0.7
   default_faq_label: 'faq/out_of_scope'
 RELEASE:
-  model_path: models/timi/v1.1.4/epoch-6
+  model_path: models/timi/v1.1.5/epoch-6
   model_name: timi-keepitreal-H768-faq-900k-v1.1.4

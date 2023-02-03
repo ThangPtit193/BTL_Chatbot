@@ -427,14 +427,16 @@ class InmemoryDocumentStore(SaturnAbstract):
         """
         _logger.info("Loading data from e2e result")
         from_e2e_config = self.config_parser.data_generation_config().get("FROM_E2E", {})
-        e2e_result_paths = from_e2e_config.get("e2e_eval_result_path")
-        if not e2e_result_paths:
+
+        if "e2e_eval_result_path" not in from_e2e_config:
             return
+
+        e2e_result_paths = from_e2e_config.pop("e2e_eval_result_path")
 
         if not isinstance(e2e_result_paths, List):
             e2e_result_paths = [e2e_result_paths]
         for e2e_result_path in e2e_result_paths:
-            rows = self._read_e2e_result(e2e_result_path)
+            rows = self._read_e2e_result(e2e_result_path, **from_e2e_config)
             for row in rows:
                 query = convert_unicode(row["query"])
                 label = row["label"]
@@ -463,9 +465,10 @@ class InmemoryDocumentStore(SaturnAbstract):
         """
         _logger.info("Loading data from e2e result")
         from_ir_eval_config = self.config_parser.data_generation_config().get("FROM_IR_EVAL", {})
-        ir_eval_result_path = from_ir_eval_config.get("ir_eval_result_path")
-        if not ir_eval_result_path:
+
+        if "ir_eval_result_path" not in from_ir_eval_config:
             return
+        ir_eval_result_path = from_ir_eval_config.pop("ir_eval_result_path")
 
         if not isinstance(ir_eval_result_path, List):
             ir_eval_result_path = [ir_eval_result_path]
@@ -591,7 +594,6 @@ class InmemoryDocumentStore(SaturnAbstract):
         for row in rows:
             target_faq = row['target_faq']
             if target_faq != row['predict_faq']:
-                eval_data.append(ps.pick(row, 'text', 'target_faq', 'predict_faq'))
                 if target_faq in oos_intents:
                     doc_type = constants.KEY_NEGATIVE
                 else:
@@ -662,6 +664,13 @@ class InmemoryDocumentStore(SaturnAbstract):
                         "label": rel_label,
                         "doc_type": doc_type,
                     })
+                elif rel_label == true_label and rel_score <= 0.9 and rel_label not in oos_intents:
+                    rows.append({
+                        "query": re_text,
+                        "label": rel_label,
+                        "doc_type": constants.KEY_POSITIVE,
+                    })
+
         return rows
 
     @staticmethod

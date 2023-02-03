@@ -29,6 +29,7 @@ DATA_GENERATION:
   FROM_E2E:
     e2e_eval_result_path: data/raw/timi/v1.1.4/processed_all.csv
     intent_field_map: {}
+    oos_intents: [faq/oos]
   COMBINER: {}
 
 
