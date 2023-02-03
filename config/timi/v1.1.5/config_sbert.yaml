@@ -25,11 +25,11 @@ DATA_GENERATION:
     cache_path: ./embedder_caches
     pretrained_name_or_abspath: timi-keepitreal-H768-faq-900k-v1.1.4
     batch_size: 128
-  FROM_E2E:
-    e2e_eval_result_path: data/raw/timi/v1.1.4/processed_all.csv
-    intent_field_map: {}
+#  FROM_E2E:
+#    e2e_eval_result_path: data/raw/timi/v1.1.4/processed_all.csv
+#    intent_field_map: {}
   FROM_IR_EVAL:
-    ir_eval_result_path: data/raw/timi/v1.1.4/processed_all.csv
+    ir_eval_result_path: data/raw/timi/v1.1.4/timi-keepitreal-H768-faq-900k-v1.1.4.json
   COMBINER: {}
 
 
@@ -40,8 +40,8 @@ TRAINER:
   pretrained_name_or_abspath: timi-keepitreal-H768-faq-900k-v1.1.4
   model_save_path: models
   n_samples: 10
-  batch_size: 256
-  epochs: 15
+  batch_size: 128
+  epochs: 10
   warmup_steps: 5000
   evaluation_steps: 2000
   weight_decay: 0.01

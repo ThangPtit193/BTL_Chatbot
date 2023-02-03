@@ -61,6 +61,17 @@ def run_e2e(config):
 
 @click.command()
 @click.option('--config', '-c', required=True, default="config/config.yaml")
+def gen_data(config):
+    config_parser: ConfigParser = ConfigParser(config)
+    print_utils.print_line(f"Starting generate triples")
+    triple_generator = TripleGenerator(config=config_parser)
+    triple_generator.load()
+    triple_generator.generate_triples()
+    print_utils.print_line(f"✅ ✅ ✅ DONE generate triples ✅ ✅ ✅")
+
+
+@click.command()
+@click.option('--config', '-c', required=True, default="config/config.yaml")
 def release(config):
     from venus.wrapper import axiom_wrapper
     config_parser: ConfigParser = ConfigParser(config)
@@ -126,11 +137,12 @@ def ui(path):
 
 
 entry_point.add_command(version)
+entry_point.add_command(run_e2e)
+entry_point.add_command(gen_data)
 entry_point.add_command(train)
 entry_point.add_command(test)
-entry_point.add_command(ui)
-entry_point.add_command(run_e2e)
 entry_point.add_command(release)
+entry_point.add_command(ui)
 entry_point.add_command(model)
 
 if __name__ == '__main__':
