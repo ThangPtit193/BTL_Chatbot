@@ -447,7 +447,8 @@ class InmemoryDocumentStore(SaturnAbstract):
                 metadata = {
                     "main_intent": main_intent,
                     "sub_intent": sub_intent,
-                    "type": constants.KEY_POSITIVE
+                    "type": constants.KEY_POSITIVE,
+                    "intent": target_faq,
                 }
 
                 doc = Document.from_dict({"text": text, **metadata})
@@ -481,7 +482,8 @@ class InmemoryDocumentStore(SaturnAbstract):
                 metadata = {
                     "main_intent": main_intent,
                     "sub_intent": sub_intent,
-                    "type": constants.KEY_POSITIVE
+                    "type": constants.KEY_POSITIVE,
+                    "intent": label,
                 }
 
                 doc = Document.from_dict({"text": text, **metadata})
