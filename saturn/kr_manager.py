@@ -380,6 +380,7 @@ class KRManager(SaturnAbstract):
             }
         )
 
+        cell_format = workbook.add_format({'align': 'center', 'valign': 'vcenter'})
         merge_format = workbook.add_format({'align': 'center', 'valign': 'vcenter', 'border': 1})
         bg_format_odd = workbook.add_format({'bg_color': '#cfe2f3', 'border': 1, 'align': 'center'})
         bg_format_even = workbook.add_format({'bg_color': '#FFFFFF', 'border': 1, 'align': 'center'})
@@ -394,6 +395,7 @@ class KRManager(SaturnAbstract):
             header_range = xl_range_abs(0, 0, 0, dt.shape[1] - 1)
             worksheet.conditional_format(header_range, {'type': 'no_blanks',
                                                         'format': header_format})
+
             for idx in dt['index'].unique():
                 # find indices and add one to account for header
                 u = dt.loc[dt['index'] == idx].index.values + 1
@@ -434,20 +436,26 @@ class KRManager(SaturnAbstract):
                                     i, dt.columns.get_loc('score'),
                                     dt['score'][i - 1], bg_format_correct_label)
 
-                if len(u) < 2:
-                    pass  # do not merge cells if there is only one row
-                else:
-                    column_index = {
-                        'index': 0,
-                        'query': 1,
-                        'gt_label': 2,
-                        'top_k': 3,
-                        'rr': 4,
-                        'ap': 5
-                    }
-                    # merge cells using the first and last indices
-                    for key, index in column_index.items():
-                        worksheet.merge_range(u[0], index, u[-1], index, dt.loc[u[0], f'{key}'], merge_format)
+                # column to merge or reformat
+                column_index = {
+                    'index': 0,
+                    'query': 1,
+                    'gt_label': 2,
+                    'top_k': 3,
+                    'rr': 4,
+                    'ap': 5
+                }
+
+                for key, index in column_index.items():
+                    if len(u) < 2:
+                        # pass  # do not merge cells if there is only one row
+                        crange = xl_range_abs(u[0], column_index['index'], u[-1], len(column_index))
+                        worksheet.conditional_format(crange, {'type': 'no_blanks',
+                                                              'format': cell_format})
+                    else:
+                        # merge cells using the first and last indices
+                        worksheet.merge_range(u[0], index, u[-1], index, dt.loc[u[0], f'{key}'],
+                                              merge_format)
 
         # auto-adjust column size
         for column in df:
