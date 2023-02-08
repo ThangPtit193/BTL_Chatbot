@@ -134,16 +134,16 @@ class KRManager(SaturnAbstract):
             return self._retriever_threshold
         return self._retriever_threshold
 
-    # @property
-    # def default_faq_label(self):
-    #     if not self._default_faq_label:
-    #         if 'default_faq_label' not in self.eval_config:
-    #             _logger.warning('Not found to get default_faq_label, so the default value will be applied')
-    #             self._default_faq_label = 'faq/out_of_scope'
-    #             return self._default_faq_label
-    #         self._default_faq_label = self.eval_config.get('default_faq_label')
-    #         return self._default_faq_label
-    #     return self._default_faq_label
+    @property
+    def default_faq_label(self):
+        if not self._default_faq_label:
+            if 'default_faq_label' not in self.eval_config:
+                _logger.warning('Not found to get default_faq_label, so the default value will be applied')
+                self._default_faq_label = 'faq/out_of_scope'
+                return self._default_faq_label
+            self._default_faq_label = self.eval_config.get('default_faq_label')
+            return self._default_faq_label
+        return self._default_faq_label
 
     def train_embedder(self):
         if self.skipped_training:
@@ -359,7 +359,8 @@ class KRManager(SaturnAbstract):
 
         df_merged_wrong_queries = pd.DataFrame(df.to_dict('records'))
         df_merged_wrong_queries = df_merged_wrong_queries[
-            df_merged_wrong_queries['gt_label'] != df_merged_wrong_queries['predicted_label']]
+            (df_merged_wrong_queries['gt_label'] != df_merged_wrong_queries['predicted_label']) &
+            (df_merged_wrong_queries['gt_label'] != self.default_faq_label)]
         df_merged_wrong_queries = df_merged_wrong_queries.reset_index()
         df_merged_wrong_queries.pop('level_0')
         df_merged_wrong_queries.score = df_merged_wrong_queries.score.round(decimals=2)
@@ -379,17 +380,22 @@ class KRManager(SaturnAbstract):
             }
         )
 
+        cell_format = workbook.add_format({'align': 'center', 'valign': 'vcenter'})
         merge_format = workbook.add_format({'align': 'center', 'valign': 'vcenter', 'border': 1})
-        bg_format_odd = workbook.add_format({'bg_color': '#cfe2f3', 'border': 1})
-        bg_format_even = workbook.add_format({'bg_color': '#FFFFFF', 'border': 1})
+        bg_format_odd = workbook.add_format({'bg_color': '#cfe2f3', 'border': 1, 'align': 'center'})
+        bg_format_even = workbook.add_format({'bg_color': '#FFFFFF', 'border': 1, 'align': 'center'})
         bg_format_wrong = workbook.add_format({'font_color': 'red'})
-        bg_best_score = workbook.add_format({'bold': True})
+        bg_format_correct_label = workbook.add_format({'align': 'center'})
+        bg_format_incorrect_label = workbook.add_format({'font_color': 'red', 'align': 'center'})
+
+        bg_best_score = workbook.add_format({'bold': True, 'align': 'center'})
 
         def formatter(dt, sheet_name: str):
             worksheet = writer.sheets[sheet_name]
             header_range = xl_range_abs(0, 0, 0, dt.shape[1] - 1)
             worksheet.conditional_format(header_range, {'type': 'no_blanks',
                                                         'format': header_format})
+
             for idx in dt['index'].unique():
                 # find indices and add one to account for header
                 u = dt.loc[dt['index'] == idx].index.values + 1
@@ -403,40 +409,53 @@ class KRManager(SaturnAbstract):
                     worksheet.conditional_format(cell_range, {'type': 'no_blanks',
                                                               'format': bg_format_even})
                 for i in u:
-                    if dt['gt_label'][i - 1] != dt['predicted_label'][i - 1]:
-                        # wrong_label_range = xl_range_abs(i, dt.columns.get_loc('most_relevant_docs'),
-                        #                                  i, dt.shape[1])
-                        worksheet.write(
-                            i, dt.columns.get_loc('relevant_docs'),
-                            dt['relevant_docs'][i - 1], bg_format_wrong)
-                        worksheet.write(
-                            i, dt.columns.get_loc('predicted_label'),
-                            dt['predicted_label'][i - 1], bg_format_wrong)
+                    if dt['gt_label'][i - 1] == self._default_faq_label and dt['score'][i - 1] < self.retriever_threshold:
                         worksheet.write(
                             i, dt.columns.get_loc('score'),
-                            dt['score'][i - 1], bg_format_wrong)
+                            dt['score'][i - 1], bg_format_correct_label)
+                        worksheet.write_comment(i, dt.columns.get_loc('score'),
+                                                comment=f'The score is less than retriever_threshold {self.retriever_threshold}. So the predicted label is {self.default_faq_label} for computing metrics')
                     else:
-                        if float(dt['score'][i - 1]) >= 0.9:
+                        if dt['gt_label'][i - 1] != dt['predicted_label'][i - 1]:
+                            worksheet.write(
+                                i, dt.columns.get_loc('relevant_docs'),
+                                dt['relevant_docs'][i - 1], bg_format_wrong)
+                            worksheet.write(
+                                i, dt.columns.get_loc('predicted_label'),
+                                dt['predicted_label'][i - 1], bg_format_wrong)
                             worksheet.write(
                                 i, dt.columns.get_loc('score'),
-                                dt['score'][i - 1], bg_best_score)
+                                dt['score'][i - 1], bg_format_incorrect_label)
                         else:
-                            pass
+                            if float(dt['score'][i - 1]) >= 0.9:
+                                worksheet.write(
+                                    i, dt.columns.get_loc('score'),
+                                    dt['score'][i - 1], bg_best_score)
+                            else:
+                                worksheet.write(
+                                    i, dt.columns.get_loc('score'),
+                                    dt['score'][i - 1], bg_format_correct_label)
 
-                if len(u) < 2:
-                    pass  # do not merge cells if there is only one row
-                else:
-                    column_index = {
-                        'index': 0,
-                        'query': 1,
-                        'gt_label': 2,
-                        'top_k': 3,
-                        'rr': 4,
-                        'ap': 5
-                    }
-                    # merge cells using the first and last indices
-                    for key, index in column_index.items():
-                        worksheet.merge_range(u[0], index, u[-1], index, dt.loc[u[0], f'{key}'], merge_format)
+                # column to merge or reformat
+                column_index = {
+                    'index': 0,
+                    'query': 1,
+                    'gt_label': 2,
+                    'top_k': 3,
+                    'rr': 4,
+                    'ap': 5
+                }
+
+                for key, index in column_index.items():
+                    if len(u) < 2:
+                        # pass  # do not merge cells if there is only one row
+                        crange = xl_range_abs(u[0], column_index['index'], u[-1], len(column_index))
+                        worksheet.conditional_format(crange, {'type': 'no_blanks',
+                                                              'format': cell_format})
+                    else:
+                        # merge cells using the first and last indices
+                        worksheet.merge_range(u[0], index, u[-1], index, dt.loc[u[0], f'{key}'],
+                                              merge_format)
 
         # auto-adjust column size
         for column in df:
@@ -484,7 +503,9 @@ class KRManager(SaturnAbstract):
 
             ground_truths = [doc.text for doc in self.corpus_docs if doc.label == src_doc.label]
             for idx, relevant_doc in enumerate(top_k_relevant_docs):
-                if relevant_doc not in ground_truths:
+                if relevant_doc not in ground_truths \
+                        and relevant_doc != default_faq_label \
+                        and relevant_doc_scores[idx] > retriever_threshold:
                     continue
                 ap += 1
                 if ap == 1 and rr_score == 0:
@@ -495,17 +516,15 @@ class KRManager(SaturnAbstract):
             eval_result = EvalResult(
                 query=src_doc.text,
                 label=src_doc.label,
-                rr_score=rr_score,
+                rr_score=round(rr_score, 2),
                 ap_score=round((ap_score / src_doc.num_relevant), 2),
                 top_k_relevant=src_doc.num_relevant,
                 most_relevant_docs=top_k_relevant_docs[:top_k],
                 relevant_doc_scores=relevant_doc_scores[:top_k],
                 predicted_labels=predicted_labels[:top_k]
             )
-            # eval_results.append(eval_result.to_dict())
             df = pd.DataFrame(eval_result.to_dict())
             df = df.apply(pd.Series.explode)
-            # df.loc[df['relevant_doc_scores'] <= retriever_threshold, 'predicted_labels'] = default_faq_label
             eval_results.append(df.to_dict())
         return eval_results
 

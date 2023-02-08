@@ -4,7 +4,6 @@
     "Cho biết  vài ưng dung của virut",
     "Cho biết  vài ứng dung of virus",
     "Cho biết ưng dung of virut"
-
   ],
   "science.ask_role.DI_TRUYEN_LIEN_KET": [
     "ad cho t hỏi về ý nghĩa của di truyền liên kết",
@@ -15,5 +14,10 @@
     "Silic có trang thái tn ra sao",
     "Silic có trang thái tu nhien như răng",
     "Silic có trạng thái t/nhiên như nào"
+  ],
+  "faq/out_of_scope": [
+    "ncsjhcsd",
+    "Cho t hỏi cái ni",
+    "aloooo"
   ]
 }

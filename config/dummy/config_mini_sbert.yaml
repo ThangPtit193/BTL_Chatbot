@@ -8,8 +8,8 @@ GENERAL:
   output_report: reports
 
   # Skipped signal
-  skipped_gen_data: False
-  skipped_training: False
+  skipped_gen_data: True
+  skipped_training: True
   skipped_eval: False
 
 DATA_GENERATION:
