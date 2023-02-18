@@ -1,0 +1,366 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: chitchat_user_feel_sick
+  examples:
+  - đau bụng quá đi
+  - ' đang chóng hết mặt đây'
+  - tui đang đau đầu
+  - tao đang bị đau bụng
+  - anh cảm thấy ho quá
+  - chị bị ốm rùi
+  - hôm nay bị cảm lạnh, nước mũi chảy hoài
+  - mình đang đau đầu
+  - tớ đang bị đau tay
+  - bụng chị khó chịu thế
+  - mấy hôm nay tớ thấy trong người sao sao
+  - chắc chị bị đau đầu mất
+  - ' ốm mất rùi'
+  - đầu tớ đau quá
+  - hôm nay tớ bị đau đầu rồi
+  - mấy hôm nay tớ thấy mắt đau đau
+  - sao tớ thấy đau đau ở đầu
+  - tui cảm thất khó chịu ở tai
+  - ốm rùi
+  - đang bị đau bụng rồi
+  - tớ bị đau răng
+  - timi ơi, tớ thấy nhức đầu quá
+  - cảm giác bị cúm rùi liệu có phải covid không bạn ơi
+  - chị đang bị đau mắt
+  - mũi [ngày hôm nay](time) làm như nào đau thế
+  - chắc tao bị đau răng rùi
+  - sao tớ cảm thấy hoa mắt thế
+  - đầu của tớ nhức thế
+  - tao lại bị rát họng rồi
+  - chị rát họng quá
+  - dạo này bụng cứ thấy đau đau
+  - timi ơi, anh cảm thấy đau vai quá
+  - đau răng thế đi
+  - tớ đang chóng hết mặt đây
+  - mình đang đâu bụng
+  - tớ đang bị đau mắt
+  - chị cảm thấy ù tai quá
+  - anh bị ốm rùi
+  - anh đang đau đầu
+  - anh đang bị đau họng
+  - mũi anh khó chịu quá
+  - mấy hôm nay tui thấy trong người sao sao
+  - chắc tớ bị đau răng mất
+  - ' ốm mất rồi'
+  - mũi mình đau thế
+  - hôm nay tớ bị ốm rùi
+  - mấy hôm nay mình thấy đầu đau đau
+  - sao tớ thấy đau đau ở tai
+  - tao cảm thất khó chịu ở tai
+  - sốt rùi
+  - đang bị ốm rồi
+  - tao bị sổ mũi
+  - timi ơi, mình cảm thấy khó thở thế
+  - cảm giác bị cúm rồi liệu có phải covid không mày ơi
+  - chị đang bị đau chân
+  - vai [ngày hôm nay](time) làm như nào đau quá
+  - chắc tui bị tróng mặt rồi
+  - sao tớ thấy đau vai quá
+  - đầu của mình nhức thế
+  - mình lại bị nhức đầu rùi
+  - tớ rát họng quá
+  - dạo này đầu cứ thấy đau đau
+  - em ơi, anh cảm thấy đau vai thế
+  - đau răng quá đi
+  - mình đang chóng hết mặt đây
+  - tớ đang đau đầu
+  - tớ đang bị đau đầu
+  - chị thấy hoa mắt quá
+  - ' bị ốm rồi'
+  - tớ đang đâu bụng
+  - chị đang bị đau tai
+  - bụng chị khó chịu quá
+  - mấy hôm nay tao thấy trong người sao sao
+  - chắc tớ bị rát họng rồi
+  - tớ ốm mất rùi
+  - họng tớ đau thế
+  - hôm nay tao bị cảm lạnh rùi
+  - mấy hôm nay tao thấy bụng đau đau
+  - sao tôi thấy đau đau ở đầu
+  - tớ cảm thất khó chịu ở bụng
+  - yếu rồi
+  - đang bị sốt rùi
+  - tui bị đau răng
+  - timi ơi, mình cảm thấy đau tim thế
+  - cảm giác bị cúm rùi liệu có phải covid không timi ơi
+  - anh đang bị đau đầu
+  - bụng [ngày hôm nay](time) làm răng đau thế
+  - chắc tôi bị đau răng rùi
+  - sao tớ cảm thấy đau bụng thế
+  - đầu của tớ nhức quá
+  - tui lại bị đau bụng rồi
+  - mình rát họng thế
+  - dạo này tay cứ thấy đau đau
+  - timi ơi, anh cảm thấy buồn lôn quá
+  - buồn lôn thế
+  - anh đang chóng hết mặt đây
+  - tôi đang đau đầu
+  - tui đang bị đau bụng
+  - anh thấy đau đầu thế
+  - anh bị ốm rồi
+  - mình đang ốm
+  - tớ đang bị đau chân
+  - mũi chị khó chịu thế
+  - mấy hôm nay mình thấy trong người sao sao
+  - chắc chị bị đau vai mất
+  - chị ốm mất rồi
+  - tay tôi đau quá
+  - hôm nay mình bị đâu bụng mất
+  - mấy hôm nay tớ thấy đầu đau đau
+  - sao tớ thấy đau đau ở mắt
+  - tớ cảm thất khó chịu ở tai
+  - đau bụng rồi
+  - bị sốt rùi
+  - tao bị rát họng
+  - timi ơi, tớ thấy sốt thế
+  - cảm giác bị cúm rồi liệu có phải covid không bot ơi
+  - chị đang bị đau tay
+  - họng [ngày hôm nay](time) làm gì đau quá
+  - chắc tớ bị ù tai rùi
+  - sao mình cảm thấy rát họng thế
+  - đầu của tôi nhức thế
+  - tớ lại bị đau răng rùi
+  - mình rát họng quá
+  - dạo này mắt cứ thấy đau đau
+  - timi ơi, anh thấy sổ mũi quá
+  - buồn lôn quá đi
+  - chị đang chóng hết mặt đây
+  - tớ đang ốm
+  - tui đang bị đau đầu
+  - mình thấy hoa mắt quá
+  - ' bị ốm rùi'
+  - chị đang đâu bụng
+  - mình đang bị đau bụng
+  - bụng tớ khó chịu thế
+  - mấy hôm nay tôi thấy trong người sao sao
+  - chắc anh bị ù tai rồi
+  - chị ốm mất rùi
+  - đầu tao đau quá
+  - hôm nay tớ bị đâu bụng rồi
+  - mấy hôm nay tao thấy đầu đau đau
+  - sao mình thấy đau đau ở chân
+  - tui cảm thất khó chịu ở bụng
+  - yếu rùi
+  - bị yếu rồi
+  - tớ bị buồn lôn
+  - timi ơi, tớ thấy sốt quá
+  - cảm giác bị cúm rồi liệu có phải covid không cậu ơi
+  - anh đang bị đau mũi
+  - vai [hôm nay](time) làm gì đau thế
+  - chắc tao bị đau tim mất
+  - sao tớ cảm thấy đau tim quá
+  - đầu của tôi nhức quá
+  - tớ lại bị ù tai rùi
+  - anh rát họng quá
+  - dạo này chân cứ thấy đau đau
+  - em ơi, chị thấy đau răng quá
+  - rát họng quá đi
+  - tôi đang đâu bụng
+  - mình đang bị đau mũi
+  - mình cảm thấy đau tim quá
+  - tớ bị ốm rùi
+  - anh đang ốm
+  - tớ đang bị đau họng
+  - mũi mình khó chịu quá
+  - chắc tớ bị sốt mất
+  - anh ốm mất rùi
+  - đầu tớ đau thế
+  - hôm nay tôi bị đâu bụng rồi
+  - mấy hôm nay tui thấy mắt đau đau
+  - sao tớ thấy đau đau ở bụng
+  - tớ cảm thất khó chịu ở họng
+  - đau bụng rùi
+  - bị sốt rồi
+  - tớ bị sổ mũi
+  - timi ơi, tôi thấy ho thế
+  - cảm giác bị cúm rùi liệu có phải covid không em ơi
+  - anh đang bị đau mắt
+  - chân [ngày hôm nay](time) làm như nào đau thế
+  - chắc tôi bị sốt mất
+  - sao mình thấy sổ mũi thế
+  - đầu của tao nhức quá
+  - tớ lại bị tróng mặt rùi
+  - tớ rát họng thế
+  - dạo này vai cứ thấy đau đau
+  - timi ơi, chị cảm thấy buồn lôn thế
+  - đau họng thế đi
+  - tớ đang ho
+  - tao đang bị đau mắt
+  - anh cảm thấy buồn lôn quá
+  - mình bị ốm rồi
+  - chị đang đau đầu
+  - tớ đang bị đau vai
+  - bụng anh khó chịu quá
+  - chắc anh bị đau tim mất
+  - anh ốm mất rồi
+  - bụng tui đau quá
+  - hôm nay tớ bị ho mất
+  - mấy hôm nay tớ thấy bụng đau đau
+  - sao tớ thấy đau đau ở tay
+  - tao cảm thất khó chịu ở họng
+  - sốt rồi
+  - bị yếu rùi
+  - tớ bị ho
+  - timi ơi, mình thấy nhức đầu quá
+  - cảm giác bị cúm rùi liệu có phải covid không cậu ơi
+  - chị đang bị đau đầu
+  - tay [hôm nay](time) làm gì đau quá
+  - chắc tôi bị buồn lôn mất
+  - sao tớ cảm thấy đau đầu quá
+  - đầu của tui nhức thế
+  - tớ lại bị đau đầu rồi
+  - chị rát họng thế
+  - dạo này tai cứ thấy đau đau
+  - timi ơi, chị cảm thấy tróng mặt quá
+  - nhức đầu quá đi
+  - tui đang đâu bụng
+  - tao đang bị đau tai
+  - mình thấy sổ mũi thế
+  - chị bị ốm rồi
+  - chị đang ho
+  - tớ đang bị đau bụng
+  - mũi anh khó chịu thế
+  - chắc anh bị đau bụng mất
+  - tớ ốm mất rồi
+  - mắt tớ đau quá
+  - hôm nay tớ bị cảm lạnh mất
+  - mấy hôm nay tao thấy tai đau đau
+  - sao tớ thấy đau đau ở chân
+  - mình cảm thất khó chịu ở tai
+  - ốm rồi
+  - bị đau bụng rùi
+  - mình bị sổ mũi
+  - timi ơi, tao thấy đau tim quá
+  - cảm giác bị cúm rùi liệu có phải covid không mày ơi
+  - anh đang bị đau tay
+  - tay [ngày hôm nay](time) làm gì đau thế
+  - chắc tao bị đau tim rồi
+  - sao tớ thấy khó thở quá
+  - đầu của tao nhức thế
+  - tớ lại bị sốt rồi
+  - anh rát họng thế
+  - dạo này họng cứ thấy đau đau
+  - timi ơi, anh cảm thấy nhức đầu quá
+  - rát họng quá
+  - mình đang ho
+  - tao đang bị đau vai
+  - anh thấy đau bụng quá
+  - mình bị ốm rùi
+  - anh đang đâu bụng
+  - mình đang bị đau vai
+  - mũi tớ khó chịu thế
+  - chắc anh bị đau vai mất
+  - mình ốm mất rồi
+  - chân tôi đau quá
+  - hôm nay tôi bị ốm mất
+  - mấy hôm nay tôi thấy bụng đau đau
+  - sao tôi thấy đau đau ở mũi
+  - tôi cảm thất khó chịu ở tai
+  - đang bị sốt rồi
+  - tớ bị sốt
+  - timi ơi, tớ thấy sổ mũi quá
+  - cảm giác bị cúm rùi liệu có phải covid không m ơi
+  - chị đang bị đau vai
+  - tay [ngày hôm nay](time) làm răng đau thế
+  - chắc tớ bị đau họng mất
+  - sao tao thấy đau đầu quá
+  - đầu của mình nhức quá
+  - tôi lại bị đau răng rùi
+  - dạo này mũi cứ thấy đau đau
+  - em ơi, chị thấy rát họng quá
+  - sổ mũi quá
+  - tôi đang ốm
+  - tui đang bị đau tay
+  - anh cảm thấy khó thở thế
+  - tớ bị ốm rồi
+  - chị đang ốm
+  - mình đang bị đau mắt
+  - bụng anh khó chịu thế
+  - chắc tớ bị đau tim rùi
+  - họng tôi đau thế
+  - hôm nay tao bị đâu bụng mất
+  - mấy hôm nay mình thấy bụng đau đau
+  - sao tớ thấy đau đau ở vai
+  - tôi cảm thất khó chịu ở họng
+  - đang bị đau bụng rùi
+  - tui bị nhức đầu
+  - timi ơi, tớ cảm thấy hoa mắt thế
+  - cảm giác bị cúm rùi liệu có phải covid không bot ơi
+  - chị đang bị đau mũi
+  - chân [ngày hôm nay](time) làm gì đau quá
+  - chắc mình bị hoa mắt rồi
+  - sao tớ thấy sốt quá
+  - tớ lại bị tróng mặt rồi
+  - em ơi, chị thấy đau răng thế
+  - đau tim thế đi
+  - tao đang ho
+  - tớ đang bị đau mũi
+  - chị cảm thấy nhức đầu thế
+  - anh đang ho
+  - mình đang bị đau tai
+  - bụng mình khó chịu quá
+  - chắc mình bị khó thở rồi
+  - mình ốm mất rùi
+  - chân mình đau quá
+  - hôm nay tớ bị đau đầu rùi
+  - mấy hôm nay tớ thấy họng đau đau
+  - sao tớ thấy đau đau ở họng
+  - tôi cảm thất khó chịu ở bụng
+  - bị đau bụng rồi
+  - tớ bị ù tai
+  - timi ơi, tớ cảm thấy đau đầu quá
+  - cảm giác bị cúm rồi liệu có phải covid không em ơi
+  - chị đang bị đau họng
+  - mũi [ngày hôm nay](time) làm sao đau quá
+  - chắc tao bị đau họng mất
+  - sao tớ thấy đau tim quá
+  - đầu của tui nhức quá
+  - tớ lại bị buồn lôn rùi
+  - timi ơi, chị cảm thấy đau răng thế
+  - đau đầu quá
+  - tôi đang ho
+  - tôi đang bị đau bụng
+  - anh cảm thấy đau răng quá
+  - anh đang bị đau chân
+  - mũi tớ khó chịu quá
+  - chắc mình bị hoa mắt rùi
+  - tai mình đau thế
+  - hôm nay tớ bị đâu bụng mất
+  - mấy hôm nay tui thấy họng đau đau
+  - sao tao thấy đau đau ở bụng
+  - tao cảm thất khó chịu ở bụng
+  - đang bị yếu rồi
+  - tớ bị đau tim
+  - timi ơi, tớ thấy đau bụng quá
+  - cảm giác bị cúm rồi liệu có phải covid không timi ơi
+  - anh đang bị đau bụng
+  - tai [ngày hôm nay](time) làm răng đau thế
+  - chắc tớ bị buồn lôn rồi
+  - sao tớ cảm thấy tróng mặt thế
+  - tớ lại bị ho rồi
+  - em ơi, anh thấy sốt thế
+  - đau họng quá
+  - tao đang đau đầu
+  - tui đang bị đau mắt
+  - tớ thấy sổ mũi quá
+  - tớ đang bị đau tai
+  - bụng mình khó chịu thế
+  - chắc anh bị đau đầu mất
+  - bụng tớ đau thế
+  - hôm nay mình bị đau đầu mất
+  - mấy hôm nay tui thấy bụng đau đau
+  - sao tui thấy đau đau ở đầu
+  - mình cảm thất khó chịu ở họng
+  - đang bị ốm rùi
+  - tao bị đau họng
+  - timi ơi, mình thấy đau vai thế
+  - cảm giác bị cúm rồi liệu có phải covid không bạn ơi
+  - anh đang bị đau tai
+  - tai [ngày hôm nay](time) làm như nào đau quá
+  - chắc tớ bị nhức đầu mất

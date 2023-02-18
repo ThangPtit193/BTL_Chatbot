@@ -1,0 +1,298 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: general_bye
+  examples:
+  - bai bai bot nha
+  - bai bai bạn nha
+  - bai bai cậu nha
+  - bai bai timi nha
+  - bye
+  - 'bye '
+  - bye bot
+  - bye bot nha
+  - bye bot nhé
+  - bye bye bot nha
+  - bye bye bot nhé
+  - bye bye bạn nha
+  - bye bye bạn nhé
+  - bye bye cậu nha
+  - bye bye cậu nhé
+  - bye bye gặp lại sau
+  - bye bye hẹn gặp lại
+  - bye bye nha
+  - bye bye nhé
+  - bye bye see you
+  - bye bye timi nha
+  - bye bye timi nhé
+  - bye bye, mình tắt đây
+  - bye bye, mình về đây
+  - bye bye, mình đi đây
+  - bye bye, tui tắt đây
+  - bye bye, tui về đây
+  - bye bye, tui đi đây
+  - bye bye, tôi tắt đây
+  - bye bye, tôi về đây
+  - bye bye, tôi đi đây
+  - bye bye, tắt đây
+  - bye bye, tớ tắt đây
+  - bye bye, tớ về đây
+  - bye bye, tớ đi đây
+  - bye bye, về đây
+  - bye bye, đi đây
+  - bye bạn
+  - bye bạn nha
+  - bye bạn nhé
+  - bye cậu
+  - bye cậu nha
+  - bye cậu nhé
+  - bye gặp lại sau
+  - bye hẹn gặp lại
+  - bye nha
+  - bye nhé
+  - bye timi
+  - bye timi nha
+  - bye timi nhé
+  - bye, gặp lại sau
+  - bye, hẹn gặp lại
+  - bye, mình tắt đây
+  - bye, mình về đây
+  - bye, mình đi đây
+  - bye, see you
+  - bye, tui tắt đây
+  - bye, tui về đây
+  - bye, tui đi đây
+  - bye, tôi tắt đây
+  - bye, tôi về đây
+  - bye, tôi đi đây
+  - bye, tắt đây
+  - bye, tớ tắt đây
+  - bye, tớ về đây
+  - bye, tớ đi đây
+  - bye, về đây
+  - bye, đi đây
+  - good bye
+  - 'good bye '
+  - good bye bot
+  - good bye bot nha
+  - good bye bot nhé
+  - good bye bạn
+  - good bye bạn nha
+  - good bye bạn nhé
+  - good bye cậu
+  - good bye cậu nha
+  - good bye cậu nhé
+  - good bye gặp lại sau
+  - good bye hẹn gặp lại
+  - good bye nha
+  - good bye nhé
+  - good bye timi
+  - good bye timi nha
+  - good bye timi nhé
+  - good bye, gặp lại sau
+  - good bye, hẹn gặp lại
+  - good bye, see you
+  - gặp lại bot sau
+  - gặp lại bạn sau
+  - gặp lại cậu sau
+  - gặp lại sau
+  - gặp lại sau nha
+  - gặp lại sau nhé
+  - gặp lại timi sau
+  - hẹn găp lại bot
+  - hẹn găp lại bạn
+  - hẹn găp lại cậu
+  - hẹn găp lại timi
+  - hẹn gặp lại
+  - hẹn gặp lại nha
+  - hẹn gặp lại nhé
+  - không muốn nói chuyện nữa tắt đây
+  - không muốn nói chuyện nữa về đây
+  - không muốn nói chuyện nữa đi đây
+  - mình tắt đây
+  - mình về đây
+  - mình đi nhé
+  - mình đi đây
+  - see you
+  - thôi bye
+  - thôi bye bot
+  - thôi bye bot nha
+  - thôi bye bot nhé
+  - thôi bye bye
+  - thôi bye bye bot
+  - thôi bye bye bot nha
+  - thôi bye bye bot nhé
+  - thôi bye bye bạn
+  - thôi bye bye bạn nha
+  - thôi bye bye bạn nhé
+  - thôi bye bye cậu
+  - thôi bye bye cậu nha
+  - thôi bye bye cậu nhé
+  - thôi bye bye nha
+  - thôi bye bye nhé
+  - thôi bye bye timi
+  - thôi bye bye timi nha
+  - thôi bye bye timi nhé
+  - thôi bye bye, gặp lại sau
+  - thôi bye bye, hẹn gặp lại
+  - thôi bye bye, mình tắt đây
+  - thôi bye bye, mình về đây
+  - thôi bye bye, mình đi đây
+  - thôi bye bye, tui tắt đây
+  - thôi bye bye, tui về đây
+  - thôi bye bye, tui đi đây
+  - thôi bye bye, tôi tắt đây
+  - thôi bye bye, tôi về đây
+  - thôi bye bye, tôi đi đây
+  - thôi bye bye, tắt đây
+  - thôi bye bye, tớ tắt đây
+  - thôi bye bye, tớ về đây
+  - thôi bye bye, tớ đi đây
+  - thôi bye bye, về đây
+  - thôi bye bye, đi đây
+  - thôi bye bạn
+  - thôi bye bạn nha
+  - thôi bye bạn nhé
+  - thôi bye cậu
+  - thôi bye cậu nha
+  - thôi bye cậu nhé
+  - thôi bye nha
+  - thôi bye nhé
+  - thôi bye timi
+  - thôi bye timi nha
+  - thôi bye timi nhé
+  - thôi bye, gặp lại sau
+  - thôi bye, hẹn gặp lại
+  - thôi bye, mình tắt đây
+  - thôi bye, mình về đây
+  - thôi bye, mình đi đây
+  - thôi bye, tui tắt đây
+  - thôi bye, tui về đây
+  - thôi bye, tui đi đây
+  - thôi bye, tôi tắt đây
+  - thôi bye, tôi về đây
+  - thôi bye, tôi đi đây
+  - thôi bye, tắt đây
+  - thôi bye, tớ tắt đây
+  - thôi bye, tớ về đây
+  - thôi bye, tớ đi đây
+  - thôi bye, về đây
+  - thôi bye, đi đây
+  - thôi chào tạm biệt
+  - thôi chào tạm biệt, gặp lại sau
+  - thôi chào tạm biệt, hẹn gặp lại
+  - thôi chào tạm biệt, mình tắt đây
+  - thôi chào tạm biệt, mình về đây
+  - thôi chào tạm biệt, mình đi đây
+  - thôi chào tạm biệt, tui tắt đây
+  - thôi chào tạm biệt, tui về đây
+  - thôi chào tạm biệt, tui đi đây
+  - thôi chào tạm biệt, tôi tắt đây
+  - thôi chào tạm biệt, tôi về đây
+  - thôi chào tạm biệt, tôi đi đây
+  - thôi chào tạm biệt, tắt đây
+  - thôi chào tạm biệt, tớ tắt đây
+  - thôi chào tạm biệt, tớ về đây
+  - thôi chào tạm biệt, tớ đi đây
+  - thôi chào tạm biệt, về đây
+  - thôi chào tạm biệt, đi đây
+  - thôi good bye
+  - thôi good bye bot
+  - thôi good bye bot nha
+  - thôi good bye bot nhé
+  - thôi good bye bạn
+  - thôi good bye bạn nha
+  - thôi good bye bạn nhé
+  - thôi good bye cậu
+  - thôi good bye cậu nha
+  - thôi good bye cậu nhé
+  - thôi good bye nha
+  - thôi good bye nhé
+  - thôi good bye timi
+  - thôi good bye timi nha
+  - thôi good bye timi nhé
+  - thôi mình bận rồi
+  - thôi tui bận rồi
+  - thôi tôi bận rồi
+  - thôi tạm biệt
+  - thôi tạm biệt bot
+  - thôi tạm biệt bot nha
+  - thôi tạm biệt bot nhé
+  - thôi tạm biệt bạn
+  - thôi tạm biệt bạn nha
+  - thôi tạm biệt bạn nhé
+  - thôi tạm biệt cậu
+  - thôi tạm biệt cậu nha
+  - thôi tạm biệt cậu nhé
+  - thôi tạm biệt nha
+  - thôi tạm biệt nhé
+  - thôi tạm biệt timi
+  - thôi tạm biệt timi nha
+  - thôi tạm biệt timi nhé
+  - thôi tạm biệt, gặp lại sau
+  - thôi tạm biệt, hẹn gặp lại
+  - thôi tạm biệt, mình tắt đây
+  - thôi tạm biệt, mình về đây
+  - thôi tạm biệt, mình đi đây
+  - thôi tạm biệt, tui tắt đây
+  - thôi tạm biệt, tui về đây
+  - thôi tạm biệt, tui đi đây
+  - thôi tạm biệt, tôi tắt đây
+  - thôi tạm biệt, tôi về đây
+  - thôi tạm biệt, tôi đi đây
+  - thôi tạm biệt, tắt đây
+  - thôi tạm biệt, tớ tắt đây
+  - thôi tạm biệt, tớ về đây
+  - thôi tạm biệt, tớ đi đây
+  - thôi tạm biệt, về đây
+  - thôi tạm biệt, đi đây
+  - thôi tớ bận rồi
+  - tui tắt đây
+  - tui về đây
+  - tui đi nhé
+  - tui đi đây
+  - tôi tắt đây
+  - tôi về đây
+  - tôi đi nhé
+  - tôi đi đây
+  - tạm biệt
+  - 'tạm biệt '
+  - tạm biệt bot
+  - tạm biệt bot nha
+  - tạm biệt bot nhé
+  - tạm biệt bạn
+  - tạm biệt bạn nha
+  - tạm biệt bạn nhé
+  - tạm biệt cậu
+  - tạm biệt cậu nha
+  - tạm biệt cậu nhé
+  - tạm biệt gặp lại sau
+  - tạm biệt hẹn gặp lại
+  - tạm biệt nha
+  - tạm biệt nhé
+  - tạm biệt timi
+  - tạm biệt timi nha
+  - tạm biệt timi nhé
+  - tạm biệt, gặp lại sau
+  - tạm biệt, hẹn gặp lại
+  - tạm biệt, mình tắt đây
+  - tạm biệt, mình về đây
+  - tạm biệt, mình đi đây
+  - tạm biệt, see you
+  - tạm biệt, tui tắt đây
+  - tạm biệt, tui về đây
+  - tạm biệt, tui đi đây
+  - tạm biệt, tôi tắt đây
+  - tạm biệt, tôi về đây
+  - tạm biệt, tôi đi đây
+  - tạm biệt, tắt đây
+  - tạm biệt, tớ tắt đây
+  - tạm biệt, tớ về đây
+  - tạm biệt, tớ đi đây
+  - tạm biệt, về đây
+  - tạm biệt, đi đây
+  - tớ tắt đây
+  - tớ về đây
+  - tớ đi nhé
+  - tớ đi đây

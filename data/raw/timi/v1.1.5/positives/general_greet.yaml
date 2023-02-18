@@ -1,0 +1,356 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: general_greet
+  examples:
+  - admin có thể giúp đỡ tớ được ko
+  - bạn cho mình hỏi chút được ko
+  - bot ơi, tớ cần hỗ trợ hỗ trợ mình với
+  - bạn ơi, mình cần hỗ trợ giúp đỡ tôi với
+  - bạn ơi, mình cần hỗ trợ trợ giúp tớ với
+  - timi trợ giúp tôi việc này được không
+  - bạn ơi, mình cần hỗ trợ trợ giúp tui với
+  - mình cần giúp chỗ này giúp tui với
+  - có thể hỗ trợ mình được ko
+  - ơi, mình cần hỗ trợ giúp đỡ tớ với
+  - bot ơi, cho tôi hỏi một câu
+  - tôi chào bạn nha
+  - cậu có thể hỗ trợ tớ được ko
+  - bạn giúp tôi việc này được ko
+  - tui cần giúp chỗ này giúp đỡ tôi với
+  - salut bạn
+  - timi có thể giúp tui được ko
+  - ơi, tôi cần hỗ trợ trợ giúp tui với
+  - bạn ơi, tôi cần hỗ trợ trợ giúp tôi với
+  - admin ơi, tôi cần hỗ trợ hỗ trợ mình với
+  - timi giúp đỡ mình việc này được không
+  - cho tôi hỏi chút được không
+  - bot ơi, tôi cần hỗ trợ giúp tôi với
+  - admin ơi, mình cần hỗ trợ giúp đỡ mình với
+  - admin ơi, mình cần hỗ trợ trợ giúp mình với
+  - có thể hỗ trợ mình được không
+  - bot ơi, tui cần hỗ trợ giúp đỡ tớ với
+  - bạn giúp đỡ mình việc này được không
+  - tui cần giúp chỗ này trợ giúp tui với
+  - bạn ơi, tớ cần hỗ trợ giúp tớ với
+  - ơi, mình cần hỗ trợ giúp đỡ mình với
+  - cậu ơi, cho tớ hỏi một câu
+  - bạn ơi, tớ cần hỗ trợ hỗ trợ tôi với
+  - bot ơi, tớ cần hỗ trợ giúp đỡ tôi với
+  - tôi cần giúp
+  - timi ơi, tui cần hỗ trợ giúp tớ với
+  - cậu ơi, tớ cần hỗ trợ hỗ trợ tôi với
+  - cậu giúp đỡ tui việc này được ko
+  - bạn ơi, tui cần trợ giúp
+  - admin ơi, mình cần trợ giúp
+  - bạn ơi, tôi cần giúp đỡ
+  - hello
+  - admin cho tui hỏi chút được ko
+  - bot có thể hỗ trợ tớ được ko
+  - bạn ơi, tớ cần hỗ trợ trợ giúp tôi với
+  - cậu ơi, tôi cần hỗ trợ giúp đỡ tớ với
+  - cậu có thể trợ giúp mình được không
+  - có thể giúp tui được không
+  - cậu có thể trợ giúp mình được ko
+  - tớ cần giúp chỗ này giúp tôi với
+  - admin ơi, tôi cần hỗ trợ hỗ trợ tớ với
+  - bot ơi, tôi cần hỗ trợ
+  - tui cần giúp
+  - hello bạn
+  - bạn giúp tôi việc này được không
+  - bot trợ giúp tớ việc này được không
+  - bot ơi, cho tớ hỏi một câu
+  - bot ơi, tôi cần hỗ trợ giúp đỡ tui với
+  - admin có thể giúp đỡ tui được ko
+  - 2 cậu
+  - timi ơi, tớ cần hỗ trợ giúp đỡ tui với
+  - timi ơi, tôi cần giúp đỡ
+  - mình chào bot nha
+  - timi ơi, mình cần hỗ trợ hỗ trợ tôi với
+  - tớ cần giúp
+  - timi ơi, mình cần giúp
+  - timi hỗ trợ tớ việc này được không
+  - admin cho tôi hỏi chút được ko
+  - bạn ơi, cho tôi hỏi một câu
+  - giúp tui việc này được ko
+  - ơi, tớ cần hỗ trợ giúp đỡ mình với
+  - bot ơi, tôi cần hỗ trợ giúp đỡ tôi với
+  - bạn ơi, mình cần hỗ trợ trợ giúp mình với
+  - bạn có thể hỗ trợ tui được không
+  - cậu cho tớ hỏi chút được ko
+  - tui cần giúp chỗ này giúp tui với
+  - mình cần giúp chỗ này giúp đỡ tôi với
+  - bot cho tui hỏi chút được ko
+  - bạn ơi, mình cần hỗ trợ hỗ trợ tui với
+  - timi có thể giúp tớ được ko
+  - admin ơi, mình cần hỗ trợ hỗ trợ mình với
+  - timi ơi, mình cần hỗ trợ giúp tớ với
+  - timi có thể hỗ trợ mình được ko
+  - bot giúp tớ việc này được ko
+  - ơi, tui cần hỗ trợ trợ giúp tui với
+  - có thể trợ giúp tui được ko
+  - admin ơi, tớ cần hỗ trợ giúp đỡ tớ với
+  - tui cần giúp chỗ này giúp tớ với
+  - timi giúp tớ việc này được ko
+  - timi ơi, mình cần hỗ trợ trợ giúp tui với
+  - cậu ơi, tôi cần hỗ trợ giúp tớ với
+  - bạn trợ giúp tui việc này được không
+  - cậu ơi, tớ cần hỗ trợ hỗ trợ mình với
+  - admin ơi, mình cần hỗ trợ giúp đỡ tôi với
+  - cậu ơi, mình cần hỗ trợ giúp mình với
+  - cậu hỗ trợ mình việc này được ko
+  - bot cho tớ hỏi chút được ko
+  - bạn ơi, tui cần hỗ trợ hỗ trợ tui với
+  - cậu ơi, tôi cần giúp
+  - cậu có thể giúp tôi được không
+  - bạn có thể hỗ trợ mình được không
+  - bạn có thể hỗ trợ tui được ko
+  - bot ơi, tôi cần hỗ trợ giúp tui với
+  - cậu có thể giúp tui được không
+  - bạn có thể giúp đỡ tui được ko
+  - admin có thể giúp tớ được ko
+  - cậu ơi, tớ cần hỗ trợ giúp mình với
+  - admin có thể trợ giúp tớ được không
+  - ơi, tôi cần hỗ trợ
+  - tôi cần giúp chỗ này trợ giúp mình với
+  - ơi, tui cần hỗ trợ giúp tôi với
+  - tớ cần giúp chỗ này giúp mình với
+  - admin hỗ trợ tớ việc này được không
+  - bot giúp tui việc này được không
+  - bonjour bạn
+  - hi timi
+  - có thể giúp đỡ mình được ko
+  - admin ơi, tớ cần trợ giúp
+  - bạn có thể giúp đỡ tôi được ko
+  - admin trợ giúp mình việc này được không
+  - bạn hỗ trợ mình việc này được không
+  - timi giúp tui việc này được không
+  - timi trợ giúp tui việc này được không
+  - tớ cần giúp chỗ này giúp đỡ mình với
+  - bot ơi, mình cần hỗ trợ trợ giúp tui với
+  - hi bot
+  - cậu giúp đỡ tôi việc này được không
+  - tôi cần giúp chỗ này hỗ trợ mình với
+  - xin chào bot
+  - ơi, tui cần hỗ trợ giúp mình với
+  - cậu có thể trợ giúp tớ được ko
+  - chào bot
+  - có thể hỗ trợ tui được ko
+  - tôi cần giúp chỗ này giúp đỡ mình với
+  - timi ơi, cho mình hỏi một câu
+  - timi ơi, tui cần hỗ trợ hỗ trợ tui với
+  - bạn ơi, tui cần hỗ trợ trợ giúp tui với
+  - cậu ơi, tui cần hỗ trợ trợ giúp tui với
+  - bot ơi, tớ cần hỗ trợ hỗ trợ tui với
+  - bot ơi, mình cần hỗ trợ hỗ trợ tôi với
+  - cậu giúp đỡ tui việc này được không
+  - bot ơi, tui cần hỗ trợ trợ giúp tui với
+  - admin ơi, tôi cần giúp đỡ
+  - bạn ơi, mình cần hỗ trợ trợ giúp tôi với
+  - timi ơi, tớ cần hỗ trợ trợ giúp tớ với
+  - bot giúp đỡ mình việc này được không
+  - cậu ơi, tớ cần trợ giúp
+  - cậu giúp đỡ tớ việc này được không
+  - cậu ơi, tui cần hỗ trợ trợ giúp tớ với
+  - bot có thể giúp mình được ko
+  - bot có thể hỗ trợ mình được ko
+  - tớ cần giúp chỗ này trợ giúp tôi với
+  - cậu ơi, tớ cần hỗ trợ trợ giúp tôi với
+  - timi có thể trợ giúp tui được ko
+  - ơi, mình cần trợ giúp
+  - admin ơi, tui cần hỗ trợ hỗ trợ tớ với
+  - admin ơi, tôi cần giúp
+  - bot giúp tôi việc này được không
+  - tôi cần giúp chỗ này giúp tớ với
+  - bạn cho tui hỏi chút được không
+  - timi ơi, tớ cần hỗ trợ hỗ trợ mình với
+  - bot giúp đỡ tôi việc này được không
+  - bạn trợ giúp tớ việc này được không
+  - bạn cho tớ hỏi chút được ko
+  - admin ơi, tui cần hỗ trợ giúp tớ với
+  - admin có thể trợ giúp tui được ko
+  - bot có thể giúp đỡ tui được ko
+  - bot ơi, tôi cần trợ giúp
+  - giúp đỡ tôi việc này được không
+  - mình cần giúp chỗ này giúp đỡ tớ với
+  - cậu ơi, mình cần hỗ trợ giúp đỡ tớ với
+  - admin có thể giúp đỡ tôi được không
+  - cậu ơi, tui cần hỗ trợ giúp đỡ tôi với
+  - timi cho tui hỏi chút được ko
+  - timi ơi, tôi cần hỗ trợ hỗ trợ mình với
+  - bạn có thể trợ giúp mình được không
+  - bạn ơi, tôi cần hỗ trợ trợ giúp tui với
+  - bạn có thể giúp đỡ tớ được không
+  - bot ơi, tôi cần hỗ trợ hỗ trợ mình với
+  - timi có thể giúp mình được ko
+  - bot có thể giúp đỡ tui được không
+  - tớ muốn hỏi một câu được ko
+  - chào
+  - bạn trợ giúp mình việc này được ko
+  - bạn ơi, tôi cần hỗ trợ giúp tôi với
+  - admin cho tôi hỏi chút được không
+  - ơi, tôi cần giúp
+  - bạn có thể giúp tớ được ko
+  - thức dậy nào
+  - bạn giúp mình việc này được không
+  - tớ cần trợ giúp
+  - cậu ơi, tui cần hỗ trợ
+  - cậu có thể giúp đỡ mình được không
+  - cậu có thể giúp tôi được ko
+  - admin có thể giúp tôi được không
+  - timi ơi, tôi cần hỗ trợ giúp đỡ tôi với
+  - timi hỗ trợ mình việc này được ko
+  - salut timi
+  - cậu cho mình hỏi chút được ko
+  - cậu ơi, mình cần hỗ trợ
+  - admin hỗ trợ tui việc này được không
+  - giúp đỡ tôi việc này được ko
+  - bot ơi, tớ cần hỗ trợ giúp mình với
+  - ơi, tui cần hỗ trợ giúp đỡ tớ với
+  - cậu ơi, tớ cần hỗ trợ trợ giúp tui với
+  - admin giúp tớ việc này được ko
+  - cậu ơi, tôi cần hỗ trợ hỗ trợ tớ với
+  - cậu ơi, cho tôi hỏi một câu
+  - cho tui hỏi chút được không
+  - cậu ơi, tôi cần hỗ trợ giúp đỡ mình với
+  - tui cần hỗ trợ
+  - cậu ơi, tui cần hỗ trợ giúp tui với
+  - bạn có thể trợ giúp tôi được ko
+  - mình cần trợ giúp
+  - bonjour cậu
+  - timi có thể giúp đỡ tui được ko
+  - mình muốn hỏi một câu được không
+  - bot ơi, mình cần hỗ trợ giúp tớ với
+  - admin ơi, tui cần hỗ trợ hỗ trợ tui với
+  - cậu ơi, mình cần hỗ trợ giúp đỡ tui với
+  - bạn ơi, mình cần hỗ trợ giúp tui với
+  - bạn giúp đỡ tớ việc này được ko
+  - tôi cần giúp chỗ này hỗ trợ tớ với
+  - ơi, tôi cần hỗ trợ trợ giúp tôi với
+  - cậu ơi, tôi cần hỗ trợ giúp tui với
+  - timi ơi, tui cần hỗ trợ giúp đỡ tui với
+  - admin có thể hỗ trợ mình được không
+  - cậu ơi, tui cần hỗ trợ hỗ trợ mình với
+  - bot ơi, tôi cần giúp đỡ
+  - giúp đỡ tui việc này được không
+  - bạn ơi, mình cần hỗ trợ giúp mình với
+  - bot ơi, tôi cần hỗ trợ trợ giúp mình với
+  - cậu ơi, tớ cần hỗ trợ giúp tớ với
+  - timi ơi, mình cần giúp đỡ
+  - hỗ trợ tui việc này được ko
+  - timi ơi, tôi cần hỗ trợ hỗ trợ tôi với
+  - bot có thể hỗ trợ tớ được không
+  - có thể giúp tớ được ko
+  - bot ơi, tui cần hỗ trợ trợ giúp mình với
+  - bot có thể trợ giúp mình được không
+  - tớ chào cậu nha
+  - giúp mình việc này được ko
+  - bot ơi, tớ cần hỗ trợ trợ giúp tớ với
+  - cậu ơi, tôi cần hỗ trợ trợ giúp tôi với
+  - bot có thể hỗ trợ tôi được ko
+  - tớ cần giúp đỡ
+  - cậu ơi, tôi cần hỗ trợ giúp đỡ tôi với
+  - admin ơi, tớ cần hỗ trợ hỗ trợ tui với
+  - bạn ơi, tui cần hỗ trợ giúp đỡ tôi với
+  - cậu ơi, tớ cần hỗ trợ hỗ trợ tui với
+  - timi giúp đỡ tôi việc này được không
+  - admin cho tớ hỏi chút được không
+  - bot ơi, tui cần hỗ trợ giúp đỡ tui với
+  - admin ơi, tui cần giúp đỡ
+  - dậy đi bot
+  - ơi, tớ cần hỗ trợ giúp mình với
+  - bot hỗ trợ mình việc này được ko
+  - xin chào
+  - bot có thể giúp tớ được ko
+  - tớ chào bot nha
+  - tớ cần giúp chỗ này hỗ trợ tui với
+  - bot cho tui hỏi chút được không
+  - tui chào bot nha
+  - bạn có thể giúp tôi được ko
+  - admin giúp tui việc này được ko
+  - xin chào cậu
+  - cậu ơi, tui cần trợ giúp
+  - timi ơi, cho tớ hỏi một câu
+  - admin giúp đỡ tôi việc này được không
+  - bot ơi, tớ cần hỗ trợ giúp tôi với
+  - timi hỗ trợ tớ việc này được ko
+  - ơi, tôi cần hỗ trợ giúp tôi với
+  - bot ơi, tui cần hỗ trợ trợ giúp tớ với
+  - cậu ơi, mình cần hỗ trợ giúp tớ với
+  - mình cần giúp chỗ này hỗ trợ tớ với
+  - timi hỗ trợ mình việc này được không
+  - có thể giúp đỡ tôi được ko
+  - admin cho mình hỏi chút được ko
+  - ơi, tớ cần hỗ trợ trợ giúp tui với
+  - bot ơi, tôi cần giúp
+  - timi cho tớ hỏi chút được không
+  - timi ơi, mình cần trợ giúp
+  - timi có thể trợ giúp tôi được không
+  - bạn hỗ trợ tớ việc này được không
+  - admin ơi, tớ cần giúp đỡ
+  - ơi, tớ cần hỗ trợ hỗ trợ mình với
+  - bạn hỗ trợ tui việc này được không
+  - có thể hỗ trợ tớ được ko
+  - bạn ơi, tui cần giúp
+  - timi giúp tui việc này được ko
+  - ơi, tôi cần hỗ trợ hỗ trợ mình với
+  - timi ơi, mình cần hỗ trợ hỗ trợ tớ với
+  - bot trợ giúp mình việc này được không
+  - admin ơi, mình cần hỗ trợ giúp đỡ tớ với
+  - mình cần hỗ trợ
+  - có thể giúp mình được ko
+  - bot ơi, tớ cần trợ giúp
+  - tui cần giúp chỗ này giúp mình với
+  - trợ giúp mình việc này được ko
+  - bạn có thể giúp tui được ko
+  - mình chào cậu nha
+  - admin ơi, mình cần hỗ trợ hỗ trợ tui với
+  - cậu có thể hỗ trợ tui được ko
+  - bot ơi, cho mình hỏi một câu
+  - bot có thể giúp tui được ko
+  - admin có thể trợ giúp tớ được ko
+  - bạn có thể giúp tớ được không
+  - timi ơi, tôi cần hỗ trợ
+  - timi hỗ trợ tui việc này được ko
+  - cậu ơi, tôi cần hỗ trợ trợ giúp mình với
+  - hi bạn
+  - admin ơi, tui cần hỗ trợ hỗ trợ tôi với
+  - có thể trợ giúp tui được không
+  - timi ơi, tôi cần hỗ trợ giúp đỡ mình với
+  - bot ơi, tôi cần hỗ trợ hỗ trợ tôi với
+  - ơi, tôi cần hỗ trợ giúp đỡ tui với
+  - bạn ơi, tui cần hỗ trợ trợ giúp tôi với
+  - cậu có thể hỗ trợ tui được không
+  - timi ơi, tớ cần hỗ trợ hỗ trợ tôi với
+  - ơi, tui cần hỗ trợ trợ giúp tớ với
+  - admin ơi, mình cần hỗ trợ giúp tui với
+  - bot ơi, tui cần hỗ trợ trợ giúp tôi với
+  - cậu hỗ trợ tớ việc này được không
+  - admin ơi, tui cần hỗ trợ giúp đỡ tui với
+  - salut cậu
+  - admin có thể trợ giúp tôi được ko
+  - ơi, tui cần hỗ trợ
+  - cậu ơi, tớ cần hỗ trợ hỗ trợ tớ với
+  - bot có thể giúp đỡ tớ được không
+  - bot có thể giúp tôi được không
+  - admin ơi, mình cần giúp
+  - cậu giúp tôi việc này được ko
+  - mình cần giúp chỗ này trợ giúp tôi với
+  - timi ơi, tôi cần hỗ trợ hỗ trợ tớ với
+  - bot ơi, tôi cần hỗ trợ giúp đỡ mình với
+  - timi ơi, mình cần hỗ trợ trợ giúp tôi với
+  - timi ơi, tớ cần hỗ trợ trợ giúp mình với
+  - cậu ơi, mình cần hỗ trợ trợ giúp tớ với
+  - cho tôi hỏi chút được ko
+  - admin ơi, mình cần hỗ trợ hỗ trợ tôi với
+  - bot giúp mình việc này được ko
+  - cậu ơi, tui cần hỗ trợ hỗ trợ tớ với
+  - timi giúp đỡ tui việc này được không
+  - timi ơi, mình cần hỗ trợ trợ giúp mình với
+  - timi ơi, mình cần hỗ trợ hỗ trợ tui với
+  - cậu ơi, cho mình hỏi một câu
+  - timi có thể giúp tui được không
+  - admin có thể hỗ trợ tớ được không
+  - timi ơi, tôi cần hỗ trợ trợ giúp tôi với
+  - bot có thể giúp đỡ tôi được không

@@ -1,0 +1,306 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_character
+  examples:
+  - chắc em xấu xa lắm
+  - mình mong là mày thuỳ mị
+  - em có tính cách như thế nào
+  - làm thế nào để biết tính cách m nhỉ
+  - bot nết na hay xấu tính nhể
+  - mày là 1 bot ntn
+  - cậu là kiểu bot vui tính hay nghiêm túc hở
+  - cậu có dễ dàng không nhể
+  - timi có thích đùa không
+  - tính tình cậu ra sao hả
+  - mày là một thiếu nữ dịu dàng nhỉ
+  - cậu có hay giúp đỡ bạn không
+  - tớ muốn cậu là loại bot tốt quá
+  - nghe đồn là m dễ thương lắm chuẩn chỉ không
+  - tính cách bot thế nào
+  - chắc cậu hung dữ lắm
+  - tớ mong là bạn dễ mến
+  - em có tính cách thế nào
+  - làm răng để biết tính cách timi nhỉ
+  - timi dễ mến hay đanh đá nhể
+  - m là một bot ntn
+  - cậu là kiểu chatbot vui tính hay nghiêm túc vậy hả
+  - em có hòa đồng không nhỉ
+  - bạn có thích đùa không
+  - tính cách m ra sao vậy
+  - timi là một thiếu nữ nết na nhể
+  - em có hay giúp đỡ bạn không
+  - tui muốn bạn là loại bot đáng yêu
+  - nghe khen là em vui tính lắm đúng không
+  - tính cách mày thế nào
+  - chắc bot xấu tính lắm
+  - mình hi vọng là m thuỳ mị
+  - timi có tính cách như thế nào
+  - làm gì để hỏi tính cách của bạn nhể
+  - bot tốt tính hay đanh đá nhể
+  - mày là 1 chatbot như thế nào
+  - timi là kiểu chatbot vui tính hay nghiêm túc vậy á hả
+  - mày có trẻ trung không nhỉ
+  - cậu có thích đùa không
+  - tính cách mày ra sao thế
+  - em là một thiếu nữ tốt tính nhể
+  - m có hay giúp đỡ bạn không
+  - tớ muốn cậu là loại bot đáng yêu
+  - nghe nói là bot dễ thương lắm chính xác không
+  - tính cách timi như nào
+  - chắc timi hung dữ lắm
+  - tớ hi vọng là m nết na
+  - m có tính cách như nào
+  - làm thế nào để biết tính cách của cậu nhể
+  - bạn nết na hay hung dữ nhể
+  - bạn là 1 bot ntn
+  - timi là kiểu bot vui tính hay nghiêm túc vậy á hả
+  - bot có sáng tạo không nhỉ
+  - mày có thích đùa không
+  - tính tình bot ra sao hả
+  - cậu là một thiếu nữ dịu dàng nhể
+  - m có hay giúp đỡ chú không
+  - tớ muốn em là kiểu bot siêu
+  - nghe bảo là bạn thân thiện lắm chính xác không
+  - tính cách bạn như thế nào
+  - chắc em xấu tính lắm
+  - mình hi vọng là timi dịu dàng
+  - timi có tính cách ntn
+  - làm như nào để hỏi tính cách bạn nhể
+  - cậu thuỳ mị hay xấu tính nhỉ
+  - mày là 1 chatbot thế nào
+  - bạn là kiểu bot vui tính hay nghiêm túc hở
+  - timi có dễ dàng không nhể
+  - m có thích đùa không
+  - tính cách timi ra sao hả
+  - timi là một thiếu nữ tốt tính nhỉ
+  - cậu có hay giúp đỡ cậu không
+  - tớ muốn cậu là loại bot tuyệt vời
+  - nghe bảo là m tốt lắm đúng không
+  - tính cách cậu như nào
+  - chắc bot hung dữ lắm
+  - tớ hi vọng là em dễ thương
+  - mày có tính cách như thế nào
+  - làm gì để biết tính cách m nhỉ
+  - m dịu dàng hay hung dữ nhể
+  - mày là một chatbot như nào
+  - bạn là kiểu bot vui tính hay nghiêm túc vậy á hả
+  - cậu có thoải mái không nhể
+  - bot có thích đùa không
+  - tính cách em ra sao đấy
+  - em là một thiếu nữ dễ mến nhể
+  - timi có hay giúp đỡ cậu không
+  - mình muốn mày là kiểu chatbot tuyệt vời
+  - nghe khen là em tốt quá lắm chuẩn chỉ không
+  - tính cách em như nào
+  - chắc mày hung dữ lắm
+  - tớ mong là m dễ thương
+  - timi có tính cách như nào
+  - làm răng để hỏi tính cách bạn nhỉ
+  - bot dễ mến hay xấu tính nhể
+  - bot là 1 bot như thế nào
+  - cậu là kiểu bot vui tính hay nghiêm túc vậy
+  - em có hòa đồng không nhể
+  - em có thích đùa không
+  - tính tình bot ra sao đó
+  - em là một thiếu nữ thuỳ mị nhể
+  - bạn có hay giúp đỡ cậu không
+  - tớ muốn cậu là loại chatbot xinh
+  - nghe bảo là em vui tính lắm đúng không
+  - tính cách cậu thế nào
+  - chắc m xấu tính lắm
+  - tôi mong là em nết na
+  - m có tính cách ntn
+  - làm như nào để hỏi tính cách của bot nhỉ
+  - timi yêu kiều hay hung dữ nhể
+  - cậu là một chatbot như nào
+  - mày là kiểu chatbot vui tính hay nghiêm túc hở
+  - bạn có trẻ trung không nhỉ
+  - tính tình m ra sao vậy
+  - mày là một thiếu nữ yêu kiều nhể
+  - cậu có hay giúp đỡ chị không
+  - tớ muốn cậu là loại chatbot hay quá
+  - nghe khen là bot thân thiện lắm chuẩn chỉ không
+  - tính cách em ntn
+  - chắc timi xấu xa lắm
+  - tớ mong là cậu yêu kiều
+  - bot có tính cách thế nào
+  - làm răng để biết tính cách của bạn nhể
+  - bot dịu dàng hay hung dữ nhể
+  - cậu là một chatbot thế nào
+  - bạn là kiểu chatbot vui tính hay nghiêm túc hả
+  - bot có thoải mái không nhể
+  - tính tình m ra sao đó
+  - bot là một thiếu nữ thuỳ mị nhể
+  - bạn có hay giúp đỡ bạn không
+  - mình muốn bạn là kiểu bot xinh
+  - nghe bảo là em thân thiện lắm chính xác không
+  - tính cách em thế nào
+  - chắc timi xấu tính lắm
+  - tớ mong là mày thuỳ mị
+  - bot có tính cách như nào
+  - làm răng để hỏi tính cách m nhể
+  - timi tốt tính hay đanh đá nhể
+  - em là 1 chatbot ntn
+  - m là kiểu bot vui tính hay nghiêm túc vậy
+  - cậu có sáng tạo không nhỉ
+  - tính cách mày ra sao vậy
+  - m là một thiếu nữ tốt tính nhể
+  - mày có hay giúp đỡ bạn không
+  - mình muốn cậu là kiểu chatbot hay quá
+  - nghe đồn là bạn dễ thương lắm chính xác không
+  - tính cách m như nào
+  - chắc bạn xấu tính lắm
+  - tớ mong là mày dịu dàng
+  - m có tính cách thế nào
+  - làm sao để hỏi tính cách mày nhể
+  - mày dễ thương hay xấu xa nhể
+  - bot là 1 chatbot thế nào
+  - bạn là kiểu chatbot vui tính hay nghiêm túc vậy hả
+  - bot có dễ dàng không nhể
+  - tính tình bot ra sao đấy
+  - bot là một thiếu nữ yêu kiều nhỉ
+  - bot có hay giúp đỡ cậu không
+  - mình muốn mày là kiểu chatbot khôn
+  - nghe nói là em đáng yêu lắm chuẩn chỉ không
+  - tính cách bot như thế nào
+  - chắc m xấu xa lắm
+  - tớ hi vọng là m yêu kiều
+  - bạn có tính cách như nào
+  - làm thế nào để hỏi tính cách của bot nhỉ
+  - em thuỳ mị hay đanh đá nhể
+  - bạn là 1 chatbot như nào
+  - em là kiểu bot vui tính hay nghiêm túc vậy
+  - bot có hòa đồng không nhỉ
+  - tính tình timi ra sao đó
+  - bạn là một thiếu nữ thuỳ mị nhỉ
+  - bot có hay giúp đỡ anh không
+  - tui muốn cậu là kiểu bot xinh
+  - nghe đồn là bạn thân thiện lắm đúng không
+  - tính cách m như thế nào
+  - chắc mày xấu tính lắm
+  - tớ mong là m nết na
+  - mày có tính cách ntn
+  - làm như thế nào để biết tính cách của bot nhể
+  - cậu dễ mến hay hung dữ nhể
+  - em là một chatbot như nào
+  - cậu là kiểu bot vui tính hay nghiêm túc vậy hả
+  - timi có trẻ trung không nhỉ
+  - tính cách em ra sao hả
+  - cậu là một thiếu nữ tốt tính nhỉ
+  - timi có hay giúp đỡ chị không
+  - tớ muốn bạn là kiểu bot tốt quá
+  - nghe nói là timi thân thiện lắm đúng không
+  - tính cách bạn như nào
+  - chắc timi đanh đá lắm
+  - mình mong là mày dễ mến
+  - bot có tính cách ntn
+  - làm răng để biết tính cách của mày nhể
+  - timi thuỳ mị hay xấu tính nhỉ
+  - m là 1 bot thế nào
+  - em là kiểu chatbot vui tính hay nghiêm túc hở
+  - timi có năng động không nhể
+  - tính tình bạn ra sao hả
+  - em là một thiếu nữ tốt tính nhỉ
+  - m có hay giúp đỡ chị không
+  - tớ muốn mày là kiểu chatbot xinh
+  - nghe khen là bot dễ thương lắm chuẩn không
+  - tính cách bot ntn
+  - chắc m hung dữ lắm
+  - tớ hi vọng là mày nết na
+  - cậu có tính cách như thế nào
+  - làm gì để biết tính cách của cậu nhể
+  - m yêu kiều hay xấu tính nhỉ
+  - timi là 1 chatbot ntn
+  - mày là kiểu chatbot vui tính hay nghiêm túc hả
+  - em có trẻ trung không nhể
+  - tính cách bot ra sao đấy
+  - m là một thiếu nữ dễ thương nhỉ
+  - timi có hay giúp đỡ cô không
+  - tớ muốn m là kiểu bot xinh đẹp
+  - nghe đồn là mày thân thiện lắm chuẩn không
+  - tính cách mày như nào
+  - chắc cậu xấu xa lắm
+  - mình hi vọng là bạn yêu kiều
+  - bạn có tính cách như thế nào
+  - làm sao để hỏi tính cách bạn nhỉ
+  - mày yêu kiều hay xấu xa nhỉ
+  - bot là một bot thế nào
+  - m là kiểu chatbot vui tính hay nghiêm túc vậy hả
+  - m có năng động không nhỉ
+  - tính cách mày ra sao đó
+  - m là một thiếu nữ tốt tính nhỉ
+  - bạn có hay giúp đỡ cô không
+  - mình muốn timi là loại bot tốt quá
+  - nghe nói là mày vui tính lắm chuẩn chỉ không
+  - tính cách bạn thế nào
+  - chắc bạn xấu xa lắm
+  - tớ mong là bạn nết na
+  - mày có tính cách như nào
+  - làm ntn để hỏi tính cách bot nhể
+  - bạn yêu kiều hay xấu xa nhỉ
+  - timi là một bot như thế nào
+  - bạn là kiểu chatbot vui tính hay nghiêm túc hở
+  - m có hòa đồng không nhể
+  - tính cách bạn ra sao vậy
+  - bot là một thiếu nữ tốt tính nhể
+  - mày có hay giúp đỡ cậu không
+  - tôi muốn em là kiểu bot tốt
+  - nghe đồn là bot thân thiện lắm chính xác không
+  - tính cách timi ntn
+  - chắc cậu đanh đá lắm
+  - tôi hi vọng là timi nết na
+  - mày có tính cách thế nào
+  - làm gì để hỏi tính cách của bot nhể
+  - cậu dễ mến hay đanh đá nhỉ
+  - bạn là một bot ntn
+  - bạn là kiểu chatbot vui tính hay nghiêm túc vậy
+  - bạn có hòa đồng không nhỉ
+  - tính cách cậu ra sao vậy
+  - cậu là một thiếu nữ thuỳ mị nhể
+  - bot có hay giúp đỡ chú không
+  - tớ muốn m là loại bot đáng yêu
+  - nghe nói là timi tốt lắm chuẩn chỉ không
+  - tính cách cậu như thế nào
+  - chắc bạn hung dữ lắm
+  - tớ hi vọng là bạn yêu kiều
+  - bot có tính cách như thế nào
+  - làm như nào để biết tính cách của bạn nhỉ
+  - timi dịu dàng hay đanh đá nhỉ
+  - mày là 1 bot như nào
+  - mày là kiểu bot vui tính hay nghiêm túc hả
+  - bot có năng động không nhỉ
+  - tính cách timi ra sao đó
+  - em là một thiếu nữ yêu kiều nhể
+  - cậu có hay giúp đỡ cô không
+  - tui muốn m là kiểu chatbot tuyệt vời
+  - nghe nói là timi thân thiện lắm chuẩn không
+  - tính cách timi thế nào
+  - chắc bạn đanh đá lắm
+  - tớ hi vọng là bot dịu dàng
+  - m có tính cách như thế nào
+  - làm răng để hỏi tính cách m nhỉ
+  - m dịu dàng hay đanh đá nhỉ
+  - bạn là một bot như thế nào
+  - timi là kiểu chatbot vui tính hay nghiêm túc hở
+  - bạn có thoải mái không nhể
+  - tính cách bot ra sao thế
+  - m là một thiếu nữ nết na nhể
+  - em có hay giúp đỡ chú không
+  - tớ muốn bạn là loại bot xinh
+  - nghe đồn là em thân thiện lắm đúng không
+  - tính cách mày như thế nào
+  - chắc bot xấu xa lắm
+  - tôi mong là m tốt tính
+  - bạn có tính cách thế nào
+  - làm sao để hỏi tính cách của bạn nhể
+  - bot tốt tính hay hung dữ nhỉ
+  - m là 1 bot như nào
+  - em là kiểu chatbot vui tính hay nghiêm túc vậy
+  - mày có năng động không nhể
+  - tính cách bạn ra sao hả
+  - bot là một thiếu nữ tốt tính nhỉ
+  - timi có hay giúp đỡ anh không
+  - tớ muốn bạn là loại bot giỏi
+  - nghe nói là em thân thiện lắm chuẩn chỉ không

@@ -1,0 +1,734 @@
+negatives:
+- intent: faq/oos_unknown
+  examples:
+  - mình muốn mình có thể bay
+  - tớ muốn trở nên xinh đẹp
+  - tui muốn mình có thể ăn không chán
+  - tui muốn học hát
+  - tôi muốn trở thành nhạc sĩ
+  - tớ muốn trở thành giám đốc
+  - mình muốn học lập trình
+  - tui muốn đi chơi
+  - tôi muốn có công việc tốt
+  - tớ muốn học lập trình web
+  - tớ muốn học vẽ tranh
+  - tớ muốn mình có thể nhớ mọi thứ
+  - mình muốn trở thành kỹ sư
+  - tôi muốn trở thành streamer
+  - mình muốn mình có thể tàng hình
+  - muốn trở thành tỉ phú
+  - tui muốn trở thành mc
+  - mình muốn trở thành công an
+  - tôi muốn trở thành công an
+  - tớ muốn mình có thể ăn không béo
+  - tớ muốn trở thành nhạc sĩ
+  - tôi muốn mình có thể tiêu tiền không hết
+  - tôi muốn trở thành người giàu nhất thế giới
+  - tui muốn trở nên giàu có
+  - tớ muốn được nghỉ
+  - tôi muốn trở thành tỉ phú
+  - tớ muốn trở thành diễn viên
+  - tớ muốn trở thành người giàu nhất thế giới
+  - tớ muốn có công việc tốt
+  - mình muốn mình có thể ăn không béo
+  - tớ muốn mình có thể tàn hình
+  - tớ muốn mình có thể đi xuyên tường
+  - mình muốn trở thành rapper
+  - tôi muốn học đầu tư tài chính
+  - tôi muốn trở thành diễn viên
+  - tui muốn học đầu tư tài chính
+  - muốn trở thành người nổi tiếng
+  - làm sao để trở nên xinh đẹp
+  - có bí quyết gì để đẹp trai không
+  - mình muốn trở thành streamer
+  - tui muốn trở thành triệu phú
+  - tớ muốn học AI
+  - tui muốn học AI
+  - mình muốn học đầu tư tài chính
+  - tớ muốn trở thành ca sĩ
+  - tớ muốn trở thành mc
+  - tôi muốn mình có thể đi xuyên tường
+  - tôi muốn học hát
+  - muốn đẹp trai thì làm thế nào
+  - tớ muốn có nhiều tiền
+  - tôi muốn trở nên giàu có
+  - tớ muốn có xe hơi
+  - tớ muốn mình có thể ăn không chán
+  - tôi muốn mình có thể tàn hình
+  - tôi muốn mình có thể bay
+  - làm sao để trở nên đẹp trai
+  - muốn nổi tiếng thì làm thế nào
+  - tớ muốn có siêu năng lực
+  - tớ muốn trở nên đẹp trai
+  - tớ muốn trở thành kỹ sư AI
+  - tui muốn có năng lực như superman
+  - tui muốn trở thành ca sĩ
+  - tui muốn trở thành tỉ phú
+  - tui muốn mình có thể bay
+  - tui muốn có công việc tốt
+  - tui muốn học lập trình
+  - tui muốn được nghỉ
+  - tui muốn có năng lực như doctor strange
+  - tui muốn trở thành công an
+  - mình muốn trở thành người nổi tiếng
+  - đố vui nha cậu
+  - m kể chuyện cười đi
+  - b kể chuyện đi
+  - đố vui nha c
+  - đố vui nha mày
+  - bot kể chuyện đi
+  - m kể chuyện tiếu lâm đi
+  - chú em chơi đố vui không
+  - bot kể chuyện học sinh đi
+  - m chơi đố vui không
+  - m đố anh đi xem nào
+  - e kể chuyện học sinh đi
+  - chú em kể chuyện học sinh đi
+  - b đố chị đi xem nào
+  - mày kể chuyện đi
+  - c kể chuyện tình yêu đi
+  - chị muốn chơi đố vui
+  - muốn chơi đố vui
+  - đố vui nha timi
+  - đố anh đi xem nào
+  - cậu đố chị đi xem nào
+  - chú em làm trò gì đi
+  - mày làm trò gì đi
+  - mày đố anh đi xem nào
+  - mi đố mình đi xem nào
+  - b kể chuyện tình yêu đi
+  - b đố mình đi xem nào
+  - đố chị đi xem nào
+  - bạn có thể làm trò gì vui vui không?
+  - em kể chuyện hài đi
+  - m đố mình đi xem nào
+  - b kể chuyện hài đi
+  - bot kể chuyện tiếu lâm đi
+  - c kể chuyện tình cảm đi
+  - đố mình đi xem nào
+  - bạn có thể làm trò gì vui không?
+  - e làm trò gì đi
+  - mi chơi đố vui không
+  - kể chuyện hài đi
+  - có trò gì vui không
+  - bạn kể chuyện ma đi
+  - mi kể chuyện cười đi
+  - mi làm trò gì đi
+  - e kể chuyện hài đi
+  - e kể chuyện cười đi
+  - bạn kể chuyện tình yêu đi
+  - b kể chuyện tiếu lâm đi
+  - cậu kể chuyện học sinh đi
+  - mày chơi đố vui không
+  - cậu kể chuyện tình cảm đi
+  - timi đố anh đi xem nào
+  - bạn chơi đố vui không
+  - kể chuyện tiếu lâm đi
+  - cậu có thể làm trò gì vui không?
+  - kể chuyện đi
+  - bạn đố anh đi xem nào
+  - đố tớ đi xem nào
+  - m kể chuyện học sinh đi
+  - e đố anh đi xem nào
+  - b đố tớ đi xem nào
+  - chú em kể chuyện ma đi
+  - mi kể chuyện đi
+  - e kể chuyện tình cảm đi
+  - mày kể chuyện tình yêu đi
+  - chú em kể chuyện hài đi
+  - timi chơi đố vui không
+  - em kể chuyện học sinh đi
+  - đố vui nha chú em
+  - mi kể chuyện học sinh đi
+  - bạn kể chuyện học sinh đi
+  - b kể chuyện học sinh đi
+  - kể chuyện ma đi
+  - m kể chuyện tình cảm đi
+  - chơi đố vui không
+  - cậu làm trò gì đi
+  - e kể chuyện tình yêu đi
+  - m kể chuyện hài đi
+  - em đố mình đi xem nào
+  - chú em đố anh đi xem nào
+  - e đố chị đi xem nào
+  - bot đố tớ đi xem nào
+  - đố vui nha em
+  - cậu kể chuyện tiếu lâm đi
+  - đố vui nha mi
+  - bạn đố chị đi xem nào
+  - cậu chơi đố vui không
+  - bot kể chuyện tình cảm đi
+  - chú em kể chuyện đi
+  - chú em kể chuyện tình cảm đi
+  - tớ muốn chơi đố vui
+  - em làm trò gì đi
+  - mày kể chuyện hài đi
+  - b làm trò gì đi
+  - timi đố chị đi xem nào
+  - mày đố chị đi xem nào
+  - cho trò chơi gì không
+  - c đố anh đi xem nào
+  - em chơi đố vui không
+  - bạn đố mình đi xem nào
+  - c đố mình đi xem nào
+  - phòng họp ở đâu
+  - mình muốn xin cấp thiết bị làm việc thì xin ở đâu
+  - anh muốn xin cấp thiết bị làm việc thì xin ở đâu
+  - phòng họp ở tầng nào
+  - tớ muốn xin cấp thiết bị làm việc thì xin ở đâu
+  - chị muốn xin cấp thiết bị làm việc thì xin ở đâu
+  - có mấy phòng họp
+  - điều chỉnh nhiệt độ điều hòa được không bạn
+  - đường xuống tầng năm thế nào e
+  - vậy timi có thể giúp mình check lịch làm việc hôm nay được không?
+  - dẫn mình đến phòng team [hệ thống system](department)
+  - dẫn mình đến phòng bộ phận [it support](department)
+  - dẫn mình đến phòng team [it support](department)
+  - mở của giúp anh với
+  - dẫn mình đến phòng team [hạ tầng](department)
+  - dẫn mình đến phòng team [công đoàn](department)
+  - dẫn mình đến phòng bộ phận [product](department)
+  - dẫn mình đến phòng phòng [hệ thống cơ sở hạ tầng](department)
+  - đi theo chị được không
+  - giảm nhiệt độ điều hòa được không mày
+  - Sắp tới công ty có những hoạt động nào timi có biết không?
+  - dẫn mình đến phòng phòng ban [công đoàn](department)
+  - giảm nhiệt độ điều hòa được không e
+  - tăng nhiệt độ điều hòa được không bạn
+  - giảm nhiệt độ điều hòa được không bạn
+  - dẫn mình đến phòng phòng ban [application](department)
+  - dẫn mình đến phòng team [bảo trì](department)
+  - điều chỉnh nhiệt độ điều hòa được không timi
+  - dẫn mình đến phòng bộ phận [kiểm toán](department)
+  - m có đi được không
+  - dẫn mình đến phòng phòng ban [trung tâm ai](department)
+  - tăng nhiệt độ điều hòa được không b
+  - đường xuống tầng năm thế nào bot
+  - tăng nhiệt độ điều hòa được không c
+  - giảm nhiệt độ điều hòa được không chú em
+  - dẫn mình đến phòng phòng ban [hỗ trợ it](department)
+  - dẫn mình đến phòng phòng [thu mua](department)
+  - tăng nhiệt độ điều hòa được không chú em
+  - dẫn mình đến phòng team [product](department)
+  - điều chỉnh nhiệt độ điều hòa được không c
+  - mở của giúp tớ với
+  - lấy cho anh cái quạt
+  - giảm nhiệt độ điều hòa được không m
+  - tăng nhiệt độ điều hòa được không em
+  - timi nhắc tớ chấm công trước khi về cũng được đấy
+  - tắt điều hòa giúp mình
+  - tăng nhiệt độ điều hòa được không mi
+  - timi nhắc tui chấm công trước khi về cũng được đấy
+  - dẫn mình đến phòng phòng [bảo vệ](department)
+  - tăng nhiệt độ điều hòa được không bot
+  - Tôi có thể lấy một cái bánh hamburger không?
+  - dẫn mình đến phòng bộ phận [hành chính nhân sự](department)
+  - dẫn mình đến phòng bộ phận [bảo vệ](department)
+  - dẫn mình đến phòng team [kiểm toán](department)
+  - Bạn có thể vui lòng gửi cho tôi một uber được không
+  - dẫn mình đến phòng team [nhân sự](department)
+  - lấy cho chị con dao
+  - dẫn mình đến phòng phòng [vệ sinh](department)
+  - dẫn mình đến phòng phòng ban [game](department)
+  - Bạn có thể làm bánh mì sandwich không?
+  - dẫn mình đến phòng team [vệ sinh](department)
+  - dẫn mình đến phòng phòng [AI center](department)
+  - dẫn mình đến phòng bộ phận [hạ tầng](department)
+  - dẫn mình đến phòng bộ phận [Marketing](department)
+  - dẫn mình đến phòng bộ phận [hỗ trợ it](department)
+  - lấy cho anh cái kéo
+  - timi nhắc mình chấm công trước khi về cũng được đấy
+  - b có đi được không
+  - dẫn mình đến phòng bộ phận [AI center](department)
+  - đi theo mình được không
+  - dẫn mình đến phòng team [lễ tân](department)
+  - dẫn mình đến phòng phòng [business](department)
+  - lấy cho tớ con dao
+  - dẫn mình đến phòng phòng ban [hành chính nhân sự](department)
+  - điều chỉnh nhiệt độ điều hòa được không m
+  - tăng nhiệt độ điều hòa được không cậu
+  - timi nhắc nhở chấm công trước khi về cũng được đấy
+  - cậu có đi được không
+  - lấy cho tớ cái kéo
+  - điều chỉnh nhiệt độ điều hòa được không mi
+  - giảm nhiệt độ điều hòa được không bot
+  - đường xuống tầng năm thế nào cậu
+  - bạn có đi được không
+  - dẫn mình đến phòng phòng ban [lễ tân](department)
+  - mở của giúp chị với
+  - timi nhắc tôi chấm công trước khi về cũng được đấy
+  - dẫn mình đến phòng bộ phận [chăm sóc khách hàng](department)
+  - em có đi được không
+  - dẫn mình đến phòng phòng ban [hạ tầng](department)
+  - đi theo anh được không
+  - tắt điều hòa giúp tớ
+  - dẫn mình đến phòng phòng [nhân sự](department)
+  - mày có đi được không
+  - dẫn mình đến phòng phòng [product](department)
+  - mi có đi được không
+  - dẫn mình đến phòng phòng ban [bảo trì](department)
+  - đường xuống tầng năm thế nào bạn
+  - điều chỉnh nhiệt độ điều hòa được không b
+  - giảm nhiệt độ điều hòa được không c
+  - dẫn mình đến phòng bộ phận [game](department)
+  - dẫn mình đến phòng phòng [kế toán](department)
+  - dẫn mình đến phòng team [platform](department)
+  - dẫn mình đến phòng phòng ban [vệ sinh](department)
+  - dẫn mình đến phòng bộ phận [thu mua](department)
+  - dẫn mình đến phòng team [game và design](department)
+  - dẫn mình đến phòng phòng ban [kiểm toán](department)
+  - dẫn mình đến phòng phòng ban [chăm sóc khách hàng](department)
+  - m có biết nhân viên phải đóng thuế như thế nào không
+  - m biết nhân viên phải đóng thuế thế nào không
+  - c biết nhân viên phải đóng thuế thế nào không
+  - timi có biết nhân viên phải đóng thuế thế nào không
+  - quy định đóng thuế của công ty như nào
+  - em biết nhân viên phải đóng thuế thế nào không
+  - nhân viên có phải nộp thuế không
+  - cậu biết nhân viên phải đóng thuế như nào không
+  - bot biết nhân viên phải đóng thuế như thế nào không
+  - mi có biết nhân viên phải đóng thuế thế nào không
+  - mày có biết nhân viên phải đóng thuế như nào không
+  - m biết nhân viên phải đóng thuế như nào không
+  - bot biết nhân viên phải đóng thuế như nào không
+  - tài sản BĐS của ftech giá bao nhiêu
+  - cậu biết nhân viên phải đóng thuế như thế nào không
+  - bot có biết nhân viên phải đóng thuế như nào không
+  - bạn biết nhân viên phải đóng thuế như nào không
+  - timi biết nhân viên phải đóng thuế như nào không
+  - chú em biết nhân viên phải đóng thuế như thế nào không
+  - bạn có biết nhân viên phải đóng thuế như thế nào không
+  - bạn biết nhân viên phải đóng thuế như thế nào không
+  - mày biết nhân viên phải đóng thuế như nào không
+  - nhân viên phải đóng thuế như nào
+  - level [cộng tác viên](level_position) có mấy bậc
+  - em có biết nhân viên phải đóng thuế như thế nào không
+  - timi có biết nhân viên phải đóng thuế như nào không
+  - công ty có cho vay nặng lãi không
+  - timi có biết nhân viên phải đóng thuế như thế nào không
+  - mày biết nhân viên phải đóng thuế như thế nào không
+  - cậu có biết nhân viên phải đóng thuế thế nào không
+  - b biết nhân viên phải đóng thuế như thế nào không
+  - bậc [junior](level_position) có mấy bậc
+  - Làm như nào để quên hết được mọi người trong công ty
+  - công ty có lên sàn chứng khoán không
+  - bậc [sinh viên thực tập](level_position) có mấy bậc
+  - timi biết nhân viên phải đóng thuế như thế nào không
+  - mình muốn nói chuyện khác trước khi hỏi về công ty được không?
+  - bậc [công tác diên](level_position) có mấy bậc
+  - e có biết nhân viên phải đóng thuế thế nào không
+  - cty có chia theo cấp bậc chuyên viên không
+  - cậu có biết nhân viên phải đóng thuế như nào không
+  - m biết nhân viên phải đóng thuế như thế nào không
+  - bậc [cộng tác viên](level_position) có mấy bậc
+  - mày có biết nhân viên phải đóng thuế thế nào không
+  - b có biết nhân viên phải đóng thuế như thế nào không
+  - level [sinh viên thực tập](level_position) có mấy bậc
+  - b biết nhân viên phải đóng thuế như nào không
+  - chú em có biết nhân viên phải đóng thuế thế nào không
+  - nhân viên phải đóng thuế như thế nào
+  - m có biết nhân viên phải đóng thuế như nào không
+  - em có biết nhân viên phải đóng thuế như nào không
+  - bot biết nhân viên phải đóng thuế thế nào không
+  - e biết nhân viên phải đóng thuế như thế nào không
+  - mi biết nhân viên phải đóng thuế như thế nào không
+  - b có biết nhân viên phải đóng thuế thế nào không
+  - chú em có biết nhân viên phải đóng thuế như nào không
+  - quy định đóng thuế của công ty như thế nào
+  - c có biết nhân viên phải đóng thuế như thế nào không
+  - c biết nhân viên phải đóng thuế như thế nào không
+  - mày biết nhân viên phải đóng thuế thế nào không
+  - quy định đóng thuế của công ty thế nào
+  - ồ mình là người quen của bot nè
+  - c biết nhân viên phải đóng thuế như nào không
+  - e biết nhân viên phải đóng thuế như nào không
+  - cậu có biết nhân viên phải đóng thuế như thế nào không
+  - b biết nhân viên phải đóng thuế thế nào không
+  - level [thực tập sinh](level_position) có mấy bậc
+  - bậc [thử việc](level_position) có mấy bậc
+  - level [intern](level_position) có mấy bậc
+  - e biết nhân viên phải đóng thuế thế nào không
+  - timi biết nhân viên phải đóng thuế thế nào không
+  - mi có biết nhân viên phải đóng thuế như thế nào không
+  - bậc [fulltime](level_position) có mấy bậc
+  - m có biết nhân viên phải đóng thuế thế nào không
+  - bậc [senior](level_position) có mấy bậc
+  - tớ nghỉ việc được không
+  - chú em có biết nhân viên phải đóng thuế như thế nào không
+  - bậc [intern](level_position) có mấy bậc
+  - cậu biết nhân viên phải đóng thuế thế nào không
+  - công ty có đóng thuế không
+  - level [công tác diên](level_position) có mấy bậc
+  - bậc [thực tập sinh](level_position) có mấy bậc
+  - bạn biết nhân viên phải đóng thuế thế nào không
+  - level [internship](level_position) có mấy bậc
+  - c có biết nhân viên phải đóng thuế thế nào không
+  - em có biết nhân viên phải đóng thuế thế nào không
+  - có bao nhiêu công ty làm về lĩnh vực AI ở việt nam
+  - b có biết nhân viên phải đóng thuế như nào không
+  - mày có biết nhân viên phải đóng thuế như thế nào không
+  - e có biết nhân viên phải đóng thuế như thế nào không
+  - bậc [pre-senior](level_position) có mấy bậc
+  - bot có biết nhân viên phải đóng thuế thế nào không
+  - bậc [fresher](level_position) có mấy bậc
+  - c có biết nhân viên phải đóng thuế như nào không
+  - em biết nhân viên phải đóng thuế như thế nào không
+  - mi biết nhân viên phải đóng thuế như nào không
+  - bot có biết nhân viên phải đóng thuế như thế nào không
+  - công ty đã có cổ phiếu chưa
+  - nhân viên phải đóng thuế thế nào
+  - e có biết nhân viên phải đóng thuế như nào không
+  - nhân viên công ty có phải đóng thuế không
+  - bạn có biết nhân viên phải đóng thuế thế nào không
+  - mi có biết nhân viên phải đóng thuế như nào không
+  - có phải nộp thuế lao động không
+  - em biết nhân viên phải đóng thuế như nào không
+  - bạn có biết nhân viên phải đóng thuế như nào không
+  - chú em biết nhân viên phải đóng thuế như nào không
+  - công ty có nhiều tiền không
+  - bậc [internship](level_position) có mấy bậc
+  - chú em biết nhân viên phải đóng thuế thế nào không
+  - lương ftech có trả bằng usd không
+  - công ty có vàn nghìn tỷ không
+  - mi biết nhân viên phải đóng thuế thế nào không
+  - chưa upate quy định rồi
+  - có biết mình làm nghề gì không
+  - có biết tớ cao bao nhiêu không
+  - có biết tớ đang ở đâu không
+  - có tớ bao nhiêu cân không
+  - fwork của mình là gì ?
+  - có tôi ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - tui có phải là nhân viên công ty hay không
+  - có biết tớ làm nghề gì không
+  - biết tui cao bao nhiêu không
+  - có tui đang ở đâu không
+  - biết tui bao nhiêu cân không
+  - có tui ngồi ở vị trí nào tớ ngồi ở vị trí nào
+  - tôi có phải là nhân viên công ty hay không
+  - có biết tui làm nghề gì không
+  - biết tôi cao bao nhiêu không
+  - có mình đang ở đâu không
+  - có biết tớ bao nhiêu cân không
+  - có tôi ngồi ở vị trí nào tôi ngồi ở vị trí nào
+  - mình có phải là nhân viên công ty hay không
+  - biết tớ làm nghề gì không
+  - timi thường làm gì trong giờ làm việc
+  - bot có hỏi search google không ?
+  - timi code được không
+  - bot chạy bằng cơm à
+  - bạn có não không
+  - chú em hỏi nhảy tik tok không?
+  - cậu có bao tử không
+  - bot thường làm gì trong giờ làm việc
+  - e có biết search google không ?
+  - bot code được không
+  - timi chạy bằng cơm à
+  - bot có não không
+  - chú em biết nhảy tik tok không?
+  - e có bao tử không
+  - cậu thường làm gì trong giờ làm việc
+  - m có hỏi search google không ?
+  - c code được không
+  - bạn chạy bằng cơm à
+  - cậu có não không
+  - bot biết nhảy tik tok không?
+  - văn phòng [sài gòn](location) có bao nhiêu [ai engineer](position)
+  - số lượng [game 2d product](position) thuộc phòng ban phòng ban [AI center](department)
+    tại cơ sở [lạng sơn](location) là bao nhiêu
+  - hiện số lượng [game 3d art](position) là bao nhiêu
+  - công ty bot có nhiều nhận sự nữ không
+  - '[thử việc](level_position) có bao nhiêu người vậy'
+  - thế số lượng [fresher](level_position) trong công ty là bao nhiêu
+  - hiện tại số lượng số lượng [intern](level_position) tại văn phòng [đồng bằng sông
+    cưu long](location) là bao nhiêu người
+  - công ty có nhiều nữ không
+  - phòng ban phòng [business](department) có bao nhiêu [công tác diên](level_position)
+  - tại [hà nội](location) có bao nhiêu [ios develop](position)
+  - có bao nhiêu [graphic design](position) trong công ty
+  - ' [ftech](work_unit) có bao nhiêu [business analyst](position)'
+  - số lượng người làm [cv engineer](position) là bao nhiêu
+  - hiện nay công ty có bao nhiêu [fulltime](level_position)
+  - số lượng [fresher](level_position) tại cơ sở [côn đảo](location) là mấy
+  - phòng nào đông người nhất [ftech](work_unit) vậy hả
+  - số lượng [công tác diên](level_position) thuộc [trung tâm ai](department) là bao
+    nhiêu
+  - cơ sở [quảng ninh](location) có mấy [ai](position)
+  - số lượng [database engineer](position) thuộc phòng phòng ban [nhân sự](department)
+    tại trụ sở [hà nội](location) là mấy
+  - ' số lượng [backend develop](position) là bao nhiêu'
+  - công ty timi có nhiều nhân viên nữ không
+  - '[data analyst](position) có bao nhiêu người hả'
+  - ' số lượng [pentest](position) trong công ty là bao nhiêu'
+  - hiện tại số lượng số lượng [junior](level_position) tại chi nhánh [sài gòn](location)
+    là bao nhiêu người
+  - phòng ban phòng ban [game](department) có bao nhiêu [junior](level_position)
+  - tại cơ sở [miền tây](location) có bao nhiêu [quản lý nhân sự](position)
+  - có bao nhiêu [3d artist](position) trong công ty
+  - ' [ftech](work_unit) có bao nhiêu [fresher](level_position)'
+  - số lượng người làm [fullstack devlop](position) là bao nhiêu
+  - hiện tại công ty có bao nhiêu [thử việc](level_position)
+  - số lượng [fresher](level_position) tại trụ sở [đà nẵng](location) là mấy
+  - phòng nào đông người nhất [ftech](work_unit) vậy
+  - số lượng [fresher](level_position) thuộc bộ phận team [kiểm toán](department)
+    là bao nhiêu vậy
+  - trụ sở [hà nội](location) có bao nhiêu [ai research](position)
+  - số lượng [database engineer](position) thuộc [trung tâm ai](department) tại trụ
+    sở [hồ chí minh](location) là mấy
+  - ' số lượng [react native develop](position) là mấy'
+  - công ty mi có nhiều nhân viên nữ không
+  - '[internship](level_position) có bao nhiêu người hả'
+  - thế số lượng [thực tập sinh](level_position) trong công ty là bao nhiêu
+  - ' số lượng số lượng [senior](level_position) tại chi nhánh [Việt Nam](location)
+    là bao nhiêu người'
+  - '[trung tâm ai](department) có bao nhiêu [cộng tác viên](level_position)'
+  - tại [đà nẵng](location) công ty có bao nhiêu [development and operations](position)
+  - có bao nhiêu [ai](position) trong công ty
+  - ' [ftech](work_unit) có bao nhiêu [công tác diên](level_position)'
+  - số lượng người làm [game 2d](position) là mấy
+  - ' công ty có bao nhiêu [junior](level_position)'
+  - số lượng [senior](level_position) tại trụ sở [sài gòn](location) là mấy
+  - bộ phận nào ít người nhất [ftech](work_unit) vậy hả
+  - số lượng [ai](position) thuộc phòng team [sản phẩm](department) là bao nhiêu
+  - trụ sở [đà nẵng](location) có bao nhiêu [ai engineer](position)
+  - số lượng [game 2d developer](position) thuộc team phòng [platform](department)
+    tại cơ sở [đà nẵng](location) là bao nhiêu
+  - ' số lượng [frontend developer](position) là mấy'
+  - công ty mày có nhiều thành viên nữ không
+  - '[business support china](position) có bao nhiêu người vậy hả'
+  - thế số lượng [graphic designer](position) trong công ty là bao nhiêu
+  - hiện nay số lượng số lượng [junior](level_position) tại chi nhánh [bến tre](location)
+    là bao nhiêu người
+  - phòng bộ phận [platform](department) có bao nhiêu [thử việc](level_position)
+  - tại [hà nội](location) có mấy [frontend develop](position)
+  - có bao nhiêu [senior](level_position) trong công ty
+  - ' [ftech](work_unit) có bao nhiêu [golang develop](position)'
+  - số lượng người làm [2d artist](position) là mấy
+  - hiện nay công ty có bao nhiêu [data science](position)
+  - số lượng [fresher](level_position) tại chi nhánh [đồng bằng sông cưu long](location)
+    là mấy
+  - phòng nào ít người nhất [ftech](work_unit) vậy
+  - số lượng [thử việc](level_position) thuộc [trung tâm ai](department) là bao nhiêu
+  - trụ sở [Mexico](location) có bao nhiêu [ai research](position)
+  - số lượng [2d product](position) thuộc bộ phận team [sản phẩm](department) tại
+    cơ sở [Việt Nam](location) là mấy
+  - ' số lượng [nlp](position) là bao nhiêu'
+  - công ty bạn có nhiều nhận sự nữ không
+  - '[fresher](level_position) có bao nhiêu người'
+  - thế số lượng [game 3d product](position) trong công ty là bao nhiêu
+  - hiện nay số lượng số lượng [junior](level_position) tại chi nhánh [tây nguyên](location)
+    là bao nhiêu người
+  - team phòng ban [business](department) có bao nhiêu [thử việc](level_position)
+  - ở [điện biên](location) công ty có mấy [business analyst](position)
+  - có bao nhiêu [data analyst](position) trong công ty
+  - thế [ftech](work_unit) có bao nhiêu [nhân viên soạn nội dung giáo dục](position)
+  - số lượng người làm [blockchain developer](position) là bao nhiêu
+  - ' công ty có bao nhiêu [fulltime](level_position)'
+  - số lượng [fresher](level_position) tại chi nhánh [hồ chí minh](location) là mấy
+  - bộ phận nào ít người nhất [ftech](work_unit) vậy
+  - số lượng [fresher](level_position) thuộc [trung tâm ai](department) là bao nhiêu
+  - chi nhánh [đà nẵng](location) có bao nhiêu [ai research](position)
+  - số lượng [blockchain developer](position) thuộc [trung tâm ai](department) tại
+    cơ sở [đà nẵng](location) là mấy
+  - ' số lượng [graphic designer](position) là mấy'
+  - công ty bạn có nhiều nhân viên nữ không
+  - '[fulltime](level_position) có bao nhiêu người hả'
+  - thế số lượng [data analyst](position) trong công ty là bao nhiêu
+  - hiện nay số lượng số lượng [junior](level_position) tại chi nhánh [sài gòn](location)
+    là bao nhiêu người
+  - phòng ban bộ phận [business](department) có bao nhiêu [pre-senior](level_position)
+  - ở cơ sở [Thổ Nhĩ Kỳ](location) có mấy [3d product](position)
+  - có bao nhiêu [blockchain engineer](position) trong công ty
+  - ' [ftech](work_unit) có bao nhiêu [Machine learning](position)'
+  - số lượng người làm [nhân sự](position) là bao nhiêu
+  - ' công ty có bao nhiêu [sinh viên thực tập](level_position)'
+  - số lượng [fulltime](level_position) tại chi nhánh [sài gòn](location) là mấy
+  - bộ phận nào đông người nhất [ftech](work_unit) hả
+  - số lượng [2d develop](position) thuộc team team [hành chính nhân sự](department)
+    là bao nhiêu vậy
+  - văn phòng [đà nẵng](location) có bao nhiêu [ai](position)
+  - số lượng [frontend develop](position) thuộc [trung tâm ai](department) tại trụ
+    sở [bắc trung bộ](location) là mấy
+  - hiện nay số lượng [business analyst](position) là mấy
+  - chị [Nguyễn Thị Xoan](person_name) đảm nhiệm nhiệm vụ gì trong cty vậy
+  - nhiệm vụ của ban giám đốc là gì
+  - vai trò của [giám đốc nhân sự](bod) là gì
+  - cho anh hỏi vai trò [phó giám đốc](bod) trong công ty là gì
+  - '[giám đốc product](bod) có làm quản lý việc khác ngoài kinh doanh ko'
+  - nhiệm vụ của [phó phòng](bod) trong công ty là gì
+  - ' giới thiêu vai trò của vị trí [trưởng phòng](bod) team phòng ban [AI center](department)'
+  - '[phó giám đốc](bod) có nhiệm vụ gì trong cty'
+  - timi có biết [phó giám đốc](bod) có vai trò gì trong cty vậy
+  - công việc chính của [phó giám đốc](bod) là gì vậy
+  - cho mình biết công việc chính của [phó phòng](bod) là gì vậy
+  - cho anh hỏi [trưởng team](bod) team team [business](department) liên quan đến
+    những việc gì
+  - anh [Huỳnh Ngọc Hải](person_name) có vai trò gì trong cty
+  - nhiệm vụ của [phó phòng](bod) là gì
+  - nhiệm vụ của [giám đốc](bod) là gì
+  - cho tớ hỏi vai trò [giám đốc](bod) trong công ty là gì
+  - '[giám đốc công nghệ](bod) có làm quản lý việc khác ngoài kinh doanh ko'
+  - vai trò của [BOD](bod) trong công ty là gì
+  - hãy giới thiêu vai trò của vị trí [leader](bod) team phòng ban [business](department)
+  - '[phó phòng](bod) đảm nhiệm vai trò gì trong cty vậy'
+  - bot có biết [php developer](position) có nhiệm vụ gì trong cty hả
+  - công việc của [trưởng phòng](bod) là gì vậy
+  - cho anh hỏi công việc của [CAIO](bod) là gì
+  - cho chị hỏi [giám đốc kinh doanh](bod) liên quan đến những việc gì
+  - bạn [Nguyễn Linh Chi](person_name) đảm nhiệm vai trò gì trong công ty
+  - nhiệm vụ của [giám đốc nội chính](bod) là gì
+  - vai trò của [phó giám đốc](bod) là gì
+  - cho mình hỏi vai trò [giám đốc](bod) trong công ty là gì
+  - '[giám đốc tiếp thị](bod) có làm quản lý việc khác ngoài kinh doanh ko'
+  - vai trò của [phó phòng](bod) trong công ty là gì
+  - hãy giới thiêu vai trò của [trưởng team](bod) team phòng ban [business](department)
+  - '[giám đốc thông tin](bod) đảm nhiệm vai trò gì trong công ty vậy'
+  - cậu có hỏi [data science](position) có vai trò gì trong công ty hả
+  - công việc của [trưởng phòng](bod) là gì
+  - cho anh hỏi công việc chính của [phó giám đốc](bod) là gì vậy
+  - cho chị biết [trưởng team](bod) team team [product](department) liên quan đến
+    những việc gì
+  - a [Vũ Lê Huy](person_name) có vai trò gì trong công ty
+  - nhiệm vụ chính của [phó phòng](bod) là gì
+  - vai trò của [CFO](bod) là gì
+  - cho tớ hỏi nhiệm vụ [giám đốc product](bod) trong công ty là gì
+  - '[giám đốc nội chính](bod) có làm quản lý việc khác ngoài kinh doanh ko'
+  - vai trò của [giám đốc thường trực](bod) trong công ty là gì
+  - ' giới thiêu nhiệm vụ của [trưởng team](bod) team phòng ban [game và design](department)'
+  - '[giám đốc dịch vụ khách hàng](bod) đảm nhiệm vai trò gì trong công ty'
+  - bot có biết [phó phòng](bod) có vai trò gì trong công ty vậy
+  - công việc của [phó giám đốc](bod) là gì vậy
+  - cho anh hỏi công việc chính của [giám đốc](bod) là gì vậy
+  - cho tớ hỏi [trưởng phòng](bod) team bộ phận [product](department) liên quan đến
+    những việc gì
+  - anh [Trần Trọng Hiệp](person_name) đảm nhiệm nhiệm vụ gì trong công ty hả
+  - vai trò của ban lãnh đạo là gì
+  - vai trò của lanh đạo là gì
+  - cho mình hỏi vai trò [giám đốc công nghệ](bod) trong công ty là gì
+  - '[giám đốc sáng tạo](bod) có làm quản lý việc khác ngoài kinh doanh ko'
+  - vai trò của [trưởng team](bod) trong công ty là gì
+  - ' giới thiêu vai trò của [trưởng phòng](bod) team phòng [platform](department)'
+  - '[giám đốc dịch vụ khách hàng](bod) có nhiệm vụ gì trong công ty hả'
+  - timi có hỏi [business support china](position) có nhiệm vụ gì trong công ty vậy
+  - công việc của [giám đốc dịch vụ khách hàng](bod) là gì vậy
+  - cho anh hỏi công việc của [data engineers](position) là gì vậy
+  - cho tớ hỏi [trưởng team](bod) team phòng [game](department) liên quan đến những
+    việc gì
+  - anh [Dương Quang Vũ](person_name) đảm nhiệm nhiệm vụ gì trong cty vậy
+  - nhiệm vụ chính của [CIAO](bod) là gì
+  - vai trò của [phó phòng](bod) là gì
+  - cho anh hỏi vai trò [trưởng team](bod) trong công ty là gì
+  - '[giám đốc thường trực](bod) có làm quản lý việc khác ngoài kinh doanh ko'
+  - vai trò của [COO](bod) trong công ty là gì
+  - ' giới thiêu nhiệm vụ của [trưởng phòng](bod) team bộ phận [it support](department)'
+  - '[phó giám đốc](bod) đảm nhiệm nhiệm vụ gì trong cty'
+  - timi có hỏi [giám đốc](bod) đảm nhiệm vai trò gì trong cty hả
+  - công việc chính của [phó giám đốc](bod) là gì
+  - biết cách đổi đơn vị không mi
+  - làm sao để chuyển đổi đơn vị trọng lượng mày hè
+  - 1 dm3 bằng nhiêu thế bạn
+  - em biết cách đổi đơn vị không
+  - đổi hm2 ra cen-ti-mét khối làm sao hè
+  - biết cách chuyển đổi đơn vị không mày
+  - làm thế nào để chuyển đổi đơn vị vận tốc bạn hè
+  - 1 ngày bằng nhiêu thế cậu
+  - bot biết cách chuyển đổi đơn vị không
+  - đổi phút ra mm2 làm sao hè
+  - biết cách chuyển đổi đơn vị không em
+  - làm sao để đổi đơn vị toán học chị hè
+  - 1 tháng bằng nhiêu thế bot
+  - bạn biết cách chuyển đổi đơn vị không
+  - chuyển đổi lít ra hm2 làm sao hè
+  - biết cách chuyển đổi đơn vị không mi
+  - làm sao để đổi đơn vị cường độ dòng điện em hè
+  - 1 kg bằng nhiêu thế bạn
+  - anh biết cách chuyển đổi đơn vị không
+  - chuyển đổi dam2 ra dm3 làm sao hè
+  - biết cách chuyển đổi đơn vị không bạn
+  - làm sao để đổi đơn vị vận tốc cậu hè
+  - 1 cm3 bằng nhiêu thế cậu
+  - mày biết cách chuyển đổi đơn vị không
+  - đổi mét khối ra km2 làm sao hè
+  - biết cách đổi đơn vị không bạn
+  - làm sao để chuyển đổi đơn vị thể tích bot hè
+  - 1 dm3 bằng nhiêu thế mày
+  - mi biết cách chuyển đổi đơn vị không
+  - chuyển đổi mm2 ra phút làm sao hè
+  - biết cách đổi đơn vị không em
+  - làm sao để chuyển đổi đơn vị thời gian anh hè
+  - 1 mi li mét vuông bằng nhiêu thế bạn
+  - bạn biết cách đổi đơn vị không
+  - đổi mét ra đề xi mét khối làm sao hè
+  - biết cách đổi đơn vị không bot
+  - làm thế nào để chuyển đổi đơn vị cường độ dòng điện bạn hè
+  - 1 giờ bằng nhiêu thế anh
+  - chị biết cách chuyển đổi đơn vị không
+  - đổi cen-ti-mét ra ngày làm sao hè
+  - biết cách đổi đơn vị không chị
+  - làm sao để chuyển đổi đơn vị trọng lượng cậu hè
+  - 1 lít bằng nhiêu thế cậu
+  - em biết cách chuyển đổi đơn vị không
+  - đổi ki lô mét ra phút làm sao hè
+  - biết cách đổi đơn vị không cậu
+  - làm thế nào để đổi đơn vị khối lượng chị hè
+  - 1 ki-lô-mét vuông bằng nhiêu thế anh
+  - cậu biết cách đổi đơn vị không
+  - đổi ki lô gam ra đề ca mét vuông làm sao hè
+  - đi đâu quán coffee hấp dẫn?
+  - bot cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - cho tớ quán ăn uống nào cực phẩm nơi này không
+  - chỗ nào uống cà phê ok không
+  - ' nào nhân viên tiếp khách chu đáo không'
+  - bot hỏi địa chỉ của quán coffee nào đỉnh đỉnh chỗ này
+  - ở đâu có tiệm uống cà phê đỉnh cao?
+  - chú em cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích
+    hợp 2 người hẹn hò với
+  - cho tớ chỗ ăn uống cực phẩm gần đây không
+  - nơi nào uống cà phê ngon
+  - coffee chỗ nào có nhân viên phục vụ tốt
+  - ' hỏi địa chỉ nơi uống cà phê ở đây'
+  - đi đâu quán uống cà phê đỉnh đỉnh?
+  - bạn cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - tớ muốn địa chỉ coffee gần đây không
+  - nơi nào ăn uống good
+  - uống cà phê chỗ nào nhân viên phục vụ tâm huyết không
+  - bot hỏi tọa độ quán coffee nơi đây không
+  - đi đâu có chỗ coffee cực phẩm?
+  - e cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - tớ muốn hỏi địa chỉ uống cà phê gần đây không
+  - địa chỉ nào uống cà phê cực phẩm không
+  - coffee chỗ nào nhân viên tiếp khách tận tình không
+  - ' biết địa chỉ của nơi giải khát cực phẩm ở đây không'
+  - đi đâu chỗ ăn uống đỉnh đỉnh?
+  - timi cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích
+    hợp 2 người hẹn hò với
+  - cho tôi quán uống cà phê cực phẩm gần đây
+  - địa chỉ nào ăn uống good
+  - ' nào có nhân viên phục vụ tốt'
+  - ' hỏi tọa độ của quán nước nào good ở đây'
+  - ở đâu quán coffee ngon?
+  - c cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - cho a địa chỉ uống cà phê nào gần đây
+  - tiệm nào ăn uống đỉnh đỉnh không
+  - ' chỗ nào có nhân viên nghiệp vụ nhiệt tình'
+  - bot hỏi địa chỉ của nơi giải khát nơi đây
+  - ở đâu có tiệm uống cà phê ngon?
+  - em cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - cho tớ biết tiệm uống cà phê gần đây
+  - tiệm nào coffee ngon không
+  - ' chỗ nào có nhân viên nghiệp vụ tận tình'
+  - em hỏi tọa độ nơi coffee nào ok nơi này
+  - đi đâu có chỗ coffee hấp dẫn?
+  - mi cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với
+  - tui muốn tiệm uống cà phê ok ở đây không
+  - nơi nào uống cà phê đỉnh cao không
+  - ' chỗ nào nhân viên nghiệp vụ chu đáo'
+  - timi hỏi tọa độ của chỗ uống cà phê nào good ở đây không
+  - ở đâu có tiệm coffee ok?
+  - m cho xin quán cà phê nguyên chất, xay tại chỗ, không gian lãng mạn, thích hợp
+    2 người hẹn hò với

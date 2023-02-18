@@ -1,0 +1,306 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_dislike
+  examples:
+  - điều khiến mày cảm thấy không thích
+  - cậu căm ghét những gì
+  - điều mà em ghét là chi
+  - điều mà khiến bạn cảm thấy không thích là nào
+  - điều m ghét là gì
+  - mày ghét gì vậy á hả
+  - em căm ghét điều gì vậy á hả
+  - bot ghét gì vậy
+  - cậu ghét ăn món gì
+  - bot ghét làm gì vào mỗi sáng
+  - m không thích ăn món gì
+  - điều khiến m cảm thấy không thích là chi
+  - bot không thích làm gì vào chủ nhật
+  - em không thích điều gì vậy á hả
+  - điều khiến timi cảm thấy không thích là chi
+  - điều khiến m cảm thấy ghét là chi
+  - điều mà khiến bot cảm thấy không thích là nào
+  - bot ghét làm gì vào thời gian rảnh rỗi
+  - điều mà khiến em cảm thấy căm ghét
+  - mày không thích làm gì vào thời gian rảnh rỗi
+  - điều mà khiến bot cảm thấy ghét
+  - điều khiến em cảm thấy ghét là gì
+  - điều mà cậu không thích là mô
+  - m căm ghét làm gì vào chủ nhật
+  - bạn ghét làm gì vào cuối tuần
+  - điều mà timi căm ghét là nào
+  - mày ghét làm gì vào sáng sớm
+  - bot ghét làm gì vào mùa đông
+  - điều khiến m cảm thấy không thích là mô
+  - điều bạn ghét là mô
+  - em căm ghét làm gì vào mùa đông
+  - bot ghét điều gì
+  - em ghét làm gì vào mỗi sáng
+  - điều khiến cậu cảm thấy không thích là gì
+  - em không thích điều gì
+  - bot căm ghét điều gì vậy á hả
+  - điều mà khiến m cảm thấy căm ghét là chi
+  - bạn ghét làm gì vào buổi trưa
+  - vào thời gian rảnh rỗi em căm ghét làm gì
+  - m không thích gì vậy
+  - vào thời gian rảnh rỗi cậu căm ghét làm gì
+  - điều cậu căm ghét là gì
+  - điều mà timi không thích là chi
+  - em ghét gì
+  - m không thích làm gì vào buổi sáng
+  - điều mà khiến mày cảm thấy không thích là chi
+  - m có ghét gì không
+  - timi không thích gì vậy hả
+  - điều bot không thích là
+  - điều khiến timi cảm thấy ghét là
+  - điều khiến bạn cảm thấy căm ghét là mô
+  - điều mà khiến em cảm thấy không thích là mô
+  - timi không thích gì hả
+  - cậu không thích làm gì vào mùa đông
+  - timi căm ghét điều gì
+  - điều khiến em cảm thấy ghét là chi
+  - em ghét làm gì vào mùa hè
+  - điều mà em căm ghét là mô
+  - điều mà khiến bot cảm thấy căm ghét là gì
+  - điều cậu ghét là
+  - điều khiến em cảm thấy không thích là
+  - mày ghét điều gì hở
+  - điều khiến em cảm thấy ghét là
+  - điều mà em không thích là gì
+  - điều mà khiến timi cảm thấy ghét là gì
+  - điều khiến mày cảm thấy không thích là chi
+  - mày căm ghét gì hả
+  - bạn căm ghét làm gì vào buổi sáng
+  - m ghét điều gì vậy á hả
+  - điều mà khiến bạn cảm thấy ghét là gì
+  - mày căm ghét làm gì vào thứ 7 chủ nhật
+  - bạn ghét điều gì hở
+  - bạn căm ghét gì hả
+  - timi ghét điều gì hở
+  - m không thích gì vậy á hả
+  - m ghét gì vậy á hả
+  - cậu không thích làm gì vào sáng sớm
+  - điều timi căm ghét là mô
+  - timi ghét điều gì nhất
+  - bot không thích làm gì vào cuối tuần
+  - điều mà cậu không thích là gì
+  - căm ghét gì hở
+  - điều mà m không thích là
+  - điều m căm ghét là gì
+  - bot ghét những gì
+  - mày căm ghét gì vậy
+  - ghét gì vậy hả
+  - em không thích ăn gì nhất
+  - điều khiến timi cảm thấy căm ghét
+  - timi ghét điều gì vậy hả
+  - em căm ghét ăn gì nhất
+  - điều mà khiến bạn cảm thấy không thích
+  - điều mà khiến bot cảm thấy ghét là chi
+  - điều bot ghét là gì
+  - điều mà bạn căm ghét là gì
+  - timi ghét điều gì hả
+  - căm ghét ăn gì nhất
+  - timi căm ghét làm gì vào buổi trưa
+  - timi căm ghét gì hở
+  - điều khiến bạn cảm thấy căm ghét là
+  - timi ghét gì hả
+  - điều cậu căm ghét là chi
+  - bạn ghét điều gì hả
+  - em căm ghét điều gì hả
+  - không thích gì vậy á hả
+  - m căm ghét gì nhất
+  - bot căm ghét làm gì vào chiều chiều
+  - cậu không thích điều gì hở
+  - điều khiến bạn cảm thấy không thích là chi
+  - điều khiến bạn cảm thấy ghét là chi
+  - cậu căm ghét ăn gì nhất
+  - điều mà em ghét là gì
+  - cậu không thích làm gì vào cuối tuần
+  - điều khiến bạn cảm thấy không thích là mô
+  - điều bạn không thích là gì
+  - điều mà khiến timi cảm thấy ghét
+  - timi có sợ chó cắn không
+  - cậu ghét làm gì vào sáng sớm
+  - mày căm ghét làm gì vào buổi trưa
+  - điều mà khiến cậu cảm thấy không thích là gì
+  - không thích ăn gì nhất
+  - điều khiến mày cảm thấy không thích là
+  - bạn căm ghét làm gì vào thứ 7 chủ nhật
+  - điều mà bạn không thích là mô
+  - em căm ghét làm gì vào buổi sáng
+  - điều em không thích là nào
+  - bot ghét làm gì vào chiều chiều
+  - điều mà khiến timi cảm thấy không thích là nào
+  - điều mà khiến m cảm thấy ghét là
+  - điều mà khiến timi cảm thấy căm ghét là chi
+  - bot căm ghét gì vậy hả
+  - cậu ghét điều gì hả
+  - điều mà bot ghét là
+  - bot căm ghét gì nhất
+  - điều mà khiến m cảm thấy căm ghét là
+  - em ghét điều gì vậy á hả
+  - mày căm ghét gì vậy hả
+  - timi ghét uống nước gì
+  - điều mà khiến cậu cảm thấy căm ghét là
+  - em không thích làm gì vào chiều chiều
+  - điều mà khiến bạn cảm thấy không thích là mô
+  - bot căm ghét gì hả
+  - cậu ghét ăn gì nhất
+  - điều khiến timi cảm thấy căm ghét là nào
+  - điều khiến bạn cảm thấy ghét là mô
+  - điều mà khiến em cảm thấy căm ghét là
+  - timi ghét làm gì vào buổi trưa
+  - em không thích làm gì vào thời gian rảnh rỗi
+  - em có sợ bóng đêm không
+  - điều mà timi ghét là chi
+  - cậu ghét làm gì vào buổi trưa
+  - cậu ghét gì vậy á hả
+  - mày ghét những gì
+  - em không thích điều gì vậy
+  - bạn không thích làm gì vào mỗi sáng
+  - m căm ghét uống nước gì
+  - mày không thích gì hở
+  - điều timi ghét là
+  - ghét ăn món gì
+  - điều khiến m cảm thấy không thích là nào
+  - m ghét làm gì vào mùa hè
+  - điều mà em căm ghét là nào
+  - cậu ghét làm gì vào mùa thu
+  - ghét gì
+  - em căm ghét làm gì vào chiều chiều
+  - điều khiến bot cảm thấy không thích là
+  - mày không thích gì vậy
+  - mày căm ghét những gì
+  - em ghét gì vậy á hả
+  - điều khiến m cảm thấy ghét là nào
+  - m ghét làm gì vào chiều chiều
+  - điều mà bot ghét là nào
+  - mày căm ghét điều gì
+  - mày không thích gì hả
+  - điều bạn không thích là chi
+  - timi không thích làm gì vào sáng sớm
+  - điều khiến cậu cảm thấy ghét là chi
+  - vào thời gian rảnh rỗi em ghét làm gì
+  - điều khiến mày cảm thấy ghét
+  - mày căm ghét điều gì hả
+  - không thích điều gì
+  - điều mà cậu không thích là nào
+  - em ghét làm gì vào cuối tuần
+  - điều mà bot căm ghét là chi
+  - m không thích làm gì vào buổi trưa
+  - cậu ghét làm gì vào cuối tuần
+  - bot căm ghét điều gì
+  - điều khiến bạn cảm thấy căm ghét là chi
+  - điều khiến mày cảm thấy căm ghét là chi
+  - bot ghét làm gì vào mỗi tối
+  - bạn ghét gì
+  - m có sợ ma không
+  - điều timi ghét là nào
+  - bot căm ghét ăn món gì
+  - điều khiến bot cảm thấy căm ghét là
+  - m không thích điều gì vậy hả
+  - điều mà bot căm ghét là gì
+  - mày không thích làm gì vào buổi sáng
+  - điều mà mày căm ghét là nào
+  - chó cắn bạn sợ không
+  - điều mà khiến bạn cảm thấy ghét
+  - em không thích gì vậy
+  - điều khiến em cảm thấy căm ghét là
+  - điều bot không thích là chi
+  - mày không thích làm gì vào buổi trưa
+  - điều mà khiến mày cảm thấy ghét là mô
+  - điều khiến m cảm thấy không thích là
+  - em không thích làm gì vào thứ 7 chủ nhật
+  - m không thích điều gì hả
+  - em căm ghét điều gì
+  - bạn không thích gì hả
+  - cậu không thích làm gì vào mùa hè
+  - điều khiến mày cảm thấy ghét là nào
+  - bạn căm ghét làm gì vào thời gian rảnh rỗi
+  - em ghét những gì
+  - căm ghét gì vậy á hả
+  - cậu có sợ bóng đêm không
+  - timi ghét làm gì vào buổi sáng
+  - timi có ghét gì không
+  - m ghét làm gì vào thứ 7 chủ nhật
+  - bot căm ghét làm gì vào cuối tuần
+  - bạn ghét điều gì vậy á hả
+  - mày không thích làm gì vào mỗi sáng
+  - em ghét làm gì vào sáng sớm
+  - điều mà khiến mày cảm thấy không thích là
+  - mày không thích gì vậy hả
+  - em ghét làm gì vào chiều chiều
+  - timi căm ghét gì vậy
+  - em ghét điều gì
+  - điều mà m căm ghét là nào
+  - điều khiến timi cảm thấy căm ghét là chi
+  - căm ghét điều gì nhất
+  - điều mà mày không thích là gì
+  - điều timi căm ghét là chi
+  - m căm ghét gì hả
+  - bạn không thích làm gì vào mùa thu
+  - điều mà khiến cậu cảm thấy ghét là chi
+  - bạn căm ghét điều gì nhất
+  - mày có sợ bóng đêm không
+  - cậu ghét điều gì vậy á hả
+  - timi không thích làm gì vào mỗi tối
+  - bạn ghét gì vậy hả
+  - bot không thích điều gì hả
+  - điều mà cậu căm ghét là gì
+  - bạn không thích gì vậy á hả
+  - m không thích uống nước gì
+  - điều m căm ghét là chi
+  - m căm ghét điều gì
+  - điều khiến bot cảm thấy ghét là
+  - bạn căm ghét gì vậy á hả
+  - cậu ghét làm gì vào mùa xuân
+  - điều bạn ghét là nào
+  - m ghét làm gì vào chủ nhật
+  - bot căm ghét làm gì vào thời gian rảnh rỗi
+  - m có sợ bóng đêm không
+  - bạn có ghét gì không
+  - điều bot ghét là nào
+  - cậu căm ghét điều gì
+  - mày căm ghét ăn gì nhất
+  - bot không thích ăn món gì
+  - mày ghét điều gì
+  - điều em ghét là chi
+  - điều em ghét là gì
+  - không thích gì nhất
+  - điều em không thích là chi
+  - điều cậu căm ghét là nào
+  - ghét điều gì vậy hả
+  - cậu căm ghét làm gì vào cuối tuần
+  - điều mà khiến m cảm thấy căm ghét là mô
+  - timi ghét làm gì vào mùa hè
+  - căm ghét điều gì vậy
+  - mày căm ghét gì hở
+  - điều mà khiến cậu cảm thấy ghét là mô
+  - bạn ghét gì hở
+  - bạn không thích gì hở
+  - em căm ghét điều gì nhất
+  - điều mà khiến m cảm thấy ghét là nào
+  - căm ghét điều gì vậy á hả
+  - m ghét uống nước gì
+  - điều khiến timi cảm thấy căm ghét là mô
+  - bot không thích làm gì vào mùa hè
+  - điều mà cậu ghét là mô
+  - điều em không thích là
+  - điều mà timi căm ghét là mô
+  - mày không thích làm gì vào chủ nhật
+  - bạn căm ghét uống nước gì
+  - timi ghét làm gì vào mỗi tối
+  - m không thích làm gì vào mỗi sáng
+  - timi không thích làm gì vào thứ 7 chủ nhật
+  - căm ghét uống nước gì
+  - m không thích điều gì
+  - bạn không thích làm gì vào mỗi tối
+  - mày căm ghét ăn món gì
+  - em không thích làm gì vào mùa hè
+  - cậu căm ghét điều gì hở
+  - điều mà em không thích là
+  - bạn có sợ bóng đêm không
+  - mày ghét làm gì vào mỗi tối
+  - timi ghét làm gì vào sáng sớm
+  - điều khiến cậu cảm thấy ghét là nào

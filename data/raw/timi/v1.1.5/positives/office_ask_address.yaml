@@ -1,0 +1,457 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: office_ask_address
+  examples:
+  - cơ sở chính của công ty tại đâu
+  - công ty có bao nhiêu chi nhánh
+  - '[f tech](work_unit) tại đâu'
+  - tìm cho tớ số nhà công ty với ạ
+  - '[ftech](work_unit) có trụ sở ở [Na Uy](location) không?'
+  - công ty ở đâu
+  - công ty có văn phòng chính ở đâu
+  - những trụ sở của công ty nơi đâu
+  - chi nhánh công ty mình tại đâu mầy
+  - cho tớ số đường công ty
+  - số nhà văn phòng của công ty ở đâu
+  - cho tớ xin số nhà tại [LS](location)
+  - công ty tôi có tổng cộng bao nhiêu chi nhánh vậy
+  - có vị trí công ty ở [hn](location) ko mình xin
+  - '[f tech](work_unit) toạ lạc đâu tại [hn?](location)'
+  - '[hà nam](location) đâu rứa'
+  - số đường công ty là gì
+  - thế còn văn phòng [thanh hóa](location) ở mô
+  - số đường [cty công nghệ và gia đình](work_unit) tại đâu
+  - chi nhánh [hcm](location) ở đâu
+  - địa điểm làm việc tại [Canada](location) của [f tech](work_unit) ở đâu
+  - mầy cho mình xin chỗ công ty ở [Việt Nam](location)
+  - công ty có số nhà là gì
+  - số nhà công ty nơi đâu
+  - Tại [hn](location) công ty có địa chỉ là gì
+  - địa điểm làm việc ở [thủ đức](location)
+  - địa chỉ [ftech](work_unit) chi nhánh [NB?](location)
+  - địa chỉ công ty là gì
+  - số chi nhánh của công ty là bao nhiêu
+  - tôi tìm địa chỉ công ty [f-tech](work_unit)
+  - công ty ở đâu hả bot
+  - công ty mình ởđâu đó? em
+  - công ty có số đường là gì
+  - công ty mình có bao nhiêu chi nhánh đó? bot
+  - số đường văn phòng của công ty là gì
+  - Ở [bến tre](location) [f tech](work_unit) có trụ sở ko?
+  - cho mình xin số đường [ftech](work_unit) tại [Việt Nam](location)
+  - '[f tech](work_unit) có trụ sở nơi [củ chi](location) ko'
+  - trụ sở chính [ftech](work_unit) nơi đâu
+  - công ty có cơ sở ở đâu
+  - cho anh xin địa chỉ [TV](location) để gặp trực tiếp
+  - văn phòng chính của công ty ở đâu
+  - công ty có mấy trụ sở hả bạn
+  - '[ftech](work_unit) ở đâu thế'
+  - tìm cho tôi số đường công ty với ạ
+  - '[f tech](work_unit) có cơ sở tại [hcm](location) ko?'
+  - công ty nơi đâu
+  - công ty có văn phòng chính nơi đâu
+  - những chi nhánh của công ty nơi đâu
+  - chi nhánh công ty mình nơi đâu bạn
+  - cho tớ số đường cty
+  - địa chỉ văn phòng của công ty là gì
+  - cho xin số nhà nơi [hn](location)
+  - công ty tớ có tổng cộng bao nhiêu chi nhánh vậy hả
+  - có vị trí công ty ở [hcm](location) ko mình xin
+  - '[ftech](work_unit) toạ lạc đâu tại [hồ chí minh?](location)'
+  - '[hà nội](location) đâu rứa'
+  - số đường công ty nơiđâu
+  - thế còn chi nhánh [BN](location) ở mô
+  - địa chỉ [công nghệ và gia đình](work_unit) tại đâu
+  - văn phòng [hậu giang](location) tại đâu
+  - địa chỉ làm việc tại [đất Việt](location) của [f tech](work_unit) ở đâu
+  - bạn cho mình xin chỗ công ty nơi [huế](location)
+  - công ty có số đường tại đâu
+  - địa chỉ của công ty là nào
+  - Tại [đn](location) công ty có địa chỉ là gì
+  - địa chỉ làm việc ở [VL](location)
+  - số đường [ftech](work_unit) văn phòng [pắc pó?](location)
+  - số nhà công ty [f-tech](work_unit) tại đâu
+  - số cơ sở của công ty là bao nhiêu
+  - mình tìm số nhà công ty [ftech](work_unit)
+  - công ty nơi đâu hả m
+  - công ty mình tạiđâu đó? mày
+  - công ty có địa chỉ là gì
+  - công ty mình có bao nhiêu cơ sở đó? m
+  - địa chỉ trụ sở của công ty là gì
+  - Ở [hcm](location) [f-tech](work_unit) có cơ sở ko?
+  - cho xin địa chỉ [f tech](work_unit) ở [miền bắc](location)
+  - '[f tech](work_unit) có trụ sở ở [bắc trung bộ](location) ko'
+  - trụ sở chính [f-tech](work_unit) tại đâu
+  - công ty có văn phòng tại đâu
+  - cho tôi xin số nhà [đất Việt](location) để gặp trực tiếp
+  - văn phòng chính của công ty có số nhà là gì
+  - công ty có bao nhiêu văn phòng hả
+  - '[f tech](work_unit) nơi đâu thế'
+  - tìm cho mình địa chỉ công ty với ạ
+  - '[f-tech](work_unit) có cơ sở ở [Macau](location) ko?'
+  - công ty tại đâu
+  - công ty có văn phòng chính tại đâu
+  - những chi nhánh của công ty tại đâu
+  - trụ sở công ty mình nơi đâu mày
+  - cho tôi địa chỉ công ty
+  - số đường văn phòng của công ty là nào
+  - cho xin số đường nơi [hà nội](location)
+  - công ty tớ có tổng cộng bao nhiêu chi nhánh vậy
+  - có vị trí công ty ở [củ chi](location) ko mình xin
+  - '[f-tech](work_unit) toạ lạc đâu tại [VL?](location)'
+  - '[HY](location) đâu rứa'
+  - địa chỉ công ty nơiđâu
+  - thế còn văn phòng [đà nẵng](location) ở mô
+  - số nhà [cty công nghệ và gia đình](work_unit) nơi đâu
+  - cơ sở [sài gòn](location) ở đâu
+  - địa điểm làm việc tại [TH](location) của [f-tech](work_unit) ở đâu
+  - ' cho mình xin vị trí công ty tại [hn](location)'
+  - công ty có số đường ở đâu
+  - địa chỉ của công ty mình tại đâu
+  - Tại [Thái Lan](location) công ty có địa chỉ là gì
+  - địa chỉ làm việc ở [Singapore](location)
+  - số đường [ftech](work_unit) trụ sở [HY?](location)
+  - số đường công ty [f-tech](work_unit) nơi đâu
+  - số văn phòng của công ty là bao nhiêu
+  - mình tìm số đường công ty [ftech](work_unit)
+  - công ty tại đâu hả m
+  - công ty mình tạiđâu đó? bạn
+  - công ty mình có bao nhiêu trụ sở đó? timi
+  - số nhà văn phòng của công ty là gì
+  - Ở [thủ đức](location) [f tech](work_unit) có chi nhánh không?
+  - cho xin số đường [f-tech](work_unit) nơi [TV](location)
+  - '[f tech](work_unit) có cơ sở nơi [VL](location) không'
+  - trụ sở chính [ftech](work_unit) tại đâu
+  - công ty có chi nhánh ở đâu
+  - cho chú xin số nhà [BN](location) để gặp trực tiếp
+  - cơ sở chính của công ty có số đường là gì
+  - công ty có mấy chi nhánh bạn
+  - '[f tech](work_unit) ở đâu thế'
+  - tìm cho tớ số đường công ty với ạ
+  - '[f-tech](work_unit) có văn phòng nơi [HD](location) ko?'
+  - công ty có trụ sở chính ở đâu
+  - những văn phòng của công ty nơi đâu
+  - văn phòng công ty mình ở đâu mày
+  - cho mình địa chỉ công ty
+  - số nhà văn phòng của công ty nơi đâu
+  - cho xin địa chỉ ở [hn](location)
+  - công ty mình có tổng cộng bao nhiêu văn phòng vậy
+  - có vị trí công ty ở [hà nội](location) không mình xin
+  - '[ftech](work_unit) toạ lạc đâu tại [hn?](location)'
+  - '[Nhật Bản](location) đâu'
+  - số nhà công ty là gì
+  - thế còn chi nhánh [hcm](location) ở mô
+  - số nhà [công nghệ và gia đình](work_unit) tại đâu
+  - văn phòng [Việt Nam](location) ở đâu
+  - địa điểm làm việc tại [đồng bằng sông cưu long](location) của [f-tech](work_unit)
+    ở đâu
+  - mày cho mình xin vị trí công ty tại [VL](location)
+  - công ty có số nhà ở đâu
+  - số nhà của công ty tại đâu
+  - Tại [tây nam bộ](location) công ty có địa chỉ là gì
+  - địa điểm làm việc ở [VN](location)
+  - số đường [f-tech](work_unit) trụ sở [huế?](location)
+  - số nhà công ty [f tech](work_unit) ở đâu
+  - số trụ sở của công ty là bao nhiêu
+  - mình tìm số đường công ty [f-tech](work_unit)
+  - công ty nơi đâu hả em
+  - công ty mình ởđâu đó? mầy
+  - công ty mình có bao nhiêu trụ sở đó? m
+  - số nhà trụ sở của công ty là gì
+  - Ở [hcm](location) [f tech](work_unit) có trụ sở không?
+  - cho mình xin số đường [f tech](work_unit) nơi [Tràng An](location)
+  - '[f-tech](work_unit) có chi nhánh tại [hà nội](location) không'
+  - trụ sở chính [f-tech](work_unit) ở đâu
+  - công ty có chi nhánh tại đâu
+  - cho tôi xin số nhà [hn](location) để gặp trực tiếp
+  - chi nhánh chính của công ty tại đâu
+  - công ty có bao nhiêu văn phòng bot
+  - '[f-tech](work_unit) nơi đâu thế'
+  - tìm cho mình số đường công ty với ạ
+  - '[f-tech](work_unit) có cơ sở nơi [hn](location) ko?'
+  - công ty có trụ sở chính tại đâu
+  - những trụ sở của công ty ở đâu
+  - cơ sở công ty mình tại đâu bạn
+  - cho tôi số đường cty
+  - số nhà văn phòng của công ty là nào
+  - cho tớ xin số đường ở [mộc châu](location)
+  - công ty tớ có tổng cộng bao nhiêu chi nhánh hả
+  - có vị trí công ty ở [quảng ngãi](location) ko mình xin
+  - '[f-tech](work_unit) toạ lạc đâu tại [gia lai?](location)'
+  - '[đồng bằng sông hồng](location) đâu rứa'
+  - địa chỉ công ty ởđâu
+  - thế còn trụ sở [sài gòn](location) ở mô
+  - địa chỉ [công nghệ và gia đình](work_unit) ở đâu
+  - cơ sở [VN](location) nơi đâu
+  - địa điểm làm việc tại [VL](location) của [f-tech](work_unit) ở đâu
+  - ' cho mình xin địa điểm công ty tại [kon tum](location)'
+  - công ty có số nhà nơi đâu
+  - số đường của công ty mình nơi đâu
+  - Tại [hn](location) công ty có địa điểm là gì
+  - địa điểm làm việc ở [TV](location)
+  - địa chỉ [ftech](work_unit) văn phòng [hồ chí minh?](location)
+  - địa chỉ công ty [f tech](work_unit) là gì
+  - tôi tìm số đường công ty [f-tech](work_unit)
+  - công ty ở đâu hả timi
+  - công ty mình tạiđâu đó? m
+  - công ty mình có bao nhiêu cơ sở đó? mày
+  - số đường trụ sở của công ty là gì
+  - Ở [miền bắc](location) [ftech](work_unit) có văn phòng không?
+  - cho tớ xin địa chỉ [f-tech](work_unit) tại [LS](location)
+  - '[f tech](work_unit) có văn phòng nơi [nam trung bộ](location) không'
+  - trụ sở chính [f tech](work_unit) tại đâu
+  - công ty có chi nhánh nơi đâu
+  - cho mình xin địa chỉ [bạc liệu](location) để gặp trực tiếp
+  - cơ sở chính của công ty có địa chỉ là gì
+  - công ty có mấy văn phòng em
+  - '[ftech](work_unit) tại đâu'
+  - tìm cho tôi địa chỉ công ty với ạ
+  - '[ftech](work_unit) có văn phòng tại [dn](location) không?'
+  - công ty có trụ sở chính nơi đâu
+  - những trụ sở của công ty tại đâu
+  - cơ sở công ty mình nơi đâu cậu
+  - cho tớ số nhà công ty
+  - số đường văn phòng của công ty nơi đâu
+  - cho mình xin địa chỉ nơi [Đảo Nam Du](location)
+  - công ty mình có tổng cộng bao nhiêu văn phòng hả
+  - có vị trí công ty ở [đồng văn](location) ko mình xin
+  - '[f-tech](work_unit) toạ lạc đâu tại [hn?](location)'
+  - '[VN](location) đâu rứa'
+  - số đường công ty ởđâu
+  - thế còn trụ sở [dn](location) ở mô
+  - số nhà [công nghệ và gia đình](work_unit) là gì
+  - văn phòng [hà nam](location) tại đâu
+  - địa điểm làm việc tại [lâm đồng](location) của [f tech](work_unit) ở đâu
+  - ' cho mình xin vị trí công ty nơi [HY](location)'
+  - công ty có địa chỉ nơi đâu
+  - số đường của công ty là nào
+  - Tại [miền tây](location) công ty có địa chỉ là gì
+  - địa điểm làm việc ở [hn](location)
+  - số đường [f tech](work_unit) văn phòng [đông bắc bộ?](location)
+  - số đường công ty [f tech](work_unit) ở đâu
+  - tôi tìm số đường công ty [f tech](work_unit)
+  - công ty ở đâu hả mầy
+  - công ty mình ởđâu đó? bạn
+  - công ty mình có bao nhiêu chi nhánh đó? timi
+  - Ở [sài gòn](location) [f-tech](work_unit) có văn phòng không?
+  - cho tớ xin địa chỉ [f-tech](work_unit) tại [đất Việt](location)
+  - '[f-tech](work_unit) có văn phòng ở [Singapore](location) không'
+  - trụ sở chính [f tech](work_unit) nơi đâu
+  - công ty có trụ sở ở đâu
+  - cho tớ xin số đường [đồng bằng sông cưu long](location) để gặp trực tiếp
+  - cơ sở chính của công ty ở đâu
+  - công ty có bao nhiêu văn phòng
+  - '[f tech](work_unit) ở đâu'
+  - tìm cho mình số nhà công ty với ạ
+  - '[f-tech](work_unit) có chi nhánh tại [hà nội](location) ko?'
+  - những cơ sở của công ty tại đâu
+  - cơ sở công ty mình nơi đâu m
+  - cho mình địa chỉ cty
+  - địa chỉ văn phòng của công ty nơi đâu
+  - cho xin số nhà nơi [Đảo Nam Du](location)
+  - công ty mình có tổng cộng bao nhiêu chi nhánh vậy
+  - có vị trí công ty ở [ninh bình](location) ko mình xin
+  - '[f tech](work_unit) toạ lạc đâu tại [HY?](location)'
+  - '[Thái](location) đâu rứa'
+  - số nhà công ty nơiđâu
+  - thế còn chi nhánh [đồng bằng bắc bộ](location) ở mô
+  - số đường [công nghệ và gia đình](work_unit) nơi đâu
+  - trụ sở [đn](location) nơi đâu
+  - địa chỉ làm việc tại [LS](location) của [ftech](work_unit) ở đâu
+  - timi cho mình xin địa điểm công ty ở [sài gòn](location)
+  - công ty có số nhà tại đâu
+  - số nhà công ty mình nơi đâu
+  - Tại [Việt Nam](location) công ty có địa điểm là gì
+  - địa điểm làm việc ở [VL](location)
+  - số đường [f tech](work_unit) chi nhánh [VN?](location)
+  - số đường công ty [ftech](work_unit) là gì
+  - tớ tìm địa chỉ công ty [f tech](work_unit)
+  - công ty nơi đâu hả bạn
+  - công ty mình ởđâu đó? mày
+  - công ty mình có bao nhiêu văn phòng đó? em
+  - Ở [tây nam bộ](location) [ftech](work_unit) có chi nhánh không?
+  - cho mình xin số đường [f tech](work_unit) ở [hà nội](location)
+  - '[f-tech](work_unit) có cơ sở tại [thủ đức](location) ko'
+  - trụ sở chính [f-tech](work_unit) nơi đâu
+  - công ty có cơ sở tại đâu
+  - cho c xin số đường [hn](location) để gặp trực tiếp
+  - trụ sở chính của công ty tại đâu
+  - công ty có mấy văn phòng
+  - '[ftech](work_unit) ở đâu'
+  - tìm cho tớ địa chỉ công ty với ạ
+  - '[ftech](work_unit) có văn phòng ở [gia lai](location) ko?'
+  - những cơ sở của công ty ở đâu
+  - trụ sở công ty mình nơi đâu cậu
+  - cho tớ địa chỉ cty
+  - số nhà văn phòng của công ty tại đâu
+  - cho anh xin số đường tại [hà tĩnh](location)
+  - công ty tôi có tổng cộng bao nhiêu chi nhánh hả
+  - có vị trí công ty ở [LS](location) ko mình xin
+  - '[f-tech](work_unit) toạ lạc đâu tại [sài gòn?](location)'
+  - '[hang sơn đoòng](location) đâu rứa'
+  - số đường công ty tạiđâu
+  - thế còn văn phòng [hcm](location) ở mô
+  - số nhà [công ty công nghệ và gia đình](work_unit) tại đâu
+  - chi nhánh [TV](location) nơi đâu
+  - địa chỉ làm việc tại [hn](location) của [f-tech](work_unit) ở đâu
+  - m cho mình xin địa chỉ công ty nơi [côn đảo](location)
+  - công ty có địa chỉ tại đâu
+  - số nhà của công ty mình là gì
+  - Tại [phú yên](location) công ty có địa điểm là gì
+  - địa chỉ làm việc ở [QB](location)
+  - địa chỉ [f tech](work_unit) trụ sở [miền trung?](location)
+  - địa chỉ công ty [f-tech](work_unit) là gì
+  - tôi tìm số đường công ty [ftech](work_unit)
+  - công ty nơi đâu hả bot
+  - công ty mình tạiđâu đó? timi
+  - công ty mình có bao nhiêu văn phòng đó? m
+  - Ở [đn](location) [f-tech](work_unit) có cơ sở ko?
+  - cho xin địa chỉ [f tech](work_unit) nơi [tây nam bộ](location)
+  - '[ftech](work_unit) có văn phòng ở [hn](location) ko'
+  - trụ sở chính [f tech](work_unit) ở đâu
+  - công ty có văn phòng ở đâu
+  - cho em xin địa chỉ [hcm](location) để gặp trực tiếp
+  - chi nhánh chính của công ty nơi đâu
+  - công ty có mấy chi nhánh hả
+  - '[f-tech](work_unit) ở đâu'
+  - tìm cho tôi số nhà công ty với ạ
+  - '[f tech](work_unit) có trụ sở ở [hcm](location) ko?'
+  - những cơ sở của công ty nơi đâu
+  - trụ sở công ty mình ở đâu cậu
+  - cho tớ số nhà cty
+  - địa chỉ văn phòng của công ty là nào
+  - cho tớ xin số đường ở [bình thuận](location)
+  - công ty tớ có tổng cộng bao nhiêu văn phòng vậy
+  - có vị trí công ty ở [hưng yên](location) ko mình xin
+  - '[f-tech](work_unit) toạ lạc đâu tại [hà nội?](location)'
+  - '[hcm](location) đâu'
+  - số nhà công ty ởđâu
+  - thế còn trụ sở [hn](location) ở mô
+  - địa chỉ [cty công nghệ và gia đình](work_unit) là gì
+  - văn phòng [tây nguyên](location) tại đâu
+  - địa điểm làm việc tại [vĩnh long](location) của [f tech](work_unit) ở đâu
+  - ' cho mình xin địa chỉ công ty nơi [bắc trung bộ](location)'
+  - công ty có số đường nơi đâu
+  - số đường công ty nơi đâu
+  - Tại [hà nội](location) công ty có địa chỉ là gì
+  - địa chỉ làm việc ở [Tam đảo](location)
+  - số đường [f-tech](work_unit) văn phòng [LS?](location)
+  - số đường công ty tại đâu
+  - mình tìm số nhà công ty [f tech](work_unit)
+  - công ty ở đâu hả m
+  - công ty mình nơiđâu đó? m
+  - công ty mình có bao nhiêu cơ sở đó? mầy
+  - Ở [Việt Nam](location) [f tech](work_unit) có cơ sở không?
+  - cho xin số nhà [f tech](work_unit) ở [VN](location)
+  - '[f tech](work_unit) có cơ sở nơi [hn](location) ko'
+  - trụ sở chính [ftech](work_unit) ở đâu
+  - công ty có trụ sở tại đâu
+  - cho e xin số đường [QN](location) để gặp trực tiếp
+  - văn phòng chính của công ty có địa chỉ là gì
+  - công ty có mấy chi nhánh hả mầy
+  - '[f-tech](work_unit) tại đâu thế'
+  - '[ftech](work_unit) có trụ sở tại [hn](location) không?'
+  - những văn phòng của công ty ở đâu
+  - cơ sở công ty mình nơi đâu mầy
+  - cho mình số đường cty
+  - địa chỉ văn phòng của công ty ở đâu
+  - cho tớ xin địa chỉ ở [Phan Thiết](location)
+  - công ty mình có tổng cộng bao nhiêu chi nhánh hả
+  - có vị trí công ty ở [cố đô huế](location) ko mình xin
+  - '[ftech](work_unit) toạ lạc đâu tại [hậu giang?](location)'
+  - '[QN](location) đâu rứa'
+  - số nhà công ty tạiđâu
+  - thế còn chi nhánh [miền bắc](location) ở mô
+  - địa chỉ [công ty công nghệ và gia đình](work_unit) là gì
+  - chi nhánh [sài gòn](location) nơi đâu
+  - địa điểm làm việc tại [Australia](location) của [f-tech](work_unit) ở đâu
+  - bạn cho mình xin vị trí công ty nơi [Việt Nam](location)
+  - số nhà của công ty mình ở đâu
+  - Tại [sài gòn](location) công ty có địa chỉ là gì
+  - địa điểm làm việc ở [sa đéc](location)
+  - số nhà [f-tech](work_unit) văn phòng [TH?](location)
+  - số nhà công ty [f-tech](work_unit) là gì
+  - tôi tìm số nhà công ty [f-tech](work_unit)
+  - công ty tại đâu hả bạn
+  - công ty mình nơiđâu đó? timi
+  - công ty mình có bao nhiêu cơ sở đó? bạn
+  - Ở [hà nội](location) [ftech](work_unit) có cơ sở ko?
+  - cho anh xin địa chỉ [f tech](work_unit) tại [hà giang](location)
+  - '[f-tech](work_unit) có trụ sở nơi [huế](location) không'
+  - công ty có văn phòng nơi đâu
+  - cho e xin số nhà [đà nẵng](location) để gặp trực tiếp
+  - chi nhánh chính của công ty ở đâu
+  - công ty có bao nhiêu trụ sở hả mầy
+  - '[f-tech](work_unit) ở đâu thế'
+  - '[f-tech](work_unit) có trụ sở tại [đn](location) ko?'
+  - những chi nhánh của công ty ở đâu
+  - trụ sở công ty mình nơi đâu em
+  - cho tôi số nhà cty
+  - địa chỉ văn phòng của công ty tại đâu
+  - cho anh xin số nhà ở [duyên hải miền trung](location)
+  - công ty tôi có tổng cộng bao nhiêu văn phòng vậy
+  - có vị trí công ty ở [nam trung bộ](location) ko mình xin
+  - '[f tech](work_unit) toạ lạc đâu tại [dn?](location)'
+  - '[bạc liệu](location) đâu rứa'
+  - địa chỉ công ty tạiđâu
+  - thế còn văn phòng [phú quốc](location) ở mô
+  - số đường [công ty công nghệ và gia đình](work_unit) ở đâu
+  - văn phòng [HG](location) ở đâu
+  - địa chỉ làm việc tại [phú yên](location) của [f tech](work_unit) ở đâu
+  - ' cho mình xin vị trí công ty nơi [hcm](location)'
+  - địa chỉ công ty mình là gì
+  - Tại [sài gòn](location) công ty có địa điểm là gì
+  - địa chỉ làm việc ở [NB](location)
+  - địa chỉ [f tech](work_unit) chi nhánh [HY?](location)
+  - số nhà công ty tại đâu
+  - mình tìm địa chỉ công ty [f-tech](work_unit)
+  - công ty tại đâu hả cậu
+  - công ty mình ởđâu đó? m
+  - công ty mình có bao nhiêu văn phòng đó? timi
+  - Ở [đn](location) [f-tech](work_unit) có chi nhánh ko?
+  - cho anh xin số đường [f tech](work_unit) nơi [hcm](location)
+  - '[ftech](work_unit) có trụ sở tại [miền bắc](location) ko'
+  - công ty có cơ sở nơi đâu
+  - cho cô xin số nhà [HG](location) để gặp trực tiếp
+  - trụ sở chính của công ty có số nhà là gì
+  - công ty có mấy cơ sở hả
+  - '[f-tech](work_unit) nơi đâu'
+  - '[f-tech](work_unit) có cơ sở ở [sóc trăng](location) ko?'
+  - những văn phòng của công ty tại đâu
+  - trụ sở công ty mình tại đâu m
+  - cho tôi địa chỉ cty
+  - số đường văn phòng của công ty tại đâu
+  - cho xin địa chỉ nơi [hồ chí minh](location)
+  - công ty tôi có tổng cộng bao nhiêu văn phòng hả
+  - có vị trí công ty ở [đà nẵng](location) ko mình xin
+  - '[f tech](work_unit) toạ lạc đâu tại [đn?](location)'
+  - '[đất Việt](location) đâu'
+  - thế còn văn phòng [hn](location) ở mô
+  - địa chỉ [công ty công nghệ và gia đình](work_unit) nơi đâu
+  - chi nhánh [NB](location) nơi đâu
+  - địa điểm làm việc tại [hcm](location) của [ftech](work_unit) ở đâu
+  - ' cho mình xin địa chỉ công ty nơi [đn](location)'
+  - số đường công ty mình là gì
+  - Tại [hcm](location) công ty có địa điểm là gì
+  - địa điểm làm việc ở [dn](location)
+  - địa chỉ [ftech](work_unit) trụ sở [hà nội?](location)
+  - số nhà công ty [f tech](work_unit) là gì
+  - tớ tìm số nhà công ty [ftech](work_unit)
+  - công ty nơi đâu hả cậu
+  - công ty mình tạiđâu đó? bot
+  - công ty mình có bao nhiêu văn phòng đó? mầy
+  - Ở [tây nam bộ](location) [f tech](work_unit) có cơ sở không?
+  - cho tớ xin địa chỉ [ftech](work_unit) ở [đn](location)
+  - '[ftech](work_unit) có văn phòng tại [QN](location) ko'
+  - công ty có trụ sở nơi đâu
+  - cho mình xin địa chỉ [dn](location) để gặp trực tiếp
+  - trụ sở chính của công ty ở đâu
+  - công ty có bao nhiêu văn phòng hả mầy
+  - '[f-tech](work_unit) tại đâu'
+  - '[f tech](work_unit) có trụ sở ở [đông nam bộ](location) không?'
+  - cơ sở công ty mình ở đâu timi
+  - cho mình số đường công ty
+  - cho xin số đường ở [Việt Nam](location)
+  - công ty tôi có tổng cộng bao nhiêu chi nhánh vậy hả

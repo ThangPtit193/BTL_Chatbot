@@ -1,0 +1,686 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: rec_ask_job_description
+  examples:
+  - '[tts](level_position) thì làm những tasks như nào'
+  - team [hành chính nhân sự](department) làm về những game gì
+  - công việc chính của [fresher](level_position) [development and operations](position)
+    là gì
+  - ' muốn jd [fulltime](level_position) [graphic designer](position)'
+  - kể về job descript tại vị trí [game unity 2d dev](position) cho tôi được ko mầy
+  - bạn ơi, tớ muốn hỏi jd văn phòng [hội an](location)
+  - cho mình hỏi jd của job [odoo develop](position) với nha
+  - level [senior](level_position) có nhiệm vụ thế nào
+  - Cho tớ xin job descript khi ứng tuyển vào vị trí [fullstack developer](position)
+    cái
+  - mô tả công việc ở [đồng văn](location)
+  - nếu apply vị trí [full-time](level_position) tại [f-tech](work_unit) thì làm những
+    nhiệm vụ
+  - tớ xin jd để ứng tuyển vào lĩnh vực [blockchain engineer](position)
+  - cho anh hỏi phòng ban [sản phẩm](department) làm gì vậy
+  - phòng [trung tâm ai](department) chủ yếu là làm việc nào vậy hả
+  - vào công ty sẽ làm gì?
+  - cho em xin info của job [game developer](position) với ạ?
+  - '[hr manager](position) bên bạn làm những gì vậy'
+  - tôi thắc mắc ko biết [tts](level_position) thì làm gì nhỉ
+  - Bạn có thể cung cấp thêm thông tin về [VFX Animations](position) ko?
+  - '[full-time](level_position) [Ruby engineer](position) là ngồi label ảnh thôi
+    phải ko'
+  - vị trí [game 3d](position) là đi sale hả
+  - ' xin jd [thử việc](level_position) [product owners](position)'
+  - nhiệm vụ của team [hạ tầng](department) là nào vậy hả
+  - thông tin vị trí [BG](location)
+  - ' [blockchain engineer](position) có nhiệm vụ gì'
+  - cho tôi hỏi [junior](level_position) [ai](position) làm gì
+  - chức năng của [2d product](position) là gì
+  - '[junior](level_position) [golang dev](position) làm những task gì hả cậu'
+  - '[tts](level_position) tại công ty thì làm những công việc thế nào'
+  - khi [intern](level_position) thì thường làm gì
+  - ' [VFX Animators](position) làm những gì'
+  - bổn phận của mình trong vai trò [cv engineer](position) là gì
+  - phòng [hệ thống cơ sở hạ tầng](department) làm về những gì vậy bot
+  - những chức năng của [junior](level_position) [3d prod](position) là gì
+  - '[trung tâm ai](department) chủ yếu là làm việc nào ạ'
+  - nhiệm vụ chính của team [AI center](department) là gì
+  - ở công ty [ds](position) thì làm gì
+  - công việc của [thực tập sinh](level_position) thì làm những gì
+  - '[thực tập sinh](level_position) [ai research](position) liên quan đến những việc
+    gì'
+  - phòng phòng [AI center](department) làm gì bot
+  - giới thiệu cho mình về job descript của [full time](level_position) bên timi nha
+  - vai trò của tôi nếu được ứng tuyển thành công
+  - mình muốn hỏi jd bên công ty em với
+  - nhiệm vụ chính của bộ phận [HR and Admin](department) liên quan đến gì
+  - anh cần đáp ứng những loại task gì khi làm [react developer](position) hả
+  - bộ phận [product](department) làm những gì
+  - tớ sẽ làm những đầu việc gì với vị trí [thử việc](level_position) [ai](position)
+    ạ
+  - mình muốn hỏi [full-time](level_position) [business analysts](position) làm gì
+    vậy
+  - cho tớ hỏi công việc của phòng [application](department) là nào
+  - ứng tuyển vào công ty [vc corp](work_unit) để làm gì thế
+  - ' [ai](position) có nhiệm vụ liên quan đến gì'
+  - cho chị hỏi vai trò của phòng ban [hạ tầng](department)
+  - tớ muốn biết thông tin về mô tả công việc tại vị trí [thử việc](level_position)
+    [blockchain dev](position) của ĐN nè
+  - mức độ công việc của [pretrain](level_position) như nào
+  - công việc của [svtt](level_position) có khó không
+  - tôi muốn xin job descript!
+  - '[game 2d artist](position) của [f-tech](work_unit) có bổn phận làm gì'
+  - '[intern](level_position) thì làm những tasks ntn'
+  - bộ phận [trung tâm ai](department) làm về những game gì
+  - công việc chính của [senior](level_position) [devops](position) là gì
+  - ' muốn mô tả công việc [fresher](level_position) [db engineer](position)'
+  - kể về mô tả công việc tại vị trí [nv marketing](position) cho tớ đc không mày
+  - bạn ơi, muốn hỏi jd văn phòng [bình thuận](location)
+  - tớ muốn hỏi jd của job [cv researcher](position) với nhe
+  - level [full-time](level_position) có nhiệm vụ như nào
+  - Cho tớ xin mô tả công việc khi ứng tuyển vào vị trí [3d art](position) cái
+  - mô tả công việc ở [VL](location)
+  - nếu apply vị trí [junior](level_position) tại [f-tech](work_unit) thì làm những
+    công việc
+  - tôi xin mô tả công việc để ứng tuyển vào lĩnh vực [devops](position)
+  - cho mình hỏi team [sản phẩm](department) làm gì vậy
+  - team [platform](department) chủ yếu là làm nào hả
+  - cho em xin info của job [business analyst](position) với ạ?
+  - '[data engineer](position) bên bạn làm những gì vậy'
+  - tớ thắc mắc ko biết [fresher](level_position) thì làm gì nhể
+  - Bạn có thể cung cấp thêm thông tin về [VFX Animators](position) ko?
+  - '[thử việc](level_position) [development and operations](position) là ngồi label
+    ảnh thôi phải ko'
+  - vị trí [3d product](position) là đi sale hả
+  - ' xin jd [junior](level_position) [soạn nội dung giáo dục](position)'
+  - task của phòng [trung tâm ai](department) là gì
+  - thông tin vị trí [sapa](location)
+  - ' [vẽ 3d](position) có nhiệm vụ gì'
+  - cho tôi hỏi [fresher](level_position) [ai engineering](position) làm gì vậy
+  - vai trò chính của [graphic designers](position) là gì
+  - '[fresher](level_position) [hoa hậu](position) làm những công việc gì hả em'
+  - '[thực tập sinh](level_position) tại công ty thì làm những công việc như thế nào'
+  - khi [svtt](level_position) thì thường làm gì trong công ty
+  - '[fresher](level_position) [ja-va dev](position) làm những gì timi'
+  - bổn phận của tôi trong vai trò [product owners](position) là gì
+  - phòng [application](department) làm về những gì vậy timi
+  - những vai trò của [junior](level_position) [soạn nội dung giáo dục](position)
+    là gì
+  - '[AI center](department) chủ yếu là làm việc nào ạ'
+  - chức năng chính của [trung tâm ai](department) là gì
+  - ở công ty [junior](level_position) [fe dev](position) thì làm gì
+  - công việc của [tts](level_position) thì làm những gì
+  - '[pre-senior](level_position) [ai engineering](position) liên quan đến những việc
+    gì'
+  - phòng phòng [sản phẩm](department) làm gì bot
+  - giới thiệu cho tớ về mô tả công việc của [thử việc](level_position) bên mày nhe
+  - cho tớ hỏi jd bên công ty em với
+  - task của phòng ban [product](department) liên quan đến gì
+  - chị cần hoàn thành những loại nhiệm vụ gì khi làm [db engineering](position) vậy
+  - bộ phận [trung tâm ai](department) làm về những gì
+  - tớ sẽ làm những đầu việc gì với vị trí [pretrain](level_position) [ai engineering](position)
+    ạ
+  - tớ muốn hỏi [cộng tác viên](level_position) [data engineers](position) làm gì
+  - cho anh hỏi nhiệm vụ của bộ phận [công đoàn](department) là gì
+  - ứng tuyển vào ngân hàng [techcombank](work_unit) để làm gì thế
+  - ' [ai engineer](position) có nhiệm vụ liên quan đến gì'
+  - cho chị hỏi vai trò của bộ phận [game](department)
+  - tôi muốn biết thông tin về mô tả công việc tại vị trí [junior](level_position)
+    [hr manager](position) của ĐN nè
+  - mức độ công việc của [thực tập sinh](level_position) như nào
+  - công việc của [pretrain](level_position) có khó không
+  - mình muốn xin job descript!
+  - '[3d art](position) của [ftech](work_unit) có bổn phận làm gì'
+  - '[tts](level_position) thì làm những task thế nào'
+  - bộ phận [hành chính nhân sự](department) làm về những game gì
+  - công việc chính của [pre-senior](level_position) [ja-va dev](position) là gì
+  - tớ muốn job description [junior](level_position) [product analyst](position)
+  - kể về jd tại vị trí [product analyst](position) cho tôi được không cậu
+  - bạn ơi, muốn hỏi jd văn phòng [QN](location)
+  - mình muốn hỏi jd của job [be dev](position) với nha
+  - ' [thử việc](level_position) có nhiệm vụ như nào'
+  - Cho tớ xin job description khi ứng tuyển vào vị trí [db engineering](position)
+    cái
+  - mô tả công việc ở [đà nẵng](location)
+  - nếu apply vị trí [pretrain](level_position) tại [f tech](work_unit) thì làm những
+    nhiệm vụ
+  - tớ xin job description để ứng tuyển vào lĩnh vực [unity 2d](position)
+  - cho chị hỏi team [kinh doanh](department) làm gì vậy
+  - phòng [trung tâm ai](department) chủ yếu là làm gì vậy
+  - cho em xin info của job [business support thị trường Trung quốc](position) với
+    ạ?
+  - '[game 3d develop](position) bên bạn làm những gì vậy'
+  - tớ thắc mắc không biết [ctv](level_position) thì làm gì nhỉ
+  - Bạn có thể cung cấp thêm thông tin về [game design](position) ko?
+  - '[trainee](level_position) [full stack dev](position) là ngồi label ảnh thôi phải
+    ko'
+  - vị trí [nhân viên soạn nội dung giáo dục](position) là đi sale hả
+  - cho xin mô tả công việc [cộng tác viên](level_position) [full stack](position)
+  - công việc của bộ phận [trung tâm ai](department) là gì
+  - thông tin vị trí [côn đảo](location)
+  - '[fresher](level_position) [pentesters](position) có vai trò gì'
+  - cho tôi hỏi [ai](position) làm gì
+  - vai trò của [junior](level_position) [xử lý ngôn ngữ tự nhiên](position) là gì
+  - '[full-time](level_position) [game 3d unity](position) làm những công việc gì
+    vậy'
+  - '[svtt](level_position) tại công ty thì làm những công việc như nào'
+  - khi [intern](level_position) thì thường làm gì trong công ty
+  - '[fulltime](level_position) [soạn nội dung giáo dục](position) làm những gì vậy
+    bot'
+  - bổn phận của tôi trong vai trò [net developer](position) là thế nào
+  - team [hạ tầng](department) làm những gì vậy
+  - những công việc của [full time](level_position) [nhân viên](position) là gì
+  - '[AI center](department) chủ yếu là làm việc gì ạ'
+  - nhiệm vụ của [trung tâm ai](department) là gì vậy
+  - ở công ty [fresher](level_position) [fe develop](position) thì làm gì
+  - công việc của [svtt](level_position) thì làm những gì
+  - ' [ai research](position) liên quan đến những việc gì'
+  - phòng phòng ban [hr admin](department) làm gì bot
+  - giới thiệu cho mình về jd của [senior](level_position) bên timi nha
+  - tớ muốn hỏi jd bên công ty bot với
+  - task của phòng [hành chính nhân sự](department) liên quan đến gì
+  - tớ cần đáp ứng các loại nhiệm vụ gì khi làm [full stack developer](position) hả
+  - phòng ban [nhân sự](department) làm gì
+  - tôi sẽ làm những đầu việc gì với vị trí [fresher](level_position) [ai](position)
+    ạ
+  - tớ muốn hỏi [game 2d products](position) làm gì
+  - cho tớ hỏi nhiệm vụ của phòng [hr admin](department) là gì
+  - ứng tuyển vào cty [habeco](work_unit) để làm gì thế
+  - '[senior](level_position) [ai engineer](position) có nhiệm vụ liên quan đến gì'
+  - cho tớ hỏi công việc của bộ phận [platform](department)
+  - tớ muốn biết thông tin về mô tả công việc tại vị trí [thử việc](level_position)
+    [natural language processing](position) của ĐN nè
+  - mức độ công việc của [intern](level_position) như thế nào
+  - công việc của [sinh viên thực tập](level_position) có khó không
+  - tớ muốn xin mô tả công việc!
+  - '[game 2d developer](position) của [ftech](work_unit) có bổn phận làm gì'
+  - '[internship](level_position) thì làm những tasks thế nào'
+  - phòng [game và design](department) làm về những game gì
+  - công việc chính của [trainee](level_position) [Tester](position) là gì
+  - mình xin job descript [cộng tác viên](level_position) [react developer](position)
+  - kể về jd tại vị trí [người mẫu](position) cho tôi được ko m
+  - bạn ơi, muốn hỏi jd văn phòng [tây nam bộ](location)
+  - cho tôi hỏi mô tả công việc của job [development and operations](position) với
+    nhe
+  - ' [senior](level_position) có nhiệm vụ thế nào'
+  - Cho tớ xin jd khi ứng tuyển vào vị trí [graphic](position) cái
+  - mô tả công việc ở [miền nam](location)
+  - nếu apply vị trí [junior](level_position) tại [ftech](work_unit) thì làm những
+    task
+  - mình xin mô tả công việc để ứng tuyển vào lĩnh vực [hành chính nhân sự](position)
+  - cho mình hỏi bộ phận [platform](department) làm gì vậy
+  - phòng ban [nhân sự](department) chủ yếu là làm việc nào vậy
+  - cho em xin info của job [game 2d artist](position) với ạ?
+  - '[db engineer](position) bên bạn làm những gì vậy'
+  - mình thắc mắc không biết [junior](level_position) thì làm gì nhể
+  - Bạn có thể cung cấp thêm thông tin về [android](position) ko?
+  - '[senior](level_position) [net](position) là ngồi label ảnh thôi phải ko'
+  - vị trí [DA](position) là đi sale hả
+  - ' xin jd [fresher](level_position) [.net](position)'
+  - task của bộ phận [cơ sở hạ tầng](department) là nào
+  - thông tin vị trí [sài gòn](location)
+  - ' [react native](position) có vai trò gì'
+  - cho mình hỏi [fulltime](level_position) [ai engineering](position) làm gì vậy
+    hả
+  - vai trò chính của [pre-senior](level_position) [pentest](position) là gì
+  - ' [2d prod](position) làm những công việc gì'
+  - '[tts](level_position) tại công ty thì làm những công việc ntn'
+  - khi [pretrain](level_position) thì thường làm gì
+  - '[fresher](level_position) [game 2d product](position) làm những gì hả'
+  - bổn phận của tôi trong vai trò [game 3d prod](position) là thế nào
+  - phòng [AI center](department) làm về gì vậy timi
+  - những vai trò của [thử việc](level_position) [game 2d unity dev](position) là
+    gì
+  - '[trung tâm ai](department) chủ yếu là làm việc gì ạ'
+  - nhiệm vụ chính của [AI center](department) là gì
+  - ở công ty [2d art](position) thì làm gì
+  - công việc của [pretrain](level_position) thì làm những gì
+  - '[fresher](level_position) [ai](position) liên quan đến những việc gì'
+  - phòng phòng [kinh doanh](department) làm gì bot
+  - giới thiệu cho tớ về jd của [thử việc](level_position) bên em nha
+  - cho mình hỏi job descript bên công ty mày với
+  - nhiệm vụ của phòng [business](department) liên quan đến gì
+  - anh cần đáp ứng các loại task gì khi làm [fulltime](level_position) [nv thiết
+    kế nội dung giáo dục](position) vậy hả
+  - team [application](department) làm về gì
+  - ' sẽ làm những đầu việc gì với vị trí [senior](level_position) [ai engineering](position)
+    ạ'
+  - tớ muốn hỏi [ba](position) làm gì
+  - cho tớ hỏi công việc của phòng ban [game và design](department) là nào vậy hả
+  - ứng tuyển vào tập đoàn [CÔNG NGHỆ CMC](work_unit) để làm gì thế
+  - ' [ai engineering](position) có task liên quan đến gì'
+  - cho anh hỏi vai trò của team [sản phẩm](department)
+  - tớ muốn biết thông tin về mô tả công việc tại vị trí [junior](level_position)
+    [ds](position) của ĐN nè
+  - mức độ công việc của [trainee](level_position) ntn
+  - công việc của [intern](level_position) có khó không
+  - tớ muốn xin job descript!
+  - '[ios develop](position) của [ftech](work_unit) có bổn phận làm gì'
+  - '[sinh viên thực tập](level_position) thì làm những tasks như thế nào'
+  - team [trung tâm ai](department) làm về những game gì
+  - công việc chính của [thử việc](level_position) [game developer](position) là gì
+  - ' muốn job description [fulltime](level_position) [Tester](position)'
+  - giới thiệu về jd tại vị trí [game 3d unity dev](position) cho tớ được không
+  - bạn ơi, muốn hỏi jd văn phòng [hn](location)
+  - cho tớ hỏi job descript của job [DA](position) với nhe
+  - ' [full time](level_position) có nhiệm vụ thế nào'
+  - Cho tớ xin mô tả công việc khi ứng tuyển vào vị trí [business analyst](position)
+    cái
+  - mô tả công việc ở [cố đô huế](location)
+  - nếu apply vị trí [junior](level_position) tại [ftech](work_unit) thì làm những
+    nhiệm vụ
+  - tớ xin job descript để ứng tuyển vào lĩnh vực [graphic](position)
+  - cho mình hỏi phòng [business](department) làm gì vậy
+  - team [thu mua](department) chủ yếu là làm nào vậy hả
+  - cho em xin info của job [back-end developer](position) với ạ?
+  - '[người bảo vệ](position) bên bạn làm những gì vậy'
+  - tôi thắc mắc ko biết [senior](level_position) thì làm gì nhể
+  - Bạn có thể cung cấp thêm thông tin về [computer vision engineer](position) không?
+  - '[thử việc](level_position) [ios develop](position) là ngồi label ảnh thôi phải
+    ko'
+  - vị trí [database engineering](position) là đi sale hả
+  - cho xin job descript [thực tập sinh](level_position) [data engineers](position)
+  - task chính của team [kinh doanh](department) là gì vậy
+  - thông tin vị trí [thái bình](location)
+  - ' [system network](position) có vai trò gì'
+  - cho tớ hỏi [ai](position) làm gì hả
+  - vai trò của [hành chính nhân sự](position) là gì
+  - ' [QA Tester](position) làm những công việc gì hả'
+  - '[svtt](level_position) tại công ty thì làm những công việc ntn'
+  - khi [tts](level_position) thì thường làm gì
+  - ' [devops engineer](position) làm những gì hả bạn'
+  - bổn phận của tôi trong vai trò [blockchain develop](position) là gì hả
+  - phòng [hỗ trợ it](department) làm gì vậy
+  - những vai trò của [fresher](level_position) [cv](position) là gì
+  - nhiệm vụ của [AI center](department) là gì vậy hả
+  - ở công ty [thực tập sinh](level_position) [C develop](position) thì làm gì
+  - công việc của [intern](level_position) thì làm những gì
+  - ' [ai engineering](position) liên quan đến những việc gì'
+  - phòng team [Marketing](department) làm gì bot
+  - giới thiệu cho tớ về job descript của [thử việc](level_position) bên bạn nhé
+  - cho tớ hỏi jd bên công ty bạn với
+  - task chính của phòng ban [vệ sinh](department) liên quan đến gì
+  - mình cần đáp ứng những loại nhiệm vụ gì khi làm [hr manager](position) vậy
+  - phòng [platform](department) làm gì
+  - ' sẽ làm những đầu việc gì với vị trí [sinh viên thực tập](level_position) [ai
+    research](position) ạ'
+  - mình muốn hỏi [2d prod](position) làm gì
+  - cho mình hỏi nhiệm vụ của phòng [game & design](department) là gì vậy
+  - ứng tuyển vào công ty [Vingroup](work_unit) để làm gì thế
+  - ' [ai research](position) có nhiệm vụ liên quan đến gì'
+  - cho mình hỏi nhiệm vụ của bộ phận [kinh doanh](department)
+  - mình muốn biết thông tin về mô tả công việc tại vị trí [pre-senior](level_position)
+    [graphic designers](position) của ĐN nè
+  - mức độ công việc của [svtt](level_position) như nào
+  - công việc của [internship](level_position) có khó không
+  - tôi muốn xin mô tả công việc!
+  - '[quản lý nhân sự](position) của [f tech](work_unit) có bổn phận làm gì'
+  - '[thực tập sinh](level_position) thì làm những công việc như thế nào'
+  - phòng ban [HR and Admin](department) làm về những game gì
+  - công việc chính của [full time](level_position) [quản lý nhân sự](position) là
+    gì
+  - ' muốn job description [cộng tác viên](level_position) [product owner](position)'
+  - kể về job descript tại vị trí [PA](position) cho tớ được ko m
+  - bạn ơi, tớ muốn hỏi jd văn phòng [hà nội](location)
+  - cho tớ hỏi job description của job [nhân viên kinh doanh thị trường Trung QUốc](position)
+    với nhé
+  - ' [senior](level_position) có nhiệm vụ ntn'
+  - Cho mình xin job description khi ứng tuyển vào vị trí [game 2d artist](position)
+    cái
+  - mô tả công việc ở [đn](location)
+  - nếu apply vị trí [thử việc](level_position) tại [f tech](work_unit) thì làm những
+    công việc
+  - tớ xin job descript để ứng tuyển vào lĩnh vực [3d prod](position)
+  - cho mình hỏi phòng [game](department) làm gì vậy
+  - phòng [business](department) chủ yếu là làm nào hả
+  - cho em xin info của job [data analysts](position) với ạ?
+  - '[nhân viên soạn nội dung giáo dục](position) bên bạn làm những gì vậy'
+  - tớ thắc mắc không biết [thử việc](level_position) thì làm gì ha
+  - Bạn có thể cung cấp thêm thông tin về [xử lý ngôn ngữ tự nhiên](position) ko?
+  - '[internship](level_position) [VFX Animations](position) là ngồi label ảnh thôi
+    phải ko'
+  - vị trí [data scientist](position) là đi sale hả
+  - cho xin jd [junior](level_position) [cv researcher](position)
+  - nhiệm vụ của phòng ban [sản phẩm](department) là nào hả
+  - thông tin vị trí [hồ chí minh](location)
+  - ' [pentest](position) có nhiệm vụ gì'
+  - cho tôi hỏi [ai engineer](position) làm gì vậy
+  - nhiệm vụ chính của [junior](level_position) [react](position) là gì
+  - ' [devops](position) làm những nhiệm vụ gì bot'
+  - '[sinh viên thực tập](level_position) tại công ty thì làm những công việc như
+    thế nào'
+  - khi [thực tập sinh](level_position) thì thường làm gì
+  - ' [game 3d developer](position) làm những gì'
+  - bổn phận của tôi trong vai trò [unity 2d developer](position) là thế nào
+  - phòng [sản phẩm](department) làm gì vậy cậu
+  - những vai trò của [pre-senior](level_position) [game 3d artist](position) là gì
+  - nhiệm vụ chính của phòng ban [bảo vệ](department) là gì vậy
+  - ở công ty [system network](position) thì làm gì
+  - công việc của [trainee](level_position) thì làm những gì
+  - ' [ai](position) liên quan đến những việc gì'
+  - phòng phòng ban [cơ sở hạ tầng](department) làm gì bot
+  - giới thiệu cho tôi về jd của [cộng tác viên](level_position) bên em nhe
+  - cho tớ hỏi job description bên công ty cậu với
+  - nhiệm vụ chính của phòng ban [application](department) liên quan đến gì
+  - chị cần hoàn thành những loại công việc gì khi làm [game 2d products](position)
+    vậy hả
+  - bộ phận [AI center](department) làm về những gì
+  - tớ sẽ làm những đầu việc gì với vị trí [full time](level_position) [ai research](position)
+    ạ
+  - tớ muốn hỏi [2d prod](position) làm gì
+  - cho chị hỏi nhiệm vụ của phòng ban [application](department) là nào
+  - ứng tuyển vào ngân hàng [vietinbank](work_unit) để làm gì thế
+  - '[thử việc](level_position) [ai research](position) có task liên quan đến gì'
+  - cho tớ hỏi vai trò của bộ phận [AI center](department)
+  - tớ muốn biết thông tin về mô tả công việc tại vị trí [intern](level_position)
+    [blockchain dev](position) của ĐN nè
+  - mức độ công việc của [thực tập sinh](level_position) như thế nào
+  - công việc của [trainee](level_position) có khó không
+  - tớ muốn xin job description!
+  - '[graphic](position) của [f-tech](work_unit) có bổn phận làm gì'
+  - '[thực tập sinh](level_position) thì làm những tasks như nào'
+  - phòng ban [AI center](department) làm về những game gì
+  - công việc chính của [cộng tác viên](level_position) [graphic design](position)
+    là gì
+  - tôi muốn job descript [full time](level_position) [tay vợt chuyền](position)
+  - giới thiệu về mô tả công việc tại vị trí [data engineers](position) cho tớ đc
+    ko bạn
+  - bạn ơi, muốn hỏi jd văn phòng [HY](location)
+  - cho tôi hỏi job description của job [natural language processing](position) với
+    nhe
+  - level [cộng tác viên](level_position) có nhiệm vụ như thế nào
+  - Cho tớ xin job descript khi ứng tuyển vào vị trí [cv engineering](position) cái
+  - mô tả công việc ở [Sing](location)
+  - nếu apply vị trí [fresher](level_position) tại [ftech](work_unit) thì làm những
+    nhiệm vụ
+  - mình xin mô tả công việc để ứng tuyển vào lĩnh vực [vẽ 2d](position)
+  - cho anh hỏi team [business](department) làm gì vậy
+  - phòng [hành chính nhân sự](department) chủ yếu là làm gì vậy hả
+  - cho em xin info của job [2d artist](position) với ạ?
+  - '[game dev](position) bên bạn làm những gì vậy'
+  - mình thắc mắc không biết [fresher](level_position) thì làm gì nhể
+  - Bạn có thể cung cấp thêm thông tin về [ai research](position) ko?
+  - '[junior](level_position) [C++ engineer](position) là ngồi label ảnh thôi phải
+    ko'
+  - vị trí [java developer](position) là đi sale hả
+  - ' xin mô tả công việc [fresher](level_position) [data engineering](position)'
+  - task chính của bộ phận [HR and Admin](department) là gì vậy
+  - thông tin vị trí [tây nam bộ](location)
+  - '[senior](level_position) [data science](position) có nhiệm vụ gì'
+  - cho tôi hỏi [ai engineering](position) làm gì
+  - vai trò chính của [VFX Animators](position) là gì
+  - ' [game 2d unity](position) làm những task gì em'
+  - '[internship](level_position) tại công ty thì làm những công việc như thế nào'
+  - khi [svtt](level_position) thì thường làm gì
+  - '[junior](level_position) [system admin](position) làm những gì m'
+  - bổn phận của mình trong vai trò [quản lý nhân sự](position) là thế nào
+  - bộ phận [AI center](department) làm về những gì vậy timi
+  - những chức năng của [intern](level_position) [game develop](position) là gì
+  - nhiệm vụ của [trung tâm ai](department) là gì vậy hả
+  - ở công ty [golang developer](position) thì làm gì
+  - công việc của [sinh viên thực tập](level_position) thì làm những gì
+  - '[thử việc](level_position) [ai engineer](position) liên quan đến những việc gì'
+  - phòng phòng ban [product](department) làm gì bot
+  - giới thiệu cho mình về jd của [ctv](level_position) bên cậu nhé
+  - cho mình hỏi job description bên công ty timi với
+  - nhiệm vụ chính của team [business](department) liên quan đến gì
+  - mình cần đáp ứng các loại task gì khi làm [senior](level_position) [QA Tester](position)
+    hả
+  - bộ phận [application](department) làm những gì
+  - tớ sẽ làm những đầu việc gì với vị trí [fresher](level_position) [ai engineering](position)
+    ạ
+  - tôi muốn hỏi [blockchain developer](position) làm gì vậy
+  - cho tớ hỏi task của phòng [HR and Admin](department) là gì hả
+  - ứng tuyển vào cty [Vietsoftware](work_unit) để làm gì thế
+  - '[thử việc](level_position) [ai](position) có nhiệm vụ liên quan đến gì'
+  - cho chị hỏi nhiệm vụ của phòng [trung tâm ai](department)
+  - ' muốn biết thông tin về mô tả công việc tại vị trí [pretrain](level_position)
+    [3d artist](position) của ĐN nè'
+  - mức độ công việc của [sinh viên thực tập](level_position) thế nào
+  - công việc của [thực tập sinh](level_position) có khó không
+  - tôi muốn xin job description!
+  - '[cv engineer](position) của [ftech](work_unit) có bổn phận làm gì'
+  - '[trainee](level_position) thì làm những tasks ntn'
+  - phòng ban [kinh doanh](department) làm về những game gì
+  - công việc chính của [intern](level_position) [graphic design](position) là gì
+  - ' xin mô tả công việc [fresher](level_position) [game 3d artist](position)'
+  - kể về job descript tại vị trí [nhân sự](position) cho mình đc ko
+  - bạn ơi, tôi muốn hỏi jd văn phòng [hồ chí minh](location)
+  - cho tớ hỏi job description của job [ios develop](position) với nhe
+  - ' [pre-senior](level_position) có nhiệm vụ như nào'
+  - Cho tớ xin mô tả công việc khi ứng tuyển vào vị trí [development and operations](position)
+    cái
+  - mô tả công việc ở [vĩnh long](location)
+  - nếu apply vị trí [full-time](level_position) tại [f tech](work_unit) thì làm những
+    nhiệm vụ
+  - tôi xin jd để ứng tuyển vào lĩnh vực [2d prod](position)
+  - cho chị hỏi phòng [chăm sóc khách hàng](department) làm gì vậy
+  - team [platform](department) chủ yếu là làm việc gì vậy
+  - cho em xin info của job [DE](position) với ạ?
+  - '[lập trình viên ios](position) bên bạn làm những gì vậy'
+  - mình thắc mắc ko biết [full time](level_position) thì làm gì nhỉ
+  - Bạn có thể cung cấp thêm thông tin về [QA](position) ko?
+  - '[fresher](level_position) [pentesters](position) là ngồi label ảnh thôi phải
+    ko'
+  - vị trí [game 3d prod](position) là đi sale hả
+  - cho xin job description [fresher](level_position) [ai engineering](position)
+  - task chính của phòng ban [AI center](department) là gì vậy
+  - thông tin vị trí [tây bắc bộ](location)
+  - '[pre-senior](level_position) [nhân viên kinh doanh thị trường Trung QUốc](position)
+    có vai trò gì'
+  - cho tớ hỏi [senior](level_position) [ai](position) làm gì
+  - chức năng của [thử việc](level_position) [game 3d develop](position) là gì
+  - ' [game unity 2d](position) làm những nhiệm vụ gì'
+  - '[sinh viên thực tập](level_position) tại công ty thì làm những công việc như
+    nào'
+  - khi [tts](level_position) thì thường làm gì trong công ty
+  - '[junior](level_position) [react-native developer](position) làm những gì hả'
+  - bổn phận của mình trong vai trò [2d artist](position) là gì
+  - team [sản phẩm](department) làm gì vậy
+  - những chức năng của [java dev](position) là gì
+  - vai trò của [AI center](department) là gì
+  - ở công ty [fresher](level_position) [blockchain develop](position) thì làm gì
+  - công việc của [internship](level_position) thì làm những gì
+  - ' [ai engineer](position) liên quan đến những việc gì'
+  - phòng phòng ban [AI center](department) làm gì bot
+  - giới thiệu cho tôi về jd của [junior](level_position) bên mày nha
+  - cho tôi hỏi job descript bên công ty timi với
+  - công việc chính của phòng ban [kiểm toán](department) liên quan đến gì
+  - mình cần hoàn thành những loại nhiệm vụ gì khi làm [QA](position) vậy hả
+  - team [HR and Admin](department) làm gì
+  - tớ sẽ làm những đầu việc gì với vị trí [junior](level_position) [ai](position)
+    ạ
+  - tôi muốn hỏi [hr manager](position) làm gì hả
+  - cho anh hỏi nhiệm vụ của phòng [HR and Admin](department) là gì vậy hả
+  - ứng tuyển vào ngân hàng [acb](work_unit) để làm gì thế
+  - '[fulltime](level_position) [ai engineering](position) có công việc liên quan
+    đến gì'
+  - cho tớ hỏi nhiệm vụ của phòng [thu mua](department)
+  - tớ muốn biết thông tin về mô tả công việc tại vị trí [thử việc](level_position)
+    [product owners](position) của ĐN nè
+  - mức độ công việc của [trainee](level_position) như nào
+  - công việc của [tts](level_position) có khó không
+  - mình muốn xin job description!
+  - '[game unity 3d developer](position) của [f-tech](work_unit) có bổn phận làm gì'
+  - '[trainee](level_position) thì làm những công việc như nào'
+  - phòng ban [hr admin](department) làm về những game gì
+  - công việc chính của [fulltime](level_position) [game 2d prod](position) là gì
+  - tớ muốn jd [junior](level_position) [db engineer](position)
+  - kể về mô tả công việc tại vị trí [data engineers](position) cho tôi được không
+    cậu
+  - bạn ơi, mình muốn hỏi jd văn phòng [Anh](location)
+  - cho tôi hỏi jd của job [lập trình viên fullstack](position) với nhe
+  - ' [thử việc](level_position) có nhiệm vụ như thế nào'
+  - Cho mình xin jd khi ứng tuyển vào vị trí [computer vision](position) cái
+  - mô tả công việc ở [dn](location)
+  - nếu apply vị trí [junior](level_position) tại [f-tech](work_unit) thì làm những
+    task
+  - tớ xin job description để ứng tuyển vào lĩnh vực [game 3d unity develop](position)
+  - cho mình hỏi bộ phận [application](department) làm gì vậy
+  - bộ phận [hành chính nhân sự](department) chủ yếu là làm nào vậy
+  - cho em xin info của job [lập trình viên](position) với ạ?
+  - '[ios](position) bên bạn làm những gì vậy'
+  - tớ thắc mắc ko biết [thử việc](level_position) thì làm gì ha
+  - Bạn có thể cung cấp thêm thông tin về [business analyst](position) ko?
+  - '[pre-senior](level_position) [data scientists](position) là ngồi label ảnh thôi
+    phải ko'
+  - vị trí [game 2d artist](position) là đi sale hả
+  - cho xin job descript [senior](level_position) [ios dev](position)
+  - công việc của phòng ban [application](department) là nào vậy hả
+  - thông tin vị trí [Hà Lan](location)
+  - ' [cv](position) có nhiệm vụ gì'
+  - cho tớ hỏi [ai engineering](position) làm gì
+  - nhiệm vụ của [development and operations](position) là gì
+  - ' [front-end](position) làm những task gì em'
+  - '[svtt](level_position) tại công ty thì làm những công việc như thế nào'
+  - khi [trainee](level_position) thì thường làm gì trong công ty
+  - ' [php dev](position) làm những gì vậy hả'
+  - bổn phận của tôi trong vai trò [data engineering](position) là như thế nào
+  - team [platform](department) làm gì vậy timi
+  - những vai trò của [senior](level_position) [computer vision engineer](position)
+    là gì
+  - nhiệm vụ chính của [AI center](department) là gì hả
+  - ở công ty [game 2d products](position) thì làm gì
+  - '[thử việc](level_position) [ai research](position) liên quan đến những việc gì'
+  - phòng bộ phận [Quan hệ quốc tế](department) làm gì bot
+  - giới thiệu cho mình về job description của [junior](level_position) bên em nha
+  - cho tớ hỏi jd bên công ty bot với
+  - task chính của phòng ban [trung tâm ai](department) liên quan đến gì
+  - anh cần đáp ứng những loại nhiệm vụ gì khi làm [blockchain](position) hả
+  - phòng ban [AI center](department) làm gì
+  - ' sẽ làm những đầu việc gì với vị trí [junior](level_position) [ai engineer](position)
+    ạ'
+  - tớ muốn hỏi [thử việc](level_position) [product analysts](position) làm gì
+  - cho mình hỏi nhiệm vụ của phòng [game & design](department) là nào vậy hả
+  - ứng tuyển vào cty [netfix](work_unit) để làm gì thế
+  - '[full-time](level_position) [ai engineer](position) có nhiệm vụ liên quan đến
+    gì'
+  - cho mình hỏi nhiệm vụ của phòng [platform](department)
+  - ' muốn biết thông tin về mô tả công việc tại vị trí [fresher](level_position)
+    [backend dev](position) của ĐN nè'
+  - mức độ công việc của [pretrain](level_position) như thế nào
+  - tôi muốn xin jd!
+  - '[pentester](position) của [ftech](work_unit) có bổn phận làm gì'
+  - '[intern](level_position) thì làm những task thế nào'
+  - team [hỗ trợ it](department) làm về những game gì
+  - công việc chính của [thử việc](level_position) [graphic designers](position) là
+    gì
+  - ' xin jd [fresher](level_position) [QA](position)'
+  - giới thiệu về job descript tại vị trí [VFX Animators](position) cho tớ đc ko mầy
+  - bạn ơi, muốn hỏi jd văn phòng [hồ chí minh](location)
+  - cho tôi hỏi mô tả công việc của job [fullstack devlop](position) với nha
+  - level [thử việc](level_position) có nhiệm vụ như nào
+  - Cho mình xin job descript khi ứng tuyển vào vị trí [2d prod](position) cái
+  - mô tả công việc ở [hn](location)
+  - nếu apply vị trí [svtt](level_position) tại [f tech](work_unit) thì làm những
+    nhiệm vụ
+  - tôi xin mô tả công việc để ứng tuyển vào lĩnh vực [ios develop](position)
+  - cho tớ hỏi phòng [trung tâm ai](department) làm gì vậy
+  - phòng ban [product](department) chủ yếu là làm việc gì vậy
+  - cho em xin info của job [development and operations](position) với ạ?
+  - '[android developer](position) bên bạn làm những gì vậy'
+  - tôi thắc mắc không biết [junior](level_position) thì làm gì ha
+  - Bạn có thể cung cấp thêm thông tin về [devops](position) ko?
+  - '[pre-senior](level_position) [devops](position) là ngồi label ảnh thôi phải ko'
+  - vị trí [blockchain dev](position) là đi sale hả
+  - ' xin job descript [pre-senior](level_position) [frontend developer](position)'
+  - task của team [AI center](department) là nào hả
+  - thông tin vị trí [dn](location)
+  - '[thử việc](level_position) [react](position) có nhiệm vụ gì'
+  - cho tớ hỏi [ai research](position) làm gì
+  - nhiệm vụ của [hr manager](position) là gì
+  - '[pre-senior](level_position) [ai engineer](position) làm những nhiệm vụ gì bot'
+  - '[trainee](level_position) tại công ty thì làm những công việc ntn'
+  - khi [sinh viên thực tập](level_position) thì thường làm gì
+  - '[senior](level_position) [backend](position) làm những gì'
+  - bổn phận của tôi trong vai trò [Quality Assurance](position) là như nào
+  - phòng ban [sản phẩm](department) làm về những gì vậy
+  - những task của [junior](level_position) [product analysts](position) là gì
+  - vai trò của [trung tâm ai](department) là gì vậy hả
+  - ở công ty [xử lý ngôn ngữ tự nhiên](position) thì làm gì
+  - '[senior](level_position) [ai research](position) liên quan đến những việc gì'
+  - phòng phòng ban [business](department) làm gì bot
+  - giới thiệu cho tớ về mô tả công việc của [tts](level_position) bên mầy nhé
+  - tôi muốn hỏi job descript bên công ty bạn với
+  - công việc chính của bộ phận [kinh doanh](department) liên quan đến gì
+  - chị cần hoàn thành các loại task gì khi làm [pre-senior](level_position) [pentest](position)
+    vậy hả
+  - team [cơ sở hạ tầng](department) làm gì
+  - tớ sẽ làm những đầu việc gì với vị trí [senior](level_position) [ai engineer](position)
+    ạ
+  - tôi muốn hỏi [junior](level_position) [frontend dev](position) làm gì
+  - cho chị hỏi task của bộ phận [hr admin](department) là nào
+  - ứng tuyển vào cty [Đông Tây Promotion](work_unit) để làm gì thế
+  - '[fresher](level_position) [ai engineering](position) có công việc liên quan đến
+    gì'
+  - cho tớ hỏi nhiệm vụ của team [business](department)
+  - ' muốn biết thông tin về mô tả công việc tại vị trí [junior](level_position) [game
+    3d art](position) của ĐN nè'
+  - mức độ công việc của [sinh viên thực tập](level_position) ntn
+  - mình muốn xin jd!
+  - '[game designs](position) của [f-tech](work_unit) có bổn phận làm gì'
+  - '[pretrain](level_position) thì làm những tasks ntn'
+  - team [game và design](department) làm về những game gì
+  - công việc chính của [ctv](level_position) [2d develop](position) là gì
+  - mình xin job description [thử việc](level_position) [game 2d](position)
+  - giới thiệu về job descript tại vị trí [unity 2d](position) cho mình đc ko
+  - bạn ơi, muốn hỏi jd văn phòng [đồng bằng bắc bộ](location)
+  - mình muốn hỏi job description của job [lập trình viên android](position) với nhe
+  - level [full-time](level_position) có nhiệm vụ ntn
+  - Cho tôi xin mô tả công việc khi ứng tuyển vào vị trí [2d art](position) cái
+  - mô tả công việc ở [QB](location)
+  - nếu apply vị trí [tts](level_position) tại [f-tech](work_unit) thì làm những nhiệm
+    vụ
+  - tớ xin job descript để ứng tuyển vào lĩnh vực [nhân viên kinh doanh thị trường
+    Trung QUốc](position)
+  - cho anh hỏi bộ phận [bảo vệ](department) làm gì vậy
+  - phòng [hệ thống cơ sở hạ tầng](department) chủ yếu là làm gì hả
+  - cho em xin info của job [python engineer](position) với ạ?
+  - '[game UI/UX designers](position) bên bạn làm những gì vậy'
+  - tớ thắc mắc ko biết [junior](level_position) thì làm gì ha
+  - Bạn có thể cung cấp thêm thông tin về [game 3d products](position) ko?
+  - '[fresher](level_position) [game 3d product](position) là ngồi label ảnh thôi
+    phải ko'
+  - vị trí [business analyst](position) là đi sale hả
+  - cho xin job description [ctv](level_position) [database engineer](position)
+  - nhiệm vụ của bộ phận [cơ sở hạ tầng](department) là nào
+  - thông tin vị trí [đông bắc bộ](location)
+  - ' [QA](position) có vai trò gì'
+  - cho tôi hỏi [full-time](level_position) [ai research](position) làm gì vậy
+  - nhiệm vụ chính của [unity 3d develop](position) là gì
+  - '[senior](level_position) [hr manager](position) làm những nhiệm vụ gì'
+  - '[tts](level_position) tại công ty thì làm những công việc như nào'
+  - khi [internship](level_position) thì thường làm gì trong công ty
+  - '[pre-senior](level_position) [java develop](position) làm những gì hả'
+  - bổn phận của mình trong vai trò [db engineer](position) là gì hả
+  - bộ phận [nhân sự](department) làm về những gì vậy m
+  - những vai trò của [senior](level_position) [business supporter china](position)
+    là gì
+  - nhiệm vụ của phòng [hành chính nhân sự](department) là gì
+  - ở công ty [ios](position) thì làm gì
+  - '[junior](level_position) [ai](position) liên quan đến những việc gì'
+  - phòng bộ phận [hệ thống cơ sở hạ tầng](department) làm gì bot
+  - giới thiệu cho tôi về mô tả công việc của [thử việc](level_position) bên bạn nhe
+  - tớ muốn hỏi jd bên công ty m với
+  - nhiệm vụ của phòng ban [business](department) liên quan đến gì
+  - chị cần đáp ứng những loại công việc gì khi làm [ctv](level_position) [game 3d](position)
+    vậy
+  - phòng [platform](department) làm về gì
+  - ' sẽ làm những đầu việc gì với vị trí [thử việc](level_position) [ai research](position)
+    ạ'
+  - mình muốn hỏi [senior](level_position) [PO](position) làm gì hả
+  - cho anh hỏi nhiệm vụ của team [kiểm toán](department) là gì
+  - ứng tuyển vào tập đoàn [Vàng bạc Đá quý DOJI](work_unit) để làm gì thế
+  - ' [ai research](position) có task liên quan đến gì'
+  - cho anh hỏi nhiệm vụ của phòng [hành chính nhân sự](department)
+  - ' muốn biết thông tin về mô tả công việc tại vị trí [pre-senior](level_position)
+    [devops](position) của ĐN nè'
+  - mức độ công việc của [svtt](level_position) như thế nào
+  - tớ muốn xin jd!
+  - '[db engineering](position) của [ftech](work_unit) có bổn phận làm gì'
+  - '[trainee](level_position) thì làm những công việc thế nào'
+  - phòng [hr admin](department) làm về những game gì
+  - công việc chính của [fulltime](level_position) [hành chính nhân sự](position)
+    là gì
+  - mình xin jd [senior](level_position) [front end developer](position)
+  - kể về mô tả công việc tại vị trí [fullstack devlop](position) cho tớ đc không
+  - bạn ơi, tớ muốn hỏi jd văn phòng [NB](location)

@@ -1,0 +1,63 @@
+negatives:
+- intent: faq/ood_environment
+  examples:
+  - Chất độc màu da cam huỷ diệt môi trường ở [Macau](location) như thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Mexico](location) như thế nào?
+  - Thực trạng ô nhiễm môi trường nước ở [tây bắc bộ](location) thế nào
+  - Nước ngầm ô nhiễm thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Trung Quốc](location) thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Macau](location) thế nào?
+  - Nước bị ô nhiễm vi sinh vật như thế nào?
+  - các cách khắc phục đối với từng loại ô nhiễm môi trường
+  - Chất độc màu da cam huỷ diệt môi trường ở [Ukraine](location) thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Na Uy](location) như nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Pháp](location) như nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Mĩ](location) như nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Mỹ](location) thế nào?
+  - Thực trạng ô nhiễm môi trường nước ở [tây nguyên](location) thế nào
+  - Hiệu ứng nhà kính bây giờ đãng diễn biến sao rồi
+  - Chất độc màu da cam huỷ diệt môi trường ở [Thái Lan](location) như thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Phần Lan](location) như nào?
+  - Nước bị ô nhiễm vi sinh vật như nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Anh](location) thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Áo](location) thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Hàn Quốc](location) như nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Hàn](location) như thế nào?
+  - Thực trạng ô nhiễm môi trường nước ở [đồng bằng sông hồng](location) như nào
+  - Chất độc màu da cam huỷ diệt môi trường ở [Ấn Độ](location) như nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Armenia](location) như thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Lào](location) thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Úc](location) như thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Singapore](location) thế nào?
+  - Nước bị ô nhiễm vi sinh vật thế nào?
+  - Thực trạng ô nhiễm môi trường nước ở [đông bắc bộ](location) như thế nào
+  - Chất độc màu da cam huỷ diệt môi trường ở [Thổ Nhĩ Kỳ](location) thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Lào](location) như nào?
+  - Sông Lam nước ô nhiễm lặng quá, bốc mùi kinh khủng, h phải làm sao?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Đài Loan](location) như thế nào?
+  - Thực trạng ô nhiễm môi trường nước ở [duyên hải miền trung](location) như nào
+  - Thực trạng ô nhiễm môi trường nước ở [tây nam bộ](location) như nào
+  - Thực trạng ô nhiễm môi trường nước ở [tây nguyên](location) như nào
+  - Thực trạng ô nhiễm môi trường nước ở [tây nam bộ](location) như thế nào
+  - Chất độc màu da cam huỷ diệt môi trường ở [Áo](location) như nào?
+  - Thực trạng ô nhiễm môi trường nước ở [nam trung bộ](location) thế nào
+  - Thực trạng ô nhiễm môi trường nước ở [đông nam bộ](location) thế nào
+  - Thực trạng ô nhiễm môi trường nước ở [đông nam bộ](location) như thế nào
+  - Chất độc màu da cam huỷ diệt môi trường ở [Đan Mạch](location) thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Singapore](location) như nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Campuchia](location) thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Trung Quốc](location) như thế nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Mĩ](location) thế nào?
+  - Thực trạng ô nhiễm môi trường nước ở [tây nam bộ](location) thế nào
+  - Sông Cửu Long nước ô nhiễm lặng quá, bốc mùi kinh khủng, h phải làm sao?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Mĩ](location) như thế nào?
+  - Thực trạng ô nhiễm môi trường nước ở [nam trung bộ](location) như thế nào
+  - Chất độc màu da cam huỷ diệt môi trường ở [Mexico](location) như nào?
+  - Sông Sài Gòn nước ô nhiễm lặng quá, bốc mùi kinh khủng, h phải làm sao?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Mexico](location) thế nào?
+  - Ô nhiễm môi trường mang đến các tác hại nào đến con người
+  - Chất độc màu da cam huỷ diệt môi trường ở [Hong Kong](location) như nào?
+  - các loại ô nhiễm môi trường trên thế giới
+  - Chất độc màu da cam huỷ diệt môi trường ở [Hoa Kỳ](location) như nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Thái Lan](location) như nào?
+  - Chất độc màu da cam huỷ diệt môi trường ở [Nga](location) như thế nào?

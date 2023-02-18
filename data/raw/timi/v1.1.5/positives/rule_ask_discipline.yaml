@@ -1,0 +1,260 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: rule_ask_discipline
+  examples:
+  - mình muốn hỏi về các hình thức kỷ luật của công ty đối với thành viên
+  - công ty có khiển trách việc muộn deadline ko
+  - công ty có khiển trách người khi họ vi phạm kỷ luật không ha
+  - vi phạm nội quy công ty là bị đuổi
+  - công ty có tha thứ việc lỡ deadline không
+  - tôi muốn hỏi về các hình thức kỷ luật của công ty đối với nhân viên
+  - không hoàn thành công việc được giao thì sẽ ntn
+  - trong giờ hành chính chơi game bị phạt thế nào vậy
+  - công ty có tha thứ việc trễ deadline ko
+  - '[ftech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật không nhể'
+  - '[f-tech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật không nhể'
+  - quy chế xử phạt của công ty thế nào đối với các hoạt động vi phạm kỷ luật
+  - không hoàn thành công việc được giao thì sẽ như nào
+  - '[f-tech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật ko nhể'
+  - trễ deadline dự án thì có bị phạt nào không
+  - khi nào thì bị phạt buộc thôi việc vậy
+  - trong giờ hành chính chơi game bị phạt như nào vậy
+  - công ty xử phạt nhân viên khi sai phạm có nặng ko
+  - tôi muốn hỏi về các hình thức xử phạt của công ty đối với thành viên
+  - khi nào thì bị phạt khiển trách
+  - vi phạm nội quy công ty là bị đuổi hả
+  - quy định xử phạt của công ty như thế nào đối với các hành động vi phạm kỷ luật
+  - lỡ deadline dự án thì có bị phạt gì không
+  - thế nào để cân nhắc khung hình phạt
+  - '[f tech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật không nhể'
+  - '[ftech](work_unit) có xử lý gắt gao khi thành viên vi phạm kỷ luật không nhể'
+  - nội quy xử phạt của công ty như nào đối với các hoạt động vi phạm kỷ luật
+  - công ty có những hình thức xử phạt như nào
+  - khi đang làm việc chơi game bị phạt ntn vậy
+  - trong giờ làm chơi game bị phạt thế nào hả
+  - khi nào thì bị phạt cảnh cáo vậy hả
+  - tớ muốn hỏi về các hình thức kỷ luật của công ty đối với thành viên
+  - rule xử phạt của công ty như nào đối với các hoạt động vi phạm kỷ luật
+  - công ty xử phạt nhận sự khi sai phạm có nặng không
+  - công ty sẽ xử phạt như nào đối với các TH vi phạm kỷ luật
+  - '[f tech](work_unit) có xử lý gắt gao khi thành viên vi phạm kỷ luật ko nhỉ'
+  - '[f-tech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật ko nhỉ'
+  - công ty có khiển trách nhân viên khi họ vi phạm kỷ luật không nhỉ
+  - khi đang làm việc chơi game bị phạt như nào vậy
+  - '[ftech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật ko nhể'
+  - quy định xử phạt của công ty như thế nào đối với các hoạt động vi phạm kỷ luật
+  - mình muốn hỏi về các hình thức xử phạt của công ty đối với nhân viên
+  - công ty có khiển trách nhận sự khi họ vi phạm kỷ luật ko nhỉ
+  - rule xử phạt của công ty thế nào đối với các hành vi vi phạm kỷ luật
+  - '[f-tech](work_unit) có xử lý gắt gao khi thành viên vi phạm kỷ luật không nhỉ'
+  - công ty có các hình thức xử phạt thế nào đối với các hành động vi phạm kỷ luật
+  - trong giờ hành chính chơi game bị phạt thế nào hả
+  - quy định xử phạt của công ty thế nào đối với các hoạt động vi phạm kỷ luật
+  - trong giờ làm chơi game bị phạt ntn vậy hả
+  - ko hoàn thành công việc được giao thì sẽ thế nào
+  - công ty xử phạt nhận sự khi sai phạm có nặng ko
+  - trong giờ làm chơi game bị phạt như thế nào hả
+  - công ty có tha thứ việc lỡ deadline ko
+  - tôi muốn hỏi về hình thức xử phạt của công ty đối với các sai phạm của nhân viên
+  - vi phạm rule công ty là bị đuổi
+  - tớ muốn hỏi về hình thức xử phạt của công ty đối với các sai phạm của nhận sự
+  - trường hợp nào thì bị phạt buộc thôi việc vậy hả
+  - '[f-tech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật ko nhỉ'
+  - quy định xử phạt của công ty như nào đối với các hoạt động vi phạm kỷ luật
+  - vi phạm nội quy lao động thì sẽ bị xử phạt thế nào
+  - '[ftech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật ko nhỉ'
+  - '[f-tech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật không ha'
+  - công ty sẽ xử phạt như nào đối với các trường hợp vi phạm kỷ luật
+  - nội quy xử phạt của công ty thế nào đối với các hành vi vi phạm kỷ luật
+  - công ty sẽ xử phạt như thế nào đối với các trường hợp vi phạm kỷ luật
+  - công ty có khiển trách nhân viên khi họ vi phạm kỷ luật không nhể
+  - lỡ deadline dự án thì có bị phạt ko
+  - '[f tech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật không ha'
+  - ko hoàn thành công việc được giao thì sẽ ntn
+  - rule xử phạt của công ty như thế nào đối với các hành động vi phạm kỷ luật
+  - mình muốn hỏi về hình thức xử phạt của công ty đối với các sai phạm của thành
+    viên
+  - cho mình hỏi về hình thức xử phạt của công ty đối với các sai phạm của nhân viên
+  - vi phạm quy định công ty là bị đuổi hả
+  - khi nào thì bị phạt cảnh cáo vậy
+  - công ty sẽ xử phạt ntn đối với các TH vi phạm kỷ luật
+  - '[ftech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật không ha'
+  - quy định xử phạt của công ty ntn đối với các hành động vi phạm kỷ luật
+  - có những hình thức xử phạt ntn
+  - trong giờ làm chơi game bị phạt như nào hả
+  - trường hợp nào thì bị phạt khiển trách hả
+  - '[f tech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật ko nhỉ'
+  - trong giờ hành chính chơi game bị phạt như thế nào vậy hả
+  - nội quy xử phạt của công ty ntn đối với các hoạt động vi phạm kỷ luật
+  - công ty có những hình thức xử phạt như thế nào đối với các hành vi vi phạm kỷ
+    luật
+  - công ty có những hình thức xử phạt thế nào đối với các hành vi vi phạm kỷ luật
+  - công ty xử phạt nhân viên khi sai phạm có nặng không
+  - '[f tech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật ko ha'
+  - quy định xử phạt của công ty thế nào đối với các hành vi vi phạm kỷ luật
+  - công ty có bỏ qua việc muộn deadline không
+  - khi đang làm việc chơi game bị phạt thế nào vậy
+  - '[f-tech](work_unit) có xử lý gắt gao khi thành viên vi phạm kỷ luật ko ha'
+  - công ty có khiển trách nhận sự khi họ vi phạm kỷ luật ko ha
+  - '[f tech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật ko nhể'
+  - công ty có bỏ qua việc trễ deadline ko
+  - bị lỗi có bị phạt gì ko
+  - '[f-tech](work_unit) có xử lý gắt gao khi thành viên vi phạm kỷ luật ko nhỉ'
+  - vi phạm kỷ luật lao động thì sẽ bị xử phạt ntn
+  - công ty xử phạt thành viên khi sai phạm có nặng không
+  - công ty có khiển trách việc lỡ deadline ko
+  - ko hoàn thành công việc được giao thì sẽ như nào
+  - quy chế xử phạt của công ty thế nào đối với các hành vi vi phạm kỷ luật
+  - '[f tech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật ko nhỉ'
+  - đối với các hành vi vi phạm kỷ luật thì sẽ bị những hình phạt nào
+  - công ty có khiển trách thành viên khi họ vi phạm kỷ luật ko nhỉ
+  - công ty có bỏ qua việc muộn deadline ko
+  - khi nào thì bị phạt cảnh cáo
+  - '[ftech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật không nhể'
+  - công ty có các hình thức xử phạt như thế nào
+  - cho tớ hỏi về hình thức xử phạt của công ty đối với các sai phạm của thành viên
+  - quy chế xử phạt của công ty như nào đối với các hành vi vi phạm kỷ luật
+  - '[f-tech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật ko ha'
+  - không hoàn thành công việc được giao thì sẽ như thế nào
+  - tôi muốn hỏi về các hình thức xử phạt của công ty đối với nhân viên
+  - vi phạm nội quy lao động thì sẽ bị xử phạt ntn
+  - trong giờ làm chơi game bị phạt như thế nào vậy
+  - công ty có các hình thức xử phạt ntn đối với các hành động vi phạm kỷ luật
+  - '[f-tech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật không nhỉ'
+  - buộc thôi việc có được coi là hình thức kỷ luật tại công ty không ha
+  - cho mình hỏi về hình thức xử phạt của công ty đối với các sai phạm của người
+  - vi phạm quy chế công ty là bị đuổi
+  - tớ muốn hỏi về các hình thức xử phạt của công ty đối với nhân viên
+  - quy chế xử phạt của công ty ntn đối với các hành động vi phạm kỷ luật
+  - công ty có các hình thức xử phạt như thế nào đối với các hoạt động vi phạm kỷ
+    luật
+  - công ty có những hình thức xử phạt như thế nào
+  - '[ftech](work_unit) có xử lý gắt gao khi thành viên vi phạm kỷ luật ko ha'
+  - công ty có những hình thức xử phạt như thế nào đối với các hành động vi phạm kỷ
+    luật
+  - cho tôi hỏi về hình thức xử phạt của công ty đối với các sai phạm của người
+  - mình muốn hỏi về hình thức xử phạt của công ty đối với các sai phạm của nhận sự
+  - nếu tôi bỏ họp thì bị công ty phạt như nào
+  - '[f tech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật không ha'
+  - muộn deadline dự án thì có bị phạt ko
+  - khi đang làm việc chơi game bị phạt ntn hả
+  - nếu tớ bỏ họp thì bị công ty phạt ntn
+  - vi phạm quy định công ty là bị đuổi hử
+  - '[f-tech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật ko nhể'
+  - '[ftech](work_unit) có xử lý gắt gao khi thành viên vi phạm kỷ luật ko nhể'
+  - '[ftech](work_unit) có xử lý gắt gao khi thành viên vi phạm kỷ luật ko nhỉ'
+  - trường hợp nào thì bị phạt buộc thôi việc
+  - công ty có các hình thức xử phạt thế nào đối với các hành vi vi phạm kỷ luật
+  - nếu tôi bỏ họp thì bị công ty phạt ntn
+  - công ty có những hình thức xử phạt như nào đối với các hoạt động vi phạm kỷ luật
+  - vi phạm quy chế công ty là bị đuổi hử
+  - công ty có khiển trách người khi họ vi phạm kỷ luật ko ha
+  - trong giờ hành chính chơi game bị phạt như thế nào hả
+  - muộn deadline dự án thì có bị phạt nào không
+  - trong giờ làm chơi game bị phạt ntn vậy
+  - tôi muốn hỏi về các hình thức xử phạt của công ty đối với nhận sự
+  - quy chế xử phạt của công ty như thế nào đối với các hoạt động vi phạm kỷ luật
+  - trong giờ hành chính chơi game bị phạt ntn vậy
+  - tớ muốn hỏi về các hình thức kỷ luật của công ty đối với nhân viên
+  - công ty có khiển trách nhận sự khi họ vi phạm kỷ luật không nhỉ
+  - công ty có khiển trách người khi họ vi phạm kỷ luật không nhỉ
+  - trong giờ làm chơi game bị phạt thế nào vậy hả
+  - khi đang làm việc chơi game bị phạt như thế nào vậy hả
+  - '[ftech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật ko nhỉ'
+  - có những hình thức xử phạt như thế nào
+  - trường hợp nào thì bị phạt buộc thôi việc vậy
+  - công ty có các hình thức xử phạt thế nào
+  - quy chế xử phạt của công ty như nào đối với các hành động vi phạm kỷ luật
+  - nếu tớ bỏ họp thì bị công ty phạt như nào
+  - công ty có những hình thức xử phạt như nào đối với các hành vi vi phạm kỷ luật
+  - vi phạm rule công ty là bị đuổi hử
+  - buộc thôi việc có được coi là hình thức kỷ luật tại công ty ko nhỉ
+  - trong giờ hành chính chơi game bị phạt như nào hả
+  - muộn deadline dự án thì có bị phạt gì không
+  - quy định xử phạt của công ty thế nào đối với các hành động vi phạm kỷ luật
+  - mình muốn hỏi về các hình thức kỷ luật của công ty đối với nhận sự
+  - công ty có những hình thức xử phạt thế nào
+  - công ty có khiển trách thành viên khi họ vi phạm kỷ luật ko nhể
+  - '[ftech](work_unit) có xử lý gắt gao khi nhận sự vi phạm kỷ luật ko nhể'
+  - công ty có khiển trách nhân viên khi họ vi phạm kỷ luật ko ha
+  - vi phạm quy chế công ty là bị đuổi hả
+  - nếu mình bỏ họp thì bị công ty phạt như nào
+  - công ty có khiển trách thành viên khi họ vi phạm kỷ luật không nhể
+  - nội quy xử phạt của công ty như nào đối với các hành động vi phạm kỷ luật
+  - '[f tech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật không nhể'
+  - khi nào thì bị phạt cảnh cáo hả
+  - công ty có các hình thức xử phạt ntn đối với các hoạt động vi phạm kỷ luật
+  - buộc thôi việc có được coi là hình thức kỷ luật tại công ty không nhỉ
+  - '[ftech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật ko ha'
+  - '[ftech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật ko ha'
+  - nội quy xử phạt của công ty như thế nào đối với các hành động vi phạm kỷ luật
+  - '[ftech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật ko nhể'
+  - khi đang làm việc chơi game bị phạt ntn vậy hả
+  - khi nào thì bị phạt khiển trách vậy hả
+  - tớ muốn hỏi về các hình thức kỷ luật của công ty đối với người
+  - tôi muốn hỏi về hình thức xử phạt của công ty đối với các sai phạm của nhận sự
+  - muộn deadline dự án thì có bị phạt không
+  - công ty có tha thứ việc muộn deadline ko
+  - mắc lỗi có bị phạt gì không
+  - '[ftech](work_unit) có xử lý gắt gao khi thành viên vi phạm kỷ luật không ha'
+  - có các hình thức xử phạt ntn
+  - cho mình hỏi về hình thức xử phạt của công ty đối với các sai phạm của nhận sự
+  - trễ deadline dự án thì có bị phạt gì ko
+  - tôi muốn hỏi về các hình thức kỷ luật của công ty đối với thành viên
+  - công ty xử phạt người khi sai phạm có nặng ko
+  - nếu tôi bỏ họp thì bị công ty phạt thế nào
+  - '[f-tech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật ko ha'
+  - nội quy xử phạt của công ty như nào đối với các hành vi vi phạm kỷ luật
+  - nếu mình bỏ họp thì bị công ty phạt thế nào
+  - trong giờ làm chơi game bị phạt ntn hả
+  - '[f-tech](work_unit) có xử lý gắt gao khi người vi phạm kỷ luật không nhể'
+  - công ty có khiển trách nhận sự khi họ vi phạm kỷ luật không nhể
+  - công ty có khiển trách thành viên khi họ vi phạm kỷ luật ko ha
+  - vi phạm quy định công ty là bị đuổi
+  - quy chế xử phạt của công ty thế nào đối với các hành động vi phạm kỷ luật
+  - mình muốn hỏi về các hình thức kỷ luật của công ty đối với người
+  - công ty có bỏ qua việc lỡ deadline ko
+  - trong giờ hành chính chơi game bị phạt thế nào vậy hả
+  - vi phạm kỷ luật lao động thì sẽ bị xử phạt như nào
+  - khi đang làm việc chơi game bị phạt như thế nào hả
+  - rule xử phạt của công ty thế nào đối với các hành động vi phạm kỷ luật
+  - cho tớ hỏi về hình thức xử phạt của công ty đối với các sai phạm của nhân viên
+  - khi đang làm việc chơi game bị phạt thế nào vậy hả
+  - nếu tôi bỏ họp thì bị công ty phạt như thế nào
+  - ntn để cân nhắc khung hình phạt
+  - tớ muốn hỏi về hình thức xử phạt của công ty đối với các sai phạm của nhân viên
+  - tôi muốn hỏi về các hình thức kỷ luật của công ty đối với người
+  - trong giờ hành chính chơi game bị phạt như nào vậy hả
+  - khi nào thì bị đuổi khỏi công ty
+  - công ty có khiển trách nhân viên khi họ vi phạm kỷ luật ko nhỉ
+  - vi phạm kỷ luật lao động thì sẽ bị xử phạt như thế nào
+  - có những hình thức xử phạt như nào
+  - trường hợp nào thì bị phạt cảnh cáo vậy
+  - như thế nào để cân nhắc khung hình phạt
+  - khi đang làm việc chơi game bị phạt như nào vậy hả
+  - rule xử phạt của công ty như thế nào đối với các hoạt động vi phạm kỷ luật
+  - '[f tech](work_unit) có xử lý gắt gao khi nhân viên vi phạm kỷ luật ko ha'
+  - công ty có các hình thức xử phạt thế nào đối với các hoạt động vi phạm kỷ luật
+  - công ty có các hình thức xử phạt như nào
+  - quy định xử phạt của công ty ntn đối với các hoạt động vi phạm kỷ luật
+  - trong giờ hành chính chơi game bị phạt như thế nào vậy
+  - phạm lỗi có bị phạt gì không
+  - quy chế xử phạt của công ty như nào đối với các hoạt động vi phạm kỷ luật
+  - khi nào thì bị phạt buộc thôi việc hả
+  - tớ muốn hỏi về hình thức xử phạt của công ty đối với các sai phạm của người
+  - quy định xử phạt của công ty như nào đối với các hành vi vi phạm kỷ luật
+  - công ty có bỏ qua việc lỡ deadline không
+  - vi phạm rule công ty là bị đuổi hả
+  - trong giờ làm chơi game bị phạt như nào vậy hả
+  - cho tôi hỏi về hình thức xử phạt của công ty đối với các sai phạm của nhân viên
+  - lỡ deadline dự án thì có bị phạt không
+  - công ty sẽ xử phạt thế nào đối với các trường hợp vi phạm kỷ luật
+  - tôi muốn hỏi về các hình thức kỷ luật của công ty đối với nhận sự
+  - khi đang làm việc chơi game bị phạt như thế nào vậy
+  - nếu mình bỏ họp thì bị công ty phạt như thế nào
+  - trường hợp nào thì bị đuổi khỏi công ty
+  - quy định xử phạt của công ty như thế nào đối với các hành vi vi phạm kỷ luật
+  - trường hợp nào thì bị phạt khiển trách
+  - công ty có tha thứ việc trễ deadline không

@@ -1,0 +1,256 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: rule_timekeeping_ask_form
+  examples:
+  - '[ftech](work_unit) chấm công cho nhân viên ntn thế'
+  - '[f tech](work_unit) chấm công cho nhận sự như thế nào đó'
+  - '[f-tech](work_unit) vẫn dùng tay để điểm danh cho thành viên luôn hử'
+  - '[ftech](work_unit) chấm công cho nhận sự ntn đó'
+  - '[ftech](work_unit) chấm công cho người như thế nào đó'
+  - '[f tech](work_unit) chấm công cho thành viên như thế nào hả'
+  - tớ nghe bảo [f-tech](work_unit) chấm công bằng gương mặt luôn ạ
+  - '[f-tech](work_unit) vẫn dùng vân để điểm danh cho nhân viên luôn hử'
+  - tôi nghe bảo [f tech](work_unit) chấm công bằng gương mặt luôn ạ
+  - '[ftech](work_unit) vẫn dùng tay để chấm công cho nhận sự luôn ạ'
+  - '[f-tech](work_unit) chấm công cho thành viên thế nào đấy'
+  - '[ftech](work_unit) chấm công cho người như thế nào vậy'
+  - '[f-tech](work_unit) vẫn dùng tay để chấm công cho nhận sự luôn à'
+  - '[ftech](work_unit) chấm công cho nhận sự như nào vậy'
+  - '[f tech](work_unit) yêu cầu quy chế chấm công thế nào'
+  - '[ftech](work_unit) chấm công cho thành viên ntn thế'
+  - '[f tech](work_unit) vẫn dùng vân để điểm danh cho nhận sự luôn ạ'
+  - cậu cho tôi hỏi [f tech](work_unit) chấm công bằng vân tay à
+  - em cho tớ hỏi [ftech](work_unit) chấm công bằng quẹt thẻ à
+  - mình nghe bảo [f-tech](work_unit) chấm công bằng khuôn mặt luôn hử
+  - '[ftech](work_unit) chấm công cho nhân viên như thế nào thế'
+  - bot biết công ty chấm công bằng gì ko
+  - '[f-tech](work_unit) chấm công cho thành viên như thế nào vậy'
+  - '[f-tech](work_unit) dùng hình thức nào để chấm công cho người vậy hả'
+  - '[ftech](work_unit) vẫn dùng tay để chấm công cho nhân viên luôn à'
+  - '[f tech](work_unit) vẫn dùng vân để điểm danh cho nhận sự luôn hả'
+  - tớ nghe bảo [ftech](work_unit) chấm công bằng gương mặt luôn hả
+  - '[ftech](work_unit) dùng hình thức nào để chấm công cho nhân viên vậy'
+  - tớ nghe bảo [ftech](work_unit) chấm công bằng khuôn mặt luôn hử
+  - tớ nghe bảo [f-tech](work_unit) chấm công bằng khuôn mặt luôn à
+  - tôi nghe nói [f tech](work_unit) chấm công bằng khuôn mặt luôn hả
+  - mình nghe bảo [ftech](work_unit) chấm công bằng khuôn mặt luôn hả
+  - mầy cho tôi hỏi [ftech](work_unit) chấm công bằng vân tay à
+  - '[f-tech](work_unit) yêu cầu quy chế chấm công thế nào'
+  - tớ nghe nói [f tech](work_unit) chấm công bằng gương mặt luôn à
+  - timi cho mình hỏi [f tech](work_unit) chấm công bằng vân tay à
+  - '[f tech](work_unit) yêu cầu quy chế chấm công như thế nào'
+  - '[f-tech](work_unit) vẫn dùng tay để điểm danh cho nhân viên luôn hử'
+  - '[f tech](work_unit) chấm công cho nhân viên thế nào đó'
+  - '[f-tech](work_unit) chấm công cho nhân viên như thế nào đấy'
+  - '[f-tech](work_unit) dùng hình thức nào để chấm công cho nhân viên vậy'
+  - '[ftech](work_unit) dùng hình thức nào để chấm công cho người vậy hả'
+  - '[f tech](work_unit) vẫn dùng vân để chấm công cho người luôn ạ'
+  - '[f-tech](work_unit) chấm công cho nhận sự thế nào đó'
+  - tôi nghe nói [ftech](work_unit) chấm công bằng khuôn mặt luôn à
+  - cho tớ hỏi [ftech](work_unit) chấm công bằng quẹt thẻ à
+  - tôi nghe nói [f tech](work_unit) chấm công bằng gương mặt luôn hử
+  - '[f tech](work_unit) vẫn dùng vân để chấm công cho thành viên luôn hử'
+  - '[f tech](work_unit) vẫn dùng tay để điểm danh cho thành viên luôn à'
+  - '[ftech](work_unit) dùng hình thức nào để chấm công cho nhận sự vậy hả'
+  - '[f-tech](work_unit) chấm công cho nhân viên thế nào đấy'
+  - '[ftech](work_unit) chấm công cho thành viên thế nào vậy'
+  - tôi nghe nói [ftech](work_unit) chấm công bằng khuôn mặt luôn hử
+  - mày biết công ty chấm công bằng gì ko
+  - '[f tech](work_unit) vẫn dùng vân để điểm danh cho thành viên luôn à'
+  - '[f-tech](work_unit) vẫn dùng tay để điểm danh cho người luôn à'
+  - tôi nghe nói [f tech](work_unit) chấm công bằng gương mặt luôn hả
+  - bạn cho tôi hỏi [f tech](work_unit) chấm công bằng vân tay à
+  - '[f tech](work_unit) vẫn dùng vân để chấm công cho người luôn hả'
+  - '[f tech](work_unit) vẫn dùng vân để chấm công cho nhận sự luôn à'
+  - bot cho mình hỏi [f-tech](work_unit) chấm công bằng quẹt thẻ à
+  - bạn cho mình hỏi [ftech](work_unit) chấm công bằng quẹt thẻ à
+  - '[ftech](work_unit) dùng hình thức nào để chấm công cho nhân viên vậy hả'
+  - mầy cho mình hỏi [f tech](work_unit) chấm công bằng quẹt thẻ à
+  - bot cho tôi hỏi [f tech](work_unit) chấm công bằng quẹt thẻ à
+  - '[f-tech](work_unit) chấm công cho nhân viên như thế nào hả'
+  - '[ftech](work_unit) vẫn dùng tay để điểm danh cho nhận sự luôn à'
+  - mày cho tớ hỏi [ftech](work_unit) chấm công bằng vân tay à
+  - m cho tôi hỏi [ftech](work_unit) chấm công bằng vân tay à
+  - mình nghe nói [f-tech](work_unit) chấm công bằng khuôn mặt luôn hả
+  - '[f-tech](work_unit) vẫn dùng vân để điểm danh cho người luôn hả'
+  - tớ nghe bảo [f-tech](work_unit) chấm công bằng khuôn mặt luôn hả
+  - '[ftech](work_unit) chấm công cho nhận sự thế nào thế'
+  - '[ftech](work_unit) vẫn dùng vân để chấm công cho nhân viên luôn ạ'
+  - '[ftech](work_unit) vẫn dùng vân để điểm danh cho nhận sự luôn ạ'
+  - '[ftech](work_unit) chấm công cho người thế nào thế'
+  - cho tôi hỏi [ftech](work_unit) chấm công bằng vân tay à
+  - '[f tech](work_unit) yêu cầu quy định chấm công như thế nào'
+  - '[ftech](work_unit) vẫn dùng tay để chấm công cho người luôn hả'
+  - cậu cho tớ hỏi [f-tech](work_unit) chấm công bằng vân tay à
+  - '[f tech](work_unit) vẫn dùng vân để điểm danh cho nhân viên luôn à'
+  - '[f-tech](work_unit) chấm công cho người như thế nào vậy'
+  - công ty chấm công bằng AI ha
+  - '[f tech](work_unit) chấm công cho nhận sự như thế nào đấy'
+  - bot cho mình hỏi [f-tech](work_unit) chấm công bằng vân tay à
+  - mình nghe bảo [f tech](work_unit) chấm công bằng khuôn mặt luôn hả
+  - tớ nghe nói [ftech](work_unit) chấm công bằng gương mặt luôn à
+  - tôi nghe bảo [f-tech](work_unit) chấm công bằng gương mặt luôn à
+  - '[f tech](work_unit) có quy định chấm công bằng vân tay hay quẹt thẻ'
+  - '[f-tech](work_unit) vẫn dùng vân để điểm danh cho thành viên luôn hả'
+  - m cho mình hỏi [f-tech](work_unit) chấm công bằng quẹt thẻ à
+  - tớ nghe bảo [ftech](work_unit) chấm công bằng gương mặt luôn à
+  - '[f tech](work_unit) chấm công cho nhân viên như thế nào hả'
+  - '[ftech](work_unit) vẫn dùng vân để điểm danh cho người luôn hả'
+  - công ty điểm danh bằng vân tay ạ
+  - '[ftech](work_unit) chấm công cho người như thế nào đấy'
+  - cho tớ hỏi [f-tech](work_unit) chấm công bằng quẹt thẻ à
+  - '[f tech](work_unit) vẫn dùng tay để chấm công cho thành viên luôn hử'
+  - cho tớ hỏi [ftech](work_unit) chấm công bằng vân tay à
+  - '[f-tech](work_unit) chấm công cho thành viên thế nào đó'
+  - '[f tech](work_unit) chấm công cho người như nào vậy'
+  - '[f-tech](work_unit) chấm công cho người ntn đó'
+  - '[f-tech](work_unit) chấm công cho người ntn đấy'
+  - '[f-tech](work_unit) yêu cầu quy chế chấm công ntn'
+  - mình nghe bảo [f-tech](work_unit) chấm công bằng gương mặt luôn à
+  - công ty có hình thức chấm công bằng khuôn mặt hay vân tay
+  - '[ftech](work_unit) vẫn dùng tay để chấm công cho thành viên luôn hử'
+  - '[f tech](work_unit) dùng hình thức nào để chấm công cho thành viên vậy'
+  - '[f tech](work_unit) vẫn dùng vân để chấm công cho người luôn à'
+  - mình nghe nói [f-tech](work_unit) chấm công bằng khuôn mặt luôn à
+  - '[f tech](work_unit) chấm công cho thành viên như thế nào vậy'
+  - '[ftech](work_unit) vẫn dùng tay để điểm danh cho người luôn ạ'
+  - '[f tech](work_unit) vẫn dùng vân để chấm công cho thành viên luôn à'
+  - '[f tech](work_unit) yêu cầu rule chấm công ntn'
+  - '[f-tech](work_unit) vẫn dùng vân để chấm công cho nhận sự luôn à'
+  - '[f tech](work_unit) chấm công cho người ntn vậy'
+  - cho mình hỏi [f tech](work_unit) chấm công bằng quẹt thẻ à
+  - '[f tech](work_unit) vẫn dùng tay để chấm công cho người luôn à'
+  - tớ nghe nói [ftech](work_unit) chấm công bằng khuôn mặt luôn ạ
+  - '[f-tech](work_unit) vẫn dùng vân để điểm danh cho nhân viên luôn hả'
+  - '[f tech](work_unit) chấm công cho nhân viên như thế nào vậy'
+  - '[ftech](work_unit) vẫn dùng vân để điểm danh cho thành viên luôn hả'
+  - '[f-tech](work_unit) yêu cầu nội quy chấm công như nào'
+  - thành viên làm tại công ty được chấm công bằng khuôn mặt chứ
+  - cậu cho mình hỏi [f tech](work_unit) chấm công bằng quẹt thẻ à
+  - '[ftech](work_unit) dùng hình thức nào để chấm công cho nhân viên hả'
+  - '[f tech](work_unit) vẫn dùng tay để chấm công cho người luôn hử'
+  - bot cho tôi hỏi [f tech](work_unit) chấm công bằng vân tay à
+  - '[f tech](work_unit) vẫn dùng tay để điểm danh cho nhận sự luôn à'
+  - m cho tớ hỏi [ftech](work_unit) chấm công bằng quẹt thẻ à
+  - '[f-tech](work_unit) yêu cầu quy định chấm công thế nào'
+  - timi cho mình hỏi [ftech](work_unit) chấm công bằng vân tay à
+  - '[f tech](work_unit) dùng hình thức nào để chấm công cho người hả'
+  - '[ftech](work_unit) chấm công cho nhận sự ntn hả'
+  - em cho tôi hỏi [f-tech](work_unit) chấm công bằng vân tay à
+  - '[f tech](work_unit) chấm công cho thành viên ntn đó'
+  - '[ftech](work_unit) vẫn dùng tay để chấm công cho người luôn ạ'
+  - '[f-tech](work_unit) vẫn dùng vân để điểm danh cho người luôn à'
+  - công ty chấm công bằng khuôn mặt hử
+  - bot cho tớ hỏi [f-tech](work_unit) chấm công bằng vân tay à
+  - '[ftech](work_unit) dùng hình thức nào để chấm công cho thành viên vậy'
+  - công ty chấm công bằng sản phẩm của AI nhể
+  - công ty chấm công bằng sản phẩm của Trí tuệ nhân tạo nhỉ
+  - '[f tech](work_unit) vẫn dùng tay để điểm danh cho người luôn hử'
+  - '[ftech](work_unit) chấm công cho thành viên như thế nào hả'
+  - mình nghe bảo [f tech](work_unit) chấm công bằng gương mặt luôn à
+  - '[f tech](work_unit) chấm công cho thành viên ntn hả'
+  - em cho tớ hỏi [f tech](work_unit) chấm công bằng quẹt thẻ à
+  - công ty điểm danh bằng khuôn mặt hử
+  - '[f-tech](work_unit) chấm công cho thành viên như thế nào hả'
+  - mầy cho mình hỏi [f tech](work_unit) chấm công bằng vân tay à
+  - tôi nghe bảo [f tech](work_unit) chấm công bằng khuôn mặt luôn ạ
+  - '[f tech](work_unit) chấm công cho nhân viên như thế nào đó'
+  - '[f tech](work_unit) vẫn dùng vân để điểm danh cho thành viên luôn hả'
+  - mày cho tớ hỏi [f-tech](work_unit) chấm công bằng quẹt thẻ à
+  - '[f-tech](work_unit) chấm công cho nhân viên như thế nào thế'
+  - '[f-tech](work_unit) chấm công cho nhân viên ntn đó'
+  - mình nghe bảo [f-tech](work_unit) chấm công bằng gương mặt luôn hử
+  - tớ nghe bảo [ftech](work_unit) chấm công bằng khuôn mặt luôn ạ
+  - '[ftech](work_unit) chấm công cho người ntn thế'
+  - công ty điểm danh bằng vân tay hử
+  - '[f tech](work_unit) vẫn dùng vân để điểm danh cho thành viên luôn ạ'
+  - '[ftech](work_unit) yêu cầu quy chế chấm công thế nào'
+  - '[f tech](work_unit) chấm công cho người như thế nào thế'
+  - tớ nghe bảo [ftech](work_unit) chấm công bằng khuôn mặt luôn hả
+  - '[f tech](work_unit) yêu cầu quy định chấm công như nào'
+  - mình nghe bảo [f tech](work_unit) chấm công bằng gương mặt luôn ạ
+  - '[ftech](work_unit) vẫn dùng tay để điểm danh cho nhận sự luôn hử'
+  - '[f-tech](work_unit) chấm công cho người như thế nào đấy'
+  - tôi nghe bảo [f tech](work_unit) chấm công bằng gương mặt luôn hả
+  - '[ftech](work_unit) vẫn dùng vân để chấm công cho nhân viên luôn hử'
+  - có mấy cách chấm công của công ty
+  - bạn cho mình hỏi [f tech](work_unit) chấm công bằng quẹt thẻ à
+  - mầy biết công ty chấm công bằng gì ko
+  - '[f-tech](work_unit) chấm công cho người thế nào hả'
+  - cậu biết công ty chấm công bằng gì không
+  - bạn biết công ty chấm công bằng gì ko
+  - tớ nghe nói [ftech](work_unit) chấm công bằng gương mặt luôn hử
+  - '[f-tech](work_unit) chấm công cho nhân viên như nào vậy'
+  - '[f tech](work_unit) chấm công cho nhân viên ntn đó'
+  - '[f tech](work_unit) vẫn dùng tay để điểm danh cho người luôn à'
+  - timi cho mình hỏi [f-tech](work_unit) chấm công bằng vân tay à
+  - '[ftech](work_unit) vẫn dùng tay để chấm công cho nhân viên luôn ạ'
+  - '[f tech](work_unit) chấm công cho người thế nào thế'
+  - '[f tech](work_unit) vẫn dùng tay để chấm công cho thành viên luôn ạ'
+  - '[ftech](work_unit) chấm công cho nhận sự ntn đấy'
+  - '[ftech](work_unit) yêu cầu rule chấm công thế nào'
+  - '[ftech](work_unit) yêu cầu rule chấm công ntn'
+  - timi cho mình hỏi [f tech](work_unit) chấm công bằng quẹt thẻ à
+  - cậu cho mình hỏi [f-tech](work_unit) chấm công bằng quẹt thẻ à
+  - '[f tech](work_unit) vẫn dùng vân để chấm công cho nhân viên luôn hả'
+  - '[f-tech](work_unit) chấm công cho người như nào đấy'
+  - '[f-tech](work_unit) chấm công cho thành viên ntn đó'
+  - '[ftech](work_unit) yêu cầu quy định chấm công thế nào'
+  - '[f tech](work_unit) yêu cầu quy chế chấm công ntn'
+  - '[ftech](work_unit) chấm công cho thành viên như nào đó'
+  - '[ftech](work_unit) chấm công cho nhân viên thế nào vậy'
+  - '[f-tech](work_unit) vẫn dùng vân để chấm công cho người luôn hả'
+  - '[ftech](work_unit) yêu cầu nội quy chấm công thế nào'
+  - '[ftech](work_unit) vẫn dùng vân để điểm danh cho thành viên luôn à'
+  - '[f-tech](work_unit) chấm công cho nhân viên như thế nào đó'
+  - '[f-tech](work_unit) vẫn dùng vân để điểm danh cho thành viên luôn hử'
+  - '[f tech](work_unit) chấm công cho nhận sự ntn thế'
+  - '[f-tech](work_unit) vẫn dùng tay để điểm danh cho nhận sự luôn hử'
+  - m cho tôi hỏi [ftech](work_unit) chấm công bằng quẹt thẻ à
+  - '[f-tech](work_unit) vẫn dùng tay để chấm công cho nhận sự luôn hử'
+  - tớ nghe nói [ftech](work_unit) chấm công bằng gương mặt luôn ạ
+  - '[f-tech](work_unit) vẫn dùng tay để điểm danh cho người luôn ạ'
+  - '[f-tech](work_unit) vẫn dùng tay để chấm công cho người luôn hả'
+  - '[f tech](work_unit) vẫn dùng tay để chấm công cho nhận sự luôn hả'
+  - mày cho tớ hỏi [ftech](work_unit) chấm công bằng quẹt thẻ à
+  - có mấy hình thức chấm công của công ty
+  - '[ftech](work_unit) chấm công cho người như nào đấy'
+  - '[f-tech](work_unit) chấm công cho thành viên thế nào vậy'
+  - '[ftech](work_unit) chấm công cho người như nào vậy'
+  - tôi nghe bảo [f-tech](work_unit) chấm công bằng gương mặt luôn ạ
+  - tớ nghe bảo [f tech](work_unit) chấm công bằng khuôn mặt luôn hử
+  - mình nghe nói [f-tech](work_unit) chấm công bằng khuôn mặt luôn ạ
+  - tớ nghe nói [ftech](work_unit) chấm công bằng khuôn mặt luôn à
+  - cậu cho tớ hỏi [ftech](work_unit) chấm công bằng quẹt thẻ à
+  - tôi nghe bảo [ftech](work_unit) chấm công bằng gương mặt luôn ạ
+  - '[f-tech](work_unit) vẫn dùng tay để chấm công cho nhân viên luôn hả'
+  - '[f-tech](work_unit) chấm công cho nhân viên thế nào vậy'
+  - cậu cho mình hỏi [ftech](work_unit) chấm công bằng quẹt thẻ à
+  - '[f tech](work_unit) vẫn dùng vân để chấm công cho thành viên luôn hả'
+  - cậu cho mình hỏi [f-tech](work_unit) chấm công bằng vân tay à
+  - công ty điểm danh bằng vân tay hả
+  - công ty chấm công bằng khuôn mặt ạ
+  - '[f-tech](work_unit) chấm công cho thành viên ntn hả'
+  - '[f-tech](work_unit) vẫn dùng vân để chấm công cho nhân viên luôn hả'
+  - '[ftech](work_unit) dùng hình thức nào để chấm công cho thành viên vậy hả'
+  - mầy cho tôi hỏi [f tech](work_unit) chấm công bằng quẹt thẻ à
+  - em cho tôi hỏi [f-tech](work_unit) chấm công bằng quẹt thẻ à
+  - công ty điểm danh bằng khuôn mặt à
+  - công ty chấm công bằng AI luôn hử
+  - '[f tech](work_unit) chấm công cho nhân viên ntn thế'
+  - '[ftech](work_unit) chấm công cho người ntn đấy'
+  - '[ftech](work_unit) chấm công cho nhận sự thế nào vậy'
+  - '[ftech](work_unit) vẫn dùng vân để điểm danh cho thành viên luôn ạ'
+  - '[f tech](work_unit) chấm công cho thành viên như nào vậy'
+  - '[ftech](work_unit) yêu cầu quy chế chấm công như thế nào'
+  - '[ftech](work_unit) chấm công cho thành viên như thế nào đó'
+  - m cho tôi hỏi [f tech](work_unit) chấm công bằng quẹt thẻ à
+  - '[f-tech](work_unit) vẫn dùng tay để điểm danh cho nhân viên luôn ạ'
+  - '[ftech](work_unit) vẫn dùng vân để chấm công cho thành viên luôn à'
+  - '[ftech](work_unit) chấm công cho người như nào hả'
+  - '[ftech](work_unit) chấm công cho nhận sự ntn vậy'
+  - tôi nghe nói [f-tech](work_unit) chấm công bằng gương mặt luôn hả
+  - '[f tech](work_unit) vẫn dùng vân để điểm danh cho người luôn à'
+  - tớ nghe nói [f-tech](work_unit) chấm công bằng khuôn mặt luôn hả

@@ -1,0 +1,356 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: chitchat_user_feel_boring
+  examples:
+  - chán nản quá
+  - tui đang cảm thấy buồn
+  - hôm nay tôi buồn quá đi
+  - từ dưng cảm thấy buồn
+  - anh đang thấy rất choán
+  - mẹ mày chán quá
+  - chán thì làm thế nào nhể cậu
+  - buồn thì làm thế nào nhỉ m
+  - chị đang cảm thấy rất choán
+  - buồn thì làm thế nào nhể mày
+  - tại sao mà buồn quá
+  - chán thì làm như nào nhỉ bạn
+  - choán thì làm như nào nhỉ m
+  - buồn thì làm ntn nhỉ bạn
+  - buồn thì làm gì nhỉ m
+  - vì sao mà buồn quá
+  - công việc dạo này buồn chán quá
+  - buồn chán thì làm sao nhỉ mày
+  - vì sao mà buồn chán quá đi
+  - mình thấy buồn chán quá đi
+  - buồn thì làm thế nào nhỉ timi
+  - choán thì làm như nào nhể bot
+  - chị đang thấy buồn
+  - Chán quá
+  - chán thì làm răng nhể bot
+  - tao đang cảm thấy chán
+  - chị đang cảm thấy choán quá
+  - công việc dạo này buồn chán quá đi
+  - bố mày choán quá đi
+  - tôi đang cảm thấy buồn chán
+  - chán thì làm răng nhỉ timi
+  - chán thì làm thế nào nhỉ bạn
+  - anh đang thấy rất buồn chán
+  - chán thì làm như thế nào nhể mày
+  - choán thì làm sao nhể em
+  - anh đang rất chán
+  - mẹ mày đang thấy chán
+  - chán quá đi
+  - choán thật
+  - tui thấy buồn quá đi
+  - mẹ mày đang rất chán
+  - mẹ mày đang thấy rất choán
+  - buồn thì làm sao nhể bạn
+  - buồn chán thì làm răng nhể bạn
+  - tôi thấy chán quá đi
+  - chị đang cảm thấy chán
+  - tớ đang rất buồn
+  - hôm nay mình thấy hơi buồn
+  - chị đang cảm thấy rất chán
+  - anh đang thấy buồn chán
+  - hôm nay tao cảm thấy buồn quá đi
+  - buồn thì làm thế nào nhỉ bot
+  - buồn thì làm răng nhỉ cậu
+  - tớ đang cảm thấy choán quá
+  - tui đang cảm thấy choán
+  - buồn chán quá
+  - mày làm tôi buồn đây
+  - buồn chán thì làm như nào nhể timi
+  - hôm nay tao buồn chán quá đi
+  - chán thì làm thế nào nhể em
+  - bạn làm tôi buồn đây
+  - chán thì làm gì nhể mày
+  - buồn thì làm như thế nào nhỉ cậu
+  - choán thì làm ntn nhể m
+  - tớ chán quá đi
+  - mình thấy chán quá
+  - nhưng hôm nay tao không thấy vui
+  - chán thì làm răng nhỉ bot
+  - tớ đang chán quá
+  - bố mày đang thấy choán
+  - buồn chán thì làm như thế nào nhỉ mày
+  - buồn thì làm ntn nhể cậu
+  - hôm nay tui cảm thấy buồn quá
+  - chán quá
+  - buồn chán thì làm như thế nào nhỉ cậu
+  - buồn chán thì làm gì nhể timi
+  - hôm nay tao choán quá đi
+  - chị đang cảm thấy chán quá đi
+  - em làm tao buồn đây
+  - tớ đang cảm thấy choán
+  - tui chán quá đi
+  - tớ đang buồn chán quá
+  - buồn thì làm như nào nhỉ cậu
+  - buồn chán thì làm thế nào nhể bạn
+  - tao thấy buồn chán quá
+  - tui đang cảm thấy rất buồn
+  - chán thật
+  - chán thì làm như nào nhể em
+  - anh đang buồn chán quá đi
+  - tớ muốn khóc quá
+  - buồn chán thì làm răng nhỉ em
+  - chán thì làm ntn nhỉ cậu
+  - choán thì làm sao nhể bot
+  - buồn thì làm ntn nhể bạn
+  - buồn chán thì làm ntn nhỉ em
+  - tao đang thấy rất chán
+  - anh buồn chán quá đi
+  - mình đang chán quá
+  - choán thì làm thế nào nhể em
+  - buồn thì làm răng nhỉ bạn
+  - chị chán quá
+  - choán thì làm sao nhể cậu
+  - chán thì làm thế nào nhể timi
+  - mình đang thấy buồn
+  - tao đang rất buồn
+  - hôm nay mình buồn quá đi
+  - tui đang thấy rất buồn chán
+  - cậu làm tôi buồn đây
+  - tui thấy buồn quá
+  - nhưng hôm nay tớ không vui
+  - tớ choán quá đi
+  - hôm nay tớ buồn chán quá đi
+  - bố mày đang cảm thấy rất choán
+  - buồn chán thì làm thế nào nhỉ bạn
+  - hôm nay tớ thấy hơi buồn
+  - hôm nay tui thấy buồn quá đi
+  - chị đang cảm thấy buồn
+  - chán thì làm gì nhỉ bot
+  - choán thì làm gì nhể bot
+  - buồn chán thì làm như nào nhể m
+  - choán thì làm răng nhỉ bạn
+  - tớ đang rất buồn chán
+  - mẹ mày đang thấy buồn chán
+  - buồn thì làm ntn nhỉ mày
+  - buồn thì làm như thế nào nhỉ m
+  - choán thì làm sao nhỉ em
+  - tớ đang cảm thấy buồn
+  - Thấy chán làm ghê
+  - tớ đang buồn chán
+  - bố mày đang thấy buồn
+  - tớ đang cảm thấy rất buồn chán
+  - buồn thì làm răng nhể bot
+  - choán thì làm thế nào nhể bot
+  - vì sao mà choán quá đi
+  - choán thì làm răng nhỉ mày
+  - tớ đang choán
+  - buồn thì làm gì nhể timi
+  - chị đang choán quá đi
+  - choán thì làm ntn nhể timi
+  - tớ đang thấy buồn
+  - tao đang rất buồn chán
+  - chị đang thấy buồn chán
+  - hôm nay tôi chán quá đi
+  - buồn chán thì làm gì nhỉ bot
+  - rất là chán
+  - mẹ mày đang buồn chán
+  - buồn thì làm như thế nào nhể bạn
+  - buồn chán thì làm như nào nhể em
+  - mình thấy choán quá đi
+  - buồn thì làm gì nhể mày
+  - timi làm tớ buồn đây
+  - mình đang buồn chán quá đi
+  - m làm mình buồn đây
+  - choán thì làm răng nhể m
+  - em làm mình buồn đây
+  - buồn chán thì làm thế nào nhể mày
+  - công việc dạo này choán quá đi
+  - buồn thì làm như nào nhỉ timi
+  - chán thì làm như thế nào nhỉ bot
+  - tui đang cảm thấy rất buồn chán
+  - tôi đang cảm thấy rất buồn
+  - choán thì làm ntn nhỉ mày
+  - anh đang thấy buồn quá
+  - bạn làm tui buồn đây
+  - chán thì làm sao nhể em
+  - buồn thì làm ntn nhể mày
+  - chị đang buồn chán quá
+  - buồn thì làm răng nhể em
+  - hôm nay tao cảm thấy hơi buồn
+  - mình đang rất buồn chán
+  - chán thì làm ntn nhể cậu
+  - chán thì làm sao nhể bot
+  - mẹ mày đang cảm thấy chán
+  - chán thì làm gì nhỉ cậu
+  - chán thì làm thế nào nhỉ bot
+  - hôm nay tôi cảm thấy buồn quá đi
+  - mình đang buồn chán quá
+  - buồn chán thì làm sao nhỉ em
+  - chán thì làm sao nhỉ mày
+  - tớ đang cảm thấy rất buồn
+  - tớ đang buồn chán quá đi
+  - sao mà buồn thế
+  - bố mày đang cảm thấy rất chán
+  - anh đang cảm thấy rất buồn chán
+  - tui đang cảm thấy rất choán
+  - buồn chán thì làm răng nhỉ m
+  - mình đang cảm thấy buồn chán quá đi
+  - buồn chán thì làm gì nhỉ mày
+  - hôm nay tao không vui
+  - choán thì làm như nào nhỉ bạn
+  - buồn thì làm ntn nhỉ m
+  - nhưng hôm nay tao không vui
+  - cuộc sống dạo này buồn chán quá đi
+  - choán thì làm gì nhỉ cậu
+  - nhưng hôm nay mình không thấy vui
+  - mình đang choán
+  - chán thì làm ntn nhể m
+  - buồn thì làm như thế nào nhể bot
+  - buồn thì làm sao nhể timi
+  - chị đang chán
+  - bố mày đang cảm thấy buồn chán
+  - hôm nay mình buồn chán quá đi
+  - buồn chán thì làm sao nhỉ bot
+  - chị choán quá
+  - hôm nay mình choán quá
+  - buồn thì làm thế nào nhể bạn
+  - muốn khóc quá
+  - anh đang thấy buồn chán quá
+  - choán thì làm răng nhỉ em
+  - choán thì làm ntn nhể bot
+  - chán thì làm thế nào nhể bot
+  - mình buồn quá đi
+  - hôm nay tớ cảm thấy buồn quá
+  - chán thì làm như thế nào nhỉ mày
+  - mình đang cảm thấy buồn quá đi
+  - tao thấy choán quá
+  - hôm nay tao buồn chán quá
+  - anh đang cảm thấy rất buồn
+  - bố mày đang thấy rất choán
+  - chán thì làm thế nào nhỉ m
+  - buồn thì làm như thế nào nhể timi
+  - tớ đang thấy choán quá
+  - bố mày chán quá
+  - hôm nay tui không thấy vui
+  - tao đang thấy buồn
+  - hôm nay tui choán quá
+  - mẹ mày buồn quá
+  - buồn thì làm gì nhỉ em
+  - bố mày đang rất buồn
+  - choán thì làm thế nào nhể m
+  - chán thì làm sao nhể m
+  - Tự dưng chán
+  - tôi chán quá
+  - buồn thì làm thế nào nhỉ em
+  - buồn chán thì làm gì nhỉ em
+  - tao đang buồn chán
+  - mình đang cảm thấy rất buồn chán
+  - chán thì làm răng nhỉ em
+  - tớ thấy buồn quá đi
+  - buồn thì làm thế nào nhể cậu
+  - anh choán quá đi
+  - mẹ mày đang thấy rất chán
+  - buồn chán thì làm như thế nào nhỉ bạn
+  - tớ đang chán
+  - bố mày đang rất chán
+  - buồn thì làm như nào nhể mày
+  - tui đang rất chán
+  - choán thì làm ntn nhể mày
+  - bot làm mình buồn đây
+  - buồn chán thì làm răng nhể m
+  - hôm nay tao buồn quá
+  - tao đang cảm thấy rất choán
+  - tao thấy buồn quá đi
+  - bot làm tui buồn đây
+  - choán thì làm răng nhể cậu
+  - choán thì làm như thế nào nhỉ em
+  - anh đang rất buồn chán
+  - buồn thì làm răng nhỉ bot
+  - buồn chán thì làm răng nhỉ bạn
+  - anh đang thấy chán
+  - buồn thì làm thế nào nhỉ cậu
+  - tôi đang thấy rất chán
+  - sao mà buồn quá đi
+  - chán thì làm như thế nào nhể em
+  - buồn chán thì làm như nào nhể cậu
+  - tao buồn quá
+  - bố mày đang thấy rất chán
+  - anh đang thấy buồn quá đi
+  - anh đang cảm thấy choán
+  - tớ thấy buồn chán quá đi
+  - tôi đang thấy buồn
+  - chị đang cảm thấy buồn quá đi
+  - tôi choán quá đi
+  - hôm nay mình cảm thấy buồn quá đi
+  - tớ đang rất choán
+  - buồn chán thì làm thế nào nhể timi
+  - anh đang cảm thấy choán quá
+  - choán thì làm ntn nhể cậu
+  - chán thì làm gì nhể timi
+  - chị chán quá đi
+  - choán thì làm gì nhỉ m
+  - tại sao mà buồn chán quá
+  - sao hôm nay tôi chán quá
+  - tôi đang buồn
+  - công việc dạo này chán quá đi
+  - hôm nay tôi không vui
+  - sao mà buồn chán quá
+  - tao thấy buồn quá
+  - choán thì làm như thế nào nhể cậu
+  - tôi đang cảm thấy buồn
+  - buồn thì làm sao nhể m
+  - buồn thì làm răng nhể m
+  - tui đang thấy buồn chán
+  - mẹ mày đang thấy buồn
+  - cuộc sống dạo này buồn quá
+  - vì sao mà chán quá
+  - bố mày đang chán
+  - tôi thấy buồn chán quá
+  - tại sao mà choán quá đi
+  - tao đang rất choán
+  - tao đang chán
+  - tớ đang cảm thấy buồn chán
+  - mình đang thấy buồn chán
+  - buồn thì làm ntn nhể bot
+  - chán thì làm gì nhể cậu
+  - choán thì làm gì nhỉ timi
+  - chán thì làm sao nhể mày
+  - timi làm tui buồn đây
+  - chán thì làm thế nào nhỉ em
+  - tớ đang thấy buồn quá
+  - mình đang thấy rất buồn
+  - công việc dạo này choán quá
+  - bạn làm mình buồn đây
+  - mình đang buồn chán
+  - bố mày đang thấy rất buồn
+  - chán thì làm gì nhỉ em
+  - buồn chán thì làm gì nhể cậu
+  - tao đang buồn
+  - chán thì làm thế nào nhể mày
+  - tui đang thấy choán
+  - mẹ mày đang rất buồn chán
+  - cuộc sống dạo này buồn chán quá
+  - chị đang rất buồn chán
+  - chị đang choán
+  - tại sao mà choán thế nhỉ
+  - dạo này buồn chán quá
+  - choán thì làm ntn nhỉ cậu
+  - tớ đang thấy rất choán
+  - mình thấy chán quá đi
+  - anh đang chán quá
+  - chị đang thấy rất buồn
+  - buồn chán thì làm như nào nhỉ bạn
+  - buồn thật
+  - chán thì làm như nào nhể mày
+  - tao choán quá
+  - tớ thấy buồn chán quá
+  - buồn chán thì làm ntn nhể em
+  - cậu làm mình buồn đây
+  - tôi đang cảm thấy chán
+  - chán thì làm ntn nhể timi
+  - anh đang buồn chán
+  - hôm nay tôi buồn chán quá đi
+  - buồn thì làm sao nhỉ mày
+  - chán thì làm gì nhể bot
+  - buồn thì làm gì nhể cậu
+  - Buồn chán quá
+  - công việc dạo này buồn quá
+  - buồn chán thì làm ntn nhỉ mày
+  - chị đang cảm thấy rất buồn chán
+  - buồn thì làm như nào nhỉ m

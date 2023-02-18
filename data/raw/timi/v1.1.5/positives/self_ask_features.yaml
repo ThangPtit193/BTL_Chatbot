@@ -1,0 +1,406 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_features
+  examples:
+  - vậy mày biết những gì
+  - cho tớ hỏi những tính năng của bạn là chi
+  - mày có vai trò ntn trong công ty
+  - timi giúp mình được gì nào
+  - hãy liệt kê những chức năng của bot
+  - cậu hiểu được những gì
+  - công việc timi có thể làm được
+  - cho tui hỏi cậu có những tính năng chi
+  - cho tớ hỏi bạn sở hữu những tính năng mô thế
+  - tính năng của mình là nào
+  - ' tính năng của mày là chi'
+  - có thể cho tôi hỏi tính năng của bạn là nào
+  - em có thể làm gì
+  - có thể cho ông hỏi cháu sở hữu những tính năng gì thế
+  - ' cho tớ hỏi bạn có những tính năng chi'
+  - thế bạn biết thêm được những gì
+  - m biết làm những gì
+  - m có những chức năng gì
+  - có thể cho tui hỏi những tính năng của cậu là
+  - m có thể hỗ trợ mình được những gì
+  - timi hỗ trợ được gì
+  - cậu làm được những công việc gì
+  - timi giúp cái gì cho mình
+  - cậu biết được những gì rồi
+  - bạn làm được những mô
+  - bạn có thể hiểu được gì
+  - mình có được tính năng chi
+  - có thể cho tui hỏi cậu có được những tính năng mô
+  - timi có vai trò gì trong công ty
+  - có thể cho tôi hỏi em sở hữu tính năng nào
+  - hãy kể về tính năng cho mình
+  - bạn hỗ trợ tui được gì nào
+  - cậu có thể trả lời được câu hỏi như thế nào
+  - mày biết làm công việc gì
+  - em có tính năng mô
+  - vậy em biết những gì
+  - cho tớ hỏi tính năng của bạn là
+  - em có nhiệm vụ như thế nào trong công ty
+  - timi giúp chị được gì nào
+  - hãy liệt kê những chức năng của bạn
+  - bạn hiểu được những gì
+  - công việc m có thể làm được
+  - cho mình hỏi cậu có những tính năng mô
+  - cho tớ hỏi bạn có được tính năng chi thế
+  - tính năng của em là
+  - những tính năng của bạn là mô
+  - ' cho tôi hỏi tính năng của m là chi'
+  - timi có thể làm gì
+  - ' cho chú hỏi cháu sở hữu những tính năng gì'
+  - có thể cho tớ hỏi bạn có những tính năng gì
+  - thế em biết thêm được những gì
+  - em biết làm những gì
+  - em có những chức năng gì
+  - ' cho tao hỏi những tính năng của cậu là'
+  - em có thể trợ giúp mình được những gì
+  - mày hỗ trợ được gì
+  - mày làm được những công việc gì
+  - m trợ giúp cái gì cho mình
+  - timi biết được những gì rồi
+  - cậu có thể làm được những nào
+  - bot có thể hiểu được gì
+  - bạn có được tính năng gì thế
+  - có thể cho tui hỏi cậu có được tính năng chi
+  - bạn có nhiệm vụ gì trong công ty
+  - có thể cho tôi hỏi em sở hữu những tính năng mô
+  - cậu hỗ trợ tớ được gì nào
+  - bạn có thể trả lời được câu hỏi như thế nào
+  - em biết làm công việc gì
+  - cậu có tính năng chi
+  - vậy bot hiểu những gì
+  - cho tôi hỏi những tính năng của bạn là
+  - timi có nhiệm vụ thế nào trong công ty
+  - timi giúp tớ được gì nào
+  - hãy liệt kê những tính năng của em
+  - mày hiểu được những gì
+  - công việc cậu có thể làm được
+  - cho tớ hỏi cậu có tính năng chi
+  - cho tớ hỏi bạn có được tính năng gì thế
+  - tính năng của tớ là
+  - ' tính năng của bạn là mô thế'
+  - ' cho tôi hỏi những tính năng của bot là nào'
+  - cậu có thể làm gì
+  - có thể cho chú hỏi cháu có được những tính năng nào
+  - ' cho tôi hỏi bạn có tính năng nào'
+  - thế timi biết thêm được những gì
+  - timi biết làm những gì
+  - bạn có những chức năng gì
+  - có thể cho tớ hỏi những tính năng của cậu là chi
+  - timi có thể giúp mình được những gì
+  - em hỗ trợ được gì
+  - cậu làm được công việc gì
+  - cậu hỗ trợ được cái gì cho mình
+  - mày biết được những gì rồi
+  - m làm được mô
+  - em có thể hiểu được gì
+  - cậu có được những tính năng gì
+  - ' cho mình hỏi cậu sở hữu tính năng chi'
+  - em có nhiệm vụ gì trong công ty
+  - có thể cho tôi hỏi cậu có được tính năng mô thế
+  - bạn hỗ trợ tớ được gì nào
+  - bạn có thể trả lời được gì
+  - m biết làm công việc gì
+  - mày có tính năng nào
+  - vậy mày hiểu những gì
+  - cho tui hỏi tính năng của bạn là
+  - timi có nhiệm vụ ntn trong công ty
+  - timi giúp anh được gì nào
+  - hãy liệt kê những tính năng của bot
+  - em hiểu được những gì
+  - công việc mày có thể làm được
+  - cho tui hỏi cậu có những tính năng mô
+  - cho tớ hỏi bạn sở hữu những tính năng chi
+  - tính năng của mình là mô
+  - những tính năng của m là chi
+  - có thể cho tôi hỏi những tính năng của m là
+  - mày có thể làm gì
+  - ' cho cô hỏi cháu sở hữu những tính năng gì thế'
+  - ' cho tui hỏi bạn có những tính năng nào'
+  - thế mày biết thêm được những gì
+  - bot biết làm những gì
+  - bot có những tính năng gì
+  - ' cho mình hỏi những tính năng của cậu là'
+  - cậu có thể trợ giúp mình được những gì
+  - bot hỗ trợ được gì
+  - bot làm được công việc gì
+  - m giúp đỡ được cái gì cho mình
+  - bot biết được những gì rồi
+  - bạn làm được nào
+  - timi có thể hiểu được gì
+  - chị có được những tính năng chi
+  - ' cho tớ hỏi cậu có được những tính năng gì'
+  - bot có nhiệm vụ gì trong công ty
+  - có thể cho tôi hỏi mày sở hữu những tính năng gì thế
+  - cậu hỗ trợ mình được gì nào
+  - mày có thể trả lời được gì
+  - cậu biết làm công việc gì
+  - mày có tính năng gì
+  - vậy cậu biết những gì
+  - cho tớ hỏi những tính năng của bạn là
+  - bạn có vai trò ntn trong công ty
+  - hãy liệt kê những chức năng của em
+  - m hiểu được những gì
+  - công việc bạn có thể làm được
+  - cho tớ hỏi cậu có những tính năng nào
+  - cho tui hỏi bạn sở hữu tính năng chi
+  - tính năng của mình là
+  - ' tính năng của cậu là gì thế'
+  - ' cho tôi hỏi tính năng của bot là nào'
+  - bot có thể làm gì
+  - có thể cho cô hỏi cháu có được tính năng gì
+  - có thể cho tui hỏi bạn có những tính năng nào
+  - thế m biết thêm được những gì
+  - bạn biết làm những gì
+  - cậu có những chức năng gì
+  - có thể cho tớ hỏi những tính năng của cậu là mô
+  - timi có thể hỗ trợ mình được những gì
+  - cậu hỗ trợ được gì
+  - m làm được những công việc gì
+  - bot trợ giúp được cái gì cho mình
+  - bạn biết được những gì rồi
+  - em làm được nào
+  - mày có thể hiểu được gì
+  - anh có được tính năng gì
+  - ' cho tớ hỏi cậu sở hữu tính năng mô'
+  - timi có nhiệm vụ gì trong công ty
+  - có thể cho tôi hỏi bot sở hữu tính năng mô
+  - bạn hỗ trợ tao được gì nào
+  - timi có thể trả lời được gì
+  - bạn biết làm công việc gì
+  - timi có tính năng mô
+  - vậy bot biết những gì
+  - cho tớ hỏi những tính năng của bạn là nào
+  - cậu có vai trò như nào trong công ty
+  - hãy liệt kê những chức năng của mày
+  - bot hiểu được những gì
+  - công việc em có thể làm được
+  - cho mình hỏi cậu có những tính năng nào
+  - cho tôi hỏi bạn có được tính năng gì
+  - tính năng của chị là
+  - ' tính năng của bot là chi thế'
+  - ' cho tôi hỏi những tính năng của timi là'
+  - m có thể làm gì
+  - ' cho bác hỏi cháu sở hữu tính năng nào'
+  - ' cho tớ hỏi bạn có tính năng chi'
+  - thế bot biết thêm được những gì
+  - mày biết làm những gì
+  - cậu có những tính năng gì
+  - ' cho tui hỏi tính năng của cậu là'
+  - bot có thể hỗ trợ mình được những gì
+  - m hỗ trợ được gì
+  - em làm được những công việc gì
+  - mày giúp đỡ được cái gì cho mình
+  - m biết được những gì rồi
+  - timi có thể làm được nào
+  - cậu có thể hiểu được gì
+  - tôi có được tính năng mô
+  - có thể cho tớ hỏi cậu có được tính năng mô
+  - mày có nhiệm vụ gì trong công ty
+  - ' cho tôi hỏi cậu có được tính năng mô'
+  - bạn hỗ trợ mình được gì nào
+  - em có thể trả lời được câu hỏi như thế nào
+  - bot biết làm công việc gì
+  - cậu có tính năng nào
+  - vậy timi hiểu những gì
+  - cho tôi hỏi những tính năng của bạn là gì
+  - em có vai trò như thế nào trong công ty
+  - hãy liệt kê những tính năng của mày
+  - timi hiểu được những gì
+  - công việc bot có thể làm được
+  - cho tớ hỏi cậu có tính năng nào
+  - cho tao hỏi bạn sở hữu tính năng chi
+  - tính năng của em là nào
+  - những tính năng của bot là nào thế
+  - ' cho tôi hỏi tính năng của em là mô'
+  - bạn có thể làm gì
+  - có thể cho chú hỏi cháu sở hữu những tính năng nào thế
+  - ' cho tớ hỏi bạn có những tính năng gì'
+  - thế cậu biết thêm được những gì
+  - cậu biết làm những gì
+  - em có những tính năng gì
+  - ' cho tớ hỏi những tính năng của cậu là chi'
+  - timi có thể giúp đỡ mình được những gì
+  - bạn hỗ trợ được gì
+  - bạn làm được công việc gì
+  - bạn trợ giúp cái gì cho mình
+  - em biết được những gì rồi
+  - em có thể làm được nào
+  - m có thể hiểu được gì
+  - tôi sở hữu tính năng gì
+  - ' cho tui hỏi cậu có được những tính năng mô'
+  - cậu có nhiệm vụ gì trong công ty
+  - ' cho tôi hỏi em có được tính năng gì'
+  - cậu hỗ trợ tôi được gì nào
+  - em có thể trả lời được gì
+  - m có những tính năng mô
+  - vậy bạn biết những gì
+  - cho tao hỏi tính năng của bạn là chi
+  - bot có vai trò như nào trong công ty
+  - hãy liệt kê những chức năng của m
+  - cho tớ hỏi cậu có tính năng gì
+  - cho tớ hỏi bạn sở hữu tính năng nào thế
+  - tính năng của anh là
+  - những tính năng của bạn là mô thế
+  - có thể cho tôi hỏi tính năng của timi là
+  - có thể cho chú hỏi cháu sở hữu những tính năng nào
+  - có thể cho tôi hỏi bạn có tính năng mô
+  - bạn có những tính năng gì
+  - ' cho tui hỏi những tính năng của cậu là'
+  - mày có thể hỗ trợ mình được những gì
+  - bot làm được những công việc gì
+  - em giúp đỡ cái gì cho mình
+  - bot có thể làm được chi
+  - em có được những tính năng nào
+  - ' cho tớ hỏi cậu có được tính năng chi thế'
+  - m có nhiệm vụ gì trong công ty
+  - ' cho tôi hỏi bạn sở hữu tính năng nào'
+  - cậu hỗ trợ tui được gì nào
+  - m có thể trả lời được câu hỏi như thế nào
+  - timi biết làm công việc gì
+  - bạn có tính năng mô
+  - vậy bạn hiểu những gì
+  - cho tớ hỏi tính năng của bạn là chi
+  - timi có vai trò như nào trong công ty
+  - hãy liệt kê những tính năng của cậu
+  - cho tôi hỏi cậu có tính năng chi
+  - cho tớ hỏi bạn có được những tính năng mô
+  - tính năng của chị là gì
+  - những tính năng của m là gì
+  - có thể cho tôi hỏi những tính năng của m là chi
+  - ' cho chú hỏi cháu sở hữu những tính năng nào'
+  - ' cho tui hỏi bạn có tính năng gì'
+  - timi có những tính năng gì
+  - ' cho tớ hỏi những tính năng của cậu là'
+  - bạn có thể hỗ trợ mình được những gì
+  - timi làm được công việc gì
+  - cậu giúp cái gì cho mình
+  - mày làm được mô
+  - bot có được tính năng chi
+  - ' cho tớ hỏi cậu có được tính năng gì'
+  - mày có vai trò gì trong công ty
+  - có thể cho tôi hỏi bot có được những tính năng mô thế
+  - cậu hỗ trợ tao được gì nào
+  - bot có thể trả lời được câu hỏi như thế nào
+  - mày có tính năng mô
+  - vậy m hiểu những gì
+  - cho tớ hỏi những tính năng của bạn là gì
+  - m có nhiệm vụ thế nào trong công ty
+  - hãy liệt kê những tính năng của timi
+  - cho tao hỏi cậu có những tính năng gì
+  - cho tớ hỏi bạn có được tính năng nào thế
+  - tính năng của anh là nào
+  - ' tính năng của mày là chi thế'
+  - có thể cho tôi hỏi tính năng của bot là
+  - ' cho bác hỏi cháu sở hữu tính năng mô thế'
+  - có thể cho tớ hỏi bạn có những tính năng mô
+  - m có những tính năng gì
+  - có thể cho tui hỏi tính năng của cậu là
+  - bot có thể giúp đỡ mình được những gì
+  - em làm được công việc gì
+  - em hỗ trợ cái gì cho mình
+  - mày làm được những chi
+  - bạn sở hữu tính năng chi thế
+  - có thể cho tớ hỏi cậu sở hữu những tính năng gì
+  - bạn có vai trò gì trong công ty
+  - ' cho tôi hỏi m có được những tính năng gì thế'
+  - bạn hỗ trợ tôi được gì nào
+  - m có thể trả lời được gì
+  - em có tính năng chi
+  - vậy em hiểu những gì
+  - cho mình hỏi tính năng của bạn là mô
+  - em có nhiệm vụ như nào trong công ty
+  - hãy liệt kê những chức năng của cậu
+  - cho tớ hỏi cậu có những tính năng chi
+  - cho mình hỏi bạn có được tính năng nào
+  - tính năng của tôi là mô
+  - ' tính năng của em là chi thế'
+  - ' cho tôi hỏi tính năng của bạn là chi'
+  - ' cho cô hỏi cháu sở hữu những tính năng nào'
+  - ' cho mình hỏi bạn có tính năng mô'
+  - bot có những chức năng gì
+  - có thể cho tớ hỏi tính năng của cậu là
+  - bạn có thể giúp đỡ mình được những gì
+  - m làm được công việc gì
+  - mày giúp được cái gì cho mình
+  - m có thể làm được gì
+  - tớ sở hữu tính năng gì thế
+  - ' cho mình hỏi cậu sở hữu những tính năng mô'
+  - em có vai trò gì trong công ty
+  - ' cho tôi hỏi cậu sở hữu những tính năng gì'
+  - cậu có thể trả lời được gì
+  - m có tính năng chi
+  - vậy cậu hiểu những gì
+  - cho tớ hỏi những tính năng của bạn là mô
+  - m có nhiệm vụ như thế nào trong công ty
+  - hãy liệt kê những chức năng của timi
+  - cho tui hỏi cậu có những tính năng gì
+  - cho tớ hỏi bạn sở hữu tính năng nào
+  - tính năng của em là mô
+  - những tính năng của em là mô thế
+  - ' cho tôi hỏi tính năng của bạn là gì'
+  - ' cho bà hỏi cháu sở hữu những tính năng chi'
+  - ' cho mình hỏi bạn có những tính năng chi'
+  - mày có những tính năng gì
+  - có thể cho tao hỏi tính năng của cậu là
+  - mày có thể giúp đỡ mình được những gì
+  - bạn làm được những công việc gì
+  - em giúp đỡ được cái gì cho mình
+  - cậu làm được những gì
+  - em có được tính năng nào thế
+  - ' cho tôi hỏi cậu có được tính năng nào thế'
+  - m có vai trò gì trong công ty
+  - ' cho tôi hỏi bot sở hữu tính năng nào thế'
+  - timi có thể trả lời được câu hỏi như thế nào
+  - timi có tính năng gì
+  - vậy m biết những gì
+  - cho mình hỏi tính năng của bạn là
+  - timi có vai trò như thế nào trong công ty
+  - hãy liệt kê những tính năng của bạn
+  - cho tớ hỏi cậu có những tính năng mô
+  - cho tớ hỏi bạn sở hữu tính năng mô
+  - tính năng của chị là nào
+  - những tính năng của em là gì thế
+  - có thể cho tôi hỏi những tính năng của timi là
+  - ' cho bà hỏi cháu có được những tính năng mô'
+  - có thể cho tôi hỏi bạn có những tính năng gì
+  - mày có những chức năng gì
+  - có thể cho mình hỏi tính năng của cậu là
+  - cậu có thể giúp đỡ mình được những gì
+  - mày làm được công việc gì
+  - mày trợ giúp được cái gì cho mình
+  - mày có thể làm được những gì
+  - tôi sở hữu những tính năng mô
+  - có thể cho tui hỏi cậu có được tính năng gì thế
+  - ' cho tôi hỏi em có được những tính năng nào thế'
+  - bot có thể trả lời được gì
+  - mày có tính năng chi
+  - vậy timi biết những gì
+  - cho tao hỏi tính năng của bạn là
+  - em có nhiệm vụ ntn trong công ty
+  - hãy liệt kê những tính năng của m
+  - cho tớ hỏi cậu có những tính năng gì
+  - cho tớ hỏi bạn có được tính năng mô thế
+  - tính năng của tôi là gì
+  - những tính năng của em là mô
+  - có thể cho tôi hỏi những tính năng của cậu là mô
+  - ' cho ông hỏi cháu có được tính năng gì thế'
+  - ' cho tao hỏi bạn có những tính năng gì'
+  - timi có những chức năng gì
+  - ' cho tớ hỏi tính năng của cậu là'
+  - em có thể giúp đỡ mình được những gì
+  - m giúp cái gì cho mình
+  - bot làm được chi
+  - chị sở hữu những tính năng nào thế
+  - có thể cho tôi hỏi cậu sở hữu những tính năng mô thế
+  - cậu có vai trò gì trong công ty
+  - ' cho tôi hỏi bạn sở hữu tính năng gì thế'
+  - em có tính năng nào
+  - cho tui hỏi tính năng của bạn là mô
+  - timi có nhiệm vụ như thế nào trong công ty
+  - cho tao hỏi cậu có tính năng nào

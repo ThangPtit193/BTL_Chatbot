@@ -1,0 +1,297 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: general_agree
+  examples:
+  - agree
+  - anh đồng tình
+  - anh đồng tình nha
+  - anh đồng tình nhé
+  - anh đồng ý
+  - anh đồng ý nha
+  - anh đồng ý nhé
+  - chuẩn
+  - chuẩn chỉ
+  - chuẩn chỉ rồi
+  - chuẩn chỉ rồi bot
+  - chuẩn chỉ rồi bạn
+  - chuẩn chỉ rồi cậu
+  - chuẩn chỉ rồi timi
+  - chuẩn rồi
+  - chuẩn rồi bot
+  - chuẩn rồi bạn
+  - chuẩn rồi cậu
+  - chuẩn rồi nha
+  - chuẩn rồi nha bot
+  - chuẩn rồi nha bạn
+  - chuẩn rồi nha cậu
+  - chuẩn rồi nha timi
+  - chuẩn rồi nhé
+  - chuẩn rồi nhé bot
+  - chuẩn rồi nhé bạn
+  - chuẩn rồi nhé cậu
+  - chuẩn rồi nhé timi
+  - chuẩn rồi timi
+  - chính xác
+  - chính xác rồi
+  - chính xác rồi bot
+  - chính xác rồi bạn
+  - chính xác rồi cậu
+  - chính xác rồi nha
+  - chính xác rồi nha bot
+  - chính xác rồi nha bạn
+  - chính xác rồi nha cậu
+  - chính xác rồi nha timi
+  - chính xác rồi nhé
+  - chính xác rồi nhé bot
+  - chính xác rồi nhé bạn
+  - chính xác rồi nhé cậu
+  - chính xác rồi nhé timi
+  - chính xác rồi timi
+  - chú đồng tình
+  - chú đồng tình nha
+  - chú đồng tình nhé
+  - chú đồng ý
+  - chú đồng ý nha
+  - chú đồng ý nhé
+  - chị đồng tình
+  - chị đồng tình nha
+  - chị đồng tình nhé
+  - chị đồng ý
+  - chị đồng ý nha
+  - chị đồng ý nhé
+  - correct
+  - có
+  - cô đồng tình
+  - cô đồng tình nha
+  - cô đồng tình nhé
+  - cô đồng ý
+  - cô đồng ý nha
+  - cô đồng ý nhé
+  - exactly
+  - mình tán thành quan điểm của bot nhé
+  - mình tán thành quan điểm của bạn nhé
+  - mình tán thành quan điểm của cậu nhé
+  - mình tán thành quan điểm của timi nhé
+  - mình đồng tình
+  - mình đồng tình nha
+  - mình đồng tình nhé
+  - mình đồng ý
+  - mình đồng ý nha
+  - mình đồng ý nhé
+  - ok
+  - ok bot
+  - ok bạn
+  - ok cậu
+  - ok nha
+  - ok nha bot
+  - ok nha bạn
+  - ok nha cậu
+  - ok nha timi
+  - ok nhé
+  - ok nhé bot
+  - ok nhé bạn
+  - ok nhé cậu
+  - ok nhé timi
+  - ok rồi bot
+  - ok rồi bạn
+  - ok rồi cậu
+  - ok rồi timi
+  - ok timi
+  - okay
+  - okay bot
+  - okay bạn
+  - okay cậu
+  - okay nha
+  - okay nha bot
+  - okay nha bạn
+  - okay nha cậu
+  - okay nha timi
+  - okay nhé
+  - okay nhé bot
+  - okay nhé bạn
+  - okay nhé cậu
+  - okay nhé timi
+  - okay rồi bot
+  - okay rồi bạn
+  - okay rồi cậu
+  - okay rồi timi
+  - okay timi
+  - oke bạn
+  - phải rồi
+  - phải rồi nha
+  - phải rồi nha bot
+  - phải rồi nha bạn
+  - phải rồi nha cậu
+  - phải rồi nha timi
+  - phải rồi nhé
+  - phải rồi nhé bot
+  - phải rồi nhé bạn
+  - phải rồi nhé cậu
+  - phải rồi nhé timi
+  - that's true
+  - tui tán thành quan điểm của bot nhé
+  - tui tán thành quan điểm của bạn nhé
+  - tui tán thành quan điểm của cậu nhé
+  - tui tán thành quan điểm của timi nhé
+  - tui đồng tình
+  - tui đồng tình nha
+  - tui đồng tình nhé
+  - tui đồng ý
+  - tui đồng ý nha
+  - tui đồng ý nhé
+  - tôi tán thành quan điểm của bot nhé
+  - tôi tán thành quan điểm của bạn nhé
+  - tôi tán thành quan điểm của cậu nhé
+  - tôi tán thành quan điểm của timi nhé
+  - tôi đồng tình
+  - tôi đồng tình nha
+  - tôi đồng tình nhé
+  - tôi đồng ý
+  - tôi đồng ý nha
+  - tôi đồng ý nhé
+  - tớ tán thành quan điểm của bot nhé
+  - tớ tán thành quan điểm của bạn nhé
+  - tớ tán thành quan điểm của cậu nhé
+  - tớ tán thành quan điểm của timi nhé
+  - tớ đồng tình
+  - tớ đồng tình nha
+  - tớ đồng tình nhé
+  - tớ đồng ý
+  - tớ đồng ý nha
+  - tớ đồng ý nhé
+  - vâng chuẩn rồi
+  - vâng chuẩn rồi nha bot
+  - vâng chuẩn rồi nha bạn
+  - vâng chuẩn rồi nha cậu
+  - vâng chuẩn rồi nha timi
+  - vâng chuẩn rồi nhé bot
+  - vâng chuẩn rồi nhé bạn
+  - vâng chuẩn rồi nhé cậu
+  - vâng chuẩn rồi nhé timi
+  - vâng chính xác rồi
+  - vâng chính xác rồi nha bot
+  - vâng chính xác rồi nha bạn
+  - vâng chính xác rồi nha cậu
+  - vâng chính xác rồi nha timi
+  - vâng chính xác rồi nhé bot
+  - vâng chính xác rồi nhé bạn
+  - vâng chính xác rồi nhé cậu
+  - vâng chính xác rồi nhé timi
+  - vâng đúng rồi
+  - vâng đúng rồi nha bot
+  - vâng đúng rồi nha bạn
+  - vâng đúng rồi nha cậu
+  - vâng đúng rồi nha timi
+  - vâng đúng rồi nhé bot
+  - vâng đúng rồi nhé bạn
+  - vâng đúng rồi nhé cậu
+  - vâng đúng rồi nhé timi
+  - 'yes'
+  - yes chuẩn rồi
+  - yes chuẩn rồi nha bot
+  - yes chuẩn rồi nha bạn
+  - yes chuẩn rồi nha cậu
+  - yes chuẩn rồi nha timi
+  - yes chuẩn rồi nhé bot
+  - yes chuẩn rồi nhé bạn
+  - yes chuẩn rồi nhé cậu
+  - yes chuẩn rồi nhé timi
+  - yes chính xác rồi
+  - yes chính xác rồi nha bot
+  - yes chính xác rồi nha bạn
+  - yes chính xác rồi nha cậu
+  - yes chính xác rồi nha timi
+  - yes chính xác rồi nhé bot
+  - yes chính xác rồi nhé bạn
+  - yes chính xác rồi nhé cậu
+  - yes chính xác rồi nhé timi
+  - yes đúng rồi
+  - yes đúng rồi nha bot
+  - yes đúng rồi nha bạn
+  - yes đúng rồi nha cậu
+  - yes đúng rồi nha timi
+  - yes đúng rồi nhé bot
+  - yes đúng rồi nhé bạn
+  - yes đúng rồi nhé cậu
+  - yes đúng rồi nhé timi
+  - đúng
+  - đúng rồi
+  - đúng rồi bot
+  - đúng rồi bạn
+  - đúng rồi cậu
+  - đúng rồi nha
+  - đúng rồi nha bot
+  - đúng rồi nha bạn
+  - đúng rồi nha cậu
+  - đúng rồi nha timi
+  - đúng rồi nhé
+  - đúng rồi nhé bot
+  - đúng rồi nhé bạn
+  - đúng rồi nhé cậu
+  - đúng rồi nhé timi
+  - đúng rồi timi
+  - được nha
+  - đồng tình
+  - đồng tình nha
+  - đồng tình nhé
+  - đồng ý
+  - đồng ý nha
+  - đồng ý nhé
+  - ừ
+  - ừ chuẩn rồi
+  - ừ chuẩn rồi nha bot
+  - ừ chuẩn rồi nha bạn
+  - ừ chuẩn rồi nha cậu
+  - ừ chuẩn rồi nha timi
+  - ừ chuẩn rồi nhé bot
+  - ừ chuẩn rồi nhé bạn
+  - ừ chuẩn rồi nhé cậu
+  - ừ chuẩn rồi nhé timi
+  - ừ chính xác rồi
+  - ừ chính xác rồi nha bot
+  - ừ chính xác rồi nha bạn
+  - ừ chính xác rồi nha cậu
+  - ừ chính xác rồi nha timi
+  - ừ chính xác rồi nhé bot
+  - ừ chính xác rồi nhé bạn
+  - ừ chính xác rồi nhé cậu
+  - ừ chính xác rồi nhé timi
+  - ừ đúng rồi
+  - ừ đúng rồi nha bot
+  - ừ đúng rồi nha bạn
+  - ừ đúng rồi nha cậu
+  - ừ đúng rồi nha timi
+  - ừ đúng rồi nhé bot
+  - ừ đúng rồi nhé bạn
+  - ừ đúng rồi nhé cậu
+  - ừ đúng rồi nhé timi
+  - ừm
+  - ừm chuẩn rồi
+  - ừm chuẩn rồi nha bot
+  - ừm chuẩn rồi nha bạn
+  - ừm chuẩn rồi nha cậu
+  - ừm chuẩn rồi nha timi
+  - ừm chuẩn rồi nhé bot
+  - ừm chuẩn rồi nhé bạn
+  - ừm chuẩn rồi nhé cậu
+  - ừm chuẩn rồi nhé timi
+  - ừm chính xác rồi
+  - ừm chính xác rồi nha bot
+  - ừm chính xác rồi nha bạn
+  - ừm chính xác rồi nha cậu
+  - ừm chính xác rồi nha timi
+  - ừm chính xác rồi nhé bot
+  - ừm chính xác rồi nhé bạn
+  - ừm chính xác rồi nhé cậu
+  - ừm chính xác rồi nhé timi
+  - ừm đúng rồi
+  - ừm đúng rồi nha bot
+  - ừm đúng rồi nha bạn
+  - ừm đúng rồi nha cậu
+  - ừm đúng rồi nha timi
+  - ừm đúng rồi nhé bot
+  - ừm đúng rồi nhé bạn
+  - ừm đúng rồi nhé cậu
+  - ừm đúng rồi nhé timi

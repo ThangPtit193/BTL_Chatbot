@@ -1,0 +1,406 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: company_ask_hour_of_furlough
+  examples:
+  - '[thang vừa qua](time) mình còn bao nhiêu ngày phép ta'
+  - timi có biết mình còn mấy giờ phép trong [thangs tới nữa](time) không
+  - giờ tớ còn được bao nhiêu giờ nghỉ vậy timi
+  - sắp đến tui còn chừng nào giờ phép vậy bot
+  - bot cho mình hỏi là tui có bao nhiêu giờ phép nhỉ
+  - tôi còn được nghỉ mấy ngày phép nữa nhỉ
+  - Giờ tớ còn được mấy giờ nghỉ đó cậu ơi?
+  - timi tra giúp tớ số ngày phép còn của tui với nào
+  - số giờ phép còn lại của tớ với
+  - tôi còn bao nhiêu ngày phép vậy ạ?
+  - cho tôi biết số giờ phép còn lại của tớ với nào
+  - Cho mình hỏi thông tin về số giờ phép hiện tại của tui với
+  - timi tra cứu xem tui còn bao nhiêu ngày phép vậy
+  - mầy cho tớ biết số ngày phép còn của tớ với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tớ không
+  - tháng tới tui sẽ có bao nhiêu giờ phép vậy
+  - ' tra cứu cho tớ số giờ phép còn lại cái nào'
+  - tui còn bao nhiều giờ phép trong [thangs namw](time) hả bot
+  - '[thang mười môt](time) mình còn mấy giờ nghỉ ta'
+  - timi có biết tớ còn mấy giờ phép trong [thang tới nữa](time) không
+  - hiện tại tớ còn được mấy ngày nghỉ vậy
+  - sắp đến tôi còn chừng nào phép vậy bot
+  - bot cho mình hỏi là mình có bao nhiêu giờ phép nhỉ
+  - tui còn được nghỉ bao nhiêu giờ phép nữa nhỉ
+  - Giờ tớ còn được mấy giờ nghỉ đó bạn ơi?
+  - timi tra giúp tui số giờ phép còn của tớ với nào
+  - số giờ phép hiện tại của tớ với
+  - tớ còn bao nhiêu ngày phép vậy ạ?
+  - cho tớ biết số giờ phép còn lại của tớ với nào
+  - Cho tớ hỏi thông tin về số giờ phép hiện tại của tớ với
+  - ' kiểm tra xem tớ còn mấy giờ phép vậy'
+  - em cho tui biết số ngày phép còn của tớ với
+  - có thể nào check thông tin giờ phép hiện còn lại của tôi ko
+  - tháng tới tớ sẽ có bao nhiêu giờ phép vậy
+  - mầy kiểm tra cho tớ số giờ phép còn lại cái nào
+  - tớ còn bao nhiều giờ phép trong [thangs rồi](time) hả
+  - '[thang 12](time) mình còn mấy giờ nghỉ vậy timi'
+  - m có biết mình còn mấy giờ phép trong [tháng sắp tới](time) không
+  - hiện tại tui còn được mấy giờ nghỉ vậy
+  - sắp đến tớ còn chừng nào giờ phép vậy bot
+  - ' cho tớ hỏi là tôi có mấy ngày phép nhỉ'
+  - tui còn được nghỉ mấy ngày phép nữa
+  - Giờ tớ còn được mấy giờ nghỉ đó bot ơi?
+  - bạn tra giúp tôi số ngày phép còn của tôi với nào
+  - số ngày phép còn lại của tớ với
+  - mình còn bao nhiêu ngày phép vậy ạ?
+  - cho tui biết số giờ phép còn lại của tớ với nào
+  - Cho mình hỏi thông tin về số giờ phép hiện tại của tớ với
+  - ' kiểm tra xem tui còn mấy ngày phép vậy'
+  - bạn cho tôi biết số ngày phép còn của tôi với
+  - có thể nào check thông tin ngày phép hiện còn lại của tớ không
+  - tháng tới mình sẽ có bao nhiêu giờ phép vậy
+  - ' kiểm tra cho tui số ngày phép còn lại với'
+  - tui còn bao nhiều ngày phép trong [tháng này](time) nhỉ
+  - '[tháng trước](time) mình còn mấy ngày phép ta'
+  - bot có biết tớ còn mấy giờ phép trong [thang tới](time) không
+  - hiện tại tôi còn được mấy giờ nghỉ vậy
+  - sắp đến mình còn chừng nào giờ phép vậy timi
+  - bot cho tớ hỏi là tớ còn bao nhiêu giờ phép vậy
+  - tớ còn được nghỉ mấy giờ phép nữa
+  - Giờ mình còn được mấy giờ nghỉ đó bạn ơi?
+  - bot tra giúp tớ số ngày phép còn của mình với nào
+  - số ngày phép còn lại của mình với
+  - tui còn bao nhiêu ngày phép vậy ạ?
+  - cho tớ biết số giờ phép còn lại của tui với nào
+  - Cho tôi hỏi thông tin về số giờ phép hiện tại của tớ với
+  - ' kiểm tra xem tui còn mấy giờ phép vậy'
+  - bạn cho tớ biết số ngày phép còn của tớ với
+  - có thể nào check thông tin giờ phép hiện còn lại của tớ k
+  - tháng tới tôi sẽ có bao nhiêu giờ phép vậy
+  - ' kiểm tra cho mình số ngày phép còn lại với'
+  - tớ còn bao nhiều giờ phép trong [thangs 2](time) nhỉ
+  - '[thang vừa qua](time) mình còn mấy giờ nghỉ á timi'
+  - bot có biết mình còn mấy ngày phép trong [tháng tới nữa](time) không
+  - giờ tớ còn được bao nhiêu ngày nghỉ vậy mày
+  - sắp đến tôi còn chừng nào giờ phép vậy em
+  - ' cho tớ hỏi là tớ còn mấy giờ phép nhỉ'
+  - tớ còn được nghỉ mấy ngày phép nữa
+  - Giờ tui còn được mấy giờ nghỉ đó bạn ơi?
+  - bot tra giúp tớ số ngày phép còn của tớ với nào
+  - số ngày phép còn lại của tôi với
+  - cho mình biết số giờ phép còn lại của mình với nào
+  - Cho tôi hỏi thông tin về số giờ phép hiện tại của tôi với
+  - ' tra cứu xem tớ còn mấy giờ phép vậy'
+  - bot cho tui biết số giờ phép còn của tôi với
+  - có thể nào kiểm tra thông tin giờ phép hiện còn lại của tớ khum
+  - ' kiểm tra cho tớ số ngày phép còn lại cái nào'
+  - mình còn bao nhiều giờ phép trong [thangs vừa rồi](time) nhỉ
+  - '[tháng này](time) mình còn bao nhiêu ngày nghỉ vậy timi'
+  - bạn có biết tui còn mấy giờ phép trong [thangs tới nữa](time) không
+  - giờ tôi còn được mấy ngày nghỉ vậy bot
+  - sắp đến tớ còn chừng nào phép vậy timi
+  - timi cho tớ hỏi là mình có bao nhiêu giờ phép nhỉ
+  - mình còn được nghỉ mấy giờ phép nữa
+  - Giờ tớ còn được mấy giờ nghỉ đó timi ơi?
+  - timi tra giúp mình số giờ phép còn của tôi với nào
+  - số ngày phép hiện tại của tớ với
+  - cho tui biết số giờ phép còn lại của tôi với nào
+  - Cho tớ hỏi thông tin về số giờ phép hiện tại của tui với
+  - ' tra cứu xem mình còn bao nhiêu ngày phép vậy'
+  - bạn cho tớ biết số giờ phép còn của tui với
+  - có thể nào check thông tin giờ phép hiện còn lại của tớ không
+  - ' kiểm tra cho mình số giờ phép còn lại với'
+  - mình còn bao nhiều giờ phép trong [thangs 6](time) hả
+  - '[tháng này](time) mình còn mấy giờ phép ta'
+  - bạn có biết tớ còn mấy ngày phép trong [thang sắp tới](time) không
+  - giờ mình còn được bao nhiêu giờ nghỉ vậy
+  - sắp đến tôi còn chừng nào giờ phép vậy cậu
+  - mày cho tớ hỏi là tớ có bao nhiêu giờ phép vậy
+  - mình còn được nghỉ bao nhiêu ngày phép nữa nhỉ
+  - Giờ tui còn được mấy giờ nghỉ đó timi ơi?
+  - mày tra giúp tui số ngày phép còn của tớ với nào
+  - số giờ phép hiện tại của mình với
+  - cho mình biết số giờ phép còn lại của tớ với nào
+  - Cho mình hỏi thông tin về số giờ phép hiện tại của mình với
+  - ' kiểm tra xem tôi còn mấy ngày phép vậy'
+  - timi cho tui biết số ngày phép còn của tớ với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tớ hông
+  - timi tra cứu cho tớ số giờ phép còn lại với
+  - mình còn bao nhiều ngày phép trong [tháng này](time) vậy
+  - '[tháng mười](time) mình còn bao nhiêu ngày nghỉ vậy mầy'
+  - bot có biết tui còn mấy giờ phép trong [tháng tới](time) không
+  - hiện tại tui còn được bao nhiêu giờ nghỉ vậy mầy
+  - sắp đến tớ còn chừng nào phép vậy cậu
+  - ' cho tớ hỏi là tui có mấy ngày phép vậy'
+  - tớ còn được nghỉ mấy ngày phép nữa nhỉ
+  - Giờ tớ còn được mấy giờ nghỉ đó mày ơi?
+  - bạn tra giúp tớ số giờ phép còn của tớ với nào
+  - số giờ phép hiện tại của tôi với
+  - cho tôi biết số giờ phép còn lại của tôi với nào
+  - Cho tớ hỏi thông tin về số giờ phép hiện tại của mình với
+  - cậu kiểm tra xem tớ còn mấy giờ phép vậy
+  - timi cho mình biết số ngày phép còn của tớ với
+  - có thể nào check thông tin ngày phép hiện còn lại của tớ khum
+  - bot kiểm tra cho tôi số ngày phép còn lại cái nào
+  - mình còn bao nhiều ngày phép trong [tháng này](time) nhỉ
+  - '[thang mười môt](time) mình còn bao nhiêu giờ phép vậy mầy'
+  - e có biết tớ còn mấy ngày phép trong [thang này](time) không
+  - hiện tại tớ còn được bao nhiêu ngày nghỉ vậy
+  - sắp đến tui còn bao nhiêu phép vậy em
+  - m cho mình hỏi là tớ còn bao nhiêu giờ phép vậy
+  - tôi còn được nghỉ bao nhiêu ngày phép nữa nhỉ
+  - Giờ mình còn được mấy giờ nghỉ đó timi ơi?
+  - bot tra giúp mình số ngày phép còn của tui với nào
+  - số giờ phép còn lại của tôi với
+  - cho tui biết số giờ phép còn lại của tui với nào
+  - Cho tôi hỏi thông tin về số giờ phép hiện tại của tui với
+  - ' tra cứu xem tui còn bao nhiêu ngày phép vậy'
+  - timi cho tớ biết số giờ phép còn của tôi với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tôi không
+  - cậu kiểm tra cho tớ số ngày phép còn lại cái nào
+  - tớ còn bao nhiều ngày phép trong [thangs rồi](time) vậy
+  - '[thang 12](time) mình còn mấy ngày phép ta'
+  - bot có biết tôi còn mấy giờ phép trong [tháng này](time) không
+  - hiện tại tui còn được mấy giờ nghỉ đó timi
+  - sắp đến tớ còn chừng nào phép vậy bot
+  - ' cho tớ hỏi là tôi có mấy giờ phép vậy'
+  - tớ còn được nghỉ bao nhiêu ngày phép nữa
+  - Giờ tớ còn được mấy giờ nghỉ đó mi ơi?
+  - cậu tra giúp tớ số giờ phép còn của tui với nào
+  - số giờ phép còn lại của mình với
+  - cho tớ biết số giờ phép còn lại của mình với nào
+  - Cho mình hỏi thông tin về số giờ phép hiện tại của tôi với
+  - bạn tra cứu xem tôi còn bao nhiêu ngày phép vậy
+  - mày cho tui biết số ngày phép còn của mình với
+  - có thể nào check thông tin giờ phép hiện còn lại của mình khum
+  - bạn kiểm tra cho tớ số ngày phép còn lại với
+  - tôi còn bao nhiều giờ phép trong [thang mười](time) hả mày
+  - '[tháng ba](time) mình còn mấy giờ nghỉ ta'
+  - em có biết tôi còn mấy ngày phép trong [thangs này](time) không
+  - hiện tại tớ còn được mấy giờ nghỉ đó timi
+  - sắp đến tui còn chừng nào giờ phép vậy m
+  - timi cho tớ hỏi là mình còn bao nhiêu giờ phép vậy
+  - mình còn được nghỉ bao nhiêu giờ phép nữa nhỉ
+  - Giờ mình còn được mấy giờ nghỉ đó bot ơi?
+  - cậu tra giúp tớ số ngày phép còn của tớ với nào
+  - số ngày phép còn lại của tui với
+  - cho mình biết số giờ phép còn lại của tui với nào
+  - Cho tui hỏi thông tin về số giờ phép hiện tại của mình với
+  - ' tra cứu xem tớ còn mấy ngày phép vậy'
+  - mi cho tớ biết số giờ phép còn của mình với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tui không
+  - ' tra cứu cho tớ số ngày phép còn lại với'
+  - tôi còn bao nhiều ngày phép trong [tháng này](time) hả
+  - '[thang saus](time) mình còn bao nhiêu giờ nghỉ ta'
+  - mày có biết tớ còn mấy giờ phép trong [thangs này](time) không
+  - hiện tại tớ còn được bao nhiêu giờ nghỉ đó mi
+  - sắp đến tớ còn bao nhiêu phép vậy timi
+  - bot cho tôi hỏi là tớ còn mấy giờ phép nhỉ
+  - tớ còn được nghỉ bao nhiêu ngày phép nữa nhỉ
+  - Giờ mình còn được mấy giờ nghỉ đó em ơi?
+  - em tra giúp mình số giờ phép còn của tớ với nào
+  - số giờ phép còn lại của tui với
+  - cho tôi biết số giờ phép còn lại của tui với nào
+  - Cho tui hỏi thông tin về số giờ phép hiện tại của tớ với
+  - bot tra cứu xem tớ còn mấy ngày phép vậy
+  - cậu cho tớ biết số giờ phép còn của tớ với
+  - có thể nào kiểm tra thông tin giờ phép hiện còn lại của mình hông
+  - bạn tra cứu cho tớ số ngày phép còn lại cái nào
+  - tớ còn bao nhiều ngày phép trong [tháng này](time) vậy
+  - '[thangs chin](time) mình còn mấy giờ nghỉ ta'
+  - m có biết tui còn mấy giờ phép trong [tháng tới đây](time) không
+  - giờ tôi còn được bao nhiêu ngày nghỉ đó cậu
+  - sắp đến mình còn chừng nào giờ phép vậy bot
+  - bạn cho tôi hỏi là tôi có bao nhiêu giờ phép nhỉ
+  - mình còn được nghỉ bao nhiêu giờ phép nữa
+  - Giờ tui còn được mấy giờ nghỉ đó mầy ơi?
+  - bạn tra giúp mình số giờ phép còn của mình với nào
+  - số giờ phép hiện tại của tui với
+  - cho mình biết số giờ phép còn lại của tôi với nào
+  - Cho tớ hỏi thông tin về số giờ phép hiện tại của tôi với
+  - ' kiểm tra xem tớ còn bao nhiêu giờ phép vậy'
+  - bot cho tớ biết số ngày phép còn của tôi với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tớ khum
+  - mày tra cứu cho tui số giờ phép còn lại với
+  - tớ còn bao nhiều giờ phép trong [tháng này](time) hả chú em
+  - '[thangs 6](time) mình còn bao nhiêu ngày phép á timi'
+  - bot có biết tớ còn mấy ngày phép trong [thangs tới](time) không
+  - hiện tại tớ còn được bao nhiêu giờ nghỉ vậy mi
+  - sắp đến tui còn chừng nào phép vậy mi
+  - ' cho tớ hỏi là tôi có bao nhiêu giờ phép nhỉ'
+  - mình còn được nghỉ mấy giờ phép nữa nhỉ
+  - Giờ tớ còn được mấy giờ nghỉ đó mầy ơi?
+  - chú em tra giúp tôi số giờ phép còn của tớ với nào
+  - số ngày phép hiện tại của mình với
+  - cho tớ biết số giờ phép còn lại của tôi với nào
+  - Cho tôi hỏi thông tin về số giờ phép hiện tại của mình với
+  - ' tra cứu xem tớ còn bao nhiêu ngày phép vậy'
+  - timi cho tôi biết số giờ phép còn của tớ với
+  - có thể nào check thông tin giờ phép hiện còn lại của tớ ko
+  - ' tra cứu cho tui số ngày phép còn lại với'
+  - tui còn bao nhiều ngày phép trong [thangs mười môt](time) vậy cậu
+  - '[tháng này](time) mình còn mấy giờ phép á mi'
+  - bot có biết tui còn mấy ngày phép trong [thang tới](time) không
+  - hiện tại tớ còn được bao nhiêu ngày nghỉ đó timi
+  - sắp đến tớ còn bao nhiêu phép vậy mi
+  - e cho tôi hỏi là mình có bao nhiêu ngày phép vậy
+  - tui còn được nghỉ bao nhiêu ngày phép nữa
+  - Giờ tui còn được mấy giờ nghỉ đó bot ơi?
+  - bạn tra giúp tớ số ngày phép còn của tui với nào
+  - số ngày phép hiện tại của tôi với
+  - cho tôi biết số giờ phép còn lại của mình với nào
+  - Cho tui hỏi thông tin về số giờ phép hiện tại của tui với
+  - ' tra cứu xem mình còn mấy giờ phép vậy'
+  - timi cho tôi biết số ngày phép còn của tui với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của mình hông
+  - cậu tra cứu cho tui số giờ phép còn lại với
+  - mình còn bao nhiều giờ phép trong [thangs trước nữa](time) hả
+  - '[thang bảy](time) mình còn mấy giờ phép ta'
+  - mày có biết tớ còn mấy giờ phép trong [tháng sắp tới](time) không
+  - hiện tại tui còn được mấy ngày nghỉ đó
+  - sắp đến tớ còn chừng nào phép vậy bạn
+  - bot cho tớ hỏi là tớ có bao nhiêu giờ phép vậy
+  - mình còn được nghỉ bao nhiêu ngày phép nữa
+  - Giờ mình còn được mấy giờ nghỉ đó e ơi?
+  - timi tra giúp tớ số giờ phép còn của mình với nào
+  - cho tui biết số giờ phép còn lại của mình với nào
+  - Cho tui hỏi thông tin về số giờ phép hiện tại của tôi với
+  - bot tra cứu xem tớ còn bao nhiêu giờ phép vậy
+  - bot cho tớ biết số ngày phép còn của tớ với
+  - có thể nào check thông tin ngày phép hiện còn lại của tôi ko
+  - ' tra cứu cho tôi số giờ phép còn lại cái nào'
+  - tớ còn bao nhiều giờ phép trong [thangs mười môt](time) hả
+  - '[thang rồi](time) mình còn mấy giờ nghỉ ta'
+  - cậu có biết mình còn mấy giờ phép trong [thangs tới đây](time) không
+  - hiện tại tớ còn được bao nhiêu ngày nghỉ vậy timi
+  - sắp đến tui còn chừng nào phép vậy timi
+  - ' cho tớ hỏi là tôi còn mấy ngày phép vậy'
+  - tớ còn được nghỉ bao nhiêu giờ phép nữa
+  - Giờ tôi còn được mấy giờ nghỉ đó timi ơi?
+  - timi tra giúp tôi số ngày phép còn của tớ với nào
+  - số ngày phép hiện tại của tui với
+  - bot tra cứu xem mình còn mấy ngày phép vậy
+  - cậu cho tớ biết số ngày phép còn của tui với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tớ k
+  - ' tra cứu cho tui số giờ phép còn lại cái nào'
+  - tớ còn bao nhiều ngày phép trong [tháng này](time) hả
+  - '[thang vừa rồi](time) mình còn bao nhiêu giờ phép vậy mày'
+  - bạn có biết mình còn mấy giờ phép trong [thangs sắp tới](time) không
+  - hiện tại tôi còn được bao nhiêu ngày nghỉ vậy
+  - sắp đến tớ còn chừng nào phép vậy chú em
+  - ' cho tui hỏi là mình có mấy giờ phép nhỉ'
+  - tui còn được nghỉ mấy giờ phép nữa nhỉ
+  - Giờ mình còn được mấy giờ nghỉ đó cậu ơi?
+  - mi tra giúp tớ số giờ phép còn của tui với nào
+  - ' kiểm tra xem tớ còn bao nhiêu ngày phép vậy'
+  - bạn cho tớ biết số giờ phép còn của tớ với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tui k
+  - bot tra cứu cho tui số giờ phép còn lại cái nào
+  - tớ còn bao nhiều giờ phép trong [thang trước](time) vậy timi
+  - '[thangs này](time) mình còn mấy ngày phép ta'
+  - timi có biết tớ còn mấy giờ phép trong [tháng sắp tới](time) không
+  - giờ tớ còn được bao nhiêu ngày nghỉ vậy timi
+  - sắp đến tớ còn chừng nào giờ phép vậy timi
+  - ' cho tớ hỏi là mình còn mấy ngày phép vậy'
+  - tui còn được nghỉ bao nhiêu giờ phép nữa
+  - Giờ tôi còn được mấy giờ nghỉ đó bạn ơi?
+  - bạn tra giúp tôi số ngày phép còn của tớ với nào
+  - ' kiểm tra xem tớ còn mấy ngày phép vậy'
+  - cậu cho tớ biết số giờ phép còn của tui với
+  - có thể nào check thông tin giờ phép hiện còn lại của tớ hông
+  - ' kiểm tra cho mình số ngày phép còn lại cái nào'
+  - tớ còn bao nhiều ngày phép trong [tháng hai](time) vậy cậu
+  - '[thang 6](time) mình còn mấy giờ nghỉ vậy bạn'
+  - bot có biết tớ còn mấy giờ phép trong [tháng tới nữa](time) không
+  - giờ tôi còn được mấy giờ nghỉ đó bot
+  - sắp đến tớ còn chừng nào giờ phép vậy cậu
+  - ' cho tớ hỏi là mình có mấy giờ phép vậy'
+  - tớ còn được nghỉ bao nhiêu giờ phép nữa nhỉ
+  - Giờ mình còn được mấy giờ nghỉ đó mày ơi?
+  - bot tra giúp tớ số giờ phép còn của tớ với nào
+  - m tra cứu xem tớ còn mấy giờ phép vậy
+  - bạn cho tớ biết số ngày phép còn của tui với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tui ko
+  - ' tra cứu cho tớ số ngày phép còn lại cái nào'
+  - mình còn bao nhiều ngày phép trong [tháng này](time) vậy bot
+  - '[tháng này](time) mình còn bao nhiêu ngày phép vậy mi'
+  - mi có biết tớ còn mấy ngày phép trong [tháng này](time) không
+  - giờ tớ còn được mấy ngày nghỉ vậy
+  - sắp đến tớ còn bao nhiêu giờ phép vậy bot
+  - cậu cho tôi hỏi là tôi còn bao nhiêu giờ phép nhỉ
+  - tôi còn được nghỉ bao nhiêu giờ phép nữa
+  - Giờ tôi còn được mấy giờ nghỉ đó bot ơi?
+  - cậu tra giúp tôi số ngày phép còn của tui với nào
+  - bot kiểm tra xem tớ còn mấy ngày phép vậy
+  - bạn cho tôi biết số giờ phép còn của tớ với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tôi khum
+  - mầy kiểm tra cho tui số ngày phép còn lại với
+  - tui còn bao nhiều ngày phép trong [tháng này](time) hả chú em
+  - '[thang namw](time) mình còn mấy ngày nghỉ ta'
+  - timi có biết tớ còn mấy giờ phép trong [thang tới đây](time) không
+  - giờ tôi còn được bao nhiêu giờ nghỉ vậy bot
+  - sắp đến tui còn bao nhiêu phép vậy bot
+  - ' cho tui hỏi là tớ còn bao nhiêu ngày phép vậy'
+  - tôi còn được nghỉ mấy ngày phép nữa
+  - Giờ tớ còn được mấy giờ nghỉ đó m ơi?
+  - e tra giúp tớ số giờ phép còn của mình với nào
+  - cậu tra cứu xem mình còn mấy giờ phép vậy
+  - cậu cho tớ biết số ngày phép còn của mình với
+  - có thể nào check thông tin ngày phép hiện còn lại của tui k
+  - timi tra cứu cho tui số giờ phép còn lại cái nào
+  - tôi còn bao nhiều giờ phép trong [tháng này](time) nhỉ
+  - '[tháng này](time) mình còn bao nhiêu ngày nghỉ ta'
+  - timi có biết tớ còn mấy ngày phép trong [thang này](time) không
+  - giờ tui còn được bao nhiêu ngày nghỉ vậy bạn
+  - sắp đến tôi còn bao nhiêu giờ phép vậy timi
+  - ' cho tui hỏi là tui còn mấy giờ phép nhỉ'
+  - tớ còn được nghỉ mấy giờ phép nữa nhỉ
+  - Giờ tui còn được mấy giờ nghỉ đó mi ơi?
+  - mày tra giúp tớ số ngày phép còn của tui với nào
+  - ' tra cứu xem mình còn bao nhiêu giờ phép vậy'
+  - chú em cho tui biết số ngày phép còn của tui với
+  - có thể nào kiểm tra thông tin giờ phép hiện còn lại của tui k
+  - ' kiểm tra cho tớ số giờ phép còn lại với'
+  - tôi còn bao nhiều giờ phép trong [thangs này](time) nhỉ timi
+  - '[tháng mười môt](time) mình còn bao nhiêu giờ phép vậy bạn'
+  - bạn có biết tui còn mấy ngày phép trong [tháng tới nữa](time) không
+  - hiện tại mình còn được mấy ngày nghỉ vậy bạn
+  - sắp đến tui còn chừng nào giờ phép vậy cậu
+  - m cho tớ hỏi là tui còn bao nhiêu ngày phép nhỉ
+  - mình còn được nghỉ mấy ngày phép nữa nhỉ
+  - Giờ tớ còn được mấy giờ nghỉ đó e ơi?
+  - cậu tra giúp tôi số giờ phép còn của tui với nào
+  - timi tra cứu xem tôi còn bao nhiêu ngày phép vậy
+  - mi cho tớ biết số giờ phép còn của tớ với
+  - có thể nào check thông tin ngày phép hiện còn lại của tớ ko
+  - ' kiểm tra cho tôi số giờ phép còn lại với'
+  - tôi còn bao nhiều ngày phép trong [thang mười một](time) vậy cậu
+  - '[tháng mười hai](time) mình còn mấy giờ phép ta'
+  - cậu có biết tôi còn mấy ngày phép trong [tháng tới nữa](time) không
+  - hiện tại tớ còn được bao nhiêu ngày nghỉ đó
+  - sắp đến tớ còn bao nhiêu giờ phép vậy mầy
+  - ' cho tớ hỏi là tớ còn bao nhiêu ngày phép vậy'
+  - tôi còn được nghỉ bao nhiêu giờ phép nữa nhỉ
+  - Giờ tôi còn được mấy giờ nghỉ đó em ơi?
+  - m tra giúp tớ số giờ phép còn của tớ với nào
+  - chú em tra cứu xem tớ còn mấy ngày phép vậy
+  - bot cho tớ biết số giờ phép còn của tôi với
+  - có thể nào check thông tin giờ phép hiện còn lại của tôi không
+  - cậu kiểm tra cho tôi số ngày phép còn lại với
+  - tớ còn bao nhiều ngày phép trong [thangs tám](time) nhỉ timi
+  - '[thangs trước nữa](time) mình còn mấy giờ phép ta'
+  - bot có biết tớ còn mấy giờ phép trong [thangs tới](time) không
+  - giờ tớ còn được mấy ngày nghỉ đó chú em
+  - sắp đến tớ còn bao nhiêu giờ phép vậy mày
+  - mày cho tôi hỏi là tớ còn bao nhiêu giờ phép vậy
+  - tôi còn được nghỉ bao nhiêu ngày phép nữa
+  - Giờ mình còn được mấy giờ nghỉ đó chú em ơi?
+  - mày tra giúp tớ số giờ phép còn của tớ với nào
+  - m kiểm tra xem tui còn mấy giờ phép vậy
+  - bot cho tớ biết số ngày phép còn của mình với
+  - có thể nào kiểm tra thông tin ngày phép hiện còn lại của tui khum
+  - cậu kiểm tra cho tớ số giờ phép còn lại với
+  - tôi còn bao nhiều giờ phép trong [tháng môt](time) nhỉ em
+  - '[thang 5](time) mình còn mấy ngày nghỉ ta'
+  - cậu có biết tớ còn mấy giờ phép trong [tháng này](time) không
+  - giờ tớ còn được mấy giờ nghỉ đó
+  - sắp đến tớ còn bao nhiêu giờ phép vậy timi
+  - mầy cho tớ hỏi là tôi còn bao nhiêu giờ phép vậy
+  - tôi còn được nghỉ mấy giờ phép nữa

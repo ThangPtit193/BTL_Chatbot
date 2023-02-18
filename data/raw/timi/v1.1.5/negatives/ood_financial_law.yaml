@@ -1,0 +1,11 @@
+negatives:
+- intent: faq/ood_financial_law
+  examples:
+  - Phân biệt người chịu thuế, người nộp thuế?
+  - So sánh chi đầu tư phát triển và chi thường xuyên?
+  - Các nguyên tắc đánh thuế?
+  - Cho biết vài trò của Nhà nước trong lĩnh vực tài chính?
+  - Nội dung điều chỉnh của Luật thuế thu nhập doanh nghiệp?
+  - Khái niệm, đặc điểm của thuế thu nhập doanh nghiệp?
+  - Vị trí của khâu Ngân sách nhà nước trong hệ thống tài chính của nền kinh tế.
+  - Đối tượng điều chỉnh của ngành Luật tài chính?

@@ -1,0 +1,306 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_name
+  examples:
+  - họ và tên là gì vậy
+  - tên em là gì vậy
+  - bạn có thể cho tớ hỏi bạn tên là gì vậy hả
+  - cho tớ hỏi bot tên là mô
+  - cậu có thể cho mình hỏi tên của cậu là nào
+  - ' tên thật là gì'
+  - em tên gì vậy
+  - bạn tên timi phải không
+  - tên là gì
+  - cho mình hỏi mày họ tên là chi hả
+  - cho mình hỏi bạn tên là gì đó
+  - bạn tên gì
+  - cho tớ hỏi họ tên của m nào
+  - họ tên em là nào hả
+  - tên đầy đủ của bạn là gì vậy
+  - ' tên gì'
+  - ' họ tên là mô đấy'
+  - họ và tên mày là mô thế
+  - tên m là mô vậy
+  - bạn cho tớ hỏi bạn tên là gì
+  - cho tớ hỏi cậu tên là gì
+  - cậu có thể cho tớ hỏi tên của cậu là gì
+  - bạn tên thật là gì
+  - bot tên là mô vậy
+  - bạn tên timi à
+  - cho tớ hỏi cậu họ tên gì thế
+  - cho mình hỏi bạn tên là gì
+  - bạn tên là gì
+  - cho tớ hỏi họ tên của bot chi thế
+  - họ tên m là nào thế
+  - tên đủ đầy của em là chi hả
+  - timi tên gì
+  - ' họ tên là nào'
+  - họ và tên là mô thế
+  - tên mày là nào thế
+  - bạn cho tôi hỏi bạn tên là thế nào
+  - cho mình hỏi cậu tên là chi
+  - cậu cho tớ hỏi tên đủ đầy của cậu là chi
+  - bot họ và tên là gì
+  - timi tên gì đó
+  - bạn tên timi ạ
+  - cho tao hỏi cậu họ tên là chi đó
+  - cho hỏi bạn tên là mô vậy
+  - cho tớ hỏi họ tên của cậu nào
+  - họ tên timi là nào vậy
+  - tên đủ đầy của em là mô thế
+  - bot tên là gì
+  - m họ tên là mô đấy
+  - họ và tên là gì hả
+  - tên em là nào đó
+  - bạn cho mình hỏi bạn tên là gì hở
+  - cho tui hỏi cậu tên là chi
+  - cậu có thể cho tớ hỏi tên đầy đủ của cậu là chi
+  - m tên thật là gì
+  - em tên mô vậy
+  - cho tớ hỏi m họ tên là gì
+  - cho hỏi bạn tên là nào
+  - cho mình hỏi họ tên của mày nào vậy
+  - họ tên em là gì đó
+  - tên đủ đầy của mày là nào vậy
+  - em tên là gì
+  - ' họ tên là mô hả'
+  - họ và tên là mô vậy
+  - tên m là nào đấy
+  - bạn có thể cho tôi hỏi bạn tên là như nào
+  - cho tớ hỏi mày tên là nào đấy
+  - cậu cho tớ hỏi tên của cậu là gì
+  - bot tên thật là gì vậy
+  - mày tên chi đó
+  - cho tớ hỏi em họ tên là mô
+  - cho hỏi bạn tên là nào thế
+  - cho mình hỏi họ tên của timi là chi hả
+  - họ tên cậu là chi đấy
+  - tên đủ đầy của bot là chi thế
+  - cậu tên là gì
+  - mày họ tên là nào
+  - họ và tên mày là chi thế
+  - tên mày là mô đấy
+  - bạn có thể cho tôi hỏi bạn tên là gì vậy á hả
+  - cho tôi hỏi timi tên là nào
+  - cậu có thể cho tớ hỏi tên đủ đầy của cậu là gì
+  - ' họ và tên là gì hở'
+  - cậu tên là chi thế
+  - cho tớ hỏi em họ tên gì hả
+  - cho tớ hỏi bạn tên là gì
+  - cho tao hỏi họ tên của em chi
+  - họ tên timi là chi thế
+  - tên đầy đủ của em là mô hả
+  - timi tên là gì
+  - ' họ tên là gì đó'
+  - họ và tên là nào thế
+  - tên bạn là mô đấy
+  - bạn cho tớ hỏi bạn tên là gì hở
+  - cho tao hỏi timi tên là mô hả
+  - cậu cho tao hỏi tên đầy đủ của cậu là nào
+  - ' tên đầy đủ là gì'
+  - mày tên chi hả
+  - cho tôi hỏi bạn họ tên mô
+  - cho tui hỏi bạn tên chi hả
+  - cho tớ hỏi họ tên của timi là chi đấy
+  - họ tên timi là gì vậy
+  - tên đủ đầy của cậu là gì đấy
+  - mày tên là gì
+  - ' họ tên là chi thế'
+  - họ và tên là chi đấy
+  - tên timi là chi đấy
+  - bạn có thể cho tớ hỏi bạn tên là gì
+  - cho tớ hỏi timi tên là chi đấy
+  - cậu cho mình hỏi tên của cậu là chi
+  - ' tên đầy đủ là thế nào'
+  - timi tên mô vậy
+  - cho tôi hỏi m họ tên nào
+  - cho tao hỏi bạn tên là mô thế
+  - cho tớ hỏi họ tên của m là gì đấy
+  - họ tên timi là nào đấy
+  - tên đầy đủ của timi là nào thế
+  - m tên gì
+  - m họ tên là mô thế
+  - họ và tên là chi vậy
+  - tên m là nào vậy
+  - bạn cho tớ hỏi bạn tên là thế nào
+  - cho tớ hỏi cậu tên là nào hả
+  - cậu có thể cho tôi hỏi tên đầy đủ của cậu là gì
+  - m tên thật là như nào
+  - bot tên là nào hả
+  - cho tôi hỏi cậu họ tên là chi
+  - cho tui hỏi bạn tên là gì
+  - cho tao hỏi họ tên của bot là nào đó
+  - họ tên bot là gì vậy
+  - tên đầy đủ của mày là nào vậy
+  - em tên gì
+  - m họ tên là gì đấy
+  - họ và tên là mô hả
+  - tên mày là gì hả
+  - bạn cho tớ hỏi bạn tên là như thế nào
+  - cho tao hỏi em tên là chi
+  - cậu có thể cho tao hỏi tên đầy đủ của cậu là chi
+  - ' họ và tên là thế nào'
+  - mày tên là chi đấy
+  - cho mình hỏi timi họ tên chi
+  - cho hỏi bạn tên nào vậy
+  - cho tớ hỏi họ tên của timi nào
+  - họ tên mày là mô thế
+  - tên đầy đủ của bot là chi đấy
+  - bot tên gì
+  - bạn họ tên là gì đấy
+  - họ và tên là gì đó
+  - tên bot là mô thế
+  - bạn có thể cho mình hỏi bạn tên là thế nào
+  - cho tôi hỏi em tên là nào
+  - cậu cho tui hỏi tên đủ đầy của cậu là gì
+  - ' họ và tên là gì'
+  - bạn tên chi đó
+  - cho mình hỏi bạn họ tên chi
+  - cho hỏi bạn tên chi
+  - cho tớ hỏi họ tên của timi là chi hả
+  - họ tên m là nào hả
+  - tên đầy đủ của timi là gì vậy
+  - cậu tên gì
+  - cậu họ tên là chi
+  - họ và tên là nào đó
+  - tên mày là chi hả
+  - bạn có thể cho tui hỏi bạn tên là như thế nào
+  - cho tao hỏi mày tên là mô
+  - cậu có thể cho tớ hỏi tên của cậu là chi
+  - bạn tên thật là thế nào
+  - em tên là nào thế
+  - cho tớ hỏi bot họ tên là gì vậy
+  - cho hỏi bạn tên gì
+  - cho tao hỏi họ tên của mày là mô hả
+  - họ tên bot là mô thế
+  - tên đầy đủ của m là gì đó
+  - mày tên gì
+  - bot họ tên là gì
+  - họ và tên m là nào vậy
+  - tên m là mô thế
+  - bạn cho tôi hỏi bạn tên là như thế nào
+  - cho tớ hỏi cậu tên là mô
+  - cậu cho tớ hỏi tên đủ đầy của cậu là gì
+  - bạn họ và tên là gì
+  - cậu tên nào đấy
+  - cho tớ hỏi mày họ tên là mô thế
+  - cho hỏi bạn tên chi vậy
+  - cho tao hỏi họ tên của bạn chi thế
+  - họ tên bot là mô đó
+  - tên đủ đầy của bạn là nào đó
+  - cậu họ tên là gì vậy
+  - họ và tên là nào đấy
+  - tên bot là nào đấy
+  - bạn có thể cho tớ hỏi bạn tên là như nào
+  - cho tớ hỏi m tên là mô thế
+  - cậu cho tui hỏi tên của cậu là chi
+  - m tên thật là gì vậy á hả
+  - m tên nào đấy
+  - cho tao hỏi bot họ tên chi vậy
+  - cho hỏi bạn tên mô
+  - cho mình hỏi họ tên của bạn là nào đấy
+  - họ tên m là gì thế
+  - tên đầy đủ của cậu là chi đó
+  - ' họ tên là chi hả'
+  - họ và tên là chi thế
+  - tên mày là chi thế
+  - bạn cho mình hỏi bạn tên là gì
+  - cho tui hỏi cậu tên là nào
+  - cậu cho tớ hỏi tên của cậu là mô
+  - m họ và tên là như thế nào
+  - em tên chi vậy
+  - cho tao hỏi bạn họ tên gì đấy
+  - cho hỏi bạn tên gì vậy
+  - cho tớ hỏi họ tên của cậu chi
+  - họ tên m là gì vậy
+  - tên đầy đủ của m là chi hả
+  - em họ tên là gì vậy
+  - họ và tên mày là mô hả
+  - tên em là gì đấy
+  - bạn cho tui hỏi bạn tên là thế nào
+  - cho tôi hỏi m tên là nào
+  - cậu có thể cho tớ hỏi tên của cậu là mô
+  - bot tên thật là như thế nào
+  - m tên chi đấy
+  - cho tôi hỏi bạn họ tên chi
+  - cho mình hỏi bạn tên là nào
+  - cho tớ hỏi họ tên của m nào hả
+  - họ tên cậu là mô vậy
+  - tên đủ đầy của cậu là nào hả
+  - m tên là gì
+  - m họ tên là chi
+  - họ và tên là mô đó
+  - tên bạn là chi đấy
+  - bạn có thể cho tớ hỏi bạn tên là thế nào
+  - cho tôi hỏi timi tên là chi
+  - cậu có thể cho mình hỏi tên của cậu là mô
+  - bạn tên thật là như thế nào
+  - cậu tên mô hả
+  - cho tớ hỏi bot họ tên là mô vậy
+  - cho hỏi bạn tên là mô
+  - cho tớ hỏi họ tên của cậu là mô đó
+  - họ tên m là mô đó
+  - tên đầy đủ của timi là gì đó
+  - m họ tên là gì
+  - họ và tên là gì đấy
+  - tên cậu là gì đó
+  - bạn có thể cho tôi hỏi bạn tên là thế nào
+  - cho tôi hỏi bot tên là gì
+  - cậu có thể cho mình hỏi tên đủ đầy của cậu là gì
+  - ' tên đầy đủ là như thế nào'
+  - mày tên gì hả
+  - cho tớ hỏi em họ tên là nào đấy
+  - cho tớ hỏi bạn tên là chi
+  - cho mình hỏi họ tên của bạn chi vậy
+  - họ tên bạn là nào đấy
+  - tên đủ đầy của mày là gì vậy
+  - ' họ tên là chi vậy'
+  - họ và tên bạn là mô đấy
+  - tên bot là chi đấy
+  - bạn cho tao hỏi bạn tên là như nào
+  - cho mình hỏi bạn tên là chi
+  - cậu cho tôi hỏi tên của cậu là mô
+  - mày tên thật là thế nào
+  - em tên gì hả
+  - cho mình hỏi bạn họ tên nào vậy
+  - cho tớ hỏi bạn tên mô
+  - cho tớ hỏi họ tên của cậu gì
+  - họ tên bạn là gì hả
+  - tên đủ đầy của m là nào đấy
+  - em họ tên là nào vậy
+  - họ và tên bạn là nào vậy
+  - tên cậu là gì đấy
+  - bạn có thể cho tớ hỏi bạn tên là gì vậy á hả
+  - cho tui hỏi cậu tên là mô hả
+  - cậu cho tôi hỏi tên đủ đầy của cậu là gì
+  - em tên thật là gì
+  - cậu tên gì đó
+  - cho tớ hỏi bot họ tên là gì đấy
+  - cho tớ hỏi bạn tên chi vậy
+  - cho tớ hỏi họ tên của cậu là mô đấy
+  - họ tên bot là gì đấy
+  - tên đầy đủ của timi là gì đấy
+  - ' họ tên là mô vậy'
+  - họ và tên timi là nào đó
+  - tên em là mô thế
+  - bạn có thể cho tao hỏi bạn tên là gì
+  - cho tớ hỏi bot tên là nào
+  - cậu có thể cho tớ hỏi tên đầy đủ của cậu là nào
+  - timi tên đầy đủ là như nào
+  - timi tên là mô đấy
+  - cho tao hỏi timi họ tên là mô
+  - cho tớ hỏi bạn tên mô hả
+  - cho tôi hỏi họ tên của bạn là chi
+  - họ tên timi là gì hả
+  - tên đủ đầy của em là mô vậy
+  - ' họ tên là mô'
+  - họ và tên bot là nào đó
+  - tên em là chi hả
+  - bạn cho tao hỏi bạn tên là gì
+  - cho tớ hỏi cậu tên là mô thế
+  - cậu có thể cho tớ hỏi tên đầy đủ của cậu là mô
+  - ' tên thật là như thế nào'
+  - bot tên là chi hả
+  - cho tớ hỏi m họ tên là gì thế

@@ -1,0 +1,306 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_health
+  examples:
+  - timi vẫn khỏe không
+  - cho tớ hỏi sức khỏe của bạn ổn không
+  - em ngu ơi dạo ni em ổn không
+  - bạn ngu ơi dạo ni mày ổn chứ
+  - bạn thấy khỏe không
+  - sức khỏe bot vẫn tốt chớ
+  - sức khỏe của cậu vẫn tốt phải không
+  - em vẫn khỏe chớ
+  - bạn ngu ơi dạo ni cậu ổn phải không
+  - dao này sức khỏe như nào rồi m
+  - sức khỏe thế nào timi
+  - m vẫn khỏe phải không
+  - cho chị hỏi sức khỏe của bạn ổn không
+  - ngày hôm nay của em như thế nào
+  - cho chị hỏi sức khỏe của mày ổn không
+  - timi ngu ơi dạo ni timi ổn chớ
+  - mọi thứ vẫn tốt không timi
+  - gần đây cậu như thế nào
+  - gần đây em thế nào
+  - sức khỏe em ổn không
+  - sức khỏe của mày vẫn tốt chớ
+  - mọi việc vẫn tốt chứ timi
+  - bot ngu ơi dạo ni em ổn phải không
+  - mày mệt không
+  - sức khỏe timi vẫn tốt không
+  - hôm nay cậu thấy như nào
+  - sức khỏe mày có tốt không
+  - m ngu ơi dạo ni em ổn không
+  - mày ngu ơi dạo ni bạn ổn chứ
+  - bot ngu ơi dạo ni m ổn chứ
+  - gần đây bạn như thế nào
+  - timi ngu ơi dạo ni em ổn không
+  - m ngu ơi dạo ni timi ổn chớ
+  - sức khỏe như nào
+  - ngày hôm nay của bot như thế nào
+  - cho mình hỏi sức khỏe của timi ổn không
+  - khỏe không em
+  - timi ngu ơi dạo ni timi ổn không
+  - sức khỏe ntn em
+  - cho anh hỏi sức khỏe bạn ổn không
+  - mày ngu ơi dạo ni cậu ổn phải không
+  - em vẫn khỏe không
+  - sức khỏe cậu có tốt không
+  - cho anh hỏi sức khỏe của bot có tốt không
+  - mọi thứ vẫn tốt chứ em
+  - sức khỏe của mày vẫn tốt phải không
+  - mọi việc vẫn tốt phải không m
+  - dao này sức khỏe như thế nào rồi bạn
+  - bạn ngu ơi dạo ni timi ổn chứ
+  - sức khỏe timi ổn không
+  - cho mình hỏi sức khỏe của cậu ổn không
+  - cho mình hỏi sức khỏe của timi có tốt không
+  - cho tớ hỏi sức khỏe của bot ổn không
+  - timi ngu ơi dạo ni cậu ổn phải không
+  - dao này sức khỏe ntn rùi mày
+  - m ngu ơi dạo ni mày ổn chớ
+  - gần đây bot như thế nào
+  - hôm nay bạn thấy ntn
+  - hôm nay mày không khỏe à
+  - sức khỏe bạn vẫn tốt chứ
+  - m ngu ơi dạo ni bạn ổn chớ
+  - cậu ngu ơi dạo ni bot ổn không
+  - bạn ngu ơi dạo ni em ổn chớ
+  - hôm nay em thấy như thế nào
+  - bạn ngu ơi dạo ni mày ổn không
+  - mày ngu ơi dạo ni bot ổn không
+  - hôm nay m không khỏe à
+  - cho anh hỏi sức khỏe mày ổn không
+  - mày ngu ơi dạo ni cậu ổn chứ
+  - ngày hôm nay của timi ntn
+  - hôm nay cậu thấy như thế nào
+  - m khỏe không
+  - cho tớ hỏi sức khỏe của bot có tốt không
+  - hôm nay bot thấy như thế nào
+  - bạn ngu ơi dạo ni m ổn chớ
+  - bạn ngu ơi dạo ni bot ổn chớ
+  - cho chị hỏi sức khỏe của em ổn không
+  - sức khỏe ntn
+  - dao này sức khỏe như nào rùi
+  - cho anh hỏi sức khỏe mày có tốt không
+  - dao này sức khỏe ntn rồi mày
+  - sức khỏe thế nào cậu
+  - dao này sức khỏe ntn rùi timi
+  - bạn ngu ơi dạo ni em ổn chứ
+  - khỏe không
+  - cậu ngu ơi dạo ni mày ổn chớ
+  - cậu vẫn khỏe phải không
+  - mày ngu ơi dạo ni bot ổn phải không
+  - hôm nay m thấy như thế nào
+  - nay cậu yếu thế
+  - bạn ngu ơi dạo ni cậu ổn chứ
+  - mày khỏe không
+  - sức khỏe của mày vẫn tốt không
+  - bot ngu ơi dạo ni m ổn chớ
+  - hôm nay em mệt à
+  - cho chị hỏi sức khỏe của m có tốt không
+  - dao này sức khỏe ntn rồi em
+  - cậu ngu ơi dạo ni m ổn chứ
+  - sức khỏe như nào cậu
+  - hôm nay m thấy thế nào
+  - em ngu ơi dạo ni mày ổn chứ
+  - sức khỏe cậu vẫn tốt chứ
+  - dao này sức khỏe như nào rồi bạn
+  - hôm nay mày thấy như nào
+  - dạo này khỏe không bot
+  - sức khỏe m vẫn tốt phải không
+  - nay m yếu thế
+  - mọi thứ vẫn tốt không
+  - cho chị hỏi sức khỏe của m ổn không
+  - cho anh hỏi sức khỏe em có tốt không
+  - bạn ngu ơi dạo ni timi ổn chớ
+  - m ngu ơi dạo ni bạn ổn không
+  - khỏe không bạn
+  - sức khỏe của m ổn không
+  - hôm nay timi thấy như nào
+  - mày ngu ơi dạo ni mày ổn không
+  - timi vẫn khỏe chứ
+  - mày ngu ơi dạo ni timi ổn chứ
+  - có chuyện gì xảy ra không?
+  - mọi thứ vẫn tốt chớ
+  - gần đây m thế nào
+  - hôm nay bạn thấy như thế nào
+  - sức khỏe ntn timi
+  - mày ngu ơi dạo ni timi ổn phải không
+  - sức khỏe timi có tốt không
+  - mọi việc vẫn tốt chớ m
+  - mày ngu ơi dạo ni em ổn phải không
+  - em ngu ơi dạo ni m ổn không
+  - dạo này khỏe không em
+  - cho tớ hỏi sức khỏe timi có tốt không
+  - cho chị hỏi sức khỏe m có tốt không
+  - sức khỏe của timi vẫn tốt chứ
+  - sức khỏe mày vẫn tốt phải không
+  - sức khỏe của em vẫn tốt chứ
+  - dạo này khỏe không
+  - mọi thứ vẫn tốt chứ m
+  - cậu ngu ơi dạo ni m ổn phải không
+  - cho chị hỏi sức khỏe mày ổn không
+  - bot ngu ơi dạo ni bot ổn chứ
+  - cho anh hỏi sức khỏe của m có tốt không
+  - sức khỏe mày vẫn tốt không
+  - mọi thứ vẫn tốt chứ bạn
+  - gần đây timi ntn
+  - mày ngu ơi dạo ni timi ổn chớ
+  - cho anh hỏi sức khỏe của mày ổn không
+  - cậu ngu ơi dạo ni timi ổn chứ
+  - mọi việc vẫn tốt chứ em
+  - gần đây bot như nào
+  - mọi việc vẫn tốt phải không
+  - dao này sức khỏe như thế nào rồi mày
+  - sức khỏe của m vẫn tốt phải không
+  - mọi thứ vẫn tốt phải không bạn
+  - sức khỏe của em có tốt không
+  - cậu ngu ơi dạo ni bot ổn chứ
+  - mọi việc vẫn tốt chứ m
+  - cho chị hỏi sức khỏe bot ổn không
+  - sức khỏe của timi ổn không
+  - em ngu ơi dạo ni cậu ổn không
+  - cho mình hỏi sức khỏe của bạn ổn không
+  - sức khỏe bot vẫn tốt phải không
+  - timi ngu ơi dạo ni mày ổn chớ
+  - mọi thứ vẫn tốt phải không
+  - sức khỏe như thế nào m
+  - cậu vẫn khỏe không
+  - mọi việc vẫn tốt chứ cậu
+  - khỏe không mày
+  - cho tớ hỏi sức khỏe em có tốt không
+  - gần đây em như thế nào
+  - gần đây timi như nào
+  - mọi thứ vẫn tốt phải không cậu
+  - gần đây m ntn
+  - mọi thứ vẫn tốt không bạn
+  - timi ngu ơi dạo ni cậu ổn chớ
+  - gần đây mày ntn
+  - cho tớ hỏi sức khỏe bạn ổn không
+  - sức khỏe em có tốt không
+  - bạn có khỏe không
+  - hôm nay timi không khỏe à
+  - dao này sức khỏe ntn rùi
+  - cho tớ hỏi sức khỏe của timi có tốt không
+  - mày ngu ơi dạo ni cậu ổn chớ
+  - bot ngu ơi dạo ni mày ổn chớ
+  - sức khỏe ntn cậu
+  - mọi thứ vẫn tốt chứ mày
+  - em ngu ơi dạo ni bạn ổn chớ
+  - timi ngu ơi dạo ni m ổn chớ
+  - em ngu ơi dạo ni bạn ổn chứ
+  - hôm nay timi thấy ntn
+  - m ngu ơi dạo ni mày ổn chứ
+  - bot mệt không
+  - cho anh hỏi sức khỏe của mày có tốt không
+  - em ngu ơi dạo ni timi ổn chứ
+  - m vẫn khỏe chứ
+  - sức khỏe như nào mày
+  - bạn ngu ơi dạo ni m ổn không
+  - dao này sức khỏe ntn rồi bot
+  - cho anh hỏi sức khỏe em ổn không
+  - sức khỏe như nào m
+  - hôm nay cậu không khỏe à
+  - mọi thứ vẫn tốt không bot
+  - cho chị hỏi sức khỏe của bot có tốt không
+  - bot ngu ơi dạo ni timi ổn chứ
+  - bot ngu ơi dạo ni em ổn không
+  - sức khỏe timi vẫn tốt chớ
+  - mày ngu ơi dạo ni bot ổn chứ
+  - bot ngu ơi dạo ni m ổn không
+  - mày ngu ơi dạo ni cậu ổn không
+  - cậu ốm hử
+  - cho anh hỏi sức khỏe m ổn không
+  - vẫn khỏe chớ
+  - dao này sức khỏe ntn rùi em
+  - gần đây cậu như nào
+  - mọi thứ vẫn tốt phải không bot
+  - cho tớ hỏi sức khỏe của timi ổn không
+  - cho tớ hỏi sức khỏe của cậu ổn không
+  - dao này sức khỏe như nào rùi em
+  - hôm nay mày thấy ntn
+  - cho mình hỏi sức khỏe bạn ổn không
+  - em ngu ơi dạo ni mày ổn không
+  - vẫn khỏe phải không
+  - bạn ngu ơi dạo ni bot ổn chứ
+  - cậu ngu ơi dạo ni cậu ổn phải không
+  - bot ngu ơi dạo ni timi ổn không
+  - dao này sức khỏe thế nào rồi
+  - hôm nay mày thấy thế nào
+  - cậu ngu ơi dạo ni timi ổn không
+  - cậu ngu ơi dạo ni cậu ổn không
+  - bot vẫn khỏe không
+  - dao này sức khỏe như thế nào rùi cậu
+  - cậu ngu ơi dạo ni cậu ổn chớ
+  - cho chị hỏi sức khỏe của cậu ổn không
+  - sức khỏe của cậu có tốt không
+  - cho mình hỏi sức khỏe của bot có tốt không
+  - dao này sức khỏe như thế nào rùi m
+  - mọi việc vẫn tốt chớ mày
+  - mọi thứ vẫn tốt chứ
+  - em ngu ơi dạo ni em ổn chớ
+  - hôm nay em thấy thế nào
+  - sức khỏe bạn ổn không
+  - gần đây cậu ntn
+  - cậu vẫn khỏe chớ
+  - vẫn khỏe chứ
+  - hôm nay bạn mệt à
+  - sức khỏe như nào bạn
+  - cho tớ hỏi sức khỏe bạn có tốt không
+  - sức khỏe bạn vẫn tốt chớ
+  - ngày hôm nay của timi thế nào
+  - m ngu ơi dạo ni mày ổn phải không
+  - sức khỏe mày vẫn tốt chớ
+  - bạn ngu ơi dạo ni cậu ổn không
+  - hôm nay bot thấy ntn
+  - mọi thứ vẫn tốt chứ timi
+  - sức khỏe của m vẫn tốt chớ
+  - dao này sức khỏe ntn rồi
+  - ngày hôm nay của cậu thế nào
+  - cho mình hỏi sức khỏe của mày ổn không
+  - sức khỏe của bạn vẫn tốt không
+  - timi ngu ơi dạo ni cậu ổn chứ
+  - cho anh hỏi sức khỏe của cậu ổn không
+  - sức khỏe mày ổn không
+  - sức khỏe cậu vẫn tốt phải không
+  - sức khỏe của bot vẫn tốt chớ
+  - bạn ngu ơi dạo ni bot ổn phải không
+  - mày ngu ơi dạo ni m ổn không
+  - hôm nay bot thấy thế nào
+  - cậu ngu ơi dạo ni cậu ổn chứ
+  - dao này sức khỏe như nào rồi cậu
+  - sức khỏe của em vẫn tốt chớ
+  - timi ngu ơi dạo ni bot ổn chứ
+  - cậu ngu ơi dạo ni timi ổn phải không
+  - sức khỏe em vẫn tốt không
+  - dao này sức khỏe thế nào rồi mày
+  - mày ngu ơi dạo ni em ổn không
+  - cho tớ hỏi sức khỏe của m có tốt không
+  - gần đây cậu thế nào
+  - sức khỏe của bot vẫn tốt chứ
+  - cho chị hỏi sức khỏe bạn có tốt không
+  - cho mình hỏi sức khỏe của mày có tốt không
+  - sức khỏe thế nào bot
+  - cho tớ hỏi sức khỏe timi ổn không
+  - cho tớ hỏi sức khỏe của em có tốt không
+  - dao này sức khỏe thế nào rồi timi
+  - hôm nay cậu thấy thế nào
+  - cậu ngu ơi dạo ni mày ổn không
+  - mọi việc vẫn tốt không
+  - timi ngu ơi dạo ni bạn ổn phải không
+  - cho chị hỏi sức khỏe của cậu có tốt không
+  - dao này sức khỏe như thế nào rồi cậu
+  - dao này sức khỏe như nào rùi mày
+  - sức khỏe ntn m
+  - mọi việc vẫn tốt phải không bot
+  - ngày hôm nay của m ntn
+  - gần đây bạn thế nào
+  - sức khỏe em vẫn tốt chứ
+  - bot vẫn khỏe chớ
+  - cho mình hỏi sức khỏe em ổn không
+  - sức khỏe thế nào
+  - cậu ốm hả
+  - sức khỏe của bot vẫn tốt phải không
+  - khỏe không bot

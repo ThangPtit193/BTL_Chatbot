@@ -1,0 +1,306 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_gender
+  examples:
+  - m là nữ phải không
+  - tui muốn hỏi giới tính của bạn là gì vậy hả
+  - cho hỏi giới tính của cậu là gì vậy hả
+  - có thể cho tớ biết giới tính của bạn là thế nào
+  - cho chị hỏi giới tính của em là như nào
+  - giới tính của em là nam phải không
+  - mày là nam hay nữ
+  - m có phải là nam không
+  - cho tớ biết giới tính của bạn
+  - là nam hay nữ đó timi
+  - m là gay à
+  - giới tính của bot là như thế nào
+  - bạn có giới tính là thế nào
+  - giới tính của bạn có phải là nữ không
+  - có thể cho chị hỏi giới tính của timi là như thế nào vậy
+  - cậu bị bê đê à
+  - giới tính của mày
+  - em là đồng tính nữa à
+  - giới tính của timi là nam hay nữ
+  - giới tính của cậu là nào
+  - timi là nữ à
+  - cho tôi hỏi giới tính của cậu là thế nào
+  - cho hỏi giới tính của cậu là như thế nào
+  - có thể tao muốn hỏi giới tính của cậu là thế nào
+  - chị muốn hỏi giới tính của timi là gì
+  - giới tính của mày là nam à
+  - ' là nam hay nữ'
+  - mày có phải là nữ không
+  - cho tui biết giới tính của bạn
+  - là trai hay gái đó mày
+  - cậu là gay à
+  - giới tính của bot là thế nào thế
+  - em có giới tính là gì
+  - giới tính của timi có phải là nam không
+  - ' cho anh biết giới tính của timi là gì'
+  - m bị đồng tính à
+  - giới tính của em
+  - m là đồng tính nữa à
+  - giới tính của bot là trai hay gái
+  - giới tính của em là nào
+  - m là nam phải không
+  - tôi muốn hỏi giới tính của bạn là gì
+  - cho biết giới tính của bạn là như thế nào
+  - có thể mình muốn hỏi giới tính của cậu là gì hả đấy
+  - cho chị biết giới tính của timi là như nào
+  - giới tính của em là nữ phải không
+  - ' là trai hay gái'
+  - em có phải là nam không
+  - cho tao hỏi giới tính của bạn
+  - là nam hay nữ đó cậu
+  - cậu là đồng tính à
+  - giới tính của cậu là gì hả
+  - cậu có giới tính là thế nào
+  - giới tính của cậu có phải là nam không
+  - có thể chị muốn hỏi giới tính của em là gì vậy
+  - mày bị bê đê à
+  - giới tính của bạn
+  - bạn là đồng tính nữa à
+  - giới tính của bạn là trai hay gái
+  - giới tính của timi là mô
+  - mày là nữ phải không
+  - tớ muốn hỏi giới tính của bạn là gì
+  - cho hỏi giới tính của m là thế nào
+  - ' tớ muốn hỏi giới tính của cậu là gì vậy'
+  - anh muốn biết giới tính của timi là gì hả
+  - giới tính của m là nữ phải không
+  - m là nam hay nữ
+  - bot có phải là nam không
+  - tớ muốn biết giới tính của bạn
+  - là trai hay gái đó em
+  - bạn là gay à
+  - giới tính của cậu là như thế nào
+  - cậu có giới tính là như thế nào
+  - giới tính của m có phải là nam không
+  - có thể cho anh biết giới tính của timi là gì
+  - bot bị gay à
+  - giới tính của m
+  - mày là đồng tính nữa à
+  - giới tính của m là trai hay gái
+  - giới tính của bot là gì
+  - cậu là nam phải không
+  - cho tui biết giới tính của cậu là thế nào
+  - cho hỏi giới tính của em là gì
+  - ' tôi muốn hỏi giới tính của cậu là gì vậy á hả'
+  - cho anh hỏi giới tính của timi là gì
+  - giới tính của bạn là nam à
+  - bot là nam hay nữ
+  - m có phải là nữ không
+  - cho mình hỏi giới tính của bạn
+  - là nam hay nữ đó mày
+  - bot là đồng tính à
+  - giới tính của bạn là thế nào
+  - mày có giới tính là gì
+  - giới tính của bạn có phải là nam không
+  - có thể anh muốn hỏi giới tính của timi là gì vậy
+  - cậu bị đồng tính à
+  - giới tính của cậu
+  - cậu là đồng tính nữa à
+  - giới tính của em là trai hay gái
+  - giới tính của cậu là mô đó
+  - m là nữ à
+  - cho tớ biết giới tính của cậu là như nào
+  - cho biết giới tính của cậu là thế nào
+  - ' cho tớ hỏi giới tính của cậu là như nào'
+  - cho anh hỏi giới tính của em là như thế nào
+  - giới tính của m là nam à
+  - bot là trai hay gái
+  - cậu có phải là nữ không
+  - cho tao biết giới tính của cậu
+  - là trai hay gái đó bạn
+  - timi là đồng tính à
+  - giới tính của bot là gì hở
+  - em có giới tính là như nào
+  - giới tính của m có phải là nữ không
+  - có thể cho anh biết giới tính của em là gì vậy
+  - bạn bị gay à
+  - giới tính của timi
+  - timi là đồng tính nữa à
+  - giới tính của mày là trai hay gái
+  - giới tính của em là chi
+  - em là nữ à
+  - cho mình biết giới tính của cậu là như thế nào
+  - cho hỏi giới tính của bạn là như nào
+  - có thể tớ muốn biết giới tính của cậu là thế nào vậy
+  - anh muốn biết giới tính của em là thế nào
+  - giới tính của cậu là nam à
+  - m là trai hay gái
+  - em có phải là nữ không
+  - mình muốn biết giới tính của cậu
+  - là nam hay nữ đó m
+  - bạn là bê đê à
+  - giới tính của bot là thế nào
+  - bot có giới tính là như thế nào
+  - giới tính của timi có phải là nữ không
+  - có thể cho anh biết giới tính của em là gì vậy hả hả
+  - m bị bê đê à
+  - giới tính của bot
+  - bot là đồng tính nữa à
+  - giới tính của em là nam hay nữ
+  - giới tính của m là nào
+  - mày là nam à
+  - tao muốn hỏi giới tính của bạn là gì
+  - cho biết giới tính của m là gì
+  - có thể cho tớ hỏi giới tính của cậu là gì vậy
+  - chị muốn hỏi giới tính của em là thế nào
+  - giới tính của timi là nữ phải không
+  - em là trai hay gái
+  - timi có phải là nam không
+  - cho tớ hỏi giới tính của cậu
+  - là trai hay gái đó timi
+  - m là bê đê à
+  - giới tính của timi là gì thế
+  - m có giới tính là như thế nào
+  - giới tính của bot có phải là nam không
+  - ' cho chị biết giới tính của timi là gì vậy hả'
+  - em bị bê đê à
+  - giới tính của mày là nam hay nữ
+  - giới tính của mày là chi
+  - bot là nam à
+  - cho tớ biết giới tính của cậu là gì vậy á hả
+  - cho biết giới tính của bạn là gì hở
+  - ' tao muốn hỏi giới tính của cậu là như thế nào đó'
+  - cho chị biết giới tính của em là như thế nào
+  - giới tính của m là nữ à
+  - bạn là trai hay gái
+  - mày có phải là nam không
+  - tôi muốn hỏi giới tính của cậu
+  - là nam hay nữ đó em
+  - mày là gay à
+  - giới tính của em là thế nào thế
+  - mày có giới tính là như nào
+  - giới tính của em có phải là nữ không
+  - ' anh muốn biết giới tính của timi là gì đó'
+  - em bị đồng tính à
+  - giới tính của cậu là nam hay nữ
+  - giới tính của cậu là gì vậy
+  - em là nam à
+  - cho tớ hỏi giới tính của cậu là gì vậy
+  - cho biết giới tính của mày là thế nào
+  - ' tui muốn biết giới tính của bạn là thế nào'
+  - anh muốn hỏi giới tính của em là gì
+  - giới tính của timi là nữ à
+  - cậu là trai hay gái
+  - bot có phải là nữ không
+  - cho mình biết giới tính của cậu
+  - là trai hay gái đó m
+  - bot là bê đê à
+  - giới tính của cậu là gì
+  - cậu có giới tính là gì vậy hả
+  - giới tính của cậu có phải là nữ không
+  - có thể anh muốn biết giới tính của timi là gì hả vậy
+  - em bị gay à
+  - giới tính của cậu là trai hay gái
+  - giới tính của m là chi đấy
+  - bạn là nữ à
+  - cho tớ biết giới tính của cậu là gì
+  - cho biết giới tính của m là như nào
+  - có thể mình muốn hỏi giới tính của bạn là gì hở đấy
+  - chị muốn hỏi giới tính của timi là thế nào
+  - giới tính của cậu là nam phải không
+  - timi là nam hay nữ
+  - bạn có phải là nam không
+  - cho mình biết giới tính của bạn
+  - là trai hay gái đó cậu
+  - mày là đồng tính à
+  - giới tính của timi là như nào
+  - em có giới tính là như thế nào
+  - giới tính của em có phải là nam không
+  - ' chị muốn hỏi giới tính của em là gì vậy á hả đấy'
+  - timi bị đồng tính à
+  - giới tính của bot là nam hay nữ
+  - giới tính của cậu là nào hả
+  - mày là nam phải không
+  - tôi muốn biết giới tính của bạn là gì vậy
+  - cho hỏi giới tính của cậu là gì
+  - có thể cho tớ hỏi giới tính của cậu là như nào hả
+  - anh muốn hỏi giới tính của timi là gì vậy á hả
+  - giới tính của mày là nam phải không
+  - bạn là nam hay nữ
+  - cậu có phải là nam không
+  - tớ muốn hỏi giới tính của cậu
+  - là nam hay nữ đó bot
+  - cậu là bê đê à
+  - giới tính của m là gì thế
+  - bot có giới tính là gì vậy á hả
+  - giới tính của mày có phải là nữ không
+  - có thể chị muốn hỏi giới tính của timi là gì
+  - mày bị đồng tính à
+  - giới tính của m là nam hay nữ
+  - giới tính của bạn là nào
+  - bạn là nữ phải không
+  - cho tớ hỏi giới tính của bạn là như nào
+  - cho hỏi giới tính của timi là như nào
+  - ' tớ muốn hỏi giới tính của cậu là như nào'
+  - chị muốn hỏi giới tính của em là như thế nào
+  - giới tính của bot là nữ phải không
+  - em là nam hay nữ
+  - bạn có phải là nữ không
+  - mình muốn biết giới tính của bạn
+  - là nam hay nữ đó bạn
+  - em là gay à
+  - giới tính của bạn là gì
+  - timi có giới tính là gì
+  - giới tính của bot có phải là nữ không
+  - ' cho anh biết giới tính của timi là thế nào'
+  - bạn bị bê đê à
+  - giới tính của timi là trai hay gái
+  - giới tính của em là chi đó
+  - bot là nam phải không
+  - cho tui hỏi giới tính của cậu là thế nào
+  - cho hỏi giới tính của em là thế nào
+  - ' cho tôi biết giới tính của bạn là gì'
+  - cho anh biết giới tính của em là thế nào
+  - giới tính của bạn là nữ phải không
+  - timi là trai hay gái
+  - timi có phải là nữ không
+  - tớ muốn hỏi giới tính của bạn
+  - là trai hay gái đó bot
+  - em là bê đê à
+  - giới tính của cậu là thế nào thế
+  - m có giới tính là thế nào
+  - ' cho chị hỏi giới tính của em là gì vậy'
+  - mày bị gay à
+  - giới tính của bạn là nam hay nữ
+  - giới tính của bot là chi vậy
+  - cậu là nam à
+  - cho tao hỏi giới tính của cậu là như nào
+  - cho biết giới tính của cậu là gì
+  - ' cho tớ hỏi giới tính của bạn là gì hả'
+  - cho chị biết giới tính của timi là gì
+  - giới tính của timi là nam à
+  - cậu là nam hay nữ
+  - cho mình hỏi giới tính của cậu
+  - mày là bê đê à
+  - giới tính của m là gì vậy hả thế
+  - mày có giới tính là như thế nào
+  - giới tính của mày có phải là nam không
+  - có thể chị muốn hỏi giới tính của em là gì vậy á hả thế
+  - bot bị bê đê à
+  - giới tính của cậu là nào đấy
+  - bạn là nam phải không
+  - tao muốn biết giới tính của cậu là gì vậy hả
+  - cho hỏi giới tính của timi là gì hả
+  - ' cho tui biết giới tính của cậu là như nào hả'
+  - cho chị hỏi giới tính của em là như thế nào
+  - giới tính của mày là nữ phải không
+  - mày là trai hay gái
+  - cho tớ biết giới tính của cậu
+  - bạn là đồng tính à
+  - giới tính của bạn là thế nào thế
+  - bot có giới tính là thế nào
+  - ' anh muốn hỏi giới tính của timi là thế nào đấy'
+  - bot bị đồng tính à
+  - giới tính của m là gì đấy
+  - timi là nữ phải không
+  - cho tớ hỏi giới tính của bạn là thế nào
+  - cho biết giới tính của m là gì vậy á hả
+  - có thể tôi muốn hỏi giới tính của cậu là thế nào thế
+  - cho anh biết giới tính của em là gì
+  - giới tính của bot là nam phải không

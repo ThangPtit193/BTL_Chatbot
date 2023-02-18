@@ -1,0 +1,574 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: rec_ask_salary
+  examples:
+  - tôi muốn hỏi lương bổng cho [pre-senior](level_position) [vẽ 3d](position) ra
+    sao với
+  - quy định salary của công ty ntn thế bạn
+  - mức lương của công ty như nào vậy
+  - công ty trả lương nhân viên có cao không
+  - '[fulltime](level_position) được offer với mức lương là bao nhiêu?'
+  - '[junior](level_position) có tiền không'
+  - mức lương của [CBO](bod) như thế nào
+  - '[thử việc](level_position) [VFX Animators](position) có mức lương là bao nhiêu?'
+  - lương thưởng của công ty ntn
+  - ' nghe đồn [f tech](work_unit) chi lương cao lắm hử'
+  - mức lương công ty như thế nào?
+  - phòng [thu mua](department) lương như thế nào
+  - team [application](department) lương như nào vậy
+  - anh muốn hỏi về chế độ lương khi apply [system network](position) như thế nào
+  - tớ muốn hỏi thông tin lương [senior](level_position) [game 2d develop](position)
+    [f tech](work_unit) đc ko
+  - chính sách về lương thưởng của công ty đối với [pretrain](level_position) là gì
+  - mức lương [blockchain develop](position) ở công ty như thế nào?
+  - timi biết salary công ty ko
+  - quy định về salary của công ty đổi với [fulltime](level_position) như nào
+  - lương phòng bộ phận [business](department) như thế nào
+  - thế còn chính sách về lương thưởng của [dotnet](position) thì ra sao
+  - tớ muốn hỏi về lương của công ty
+  - bonus
+  - quy định salary công ty đối với [sinh viên thực tập](level_position) như nào thế
+  - công ty trả lương cho [pretrain](level_position) có cao ko
+  - mức lương của thành viên công ty thế nà
+  - Lương [junior](level_position) thế nào?
+  - lương của nhận sự [game 3d art](position) tại vị trí [senior](level_position)
+    trong cty trả thế nào
+  - cho tớ hỏi chế độ bonus công ty thế nào hả
+  - lương công ty ra sao?
+  - cho anh hỏi quy đinh về mức lương của công ty như nào
+  - công ty có những chính sách gì về bonus
+  - mức lương của [graphic designer](position) có cao không
+  - ko biết phòng bộ phận [it support](department) lương như thế nào nhỉ
+  - lương công ty
+  - mức lương của [business analyst](position) như thế nào
+  - lương [data engineer](position) ở công ty ra sao?
+  - không biết lương của [2d artist](position) cao hay thấp nhỉ
+  - cho mình hỏi mức lương của công ty thế nào vậy hả
+  - lương thưởng của nhận sự trong công ty như thế nào hả
+  - lương [pre-senior](level_position) [C++ dev](position) của [f-tech](work_unit)
+    ổn không vậy
+  - công ty có range tăng lương không?
+  - bonus gross
+  - Lương [senior](level_position) [product owners](position) thế nào?
+  - lương của thành viên [ios develop](position) ntn
+  - lương mọi người trong công ty như nào vậy
+  - về lương thưởng của [thử việc](level_position) thì công ty có những chế độ gì
+  - salary là bao nhiêu
+  - các quy định về lương của công ty cho [senior](level_position) [C++ developer](position)
+    như thế nào
+  - chế độ lương thưởng của công ty ra sao
+  - mức lương của công ty có cao ko
+  - Mức lương [cộng tác viên](level_position) là bao nhiêu hả timi?
+  - cho tớ hỏi lương bổng cho [game 2d product](position) ra sao với
+  - chế độ salary của công ty như nào thế bạn
+  - mức lương của công ty như thế nào vậy hả
+  - công ty trả lương thành viên có cao không
+  - '[thực tập sinh](level_position) được offer với mức lương là bao nhiêu?'
+  - '[pre-senior](level_position) có tiền không'
+  - mức lương của sếp như nào
+  - '[trainee](level_position) [ds](position) có mức lương là bao nhiêu?'
+  - bonus của công ty ntn
+  - ' nghe đồn [f-tech](work_unit) trả lương cao lắm hử'
+  - phòng ban [application](department) lương như thế nào
+  - phòng [sản phẩm](department) lương như nào vậy
+  - chị muốn hỏi về chế độ lương khi apply [.net developer](position) như thế nào
+  - tớ muốn hỏi thông tin lương [thử việc](level_position) [backend dev](position)
+    [f-tech](work_unit) đc không
+  - chính sách về bonus của công ty đối với [full time](level_position) là gì
+  - mức lương [2d product](position) ở công ty như thế nào?
+  - timi biết salary công ty không
+  - quy định về lương thưởng của công ty đổi với [pre-senior](level_position) như
+    nào
+  - lương phòng bộ phận [platform](department) như thế nào
+  - thế còn chế độ lương thưởng của [back end dev](position) thì như nào
+  - mình muốn hỏi về lương của công ty
+  - salary
+  - quy định bonus công ty đối với [thực tập sinh](level_position) như nào thế em
+  - công ty trả lương cho [svtt](level_position) có cao không
+  - mức lương của người công ty thế nà
+  - Lương [senior](level_position) thế nào?
+  - lương của người [python engineer](position) tại vị trí [internship](level_position)
+    trong cty trả ntn vậy hả
+  - cho mình hỏi chế độ về bonus của công ty thế nào
+  - cho tớ hỏi quy đinh về mức lương của công ty ntn
+  - công ty có những chính sách gì về salary
+  - mức lương của [database engineer](position) có cao ko
+  - ko biết phòng phòng ban [AI center](department) lương như thế nào nhỉ
+  - mức lương của [back end develop](position) như thế nào
+  - lương [data engineers](position) ở công ty ra sao?
+  - không biết lương của [fresher](level_position) [PA](position) cao hay thấp ha
+  - cho tớ hỏi mức lương của công ty như thế nào vậy
+  - lương của người trong công ty như nào vậy hả
+  - lương [fresher](level_position) [java develop](position) của công ty [f tech](work_unit)
+    ổn ko vậy hả
+  - công ty có range tăng lương ko?
+  - lương thưởng đã bỏ thuế
+  - Lương [full-time](level_position) [computer vision](position) thế nào?
+  - lương của nhận sự [game designs](position) ntn
+  - lương thành viên trong công ty như nào vậy
+  - về lương của [fresher](level_position) thì công ty có những quy định gì
+  - salary là mấy
+  - các quy định về lương của công ty cho [ctv](level_position) [business analyst](position)
+    như nào
+  - chế độ lương của công ty ra sao
+  - mức lương của công ty có cao không
+  - Mức lương [sinh viên thực tập](level_position) là bao nhiêu hả timi?
+  - tớ muốn hỏi lương bổng cho [senior](level_position) [hr manager](position) ra
+    sao với
+  - quy định salary của công ty như thế nào thế bạn
+  - mức lương của công ty như nào vậy hả
+  - công ty trả lương nhận sự có cao ko
+  - '[full-time](level_position) được offer với mức lương là bao nhiêu?'
+  - '[junior](level_position) có tiền ko'
+  - mức lương của sếp thế nào
+  - '[junior](level_position) [nhân sự](position) có mức lương là bao nhiêu?'
+  - lương của công ty ntn
+  - tớ nghe đồn [f-tech](work_unit) offer lương cao lắm hả
+  - bộ phận [game và design](department) lương như thế nào
+  - phòng [game & design](department) lương như nào vậy
+  - anh muốn hỏi về chế độ lương khi apply [devops](position) thế nào
+  - tớ muốn hỏi thông tin lương [senior](level_position) [game unity 3d develop](position)
+    [f tech](work_unit) đc ko
+  - chính sách về lương của công ty đối với [fresher](level_position) là gì
+  - mức lương [react-native](position) ở công ty như thế nào?
+  - quy định về bonus của công ty đổi với [fulltime](level_position) như nào
+  - lương phòng phòng [product](department) như thế nào
+  - thế còn chế độ lương của [DE](position) thì như nào
+  - chị muốn hỏi về lương của công ty
+  - lương
+  - chính sách salary công ty đối với [thực tập sinh](level_position) như thế nào
+    thế mày
+  - ' trả lương cho [svtt](level_position) có cao không'
+  - mức lương của nhận sự công ty thế nà
+  - Lương [pre-senior](level_position) thế nào?
+  - lương của nhân viên [QA](position) tại vị trí [tts](level_position) trong công
+    ty trả như thế nào vậy hả
+  - cho mình hỏi chế độ về lương thưởng công ty thế nào
+  - cho anh hỏi quy đinh về mức lương của công ty ntn
+  - công ty có những quy định gì về bonus
+  - mức lương của [product owner](position) có cao không
+  - không biết phòng phòng ban [hành chính nhân sự](department) lương như thế nào
+    nhỉ
+  - mức lương của [pentesters](position) như thế nào
+  - lương [game 2d product](position) ở công ty ra sao?
+  - không biết lương của [react](position) cao hay thấp nhể
+  - cho anh hỏi mức lương của công ty như nào vậy hả
+  - lương của nhân viên trong công ty như thế nào vậy
+  - lương [sinh viên thực tập](level_position) [game UI/UX design](position) của công
+    ty [f tech](work_unit) ổn không vậy hả
+  - salary chưa bỏ thuế
+  - Lương [junior](level_position) [nv thiết kế nội dung giáo dục](position) thế nào?
+  - lương của người [graphic designers](position) ntn
+  - lương nhân viên trong công ty như nào vậy
+  - về lương thưởng của [thực tập sinh](level_position) thì công ty có những chính
+    sách gì
+  - salary là bao nhiu
+  - các quy định về lương thưởng của công ty cho [fresher](level_position) [system
+    administrator](position) như thế nào
+  - quy định lương của công ty ra sao
+  - Mức lương [fresher](level_position) là bao nhiêu hả timi?
+  - cho tôi hỏi lương bổng cho [data engineer](position) ra sao với
+  - chính sách bonus của công ty như nào thế
+  - mức lương của công ty ra sao
+  - công ty trả lương người có cao ko
+  - '[cộng tác viên](level_position) được offer với mức lương là bao nhiêu?'
+  - Sinh viên thức tập có tiền ko
+  - mức lương của [trưởng team](bod) như nào
+  - '[pretrain](level_position) [business supporter china](position) có mức lương
+    là bao nhiêu?'
+  - lương của công ty như nào
+  - tôi nghe đồn [f tech](work_unit) chi lương cao lắm hử
+  - phòng [sản phẩm](department) lương như thế nào
+  - team [platform](department) lương như nào vậy
+  - tớ muốn hỏi về chế độ lương khi apply [be dev](position) như thế nào
+  - tớ muốn hỏi thông tin lương [pre-senior](level_position) [devops](position) [ftech](work_unit)
+    đc ko
+  - chính sách về lương thưởng của công ty đối với [thử việc](level_position) là gì
+  - mức lương [data scientists](position) ở công ty như thế nào?
+  - quy định về salary của công ty đổi với [senior](level_position) ra sao
+  - lương phòng phòng [trung tâm ai](department) như thế nào
+  - thế còn chế độ về lương của [game 2d art](position) thì như nào
+  - anh muốn hỏi về lương của công ty
+  - lương thưởng
+  - chính sách lương thưởng công ty đối với [sinh viên thực tập](level_position) ntn
+    thế m
+  - công ty trả lương cho [internship](level_position) có cao không
+  - mức lương của nhân viên công ty thế nà
+  - Lương [fresher](level_position) thế nào?
+  - lương của thành viên [game 3d prod](position) tại vị trí [fresher](level_position)
+    trong cty trả như nào vậy hả
+  - cho anh hỏi bonus của công ty thế nào hả
+  - cho anh hỏi quy đinh về mức lương của công ty như thế nào
+  - công ty có những chính sách gì về lương thưởng
+  - mức lương của [data scientist](position) ntn
+  - không biết phòng phòng [sản phẩm](department) lương như thế nào nhỉ
+  - mức lương của [fullstack devlop](position) như thế nào
+  - lương [lập trình viên android](position) ở công ty ra sao?
+  - không biết lương của [junior](level_position) [2d product](position) cao hay thấp
+    ha
+  - cho tớ hỏi mức lương của công ty thế nào vậy
+  - lương thưởng của thành viên trong công ty như nào vậy hả
+  - lương [cộng tác viên](level_position) [ai engineering](position) của [ftech](work_unit)
+    ổn ko vậy
+  - lương chưa bỏ thuế
+  - Lương [fulltime](level_position) [os network](position) thế nào?
+  - lương thưởng của nhận sự [os network](position) như nào
+  - lương nhận sự trong công ty như nào vậy
+  - về lương của [pre-senior](level_position) thì công ty có những quy định gì
+  - các quy định về lương thưởng của công ty cho [thử việc](level_position) [PO](position)
+    như nào
+  - quy định về lương thưởng của công ty như nào
+  - Mức lương [tts](level_position) là bao nhiêu hả timi?
+  - tớ muốn hỏi lương bổng cho [fulltime](level_position) [game 3d](position) ra sao
+    với
+  - chính sách bonus của công ty như thế nào thế cậu
+  - mức lương của công ty ra sao vậy hả
+  - công ty trả lương thành viên có cao ko
+  - '[intern](level_position) được offer với mức lương là bao nhiêu?'
+  - Sinh viên thức tập có tiền không
+  - mức lương của [phó phòng](bod) có cao ko
+  - '[fresher](level_position) [react native](position) có mức lương là bao nhiêu?'
+  - lương của công ty như thế nào
+  - ' nghe đồn [ftech](work_unit) chi lương cao lắm hử'
+  - team [HR and Admin](department) lương như thế nào
+  - bộ phận [game & design](department) lương như nào vậy
+  - anh muốn hỏi về chế độ lương khi apply [ios developer](position) như thế nào
+  - tôi muốn hỏi thông tin lương [thử việc](level_position) [3d dev](position) [ftech](work_unit)
+    được ko
+  - chính sách về lương của công ty đối với [tts](level_position) là gì
+  - mức lương [QA](position) ở công ty như thế nào?
+  - quy định về salary của công ty đổi với [tts](level_position) như thế nào
+  - lương phòng phòng ban [hệ thống cơ sở hạ tầng](department) như thế nào
+  - thế còn chính sách lương của [data science](position) thì ra sao
+  - quy định lương thưởng công ty đối với [thực tập sinh](level_position) như thế
+    nào thế cậu
+  - ' trả lương cho [trainee](level_position) có cao không'
+  - Lương [svtt](level_position) thế nào?
+  - lương của nhân viên [devops](position) tại vị trí [cộng tác viên](level_position)
+    trong cty trả như thế nào
+  - cho tớ hỏi chế độ về lương thưởng của công ty như thế nào
+  - cho mình hỏi quy đinh về mức lương của công ty ntn
+  - công ty có những quy định gì về salary
+  - mức lương của [business support thị trường china](position) có cao không
+  - ko biết phòng phòng ban [application](department) lương như thế nào nhỉ
+  - mức lương của [QA](position) như thế nào
+  - lương [thị giác máy tính](position) ở công ty ra sao?
+  - không biết lương của [thử việc](level_position) [database engineer](position)
+    cao hay thấp ha
+  - cho chị hỏi mức lương của công ty như thế nào
+  - lương của thành viên trong công ty ntn
+  - lương [junior](level_position) [ios dev](position) của công ty [ftech](work_unit)
+    ổn không hả
+  - lương thưởng gros
+  - Lương [junior](level_position) [Quality Assurance](position) thế nào?
+  - lương của nhận sự [thị giác máy tính](position) ntn vậy
+  - lương người trong công ty như nào vậy
+  - về lương thưởng của [full-time](level_position) thì công ty có những chế độ gì
+  - các chính sách về lương của công ty cho [full time](level_position) [2d developer](position)
+    ntn
+  - chính sách lương của công ty ra sao
+  - Mức lương [ctv](level_position) là bao nhiêu hả timi?
+  - cho tôi hỏi lương bổng cho [database engineer](position) ra sao với
+  - chính sách salary của công ty ntn thế bạn
+  - mức lương của công ty như thế nào
+  - công ty trả lương nhân viên có cao ko
+  - '[internship](level_position) được offer với mức lương là bao nhiêu?'
+  - '[thử việc](level_position) có tiền không'
+  - mức lương của [giám đốc](bod) thế nào
+  - '[full-time](level_position) [back end](position) có mức lương là bao nhiêu?'
+  - bonus của công ty như thế nào
+  - tớ nghe đồn [f tech](work_unit) offer lương cao lắm hử
+  - team [vệ sinh](department) lương như thế nào
+  - phòng [platform](department) lương như nào vậy
+  - mình muốn hỏi về chế độ lương khi apply [data analyst](position) ntn
+  - tớ muốn hỏi thông tin lương [thực tập sinh](level_position) [ds](position) [f-tech](work_unit)
+    được không
+  - chính sách về lương thưởng của công ty đối với [ctv](level_position) là gì
+  - mức lương [backend develop](position) ở công ty như thế nào?
+  - quy định về lương thưởng của công ty đổi với [fulltime](level_position) như nào
+  - lương phòng phòng ban [game và design](department) như thế nào
+  - thế còn chính sách về lương thưởng của [game 2d artist](position) thì như nào
+  - quy định bonus công ty đối với [svtt](level_position) như thế nào thế
+  - công ty trả lương cho [tts](level_position) có cao ko
+  - Lương [full time](level_position) thế nào?
+  - lương của người [VFX Animation](position) tại vị trí [thử việc](level_position)
+    trong cty trả ntn hả
+  - cho anh hỏi chế độ về lương của công ty như thế nào
+  - cho mình hỏi quy đinh về mức lương của công ty như nào
+  - công ty có những quy định gì về lương thưởng
+  - mức lương của [ds](position) như nào
+  - ko biết phòng team [nhân sự](department) lương như thế nào nhỉ
+  - mức lương của [game 3d developer](position) như thế nào
+  - lương [full stack](position) ở công ty ra sao?
+  - không biết lương của [junior](level_position) [Tester](position) cao hay thấp
+    nhỉ
+  - cho mình hỏi mức lương của công ty ntn
+  - lương của nhận sự trong công ty như thế nào
+  - lương [intern](level_position) [computer vision](position) của [f tech](work_unit)
+    ổn không hả
+  - bonus net
+  - Lương [cộng tác viên](level_position) [nlp](position) thế nào?
+  - lương thưởng của người [QA Tester](position) như thế nào vậy hả
+  - về lương thưởng của [thực tập sinh](level_position) thì công ty có những chế độ
+    gì
+  - các chính sách về lương của công ty cho [full time](level_position) [VFX Animator](position)
+    thế nào
+  - chế độ lương của công ty thế nào
+  - Mức lương [thử việc](level_position) là bao nhiêu hả timi?
+  - cho tôi hỏi lương bổng cho [game design](position) ra sao với
+  - chế độ lương thưởng của công ty như thế nào thế
+  - mức lương của công ty như nào
+  - công ty trả lương người có cao không
+  - '[thử việc](level_position) được offer với mức lương là bao nhiêu?'
+  - '[fresher](level_position) có tiền ko'
+  - mức lương của sếp có cao ko
+  - '[fulltime](level_position) [ios developer](position) có mức lương là bao nhiêu?'
+  - salary của công ty như nào
+  - ' nghe đồn [f-tech](work_unit) trả lương cao lắm hả'
+  - phòng ban [kinh doanh](department) lương như thế nào
+  - team [hệ thống system](department) lương như nào vậy
+  - chị muốn hỏi về chế độ lương khi apply [game 2d products](position) thế nào
+  - tớ muốn hỏi thông tin lương [fresher](level_position) [ja-va developer](position)
+    [ftech](work_unit) được ko
+  - chính sách về salary của công ty đối với [full time](level_position) là gì
+  - mức lương [VFX Animator](position) ở công ty như thế nào?
+  - quy định về salary của công ty đổi với [fresher](level_position) như nào
+  - lương phòng phòng ban [platform](department) như thế nào
+  - thế còn chính sách lương thưởng của [frontend develop](position) thì như nào
+  - quy định lương thưởng công ty đối với [intern](level_position) như nào thế m
+  - ' trả lương cho [tts](level_position) có cao ko'
+  - Lương [internship](level_position) thế nào?
+  - lương của người [2d unity](position) tại vị trí [ctv](level_position) trong công
+    ty trả thế nào hả
+  - cho mình hỏi chế độ về lương thưởng của công ty như thế nào
+  - cho chị hỏi quy đinh về mức lương của công ty ntn
+  - công ty có những quy định gì về lương
+  - mức lương của [full stack devlop](position) ntn
+  - ko biết phòng phòng [it support](department) lương như thế nào nhỉ
+  - mức lương của [cv engineering](position) như thế nào
+  - lương [business support china](position) ở công ty ra sao?
+  - không biết lương của [junior](level_position) [data science](position) cao hay
+    thấp nhể
+  - cho tớ hỏi mức lương của công ty như thế nào hả
+  - lương của nhận sự trong công ty như thế nào hả
+  - lương [fulltime](level_position) [go lang](position) của [f tech](work_unit) ổn
+    ko hả
+  - lương net
+  - Lương [junior](level_position) [data engineering](position) thế nào?
+  - lương thưởng của người [python developer](position) như thế nào
+  - về lương của [fresher](level_position) thì công ty có những chính sách gì
+  - các chính sách về lương của công ty cho [junior](level_position) [game 2d unity
+    dev](position) thế nào
+  - chính sách lương thưởng của công ty như nào
+  - Mức lương [full-time](level_position) là bao nhiêu hả timi?
+  - cho tớ hỏi lương bổng cho [fulltime](level_position) [nhân sự](position) ra sao
+    với
+  - chế độ salary của công ty như thế nào thế
+  - mức lương của công ty như thế nào vậy
+  - công ty trả lương nhận sự có cao không
+  - '[senior](level_position) được offer với mức lương là bao nhiêu?'
+  - '[full-time](level_position) có tiền ko'
+  - mức lương của [trưởng team](bod) có cao ko
+  - '[fresher](level_position) [hr manager](position) có mức lương là bao nhiêu?'
+  - bonus của công ty như nào
+  - mình nghe đồn [ftech](work_unit) chi lương cao lắm hử
+  - phòng [cơ sở hạ tầng](department) lương như thế nào
+  - phòng ban [AI center](department) lương như nào vậy
+  - anh muốn hỏi về chế độ lương khi apply [ai](position) thế nào
+  - mình muốn hỏi thông tin lương [thử việc](level_position) [cv researcher](position)
+    [ftech](work_unit) được ko
+  - chính sách về lương thưởng của công ty đối với [full time](level_position) là
+    gì
+  - mức lương [system administrator](position) ở công ty như thế nào?
+  - quy định về lương của công ty đổi với [cộng tác viên](level_position) như nào
+  - lương phòng phòng ban [hr admin](department) như thế nào
+  - thế còn chính sách về lương thưởng của [business analyst](position) thì ra sao
+  - chế độ bonus công ty đối với [intern](level_position) ntn thế
+  - ' trả lương cho [thực tập sinh](level_position) có cao không'
+  - Lương [fulltime](level_position) thế nào?
+  - lương của nhân viên [lập trình ios](position) tại vị trí [ctv](level_position)
+    trong cty trả thế nào
+  - cho anh hỏi salary công ty ntn vậy
+  - cho chị hỏi quy đinh về mức lương của công ty như nào
+  - công ty có những chính sách gì về lương
+  - mức lương của [data engineering](position) có cao không
+  - ko biết phòng bộ phận [hệ thống cơ sở hạ tầng](department) lương như thế nào nhỉ
+  - mức lương của [game 3d prod](position) như thế nào
+  - lương [blockchain developer](position) ở công ty ra sao?
+  - không biết lương của [pre-senior](level_position) [react-native develop](position)
+    cao hay thấp ha
+  - cho mình hỏi mức lương của công ty thế nào vậy
+  - lương thưởng của thành viên trong công ty như thế nào
+  - lương [fresher](level_position) [product analyst](position) của [f tech](work_unit)
+    ổn không vậy hả
+  - salary gross
+  - Lương [senior](level_position) [full-stack dev](position) thế nào?
+  - lương của nhân viên [nlp researcher](position) như nào hả
+  - về lương của [pretrain](level_position) thì công ty có những chế độ gì
+  - các chính sách về lương thưởng của công ty cho [ctv](level_position) [frontend](position)
+    như nào
+  - quy định lương thưởng của công ty như nào
+  - Mức lương [junior](level_position) là bao nhiêu hả timi?
+  - cho tớ hỏi lương bổng cho [thử việc](level_position) [Ruby dev](position) ra sao
+    với
+  - quy định bonus của công ty ntn thế cậu
+  - mức lương của công ty ra sao vậy
+  - '[junior](level_position) được offer với mức lương là bao nhiêu?'
+  - '[full time](level_position) có tiền không'
+  - mức lương của [trưởng phòng](bod) có cao không
+  - '[pre-senior](level_position) [nhân sự](position) có mức lương là bao nhiêu?'
+  - lương thưởng của công ty như nào
+  - ' nghe đồn [f tech](work_unit) offer lương cao lắm hử'
+  - phòng ban [HR and Admin](department) lương như thế nào
+  - team [hr admin](department) lương như nào vậy
+  - mình muốn hỏi về chế độ lương khi apply [unity 3d](position) như thế nào
+  - tớ muốn hỏi thông tin lương [thử việc](level_position) [data scientists](position)
+    [f-tech](work_unit) được không
+  - chính sách về lương của công ty đối với [pre-senior](level_position) là gì
+  - mức lương [system network](position) ở công ty như thế nào?
+  - quy định về bonus của công ty đổi với [junior](level_position) ra sao
+  - lương phòng bộ phận [game & design](department) như thế nào
+  - thế còn quy định lương thưởng của [3d prod](position) thì ra sao
+  - chính sách lương công ty đối với [pretrain](level_position) ntn thế
+  - ' trả lương cho [intern](level_position) có cao không'
+  - Lương [full-time](level_position) thế nào?
+  - lương của nhân viên [biên soạn nội dung giáo dục](position) tại vị trí [fresher](level_position)
+    trong công ty trả như thế nào
+  - cho anh hỏi salary của công ty như nào vậy
+  - cho tớ hỏi quy đinh về mức lương của công ty thế nào
+  - mức lương của [thiết kế nội dung giáo dục](position) có cao ko
+  - ko biết phòng phòng ban [hạ tầng](department) lương như thế nào nhỉ
+  - mức lương của [game 3d art](position) như thế nào
+  - lương [ai engineering](position) ở công ty ra sao?
+  - ko biết lương của [full time](level_position) [game designs](position) cao hay
+    thấp nhể
+  - cho anh hỏi mức lương của công ty như thế nào
+  - lương của người trong công ty ntn
+  - lương [ctv](level_position) [hr manager](position) của [ftech](work_unit) ổn không
+    vậy
+  - bonus chưa bỏ thuế
+  - Lương [full-time](level_position) [db engineer](position) thế nào?
+  - lương của thành viên [pentest](position) như thế nào vậy
+  - về lương của [junior](level_position) thì công ty có những chế độ gì
+  - các quy định về lương của công ty cho [senior](level_position) [ios developer](position)
+    thế nào
+  - chính sách lương của công ty như thế nào
+  - Mức lương [intern](level_position) là bao nhiêu hả timi?
+  - mình muốn hỏi lương bổng cho [ios](position) ra sao với
+  - chế độ bonus của công ty như nào thế cậu
+  - mức lương của công ty như thế nào hả
+  - '[pre-senior](level_position) được offer với mức lương là bao nhiêu?'
+  - '[fulltime](level_position) có tiền không'
+  - mức lương của [giám đốc stao](bod) có cao không
+  - '[trainee](level_position) [game 2d unity dev](position) có mức lương là bao nhiêu?'
+  - salary của công ty ntn
+  - ' nghe đồn [f-tech](work_unit) chi lương cao lắm hử'
+  - phòng ban [game và design](department) lương như thế nào
+  - team [hành chính nhân sự](department) lương như nào vậy
+  - tớ muốn hỏi về chế độ lương khi apply [ai research](position) như nào
+  - mình muốn hỏi thông tin lương [full-time](level_position) [front end develop](position)
+    [f-tech](work_unit) được không
+  - chính sách về lương của công ty đối với [junior](level_position) là gì
+  - mức lương [lập trình viên android](position) ở công ty như thế nào?
+  - quy định về lương của công ty đổi với [thử việc](level_position) ra sao
+  - lương phòng phòng ban [thu mua](department) như thế nào
+  - thế còn chính sách lương thưởng của [frontend developer](position) thì như nào
+  - chế độ lương thưởng công ty đối với [intern](level_position) như thế nào thế mày
+  - công ty trả lương cho [sinh viên thực tập](level_position) có cao không
+  - Lương [pretrain](level_position) thế nào?
+  - lương của nhận sự [graphic designer](position) tại vị trí [junior](level_position)
+    trong cty trả ntn
+  - cho mình hỏi về lương của công ty thế nào vậy
+  - cho tớ hỏi quy đinh về mức lương của công ty như thế nào
+  - mức lương của [game develop](position) có cao không
+  - không biết phòng team [kinh doanh](department) lương như thế nào nhỉ
+  - mức lương của [react-native dev](position) như thế nào
+  - lương [database engineer](position) ở công ty ra sao?
+  - ko biết lương của [game unity 3d develop](position) cao hay thấp nhể
+  - cho mình hỏi mức lương của công ty như nào
+  - lương của nhân viên trong công ty ntn
+  - lương [junior](level_position) [product owners](position) của [f tech](work_unit)
+    ổn không hả
+  - lương gros
+  - Lương [junior](level_position) [pentesters](position) thế nào?
+  - lương thưởng của người [Ruby engineer](position) ntn
+  - về lương thưởng của [fresher](level_position) thì công ty có những chính sách
+    gì
+  - các quy định về lương của công ty cho [pre-senior](level_position) [lập trình
+    ios](position) như nào
+  - chế độ về lương của công ty ra sao
+  - Mức lương [svtt](level_position) là bao nhiêu hả timi?
+  - cho tớ hỏi lương bổng cho [product owner](position) ra sao với
+  - chính sách lương thưởng của công ty ntn thế
+  - mức lương của công ty ra sao hả
+  - '[fresher](level_position) được offer với mức lương là bao nhiêu?'
+  - '[thử việc](level_position) có tiền ko'
+  - mức lương của boss có cao không
+  - '[thử việc](level_position) [data engineers](position) có mức lương là bao nhiêu?'
+  - lương thưởng của công ty như thế nào
+  - tớ nghe đồn [f tech](work_unit) offer lương cao lắm hả
+  - team [platform](department) lương như thế nào
+  - phòng ban [trung tâm ai](department) lương như nào vậy
+  - chị muốn hỏi về chế độ lương khi apply [Quality Assurance](position) như thế nào
+  - tôi muốn hỏi thông tin lương [tts](level_position) [người marketing](position)
+    [f-tech](work_unit) đc không
+  - chính sách về bonus của công ty đối với [fresher](level_position) là gì
+  - mức lương [react develop](position) ở công ty như thế nào?
+  - quy định về lương của công ty đổi với [junior](level_position) như nào
+  - lương phòng phòng ban [AI center](department) như thế nào
+  - thế còn quy định lương thưởng của [product owner](position) thì như thế nào
+  - chế độ salary công ty đối với [sinh viên thực tập](level_position) như nào thế
+  - công ty trả lương cho [internship](level_position) có cao ko
+  - Lương [intern](level_position) thế nào?
+  - lương của nhân viên [ja-va develop](position) tại vị trí [pretrain](level_position)
+    trong công ty trả ntn vậy hả
+  - cho chị hỏi chế độ lương thưởng công ty thế nào
+  - cho mình hỏi quy đinh về mức lương của công ty như thế nào
+  - mức lương của [soạn nội dung giáo dục](position) có cao không
+  - không biết phòng team [game](department) lương như thế nào nhỉ
+  - mức lương của [pentest](position) như thế nào
+  - lương [cv researcher](position) ở công ty ra sao?
+  - ko biết lương của [pretrain](level_position) [2d dev](position) cao hay thấp nhể
+  - cho mình hỏi mức lương của công ty ntn vậy
+  - lương của thành viên trong công ty như nào
+  - lương [senior](level_position) [data analyst](position) của [f-tech](work_unit)
+    ổn ko vậy
+  - lương đã bỏ thuế
+  - Lương [fulltime](level_position) [game 3d art](position) thế nào?
+  - lương thưởng của nhân viên [fullstack devlop](position) ntn vậy
+  - về lương thưởng của [pretrain](level_position) thì công ty có những chế độ gì
+  - các quy định về lương của công ty cho [ctv](level_position) [game 3d products](position)
+    như nào
+  - chính sách lương thưởng của công ty ra sao
+  - Mức lương [full time](level_position) là bao nhiêu hả timi?
+  - tớ muốn hỏi lương bổng cho [tts](level_position) [nlp researcher](position) ra
+    sao với
+  - chế độ salary của công ty ntn thế cậu
+  - mức lương của công ty như nào hả
+  - '[ctv](level_position) được offer với mức lương là bao nhiêu?'
+  - '[senior](level_position) có tiền không'
+  - mức lương của boss thế nào
+  - '[pre-senior](level_position) [os network](position) có mức lương là bao nhiêu?'
+  - salary của công ty như thế nào
+  - tớ nghe đồn [f tech](work_unit) trả lương cao lắm hả
+  - team [Quan hệ quốc tế](department) lương như thế nào
+  - phòng [kinh doanh](department) lương như nào vậy
+  - chị muốn hỏi về chế độ lương khi apply [android](position) như nào
+  - tôi muốn hỏi thông tin lương [pretrain](level_position) [VFX Animation](position)
+    [ftech](work_unit) đc ko
+  - chính sách về lương thưởng của công ty đối với [trainee](level_position) là gì
+  - mức lương [3d prod](position) ở công ty như thế nào?
+  - quy định về bonus của công ty đổi với [ctv](level_position) ntn
+  - lương phòng phòng ban [game & design](department) như thế nào
+  - thế còn chế độ lương của [full-stack developer](position) thì ra sao
+  - chế độ bonus công ty đối với [pretrain](level_position) ntn thế mày
+  - ' trả lương cho [thực tập sinh](level_position) có cao ko'
+  - Lương [thử việc](level_position) thế nào?
+  - lương của người [bảo vệ](position) tại vị trí [junior](level_position) trong cty
+    trả ntn vậy
+  - cho mình hỏi salary của công ty như thế nào
+  - cho tớ hỏi quy đinh về mức lương của công ty như nào
+  - mức lương của [cv engineer](position) thế nào
+  - không biết phòng phòng ban [product](department) lương như thế nào nhỉ

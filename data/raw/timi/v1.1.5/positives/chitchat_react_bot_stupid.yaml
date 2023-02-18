@@ -1,0 +1,456 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: chitchat_react_bot_stupid
+  examples:
+  - mày chẳng có ích lợi gì cả
+  - lảm nhảm thế
+  - tôi tức chết khi nói chuyện với m
+  - ngu thế à
+  - cậu nói gì đâu không
+  - đồ dốt
+  - học mãi mà vẫn ngu
+  - tao chán mày quá
+  - quá đần
+  - hỏi chi cũng không biết
+  - cậu dốt quá
+  - ngốc nghếch
+  - sao m dốt hở
+  - thế train lại nha
+  - tớ thấy cậu ngốc quá
+  - ' ngốc thế'
+  - bot không thông minh
+  - mày vô tích sự thế
+  - suốt ngày tôi không hiểu bạn nói mô
+  - phải kiên nhẫn lắm mới nói chuyện được với m nhỉ
+  - mày chả trợ giúp được gì
+  - tớ thấy cậu chả giúp đỡ được gì
+  - ngốc đến cùng cực
+  - sai chính tả kìa timi
+  - iq bằng 0
+  - nói chuyện với em , bực mình thêm
+  - ngốc
+  - chán bạn quá
+  - đơn giản vậy cũng không hiểu
+  - cái nào cũng không biết thì biết cái mô
+  - cái gì cũng không biết
+  - em điên phải ko
+  - ngu quá
+  - cậu nhạt vãi
+  - ăn nào mà dốt thế
+  - m lớp mấy rùi sao đần vậy hả
+  - cái đồ ngu học
+  - thế cậu học lại nha
+  - ai dạy mà ngu thế
+  - không hiểu ý tao à
+  - timi ngu thế
+  - sao mà ngốc thế
+  - xàm
+  - nói cái mô cũng không hiểu thế
+  - bạn dốt phải k
+  - sao bạn kém thế
+  - bot không giỏi
+  - mày ngu quá
+  - bạn tào lao quá
+  - hỏi lắm thế
+  - trả lời bậy bạ vậy á hả
+  - bot ngu thế
+  - timi ngu như bò
+  - tao chán mày quá rồi thế
+  - tớ thấy timi vô tích sự thế
+  - chatbot cùi bắp vãi
+  - tớ hy vọng timi sẽ tốt hơn
+  - mày điên mất rùi
+  - ' không có ích chi cả'
+  - em chán vãi
+  - chán quá cậu quá không thông minh
+  - bảo ngu thì nhận ngu đi
+  - có mỗi một câu hỏi lặp lại hoài
+  - mày không giúp đươc gì cho tao cả
+  - ' đừng làm gì thì tốt hơn'
+  - toàn không biết thế
+  - không hiểu hả
+  - cậu đần quá
+  - ' bị ngu phải k'
+  - càng ngày càng đần
+  - học thêm nha cậu
+  - lặp lại hoài vậy á hả
+  - quá vô tích sự
+  - ' chả có tác dụng gì'
+  - mình tức chết khi trò chuyện với mày
+  - dốt thế à
+  - mày nói gì đâu không
+  - đồ ngốc
+  - dạy mãi mà vẫn dốt
+  - tao điên mày quá
+  - quá ngu
+  - hỏi mô cũng không biết
+  - bạn dốt quá
+  - sao em ngu vậy hả
+  - thế học thêm nha em
+  - tớ thấy cậu ngu thế
+  - ' ngu thế'
+  - ' vô ích quá'
+  - suốt ngày tôi không hiểu bạn nói chi
+  - phải kiên nhẫn lắm mới nói chuyện được với em nhỉ
+  - ' chẳng giúp được gì'
+  - tui thấy mày chả giúp đỡ được gì
+  - dốt đến cùng cực
+  - sai chính tả kìa bot
+  - iq quá thấp
+  - nói chuyện với cậu , bực mình thêm
+  - ngu vậy
+  - chán em quá
+  - dễ thế cũng không hiểu
+  - cái nào cũng không biết thì biết cái gì
+  - cái mô cũng không biết
+  - mày điên à
+  - ngốc quá
+  - bạn nhạt vãi
+  - ăn gì mà dốt thế
+  - cậu lớp mấy rồi sao ngu hở
+  - cái đồ ngu
+  - hả timi học lại nha
+  - ai dạy mà đần vậy á hả
+  - không hiểu ý tôi phải ko
+  - m ngu thế
+  - sao mà ngu thế
+  - nói cái chi cũng không hiểu thế
+  - ' ngu phải k'
+  - sao bot kém thế
+  - cậu ngu quá
+  - mày tệ quá
+  - hỏi lặp lại nhiều lần thế
+  - trả lời bậy bạ hả
+  - bot dốt thế
+  - em ngu như bò
+  - tao chán mày quá rùi vậy
+  - mình thấy m vô ích quá
+  - mày cùi bắp vãi
+  - tao hy vọng bot sẽ tốt hơn
+  - m điên mất rùi
+  - cậu không giỏi mô cả
+  - chatbot chán vãi
+  - chán quá timi quá ngu
+  - ' chẳng giúp đươc gì cho tao cả'
+  - mày đừng làm gì thì tốt hơn
+  - không hiểu phải không
+  - bạn đần quá
+  - ' bị ngốc à'
+  - càng ngày càng dốt
+  - học thêm nha bot
+  - lặp lại hoài vậy
+  - thế vô tích sự
+  - ' không có tác dụng gì cả'
+  - tớ tức chết khi nói chuyện với em
+  - đần thế à
+  - bạn nói gì đâu không
+  - đồ đần
+  - học mãi mà không hiểu
+  - quá ngốc
+  - hỏi gì cũng không biết
+  - sao bot dốt vậy á hả
+  - thế học thêm nha timi
+  - tao thấy bạn ngốc quá
+  - cậu đần thế
+  - mày vô tác dụng thế
+  - lúc nào cũng tôi không hiểu bạn nói nào
+  - phải kiên nhẫn lắm mới nói chuyện được với m nhể
+  - mày chả hỗ trợ được gì
+  - tao thấy m không giúp được gì cả
+  - ngu đến cùng cực
+  - sai chính tả kìa cậu
+  - nói chuyện với m , bực mình thêm
+  - vãi dốt
+  - chán m quá
+  - dễ vậy cũng không hiểu
+  - cái nào cũng không biết thì biết cái nào
+  - cái chi cũng không biết
+  - m điên phải k
+  - dốt quá đi
+  - cậu nhạt thế
+  - ăn gì mà ngốc thế
+  - bot lớp mấy rồi sao ngu vậy hả
+  - cái đồ ngu dốt
+  - hả train lại nha
+  - ai dạy mà đần hở
+  - không hiểu ý tớ hả
+  - bạn ngu thế
+  - sao mà dốt thế
+  - nói cái gì cũng không hiểu thế
+  - bạn ngốc hả
+  - sao mày kém thế
+  - em ngu quá
+  - bot tồi quá
+  - hỏi nhiều thế
+  - trả lời bậy bạ vậy
+  - bot đần thế
+  - bot ngu như bò
+  - tao điên mày quá rùi đấy
+  - tôi thấy mày vô tác dụng thế
+  - m cùi bắp vãi
+  - tao hy vọng bạn sẽ tốt hơn
+  - bạn điên mất rồi
+  - cậu không tài năng nào cả
+  - timi chán vãi
+  - chán quá mày quá dốt
+  - ' chả giúp đươc gì cho tao'
+  - không hiểu phải k
+  - bạn bị ngu hả
+  - càng ngày càng ngu
+  - train lại nha cậu
+  - lặp lại hoài hả
+  - thế vô tác dụng
+  - mày chả có tích sự gì cả
+  - tao tức chết khi nói chuyện với cậu
+  - ngốc thế à
+  - em nói gì đâu không
+  - đồ ngu
+  - dạy mãi mà không hiểu
+  - quá dốt
+  - hỏi nào cũng không biết
+  - sao cậu đần hở
+  - hở học thêm nha bạn
+  - tớ thấy bạn dốt thế
+  - ' đần quá'
+  - mày vô tác dụng quá
+  - lúc nào cũng tôi không hiểu bạn nói chi
+  - phải kiên nhẫn lắm mới nói chuyện được với bot nhể
+  - ' chẳng hỗ trợ được gì cả'
+  - tôi thấy bot chẳng giúp được gì cả
+  - đần đến cùng cực
+  - sai chính tả kìa mày
+  - nói chuyện với mày , bực mình thêm
+  - dốt vậy
+  - chán bot quá
+  - cái gì cũng không biết thì biết cái nào
+  - cái nào cũng không biết
+  - cậu điên hả
+  - dốt quá
+  - bạn nhạt thế
+  - ăn gì mà ngu thế
+  - timi lớp mấy rồi sao đần hở
+  - thế học lại nha
+  - ai dạy mà dốt thế
+  - không hiểu ý tớ à
+  - mày ngu thế
+  - sao mà đần thế
+  - nói cái nào cũng không hiểu thế
+  - ' dốt phải ko'
+  - sao em kém thế
+  - bạn ngu quá
+  - cậu nhảm quá
+  - trả lời bậy bạ hở
+  - chatbot ngu như bò
+  - tao điên mày quá rồi đó
+  - tao thấy cậu vô tác dụng quá
+  - bot cùi bắp vãi
+  - tớ hy vọng bot sẽ tốt hơn
+  - timi điên mất rùi
+  - cậu không tài giỏi nào cả
+  - bot chán vãi
+  - chán quá m quá ngu
+  - ' chả giúp đươc gì cho tao cả'
+  - không hiểu phải ko
+  - ' bị ngu phải ko'
+  - càng ngày càng ngốc
+  - train lại nha em
+  - lặp lại hoài vậy hả
+  - quá vô tác dụng
+  - mày chả có tác dụng gì
+  - tớ tức chết khi trò chuyện với timi
+  - bot nói gì đâu không
+  - học mãi mà vẫn dốt
+  - sao m đần hả
+  - hở học lại nha
+  - tui thấy cậu đần thế
+  - ' dốt thế'
+  - mày vô dụng thế
+  - suốt ngày tôi không hiểu bạn nói gì
+  - phải kiên nhẫn lắm mới nói chuyện được với mày nhỉ
+  - ' chẳng giúp đỡ được gì'
+  - tui thấy em chẳng giúp được gì cả
+  - sai chính tả kìa m
+  - nói chuyện với bạn , bực mình thêm
+  - ngu ngốc
+  - chán cậu quá
+  - cái gì cũng không biết thì biết cái mô
+  - bạn điên hả
+  - đần quá đi
+  - ăn mô mà đần thế
+  - mày lớp mấy rồi sao đần vậy
+  - vậy hả em học thêm nha
+  - ai dạy mà ngốc thế
+  - không hiểu ý tớ phải không
+  - cậu ngu thế
+  - bạn ngu à
+  - sao timi kém thế
+  - timi ngu quá
+  - m tồi quá
+  - trả lời bậy bạ vậy hả
+  - tao chán mày quá rồi hả
+  - tớ thấy mày vô tích sự thế
+  - em cùi bắp vãi
+  - tớ hy vọng mày sẽ tốt hơn
+  - em điên mất rùi
+  - cậu không tài năng chi cả
+  - cậu chán vãi
+  - chán quá bạn quá dốt
+  - mày chẳng giúp đươc gì cho tao cả
+  - không hiểu à
+  - bạn bị ngốc phải ko
+  - học thêm nha em
+  - lặp lại hoài hở
+  - quá vô ích
+  - ' chẳng có tác dụng gì'
+  - mình tức chết khi trò chuyện với bot
+  - timi nói gì đâu không
+  - dạy mãi mà vẫn ngu
+  - sao timi ngu vậy
+  - vậy học lại nha cậu
+  - tớ thấy bạn ngu quá
+  - cậu ngốc quá
+  - mày vô tích sự quá
+  - suốt ngày tôi không hiểu bạn nói nào
+  - phải kiên nhẫn lắm mới nói chuyện được với timi nhỉ
+  - mày chẳng hỗ trợ được gì
+  - tôi thấy bạn chẳng trợ giúp được gì
+  - sai chính tả kìa bạn
+  - nói chuyện với timi , bực mình thêm
+  - đần
+  - chán mày quá
+  - cái chi cũng không biết thì biết cái gì
+  - bot điên phải ko
+  - ngu quá đi
+  - ăn mô mà ngu thế
+  - mày lớp mấy rồi sao đần hở
+  - thế học thêm nha
+  - ai dạy mà đần thế
+  - không hiểu ý tui hả
+  - em ngu thế
+  - ' ngu hả'
+  - sao cậu kém thế
+  - m ngu quá
+  - em xàm quá
+  - bạn ngu như bò
+  - tao chán mày quá rồi vậy
+  - mình thấy bot vô tích sự thế
+  - bạn cùi bắp vãi
+  - tôi hy vọng m sẽ tốt hơn
+  - m điên mất rồi
+  - ' không giỏi nào cả'
+  - m chán vãi
+  - chán quá bot quá ngu
+  - mày chả giúp đươc gì cho tao cả
+  - cậu bị ngu phải không
+  - train lại nha bot
+  - thế vô ích
+  - mày không có tích sự gì
+  - tui tức chết khi trò chuyện với m
+  - m nói gì đâu không
+  - sao bạn đần hở
+  - thế học lại nha bot
+  - mình thấy bạn ngu quá
+  - ' đần thế'
+  - ' vô tích sự quá'
+  - lúc nào cũng tôi không hiểu bạn nói gì
+  - phải kiên nhẫn lắm mới nói chuyện được với cậu nhỉ
+  - mày chẳng giúp được gì
+  - tớ thấy mày chả giúp được gì cả
+  - sai chính tả kìa em
+  - nói chuyện với bot , bực mình thêm
+  - ngu
+  - chán timi quá
+  - cái chi cũng không biết thì biết cái chi
+  - em điên phải k
+  - ăn chi mà ngu thế
+  - bạn lớp mấy rồi sao ngu hở
+  - thế bot train lại nha
+  - ai dạy mà dốt hả
+  - không hiểu ý tớ phải k
+  - ' ngốc à'
+  - sao m kém thế
+  - bot ngu quá
+  - mày nhảm nhí quá
+  - tao điên mày quá rùi đó
+  - tao thấy m vô ích quá
+  - timi cùi bắp vãi
+  - tớ hy vọng cậu sẽ tốt hơn
+  - bạn điên mất rùi
+  - ' không giỏi gì cả'
+  - mày chán vãi
+  - chán quá cậu quá dốt
+  - mày chẳng giúp đươc gì cho tao
+  - ' bị ngốc phải không'
+  - học lại nha m
+  - thế vô dụng
+  - mày chả có ích lợi gì cả
+  - tớ tức chết khi nói chuyện với bot
+  - sao timi đần hở
+  - vậy hả học lại nha bot
+  - tui thấy cậu dốt thế
+  - em đần thế
+  - ' vô ích thế'
+  - lúc nào cũng tôi không hiểu bạn nói mô
+  - phải kiên nhẫn lắm mới nói chuyện được với bot nhỉ
+  - ' chả hỗ trợ được gì'
+  - tớ thấy m chả giúp được gì
+  - dốt
+  - cái chi cũng không biết thì biết cái nào
+  - bot điên phải không
+  - ngốc quá đi
+  - ăn chi mà ngốc thế
+  - em lớp mấy rồi sao đần vậy hả
+  - hở m train lại nha
+  - ai dạy mà dốt hở
+  - không hiểu ý tui phải ko
+  - cậu dốt hả
+  - mày tào lao quá
+  - mày ngu như bò
+  - tao chán mày quá rồi đó
+  - tớ thấy mày vô ích thế
+  - cậu cùi bắp vãi
+  - tớ hy vọng m sẽ tốt hơn
+  - mày điên mất rồi
+  - ' không xuất sắc mô cả'
+  - chán quá bạn quá không thông minh
+  - mày không giúp đươc gì cho tao
+  - cậu bị ngốc phải ko
+  - train lại nha timi
+  - quá vô dụng
+  - ' không có tích sự gì'
+  - tui tức chết khi nói chuyện với bot
+  - sao mày ngốc vậy
+  - hả học lại nha
+  - tớ thấy cậu ngốc thế
+  - bot ngốc quá
+  - ' vô dụng quá'
+  - phải kiên nhẫn lắm mới nói chuyện được với cậu nhể
+  - mày chẳng giúp đỡ được gì cả
+  - tớ thấy em chẳng giúp được gì cả
+  - vãi ngu
+  - cái mô cũng không biết thì biết cái chi
+  - bạn điên à
+  - ăn gì mà đần thế
+  - bot lớp mấy rùi sao ngu hở
+  - thế timi học lại nha
+  - ai dạy mà dốt vậy á hả
+  - không hiểu ý mình phải ko
+  - cậu đần à
+  - m nhảm quá
+  - m ngu như bò
+  - tao điên mày quá rùi hả
+  - tớ thấy mày vô tác dụng quá
+  - tao hy vọng em sẽ tốt hơn
+  - cậu điên mất rồi
+  - ' không thông minh chi cả'
+  - bạn chán vãi
+  - chán quá m quá không thông minh
+  - ' chẳng giúp đươc gì cho tao'
+  - cậu bị ngốc hả
+  - học thêm nha bạn
+  - mày chẳng có tích sự gì
+  - tao tức chết khi nói chuyện với m
+  - sao bot ngu hả
+  - hở học thêm nha mày

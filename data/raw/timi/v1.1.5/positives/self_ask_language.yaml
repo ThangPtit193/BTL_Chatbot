@@ -1,0 +1,306 @@
+version: v1.2.0
+domain: ftech_assistant
+dataset_type: train
+nlu:
+- intent: self_ask_language
+  examples:
+  - mày nói [tiếng việt](language) không
+  - bạn nói được những ngôn ngữ nào
+  - timi nói được tiếng nào
+  - tụi mình chat bằng [tiếng trung](language) nhé
+  - do you understand what am I saying
+  - say [german,](language) please
+  - ê bot nói được mấy thứ ngôn ngữ
+  - tớ nhắn tin với em bằng [tiếng anh](language) được không
+  - do you speak [korean](language)
+  - nói [tiếng hàn](language) đi
+  - nói 1 câu [tiếng pháp](language) nghe thử mày
+  - nhắn tin bằng [tiếng pháp](language) đi
+  - tớ có thể sử dụng [tiếng anh](language) với bot được không
+  - ' nói [tiếng anh](language) được không'
+  - ' biết [tiếng trung](language) không'
+  - ' biết được những ngôn ngữ nào'
+  - ' nói được ngôn ngữ nào'
+  - tụi mình chat bằng [tiếng trung](language) nha
+  - say [Turkish,](language) please
+  - ê timi nói được mấy thứ ngôn ngữ
+  - tớ chat với bot bằng [tiếng pháp](language) được không
+  - do you speak [Spanish](language)
+  - nói [tiếng nhật](language) đi bot
+  - nói 1 câu [tiếng nhật](language) nghe thử cậu
+  - nói chuyện bằng [tiếng hàn](language) đi
+  - tớ có thể sử dụng [tiếng việt](language) với cậu được không
+  - ' nói [tiếng pháp](language) được không'
+  - cậu biết [tiếng pháp](language) không
+  - mày biết được những ngôn ngữ nào
+  - ' nói được tiếng nào'
+  - tụi mình trò chuyện bằng [tiếng việt](language) nhé
+  - say [french,](language) please
+  - ê bạn nói được mấy thứ ngôn ngữ
+  - tớ nói chuyện với timi bằng [tiếng việt](language) được không
+  - do you speak [french](language)
+  - nói [tiếng việt](language) đi
+  - nói 1 câu [tiếng nhật](language) nghe thử bạn
+  - chat bằng [tiếng hàn](language) đi
+  - tao có thể sử dụng [tiếng pháp](language) với timi được không
+  - bot nói [tiếng pháp](language) được không
+  - ' nói [tiếng việt](language) không'
+  - ' nói được những ngôn ngữ nào'
+  - bot nói được tiếng nào
+  - tụi mình nói chuyện bằng [tiếng pháp](language) nha
+  - say [Malayalam,](language) please
+  - ê timi nói được mấy thứ tiếng
+  - mình trò chuyện với cậu bằng [tiếng trung](language) được không
+  - do you speak [Vietnamese](language)
+  - nói [tiếng trung](language) đi
+  - nói 1 câu [tiếng việt](language) nghe thử timi
+  - trò chuyện bằng [tiếng anh](language) đi
+  - tớ có thể dùng [tiếng anh](language) với bot được không
+  - em nói [tiếng trung](language) được không
+  - ' biết [tiếng nhật](language) không'
+  - bot nói được những ngôn ngữ nào
+  - bạn nói được tiếng nào
+  - tụi mình trò chuyện bằng [tiếng nhật](language) nha
+  - say [italian,](language) please
+  - ê em nói được mấy thứ tiếng
+  - tôi trò chuyện với mày bằng [tiếng việt](language) được không
+  - do you speak [Malayalam](language)
+  - nói [tiếng anh](language) đi
+  - nói 1 câu [tiếng trung](language) nghe thử mày
+  - nhắn tin bằng [tiếng việt](language) đi
+  - tớ có thể sử dụng [tiếng pháp](language) với mày được không
+  - m nói [tiếng trung](language) được không
+  - cậu biết [tiếng hàn](language) không
+  - bạn biết được những ngôn ngữ nào
+  - timi nói được ngôn ngữ nào
+  - tụi mình nói chuyện bằng [tiếng pháp](language) nhé
+  - say [spanish,](language) please
+  - ê bot nói được mấy thứ tiếng
+  - tớ trò chuyện với timi bằng [tiếng việt](language) được không
+  - do you speak [japanese](language)
+  - nói [tiếng trung](language) đi bot
+  - nói 1 câu [tiếng anh](language) nghe thử cậu
+  - nhắn tin bằng [tiếng hàn](language) đi
+  - tui có thể dùng [tiếng việt](language) với cậu được không
+  - bot nói [tiếng trung](language) được không
+  - bot nói [tiếng anh](language) không
+  - em biết được những ngôn ngữ nào
+  - mày nói được ngôn ngữ nào
+  - tụi mình nhắn tin bằng [tiếng việt](language) nhé
+  - say [english,](language) please
+  - ê m nói được mấy thứ tiếng
+  - tớ nhắn tin với em bằng [tiếng trung](language) được không
+  - do you speak [Russian](language)
+  - nói [tiếng anh](language) đi bot
+  - nói 1 câu [tiếng pháp](language) nghe thử bạn
+  - nói chuyện bằng [tiếng trung](language) đi
+  - tôi có thể dùng [tiếng trung](language) với bot được không
+  - bạn nói [tiếng nhật](language) được không
+  - ' biết [tiếng hàn](language) không'
+  - bot biết được những ngôn ngữ nào
+  - em nói được ngôn ngữ nào
+  - tụi mình chat bằng [tiếng anh](language) nha
+  - say [Russian,](language) please
+  - ê cậu nói được mấy thứ ngôn ngữ
+  - tôi trò chuyện với cậu bằng [tiếng việt](language) được không
+  - do you speak [german](language)
+  - nói [tiếng pháp](language) đi em
+  - nói 1 câu [tiếng nhật](language) nghe thử timi
+  - nhắn tin bằng [tiếng anh](language) đi
+  - tớ có thể dùng [tiếng pháp](language) với cậu được không
+  - ' nói [tiếng trung](language) được không'
+  - bot nói [tiếng trung](language) không
+  - m biết được những ngôn ngữ nào
+  - em nói được tiếng nào
+  - tụi mình trò chuyện bằng [tiếng nhật](language) nhé
+  - say [Vietnamese,](language) please
+  - ê em nói được mấy thứ ngôn ngữ
+  - tớ chat với bạn bằng [tiếng việt](language) được không
+  - do you speak [Turkish](language)
+  - nói [tiếng việt](language) đi m
+  - nói 1 câu [tiếng hàn](language) nghe thử bot
+  - nói chuyện bằng [tiếng nhật](language) đi
+  - tao có thể sử dụng [tiếng việt](language) với mày được không
+  - em nói [tiếng hàn](language) được không
+  - m biết [tiếng nhật](language) không
+  - m nói được những ngôn ngữ nào
+  - cậu nói được tiếng nào
+  - tụi mình nhắn tin bằng [tiếng việt](language) nha
+  - say [korean,](language) please
+  - ê bạn nói được mấy thứ tiếng
+  - tớ trò chuyện với mày bằng [tiếng pháp](language) được không
+  - do you speak [italian](language)
+  - nói [tiếng hàn](language) đi bot
+  - nói 1 câu [tiếng trung](language) nghe thử m
+  - trò chuyện bằng [tiếng pháp](language) đi
+  - tớ có thể sử dụng [tiếng trung](language) với bạn được không
+  - em nói [tiếng việt](language) được không
+  - em nói [tiếng việt](language) không
+  - timi nói được những ngôn ngữ nào
+  - bạn nói được ngôn ngữ nào
+  - tụi mình nói chuyện bằng [tiếng việt](language) nha
+  - say [Spanish,](language) please
+  - ê mày nói được mấy thứ ngôn ngữ
+  - tôi chat với m bằng [tiếng nhật](language) được không
+  - do you speak [spanish](language)
+  - nói [tiếng anh](language) đi m
+  - nói 1 câu [tiếng pháp](language) nghe thử bot
+  - trò chuyện bằng [tiếng việt](language) đi
+  - mình có thể dùng [tiếng hàn](language) với cậu được không
+  - cậu nói [tiếng pháp](language) được không
+  - cậu biết [tiếng nhật](language) không
+  - cậu biết được những ngôn ngữ nào
+  - cậu nói được ngôn ngữ nào
+  - tụi mình chat bằng [tiếng việt](language) nha
+  - say [japanese,](language) please
+  - ê m nói được mấy thứ ngôn ngữ
+  - tao trò chuyện với m bằng [tiếng anh](language) được không
+  - do you speak [english](language)
+  - nói [tiếng việt](language) đi bot
+  - nói 1 câu [tiếng hàn](language) nghe thử cậu
+  - chat bằng [tiếng việt](language) đi
+  - tui có thể dùng [tiếng việt](language) với bạn được không
+  - cậu nói [tiếng anh](language) được không
+  - cậu biết [tiếng việt](language) không
+  - em nói được những ngôn ngữ nào
+  - m nói được ngôn ngữ nào
+  - tụi mình nhắn tin bằng [tiếng nhật](language) nhé
+  - ê mày nói được mấy thứ tiếng
+  - tao trò chuyện với em bằng [tiếng việt](language) được không
+  - nói [tiếng hàn](language) đi em
+  - nói 1 câu [tiếng nhật](language) nghe thử bot
+  - nói chuyện bằng [tiếng việt](language) đi
+  - tớ có thể dùng [tiếng trung](language) với bot được không
+  - mày nói [tiếng hàn](language) được không
+  - cậu nói [tiếng việt](language) không
+  - m nói được tiếng nào
+  - tụi mình trò chuyện bằng [tiếng hàn](language) nha
+  - ê cậu nói được mấy thứ tiếng
+  - tớ nói chuyện với mày bằng [tiếng hàn](language) được không
+  - nói [tiếng pháp](language) đi bot
+  - nói 1 câu [tiếng trung](language) nghe thử bạn
+  - trò chuyện bằng [tiếng trung](language) đi
+  - mình có thể sử dụng [tiếng hàn](language) với timi được không
+  - ' nói [tiếng việt](language) được không'
+  - ' nói [tiếng trung](language) không'
+  - timi biết được những ngôn ngữ nào
+  - bot nói được ngôn ngữ nào
+  - tụi mình trò chuyện bằng [tiếng pháp](language) nha
+  - tớ chat với bạn bằng [tiếng nhật](language) được không
+  - nói [tiếng anh](language) đi timi
+  - nói 1 câu [tiếng nhật](language) nghe thử m
+  - trò chuyện bằng [tiếng hàn](language) đi
+  - tớ có thể sử dụng [tiếng nhật](language) với bạn được không
+  - timi nói [tiếng trung](language) được không
+  - mày biết [tiếng anh](language) không
+  - tụi mình nói chuyện bằng [tiếng hàn](language) nha
+  - tui trò chuyện với mày bằng [tiếng việt](language) được không
+  - nói [tiếng nhật](language) đi
+  - nói 1 câu [tiếng anh](language) nghe thử mày
+  - chat bằng [tiếng anh](language) đi
+  - tao có thể sử dụng [tiếng hàn](language) với mày được không
+  - cậu nói [tiếng trung](language) được không
+  - timi nói [tiếng anh](language) không
+  - cậu nói được những ngôn ngữ nào
+  - mày nói được tiếng nào
+  - tụi mình trò chuyện bằng [tiếng trung](language) nha
+  - tớ nhắn tin với bot bằng [tiếng nhật](language) được không
+  - nói [tiếng pháp](language) đi
+  - nói 1 câu [tiếng pháp](language) nghe thử m
+  - nói chuyện bằng [tiếng anh](language) đi
+  - tớ có thể sử dụng [tiếng nhật](language) với mày được không
+  - ' nói [tiếng nhật](language) được không'
+  - ' biết [tiếng pháp](language) không'
+  - mày nói được những ngôn ngữ nào
+  - tụi mình nói chuyện bằng [tiếng việt](language) nhé
+  - mình nói chuyện với timi bằng [tiếng hàn](language) được không
+  - nói [tiếng trung](language) đi mày
+  - nói 1 câu [tiếng việt](language) nghe thử bot
+  - chat bằng [tiếng trung](language) đi
+  - mình có thể dùng [tiếng pháp](language) với bot được không
+  - m nói [tiếng hàn](language) được không
+  - m nói [tiếng anh](language) không
+  - tụi mình trò chuyện bằng [tiếng pháp](language) nhé
+  - tui chat với mày bằng [tiếng trung](language) được không
+  - nói [tiếng pháp](language) đi m
+  - nói 1 câu [tiếng việt](language) nghe thử bạn
+  - nhắn tin bằng [tiếng nhật](language) đi
+  - tớ có thể dùng [tiếng việt](language) với timi được không
+  - timi nói [tiếng nhật](language) được không
+  - cậu nói [tiếng trung](language) không
+  - tụi mình nói chuyện bằng [tiếng trung](language) nhé
+  - tớ chat với mày bằng [tiếng việt](language) được không
+  - nói [tiếng anh](language) đi cậu
+  - nói 1 câu [tiếng việt](language) nghe thử em
+  - trò chuyện bằng [tiếng nhật](language) đi
+  - tớ có thể sử dụng [tiếng anh](language) với mày được không
+  - mày nói [tiếng pháp](language) được không
+  - ' nói [tiếng anh](language) không'
+  - tụi mình nói chuyện bằng [tiếng trung](language) nha
+  - tớ chat với m bằng [tiếng việt](language) được không
+  - nói [tiếng nhật](language) đi mày
+  - nói 1 câu [tiếng việt](language) nghe thử mày
+  - chat bằng [tiếng pháp](language) đi
+  - tớ có thể dùng [tiếng việt](language) với bạn được không
+  - m nói [tiếng pháp](language) được không
+  - ' nói [tiếng pháp](language) không'
+  - tụi mình chat bằng [tiếng pháp](language) nha
+  - tui trò chuyện với cậu bằng [tiếng anh](language) được không
+  - nói [tiếng việt](language) đi timi
+  - nói 1 câu [tiếng hàn](language) nghe thử mày
+  - chat bằng [tiếng nhật](language) đi
+  - tao có thể sử dụng [tiếng việt](language) với em được không
+  - bạn nói [tiếng việt](language) được không
+  - mày biết [tiếng pháp](language) không
+  - tụi mình nói chuyện bằng [tiếng hàn](language) nhé
+  - tớ chat với mày bằng [tiếng anh](language) được không
+  - nói [tiếng việt](language) đi cậu
+  - nói 1 câu [tiếng hàn](language) nghe thử timi
+  - nói chuyện bằng [tiếng pháp](language) đi
+  - tui có thể dùng [tiếng hàn](language) với em được không
+  - ' nói [tiếng hàn](language) được không'
+  - ' biết [tiếng việt](language) không'
+  - tụi mình nhắn tin bằng [tiếng anh](language) nhé
+  - tớ nhắn tin với em bằng [tiếng việt](language) được không
+  - nói [tiếng anh](language) đi bạn
+  - nói 1 câu [tiếng anh](language) nghe thử em
+  - nhắn tin bằng [tiếng trung](language) đi
+  - tao có thể dùng [tiếng anh](language) với timi được không
+  - em nói [tiếng anh](language) được không
+  - timi nói [tiếng pháp](language) không
+  - tụi mình nhắn tin bằng [tiếng hàn](language) nhé
+  - tui nhắn tin với cậu bằng [tiếng pháp](language) được không
+  - nói [tiếng anh](language) đi em
+  - nói 1 câu [tiếng nhật](language) nghe thử em
+  - tớ có thể dùng [tiếng việt](language) với em được không
+  - mày nói [tiếng anh](language) được không
+  - bot biết [tiếng trung](language) không
+  - tụi mình nhắn tin bằng [tiếng pháp](language) nhé
+  - tớ trò chuyện với cậu bằng [tiếng nhật](language) được không
+  - nói [tiếng nhật](language) đi m
+  - nói 1 câu [tiếng trung](language) nghe thử em
+  - tui có thể dùng [tiếng nhật](language) với m được không
+  - timi nói [tiếng pháp](language) được không
+  - timi biết [tiếng việt](language) không
+  - tụi mình nhắn tin bằng [tiếng hàn](language) nha
+  - tớ nói chuyện với bot bằng [tiếng nhật](language) được không
+  - nói [tiếng hàn](language) đi m
+  - nói 1 câu [tiếng nhật](language) nghe thử mày
+  - mình có thể dùng [tiếng hàn](language) với em được không
+  - bạn nói [tiếng anh](language) được không
+  - ' biết [tiếng anh](language) không'
+  - tụi mình chat bằng [tiếng hàn](language) nhé
+  - tôi trò chuyện với timi bằng [tiếng pháp](language) được không
+  - nói [tiếng pháp](language) đi mày
+  - nói 1 câu [tiếng anh](language) nghe thử bot
+  - tớ có thể sử dụng [tiếng anh](language) với bạn được không
+  - mày nói [tiếng trung](language) được không
+  - em biết [tiếng trung](language) không
+  - tụi mình trò chuyện bằng [tiếng việt](language) nha
+  - tớ nhắn tin với timi bằng [tiếng pháp](language) được không
+  - nói [tiếng việt](language) đi bạn
+  - nói 1 câu [tiếng pháp](language) nghe thử em
+  - tớ có thể sử dụng [tiếng việt](language) với bạn được không
+  - timi nói [tiếng việt](language) được không
+  - em nói [tiếng pháp](language) không
+  - tụi mình nói chuyện bằng [tiếng anh](language) nhé
