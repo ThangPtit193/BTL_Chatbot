@@ -26,7 +26,9 @@ pydash~=4.8.0
 scikit-learn~=0.24.2
 termcolor~=1.1.0
 setuptools~=58.0.4
-comet@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/comet-7.2.0rc5-py3-none-any.whl
+termcolor
+bottleneck
+comet@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/comet-7.2.0rc17-py3-none-any.whl
 venus@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/venus-1.2.3rc4-py3-none-any.whl
-vaxiom_client@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/vaxiom_client-0.1.0rc1-py3-none-any.whl
+vaxiom_client@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/vaxiom_client-0.1.0rc5-py3-none-any.whl
 
