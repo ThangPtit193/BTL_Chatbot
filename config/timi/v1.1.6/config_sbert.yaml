@@ -25,6 +25,7 @@ DATA_GENERATION:
     cache_path: ./timi-keepitreal-H768-faq-870k-v1.1.5
 #    cache_path: ./timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
     pretrained_name_or_abspath: timi-keepitreal-H768-faq-870k-v1.1.5
+    use_vaxiom: True
 #    pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
     batch_size: 128
 #  FROM_E2E:
