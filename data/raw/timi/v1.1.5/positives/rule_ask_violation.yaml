@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_ask_violation
   examples:
   - cho mình hỏi khi làm việc ở công ty những hoạt động xẽ bị xử phạt

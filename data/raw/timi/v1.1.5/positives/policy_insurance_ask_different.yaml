@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_insurance_ask_different
   examples:
   - tôi muốn hỏi công ty có các gói bảo hiểm cao cấp khác ngoài bảo hiểm xã hội không

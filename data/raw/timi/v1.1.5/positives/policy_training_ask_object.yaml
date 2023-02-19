@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_training_ask_object
   examples:
   - '[thực tập sinh](level_position) có được tham gia các khóa huấn luyện của công

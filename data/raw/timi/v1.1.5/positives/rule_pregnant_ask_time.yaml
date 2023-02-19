@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_pregnant_ask_time
   examples:
   - thời gian làm việc của phụ nữ có thai như thế nào

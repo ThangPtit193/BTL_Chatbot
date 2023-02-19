@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rec_ask_working_place
   examples:
   - ứng tuyển [blockchain developer](position) thì làm ở [hn](location) được không

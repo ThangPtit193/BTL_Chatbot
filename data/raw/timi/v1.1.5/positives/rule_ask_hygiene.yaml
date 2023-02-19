@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_ask_hygiene
   examples:
   - rule về sử dụng dụng cụ của công ty ntn

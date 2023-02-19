@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: chitchat_user_feel_hungry
   examples:
   - tui đói thế này thì làm như thế nào mà làm được nhỉ

@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_hour_of_furlough
   examples:
   - '[thang vừa qua](time) mình còn bao nhiêu ngày phép ta'

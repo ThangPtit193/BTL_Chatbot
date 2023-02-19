@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_partner
   examples:
   - công ty đang hợp tác với những đối tác làm ăn nào mày

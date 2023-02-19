@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_working_in_week_ask_time
   examples:
   - mấy giờ công ty kết thúc làm việc mầy

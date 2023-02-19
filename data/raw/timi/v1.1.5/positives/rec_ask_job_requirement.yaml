@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rec_ask_job_requirement
   examples:
   - '[mình](pronoun) cần chuẩn bị những gì để đáp ứng job requirement của [f-tech](work_unit)

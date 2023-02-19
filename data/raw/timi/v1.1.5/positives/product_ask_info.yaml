@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: product_ask_info
   examples:
   - gửi cho tôi dánh sách các sản phẩm công ty đang phát triển

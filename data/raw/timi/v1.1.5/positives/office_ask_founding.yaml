@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: office_ask_founding
   examples:
   - '[f tech](work_unit) khai sinh được 2 tháng rồi nhể'

@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rec_ask_contact_info
   examples:
   - tớ xin sdt recruitment của [f-tech](work_unit)

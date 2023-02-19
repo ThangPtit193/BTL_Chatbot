@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_checkin_checkout_time
   examples:
   - timi cho tui biết thời gian chấm công [ngay hôm nay](time) được khum

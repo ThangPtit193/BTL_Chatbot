@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: recsys_request_entertainment
   examples:
   - bot biết bộ phim nào hay không

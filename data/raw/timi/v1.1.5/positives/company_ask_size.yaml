@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_size
   examples:
   - thế [f-tech](work_unit) có mấy nhân viên

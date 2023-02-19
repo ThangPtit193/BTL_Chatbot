@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_offset_working_ask_how
   examples:
   - đến muộn bị phạt rồi thì có cần phải làm bù giờ ko

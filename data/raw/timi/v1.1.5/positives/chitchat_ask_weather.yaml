@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: chitchat_ask_weather
   examples:
   - '[ngày kìa](time) có mưa không, tớ thấy trời hơi âm u'

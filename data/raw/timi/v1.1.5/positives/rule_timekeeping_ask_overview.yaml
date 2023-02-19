@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_timekeeping_ask_overview
   examples:
   - cho mình hỏi về quy định chấm công của công ty đi

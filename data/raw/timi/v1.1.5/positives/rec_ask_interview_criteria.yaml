@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rec_ask_interview_criteria
   examples:
   - dựa vào điều gì để biết mình bị loại ha

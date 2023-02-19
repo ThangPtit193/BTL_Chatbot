@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_ask_bonus_december
   examples:
   - chế độ thưởng tháng 13 dành cho [trainee](level_position) như thế nào ạ

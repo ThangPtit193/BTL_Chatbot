@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_bonus_holiday_ask_overview
   examples:
   - 30/4 1/5 là lễ lớn công ty có thưởng chứ

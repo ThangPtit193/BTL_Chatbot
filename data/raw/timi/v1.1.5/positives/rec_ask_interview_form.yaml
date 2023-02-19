@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rec_ask_interview_form
   examples:
   - tớ ở xa thì phỏng vấn ra sao nhể

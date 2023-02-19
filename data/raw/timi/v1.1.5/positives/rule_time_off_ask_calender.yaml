@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_time_off_ask_calender
   examples:
   - '[ngày đoan ngọ](time) công ty có cho nhận sự nghỉ ko'

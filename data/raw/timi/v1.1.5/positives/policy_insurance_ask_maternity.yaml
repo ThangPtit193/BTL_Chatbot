@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: policy_insurance_ask_maternity
   examples:
   - chính sách cho phụ nữ có con nhỏ của công ty ntn ạ

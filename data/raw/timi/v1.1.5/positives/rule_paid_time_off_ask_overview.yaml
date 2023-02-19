@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_paid_time_off_ask_overview
   examples:
   - Hết năm không nghỉ hết số ngày phép, tớ có được tính tiếp vào năm tiếp theo không

@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_ask_discipline
   examples:
   - mình muốn hỏi về các hình thức kỷ luật của công ty đối với thành viên

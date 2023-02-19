@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: company_ask_vision_and_mission
   examples:
   - tớ muốn hỏi công ty có tầm nhìn dài hạn như nào

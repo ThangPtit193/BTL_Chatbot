@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rec_ask_overview
   examples:
   - tư vấn cho job [pre-senior](level_position) [ai engineering](position)

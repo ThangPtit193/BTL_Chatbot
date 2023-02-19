@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rule_time_off_ask_rule
   examples:
   - mình xin đi ra ngoài thì chỉ cần báo lãnh đạo thôi phải không

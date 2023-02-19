@@ -1,7 +1,4 @@
-version: v1.2.0
-domain: ftech_assistant
-dataset_type: train
-nlu:
+positives:
 - intent: rec_get_result_interview
   examples:
   - tầm bao giời thì tớ nhận được kết quả phỏng vấn
