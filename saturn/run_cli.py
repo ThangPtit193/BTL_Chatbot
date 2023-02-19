@@ -87,7 +87,7 @@ def release(config):
         f"Are you sure to upload the model from '{model_path}' with name: '{model_name}' to model hub?"
     ).ask()
     if is_agree_upload:
-        axiom_wrapper.upload_model(model_name=model_name, dir_path=model_path, replace=True)
+        axiom_wrapper.upload_model(model_name=model_name, model_path=model_path, replace=True)
     else:
         print("Aborting...")
         return

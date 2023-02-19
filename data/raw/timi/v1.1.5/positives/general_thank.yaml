@@ -1,0 +1,303 @@
+positives:
+- intent: general_thank
+  examples:
+  - tui cảm ơn rất nhiều nha
+  - tôi cảm ơn rất nhiều
+  - cảm ơn cậu nhiều
+  - thank very much timi
+  - cảm ơn so much
+  - cảm ơn
+  - tôi cảm ơn cậu nhiều nha
+  - tớ cảm ơn timi
+  - tớ cảm ơn bot
+  - merci cậu nhiều nha
+  - thanks bạn rất nhiều nhé
+  - tớ cảm ơn nhiều nha
+  - thanks bạn rất nhiều
+  - tui cảm ơn bot
+  - merci very much bot
+  - cảm ơn cậu nhé
+  - anh cảm ơn nhiều nhé
+  - thank nha
+  - thank bạn rất nhiều nha
+  - tôi cảm ơn rất nhiều nha
+  - tui cảm ơn nhiều nhé
+  - tui cảm ơn bot nhiều nha
+  - cảm ơn timi rất nhiều nha
+  - thanks bot nhiều nhé
+  - tớ cảm ơn bạn nhiều
+  - cảm ơn cậu rất nhiều
+  - thanks bot
+  - thanks bạn nhiều
+  - tớ cảm ơn nha
+  - thank bot nhé
+  - tui cảm ơn cậu rất nhiều nhé
+  - merci bot rất nhiều nhé
+  - cảm ơn very much
+  - tớ cảm ơn rất nhiều nhé
+  - thanks vì đã hỗ trợ tôi
+  - cảm ơn timi
+  - mình cảm ơn timi nhiều nhé
+  - cô cảm ơn nhiều
+  - mình cảm ơn bot rất nhiều
+  - tôi cảm ơn bạn nhiều
+  - merci so much bạn
+  - merci cậu
+  - thank so much
+  - thank so much bạn
+  - cảm ơn timi rất nhiều
+  - thanks rất nhiều nhé
+  - thank cậu
+  - thank cậu rất nhiều
+  - thanks cậu nhiều nhé
+  - chú cảm ơn nhé
+  - chị cảm ơn nhiều
+  - mình cảm ơn timi nhiều
+  - cảm ơn nhiều nha
+  - tôi cảm ơn rất nhiều nhé
+  - cô cảm ơn
+  - merci very much cậu
+  - tui cảm ơn ạ
+  - cảm ơn timi nhiều
+  - thanks vì đã hỗ trợ tớ
+  - thanks cậu rất nhiều nhé
+  - mình cảm ơn admin
+  - tớ cảm ơn nhé
+  - anh cảm ơn rất nhiều
+  - mình cảm ơn timi rất nhiều nha
+  - thanks bot rất nhiều nhé
+  - thanks bạn rất nhiều nha
+  - anh cảm ơn
+  - anh cảm ơn nhé
+  - tớ cảm ơn cậu nhiều
+  - chú cảm ơn rất nhiều
+  - merci timi rất nhiều
+  - tui cảm ơn timi nhiều nhé
+  - thanks so much bot
+  - thanks timi nhiều nha
+  - cảm ơn cậu nhiều nha
+  - thanks nha
+  - thanks very much
+  - mình cảm ơn rất nhiều nhé
+  - cảm ơn bạn rất nhiều nha
+  - tui cảm ơn nha
+  - thank rất nhiều nhé
+  - tớ cảm ơn bạn nhiều nhé
+  - tớ cảm ơn bạn
+  - merci bạn nhiều nhé
+  - tôi cảm ơn nha
+  - thank timi rất nhiều
+  - merci cậu rất nhiều nha
+  - thanks cậu nha
+  - tôi cảm ơn timi rất nhiều nhé
+  - merci bot nhiều nhé
+  - merci nhé
+  - thank timi nhiều
+  - thanks bạn
+  - thanks vì đã hỗ trợ tui
+  - thanks so much
+  - cảm ơn bạn nhiều nhé
+  - cảm ơn timi ạ
+  - cảm ơn cậu ạ
+  - merci very much timi
+  - thank bạn nhé
+  - chú cảm ơn
+  - thanks cậu nhé
+  - tôi cảm ơn cậu rất nhiều nhé
+  - tui cảm ơn timi rất nhiều nha
+  - thank timi rất nhiều nha
+  - cô cảm ơn rất nhiều nha
+  - thank vì đã hỗ trợ tui
+  - mình cảm ơn nhiều nha
+  - tớ cảm ơn bot nhiều
+  - tôi cảm ơn bot nhiều
+  - tui cảm ơn bot nhiều nhé
+  - tớ cảm ơn nhiều nhé
+  - tôi cảm ơn cậu rất nhiều
+  - cô cảm ơn rất nhiều
+  - anh cảm ơn e
+  - merci nha
+  - cảm ơn bot nhé
+  - thank so much timi
+  - thanks admin
+  - thank timi
+  - thank bot
+  - thanks nhé
+  - mình cảm ơn
+  - mình cảm ơn bot nhiều
+  - mình cảm ơn ạ
+  - thanks timi rất nhiều
+  - mình cảm ơn cậu rất nhiều nhé
+  - merci cậu rất nhiều
+  - thanks nhiều nha
+  - thank cậu nhé
+  - thanks timi nhé
+  - mình cảm ơn bạn rất nhiều nha
+  - cảm ơn admin ạ
+  - tôi cảm ơn timi nhiều
+  - tớ cảm ơn bạn rất nhiều nhé
+  - merci rất nhiều nhé
+  - cảm ơn so much bạn
+  - mình cảm ơn bạn
+  - mình cảm ơn cậu rất nhiều nha
+  - thanks timi
+  - chú cảm ơn nha
+  - cảm ơn ạ
+  - mình cảm ơn timi rất nhiều
+  - thank vì đã hỗ trợ tớ
+  - merci nhiều
+  - tớ cảm ơn timi rất nhiều nhé
+  - tớ cảm ơn cậu rất nhiều nha
+  - thanks very much timi
+  - tui cảm ơn nhé
+  - mình cảm ơn timi
+  - cảm ơn bạn nhiều
+  - tôi cảm ơn bạn nhiều nhé
+  - cảm ơn vì đã hỗ trợ tôi
+  - tui cảm ơn rất nhiều
+  - cô cảm ơn rất nhiều nhé
+  - cô cảm ơn nhiều nhé
+  - thank timi rất nhiều nhé
+  - thank bạn rất nhiều
+  - tui cảm ơn timi rất nhiều nhé
+  - tui cảm ơn admin ạ
+  - anh cảm ơn nhiều
+  - tớ cảm ơn bot nhiều nhé
+  - merci so much timi
+  - cảm ơn bạn rất nhiều nhé
+  - tớ cảm ơn bot rất nhiều nhé
+  - mình cảm ơn nhé
+  - tôi cảm ơn cậu nhiều nhé
+  - anh cảm ơn nha
+  - merci bạn nhiều nha
+  - thank bot nha
+  - tui cảm ơn cậu nhiều nha
+  - merci so much
+  - tui cảm ơn cậu rất nhiều nha
+  - mình cảm ơn bạn nhiều
+  - thank bạn nha
+  - chị cảm ơn nha
+  - thank vì đã hỗ trợ mình
+  - tui cảm ơn bạn rất nhiều nhé
+  - cảm ơn rất nhiều nhé
+  - tui cảm ơn
+  - thank bot rất nhiều nhé
+  - tôi cảm ơn bot rất nhiều
+  - tớ cảm ơn bot rất nhiều nha
+  - tôi cảm ơn bạn rất nhiều nhé
+  - tớ cảm ơn cậu nhiều nhé
+  - tôi cảm ơn
+  - mình cảm ơn bạn rất nhiều
+  - thank bot rất nhiều nha
+  - tui cảm ơn cậu rất nhiều
+  - tôi cảm ơn timi rất nhiều
+  - cảm ơn nhiều
+  - merci nhiều nha
+  - chị cảm ơn em
+  - thank timi nhiều nha
+  - cảm ơn timi nhé
+  - thanks bot nhé
+  - thanks vì đã hỗ trợ mình
+  - merci cậu rất nhiều nhé
+  - tôi cảm ơn bot rất nhiều nhé
+  - cảm ơn bot nha
+  - chị cảm ơn
+  - thanks bot nhiều
+  - tớ cảm ơn timi nhiều nhé
+  - merci bạn nhiều
+  - thanks so much timi
+  - thank timi nhé
+  - cảm ơn bạn ạ
+  - thanks cậu rất nhiều
+  - merci bot rất nhiều nha
+  - thanks bot rất nhiều
+  - merci timi nhiều
+  - tui cảm ơn timi nhiều
+  - thank you very much
+  - tui cảm ơn bạn nhiều
+  - merci so much cậu
+  - tôi cảm ơn admin ạ
+  - merci
+  - tôi cảm ơn bạn nhiều nha
+  - tui cảm ơn timi nhiều nha
+  - cảm ơn timi rất nhiều nhé
+  - merci timi nhé
+  - merci so much bot
+  - tui cảm ơn bot rất nhiều nha
+  - chú cảm ơn nhiều
+  - tui cảm ơn bot rất nhiều
+  - merci cậu nhiều
+  - cảm ơn admin
+  - anh cảm ơn rất nhiều nha
+  - cảm ơn bạn nhé
+  - rất tốt nha
+  - tui cảm ơn bạn nhiều nhé
+  - cảm ơn bot rất nhiều nha
+  - chị cảm ơn rất nhiều nhé
+  - cảm ơn timi nhiều nhé
+  - cảm ơn cậu nhiều nhé
+  - cảm ơn vì đã hỗ trợ tui
+  - cảm ơn very much bot
+  - tớ cảm ơn cậu rất nhiều nhé
+  - thank so much cậu
+  - tui cảm ơn admin
+  - cảm ơn cậu rất nhiều nha
+  - thank admin
+  - mình cảm ơn rất nhiều
+  - mình cảm ơn nhiều
+  - thanks bạn nhé
+  - cảm ơn cậu
+  - mình cảm ơn bot
+  - cảm ơn very much cậu
+  - thank cậu nhiều nha
+  - merci bạn nhé
+  - thanks very much bot
+  - chú cảm ơn rất nhiều nha
+  - merci bạn rất nhiều nhé
+  - chị cảm ơn nhé
+  - merci timi nhiều nha
+  - mình cảm ơn nha
+  - tớ cảm ơn timi rất nhiều
+  - cảm ơn cậu nha
+  - tui cảm ơn bạn rất nhiều nha
+  - cảm ơn timi nha
+  - thank bot nhiều
+  - mình cảm ơn timi rất nhiều nhé
+  - merci admin
+  - cảm ơn bot nhiều nha
+  - thanks rất nhiều
+  - cảm ơn bot nhiều nhé
+  - thank bot rất nhiều
+  - thank bạn nhiều
+  - tui cảm ơn nhiều nha
+  - tôi cảm ơn bạn rất nhiều
+  - merci bot
+  - tôi cảm ơn timi rất nhiều nha
+  - tui cảm ơn cậu
+  - tôi cảm ơn cậu rất nhiều nha
+  - merci timi rất nhiều nha
+  - merci bạn nha
+  - thanks
+  - thanks so much cậu
+  - thanks nhiều nhé
+  - thanks timi nha
+  - tui cảm ơn timi
+  - cảm ơn cậu rất nhiều nhé
+  - tớ cảm ơn cậu rất nhiều
+  - thanks nhiều
+  - tui cảm ơn rất nhiều nhé
+  - merci timi
+  - merci vì đã hỗ trợ tớ
+  - tớ cảm ơn bot rất nhiều
+  - thank you so much
+  - rất tốt nhé
+  - cô cảm ơn nha
+  - thank cậu nhiều nhé
+  - tôi cảm ơn bạn
+  - tớ cảm ơn admin
+  - merci very much bạn
+  - thanks bạn nha
+  - merci vì đã hỗ trợ mình
+  - cảm ơn so much bot
+  - tui cảm ơn cậu nhiều
+  - thank bạn nhiều nhé

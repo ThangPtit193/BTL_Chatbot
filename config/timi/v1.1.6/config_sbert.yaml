@@ -1,7 +1,7 @@
 GENERAL:
   device: cuda:1
   project: timi
-  version: v1.1.5
+  version: v1.1.6
   output_data: assets
   output_model: models
   output_report: reports
@@ -12,7 +12,7 @@ GENERAL:
   skipped_eval: False
 
 DATA_GENERATION:
-  data_dir: data/raw/timi/v1.1.4
+  data_dir: data/raw/timi/v1.1.5
   search_mode: bm25_embedder
   embedding_batch_size: 100
   neg_sim_batch_size: 200
@@ -22,8 +22,10 @@ DATA_GENERATION:
   split_intent_by_slash: False
   remove_duplicate_doc: True
   EMBEDDER:
-    cache_path: ./embedder_caches
-    pretrained_name_or_abspath: timi-keepitreal-H768-faq-900k-v1.1.4
+    cache_path: ./timi-keepitreal-H768-faq-870k-v1.1.5
+#    cache_path: ./timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
+    pretrained_name_or_abspath: timi-keepitreal-H768-faq-870k-v1.1.5
+#    pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
     batch_size: 128
 #  FROM_E2E:
 #    e2e_eval_result_path: data/raw/timi/v1.1.4/processed_all.csv
@@ -42,11 +44,12 @@ TRAINER:
   class: SBertSemanticSimilarity
   package: saturn.components.embeddings.embedding_models
   skipped: True
-  pretrained_name_or_abspath: timi-keepitreal-H768-faq-900k-v1.1.4
+  pretrained_name_or_abspath: timi-keepitreal-H768-faq-870k-v1.1.5
+#  pretrained_name_or_abspath: timi-idol-keepitreal-vn-sbert-faq-9M-v1.0.0
   model_save_path: models
   n_samples: 10
   batch_size: 128
-  epochs: 10
+  epochs: 15
   warmup_steps: 5000
   evaluation_steps: 2000
   weight_decay: 0.01
@@ -65,16 +68,15 @@ EVALUATION:
   corpus_name_or_path: "data/eval-data/timi/v1.1.0/corpus.json"
   query_name_or_path: "data/eval-data/timi/v1.1.0/query.json"
   pretrained_name_or_abspath:
-#    - timi-keepitreal-H768-faq-2M-v1.1.3
-    - timi-keepitreal-H768-faq-900k-v1.1.4
-    - models/timi/v1.1.5/epoch-0
-    - models/timi/v1.1.5/epoch-1
-    - models/timi/v1.1.5/epoch-2
-    - models/timi/v1.1.5/epoch-3
-    - models/timi/v1.1.5/epoch-4
-    - models/timi/v1.1.5/epoch-5
-    - models/timi/v1.1.5/epoch-6
-    - models/timi/v1.1.5/epoch-7
+    - timi-keepitreal-H768-faq-870k-v1.1.5
+    - models/timi/v1.1.6/epoch-0
+    - models/timi/v1.1.6/epoch-1
+    - models/timi/v1.1.6/epoch-2
+    - models/timi/v1.1.6/epoch-3
+    - models/timi/v1.1.6/epoch-4
+    - models/timi/v1.1.6/epoch-5
+    - models/timi/v1.1.6/epoch-6
+    - models/timi/v1.1.6/epoch-7
 
   top_k: 10
   retriever_threshold: 0.7

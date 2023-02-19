@@ -1,0 +1,124 @@
+positives:
+- intent: policy_pay_salary_ask_time
+  examples:
+  - công ty trả lương vào thời gian nào
+  - bao giờ công ty trả salary?
+  - công ty bao giờ có salary?
+  - salary được trả vào đầu tháng hay cuối tháng
+  - ngày 5 là chủ nhật thì thứ 2 trả lương hả
+  - salary trúng chủ nhật có được trả luôn ko
+  - công ty trả lương vào ngày nào trong tháng
+  - hàng tháng trả salary vào ngày nào
+  - cứ tới ngày 5 là công ty trả salary thôi chứ gì
+  - công ty trả salary vào ngày bao nhiêu trong tháng
+  - timi mai có lương không
+  - hàng tháng ngày mấy có lương?
+  - salary được trả vào ngày bao nhiêu trong tháng
+  - hàng tháng trả lương vào ngày nào
+  - salary được trả vào ngày nào
+  - mình muốn hỏi công ty trả salary vào ngày nào
+  - công ty trả salary ngày nào
+  - lương được trả vào thời gian nào
+  - tớ muốn hỏi hàng tháng công ty trả salary vào ngày nào
+  - lương trúng chủ nhật có được trả luôn ko
+  - cho tớ hỏi công ty trả salary vào ngày nào
+  - trả lương vào ngày nào trong tháng
+  - cho tôi hỏi hàng tháng công ty trả lương vào ngày nào
+  - trả salary vào ngày nào trong tháng
+  - ngày nào trong tháng thì được nhận salary
+  - hàng tháng công ty trả lương vào thời gian nào
+  - salary trúng chủ nhật có được trả luôn không
+  - trả lương vào ngày bao nhiêu
+  - trả salary vào đầu tháng hay cuối tháng
+  - cho mình hỏi hàng tháng công ty trả lương vào ngày nào
+  - hàng tháng trả salary vào ngày bao nhiêu
+  - công ty phát lương đầu tháng hay cuối tháng
+  - hàng tháng công ty trả salary vào ngày nào
+  - công ty có phát lương theo tuần ko
+  - mình muốn hỏi công ty trả lương vào ngày nào
+  - công ty bao giờ có lương?
+  - tớ muốn hỏi công ty trả salary vào ngày nào
+  - trả lương vào bao giờ
+  - cho mình hỏi công ty trả lương vào ngày nào
+  - mình muốn hỏi hàng tháng công ty trả lương vào ngày nào
+  - hàng tháng trả salary vào đầu tháng hay cuối tháng
+  - hàng tháng công ty trả lương vào đầu tháng hay cuối tháng
+  - lương được trả vào ngày nào
+  - lương được trả vào đầu tháng hay cuối tháng
+  - công ty trả lương vào ngày bao nhiêu
+  - công ty phát salary đầu tháng hay cuối tháng
+  - cho tôi hỏi công ty trả lương vào ngày nào
+  - công ty trả lương vào ngày bao nhiêu trong tháng
+  - trả salary vào ngày bao nhiêu trong tháng
+  - công ty có phát lương đúng ngày ko
+  - lương được trả vào ngày bao nhiêu
+  - cho mình hỏi công ty trả salary vào ngày nào
+  - bao giờ thì lương về nhỉ
+  - cho tớ hỏi hàng tháng công ty trả lương vào ngày nào
+  - công ty trả lương vào bao giờ
+  - tôi muốn hỏi công ty trả salary vào ngày nào
+  - công ty trả lương vào đầu tháng hay cuối tháng
+  - tớ muốn hỏi hàng tháng công ty trả lương vào ngày nào
+  - hàng tháng công ty trả salary vào thời gian nào
+  - gửi mình ngày phát lương với
+  - cho tớ hỏi hàng tháng công ty trả salary vào ngày nào
+  - ngày trả salary trúng ngày lễ thì sao
+  - cho mình xin thông tin thời gian phát lương
+  - bao giờ công ty trả lương?
+  - hàng tháng trả lương vào thời gian nào
+  - đi làm bao lâu có lương?
+  - lương trúng chủ nhật có được trả luôn không
+  - cho tôi hỏi công ty trả salary vào ngày nào
+  - trả salary vào thời gian nào
+  - hàng tháng công ty trả lương vào ngày nào
+  - ngày trả lương trúng ngày lễ thì sao
+  - hàng tháng công ty trả salary vào đầu tháng hay cuối tháng
+  - trả salary vào ngày nào
+  - công ty phát lương 1 lần thôi ả
+  - tớ muốn hỏi công ty trả lương vào ngày nào
+  - cứ tới ngày 5 là công ty trả lương thôi chứ gì
+  - salary trả đúng ngày 5 à
+  - lương trúng lễ thì ko được nhận lương phải không
+  - lương trúng lễ thì ko được nhận lương phải ko
+  - công ty trả salary vào đầu tháng hay cuối tháng
+  - trả lương vào đầu tháng hay cuối tháng
+  - hàng tháng trả lương vào ngày bao nhiêu
+  - cho tôi hỏi hàng tháng công ty trả salary vào ngày nào
+  - công ty trả salary vào thời gian nào
+  - tôi muốn hỏi công ty trả lương vào ngày nào
+  - lương trúng lễ thì ko được nhận lương à
+  - trả salary vào ngày bao nhiêu
+  - công ty có phát lương theo tuần không
+  - công ty công ty có mấy ngày phát lương
+  - ngày 5 là chủ nhật thì thứ 2 trả lương hử
+  - công ty trả lương vào ngày nào
+  - công ty trả salary vào bao giờ
+  - lương trúng lễ thì ko được nhận lương hả
+  - cho tớ hỏi công ty trả lương vào ngày nào
+  - lương được trả vào ngày bao nhiêu trong tháng
+  - salary được trả vào ngày bao nhiêu
+  - công ty trả salary vào ngày nào
+  - trả lương vào thời gian nào
+  - ngày nào trong tháng thì được nhận lương
+  - tôi muốn hỏi hàng tháng công ty trả salary vào ngày nào
+  - công ty trả salary vào ngày bao nhiêu
+  - trả lương vào ngày nào
+  - hàng tháng công ty trả lương vào ngày bao nhiêu
+  - cho mình hỏi hàng tháng công ty trả salary vào ngày nào
+  - ngày 5 nhận salary đúng ko
+  - lương được trả vào ngày nào trong tháng
+  - trả lương vào ngày bao nhiêu trong tháng
+  - hàng tháng công ty trả salary vào ngày bao nhiêu
+  - bao giờ thì salary về nhỉ
+  - ngày 5 nhận lương đúng ko
+  - salary được trả vào thời gian nào
+  - lương trúng lễ thì ko được nhận lương phải k
+  - hàng tháng trả lương vào đầu tháng hay cuối tháng
+  - tôi muốn hỏi hàng tháng công ty trả lương vào ngày nào
+  - công ty trả lương ngày nào
+  - công ty trả salary vào ngày nào trong tháng
+  - trả salary vào bao giờ
+  - hàng tháng trả salary vào thời gian nào
+  - lương trả đúng ngày 5 à
+  - mình muốn hỏi hàng tháng công ty trả salary vào ngày nào
+  - salary được trả vào ngày nào trong tháng

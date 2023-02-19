@@ -1,0 +1,303 @@
+positives:
+- intent: rule_ask_uniform
+  examples:
+  - áo ngắn tay có được phép mặc lên công ty không
+  - đi làm thì nên mặc thế nào vậy bot
+  - tớ thắc mắc về trang phục của nhận sự tại công ty
+  - tôi muốn hỏi nhận sự có cần mặc đồng phục đi làm không
+  - công ty có bắt buộc mang cà vạt khi đi làm không
+  - công ty có bắt buộc mặc quần đùi khi đi làm ko
+  - công ty có bắt buộc mặc dép khi đi làm ko
+  - cà vạt có được phép mặc lên công ty ko
+  - công ty có yêu cầu về đồng phục không
+  - tôi muốn hỏi nhân viên có cần mặc đồng phục đi làm ko
+  - tớ muốn hỏi thành viên có cần mặc đồng phục đi làm ko
+  - công ty có bắt buộc mặc áo ngắn tay khi đi làm ko
+  - tớ có cần mặc trang phục như thế nào khi đi làm nhỉ
+  - tớ thắc mắc về trang phục của người tại công ty
+  - quần đùi có được phép mang lên công ty không
+  - đi làm thì nên mặc như thế nào vậy bot
+  - tôi có cần mặc trang phục như thế nào khi đi làm nhể
+  - cho mình hỏi nhận sự có cần mặc đồng phục đi làm không
+  - dép lê có được phép mặc lên công ty ko
+  - tôi thắc mắc về trang phục của nhận sự tại công ty
+  - đi làm thì nên mặc thế nào vậy mầy
+  - đi làm thì nên mặc thế nào vậy m
+  - tớ có cần mặc trang phục như nào khi đi làm nhể
+  - mang váy đi làm có được ko
+  - đi làm thì nên mặc thế nào vậy bạn
+  - cà vạt có được phép mặc lên công ty không
+  - công ty có bắt buộc mang đồng phục khi đi làm ko
+  - công ty có bắt buộc mang dép lê khi đi làm ko
+  - áo ngắn tay có được phép mang lên công ty không
+  - quần đùi có được phép mặc lên công ty ko
+  - cho tớ hỏi nhận sự có cần mặc đồng phục đi làm không
+  - công ty có bắt buộc mang quần đùi khi đi làm không
+  - đầm có được phép mặc lên công ty ko
+  - mình muốn hỏi thành viên có cần mặc đồng phục đi làm ko
+  - mình thắc mắc về trang phục của thành viên tại công ty
+  - tớ thắc mắc về đồng phục của thành viên tại công ty
+  - tôi có cần mặc trang phục như nào khi đi làm nhỉ
+  - mình có cần mặc trang phục ntn khi đi làm nhỉ
+  - tớ muốn hỏi công ty có yêu cầu về đồng phục không
+  - mang dép đi làm có được ko
+  - công ty có đồng phục ko
+  - tớ muốn hỏi người có cần mặc đồng phục đi làm không
+  - đầm có được phép mặc lên công ty không
+  - cho tôi hỏi người có cần mặc đồng phục đi làm ko
+  - mang cà vạt đi làm có được ko
+  - công ty có bắt buộc mang quần đùi khi đi làm ko
+  - váy có được phép mặc lên công ty ko
+  - áo ngắn tay có được phép mặc lên công ty ko
+  - mình muốn hỏi nhân viên có cần mặc đồng phục đi làm không
+  - công ty có bắt buộc mang dép khi đi làm không
+  - tớ có cần mặc trang phục ntn khi đi làm nhỉ
+  - tôi có cần mặc trang phục thế nào khi đi làm nhỉ
+  - đi làm thì nên mặc như nào vậy em
+  - mang quần đùi đi làm có được không
+  - mình có cần sử dụng đồng phục không
+  - đi làm thì nên mặc ntn vậy cậu
+  - công ty cho tôi mặc đồng phục ntn
+  - công ty cho tớ mặc đồng phục như nào
+  - đi làm thì nên mặc như thế nào vậy cậu
+  - công ty có bắt buộc mặc cà vạt khi đi làm ko
+  - váy ngắn có được phép mặc lên công ty ko
+  - cho tớ hỏi thành viên có cần mặc đồng phục đi làm không
+  - mang váy ngắn đi làm có được không
+  - mình thắc mắc về đồng phục của thành viên tại công ty
+  - về đồng phục có yêu cầu bắt buộc không
+  - đi làm thì nên mặc như nào vậy mày
+  - mang dép đi làm có được không
+  - tớ thắc mắc về đồng phục của nhân viên tại công ty
+  - công ty cho tớ mặc đồng phục ntn
+  - đi làm thì nên mặc như nào vậy bot
+  - đi làm thì nên mặc như nào vậy bạn
+  - mình có cần mặc trang phục như thế nào khi đi làm ha
+  - đi làm thì nên mặc như nào vậy cậu
+  - công ty có bắt buộc mang cà vạt khi đi làm ko
+  - đi làm thì nên mặc ntn vậy bot
+  - tớ có cần mặc trang phục thế nào khi đi làm nhể
+  - trang phục có được phép mang lên công ty ko
+  - cho tớ hỏi nhân viên có cần mặc đồng phục đi làm ko
+  - mang đồng phục đi làm có được ko
+  - trang phục có được phép mang lên công ty không
+  - tôi muốn hỏi người có cần mặc đồng phục đi làm không
+  - mang trang phục đi làm có được không
+  - cho tớ hỏi người có cần mặc đồng phục đi làm ko
+  - công ty có bắt buộc mang áo thun khi đi làm ko
+  - công ty có bắt buộc mặc áo thun khi đi làm ko
+  - tôi có cần mặc trang phục như thế nào khi đi làm nhỉ
+  - khi đi làm thành viên trong công ty có yêu cầu gì về đồng phục ko
+  - mang áo ngắn tay đi làm có được không
+  - công ty có bắt buộc mặc áo thun khi đi làm không
+  - mình có cần mặc trang phục ntn khi đi làm ha
+  - tôi có cần mặc trang phục ntn khi đi làm nhể
+  - công ty có bắt buộc mang váy khi đi làm ko
+  - đồng phục có được phép mang lên công ty không
+  - váy có được phép mang lên công ty không
+  - mình muốn hỏi công ty có yêu cầu về đồng phục ko
+  - tôi thắc mắc về đồng phục của nhận sự tại công ty
+  - khi đi làm người trong công ty có yêu cầu gì về đồng phục ko
+  - dép lê có được phép mang lên công ty ko
+  - cho tớ hỏi công ty có yêu cầu về đồng phục không
+  - mình muốn hỏi nhân viên có cần mặc đồng phục đi làm ko
+  - công ty cho mình mặc đồng phục ntn
+  - cho tôi hỏi công ty có yêu cầu về đồng phục không
+  - công ty cho tớ mặc đồng phục thế nào
+  - cho tớ hỏi nhận sự có cần mặc đồng phục đi làm ko
+  - mang áo thun đi làm có được không
+  - về đồng phục làm việc có yêu cầu bắt buộc ko
+  - có yêu cầu gì vể đồng phục lao động ko
+  - công ty có bắt buộc mang đồng phục khi đi làm không
+  - mình có cần mặc trang phục ntn khi đi làm nhể
+  - công ty cho mình mặc đồng phục thế nào
+  - tớ có cần mặc trang phục thế nào khi đi làm nhỉ
+  - tớ muốn hỏi nhận sự có cần mặc đồng phục đi làm không
+  - đồng phục có được phép mặc lên công ty không
+  - cho tôi hỏi công ty có yêu cầu về đồng phục ko
+  - mình muốn hỏi nhận sự có cần mặc đồng phục đi làm ko
+  - dép có được phép mặc lên công ty không
+  - đi làm thì nên mặc thế nào vậy em
+  - công ty có bắt buộc mặc đồng phục đi làm ko
+  - có yêu cầu gì vể đồng phục lao động không
+  - đi làm thì nên mặc như nào vậy mầy
+  - mang áo ngắn tay đi làm có được ko
+  - mang dép lê đi làm có được không
+  - công ty có bắt buộc mặc đồng phục khi đi làm ko
+  - mang dép lê đi làm có được ko
+  - áo thun có được phép mang lên công ty ko
+  - trang phục có được phép mặc lên công ty không
+  - tôi thắc mắc về trang phục của người tại công ty
+  - đồng phục có được phép mang lên công ty ko
+  - đi làm thì nên mặc ntn vậy mầy
+  - về đồng phục làm việc có yêu cầu bắt buộc không
+  - công ty có bắt buộc mang đầm khi đi làm không
+  - tôi có cần sử dụng đồng phục không
+  - tôi muốn hỏi người có cần mặc đồng phục đi làm ko
+  - mang đồng phục đi làm có được không
+  - tôi thắc mắc về trang phục của thành viên tại công ty
+  - tôi muốn hỏi công ty có yêu cầu về đồng phục không
+  - tớ muốn hỏi nhân viên có cần mặc đồng phục đi làm ko
+  - áo thun có được phép mặc lên công ty không
+  - cho mình hỏi công ty có yêu cầu về đồng phục ko
+  - công ty có yêu cầu về đồng phục ko
+  - tôi thắc mắc về đồng phục của nhân viên tại công ty
+  - váy có được phép mặc lên công ty không
+  - đi làm thì nên mặc thế nào vậy timi
+  - dép có được phép mang lên công ty ko
+  - mang váy ngắn đi làm có được ko
+  - dép có được phép mặc lên công ty ko
+  - công ty có bắt buộc mặc quần đùi khi đi làm không
+  - công ty có bắt buộc mang váy khi đi làm không
+  - tớ có cần mặc trang phục như thế nào khi đi làm nhể
+  - công ty cho tớ mặc đồng phục như thế nào
+  - cà vạt có được phép mang lên công ty ko
+  - công ty có bắt buộc mặc trang phục khi đi làm không
+  - về đồng phục có yêu cầu bắt buộc ko
+  - công ty có bắt buộc mặc cà vạt khi đi làm không
+  - công ty có bắt buộc mặc dép lê khi đi làm ko
+  - đồng phục có được phép mặc lên công ty ko
+  - công ty có đồng phục không
+  - công ty có bắt buộc mặc đầm khi đi làm không
+  - mang trang phục đi làm có được ko
+  - cho tôi hỏi người có cần mặc đồng phục đi làm không
+  - quần đùi có được phép mang lên công ty ko
+  - tôi muốn hỏi nhân viên có cần mặc đồng phục đi làm không
+  - đi làm thì nên mặc ntn vậy mày
+  - mình thắc mắc về trang phục của nhận sự tại công ty
+  - tôi muốn hỏi thành viên có cần mặc đồng phục đi làm ko
+  - công ty cho tôi mặc đồng phục thế nào
+  - công ty có bắt buộc mặc trang phục khi đi làm ko
+  - công ty có bắt buộc mặc dép khi đi làm không
+  - mình thắc mắc về trang phục của người tại công ty
+  - mang quần đùi đi làm có được ko
+  - mình muốn hỏi nhận sự có cần mặc đồng phục đi làm không
+  - công ty có bắt buộc mặc váy khi đi làm ko
+  - tôi có cần mặc trang phục thế nào khi đi làm ha
+  - đi làm thì nên mặc ntn vậy timi
+  - công ty có bắt buộc mang áo thun khi đi làm không
+  - cho mình hỏi công ty có yêu cầu về đồng phục không
+  - tôi có cần sử dụng đồng phục ko
+  - tớ muốn hỏi công ty có yêu cầu về đồng phục ko
+  - mang váy đi làm có được không
+  - mình muốn hỏi người có cần mặc đồng phục đi làm ko
+  - công ty có bắt buộc mặc áo ngắn tay khi đi làm không
+  - tớ có cần mặc trang phục thế nào khi đi làm ha
+  - áo thun có được phép mang lên công ty không
+  - tôi thắc mắc về đồng phục của người tại công ty
+  - đi làm thì nên mặc ntn vậy em
+  - cho tớ hỏi nhân viên có cần mặc đồng phục đi làm không
+  - quần đùi có được phép mặc lên công ty không
+  - mình muốn hỏi người có cần mặc đồng phục đi làm không
+  - khi đi làm nhân viên trong công ty có yêu cầu gì về đồng phục ko
+  - công ty có bắt buộc mang váy ngắn khi đi làm ko
+  - khi đi làm thành viên trong công ty có yêu cầu gì về đồng phục không
+  - cho tôi hỏi nhân viên có cần mặc đồng phục đi làm không
+  - tớ muốn hỏi nhân viên có cần mặc đồng phục đi làm không
+  - khi đi làm người trong công ty có yêu cầu gì về đồng phục không
+  - đi làm thì nên mặc thế nào vậy mày
+  - mình có cần mặc trang phục thế nào khi đi làm nhỉ
+  - mình thắc mắc về đồng phục của nhận sự tại công ty
+  - cho mình hỏi thành viên có cần mặc đồng phục đi làm không
+  - cho tôi hỏi thành viên có cần mặc đồng phục đi làm không
+  - áo ngắn tay có được phép mang lên công ty ko
+  - công ty có bắt buộc mang áo ngắn tay khi đi làm ko
+  - dép có được phép mang lên công ty không
+  - công ty có bắt buộc mang trang phục khi đi làm không
+  - mình có cần mặc trang phục như nào khi đi làm nhể
+  - tớ thắc mắc về đồng phục của người tại công ty
+  - áo thun có được phép mặc lên công ty ko
+  - mang đầm đi làm có được ko
+  - cho mình hỏi thành viên có cần mặc đồng phục đi làm ko
+  - công ty có bắt buộc mặc váy ngắn khi đi làm không
+  - đi làm thì nên mặc như nào vậy timi
+  - cho mình hỏi người có cần mặc đồng phục đi làm không
+  - công ty có bắt buộc mang dép khi đi làm ko
+  - mình có cần mặc trang phục như thế nào khi đi làm nhỉ
+  - mình thắc mắc về đồng phục của người tại công ty
+  - công ty cho mình mặc đồng phục như nào
+  - mang đầm đi làm có được không
+  - mang áo thun đi làm có được ko
+  - cho mình hỏi nhân viên có cần mặc đồng phục đi làm không
+  - tớ có cần mặc trang phục như thế nào khi đi làm ha
+  - cho tôi hỏi nhận sự có cần mặc đồng phục đi làm ko
+  - tôi có cần mặc trang phục như nào khi đi làm ha
+  - cho tớ hỏi người có cần mặc đồng phục đi làm không
+  - tôi có cần mặc trang phục như thế nào khi đi làm ha
+  - mình thắc mắc về đồng phục của nhân viên tại công ty
+  - cho mình hỏi nhận sự có cần mặc đồng phục đi làm ko
+  - tôi thắc mắc về trang phục của nhân viên tại công ty
+  - váy ngắn có được phép mang lên công ty không
+  - đi làm thì nên mặc như thế nào vậy m
+  - tớ thắc mắc về trang phục của nhân viên tại công ty
+  - váy ngắn có được phép mang lên công ty ko
+  - mình có cần sử dụng đồng phục ko
+  - tớ muốn hỏi thành viên có cần mặc đồng phục đi làm không
+  - công ty có bắt buộc mang đầm khi đi làm ko
+  - công ty có bắt buộc mang dép lê khi đi làm không
+  - cho tôi hỏi nhận sự có cần mặc đồng phục đi làm không
+  - đi làm thì nên mặc thế nào vậy cậu
+  - tôi có cần mặc trang phục thế nào khi đi làm nhể
+  - công ty có bắt buộc mặc váy ngắn khi đi làm ko
+  - cho mình hỏi người có cần mặc đồng phục đi làm ko
+  - khi đi làm nhận sự trong công ty có yêu cầu gì về đồng phục không
+  - mình có cần mặc trang phục thế nào khi đi làm nhể
+  - công ty cho tôi mặc đồng phục như nào
+  - mình muốn hỏi thành viên có cần mặc đồng phục đi làm không
+  - mình có cần mặc trang phục như nào khi đi làm nhỉ
+  - đi làm thì nên mặc như thế nào vậy bạn
+  - công ty có bắt buộc mặc đồng phục đi làm không
+  - công ty có bắt buộc mặc đầm khi đi làm ko
+  - tôi muốn hỏi thành viên có cần mặc đồng phục đi làm không
+  - đi làm thì nên mặc như nào vậy m
+  - tôi có cần mặc trang phục như nào khi đi làm nhể
+  - công ty có bắt buộc mặc đồng phục khi đi làm không
+  - công ty cho mình mặc đồng phục như thế nào
+  - cho tớ hỏi công ty có yêu cầu về đồng phục ko
+  - đi làm thì nên mặc như thế nào vậy timi
+  - trang phục có được phép mặc lên công ty ko
+  - tôi muốn hỏi nhận sự có cần mặc đồng phục đi làm ko
+  - mình có cần mặc trang phục như thế nào khi đi làm nhể
+  - công ty có bắt buộc mang váy ngắn khi đi làm không
+  - tớ có cần sử dụng đồng phục ko
+  - công ty cho tôi mặc đồng phục như thế nào
+  - công ty có bắt buộc mang trang phục khi đi làm ko
+  - tớ muốn hỏi nhận sự có cần mặc đồng phục đi làm ko
+  - đi làm thì nên mặc như thế nào vậy em
+  - cho mình hỏi nhân viên có cần mặc đồng phục đi làm ko
+  - tớ muốn hỏi người có cần mặc đồng phục đi làm ko
+  - đi làm thì nên mặc như thế nào vậy mầy
+  - tôi có cần mặc trang phục ntn khi đi làm ha
+  - khi đi làm nhận sự trong công ty có yêu cầu gì về đồng phục ko
+  - tôi muốn hỏi công ty có yêu cầu về đồng phục ko
+  - mình có cần mặc trang phục như nào khi đi làm ha
+  - tớ có cần mặc trang phục ntn khi đi làm ha
+  - tớ có cần mặc trang phục như nào khi đi làm nhỉ
+  - mình muốn hỏi công ty có yêu cầu về đồng phục không
+  - công ty có bắt buộc mặc dép lê khi đi làm không
+  - cà vạt có được phép mang lên công ty không
+  - tôi thắc mắc về đồng phục của thành viên tại công ty
+  - cho tôi hỏi nhân viên có cần mặc đồng phục đi làm ko
+  - tớ có cần mặc trang phục như nào khi đi làm ha
+  - tớ có cần mặc trang phục ntn khi đi làm nhể
+  - cho tớ hỏi thành viên có cần mặc đồng phục đi làm ko
+  - tớ có cần sử dụng đồng phục không
+  - công ty có bắt buộc mặc váy khi đi làm không
+  - đi làm thì nên mặc ntn vậy m
+  - dép lê có được phép mang lên công ty không
+  - đi làm thì nên mặc ntn vậy bạn
+  - đầm có được phép mang lên công ty không
+  - mang cà vạt đi làm có được không
+  - mình có cần mặc trang phục thế nào khi đi làm ha
+  - khi đi làm nhân viên trong công ty có yêu cầu gì về đồng phục không
+  - tớ thắc mắc về trang phục của thành viên tại công ty
+  - váy có được phép mang lên công ty ko
+  - tớ thắc mắc về đồng phục của nhận sự tại công ty
+  - dép lê có được phép mặc lên công ty không
+  - tôi có cần mặc trang phục ntn khi đi làm nhỉ
+  - công ty có bắt buộc mang áo ngắn tay khi đi làm không
+  - đi làm thì nên mặc như thế nào vậy mày
+  - mình thắc mắc về trang phục của nhân viên tại công ty
+  - váy ngắn có được phép mặc lên công ty không
+  - cho tôi hỏi thành viên có cần mặc đồng phục đi làm ko
+  - đầm có được phép mang lên công ty ko

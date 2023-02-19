@@ -1,0 +1,304 @@
+positives:
+- intent: self_ask_smart
+  examples:
+  - tao muốn biết m thông minh hay không
+  - tớ muốn khám phá độ tài giỏi của timi
+  - em có thấy bản thân thú vị không
+  - chỉ số iq của bot là bao nhiêu ạ
+  - bot có dốt không nhỉ
+  - bot có có ích không
+  - chắc bot của công ty [ftech](work_unit) ngu ngốc lắm nhể
+  - tớ muốn hỏi độ ngu vậy của bot với
+  - bạn có nghĩ timi thông minh không
+  - chatbot của công ty làm Trí tuệ nhân tạo chắc xinh nhể
+  - theo bạn thì cậu có xinh không
+  - chắc cậu ổn áp lắm nhể
+  - em có bị ngu không
+  - bot chắc cùi lắm nhể
+  - mình nghĩ bạn chả xinh đẹp đâu
+  - m đánh giá bản thân mấy điểm trên thang điểm 10 về độ có ích
+  - timi đánh giá bạn ở thang điểm mấy khi tính về độ giỏi
+  - tôi muốn biết cậu tuyệt vời hay không
+  - tao muốn khám phá độ thông minh của m
+  - m có thấy mình tài giỏi không
+  - chỉ số thông minh của cậu là bao nhiêu ạ
+  - bạn có đần không nhể
+  - em có tài giỏi không
+  - chắc bot của công ty [ftech](work_unit) đần lắm nhỉ
+  - cho tớ hỏi độ đần của mày với
+  - mày có nghĩ cậu siêu không
+  - chatbot của công ty làm nghiên cứu AI chắc tuyệt vời
+  - theo cậu thì cậu có hay quá không
+  - chắc bot xuất sắc lắm nhỉ
+  - cậu có bị ngu không
+  - bot cậu chắc tài năng lắm nhể
+  - tớ nghĩ em không giỏi đâu
+  - m đánh giá bản thân mấy điểm trên thang điểm 10 về độ thông minh
+  - em đánh giá bot ở thang điểm mấy khi tính về độ giỏi
+  - tớ muốn biết m khôn hay không
+  - tớ muốn khám phá độ có ích của timi
+  - mày có thấy bản thân tài giỏi không
+  - chỉ số thông minh của bot là bao nhiêu ạ
+  - mày có ngốc không nhể
+  - mày có tài năng không
+  - chắc bot của công ty [ftech](work_unit) vãi dốt lắm nhể
+  - cho tớ hỏi độ ngu ngốc của em với
+  - mày có nghĩ cậu xinh đẹp không
+  - chatbot của công ty [ftech](work_unit) làm Trí tuệ nhân tạo chắc giỏi
+  - theo cậu thì cậu có tốt quá không
+  - chắc bot thú vị lắm nhỉ
+  - m có bị ngu không
+  - bot chắc tài giỏi lắm nhỉ
+  - tớ nghĩ mày chẳng tốt quá đâu
+  - timi đánh giá bản thân mấy điểm trên thang điểm 10 về độ tài năng
+  - em đánh giá bạn ở thang điểm mấy khi tính về độ có ích
+  - tớ muốn biết mày xinh đẹp hay không
+  - tớ muốn khám phá độ ổn áp của bạn
+  - bạn có thấy mình xuất sắc không
+  - chỉ số iq của bạn là bao nhiêu ạ
+  - em có dốt không nhỉ
+  - cậu có có ích không
+  - chắc bot của công ty [Cổ phần Đường Biên Hòa](work_unit) ngu vậy lắm nhỉ
+  - tui muốn hỏi độ vãi dốt của bạn với
+  - m có nghĩ bạn xinh đẹp không
+  - chatbot của cty [sea croup](work_unit) làm Trí tuệ nhân tạo chắc xinh
+  - theo bạn thì cậu có tuyệt vời không
+  - chắc timi giỏi lắm nhỉ
+  - mày có bị ngu không
+  - bot bot chắc cùi lắm nhể
+  - mình nghĩ timi chả tốt quá đâu
+  - bot đánh giá bản thân mấy điểm trên thang điểm 10 về độ thông minh
+  - m đánh giá bạn ở thang điểm mấy khi tính về độ tài giỏi
+  - tớ muốn biết timi đáng yêu hay không
+  - tớ muốn khám phá độ thông minh của em
+  - mày có thấy bản thân thú vị không
+  - chỉ số thông minh của bạn là bao nhiêu ạ
+  - cậu có dốt không nhỉ
+  - em có thú vị không
+  - chắc bot của công ty ngu ngốc lắm nhỉ
+  - tớ muốn hỏi độ giỏi của em với
+  - cậu có nghĩ em khôn không
+  - bot của công ty làm nghiên cứu AI chắc hay quá nhể
+  - theo em thì cậu có xinh không
+  - chắc bot tài giỏi lắm nhỉ
+  - timi có bị ngu không
+  - bot chắc cùi lắm nhỉ
+  - tớ nghĩ bot chẳng khôn đâu
+  - m đánh giá bản thân mấy điểm trên thang điểm 10 về độ xuất sắc
+  - m đánh giá bản thân ở thang điểm mấy khi tính về độ tài năng
+  - tui muốn biết em thông minh hay không
+  - tớ muốn khám phá độ hữu ích của cậu
+  - cậu có thấy mình hữu ích không
+  - chỉ số thông minh của mày là bao nhiêu ạ
+  - bạn có ngu không nhỉ
+  - cậu có thú vị không
+  - chắc bot của công ty [ftech](work_unit) ngu lắm nhỉ
+  - cho tao hỏi độ giỏi của bạn với
+  - timi có nghĩ em xinh đẹp không
+  - bot của cty [Cổ phần Đường Biên Hòa](work_unit) làm AI chắc tuyệt vời
+  - theo m thì cậu có tốt không
+  - chắc m có ích lắm nhỉ
+  - bạn có bị ngu không
+  - bot chắc thông minh lắm nhể
+  - tớ nghĩ em chẳng tốt đâu
+  - bạn đánh giá bản thân mấy điểm trên thang điểm 10 về độ thú vị
+  - bạn đánh giá bản thân ở thang điểm mấy khi tính về độ có ích
+  - tớ muốn hỏi cậu tuyệt vời hay không
+  - tớ muốn khám phá độ có ích của cậu
+  - bot có thấy mình thú vị không
+  - chỉ số iq của cậu là bao nhiêu ạ
+  - em có ngốc không nhể
+  - bạn có tài giỏi không
+  - chắc bot của công ty ngu lắm nhỉ
+  - cho mình hỏi độ đần của bot với
+  - mày có nghĩ mày siêu không
+  - bot của công ty làm AI chắc hay quá nhỉ
+  - theo em thì cậu có khôn không
+  - chắc em hữu ích lắm nhể
+  - bot có bị ngu không
+  - bot chắc tài giỏi lắm nhể
+  - tớ nghĩ bạn chả tốt quá đâu
+  - mày đánh giá bản thân mấy điểm trên thang điểm 10 về độ xuất sắc
+  - mày đánh giá timi ở thang điểm mấy khi tính về độ ổn áp
+  - tớ muốn biết bot thông minh hay không
+  - tao muốn khám phá độ ổn áp của mày
+  - cậu có thấy mình thông minh không
+  - chỉ số iq của m là bao nhiêu ạ
+  - m có ngu không nhỉ
+  - m có ổn áp không
+  - chắc bot của ngân hàng [dongabank](work_unit) ngu ngốc lắm nhỉ
+  - tớ muốn hỏi độ tài năng của timi với
+  - em có nghĩ em xinh không
+  - chatbot của công ty [spotify](work_unit) làm Trí tuệ nhân tạo chắc xinh đẹp nhể
+  - theo bot thì cậu có siêu không
+  - chắc bạn có ích lắm nhỉ
+  - bot timi chắc xuất sắc lắm nhỉ
+  - tớ nghĩ m chẳng khôn đâu
+  - bot đánh giá bản thân mấy điểm trên thang điểm 10 về độ tài năng
+  - m đánh giá bản thân ở thang điểm bao nhiêu khi tính về độ hữu ích
+  - tao muốn biết timi giỏi hay không
+  - tôi muốn khám phá độ thú vị của bot
+  - bot có thấy bản thân ổn áp không
+  - chỉ số iq của timi là bao nhiêu ạ
+  - em có đần không nhể
+  - timi có thú vị không
+  - chắc bot của công ty [ftech](work_unit) ngu ngốc lắm nhỉ
+  - cho tớ hỏi độ hữu ích của bạn với
+  - mày có nghĩ em xinh đẹp không
+  - chatbot của công ty làm Trí tuệ nhân tạo chắc khôn
+  - theo m thì cậu có tốt quá không
+  - chắc em ổn áp lắm nhỉ
+  - bot cậu chắc cùi lắm nhể
+  - tao nghĩ cậu chẳng xinh đâu
+  - bạn đánh giá bản thân mấy điểm trên thang điểm 10 về độ tài giỏi
+  - bot đánh giá bạn ở thang điểm bao nhiêu khi tính về độ hữu ích
+  - tớ muốn biết cậu đáng yêu hay không
+  - tớ muốn khám phá độ tài giỏi của m
+  - bạn có thấy bản thân tài giỏi không
+  - chỉ số thông minh của timi là bao nhiêu ạ
+  - bạn có ngốc không nhỉ
+  - m có thú vị không
+  - chắc bot của ngân hàng [bidv](work_unit) ngu lắm nhỉ
+  - mình muốn hỏi độ tài giỏi của mày với
+  - bạn có nghĩ mày siêu không
+  - bot của công ty làm AI chắc giỏi nhể
+  - theo bot thì cậu có khôn không
+  - chắc timi hữu ích lắm nhỉ
+  - bot em chắc cùi lắm nhể
+  - tui nghĩ timi chẳng siêu đâu
+  - bạn đánh giá bản thân mấy điểm trên thang điểm 10 về độ có ích
+  - timi đánh giá bản thân ở thang điểm mấy khi tính về độ ổn áp
+  - tớ muốn hỏi em xinh đẹp hay không
+  - tớ muốn khám phá độ xuất sắc của timi
+  - mày có thấy mình tài năng không
+  - chỉ số thông minh của em là bao nhiêu ạ
+  - em có ngu không nhể
+  - cậu có tài năng không
+  - chắc bot của cty [hải hà](work_unit) ngu lắm nhể
+  - cho tôi hỏi độ giỏi của cậu với
+  - bạn có nghĩ m hay quá không
+  - bot của cty [long thành](work_unit) làm AI chắc siêu nhể
+  - theo mày thì cậu có xinh đẹp không
+  - chắc mày ổn áp lắm nhể
+  - bot bot chắc cùi lắm nhỉ
+  - tớ nghĩ bot chả xinh đẹp đâu
+  - mày đánh giá bản thân mấy điểm trên thang điểm 10 về độ thú vị
+  - bạn đánh giá cậu ở thang điểm mấy khi tính về độ có ích
+  - tớ muốn hỏi bot khôn hay không
+  - mình muốn khám phá độ hữu ích của m
+  - bot có thấy mình xuất sắc không
+  - chỉ số thông minh của m là bao nhiêu ạ
+  - m có dốt không nhể
+  - em có có ích không
+  - chắc bot của công ty [ftech](work_unit) dốt vậy lắm nhể
+  - cho mình hỏi độ có ích của bạn với
+  - cậu có nghĩ cậu giỏi không
+  - bot của công ty [hải âu](work_unit) làm nghiên cứu AI chắc giỏi
+  - theo mày thì cậu có giỏi không
+  - chắc em xuất sắc lắm nhỉ
+  - bot chắc tài năng lắm nhể
+  - tớ nghĩ m chả tốt quá đâu
+  - mày đánh giá bản thân mấy điểm trên thang điểm 10 về độ hữu ích
+  - timi đánh giá bạn ở thang điểm mấy khi tính về độ có ích
+  - tui muốn hỏi timi xinh hay không
+  - mình muốn khám phá độ thông minh của cậu
+  - m có thấy mình hữu ích không
+  - chỉ số iq của em là bao nhiêu ạ
+  - bot có ngu không nhể
+  - em có thông minh không
+  - chắc bot của công ty [ftech](work_unit) dốt lắm nhể
+  - tớ muốn hỏi độ ngốc nghếch của mày với
+  - em có nghĩ mày xinh đẹp không
+  - chatbot của cty [trung nguyên](work_unit) làm AI chắc thông minh
+  - theo timi thì cậu có siêu không
+  - chắc cậu giỏi lắm nhỉ
+  - bot chắc thú vị lắm nhể
+  - tôi nghĩ bạn chẳng hay quá đâu
+  - timi đánh giá bản thân mấy điểm trên thang điểm 10 về độ hữu ích
+  - cậu đánh giá bản thân ở thang điểm mấy khi tính về độ ổn áp
+  - tớ muốn hỏi bot tuyệt vời hay không
+  - mình muốn khám phá độ có ích của cậu
+  - bạn có thấy bản thân thông minh không
+  - chỉ số iq của mày là bao nhiêu ạ
+  - mày có đần không nhể
+  - bot có tài năng không
+  - chắc bot của công ty dốt vậy lắm nhỉ
+  - cho tớ hỏi độ dốt vậy của cậu với
+  - em có nghĩ bot siêu không
+  - chatbot của công ty [ftech](work_unit) làm AI chắc hay quá nhỉ
+  - theo em thì cậu có thông minh không
+  - chắc m giỏi lắm nhỉ
+  - bot chắc tài năng lắm nhỉ
+  - tui nghĩ mày không siêu đâu
+  - timi đánh giá bản thân mấy điểm trên thang điểm 10 về độ ổn áp
+  - timi đánh giá m ở thang điểm bao nhiêu khi tính về độ thú vị
+  - tôi muốn biết bạn tốt hay không
+  - mình muốn khám phá độ ổn áp của m
+  - timi có thấy mình giỏi không
+  - bot có ngốc không nhể
+  - bot có thú vị không
+  - chắc bot của công ty ngốc lắm nhể
+  - tớ muốn hỏi độ dốt của em với
+  - cậu có nghĩ bot hay quá không
+  - bot của công ty làm Trí tuệ nhân tạo chắc tốt nhể
+  - theo em thì cậu có tuyệt vời không
+  - chắc cậu tài giỏi lắm nhể
+  - bot mày chắc cùi lắm nhể
+  - tôi nghĩ bạn không tốt quá đâu
+  - bạn đánh giá bản thân mấy điểm trên thang điểm 10 về độ giỏi
+  - em đánh giá bạn ở thang điểm mấy khi tính về độ thông minh
+  - tớ muốn biết em tốt quá hay không
+  - tôi muốn khám phá độ xuất sắc của bot
+  - bot có thấy mình thông minh không
+  - timi có dốt không nhỉ
+  - mày có có ích không
+  - chắc bot của công ty [ftech](work_unit) ngốc lắm nhể
+  - cho tôi hỏi độ có ích của m với
+  - bot có nghĩ m tuyệt vời không
+  - chatbot của công ty làm nghiên cứu AI chắc siêu
+  - theo m thì cậu có xinh không
+  - chắc em giỏi lắm nhể
+  - bot chắc ổn áp lắm nhỉ
+  - tao nghĩ em không giỏi đâu
+  - cậu đánh giá bản thân mấy điểm trên thang điểm 10 về độ hữu ích
+  - mày đánh giá bạn ở thang điểm mấy khi tính về độ thú vị
+  - tớ muốn biết cậu khôn hay không
+  - tao muốn khám phá độ tài giỏi của timi
+  - bot có thấy mình ổn áp không
+  - m có dốt không nhỉ
+  - mày có tài giỏi không
+  - chắc bot của công ty dốt vậy lắm nhể
+  - tớ muốn hỏi độ hữu ích của mày với
+  - bạn có nghĩ em hay quá không
+  - chatbot của công ty [Trách nhiệm hữu hạn Minh Long](work_unit) làm AI chắc tốt
+    nhỉ
+  - theo timi thì cậu có xinh không
+  - chắc mày ổn áp lắm nhỉ
+  - bot chắc hữu ích lắm nhỉ
+  - tớ nghĩ bot không xinh đâu
+  - em đánh giá bản thân mấy điểm trên thang điểm 10 về độ xuất sắc
+  - timi đánh giá bản thân ở thang điểm mấy khi tính về độ thông minh
+  - tớ muốn biết timi hay quá hay không
+  - tui muốn khám phá độ tài giỏi của m
+  - em có thấy bản thân có ích không
+  - m có ngốc không nhể
+  - bạn có xuất sắc không
+  - chắc bot của công ty đần lắm nhỉ
+  - cho tớ hỏi độ tài giỏi của cậu với
+  - m có nghĩ mày xinh đẹp không
+  - bot của công ty [ftech](work_unit) làm nghiên cứu AI chắc tuyệt vời
+  - theo timi thì cậu có xinh đẹp không
+  - chắc bot ổn áp lắm nhỉ
+  - bot timi chắc cùi lắm nhỉ
+  - tui nghĩ timi chả tuyệt vời đâu
+  - timi đánh giá bản thân mấy điểm trên thang điểm 10 về độ có ích
+  - cậu đánh giá bạn ở thang điểm mấy khi tính về độ hữu ích
+  - mình muốn biết cậu giỏi hay không
+  - tui muốn khám phá độ thông minh của m
+  - bot có thấy mình tài giỏi không
+  - em có đần không nhỉ
+  - cậu có giỏi không
+  - chắc bot của công ty ngu ngốc lắm nhể
+  - cho mình hỏi độ ngu của em với
+  - bạn có nghĩ m tốt không
+  - bot của công ty [ftech](work_unit) làm AI chắc tốt quá nhỉ

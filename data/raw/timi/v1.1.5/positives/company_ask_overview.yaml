@@ -1,0 +1,803 @@
+positives:
+- intent: company_ask_overview
+  examples:
+  - mày giới thiệu về công ty đc không
+  - em có thể cho chị biết thông tin về công ty
+  - bot giới thiệu qua công ty đi
+  - m cho tớ xin info công ty [ftech](work_unit) nhé
+  - bạn có thể cho tôi xin thông tin về công ty đc ko
+  - timi có thể cho chị biết thông tin về công ty được ko
+  - cho tớ xin info công ty [f-tech](work_unit) đi
+  - timi giới thiêu cho anh về công ty nha
+  - m cho mình xin info công ty [f-tech](work_unit) nhé
+  - mầy cho tớ xin info công ty [ftech](work_unit) nhé
+  - tôi muốn tìm hiểu về công ty cậu
+  - cậu nói cho tôi biết về công ty đi
+  - chị muốn biết ít thông tin về công ty
+  - hãy giới thiệu về [cty công nghệ và gia đình](work_unit)
+  - cậu giới thiệu qua công ty đi
+  - tớ muốn tìm hiểu công ty
+  - tôi muốn tìm hiểu công ty cậu
+  - '[công nghệ và gia đình](work_unit) là công ty nào'
+  - cậu có thể cho mình biết thông tin về công ty được ko
+  - cho mình xin info công ty [f-tech](work_unit) đi
+  - tớ muốn hỏi về công ty bạn
+  - anh muốn xin ít thông tin về công ty
+  - em có thể cho c biết thông tin về công ty đc không
+  - timi có thể cho c xin thông tin về công ty được không
+  - bạn có thể cho mình xin thông tin về công ty được không
+  - timi có thể cho chị xin thông tin về công ty đc không
+  - em cho tôi xin info công ty [ftech](work_unit) nhé
+  - bot cho tôi xin info công ty [ftech](work_unit) nhé
+  - em có thể cho anh xin thông tin về công ty đc không
+  - timi có thể cho chị xin thông tin về công ty đc ko
+  - m cho mình xin info công ty [ftech](work_unit) nhé
+  - mình muốn tìm hiểu công ty
+  - bạn cho mình xin thông tin về công ty nhé
+  - cậu có thể cho mình xin thông tin về công ty đc ko
+  - '[f-tech](work_unit) là gì'
+  - cậu có thể cho tôi xin thông tin về công ty đc không
+  - m giới thiệu về công ty được ko
+  - công ty có gì hot vậy hả
+  - bạn có thể cho tôi xin thông tin về công ty đc không
+  - công ty có gì đặc sắc hả
+  - timi có thể cho anh xin thông tin về công ty được ko
+  - giới thiệu [cty công nghệ và gia đình](work_unit)
+  - bạn có thể cho tớ biết thông tin về công ty
+  - timi giới thiệu về công ty được ko
+  - bạn cho tớ xin thông tin về công ty nhé
+  - timi có thể cho anh biết thông tin về công ty đc không
+  - bạn nói cho tớ biết về công ty đi
+  - mầy cho mình xin info công ty [ftech](work_unit) nhé
+  - tôi muốn biết về công ty
+  - em có thể cho chị biết thông tin về công ty đc không
+  - mình muốn biết ít thông tin về công ty
+  - cậu có thể cho tớ biết thông tin về công ty đc ko
+  - em có thể cho anh xin thông tin về công ty
+  - tớ muốn xin thông tin về công ty
+  - bạn giới thiệu qua công ty đi
+  - mình muốn tìm hiểu về công ty cậu
+  - mầy cho mình xin info công ty [f tech](work_unit) nhé
+  - bot cho mình xin info công ty [f tech](work_unit) nhé
+  - timi có thể cho chị xin thông tin về công ty được không
+  - timi giới thiêu cho tớ về công ty nhé
+  - bot cho tớ xin info công ty [f tech](work_unit) nhé
+  - cậu cho tớ xin info công ty [f tech](work_unit) nhé
+  - em có thể cho chị xin thông tin về công ty được không
+  - anh muốn xin thông tin về công ty
+  - anh muốn biết ít thông tin về công ty
+  - timi có thể cho anh xin thông tin về công ty được không
+  - bạn có thể cho tớ xin thông tin về công ty được ko
+  - cho tôi xin info công ty [f tech](work_unit) đi
+  - bạn giới thiệu về công ty
+  - giới thiệu về [công ty công nghệ và gia đình](work_unit)
+  - xin info công ty đi
+  - bạn cho mình xin info công ty [f tech](work_unit) nhé
+  - công ty có gì nổi trội vậy hả
+  - tôi muốn hỏi về công ty cậu
+  - em có thể cho chị xin thông tin về công ty đc không
+  - em cho tớ xin info công ty [f tech](work_unit) nhé
+  - mình muốn tìm hiểu về công ty bạn
+  - timi có thể cho c biết thông tin về công ty
+  - timi có thể cho chị biết thông tin về công ty đc ko
+  - bot giới thiệu tổng quan về công ty
+  - tớ muốn tìm hiểu về công ty
+  - em cho tớ xin info công ty [ftech](work_unit) nhé
+  - cậu có thể cho tôi biết thông tin về công ty
+  - em cho tôi xin info công ty [f-tech](work_unit) nhé
+  - chị muốn xin thông tin về công ty
+  - cho tớ xin info công ty [f tech](work_unit) đi
+  - tôi muốn tìm hiểu công ty bạn
+  - timi giới thiêu cho mình về công ty nhé
+  - hãy giới thiệu về [công nghệ và gia đình](work_unit)
+  - mầy giới thiệu về công ty được ko
+  - bạn có thể cho mình biết thông tin về công ty đc ko
+  - cậu có thể cho tôi biết thông tin về công ty được không
+  - công ty có gì nổi trội hả
+  - bot giới thiệu về công ty được ko
+  - tổng quan về công ty
+  - timi cho tôi xin info công ty [f-tech](work_unit) nhé
+  - bot cho tớ xin info công ty [f-tech](work_unit) nhé
+  - m cho tôi xin info công ty [f-tech](work_unit) nhé
+  - timi có thể cho anh biết thông tin về công ty được không
+  - anh muốn biết thông tin về công ty
+  - tôi muốn tìm hiểu về công ty
+  - tớ muốn biết về công ty
+  - mày giới thiệu về công ty được không
+  - mình muốn hỏi về công ty bạn
+  - timi có thể cho c xin thông tin về công ty
+  - cho chị xin ít thông tin về công ty
+  - cậu cho tớ xin thông tin về công ty nhé
+  - công ty có gì hot vậy
+  - cho mình hỏi [công ty công nghệ và gia đình](work_unit)
+  - bạn có thể cho tôi xin thông tin về công ty được ko
+  - công ty có gì nổi bật hả
+  - bạn giới thiệu về công ty đc ko
+  - timi có thể cho anh xin thông tin về công ty đc không
+  - giới thiệu [công nghệ và gia đình](work_unit)
+  - mầy giới thiệu qua công ty đi
+  - bạn có thể cho tớ biết thông tin về công ty đc ko
+  - cậu nói cho mình biết về công ty đi
+  - em có thể cho c xin thông tin về công ty được không
+  - bot cho mình xin info công ty [f-tech](work_unit) nhé
+  - em có thể cho anh biết thông tin về công ty đc ko
+  - em cho mình xin info công ty [ftech](work_unit) nhé
+  - cậu giới thiệu về công ty
+  - giới thiệu đôi chút công ty được ko
+  - bạn cho tôi xin thông tin về công ty nhé
+  - giới thiệu về [cty công nghệ và gia đình](work_unit)
+  - cho tớ hỏi về công ty
+  - tôi muốn biết thông tin tổng quan về công ty
+  - timi có thể cho anh biết thông tin về công ty đc ko
+  - chị muốn xin ít thông tin về công ty
+  - giới thiệu [công ty công nghệ và gia đình](work_unit)
+  - m giới thiệu qua công ty đi
+  - em có thể cho c biết thông tin về công ty
+  - em giới thiệu về công ty
+  - thế giới thiệu về công ty đi
+  - timi cho mình xin info công ty [f tech](work_unit) nhé
+  - '[công ty công nghệ và gia đình](work_unit) là công ty gì vậy'
+  - em có thể cho chị xin thông tin về công ty được ko
+  - cho anh hỏi [công nghệ và gia đình](work_unit)
+  - bạn giới thiệu về công ty được không
+  - '[cty công nghệ và gia đình](work_unit) là công ty nào'
+  - bạn có thể cho tớ xin thông tin về công ty
+  - giới thiệu [ftech](work_unit)
+  - '[công nghệ và gia đình](work_unit) là công ty gì vậy'
+  - bạn cho tớ xin info công ty [ftech](work_unit) nhé
+  - công ty có gì nổi trội vậy
+  - cho mình xin info công ty [ftech](work_unit) đi
+  - timi cho tôi xin info công ty [f tech](work_unit) nhé
+  - cậu có thể cho mình biết thông tin về công ty được không
+  - em có thể cho c biết thông tin về công ty được ko
+  - mình muốn hỏi về công ty cậu
+  - cậu có thể cho mình xin thông tin về công ty được không
+  - timi có thể cho a biết thông tin về công ty được không
+  - '[ftech](work_unit) là công ty gì vậy'
+  - bot giới thiệu về công ty đc không
+  - cậu có thể cho mình xin thông tin về công ty được ko
+  - mầy cho tớ xin info công ty [f-tech](work_unit) nhé
+  - công ty có gì mới mẻ hả
+  - timi có thể cho a biết thông tin về công ty
+  - mình muốn hỏi thông tin overview về công ty
+  - giới thiệu [ftech](work_unit) đi
+  - timi giới thiệu tổng quan về công ty
+  - timi có thể cho c xin thông tin về công ty được ko
+  - timi có thể cho anh xin thông tin về công ty
+  - em có thể cho a xin thông tin về công ty được không
+  - cậu cho tớ xin info công ty [f-tech](work_unit) nhé
+  - em có thể cho a xin thông tin về công ty
+  - mày cho tớ xin info công ty [ftech](work_unit) nhé
+  - em có thể cho c xin thông tin về công ty đc không
+  - cậu có thể cho tôi xin thông tin về công ty được không
+  - em có thể cho anh biết thông tin về công ty được không
+  - timi cho mình xin info công ty [f-tech](work_unit) nhé
+  - em có thể cho chị biết thông tin về công ty đc ko
+  - mày cho tôi xin info công ty [ftech](work_unit) nhé
+  - cho chị hỏi [công ty công nghệ và gia đình](work_unit)
+  - công ty có gì nổi vậy hả
+  - giới thiệu công ty
+  - bot cho tôi xin info công ty [f-tech](work_unit) nhé
+  - cậu có thể cho mình biết thông tin về công ty đc ko
+  - timi có thể cho chị xin thông tin về công ty
+  - cậu giới thiệu về công ty được ko
+  - giới thiệu cho anh về công ty nhé
+  - mình muốn biết về công ty
+  - giới thiệu đôi chút công ty đc không
+  - bạn có thể cho tôi biết thông tin về công ty đc không
+  - timi cho tớ xin info công ty [ftech](work_unit) nhé
+  - '[f-tech](work_unit) là công ty gì vậy hả'
+  - mình muốn biết thông tin tổng quan về công ty
+  - bạn cho mình xin info công ty [f-tech](work_unit) nhé
+  - cậu có thể cho tớ biết thông tin về công ty được ko
+  - cậu có thể cho tớ biết thông tin về công ty
+  - timi có thể cho a biết thông tin về công ty đc không
+  - cho mình hỏi về công ty
+  - cho tôi xin info công ty [f-tech](work_unit) đi
+  - bạn cho mình xin info công ty [ftech](work_unit) nhé
+  - em có thể cho a biết thông tin về công ty đc không
+  - bạn nói cho mình biết về công ty đi
+  - timi có thể cho chị biết thông tin về công ty được không
+  - bạn cho tớ xin info công ty [f tech](work_unit) nhé
+  - mày giới thiệu tổng quan về công ty
+  - tớ muốn biết thông tin về công ty
+  - cậu có thể cho tôi xin thông tin về công ty
+  - mày giới thiệu về công ty được ko
+  - timi cho tớ xin info công ty [f tech](work_unit) nhé
+  - m cho tôi xin info công ty [f tech](work_unit) nhé
+  - cho mình hỏi [công nghệ và gia đình](work_unit)
+  - cho tôi xin info công ty [ftech](work_unit) đi
+  - giới thiệu cho tớ về công ty nhé
+  - mình muốn xin ít thông tin về công ty
+  - timi giới thiệu về công ty được không
+  - em giới thiệu về công ty đc ko
+  - timi có thể cho a xin thông tin về công ty được không
+  - bạn có thể cho mình biết thông tin về công ty
+  - mày cho tôi xin info công ty [f-tech](work_unit) nhé
+  - giới thiệu đôi chút công ty được không
+  - cậu cho tôi xin info công ty [f tech](work_unit) nhé
+  - mầy giới thiệu về công ty
+  - cậu có thể cho mình biết thông tin về công ty
+  - m cho tớ xin info công ty [f-tech](work_unit) nhé
+  - cho anh xin ít thông tin về công ty
+  - xin info công ty với
+  - tôi muốn hỏi thông tin overview về công ty
+  - em giới thiệu về công ty đc không
+  - timi có thể cho a xin thông tin về công ty
+  - tớ muốn hỏi về công ty cậu
+  - em có thể cho a xin thông tin về công ty đc ko
+  - bạn có thể cho tôi xin thông tin về công ty được không
+  - cậu cho tôi xin thông tin về công ty nhé
+  - cậu có thể cho tôi xin thông tin về công ty đc ko
+  - timi giới thiêu cho chị về công ty nhé
+  - tôi muốn tìm hiểu về công ty bạn
+  - em có thể cho c biết thông tin về công ty được không
+  - bạn cho tớ xin info công ty [f-tech](work_unit) nhé
+  - tớ muốn tìm hiểu công ty bạn
+  - em có thể cho anh biết thông tin về công ty đc không
+  - timi có thể cho c xin thông tin về công ty đc ko
+  - cho tớ hỏi [cty công nghệ và gia đình](work_unit)
+  - tớ muốn hỏi thông tin overview về công ty
+  - cậu có thể cho tôi xin thông tin về công ty được ko
+  - hãy giới thiệu về công ty xem nào
+  - mầy cho tôi xin info công ty [ftech](work_unit) nhé
+  - tớ muốn hỏi về công ty
+  - cho mình xin ít thông tin về công ty
+  - tôi muốn tìm hiểu công ty
+  - em có thể cho chị biết thông tin về công ty được ko
+  - em giới thiệu tổng quan về công ty
+  - timi có thể cho c biết thông tin về công ty đc ko
+  - cho tớ hỏi [công nghệ và gia đình](work_unit)
+  - công ty có gì nổi bật vậy hả
+  - mày cho mình xin info công ty [f tech](work_unit) nhé
+  - mày cho tớ xin info công ty [f-tech](work_unit) nhé
+  - timi có thể cho a biết thông tin về công ty đc ko
+  - timi có thể cho a xin thông tin về công ty được ko
+  - timi có thể cho anh xin thông tin về công ty đc ko
+  - em có thể cho c xin thông tin về công ty
+  - mình muốn xin thông tin về công ty
+  - timi có thể cho c xin thông tin về công ty đc không
+  - '[f-tech](work_unit) là công ty gì hả'
+  - mày cho mình xin info công ty [f-tech](work_unit) nhé
+  - cậu có thể cho mình xin thông tin về công ty đc không
+  - bạn giới thiệu về công ty đc không
+  - mày giới thiệu về công ty đc ko
+  - timi giới thiệu về công ty đc không
+  - timi cho mình xin info công ty [ftech](work_unit) nhé
+  - timi có thể cho c biết thông tin về công ty được không
+  - em giới thiệu qua công ty đi
+  - em cho tôi xin info công ty [f tech](work_unit) nhé
+  - mày giới thiệu qua công ty đi
+  - em có thể cho c xin thông tin về công ty đc ko
+  - hãy giới thiệu về công ty đi
+  - giới thiệu công ty đi
+  - chị muốn biết thông tin về công ty
+  - timi giới thiêu cho anh về công ty nhé
+  - em có thể cho chị xin thông tin về công ty
+  - timi giới thiêu cho mình về công ty nha
+  - cậu có thể cho tôi biết thông tin về công ty đc ko
+  - cho anh hỏi [công ty công nghệ và gia đình](work_unit)
+  - timi có thể cho anh biết thông tin về công ty được ko
+  - em có thể cho anh xin thông tin về công ty đc ko
+  - em cho mình xin info công ty [f tech](work_unit) nhé
+  - bạn có thể cho tớ xin thông tin về công ty đc ko
+  - mình muốn hỏi về công ty
+  - mày giới thiệu về công ty
+  - cậu cho tôi xin info công ty [ftech](work_unit) nhé
+  - công ty có gì nổi bật vậy
+  - giới thiệu về công ty đi
+  - công ty có gì hot hả
+  - em có thể cho a biết thông tin về công ty đc ko
+  - '[f tech](work_unit) là công ty gì vậy'
+  - cho tớ hỏi [công ty công nghệ và gia đình](work_unit)
+  - cho mình xin info công ty [f tech](work_unit) đi
+  - bạn có thể cho tôi biết thông tin về công ty đc ko
+  - giới thiệu cho mình về công ty nhé
+  - timi có thể cho a xin thông tin về công ty đc ko
+  - timi có thể cho a xin thông tin về công ty đc không
+  - m cho tôi xin info công ty [ftech](work_unit) nhé
+  - bạn có thể cho mình biết thông tin về công ty được ko
+  - em có thể cho anh biết thông tin về công ty được ko
+  - mầy cho tôi xin info công ty [f tech](work_unit) nhé
+  - bạn cho tôi xin info công ty [ftech](work_unit) nhé
+  - cậu có thể cho tôi biết thông tin về công ty được ko
+  - tôi muốn hỏi về công ty bạn
+  - m giới thiệu về công ty đc ko
+  - cho anh hỏi về công ty
+  - em cho mình xin info công ty [f-tech](work_unit) nhé
+  - mầy cho tôi xin info công ty [f-tech](work_unit) nhé
+  - cậu giới thiệu về công ty đc ko
+  - mầy giới thiệu tổng quan về công ty
+  - bạn có thể cho mình xin thông tin về công ty được ko
+  - công ty có gì nổi hả
+  - công ty có gì mới mẻ vậy hả
+  - em có thể cho c xin thông tin về công ty được ko
+  - bạn nói cho tôi biết về công ty đi
+  - em có thể cho chị xin thông tin về công ty đc ko
+  - giới thiệu [f tech](work_unit) đi
+  - giới thiệu [f tech](work_unit)
+  - cho tớ xin info công ty [ftech](work_unit) đi
+  - mầy giới thiệu về công ty được không
+  - em có thể cho anh xin thông tin về công ty được ko
+  - mình muốn tìm hiểu công ty bạn
+  - bạn có thể cho tớ xin thông tin về công ty đc không
+  - bạn giới thiệu về công ty được ko
+  - timi có thể cho anh biết thông tin về công ty
+  - bạn có thể cho tôi biết thông tin về công ty được ko
+  - công ty có gì mới mẻ vậy
+  - '[f tech](work_unit) là công ty gì hả'
+  - timi có thể cho chị xin thông tin về công ty được ko
+  - '[ftech](work_unit) là gì'
+  - bot cho tớ xin info công ty [ftech](work_unit) nhé
+  - timi cho tôi xin info công ty [ftech](work_unit) nhé
+  - cậu cho tôi xin info công ty [f-tech](work_unit) nhé
+  - mầy giới thiệu về công ty đc không
+  - cậu có thể cho tớ xin thông tin về công ty được không
+  - '[cty công nghệ và gia đình](work_unit) là công ty gì vậy'
+  - m giới thiệu tổng quan về công ty
+  - cho chị hỏi [công nghệ và gia đình](work_unit)
+  - mình muốn tìm hiểu về công ty
+  - em có thể cho a xin thông tin về công ty được ko
+  - giới thiệu [f-tech](work_unit)
+  - mày cho tôi xin info công ty [f tech](work_unit) nhé
+  - m giới thiệu về công ty
+  - timi giới thiệu qua công ty đi
+  - mầy cho mình xin info công ty [f-tech](work_unit) nhé
+  - timi cho tớ xin info công ty [f-tech](work_unit) nhé
+  - cậu có thể cho tôi biết thông tin về công ty đc không
+  - m giới thiệu về công ty được không
+  - em giới thiệu về công ty được ko
+  - cho mình hỏi [cty công nghệ và gia đình](work_unit)
+  - bạn có thể cho tôi biết thông tin về công ty
+  - giới thiệu đôi chút công ty đc ko
+  - giới thiệu [f-tech](work_unit) đi
+  - mày cho tớ xin info công ty [f tech](work_unit) nhé
+  - m cho mình xin info công ty [f tech](work_unit) nhé
+  - cậu có thể cho mình biết thông tin về công ty đc không
+  - cậu có thể cho tớ xin thông tin về công ty
+  - bạn có thể cho mình biết thông tin về công ty đc không
+  - mầy giới thiệu về công ty đc ko
+  - timi có thể cho chị biết thông tin về công ty
+  - bot giới thiệu về công ty đc ko
+  - cậu giới thiệu về công ty đc không
+  - cho chị hỏi về công ty
+  - em có thể cho a xin thông tin về công ty đc không
+  - em cho tớ xin info công ty [f-tech](work_unit) nhé
+  - bạn có thể cho mình xin thông tin về công ty
+  - cậu giới thiệu về công ty được không
+  - m giới thiệu về công ty đc không
+  - '[f tech](work_unit) là gì'
+  - bạn có thể cho tớ biết thông tin về công ty đc không
+  - '[f tech](work_unit) là công ty gì vậy hả'
+  - timi giới thiêu cho tớ về công ty nha
+  - bạn có thể cho tôi biết thông tin về công ty được không
+  - mình muốn biết thông tin về công ty
+  - timi có thể cho chị biết thông tin về công ty đc không
+  - cậu có thể cho tớ biết thông tin về công ty được không
+  - cho anh hỏi [cty công nghệ và gia đình](work_unit)
+  - công ty có gì đặc sắc vậy
+  - cậu cho mình xin info công ty [ftech](work_unit) nhé
+  - cho tớ xin ít thông tin về công ty
+  - bạn giới thiệu tổng quan về công ty
+  - timi có thể cho c biết thông tin về công ty được ko
+  - hãy giới thiệu về [công ty công nghệ và gia đình](work_unit)
+  - bot giới thiệu về công ty được không
+  - cậu cho mình xin thông tin về công ty nhé
+  - cho chị hỏi [cty công nghệ và gia đình](work_unit)
+  - giới thiệu cho chị về công ty nhé
+  - em có thể cho anh biết thông tin về công ty
+  - cậu nói cho tớ biết về công ty đi
+  - em có thể cho a biết thông tin về công ty
+  - bot giới thiệu về công ty
+  - timi giới thiêu cho chị về công ty nha
+  - bạn có thể cho mình xin thông tin về công ty đc ko
+  - bạn có thể cho tớ biết thông tin về công ty được không
+  - '[ftech](work_unit) là công ty gì hả'
+  - '[công ty công nghệ và gia đình](work_unit) là công ty nào'
+  - em có thể cho anh xin thông tin về công ty được không
+  - bot cho mình xin info công ty [ftech](work_unit) nhé
+  - bot cho tôi xin info công ty [f tech](work_unit) nhé
+  - em có thể cho a biết thông tin về công ty được không
+  - cậu có thể cho tớ biết thông tin về công ty đc không
+  - tớ muốn xin ít thông tin về công ty
+  - bạn có thể cho mình xin thông tin về công ty đc không
+  - cho tôi hỏi nguồn gốc của [f tech](work_unit) là từ việt nam hay việt
+  - công ty mình là công ty nước ngoài hay công ty việt nam đó mày
+  - bản chất [f tech](work_unit) là công ty việt nam à
+  - Bạn có phải công ty [Mexico](location) không?
+  - cho tôi hỏi nguồn gốc của [ftech](work_unit) là từ trong nước hay trong nước
+  - cho tôi hỏi nguồn gốc của [f tech](work_unit) là từ việt nam hay việt nam
+  - cho tớ hỏi nguồn gốc của [ftech](work_unit) là từ việt nam hay nước ngoài
+  - cho tôi hỏi nguồn gốc của [ftech](work_unit) là từ việt hay việt nam
+  - tớ muốn biết [ftech](work_unit) là doanh nghiệp việt nam hay trong nước
+  - '[f-tech](work_unit) thuộc sở hữu của việt hay trong nước'
+  - tôi muốn biết [f tech](work_unit) là doanh nghiệp việt hay việt nam
+  - cho mình hỏi nguồn gốc của [ftech](work_unit) là từ trong nước hay việt
+  - mình muốn hỏi [f-tech](work_unit) là doanh nghiệp trong nước hay trong nước
+  - Bạn có phải công ty [Singapo](location) ko?
+  - cho mình hỏi nguồn gốc của [f-tech](work_unit) là từ việt nam hay việt nam
+  - Bạn có phải công ty [Thụy Sĩ](location) không?
+  - cho tôi hỏi nguồn gốc của [ftech](work_unit) là từ việt nam hay nước ngoài
+  - tớ muốn biết [ftech](work_unit) là doanh nghiệp việt nam hay nước ngoài
+  - bản chất [f-tech](work_unit) là công ty việt nam hả
+  - mình muốn hỏi nguồn gốc của [ftech](work_unit) là từ việt nam hay việt nam
+  - tôi muốn hỏi [f-tech](work_unit) là doanh nghiệp việt nam hay việt
+  - tôi muốn hỏi nguồn gốc của [ftech](work_unit) là từ việt hay việt
+  - '[f-tech](work_unit) là doanh nghiệp việt nam nhể'
+  - bạn cho tớ hỏi công ty việt nam ạ
+  - cho tớ hỏi công ty việt ạ
+  - tớ muốn hỏi nguồn gốc của [f-tech](work_unit) là từ việt hay trong nước
+  - '[f tech](work_unit) thuộc sở hữu của việt nam hay việt nam'
+  - mình muốn hỏi nguồn gốc của [f-tech](work_unit) là từ việt hay nước ngoài
+  - tớ muốn biết [f tech](work_unit) là doanh nghiệp việt nam hay trong nước
+  - tớ muốn hỏi nguồn gốc của [f-tech](work_unit) là từ việt hay việt
+  - tớ muốn hỏi nguồn gốc của [ftech](work_unit) là từ việt nam hay trong nước
+  - tôi muốn biết [f-tech](work_unit) là doanh nghiệp việt hay trong nước
+  - mày cho tớ hỏi công ty việt nam ạ
+  - Bạn có phải công ty [Thái](location) không?
+  - tớ muốn biết [f-tech](work_unit) là doanh nghiệp việt nam hay nước ngoài
+  - tớ muốn hỏi nguồn gốc của [f tech](work_unit) là từ việt hay nước ngoài
+  - m cho mình hỏi công ty việt ạ
+  - mình muốn hỏi [f-tech](work_unit) là doanh nghiệp việt hay việt
+  - '[ftech](work_unit) thuộc sở hữu của việt nam hay việt'
+  - '[f-tech](work_unit) là doanh nghiệp việt nhỉ'
+  - tôi muốn biết [ftech](work_unit) là doanh nghiệp việt hay trong nước
+  - bản chất [f-tech](work_unit) là công ty trong nước hả
+  - cho tớ hỏi nguồn gốc của [ftech](work_unit) là từ trong nước hay nước ngoài
+  - '[f-tech](work_unit) là công ty việt nam ạ'
+  - mình muốn biết [ftech](work_unit) là doanh nghiệp trong nước hay trong nước
+  - Bạn có phải công ty [Sing](location) không?
+  - '[f tech](work_unit) thuộc sở hữu của việt hay trong nước'
+  - cho mình hỏi nguồn gốc của [ftech](work_unit) là từ việt hay việt nam
+  - tớ muốn hỏi nguồn gốc của [ftech](work_unit) là từ trong nước hay nước ngoài
+  - '[f tech](work_unit) thuộc sở hữu của trong nước hay nước ngoài'
+  - tôi muốn hỏi [f-tech](work_unit) là doanh nghiệp trong nước hay trong nước
+  - cho mình hỏi nguồn gốc của [ftech](work_unit) là từ việt hay nước ngoài
+  - bot cho mình hỏi công ty việt ạ
+  - '[f tech](work_unit) là công ty trong nước hả'
+  - cho tớ hỏi nguồn gốc của [f-tech](work_unit) là từ việt nam hay nước ngoài
+  - mình muốn biết [f tech](work_unit) là doanh nghiệp trong nước hay nước ngoài
+  - cậu cho tôi hỏi công ty việt nam ạ
+  - '[ftech](work_unit) là công ty trong nước ạ'
+  - '[f tech](work_unit) thuộc sở hữu của việt nam hay nước ngoài'
+  - bản chất [ftech](work_unit) là công ty việt nam à
+  - tớ muốn hỏi nguồn gốc của [ftech](work_unit) là từ việt hay việt
+  - mình muốn hỏi nguồn gốc của [f-tech](work_unit) là từ trong nước hay việt nam
+  - tôi muốn hỏi nguồn gốc của [f-tech](work_unit) là từ trong nước hay nước ngoài
+  - tôi muốn biết [ftech](work_unit) là doanh nghiệp trong nước hay việt
+  - '[f-tech](work_unit) là công ty việt hả'
+  - cho mình hỏi công ty nước ngoài ạ
+  - cho mình hỏi nguồn gốc của [f-tech](work_unit) là từ việt hay việt
+  - tớ muốn biết [f tech](work_unit) là doanh nghiệp trong nước hay trong nước
+  - mình muốn hỏi nguồn gốc của [ftech](work_unit) là từ việt hay nước ngoài
+  - tôi muốn hỏi [f tech](work_unit) là doanh nghiệp việt nam hay nước ngoài
+  - timi cho tớ hỏi công ty trong nước ạ
+  - tớ muốn hỏi [f-tech](work_unit) là doanh nghiệp việt nam hay trong nước
+  - công ty mình là công ty nước ngoài hay công ty trong nước đó bot
+  - tớ muốn biết [f-tech](work_unit) là doanh nghiệp việt hay trong nước
+  - mình muốn biết [f tech](work_unit) là doanh nghiệp việt hay nước ngoài
+  - tớ muốn hỏi [f-tech](work_unit) là doanh nghiệp việt hay việt
+  - mầy cho tôi hỏi công ty việt ạ
+  - tớ muốn hỏi nguồn gốc của [f tech](work_unit) là từ việt nam hay trong nước
+  - công ty có phải công ty nước ngoài không ạ
+  - timi cho tôi hỏi công ty việt nam ạ
+  - Bạn có phải công ty [Hà Lan](location) không?
+  - mình muốn hỏi nguồn gốc của [ftech](work_unit) là từ trong nước hay trong nước
+  - '[f tech](work_unit) là công ty trong nước à'
+  - mình muốn hỏi [f tech](work_unit) là doanh nghiệp việt hay việt
+  - mình muốn hỏi [ftech](work_unit) là doanh nghiệp việt hay nước ngoài
+  - em cho mình hỏi công ty việt ạ
+  - m cho tôi hỏi công ty việt nam ạ
+  - mình muốn biết [f-tech](work_unit) là doanh nghiệp việt nam hay trong nước
+  - tớ muốn hỏi [f tech](work_unit) là doanh nghiệp việt hay việt nam
+  - Bạn có phải công ty [Thụy Điển](location) không?
+  - Bạn có phải công ty [Singapore](location) không?
+  - mình muốn hỏi nguồn gốc của [f-tech](work_unit) là từ việt nam hay việt nam
+  - '[f-tech](work_unit) thuộc sở hữu của việt nam hay việt nam'
+  - tôi muốn hỏi nguồn gốc của [f tech](work_unit) là từ trong nước hay việt nam
+  - cho tôi hỏi nguồn gốc của [ftech](work_unit) là từ việt nam hay việt nam
+  - mình muốn biết [ftech](work_unit) là doanh nghiệp việt hay trong nước
+  - cho tôi hỏi nguồn gốc của [f tech](work_unit) là từ việt hay trong nước
+  - tôi muốn biết [f tech](work_unit) là doanh nghiệp việt nam hay việt
+  - bản chất [f tech](work_unit) là công ty việt nam ạ
+  - tôi muốn hỏi [f tech](work_unit) là doanh nghiệp trong nước hay nước ngoài
+  - cho tớ hỏi công ty việt nam ạ
+  - m cho tớ hỏi công ty trong nước ạ
+  - timi cho tôi hỏi công ty việt ạ
+  - tớ muốn biết [f tech](work_unit) là doanh nghiệp trong nước hay việt
+  - cho mình hỏi nguồn gốc của [f tech](work_unit) là từ việt nam hay trong nước
+  - Bạn có phải công ty [Australia](location) không?
+  - tôi muốn biết [f-tech](work_unit) là doanh nghiệp việt hay nước ngoài
+  - '[ftech](work_unit) thuộc sở hữu của việt hay trong nước'
+  - cho mình hỏi công ty việt nam ạ
+  - mình muốn hỏi nguồn gốc của [f tech](work_unit) là từ việt hay việt
+  - '[f-tech](work_unit) thuộc sở hữu của việt nam hay việt'
+  - mình muốn hỏi nguồn gốc của [f-tech](work_unit) là từ việt nam hay việt
+  - tôi muốn biết [f tech](work_unit) là doanh nghiệp trong nước hay trong nước
+  - cho tớ hỏi nguồn gốc của [f-tech](work_unit) là từ trong nước hay trong nước
+  - Bạn có phải công ty [Trung Quốc](location) không?
+  - '[f-tech](work_unit) thuộc sở hữu của việt hay việt'
+  - công ty mình là công ty việt nam hay công ty nước ngoài đó mầy
+  - bạn cho tôi hỏi công ty nước ngoài ạ
+  - mình muốn hỏi [f-tech](work_unit) là doanh nghiệp việt hay việt nam
+  - cho tớ hỏi nguồn gốc của [f-tech](work_unit) là từ việt nam hay trong nước
+  - cho tôi hỏi nguồn gốc của [f tech](work_unit) là từ việt hay việt
+  - tớ muốn hỏi nguồn gốc của [ftech](work_unit) là từ việt nam hay việt nam
+  - '[ftech](work_unit) thuộc sở hữu của việt hay nước ngoài'
+  - tôi muốn hỏi nguồn gốc của [f-tech](work_unit) là từ việt hay nước ngoài
+  - '[f tech](work_unit) là doanh nghiệp trong nước nhể'
+  - mình muốn hỏi [ftech](work_unit) là doanh nghiệp trong nước hay trong nước
+  - cho mình hỏi nguồn gốc của [f tech](work_unit) là từ việt hay nước ngoài
+  - '[f tech](work_unit) thuộc sở hữu của việt hay việt'
+  - tôi muốn hỏi nguồn gốc của [f-tech](work_unit) là từ việt nam hay trong nước
+  - công ty mình là công ty nước ngoài hay công ty việt đó cậu
+  - tôi muốn biết [f-tech](work_unit) là doanh nghiệp trong nước hay nước ngoài
+  - '[f tech](work_unit) là doanh nghiệp việt nam ha'
+  - '[f tech](work_unit) là doanh nghiệp trong nước ha'
+  - cho mình hỏi nguồn gốc của [f tech](work_unit) là từ trong nước hay việt nam
+  - '[ftech](work_unit) là doanh nghiệp trong nước nhể'
+  - mình muốn hỏi nguồn gốc của [ftech](work_unit) là từ trong nước hay việt nam
+  - Bạn có phải công ty [Phần Lan](location) không?
+  - '[f tech](work_unit) là công ty việt à'
+  - tôi muốn biết [f-tech](work_unit) là doanh nghiệp việt nam hay nước ngoài
+  - tôi muốn hỏi nguồn gốc của [ftech](work_unit) là từ việt hay trong nước
+  - bản chất [f-tech](work_unit) là công ty nước ngoài hả
+  - Bạn có phải công ty [Anh](location) không?
+  - Bạn có phải công ty [Ukraine](location) không?
+  - công ty mình là công ty trong nước hay công ty nước ngoài đó cậu
+  - cho mình hỏi nguồn gốc của [f-tech](work_unit) là từ trong nước hay nước ngoài
+  - tôi muốn hỏi [ftech](work_unit) là doanh nghiệp việt hay trong nước
+  - Bạn có phải công ty [Thổ Nhĩ Kỳ](location) không?
+  - công ty mình là công ty việt hay công ty nước ngoài đó cậu
+  - tớ muốn hỏi [ftech](work_unit) là doanh nghiệp trong nước hay việt
+  - Bạn có phải công ty [Lào](location) ko?
+  - công ty mình là công ty nước ngoài hay công ty việt nam đó timi
+  - tôi muốn biết [f tech](work_unit) là doanh nghiệp việt hay việt
+  - tớ muốn biết [ftech](work_unit) là doanh nghiệp việt nam hay việt
+  - cho mình hỏi nguồn gốc của [f tech](work_unit) là từ việt hay việt nam
+  - tôi muốn hỏi nguồn gốc của [f tech](work_unit) là từ việt nam hay trong nước
+  - mình muốn biết [f tech](work_unit) là doanh nghiệp việt nam hay việt nam
+  - công ty mình là công ty việt hay công ty nước ngoài đó mầy
+  - tớ muốn hỏi [f-tech](work_unit) là doanh nghiệp trong nước hay việt nam
+  - công ty mình là công ty nước ngoài hay công ty trong nước đó timi
+  - tôi muốn hỏi [ftech](work_unit) là doanh nghiệp trong nước hay nước ngoài
+  - Bạn có phải công ty [Na Uy](location) không?
+  - tớ muốn biết [f tech](work_unit) là doanh nghiệp việt hay việt
+  - tớ muốn hỏi nguồn gốc của [f tech](work_unit) là từ trong nước hay trong nước
+  - mình muốn biết [f tech](work_unit) là doanh nghiệp việt hay trong nước
+  - mình muốn biết [ftech](work_unit) là doanh nghiệp việt nam hay việt
+  - tớ muốn hỏi nguồn gốc của [f-tech](work_unit) là từ trong nước hay trong nước
+  - tôi muốn biết [ftech](work_unit) là doanh nghiệp việt nam hay việt nam
+  - công ty mình là công ty việt nam hay công ty nước ngoài đó
+  - cho tôi hỏi nguồn gốc của [f-tech](work_unit) là từ trong nước hay việt
+  - Bạn có phải công ty [Mĩ](location) không?
+  - cho tớ hỏi nguồn gốc của [f tech](work_unit) là từ việt hay nước ngoài
+  - cho tôi hỏi nguồn gốc của [f-tech](work_unit) là từ việt nam hay nước ngoài
+  - tớ muốn biết [f tech](work_unit) là doanh nghiệp việt hay việt nam
+  - tớ muốn hỏi [f tech](work_unit) là doanh nghiệp trong nước hay việt
+  - cho tôi hỏi nguồn gốc của [f tech](work_unit) là từ việt hay việt nam
+  - em cho mình hỏi công ty nước ngoài ạ
+  - mình muốn hỏi [f tech](work_unit) là doanh nghiệp trong nước hay việt nam
+  - '[ftech](work_unit) thuộc sở hữu của việt nam hay việt nam'
+  - tôi muốn hỏi [ftech](work_unit) là doanh nghiệp việt nam hay việt
+  - cho tớ hỏi nguồn gốc của [f tech](work_unit) là từ trong nước hay trong nước
+  - '[f-tech](work_unit) là công ty trong nước ạ'
+  - cho tớ hỏi nguồn gốc của [f tech](work_unit) là từ việt nam hay việt nam
+  - cho mình hỏi nguồn gốc của [ftech](work_unit) là từ trong nước hay nước ngoài
+  - '[ftech](work_unit) là doanh nghiệp việt nam ha'
+  - công ty mình là công ty nước ngoài hay công ty việt đó
+  - cậu cho mình hỏi công ty việt nam ạ
+  - mình muốn hỏi nguồn gốc của [ftech](work_unit) là từ việt hay trong nước
+  - Bạn có phải công ty [Mexico](location) ko?
+  - tôi muốn hỏi nguồn gốc của [ftech](work_unit) là từ việt nam hay nước ngoài
+  - '[ftech](work_unit) là công ty việt hả'
+  - công ty mình là công ty việt hay công ty nước ngoài đó em
+  - tớ muốn biết [f tech](work_unit) là doanh nghiệp việt hay nước ngoài
+  - tôi muốn hỏi [f-tech](work_unit) là doanh nghiệp việt hay việt nam
+  - '[f tech](work_unit) thuộc sở hữu của việt nam hay việt'
+  - Bạn có phải công ty [Hong Kong](location) ko?
+  - tôi muốn hỏi [ftech](work_unit) là doanh nghiệp trong nước hay trong nước
+  - '[f-tech](work_unit) thuộc sở hữu của trong nước hay việt nam'
+  - timi cho tôi hỏi công ty trong nước ạ
+  - bản chất [ftech](work_unit) là công ty việt ạ
+  - cho mình hỏi nguồn gốc của [f tech](work_unit) là từ việt nam hay nước ngoài
+  - mầy cho tớ hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - mày cho mình hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - mày cho mình hỏi [ftech](work_unit) có phải là công ty gia công ko
+  - công ty làm sản phẩm đúng không
+  - '[f tech](work_unit) là công ty sản phẩm à'
+  - à em ơi bên mình là làm dự án product hay outsource thế
+  - cậu cho mình hỏi [f-tech](work_unit) có phải là công ty gia công ko
+  - cho tớ hỏi công ty làm product hay outsource?
+  - cho tôi hỏi [f tech](work_unit) có phải là công ty gia công không
+  - à m ơi bên mình là làm dự án product hay outsource thế
+  - bạn cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - bot cho tớ hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - cho tớ hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - bạn cho mình hỏi [ftech](work_unit) có phải là công ty gia công không
+  - '[ftech](work_unit) là công ty gia công phần mềm hả em'
+  - '[f tech](work_unit) là công ty gia công phần mềm hả bot'
+  - '[ftech](work_unit) là công ty gia công phần mềm hả bạn'
+  - em cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - '[f tech](work_unit) nhận làm outsource đúng không'
+  - cho mình hỏi [f-tech](work_unit) có phải là công ty gia công ko
+  - '[f tech](work_unit) là công ty gia công phần mềm hả cậu'
+  - '[f-tech](work_unit) là công ty làm sản phẩm hay outsource?'
+  - bên mình làm sản phẩm đúng ko
+  - bot cho tớ hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - bạn cho mình hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - em cho tớ hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - cho tớ hỏi công ty làm sản phẩm hay outsource?
+  - mầy cho tớ hỏi [ftech](work_unit) có phải là công ty gia công không
+  - cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - '[f tech](work_unit) là công ty làm sản phẩm hay outsource?'
+  - à timi ơi bên mình là làm dự án product hay outsource thế
+  - timi cho tôi hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - '[ftech](work_unit) là công ty sản phẩm à'
+  - cho mình hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - mày cho tớ hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - bên mình làm product phải ko
+  - em cho mình hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - em cho tôi hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - Công ty [f-tech](work_unit) làm product hay outsource?
+  - bạn cho tớ hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - '[ftech](work_unit) là công ty làm product hay outsource?'
+  - em cho tôi hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - bot cho tớ hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - '[f-tech](work_unit) là công ty gia công phần mềm hả timi'
+  - bot cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - mày cho mình hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - cho tớ hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - '[ftech](work_unit) nhận làm outsource đúng không'
+  - bên mình có phải làm outsource phải ko
+  - cậu cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - '[f-tech](work_unit) nhận làm outsource đúng không'
+  - em cho mình hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - timi cho tôi hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - timi cho tôi hỏi [f tech](work_unit) có phải là công ty gia công không
+  - bạn cho mình hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - cho tớ hỏi [f tech](work_unit) có phải là công ty gia công không
+  - m cho mình hỏi [f tech](work_unit) có phải là công ty gia công không
+  - cho mình hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - mày cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - công ty làm product à
+  - bot cho tớ hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - bạn cho tớ hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - cho mình hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - bên mình làm product đúng ko
+  - m cho mình hỏi [ftech](work_unit) có phải là công ty gia công không
+  - bên mình làm product hay outsource?
+  - timi cho tôi hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - em cho tớ hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - bạn cho tớ hỏi [ftech](work_unit) có phải là công ty gia công ko
+  - cậu cho mình hỏi [f tech](work_unit) có phải là công ty trung gian ko
+  - m cho tôi hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - bạn cho tớ hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - m cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - cho mình hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - bạn cho tôi hỏi [ftech](work_unit) có phải là công ty gia công ko
+  - cậu cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - bạn cho tôi hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - bạn cho mình hỏi [f-tech](work_unit) có phải là công ty gia công ko
+  - em cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - m cho mình hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - công ty làm product đúng không
+  - '[f tech](work_unit) là công ty gia công phần mềm hả mày'
+  - bot cho tôi hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - cậu cho tôi hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - '[f tech](work_unit) nhận làm outsource chính xác ko'
+  - bên mình làm outsource phải không
+  - công ty nhận làm sản phẩm cho công ty khác hay bán sản phẩm của bản thân
+  - m cho tôi hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - bạn cho tớ hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - công ty làm outsource đúng không
+  - bot cho mình hỏi [ftech](work_unit) có phải là công ty gia công ko
+  - mầy cho tôi hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - Công ty [f tech](work_unit) làm product hay outsource?
+  - '[f tech](work_unit) là công ty product à'
+  - timi cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - em cho mình hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - bot cho tớ hỏi [f tech](work_unit) có phải là công ty gia công không
+  - mầy cho tớ hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - bên mình làm sản phẩm phải ko
+  - mày cho tôi hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - m cho tôi hỏi [ftech](work_unit) có phải là công ty gia công không
+  - mày cho tớ hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - bot cho tôi hỏi [ftech](work_unit) có phải là công ty gia công ko
+  - em cho tôi hỏi [f-tech](work_unit) có phải là công ty gia công ko
+  - em cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - timi cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - '[f tech](work_unit) nhận làm outsource chuẩn chỉ không'
+  - '[ftech](work_unit) là công ty gia công phần mềm hả bot'
+  - bạn cho tớ hỏi [f tech](work_unit) có phải là công ty trung gian ko
+  - mầy cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - timi cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - bạn cho mình hỏi [ftech](work_unit) có phải là công ty gia công ko
+  - bot cho tôi hỏi [f-tech](work_unit) có phải là công ty gia công ko
+  - bạn cho tôi hỏi [f tech](work_unit) có phải là công ty trung gian ko
+  - m cho mình hỏi [f tech](work_unit) có phải là công ty trung gian ko
+  - bạn cho tôi hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - công ty làm outsource phải không
+  - cho mình hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - '[f tech](work_unit) là công ty gia công phần mềm hả mầy'
+  - cậu cho tớ hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - cho tớ hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - '[f-tech](work_unit) là công ty gia công phần mềm hả mày'
+  - bạn cho tớ hỏi [f tech](work_unit) có phải là công ty gia công không
+  - bên mình làm outsource phải ko
+  - '[f-tech](work_unit) là công ty sản phẩm à'
+  - '[f-tech](work_unit) là công ty gia công phần mềm hả cậu'
+  - m cho mình hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - timi cho tớ hỏi [f-tech](work_unit) có phải là công ty gia công ko
+  - '[f-tech](work_unit) nhận làm outsource chính xác ko'
+  - em cho mình hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - mầy cho tôi hỏi [ftech](work_unit) có phải là công ty gia công ko
+  - mầy cho mình hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - bạn cho tớ hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - mầy cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - mầy cho tôi hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - bot cho tôi hỏi [ftech](work_unit) có phải là công ty gia công không
+  - cho tớ hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - bên mình có phải làm outsource đúng không
+  - '[f-tech](work_unit) nhận làm outsource chuẩn không'
+  - timi cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - em cho tôi hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - bot cho tớ hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - '[f-tech](work_unit) nhận làm outsource đúng ko'
+  - timi cho mình hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - công ty có phải làm outsource phải ko
+  - mày cho tôi hỏi [ftech](work_unit) có phải là công ty trung gian không
+  - cho tôi hỏi [f-tech](work_unit) có phải là công ty gia công ko
+  - cậu cho tôi hỏi [f tech](work_unit) có phải là công ty gia công không
+  - công ty nhận làm product cho công ty khác hay bán sản phẩm của bản thân
+  - mầy cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - em cho tớ hỏi [f tech](work_unit) có phải là công ty trung gian ko
+  - bot cho tớ hỏi [f tech](work_unit) có phải là công ty trung gian ko
+  - '[f tech](work_unit) nhận làm outsource chuẩn ko'
+  - timi cho tôi hỏi [ftech](work_unit) có phải là công ty gia công không
+  - mầy cho mình hỏi [f tech](work_unit) có phải là công ty gia công không
+  - mầy cho tớ hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - cho tôi hỏi [f tech](work_unit) có phải là công ty trung gian ko
+  - '[ftech](work_unit) là công ty gia công phần mềm hả mầy'
+  - cậu cho tớ hỏi [f tech](work_unit) có phải là công ty trung gian ko
+  - timi cho mình hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - cậu cho mình hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - m cho tớ hỏi [f tech](work_unit) có phải là công ty trung gian ko
+  - '[ftech](work_unit) là công ty gia công phần mềm hả timi'
+  - mày cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - công ty làm product phải không
+  - bot cho mình hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - mầy cho tôi hỏi [f-tech](work_unit) có phải là công ty gia công ko
+  - mầy cho tớ hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - mày cho tôi hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - bạn cho tôi hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - công ty làm sản phẩm phải không
+  - '[f-tech](work_unit) là công ty gia công phần mềm hả'
+  - mầy cho tớ hỏi [f tech](work_unit) có phải là công ty gia công không
+  - '[f tech](work_unit) nhận làm outsource chuẩn không'
+  - cậu cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian ko
+  - '[f-tech](work_unit) là công ty làm product hay outsource?'
+  - '[f tech](work_unit) là công ty gia công phần mềm hả'
+  - bạn cho tôi hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - Công ty [công nghệ và gia đình](work_unit) làm product hay outsource?
+  - mầy cho tôi hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - cho tôi hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - mày cho mình hỏi [f-tech](work_unit) có phải là công ty trung gian không
+  - công ty có phải làm outsource đúng không
+  - bot cho mình hỏi [ftech](work_unit) có phải là công ty gia công không
+  - cậu cho tôi hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - em cho tớ hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - bên mình làm product đúng không
+  - cậu cho mình hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - bạn cho tớ hỏi [ftech](work_unit) có phải là công ty trung gian ko
+  - bot cho tớ hỏi [f tech](work_unit) có phải là công ty trung gian không
+  - Công ty [cty công nghệ và gia đình](work_unit) làm product hay outsource?
+  - mày cho tớ hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - công ty có phải làm outsource đúng ko
+  - bạn cho tôi hỏi [f-tech](work_unit) có phải là công ty gia công không
+  - bạn cho mình hỏi [f tech](work_unit) có phải là công ty gia công ko
+  - cho mình hỏi công ty làm sản phẩm hay outsource?
+  - m cho tôi hỏi [ftech](work_unit) có phải là công ty gia công ko
+  - '[f-tech](work_unit) là công ty gia công phần mềm hả m'

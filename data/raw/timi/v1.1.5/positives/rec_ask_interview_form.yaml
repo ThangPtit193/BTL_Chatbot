@@ -1,0 +1,407 @@
+positives:
+- intent: rec_ask_interview_form
+  examples:
+  - tớ ở xa thì phỏng vấn ra sao nhể
+  - tớ xin info về hình thức phỏng vấn của công ty với
+  - ' [f-tech](work_unit) phỏng vấn qua skype hay offline hả?'
+  - tôi có bắt buộc phải tới công ty phỏng vấn ko
+  - mình muốn interview qua zoom đc ko
+  - tớ có thể phỏng vấn tại nhà ko
+  - phỏng vấn vào công ty bằng loại hình nào
+  - mình phỏng vấn meet ạ
+  - ở nhà có tham gia interview đc ko
+  - bên bạn có cần phải phỏng vấn trực tiếp tại văn phòng không
+  - phỏng vấn tại nhà là hình thức phỏng vấn phổ biến của công ty hả
+  - cuối tháng này tớ mới từ Pháp về VN, tôi pass sơ yếu lý lịch rồi nhưng không biết
+    bên [f tech](work_unit) có cho phỏng vấn qua google meet không í?
+  - văn phòng công ty [f tech](work_unit) ở [HD](location) phỏng vấn qua google meet
+    hay offline
+  - cho xin thông tin về cách thức phỏng vấn của [f-tech](work_unit)
+  - công ty [f tech](work_unit) phỏng vấn offline à?
+  - mình đang ở quê, xin được phỏng vấn onl được ko,đậu thì mới ra cho đỡ tốn tiền
+    đi lại
+  - có cần lên công ty mới phỏng vấn được ko
+  - tôi muốn phỏng vấn qua google meet được không
+  - phỏng vấn qua zoom hay online thế
+  - hình thức phỏng vấn bên mình như nào
+  - '[f-tech](work_unit) thường xuyên phỏng vấn bằng cách thức nào vậy'
+  - công ty có cho phép thí sinh phỏng vấn qua mạng ko
+  - hiện tôi đang ở Đồng Nai, tớ có cần bay sang các chi nhánh của [f-tech](work_unit)
+    để phỏng vấn không
+  - mình ở xa thì phỏng vấn ra sao
+  - tôi xin thông tin về hình thức phỏng vấn của công ty với
+  - ' phỏng vấn qua zalo hay offline vậy hả?'
+  - tớ có bắt buộc phải tới công ty phỏng vấn ko
+  - mình muốn phỏng vấn qua zalo được ko
+  - mình có thể phỏng vấn tại nhà ko
+  - phỏng vấn vào công ty bằng cách nào
+  - tớ phỏng vấn online ạ
+  - ở nhà có tham gia interview được không
+  - phỏng vấn online là hình thức phỏng vấn phổ biến của công ty hử
+  - cuối tháng này tôi mới từ Pháp về VN, tớ pass sơ yếu lý lịch rồi nhưng không biết
+    bên [ftech](work_unit) có cho phỏng vấn qua skype không í?
+  - văn phòng ở [quy nhơn](location) phỏng vấn meet hay offline
+  - cho xin thông tin về hình thức phỏng vấn của công ty đi
+  - ' phỏng vấn offline à?'
+  - tớ đang ở quê, xin được phỏng vấn onl được ko,đậu thì mới ra cho đỡ tốn tiền đi
+    lại
+  - có cần lên mới phỏng vấn đc không
+  - mình muốn phỏng vấn qua skype được không
+  - phỏng vấn meet hay qua skype thế
+  - hình thức phỏng vấn của công ty ra sao
+  - '[f-tech](work_unit) hay phỏng vấn bằng cách thức nào vậy'
+  - công ty [ftech](work_unit) có cho ứng viên xin việc phỏng vấn qua zoom ko
+  - hiện mình đang ở Đồng Nai, mình có cần bay sang các chi nhánh của [f tech](work_unit)
+    để phỏng vấn không
+  - tôi ở xa thì phỏng vấn ra sao nhỉ
+  - mình xin info về hình thức phỏng vấn của công ty với
+  - ' [f tech](work_unit) phỏng vấn qua skype hay offline hả?'
+  - mình có bắt buộc phải tới công ty phỏng vấn ko
+  - tôi muốn interview qua zoom đc không
+  - tôi có thể phỏng vấn tại nhà ko
+  - phỏng vấn vào [f tech](work_unit) bằng cách nào
+  - tôi phỏng vấn qua zalo ạ
+  - ở nhà có interview được ko
+  - phỏng vấn offline là hình thức phỏng vấn phổ biến của công ty hả
+  - cuối tháng này tớ mới từ Pháp về VN, tớ pass curriculum vitae rồi nhưng không
+    biết bên [ftech](work_unit) có cho phỏng vấn qua mạng không í?
+  - văn phòng công ty [ftech](work_unit) ở [sa đéc](location) phỏng vấn qua zoom hay
+    offline vậy hả
+  - cho xin thông tin về hình thức phỏng vấn của [f-tech](work_unit) đi
+  - ' [f tech](work_unit) phỏng vấn offline à?'
+  - tôi đang ở quê, xin được phỏng vấn onl được ko,đậu thì mới ra cho đỡ tốn tiền
+    đi lại
+  - có cần lên công ty mới phỏng vấn được không
+  - tớ muốn phỏng vấn qua zalo được không
+  - phỏng vấn meet hay qua mạng thế
+  - cách thức phỏng vấn của công ty như nào
+  - công ty hay phỏng vấn bằng hình thức nào vậy
+  - công ty có cho phép candidate phỏng vấn qua google meet ko
+  - hiện mình đang ở Đồng Nai, tớ có cần bay sang các chi nhánh của [f tech](work_unit)
+    để phỏng vấn không
+  - tớ ở xa thì phỏng vấn ra sao
+  - tôi xin info về hình thức phỏng vấn của công ty với
+  - ' [ftech](work_unit) phỏng vấn meet hay offline vậy hả?'
+  - mình muốn interview qua google meet đc ko
+  - phỏng vấn vào công ty bằng hình thức nào
+  - tôi phỏng vấn qua zoom ạ
+  - ở nhà có tham gia phỏng vấn đc ko
+  - phỏng vấn online là hình thức phỏng vấn phổ biến của công ty hả
+  - cuối tháng này tôi mới từ Pháp về VN, mình pass curriculum vitae rồi nhưng không
+    biết bên [f tech](work_unit) có cho phỏng vấn trên mạng không í?
+  - chi nhánh [f tech](work_unit) ở [đà nẵng](location) phỏng vấn trên mạng hay offline
+  - cho xin thông tin về cách thức phỏng vấn của công ty
+  - công ty phỏng vấn offline à?
+  - có cần lên mới phỏng vấn đc ko
+  - tôi muốn phỏng vấn meet được không
+  - phỏng vấn qua skype hay qua mạng thế
+  - cách thức phỏng vấn bên mình như nào
+  - công ty hay phỏng vấn bằng cách thức nào
+  - công ty có cho thí sinh phỏng vấn qua google meet không
+  - hiện mình đang ở Đồng Nai, mình có cần bay sang các chi nhánh của [f-tech](work_unit)
+    để phỏng vấn không
+  - mình ở xa thì phỏng vấn ra sao ha
+  - tớ xin thông tin về hình thức phỏng vấn của công ty với
+  - ' [ftech](work_unit) phỏng vấn online hay offline vậy?'
+  - tôi muốn phỏng vấn qua zalo đc không
+  - phỏng vấn vào [ftech](work_unit) bằng cách nào
+  - tớ phỏng vấn trên mạng ạ
+  - ở nhà có interview đc không
+  - phỏng vấn tại nhà là hình thức phỏng vấn phổ biến của [f tech](work_unit) hử
+  - cuối tháng này tôi mới từ Pháp về VN, tớ pass hồ sơ rồi nhưng không biết bên [f-tech](work_unit)
+    có cho phỏng vấn qua mạng không í?
+  - trụ sở ở [QN](location) phỏng vấn meet hay offline
+  - cho xin thông tin về cách thức phỏng vấn ứng viên của [f-tech](work_unit)
+  - công ty [f-tech](work_unit) phỏng vấn offline à?
+  - có cần lên công ty mới phỏng vấn đc không
+  - tớ muốn phỏng vấn qua google meet được không
+  - phỏng vấn qua google meet hay qua google meet thế
+  - cách thức phỏng vấn của công ty ra sao
+  - '[f tech](work_unit) hay phỏng vấn bằng cách thức nào vậy'
+  - ' có cho phép ứng viên phỏng vấn qua google meet ko'
+  - hiện tớ đang ở Đồng Nai, tớ có cần bay sang các chi nhánh của [ftech](work_unit)
+    để phỏng vấn không
+  - tớ ở xa thì phỏng vấn ra sao ha
+  - tớ xin information về hình thức phỏng vấn của công ty với
+  - công ty [f tech](work_unit) phỏng vấn qua skype hay offline vậy hả?
+  - mình muốn phỏng vấn online đc ko
+  - phỏng vấn vào [f-tech](work_unit) bằng loại hình nào
+  - tớ phỏng vấn qua zoom ạ
+  - ở nhà có interview đc ko
+  - phỏng vấn offline là hình thức phỏng vấn phổ biến của [f tech](work_unit) hả
+  - cuối tháng này mình mới từ Pháp về VN, mình pass resume rồi nhưng không biết bên
+    [ftech](work_unit) có cho phỏng vấn online không í?
+  - trụ sở [f-tech](work_unit) ở [miền nam](location) phỏng vấn qua skype hay offline
+  - cho xin thông tin về hình thức phỏng vấn ứng viên của [f tech](work_unit)
+  - ' [ftech](work_unit) phỏng vấn offline à?'
+  - có cần lên mới phỏng vấn được ko
+  - tôi muốn phỏng vấn qua mạng được không
+  - phỏng vấn qua zoom hay meet thế
+  - hình thức phỏng vấn của công ty như nào
+  - '[f tech](work_unit) hay phỏng vấn bằng hình thức nào vậy'
+  - ' có cho phép candidate phỏng vấn trên mạng không'
+  - hiện tớ đang ở Đồng Nai, tớ có cần bay sang các chi nhánh của [f-tech](work_unit)
+    để phỏng vấn không
+  - tôi ở xa thì phỏng vấn ra sao
+  - tôi xin information về hình thức phỏng vấn của công ty với
+  - ' [f-tech](work_unit) phỏng vấn qua google meet hay offline vậy?'
+  - tôi muốn interview qua zoom được ko
+  - phỏng vấn vào [ftech](work_unit) bằng loại hình nào
+  - tớ phỏng vấn meet ạ
+  - ở nhà có tham gia phỏng vấn đc không
+  - phỏng vấn online là hình thức phỏng vấn phổ biến của [ftech](work_unit) hử
+  - cuối tháng này tôi mới từ Pháp về VN, mình pass resume rồi nhưng không biết bên
+    [f tech](work_unit) có cho phỏng vấn qua mạng không í?
+  - văn phòng [f-tech](work_unit) ở [hà nội](location) phỏng vấn qua skype hay offline
+    hả
+  - cho xin thông tin về hình thức phỏng vấn ứng viên của [f-tech](work_unit)
+  - ' [f-tech](work_unit) phỏng vấn offline à?'
+  - có cần lên mới phỏng vấn được không
+  - tớ muốn phỏng vấn trên mạng được không
+  - phỏng vấn meet hay qua zoom thế
+  - cách thức phỏng vấn bên mình ra sao
+  - công ty thường xuyên phỏng vấn bằng hình thức nào
+  - công ty có cho phép người xin việc phỏng vấn meet ko
+  - hiện tôi đang ở Đồng Nai, tôi có cần bay sang các chi nhánh của [f tech](work_unit)
+    để phỏng vấn không
+  - tôi ở xa thì phỏng vấn ra sao nhể
+  - mình xin information về hình thức phỏng vấn của công ty với
+  - ' phỏng vấn qua google meet hay offline hả?'
+  - tôi muốn interview online được không
+  - phỏng vấn vào [f-tech](work_unit) bằng hình thức nào
+  - tớ phỏng vấn qua zalo ạ
+  - ở nhà có interview được không
+  - phỏng vấn trực tiếp là hình thức phỏng vấn phổ biến của [ftech](work_unit) hả
+  - cuối tháng này tớ mới từ Pháp về VN, tớ pass resume rồi nhưng không biết bên [f-tech](work_unit)
+    có cho phỏng vấn meet không í?
+  - chi nhánh công ty [f-tech](work_unit) ở [hcm](location) phỏng vấn qua skype hay
+    offline vậy
+  - cho xin thông tin về hình thức phỏng vấn của công ty
+  - có cần lên công ty mới phỏng vấn đc ko
+  - tôi muốn phỏng vấn qua zoom được không
+  - phỏng vấn qua zoom hay trên mạng thế
+  - hình thức phỏng vấn bên mình ra sao
+  - công ty hay phỏng vấn bằng cách thức nào vậy
+  - công ty có cho phép ứng viên xin việc phỏng vấn qua zalo không
+  - hiện tôi đang ở Đồng Nai, mình có cần bay sang các chi nhánh của [f-tech](work_unit)
+    để phỏng vấn không
+  - tôi ở xa thì phỏng vấn ra sao ha
+  - mình xin thông tin về hình thức phỏng vấn của công ty với
+  - ' phỏng vấn qua zoom hay offline hả?'
+  - tôi muốn interview qua zalo được không
+  - phỏng vấn vào [f-tech](work_unit) bằng cách nào
+  - mình phỏng vấn qua zalo ạ
+  - ở nhà có tham gia interview được ko
+  - phỏng vấn offline là hình thức phỏng vấn phổ biến của công ty hử
+  - cuối tháng này tôi mới từ Pháp về VN, tớ pass curriculum vitae rồi nhưng không
+    biết bên [f-tech](work_unit) có cho phỏng vấn qua zoom không í?
+  - cơ sở công ty ở [nha trang](location) phỏng vấn qua zalo hay offline vậy hả
+  - cho xin thông tin về cách thức phỏng vấn của công ty đi
+  - công ty [ftech](work_unit) phỏng vấn offline à?
+  - tớ muốn phỏng vấn online được không
+  - phỏng vấn meet hay meet thế
+  - công ty thường xuyên phỏng vấn bằng hình thức nào vậy
+  - ' [f tech](work_unit) có cho phép candidate phỏng vấn meet ko'
+  - hiện tớ đang ở Đồng Nai, tớ có cần bay sang các chi nhánh của [f tech](work_unit)
+    để phỏng vấn không
+  - tớ ở xa thì phỏng vấn ra sao nhỉ
+  - ' [f tech](work_unit) phỏng vấn qua zoom hay offline hả?'
+  - tôi muốn phỏng vấn meet được ko
+  - phỏng vấn vào [f tech](work_unit) bằng loại hình nào
+  - tớ phỏng vấn qua google meet ạ
+  - ở nhà có phỏng vấn đc ko
+  - phỏng vấn online là hình thức phỏng vấn phổ biến của [f tech](work_unit) hả
+  - cuối tháng này mình mới từ Pháp về VN, mình pass resume rồi nhưng không biết bên
+    [f tech](work_unit) có cho phỏng vấn qua skype không í?
+  - trụ sở ở [đn](location) phỏng vấn qua skype hay offline vậy
+  - cho xin thông tin về hình thức phỏng vấn ứng viên của công ty đi
+  - tớ muốn phỏng vấn qua skype được không
+  - phỏng vấn trên mạng hay qua zoom thế
+  - '[f tech](work_unit) thường xuyên phỏng vấn bằng hình thức nào vậy'
+  - công ty [f tech](work_unit) có cho phép candidate phỏng vấn qua mạng ko
+  - hiện tớ đang ở Đồng Nai, mình có cần bay sang các chi nhánh của [f-tech](work_unit)
+    để phỏng vấn không
+  - mình ở xa thì phỏng vấn ra sao nhể
+  - công ty phỏng vấn qua mạng hay offline vậy?
+  - tôi muốn phỏng vấn qua zalo được ko
+  - phỏng vấn vào [f tech](work_unit) bằng hình thức nào
+  - tôi phỏng vấn trên mạng ạ
+  - ở nhà có tham gia phỏng vấn được không
+  - phỏng vấn trực tiếp là hình thức phỏng vấn phổ biến của công ty hả
+  - cuối tháng này mình mới từ Pháp về VN, tớ pass hồ sơ rồi nhưng không biết bên
+    [f tech](work_unit) có cho phỏng vấn qua skype không í?
+  - trụ sở [f-tech](work_unit) ở [hà nội](location) phỏng vấn qua mạng hay offline
+  - cho xin thông tin về hình thức phỏng vấn ứng viên của công ty
+  - mình muốn phỏng vấn qua google meet được không
+  - phỏng vấn online hay trên mạng thế
+  - '[ftech](work_unit) hay phỏng vấn bằng cách thức nào'
+  - ' có cho phép ứng viên xin việc phỏng vấn qua skype không'
+  - hiện tôi đang ở Đồng Nai, tớ có cần bay sang các chi nhánh của [ftech](work_unit)
+    để phỏng vấn không
+  - mình ở xa thì phỏng vấn ra sao nhỉ
+  - ' [f-tech](work_unit) phỏng vấn qua mạng hay offline vậy?'
+  - mình muốn interview trên mạng được ko
+  - mình phỏng vấn qua skype ạ
+  - ở nhà có phỏng vấn được ko
+  - phỏng vấn trực tiếp là hình thức phỏng vấn phổ biến của công ty hử
+  - cuối tháng này tớ mới từ Pháp về VN, tôi pass resume rồi nhưng không biết bên
+    [f tech](work_unit) có cho phỏng vấn meet không í?
+  - cơ sở ở [hn](location) phỏng vấn meet hay offline vậy
+  - cho xin thông tin về cách thức phỏng vấn ứng viên của công ty
+  - tôi muốn phỏng vấn trên mạng được không
+  - phỏng vấn online hay qua mạng thế
+  - công ty hay phỏng vấn bằng hình thức nào
+  - công ty có cho thí sinh phỏng vấn qua skype không
+  - hiện mình đang ở Đồng Nai, mình có cần bay sang các chi nhánh của [ftech](work_unit)
+    để phỏng vấn không
+  - công ty phỏng vấn trên mạng hay offline vậy hả?
+  - tôi muốn interview qua mạng đc ko
+  - tôi phỏng vấn qua mạng ạ
+  - ở nhà có tham gia phỏng vấn được ko
+  - phỏng vấn online là hình thức phỏng vấn phổ biến của [ftech](work_unit) hả
+  - cuối tháng này mình mới từ Pháp về VN, tớ pass CV rồi nhưng không biết bên [f
+    tech](work_unit) có cho phỏng vấn trên mạng không í?
+  - cơ sở ở [hà nội](location) phỏng vấn meet hay offline vậy
+  - cho xin thông tin về cách thức phỏng vấn của [f tech](work_unit) đi
+  - tớ muốn phỏng vấn qua mạng được không
+  - phỏng vấn qua mạng hay qua zoom thế
+  - '[ftech](work_unit) thường xuyên phỏng vấn bằng hình thức nào'
+  - ' có cho phép ứng viên xin việc phỏng vấn qua zoom không'
+  - hiện mình đang ở Đồng Nai, tớ có cần bay sang các chi nhánh của [f-tech](work_unit)
+    để phỏng vấn không
+  - công ty phỏng vấn qua zoom hay offline hả?
+  - mình muốn phỏng vấn qua google meet đc ko
+  - phỏng vấn vào [ftech](work_unit) bằng hình thức nào
+  - mình phỏng vấn qua google meet ạ
+  - ở nhà có tham gia interview đc không
+  - phỏng vấn tại nhà là hình thức phỏng vấn phổ biến của [ftech](work_unit) hử
+  - cuối tháng này mình mới từ Pháp về VN, tớ pass sơ yếu lý lịch rồi nhưng không
+    biết bên [ftech](work_unit) có cho phỏng vấn qua zalo không í?
+  - chi nhánh ở [ninh thuận](location) phỏng vấn trên mạng hay offline vậy hả
+  - cho xin thông tin về hình thức phỏng vấn của [ftech](work_unit)
+  - mình muốn phỏng vấn qua mạng được không
+  - phỏng vấn trên mạng hay qua google meet thế
+  - '[f-tech](work_unit) hay phỏng vấn bằng cách thức nào'
+  - ' [f-tech](work_unit) có cho thí sinh phỏng vấn online không'
+  - hiện tôi đang ở Đồng Nai, tớ có cần bay sang các chi nhánh của [f tech](work_unit)
+    để phỏng vấn không
+  - công ty phỏng vấn trên mạng hay offline hả?
+  - mình muốn interview qua skype được ko
+  - mình phỏng vấn online ạ
+  - ở nhà có phỏng vấn đc không
+  - phỏng vấn tại nhà là hình thức phỏng vấn phổ biến của [f-tech](work_unit) hả
+  - cuối tháng này tôi mới từ Pháp về VN, tớ pass curriculum vitae rồi nhưng không
+    biết bên [f-tech](work_unit) có cho phỏng vấn qua mạng không í?
+  - văn phòng ở [HG](location) phỏng vấn meet hay offline vậy
+  - cho xin thông tin về cách thức phỏng vấn của [f tech](work_unit)
+  - tôi muốn phỏng vấn qua skype được không
+  - phỏng vấn online hay qua skype thế
+  - '[f-tech](work_unit) thường xuyên phỏng vấn bằng hình thức nào vậy'
+  - ' có cho ứng viên phỏng vấn trên mạng không'
+  - hiện tớ đang ở Đồng Nai, tôi có cần bay sang các chi nhánh của [ftech](work_unit)
+    để phỏng vấn không
+  - ' phỏng vấn qua google meet hay offline vậy?'
+  - tôi muốn interview meet được không
+  - tôi phỏng vấn meet ạ
+  - ở nhà có phỏng vấn được không
+  - phỏng vấn offline là hình thức phỏng vấn phổ biến của [f-tech](work_unit) hử
+  - cuối tháng này tớ mới từ Pháp về VN, mình pass hồ sơ rồi nhưng không biết bên
+    [ftech](work_unit) có cho phỏng vấn qua mạng không í?
+  - chi nhánh công ty [f tech](work_unit) ở [bến tre](location) phỏng vấn qua google
+    meet hay offline
+  - cho xin thông tin về cách thức phỏng vấn của [f-tech](work_unit) đi
+  - tớ muốn phỏng vấn qua zoom được không
+  - phỏng vấn qua skype hay trên mạng thế
+  - '[ftech](work_unit) thường xuyên phỏng vấn bằng cách thức nào vậy'
+  - ' [f tech](work_unit) có cho phép ứng viên xin việc phỏng vấn trên mạng không'
+  - hiện tớ đang ở Đồng Nai, mình có cần bay sang các chi nhánh của [ftech](work_unit)
+    để phỏng vấn không
+  - ' [f tech](work_unit) phỏng vấn qua mạng hay offline vậy?'
+  - tôi muốn phỏng vấn qua mạng được ko
+  - mình phỏng vấn qua zoom ạ
+  - phỏng vấn online là hình thức phỏng vấn phổ biến của [f-tech](work_unit) hử
+  - cuối tháng này tớ mới từ Pháp về VN, tớ pass resume rồi nhưng không biết bên [ftech](work_unit)
+    có cho phỏng vấn qua zalo không í?
+  - cơ sở [f-tech](work_unit) ở [nam trung bộ](location) phỏng vấn qua google meet
+    hay offline
+  - cho xin thông tin về cách thức phỏng vấn ứng viên của công ty đi
+  - mình muốn phỏng vấn meet được không
+  - phỏng vấn qua zoom hay qua zalo thế
+  - '[f-tech](work_unit) thường xuyên phỏng vấn bằng cách thức nào'
+  - ' [f tech](work_unit) có cho người xin việc phỏng vấn trên mạng không'
+  - hiện mình đang ở Đồng Nai, tớ có cần bay sang các chi nhánh của [ftech](work_unit)
+    để phỏng vấn không
+  - công ty phỏng vấn qua google meet hay offline vậy?
+  - mình muốn phỏng vấn qua mạng được ko
+  - tôi phỏng vấn qua google meet ạ
+  - phỏng vấn trực tiếp là hình thức phỏng vấn phổ biến của [ftech](work_unit) hử
+  - cuối tháng này tớ mới từ Pháp về VN, tớ pass sơ yếu lý lịch rồi nhưng không biết
+    bên [f-tech](work_unit) có cho phỏng vấn qua zalo không í?
+  - chi nhánh ở [đất Việt](location) phỏng vấn trên mạng hay offline vậy
+  - cho xin thông tin về cách thức phỏng vấn ứng viên của [f tech](work_unit) đi
+  - mình muốn phỏng vấn qua zoom được không
+  - phỏng vấn qua zalo hay qua zoom thế
+  - '[f tech](work_unit) hay phỏng vấn bằng hình thức nào'
+  - ' có cho ứng viên xin việc phỏng vấn online ko'
+  - hiện tôi đang ở Đồng Nai, tôi có cần bay sang các chi nhánh của [f-tech](work_unit)
+    để phỏng vấn không
+  - ' [ftech](work_unit) phỏng vấn qua google meet hay offline hả?'
+  - mình muốn interview trên mạng đc không
+  - mình phỏng vấn qua mạng ạ
+  - phỏng vấn offline là hình thức phỏng vấn phổ biến của [ftech](work_unit) hử
+  - cuối tháng này tôi mới từ Pháp về VN, tớ pass sơ yếu lý lịch rồi nhưng không biết
+    bên [f-tech](work_unit) có cho phỏng vấn meet không í?
+  - cơ sở công ty [ftech](work_unit) ở [hà nội](location) phỏng vấn qua skype hay
+    offline vậy
+  - cho xin thông tin về hình thức phỏng vấn của [f tech](work_unit)
+  - tớ muốn phỏng vấn meet được không
+  - phỏng vấn qua skype hay meet thế
+  - công ty thường xuyên phỏng vấn bằng cách thức nào vậy
+  - công ty có cho candidate phỏng vấn qua google meet ko
+  - hiện mình đang ở Đồng Nai, tôi có cần bay sang các chi nhánh của [f-tech](work_unit)
+    để phỏng vấn không
+  - ' [f tech](work_unit) phỏng vấn online hay offline vậy hả?'
+  - mình muốn phỏng vấn qua skype đc không
+  - tôi phỏng vấn qua skype ạ
+  - phỏng vấn offline là hình thức phỏng vấn phổ biến của [ftech](work_unit) hả
+  - cuối tháng này tớ mới từ Pháp về VN, tớ pass resume rồi nhưng không biết bên [f
+    tech](work_unit) có cho phỏng vấn qua skype không í?
+  - trụ sở [f tech](work_unit) ở [LS](location) phỏng vấn qua zoom hay offline hả
+  - cho xin thông tin về cách thức phỏng vấn ứng viên của [ftech](work_unit)
+  - tôi muốn phỏng vấn online được không
+  - phỏng vấn qua zalo hay qua google meet thế
+  - '[ftech](work_unit) thường xuyên phỏng vấn bằng hình thức nào vậy'
+  - ' có cho ứng viên phỏng vấn qua zoom ko'
+  - hiện tớ đang ở Đồng Nai, tôi có cần bay sang các chi nhánh của [f tech](work_unit)
+    để phỏng vấn không
+  - ' [ftech](work_unit) phỏng vấn trên mạng hay offline vậy hả?'
+  - tôi muốn interview trên mạng đc không
+  - tớ phỏng vấn qua skype ạ
+  - phỏng vấn offline là hình thức phỏng vấn phổ biến của [f tech](work_unit) hử
+  - cuối tháng này mình mới từ Pháp về VN, tớ pass sơ yếu lý lịch rồi nhưng không
+    biết bên [f-tech](work_unit) có cho phỏng vấn qua skype không í?
+  - trụ sở công ty ở [đn](location) phỏng vấn qua zalo hay offline vậy
+  - cho xin thông tin về cách thức phỏng vấn của [ftech](work_unit) đi
+  - tôi muốn phỏng vấn qua zalo được không
+  - phỏng vấn qua mạng hay qua skype thế
+  - '[ftech](work_unit) hay phỏng vấn bằng hình thức nào vậy'
+  - ' [ftech](work_unit) có cho ứng viên xin việc phỏng vấn qua zoom không'
+  - hiện mình đang ở Đồng Nai, tôi có cần bay sang các chi nhánh của [ftech](work_unit)
+    để phỏng vấn không
+  - công ty phỏng vấn qua zoom hay offline vậy hả?
+  - mình muốn phỏng vấn qua mạng đc ko
+  - tớ phỏng vấn qua mạng ạ
+  - phỏng vấn trực tiếp là hình thức phỏng vấn phổ biến của [f tech](work_unit) hử
+  - cuối tháng này tôi mới từ Pháp về VN, tôi pass resume rồi nhưng không biết bên
+    [f tech](work_unit) có cho phỏng vấn qua zalo không í?
+  - trụ sở công ty ở [HY](location) phỏng vấn qua mạng hay offline vậy hả
+  - cho xin thông tin về hình thức phỏng vấn ứng viên của [f-tech](work_unit) đi
+  - mình muốn phỏng vấn trên mạng được không
+  - phỏng vấn qua skype hay qua skype thế
+  - công ty thường xuyên phỏng vấn bằng cách thức nào
+  - công ty [f tech](work_unit) có cho người xin việc phỏng vấn online không
+  - hiện mình đang ở Đồng Nai, tôi có cần bay sang các chi nhánh của [f tech](work_unit)
+    để phỏng vấn không
+  - công ty [f-tech](work_unit) phỏng vấn meet hay offline vậy?
+  - tôi muốn interview qua zoom được không
+  - mình phỏng vấn trên mạng ạ

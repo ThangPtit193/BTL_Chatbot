@@ -1,0 +1,496 @@
+positives:
+- intent: rule_time_off_ask_salary
+  examples:
+  - cho tớ hỏi nghỉ phép thì có được nhận lương không bạn
+  - '[be develop](position) [thực tập sinh](level_position) nghỉ phép thì vẫn nhận
+    đủ lương ha'
+  - tôi lấy chồng thì công ty vẫn tính lương ngày đó cho mình chứ
+  - nếu nghỉ phép thì công ty vẫn trả lương chính xác ko mầy
+  - Nghỉ phép có được lương không
+  - '[ctv](level_position) nghỉ phép thì công ty vẫn trả lương ha'
+  - '[thử việc](level_position) xin off để cưới chồng thì có được nhận đủ lương không
+    nhể mày'
+  - Nghỉ phép có được hưởng lương không
+  - '[full time](level_position) cưới chồng thì công ty vẫn tính lương ngày hả chứ'
+  - ' nghỉ phép thì có được nhận lương ko bạn'
+  - tớ muốn hỏi nếu họ hàng của nhận sự mất thì họ có được hưởng lương ko
+  - bố mình mất thì tớ có được nghỉ hưởng lương không
+  - tôi nghỉ phép thì công ty vẫn trả lương nhể
+  - cho tớ hỏi công ty có trả lương đủ khi [3d prod](position) off không nhỉ
+  - mình muốn biết nếu [senior](level_position) xin off phép thì công ty có trả lương
+    đầy đủ không nhỉ
+  - con của [thử việc](level_position) mất thì họ có được nghỉ hưởng lương không
+  - nếu Nghỉ phép thì vẫn được lương chứ
+  - cho tôi hỏi công ty có trả lương đủ khi mình off không nhỉ
+  - 1 tháng [fresher](level_position) nghỉ một tuần thì có được nhận full lương không
+    mầy
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chuẩn chỉ ko mày
+  - tôi muốn hỏi nếu con cái của thành viên [junior](level_position) mất thì họ có
+    được hưởng lương không ha timi
+  - tớ xin off để cưới chồng thì có được nhận đủ lương ko
+  - tớ nghỉ phép thì vẫn nhận đủ lương ha
+  - 1 tháng nghỉ một lần thì có được nhận đủ lương không timi
+  - tớ muốn biết nếu tôi nghỉ phép thì công ty có trả lương đủ cho tớ không nhỉ
+  - Có được lương nếu nghỉ phép không
+  - Nghỉ phép có lương ko
+  - '[fresher](level_position) nghỉ phép thì có được hưởng lương không hả hì'
+  - cho mình hỏi nghỉ phép thì có được nhận lương ko timi
+  - '[computer vision engineer](position) [trainee](level_position) nghỉ phép thì
+    vẫn nhận đủ lương ha'
+  - tớ kết hôn thì công ty vẫn tính lương ngày thế cho tớ chứ
+  - nếu nghỉ phép thì công ty vẫn trả lương đúng ko
+  - Nghỉ phép có được lương ko
+  - '[thử việc](level_position) nghỉ phép thì công ty vẫn trả lương nhỉ'
+  - '[junior](level_position) xin off để cưới chồng thì có được nhận đủ lương ko ha
+    em'
+  - Nghỉ phép có được hưởng lương ko
+  - '[fresher](level_position) lấy vợ thì công ty vẫn tính lương ngày vậy chứ'
+  - nếu nghỉ phép thì có được nhận lương ko
+  - tôi muốn hỏi nếu bố mẹ của thành viên mất thì họ có được hưởng lương không
+  - mẹ mình mất thì mình có được nghỉ hưởng lương ko
+  - tớ nghỉ phép thì công ty vẫn trả lương nhỉ
+  - cho mình hỏi công ty có trả lương đủ khi [react developer](position) off không
+    nhể
+  - mình muốn biết nếu [junior](level_position) off phép thì công ty có trả lương
+    đủ ko nhỉ
+  - bố mẹ của [full time](level_position) mất thì họ có được nghỉ hưởng lương ko
+  - ' Nghỉ phép thì vẫn được lương chứ bạn'
+  - cho tớ hỏi công ty có trả lương đủ khi tôi off ko nhể
+  - một tháng [full time](level_position) nghỉ một lần thì có được nhận full lương
+    không bot
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chính xác không cậu
+  - tớ muốn hỏi nếu dòng họ của nhân viên [full-time](level_position) mất thì họ có
+    được hưởng lương ko ha bot
+  - tớ xin nghỉ để cưới chồng thì có được nhận đủ lương không
+  - tôi nghỉ phép thì vẫn nhận đủ lương ha
+  - một tháng nghỉ 1 lần thì có được nhận full lương không m
+  - tớ muốn hỏi nếu mình xin nghỉ phép thì công ty có trả lương đầy đủ cho tớ ko ha
+  - Có được lương nếu nghỉ phép ko
+  - Nghỉ phép có lương không
+  - '[fresher](level_position) nghỉ phép thì có được hưởng lương không vậy hả hì'
+  - cho tớ hỏi nếu nghỉ phép thì có được nhận lương không
+  - '[pentesters](position) [senior](level_position) nghỉ phép thì vẫn nhận đủ lương
+    nhỉ'
+  - tớ lấy vợ thì công ty vẫn tính lương ngày thế cho tớ chứ
+  - nếu nghỉ phép thì công ty vẫn trả lương chuẩn ko
+  - '[fulltime](level_position) nghỉ phép thì công ty vẫn trả lương nhỉ'
+  - '[pre-senior](level_position) xin nghỉ để lấy chồng thì có được nhận đủ lương
+    ko nhỉ cậu'
+  - '[junior](level_position) kết hôn thì công ty vẫn tính lương ngày hả chứ'
+  - nếu nghỉ phép thì có được nhận lương không
+  - tôi muốn hỏi nếu má của người mất thì họ có được hưởng lương ko
+  - con cái tôi mất thì mình có được nghỉ hưởng lương ko
+  - mình nghỉ phép thì công ty vẫn trả lương nhỉ
+  - cho mình hỏi công ty có trả lương đủ khi [game 3d products](position) nghỉ phép
+    không nhỉ
+  - tớ muốn biết nếu [fulltime](level_position) xin nghỉ phép thì công ty có trả lương
+    đủ ko nhể
+  - chồng của [full time](level_position) mất thì họ có được nghỉ hưởng lương không
+  - ' Nghỉ phép thì vẫn được lương chứ bot'
+  - cho tớ hỏi công ty có trả lương đủ khi tớ off ko nhể
+  - một tháng [thử việc](level_position) nghỉ một ngày thì có được nhận full lương
+    không timi
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chính xác không
+  - tớ muốn hỏi nếu ba của nhân viên [pre-senior](level_position) mất thì họ có được
+    hưởng lương ko ha bạn
+  - tớ xin off để cưới vợ thì có được nhận đủ lương ko
+  - tôi nghỉ phép thì vẫn nhận đủ lương nhỉ
+  - một tháng nghỉ 1 ngày thì có được nhận đủ lương ko bot
+  - tớ muốn hỏi nếu tớ xin nghỉ phép thì công ty có trả lương đủ cho tớ ko ha
+  - '[senior](level_position) nghỉ phép thì có được hưởng lương không vậy hì'
+  - cho tớ hỏi nghỉ phép thì có được nhận lương ko
+  - '[game 2d product](position) [junior](level_position) nghỉ phép thì vẫn nhận đủ
+    lương ha'
+  - mình lấy vợ thì công ty vẫn tính lương ngày thế cho mình chứ
+  - ' nghỉ phép thì công ty vẫn trả lương chuẩn không timi'
+  - '[junior](level_position) nghỉ phép thì công ty vẫn trả lương nhỉ'
+  - '[thử việc](level_position) xin off để kết hôn thì có được nhận đủ lương ko nhỉ
+    cậu'
+  - '[thử việc](level_position) cưới chồng thì công ty vẫn tính lương ngày đấy chứ'
+  - nếu nghỉ phép thì có được nhận lương ko timi
+  - tớ muốn hỏi nếu người thân của nhân viên mất thì họ có được hưởng lương không
+  - vợ chồng tớ mất thì tớ có được nghỉ hưởng lương không
+  - mình nghỉ phép thì công ty vẫn trả lương ha
+  - tớ muốn hỏi công ty có trả lương đủ khi [cv](position) nghỉ phép không nhể
+  - tôi muốn biết nếu [thử việc](level_position) nghỉ phép thì công ty có trả lương
+    đầy đủ không nhể
+  - con cái của [fulltime](level_position) mất thì họ có được nghỉ hưởng lương không
+  - ' Nghỉ phép thì vẫn được lương chứ'
+  - cho tớ hỏi công ty có trả lương đủ khi tôi nghỉ phép không ha
+  - một tháng [thử việc](level_position) nghỉ 1 lần thì có được nhận full lương ko
+    bạn
+  - Nếu mà nghỉ phép thì vẫn được nhận lương đúng ko
+  - tôi muốn hỏi nếu bà con của người [fulltime](level_position) mất thì họ có được
+    hưởng lương không nhể m
+  - tớ xin nghỉ phép để cưới vợ thì có được nhận đủ lương không
+  - tớ nghỉ phép thì vẫn nhận đủ lương nhỉ
+  - 1 tháng nghỉ một lần thì có được nhận full lương không mày
+  - tôi muốn biết nếu tớ xin off phép thì công ty có trả lương đủ cho tớ ko nhể
+  - '[ctv](level_position) nghỉ phép thì có được hưởng lương không vậy á'
+  - cho tôi hỏi nếu nghỉ phép thì có được nhận lương ko
+  - '[ios develop](position) [fulltime](level_position) nghỉ phép thì vẫn nhận đủ
+    lương ha'
+  - mình lấy vợ thì công ty vẫn tính lương ngày hả cho mình chứ
+  - ' nghỉ phép thì công ty vẫn trả lương chuẩn chỉ ko'
+  - '[fresher](level_position) nghỉ phép thì công ty vẫn trả lương nhỉ'
+  - '[senior](level_position) xin off để kết hôn thì có được nhận đủ lương ko nhỉ
+    mầy'
+  - '[internship](level_position) cưới chồng thì công ty vẫn tính lương ngày đó chứ'
+  - ' nghỉ phép thì có được nhận lương ko'
+  - tôi muốn hỏi nếu bố mẹ của người mất thì họ có được hưởng lương ko
+  - chồng tớ mất thì tớ có được nghỉ hưởng lương ko
+  - tôi nghỉ phép thì công ty vẫn trả lương nhỉ
+  - cho tớ hỏi công ty có trả lương đủ khi [cv engineering](position) nghỉ phép ko
+    nhỉ
+  - mình muốn biết nếu [thực tập sinh](level_position) xin nghỉ phép thì công ty có
+    trả lương đầy đủ ko nhể
+  - họ hàng của [senior](level_position) mất thì họ có được nghỉ hưởng lương không
+  - ' Nghỉ phép thì vẫn được lương chứ mày'
+  - tôi muốn hỏi công ty có trả lương đủ khi tớ off ko nhể
+  - 1 tháng [thử việc](level_position) nghỉ một tuần thì có được nhận full lương không
+    mày
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chuẩn ko mầy
+  - tớ muốn hỏi nếu vợ của thành viên [trainee](level_position) mất thì họ có được
+    hưởng lương không nhể cậu
+  - tôi xin nghỉ để cưới vợ thì có được nhận đủ lương ko
+  - mình nghỉ phép thì vẫn nhận đủ lương nhỉ
+  - 1 tháng nghỉ 1 lần thì có được nhận đủ lương ko bot
+  - tớ muốn hỏi nếu mình xin off phép thì công ty có trả lương đủ cho tớ ko ha
+  - '[svtt](level_position) nghỉ phép thì có được hưởng lương ko vậy á'
+  - cho mình hỏi nếu nghỉ phép thì có được nhận lương ko m
+  - '[data scientist](position) [fulltime](level_position) nghỉ phép thì vẫn nhận
+    đủ lương nhỉ'
+  - tớ lấy vợ thì công ty vẫn tính lương ngày đấy cho tôi chứ
+  - nếu nghỉ phép thì công ty vẫn trả lương chính xác ko m
+  - '[fresher](level_position) nghỉ phép thì công ty vẫn trả lương ha'
+  - '[ctv](level_position) xin nghỉ để kết hôn thì có được nhận đủ lương ko ha mày'
+  - '[thử việc](level_position) lấy chồng thì công ty vẫn tính lương ngày đấy chứ'
+  - ' nghỉ phép thì có được nhận lương ko mày'
+  - tôi muốn hỏi nếu dòng họ của nhân viên mất thì họ có được hưởng lương không
+  - ba mẹ tớ mất thì mình có được nghỉ hưởng lương không
+  - tôi nghỉ phép thì công ty vẫn trả lương ha
+  - tôi muốn hỏi công ty có trả lương đủ khi [blockchain dev](position) nghỉ phép
+    không nhỉ
+  - mình muốn hỏi nếu [thử việc](level_position) off phép thì công ty có trả lương
+    đủ không nhể
+  - ba mẹ của [fulltime](level_position) mất thì họ có được nghỉ hưởng lương ko
+  - nếu Nghỉ phép thì vẫn được lương chứ mày
+  - cho mình hỏi công ty có trả lương đủ khi tôi nghỉ phép ko ha
+  - 1 tháng [fresher](level_position) nghỉ 1 lần thì có được nhận đủ lương không m
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chuẩn chỉ ko bạn
+  - tớ muốn hỏi nếu bố mẹ của nhận sự [thực tập sinh](level_position) mất thì họ có
+    được hưởng lương không nhỉ bạn
+  - mình xin nghỉ phép để cưới chồng thì có được nhận đủ lương không
+  - tớ nghỉ phép thì vẫn nhận đủ lương nhể
+  - một tháng nghỉ một tuần thì có được nhận đủ lương không mầy
+  - tớ muốn biết nếu tớ xin nghỉ phép thì công ty có trả lương đầy đủ cho tôi ko nhể
+  - '[junior](level_position) nghỉ phép thì có được hưởng lương không vậy ạ'
+  - cho mình hỏi nếu nghỉ phép thì có được nhận lương ko bạn
+  - '[go lang dev](position) [ctv](level_position) nghỉ phép thì vẫn nhận đủ lương
+    nhỉ'
+  - tớ lấy chồng thì công ty vẫn tính lương ngày vậy cho tôi chứ
+  - nếu nghỉ phép thì công ty vẫn trả lương chính xác ko em
+  - '[full-time](level_position) nghỉ phép thì công ty vẫn trả lương ha'
+  - '[junior](level_position) xin nghỉ phép để cưới vợ thì có được nhận đủ lương không
+    ha bot'
+  - '[full time](level_position) lấy chồng thì công ty vẫn tính lương ngày hả chứ'
+  - ' nghỉ phép thì có được nhận lương không m'
+  - tớ muốn hỏi nếu chồng của thành viên mất thì họ có được hưởng lương không
+  - họ hàng tớ mất thì mình có được nghỉ hưởng lương ko
+  - tớ nghỉ phép thì công ty vẫn trả lương ha
+  - tớ muốn hỏi công ty có trả lương đủ khi [devops](position) nghỉ phép không nhỉ
+  - tớ muốn hỏi nếu [full time](level_position) xin nghỉ phép thì công ty có trả lương
+    đủ không nhỉ
+  - ba của [thử việc](level_position) mất thì họ có được nghỉ hưởng lương ko
+  - ' Nghỉ phép thì vẫn được lương chứ cậu'
+  - cho mình hỏi công ty có trả lương đủ khi mình nghỉ phép không nhỉ
+  - một tháng [thử việc](level_position) nghỉ 1 tuần thì có được nhận full lương không
+    em
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chuẩn chỉ ko
+  - tớ muốn hỏi nếu vợ của nhân viên [fresher](level_position) mất thì họ có được
+    hưởng lương ko ha mày
+  - tớ xin off để cưới chồng thì có được nhận đủ lương không
+  - mình nghỉ phép thì vẫn nhận đủ lương nhể
+  - 1 tháng nghỉ 1 lần thì có được nhận đủ lương không m
+  - tôi muốn biết nếu tôi off phép thì công ty có trả lương đầy đủ cho tôi không nhỉ
+  - '[senior](level_position) nghỉ phép thì có được hưởng lương ko hả hè'
+  - cho mình hỏi nếu nghỉ phép thì có được nhận lương ko
+  - '[game 3d unity dev](position) [full-time](level_position) nghỉ phép thì vẫn nhận
+    đủ lương nhỉ'
+  - tớ cưới chồng thì công ty vẫn tính lương ngày đó cho tôi chứ
+  - ' nghỉ phép thì công ty vẫn trả lương đúng không bot'
+  - '[senior](level_position) nghỉ phép thì công ty vẫn trả lương nhỉ'
+  - '[fulltime](level_position) xin off để cưới chồng thì có được nhận đủ lương ko
+    nhể m'
+  - '[cộng tác viên](level_position) lấy vợ thì công ty vẫn tính lương ngày vậy chứ'
+  - ' nghỉ phép thì có được nhận lương không bot'
+  - tớ muốn hỏi nếu vợ của nhận sự mất thì họ có được hưởng lương không
+  - bố mình mất thì tôi có được nghỉ hưởng lương ko
+  - mình nghỉ phép thì công ty vẫn trả lương nhể
+  - tớ muốn hỏi công ty có trả lương đủ khi [game unity 3d dev](position) off ko nhể
+  - tớ muốn hỏi nếu [junior](level_position) nghỉ phép thì công ty có trả lương đầy
+    đủ ko nhỉ
+  - con của [senior](level_position) mất thì họ có được nghỉ hưởng lương không
+  - nếu Nghỉ phép thì vẫn được lương chứ bot
+  - tớ muốn hỏi công ty có trả lương đủ khi tớ off ko ha
+  - một tháng [fresher](level_position) nghỉ 1 lần thì có được nhận full lương không
+    m
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chính xác ko m
+  - mình muốn hỏi nếu bố mẹ của nhân viên [fresher](level_position) mất thì họ có
+    được hưởng lương ko ha bot
+  - tớ xin nghỉ phép để kết hôn thì có được nhận đủ lương không
+  - mình nghỉ phép thì vẫn nhận đủ lương ha
+  - một tháng nghỉ 1 lần thì có được nhận full lương không cậu
+  - mình muốn hỏi nếu mình xin off phép thì công ty có trả lương đủ cho tớ không ha
+  - '[internship](level_position) nghỉ phép thì có được hưởng lương ko hả hì'
+  - cho tớ hỏi nghỉ phép thì có được nhận lương không cậu
+  - '[DE](position) [intern](level_position) nghỉ phép thì vẫn nhận đủ lương ha'
+  - tớ cưới vợ thì công ty vẫn tính lương ngày đó cho tôi chứ
+  - ' nghỉ phép thì công ty vẫn trả lương chính xác ko mầy'
+  - '[full time](level_position) nghỉ phép thì công ty vẫn trả lương nhể'
+  - '[fulltime](level_position) xin nghỉ để kết hôn thì có được nhận đủ lương ko nhỉ
+    mầy'
+  - '[fresher](level_position) cưới vợ thì công ty vẫn tính lương ngày vậy chứ'
+  - nếu nghỉ phép thì có được nhận lương ko mầy
+  - mình muốn hỏi nếu vợ chồng của thành viên mất thì họ có được hưởng lương không
+  - ba mẹ mình mất thì tớ có được nghỉ hưởng lương không
+  - tớ nghỉ phép thì công ty vẫn trả lương nhể
+  - mình muốn hỏi công ty có trả lương đủ khi [thiết kế nội dung giáo dục](position)
+    nghỉ phép ko nhể
+  - tớ muốn hỏi nếu [fresher](level_position) off phép thì công ty có trả lương đủ
+    ko ha
+  - ba của [fulltime](level_position) mất thì họ có được nghỉ hưởng lương không
+  - ' Nghỉ phép thì vẫn được lương chứ mầy'
+  - cho tớ hỏi công ty có trả lương đủ khi tớ off ko ha
+  - 1 tháng [thử việc](level_position) nghỉ 1 ngày thì có được nhận đủ lương ko cậu
+  - Nếu mà nghỉ phép thì vẫn được nhận lương đúng ko cậu
+  - tớ muốn hỏi nếu người nhà của nhân viên [full-time](level_position) mất thì họ
+    có được hưởng lương không nhể em
+  - mình xin off để kết hôn thì có được nhận đủ lương không
+  - tôi nghỉ phép thì vẫn nhận đủ lương nhể
+  - một tháng nghỉ 1 tuần thì có được nhận đủ lương không em
+  - tớ muốn biết nếu tớ xin nghỉ phép thì công ty có trả lương đầy đủ cho tôi ko nhỉ
+  - '[thử việc](level_position) nghỉ phép thì có được hưởng lương ko hả ạ'
+  - cho tôi hỏi nếu nghỉ phép thì có được nhận lương ko bot
+  - '[ios dev](position) [fresher](level_position) nghỉ phép thì vẫn nhận đủ lương
+    nhể'
+  - mình cưới chồng thì công ty vẫn tính lương ngày thế cho tôi chứ
+  - ' nghỉ phép thì công ty vẫn trả lương chuẩn không'
+  - '[pre-senior](level_position) nghỉ phép thì công ty vẫn trả lương nhỉ'
+  - '[fresher](level_position) xin off để lấy vợ thì có được nhận đủ lương không ha
+    m'
+  - '[cộng tác viên](level_position) kết hôn thì công ty vẫn tính lương ngày đấy chứ'
+  - ' nghỉ phép thì có được nhận lương không'
+  - tôi muốn hỏi nếu má của người mất thì họ có được hưởng lương không
+  - mẹ tôi mất thì mình có được nghỉ hưởng lương không
+  - cho tớ hỏi công ty có trả lương đủ khi [game UI/UX designs](position) nghỉ phép
+    ko ha
+  - tớ muốn hỏi nếu [cộng tác viên](level_position) xin off phép thì công ty có trả
+    lương đầy đủ không nhỉ
+  - ba của [thử việc](level_position) mất thì họ có được nghỉ hưởng lương không
+  - ' Nghỉ phép thì vẫn được lương chứ m'
+  - cho tôi hỏi công ty có trả lương đủ khi mình off không nhể
+  - 1 tháng [thử việc](level_position) nghỉ 1 tuần thì có được nhận full lương không
+    mày
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chuẩn ko
+  - tớ muốn hỏi nếu bố mẹ của thành viên [pre-senior](level_position) mất thì họ có
+    được hưởng lương ko nhỉ mày
+  - tôi xin nghỉ phép để kết hôn thì có được nhận đủ lương ko
+  - 1 tháng nghỉ một lần thì có được nhận full lương ko em
+  - mình muốn hỏi nếu tớ xin off phép thì công ty có trả lương đầy đủ cho tôi không
+    nhỉ
+  - '[intern](level_position) nghỉ phép thì có được hưởng lương không vậy hả hì'
+  - cho tớ hỏi nghỉ phép thì có được nhận lương không bot
+  - '[game 3d art](position) [pre-senior](level_position) nghỉ phép thì vẫn nhận đủ
+    lương ha'
+  - tôi lấy vợ thì công ty vẫn tính lương ngày đó cho mình chứ
+  - nếu nghỉ phép thì công ty vẫn trả lương chuẩn chỉ không
+  - '[ctv](level_position) nghỉ phép thì công ty vẫn trả lương nhỉ'
+  - '[junior](level_position) xin off để lấy chồng thì có được nhận đủ lương không
+    nhỉ em'
+  - '[fresher](level_position) cưới vợ thì công ty vẫn tính lương ngày đó chứ'
+  - nếu nghỉ phép thì có được nhận lương không timi
+  - mình muốn hỏi nếu con cái của nhân viên mất thì họ có được hưởng lương ko
+  - bố tớ mất thì tớ có được nghỉ hưởng lương ko
+  - cho mình hỏi công ty có trả lương đủ khi [người cskh](position) nghỉ phép ko ha
+  - tớ muốn hỏi nếu [thử việc](level_position) nghỉ phép thì công ty có trả lương
+    đầy đủ không nhể
+  - bố mẹ của [fresher](level_position) mất thì họ có được nghỉ hưởng lương không
+  - nếu Nghỉ phép thì vẫn được lương chứ mầy
+  - cho tớ hỏi công ty có trả lương đủ khi tớ off không ha
+  - 1 tháng [junior](level_position) nghỉ một ngày thì có được nhận full lương ko
+    mầy
+  - Nếu mà nghỉ phép thì vẫn được nhận lương đúng không m
+  - tớ muốn hỏi nếu con của thành viên [thử việc](level_position) mất thì họ có được
+    hưởng lương ko nhể em
+  - mình xin nghỉ để lấy chồng thì có được nhận đủ lương ko
+  - một tháng nghỉ một tuần thì có được nhận full lương không em
+  - tớ muốn hỏi nếu tớ off phép thì công ty có trả lương đủ cho mình không nhỉ
+  - '[ctv](level_position) nghỉ phép thì có được hưởng lương ko hả ạ'
+  - cho tôi hỏi nghỉ phép thì có được nhận lương không mày
+  - '[hr manager](position) [pre-senior](level_position) nghỉ phép thì vẫn nhận đủ
+    lương nhể'
+  - tớ kết hôn thì công ty vẫn tính lương ngày vậy cho tớ chứ
+  - nếu nghỉ phép thì công ty vẫn trả lương chuẩn không
+  - '[fulltime](level_position) nghỉ phép thì công ty vẫn trả lương ha'
+  - '[fresher](level_position) xin nghỉ để kết hôn thì có được nhận đủ lương không
+    nhể bạn'
+  - '[thực tập sinh](level_position) lấy vợ thì công ty vẫn tính lương ngày đó chứ'
+  - nếu nghỉ phép thì có được nhận lương ko em
+  - tôi muốn hỏi nếu bà con của nhận sự mất thì họ có được hưởng lương ko
+  - dòng họ tớ mất thì tớ có được nghỉ hưởng lương ko
+  - cho mình hỏi công ty có trả lương đủ khi [PO](position) off ko nhể
+  - tôi muốn hỏi nếu [fulltime](level_position) xin off phép thì công ty có trả lương
+    đủ không nhể
+  - dòng họ của [junior](level_position) mất thì họ có được nghỉ hưởng lương không
+  - nếu Nghỉ phép thì vẫn được lương chứ cậu
+  - cho tôi hỏi công ty có trả lương đủ khi tôi off ko nhỉ
+  - 1 tháng [full time](level_position) nghỉ một tuần thì có được nhận đủ lương ko
+    mầy
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chính xác ko cậu
+  - tôi muốn hỏi nếu bà con của nhân viên [full time](level_position) mất thì họ có
+    được hưởng lương ko ha em
+  - tớ xin nghỉ phép để lấy vợ thì có được nhận đủ lương ko
+  - một tháng nghỉ 1 tuần thì có được nhận full lương không bạn
+  - mình muốn biết nếu mình off phép thì công ty có trả lương đầy đủ cho tớ không
+    ha
+  - '[pre-senior](level_position) nghỉ phép thì có được hưởng lương không hả hì'
+  - cho tôi hỏi nếu nghỉ phép thì có được nhận lương ko em
+  - '[data analysts](position) [fresher](level_position) nghỉ phép thì vẫn nhận đủ
+    lương nhể'
+  - mình kết hôn thì công ty vẫn tính lương ngày hả cho tôi chứ
+  - ' nghỉ phép thì công ty vẫn trả lương đúng không bạn'
+  - '[full-time](level_position) nghỉ phép thì công ty vẫn trả lương nhỉ'
+  - '[fresher](level_position) xin nghỉ phép để cưới vợ thì có được nhận đủ lương
+    không nhể bạn'
+  - '[pre-senior](level_position) lấy chồng thì công ty vẫn tính lương ngày thế chứ'
+  - nếu nghỉ phép thì có được nhận lương không mày
+  - tôi muốn hỏi nếu người thân của thành viên mất thì họ có được hưởng lương ko
+  - người nhà mình mất thì tôi có được nghỉ hưởng lương không
+  - tớ muốn hỏi công ty có trả lương đủ khi [go-lang](position) off ko ha
+  - tớ muốn biết nếu [internship](level_position) xin off phép thì công ty có trả
+    lương đầy đủ ko nhể
+  - vợ chồng của [pre-senior](level_position) mất thì họ có được nghỉ hưởng lương
+    ko
+  - nếu Nghỉ phép thì vẫn được lương chứ m
+  - cho tớ hỏi công ty có trả lương đủ khi mình nghỉ phép ko ha
+  - 1 tháng [senior](level_position) nghỉ 1 ngày thì có được nhận full lương không
+    cậu
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chuẩn không mầy
+  - tớ muốn hỏi nếu người nhà của nhân viên [full time](level_position) mất thì họ
+    có được hưởng lương ko ha cậu
+  - tớ xin nghỉ để cưới vợ thì có được nhận đủ lương không
+  - 1 tháng nghỉ 1 ngày thì có được nhận đủ lương ko mày
+  - tớ muốn biết nếu tôi nghỉ phép thì công ty có trả lương đầy đủ cho mình ko ha
+  - '[junior](level_position) nghỉ phép thì có được hưởng lương ko hả hè'
+  - cho tớ hỏi nếu nghỉ phép thì có được nhận lương không m
+  - '[soạn nội dung giáo dục](position) [junior](level_position) nghỉ phép thì vẫn
+    nhận đủ lương ha'
+  - tôi lấy vợ thì công ty vẫn tính lương ngày thế cho tớ chứ
+  - ' nghỉ phép thì công ty vẫn trả lương đúng ko'
+  - '[junior](level_position) nghỉ phép thì công ty vẫn trả lương ha'
+  - '[thử việc](level_position) xin off để lấy chồng thì có được nhận đủ lương ko
+    nhể timi'
+  - '[thử việc](level_position) kết hôn thì công ty vẫn tính lương ngày đó chứ'
+  - ' nghỉ phép thì có được nhận lương không mầy'
+  - mình muốn hỏi nếu ba mẹ của nhận sự mất thì họ có được hưởng lương không
+  - dòng họ mình mất thì tớ có được nghỉ hưởng lương không
+  - cho tớ hỏi công ty có trả lương đủ khi [game unity 3d dev](position) nghỉ phép
+    ko nhỉ
+  - mình muốn hỏi nếu [thử việc](level_position) xin nghỉ phép thì công ty có trả
+    lương đầy đủ không nhỉ
+  - con của [full time](level_position) mất thì họ có được nghỉ hưởng lương ko
+  - ' Nghỉ phép thì vẫn được lương chứ timi'
+  - mình muốn hỏi công ty có trả lương đủ khi tớ off ko nhỉ
+  - 1 tháng [full-time](level_position) nghỉ 1 lần thì có được nhận đủ lương không
+    bot
+  - Nếu mà nghỉ phép thì vẫn được nhận lương đúng không cậu
+  - mình muốn hỏi nếu ba mẹ của người [junior](level_position) mất thì họ có được
+    hưởng lương ko nhỉ mầy
+  - tớ xin nghỉ để lấy chồng thì có được nhận đủ lương ko
+  - 1 tháng nghỉ 1 tuần thì có được nhận full lương không bạn
+  - tôi muốn hỏi nếu tôi off phép thì công ty có trả lương đủ cho tớ không nhể
+  - '[tts](level_position) nghỉ phép thì có được hưởng lương ko hả hì'
+  - cho mình hỏi nếu nghỉ phép thì có được nhận lương không
+  - '[full stack developer](position) [thử việc](level_position) nghỉ phép thì vẫn
+    nhận đủ lương nhỉ'
+  - tôi lấy vợ thì công ty vẫn tính lương ngày đấy cho mình chứ
+  - ' nghỉ phép thì công ty vẫn trả lương đúng không'
+  - '[pre-senior](level_position) nghỉ phép thì công ty vẫn trả lương nhể'
+  - '[junior](level_position) xin off để cưới vợ thì có được nhận đủ lương không nhể
+    cậu'
+  - '[sinh viên thực tập](level_position) lấy vợ thì công ty vẫn tính lương ngày vậy
+    chứ'
+  - nếu nghỉ phép thì có được nhận lương ko bot
+  - mình muốn hỏi nếu ba mẹ của người mất thì họ có được hưởng lương không
+  - ba tớ mất thì mình có được nghỉ hưởng lương không
+  - cho tớ hỏi công ty có trả lương đủ khi [net](position) off ko nhỉ
+  - tôi muốn hỏi nếu [full-time](level_position) nghỉ phép thì công ty có trả lương
+    đầy đủ không ha
+  - con cái của [ctv](level_position) mất thì họ có được nghỉ hưởng lương không
+  - nếu Nghỉ phép thì vẫn được lương chứ em
+  - cho tớ hỏi công ty có trả lương đủ khi tôi nghỉ phép không nhỉ
+  - một tháng [pre-senior](level_position) nghỉ một tuần thì có được nhận full lương
+    ko bot
+  - Nếu mà nghỉ phép thì vẫn được nhận lương đúng ko bạn
+  - tớ muốn hỏi nếu mẹ của người [svtt](level_position) mất thì họ có được hưởng lương
+    không nhể em
+  - tớ xin nghỉ phép để lấy chồng thì có được nhận đủ lương ko
+  - 1 tháng nghỉ một ngày thì có được nhận full lương không mày
+  - mình muốn hỏi nếu tớ off phép thì công ty có trả lương đủ cho tớ ko ha
+  - '[thử việc](level_position) nghỉ phép thì có được hưởng lương không hả á'
+  - cho mình hỏi nếu nghỉ phép thì có được nhận lương ko mầy
+  - '[3d unity](position) [thử việc](level_position) nghỉ phép thì vẫn nhận đủ lương
+    ha'
+  - tôi cưới vợ thì công ty vẫn tính lương ngày hả cho tớ chứ
+  - nếu nghỉ phép thì công ty vẫn trả lương đúng không mầy
+  - '[senior](level_position) nghỉ phép thì công ty vẫn trả lương nhể'
+  - '[full-time](level_position) xin nghỉ để kết hôn thì có được nhận đủ lương ko
+    ha timi'
+  - '[fresher](level_position) lấy vợ thì công ty vẫn tính lương ngày đó chứ'
+  - ' nghỉ phép thì có được nhận lương ko em'
+  - tớ muốn hỏi nếu ba mẹ của người mất thì họ có được hưởng lương không
+  - mẹ tớ mất thì tôi có được nghỉ hưởng lương không
+  - tôi muốn hỏi công ty có trả lương đủ khi [quản lý nhân sự](position) nghỉ phép
+    ko nhỉ
+  - tôi muốn hỏi nếu [tts](level_position) off phép thì công ty có trả lương đủ không
+    nhỉ
+  - dòng họ của [fresher](level_position) mất thì họ có được nghỉ hưởng lương ko
+  - nếu Nghỉ phép thì vẫn được lương chứ bạn
+  - mình muốn hỏi công ty có trả lương đủ khi tớ nghỉ phép không ha
+  - 1 tháng [senior](level_position) nghỉ 1 ngày thì có được nhận đủ lương ko bạn
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chuẩn chỉ không em
+  - tớ muốn hỏi nếu vợ chồng của thành viên [junior](level_position) mất thì họ có
+    được hưởng lương ko nhể bạn
+  - tôi xin nghỉ phép để kết hôn thì có được nhận đủ lương không
+  - 1 tháng nghỉ 1 ngày thì có được nhận full lương ko mày
+  - tớ muốn biết nếu tôi off phép thì công ty có trả lương đủ cho tớ không nhể
+  - '[full-time](level_position) nghỉ phép thì có được hưởng lương không hả hè'
+  - cho tôi hỏi nghỉ phép thì có được nhận lương không
+  - '[business analyst](position) [junior](level_position) nghỉ phép thì vẫn nhận
+    đủ lương nhể'
+  - tôi kết hôn thì công ty vẫn tính lương ngày hả cho tôi chứ
+  - nếu nghỉ phép thì công ty vẫn trả lương đúng không em
+  - '[cộng tác viên](level_position) nghỉ phép thì công ty vẫn trả lương nhể'
+  - '[fresher](level_position) xin nghỉ phép để kết hôn thì có được nhận đủ lương
+    ko nhể bạn'
+  - '[fulltime](level_position) lấy chồng thì công ty vẫn tính lương ngày thế chứ'
+  - nếu nghỉ phép thì có được nhận lương ko m
+  - tôi muốn hỏi nếu dòng họ của nhận sự mất thì họ có được hưởng lương ko
+  - họ hàng tớ mất thì tôi có được nghỉ hưởng lương không
+  - tớ muốn hỏi công ty có trả lương đủ khi [computer vision](position) nghỉ phép
+    không nhỉ
+  - tớ muốn biết nếu [thử việc](level_position) nghỉ phép thì công ty có trả lương
+    đầy đủ ko ha
+  - mẹ của [full time](level_position) mất thì họ có được nghỉ hưởng lương không
+  - cho tớ hỏi công ty có trả lương đủ khi mình off ko ha
+  - một tháng [full-time](level_position) nghỉ một tuần thì có được nhận full lương
+    không bạn
+  - Nếu mà nghỉ phép thì vẫn được nhận lương chính xác không bạn
+  - tớ muốn hỏi nếu mẹ của thành viên [thử việc](level_position) mất thì họ có được
+    hưởng lương không ha em
+  - mình xin off để lấy chồng thì có được nhận đủ lương không
+  - 1 tháng nghỉ 1 tuần thì có được nhận đủ lương không em
+  - tôi muốn biết nếu tớ nghỉ phép thì công ty có trả lương đủ cho tôi ko ha
+  - '[tts](level_position) nghỉ phép thì có được hưởng lương không vậy hì'
+  - cho tớ hỏi nếu nghỉ phép thì có được nhận lương ko em

@@ -1,0 +1,403 @@
+positives:
+- intent: chitchat_user_feel_sleepy
+  examples:
+  - đêm qua tao thâu đêm nên giờ muốn ngủ quá cậu ơi
+  - anh buồn ngủ thế đi mất mày ạ
+  - chị đang buồn ngủ quá m ơi
+  - chị đang muốn ngủ quá đi em ơi
+  - mình đang muốn ngủ quá đi timi ơi
+  - anh đang muốn ngủ thế đi timi ơi
+  - tôi buồn ngủ thế đi em ơi
+  - anh đang muốn ngủ thế đi bạn ơi
+  - đêm qua tui thâu đêm nên giờ buồn ngủ quá bạn ơi
+  - tao muốn ngủ thế mày ơi
+  - tao muốn ngủ thế m ơi
+  - tôi muốn ngủ quá đi mày ơi
+  - mình đang muốn ngủ thế đi em ơi
+  - chị buồn ngủ thế đi mất cậu ạ
+  - anh muốn ngủ thế đi mất bot ạ
+  - tôi muốn ngủ thế đi
+  - có li cafe nào không, mình đang buồn ngủ quá đi
+  - tớ buồn ngủ quá đi cậu ơi
+  - làm như nào cho hết muốn ngủ bây giờ
+  - sao thấy buồn ngủ thế nhỉ
+  - anh muốn ngủ thế cậu ơi
+  - tớ buồn ngủ thế đi timi ơi
+  - đêm qua tui thức thâu đêm nên giờ muốn ngủ quá bạn ơi
+  - chị muốn ngủ quá đi
+  - uống cà phê mà sao buồn ngủ thêm timi ơi
+  - anh muốn ngủ quá đi
+  - đêm qua tớ thâu đêm nên giờ muốn ngủ thế cậu ơi
+  - tao muốn ngủ quá đi mày ơi
+  - tớ muốn ngủ quá m ơi
+  - tôi muốn đi ngủ thế
+  - anh đang buồn ngủ quá timi ơi
+  - trời ơi buồn ngủ thế đi
+  - có li cafe nào không, mình đang buồn ngủ quá
+  - chị muốn ngủ thế bạn ơi
+  - chị muốn ngủ quá đi mày ơi
+  - mình đang buồn ngủ thế đi timi ơi
+  - anh đang muốn ngủ quá bạn ơi
+  - tao muốn ngủ quá timi ơi
+  - timi ơi, làm như thế nào hết muốn ngủ
+  - đêm qua tôi thâu đêm nên giờ muốn ngủ thế em ơi
+  - tớ đang buồn ngủ quá đi cậu ơi
+  - tớ buồn ngủ thế đi mày ơi
+  - có li cafe nào không, tui đang muốn ngủ quá
+  - đêm qua tui thức thâu đêm nên giờ muốn ngủ quá mày ơi
+  - chị muốn ngủ thế mày ơi
+  - tớ đang buồn ngủ thế
+  - mình đang muốn ngủ thế
+  - đêm qua tao thức thâu đêm nên giờ muốn ngủ thế bạn ơi
+  - tớ buồn ngủ quá đi timi ơi
+  - anh buồn ngủ quá đi mất timi ạ
+  - đêm qua tôi thức thâu đêm nên giờ buồn ngủ quá em ơi
+  - tao buồn ngủ quá bạn ơi
+  - đêm qua tớ thâu đêm nên giờ muốn ngủ quá mày ơi
+  - chị đang muốn ngủ thế đi timi ơi
+  - buồn ngủ thế m ơi
+  - đêm qua tui thâu đêm nên giờ muốn ngủ thế timi ơi
+  - tao muốn ngủ thế em ơi
+  - buồn ngủ quá đi bạn ơi
+  - muốn ngủ thật
+  - buồn ngủ quá cậu ơi
+  - buồn ngủ thế bot ơi
+  - muốn ngủ quá bot ơi
+  - tao muốn ngủ quá đi m ơi
+  - tớ buồn ngủ thế cậu ơi
+  - làm gì cho hết muốn ngủ bây giờ nhể
+  - tớ đang muốn ngủ quá đi bạn ơi
+  - mình muốn ngủ thế
+  - chị muốn ngủ quá em ơi
+  - mình đang muốn ngủ, làm thế nào để hết buồn ngủ bây giờ
+  - mình đang buồn ngủ, làm thế nào để hết buồn ngủ bây giờ
+  - muốn ngủ thế bot ơi
+  - tui muốn ngủ thế bạn ơi
+  - đêm qua mình thâu đêm nên giờ muốn ngủ thế mày ơi
+  - tao buồn ngủ quá bot ơi
+  - làm gì cho hết muốn ngủ bây giờ nhỉ
+  - sao anh buồn ngủ thế nhỉ
+  - tớ muốn ngủ quá mày ơi
+  - anh đang buồn ngủ quá bạn ơi
+  - chị cảm thấy muốn ngủ
+  - muốn ngủ thế đi bạn ơi
+  - làm sao để hết buồn ngủ nhể
+  - chị buồn ngủ thế đi mất bạn ạ
+  - đêm qua tớ thâu đêm nên giờ buồn ngủ thế cậu ơi
+  - tui buồn ngủ thế đi cậu ơi
+  - tớ buồn ngủ quá em ơi
+  - đêm qua mình thâu đêm nên giờ muốn ngủ quá em ơi
+  - đêm qua mình thức thâu đêm nên giờ muốn ngủ thế cậu ơi
+  - mình đang muốn ngủ thế đi bạn ơi
+  - anh đang buồn ngủ quá
+  - buồn ngủ thế đi mày ơi
+  - mình muốn ngủ quá mày ơi
+  - tớ muốn ngủ thế đi bạn ơi
+  - anh muốn ngủ thế đi mất cậu ạ
+  - đêm qua mình thâu đêm nên giờ buồn ngủ thế em ơi
+  - đêm qua tớ thâu đêm nên giờ buồn ngủ thế timi ơi
+  - đêm qua tớ thâu đêm nên giờ muốn ngủ quá cậu ơi
+  - uống cà phê mà sao muốn ngủ thêm em ơi
+  - mình đang muốn ngủ quá bạn ơi
+  - đêm qua tui thức thâu đêm nên giờ buồn ngủ quá mày ơi
+  - làm gì cho hết buồn ngủ bây giờ nhể
+  - muốn ngủ quá cậu ơi
+  - chị đang muốn ngủ thế đi em ơi
+  - đêm qua tui thâu đêm nên giờ buồn ngủ quá timi ơi
+  - tui buồn ngủ quá mày ơi
+  - đêm qua tôi thức thâu đêm nên giờ muốn ngủ quá bạn ơi
+  - đêm qua tớ thức thâu đêm nên giờ buồn ngủ quá timi ơi
+  - mình muốn ngủ thế đi mất em ạ
+  - mình buồn ngủ quá đi timi ơi
+  - timi ơi, làm răng hết muốn ngủ
+  - đêm qua mình thâu đêm nên giờ buồn ngủ quá mày ơi
+  - anh đang buồn ngủ thế
+  - tôi buồn ngủ thế đi
+  - mình buồn ngủ quá em ơi
+  - đêm qua tôi thức thâu đêm nên giờ muốn ngủ quá em ơi
+  - anh buồn ngủ quá đi mất em ạ
+  - chị đang buồn ngủ thế đi mày ơi
+  - tôi buồn ngủ quá
+  - mắt của chị lim dim rồi
+  - tớ đang muốn ngủ quá em ơi
+  - đêm qua tui thâu đêm nên giờ muốn ngủ quá bạn ơi
+  - đêm qua mình thâu đêm nên giờ buồn ngủ thế bạn ơi
+  - chị đang muốn ngủ quá timi ơi
+  - tôi muốn ngủ quá bạn ơi
+  - muốn ngủ thế em ơi
+  - anh đang buồn ngủ quá đi mày ơi
+  - làm thế nào để hết muốn ngủ nhể
+  - mắt tớ không mở được nữa rồi
+  - mắt của anh lim dim rồi
+  - tôi buồn ngủ thế bot ơi
+  - tớ đang muốn ngủ quá đi cậu ơi
+  - đêm qua tôi thâu đêm nên giờ buồn ngủ thế bạn ơi
+  - mình muốn ngủ thế đi mất
+  - chị đang buồn ngủ quá đi mày ơi
+  - anh buồn ngủ thế đi mất bot ạ
+  - tôi buồn ngủ thế timi ơi
+  - đêm qua tớ thâu đêm nên giờ buồn ngủ thế em ơi
+  - anh đang buồn ngủ thế đi m ơi
+  - chị đang buồn ngủ quá đi bot ơi
+  - đêm qua mình thức thâu đêm nên giờ muốn ngủ quá mày ơi
+  - chị cảm thấy buồn ngủ
+  - đêm qua tui thức thâu đêm nên giờ muốn ngủ quá bot ơi
+  - chị đang buồn ngủ quá bot ơi
+  - muốn ngủ quá m ơi
+  - tui buồn ngủ thế đi m ơi
+  - đêm qua tớ thâu đêm nên giờ buồn ngủ quá cậu ơi
+  - muốn ngủ quá đi m ơi
+  - tớ muốn ngủ quá đi em ơi
+  - đêm qua tui thức thâu đêm nên giờ buồn ngủ quá timi ơi
+  - anh đang muốn ngủ quá timi ơi
+  - đêm qua tôi thâu đêm nên giờ buồn ngủ quá timi ơi
+  - tớ buồn ngủ quá đi bot ơi
+  - mình buồn ngủ quá đi mất cậu ạ
+  - muốn ngủ quá đi mày ơi
+  - có li cafe nào không, mình đang muốn ngủ quá đi
+  - làm như nào để hết buồn ngủ nhỉ
+  - đêm qua tớ thâu đêm nên giờ buồn ngủ quá em ơi
+  - tớ buồn ngủ quá cậu ơi
+  - anh chỉ muốn ngủ thôi
+  - chị muốn ngủ thế timi ơi
+  - có li cafe nào không, tớ đang buồn ngủ thế
+  - có li cafe nào không, mình đang muốn ngủ quá
+  - tớ cảm thấy muốn ngủ
+  - anh muốn ngủ thế mày ơi
+  - tớ muốn ngủ thế
+  - tớ muốn ngủ thế mày ơi
+  - đêm qua tui thâu đêm nên giờ muốn ngủ thế bot ơi
+  - chị muốn ngủ quá đi cậu ơi
+  - đêm qua tao thâu đêm nên giờ buồn ngủ thế mày ơi
+  - đêm qua mình thức thâu đêm nên giờ buồn ngủ thế bot ơi
+  - đêm qua tớ thức thâu đêm nên giờ muốn ngủ quá em ơi
+  - anh muốn ngủ quá đi bot ơi
+  - tui buồn ngủ quá đi bot ơi
+  - mình muốn ngủ quá
+  - tui muốn ngủ thế mày ơi
+  - chị đang muốn ngủ quá bạn ơi
+  - chị muốn ngủ thế đi cậu ơi
+  - tôi muốn ngủ quá đi bạn ơi
+  - mình đang buồn ngủ quá
+  - anh đang muốn ngủ quá m ơi
+  - mình buồn ngủ thế đi m ơi
+  - đêm qua mình thâu đêm nên giờ buồn ngủ thế m ơi
+  - anh muốn ngủ quá m ơi
+  - muốn ngủ quá
+  - tôi buồn ngủ quá đi m ơi
+  - đêm qua mình thức thâu đêm nên giờ buồn ngủ quá cậu ơi
+  - đêm qua tao thức thâu đêm nên giờ buồn ngủ quá bạn ơi
+  - anh đang buồn ngủ thế đi cậu ơi
+  - đêm qua tui thâu đêm nên giờ buồn ngủ quá cậu ơi
+  - tớ buồn ngủ thế bot ơi
+  - đêm qua mình thức thâu đêm nên giờ muốn ngủ thế m ơi
+  - tao đang buồn ngủ quá
+  - tớ đang muốn ngủ thế đi em ơi
+  - có li cafe nào không, tui đang buồn ngủ quá
+  - mình đang buồn ngủ thế đi bạn ơi
+  - tớ muốn ngủ thế bot ơi
+  - làm như nào để hết buồn ngủ nhể
+  - đêm qua tôi thức thâu đêm nên giờ buồn ngủ quá bot ơi
+  - chị muốn ngủ thế đi mất m ạ
+  - buồn ngủ thế đi m ơi
+  - chị đang buồn ngủ thế đi timi ơi
+  - mình buồn ngủ thế đi mất bạn ạ
+  - tôi buồn ngủ quá m ơi
+  - làm như nào để hết muốn ngủ nhể
+  - mình đang buồn ngủ thế m ơi
+  - đêm qua tớ thức thâu đêm nên giờ buồn ngủ quá bot ơi
+  - mắt lim dim đầu đơ đơ, muốn đi ngủ thế
+  - làm như nào cho hết muốn ngủ bây giờ nhể
+  - làm gì để hết buồn ngủ nhể
+  - chị muốn ngủ thế m ơi
+  - anh đang muốn ngủ quá cậu ơi
+  - sao anh muốn ngủ thế nhỉ
+  - đêm qua tui thâu đêm nên giờ muốn ngủ thế m ơi
+  - tao muốn ngủ quá bạn ơi
+  - căng da bụng chùng da mắt rồi bot
+  - buồn ngủ quá em ơi
+  - tao buồn ngủ quá đi
+  - buồn ngủ nhỉ em ơi
+  - làm răng cho hết buồn ngủ bây giờ
+  - anh muốn ngủ quá bạn ơi
+  - đêm qua tao thâu đêm nên giờ muốn ngủ quá bot ơi
+  - tớ muốn ngủ thế đi mất bạn ạ
+  - buồn ngủ quá mày ơi
+  - muốn ngủ nhỉ timi ơi
+  - mình buồn ngủ quá m ơi
+  - đêm qua mình thâu đêm nên giờ buồn ngủ thế cậu ơi
+  - anh đang muốn ngủ thế đi cậu ơi
+  - anh đang muốn ngủ quá đi bạn ơi
+  - anh đang buồn ngủ thế đi
+  - chị đang buồn ngủ thế timi ơi
+  - đêm qua tui thức thâu đêm nên giờ buồn ngủ thế bot ơi
+  - mình muốn ngủ thế đi mất timi ạ
+  - mình đang muốn ngủ thế đi
+  - có li cafe nào không, tôi đang buồn ngủ thế
+  - tớ đang buồn ngủ quá m ơi
+  - căng da bụng chùng da mắt rồi cậu
+  - đêm qua tớ thâu đêm nên giờ buồn ngủ quá m ơi
+  - tôi muốn ngủ thế đi timi ơi
+  - muốn ngủ thế timi ơi
+  - mình buồn ngủ quá
+  - uống cà phê mà sao muốn ngủ thêm m ơi
+  - mình muốn ngủ quá đi mất em ạ
+  - làm sao cho hết muốn ngủ bây giờ
+  - đêm qua tôi thâu đêm nên giờ muốn ngủ thế bạn ơi
+  - đêm qua tớ thâu đêm nên giờ muốn ngủ quá em ơi
+  - anh muốn ngủ quá
+  - tui muốn ngủ thế đi timi ơi
+  - tớ buồn ngủ quá đi mất
+  - chị buồn ngủ quá đi mày ơi
+  - tớ đang buồn ngủ thế đi mày ơi
+  - có li cafe nào không, tôi đang muốn ngủ quá
+  - tớ đang buồn ngủ thế đi m ơi
+  - anh buồn ngủ thế
+  - anh đang buồn ngủ quá cậu ơi
+  - tớ đang muốn ngủ quá đi em ơi
+  - mình muốn ngủ quá timi ơi
+  - mình đang buồn ngủ quá m ơi
+  - đêm qua mình thức thâu đêm nên giờ buồn ngủ thế mày ơi
+  - tui muốn ngủ thế bot ơi
+  - tôi muốn ngủ quá đi em ơi
+  - mình đang buồn ngủ thế em ơi
+  - anh muốn ngủ quá cậu ơi
+  - đêm qua tao thâu đêm nên giờ buồn ngủ quá em ơi
+  - tôi buồn ngủ quá đi bot ơi
+  - đêm qua mình thức thâu đêm nên giờ buồn ngủ thế cậu ơi
+  - tui muốn ngủ quá mày ơi
+  - mình đang muốn ngủ thế đi timi ơi
+  - tao đang muốn ngủ thế
+  - mình đang muốn ngủ thế cậu ơi
+  - uống cà phê mà sao muốn ngủ thêm cậu ơi
+  - anh đang buồn ngủ quá đi bạn ơi
+  - tui buồn ngủ thế bot ơi
+  - mình muốn ngủ quá đi mất bạn ạ
+  - chị buồn ngủ thế đi bot ơi
+  - căng da bụng chùng da mắt rồi timi
+  - tớ đang muốn ngủ quá timi ơi
+  - uống cà phê mà sao buồn ngủ thêm bot ơi
+  - đêm qua tao thức thâu đêm nên giờ muốn ngủ thế m ơi
+  - tôi muốn ngủ quá đi timi ơi
+  - chị đang muốn ngủ quá đi
+  - chị buồn ngủ thế đi mất
+  - làm như thế nào cho hết buồn ngủ bây giờ nhể
+  - chị muốn ngủ quá đi mất mày ạ
+  - đêm qua tao thức thâu đêm nên giờ muốn ngủ thế bot ơi
+  - tao buồn ngủ thế bạn ơi
+  - muốn ngủ quá đi bạn ơi
+  - tui buồn ngủ quá em ơi
+  - đêm qua tui thâu đêm nên giờ buồn ngủ quá em ơi
+  - chị buồn ngủ quá đi mất mày ạ
+  - mình đang cảm thấy hơi buồn ngủ
+  - đêm qua tớ thức thâu đêm nên giờ muốn ngủ thế cậu ơi
+  - tôi đang muốn ngủ thế
+  - chị muốn ngủ thế đi timi ơi
+  - anh đang buồn ngủ thế bot ơi
+  - mình buồn ngủ thế timi ơi
+  - tui muốn ngủ quá cậu ơi
+  - tao muốn ngủ quá em ơi
+  - timi ơi, làm răng hết buồn ngủ
+  - đêm qua tao thức thâu đêm nên giờ buồn ngủ thế cậu ơi
+  - mình cảm thấy buồn ngủ
+  - đêm qua tôi thâu đêm nên giờ muốn ngủ quá bạn ơi
+  - anh muốn ngủ quá đi em ơi
+  - tớ muốn ngủ quá timi ơi
+  - muốn ngủ thế cậu ơi
+  - haiz muốn ngủ thì phải làm gì hả
+  - mình buồn ngủ quá đi
+  - mình muốn ngủ thế đi mày ơi
+  - chị muốn ngủ thế đi bot ơi
+  - tôi muốn ngủ thế
+  - muốn ngủ quá đi
+  - muốn ngủ thế đi m ơi
+  - đêm qua tui thức thâu đêm nên giờ buồn ngủ thế timi ơi
+  - mình đang muốn ngủ thế đi mày ơi
+  - anh buồn ngủ thế đi mất timi ạ
+  - chị buồn ngủ quá đi timi ơi
+  - tớ muốn ngủ thế đi bot ơi
+  - mình đang muốn ngủ, làm như thế nào để hết muốn ngủ bây giờ
+  - đêm qua mình thâu đêm nên giờ buồn ngủ thế mày ơi
+  - chị đang buồn ngủ quá bạn ơi
+  - đêm qua tui thức thâu đêm nên giờ muốn ngủ thế m ơi
+  - sao buồn ngủ thế nhỉ
+  - có li cafe nào không, tui đang muốn ngủ thế đi
+  - anh đang buồn ngủ thế bạn ơi
+  - chị đang muốn ngủ thế bot ơi
+  - mình muốn ngủ thế đi em ơi
+  - đêm qua tao thức thâu đêm nên giờ buồn ngủ thế m ơi
+  - mình buồn ngủ thế bạn ơi
+  - có li cafe nào không, tao đang buồn ngủ quá
+  - chị đang buồn ngủ quá em ơi
+  - mình đang buồn ngủ thế đi m ơi
+  - chị buồn ngủ thế timi ơi
+  - đêm qua tui thức thâu đêm nên giờ buồn ngủ quá em ơi
+  - chị đang buồn ngủ thế đi
+  - đêm qua tôi thâu đêm nên giờ buồn ngủ thế mày ơi
+  - tui muốn ngủ quá đi timi ơi
+  - anh đang muốn ngủ quá mày ơi
+  - mình buồn ngủ quá đi mất bot ạ
+  - tao muốn ngủ quá cậu ơi
+  - buồn ngủ thế đi timi ơi
+  - làm sao để hết buồn ngủ nhỉ
+  - đêm qua tôi thâu đêm nên giờ buồn ngủ quá m ơi
+  - tớ muốn ngủ thế đi
+  - chị đang buồn ngủ quá timi ơi
+  - mình đang buồn ngủ thế đi mày ơi
+  - tớ buồn ngủ quá đi mất bot ạ
+  - chị buồn ngủ thế đi mất em ạ
+  - tớ buồn ngủ thế mày ơi
+  - buồn ngủ thế nhở
+  - mình buồn ngủ thế cậu ơi
+  - tớ buồn ngủ thế bạn ơi
+  - tôi buồn ngủ quá đi timi ơi
+  - tui buồn ngủ quá bạn ơi
+  - mình muốn ngủ thế cậu ơi
+  - anh đang muốn ngủ thế cậu ơi
+  - đêm qua tao thức thâu đêm nên giờ buồn ngủ quá cậu ơi
+  - tớ buồn ngủ quá mày ơi
+  - đêm qua tao thâu đêm nên giờ muốn ngủ quá mày ơi
+  - tôi buồn ngủ quá em ơi
+  - tao muốn ngủ quá
+  - chị buồn ngủ quá bot ơi
+  - có li cafe nào không, tớ đang buồn ngủ quá đi
+  - tớ muốn ngủ quá đi mất mày ạ
+  - tớ muốn ngủ quá đi mất cậu ạ
+  - mình muốn ngủ thế m ơi
+  - anh buồn ngủ thế đi mất m ạ
+  - tao muốn ngủ quá đi bạn ơi
+  - tớ đang buồn ngủ quá đi bạn ơi
+  - đêm qua tao thâu đêm nên giờ buồn ngủ thế bạn ơi
+  - tớ đang muốn ngủ quá cậu ơi
+  - tớ đang muốn ngủ thế đi bot ơi
+  - anh buồn ngủ quá cậu ơi
+  - anh buồn ngủ quá đi mất mày ạ
+  - tớ đang buồn ngủ quá timi ơi
+  - đêm qua tôi thức thâu đêm nên giờ muốn ngủ thế timi ơi
+  - đêm qua tao thâu đêm nên giờ buồn ngủ thế em ơi
+  - tôi buồn ngủ quá đi bạn ơi
+  - đêm qua tao thâu đêm nên giờ buồn ngủ quá mày ơi
+  - chị muốn ngủ quá m ơi
+  - chị muốn ngủ quá mày ơi
+  - buồn ngủ vãi
+  - anh cảm thấy buồn ngủ
+  - đêm qua mình thức thâu đêm nên giờ buồn ngủ quá em ơi
+  - tao buồn ngủ quá m ơi
+  - mình buồn ngủ thế đi mày ơi
+  - chị đang buồn ngủ quá đi m ơi
+  - muốn ngủ quá đi mất
+  - tao muốn ngủ thế đi em ơi
+  - căng da bụng chùng da mắt rồi bạn
+  - mình đang muốn ngủ, làm như nào để hết buồn ngủ bây giờ
+  - mình đang buồn ngủ quá bạn ơi
+  - mình buồn ngủ quá đi mất em ạ
+  - tao đang cảm thấy hơi buồn ngủ
+  - đêm qua tớ thâu đêm nên giờ buồn ngủ thế bạn ơi
+  - đêm qua mình thâu đêm nên giờ buồn ngủ quá cậu ơi
+  - tôi đang cảm thấy hơi muốn ngủ
+  - chị muốn ngủ thế đi mất bạn ạ
+  - mình buồn ngủ thế đi mất em ạ
+  - mình đang buồn ngủ, làm sao để hết buồn ngủ bây giờ
+  - anh buồn ngủ quá đi mất m ạ
+  - chị đang buồn ngủ quá đi em ơi
+  - đêm qua mình thức thâu đêm nên giờ muốn ngủ quá bot ơi

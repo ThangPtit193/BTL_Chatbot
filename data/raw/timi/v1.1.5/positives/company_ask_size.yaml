@@ -1,0 +1,1257 @@
+positives:
+- intent: company_ask_size
+  examples:
+  - thế [f-tech](work_unit) có mấy nhân viên
+  - tổng nhân sự công ty?
+  - công ty có nhiều nhận sự ko
+  - ' cho mình hỏi quy mô công ty nha'
+  - có mấy nhân sự [game designer](position) trong công ty
+  - timi cho hỏi nhân sự công ty
+  - số lượng thành viên công ty là mấy timi
+  - chị muốn hỏi về quy mô hiện tại công ty ntn đc ko em
+  - ' nhân sự phòng ban team [hr admin](department)'
+  - ba cơ sở [hà nội,](location) [sài gòn](location) và cơ sở [đà nẵng](location)
+    có bao nhiu nhân viên
+  - ' cho a hỏi số nhân viên của công ty mình'
+  - ' công ty có bao nhiu nhận sự bot'
+  - bộ phận phòng ban [kinh doanh](department) có số lượng nhân sự
+  - 3 cơ sở [hn,](location) [hcm](location) và văn phòng [đn](location) có bao nhiêu
+    nhân viên
+  - ' tổng số thành viên công ty là bao nhiêu'
+  - công ty đông nhân sự không
+  - ' số lượng thành viên trong công ty là bao nhiêu'
+  - cậu cho tớ hỏi số lượng nhân viên hiện nay công ty là bao nhiêu nha
+  - ' cho anh hỏi quy mô công ty mình nhe'
+  - công ty có đông không
+  - m cho hỏi nhân sự [AI center](department) ntn
+  - chị muốn hỏi về quy mô công ty ntn
+  - số lượng nhận sự trong công ty là bao nhiu
+  - cho tôi hỏi nhân sự [AI center](department) có bao nhiêu người
+  - mình hỏi quy mô công ty ntn được ko cậu
+  - cả ba văn phòng có bao nhiêu nhân viên
+  - công ty có quy mô ra sao hả
+  - ba trụ sở [hà nội,](location) [hồ chí minh](location) và trụ sở [đn](location)
+    có bao nhiu người
+  - có bao nhiu người trong công ty
+  - không biết số lượng thành viên của công ty là bao nhiêu người bây chừ
+  - công ty bao nhiu người
+  - ' số lượng thành viên của công ty là bao nhiu'
+  - thế công ty có mấy người
+  - quy mô công ty [f-tech](work_unit)
+  - cả ba trụ sở của công ty có mấy thành viên
+  - cả 3 chi nhánh [dn,](location) [hồ chí minh](location) và [hn](location) có bao
+    nhiu nhận sự
+  - ' nhân sự công ty có mấy người'
+  - '[f tech](work_unit) có mấy thành viên'
+  - công ty có bao nhiu thành viên
+  - mình muốn hỏi số người của công ty là bao nhiêu
+  - quy mô công ty có đông ko
+  - quy mô công ty có mấy nhân viên
+  - tổng số nhân viên của công ty là bao nhiêu
+  - ' nhân sự trong công ty như nào'
+  - số lượng nhận sự của công ty là mấy
+  - ' [ftech](work_unit) có bao nhiu nhân viên'
+  - công ty có đông nhận sự ko
+  - ' cho tớ hỏi quy mô công ty nha'
+  - có mấy nhân sự [react-native dev](position) trong công ty
+  - m cho hỏi nhân sự trong công ty
+  - số lượng nhận sự công ty là bao nhiêu bot
+  - chị hỏi về quy mô công ty được ko timi
+  - tôi muốn hỏi nhân sự văn phòng [đà nẵng](location) như nào
+  - ba cơ sở [hn,](location) [hcm](location) và cơ sở [đà nẵng](location) có bao nhiêu
+    thành viên
+  - timi cho a hỏi số lượng người công ty mình là bao nhiêu
+  - hiện tại công ty có bao nhiu thành viên mầy
+  - văn phòng [hội an](location) có số lượng nhân sự ntn
+  - 3 văn phòng [hà nội,](location) [hcm](location) và cơ sở [đn](location) có bao
+    nhiu thành viên
+  - thế tổng số nhân viên công ty là mấy
+  - công ty đông nhân sự ko
+  - ' số lượng nhận sự trong công ty là bao nhiêu'
+  - ' cho mình hỏi số thành viên công ty là bao nhiêu nha'
+  - ' cho c hỏi về quy mô công ty mình nha'
+  - công ty có đông ko
+  - em cho hỏi nhân sự bộ phận phòng [it support](department) ntn
+  - tớ hỏi quy mô của công ty ntn
+  - số lượng người trong công ty là bao nhiu
+  - ' nhân sự bộ phận team [business](department) có bao nhiêu người'
+  - mình muốn hỏi về quy mô công ty ntn đc ko bạn
+  - cả 3 chi nhánh có bao nhiu nhận sự
+  - công ty có quy mô ra sao bạn
+  - ba trụ sở [hn,](location) [hồ chí minh](location) và trụ sở [đn](location) có
+    bao nhiu thành viên
+  - có mấy người trong công ty
+  - không biết số lượng nhân viên của công ty là bao nhiêu người bây chừ
+  - công ty bao nhiêu người
+  - thế số lượng nhân viên công ty là bao nhiu
+  - ' công ty có bao nhiu người'
+  - quy mô công ty [ftech](work_unit) ntn mày
+  - cả 3 trụ sở của công ty có mấy thành viên
+  - cả ba chi nhánh [đn,](location) [sài gòn](location) và [hà nội](location) có bao
+    nhiêu nhân viên
+  - cho tôi hỏi nhân sự công ty có mấy người
+  - '[ftech](work_unit) có bao nhiu thành viên'
+  - công ty có mấy nhận sự
+  - chị muốn hỏi số lượng thành viên của công ty
+  - quy mô công ty có đông không
+  - quy mô công ty có bao nhiêu nhận sự
+  - tổng số người công ty là bao nhiêu
+  - ' nhân sự trong công ty'
+  - số lượng thành viên của công ty là bao nhiêu
+  - ' [f tech](work_unit) có mấy nhân viên'
+  - công ty có nhiều thành viên ko
+  - cậu cho tớ hỏi về quy mô hiện tại công ty nha
+  - có bao nhiêu nhân sự [game 2d art](position) trong công ty
+  - cậu cho hỏi nhân sự công ty
+  - số lượng người công ty là bao nhiêu timi
+  - anh hỏi quy mô hiện công ty đc ko timi
+  - ' nhân sự [trung tâm ai](department)'
+  - 3 cơ sở [hà nội,](location) [sài gòn](location) và cơ sở [đn](location) có bao
+    nhiu nhân viên
+  - ' cho chị hỏi số nhân viên công ty mình'
+  - hiện nay công ty có bao nhiu người
+  - team phòng ban [Marketing](department) có số lượng nhân sự
+  - 3 chi nhánh [hà nội,](location) [sài gòn](location) và chi nhánh [đn](location)
+    có bao nhiu nhân viên
+  - thế tổng số người của công ty là bao nhiêu
+  - ' số lượng người trong công ty là mấy'
+  - ' cho tớ hỏi số lượng thành viên hiện nay công ty nha'
+  - em cho anh hỏi về quy mô công ty mình nha
+  - timi cho hỏi nhân sự bộ phận phòng [trung tâm ai](department) ntn
+  - chị hỏi quy mô của công ty ntn
+  - số lượng nhân viên trong công ty là bao nhiêu
+  - cho tớ hỏi nhân sự [AI center](department) có bao nhiêu người
+  - mình hỏi quy mô công ty được không cậu
+  - cả ba văn phòng có bao nhiêu người
+  - công ty có quy mô ra sao vậy hả
+  - ba trụ sở [hà nội,](location) [sài gòn](location) và trụ sở [dn](location) có
+    bao nhiêu người
+  - có bao nhiu nhân viên trong công ty
+  - ko biết số lượng nhân viên của công ty là bao nhiêu người bây chừ
+  - công ty mấy người
+  - thế số lượng nhận sự công ty là bao nhiêu
+  - ' công ty có bao nhiu nhận sự'
+  - quy mô công ty [f tech](work_unit) như thế nào m
+  - cả 3 văn phòng của công ty có mấy thành viên
+  - cả 3 trụ sở [đn,](location) [sài gòn](location) và [hn](location) có bao nhiu
+    nhận sự
+  - mình muốn hỏi nhân sự công ty có mấy người
+  - '[ftech](work_unit) có bao nhiu người'
+  - công ty có bao nhiêu nhân viên
+  - tớ hỏi số nhân viên của công ty là bao nhiêu
+  - quy mô công ty có mấy thành viên
+  - tổng số người của công ty là mấy
+  - cho tớ hỏi nhân sự trong công ty như thế nào
+  - số lượng nhận sự của công ty là bao nhiêu
+  - thế [ftech](work_unit) có bao nhiêu người
+  - công ty có đông thành viên ko
+  - cậu cho mình hỏi về quy mô của công ty nha
+  - có bao nhiu nhân sự [soạn nội dung giáo dục](position) trong công ty
+  - m cho hỏi nhân sự công ty
+  - số thành viên công ty là bao nhiu
+  - c hỏi về quy mô công ty đc ko em
+  - mình muốn hỏi nhân sự văn phòng [dn](location)
+  - 3 cơ sở [hà nội,](location) [hcm](location) và cơ sở [đn](location) có bao nhiêu
+    người
+  - em cho anh hỏi số nhận sự công ty mình
+  - hiện công ty có mấy nhân viên
+  - team bộ phận [platform](department) có số lượng nhân sự
+  - ba chi nhánh [hn,](location) [hồ chí minh](location) và văn phòng [đà nẵng](location)
+    có bao nhiu nhận sự
+  - ' tổng số nhận sự của công ty là bao nhiêu'
+  - thế số lượng nhân viên trong công ty là bao nhiêu
+  - bạn cho tớ hỏi số nhận sự công ty là bao nhiêu nha
+  - ' cho anh hỏi về quy mô công ty mình nhé'
+  - m cho hỏi nhân sự trụ sở [đà nẵng](location) như nào
+  - mình hỏi quy mô công ty ntn
+  - số lượng nhân viên trong công ty là mấy
+  - cho tớ hỏi nhân sự team phòng [HR and Admin](department) có mấy người
+  - tôi muốn hỏi quy mô công ty được không cậu
+  - cả 3 chi nhánh có mấy nhận sự
+  - công ty có quy mô ra sao cậu
+  - ba trụ sở [hà nội,](location) [hcm](location) và trụ sở [đn](location) có bao
+    nhiu nhân viên
+  - có mấy thành viên trong công ty
+  - không biết số lượng người của công ty là bao nhiêu người bây chừ
+  - ' số lượng nhận sự công ty là bao nhiu'
+  - ' công ty có mấy người'
+  - quy mô công ty [f tech](work_unit)
+  - cả ba chi nhánh của công ty có bao nhiu nhân viên
+  - cả 3 trụ sở [đn,](location) [sài gòn](location) và [hà nội](location) có bao nhiu
+    nhân viên
+  - mình muốn hỏi nhân sự công ty có bao nhiêu người
+  - '[f-tech](work_unit) có bao nhiêu thành viên'
+  - công ty có bao nhiêu nhận sự
+  - anh muốn hỏi số lượng nhân viên của công ty
+  - quy mô công ty có bao nhiu nhận sự
+  - tổng số thành viên của công ty là mấy
+  - ' nhân sự công ty'
+  - số lượng nhận sự của công ty là bao nhiu
+  - thế [ftech](work_unit) có bao nhiu thành viên
+  - công ty có đông thành viên không
+  - bạn cho tớ hỏi về quy mô của công ty nha
+  - có mấy nhân sự [nhân viên kinh doanh thị trường Trung QUốc](position) trong công
+    ty
+  - timi cho hỏi nhân sự công ty như nào
+  - số nhận sự công ty là bao nhiêu
+  - c muốn hỏi về quy mô công ty được ko em
+  - tớ muốn hỏi nhân sự chi nhánh [hồ chí minh](location) ntn
+  - 3 cơ sở [hn,](location) [sài gòn](location) và cơ sở [đà nẵng](location) có bao
+    nhiu nhận sự
+  - ' cho c hỏi số nhận sự của công ty mình là mấy'
+  - hiện nay công ty có bao nhiu thành viên m
+  - trụ sở [Việt Nam](location) có số lượng nhân sự
+  - 3 chi nhánh [hà nội,](location) [sài gòn](location) và văn phòng [đà nẵng](location)
+    có mấy nhận sự
+  - ' tổng số nhận sự công ty là mấy'
+  - thế số lượng người trong công ty là bao nhiu
+  - cậu cho tớ hỏi số lượng người công ty là bao nhiêu nha
+  - timi cho anh hỏi quy mô công ty mình nha
+  - bạn cho hỏi nhân sự bộ phận phòng ban [hệ thống cơ sở hạ tầng](department) như
+    nào
+  - chị hỏi quy mô của công ty như nào
+  - số lượng thành viên trong công ty là bao nhiu
+  - ' nhân sự bộ phận phòng [platform](department) có mấy người'
+  - mình muốn hỏi quy mô công ty được ko bạn
+  - cả ba trụ sở có mấy người
+  - công ty có quy mô ra sao
+  - 3 trụ sở [hn,](location) [sài gòn](location) và trụ sở [đn](location) có bao nhiêu
+    nhân viên
+  - có bao nhiêu nhân viên trong công ty
+  - ko biết số lượng nhận sự của công ty là bao nhiêu người bây chừ
+  - thế số lượng nhân viên của công ty là bao nhiêu
+  - ' công ty có bao nhiêu thành viên'
+  - quy mô công ty [ftech](work_unit) như thế nào mày
+  - cả 3 văn phòng của công ty có mấy nhân viên
+  - cả ba cơ sở [đn,](location) [hồ chí minh](location) và [hn](location) có bao nhiêu
+    thành viên
+  - ' nhân sự công ty có bao nhiu người'
+  - '[f tech](work_unit) có bao nhiu thành viên'
+  - công ty có mấy nhân viên
+  - anh hỏi số thành viên của công ty
+  - quy mô công ty có mấy nhận sự
+  - tổng số người của công ty là bao nhiêu
+  - ' nhân sự trong công ty thế nào'
+  - số lượng người công ty là mấy
+  - ' [f-tech](work_unit) có bao nhiu người'
+  - công ty có nhiều nhân viên ko
+  - bạn cho tớ hỏi quy mô công ty nha
+  - có bao nhiu nhân sự [unity 2d develop](position) trong công ty
+  - m cho hỏi nhân sự trong công ty ntn
+  - số nhân viên công ty là bao nhiêu mầy
+  - chị muốn hỏi về quy mô hiện tại công ty ntn được không em
+  - mình muốn hỏi nhân sự chi nhánh [hcm](location) ntn
+  - ba cơ sở [hà nội,](location) [hcm](location) và cơ sở [đn](location) có bao nhiêu
+    người
+  - em cho c hỏi số lượng nhân viên công ty mình là bao nhiêu
+  - hiện nay công ty có mấy thành viên
+  - chi nhánh [thủ đức](location) có số lượng nhân sự
+  - ba chi nhánh [hn,](location) [hồ chí minh](location) và cơ sở [dn](location) có
+    bao nhiu thành viên
+  - ' tổng số nhận sự công ty là bao nhiu'
+  - ' số lượng nhận sự trong công ty là mấy'
+  - ' cho mình hỏi số nhân viên công ty nha'
+  - ' cho chị hỏi quy mô công ty mình nhe'
+  - bot cho hỏi nhân sự team team [game](department)
+  - tớ hỏi quy mô của công ty thế nào
+  - số lượng người trong công ty là bao nhiêu
+  - ' nhân sự phòng ban phòng ban [game & design](department) có mấy người'
+  - tôi hỏi quy mô công ty thế nào được ko cậu
+  - cả 3 trụ sở có mấy nhận sự
+  - công ty có quy mô ra sao hả cậu
+  - ba trụ sở [hn,](location) [sài gòn](location) và trụ sở [dn](location) có bao
+    nhiu người
+  - có mấy nhận sự trong công ty
+  - không biết số lượng nhận sự của công ty là bao nhiêu người bây chừ
+  - thế số lượng người của công ty là bao nhiêu
+  - thế công ty có bao nhiu nhận sự
+  - quy mô công ty [ftech](work_unit) ntn bot
+  - cả ba cơ sở của công ty có bao nhiêu nhận sự
+  - cả ba trụ sở [đn,](location) [hồ chí minh](location) và [hà nội](location) có
+    mấy nhân viên
+  - ' nhân sự công ty có bao nhiêu người'
+  - '[ftech](work_unit) có bao nhiu nhận sự'
+  - công ty có bao nhiêu người
+  - tớ hỏi số lượng nhận sự công ty là bao nhiêu
+  - quy mô công ty có bao nhiu người
+  - tổng số thành viên công ty là mấy
+  - ' nhân sự công ty thế nào'
+  - số lượng người công ty là bao nhiêu
+  - ' [f tech](work_unit) có bao nhiu người'
+  - công ty có đông nhận sự không
+  - bạn cho mình hỏi về quy mô hiện nay của công ty nha
+  - có mấy nhân sự [PO](position) trong công ty
+  - bạn cho hỏi nhân sự công ty thế nào
+  - số thành viên công ty là bao nhiu mầy
+  - a muốn hỏi quy mô công ty như thế nào được ko em
+  - tớ muốn hỏi nhân sự [AI center](department) như thế nào
+  - 3 cơ sở [hn,](location) [sài gòn](location) và cơ sở [đà nẵng](location) có mấy
+    thành viên
+  - ' cho c hỏi số nhận sự công ty mình là bao nhiêu'
+  - ' công ty có bao nhiêu thành viên em'
+  - team phòng ban [hạ tầng](department) có số lượng nhân sự thế nào
+  - ba cơ sở [hà nội,](location) [sài gòn](location) và trụ sở [đn](location) có bao
+    nhiêu người
+  - ' tổng số người công ty là bao nhiu'
+  - thế số lượng thành viên trong công ty là mấy
+  - cậu cho tớ hỏi số lượng nhận sự hiện công ty là bao nhiêu nha
+  - ' cho c hỏi về quy mô công ty mình nhe'
+  - bạn cho hỏi nhân sự [trung tâm ai](department) ntn
+  - chị muốn hỏi quy mô công ty như nào
+  - số lượng nhân viên trong công ty là bao nhiu
+  - cho mình hỏi nhân sự [AI center](department) có mấy người
+  - mình hỏi quy mô công ty thế nào đc ko bạn
+  - cả 3 chi nhánh có bao nhiêu nhân viên
+  - công ty có quy mô ra sao vậy hả cậu
+  - 3 trụ sở [hn,](location) [hồ chí minh](location) và trụ sở [đn](location) có bao
+    nhiêu nhận sự
+  - có bao nhiu thành viên trong công ty
+  - ko biết số lượng thành viên của công ty là bao nhiêu người bây chừ
+  - ' số lượng nhân viên công ty là bao nhiu'
+  - thế công ty có mấy nhân viên
+  - quy mô công ty mày
+  - cả ba cơ sở của công ty có mấy người
+  - cả 3 văn phòng [đn,](location) [hồ chí minh](location) và [hà nội](location) có
+    mấy nhân viên
+  - tớ muốn hỏi nhân sự công ty có bao nhiêu người
+  - '[f tech](work_unit) có bao nhiêu người'
+  - công ty có mấy thành viên
+  - anh hỏi số lượng người của công ty
+  - quy mô công ty có bao nhiu nhân viên
+  - tổng số nhận sự công ty là bao nhiêu
+  - cho tớ hỏi nhân sự trong công ty
+  - số lượng người của công ty là bao nhiu
+  - thế [f-tech](work_unit) có bao nhiu nhận sự
+  - công ty có nhiều nhận sự không
+  - ' cho tớ hỏi về quy mô công ty nha'
+  - có mấy nhân sự [data engineering](position) trong công ty
+  - bạn cho hỏi nhân sự trong công ty
+  - số thành viên công ty là bao nhiêu
+  - c hỏi về quy mô công ty đc không timi
+  - mình muốn hỏi nhân sự [trung tâm ai](department) thế nào
+  - 3 cơ sở [hà nội,](location) [hồ chí minh](location) và cơ sở [đn](location) có
+    mấy nhận sự
+  - timi cho c hỏi số nhân viên của công ty mình là bao nhiêu
+  - hiện nay công ty có mấy thành viên vậy
+  - trụ sở [cố đô huế](location) có số lượng nhân sự như thế nào
+  - ba chi nhánh [hà nội,](location) [sài gòn](location) và trụ sở [đn](location)
+    có mấy nhận sự
+  - thế tổng số thành viên công ty là bao nhiêu
+  - thế số lượng nhân viên trong công ty là bao nhiu
+  - ' cho mình hỏi số người công ty nha'
+  - em cho chị hỏi về quy mô công ty mình nhe
+  - mày cho hỏi nhân sự bộ phận phòng ban [product](department)
+  - mình muốn hỏi về quy mô công ty thế nào
+  - số lượng thành viên trong công ty là mấy
+  - ' nhân sự [AI center](department) có bao nhiu người'
+  - tớ muốn hỏi về quy mô công ty như thế nào đc không bạn
+  - cả ba trụ sở có mấy nhận sự
+  - công ty có quy mô ra sao hả bạn
+  - 3 trụ sở [hà nội,](location) [hồ chí minh](location) và trụ sở [đn](location)
+    có mấy thành viên
+  - có mấy nhân viên trong công ty
+  - ko biết số lượng người của công ty là bao nhiêu người bây chừ
+  - thế số lượng nhân viên của công ty là bao nhiu
+  - thế công ty có bao nhiêu nhận sự
+  - quy mô công ty thế nào mày
+  - cả 3 cơ sở của công ty có mấy nhận sự
+  - cả 3 chi nhánh [dn,](location) [sài gòn](location) và [hn](location) có bao nhiu
+    người
+  - tôi muốn hỏi nhân sự công ty có bao nhiêu người
+  - '[f-tech](work_unit) có bao nhiu thành viên'
+  - công ty có bao nhiu nhân viên
+  - chị muốn hỏi số người của công ty
+  - quy mô công ty có bao nhiu thành viên
+  - tổng số thành viên của công ty là bao nhiu
+  - cho tớ hỏi nhân sự công ty như nào
+  - số lượng thành viên công ty là mấy
+  - thế [ftech](work_unit) có mấy nhân viên
+  - công ty có đông người không
+  - ' cho tớ hỏi về quy mô của công ty nha'
+  - có bao nhiu nhân sự [react native developer](position) trong công ty
+  - mày cho hỏi nhân sự công ty như nào
+  - số lượng người công ty là bao nhiêu mầy
+  - chị muốn hỏi quy mô hiện tại công ty được không timi
+  - tớ muốn hỏi nhân sự cơ sở [hn](location)
+  - 3 cơ sở [hn,](location) [hồ chí minh](location) và cơ sở [đà nẵng](location) có
+    mấy người
+  - timi cho c hỏi số người của công ty mình là bao nhiêu
+  - hiện tại công ty có mấy thành viên vậy hả mầy
+  - trụ sở [bắc ninh](location) có số lượng nhân sự như thế nào
+  - ba chi nhánh [hn,](location) [hồ chí minh](location) và văn phòng [đn](location)
+    có bao nhiu nhân viên
+  - thế tổng số nhận sự công ty là mấy
+  - thế số lượng nhận sự trong công ty là mấy
+  - ' cho tớ hỏi số lượng nhận sự công ty nha'
+  - em cho a hỏi quy mô công ty mình nhe
+  - mày cho hỏi nhân sự cơ sở [đắk nông](location) như thế nào
+  - chị muốn hỏi quy mô của công ty như nào
+  - ' nhân sự phòng bộ phận [trung tâm ai](department) có mấy người'
+  - tớ hỏi quy mô công ty được không cậu
+  - cả 3 cơ sở có mấy thành viên
+  - công ty có quy mô ra sao vậy
+  - 3 trụ sở [hn,](location) [hồ chí minh](location) và trụ sở [đn](location) có bao
+    nhiêu thành viên
+  - có bao nhiêu người trong công ty
+  - thế số lượng thành viên công ty là bao nhiu
+  - thế công ty có bao nhiêu thành viên
+  - quy mô công ty [f tech](work_unit) mầy
+  - cả 3 văn phòng của công ty có mấy người
+  - cả 3 trụ sở [đn,](location) [hồ chí minh](location) và [hà nội](location) có bao
+    nhiêu thành viên
+  - cho mình hỏi nhân sự công ty có bao nhiu người
+  - '[ftech](work_unit) có mấy nhận sự'
+  - anh hỏi số nhân viên công ty
+  - quy mô công ty có bao nhiêu nhân viên
+  - tổng số nhận sự của công ty là mấy
+  - ' nhân sự công ty như nào'
+  - số lượng người của công ty là mấy
+  - thế [f tech](work_unit) có bao nhiu thành viên
+  - công ty có nhiều người không
+  - cậu cho tôi hỏi quy mô công ty nha
+  - có mấy nhân sự [ai engineer](position) trong công ty
+  - m cho hỏi nhân sự trong công ty như nào
+  - số lượng nhận sự công ty là bao nhiêu
+  - chị hỏi về quy mô công ty như nào được ko timi
+  - ' nhân sự bộ phận bộ phận [application](department)'
+  - 3 cơ sở [hà nội,](location) [hcm](location) và cơ sở [dn](location) có bao nhiêu
+    nhận sự
+  - em cho anh hỏi số người công ty mình
+  - hiện nay công ty có mấy nhận sự hả cậu
+  - phòng ban phòng ban [hr admin](department) có số lượng nhân sự như thế nào
+  - ba trụ sở [hà nội,](location) [hồ chí minh](location) và trụ sở [đà nẵng](location)
+    có bao nhiêu nhận sự
+  - thế tổng số nhận sự công ty là bao nhiêu
+  - thế số lượng nhân viên trong công ty là mấy
+  - ' cho tớ hỏi số lượng nhận sự hiện tại công ty nha'
+  - ' cho c hỏi quy mô công ty mình nha'
+  - m cho hỏi nhân sự [trung tâm ai](department) thế nào
+  - mình hỏi quy mô của công ty ntn
+  - ' nhân sự bộ phận bộ phận [AI center](department) có mấy người'
+  - tôi muốn hỏi quy mô công ty đc không bạn
+  - cả 3 cơ sở có bao nhiêu nhân viên
+  - công ty có quy mô ra sao vậy cậu
+  - ba trụ sở [hn,](location) [hcm](location) và trụ sở [đn](location) có bao nhiêu
+    nhận sự
+  - có bao nhiu nhận sự trong công ty
+  - ' số lượng người của công ty là bao nhiêu'
+  - thế công ty có bao nhiu nhân viên
+  - quy mô công ty mầy
+  - cả 3 chi nhánh của công ty có bao nhiêu thành viên
+  - cả ba cơ sở [đà nẵng,](location) [hcm](location) và [hn](location) có bao nhiêu
+    người
+  - cho tôi hỏi nhân sự công ty có bao nhiu người
+  - '[ftech](work_unit) có bao nhiêu nhân viên'
+  - anh hỏi số lượng thành viên của công ty
+  - ' cho c hỏi số lượng nhân viên cơ sở [hồ chí minh](location) là bao nhiêu'
+  - quy mô công ty có bao nhiu nhận sự tại [hà nội](location) hả
+  - số lượng thành viên tại chi nhánh [hồ chí minh](location)
+  - ' có mấy thành viên trong [VL](location)'
+  - có bao nhiu nhận sự trong văn phòng [huế](location) nhể
+  - số lượng người của công ty ở [côn đảo](location) là mấy thế
+  - số lượng nhận sự chi nhánh [VL](location) là bao nhiêu
+  - '[ftech](work_unit) [tp hồ chí minh](location) có mấy người'
+  - cho tớ biết số lượng nhận sự [TH](location)
+  - ngoài [hồ chí minh](location) có bao nhiêu nhân viên
+  - tổng số người của công ty tại [hn](location) là bao nhiu
+  - công ty mấy người tại chi nhánh [hồ chí minh](location) hả cậu
+  - mình muốn hỏi quy mô công ty tại văn phòng [dn](location) như thế nào
+  - chi nhánh [TH](location) có đông không em
+  - số lượng người văn phòng tại [hn](location) là bao nhiêu
+  - quy mô công ty tại [hn](location) mày
+  - cơ sở [hn](location) [dn](location) [hồ chí minh](location) có bao nhiêu nhận
+    sự
+  - em cho a hỏi quy mô công ty mình ở văn phòng [đông nam bộ](location) nhé
+  - số lượng người trong office [Hoa Kỳ](location) là bao nhiu
+  - tại [đn](location) có bao nhiêu người
+  - ' công ty ở [HY](location) có bao nhiu người á'
+  - chi nhánh [pắc pó](location) có bao nhiêu nhận sự
+  - số lượng người ngoài [hà nội](location) là mấy
+  - công ty có quy mô như thế nào tại cơ sở [cà mau](location)
+  - số lượng thành viên tại văn phòng [đà nẵng](location) là bao nhiêu
+  - văn phòng [sài gòn](location) có đông ko
+  - trụ sở ở [hn](location) có bao nhiêu người
+  - công ty có quy mô ra sao tại [Đảo Nam Du](location) vậy hả
+  - quy mô công ty tại [QN](location) có đông không nhỉ
+  - ' cho tớ hỏi số người chi nhánh [đà lạt](location) nha'
+  - văn phòng ở [đn](location) có bao nhiêu nhận sự
+  - cơ sở [quy nhơn](location) có đông nhân viên không
+  - tớ muốn hỏi về quy mô công ty ntn tại [NB](location) đc ko bạn
+  - tại cơ sở [QN](location) có bao nhiêu thành viên
+  - văn phòng [đà nẵng](location) và [hcm](location) có bao nhiêu nhân viên
+  - cơ sở [Pháp](location) và cơ sở? [miền tây](location) có bao nhiêu nhận sự
+  - tại [hà nội](location) có bao nhiêu người
+  - a hỏi quy mô hiện của cơ sở [f tech](work_unit) [HY](location) ntn được ko em
+  - số nhận sự cơ sở [tuyên quang](location) là bao nhiêu bot
+  - chị muốn hỏi số thành viên trụ sở [đồng bằng bắc bộ](location)
+  - có bao nhiêu thành viên làm việc tại trụ sở [hcm](location)
+  - số lượng nhận sự cơ sở trong [sài gòn](location) là bao nhiêu
+  - văn phòng trong [sài gòn](location) có bao nhiêu nhận sự
+  - công ty tại [đồng bằng sông hồng](location) đông nhân sự không
+  - văn phòng [dn](location) và [dn](location) có số lượng người là bao nhiêu
+  - số lượng nhân viên trong [hcm](location)
+  - công ty có bao nhiu nhận sự tại văn phòng [thủ đức](location)
+  - tổng số người của văn phòng [bạc liệu](location) là bao nhiêu
+  - cậu cho mình hỏi số lượng người của [hcm](location) là bao nhiêu nha
+  - công ty có nhiều người ở [đà nẵng](location) không
+  - cậu cho tớ hỏi về quy mô của trụ sở [cố đô huế](location) nha
+  - số lượng thành viên ở [đà nẵng](location) là bao nhiêu
+  - hiện [bạc liệu](location) có bao nhiêu người bạn
+  - số lượng người chi nhánh trong [dn](location)
+  - chi nhánh [đà nẵng](location) và văn phòng [đồng bằng sông hồng](location) có
+    số lượng nhân viên là bao nhiêu
+  - timi cho chị hỏi số lượng người văn phòng [hà nội](location) là bao nhiu
+  - quy mô công ty có bao nhiêu người tại [hà nội](location) vậy
+  - số lượng người ở chi nhánh [hcm](location) là bao nhiêu
+  - công ty có bao nhiêu thành viên trong [VN](location)
+  - có bao nhiu nhân viên trong văn phòng [Tam đảo](location) ha
+  - số lượng người của công ty ở [đà lạt](location) là bao nhiu thế
+  - số lượng thành viên trụ sở [Việt Nam](location)
+  - '[ftech](work_unit) [hn](location) có bao nhiêu nhân viên'
+  - cho mình biết số lượng người [cù lao chàm](location)
+  - ở [sài gòn](location) có bao nhiêu người
+  - tổng số nhận sự của công ty tại [Việt Nam](location) là mấy
+  - công ty mấy người tại chi nhánh [đồng bằng bắc bộ](location) hả cậu
+  - tớ muốn hỏi về quy mô của công ty tại cơ sở [đồng tháp](location) ntn
+  - cơ sở [LS](location) có đông ko mày
+  - số lượng nhân viên trụ sở tại [hn](location) là bao nhiêu
+  - quy mô công ty [f-tech](work_unit) tại [pắc pó](location)
+  - chi nhánh [hn](location) [đà nẵng](location) [sài gòn](location) có bao nhiêu
+    thành viên
+  - timi cho chị hỏi quy mô công ty mình ở office [quảng bình](location) nha
+  - số lượng nhận sự trong chi nhánh [dn](location) là bao nhiêu
+  - ở chi nhánh [dn](location) có bao nhiêu nhận sự
+  - thế công ty ở [đồng bằng bắc bộ](location) có bao nhiêu người á
+  - chi nhánh [mộc châu](location) có bao nhiêu thành viên
+  - số lượng thành viên ở [hà nội](location) là bao nhiêu
+  - công ty có quy mô ntn tại trụ sở [hn](location)
+  - số lượng nhân viên ở trụ sở [dn](location)
+  - trụ sở [đồng bằng bắc bộ](location) có đông ko
+  - cơ sở ngoài [hn](location) có bao nhiêu nhân viên
+  - công ty có quy mô ra sao tại [đà nẵng](location) hả
+  - quy mô công ty tại [quảng ngãi](location) có đông không ha
+  - ' cho tớ hỏi số lượng nhân viên cơ sở [hn](location) nha'
+  - văn phòng ở [đn](location) có bao nhiêu thành viên
+  - chi nhánh [sài gòn](location) có đông nhân viên ko
+  - mình muốn hỏi về quy mô công ty như thế nào tại [hà nội](location) được ko bạn
+  - ở cơ sở [hà nội](location) công ty có bao nhiu người
+  - chi nhánh [dn](location) và [hồ chí minh](location) có bao nhiêu thành viên
+  - chi nhánh [Anh](location) và văn phòng? [Sing](location) có bao nhiêu nhân viên
+  - ngoài [hn](location) có bao nhiêu nhận sự
+  - chị muốn hỏi quy mô của cơ sở [ftech](work_unit) [Phong Nha-Kẻ Bàng](location)
+    ntn được không timi
+  - số lượng nhân viên cơ sở [sài gòn](location) là bao nhiêu
+  - chị hỏi số nhận sự trụ sở [dn](location)
+  - có bao nhiêu người ở [quảng ngãi](location)
+  - số lượng thành viên chi nhánh trong [hồ chí minh](location) là bao nhiu
+  - văn phòng trong [hồ chí minh](location) có bao nhiêu nhận sự
+  - công ty tại [đn](location) đông nhân sự không
+  - trụ sở [đn](location) và [đn](location) có số lượng nhân viên là bao nhiêu
+  - số lượng người ở [sài gòn](location) là bao nhiêu
+  - công ty có bao nhiu thành viên tại khu vực [phú yên](location)
+  - tổng số người văn phòng [vịnh hạ long](location) là mấy
+  - ' cho tớ hỏi số nhân viên [đồng bằng sông cưu long](location) là bao nhiêu nha'
+  - công ty có nhiều người ở [TH](location) không
+  - bạn cho tớ hỏi về quy mô hiện nay trụ sở [miền nam](location) nha
+  - số lượng nhân viên ở [đn](location) là mấy
+  - ' [hồ chí minh](location) có bao nhiêu người vậy'
+  - số lượng nhận sự trụ sở tại [đn](location) là bao nhiêu
+  - cơ sở [kon tum](location) và [hà nội](location) có số lượng nhân viên là bao nhiêu
+  - em cho a hỏi số người văn phòng [nam trung bộ](location)
+  - quy mô công ty có bao nhiu nhân viên tại [miền nam](location) vậy hả
+  - số lượng nhân viên tại trụ sở [hồ chí minh](location)
+  - ' có mấy nhận sự ngoài cơ sở [bắc trung bộ](location)'
+  - có bao nhiu thành viên trong văn phòng [Việt Nam](location) nhỉ
+  - số lượng người công ty ở [đất Việt](location) là bao nhiu thế
+  - số lượng thành viên cơ sở [đà nẵng](location)
+  - '[f tech](work_unit) [Tràng An](location) có bao nhiêu nhận sự'
+  - cho chị biết số lượng nhận sự trụ sở [sài gòn](location)
+  - tại [sài gòn](location) có bao nhiêu người
+  - tổng số nhân viên công ty tại [NB](location) là bao nhiu
+  - công ty bao nhiêu người tại khu vực [đn](location) hả mày
+  - tớ hỏi quy mô công ty tại trụ sở [hcm](location) thế nào
+  - chi nhánh [Tràng An](location) có đông ko mày
+  - số lượng người trụ sở tại [hà nội](location)
+  - quy mô công ty tại [VN](location) timi
+  - văn phòng [hn](location) [đà nẵng](location) [hcm](location) có bao nhiêu người
+  - ' cho a hỏi quy mô công ty mình ở văn phòng [đn](location) nha'
+  - số lượng nhận sự trong office [đất Việt](location) là bao nhiêu
+  - ở cơ sở [đà nẵng](location) có bao nhiêu người
+  - ' công ty ở [đồng bằng sông hồng](location) có bao nhiêu nhận sự á'
+  - cơ sở [hà nội](location) có bao nhiêu nhận sự
+  - số lượng người ở [hà nội](location) là bao nhiêu
+  - công ty có quy mô như thế nào tại trụ sở [hang sơn đoòng](location)
+  - số lượng nhân viên ở cơ sở [đn](location) là bao nhiêu
+  - trụ sở [hải dương](location) có đông ko
+  - chi nhánh ngoài [hn](location) có bao nhiêu nhận sự
+  - công ty có quy mô ra sao tại [hcm](location) vậy hả bạn
+  - quy mô công ty tại [đắk lắk](location) có đông ko nhể
+  - cậu cho mình hỏi số lượng người cơ sở [hải phòng](location) nha
+  - chi nhánh tại [đn](location) có bao nhiêu nhận sự
+  - cơ sở [sa đéc](location) có đông thành viên không
+  - tớ muốn hỏi quy mô công ty tại [hcm](location) đc không bạn
+  - tại trụ sở [ninh thuận](location) có bao nhiêu người
+  - văn phòng [đà nẵng](location) và [dn](location) có bao nhiêu nhận sự
+  - chi nhánh [đồng bằng sông cưu long](location) và cơ sở? [đồng nai](location) có
+    bao nhiêu nhận sự
+  - ngoài cơ sở [hn](location) có bao nhiêu người
+  - chị muốn hỏi về quy mô hiện của trụ sở [f-tech](work_unit) [hà nội](location)
+    như nào được ko em
+  - số lượng thành viên văn phòng [HY](location) là bao nhiêu mầy
+  - anh muốn hỏi số lượng nhận sự văn phòng [dn](location) là bao nhiêu
+  - có bao nhiêu nhân viên tại văn phòng [hà nội](location)
+  - số lượng thành viên văn phòng ở [sài gòn](location)
+  - cơ sở tại [hồ chí minh](location) có bao nhiêu thành viên
+  - công ty tại [hn](location) đông nhân sự không
+  - chi nhánh [đn](location) và [hcm](location) có số lượng thành viên là bao nhiêu
+  - số lượng nhận sự tại [hồ chí minh](location) là bao nhiu
+  - công ty có bao nhiêu nhận sự tại chi nhánh [Đảo Nam Du](location)
+  - tổng số nhân viên văn phòng [tuyên quang](location) là bao nhiêu
+  - cậu cho tôi hỏi số lượng thành viên [VN](location) nha
+  - công ty có nhiều thành viên ở [HD](location) không
+  - bạn cho tớ hỏi về quy mô hiện cơ sở [nam định](location) nha
+  - số lượng nhân viên trong [đà nẵng](location) là bao nhiêu
+  - ' [đất Việt](location) có mấy nhận sự'
+  - số lượng người trụ sở tại [đn](location) là bao nhiêu
+  - văn phòng [đất Việt](location) và [sài gòn](location) có số lượng nhân viên là
+    bao nhiêu
+  - ' cho anh hỏi số lượng thành viên chi nhánh [hà nội](location)'
+  - quy mô công ty có mấy nhận sự tại [Thái](location) hả
+  - số lượng nhận sự tại chi nhánh [sài gòn](location)
+  - ' có bao nhiu nhận sự trong [quy nhơn](location)'
+  - có mấy nhận sự trong khu vực [hn](location) nhỉ
+  - số lượng nhân viên công ty ở [Thổ Nhĩ Kỳ](location) là bao nhiêu thế
+  - số lượng nhân viên trụ sở [bình thuận](location) là bao nhiêu
+  - '[f-tech](work_unit) [tây nguyên](location) có bao nhiu nhận sự'
+  - cho mình biết số lượng người [Việt Nam](location)
+  - tại chi nhánh [sài gòn](location) có bao nhiêu nhận sự
+  - tổng số nhân viên của công ty tại [Mỹ](location) là bao nhiêu
+  - công ty bao nhiu người tại office [nha trang](location) hả timi
+  - mình hỏi về quy mô công ty tại trụ sở [tây nguyên](location) như thế nào
+  - chi nhánh [hcm](location) có đông ko bot
+  - số lượng nhận sự cơ sở ngoài [hà nội](location)
+  - quy mô công ty tại [bình dương](location) như nào
+  - trụ sở [hn](location) [đn](location) [hcm](location) có bao nhiêu nhân viên
+  - em cho c hỏi về quy mô công ty mình ở khu vực [phú yên](location) nhé
+  - số lượng nhận sự trong chi nhánh [HY](location) là bao nhiu
+  - tại [dn](location) có bao nhiêu thành viên
+  - thế công ty ở [sa đéc](location) có bao nhiêu nhận sự ạ
+  - chi nhánh [NB](location) có bao nhiêu thành viên
+  - số lượng nhận sự ngoài [hn](location) là bao nhiêu
+  - công ty có quy mô như nào tại chi nhánh [dn](location)
+  - số lượng nhân viên ở trụ sở [dn](location) là bao nhiêu
+  - cơ sở [hn](location) có đông không
+  - cơ sở tại [hà nội](location) có bao nhiêu người
+  - công ty có quy mô ra sao tại [sapa](location) vậy hả cậu
+  - quy mô công ty tại [đồng nai](location) có đông không nhỉ
+  - bạn cho tôi hỏi số lượng nhân viên cơ sở [đn](location) là bao nhiêu nha
+  - cơ sở ở [đà nẵng](location) có bao nhiêu người
+  - chi nhánh [đất Việt](location) có đông người không
+  - tôi muốn hỏi quy mô công ty tại [hn](location) được không cậu
+  - ở cơ sở [hn](location) công ty có mấy người
+  - cơ sở [đn](location) và [hồ chí minh](location) có bao nhiêu người
+  - văn phòng [BG](location) và chi nhánh? [hcm](location) có bao nhiêu thành viên
+  - ở [hà nội](location) có bao nhiêu thành viên
+  - chị hỏi về quy mô của văn phòng [ftech](work_unit) [HG](location) thế nào đc ko
+    em
+  - số người chi nhánh [điện biên](location) là bao nhiêu
+  - anh muốn hỏi số lượng người chi nhánh [miền bắc](location)
+  - có bao nhiêu nhận sự thuộc trụ sở [hn](location)
+  - số lượng người văn phòng trong [hcm](location) là mấy
+  - trụ sở tại [hồ chí minh](location) có bao nhiêu nhân viên
+  - công ty tại [dn](location) đông nhân sự ko
+  - cơ sở [đn](location) và [dn](location) có số lượng thành viên là bao nhiêu
+  - số lượng nhân viên tại [hcm](location) là bao nhiêu
+  - công ty có mấy nhận sự tại khu vực [Singapo](location)
+  - tổng số thành viên của cơ sở [đông nam bộ](location) là mấy
+  - ' cho tôi hỏi số nhận sự của [quảng ninh](location) nha'
+  - công ty có nhiều người ở [đất Việt](location) ko
+  - bạn cho tớ hỏi về quy mô của văn phòng [kiên giang](location) nha
+  - số lượng người trong [đà nẵng](location)
+  - ' [VN](location) có mấy thành viên'
+  - số lượng thành viên cơ sở tại [đà nẵng](location)
+  - văn phòng [đà nẵng](location) và [Việt Nam](location) có số lượng thành viên là
+    bao nhiêu
+  - timi cho anh hỏi số lượng nhận sự trụ sở [HG](location) là bao nhiêu
+  - quy mô công ty có bao nhiêu nhận sự tại [hang sơn đoòng](location) vậy
+  - số lượng người ở cơ sở [sài gòn](location)
+  - ' có bao nhiêu người ngoài [sài gòn](location)'
+  - có bao nhiêu nhận sự trong chi nhánh [BG](location) nhể
+  - số lượng nhân viên công ty ở [miền nam](location) là bao nhiêu thế
+  - số lượng người văn phòng [vĩnh phúc](location)
+  - '[ftech](work_unit) [sài gòn](location) có mấy người'
+  - cho tớ biết số lượng nhân viên trụ sở [hồ chí minh](location)
+  - tại [sài gòn](location) có bao nhiêu nhận sự
+  - tổng số nhận sự công ty tại [hn](location) là bao nhiêu
+  - công ty mấy người tại văn phòng [phú yên](location) hả bạn
+  - anh hỏi về quy mô của công ty tại cơ sở [hn](location) như nào
+  - văn phòng [sài gòn](location) có đông ko mày
+  - số lượng thành viên chi nhánh ở [hà nội](location)
+  - quy mô công ty [f-tech](work_unit) tại [HG](location) như nào
+  - chi nhánh [hn](location) [đà nẵng](location) [sài gòn](location) có bao nhiêu
+    nhận sự
+  - em cho anh hỏi về quy mô công ty mình ở khu vực [Việt Nam](location) nhé
+  - số lượng thành viên trong office [TV](location) là bao nhiu
+  - ngoài [đà nẵng](location) có bao nhiêu thành viên
+  - thế công ty ở [đn](location) có bao nhiu người ạ
+  - cơ sở [VL](location) có bao nhiêu thành viên
+  - số lượng nhân viên ngoài [hn](location) là bao nhiêu
+  - công ty có quy mô thế nào tại trụ sở [đồng bằng bắc bộ](location)
+  - số lượng thành viên ở cơ sở [dn](location) là bao nhiêu
+  - cơ sở [duyên hải miền trung](location) có đông ko
+  - chi nhánh ngoài [hn](location) có bao nhiêu thành viên
+  - công ty có quy mô ra sao tại [sài gòn](location) hả bạn
+  - quy mô công ty tại [yên bái](location) có đông không nhể
+  - ' cho tớ hỏi số nhân viên cơ sở [BG](location) là bao nhiêu nha'
+  - trụ sở trong [đà nẵng](location) có bao nhiêu nhân viên
+  - văn phòng [VN](location) có đông người không
+  - mình hỏi quy mô công ty tại [đất Việt](location) đc không cậu
+  - tại văn phòng [sài gòn](location) có mấy người
+  - chi nhánh [dn](location) và [hcm](location) có bao nhiêu người
+  - trụ sở [hn](location) và trụ sở? [hồ chí minh](location) có bao nhiêu người
+  - ở [hn](location) có bao nhiêu nhân viên
+  - c muốn hỏi quy mô hiện tại của văn phòng [f-tech](work_unit) [đông bắc bộ](location)
+    được không timi
+  - số nhận sự văn phòng [cù lao chàm](location) là bao nhiêu
+  - anh hỏi số thành viên trụ sở [thủ đức](location)
+  - có bao nhiêu nhận sự tại [hồ chí minh](location)
+  - số lượng nhân viên cơ sở trong [hồ chí minh](location)
+  - trụ sở ở [hcm](location) có bao nhiêu thành viên
+  - công ty tại [hang sơn đoòng](location) đông nhân sự ko
+  - cơ sở [đn](location) và [dn](location) có số lượng nhân viên là bao nhiêu
+  - số lượng nhân viên trong [sài gòn](location) là bao nhiêu
+  - công ty có bao nhiêu thành viên tại văn phòng [gia lai](location)
+  - tổng số thành viên của cơ sở [hn](location) là bao nhiêu
+  - bạn cho tôi hỏi số thành viên [hcm](location) là bao nhiu nha
+  - công ty có đông nhận sự ở [hn](location) ko
+  - ' cho tớ hỏi quy mô hiện nay trụ sở [tây bắc bộ](location) nha'
+  - số lượng nhân viên tại [dn](location)
+  - ' [vịnh hạ long](location) có mấy người vậy'
+  - số lượng nhân viên văn phòng ở [đà nẵng](location)
+  - trụ sở [cần thơ](location) và [Việt Nam](location) có số lượng nhận sự là bao
+    nhiêu
+  - timi cho c hỏi số lượng người văn phòng [hà nội](location)
+  - quy mô công ty có bao nhiu nhận sự tại [sài gòn](location) vậy hả
+  - số lượng nhận sự trong trụ sở [sài gòn](location) là mấy
+  - công ty có mấy nhân viên ngoài văn phòng [kon tum](location)
+  - có mấy người trong chi nhánh [VN](location) nhỉ
+  - số lượng nhân viên công ty ở [hn](location) là mấy thế
+  - số lượng thành viên cơ sở [hn](location)
+  - '[f-tech](work_unit) [đông nam bộ](location) có mấy người'
+  - cho tớ biết số lượng nhận sự trụ sở [BG](location)
+  - ở văn phòng [hồ chí minh](location) có bao nhiêu người
+  - tổng số nhận sự công ty tại [trà vinh](location) là mấy
+  - công ty bao nhiu người tại khu vực [đông nam bộ](location) hả cậu
+  - anh muốn hỏi quy mô của công ty tại cơ sở [đồng bằng sông cưu long](location)
+    thế nào
+  - cơ sở [hồ chí minh](location) có đông không timi
+  - số lượng thành viên văn phòng ở [hn](location) là bao nhiu
+  - quy mô công ty [f-tech](work_unit) tại [hà nội](location) m
+  - văn phòng [hà nội](location) [đn](location) [hcm](location) có bao nhiêu thành
+    viên
+  - em cho c hỏi quy mô công ty mình ở office [hn](location) nha
+  - số lượng người trong chi nhánh [hcm](location) là bao nhiu
+  - ngoài trụ sở [đn](location) có bao nhiêu người
+  - thế công ty ở [sài gòn](location) có mấy thành viên ạ
+  - cơ sở [đông nam bộ](location) có bao nhiêu nhân viên
+  - số lượng nhân viên ngoài [hn](location) là bao nhiu
+  - công ty có quy mô như nào tại cơ sở [đn](location)
+  - số lượng nhân viên trong văn phòng [dn](location) là bao nhiu
+  - '[game và design](department) có bao nhiêu người'
+  - phòng phòng ban [application](department) có số lượng nhân viên là bao nhiêu
+  - ' có bao nhiêu nhân viên trong văn phòng [Phan Thiết](location)'
+  - phòng bộ phận [tài chính](department) gồm có bao nhiu nhận sự
+  - có bao nhiêu nhận sự đang thuộc team phòng [game & design](department) tại trụ
+    sở [đất Việt](location)
+  - tại văn phòng [dn](location) có bao nhiêu nhân viên
+  - số nhân viên của [trung tâm ai](department) là mấy
+  - '[trung tâm ai](department) có đông không'
+  - có bao nhiêu nhân viên thuộc [trung tâm ai](department)
+  - '[trung tâm ai](department) có bao nhiêu nhân viên'
+  - team phòng ban [vệ sinh](department) có bao nhiêu thành viên
+  - mình hỏi số lượng người của phòng phòng ban [game](department) là bao nhiêu
+  - '[AI center](department) có số lượng nhân viên là bao nhiêu'
+  - hiện nay phòng phòng [trung tâm ai](department) có bao nhiêu nhân viên vậy hả
+    mầy
+  - số nhân viên [AI center](department) là bao nhiêu bạn
+  - tổng số thành viên của [trung tâm ai](department) là bao nhiêu
+  - có mấy người thuộc bộ phận team [kinh doanh](department)
+  - số lượng người [trung tâm ai](department) là mấy
+  - số lượng nhận sự làm việc tại chi nhánh [HY](location) là bao nhiêu
+  - ' cho tớ hỏi số nhân viên của [trung tâm ai](department) nha'
+  - ' có bao nhiêu người'
+  - '[AI center](department) có số lượng người là bao nhiêu'
+  - công ty có bao nhiêu nhân viên trong [sài gòn](location)
+  - team phòng [game & design](department) gồm có mấy người
+  - có bao nhiêu nhân viên đang thuộc phòng phòng ban [hệ thống cơ sở hạ tầng](department)
+    ở cơ sở [đông nam bộ](location)
+  - tại cơ sở [Nga](location) có bao nhiêu nhân viên
+  - số thành viên phòng bộ phận [kiểm toán](department) là mấy
+  - team phòng ban [game](department) có đông ko
+  - có bao nhiêu nhận sự đang thuộc bộ phận team [business](department)
+  - '[AI center](department) có mấy thành viên'
+  - phòng ban phòng [platform](department) có mấy nhân viên
+  - tớ hỏi số lượng nhận sự của team bộ phận [kinh doanh](department)
+  - team team [kiểm toán](department) có số lượng người là bao nhiêu
+  - hiện nay [AI center](department) có bao nhiêu nhận sự timi
+  - số người [trung tâm ai](department) là bao nhiêu timi
+  - tổng số nhận sự của phòng ban team [AI center](department) là bao nhiêu
+  - có mấy thành viên thuộc [AI center](department)
+  - số lượng thành viên bộ phận team [platform](department) là bao nhiêu vậy hả cậu
+  - số lượng người làm việc tại văn phòng [đà nẵng](location) là bao nhiu
+  - cậu cho tớ hỏi số người team team [Marketing](department) nha
+  - '[business](department) có bao nhiêu người'
+  - phòng ban phòng ban [AI center](department) có số lượng người là bao nhiêu
+  - ' có mấy nhận sự ngoài cơ sở [ninh thuận](location)'
+  - '[AI center](department) gồm có mấy nhân viên'
+  - có bao nhiêu người đang thuộc phòng team [kinh doanh](department) tại [nam định](location)
+  - ở [phú thọ](location) công ty có bao nhiu thành viên
+  - số lượng người của [trung tâm ai](department) là bao nhiêu bot
+  - phòng ban phòng ban [sản phẩm](department) có đông người ko
+  - có bao nhiêu nhân viên đang thuộc phòng ban bộ phận [platform](department)
+  - team team [nhân sự](department) có mấy nhân viên
+  - team phòng ban [trung tâm ai](department) có mấy thành viên
+  - tớ hỏi số thành viên [trung tâm ai](department)
+  - '[trung tâm ai](department) có số lượng nhân viên là mấy'
+  - ' [AI center](department) có mấy người bạn'
+  - số thành viên của phòng phòng [kinh doanh](department) là bao nhiêu
+  - tổng số nhận sự của bộ phận bộ phận [product](department) là bao nhiêu
+  - có mấy nhận sự thuộc bộ phận phòng ban [game và design](department)
+  - số lượng nhận sự team team [game & design](department) là bao nhiu cậu
+  - số lượng nhận sự làm việc tại văn phòng [Việt Nam](location) là bao nhiêu
+  - ' cho tôi hỏi số lượng người của team bộ phận [trung tâm ai](department) nha'
+  - '[game & design](department) có bao nhiêu người'
+  - '[trung tâm ai](department) có số lượng nhận sự là bao nhiêu'
+  - công ty có bao nhiu người ngoài chi nhánh [hà nội](location)
+  - team phòng ban [hr admin](department) gồm có bao nhiêu thành viên
+  - có bao nhiêu thành viên đang thuộc team phòng [game & design](department) tại
+    trụ sở [bình thuận](location)
+  - ở chi nhánh [BN](location) có bao nhiu nhận sự
+  - số lượng nhân viên [trung tâm ai](department) là bao nhiu mày
+  - '[AI center](department) có đông nhận sự không'
+  - có bao nhiêu thành viên đang thuộc [trung tâm ai](department)
+  - phòng bộ phận [HR and Admin](department) có bao nhiu nhận sự
+  - phòng phòng ban [hr admin](department) có mấy nhân viên
+  - mình muốn hỏi số người [trung tâm ai](department) là bao nhiêu
+  - '[AI center](department) có số lượng người là bao nhiu'
+  - hiện phòng ban team [business](department) có mấy thành viên vậy hả bot
+  - số lượng thành viên [trung tâm ai](department) là bao nhiêu
+  - tổng số thành viên bộ phận phòng [cơ sở hạ tầng](department) là bao nhiêu
+  - có bao nhiêu thành viên thuộc [trung tâm ai](department)
+  - số lượng nhân viên [trung tâm ai](department) là mấy
+  - số lượng nhân viên làm việc tại văn phòng [hcm](location) là bao nhiêu
+  - ' cho tôi hỏi số người của [trung tâm ai](department) nha'
+  - '[game](department) có bao nhiêu người'
+  - bộ phận phòng ban [kinh doanh](department) có số lượng người là bao nhiêu
+  - công ty có mấy nhận sự trong [đn](location)
+  - '[AI center](department) gồm có bao nhiu thành viên'
+  - có bao nhiêu thành viên thuộc phòng phòng ban [platform](department) ở [đn](location)
+  - tại [hang sơn đoòng](location) có bao nhiêu thành viên
+  - số lượng nhận sự của team team [product](department) là bao nhiu bạn
+  - team phòng ban [trung tâm ai](department) có đông thành viên ko
+  - có bao nhiêu nhân viên thuộc [AI center](department)
+  - phòng ban phòng ban [sản phẩm](department) có mấy nhân viên
+  - phòng ban phòng ban [business](department) có bao nhiêu người
+  - chị muốn hỏi số nhân viên [trung tâm ai](department) là bao nhiêu
+  - '[trung tâm ai](department) có số lượng thành viên là mấy'
+  - hiện tại [trung tâm ai](department) có mấy người hả bạn
+  - số lượng thành viên của bộ phận phòng ban [product](department) là bao nhiêu
+  - tổng số nhân viên [trung tâm ai](department) là bao nhiêu
+  - có bao nhiêu người đang thuộc [AI center](department)
+  - số lượng người team bộ phận [game và design](department) là bao nhiêu vậy hả
+  - số lượng thành viên làm việc tại trụ sở [dn](location) là bao nhiu
+  - ' cho tôi hỏi số nhận sự của [AI center](department) là bao nhiêu nha'
+  - '[trung tâm ai](department) có bao nhiêu người'
+  - team phòng ban [business](department) có số lượng nhận sự là bao nhiêu
+  - công ty có bao nhiêu thành viên trong cơ sở [vịnh hạ long](location)
+  - bộ phận phòng ban [nhân sự](department) gồm có mấy nhân viên
+  - có bao nhiêu nhân viên thuộc team phòng ban [trung tâm ai](department) ở [Việt
+    Nam](location)
+  - tại trụ sở [hồ chí minh](location) có mấy nhân viên
+  - số nhân viên bộ phận bộ phận [business](department) là bao nhiêu
+  - phòng bộ phận [hr admin](department) có đông không
+  - có bao nhiêu nhân viên đang thuộc [trung tâm ai](department)
+  - bộ phận phòng ban [kinh doanh](department) có mấy thành viên
+  - '[trung tâm ai](department) có bao nhiu người'
+  - chị muốn hỏi số lượng nhân viên của phòng phòng ban [application](department)
+    là bao nhiêu
+  - phòng bộ phận [business](department) có số lượng thành viên là bao nhiêu
+  - ' phòng bộ phận [platform](department) có bao nhiêu nhân viên vậy hả'
+  - số lượng thành viên của [trung tâm ai](department) là bao nhiêu m
+  - tổng số thành viên phòng team [hr admin](department) là bao nhiu
+  - có bao nhiu thành viên đang thuộc phòng team [hành chính nhân sự](department)
+  - số lượng thành viên phòng bộ phận [business](department) là bao nhiu
+  - số lượng người làm việc tại [tây bắc bộ](location) là mấy
+  - ' cho tôi hỏi số nhân viên phòng phòng [sản phẩm](department) là bao nhiêu nha'
+  - '[AI center](department) có bao nhiêu người'
+  - bộ phận phòng [nghiên cứu](department) có số lượng nhân viên là bao nhiêu
+  - ' có bao nhiu nhân viên ngoài văn phòng [hcm](location)'
+  - '[trung tâm ai](department) gồm có bao nhiêu nhận sự'
+  - có bao nhiêu nhận sự thuộc bộ phận phòng ban [game & design](department) ở văn
+    phòng [NB](location)
+  - ở [hn](location) công ty có bao nhiêu thành viên
+  - số lượng thành viên [AI center](department) là mấy m
+  - phòng ban bộ phận [game](department) có đông không
+  - có bao nhiêu nhận sự đang thuộc [AI center](department)
+  - team phòng ban [hr admin](department) có mấy người
+  - team phòng ban [platform](department) có mấy thành viên
+  - chị hỏi số lượng người của team phòng ban [sản phẩm](department) là mấy
+  - phòng ban phòng [sản phẩm](department) có số lượng nhân viên là bao nhiêu
+  - ' [AI center](department) có bao nhiu người hả'
+  - số thành viên [trung tâm ai](department) là bao nhiêu
+  - tổng số thành viên [trung tâm ai](department) là bao nhiêu
+  - có bao nhiêu người thuộc [trung tâm ai](department)
+  - số lượng nhân viên [trung tâm ai](department) là bao nhiu vậy hả
+  - số lượng người làm việc tại [thanh hóa](location) là bao nhiêu
+  - cậu cho tớ hỏi số lượng nhân viên của team phòng ban [game & design](department)
+    là bao nhiêu nha
+  - '[sản phẩm](department) có bao nhiêu người'
+  - phòng ban bộ phận [hỗ trợ it](department) có số lượng người là bao nhiêu
+  - công ty có mấy nhân viên trong [VL](location)
+  - bộ phận team [application](department) gồm có bao nhiu người
+  - có bao nhiêu nhân viên thuộc phòng ban bộ phận [trung tâm ai](department) ở [bắc
+    trung bộ](location)
+  - tại văn phòng [Thái](location) có bao nhiêu nhận sự
+  - số lượng người [AI center](department) là bao nhiu
+  - bộ phận phòng [trung tâm ai](department) có đông ko
+  - có bao nhiêu thành viên đang thuộc [AI center](department)
+  - phòng ban phòng ban [product](department) có mấy thành viên
+  - team phòng ban [AI center](department) có bao nhiu người
+  - tớ muốn hỏi số thành viên [trung tâm ai](department) là mấy
+  - phòng ban phòng [trung tâm ai](department) có số lượng nhân viên là bao nhiu
+  - hiện [AI center](department) có bao nhiêu nhận sự hả em
+  - số lượng người của phòng ban bộ phận [hành chính nhân sự](department) là bao nhiêu
+    timi
+  - tổng số nhân viên [AI center](department) là mấy
+  - có mấy nhận sự đang thuộc [trung tâm ai](department)
+  - số lượng thành viên [AI center](department) là mấy vậy hả bạn
+  - số lượng nhận sự làm việc tại cơ sở [sài gòn](location) là bao nhiu
+  - cậu cho mình hỏi số nhân viên của [trung tâm ai](department) nha
+  - '[kinh doanh](department) có bao nhiêu người'
+  - '[trung tâm ai](department) có số lượng thành viên là bao nhiêu'
+  - ' có bao nhiu người ngoài [cố đô huế](location)'
+  - phòng ban phòng ban [platform](department) gồm có mấy thành viên
+  - có bao nhiêu nhận sự đang thuộc phòng ban team [application](department) tại [TH](location)
+  - ở trụ sở [hồ chí minh](location) có bao nhiu nhân viên
+  - số lượng nhân viên của team phòng [AI center](department) là mấy timi
+  - bộ phận bộ phận [HR and Admin](department) có đông không
+  - có bao nhiêu người thuộc team phòng ban [sản phẩm](department)
+  - phòng phòng ban [nhân sự](department) có mấy thành viên
+  - bộ phận bộ phận [chăm sóc khách hàng](department) có mấy nhận sự
+  - mình hỏi số người của team phòng [kiểm toán](department)
+  - phòng ban bộ phận [hệ thống cơ sở hạ tầng](department) có số lượng nhân viên là
+    bao nhiu
+  - hiện tại phòng ban bộ phận [trung tâm ai](department) có bao nhiu người mày
+  - số thành viên của bộ phận bộ phận [trung tâm ai](department) là bao nhiêu
+  - tổng số người của [trung tâm ai](department) là bao nhiu
+  - có bao nhiu nhân viên thuộc [trung tâm ai](department)
+  - số lượng nhận sự [AI center](department) là mấy vậy
+  - số lượng thành viên làm việc tại cơ sở [hà nội](location) là mấy
+  - ' cho tôi hỏi số người của phòng team [kinh doanh](department) là mấy nha'
+  - '[product](department) có bao nhiêu người'
+  - bộ phận phòng [Marketing](department) có số lượng thành viên là bao nhiêu
+  - ' có mấy nhận sự ngoài cơ sở [LS](location)'
+  - bộ phận bộ phận [hạ tầng](department) gồm có mấy người
+  - có bao nhiêu người thuộc [AI center](department) ở trụ sở [quảng bình](location)
+  - tại [đà nẵng](location) có bao nhiu nhận sự
+  - số nhận sự của phòng phòng ban [hỗ trợ it](department) là mấy
+  - '[trung tâm ai](department) có đông người không'
+  - có bao nhiêu nhân viên đang thuộc [AI center](department)
+  - '[trung tâm ai](department) có bao nhiêu thành viên'
+  - '[AI center](department) có mấy người'
+  - anh hỏi số lượng thành viên phòng ban phòng [bảo vệ](department)
+  - '[AI center](department) có số lượng thành viên là mấy'
+  - ' [trung tâm ai](department) có mấy thành viên bot'
+  - số thành viên của [AI center](department) là bao nhiêu
+  - tổng số người phòng ban phòng ban [hệ thống system](department) là bao nhiêu
+  - có mấy nhân viên đang thuộc [trung tâm ai](department)
+  - số lượng người [trung tâm ai](department) là bao nhiu vậy cậu
+  - số lượng thành viên làm việc tại cơ sở [dn](location) là mấy
+  - bạn cho tớ hỏi số lượng nhận sự của [AI center](department) nha
+  - '[application](department) có bao nhiêu người'
+  - '[trung tâm ai](department) có số lượng người là bao nhiêu'
+  - ' có bao nhiêu thành viên ngoài [Tam đảo](location)'
+  - '[trung tâm ai](department) gồm có bao nhiêu nhân viên'
+  - có bao nhiêu nhận sự đang thuộc phòng ban team [AI center](department) tại cơ
+    sở [lai châu](location)
+  - tại [vịnh hạ long](location) công ty có mấy nhận sự
+  - số người team team [hỗ trợ it](department) là mấy
+  - '[AI center](department) có đông không'
+  - có bao nhiêu nhận sự thuộc phòng ban team [nhân sự](department)
+  - bộ phận phòng [trung tâm ai](department) có mấy nhận sự
+  - bộ phận team [AI center](department) có bao nhiu thành viên
+  - anh hỏi số người của [trung tâm ai](department) là bao nhiêu
+  - phòng bộ phận [sản phẩm](department) có số lượng người là bao nhiêu
+  - hiện tại bộ phận phòng ban [application](department) có bao nhiêu người hả
+  - số nhân viên [trung tâm ai](department) là bao nhiêu em
+  - tổng số nhân viên [AI center](department) là bao nhiêu
+  - có mấy người đang thuộc [AI center](department)
+  - số lượng người [AI center](department) là mấy vậy hả
+  - số lượng thành viên làm việc tại trụ sở [BN](location) là bao nhiu
+  - cậu cho mình hỏi số lượng nhận sự team phòng ban [hệ thống cơ sở hạ tầng](department)
+    là bao nhiu nha
+  - '[platform](department) có bao nhiêu người'
+  - team phòng ban [trung tâm ai](department) có số lượng nhân viên là bao nhiêu
+  - công ty có mấy người ngoài văn phòng [sa đéc](location)
+  - team team [product](department) gồm có mấy nhân viên
+  - có bao nhiêu người đang thuộc team phòng ban [hạ tầng](department) ở cơ sở [đà
+    nẵng](location)
+  - ở trụ sở [TV](location) công ty có bao nhiêu người
+  - số lượng nhận sự [AI center](department) là bao nhiêu
+  - '[trung tâm ai](department) có đông nhân viên không'
+  - có bao nhiêu nhân viên thuộc team team [cơ sở hạ tầng](department)
+  - '[trung tâm ai](department) có bao nhiu nhân viên'
+  - phòng ban bộ phận [hạ tầng](department) có mấy nhận sự
+  - mình hỏi số lượng nhận sự [trung tâm ai](department) là bao nhiêu
+  - '[trung tâm ai](department) có số lượng nhận sự là mấy'
+  - ' [trung tâm ai](department) có bao nhiêu thành viên hả'
+  - số lượng nhận sự của [AI center](department) là bao nhiêu mày
+  - tổng số nhận sự team phòng ban [trung tâm ai](department) là bao nhiêu
+  - có bao nhiêu nhận sự đang thuộc team phòng [trung tâm ai](department)
+  - số lượng nhân viên [trung tâm ai](department) là bao nhiu vậy hả bạn
+  - số lượng người làm việc tại [nam trung bộ](location) là mấy
+  - ' cho mình hỏi số lượng thành viên của [trung tâm ai](department) là bao nhiêu
+    nha'
+  - phòng phòng [kinh doanh](department) có số lượng người là bao nhiêu
+  - ' có mấy người ngoài trụ sở [quy nhơn](location)'
+  - '[trung tâm ai](department) gồm có bao nhiu thành viên'
+  - có bao nhiêu người thuộc [trung tâm ai](department) tại trụ sở [tây bắc bộ](location)
+  - ở [dn](location) có bao nhiêu người
+  - số lượng thành viên của [AI center](department) là bao nhiu mầy
+  - phòng phòng ban [AI center](department) có đông ko
+  - có bao nhiêu thành viên thuộc phòng bộ phận [platform](department)
+  - '[AI center](department) có mấy nhân viên'
+  - bộ phận phòng [kinh doanh](department) có mấy người
+  - phòng team [platform](department) [dn](location) có mấy nhận sự
+  - ' cho chị hỏi về quy mô bộ phận team [trung tâm ai](department) [củ chi](location)
+    mình nha'
+  - tổng số người team team [nhân sự](department) tại [hn](location) là mấy
+  - tớ hỏi quy mô [trung tâm ai](department) tại cơ sở [BN](location) đc ko bạn
+  - quy mô công ty có mấy người tại phòng ban team [trung tâm ai](department) [tây
+    ninh](location) nhỉ
+  - quy mô công ty có đông ko tại phòng phòng ban [game](department) [hà nội](location)
+  - công ty đông nhân sự tại [trung tâm ai](department) chi nhánh [hn](location) ko
+  - có mấy người đang thuộc [AI center](department) tại trụ sở [miền bắc](location)
+  - số lượng người trong phòng bộ phận [bảo vệ](department) cơ sở [dn](location) là
+    mấy
+  - cậu cho mình hỏi quy mô của team phòng ban [HR and Admin](department) tại trụ
+    sở văn phòng [dn](location) với nha
+  - ' [AI centertại](department) [đn](location) có bao nhiêu người'
+  - chị hỏi quy mô [AI center](department) chi nhánh [tây nam bộ](location) như nào
+  - phòng bộ phận [AI center](department) [bạc liệu](location) có mấy nhận sự
+  - em cho a hỏi quy mô [AI center](department) [sa đéc](location) mình nha
+  - tổng số thành viên [trung tâm ai](department) tại [sài gòn](location) là mấy
+  - mình muốn hỏi quy mô [trung tâm ai](department) thế nào tại văn phòng [dn](location)
+    được không bạn
+  - quy mô công ty có mấy thành viên tại [AI center](department) [hà nội](location)
+    nhỉ
+  - quy mô công ty có đông không tại [trung tâm ai](department) [Việt Nam](location)
+  - công ty đông nhân sự tại [trung tâm ai](department) cơ sở [Lào](location) ko
+  - có bao nhiu người đang thuộc phòng ban phòng [product](department) tại [TH](location)
+  - số lượng người trong phòng ban phòng ban [nhân sự](department) văn phòng [dn](location)
+    là bao nhiu
+  - cậu cho tôi hỏi quy mô hiện team team [product](department) tại cơ sở trụ sở [Việt
+    Nam](location) với nha
+  - thế [trung tâm aitại](department) [QB](location) có bao nhiu nhân viên
+  - mình muốn hỏi quy mô phòng team [hành chính nhân sự](department) văn phòng [hcm](location)
+    ntn
+  - bộ phận phòng ban [kinh doanh](department) [VN](location) có mấy nhận sự
+  - ' cho a hỏi quy mô phòng ban team [game & design](department) [HY](location) mình
+    nhé'
+  - tổng số người phòng ban team [business](department) tại [Nhật Bản](location) là
+    mấy
+  - mình muốn hỏi quy mô team phòng [hr admin](department) thế nào tại trụ sở [TH](location)
+    đc ko cậu
+  - quy mô công ty có mấy nhận sự tại bộ phận phòng ban [it support](department) [hn](location)
+    ha
+  - quy mô công ty có đông không tại phòng ban phòng ban [hành chính nhân sự](department)
+    [bình định](location)
+  - công ty đông nhân sự tại bộ phận phòng ban [it support](department) trụ sở [hn](location)
+    ko
+  - có bao nhiêu nhân viên thuộc team phòng [trung tâm ai](department) tại [bình dương](location)
+  - số lượng nhân viên trong phòng ban phòng [hạ tầng](department) cơ sở [củ chi](location)
+    là bao nhiu
+  - ' cho tớ hỏi về quy mô hiện [trung tâm ai](department) tại văn phòng văn phòng
+    [QB](location) với á'
+  - thế phòng ban phòng [hạ tầngtại](department) [đà nẵng](location) có bao nhiu thành
+    viên
+  - chị hỏi về quy mô bộ phận phòng [Quan hệ quốc tế](department) chi nhánh [sài gòn](location)
+    như nào
+  - team phòng ban [business](department) [hn](location) có mấy thành viên
+  - ' cho anh hỏi quy mô [trung tâm ai](department) [TH](location) mình nhé'
+  - tổng số nhận sự phòng bộ phận [trung tâm ai](department) tại [hồ chí minh](location)
+    là bao nhiu
+  - mình muốn hỏi quy mô phòng ban phòng [game và design](department) tại trụ sở [sài
+    gòn](location) đc không cậu
+  - quy mô công ty có mấy người tại phòng bộ phận [AI center](department) [TV](location)
+    nhể
+  - quy mô công ty có đông không tại [AI center](department) [Macau](location)
+  - công ty đông nhân sự tại [trung tâm ai](department) trụ sở [QB](location) ko
+  - có mấy nhân viên thuộc [trung tâm ai](department) tại văn phòng [HY](location)
+  - số lượng nhân viên trong team phòng [application](department) văn phòng [hang
+    sơn đoòng](location) là bao nhiêu
+  - ' cho tớ hỏi quy mô [trung tâm ai](department) tại văn phòng cơ sở [hn](location)
+    với á'
+  - thế [AI centertại](department) [hà nội](location) có bao nhiu người
+  - mình muốn hỏi về quy mô của phòng ban phòng [application](department) chi nhánh
+    [Việt Nam](location) ntn
+  - team team [CSKH](department) [đà nẵng](location) có bao nhiu nhân viên
+  - ' cho a hỏi về quy mô [AI center](department) [hcm](location) mình nha'
+  - tổng số nhận sự của phòng phòng [platform](department) tại [hcm](location) là
+    bao nhiu
+  - tớ hỏi về quy mô [AI center](department) như thế nào tại văn phòng [hòa bình](location)
+    được ko cậu
+  - quy mô công ty có mấy nhận sự tại phòng phòng [product](department) [đắk nông](location)
+    nhỉ
+  - quy mô công ty có đông không tại [trung tâm ai](department) [TH](location)
+  - công ty đông nhân sự tại [AI center](department) văn phòng [BN](location) ko
+  - có mấy người thuộc [AI center](department) tại văn phòng [tây nguyên](location)
+  - số lượng nhận sự trong phòng team [hr admin](department) cơ sở [miền bắc](location)
+    là bao nhiêu
+  - cậu cho tớ hỏi quy mô hiện của phòng ban phòng ban [business](department) tại
+    chi nhánh cơ sở [Trung Quốc](location) với nha
+  - ' [trung tâm aitại](department) [đn](location) có bao nhiêu nhận sự'
+  - chị muốn hỏi quy mô phòng phòng ban [game](department) văn phòng [hồ chí minh](location)
+    thế nào
+  - phòng ban phòng [trung tâm ai](department) [củ chi](location) có mấy nhân viên
+  - em cho a hỏi về quy mô phòng phòng ban [it support](department) [QN](location)
+    mình nhe
+  - tổng số nhận sự [trung tâm ai](department) tại [hcm](location) là bao nhiu
+  - tớ hỏi về quy mô [AI center](department) như nào tại trụ sở [dn](location) được
+    ko cậu
+  - quy mô công ty có mấy thành viên tại [AI center](department) [Việt Nam](location)
+    ha
+  - quy mô công ty có đông không tại team phòng ban [HR and Admin](department) [hn](location)
+  - công ty đông nhân sự tại [AI center](department) cơ sở [Canada](location) không
+  - có bao nhiu người thuộc team team [hạ tầng](department) ở trụ sở [hà nội](location)
+  - số lượng thành viên trong team phòng [AI center](department) chi nhánh [hà nội](location)
+    là bao nhiu
+  - ' cho tớ hỏi về quy mô team bộ phận [it support](department) tại chi nhánh chi
+    nhánh [hồ chí minh](location) với nha'
+  - ' phòng phòng ban [vệ sinhtại](department) [vĩnh phúc](location) có bao nhiêu
+    nhận sự'
+  - chị hỏi quy mô của [AI center](department) cơ sở [đà nẵng](location) như nào
+  - bộ phận phòng [trung tâm ai](department) [ninh bình](location) có mấy nhân viên
+  - ' cho c hỏi quy mô [AI center](department) [Việt Nam](location) mình nhé'
+  - tổng số thành viên của phòng ban bộ phận [hành chính nhân sự](department) tại
+    [TV](location) là bao nhiu
+  - tớ hỏi về quy mô [trung tâm ai](department) ntn tại văn phòng [hà nội](location)
+    được không bạn
+  - quy mô công ty có mấy nhân viên tại bộ phận team [kinh doanh](department) [dn](location)
+    nhể
+  - quy mô công ty có đông ko tại [AI center](department) [tây nguyên](location)
+  - công ty đông nhân sự tại [trung tâm ai](department) văn phòng [hcm](location)
+    không
+  - có bao nhiu thành viên thuộc team phòng [application](department) tại [TV](location)
+  - số lượng người trong phòng ban bộ phận [hỗ trợ it](department) trụ sở [hội an](location)
+    là bao nhiu
+  - ' cho tôi hỏi về quy mô hiện [AI center](department) tại văn phòng chi nhánh [BN](location)
+    với nha'
+  - ' phòng bộ phận [AI centertại](department) [bắc trung bộ](location) có mấy người'
+  - anh muốn hỏi quy mô của [trung tâm ai](department) chi nhánh [VN](location) như
+    nào
+  - bộ phận bộ phận [vệ sinh](department) [HG](location) có mấy thành viên
+  - em cho anh hỏi về quy mô [AI center](department) [đồng bằng sông hồng](location)
+    mình nhe
+  - tổng số nhân viên của [AI center](department) tại [BG](location) là bao nhiêu
+  - mình hỏi quy mô [AI center](department) tại cơ sở [hòa bình](location) được không
+    cậu
+  - quy mô công ty có bao nhiêu thành viên tại team phòng [application](department)
+    [hưng yên](location) nhể
+  - quy mô công ty có đông ko tại bộ phận phòng [product](department) [đà nẵng](location)
+  - công ty đông nhân sự tại [trung tâm ai](department) trụ sở [đn](location) không
+  - có bao nhiêu nhân viên thuộc bộ phận phòng ban [sản phẩm](department) ở [sa đéc](location)
+  - số lượng thành viên trong phòng phòng [hành chính nhân sự](department) trụ sở
+    [Tam đảo](location) là mấy
+  - bạn cho tôi hỏi quy mô hiện tại của phòng phòng [AI center](department) tại cơ
+    sở chi nhánh [hà nội](location) với á
+  - thế [AI centertại](department) [phú quốc](location) có bao nhiu nhân viên
+  - tớ muốn hỏi về quy mô phòng ban team [trung tâm ai](department) chi nhánh [Tràng
+    An](location) thế nào
+  - phòng phòng ban [business](department) [đồng bằng sông hồng](location) có mấy
+    người
+  - timi cho a hỏi quy mô phòng phòng ban [business](department) [tiền giang](location)
+    mình nhe
+  - tổng số nhân viên của phòng ban bộ phận [trung tâm ai](department) tại [tây nam
+    bộ](location) là bao nhiêu
+  - tớ hỏi quy mô [AI center](department) tại cơ sở [BG](location) đc không bạn
+  - quy mô công ty có bao nhiêu thành viên tại phòng ban phòng ban [trung tâm ai](department)
+    [đà nẵng](location) ha
+  - quy mô công ty có đông ko tại team bộ phận [trung tâm ai](department) [BN](location)
+  - công ty đông nhân sự tại team team [business](department) trụ sở [hn](location)
+    ko
+  - có bao nhiu người đang thuộc phòng ban phòng ban [business](department) tại [hcm](location)
+  - số lượng thành viên trong phòng team [kinh doanh](department) văn phòng [VN](location)
+    là mấy
+  - ' cho mình hỏi quy mô của bộ phận phòng [kinh doanh](department) tại văn phòng
+    chi nhánh [đông nam bộ](location) với ạ'
+  - thế [trung tâm aitại](department) [hồ chí minh](location) có bao nhiu nhân viên
+  - anh muốn hỏi về quy mô [trung tâm ai](department) trụ sở [bạc liệu](location)
+    như nào
+  - team phòng [trung tâm ai](department) [pắc pó](location) có bao nhiu thành viên
+  - timi cho chị hỏi quy mô [AI center](department) [hà nội](location) mình nha
+  - tổng số người [trung tâm ai](department) tại [bạc liệu](location) là bao nhiu
+  - mình hỏi về quy mô [trung tâm ai](department) tại văn phòng [miền bắc](location)
+    đc ko bạn
+  - quy mô công ty có mấy nhận sự tại [trung tâm ai](department) [hn](location) ha
+  - quy mô công ty có đông ko tại [AI center](department) [Việt Nam](location)
+  - công ty đông nhân sự tại phòng ban phòng ban [hệ thống system](department) chi
+    nhánh [cà mau](location) không
+  - có mấy nhân viên đang thuộc bộ phận bộ phận [hr admin](department) tại [sài gòn](location)
+  - số lượng nhận sự trong [AI center](department) cơ sở [đồng bằng sông hồng](location)
+    là bao nhiêu
+  - bạn cho tôi hỏi về quy mô team phòng [vệ sinh](department) tại cơ sở văn phòng
+    [Hà Lan](location) với ạ
+  - thế [trung tâm aitại](department) [Mĩ](location) có bao nhiêu nhận sự
+  - anh hỏi về quy mô của team team [game và design](department) văn phòng [sơn la](location)
+    ntn
+  - team team [công đoàn](department) [côn đảo](location) có mấy nhân viên
+  - em cho a hỏi về quy mô bộ phận team [game](department) [BN](location) mình nhe
+  - tổng số người của bộ phận phòng [sản phẩm](department) tại [kon tum](location)
+    là bao nhiêu
+  - tớ muốn hỏi quy mô [AI center](department) tại trụ sở [hcm](location) được ko
+    bạn
+  - quy mô công ty có bao nhiêu người tại [AI center](department) [cần thơ](location)
+    nhỉ
+  - quy mô công ty có đông ko tại [AI center](department) [VN](location)
+  - công ty đông nhân sự tại [AI center](department) trụ sở [cù lao chàm](location)
+    không
+  - có mấy người đang thuộc team phòng [bảo vệ](department) ở văn phòng [hà nội](location)
+  - số lượng nhận sự trong [trung tâm ai](department) chi nhánh [NB](location) là
+    bao nhiu
+  - ' cho tớ hỏi quy mô của [trung tâm ai](department) tại trụ sở trụ sở [đồng bằng
+    sông cưu long](location) với ạ'
+  - ' phòng ban team [tài chínhtại](department) [BG](location) có bao nhiu thành viên'
+  - anh muốn hỏi về quy mô của bộ phận phòng ban [product](department) chi nhánh [dn](location)
+    ntn
+  - team team [product](department) [hang sơn đoòng](location) có bao nhiêu thành
+    viên
+  - ' cho a hỏi về quy mô bộ phận bộ phận [application](department) [đồng bằng sông
+    hồng](location) mình nha'
+  - tổng số nhân viên của [AI center](department) tại [đn](location) là bao nhiêu
+  - tớ muốn hỏi về quy mô [trung tâm ai](department) tại trụ sở [hồ chí minh](location)
+    được ko cậu
+  - quy mô công ty có mấy nhân viên tại [AI center](department) [lạng sơn](location)
+    nhỉ
+  - quy mô công ty có đông ko tại team phòng [game](department) [sài gòn](location)
+  - công ty đông nhân sự tại team bộ phận [hành chính nhân sự](department) chi nhánh
+    [đất Việt](location) ko
+  - có bao nhiêu nhận sự đang thuộc team phòng ban [AI center](department) ở chi nhánh
+    [hậu giang](location)
+  - số lượng thành viên trong phòng phòng ban [business](department) cơ sở [Đảo Nam
+    Du](location) là bao nhiêu
+  - ' cho tớ hỏi quy mô hiện của phòng team [game & design](department) tại cơ sở
+    cơ sở [miền tây](location) với ạ'
+  - ' [AI centertại](department) [HD](location) có mấy nhân viên'
+  - anh hỏi về quy mô [trung tâm ai](department) chi nhánh [dn](location) ntn
+  - phòng ban phòng ban [trung tâm ai](department) [sài gòn](location) có mấy nhận
+    sự
+  - em cho chị hỏi quy mô [trung tâm ai](department) [dn](location) mình nhe
+  - tổng số nhận sự của phòng ban phòng ban [trung tâm ai](department) tại [đn](location)
+    là bao nhiu
+  - tớ muốn hỏi quy mô [AI center](department) tại cơ sở [Tác bản giốc](location)
+    được không cậu
+  - quy mô công ty có bao nhiêu thành viên tại team team [business](department) [hcm](location)
+    nhỉ
+  - quy mô công ty có đông ko tại bộ phận bộ phận [trung tâm ai](department) [hồ chí
+    minh](location)

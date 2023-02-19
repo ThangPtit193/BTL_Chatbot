@@ -1,0 +1,162 @@
+positives:
+- intent: policy_insurance_ask_type
+  examples:
+  - Có những gì trong gói bảo hiểm xã hội ở ftech
+  - bảo hiểm có những loại gì thế
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là không bắt buộc vậy
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là không bắt buộc vậy bot
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là không bắt buộc vậy bạn
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là không bắt buộc vậy cậu
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là không bắt buộc vậy em
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là không bắt buộc vậy m
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là không bắt buộc vậy mày
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là không bắt buộc vậy mầy
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là không bắt buộc vậy timi
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy bot
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy bạn
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy cậu
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy em
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy m
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy mày
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy mầy
+  - bảo hiểm nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy timi
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy bot
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy bạn
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy cậu
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy em
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy m
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy mày
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy mầy
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy timi
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy bot
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy bạn
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy cậu
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy em
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy m
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy mày
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy mầy
+  - bảo hiểm nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy timi
+  - bảo hiểm xã hội có loại nào ngoài Y tế ,tai nạn
+  - bảo hiểm xã hội có những loại gì thế
+  - bảo hiểm xã hội gồm những loại nào
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là không bắt buộc vậy
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là không bắt buộc vậy bot
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là không bắt buộc vậy bạn
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là không bắt buộc vậy cậu
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là không bắt buộc vậy em
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là không bắt buộc vậy m
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là không bắt buộc vậy mày
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là không bắt buộc vậy mầy
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là không bắt buộc vậy timi
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy bot
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy bạn
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy cậu
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy em
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy m
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy mày
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy mầy
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm nào là ko bắt buộc vậy timi
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy bot
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy bạn
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy cậu
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy em
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy m
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy mày
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy mầy
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là không bắt buộc vậy timi
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy bot
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy bạn
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy cậu
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy em
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy m
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy mày
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy mầy
+  - bảo hiểm xã hội nào bắt buộc và bảo hiểm xã hội nào là ko bắt buộc vậy timi
+  - bảo hiểm xã hội được đóng có bảo hiểm tai nạn lao động y tế ko
+  - bảo hiểm xã hội được đóng có bảo hiểm thất ngiệp y tế ko
+  - bảo hiểm xã hội được đóng có bảo hiểm xã hội y tế ko
+  - bảo hiểm xã hội được đóng có bảo hiểm y tế y tế ko
+  - bảo hiểm xã hội ở công ty có những loại nào nhỉ
+  - bảo hiểm ở công ty có những loại nào nhỉ
+  - cho mình hỏi các loại bảo hiểm cần phải đóng
+  - cho mình hỏi các loại bảo hiểm xã hội cần phải đóng
+  - cho mình hỏi nhân viên công ty phải đóng những loại bảo hiểm gì
+  - cho mình hỏi nhân viên công ty phải đóng những loại bảo hiểm xã hội gì
+  - cho mình hỏi nhân viên phải đóng những loại bảo hiểm gì
+  - cho mình hỏi nhân viên phải đóng những loại bảo hiểm xã hội gì
+  - cho mình xin thông tin về các gói bảo hiểm xã hội ở ftech
+  - cho tôi hỏi các loại bảo hiểm cần phải đóng
+  - cho tôi hỏi các loại bảo hiểm xã hội cần phải đóng
+  - cho tôi hỏi nhân viên công ty phải đóng những loại bảo hiểm gì
+  - cho tôi hỏi nhân viên công ty phải đóng những loại bảo hiểm xã hội gì
+  - cho tôi hỏi nhân viên phải đóng những loại bảo hiểm gì
+  - cho tôi hỏi nhân viên phải đóng những loại bảo hiểm xã hội gì
+  - cho tớ hỏi các loại bảo hiểm cần phải đóng
+  - cho tớ hỏi các loại bảo hiểm xã hội cần phải đóng
+  - cho tớ hỏi nhân viên công ty phải đóng những loại bảo hiểm gì
+  - cho tớ hỏi nhân viên công ty phải đóng những loại bảo hiểm xã hội gì
+  - cho tớ hỏi nhân viên phải đóng những loại bảo hiểm gì
+  - cho tớ hỏi nhân viên phải đóng những loại bảo hiểm xã hội gì
+  - các loại bảo hiểm mà công ty sẽ đóng là gì
+  - các loại bảo hiểm xã hội mà công ty sẽ đóng là gì
+  - có bao nhiêu loại bảo hiểm xã hội sẽ được đóng bởi công ty
+  - công ty bắt buộc những loại bảo hiểm gì
+  - công ty bắt buộc những loại bảo hiểm gì?
+  - công ty bắt buộc những loại bảo hiểm xã hội gì
+  - công ty bắt buộc những loại bảo hiểm xã hội gì?
+  - công ty bắt buộc phải đóng những loại bảo hiểm gì
+  - công ty bắt buộc phải đóng những loại bảo hiểm xã hội gì
+  - công ty có nhiều loại bảo hiểm xã hội ko
+  - công ty hỗ trợ đóng các loại bảo hiểm nào
+  - công ty hỗ trợ đóng các loại bảo hiểm xã hội nào
+  - công ty sẽ đóng mấy loại bảo hiểm tai nạn lao động cho nhân viên
+  - công ty sẽ đóng mấy loại bảo hiểm thất ngiệp cho nhân viên
+  - công ty sẽ đóng mấy loại bảo hiểm xã hội cho nhân viên
+  - công ty sẽ đóng mấy loại bảo hiểm y tế cho nhân viên
+  - cần phải mua loại bảo hiểm gì
+  - cần phải mua loại bảo hiểm xã hội gì
+  - cần phải mua những loại bảo hiểm gì
+  - cần phải mua những loại bảo hiểm xã hội gì
+  - cần phải đóng loại bảo hiểm gì
+  - cần phải đóng loại bảo hiểm xã hội gì
+  - cần phải đóng những loại bảo hiểm gì
+  - cần phải đóng những loại bảo hiểm xã hội gì
+  - gói bảo hiểm xã hội có gì
+  - gửi mình chi tiết gói bảo hiểm xã hội có gì
+  - mình muốn hỏi các loại bảo hiểm cần phải đóng
+  - mình muốn hỏi các loại bảo hiểm xã hội cần phải đóng
+  - mình muốn hỏi nhân viên công ty phải đóng những loại bảo hiểm gì
+  - mình muốn hỏi nhân viên công ty phải đóng những loại bảo hiểm xã hội gì
+  - mình muốn hỏi nhân viên phải đóng những loại bảo hiểm gì
+  - mình muốn hỏi nhân viên phải đóng những loại bảo hiểm xã hội gì
+  - nhân viên bắt buộc phải mua những loại bảo hiểm nào
+  - nhân viên bắt buộc phải mua những loại bảo hiểm xã hội nào
+  - nhân viên bắt buộc phải đóng những loại bảo hiểm nào
+  - nhân viên bắt buộc phải đóng những loại bảo hiểm xã hội nào
+  - nhân viên công ty bắt buộc phải mua những loại bảo hiểm nào
+  - nhân viên công ty bắt buộc phải mua những loại bảo hiểm xã hội nào
+  - nhân viên công ty bắt buộc phải đóng những loại bảo hiểm nào
+  - nhân viên công ty bắt buộc phải đóng những loại bảo hiểm xã hội nào
+  - nhân viên công ty phải đóng mấy loại bảo hiểm?
+  - nhân viên phải đóng mấy loại bảo hiểm?
+  - nhân viên được đóng tối đa mấy loại bảo hiểm
+  - những loại bảo hiểm nào mà công ty hỗ trợ đóng ạ
+  - những loại bảo hiểm xã hội nào mà công ty hỗ trợ đóng ạ
+  - tôi muốn hỏi các loại bảo hiểm cần phải đóng
+  - tôi muốn hỏi các loại bảo hiểm xã hội cần phải đóng
+  - tôi muốn hỏi nhân viên công ty phải đóng những loại bảo hiểm gì
+  - tôi muốn hỏi nhân viên công ty phải đóng những loại bảo hiểm xã hội gì
+  - tôi muốn hỏi nhân viên phải đóng những loại bảo hiểm gì
+  - tôi muốn hỏi nhân viên phải đóng những loại bảo hiểm xã hội gì
+  - tớ muốn hỏi các loại bảo hiểm cần phải đóng
+  - tớ muốn hỏi các loại bảo hiểm xã hội cần phải đóng
+  - tớ muốn hỏi nhân viên công ty phải đóng những loại bảo hiểm gì
+  - tớ muốn hỏi nhân viên công ty phải đóng những loại bảo hiểm xã hội gì
+  - tớ muốn hỏi nhân viên phải đóng những loại bảo hiểm gì
+  - tớ muốn hỏi nhân viên phải đóng những loại bảo hiểm xã hội gì

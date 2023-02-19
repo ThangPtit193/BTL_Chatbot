@@ -1,0 +1,317 @@
+positives:
+- intent: knowledge_ask_hot_new
+  examples:
+  - '[James Monroe](person_name) đang bị lên trang bìa của báo Biên phòng hả'
+  - timi bt tin nào đang mới mẻ ko
+  - tin tức của [hôm nay](time)
+  - tin tức đáng chú ý của [hôm nay](time)
+  - bạn cho mình biết tin tức nào đang nổi trội [ngày hôm nay](time) với
+  - Biên phòng cập nhật vụ gì lên trang nhất rồi
+  - có tin hot gì
+  - '[ngày hôm nay](time) có tin ngắn gì không'
+  - có event gì nổi bật
+  - trang nhất của báo Kênh 14 có những gì
+  - mi gửi mình thông tin [ngày hôm nay](time) với
+  - trang nhất của báo Biên phòng [hôm nay](time) có tin tức như thế nào nóng hổi
+    không
+  - báo Biên phòng có như thế nào mới
+  - '[hôm nay](time) có như thế nào nổi?'
+  - tôi muốn bt bản tin như thế nào mới mẻ [hôm nay](time)
+  - nghe đồn [sáng](time) nay có tin ngắn gì nổi bật lắm hả
+  - '[ngày hôm nay](time) có tin ngắn như thế nào sốt ko'
+  - '[Jungwoo (NCT)](person_name) đang bị lên trang bìa của báo Ảnh Việt Nam hả'
+  - bạn bt tin tức gì đang nổi trội ko
+  - tin ngắn của [hôm nay](time)
+  - tin ngắn nổi [ngày hôm nay](time)
+  - chú em cho tớ bt tin tức nào đang nổi bật [hôm nay](time) với
+  - Phụ nữ cập nhật vụ gì lên trang nhất rồi
+  - có tin hot về thế giới
+  - '[ngày hôm nay](time) có tin ngắn như thế nào ko'
+  - có sự kiện gì nổi bật
+  - trang nhất của báo VTC có những như thế nào
+  - cậu gửi mình thông tin [ngày hôm nay](time) với
+  - trang nhất của báo Tuổi trẻ [hôm nay](time) có tin tức gì đáng chú ý không
+  - báo Ảnh Việt Nam có như thế nào mới
+  - '[hôm nay](time) có gì đặc sắc?'
+  - tớ muốn biết bản tin như thế nào nổi trội [ngày hôm nay](time)
+  - nghe đồn [sáng](time) nay có bản tin như thế nào đáng ngạc nhiên lắm hả
+  - '[ngày hôm nay](time) có tin ngắn gì sốt không'
+  - '[Albert Einstein](person_name) đang bị lên trang nhất của báo Hanoi New hả'
+  - timi bt tin gì đang hot ko
+  - bản tin của [ngày hôm nay](time)
+  - tin ngắn mới mẻ [hôm nay](time)
+  - ' cho tớ biết tin tức nào đang hot [hôm nay](time) với'
+  - VTV cập nhật vụ gì lên trang nhất rồi
+  - có tin hot ko
+  - '[ngày hôm nay](time) có bản tin như thế nào không'
+  - trang nhất của báo Bưu điện Việt Nam có những gì
+  - mi gửi tớ tin ngắn [ngày hôm nay](time) với
+  - trang nhất của báo VnExpress [hôm nay](time) có tin ngắn gì vui không
+  - báo Kênh 14 có như thế nào mới
+  - '[ngày hôm nay](time) có gì nổi bật?'
+  - mình mún biết tin ngắn như thế nào nổi trội [hôm nay](time)
+  - nghe đồn [sáng](time) nay có tin tức như thế nào vui lắm hả
+  - '[hôm nay](time) có bản tin như thế nào sốt không'
+  - '[Sulli](person_name) thuộc [Black pink](person_name) đang bị lên trang nhất của
+    báo Lao động và Xã hội hả'
+  - bạn biết tin gì đang nổi không
+  - tin tức của [ngày hôm nay](time)
+  - tin tức vui của [ngày hôm nay](time)
+  - em cho tôi bt tin ngắn nào đang hot [ngày hôm nay](time) với
+  - Kênh 14 cập nhật vụ như thế nào lên trang nhất rồi
+  - có tin hot
+  - '[ngày hôm nay](time) có tin ngắn gì ko'
+  - trang nhất của báo Phụ nữ có những gì
+  - chú em gửi mình thông tin [ngày hôm nay](time) với
+  - trang nhất của báo Mới [ngày hôm nay](time) có bản tin như thế nào đáng ngạc nhiên
+    không
+  - báo Biên phòng có gì mới
+  - '[ngày hôm nay](time) có gì đặc sắc?'
+  - tôi mún bt bản tin gì mới mẻ [hôm nay](time)
+  - nghe đồn [tối](time) nay có tin tức gì đáng ngạc nhiên lắm hả
+  - '[ngày hôm nay](time) có tin ngắn gì nổi bật ko'
+  - '[Nayeon (Twice)](person_name) đang bị lên trang đầu của báo VnExpress hả'
+  - timi biết tin gì đang nổi trội không
+  - bản tin của [hôm nay](time)
+  - bản tin đáng chú ý của [ngày hôm nay](time)
+  - ' cho tớ biết tin tức nào đang nổi bật [ngày hôm nay](time) với'
+  - Lao động cập nhật vụ gì lên trang nhất rồi
+  - có tin hot gì ko
+  - '[hôm nay](time) có bản tin gì không'
+  - trang nhất của báo VTC có những gì
+  - bạn gửi tớ tin tức [hôm nay](time) với
+  - trang nhất của báo Tuổi trẻ [ngày hôm nay](time) có bản tin như thế nào đáng chú
+    ý không
+  - báo Phụ nữ có gì mới
+  - '[ngày hôm nay](time) có như thế nào hot?'
+  - tớ mún biết bản tin như thế nào đặc sắc [hôm nay](time)
+  - nghe đồn [sáng](time) nay có tin tức như thế nào đáng chú ý lắm hả
+  - '[hôm nay](time) có bản tin như thế nào đáng chú ý không'
+  - '[Xoài Non](person_name) đang bị lên trang nhất của báo Lao động và Xã hội hả'
+  - timi biết tin gì đang hot không
+  - tin ngắn của [ngày hôm nay](time)
+  - bản tin sốt của [ngày hôm nay](time)
+  - ' cho tớ bt bản tin nào đang mới mẻ [ngày hôm nay](time) với'
+  - Tuổi trẻ cập nhật vụ như thế nào lên trang nhất rồi
+  - có tin hot không
+  - '[hôm nay](time) có tin tức như thế nào ko'
+  - trang nhất của báo VTV có những gì
+  - em gửi tôi thông tin [ngày hôm nay](time) với
+  - trang nhất của báo Lao động [ngày hôm nay](time) có bản tin như thế nào mới không
+  - báo Mới có như thế nào mới
+  - '[hôm nay](time) có gì mới mẻ?'
+  - tớ muốn biết tin tức như thế nào nổi trội [ngày hôm nay](time)
+  - nghe đồn [chiều](time) nay có tin tức gì đáng ngạc nhiên lắm hả
+  - '[hôm nay](time) có tin ngắn gì mới ko'
+  - '[Taeyeon (SNSD)](person_name) thuộc [2NE1](person_name) đang bị lên trang đầu
+    của tạp chí Hanoi New hả'
+  - timi biết bản tin gì đang nổi trội ko
+  - bản tin sốt [ngày hôm nay](time)
+  - timi cho tớ biết bản tin nào đang nổi bật [ngày hôm nay](time) với
+  - VTC cập nhật vụ gì lên trang nhất rồi
+  - có tin hot nào ko
+  - '[ngày hôm nay](time) có tin tức gì ko'
+  - trang nhất của báo Tuổi trẻ có những gì
+  - timi gửi tôi tin tức [ngày hôm nay](time) với
+  - trang nhất của báo dantri.vn [hôm nay](time) có tin ngắn gì đáng chú ý ko
+  - báo Ảnh Việt Nam có gì mới
+  - '[ngày hôm nay](time) có như thế nào đặc sắc?'
+  - tớ mún bt tin tức như thế nào nổi [ngày hôm nay](time)
+  - nghe đồn [tối](time) nay có bản tin như thế nào đáng ngạc nhiên lắm hả
+  - '[hôm nay](time) có tin ngắn gì đáng chú ý không'
+  - '[Mina (Twice)](person_name) đang bị lên trang nhất của báo Lao động và Xã hội
+    hả'
+  - em biết tin tức nào đang hot ko
+  - bản tin mới [ngày hôm nay](time)
+  - timi cho tôi biết tin tức nào đang đặc sắc [hôm nay](time) với
+  - Nhân dân cập nhật vụ như thế nào lên trang nhất rồi
+  - có tin hot nào
+  - '[hôm nay](time) có tin ngắn gì ko'
+  - trang nhất của báo Ảnh Việt Nam có những gì
+  - bạn gửi tớ bản tin [hôm nay](time) với
+  - trang nhất của báo Tuổi trẻ [hôm nay](time) có tin ngắn như thế nào nóng hổi không
+  - báo Lao động và Xã hội có gì mới
+  - '[ngày hôm nay](time) có như thế nào nổi trội?'
+  - mình mún biết bản tin gì nổi [ngày hôm nay](time)
+  - nghe đồn [sáng](time) nay có tin ngắn như thế nào nổi trội lắm hả
+  - '[ngày hôm nay](time) có tin tức như thế nào đáng ngạc nhiên ko'
+  - '[George H. W. Bush](person_name) đang bị lên trang nhất của báo Mới hả'
+  - em biết tin nào đang nổi bật không
+  - tin tức đáng ngạc nhiên của [ngày hôm nay](time)
+  - ' cho tôi bt tin tức nào đang mới mẻ [ngày hôm nay](time) với'
+  - Kênh 14 cập nhật vụ gì lên trang nhất rồi
+  - có tin hot nào không
+  - '[hôm nay](time) có bản tin như thế nào không'
+  - trang nhất của báo Thanh niên có những như thế nào
+  - em gửi mình bản tin của [ngày hôm nay](time) với
+  - trang nhất của báo Lao động và Xã hội [hôm nay](time) có tin tức như thế nào nổi
+    trội ko
+  - báo Tiền phong có gì mới
+  - '[ngày hôm nay](time) có như thế nào nổi?'
+  - tôi muốn biết tin ngắn gì đặc sắc [hôm nay](time)
+  - nghe đồn [sáng](time) nay có tin ngắn như thế nào vui lắm hả
+  - '[ngày hôm nay](time) có tin ngắn như thế nào đáng chú ý không'
+  - '[Mai Phương Thúy](person_name) đang bị lên trang đầu của báo Nhân dân hả'
+  - timi bt bản tin gì đang nổi không
+  - tin ngắn nóng hổi [ngày hôm nay](time)
+  - ' cho tôi bt tin ngắn nào đang nổi [hôm nay](time) với'
+  - Thanh niên cập nhật vụ như thế nào lên trang nhất rồi
+  - có tin hot không ko
+  - '[ngày hôm nay](time) có tin tức như thế nào không'
+  - trang nhất của báo Sức khoẻ và Đời sống có những gì
+  - bạn gửi tớ tin ngắn [hôm nay](time) với
+  - trang nhất của báo Sức khoẻ và Đời sống [hôm nay](time) có tin ngắn gì sốt ko
+  - báo Hanoi New có gì mới
+  - '[ngày hôm nay](time) có gì hot?'
+  - mình mún biết tin tức gì hot [ngày hôm nay](time)
+  - nghe đồn [tối](time) nay có tin tức như thế nào mới lắm hả
+  - '[ngày hôm nay](time) có bản tin như thế nào sốt không'
+  - '[IU](person_name) đang bị lên trang đầu của báo VTC hả'
+  - mày bt tin gì đang nổi không
+  - tin tức vui [ngày hôm nay](time)
+  - cậu cho mình biết tin tức nào đang mới mẻ [hôm nay](time) với
+  - Tiền phong cập nhật vụ gì lên trang nhất rồi
+  - có tin hot về thế giới không
+  - '[hôm nay](time) có tin tức như thế nào không'
+  - trang nhất của báo Hanoi New có những gì
+  - timi gửi tớ thông tin của [ngày hôm nay](time) với
+  - trang nhất của báo Biên phòng [ngày hôm nay](time) có bản tin gì mới không
+  - báo Bưu điện Việt Nam có như thế nào mới
+  - '[hôm nay](time) có gì nổi bật?'
+  - tôi muốn bt tin tức như thế nào đặc sắc [ngày hôm nay](time)
+  - nghe đồn [sáng](time) nay có tin ngắn gì nóng hổi lắm hả
+  - '[ngày hôm nay](time) có bản tin gì nóng hổi không'
+  - '[Đặng Thị Ngọc Hân](person_name) đang bị lên trang nhất của báo Lao động hả'
+  - chú em biết bản tin gì đang đặc sắc ko
+  - tin tức đáng ngạc nhiên [hôm nay](time)
+  - ' cho tớ biết tin tức nào đang mới mẻ [ngày hôm nay](time) với'
+  - Mới cập nhật vụ như thế nào lên trang nhất rồi
+  - có tin hot không không
+  - '[ngày hôm nay](time) có tin tức như thế nào ko'
+  - trang nhất của báo Nhân dân có những gì
+  - bot gửi mình thông tin của [ngày hôm nay](time) với
+  - trang nhất của báo Biên phòng [hôm nay](time) có bản tin như thế nào đáng chú
+    ý không
+  - báo VnExpress có gì mới
+  - '[hôm nay](time) có gì nổi?'
+  - tôi muốn biết bản tin gì nổi bật [hôm nay](time)
+  - nghe đồn [tối](time) nay có tin ngắn gì đáng ngạc nhiên lắm hả
+  - '[ngày hôm nay](time) có tin ngắn gì đáng chú ý không'
+  - '[Trúc Anh](person_name) đang bị lên trang đầu của tạp chí Bưu điện Việt Nam hả'
+  - em bt bản tin nào đang nổi bật không
+  - tin tức đáng chú ý của [ngày hôm nay](time)
+  - ' cho mình bt bản tin nào đang mới mẻ [hôm nay](time) với'
+  - Tuổi trẻ cập nhật vụ gì lên trang nhất rồi
+  - có tin hot gì không
+  - '[hôm nay](time) có bản tin như thế nào ko'
+  - trang nhất của báo Bưu điện Việt Nam có những như thế nào
+  - timi gửi tớ tin ngắn của [ngày hôm nay](time) với
+  - trang nhất của báo VnExpress [ngày hôm nay](time) có tin tức như thế nào đáng
+    chú ý không
+  - báo VTV có gì mới
+  - '[hôm nay](time) có như thế nào nổi bật?'
+  - tôi mún bt tin ngắn gì nổi trội [ngày hôm nay](time)
+  - nghe đồn [tối](time) nay có bản tin như thế nào nóng hổi lắm hả
+  - '[ngày hôm nay](time) có tin tức như thế nào nóng hổi ko'
+  - '[Hồ Chí Minh](person_name) đang bị lên trang nhất của tạp chí Tiền phong hả'
+  - bạn bt tin gì đang nổi trội không
+  - tin ngắn hot [hôm nay](time)
+  - ' cho mình biết tin ngắn nào đang đặc sắc [hôm nay](time) với'
+  - Hanoi New cập nhật vụ gì lên trang nhất rồi
+  - '[hôm nay](time) có tin tức gì không'
+  - trang nhất của báo Lao động có những như thế nào
+  - em gửi tớ bản tin [hôm nay](time) với
+  - trang nhất của báo Lao động [hôm nay](time) có bản tin gì đáng ngạc nhiên ko
+  - báo VTC có gì mới
+  - '[hôm nay](time) có như thế nào hot?'
+  - tớ muốn biết bản tin như thế nào nổi trội [hôm nay](time)
+  - nghe đồn [sáng](time) nay có tin ngắn gì mới lắm hả
+  - '[ngày hôm nay](time) có tin ngắn gì nổi trội không'
+  - '[Mai Phương Thúy](person_name) đang bị lên trang nhất của báo Lao động và Xã
+    hội hả'
+  - bot bt tin tức nào đang nổi bật không
+  - bản tin mới của [ngày hôm nay](time)
+  - ' cho tôi bt bản tin nào đang nổi trội [hôm nay](time) với'
+  - Lao động và Xã hội cập nhật vụ như thế nào lên trang nhất rồi
+  - '[ngày hôm nay](time) có bản tin gì không'
+  - trang nhất của báo VnExpress có những như thế nào
+  - bot gửi tớ tin ngắn của [ngày hôm nay](time) với
+  - trang nhất của báo Biên phòng [hôm nay](time) có tin tức gì sốt ko
+  - báo Phụ nữ có như thế nào mới
+  - '[hôm nay](time) có như thế nào mới mẻ?'
+  - tớ muốn bt tin tức gì nổi [ngày hôm nay](time)
+  - nghe đồn [tối](time) nay có tin tức như thế nào sốt lắm hả
+  - '[ngày hôm nay](time) có tin ngắn gì mới không'
+  - '[Hyoyeon (SNSD)](person_name) đang bị lên trang đầu của báo Thanh niên hả'
+  - bot bt bản tin gì đang mới mẻ không
+  - tin ngắn nóng hổi của [ngày hôm nay](time)
+  - ' cho tớ biết bản tin nào đang đặc sắc [ngày hôm nay](time) với'
+  - Ảnh Việt Nam cập nhật vụ như thế nào lên trang nhất rồi
+  - '[ngày hôm nay](time) có tin tức gì không'
+  - trang nhất của báo VnExpress có những gì
+  - timi gửi tớ tin ngắn [hôm nay](time) với
+  - trang nhất của báo Ảnh Việt Nam [ngày hôm nay](time) có tin tức như thế nào vui
+    không
+  - báo Mới có gì mới
+  - '[ngày hôm nay](time) có gì mới mẻ?'
+  - tôi muốn bt bản tin gì nổi bật [hôm nay](time)
+  - nghe đồn [tối](time) nay có tin tức gì mới lắm hả
+  - '[hôm nay](time) có tin tức như thế nào nóng hổi không'
+  - '[Wonho](person_name) thuộc [Girls'' Generation](person_name) đang bị lên trang
+    bìa của báo Ảnh Việt Nam hả'
+  - bot bt tin gì đang hot không
+  - bản tin mới mẻ [ngày hôm nay](time)
+  - chú em cho tớ biết bản tin nào đang nổi trội [hôm nay](time) với
+  - Thanh niên cập nhật vụ gì lên trang nhất rồi
+  - có tin hot về thế giới ko
+  - '[hôm nay](time) có tin ngắn như thế nào không'
+  - trang nhất của báo Tiền phong có những như thế nào
+  - bạn gửi tớ tin tức [ngày hôm nay](time) với
+  - trang nhất của báo Tuổi trẻ [ngày hôm nay](time) có tin ngắn như thế nào sốt ko
+  - báo Bưu điện Việt Nam có gì mới
+  - '[hôm nay](time) có như thế nào đặc sắc?'
+  - mình muốn biết tin tức như thế nào mới mẻ [ngày hôm nay](time)
+  - nghe đồn [chiều](time) nay có tin tức gì nóng hổi lắm hả
+  - '[hôm nay](time) có tin tức như thế nào mới không'
+  - '[Bảo Thy](person_name) đang bị lên trang nhất của tạp chí Nhân dân hả'
+  - timi biết tin gì đang nổi trội ko
+  - bản tin đáng ngạc nhiên [hôm nay](time)
+  - bot cho tôi bt bản tin nào đang nổi trội [ngày hôm nay](time) với
+  - Nhân dân cập nhật vụ gì lên trang nhất rồi
+  - '[hôm nay](time) có tin tức gì ko'
+  - trang nhất của báo Tuổi trẻ có những như thế nào
+  - timi gửi tôi thông tin [ngày hôm nay](time) với
+  - trang nhất của báo Hanoi New [ngày hôm nay](time) có tin tức như thế nào nóng
+    hổi không
+  - báo Thanh niên có như thế nào mới
+  - '[hôm nay](time) có gì hot?'
+  - mình mún biết bản tin gì hot [ngày hôm nay](time)
+  - nghe đồn [tối](time) nay có bản tin như thế nào đáng chú ý lắm hả
+  - '[ngày hôm nay](time) có bản tin gì nổi không'
+  - '[Soobin Hoàng Sơn](person_name) đang bị lên trang bìa của tạp chí Mới hả'
+  - mi biết tin nào đang hot không
+  - bản tin sốt của [hôm nay](time)
+  - cậu cho mình biết tin tức nào đang nổi bật [ngày hôm nay](time) với
+  - dantri.vn cập nhật vụ như thế nào lên trang nhất rồi
+  - '[hôm nay](time) có bản tin gì ko'
+  - trang nhất của báo Ảnh Việt Nam có những như thế nào
+  - timi gửi mình thông tin [hôm nay](time) với
+  - trang nhất của báo Kênh 14 [hôm nay](time) có tin ngắn gì sốt không
+  - báo Hanoi New có như thế nào mới
+  - '[ngày hôm nay](time) có như thế nào mới mẻ?'
+  - mình mún biết bản tin gì đặc sắc [ngày hôm nay](time)
+  - nghe đồn [sáng](time) nay có tin ngắn gì đáng chú ý lắm hả
+  - '[ngày hôm nay](time) có bản tin như thế nào vui không'
+  - '[Diễm My](person_name) đang bị lên trang nhất của tạp chí Ảnh Việt Nam hả'
+  - cậu biết bản tin gì đang nổi trội không
+  - tin ngắn đáng ngạc nhiên của [hôm nay](time)
+  - timi cho tớ bt tin ngắn nào đang nổi bật [hôm nay](time) với
+  - VnExpress cập nhật vụ như thế nào lên trang nhất rồi
+  - '[hôm nay](time) có tin ngắn như thế nào ko'
+  - trang nhất của báo Biên phòng có những như thế nào
+  - bot gửi mình thông tin của [hôm nay](time) với
+  - trang nhất của báo Tiền phong [ngày hôm nay](time) có bản tin như thế nào đáng
+    chú ý ko
+  - báo Nhân dân có gì mới
+  - '[ngày hôm nay](time) có gì nổi?'
+  - tớ muốn biết tin tức như thế nào nổi [hôm nay](time)

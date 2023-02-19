@@ -1,0 +1,73 @@
+negatives:
+- intent: faq/ood_real_estate
+  examples:
+  - vị trí của khu căn hộ cao cấp Louis City Xuân Phương như thế nào
+  - vị trí của dự án khu chung cư V Melody Villas như thế nào
+  - chủ đầu tư của dự án khu dân cư The Charm An Hưng là ai
+  - dơn vị vận hành quản lý của biệt thự Louis City Xuân Phương là ai
+  - vị trí của dự án khu đô thi Lan Viên Villa như thế nào
+  - dơn vị vận hành quản lý của khu đô thi An Thịnh Villa là ai
+  - dơn vị vận hành quản lý của chung cư Lan Viên Villa là ai
+  - vị trí của khu căn hộ cao cấp Happy Land Đông Anh như thế nào
+  - chủ đầu tư của khu chung cư An Thịnh Villa là ai
+  - chủ đầu tư của dự án biệt thự The Charm An Hưng là ai
+  - vị trí của khu cao ốc Happy Land Đông Anh như thế nào
+  - chủ đầu tư của dự án khu đô thi Louis City Xuân Phương là ai
+  - chủ đầu tư của dự án khu căn hộ cao cấp Happy Land Đông Anh là ai
+  - chủ đầu tư của dự án khu căn hộ cao cấp Lan Viên Villa là ai
+  - vị trí của dự án khu chung cư Louis City Xuân Phương như thế nào
+  - chủ đầu tư của dự án chung cư An Thịnh Villa là ai
+  - dơn vị vận hành quản lý của dự án khu dân cư An Thịnh Villa là ai
+  - chủ đầu tư của khu đô thi The Charm An Hưng là ai
+  - vị trí của dự án biệt thự An Thịnh Villa như thế nào
+  - chủ đầu tư của dự án khu cao ốc Lan Viên Villa là ai
+  - vị trí của khu chung cư V Melody Villas như thế nào
+  - dơn vị vận hành quản lý của khu cao ốc Lan Viên Villa là ai
+  - chủ đầu tư của khu dân cư The Charm An Hưng là ai
+  - vị trí của khu chung cư Louis City Xuân Phương như thế nào
+  - vị trí của khu dân cư Louis City Xuân Phương như thế nào
+  - vị trí của dự án khu căn hộ cao cấp An Thịnh Villa như thế nào
+  - chủ đầu tư của khu căn hộ cao cấp Lan Viên Villa là ai
+  - dơn vị vận hành quản lý của thương mại Happy Land Đông Anh là ai
+  - chủ đầu tư của dự án biệt thự An Thịnh Villa là ai
+  - vị trí của dự án khu dân cư Louis City Xuân Phương như thế nào
+  - dơn vị vận hành quản lý của chung cư Louis City Xuân Phương là ai
+  - chủ đầu tư của dự án khu chung cư Lan Viên Villa là ai
+  - dơn vị vận hành quản lý của khu căn hộ cao cấp V Melody Villas là ai
+  - chủ đầu tư của khu căn hộ cao cấp Happy Land Đông Anh là ai
+  - vị trí của khu căn hộ cao cấp An Thịnh Villa như thế nào
+  - dơn vị vận hành quản lý của khu chung cư The Charm An Hưng là ai
+  - vị trí của thương mại An Thịnh Villa như thế nào
+  - vị trí của khu cao ốc Louis City Xuân Phương như thế nào
+  - vị trí của khu đô thi Happy Land Đông Anh như thế nào
+  - dơn vị vận hành quản lý của khu đô thi Louis City Xuân Phương là ai
+  - vị trí của dự án biệt thự Louis City Xuân Phương như thế nào
+  - vị trí của dự án chung cư Louis City Xuân Phương như thế nào
+  - vị trí của dự án chung cư Happy Land Đông Anh như thế nào
+  - chủ đầu tư của dự án khu cao ốc Happy Land Đông Anh là ai
+  - vị trí của chung cư V Melody Villas như thế nào
+  - chủ đầu tư của dự án chung cư V Melody Villas là ai
+  - dơn vị vận hành quản lý của biệt thự Lan Viên Villa là ai
+  - vị trí của thương mại Louis City Xuân Phương như thế nào
+  - dơn vị vận hành quản lý của khu đô thi V Melody Villas là ai
+  - chủ đầu tư của khu căn hộ cao cấp The Charm An Hưng là ai
+  - vị trí của dự án khu căn hộ cao cấp Happy Land Đông Anh như thế nào
+  - dơn vị vận hành quản lý của dự án chung cư Happy Land Đông Anh là ai
+  - chủ đầu tư của chung cư The Charm An Hưng là ai
+  - chủ đầu tư của chung cư Lan Viên Villa là ai
+  - chủ đầu tư của thương mại An Thịnh Villa là ai
+  - vị trí của dự án khu đô thi V Melody Villas như thế nào
+  - dơn vị vận hành quản lý của dự án biệt thự Happy Land Đông Anh là ai
+  - chủ đầu tư của khu cao ốc Happy Land Đông Anh là ai
+  - dơn vị vận hành quản lý của dự án khu căn hộ cao cấp The Charm An Hưng là ai
+  - dơn vị vận hành quản lý của dự án thương mại An Thịnh Villa là ai
+  - vị trí của chung cư Louis City Xuân Phương như thế nào
+  - vị trí của dự án thương mại Louis City Xuân Phương như thế nào
+  - vị trí của khu đô thi Louis City Xuân Phương như thế nào
+  - vị trí của dự án khu dân cư Happy Land Đông Anh như thế nào
+  - vị trí của khu đô thi Lan Viên Villa như thế nào
+  - dơn vị vận hành quản lý của khu đô thi Happy Land Đông Anh là ai
+  - dơn vị vận hành quản lý của dự án chung cư An Thịnh Villa là ai
+  - dơn vị vận hành quản lý của khu dân cư An Thịnh Villa là ai
+  - chủ đầu tư của dự án khu căn hộ cao cấp Louis City Xuân Phương là ai
+  - chủ đầu tư của dự án thương mại Lan Viên Villa là ai

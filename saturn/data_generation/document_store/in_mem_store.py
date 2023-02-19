@@ -116,7 +116,9 @@ class InmemoryDocumentStore(SaturnAbstract):
 
         for i, positive_intent in enumerate(tqdm(self.positive_intents, desc=desc)):
             main_intent, sub_intent = self._get_main_sub_intent(positive_intent)
+
             docs = self.get_documents(type=constants.KEY_POSITIVE, main_intent=main_intent, sub_intent=sub_intent)
+
             self.start_index_pos = self.full_docs.index(docs[0])
             self.end_index_post = self.full_docs.index(docs[-1])
             # Build positives ids
