@@ -19,7 +19,7 @@ from transformers import (
 )
 
 from comet.lib import logger
-from saturn.utils.vaxiom_model_wrapper import ModelHub
+from comet.shared.vaxiom_model_wrapper import ModelHub
 from saturn import constants
 
 model_hub = ModelHub()
@@ -187,8 +187,9 @@ class CustomSentenceTransformer(SentenceTransformer):
         :param resume_from_checkpoint: Path to checkpoint to resume training from
         """
 
-        ##Add info to model card
-        # info_loss_functions = "\n".join(["- {} with {} training examples".format(str(loss), len(dataloader)) for dataloader, loss in train_objectives])
+        # Add info to model card
+        # info_loss_functions = "\n".join(["- {} with {} training examples".format(str(loss),
+        # len(dataloader)) for dataloader, loss in train_objectives])
         info_loss_functions = []
         for dataloader, loss in train_objectives:
             info_loss_functions.extend(ModelCardTemplate.get_train_objective_info(dataloader, loss))

@@ -1,7 +1,10 @@
 from prettytable import PrettyTable
 from typing import List, Text, Dict, Union
 
+
 def convert_size(num, suffix='B'):
+    if not num:
+        return "Unknown"
     for unit in ['', ' Ki', ' Mi', ' Gi', ' Ti', ' Pi', ' Ei', ' Zi']:
         if abs(num) < 1024.0:
             return "%3.1f%s%s" % (num, unit, suffix)
