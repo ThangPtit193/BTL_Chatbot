@@ -1,25 +1,28 @@
 import json
 import os
+import shutil
 from typing import *
 from typing import Dict, Tuple, Iterable, Type, Callable
 
 import torch
 import transformers
-from comet.lib import logger
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.model_card_templates import ModelCardTemplate
 from sentence_transformers.util import fullname
 from torch import nn
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
+from torch.utils.tensorboard import SummaryWriter
 from tqdm.autonotebook import trange
 from transformers import (
     AutoModel,
 )
-import shutil
-from venus.wrapper import axiom_wrapper
-from torch.utils.tensorboard import SummaryWriter
 
+from comet.lib import logger
+from saturn.utils.vaxiom_model_wrapper import ModelHub
+from saturn import constants
+
+model_hub = ModelHub()
 # from pytorch.torch.cuda import device
 
 _logger = logger.get_logger(__name__)
@@ -113,14 +116,19 @@ class CustomSentenceTransformer(SentenceTransformer):
         if not torch.cuda.is_available():
             device = "cpu"
         model = None
+        print(model_name_or_path)
         if os.path.isdir(model_name_or_path):
+            _logger.info(f"Loading model from local: '{model_name_or_path}'")
             try:
                 model = CustomSentenceTransformer(model_name_or_path, device=device)
             except Exception as e:
                 _logger.error(f"Cannot load pretrained model from {model_name_or_path}, "
                               f"Because {e}")
         else:
-            model_name_or_path = axiom_wrapper.fetch_model(model_name_or_path)
+            _logger.info(f"Loading model from Axiom model Hub: '{model_name_or_path}'")
+            model_name_or_path = model_hub.download_model(
+                model_name_or_path, os.path.join(constants.SATURN_DIR_MODEL, model_name_or_path)
+            )
             model = CustomSentenceTransformer(model_name_or_path, device=device)
             model.max_seq_length = 128
         return model
