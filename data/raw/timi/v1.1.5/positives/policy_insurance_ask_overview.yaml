@@ -1,0 +1,247 @@
+positives:
+- intent: policy_insurance_ask_overview
+  examples:
+  - BHXH bên công ty đóng theo mức nào ạ?
+  - Chính sách chung cho chế độ bảo hiểm của công ty như nào
+  - Chính sách chung cho chế độ bảo hiểm của công ty như thế nào
+  - Chính sách chung cho chế độ bảo hiểm của công ty ntn
+  - Chính sách chung cho chế độ bảo hiểm của công ty thế nào
+  - Chính sách chung cho chế độ bảo hiểm xã hội của công ty như nào
+  - Chính sách chung cho chế độ bảo hiểm xã hội của công ty như thế nào
+  - Chính sách chung cho chế độ bảo hiểm xã hội của công ty ntn
+  - Chính sách chung cho chế độ bảo hiểm xã hội của công ty thế nào
+  - bên công ty mình đóng bảo hiểm xã hội phải đóng theo những mức nào
+  - bảo hiểm xã hội ai cũng như ai hay sao
+  - bảo hiểm xã hội bên bạn nộp bao nhiêu phần trăm
+  - bảo hiểm xã hội bên bạn nộp bao nhiêu tiền
+  - bảo hiểm xã hội bên bạn nộp bao nhiêu?
+  - bảo hiểm xã hội bên bạn nộp như nào?
+  - bảo hiểm xã hội bên bạn nộp như thế nào?
+  - bảo hiểm xã hội bên bạn nộp ntn?
+  - bảo hiểm xã hội bên bạn nộp ra sao?
+  - bảo hiểm xã hội bên bạn nộp thế nào?
+  - bảo hiểm xã hội bên bạn đóng bao nhiêu phần trăm
+  - bảo hiểm xã hội bên bạn đóng bao nhiêu tiền
+  - bảo hiểm xã hội bên bạn đóng bao nhiêu?
+  - bảo hiểm xã hội bên bạn đóng như nào?
+  - bảo hiểm xã hội bên bạn đóng như thế nào?
+  - bảo hiểm xã hội bên bạn đóng ntn?
+  - bảo hiểm xã hội bên bạn đóng ra sao?
+  - bảo hiểm xã hội bên bạn đóng thế nào?
+  - bảo hiểm xã hội bên công ty mình đóng theo mức nào ạ?
+  - bảo hiểm xã hội bên công ty đóng theo mức nào ạ?
+  - bảo hiểm xã hội bên mình nộp bao nhiêu phần trăm
+  - bảo hiểm xã hội bên mình nộp bao nhiêu tiền
+  - bảo hiểm xã hội bên mình nộp bao nhiêu?
+  - bảo hiểm xã hội bên mình nộp như nào?
+  - bảo hiểm xã hội bên mình nộp như thế nào?
+  - bảo hiểm xã hội bên mình nộp ntn?
+  - bảo hiểm xã hội bên mình nộp ra sao?
+  - bảo hiểm xã hội bên mình nộp thế nào?
+  - bảo hiểm xã hội bên mình đóng bao nhiêu phần trăm
+  - bảo hiểm xã hội bên mình đóng bao nhiêu tiền
+  - bảo hiểm xã hội bên mình đóng bao nhiêu?
+  - bảo hiểm xã hội bên mình đóng như nào?
+  - bảo hiểm xã hội bên mình đóng như thế nào?
+  - bảo hiểm xã hội bên mình đóng ntn?
+  - bảo hiểm xã hội bên mình đóng ra sao?
+  - bảo hiểm xã hội bên mình đóng thế nào?
+  - bảo hiểm xã hội chắc công ty cũng đóng như công ty khác hả
+  - bảo hiểm xã hội công ty nộp bao nhiêu phần trăm
+  - bảo hiểm xã hội công ty nộp bao nhiêu tiền
+  - bảo hiểm xã hội công ty đóng bao nhiêu phần trăm
+  - bảo hiểm xã hội công ty đóng bao nhiêu tiền
+  - bảo hiểm xã hội mình nộp bao nhiêu phần trăm
+  - bảo hiểm xã hội mình nộp bao nhiêu tiền
+  - bảo hiểm xã hội mình nộp bao nhiêu?
+  - bảo hiểm xã hội mình nộp như nào?
+  - bảo hiểm xã hội mình nộp như thế nào?
+  - bảo hiểm xã hội mình nộp ntn?
+  - bảo hiểm xã hội mình nộp ra sao?
+  - bảo hiểm xã hội mình nộp thế nào?
+  - bảo hiểm xã hội mình đóng bao nhiêu phần trăm
+  - bảo hiểm xã hội mình đóng bao nhiêu tiền
+  - bảo hiểm xã hội mình đóng bao nhiêu?
+  - bảo hiểm xã hội mình đóng như nào?
+  - bảo hiểm xã hội mình đóng như thế nào?
+  - bảo hiểm xã hội mình đóng ntn?
+  - bảo hiểm xã hội mình đóng ra sao?
+  - bảo hiểm xã hội mình đóng thế nào?
+  - bảo hiểm xã hội mình đóng từng tháng hay theo năm vậy
+  - bảo hiểm xã hội thì phải đóng theo những mức nào
+  - bảo hiểm xã hội đóng theo qui định nhà nước hay công ty dóng kiểu khác
+  - bảo hiểm xã hội được đóng như thế nào
+  - bảo hiểm xã hội ở bên bạn nộp bao nhiêu phần trăm
+  - bảo hiểm xã hội ở bên bạn nộp bao nhiêu tiền
+  - bảo hiểm xã hội ở bên bạn đóng bao nhiêu phần trăm
+  - bảo hiểm xã hội ở bên bạn đóng bao nhiêu tiền
+  - bảo hiểm xã hội ở bên mình nộp bao nhiêu phần trăm
+  - bảo hiểm xã hội ở bên mình nộp bao nhiêu tiền
+  - bảo hiểm xã hội ở bên mình đóng bao nhiêu phần trăm
+  - bảo hiểm xã hội ở bên mình đóng bao nhiêu tiền
+  - bảo hiểm xã hội ở công ty nộp bao nhiêu phần trăm
+  - bảo hiểm xã hội ở công ty nộp bao nhiêu tiền
+  - bảo hiểm xã hội ở công ty đóng bao nhiêu phần trăm
+  - bảo hiểm xã hội ở công ty đóng bao nhiêu tiền
+  - bảo hiểm xã hội ở mình nộp bao nhiêu phần trăm
+  - bảo hiểm xã hội ở mình nộp bao nhiêu tiền
+  - bảo hiểm xã hội ở mình đóng bao nhiêu phần trăm
+  - bảo hiểm xã hội ở mình đóng bao nhiêu tiền
+  - cho mình hỏi bên công ty mình đóng bảo hiểm xã hội phải đóng theo những mức nào
+  - cho mình hỏi bảo hiểm xã hội bên công ty mình phải đóng theo mức nào ạ?
+  - cho mình hỏi bảo hiểm xã hội bên công ty phải đóng theo mức nào ạ?
+  - cho mình hỏi bảo hiểm xã hội là bắt buộc phải đóng hả
+  - cho mình hỏi có những mức bảo hiểm xã hội nào mà nhân viên phải đóng
+  - cho mình hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên không
+  - cho mình hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên ko
+  - cho mình hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên không
+  - cho mình hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên ko
+  - cho mình hỏi về bao hiểm công ty mình có hỗ trợ gì không
+  - cho mình hỏi về bao hiểm công ty mình có hỗ trợ gì ko
+  - cho mình xin thông tin cách đóng bảo hiểm xã hội ở công ty
+  - cho tôi hỏi bên công ty mình đóng bảo hiểm xã hội phải đóng theo những mức nào
+  - cho tôi hỏi bảo hiểm xã hội bên công ty mình phải đóng theo mức nào ạ?
+  - cho tôi hỏi bảo hiểm xã hội bên công ty phải đóng theo mức nào ạ?
+  - cho tôi hỏi có những mức bảo hiểm xã hội nào mà nhân viên phải đóng
+  - cho tôi hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên không
+  - cho tôi hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên ko
+  - cho tôi hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên không
+  - cho tôi hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên ko
+  - cho tôi hỏi về bao hiểm công ty mình có hỗ trợ gì không
+  - cho tôi hỏi về bao hiểm công ty mình có hỗ trợ gì ko
+  - cho tớ hỏi bên công ty mình đóng bảo hiểm xã hội phải đóng theo những mức nào
+  - cho tớ hỏi bảo hiểm xã hội bên công ty mình phải đóng theo mức nào ạ?
+  - cho tớ hỏi bảo hiểm xã hội bên công ty phải đóng theo mức nào ạ?
+  - cho tớ hỏi có những mức bảo hiểm xã hội nào mà nhân viên phải đóng
+  - cho tớ hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên không
+  - cho tớ hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên ko
+  - cho tớ hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên không
+  - cho tớ hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên ko
+  - cho tớ hỏi về bao hiểm công ty mình có hỗ trợ gì không
+  - cho tớ hỏi về bao hiểm công ty mình có hỗ trợ gì ko
+  - chính sách bảo hiểm của công ty như nào
+  - chính sách bảo hiểm của công ty như thế nào
+  - chính sách bảo hiểm của công ty ntn
+  - chính sách bảo hiểm của công ty thế nào
+  - chính sách bảo hiểm xã hội của Ftech
+  - chính sách bảo hiểm xã hội của công ty như nào
+  - chính sách bảo hiểm xã hội của công ty như thế nào
+  - chính sách bảo hiểm xã hội của công ty ntn
+  - chính sách bảo hiểm xã hội của công ty thế nào
+  - chính sách bảo hiểm xã hội xã hội của Ftech
+  - chế độ bảo hiểm
+  - chế độ bảo hiểm chung của công ty như nào
+  - chế độ bảo hiểm chung của công ty như thế nào
+  - chế độ bảo hiểm chung của công ty ntn
+  - chế độ bảo hiểm chung của công ty thế nào
+  - chế độ bảo hiểm của công ty như nào
+  - chế độ bảo hiểm của công ty như thế nào
+  - chế độ bảo hiểm của công ty ntn
+  - chế độ bảo hiểm của công ty thế nào
+  - chế độ bảo hiểm xã hội chung của công ty như nào
+  - chế độ bảo hiểm xã hội chung của công ty như thế nào
+  - chế độ bảo hiểm xã hội chung của công ty ntn
+  - chế độ bảo hiểm xã hội chung của công ty thế nào
+  - chế độ bảo hiểm xã hội của công ty như nào
+  - chế độ bảo hiểm xã hội của công ty như thế nào
+  - chế độ bảo hiểm xã hội của công ty ntn
+  - chế độ bảo hiểm xã hội của công ty thế nào
+  - có những mức bảo hiểm xã hội nào mà nhân viên phải đóng
+  - công ty có bảo hiểm xã hội không
+  - công ty có bảo hiểm xã hội xã hội không
+  - công ty có chính sách bảo hiểm gì cho nhân viên
+  - công ty có chính sách bảo hiểm như nào
+  - công ty có chính sách bảo hiểm như thế nào
+  - công ty có chính sách bảo hiểm ntn
+  - công ty có chính sách bảo hiểm thế nào
+  - công ty có chính sách bảo hiểm xã hội gì cho nhân viên
+  - công ty có chính sách bảo hiểm xã hội như nào
+  - công ty có chính sách bảo hiểm xã hội như thế nào
+  - công ty có chính sách bảo hiểm xã hội ntn
+  - công ty có chính sách bảo hiểm xã hội thế nào
+  - công ty có hỗ trợ đóng bảo hiểm cho nhân viên không
+  - công ty có hỗ trợ đóng bảo hiểm cho nhân viên ko
+  - công ty có hỗ trợ đóng bảo hiểm không
+  - công ty có hỗ trợ đóng bảo hiểm ko
+  - công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên không
+  - công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên ko
+  - công ty có hỗ trợ đóng bảo hiểm xã hội không
+  - công ty có hỗ trợ đóng bảo hiểm xã hội ko
+  - công ty có nộp bảo hiểm xã hội không?
+  - công ty có nộp bảo hiểm xã hội xã hội không?
+  - công ty có đóng bảo hiểm cho nhân viên không
+  - công ty có đóng bảo hiểm không
+  - công ty có đóng bảo hiểm ko
+  - công ty có đóng bảo hiểm tai nạn lao động theo qui định nhà nước ko
+  - công ty có đóng bảo hiểm thất ngiệp theo qui định nhà nước ko
+  - công ty có đóng bảo hiểm xã hội cho nhân viên không
+  - công ty có đóng bảo hiểm xã hội không
+  - công ty có đóng bảo hiểm xã hội không?
+  - công ty có đóng bảo hiểm xã hội ko
+  - công ty có đóng bảo hiểm xã hội theo qui định nhà nước ko
+  - công ty có đóng bảo hiểm xã hội xã hội không?
+  - công ty có đóng bảo hiểm y tế theo qui định nhà nước ko
+  - công ty hỗ trợ đóng bảo hiểm như thế nào
+  - công ty hỗ trợ đóng bảo hiểm xã hội như thế nào
+  - công ty đóng bảo hiểm xã hội trị giá bao nhiêu
+  - giá trị gói bảo hiểm xã hội cố định hay như thế nào
+  - gửi mình chi tiết thông tin chính sách bảo hiểm xã hội ở công ty với
+  - '[intern](level_position) có được đóng bảo hiểm xã hội ko'
+  - '[internship](level_position) có được đóng bảo hiểm xã hội ko'
+  - mình ko muốn đóng bảo hiểm xã hội được ko
+  - mình muốn hỏi bên công ty mình đóng bảo hiểm xã hội phải đóng theo những mức nào
+  - mình muốn hỏi bảo hiểm xã hội bên công ty mình phải đóng theo mức nào ạ?
+  - mình muốn hỏi bảo hiểm xã hội bên công ty phải đóng theo mức nào ạ?
+  - mình muốn hỏi có những mức bảo hiểm xã hội nào mà nhân viên phải đóng
+  - mình muốn hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên không
+  - mình muốn hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên ko
+  - mình muốn hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên không
+  - mình muốn hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên ko
+  - mình muốn hỏi về bao hiểm công ty mình có hỗ trợ gì không
+  - mình muốn hỏi về bao hiểm công ty mình có hỗ trợ gì ko
+  - mình xin thông tin về bảo hiểm của công ty với
+  - mình xin thông tin về bảo hiểm xã hội của công ty với
+  - mức cần phải đóng bảo hiểm xã hội của công ty mình là bao nhiêu
+  - nhân viên chính thức có bảo hiểm chứ
+  - nhân viên chính thức có bảo hiểm xã hội chứ
+  - nhân viên có phải đóng bảo hiểm xã hội hay công ty đóng hết
+  - nhân viên có được đóng bảo hiểm không
+  - nhân viên có được đóng bảo hiểm xã hội không
+  - '[pretrain](level_position) có được đóng bảo hiểm xã hội ko'
+  - qui định đóng bảo hiểm xã hội chỉ dành cho nhân viên chính thức thôi hả
+  - qui định đóng bảo hiểm xã hội ở công ty ra sao
+  - '[sinh viên thực tập](level_position) có được đóng bảo hiểm xã hội ko'
+  - '[svtt](level_position) có được đóng bảo hiểm xã hội ko'
+  - thực tập sinh chắc không có bảo hiểm nhỉ
+  - thực tập sinh chắc không có bảo hiểm xã hội nhỉ
+  - '[thực tập sinh](level_position) có được đóng bảo hiểm xã hội ko'
+  - '[trainee](level_position) có được đóng bảo hiểm xã hội ko'
+  - '[tts](level_position) có được đóng bảo hiểm xã hội ko'
+  - tôi muốn hỏi bên công ty mình đóng bảo hiểm xã hội phải đóng theo những mức nào
+  - tôi muốn hỏi bảo hiểm xã hội bên công ty mình phải đóng theo mức nào ạ?
+  - tôi muốn hỏi bảo hiểm xã hội bên công ty phải đóng theo mức nào ạ?
+  - tôi muốn hỏi có những mức bảo hiểm xã hội nào mà nhân viên phải đóng
+  - tôi muốn hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên không
+  - tôi muốn hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên ko
+  - tôi muốn hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên không
+  - tôi muốn hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên ko
+  - tôi muốn hỏi về bao hiểm công ty mình có hỗ trợ gì không
+  - tôi muốn hỏi về bao hiểm công ty mình có hỗ trợ gì ko
+  - tớ muốn hỏi bên công ty mình đóng bảo hiểm xã hội phải đóng theo những mức nào
+  - tớ muốn hỏi bảo hiểm xã hội bên công ty mình phải đóng theo mức nào ạ?
+  - tớ muốn hỏi bảo hiểm xã hội bên công ty phải đóng theo mức nào ạ?
+  - tớ muốn hỏi có những mức bảo hiểm xã hội nào mà nhân viên phải đóng
+  - tớ muốn hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên không
+  - tớ muốn hỏi công ty có hỗ trợ đóng bảo hiểm cho nhân viên ko
+  - tớ muốn hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên không
+  - tớ muốn hỏi công ty có hỗ trợ đóng bảo hiểm xã hội cho nhân viên ko
+  - tớ muốn hỏi về bao hiểm công ty mình có hỗ trợ gì không
+  - tớ muốn hỏi về bao hiểm công ty mình có hỗ trợ gì ko
+  - ở nhà mình có bảo hiểm tai nạn lao động gia đình thì có cần đóng bảo hiểm xã hội
+    của công ty ko
+  - ở nhà mình có bảo hiểm thất ngiệp gia đình thì có cần đóng bảo hiểm xã hội của
+    công ty ko
+  - ở nhà mình có bảo hiểm xã hội gia đình thì có cần đóng bảo hiểm xã hội của công
+    ty ko
+  - ở nhà mình có bảo hiểm y tế gia đình thì có cần đóng bảo hiểm xã hội của công
+    ty ko

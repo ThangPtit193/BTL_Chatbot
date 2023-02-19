@@ -1,0 +1,203 @@
+positives:
+- intent: company_ask_core_values
+  examples:
+  - văn hóa [f tech](work_unit) như nào hử bạn
+  - giá trị core của công ty là thế nào đó timi
+  - những giá trị cốt lõi mà công ty mang lại là gì
+  - em có biết giá trị cốt lõi của công ty là gì không
+  - công ty sẽ tạo ra những giá trị core gì
+  - công ty có giá trị core là gì
+  - công ty có giá trị cốt lõi là ntn hả m
+  - '[f-tech](work_unit) có văn hóa công ty ko'
+  - timi biết công ty có những giá trị cốt lõi gì ko
+  - giá trị core của [f tech](work_unit) là gì
+  - cho tôi hỏi giá trị core của công ty là ntn
+  - văn hóa công ty như nào hử m
+  - giá trị core của công ty là ntn hả timi
+  - những giá trị core mà công ty mang lại là gì
+  - m biết giá trị cốt lõi của công ty là thế nào không
+  - công ty sẽ tạo ra những giá trị cốt lõi gì
+  - công ty có giá trị core là như nào
+  - công ty có giá trị cốt lõi là gì đó bạn
+  - '[f-tech](work_unit) có văn hóa công ty không'
+  - em có biết công ty có những giá trị cốt lõi gì ko
+  - giá trị core của [f tech](work_unit) là như nào
+  - cho tôi hỏi giá trị cốt lõi của công ty là gì
+  - văn hóa công ty như nào hả
+  - giá trị cốt lõi của công ty là gì vậy đó m
+  - những giá trị core mà công ty mang lại là thế nào
+  - mày biết giá trị core của công ty là như nào ko
+  - công ty có giá trị core là gì vậy hả
+  - công ty có giá trị cốt lõi là gì hả mầy
+  - '[ftech](work_unit) có văn hóa công ty không'
+  - bot biết công ty có những giá trị cốt lõi gì ko
+  - giá trị cốt lõi của công ty là gì
+  - cho tớ hỏi giá trị core của công ty là gì vậy
+  - văn hóa [f-tech](work_unit) thế nào hử
+  - giá trị core của công ty là gì vậy hả đó bạn
+  - những giá trị core mà công ty mang lại là gì hả
+  - timi biết giá trị cốt lõi của công ty là gì không
+  - công ty có giá trị cốt lõi là gì
+  - công ty có giá trị core là gì vậy hả đó em
+  - '[f tech](work_unit) có văn hóa công ty không'
+  - m biết công ty có những giá trị cốt lõi gì không
+  - giá trị cốt lõi của [ftech](work_unit) là gì vậy hả
+  - cho tớ hỏi giá trị core của công ty là gì hả
+  - văn hóa công ty ntn hả
+  - giá trị cốt lõi của công ty là gì hả đó timi
+  - những giá trị cốt lõi mà công ty mang lại là gì vậy
+  - m có biết giá trị core của công ty là gì không
+  - công ty có giá trị core là thế nào
+  - công ty có giá trị cốt lõi là gì đó bot
+  - '[ftech](work_unit) có văn hóa công ty ko'
+  - cậu biết công ty có những giá trị cốt lõi gì ko
+  - giá trị core của công ty là thế nào
+  - cho tôi hỏi giá trị cốt lõi của công ty là thế nào
+  - văn hóa công ty như nào hử
+  - giá trị core của công ty là gì vậy đó mầy
+  - những giá trị cốt lõi mà công ty mang lại là thế nào
+  - timi biết giá trị core của công ty là gì không
+  - công ty có giá trị core là gì hả
+  - công ty có giá trị cốt lõi là gì hả đó mầy
+  - '[f tech](work_unit) có văn hóa công ty ko'
+  - cậu biết công ty có những giá trị cốt lõi gì không
+  - giá trị core của [ftech](work_unit) là gì hả
+  - cho mình hỏi giá trị cốt lõi của công ty là như thế nào
+  - văn hóa [ftech](work_unit) ntn hử
+  - giá trị cốt lõi của công ty là gì đó cậu
+  - những giá trị cốt lõi mà công ty mang lại là như nào
+  - cậu biết giá trị cốt lõi của công ty là gì không
+  - công ty có giá trị cốt lõi là ntn
+  - công ty có giá trị core là gì đó m
+  - em biết công ty có những giá trị cốt lõi gì không
+  - giá trị cốt lõi của [f tech](work_unit) là gì
+  - cho mình hỏi giá trị core của công ty là thế nào
+  - văn hóa [f tech](work_unit) như thế nào hử bạn
+  - giá trị cốt lõi của công ty là ntn đó bạn
+  - những giá trị core mà công ty mang lại là gì vậy hả
+  - timi biết giá trị core của công ty là thế nào ko
+  - công ty có giá trị cốt lõi là thế nào
+  - công ty có giá trị core là như thế nào hả bạn
+  - bot có biết công ty có những giá trị core gì ko
+  - giá trị core của [f tech](work_unit) là gì vậy
+  - cho mình hỏi giá trị cốt lõi của công ty là như nào
+  - văn hóa công ty thế nào hả
+  - giá trị cốt lõi của công ty là thế nào hả timi
+  - những giá trị core mà công ty mang lại là như nào
+  - timi biết giá trị core của công ty là gì vậy hả không
+  - công ty có giá trị cốt lõi là như thế nào
+  - công ty có giá trị core là thế nào đó bạn
+  - bạn biết công ty có những giá trị cốt lõi gì ko
+  - giá trị core của [ftech](work_unit) là gì
+  - cho tớ hỏi giá trị core của công ty là như nào
+  - văn hóa [f tech](work_unit) thế nào hử em
+  - giá trị cốt lõi của công ty là ntn hả mày
+  - những giá trị cốt lõi mà công ty mang lại là gì hả
+  - timi có biết giá trị core của công ty là như thế nào không
+  - công ty có giá trị core là như thế nào
+  - công ty có giá trị cốt lõi là như nào hả bot
+  - bạn có biết công ty có những giá trị cốt lõi gì không
+  - giá trị core của [f-tech](work_unit) là gì hả
+  - cho mình hỏi giá trị cốt lõi của công ty là thế nào
+  - văn hóa [f tech](work_unit) thế nào hử timi
+  - giá trị cốt lõi của công ty là thế nào đó bot
+  - những giá trị cốt lõi mà công ty mang lại là như thế nào
+  - mầy biết giá trị core của công ty là như thế nào không
+  - công ty có giá trị cốt lõi là gì hả
+  - công ty có giá trị cốt lõi là gì vậy hả đó mầy
+  - timi có biết công ty có những giá trị core gì không
+  - giá trị core của công ty là gì
+  - cho tôi hỏi giá trị core của công ty là như nào
+  - văn hóa công ty ntn hả em
+  - giá trị cốt lõi của công ty là gì đó m
+  - những giá trị core mà công ty mang lại là ntn
+  - mày có biết giá trị core của công ty là thế nào không
+  - công ty có giá trị cốt lõi là như nào
+  - công ty có giá trị cốt lõi là gì đó mày
+  - m có biết công ty có những giá trị core gì không
+  - giá trị cốt lõi của công ty là thế nào
+  - cho tôi hỏi giá trị cốt lõi của công ty là như thế nào
+  - văn hóa [f tech](work_unit) ntn hử timi
+  - giá trị core của công ty là gì vậy hả hả mầy
+  - những giá trị cốt lõi mà công ty mang lại là ntn
+  - bạn biết giá trị core của công ty là gì không
+  - công ty có giá trị core là gì vậy
+  - công ty có giá trị cốt lõi là gì vậy đó em
+  - m có biết công ty có những giá trị core gì ko
+  - giá trị cốt lõi của [f-tech](work_unit) là gì vậy hả
+  - cho tôi hỏi giá trị cốt lõi của công ty là gì vậy
+  - văn hóa [f-tech](work_unit) ntn hả
+  - giá trị cốt lõi của công ty là thế nào đó em
+  - những giá trị core mà công ty mang lại là như thế nào
+  - mày có biết giá trị cốt lõi của công ty là gì hả không
+  - công ty có giá trị cốt lõi là gì vậy
+  - công ty có giá trị core là gì hả cậu
+  - bạn biết công ty có những giá trị cốt lõi gì không
+  - giá trị cốt lõi của [f-tech](work_unit) là gì hả
+  - cho mình hỏi giá trị cốt lõi của công ty là gì
+  - văn hóa công ty ntn hả timi
+  - giá trị core của công ty là gì hả mầy
+  - những giá trị core mà công ty mang lại là gì vậy
+  - m biết giá trị core của công ty là ntn không
+  - công ty có giá trị cốt lõi là gì hả bot
+  - cậu có biết công ty có những giá trị cốt lõi gì không
+  - giá trị core của công ty là gì vậy
+  - cho tớ hỏi giá trị cốt lõi của công ty là ntn
+  - văn hóa [f-tech](work_unit) như thế nào hả em
+  - giá trị cốt lõi của công ty là gì vậy hả m
+  - những giá trị cốt lõi mà công ty mang lại là gì vậy hả
+  - mầy biết giá trị core của công ty là gì vậy ko
+  - công ty có giá trị cốt lõi là gì vậy hả
+  - công ty có giá trị cốt lõi là như thế nào hả cậu
+  - mầy có biết công ty có những giá trị core gì không
+  - giá trị core của [f tech](work_unit) là gì vậy hả
+  - cho tớ hỏi giá trị cốt lõi của công ty là gì
+  - văn hóa công ty thế nào hả em
+  - giá trị cốt lõi của công ty là ntn đó mày
+  - em biết giá trị core của công ty là gì không
+  - công ty có giá trị core là gì đó em
+  - m biết công ty có những giá trị core gì không
+  - giá trị core của [ftech](work_unit) là thế nào
+  - cho tôi hỏi giá trị core của công ty là như thế nào
+  - văn hóa [ftech](work_unit) như nào hử
+  - giá trị cốt lõi của công ty là gì hả mầy
+  - bot biết giá trị core của công ty là ntn không
+  - công ty có giá trị core là ntn
+  - công ty có giá trị cốt lõi là như thế nào đó mầy
+  - mầy biết công ty có những giá trị cốt lõi gì ko
+  - giá trị core của công ty là gì hả
+  - cho tớ hỏi giá trị core của công ty là gì
+  - văn hóa [f-tech](work_unit) thế nào hử cậu
+  - giá trị core của công ty là gì đó bạn
+  - mầy có biết giá trị cốt lõi của công ty là thế nào không
+  - công ty có giá trị cốt lõi là ntn hả em
+  - bạn biết công ty có những giá trị core gì ko
+  - giá trị cốt lõi của [f tech](work_unit) là ntn
+  - cho tớ hỏi giá trị core của công ty là như thế nào
+  - văn hóa [f-tech](work_unit) ntn hử
+  - giá trị cốt lõi của công ty là gì vậy hả hả mày
+  - m có biết giá trị cốt lõi của công ty là ntn không
+  - công ty có giá trị cốt lõi là thế nào đó m
+  - bot có biết công ty có những giá trị core gì không
+  - giá trị cốt lõi của công ty là gì vậy
+  - cho mình hỏi giá trị core của công ty là gì
+  - văn hóa công ty ntn hử
+  - giá trị core của công ty là gì đó mầy
+  - mày biết giá trị cốt lõi của công ty là gì vậy ko
+  - công ty có giá trị cốt lõi là như nào đó bot
+  - timi có biết công ty có những giá trị cốt lõi gì ko
+  - giá trị cốt lõi của [f tech](work_unit) là như nào
+  - cho tớ hỏi giá trị cốt lõi của công ty là thế nào
+  - văn hóa [ftech](work_unit) như thế nào hử
+  - giá trị cốt lõi của công ty là ntn hả cậu
+  - bạn biết giá trị cốt lõi của công ty là thế nào ko
+  - công ty có giá trị core là thế nào đó mày
+  - mầy có biết công ty có những giá trị cốt lõi gì ko
+  - giá trị cốt lõi của công ty là như nào
+  - cho tớ hỏi giá trị cốt lõi của công ty là gì vậy
+  - văn hóa công ty ntn hử em
+  - giá trị core của công ty là gì vậy hả bạn
+  - em có biết giá trị cốt lõi của công ty là thế nào không
+  - công ty có giá trị cốt lõi là thế nào đó mày
+  - timi có biết công ty có những giá trị cốt lõi gì không
+  - giá trị cốt lõi của [f-tech](work_unit) là gì

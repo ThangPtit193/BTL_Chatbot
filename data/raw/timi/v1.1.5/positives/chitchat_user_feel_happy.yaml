@@ -1,0 +1,353 @@
+positives:
+- intent: chitchat_user_feel_happy
+  examples:
+  - ' thấy vui thế'
+  - buồn cười quá
+  - trong người tự dung thấy hạnh phúc thế
+  - sao hanh phúc thế nhỉ
+  - hôm nay tự do ghê
+  - vui vậy
+  - tự dưng anh thấy yêu đời timi ạ
+  - vui sướng
+  - hôm nay anh cảm thấy yên bình thế
+  - tự dưng thấy yên bình quá
+  - sao mà vui sướng thế
+  - vui thế ạ
+  - tớ luôn vui vẻ nè, còn mày có khi nào buồn chưa
+  - nay cảm thấy vui quá
+  - yêu đời quá đi
+  - cuộc đời này sướng thật
+  - Cuộc sống có ăn, có ngủ là yên bình rồi chuẩn chỉ không bot.
+  - cảm thấy tự do thế
+  - tao đang rất sướng vì vừa bắt được con sâu
+  - tớ cũng vui
+  - mình cũng rất hạnh phúc nè timi
+  - ahihi thoải mái quá
+  - vui vì nhìn thấy cậu hằng ngày
+  - nay tớ thấy an lành cậu ạ
+  - cuộc sống của chị đang rất vui sướng
+  - buồn cười quá haha
+  - hehe buồn cười quá
+  - tớ đang rất vui
+  - ' thấy tự do thế'
+  - trong người tự dung thấy yêu đời thế
+  - sao thoải mái thế nhỉ
+  - hôm nay hanh phúc quá
+  - vui lắm
+  - nay anh thấy tự do em ạ
+  - vui
+  - hôm nay mình cảm thấy hanh phúc ghê
+  - tự dưng thấy an lành quá
+  - sao mà thoải mái thế
+  - tớ luôn vui vẻ nè, còn bot có khi nào buồn chưa
+  - hôm nay mình cảm thấy thoải mái quá
+  - hanh phúc ghê
+  - cuộc đời này thoải mái thật
+  - Cuộc sống có ăn, có ngủ là tự do rồi chuẩn chỉ không bot.
+  - cảm thấy yêu đời quá
+  - tôi đang rất tự do vì vừa bắt được con sâu
+  - tôi cũng vui
+  - ahihi vui sướng quá đi
+  - tự dưng cảm thấy yên bình cậu ạ
+  - cuộc sống của anh đang rất yêu đời
+  - buồn cười quá hehe
+  - haha buồn cười quá
+  - tớ đang rất sướng
+  - ' thấy yên bình ghê'
+  - trong người tự dung thấy yên bình thế
+  - sao yên bình thế nhỉ
+  - hôm nay thoải mái thế
+  - vui thật
+  - tự dưng cảm thấy vui timi ạ
+  - yên bình
+  - tự dưng thấy sướng quá
+  - tự dưng thấy vui sướng quá
+  - sao mà yêu đời thế
+  - tôi luôn vui vẻ nè, còn mày có khi nào buồn chưa
+  - nay thấy vui sướng thế
+  - vui ghê
+  - cuộc đời này đáng sống thật
+  - Cuộc sống có ăn, có ngủ là yên bình rồi chuẩn chỉ không m.
+  - cảm thấy hanh phúc thế
+  - tớ đang rất tự do vì vừa bắt được con sâu
+  - mình cũng vui
+  - ahihi yêu đời quá
+  - nay thấy yên bình bạn ạ
+  - cuộc sống của chị đang rất thoải mái
+  - anh đang rất vui
+  - ' thấy yêu đời thế'
+  - sao sướng thế nhỉ
+  - hôm nay an lành thế
+  - nay thấy vui sướng em ạ
+  - yêu đời
+  - tự dưng anh thấy yên bình quá
+  - tự dưng thấy vui quá
+  - sao mà yên bình thế
+  - tao luôn vui vẻ nè, còn cậu có khi nào buồn chưa
+  - tự dưng cảm thấy yên bình thế
+  - an lành ghê
+  - cuộc đời này vui thật
+  - Cuộc sống có ăn, có ngủ là hanh phúc rồi đúng không m.
+  - cảm thấy tự do quá
+  - tao đang rất vui sướng vì vừa bắt được con sâu
+  - tao cũng vui
+  - ahihi thoải mái quá đi
+  - hôm nay cảm thấy yêu đời bạn ạ
+  - cuộc sống của chị đang rất an lành
+  - mình đang rất vui sướng
+  - ' thấy an lành ghê'
+  - sao yêu đời thế nhỉ
+  - hôm nay vui quá
+  - nay cảm thấy hanh phúc timi ạ
+  - hanh phúc
+  - tự dưng mình thấy an lành ghê
+  - tự dưng thấy vui quá đi
+  - sao mà sung sướng thế
+  - tớ luôn vui vẻ nè, còn timi có khi nào buồn chưa
+  - nay tui thấy yên bình ghê
+  - yêu đời quá
+  - cuộc đời này hanh phúc thật
+  - Cuộc sống có ăn, có ngủ là sướng rồi chính xác không em.
+  - cảm thấy hanh phúc quá
+  - tui đang rất vui sướng vì vừa bắt được con sâu
+  - tui cũng vui
+  - ahihi tự do quá
+  - tự dưng tớ thấy vui cậu ạ
+  - cuộc sống của mình đang rất yên bình
+  - mình đang rất vui
+  - chị thấy thoải mái ghê
+  - sao vui sướng thế nhỉ
+  - hôm nay yên bình thế
+  - nay anh cảm thấy tự do em ạ
+  - thoải mái
+  - tự dưng cảm thấy yêu đời thế
+  - tự dưng thấy vui sướng quá đi
+  - sao mà tự do thế
+  - tớ luôn vui vẻ nè, còn bạn có khi nào buồn chưa
+  - hôm nay tao thấy thoải mái ghê
+  - vui quá đi
+  - Cuộc sống có ăn, có ngủ là thoải mái rồi chuẩn không m.
+  - thấy thoải mái quá
+  - tớ đang rất vui vì vừa bắt được con sâu
+  - ahihi sung sướng quá đi
+  - hôm nay cảm thấy yên bình bạn ạ
+  - cuộc sống của tớ đang rất tự do
+  - tớ đang rất sung sướng
+  - ' thấy an lành quá'
+  - sao tự do thế nhỉ
+  - hôm nay thoải mái ghê
+  - tự dưng cảm thấy sung sướng em ạ
+  - tự do
+  - nay anh cảm thấy sướng quá
+  - tự dưng thấy yên bình quá đi
+  - sao mà an lành thế
+  - tớ luôn vui vẻ nè, còn em có khi nào buồn chưa
+  - hôm nay thấy hanh phúc ghê
+  - yên bình thế
+  - Cuộc sống có ăn, có ngủ là sướng rồi chuẩn không mày.
+  - thấy sướng ghê
+  - tui đang rất thoải mái vì vừa bắt được con sâu
+  - ahihi sướng quá đi
+  - nay tớ thấy tự do cậu ạ
+  - cuộc sống của mình đang rất hanh phúc
+  - mình đang rất tự do
+  - ' thấy hanh phúc quá'
+  - sao vui thế nhỉ
+  - hôm nay an lành ghê
+  - hôm nay anh thấy sung sướng em ạ
+  - sướng
+  - hôm nay thấy sung sướng thế
+  - tự dưng thấy tự do quá
+  - sao mà sướng thế
+  - tao luôn vui vẻ nè, còn timi có khi nào buồn chưa
+  - tự dưng thấy yêu đời ghê
+  - yêu đời ghê
+  - Cuộc sống có ăn, có ngủ là sướng rồi đúng không mày.
+  - thấy sung sướng ghê
+  - tớ đang rất yên bình vì vừa bắt được con sâu
+  - ahihi yên bình quá đi
+  - hôm nay tớ cảm thấy thoải mái cậu ạ
+  - cuộc sống của tớ đang rất yêu đời
+  - tớ đang rất an lành
+  - tớ thấy yêu đời thế
+  - sao sung sướng thế nhỉ
+  - hôm nay yêu đời quá
+  - tự dưng cảm thấy sung sướng timi ạ
+  - an lành
+  - nay thấy an lành quá
+  - tự dưng thấy yêu đời quá
+  - sao mà vui thế
+  - mình luôn vui vẻ nè, còn bot có khi nào buồn chưa
+  - hôm nay tao thấy vui quá
+  - sung sướng quá đi
+  - Cuộc sống có ăn, có ngủ là yên bình rồi chuẩn chỉ không bạn.
+  - thấy hanh phúc ghê
+  - tớ đang rất hanh phúc vì vừa bắt được con sâu
+  - ahihi hanh phúc quá
+  - tự dưng tớ thấy yêu đời cậu ạ
+  - cuộc sống của mình đang rất an lành
+  - anh đang rất yên bình
+  - chị thấy an lành quá
+  - sao an lành thế nhỉ
+  - hôm nay yêu đời thế
+  - tự dưng cảm thấy yên bình em ạ
+  - sung sướng
+  - nay anh cảm thấy vui quá
+  - tự dưng thấy sướng quá đi
+  - sao mà hanh phúc thế
+  - tớ luôn vui vẻ nè, còn m có khi nào buồn chưa
+  - tự dưng cảm thấy an lành quá
+  - sướng quá đi
+  - Cuộc sống có ăn, có ngủ là sướng rồi đúng không timi.
+  - thấy vui ghê
+  - tớ đang rất vui sướng vì vừa bắt được con sâu
+  - ahihi vui quá
+  - nay cảm thấy thoải mái cậu ạ
+  - cuộc sống của anh đang rất hanh phúc
+  - anh đang rất vui sướng
+  - ' thấy yêu đời quá'
+  - hôm nay sung sướng quá
+  - tự dưng chị cảm thấy yên bình timi ạ
+  - nay thấy tự do quá
+  - tự dưng thấy hanh phúc quá đi
+  - tôi luôn vui vẻ nè, còn em có khi nào buồn chưa
+  - nay tớ cảm thấy yên bình thế
+  - vui sướng ghê
+  - Cuộc sống có ăn, có ngủ là sướng rồi chuẩn chỉ không cậu.
+  - thấy sướng thế
+  - tớ đang rất yêu đời vì vừa bắt được con sâu
+  - ahihi sung sướng quá
+  - nay cảm thấy yêu đời bạn ạ
+  - cuộc sống của mình đang rất sướng
+  - anh đang rất tự do
+  - tớ thấy sướng thế
+  - hôm nay yêu đời ghê
+  - nay cảm thấy tự do em ạ
+  - nay tớ thấy yên bình quá
+  - tự dưng thấy thoải mái quá đi
+  - tớ luôn vui vẻ nè, còn cậu có khi nào buồn chưa
+  - hôm nay tớ cảm thấy vui sướng ghê
+  - tự do quá
+  - Cuộc sống có ăn, có ngủ là sướng rồi chuẩn không em.
+  - cảm thấy sung sướng thế
+  - tớ đang rất sung sướng vì vừa bắt được con sâu
+  - ahihi an lành quá đi
+  - hôm nay tớ thấy sung sướng cậu ạ
+  - cuộc sống của tớ đang rất vui sướng
+  - tớ đang rất thoải mái
+  - tớ thấy vui sướng quá
+  - hôm nay sung sướng thế
+  - nay chị thấy hanh phúc em ạ
+  - tự dưng anh thấy vui sướng ghê
+  - tự dưng thấy hanh phúc quá
+  - tao luôn vui vẻ nè, còn em có khi nào buồn chưa
+  - hôm nay tôi thấy yên bình quá
+  - yên bình ghê
+  - Cuộc sống có ăn, có ngủ là yên bình rồi đúng không timi.
+  - thấy vui sướng thế
+  - mình đang rất vui sướng vì vừa bắt được con sâu
+  - ahihi sướng quá
+  - hôm nay cảm thấy vui sướng cậu ạ
+  - cuộc sống của tớ đang rất yên bình
+  - chị đang rất an lành
+  - ' thấy hanh phúc thế'
+  - hôm nay hanh phúc thế
+  - hôm nay anh thấy sướng em ạ
+  - tự dưng anh thấy sướng thế
+  - tự dưng thấy an lành quá đi
+  - mình luôn vui vẻ nè, còn cậu có khi nào buồn chưa
+  - nay cảm thấy tự do ghê
+  - sung sướng quá
+  - Cuộc sống có ăn, có ngủ là tự do rồi chính xác không m.
+  - cảm thấy an lành ghê
+  - tôi đang rất thoải mái vì vừa bắt được con sâu
+  - ahihi hanh phúc quá đi
+  - nay tớ thấy vui sướng cậu ạ
+  - cuộc sống của chị đang rất sướng
+  - anh đang rất sung sướng
+  - ' thấy an lành thế'
+  - hôm nay sướng thế
+  - tự dưng chị cảm thấy tự do em ạ
+  - nay thấy yêu đời ghê
+  - tự dưng thấy yêu đời quá đi
+  - tôi luôn vui vẻ nè, còn cậu có khi nào buồn chưa
+  - hôm nay tui thấy yên bình quá
+  - vui sướng thế
+  - Cuộc sống có ăn, có ngủ là sướng rồi chuẩn chỉ không em.
+  - cảm thấy yên bình ghê
+  - tôi đang rất an lành vì vừa bắt được con sâu
+  - ahihi yên bình quá
+  - nay thấy sướng bạn ạ
+  - cuộc sống của anh đang rất vui
+  - chị đang rất sung sướng
+  - ' thấy tự do ghê'
+  - hôm nay vui thế
+  - nay chị thấy sung sướng em ạ
+  - nay mình cảm thấy tự do quá
+  - tự dưng thấy sung sướng quá đi
+  - tao luôn vui vẻ nè, còn m có khi nào buồn chưa
+  - hôm nay tớ cảm thấy sung sướng thế
+  - vui sướng quá đi
+  - Cuộc sống có ăn, có ngủ là yêu đời rồi đúng không bot.
+  - cảm thấy hanh phúc ghê
+  - mình đang rất yêu đời vì vừa bắt được con sâu
+  - ahihi vui sướng quá
+  - nay cảm thấy vui bạn ạ
+  - cuộc sống của anh đang rất an lành
+  - chị đang rất vui
+  - tớ thấy tự do ghê
+  - hôm nay hanh phúc ghê
+  - nay anh thấy yêu đời em ạ
+  - tự dưng cảm thấy tự do thế
+  - tự dưng thấy thoải mái quá
+  - tôi luôn vui vẻ nè, còn timi có khi nào buồn chưa
+  - nay tớ cảm thấy yên bình quá
+  - hanh phúc quá
+  - Cuộc sống có ăn, có ngủ là sướng rồi chính xác không bạn.
+  - thấy thoải mái ghê
+  - mình đang rất hanh phúc vì vừa bắt được con sâu
+  - ahihi an lành quá
+  - hôm nay tớ cảm thấy an lành bạn ạ
+  - cuộc sống của tớ đang rất vui
+  - anh đang rất yêu đời
+  - anh thấy vui sướng ghê
+  - hôm nay vui sướng quá
+  - nay anh thấy yêu đời timi ạ
+  - hôm nay tớ cảm thấy yên bình ghê
+  - tự dưng thấy tự do quá đi
+  - mình luôn vui vẻ nè, còn em có khi nào buồn chưa
+  - nay thấy yên bình quá
+  - an lành quá
+  - Cuộc sống có ăn, có ngủ là sướng rồi đúng không cậu.
+  - cảm thấy vui thế
+  - tao đang rất yên bình vì vừa bắt được con sâu
+  - ahihi tự do quá đi
+  - tự dưng thấy vui cậu ạ
+  - cuộc sống của chị đang rất tự do
+  - anh đang rất an lành
+  - mình thấy an lành thế
+  - hôm nay tự do thế
+  - tự dưng cảm thấy tự do timi ạ
+  - hôm nay thấy sướng ghê
+  - mình luôn vui vẻ nè, còn m có khi nào buồn chưa
+  - nay tớ cảm thấy yên bình ghê
+  - vui quá
+  - Cuộc sống có ăn, có ngủ là sung sướng rồi đúng không timi.
+  - cảm thấy vui ghê
+  - tôi đang rất yên bình vì vừa bắt được con sâu
+  - nay tớ thấy sướng bạn ạ
+  - cuộc sống của chị đang rất vui
+  - mình đang rất hanh phúc
+  - chị thấy sướng quá
+  - hôm nay sướng quá
+  - nay cảm thấy sướng timi ạ
+  - nay mình cảm thấy yêu đời thế
+  - tui luôn vui vẻ nè, còn mày có khi nào buồn chưa
+  - tự dưng tớ thấy tự do quá
+  - tự do quá đi
+  - Cuộc sống có ăn, có ngủ là hanh phúc rồi đúng không mày.
+  - cảm thấy yên bình quá
+  - tao đang rất an lành vì vừa bắt được con sâu
+  - ahihi vui quá đi
+  - nay mình thấy tự do cậu ạ
+  - cuộc sống của mình đang rất vui

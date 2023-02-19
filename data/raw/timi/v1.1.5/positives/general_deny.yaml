@@ -1,0 +1,353 @@
+positives:
+- intent: general_deny
+  examples:
+  - không, lộn rồi bạn
+  - ko chuẩn chỉ cậu ơi
+  - không, không đúng cậu
+  - no, ko chuẩn chỉ timi
+  - không phải, không chuẩn rồi cậu
+  - không, ko đúng rồi bạn
+  - ko phải timi ơi
+  - chưa, không đúng rồi
+  - chưa chuẩn nhé bot
+  - chưa, ko chuẩn
+  - không chuẩn chỉ rồi bot
+  - chưa đúng timi
+  - chưa được, không chính xác cậu
+  - chưa được, không chuẩn rồi
+  - ko nhé bot
+  - không đúng ý tớ
+  - chưa được, lộn rồi bạn
+  - ko sai rồi bot
+  - tôi thấy nhầm rồi
+  - chưa, không chuẩn rồi cậu
+  - chưa chính xác
+  - chưa chuẩn nhé bạn
+  - ko đúng rồi
+  - chưa được, ko đúng bot
+  - no, nhầm rồi bot
+  - không chuẩn cậu ơi
+  - không được, không đúng bot
+  - không, lộn rồi bot
+  - không chuẩn rồi timi
+  - chưa được, ko chuẩn rồi timi
+  - ko chính xác cậu ơi
+  - ko nhầm lẫn rồi bạn
+  - chưa, không chính xác bot
+  - chưa đúng
+  - chưa chính xác nha bot
+  - không chuẩn chỉ timi
+  - ko đúng ý tui
+  - không nha timi
+  - không, ko chuẩn chỉ bạn
+  - nhầm hết
+  - lộn hết rồi cậu
+  - sai hết bot
+  - ko chính xác rồi bot
+  - ko chuẩn chỉ timi
+  - chưa, không đúng cậu
+  - chưa, không chuẩn chỉ cậu
+  - không đúng ý tui
+  - no, không chuẩn chỉ rồi bot
+  - không chuẩn rồi bot
+  - sai hết cậu
+  - chưa chính xác nha
+  - không, nhầm rồi
+  - chưa chuẩn bot
+  - không phải, ko đúng bot
+  - no, không chuẩn chỉ rồi cậu
+  - không, ko chuẩn cậu
+  - ko chính xác rồi timi
+  - nhầm lẫn hết timi
+  - không phải cậu ơi
+  - ko chuẩn rồi bạn
+  - chưa đúng bot
+  - không được, không chuẩn rồi bạn
+  - chưa đúng nhé
+  - chưa đúng cậu
+  - cancel ạ
+  - ko chuẩn rồi timi
+  - no, không chính xác rồi cậu
+  - chưa chuẩn nha
+  - sai hết bạn
+  - nhầm hết timi
+  - đều sai hết
+  - không được, lộn rồi bot
+  - không được, ko chính xác timi
+  - không đúng ý tớ rồi
+  - không phải, ko chuẩn chỉ rồi cậu
+  - no, không chính xác
+  - đều nhầm hết bot
+  - không phải, không chuẩn chỉ rồi cậu
+  - chưa được, lộn rồi bot
+  - không , ko phải rồi
+  - no, ko đúng bot
+  - chưa được, không chuẩn chỉ rồi bạn
+  - không, không chuẩn bạn
+  - hủy
+  - không, không chuẩn rồi bạn
+  - no, lộn rồi bot
+  - không chuẩn chỉ đâu bot
+  - không chuẩn đâu
+  - chưa được, ko chuẩn chỉ rồi cậu
+  - no, ko đúng rồi bot
+  - mình thấy sai rồi
+  - không, ko đúng rồi timi
+  - chưa được, ko đúng cậu
+  - chưa, không chuẩn bạn
+  - bảo không chuẩn mà
+  - không, ko chính xác timi
+  - đã bảo không chuẩn chỉ rồi mà
+  - không phải, không chính xác rồi bot
+  - không chính xác đâu timi
+  - không phải, ko chính xác rồi timi
+  - chưa, không chuẩn
+  - chưa, không chuẩn chỉ
+  - không phải, ko đúng cậu
+  - bảo ko chuẩn chỉ rồi mà
+  - không, không chính xác rồi timi
+  - không chuẩn chỉ rồi bạn
+  - chưa, không đúng
+  - không phải, ko chính xác rồi cậu
+  - không phải bạn ơi
+  - chưa, ko chuẩn rồi
+  - không được, ko chuẩn chỉ rồi bot
+  - chưa, lộn rồi timi
+  - nhầm hết rồi
+  - không đúng cậu
+  - đều sai hết bạn
+  - chưa, không chuẩn chỉ rồi timi
+  - đều lộn hết
+  - không được, không chuẩn chỉ bot
+  - chưa được, ko chính xác rồi
+  - không đúng đâu timi
+  - ko bot nhé
+  - ko chuẩn cậu ơi
+  - no, ko đúng rồi
+  - chưa, không chuẩn chỉ bot
+  - đều nhầm hết rồi
+  - tôi thấy sai rồi
+  - no, không chuẩn chỉ rồi bạn
+  - ko bot
+  - ko sai rồi
+  - không, ko đúng bot
+  - chưa được, ko chuẩn chỉ bot
+  - nhầm rồi timi
+  - chưa chuẩn cậu
+  - chưa được, không đúng cậu
+  - không
+  - đều nhầm lẫn hết rồi cậu
+  - không có
+  - không, ko chuẩn chỉ timi
+  - không được, ko chuẩn bạn
+  - không, lộn rồi
+  - chưa chuẩn chỉ nhé bạn
+  - không, ko đúng rồi cậu
+  - không được, không chính xác bạn
+  - không timi nhé
+  - không đúng đâu bot
+  - không đúng đâu bạn
+  - chưa được, ko đúng
+  - no, nhầm lẫn rồi bạn
+  - không được, ko chuẩn rồi bạn
+  - ko nhầm lẫn rồi
+  - không nhầm lẫn rồi
+  - chưa chuẩn bạn
+  - ko đúng đâu timi
+  - no, ko chuẩn chỉ bot
+  - không, ko chuẩn
+  - chưa được, không chuẩn rồi bạn
+  - nhầm rồi cậu
+  - không được, ko đúng rồi
+  - không, nhầm lẫn rồi cậu
+  - không được, ko đúng timi
+  - không, không chuẩn chỉ rồi timi
+  - sai hết rồi
+  - no, ko chính xác rồi
+  - nhầm rồi bot
+  - ko phải bot ơi
+  - ko đúng rồi bot
+  - chưa, ko chuẩn cậu
+  - không phải, không chuẩn cậu
+  - không chuẩn bot ơi
+  - không phải, nhầm rồi bot
+  - chưa, không chuẩn chỉ bạn
+  - không phải, sai rồi bot
+  - chưa, sai rồi cậu
+  - không phải, không chuẩn bot
+  - nhầm hết rồi bot
+  - no, không đúng rồi cậu
+  - không đúng bạn ơi
+  - chưa, ko chuẩn chỉ rồi bot
+  - chưa, không chuẩn chỉ rồi cậu
+  - ko
+  - chưa đúng bạn
+  - đều lộn hết timi
+  - không lộn rồi bot
+  - chưa, không đúng timi
+  - không được, nhầm rồi bot
+  - không đúng cậu ơi
+  - không phải, không chính xác rồi cậu
+  - không được, ko chính xác
+  - không phải, không chính xác bạn
+  - ko bạn
+  - chưa được, ko chuẩn chỉ bạn
+  - không được, ko chuẩn chỉ rồi timi
+  - không, không đúng
+  - tôi thấy lộn
+  - đã bảo ko chính xác rồi mà
+  - chưa được, ko chính xác rồi bạn
+  - mình thấy nhầm rồi
+  - chưa được, không chuẩn chỉ rồi bot
+  - bảo ko chuẩn chỉ mà
+  - no, không chuẩn timi
+  - không timi ơi
+  - chưa được, không chuẩn chỉ rồi timi
+  - ko chính xác
+  - chưa được, không đúng rồi
+  - ko chuẩn chỉ rồi bạn
+  - ko , ko phải rồi
+  - không được, ko đúng rồi cậu
+  - ko chuẩn chỉ bot
+  - no, không đúng rồi bạn
+  - chưa được, không chuẩn chỉ rồi cậu
+  - no, lộn rồi cậu
+  - chưa, không chuẩn cậu
+  - no, ko đúng timi
+  - chưa được, ko chuẩn bạn
+  - chưa, ko chuẩn bot
+  - không được, không chính xác timi
+  - ko , ko đúng rồi
+  - no, không đúng bạn
+  - không nhầm rồi bot
+  - không phải, ko chính xác timi
+  - bảo ko chính xác rồi mà
+  - chưa được, không chuẩn rồi cậu
+  - không, ko chính xác cậu
+  - ko chuẩn chỉ rồi cậu
+  - chưa, không chính xác rồi
+  - đều lộn hết rồi bạn
+  - ko bot ơi
+  - chưa, nhầm rồi bạn
+  - không nhầm rồi cậu
+  - không, không chính xác rồi cậu
+  - chưa được, không chuẩn timi
+  - ko bạn ơi
+  - không được, nhầm rồi cậu
+  - no, không chính xác timi
+  - đều nhầm lẫn hết rồi bạn
+  - nhầm lẫn hết cậu
+  - lộn hết
+  - không được, không chuẩn chỉ timi
+  - bảo ko chuẩn mà
+  - chưa chính xác nha bạn
+  - chưa, không chuẩn rồi bot
+  - không được, không đúng
+  - ko nhầm rồi timi
+  - chưa được, sai rồi bạn
+  - không được, không chuẩn cậu
+  - đều sai hết rồi bạn
+  - không, không chính xác rồi bạn
+  - ko chuẩn chỉ timi ơi
+  - ko nha timi
+  - không, nhầm rồi timi
+  - timi nhầm rồi
+  - không nhé bạn
+  - không chính xác đâu
+  - ko chính xác timi
+  - no, không chuẩn bot
+  - không phải, ko chuẩn chỉ rồi timi
+  - ko nhầm lẫn rồi cậu
+  - chưa chuẩn chỉ nhé timi
+  - chưa, nhầm lẫn rồi cậu
+  - ko đúng rồi bạn
+  - đều nhầm hết cậu
+  - mình thấy nhầm lẫn rồi
+  - không, không chuẩn rồi
+  - nhầm rồi bot ơi
+  - không phải, không đúng rồi bot
+  - không chuẩn đâu timi
+  - chưa được, ko chính xác
+  - chưa được, ko chính xác bạn
+  - chưa được, nhầm rồi bạn
+  - không được, lộn rồi bạn
+  - không, không chuẩn rồi cậu
+  - ko sai rồi cậu
+  - không được, sai rồi cậu
+  - chưa, không đúng rồi timi
+  - không phải, sai rồi cậu
+  - không được, không đúng timi
+  - chưa, không đúng rồi cậu
+  - chưa, ko chính xác rồi bot
+  - nhầm hết bot
+  - không, sai rồi bot
+  - chưa được, không chính xác rồi bạn
+  - không phải, ko chính xác rồi
+  - không phải, ko chuẩn rồi timi
+  - đã bảo không đúng rồi mà
+  - không, ko chuẩn chỉ rồi bot
+  - không được, ko chính xác rồi timi
+  - đã bảo không chuẩn chỉ mà
+  - không được, ko chính xác bạn
+  - tớ thấy nhầm lẫn
+  - no, ko chuẩn rồi timi
+  - chưa, không chính xác cậu
+  - no, sai rồi
+  - ko chính xác bot ơi
+  - chưa được, không chuẩn rồi bot
+  - no, sai rồi timi
+  - bảo không đúng mà
+  - không chính xác đâu cậu
+  - không chính xác rồi bạn
+  - không phải, không đúng
+  - đều nhầm lẫn hết rồi timi
+  - ko chính xác bạn
+  - không phải như thế
+  - không đúng ý tôi
+  - ko chuẩn rồi bot
+  - chưa, nhầm lẫn rồi bot
+  - ko đúng đâu bạn
+  - không phải, không chuẩn chỉ timi
+  - chưa đúng nha
+  - không chuẩn chỉ bạn
+  - không phải, không đúng timi
+  - chưa được, không đúng bạn
+  - chưa, sai rồi
+  - sai hết rồi timi
+  - ko đúng cậu ơi
+  - không, nhầm lẫn rồi bot
+  - no, lộn rồi
+  - không được, ko đúng cậu
+  - ko nhé timi
+  - không chuẩn bạn ơi
+  - không phải, ko chuẩn chỉ rồi bạn
+  - không, ko chuẩn timi
+  - không phải, ko chuẩn chỉ bot
+  - không phải, nhầm rồi timi
+  - nhầm lẫn hết rồi
+  - không được, không chuẩn chỉ rồi bot
+  - không, ko chuẩn bạn
+  - không phải, không chuẩn chỉ rồi
+  - đều nhầm lẫn hết bot
+  - chưa được, không đúng
+  - chưa đúng nha cậu
+  - nhầm lẫn hết bạn
+  - không được, nhầm lẫn rồi timi
+  - đã bảo ko chuẩn chỉ mà
+  - ko chuẩn chỉ
+  - không bot nhé
+  - chưa đúng nha bạn
+  - đã bảo không chuẩn mà
+  - không chuẩn rồi
+  - không được, không chính xác rồi cậu
+  - ko lộn rồi bot
+  - không chính xác rồi cậu
+  - không được, không chính xác cậu
+  - không, không chuẩn rồi timi
+  - không phải, không đúng bot
+  - chưa được, nhầm lẫn rồi bạn
+  - chưa chuẩn chỉ bot
+  - chưa được, không chuẩn bạn
+  - chưa, không chính xác bạn
+  - no, ko đúng cậu
+  - chưa được, không chuẩn rồi timi

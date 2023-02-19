@@ -1,0 +1,303 @@
+positives:
+- intent: chitchat_user_feel_hungry
+  examples:
+  - tui đói thế này thì làm như thế nào mà làm được nhỉ
+  - Sáng tớ chưa ăn giờ bụng tôi kêu liên hồi rồi timi ơi
+  - Sáng tao chưa ăn giờ bụng mình kêu liên hồi rồi timi ơi
+  - Sáng tui chưa ăn giờ bụng tao kêu liên hồi rồi em ơi
+  - tui đói quá bạn ơi
+  - muốn ăn gì quá timi
+  - tao đói này
+  - tôi đói quá m ơi
+  - Sáng tao chưa ăn giờ bụng tớ kêu liên hồi rùi mày ơi
+  - Sáng tớ chưa ăn giờ bụng mình kêu liên hồi rồi bạn ơi
+  - Sáng tao chưa ăn giờ bụng mình kêu liên hồi rùi m ơi
+  - Sáng tớ chưa ăn giờ bụng tớ kêu liên hồi rồi em ơi
+  - tao đói quá m ơi
+  - Sáng tao chưa ăn giờ bụng tao kêu liên hồi rùi em ơi
+  - anh đói quá cậu ạ
+  - tôi đói quá cậu ơi
+  - mình đói thế này thì làm răng mà làm được nhể
+  - Sáng tôi chưa ăn giờ bụng tôi kêu liên hồi rùi mày ơi
+  - Sáng tui chưa ăn giờ bụng tôi kêu liên hồi rùi bot ơi
+  - Sáng mình chưa ăn giờ bụng tôi kêu liên hồi rùi cậu ơi
+  - tôi đói quá ơi
+  - đói thế này thì làm như nào mà làm được nhỉ
+  - đói thế nhỉ
+  - Sáng tui chưa ăn giờ bụng mình kêu liên hồi rùi bạn ơi
+  - Sáng tui chưa ăn giờ bụng tôi kêu liên hồi rồi m ơi
+  - tao đói thế này thì làm ntn mà làm được nhỉ
+  - đói quá cậu ạ
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rồi bạn ơi
+  - đói quá đi cậu ạ
+  - bụng tui kêu rồi cậu ơi
+  - chị đói vãi ạ
+  - Sáng tôi chưa ăn giờ bụng tôi kêu liên hồi rùi cậu ơi
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rồi timi ơi
+  - Sáng tôi chưa ăn giờ bụng tao kêu liên hồi rồi cậu ơi
+  - Sáng tao chưa ăn giờ bụng mình kêu liên hồi rùi cậu ơi
+  - mình đang đói rồi đấy
+  - chị đói quá đi cậu ạ
+  - Sáng tui chưa ăn giờ bụng tớ kêu liên hồi rồi bạn ơi
+  - Sáng tớ chưa ăn giờ bụng tui kêu liên hồi rồi timi ơi
+  - anh đói quá đi timi ạ
+  - tui đói quá bot ơi
+  - Sáng mình chưa ăn giờ bụng tui kêu liên hồi rồi cậu ơi
+  - Sáng mình chưa ăn giờ bụng tao kêu liên hồi rồi m ơi
+  - Sáng tôi chưa ăn giờ bụng mình kêu liên hồi rùi em ơi
+  - đói quá mày ạ
+  - chú đang đói rồi đấy
+  - Sáng tôi chưa ăn giờ bụng tao kêu liên hồi rùi m ơi
+  - tớ đói thế này thì làm thế nào mà làm được nhể
+  - mình đói quá đi bạn ơi
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rùi bot ơi
+  - tui đói quá đi
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rồi bot ơi
+  - Sáng tui chưa ăn giờ bụng tao kêu liên hồi rồi bot ơi
+  - muốn ăn gì quá bạn
+  - Sáng tao chưa ăn giờ bụng mình kêu liên hồi rồi m ơi
+  - mình đói thế này thì làm ntn mà làm được nhể
+  - tao đói quá bạn ơi
+  - tôi đói quá đi
+  - Sáng tao chưa ăn giờ bụng tớ kêu liên hồi rùi bạn ơi
+  - Sáng mình chưa ăn giờ bụng tôi kêu liên hồi rồi mày ơi
+  - Sáng tao chưa ăn giờ bụng tớ kêu liên hồi rùi bot ơi
+  - Sáng tôi chưa ăn giờ bụng tôi kêu liên hồi rùi bot ơi
+  - tui đói thế này thì làm như thế nào mà làm được nhể
+  - Sáng mình chưa ăn giờ bụng tui kêu liên hồi rùi bạn ơi
+  - bụng tui kêu rồi bot ơi
+  - chị đói quá đi timi ạ
+  - Sáng tao chưa ăn giờ bụng tôi kêu liên hồi rồi timi ơi
+  - tao đói thật
+  - tao đói thế này thì làm răng mà làm được nhể
+  - tui đói thế này thì làm sao mà làm được nhể
+  - bùng đói quá đi
+  - tớ đói
+  - Sáng tớ chưa ăn giờ bụng tui kêu liên hồi rùi bot ơi
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rùi cậu ơi
+  - mình đói
+  - Sáng tao chưa ăn giờ bụng tớ kêu liên hồi rùi timi ơi
+  - Sáng tui chưa ăn giờ bụng tôi kêu liên hồi rùi cậu ơi
+  - tui đói thế này thì làm thế nào mà làm được nhỉ
+  - chị đói vãi em ạ
+  - chị đói quá đi bot ạ
+  - tớ đói quá đi
+  - mình đói thế này thì làm gì mà làm được nhỉ
+  - Sáng tôi chưa ăn giờ bụng tao kêu liên hồi rồi bot ơi
+  - anh đói vãi em ạ
+  - Sáng tui chưa ăn giờ bụng tui kêu liên hồi rồi bot ơi
+  - Sáng tui chưa ăn giờ bụng tui kêu liên hồi rùi timi ơi
+  - tao đói quá đi mày ơi
+  - Sáng tui chưa ăn giờ bụng tôi kêu liên hồi rồi cậu ơi
+  - lại đến giờ đói rồi
+  - Sáng mình chưa ăn giờ bụng tui kêu liên hồi rồi m ơi
+  - tao đói thế này thì làm sao mà làm được nhể
+  - tao đói quá bot ơi
+  - tao đói thế này thì làm thế nào mà làm được nhể
+  - đói vãi mày ạ
+  - Sáng tớ chưa ăn giờ bụng tui kêu liên hồi rùi timi ơi
+  - tớ đói thế này thì làm răng mà làm được nhỉ
+  - bụng tao kêu rồi bot ơi
+  - Sáng tôi chưa ăn giờ bụng tớ kêu liên hồi rùi bạn ơi
+  - Sáng tao chưa ăn giờ bụng tui kêu liên hồi rồi cậu ơi
+  - tao đói rồi đấy
+  - rất là đói
+  - tao đói thế này thì làm thế nào mà làm được nhỉ
+  - tớ đói rồi
+  - mình đói đây
+  - Sáng mình chưa ăn giờ bụng tôi kêu liên hồi rùi em ơi
+  - Sáng tớ chưa ăn giờ bụng tớ kêu liên hồi rồi bạn ơi
+  - mình đói vãi
+  - Sáng tớ chưa ăn giờ bụng tớ kêu liên hồi rùi mày ơi
+  - đói thế này thì làm như nào mà làm được nhể
+  - Sáng mình chưa ăn giờ bụng tao kêu liên hồi rồi em ơi
+  - đói thật sự
+  - Sáng mình chưa ăn giờ bụng tao kêu liên hồi rùi timi ơi
+  - Sáng tao chưa ăn giờ bụng tao kêu liên hồi rùi m ơi
+  - tao đói quá cậu ơi
+  - đói thật
+  - Sáng tôi chưa ăn giờ bụng tui kêu liên hồi rồi bot ơi
+  - anh đói quá bạn ạ
+  - Sáng tui chưa ăn giờ bụng tao kêu liên hồi rồi bạn ơi
+  - Sáng tui chưa ăn giờ bụng tớ kêu liên hồi rồi bot ơi
+  - Sáng mình chưa ăn giờ bụng mình kêu liên hồi rồi m ơi
+  - tôi đói quá bạn ơi
+  - đói thế
+  - tui đang đói rồi
+  - bụng tôi kêu rồi ơi
+  - mình đói quá ơi
+  - tui đói thật sự
+  - Sáng tao chưa ăn giờ bụng tao kêu liên hồi rùi bạn ơi
+  - anh đói quá đi em ạ
+  - Sáng tao chưa ăn giờ bụng tui kêu liên hồi rồi em ơi
+  - tui đói quá đi bạn ơi
+  - Sáng mình chưa ăn giờ bụng mình kêu liên hồi rồi em ơi
+  - chị đói quá đi ạ
+  - Sáng tui chưa ăn giờ bụng tớ kêu liên hồi rùi em ơi
+  - bụng tớ kêu rồi ơi
+  - tớ đói rồi đấy
+  - Sáng tôi chưa ăn giờ bụng tớ kêu liên hồi rồi cậu ơi
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rùi em ơi
+  - bụng tớ kêu rồi bạn ơi
+  - Sáng mình chưa ăn giờ bụng tớ kêu liên hồi rùi em ơi
+  - tao đói vãi
+  - mình đói quá đi mày ơi
+  - tui đói thế này thì làm ntn mà làm được nhể
+  - tôi đói
+  - Sáng mình chưa ăn giờ bụng tớ kêu liên hồi rồi bạn ơi
+  - mình đói thật
+  - tôi đói thế này thì làm như thế nào mà làm được nhỉ
+  - tao đói quá đi
+  - Sáng tớ chưa ăn giờ bụng tớ kêu liên hồi rồi bot ơi
+  - bụng tui kêu rồi m ơi
+  - tôi đói quá bot ơi
+  - Sáng tôi chưa ăn giờ bụng tui kêu liên hồi rồi cậu ơi
+  - tôi đói thế này thì làm thế nào mà làm được nhỉ
+  - tao đói quá ơi
+  - đã đến giờ ăn đâu mà đói quá đi
+  - Sáng tao chưa ăn giờ bụng tui kêu liên hồi rùi m ơi
+  - tôi đang đói rồi đấy
+  - tôi đói quá đi m ơi
+  - Sáng tao chưa ăn giờ bụng tui kêu liên hồi rùi bạn ơi
+  - Sáng mình chưa ăn giờ bụng tao kêu liên hồi rồi mày ơi
+  - Sáng tao chưa ăn giờ bụng tao kêu liên hồi rùi mày ơi
+  - mình đói thế này thì làm sao mà làm được nhỉ
+  - anh đang đói rồi đấy
+  - đói đói đói quá mày
+  - Sáng tôi chưa ăn giờ bụng tao kêu liên hồi rồi bạn ơi
+  - Sáng tôi chưa ăn giờ bụng tớ kêu liên hồi rùi bot ơi
+  - Sáng tớ chưa ăn giờ bụng tôi kêu liên hồi rùi m ơi
+  - Sáng tôi chưa ăn giờ bụng tôi kêu liên hồi rùi m ơi
+  - Sáng tao chưa ăn giờ bụng tớ kêu liên hồi rồi bot ơi
+  - tao đói rồi
+  - đói quá đi timi ạ
+  - anh đói vãi ạ
+  - tớ đói thế này thì làm như thế nào mà làm được nhể
+  - chị đói quá ạ
+  - đói quá m ạ
+  - mình đói quá bạn ơi
+  - đói đói đói quá em
+  - Sáng tớ chưa ăn giờ bụng tớ kêu liên hồi rồi cậu ơi
+  - tớ đói quá bạn ơi
+  - Sáng tớ chưa ăn giờ bụng tôi kêu liên hồi rồi em ơi
+  - tao đói thật sự
+  - bụng tớ kêu rồi mày ơi
+  - Sáng tao chưa ăn giờ bụng tui kêu liên hồi rồi bạn ơi
+  - Sáng mình chưa ăn giờ bụng mình kêu liên hồi rùi mày ơi
+  - Sáng tui chưa ăn giờ bụng tôi kêu liên hồi rồi mày ơi
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rồi em ơi
+  - Sáng mình chưa ăn giờ bụng tôi kêu liên hồi rùi timi ơi
+  - chị đang đói rồi
+  - chị đói quá mày ạ
+  - Sáng tớ chưa ăn giờ bụng tôi kêu liên hồi rùi timi ơi
+  - chị đói quá đi em ạ
+  - Sáng tao chưa ăn giờ bụng tao kêu liên hồi rồi timi ơi
+  - tao đói quá timi ơi
+  - đói quá đi m ạ
+  - bụng tao kêu rồi m ơi
+  - Sáng mình chưa ăn giờ bụng tao kêu liên hồi rùi mày ơi
+  - Sáng tôi chưa ăn giờ bụng tao kêu liên hồi rùi timi ơi
+  - Sáng tui chưa ăn giờ bụng tớ kêu liên hồi rùi cậu ơi
+  - anh đói quá đi m ạ
+  - Sáng tôi chưa ăn giờ bụng mình kêu liên hồi rồi bot ơi
+  - Sáng tôi chưa ăn giờ bụng tớ kêu liên hồi rùi m ơi
+  - bụng mình kêu rồi ơi
+  - tui đói thế này thì làm như nào mà làm được nhể
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rùi mày ơi
+  - tui đói quá
+  - chị đói quá đi m ạ
+  - tao đói thế này thì làm ntn mà làm được nhể
+  - mình đói thế này thì làm như nào mà làm được nhể
+  - mình đói quá mày ơi
+  - Sáng mình chưa ăn giờ bụng tui kêu liên hồi rùi cậu ơi
+  - anh đói quá timi ạ
+  - Sáng tui chưa ăn giờ bụng tớ kêu liên hồi rồi mày ơi
+  - đói quá đi
+  - Sáng mình chưa ăn giờ bụng tao kêu liên hồi rùi m ơi
+  - tớ đói thế này thì làm như nào mà làm được nhể
+  - Sáng tớ chưa ăn giờ bụng tôi kêu liên hồi rùi cậu ơi
+  - bụng tao kêu rồi timi ơi
+  - đói quá bot ạ
+  - bụng tôi kêu rồi em ơi
+  - Sáng mình chưa ăn giờ bụng tôi kêu liên hồi rùi m ơi
+  - tui đói đây
+  - Sáng tao chưa ăn giờ bụng tớ kêu liên hồi rồi em ơi
+  - mình đói quá đi ơi
+  - Sáng mình chưa ăn giờ bụng tao kêu liên hồi rồi bạn ơi
+  - chị đói vãi bot ạ
+  - tao đói đây
+  - Sáng mình chưa ăn giờ bụng tôi kêu liên hồi rồi timi ơi
+  - Sáng tui chưa ăn giờ bụng tớ kêu liên hồi rùi bạn ơi
+  - Sáng tớ chưa ăn giờ bụng mình kêu liên hồi rồi bot ơi
+  - anh đói quá đi ạ
+  - đói thế này thì làm thế nào mà làm được nhỉ
+  - Sáng tớ chưa ăn giờ bụng mình kêu liên hồi rồi mày ơi
+  - tôi đói thế này thì làm ntn mà làm được nhể
+  - tui đói quá mày ơi
+  - tôi đói quá timi ơi
+  - Sáng mình chưa ăn giờ bụng tớ kêu liên hồi rùi mày ơi
+  - tớ đói thế này thì làm gì mà làm được nhể
+  - Sáng tôi chưa ăn giờ bụng tớ kêu liên hồi rồi mày ơi
+  - Sáng tao chưa ăn giờ bụng tui kêu liên hồi rùi bot ơi
+  - mình đói quá đi m ơi
+  - tớ đói này
+  - Sáng mình chưa ăn giờ bụng tao kêu liên hồi rùi cậu ơi
+  - Sáng tôi chưa ăn giờ bụng mình kêu liên hồi rồi timi ơi
+  - mình đói thật sự luôn
+  - Sáng tui chưa ăn giờ bụng mình kêu liên hồi rồi mày ơi
+  - tự dưng tao thấy đói
+  - Sáng tôi chưa ăn giờ bụng mình kêu liên hồi rùi m ơi
+  - tôi đói thế này thì làm gì mà làm được nhể
+  - tao đói quá đi m ơi
+  - sáng chưa ăn gì giờ đói vãi
+  - Sáng mình chưa ăn giờ bụng tôi kêu liên hồi rùi bạn ơi
+  - mình đang đói rồi
+  - đói quá bạn ạ
+  - Sáng tui chưa ăn giờ bụng tớ kêu liên hồi rùi bot ơi
+  - mình đói thế này thì làm ntn mà làm được nhỉ
+  - chị đói vãi bạn ạ
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rồi m ơi
+  - Sáng tớ chưa ăn giờ bụng tao kêu liên hồi rùi m ơi
+  - Sáng mình chưa ăn giờ bụng tôi kêu liên hồi rùi mày ơi
+  - Sáng tôi chưa ăn giờ bụng tớ kêu liên hồi rùi mày ơi
+  - tui đói vãi
+  - anh đói vãi bạn ạ
+  - muốn ăn gì quá em
+  - tao đói thế này thì làm răng mà làm được nhỉ
+  - tui đói quá đi timi ơi
+  - tui đói thế này thì làm gì mà làm được nhể
+  - Sáng tui chưa ăn giờ bụng tôi kêu liên hồi rùi mày ơi
+  - đã đến giờ ăn đâu mà đói quá
+  - Sáng tớ chưa ăn giờ bụng mình kêu liên hồi rùi mày ơi
+  - tôi đói này
+  - tớ đói thế này thì làm như nào mà làm được nhỉ
+  - tớ đói quá cậu ơi
+  - Sáng tôi chưa ăn giờ bụng mình kêu liên hồi rồi mày ơi
+  - Sáng tôi chưa ăn giờ bụng tui kêu liên hồi rùi cậu ơi
+  - Sáng mình chưa ăn giờ bụng tao kêu liên hồi rùi bot ơi
+  - tôi đói quá đi ơi
+  - cô đang đói rồi đấy
+  - Sáng tôi chưa ăn giờ bụng tao kêu liên hồi rùi cậu ơi
+  - Sáng tao chưa ăn giờ bụng tớ kêu liên hồi rồi m ơi
+  - tui đói quá đi mày ơi
+  - Sáng tui chưa ăn giờ bụng tui kêu liên hồi rùi em ơi
+  - có gì ăn ngon không nhỉ, mình đói
+  - Sáng tớ chưa ăn giờ bụng tui kêu liên hồi rồi bạn ơi
+  - tui đói thế này thì làm răng mà làm được nhể
+  - đói thế này thì làm gì mà làm được nhỉ
+  - Sáng tớ chưa ăn giờ bụng tớ kêu liên hồi rùi m ơi
+  - tôi đói quá đi bot ơi
+  - Sáng tao chưa ăn giờ bụng mình kêu liên hồi rùi em ơi
+  - Sáng tao chưa ăn giờ bụng tôi kêu liên hồi rùi em ơi
+  - sao mà đói quá
+  - Sáng tui chưa ăn giờ bụng tao kêu liên hồi rùi em ơi
+  - Sáng tao chưa ăn giờ bụng tôi kêu liên hồi rùi bot ơi
+  - tao đang đói rồi đấy
+  - muốn ăn gì quá cậu
+  - mình đói rồi
+  - mình đói thế này thì làm như thế nào mà làm được nhể
+  - Sáng tui chưa ăn giờ bụng tớ kêu liên hồi rùi mày ơi
+  - Sáng tớ chưa ăn giờ bụng mình kêu liên hồi rùi em ơi
+  - bụng tớ kêu rồi em ơi
+  - tớ đói quá m ơi
+  - đói thế này thì làm gì mà làm được nhể

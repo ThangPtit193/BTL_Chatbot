@@ -30,11 +30,11 @@ DATA_GENERATION:
 #    intent_field_map: {}
 #    oos_intents:
 #      - faq/oos
-  FROM_IR_EVAL:
-    ir_eval_result_path: data/raw/timi/v1.1.4/timi-keepitreal-H768-faq-900k-v1.1.4.json
-    # Define the out-of-scope intents here
-    oos_intents:
-      - faq/oos
+#  FROM_IR_EVAL:
+#    ir_eval_result_path: data/raw/timi/v1.1.4/timi-keepitreal-H768-faq-900k-v1.1.4.json
+#    # Define the out-of-scope intents here
+#    oos_intents:
+#      - faq/oos
   COMBINER: {}
 
 

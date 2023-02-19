@@ -1,0 +1,503 @@
+positives:
+- intent: department_ask_overview
+  examples:
+  - tớ tìm hiểu thấy công ty có 8 phòng ạ
+  - số lượng phòng ban trong công ty là bao nhiu
+  - hiện tại công ty có bao nhiu phòng ban vậy hả
+  - giới thiệu cho mình vê các team trong công ty đi
+  - có những phòng nào trong công ty
+  - cho mình hỏi công ty có bao nhiu team tại trụ sở [đn](location)
+  - công ty có những phòng ban gì hả
+  - ở [đà nẵng](location) có bao nhiu bộ phận
+  - '[ftech](work_unit) có tổng cộng mấy bộ phận đó'
+  - giới thiệu về các bộ phận có trong công ty đi
+  - cho anh hỏi công ty có những phòng ban nào
+  - các team trong công ty
+  - số lượng bộ phận trong công ty
+  - công ty có bộ phận nào
+  - công ty có bao nhiu bộ phận
+  - số lượng phòng tại [sơn la](location) là mấy
+  - công ty hiện có bao nhiu bộ phận vậy
+  - công ty có những team nào vậy
+  - timi công ty có phòng đào tạo à
+  - công ty chia thành bao nhiu phòng hả
+  - cơ sở [miền bắc](location) có bao nhiêu bộ phận
+  - tớ muốn hỏi về các phòng hiện có của công ty được không
+  - ko biết hiện tại công ty có nhiều bộ phận không ha
+  - hãy giới thiệu về các bộ phận có trong công ty đi
+  - công ty có mấy phòng đó bạn
+  - ' giới thiệu về các phòng có trong công ty'
+  - tớ muốn biết công ty có những phòng ban nào
+  - mình muốn hỏi có bao nhiu phòng ban tại [ftech](work_unit) vậy hả
+  - có bao nhiêu phòng trong công ty
+  - công ty đang tổ chức bao nhiêu bộ phận vậy
+  - công ty có bao nhiêu phòng ban
+  - có mấy phòng trong công ty
+  - công ty có mấy team
+  - có những phòng ban nào
+  - '[ftech](work_unit) có 6 phòng chính xác không nhể'
+  - mình tìm hiểu thấy công ty có 8 bộ phận ạ
+  - số lượng bộ phận trong công ty là mấy
+  - hiện tại công ty có mấy bộ phận hả
+  - giới thiệu cho tôi vê các team trong công ty đi
+  - có những team nào trong công ty vậy hả
+  - cho anh hỏi công ty có bao nhiêu team ở cơ sở [hn](location)
+  - công ty có những phòng ban gì
+  - ở [hn](location) có mấy phòng
+  - '[f-tech](work_unit) có tổng cộng mấy phòng ban đó'
+  - giới thiệu về các team có trong công ty đi
+  - cho anh hỏi công ty có những team gì
+  - các phòng trong công ty
+  - số lượng team trong công ty
+  - công ty có team nào
+  - công ty có bao nhiu phòng
+  - số lượng bộ phận tại trụ sở [dn](location) là bao nhiêu
+  - công ty hiện có bao nhiu team vậy hả
+  - công ty có những team gì vậy
+  - công ty tổ chức mấy phòng ban hả
+  - chi nhánh [HD](location) có bao nhiêu phòng
+  - mình muốn hỏi về các phòng hiện có của công ty đc ko
+  - ko biết hiện tại công ty có nhiều team ko ha
+  - hãy giới thiệu về các phòng ban có trong công ty đi
+  - công ty có bao nhiu bộ phận đó em
+  - ' giới thiệu về các phòng ban có trong công ty'
+  - tớ muốn biết công ty có những bộ phận nào vậy
+  - tớ muốn biết có bao nhiu phòng tại [f-tech](work_unit) hả
+  - có bao nhiu phòng trong công ty
+  - công ty đang tổ chức bao nhiu bộ phận
+  - công ty có bao nhiêu phòng vậy mầy
+  - có mấy team trong công ty
+  - công ty có mấy phòng ban
+  - có những bộ phận nào
+  - '[ftech](work_unit) có 8 phòng ban đúng ko nhể'
+  - tớ tìm hiểu thấy công ty có 6 phòng ban ạ
+  - số lượng phòng ban trong công ty là mấy
+  - hiện tại công ty có mấy phòng hả
+  - giới thiệu cho mình vê các phòng trong công ty đi
+  - có những team nào trong công ty
+  - cho chị hỏi công ty có mấy phòng ở chi nhánh [sapa](location)
+  - công ty có những bộ phận nào
+  - ở [đn](location) có bao nhiu phòng ban
+  - '[f tech](work_unit) có tổng cộng bao nhiêu phòng đó'
+  - giới thiệu về các phòng ban có trong công ty đi
+  - cho mình hỏi công ty có những phòng ban nào
+  - các bộ phận trong công ty
+  - số lượng phòng ban trong công ty
+  - công ty có phòng ban nào
+  - công ty có bao nhiu phòng ban
+  - số lượng team tại văn phòng [hcm](location) là bao nhiêu
+  - công ty hiện có bao nhiêu phòng ban vậy
+  - công ty có những bộ phận nào vậy hả cậu
+  - công ty chia thành bao nhiêu bộ phận vậy hả
+  - văn phòng [hcm](location) có bao nhiêu bộ phận
+  - cho tôi hỏi về các team hiện có của công ty đc không
+  - ko biết hiện tại công ty có nhiều phòng ban không nhỉ
+  - hãy giới thiệu về các team có trong công ty đi
+  - công ty có mấy phòng đó mầy
+  - ' giới thiệu về các bộ phận có trong công ty'
+  - mình muốn biết công ty có những bộ phận nào
+  - tôi muốn hỏi có bao nhiu phòng tại [f tech](work_unit) hả
+  - có mấy team trong công ty hả
+  - công ty đang chia thành bao nhiêu phòng
+  - công ty có mấy team vậy hả
+  - có mấy phòng trong công ty hả
+  - công ty có mấy bộ phận
+  - có những phòng ban nào vậy hả
+  - '[ftech](work_unit) có 1 phòng ban chuẩn chỉ ko nhỉ'
+  - mình tìm hiểu thấy công ty có 6 phòng ạ
+  - số lượng team trong công ty là mấy
+  - hiện tại công ty có mấy team vậy
+  - giới thiệu cho tớ vê các bộ phận trong công ty đi
+  - có những phòng ban nào trong công ty
+  - cho tớ hỏi công ty có bao nhiêu phòng ban ở văn phòng [hà nội](location)
+  - công ty có những bộ phận gì
+  - ở [hà nội](location) có bao nhiu team
+  - '[f-tech](work_unit) có tổng cộng bao nhiu bộ phận đó'
+  - giới thiệu về các phòng có trong công ty đi
+  - cho chị hỏi công ty có những phòng gì
+  - các phòng ban trong công ty
+  - số lượng phòng trong công ty
+  - công ty có phòng nào
+  - công ty có mấy phòng
+  - số lượng bộ phận tại văn phòng [Việt Nam](location) là bao nhiêu
+  - công ty hiện có bao nhiu bộ phận hả
+  - công ty có những bộ phận gì m
+  - công ty chia thành bao nhiu bộ phận
+  - chi nhánh [đồng bằng sông hồng](location) có bao nhiu phòng ban
+  - cho tôi hỏi về các bộ phận hiện có của công ty được không
+  - ko biết hiện tại công ty có nhiều bộ phận không nhỉ
+  - hãy giới thiệu về các phòng có trong công ty đi
+  - công ty có bao nhiêu team đó em
+  - mày giới thiệu về các bộ phận có trong công ty
+  - tôi muốn biết công ty có những bộ phận nào vậy hả
+  - tớ muốn biết có mấy team tại [f tech](work_unit) vậy
+  - có mấy bộ phận trong công ty
+  - công ty đang tổ chức mấy team vậy hả
+  - công ty có bao nhiu phòng ban vậy hả
+  - có mấy phòng ban trong công ty hả
+  - có những team nào
+  - '[f tech](work_unit) có 1 phòng ban chuẩn chỉ không nhể'
+  - tớ tìm hiểu thấy công ty có 7 bộ phận ạ
+  - số lượng phòng trong công ty là bao nhiu
+  - hiện tại công ty có bao nhiu bộ phận hả
+  - giới thiệu cho tớ vê các phòng trong công ty đi
+  - có những phòng ban nào trong công ty vậy hả
+  - cho chị hỏi công ty có mấy bộ phận ở trụ sở [bình định](location)
+  - công ty có những team gì
+  - ở [hn](location) có bao nhiêu phòng
+  - '[f tech](work_unit) có tổng cộng bao nhiu team đó'
+  - cho mình hỏi công ty có những phòng ban nào vậy hả
+  - công ty có bao nhiêu team
+  - số lượng team trong [đất Việt](location) là bao nhiêu
+  - công ty hiện có mấy phòng ban vậy hả
+  - công ty có những team nào vậy hả
+  - công ty chia thành bao nhiêu bộ phận vậy
+  - cơ sở [đà nẵng](location) có mấy phòng
+  - tôi muốn hỏi về các phòng hiện có của công ty đc không
+  - ko biết hiện tại công ty có nhiều phòng ban ko ha
+  - công ty có bao nhiêu phòng đó timi
+  - ' giới thiệu về các team có trong công ty'
+  - mình muốn biết công ty có những phòng ban nào
+  - mình muốn hỏi có bao nhiêu team tại [ftech](work_unit) vậy
+  - có bao nhiêu bộ phận trong công ty
+  - công ty đang chia thành mấy bộ phận vậy hả
+  - công ty có bao nhiêu team timi
+  - có mấy phòng ban trong công ty
+  - có những phòng ban nào hả
+  - '[ftech](work_unit) có 7 bộ phận đúng ko nhể'
+  - tôi tìm hiểu thấy công ty có 7 team ạ
+  - số lượng phòng trong công ty là bao nhiêu
+  - hiện tại công ty có bao nhiêu phòng ban vậy
+  - giới thiệu cho tớ vê các phòng ban trong công ty đi
+  - có những phòng nào trong công ty vậy
+  - cho chị hỏi công ty có bao nhiêu bộ phận tại chi nhánh [QB](location)
+  - công ty có những team nào hả
+  - ở [hà nội](location) có bao nhiêu phòng
+  - '[f tech](work_unit) có tổng cộng mấy phòng đó'
+  - cho tớ hỏi công ty có những bộ phận gì hả
+  - công ty có bao nhiêu bộ phận
+  - số lượng phòng ở trụ sở [đồng bằng sông hồng](location) là bao nhiêu
+  - công ty hiện có bao nhiêu bộ phận vậy
+  - công ty có những bộ phận nào cậu
+  - công ty tổ chức bao nhiêu phòng vậy hả
+  - trụ sở [đà nẵng](location) có mấy phòng ban
+  - cho tôi hỏi về các phòng ban hiện có của công ty được ko
+  - không biết hiện tại công ty có nhiều phòng ban không nhể
+  - công ty có bao nhiêu bộ phận đó timi
+  - em giới thiệu về các phòng ban có trong công ty
+  - mình muốn biết công ty có những phòng nào
+  - tớ muốn hỏi có bao nhiu phòng ban tại [f-tech](work_unit) hả
+  - có bao nhiu bộ phận trong công ty vậy hả
+  - công ty đang chia thành bao nhiêu bộ phận vậy
+  - công ty có bao nhiu bộ phận vậy hả timi
+  - có mấy team trong công ty vậy
+  - có những team nào vậy
+  - '[f-tech](work_unit) có 8 phòng ban chính xác ko nhỉ'
+  - tớ tìm hiểu thấy công ty có 7 phòng ban ạ
+  - số lượng team trong công ty là bao nhiu
+  - hiện tại công ty có bao nhiêu bộ phận vậy hả
+  - giới thiệu cho mình vê các bộ phận trong công ty đi
+  - có những bộ phận nào trong công ty vậy
+  - cho anh hỏi công ty có mấy team ở chi nhánh [đn](location)
+  - công ty có những team nào
+  - ngoài [hà nội](location) có bao nhiêu bộ phận
+  - '[f-tech](work_unit) có tổng cộng bao nhiêu team đó'
+  - cho mình hỏi công ty có những bộ phận gì
+  - công ty có bao nhiêu phòng
+  - số lượng bộ phận ở văn phòng [Nhật Bản](location) là bao nhiu
+  - công ty hiện có bao nhiêu phòng ban vậy hả
+  - công ty có những phòng ban nào vậy hả mầy
+  - công ty tổ chức mấy phòng ban
+  - chi nhánh [hà nội](location) có bao nhiu bộ phận
+  - cho tớ hỏi về các team hiện có của công ty đc ko
+  - không biết hiện tại công ty có nhiều team ko nhỉ
+  - công ty có mấy phòng đó m
+  - mày giới thiệu về các team có trong công ty
+  - tớ muốn biết công ty có những bộ phận nào hả
+  - tớ muốn biết có bao nhiu bộ phận tại [f-tech](work_unit) hả
+  - có bao nhiu bộ phận trong công ty vậy
+  - công ty đang tổ chức bao nhiêu bộ phận
+  - công ty có bao nhiu phòng ban vậy m
+  - có mấy bộ phận trong công ty vậy
+  - có những bộ phận nào vậy hả
+  - '[ftech](work_unit) có 1 phòng chính xác ko ha'
+  - mình tìm hiểu thấy công ty có 5 phòng ban ạ
+  - số lượng phòng trong công ty là mấy
+  - hiện tại công ty có bao nhiêu bộ phận hả
+  - giới thiệu cho tớ vê các team trong công ty đi
+  - có những phòng ban nào trong công ty vậy
+  - cho tớ hỏi công ty có bao nhiu phòng ban tại văn phòng [duyên hải miền trung](location)
+  - công ty có những phòng nào vậy
+  - ở [dn](location) có mấy bộ phận
+  - '[f-tech](work_unit) có tổng cộng mấy bộ phận đó'
+  - cho mình hỏi công ty có những bộ phận gì hả
+  - công ty có bao nhiu team
+  - số lượng team ở [huế](location) là bao nhiêu
+  - công ty hiện có mấy team hả
+  - công ty có những phòng nào vậy hả
+  - công ty chia thành mấy bộ phận vậy hả
+  - cơ sở [đn](location) có bao nhiu bộ phận
+  - cho tớ hỏi về các phòng ban hiện có của công ty đc ko
+  - ko biết hiện tại công ty có nhiều phòng không ha
+  - công ty có mấy phòng ban đó timi
+  - mầy giới thiệu về các phòng ban có trong công ty
+  - tớ muốn biết công ty có những team nào
+  - mình muốn biết có bao nhiu phòng tại [f tech](work_unit) hả
+  - có bao nhiêu phòng trong công ty vậy hả
+  - công ty đang chia thành mấy phòng ban vậy hả
+  - công ty có bao nhiêu phòng ban vậy
+  - có mấy team trong công ty vậy hả
+  - có những phòng nào hả
+  - '[f tech](work_unit) có 1 bộ phận chuẩn chỉ không ha'
+  - mình tìm hiểu thấy công ty có 5 phòng ạ
+  - số lượng bộ phận trong công ty là bao nhiu
+  - hiện tại công ty có bao nhiêu bộ phận vậy
+  - giới thiệu cho tôi vê các phòng ban trong công ty đi
+  - có những bộ phận nào trong công ty
+  - cho mình hỏi công ty có mấy bộ phận tại trụ sở [đà nẵng](location)
+  - công ty có những phòng ban nào
+  - ở [dn](location) có bao nhiêu team
+  - '[ftech](work_unit) có tổng cộng bao nhiêu team đó'
+  - cho anh hỏi công ty có những phòng nào
+  - số lượng team tại [lai châu](location) là bao nhiu
+  - công ty hiện có mấy bộ phận vậy
+  - công ty có những phòng nào
+  - công ty tổ chức mấy phòng vậy
+  - trụ sở [hồ chí minh](location) có bao nhiêu bộ phận
+  - cho tớ hỏi về các phòng hiện có của công ty được không
+  - không biết hiện tại công ty có nhiều phòng ban ko ha
+  - công ty có bao nhiu phòng ban đó em
+  - m giới thiệu về các phòng có trong công ty
+  - tớ muốn biết công ty có những phòng nào hả
+  - tôi muốn hỏi có bao nhiêu bộ phận tại [ftech](work_unit) vậy
+  - có bao nhiêu phòng trong công ty hả
+  - công ty đang chia thành mấy phòng ban vậy
+  - công ty có bao nhiêu phòng vậy
+  - có mấy phòng trong công ty vậy
+  - có những team nào hả
+  - '[f tech](work_unit) có 7 phòng ban chuẩn không nhỉ'
+  - mình tìm hiểu thấy công ty có 7 team ạ
+  - số lượng bộ phận trong công ty là bao nhiêu
+  - hiện tại công ty có mấy team vậy hả
+  - giới thiệu cho mình vê các phòng ban trong công ty đi
+  - có những phòng nào trong công ty vậy hả
+  - cho mình hỏi công ty có mấy phòng tại chi nhánh [hồ chí minh](location)
+  - công ty có những phòng gì
+  - ngoài [hn](location) có bao nhiêu team
+  - '[ftech](work_unit) có tổng cộng mấy phòng đó'
+  - cho tớ hỏi công ty có những phòng nào vậy hả
+  - số lượng bộ phận ở [phú thọ](location) là mấy
+  - công ty hiện có bao nhiêu phòng hả
+  - công ty có những phòng ban gì cậu
+  - công ty chia thành bao nhiêu team
+  - trụ sở [hà nội](location) có bao nhiêu phòng
+  - tớ muốn hỏi về các phòng ban hiện có của công ty đc không
+  - không biết hiện tại công ty có nhiều team ko ha
+  - công ty có bao nhiêu phòng ban đó mầy
+  - mầy giới thiệu về các bộ phận có trong công ty
+  - tôi muốn biết công ty có những team nào
+  - tôi muốn hỏi có bao nhiêu team tại [ftech](work_unit) vậy hả
+  - có bao nhiêu team trong công ty vậy
+  - công ty đang chia thành bao nhiêu team vậy
+  - công ty có bao nhiêu team vậy hả bạn
+  - có mấy phòng ban trong công ty vậy hả
+  - có những bộ phận nào hả
+  - '[f-tech](work_unit) có 6 phòng chuẩn chỉ ko ha'
+  - tôi tìm hiểu thấy công ty có 8 bộ phận ạ
+  - số lượng phòng ban trong công ty là bao nhiêu
+  - hiện tại công ty có bao nhiu phòng ban vậy
+  - giới thiệu cho tôi vê các phòng trong công ty đi
+  - có những phòng ban nào trong công ty hả
+  - cho anh hỏi công ty có bao nhiêu phòng ở cơ sở [hn](location)
+  - công ty có những bộ phận gì hả
+  - ở [hà nội](location) có bao nhiêu team
+  - '[ftech](work_unit) có tổng cộng bao nhiu phòng đó'
+  - cho mình hỏi công ty có những phòng gì vậy hả
+  - số lượng bộ phận trong văn phòng [thủ đức](location) là bao nhiu
+  - công ty hiện có mấy team vậy
+  - công ty có những team gì bot
+  - công ty chia thành bao nhiêu phòng ban vậy hả
+  - văn phòng [QN](location) có mấy phòng ban
+  - cho tôi hỏi về các bộ phận hiện có của công ty được ko
+  - ko biết hiện tại công ty có nhiều phòng không nhỉ
+  - công ty có bao nhiêu team đó mày
+  - bạn giới thiệu về các bộ phận có trong công ty
+  - mình muốn biết công ty có những team nào hả
+  - tôi muốn biết có mấy phòng ban tại [f tech](work_unit) vậy hả
+  - có bao nhiu team trong công ty
+  - công ty đang tổ chức bao nhiêu phòng
+  - công ty có mấy phòng ban hả
+  - có mấy bộ phận trong công ty vậy hả
+  - có những phòng nào
+  - '[f-tech](work_unit) có 6 bộ phận đúng ko ha'
+  - tôi tìm hiểu thấy công ty có 6 team ạ
+  - số lượng team trong công ty là bao nhiêu
+  - hiện tại công ty có bao nhiêu phòng vậy hả
+  - có những bộ phận nào trong công ty hả
+  - cho mình hỏi công ty có mấy bộ phận tại cơ sở [hcm](location)
+  - công ty có những phòng ban nào vậy
+  - ngoài [hn](location) có bao nhiu phòng ban
+  - '[f-tech](work_unit) có tổng cộng mấy team đó'
+  - cho mình hỏi công ty có những phòng gì vậy
+  - số lượng team ở cơ sở [trà vinh](location) là mấy
+  - công ty hiện có mấy team vậy hả
+  - công ty có những team nào vậy hả timi
+  - công ty tổ chức bao nhiêu phòng ban
+  - cơ sở [đà nẵng](location) có mấy bộ phận
+  - tớ muốn hỏi về các team hiện có của công ty đc ko
+  - ko biết hiện tại công ty có nhiều team ko nhỉ
+  - công ty có mấy bộ phận đó timi
+  - mầy giới thiệu về các phòng có trong công ty
+  - tôi muốn biết công ty có những phòng nào vậy hả
+  - tớ muốn biết có mấy phòng tại [f-tech](work_unit) hả
+  - có mấy phòng ban trong công ty vậy
+  - công ty đang tổ chức bao nhiu phòng ban vậy hả
+  - công ty có bao nhiu phòng hả
+  - có mấy bộ phận trong công ty hả
+  - có những phòng nào vậy
+  - '[f tech](work_unit) có 7 team chính xác không nhỉ'
+  - tớ tìm hiểu thấy công ty có 5 phòng ban ạ
+  - hiện tại công ty có bao nhiêu phòng vậy
+  - giới thiệu cho tôi vê các bộ phận trong công ty đi
+  - có những bộ phận nào trong công ty vậy hả
+  - cho chị hỏi công ty có bao nhiêu bộ phận ở trụ sở [đn](location)
+  - công ty có những phòng ban gì vậy hả
+  - ngoài [đn](location) có mấy bộ phận
+  - '[f tech](work_unit) có tổng cộng bao nhiêu phòng ban đó'
+  - cho anh hỏi công ty có những team nào
+  - số lượng bộ phận trong [hn](location) là bao nhiêu
+  - công ty hiện có mấy phòng hả
+  - công ty có những team nào m
+  - công ty tổ chức bao nhiêu phòng
+  - văn phòng [hồ chí minh](location) có bao nhiêu team
+  - cho tớ hỏi về các team hiện có của công ty được không
+  - không biết hiện tại công ty có nhiều phòng không nhỉ
+  - công ty có bao nhiu phòng ban đó m
+  - bot giới thiệu về các phòng có trong công ty
+  - tớ muốn biết công ty có những phòng ban nào hả
+  - tớ muốn hỏi có bao nhiêu phòng ban tại [ftech](work_unit) hả
+  - có bao nhiêu team trong công ty
+  - công ty đang tổ chức bao nhiêu phòng vậy
+  - công ty có bao nhiu phòng vậy bot
+  - có mấy phòng trong công ty vậy hả
+  - có những team nào vậy hả
+  - '[f-tech](work_unit) có 8 phòng chính xác ko nhỉ'
+  - mình tìm hiểu thấy công ty có 7 phòng ban ạ
+  - hiện tại công ty có bao nhiêu phòng hả
+  - có những team nào trong công ty hả
+  - cho mình hỏi công ty có bao nhiu bộ phận ở chi nhánh [hà nội](location)
+  - công ty có những phòng ban nào vậy hả
+  - ngoài [hn](location) có mấy phòng
+  - '[ftech](work_unit) có tổng cộng bao nhiu phòng ban đó'
+  - cho tớ hỏi công ty có những bộ phận nào
+  - số lượng team ở [hn](location) là mấy
+  - công ty hiện có bao nhiêu team vậy
+  - công ty có những team nào hả bạn
+  - công ty tổ chức bao nhiêu phòng hả
+  - chi nhánh [đà nẵng](location) có bao nhiu phòng
+  - cho mình hỏi về các bộ phận hiện có của công ty được ko
+  - không biết hiện tại công ty có nhiều bộ phận ko nhể
+  - công ty có bao nhiêu phòng ban đó bạn
+  - bạn giới thiệu về các phòng ban có trong công ty
+  - tớ muốn biết công ty có những phòng nào
+  - tôi muốn biết có bao nhiêu team tại [ftech](work_unit) hả
+  - có bao nhiêu phòng ban trong công ty
+  - công ty đang chia thành mấy bộ phận hả
+  - công ty có mấy phòng ban cậu
+  - có những phòng nào vậy hả
+  - '[f tech](work_unit) có 7 bộ phận đúng ko nhể'
+  - tớ tìm hiểu thấy công ty có 7 team ạ
+  - hiện tại công ty có bao nhiu phòng vậy
+  - có những team nào trong công ty vậy
+  - cho tớ hỏi công ty có mấy team tại văn phòng [củ chi](location)
+  - công ty có những bộ phận nào hả
+  - ở [đn](location) có bao nhiêu team
+  - '[ftech](work_unit) có tổng cộng mấy phòng ban đó'
+  - cho tớ hỏi công ty có những phòng gì vậy hả
+  - số lượng bộ phận ở [sơn la](location) là bao nhiêu
+  - công ty hiện có bao nhiêu team hả
+  - công ty có những phòng gì vậy
+  - công ty chia thành bao nhiêu bộ phận
+  - trụ sở [hn](location) có mấy bộ phận
+  - mình muốn hỏi về các team hiện có của công ty được không
+  - không biết hiện tại công ty có nhiều phòng ko ha
+  - công ty có bao nhiu phòng ban đó cậu
+  - m giới thiệu về các phòng ban có trong công ty
+  - tớ muốn biết công ty có những bộ phận nào
+  - tớ muốn biết có bao nhiu phòng tại [f tech](work_unit) vậy hả
+  - có bao nhiu phòng ban trong công ty
+  - công ty đang tổ chức bao nhiêu team vậy
+  - công ty có bao nhiêu phòng ban hả mầy
+  - có những phòng ban nào vậy
+  - '[f tech](work_unit) có 7 team chính xác không nhể'
+  - tôi tìm hiểu thấy công ty có 7 bộ phận ạ
+  - hiện tại công ty có bao nhiu team vậy
+  - có những phòng nào trong công ty hả
+  - cho tớ hỏi công ty có bao nhiêu phòng ban ở chi nhánh [VN](location)
+  - công ty có những phòng nào hả
+  - ở [dn](location) có bao nhiu phòng ban
+  - '[f tech](work_unit) có tổng cộng bao nhiu phòng đó'
+  - cho mình hỏi công ty có những phòng ban nào vậy
+  - số lượng phòng ban ở cơ sở [tây nam bộ](location) là bao nhiêu
+  - công ty hiện có bao nhiêu phòng ban hả
+  - công ty có những team nào vậy hả cậu
+  - công ty tổ chức bao nhiu team
+  - trụ sở [pắc pó](location) có bao nhiêu phòng ban
+  - cho tớ hỏi về các phòng hiện có của công ty được ko
+  - không biết hiện tại công ty có nhiều phòng ko nhể
+  - công ty có bao nhiêu phòng đó mầy
+  - mày giới thiệu về các phòng có trong công ty
+  - tôi muốn biết công ty có những phòng nào
+  - tớ muốn biết có bao nhiêu team tại [ftech](work_unit) hả
+  - có bao nhiêu team trong công ty hả
+  - công ty đang tổ chức mấy team vậy
+  - công ty có mấy team hả mầy
+  - có những bộ phận nào vậy
+  - '[f tech](work_unit) có 8 team chính xác ko nhỉ'
+  - tôi tìm hiểu thấy công ty có 6 phòng ạ
+  - hiện tại công ty có bao nhiêu phòng ban vậy hả
+  - cho chị hỏi công ty có bao nhiu phòng ở chi nhánh [hcm](location)
+  - công ty có những team gì hả
+  - ở [hà nội](location) có bao nhiu phòng
+  - '[ftech](work_unit) có tổng cộng bao nhiu bộ phận đó'
+  - cho mình hỏi công ty có những phòng nào
+  - số lượng bộ phận trong [sapa](location) là bao nhiêu
+  - công ty hiện có bao nhiêu phòng vậy hả
+  - công ty có những bộ phận nào m
+  - công ty chia thành bao nhiêu team vậy hả
+  - trụ sở [đn](location) có bao nhiêu team
+  - tớ muốn hỏi về các phòng hiện có của công ty được ko
+  - không biết hiện tại công ty có nhiều phòng ban không ha
+  - công ty có mấy team đó mày
+  - m giới thiệu về các team có trong công ty
+  - mình muốn biết công ty có những bộ phận nào vậy hả
+  - tớ muốn biết có mấy bộ phận tại [ftech](work_unit) hả
+  - có bao nhiêu bộ phận trong công ty vậy hả
+  - công ty đang tổ chức bao nhiu phòng vậy hả
+  - công ty có mấy phòng vậy hả
+  - '[f-tech](work_unit) có 7 phòng ban chính xác không nhỉ'
+  - tôi tìm hiểu thấy công ty có 5 team ạ
+  - hiện tại công ty có bao nhiu phòng ban hả
+  - cho chị hỏi công ty có bao nhiêu team tại trụ sở [hang sơn đoòng](location)
+  - công ty có những phòng gì vậy hả
+  - ngoài [hn](location) có bao nhiu phòng
+  - '[ftech](work_unit) có tổng cộng bao nhiu team đó'
+  - cho anh hỏi công ty có những bộ phận nào
+  - số lượng phòng ban trong cơ sở [hà nội](location) là mấy
+  - công ty hiện có bao nhiu phòng ban vậy hả
+  - công ty có những bộ phận gì mày
+  - công ty tổ chức mấy phòng ban vậy hả
+  - chi nhánh [miền tây](location) có mấy phòng ban
+  - cho tôi hỏi về các bộ phận hiện có của công ty đc ko
+  - không biết hiện tại công ty có nhiều team ko nhể
+  - công ty có mấy bộ phận đó mầy
+  - em giới thiệu về các bộ phận có trong công ty
+  - tớ muốn biết công ty có những phòng nào vậy hả
+  - mình muốn biết có bao nhiu team tại [f tech](work_unit) hả
+  - có bao nhiu team trong công ty vậy
+  - công ty đang tổ chức mấy bộ phận
+  - công ty có bao nhiêu bộ phận hả
+  - '[ftech](work_unit) có 1 phòng ban chính xác không ha'
+  - tớ tìm hiểu thấy công ty có 5 phòng ạ
+  - hiện tại công ty có bao nhiu team vậy hả
+  - cho mình hỏi công ty có bao nhiêu team tại văn phòng [VL](location)

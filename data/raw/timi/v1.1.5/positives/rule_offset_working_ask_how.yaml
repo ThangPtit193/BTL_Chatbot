@@ -1,0 +1,303 @@
+positives:
+- intent: rule_offset_working_ask_how
+  examples:
+  - đến muộn bị phạt rồi thì có cần phải làm bù giờ ko
+  - công ty mình có nội quy làm bù giờ như nào vậy hả
+  - Cho chị hỏi có cần làm bù giờ khi đi muộn ko
+  - cho tớ hỏi về rule làm bù giờ của công ty
+  - khi tôi đi muộn thì có phải làm bù giờ thế nào
+  - quy định về làm bù giờ như thế nào
+  - Đi muộn 15 phút có cần làm bù giờ không
+  - công ty có nội quy làm bù giờ khi đi muộn ko
+  - công ty có quy chế gì về làm bù giờ
+  - Đi muộn 15 phút có cần làm bù giờ ko
+  - công ty có quy định làm bù giờ khi đi muộn ko
+  - quy định làm bù giờ như thế nào vậy
+  - công ty có nội quy làm bù giờ khi đi trễ ko
+  - Đi muộn 20 phút có cần làm bù giờ ko
+  - Đi muộn 30phút có cần làm bù giờ không
+  - Đi muộn 30p có cần làm bù giờ không
+  - Đi muộn 10 phút có cần làm bù giờ không
+  - cho mình hỏi về quy chế làm bù giờ của công ty
+  - nội quy làm bù giờ là như nào
+  - cơ chế làm bù giờ của công ty ntn
+  - Đi muộn 10 phút có cần làm bù giờ ko
+  - quy định làm bù giờ thế nào vậy hả
+  - nội quy làm bù giờ thế nào vậy hả
+  - tôi muốn hỏi về quy định làm bù giờ của công ty
+  - cơ chế làm bù giờ ntn
+  - công ty mình có rule làm bù giờ như thế nào vậy
+  - quy định về làm bù giờ ntn
+  - cho tôi hỏi về rule làm bù giờ của công ty
+  - công ty mình có quy định làm bù giờ thế nào hả
+  - cơ chế làm bù khi đi trễ như thế nào
+  - công ty mình có nội quy làm bù giờ ntn vậy
+  - tôi muốn hỏi về rule làm bù giờ của công ty
+  - quy chế về làm bù giờ ntn
+  - nội quy làm bù giờ như nào vậy hả
+  - Đi muộn 5 phút có cần làm bù giờ không
+  - cho tôi hỏi về nội quy làm bù giờ của công ty
+  - công ty mình có nội quy làm bù giờ thế nào vậy hả
+  - rule làm bù giờ như nào vậy
+  - rule về làm bù giờ thế nào
+  - nội quy làm bù giờ là ntn
+  - mình đến muộn có phải làm bù số giờ đến muộn không
+  - rule làm bù giờ như thế nào hả
+  - quy chế làm bù giờ ntn vậy hả
+  - công ty mình có quy định làm bù giờ ntn vậy
+  - khi tớ đi muộn thì có phải làm bù giờ như nào
+  - quy chế làm bù giờ ntn
+  - quy chế của công ty về làm bù giờ là thế nào
+  - nội quy làm bù giờ như thế nào vậy hả
+  - khi tôi đi muộn thì có phải làm bù giờ như nào
+  - nội quy về làm bù giờ như nào
+  - cho mình hỏi về nội quy làm bù giờ của công ty
+  - khi tôi đi muộn thì có phải làm bù giờ như thế nào
+  - khi tôi đi muộn thì có phải làm bù giờ không
+  - tớ muốn hỏi về quy chế làm bù giờ của công ty
+  - công ty có quy định làm bù giờ khi đi trễ ko
+  - công ty mình có rule làm bù giờ thế nào hả
+  - công ty mình có rule làm bù giờ thế nào vậy hả
+  - nội quy làm bù giờ thế nào
+  - công ty mình có quy định làm bù giờ ntn hả
+  - Đi muộn 15phút có cần làm bù giờ không
+  - cho tớ hỏi về quy định làm bù giờ của công ty
+  - công ty mình có rule làm bù giờ ntn vậy
+  - nội quy về làm bù giờ như thế nào
+  - công ty mình có quy chế làm bù giờ thế nào hả
+  - quy chế về làm bù giờ là ntn
+  - công ty mình có rule làm bù giờ như thế nào vậy hả
+  - công ty mình có quy chế làm bù giờ như nào vậy hả
+  - nội quy làm bù giờ như nào vậy
+  - rule của công ty về làm bù giờ là ntn
+  - quy định làm bù giờ như nào hả
+  - quy chế làm bù giờ ntn vậy
+  - Đi muộn 30 phút có cần làm bù giờ ko
+  - rule về làm bù giờ là như thế nào
+  - quy định về làm bù giờ là thế nào
+  - quy định làm bù giờ như thế nào vậy hả
+  - công ty mình có quy định làm bù giờ như nào vậy
+  - quy chế làm bù giờ như nào vậy hả
+  - nội quy làm bù giờ ntn vậy hả
+  - quy định làm bù giờ thế nào vậy
+  - rule của công ty về làm bù giờ là như thế nào
+  - công ty có quy chế làm bù giờ khi đi muộn không
+  - Cho mình hỏi có cần làm bù giờ khi đi muộn ko
+  - rule làm bù giờ như thế nào
+  - quy định về làm bù giờ thế nào
+  - quy chế về làm bù giờ thế nào
+  - nội quy làm bù giờ ntn vậy
+  - quy định làm bù giờ ntn vậy
+  - nội quy của công ty về làm bù giờ là thế nào
+  - rule làm bù giờ ntn hả
+  - nội quy làm bù giờ là như thế nào
+  - quy định làm bù giờ là ntn
+  - nội quy làm bù giờ như nào
+  - Đi muộn 30p có cần làm bù giờ ko
+  - Đi muộn 20phút có cần làm bù giờ không
+  - rule làm bù giờ ntn vậy hả
+  - khi tôi đi muộn thì có phải làm bù giờ ntn
+  - Có cần làm bù giờ khi đi trễ không nhỉ
+  - rule làm bù giờ như thế nào vậy
+  - quy chế làm bù giờ là thế nào
+  - Đi muộn 10phút có cần làm bù giờ không
+  - công ty mình có quy định làm bù giờ như thế nào hả
+  - công ty mình có rule làm bù giờ như nào hả
+  - khi tớ đi muộn thì có phải làm bù giờ thế nào
+  - Đi muộn 10p có cần làm bù giờ không
+  - nội quy về làm bù giờ là ntn
+  - Đi muộn 5phút có cần làm bù giờ ko
+  - khi tớ đi muộn thì có phải làm bù giờ ntn
+  - khi mình đi muộn thì có phải làm bù giờ như nào
+  - cơ chế làm bù giờ như thế nào
+  - quy định làm bù giờ là như nào
+  - công ty mình có nội quy làm bù giờ như nào vậy
+  - công ty có quy định gì về làm bù giờ
+  - quy chế làm bù giờ như nào vậy
+  - khi mình đi muộn thì có phải làm bù giờ ko
+  - rule làm bù giờ là như nào
+  - Cho tớ hỏi có cần làm bù giờ khi đi muộn ko
+  - rule làm bù giờ thế nào vậy
+  - công ty có chế độ làm bù giờ không
+  - quy chế làm bù giờ thế nào
+  - nội quy của công ty về làm bù giờ là ntn
+  - nội quy về làm bù giờ là thế nào
+  - rule về làm bù giờ là thế nào
+  - quy định về làm bù giờ là như nào
+  - mình muốn hỏi về nội quy làm bù giờ của công ty
+  - quy định về làm bù giờ là ntn
+  - quy định làm bù giờ như thế nào
+  - rule về làm bù giờ ntn
+  - khi mình đi muộn thì có phải làm bù giờ bao nhiêu tiếng
+  - quy chế về làm bù giờ như thế nào
+  - quy định về làm bù giờ như nào
+  - công ty có rule làm bù giờ khi đi muộn ko
+  - tớ muốn hỏi về nội quy làm bù giờ của công ty
+  - tớ muốn hỏi về quy định làm bù giờ của công ty
+  - rule làm bù giờ là thế nào
+  - công ty mình có rule làm bù giờ như nào vậy hả
+  - công ty có rule làm bù giờ khi đi muộn không
+  - quy chế về làm bù giờ như nào
+  - tôi muốn hỏi về nội quy làm bù giờ của công ty
+  - khi tớ đi muộn thì có phải làm bù giờ bao nhiêu tiếng
+  - quy định làm bù giờ ntn vậy hả
+  - mình muốn hỏi về rule làm bù giờ của công ty
+  - tớ đến muộn có phải làm bù số giờ đến muộn ko
+  - tớ đến muộn có phải làm bù số giờ đến muộn không
+  - công ty mình có quy định làm bù giờ như nào hả
+  - công ty có quy chế làm bù giờ khi đi muộn ko
+  - khi mình đi muộn thì có phải làm bù giờ như thế nào
+  - quy định làm bù giờ như nào vậy hả
+  - quy chế làm bù giờ như thế nào vậy hả
+  - Đi muộn 15p có cần làm bù giờ ko
+  - Đi muộn 10phút có cần làm bù giờ ko
+  - cơ chế làm bù khi đi trễ ntn
+  - rule về làm bù giờ là như nào
+  - Đi muộn 30phút có cần làm bù giờ ko
+  - quy định làm bù giờ như nào vậy
+  - Cho mình hỏi có cần làm bù giờ khi đi muộn không
+  - Đi muộn 5phút có cần làm bù giờ không
+  - quy chế về làm bù giờ là như nào
+  - quy định làm bù giờ như thế nào hả
+  - khi tớ đi muộn thì có phải làm bù giờ không
+  - quy chế làm bù giờ là như nào
+  - công ty mình có rule làm bù giờ ntn vậy hả
+  - rule của công ty về làm bù giờ là thế nào
+  - công ty mình có quy định làm bù giờ ntn vậy hả
+  - rule làm bù giờ thế nào vậy hả
+  - cho mình hỏi về quy định làm bù giờ của công ty
+  - Đi muộn 5 phút có cần làm bù giờ ko
+  - quy chế làm bù giờ thế nào hả
+  - công ty mình có quy định làm bù giờ thế nào vậy hả
+  - Đi muộn 5p có cần làm bù giờ ko
+  - khi mình đi muộn thì có phải làm bù giờ thế nào
+  - quy định của công ty về làm bù giờ là thế nào
+  - nội quy về làm bù giờ là như thế nào
+  - tôi muốn hỏi về quy chế làm bù giờ của công ty
+  - Đi muộn 20p có cần làm bù giờ ko
+  - quy chế làm bù giờ như nào hả
+  - Cho tớ hỏi có cần làm bù giờ khi đi muộn không
+  - nội quy làm bù giờ thế nào hả
+  - công ty mình có quy chế làm bù giờ như thế nào vậy hả
+  - công ty có nội quy làm bù giờ khi đi trễ không
+  - quy định làm bù giờ ntn hả
+  - công ty mình có nội quy làm bù giờ như thế nào hả
+  - công ty mình có nội quy làm bù giờ thế nào hả
+  - cho mình hỏi về rule làm bù giờ của công ty
+  - Đi muộn 15p có cần làm bù giờ không
+  - Đi muộn 20p có cần làm bù giờ không
+  - công ty mình có quy chế làm bù giờ như thế nào hả
+  - công ty mình có quy chế làm bù giờ ntn vậy
+  - Đi muộn 10p có cần làm bù giờ ko
+  - quy định làm bù giờ thế nào hả
+  - công ty mình có nội quy làm bù giờ thế nào vậy
+  - rule làm bù giờ ntn vậy
+  - rule về làm bù giờ như thế nào
+  - rule làm bù giờ thế nào
+  - quy chế làm bù giờ thế nào vậy hả
+  - quy chế làm bù giờ là ntn
+  - quy định làm bù giờ như nào
+  - mình đến muộn có phải làm bù số giờ đến muộn ko
+  - Đi muộn 30 phút có cần làm bù giờ không
+  - công ty có quy chế làm bù giờ khi đi trễ ko
+  - chị đến muộn có phải làm bù số giờ đến muộn không
+  - nội quy làm bù giờ như thế nào hả
+  - rule làm bù giờ ntn
+  - Cho chị hỏi có cần làm bù giờ khi đi muộn không
+  - rule làm bù giờ như nào
+  - Có cần làm bù giờ khi đi trễ ko nhỉ
+  - công ty có quy định làm bù giờ khi đi muộn không
+  - khi tôi đi muộn thì có phải làm bù giờ ko
+  - công ty mình có nội quy làm bù giờ ntn hả
+  - cơ chế làm bù giờ của công ty như nào
+  - nội quy về làm bù giờ là như nào
+  - chị đến muộn có phải làm bù số giờ đến muộn ko
+  - công ty có nội quy làm bù giờ khi đi muộn không
+  - công ty mình có rule làm bù giờ như thế nào hả
+  - cho tớ hỏi về quy chế làm bù giờ của công ty
+  - cho tôi hỏi về quy định làm bù giờ của công ty
+  - công ty mình có rule làm bù giờ như nào vậy
+  - nội quy làm bù giờ như thế nào
+  - đến muộn bị phạt rồi thì có cần phải làm bù giờ không
+  - quy chế làm bù giờ như nào
+  - quy chế về làm bù giờ là như thế nào
+  - Cho anh hỏi có cần làm bù giờ khi đi muộn ko
+  - mình muốn hỏi về quy chế làm bù giờ của công ty
+  - Đi muộn 20 phút có cần làm bù giờ không
+  - công ty mình có nội quy làm bù giờ ntn vậy hả
+  - quy chế làm bù giờ như thế nào hả
+  - Đi muộn 15phút có cần làm bù giờ ko
+  - khi mình đi muộn thì có phải làm bù giờ ntn
+  - quy định làm bù giờ thế nào
+  - khi tôi đi muộn thì có phải làm bù giờ bao nhiêu tiếng
+  - công ty mình có quy chế làm bù giờ ntn hả
+  - cho tôi hỏi về quy chế làm bù giờ của công ty
+  - khi tớ đi muộn thì có phải làm bù giờ ko
+  - tớ muốn hỏi về rule làm bù giờ của công ty
+  - rule làm bù giờ như nào hả
+  - công ty có quy chế làm bù giờ khi đi trễ không
+  - cơ chế làm bù giờ thế nào
+  - công ty mình có rule làm bù giờ thế nào vậy
+  - nội quy làm bù giờ như thế nào vậy
+  - công ty mình có quy chế làm bù giờ như thế nào vậy
+  - rule về làm bù giờ như nào
+  - quy định làm bù giờ ntn
+  - cơ chế làm bù khi đi trễ thế nào
+  - công ty mình có quy định làm bù giờ như nào vậy hả
+  - công ty có rule làm bù giờ khi đi trễ không
+  - quy chế làm bù giờ ntn hả
+  - cơ chế làm bù giờ của công ty như thế nào
+  - công ty mình có nội quy làm bù giờ như thế nào vậy hả
+  - công ty có rule gì về làm bù giờ
+  - nội quy làm bù giờ ntn hả
+  - cơ chế làm bù giờ như nào
+  - quy chế làm bù giờ là như thế nào
+  - cơ chế làm bù giờ của công ty thế nào
+  - công ty mình có quy định làm bù giờ như thế nào vậy hả
+  - rule làm bù giờ thế nào hả
+  - nội quy làm bù giờ như nào hả
+  - rule làm bù giờ như thế nào vậy hả
+  - công ty mình có quy chế làm bù giờ ntn vậy hả
+  - công ty mình có quy chế làm bù giờ như nào vậy
+  - rule làm bù giờ là ntn
+  - nội quy làm bù giờ ntn
+  - anh đến muộn có phải làm bù số giờ đến muộn không
+  - nội quy làm bù giờ là thế nào
+  - công ty có nội quy gì về làm bù giờ
+  - công ty có chế độ làm bù giờ ko
+  - anh đến muộn có phải làm bù số giờ đến muộn ko
+  - công ty mình có nội quy làm bù giờ như thế nào vậy
+  - nội quy về làm bù giờ thế nào
+  - quy chế làm bù giờ như thế nào vậy
+  - công ty mình có quy chế làm bù giờ thế nào vậy
+  - nội quy của công ty về làm bù giờ là như thế nào
+  - nội quy làm bù giờ thế nào vậy
+  - quy chế của công ty về làm bù giờ là như nào
+  - mình muốn hỏi về quy định làm bù giờ của công ty
+  - công ty có quy định làm bù giờ khi đi trễ không
+  - Đi muộn 5p có cần làm bù giờ không
+  - rule của công ty về làm bù giờ là như nào
+  - công ty mình có quy chế làm bù giờ thế nào vậy hả
+  - công ty mình có nội quy làm bù giờ như nào hả
+  - nội quy của công ty về làm bù giờ là như nào
+  - công ty mình có quy chế làm bù giờ như nào hả
+  - quy định làm bù giờ là như thế nào
+  - quy chế làm bù giờ thế nào vậy
+  - cơ chế làm bù khi đi trễ như nào
+  - quy định làm bù giờ là thế nào
+  - cho tớ hỏi về nội quy làm bù giờ của công ty
+  - công ty mình có quy định làm bù giờ thế nào vậy
+  - quy định về làm bù giờ là như thế nào
+  - quy định của công ty về làm bù giờ là như nào
+  - khi mình đi muộn thì có phải làm bù giờ không
+  - quy chế của công ty về làm bù giờ là ntn
+  - quy chế về làm bù giờ là thế nào
+  - nội quy về làm bù giờ ntn
+  - Đi muộn 20phút có cần làm bù giờ ko
+  - công ty có rule làm bù giờ khi đi trễ ko
+  - quy định của công ty về làm bù giờ là ntn
+  - công ty mình có rule làm bù giờ ntn hả
+  - quy chế của công ty về làm bù giờ là như thế nào
+  - quy chế làm bù giờ như thế nào
+  - khi tớ đi muộn thì có phải làm bù giờ như thế nào
+  - rule làm bù giờ là như thế nào

@@ -1,0 +1,376 @@
+positives:
+- intent: rec_ask_working_place
+  examples:
+  - ứng tuyển [blockchain developer](position) thì làm ở [hn](location) được không
+  - vị trí [business support thị trường TQ](position) làm chỗ nào thế
+  - tôi muốn hỏi thông tin về nơi làm việc của [pre-senior](level_position) [ba](position)
+    được ko
+  - mình định apply làm [full time](level_position) [db engineer](position) nhưng
+    không biết sẽ làm tại đâu
+  - chỗ làm của [business analysts](position)
+  - công ty làm việc ở đâu vậy hả?
+  - khu vực nào làm được [go-lang](position)
+  - '[fresher](level_position) [backend develop](position) thì làm ở [hà nội](location)
+    nhể'
+  - '[graphic](position) làm ở đâu'
+  - nếu tôi đậu vị trí [ai engineer](position) thì làm việc ở [đắk nông](location)
+    chuẩn ko
+  - ứng tuyển [bảo vệ](position) làm ở đâu
+  - phòng phòng ban [AI center](department) làm ở [long an](location) hay [hòa bình](location)
+    vậy ạ
+  - '[HY](location) có làm [DA](position) không'
+  - công ty có cho làm tại [thái bình](location) không
+  - tớ appy vị trí [backend develop](position) thì làm việc tại đâu ha
+  - '[.net](position) làm tại đâu?'
+  - c apply vị trí [go lang develop](position) thì làm tại đâu?
+  - '[odoo developer](position) có làm ở [dn](location) ko'
+  - công ty có làm ở [đn](location) không
+  - nhà mình gần [tiền giang](location) mình xin làm ở đó được không
+  - mình muốn làm ở [hội an](location) được không
+  - ứng tuyển [data analyst](position) thì làm ở [huế](location) được không
+  - vị trí [business supporter china](position) làm chỗ nào thế
+  - tớ muốn biết thông tin về nơi làm việc của [fulltime](level_position) [game designer](position)
+    được không
+  - tôi định ứng tuyển làm [senior](level_position) [fullstack developer](position)
+    nhưng không biết sẽ làm tại nơi nào
+  - chỗ làm của [QA Tester](position)
+  - công ty làm việc ở đâu?
+  - khu vực nào làm được [VFX Animations](position)
+  - '[senior](level_position) [blockchain engineer](position) thì làm ở [hà nội](location)
+    ha'
+  - '[data engineers](position) làm ở đâu'
+  - nếu tôi đậu [3d developer](position) thì làm việc ở [thanh hóa](location) chuẩn
+    ko
+  - ứng tuyển [game dev](position) làm ở đâu
+  - phòng phòng ban [game & design](department) làm ở [thừa thiên huế](location) hay
+    [bắc kạn](location) vậy ạ
+  - '[đông bắc bộ](location) có làm [be develop](position) ko'
+  - công ty có cho làm tại [HD](location) không
+  - tớ appy vị trí [3d artist](position) thì làm việc tại đâu nhể
+  - '[Ruby dev](position) làm tại đâu?'
+  - a apply vị trí [blockchain develop](position) thì làm tại đâu?
+  - '[data engineer](position) có làm ở [Đan Mạch](location) không'
+  - công ty có làm ở [củ chi](location) không
+  - nhà mình gần [cù lao chàm](location) mình xin làm ở đó được không
+  - mình muốn làm ở [đà nẵng](location) được không
+  - ứng tuyển [ai engineer](position) thì làm ở [mộc châu](location) được không
+  - vị trí [android develop](position) làm chỗ nào thế
+  - tớ muốn hỏi thông tin về nơi làm việc của [junior](level_position) [blockchain](position)
+    đc không
+  - tớ định ứng tuyển làm [intern](level_position) [natural language processing](position)
+    nhưng ko biết sẽ làm tại nơi nào
+  - chỗ làm của [ja-va developer](position)
+  - công ty làm việc ở đâu vậy?
+  - khu vực nào làm được [database engineering](position)
+  - '[full time](level_position) [nhà khoa học](position) thì làm ở [đà nẵng](location)
+    nhỉ'
+  - '[xử lý ngôn ngữ tự nhiên](position) làm ở đâu'
+  - nếu mình đậu vị trí [người](position) thì làm việc ở [cà mau](location) đúng không
+  - ứng tuyển [graphic](position) làm ở đâu
+  - phòng phòng [cơ sở hạ tầng](department) làm ở [đắk nông](location) hay [vĩnh phúc](location)
+    vậy ạ
+  - '[đn](location) có làm [business analysts](position) ko'
+  - công ty có cho làm tại [hồ chí minh](location) không
+  - tớ appy vị trí [data analysts](position) thì làm việc tại đâu nhể
+  - '[nhân viên kinh doanh thị trường China](position) làm tại đâu?'
+  - cô apply vị trí [business analyst](position) thì làm tại đâu?
+  - '[hr manager](position) có làm ở [Việt Nam](location) ko'
+  - công ty có làm ở [sài gòn](location) không
+  - nhà mình gần [sài gòn](location) mình xin làm ở đó được không
+  - mình muốn làm ở [đồng bằng sông hồng](location) được không
+  - ứng tuyển [blockchain develop](position) thì làm ở [đà nẵng](location) được không
+  - vị trí [business analysts](position) làm chỗ nào thế
+  - tôi muốn hỏi thông tin về nơi làm việc của [thử việc](level_position) [graphic
+    designers](position) đc ko
+  - mình định apply làm [thử việc](level_position) [nhân viên soạn nội dung giáo dục](position)
+    nhưng không biết sẽ làm tại vùng nào
+  - chỗ làm của [product analyst](position)
+  - công ty làm việc ở đâu hả?
+  - khu vực nào làm được [backend develop](position)
+  - '[ctv](level_position) [2d product](position) thì làm ở [LS](location) nhỉ'
+  - '[net develop](position) làm ở đâu'
+  - nếu tôi pass vị trí [nv thiết kế nội dung giáo dục](position) thì làm việc ở [nghệ
+    an](location) chuẩn chỉ không
+  - ứng tuyển [2d artist](position) làm ở đâu
+  - phòng phòng [HR and Admin](department) làm ở [hà nội](location) hay [hưng yên](location)
+    vậy ạ
+  - '[miền bắc](location) có làm [game 2d art](position) ko'
+  - công ty có cho làm tại [đồng bằng bắc bộ](location) không
+  - tôi appy vị trí [data scientist](position) thì làm việc tại đâu nhể
+  - '[fe develop](position) làm tại đâu?'
+  - em apply vị trí [go-lang developer](position) thi làm tại đâu?
+  - '[product owners](position) có làm ở [Canada](location) không'
+  - công ty có làm ở [mộc châu](location) không
+  - nhà mình gần [trà vinh](location) mình xin làm ở đó được không
+  - mình muốn làm ở [đn](location) được không
+  - ứng tuyển [os network](position) thì làm ở [đồng tháp](location) được không
+  - vị trí [odoo developer](position) làm chỗ nào thế
+  - tớ muốn biết thông tin về nơi làm việc của [intern](level_position) [react-native
+    developer](position) được ko
+  - mình định apply làm [junior](level_position) [python develop](position) nhưng
+    ko biết sẽ làm tại thành phố nào
+  - chỗ làm của [PO](position)
+  - khu vực nào làm được [lập trình ios](position)
+  - '[fresher](level_position) [QA](position) thì làm ở [miền trung](location) ha'
+  - '[development and operations](position) làm ở đâu'
+  - nếu tôi đậu [go-lang](position) thì làm việc ở [cần thơ](location) chuẩn chỉ ko
+  - ứng tuyển [thiết kế nội dung giáo dục](position) làm ở đâu
+  - phòng bộ phận [game](department) làm ở [cà mau](location) hay [đồng tháp](location)
+    vậy ạ
+  - '[sa đéc](location) có làm [back-end develop](position) không'
+  - công ty có cho làm tại [hà nội](location) không
+  - tớ ứng tuyển vị trí [be developer](position) thì làm việc tại đâu nhể
+  - '[ios](position) làm tại đâu?'
+  - mình apply vị trí [back-end develop](position) thig làm tại đâu?
+  - '[ios dev](position) có làm ở [đà nẵng](location) không'
+  - công ty có làm ở [đất Việt](location) không
+  - nhà mình gần [Mỹ](location) mình xin làm ở đó được không
+  - mình muốn làm ở [tây nguyên](location) được không
+  - ứng tuyển [game UI/UX designers](position) thì làm ở [hn](location) được không
+  - vị trí [full stack dev](position) làm chỗ nào thế
+  - mình muốn biết thông tin về nơi làm việc của [thử việc](level_position) [back
+    end developer](position) đc không
+  - tớ định ứng tuyển làm [thử việc](level_position) [.net developer](position) nhưng
+    ko biết sẽ làm tại thành phố nào
+  - chỗ làm của [game unity 2d](position)
+  - khu vực nào làm được [ios](position)
+  - '[fresher](level_position) [android develop](position) thì làm ở [đông bắc bộ](location)
+    ha'
+  - '[data scientist](position) làm ở đâu'
+  - nếu tôi pass vị trí [C developer](position) thì làm việc ở [điện biên](location)
+    chuẩn chỉ ko
+  - ứng tuyển [fe dev](position) làm ở đâu
+  - phòng phòng ban [kinh doanh](department) làm ở [an giang](location) hay [hà nội](location)
+    vậy ạ
+  - '[Phan Thiết](location) có làm [nlp researcher](position) không'
+  - công ty có cho làm tại [Úc](location) không
+  - tớ appy vị trí [3d art](position) thì làm việc tại đâu ha
+  - '[android dev](position) làm tại đâu?'
+  - e apply vị trí [Tester](position) thig làm tại đâu?
+  - '[game 3d product](position) có làm ở [đồng bằng sông cưu long](location) ko'
+  - công ty có làm ở [dn](location) không
+  - nhà mình gần [cao bằng](location) mình xin làm ở đó được không
+  - mình muốn làm ở [Tam đảo](location) được không
+  - ứng tuyển [system administrator](position) thì làm ở [hà nội](location) được không
+  - vị trí [full-stack dev](position) làm chỗ nào thế
+  - mình muốn hỏi thông tin về nơi làm việc của [junior](level_position) [blockchain](position)
+    được ko
+  - tớ định apply làm [fresher](level_position) [game 2d prod](position) nhưng ko
+    biết sẽ làm tại vùng nào
+  - chỗ làm của [C# engineer](position)
+  - khu vực nào làm được [biên soạn nội dung giáo dục](position)
+  - '[thực tập sinh](level_position) [business analysts](position) thì làm ở [hn](location)
+    nhỉ'
+  - '[go lang](position) làm ở đâu'
+  - nếu tôi trúng tuyển vị trí [full-stack developer](position) thì làm việc ở [nghệ
+    an](location) chuẩn chỉ không
+  - ứng tuyển [PA](position) làm ở đâu
+  - phòng team [business](department) làm ở [an giang](location) hay [ninh thuận](location)
+    vậy ạ
+  - '[hồ chí minh](location) có làm [natural language processing](position) không'
+  - công ty có cho làm tại [miền trung](location) không
+  - tớ appy vị trí [lễ tân](position) thì làm việc tại đâu nhỉ
+  - '[DA](position) làm tại đâu?'
+  - em apply vị trí [odoo develop](position) thì làm tại đâu?
+  - '[game 2d product](position) có làm ở [HY](location) ko'
+  - công ty có làm ở [hcm](location) không
+  - nhà mình gần [HD](location) mình xin làm ở đó được không
+  - mình muốn làm ở [BN](location) được không
+  - ứng tuyển [game UI/UX designers](position) thì làm ở [bắc trung bộ](location)
+    được không
+  - vị trí [thị giác máy tính](position) làm chỗ nào thế
+  - tớ muốn hỏi thông tin về nơi làm việc của [full-time](level_position) [ai engineering](position)
+    được ko
+  - mình định ứng tuyển làm [full-time](level_position) [development and operations](position)
+    nhưng không biết sẽ làm tại chỗ nào
+  - chỗ làm của [ios](position)
+  - khu vực nào làm được [os network](position)
+  - '[senior](level_position) [game 2d unity develop](position) thì làm ở [đông nam
+    bộ](location) ha'
+  - '[game 2d unity dev](position) làm ở đâu'
+  - nếu mình pass [nhân viên marketing](position) thì làm việc ở [bắc giang](location)
+    chính xác không
+  - ứng tuyển [3d dev](position) làm ở đâu
+  - phòng team [platform](department) làm ở [bắc giang](location) hay [lạng sơn](location)
+    vậy ạ
+  - '[hồ chí minh](location) có làm [data scientists](position) không'
+  - công ty có cho làm tại [dn](location) không
+  - mình ứng tuyển vị trí [2d dev](position) thì làm việc tại đâu nhể
+  - '[hr manager](position) làm tại đâu?'
+  - a apply vị trí [ios developer](position) thif làm tại đâu?
+  - '[frontend develop](position) có làm ở [dn](location) ko'
+  - công ty có làm ở [NB](location) không
+  - nhà mình gần [BN](location) mình xin làm ở đó được không
+  - mình muốn làm ở [củ chi](location) được không
+  - ứng tuyển [game UI/UX designs](position) thì làm ở [vịnh hạ long](location) được
+    không
+  - vị trí [front-end developer](position) làm chỗ nào thế
+  - tớ muốn hỏi thông tin về nơi làm việc của [thử việc](level_position) [be developer](position)
+    được ko
+  - tớ định ứng tuyển làm [fresher](level_position) [product owners](position) nhưng
+    ko biết sẽ làm tại vùng nào
+  - chỗ làm của [data engineers](position)
+  - khu vực nào làm được [ds](position)
+  - '[senior](level_position) [net developer](position) thì làm ở [quy nhơn](location)
+    ha'
+  - '[ai](position) làm ở đâu'
+  - nếu mình trúng tuyển [vẽ 3d](position) thì làm việc ở [ninh thuận](location) chuẩn
+    không
+  - ứng tuyển [game 3d artist](position) làm ở đâu
+  - phòng team [bảo vệ](department) làm ở [quảng ngãi](location) hay [cần thơ](location)
+    vậy ạ
+  - '[cố đô huế](location) có làm [data scientists](position) ko'
+  - công ty có cho làm tại [Singapore](location) không
+  - tớ ứng tuyển vị trí [game 3d prod](position) thì làm việc tại đâu ha
+  - '[game UI/UX designer](position) làm tại đâu?'
+  - e apply vị trí [graphic](position) thi làm tại đâu?
+  - '[business analysts](position) có làm ở [Tràng An](location) ko'
+  - công ty có làm ở [Đài Loan](location) không
+  - nhà mình gần [hồ chí minh](location) mình xin làm ở đó được không
+  - mình muốn làm ở [Việt Nam](location) được không
+  - ứng tuyển [ja-va developer](position) thì làm ở [hn](location) được không
+  - vị trí [game unity 3d developer](position) làm chỗ nào thế
+  - tớ muốn hỏi thông tin về nơi làm việc của [full time](level_position) [game 2d
+    prod](position) được ko
+  - tớ định ứng tuyển làm [thử việc](level_position) [blockchain developer](position)
+    nhưng không biết sẽ làm tại vùng nào
+  - chỗ làm của [xử lý ngôn ngữ tự nhiên](position)
+  - khu vực nào làm được [pentester](position)
+  - '[thử việc](level_position) [pentest](position) thì làm ở [đồng bằng sông cưu
+    long](location) nhể'
+  - '[product owners](position) làm ở đâu'
+  - nếu tôi pass vị trí [business analysts](position) thì làm việc ở [an giang](location)
+    chính xác không
+  - ứng tuyển [thủ môn](position) làm ở đâu
+  - phòng team [game](department) làm ở [bạc liệu](location) hay [lâm đồng](location)
+    vậy ạ
+  - '[VL](location) có làm [be developer](position) ko'
+  - công ty có cho làm tại [sài gòn](location) không
+  - tớ appy vị trí [front end](position) thì làm việc tại đâu nhỉ
+  - '[data analyst](position) làm tại đâu?'
+  - cô apply vị trí [2d prod](position) thig làm tại đâu?
+  - '[development and operations](position) có làm ở [đà lạt](location) không'
+  - công ty có làm ở [Macau](location) không
+  - nhà mình gần [tp hồ chí minh](location) mình xin làm ở đó được không
+  - mình muốn làm ở [VL](location) được không
+  - ứng tuyển [lập trình ios](position) thì làm ở [long an](location) được không
+  - vị trí [java develop](position) làm chỗ nào thế
+  - tớ muốn hỏi thông tin về nơi làm việc của [thử việc](level_position) [PA](position)
+    đc ko
+  - tớ định ứng tuyển làm [fresher](level_position) [thiết kế nội dung giáo dục](position)
+    nhưng ko biết sẽ làm tại nơi nào
+  - chỗ làm của [business support thị trường TQ](position)
+  - khu vực nào làm được [game 3d unity](position)
+  - '[fresher](level_position) [game 3d unity developer](position) thì làm ở [đồng
+    bằng bắc bộ](location) nhỉ'
+  - '[fullstack dev](position) làm ở đâu'
+  - nếu tôi đậu vị trí [net develop](position) thì làm việc ở [thanh hóa](location)
+    chuẩn không
+  - ứng tuyển [graphic designers](position) làm ở đâu
+  - phòng phòng ban [AI center](department) làm ở [lâm đồng](location) hay [bắc ninh](location)
+    vậy ạ
+  - '[hcm](location) có làm [react native](position) không'
+  - công ty có cho làm tại [đồng bằng sông hồng](location) không
+  - tớ appy vị trí [unity 2d dev](position) thì làm việc tại đâu ha
+  - '[PA](position) làm tại đâu?'
+  - em apply vị trí [DA](position) thif làm tại đâu?
+  - '[quản lý nhân sự](position) có làm ở [dn](location) ko'
+  - công ty có làm ở [Việt Nam](location) không
+  - nhà mình gần [pắc pó](location) mình xin làm ở đó được không
+  - mình muốn làm ở [hn](location) được không
+  - ứng tuyển [tay vợt](position) thì làm ở [đồng bằng sông hồng](location) được không
+  - vị trí [ja-va dev](position) làm chỗ nào thế
+  - tớ muốn hỏi thông tin về nơi làm việc của [full-time](level_position) [game UI/UX
+    designs](position) đc không
+  - tôi định ứng tuyển làm [junior](level_position) [system admin](position) nhưng
+    ko biết sẽ làm tại chỗ nào
+  - chỗ làm của [blockchain dev](position)
+  - khu vực nào làm được [blockchain](position)
+  - '[fresher](level_position) [ds](position) thì làm ở [hà giang](location) nhể'
+  - '[odoo dev](position) làm ở đâu'
+  - nếu tôi đậu vị trí [.net develop](position) thì làm việc ở [bà rịa - vũng tàu](location)
+    chính xác ko
+  - ứng tuyển [nv soạn nội dung giáo dục](position) làm ở đâu
+  - phòng team [thu mua](department) làm ở [bạc liệu](location) hay [vĩnh phúc](location)
+    vậy ạ
+  - '[hcm](location) có làm [development and operations](position) không'
+  - công ty có cho làm tại [HY](location) không
+  - mình appy vị trí [business supporter china](position) thì làm việc tại đâu nhể
+  - '[3d prod](position) làm tại đâu?'
+  - mình apply vị trí [java](position) thì làm tại đâu?
+  - '[ai engineer](position) có làm ở [hồ chí minh](location) không'
+  - công ty có làm ở [tây bắc bộ](location) không
+  - nhà mình gần [TH](location) mình xin làm ở đó được không
+  - mình muốn làm ở [Trung Quốc](location) được không
+  - ứng tuyển [lập trình viên ios](position) thì làm ở [tây nam bộ](location) được
+    không
+  - vị trí [game 3d products](position) làm chỗ nào thế
+  - tớ muốn biết thông tin về nơi làm việc của [full-time](level_position) [devops](position)
+    được không
+  - tớ định apply làm [junior](level_position) [3d developer](position) nhưng không
+    biết sẽ làm tại chỗ nào
+  - chỗ làm của [lập trình viên android](position)
+  - khu vực nào làm được [fullstack](position)
+  - '[thử việc](level_position) [game 2d artist](position) thì làm ở [QB](location)
+    ha'
+  - '[nlp researcher](position) làm ở đâu'
+  - nếu mình pass [game 3d product](position) thì làm việc ở [kon tum](location) chuẩn
+    không
+  - ứng tuyển [game unity 2d develop](position) làm ở đâu
+  - phòng team [hành chính nhân sự](department) làm ở [đồng nai](location) hay [sơn
+    la](location) vậy ạ
+  - '[VL](location) có làm [Tester](position) ko'
+  - công ty có cho làm tại [Hàn](location) không
+  - tớ appy vị trí [net develop](position) thì làm việc tại đâu ha
+  - '[cv engineer](position) làm tại đâu?'
+  - tớ apply vị trí [react native developer](position) thif làm tại đâu?
+  - '[react](position) có làm ở [dn](location) ko'
+  - công ty có làm ở [miền nam](location) không
+  - nhà mình gần [hà nội](location) mình xin làm ở đó được không
+  - mình muốn làm ở [lai châu](location) được không
+  - ứng tuyển [data engineering](position) thì làm ở [NB](location) được không
+  - vị trí [go-lang developer](position) làm chỗ nào thế
+  - tôi muốn hỏi thông tin về nơi làm việc của [senior](level_position) [product analyst](position)
+    đc ko
+  - tớ định apply làm [pretrain](level_position) [android](position) nhưng ko biết
+    sẽ làm tại đâu
+  - chỗ làm của [game 2d unity](position)
+  - khu vực nào làm được [go-lang dev](position)
+  - '[thử việc](level_position) [fullstack developer](position) thì làm ở [hà nội](location)
+    nhể'
+  - '[quản lý nhân sự](position) làm ở đâu'
+  - nếu tôi pass vị trí [react dev](position) thì làm việc ở [lai châu](location)
+    chuẩn chỉ ko
+  - ứng tuyển [devops engineer](position) làm ở đâu
+  - phòng bộ phận [business](department) làm ở [vĩnh long](location) hay [tp hồ chí
+    minh](location) vậy ạ
+  - '[quy nhơn](location) có làm [dotnet](position) ko'
+  - công ty có cho làm tại [NB](location) không
+  - tớ appy vị trí [react native developer](position) thì làm việc tại đâu nhỉ
+  - '[business supporter china](position) làm tại đâu?'
+  - chú apply vị trí [nlp engineering](position) thi làm tại đâu?
+  - '[game 3d unity](position) có làm ở [HD](location) không'
+  - công ty có làm ở [thái bình](location) không
+  - nhà mình gần [BG](location) mình xin làm ở đó được không
+  - mình muốn làm ở [hcm](location) được không
+  - ứng tuyển [3d artist](position) thì làm ở [an giang](location) được không
+  - vị trí [frontend developer](position) làm chỗ nào thế
+  - tớ muốn biết thông tin về nơi làm việc của [senior](level_position) [game 2d products](position)
+    đc không
+  - tôi định ứng tuyển làm [fresher](level_position) [database engineer](position)
+    nhưng ko biết sẽ làm tại vùng nào
+  - chỗ làm của [nv thiết kế nội dung giáo dục](position)
+  - khu vực nào làm được [xử lý ngôn ngữ tự nhiên](position)
+  - '[thử việc](level_position) [game 3d unity dev](position) thì làm ở [tây nguyên](location)
+    nhể'
+  - '[C++ dev](position) làm ở đâu'
+  - nếu mình đậu vị trí [nhân viên soạn nội dung giáo dục](position) thì làm việc
+    ở [hòa bình](location) chuẩn chỉ ko
+  - ứng tuyển [database engineering](position) làm ở đâu
+  - phòng bộ phận [hệ thống cơ sở hạ tầng](department) làm ở [cà mau](location) hay
+    [bạc liệu](location) vậy ạ
+  - '[đn](location) có làm [data engineering](position) ko'
+  - công ty có cho làm tại [điện biên](location) không
+  - mình ứng tuyển vị trí [full stack devlop](position) thì làm việc tại đâu nhể
+  - '[system administrator](position) làm tại đâu?'
+  - tôi apply vị trí [db engineering](position) thi làm tại đâu?

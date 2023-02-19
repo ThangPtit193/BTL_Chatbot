@@ -1,0 +1,487 @@
+positives:
+- intent: rec_ask_interview_process
+  examples:
+  - quy trình nhận curriculum vitae của công ty như nào
+  - quy trình tuyển dụng thế nào
+  - Quy trình phỏng vấn của công ty như nào vậy?
+  - tớ pass sơ yếu lý lịch rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - làm sao để vào công ty làm việc
+  - công ty phỏng vấn ra sao
+  - các bước apply vào công ty
+  - quy trình nhận CV xin việc
+  - cần phải phòng vấn bao nhiu vòng vậy
+  - '[ftech](work_unit) [business analyst](position) phỏng vấn bao nhiu vòng?'
+  - làm ntn để vào công ty làm việc đây nhỉ
+  - các bước trong quy trình interview như nào
+  - gửi tôi quy trình tuyển dụng với ạ
+  - phỏng vấn [f-tech](work_unit) thế nào
+  - quy trình interview gồm những bước nào
+  - cho chị quy trình phỏng vấn của công ty như nào
+  - bên [f tech](work_unit) sẽ có bao nhiêu vòng phỏng vấn
+  - timi ơi, gửi cho tớ quy trình tuyển dụng đi
+  - giới thiệu sơ về phỏng vấn được không
+  - tôi phải tham gia tận 2 vòng phỏng vấn mới đc vô [f-tech](work_unit) làm việc
+    à
+  - quy trình interview thế nào đó
+  - có bao nhiêu vòng phỏng vấn đó
+  - công ty có quy định gì về số vòng cần phỏng vấn ko
+  - cho tớ xin quy trình interview được không
+  - qui trình phỏng vấn ra sao
+  - cho tớ quy trình phỏng vấn như nào
+  - cho mình hỏi [cty công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - nghe bảo [f-tech](work_unit) sẽ phỏng vấn 2 vòng ạ
+  - công ty có quy trình tuyển dụng như thế nào
+  - '[f tech](work_unit) phỏng vấn thế nào'
+  - quy trình phỏng vấn của công ty như nào
+  - cách [ftech](work_unit) phỏng vấn là như thế nào
+  - bên mình phỏng vấn bao nhiu vòng?
+  - gửi tôi quy trình interview được không
+  - cho tớ hỏi có bao nhiu vòng phỏng vấn hả
+  - ứng viên xin việc phải phỏng vấn bao nhiêu vòng đó
+  - Có mấy vòng phỏng vấn vậy timi?
+  - công ty [công nghệ và gia đình](work_unit) phỏng vấn mấy vòng?
+  - tôi thích công ty quá, làm ntn để tớ trở thành nhân viên của [f tech](work_unit)
+    đây
+  - công ty có mấy vòng phỏng vấn
+  - cho mình hỏi bên mình [công ty công nghệ và gia đình](work_unit) phỏng vấn bao
+    nhiêu vòng?
+  - phỏng vấn có mấy vòng?
+  - interview trải qua mấy bước
+  - phỏng vấn gồm những bước nào
+  - quy trình phỏng vấn như nào
+  - đậu phỏng vấn lần 1 rồi có phỏng vấn tiếp không ạ
+  - cho tớ hỏi quy trình phỏng vấn có mấy vòng?
+  - quy trình nhận CV của công ty ntn
+  - quy trình phỏng vấn thế nào
+  - tôi pass curriculum vitae rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - quy trình nhận hồ sơ xin việc
+  - cần phải phòng vấn bao nhiêu vòng vậy
+  - '[ftech](work_unit) [ai engineering](position) phỏng vấn bao nhiu vòng?'
+  - làm như nào để vào công ty làm việc đây ha
+  - các bước trong quy trình phỏng vấn như nào
+  - gửi cho tớ quy trình interview với ạ
+  - phỏng vấn [ftech](work_unit) thế nào
+  - quy trình phỏng vấn gồm những bước nào
+  - cho tớ quy trình phỏng vấn của công ty như nào
+  - bên [ftech](work_unit) sẽ có bao nhiu vòng phỏng vấn
+  - timi ơi, gửi mình quy trình tuyển dụng đi
+  - tớ phải tham gia tận 2 vòng phỏng vấn mới đc vô [f-tech](work_unit) làm việc à
+  - quy trình phỏng vấn ntn đó
+  - có bao nhiu vòng phỏng vấn hả
+  - công ty có quy định gì về số rounds cần phỏng vấn ko
+  - cho tớ xin quy trình phỏng vấn được ko
+  - cho mình quy trình phỏng vấn như nào
+  - cho mình hỏi [f tech](work_unit) phỏng vấn bao nhiêu vòng?
+  - nghe bảo [f tech](work_unit) sẽ phỏng vấn 2 vòng ạ
+  - công ty có quy trình phỏng vấn như nào
+  - '[ftech](work_unit) phỏng vấn thế nào'
+  - quy trình tuyển dụng của công ty ntn
+  - cách [f-tech](work_unit) phỏng vấn là như thế nào
+  - công ty phỏng vấn bao nhiêu vòng?
+  - gửi cho mình quy trình phỏng vấn được ko
+  - cho tôi hỏi có mấy vòng phỏng vấn vậy
+  - người xin việc phải phỏng vấn bao nhiu vòng hả
+  - bên mình [f-tech](work_unit) phỏng vấn bao nhiu vòng?
+  - mình thích công ty quá, làm sao để mình trở thành nhân viên của [ftech](work_unit)
+    đây
+  - bên mình có bao nhiu vòng phỏng vấn
+  - cho tớ hỏi bên mình [f tech](work_unit) phỏng vấn mấy vòng?
+  - phỏng vấn trải qua mấy bước
+  - interview gồm những bước nào
+  - cho mình hỏi quy trình phỏng vấn có mấy vòng?
+  - quy trình nhận sơ yếu lý lịch của công ty thế nào
+  - quy trình interview như nào
+  - tớ pass curriculum vitae rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - quy trình nhận resume xin việc
+  - cần phải phòng vấn bao nhiu vòng nhỉ
+  - '[ftech](work_unit) [fe dev](position) phỏng vấn mấy vòng?'
+  - làm gì để vào công ty làm việc đây ha
+  - các bước trong quy trình phỏng vấn thế nào
+  - gửi tớ quy trình interview với ạ
+  - phỏng vấn [f tech](work_unit) thế nào
+  - quy trình tuyển dụng gồm những bước nào
+  - cho mình quy trình phỏng vấn của công ty như nào
+  - bên [f-tech](work_unit) sẽ có mấy vòng phỏng vấn
+  - timi ơi, gửi cho tôi quy trình interview đi
+  - tớ phải tham gia tận 2 vòng phỏng vấn mới đc vô [f tech](work_unit) làm việc à
+  - quy trình phỏng vấn thế nào đó
+  - có bao nhiêu vòng phỏng vấn nhỉ
+  - cho tớ xin quy trình interview được ko
+  - cho anh quy trình phỏng vấn như nào
+  - cho tớ hỏi [ftech](work_unit) phỏng vấn mấy vòng?
+  - nghe bảo [ftech](work_unit) sẽ phỏng vấn 2 vòng ạ
+  - công ty có quy trình phỏng vấn như thế nào
+  - '[f-tech](work_unit) phỏng vấn thế nào'
+  - quy trình phỏng vấn của công ty như thế nào
+  - cách [f tech](work_unit) phỏng vấn là như thế nào
+  - công ty phỏng vấn mấy vòng?
+  - gửi cho tôi quy trình interview được ko
+  - cho mình hỏi có bao nhiêu vòng phỏng vấn vậy
+  - ứng viên phải phỏng vấn bao nhiêu vòng vậy
+  - bên mình [cty công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - tớ thích công ty quá, làm như nào để mình trở thành nhân viên của [ftech](work_unit)
+    đây
+  - công ty có bao nhiêu vòng phỏng vấn
+  - cho tớ hỏi công ty [công ty công nghệ và gia đình](work_unit) phỏng vấn mấy vòng?
+  - tuyển dụng trải qua mấy bước
+  - cho tôi hỏi quy trình phỏng vấn có mấy vòng?
+  - quy trình nhận sơ yếu lý lịch của công ty ntn
+  - quy trình interview như thế nào
+  - mình pass hồ sơ rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - quy trình nhận curriculum vitae xin việc
+  - cần phải phòng vấn mấy vòng nhể
+  - '[ftech](work_unit) [nhà khoa học](position) phỏng vấn bao nhiu vòng?'
+  - làm gì để vào công ty làm việc đây nhể
+  - các bước trong quy trình interview ntn
+  - gửi tớ quy trình phỏng vấn với ạ
+  - cho anh quy trình phỏng vấn của công ty như nào
+  - bên [ftech](work_unit) sẽ có mấy vòng phỏng vấn
+  - timi ơi, gửi tớ quy trình interview đi
+  - mình phải tham gia tận 2 vòng phỏng vấn mới đc vô [ftech](work_unit) làm việc
+    à
+  - quy trình phỏng vấn như nào đó
+  - có bao nhiu vòng phỏng vấn vậy
+  - cho tớ xin quy trình phỏng vấn được không
+  - cho chị quy trình phỏng vấn như nào
+  - cho tớ hỏi [công ty công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - công ty có quy trình tuyển dụng thế nào
+  - quy trình interview của công ty thế nào
+  - công ty phỏng vấn bao nhiu vòng?
+  - gửi cho tớ quy trình phỏng vấn được ko
+  - 'cho mình hỏi có bao nhiu vòng phỏng vấn '
+  - ứng viên xin việc phải phỏng vấn bao nhiêu vòng ha
+  - công ty [f-tech](work_unit) phỏng vấn bao nhiêu vòng?
+  - mình thích công ty quá, làm như nào để mình trở thành nhân viên của [f-tech](work_unit)
+    đây
+  - bên mình có mấy vòng phỏng vấn
+  - cho tôi hỏi bên mình [ftech](work_unit) phỏng vấn mấy vòng?
+  - quy trình nhận sơ yếu lý lịch của công ty như thế nào
+  - quy trình tuyển dụng ntn
+  - tôi pass CV rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - quy trình nhận sơ yếu lý lịch xin việc
+  - 'cần phải phòng vấn mấy vòng '
+  - '[f tech](work_unit) [os admin](position) phỏng vấn mấy vòng?'
+  - làm thế nào để vào công ty làm việc đây ha
+  - các bước trong quy trình tuyển dụng như nào
+  - gửi tớ quy trình tuyển dụng với ạ
+  - bên [f-tech](work_unit) sẽ có bao nhiu vòng phỏng vấn
+  - timi ơi, gửi tớ quy trình phỏng vấn đi
+  - mình phải tham gia tận 2 vòng phỏng vấn mới đc vô [f tech](work_unit) làm việc
+    à
+  - quy trình phỏng vấn như thế nào đó
+  - 'có mấy vòng phỏng vấn '
+  - cho tôi xin quy trình interview được không
+  - cho mình hỏi [f tech](work_unit) phỏng vấn bao nhiu vòng?
+  - công ty có quy trình interview ntn
+  - quy trình interview của công ty như nào
+  - bên mình phỏng vấn mấy vòng?
+  - gửi cho tớ quy trình tuyển dụng được không
+  - cho tớ hỏi có bao nhiu vòng phỏng vấn nhể
+  - ứng viên phải phỏng vấn mấy vòng đó
+  - bên mình [ftech](work_unit) phỏng vấn bao nhiu vòng?
+  - tôi thích công ty quá, làm như nào để mình trở thành nhân viên của [ftech](work_unit)
+    đây ha
+  - công ty có bao nhiu vòng phỏng vấn
+  - cho tôi hỏi bên mình [f tech](work_unit) phỏng vấn bao nhiu vòng?
+  - quy trình nhận resume của công ty như nào
+  - quy trình interview thế nào
+  - mình pass sơ yếu lý lịch rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - cần phải phòng vấn bao nhiu vòng đó
+  - '[f tech](work_unit) [ai engineering](position) phỏng vấn mấy vòng?'
+  - làm sao để vào công ty làm việc đây nhể
+  - các bước trong quy trình tuyển dụng như thế nào
+  - gửi cho mình quy trình tuyển dụng với ạ
+  - bên [f tech](work_unit) sẽ có mấy vòng phỏng vấn
+  - timi ơi, gửi mình quy trình interview đi
+  - tớ phải tham gia tận 2 vòng phỏng vấn mới đc vô [ftech](work_unit) làm việc à
+  - quy trình interview như thế nào đó
+  - 'có bao nhiêu vòng phỏng vấn '
+  - cho tớ xin quy trình tuyển dụng được ko
+  - cho tớ hỏi [f-tech](work_unit) phỏng vấn mấy vòng?
+  - công ty có quy trình phỏng vấn ntn
+  - quy trình interview của công ty ntn
+  - gửi cho tớ quy trình tuyển dụng được ko
+  - cho tớ hỏi có mấy vòng phỏng vấn đó
+  - thí sinh phải phỏng vấn mấy vòng đó
+  - bên mình [công ty công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu vòng?
+  - mình thích công ty quá, làm gì để tôi trở thành nhân viên của [f-tech](work_unit)
+    đây
+  - bên mình có bao nhiêu vòng phỏng vấn
+  - cho tôi hỏi công ty [cty công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu
+    vòng?
+  - quy trình nhận curriculum vitae của công ty như thế nào
+  - quy trình phỏng vấn ntn
+  - tớ pass hồ sơ rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - cần phải phòng vấn bao nhiu vòng ha
+  - '[f-tech](work_unit) [system admin](position) phỏng vấn bao nhiêu vòng?'
+  - làm ntn để vào công ty làm việc đây ha
+  - các bước trong quy trình tuyển dụng thế nào
+  - gửi cho tớ quy trình tuyển dụng với ạ
+  - bên [f tech](work_unit) sẽ có bao nhiu vòng phỏng vấn
+  - timi ơi, gửi cho tớ quy trình phỏng vấn đi
+  - mình phải tham gia tận 2 vòng phỏng vấn mới đc vô [f-tech](work_unit) làm việc
+    à
+  - quy trình interview như nào đó
+  - có mấy vòng phỏng vấn ha
+  - cho tôi xin quy trình phỏng vấn được ko
+  - cho tớ hỏi [công nghệ và gia đình](work_unit) phỏng vấn mấy vòng?
+  - công ty có quy trình interview như thế nào
+  - quy trình tuyển dụng của công ty như thế nào
+  - bên mình phỏng vấn bao nhiêu vòng?
+  - gửi tớ quy trình interview được ko
+  - cho mình hỏi có bao nhiêu vòng phỏng vấn đó
+  - 'ứng viên xin việc phải phỏng vấn bao nhiu vòng '
+  - bên mình [f-tech](work_unit) phỏng vấn mấy vòng?
+  - tớ thích công ty quá, làm như nào để tôi trở thành nhân viên của [ftech](work_unit)
+    đây ha
+  - cho tôi hỏi bên mình [công nghệ và gia đình](work_unit) phỏng vấn mấy vòng?
+  - quy trình nhận CV của công ty thế nào
+  - quy trình tuyển dụng như nào
+  - mình pass curriculum vitae rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - cần phải phòng vấn bao nhiêu vòng hả
+  - '[f-tech](work_unit) [backend developer](position) phỏng vấn bao nhiêu vòng?'
+  - làm như nào để vào công ty làm việc đây nhỉ
+  - các bước trong quy trình tuyển dụng ntn
+  - gửi tôi quy trình phỏng vấn với ạ
+  - bên [ftech](work_unit) sẽ có bao nhiêu vòng phỏng vấn
+  - timi ơi, gửi tớ quy trình tuyển dụng đi
+  - tôi phải tham gia tận 2 vòng phỏng vấn mới đc vô [ftech](work_unit) làm việc à
+  - quy trình interview ntn đó
+  - 'có bao nhiu vòng phỏng vấn '
+  - cho mình xin quy trình interview được không
+  - cho tôi hỏi [f-tech](work_unit) phỏng vấn bao nhiêu vòng?
+  - công ty có quy trình tuyển dụng ntn
+  - quy trình tuyển dụng của công ty như nào
+  - gửi cho mình quy trình tuyển dụng được ko
+  - cho tớ hỏi có bao nhiêu vòng phỏng vấn đó
+  - ứng viên xin việc phải phỏng vấn bao nhiu vòng hả
+  - công ty [f tech](work_unit) phỏng vấn bao nhiêu vòng?
+  - tớ thích công ty quá, làm như thế nào để mình trở thành nhân viên của [f tech](work_unit)
+    đây nhỉ
+  - cho mình hỏi công ty [ftech](work_unit) phỏng vấn bao nhiêu vòng?
+  - quy trình nhận curriculum vitae của công ty ntn
+  - quy trình phỏng vấn như thế nào
+  - tớ pass resume rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - cần phải phòng vấn mấy vòng đó
+  - '[ftech](work_unit) [react native developer](position) phỏng vấn mấy vòng?'
+  - làm gì để vào công ty làm việc đây nhỉ
+  - các bước trong quy trình phỏng vấn như thế nào
+  - gửi mình quy trình phỏng vấn với ạ
+  - timi ơi, gửi cho tớ quy trình interview đi
+  - tôi phải tham gia tận 2 vòng phỏng vấn mới đc vô [f tech](work_unit) làm việc
+    à
+  - có mấy vòng phỏng vấn nhể
+  - cho tớ xin quy trình tuyển dụng được không
+  - cho tôi hỏi [công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - công ty có quy trình interview như nào
+  - quy trình phỏng vấn của công ty thế nào
+  - gửi tôi quy trình phỏng vấn được không
+  - 'cho tớ hỏi có bao nhiêu vòng phỏng vấn '
+  - ứng viên phải phỏng vấn bao nhiu vòng đó
+  - bên mình [công ty công nghệ và gia đình](work_unit) phỏng vấn mấy vòng?
+  - tớ thích công ty quá, làm sao để tớ trở thành nhân viên của [f-tech](work_unit)
+    đây nhể
+  - cho mình hỏi bên mình [công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu vòng?
+  - quy trình nhận resume của công ty ntn
+  - quy trình tuyển dụng như thế nào
+  - tôi pass resume rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - cần phải phòng vấn mấy vòng hả
+  - '[ftech](work_unit) [product owners](position) phỏng vấn bao nhiu vòng?'
+  - làm sao để vào công ty làm việc đây nhỉ
+  - các bước trong quy trình phỏng vấn ntn
+  - gửi cho mình quy trình phỏng vấn với ạ
+  - bên [f-tech](work_unit) sẽ có bao nhiêu vòng phỏng vấn
+  - timi ơi, gửi cho tôi quy trình tuyển dụng đi
+  - có mấy vòng phỏng vấn vậy
+  - cho mình xin quy trình phỏng vấn được ko
+  - cho tôi hỏi [công ty công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - công ty có quy trình tuyển dụng như nào
+  - quy trình phỏng vấn của công ty ntn
+  - gửi cho tôi quy trình phỏng vấn được không
+  - cho tôi hỏi có mấy vòng phỏng vấn đó
+  - người xin việc phải phỏng vấn bao nhiu vòng vậy
+  - công ty [ftech](work_unit) phỏng vấn mấy vòng?
+  - tớ thích công ty quá, làm thế nào để tớ trở thành nhân viên của [ftech](work_unit)
+    đây
+  - cho tớ hỏi bên mình [công ty công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu
+    vòng?
+  - quy trình nhận resume của công ty như thế nào
+  - quy trình interview ntn
+  - tớ pass CV rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - cần phải phòng vấn bao nhiêu vòng đó
+  - '[f tech](work_unit) [system administrator](position) phỏng vấn bao nhiêu vòng?'
+  - làm ntn để vào công ty làm việc đây nhể
+  - các bước trong quy trình interview như thế nào
+  - gửi cho tôi quy trình tuyển dụng với ạ
+  - timi ơi, gửi tôi quy trình tuyển dụng đi
+  - có mấy vòng phỏng vấn đó
+  - cho tôi xin quy trình tuyển dụng được ko
+  - cho tôi hỏi [cty công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu vòng?
+  - công ty có quy trình interview thế nào
+  - quy trình interview của công ty như thế nào
+  - gửi tôi quy trình interview được ko
+  - cho tôi hỏi có bao nhiu vòng phỏng vấn hả
+  - ứng viên phải phỏng vấn bao nhiêu vòng hả
+  - bên mình [cty công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu vòng?
+  - tôi thích công ty quá, làm gì để mình trở thành nhân viên của [f-tech](work_unit)
+    đây nhể
+  - cho tôi hỏi bên mình [công ty công nghệ và gia đình](work_unit) phỏng vấn bao
+    nhiêu vòng?
+  - quy trình nhận hồ sơ của công ty ntn
+  - mình pass resume rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - cần phải phòng vấn bao nhiu vòng hả
+  - '[f tech](work_unit) [VFX Animation](position) phỏng vấn mấy vòng?'
+  - làm như thế nào để vào công ty làm việc đây ha
+  - các bước trong quy trình interview thế nào
+  - gửi cho tôi quy trình phỏng vấn với ạ
+  - timi ơi, gửi tôi quy trình phỏng vấn đi
+  - có bao nhiêu vòng phỏng vấn hả
+  - cho mình xin quy trình tuyển dụng được ko
+  - cho tôi hỏi [ftech](work_unit) phỏng vấn mấy vòng?
+  - quy trình tuyển dụng của công ty thế nào
+  - gửi cho tôi quy trình interview được không
+  - cho tôi hỏi có bao nhiêu vòng phỏng vấn ha
+  - 'candidate phải phỏng vấn mấy vòng '
+  - công ty [f-tech](work_unit) phỏng vấn bao nhiu vòng?
+  - mình thích công ty quá, làm sao để mình trở thành nhân viên của [f tech](work_unit)
+    đây
+  - cho tớ hỏi công ty [f tech](work_unit) phỏng vấn bao nhiu vòng?
+  - quy trình nhận CV của công ty như thế nào
+  - tôi pass hồ sơ rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - 'cần phải phòng vấn bao nhiêu vòng '
+  - '[f tech](work_unit) [nhân viên kinh doanh thị trường Trung QUốc](position) phỏng
+    vấn bao nhiu vòng?'
+  - làm sao để vào công ty làm việc đây ha
+  - gửi cho mình quy trình interview với ạ
+  - timi ơi, gửi cho mình quy trình phỏng vấn đi
+  - có mấy vòng phỏng vấn hả
+  - cho tôi xin quy trình tuyển dụng được không
+  - cho tớ hỏi [f tech](work_unit) phỏng vấn bao nhiu vòng?
+  - công ty có quy trình phỏng vấn thế nào
+  - gửi tớ quy trình phỏng vấn được không
+  - cho mình hỏi có bao nhiêu vòng phỏng vấn nhỉ
+  - candidate phải phỏng vấn bao nhiu vòng hả
+  - công ty [f-tech](work_unit) phỏng vấn mấy vòng?
+  - tớ thích công ty quá, làm gì để tớ trở thành nhân viên của [f-tech](work_unit)
+    đây ha
+  - cho tớ hỏi công ty [ftech](work_unit) phỏng vấn mấy vòng?
+  - quy trình nhận hồ sơ của công ty như thế nào
+  - mình pass CV rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - cần phải phòng vấn mấy vòng vậy
+  - '[f-tech](work_unit) [os network](position) phỏng vấn bao nhiêu vòng?'
+  - làm như nào để vào công ty làm việc đây nhể
+  - gửi cho tớ quy trình phỏng vấn với ạ
+  - timi ơi, gửi tôi quy trình interview đi
+  - có bao nhiu vòng phỏng vấn ha
+  - cho tôi xin quy trình interview được ko
+  - cho mình hỏi [f-tech](work_unit) phỏng vấn bao nhiu vòng?
+  - gửi tớ quy trình phỏng vấn được ko
+  - cho tớ hỏi có bao nhiu vòng phỏng vấn vậy
+  - ứng viên xin việc phải phỏng vấn bao nhiêu vòng vậy
+  - công ty [f tech](work_unit) phỏng vấn bao nhiu vòng?
+  - tớ thích công ty quá, làm gì để tớ trở thành nhân viên của [f tech](work_unit)
+    đây
+  - cho tớ hỏi công ty [công ty công nghệ và gia đình](work_unit) phỏng vấn bao nhiu
+    vòng?
+  - quy trình nhận curriculum vitae của công ty thế nào
+  - cần phải phòng vấn bao nhiêu vòng nhể
+  - '[f tech](work_unit) [android developer](position) phỏng vấn bao nhiu vòng?'
+  - làm thế nào để vào công ty làm việc đây nhỉ
+  - gửi mình quy trình tuyển dụng với ạ
+  - timi ơi, gửi cho mình quy trình tuyển dụng đi
+  - có bao nhiu vòng phỏng vấn đó
+  - cho mình xin quy trình tuyển dụng được không
+  - cho tôi hỏi [f tech](work_unit) phỏng vấn bao nhiu vòng?
+  - gửi mình quy trình interview được không
+  - cho mình hỏi có bao nhiu vòng phỏng vấn đó
+  - thí sinh phải phỏng vấn bao nhiêu vòng hả
+  - công ty [cty công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - mình thích công ty quá, làm sao để tớ trở thành nhân viên của [f tech](work_unit)
+    đây
+  - cho mình hỏi công ty [cty công nghệ và gia đình](work_unit) phỏng vấn bao nhiu
+    vòng?
+  - quy trình nhận CV của công ty như nào
+  - tôi pass sơ yếu lý lịch rồi thì phải phỏng vấn thêm bao vòng nữa ạ
+  - 'cần phải phòng vấn bao nhiu vòng '
+  - '[f-tech](work_unit) [.net dev](position) phỏng vấn bao nhiu vòng?'
+  - làm như thế nào để vào công ty làm việc đây nhể
+  - gửi tôi quy trình interview với ạ
+  - timi ơi, gửi cho tôi quy trình phỏng vấn đi
+  - có bao nhiêu vòng phỏng vấn vậy
+  - cho tôi xin quy trình phỏng vấn được không
+  - cho tôi hỏi [ftech](work_unit) phỏng vấn bao nhiu vòng?
+  - gửi cho mình quy trình interview được không
+  - cho tớ hỏi có bao nhiêu vòng phỏng vấn nhỉ
+  - 'ứng viên phải phỏng vấn mấy vòng '
+  - công ty [cty công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu vòng?
+  - mình thích công ty quá, làm gì để tớ trở thành nhân viên của [f tech](work_unit)
+    đây nhỉ
+  - cho tớ hỏi công ty [công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu vòng?
+  - quy trình nhận hồ sơ của công ty như nào
+  - cần phải phòng vấn mấy vòng nhỉ
+  - '[f tech](work_unit) [system network](position) phỏng vấn mấy vòng?'
+  - gửi cho tôi quy trình interview với ạ
+  - timi ơi, gửi cho mình quy trình interview đi
+  - có bao nhiêu vòng phỏng vấn ha
+  - cho mình xin quy trình phỏng vấn được không
+  - cho mình hỏi [ftech](work_unit) phỏng vấn mấy vòng?
+  - gửi cho tớ quy trình phỏng vấn được không
+  - cho mình hỏi có bao nhiu vòng phỏng vấn vậy
+  - ứng viên xin việc phải phỏng vấn bao nhiu vòng vậy
+  - công ty [công ty công nghệ và gia đình](work_unit) phỏng vấn mấy vòng?
+  - mình thích công ty quá, làm như nào để tớ trở thành nhân viên của [f-tech](work_unit)
+    đây nhể
+  - cho tớ hỏi công ty [f-tech](work_unit) phỏng vấn bao nhiu vòng?
+  - quy trình nhận hồ sơ của công ty thế nào
+  - cần phải phòng vấn bao nhiu vòng nhể
+  - '[f-tech](work_unit) [full-stack](position) phỏng vấn mấy vòng?'
+  - có mấy vòng phỏng vấn nhỉ
+  - cho mình xin quy trình interview được ko
+  - cho tớ hỏi [công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu vòng?
+  - gửi cho tôi quy trình phỏng vấn được ko
+  - cho mình hỏi có bao nhiu vòng phỏng vấn hả
+  - 'thí sinh phải phỏng vấn bao nhiêu vòng '
+  - công ty [công ty công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - tớ thích công ty quá, làm thế nào để mình trở thành nhân viên của [f-tech](work_unit)
+    đây
+  - cho tôi hỏi công ty [công ty công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu
+    vòng?
+  - quy trình nhận sơ yếu lý lịch của công ty như nào
+  - cần phải phòng vấn bao nhiêu vòng nhỉ
+  - '[f tech](work_unit) [C++ dev](position) phỏng vấn bao nhiêu vòng?'
+  - gửi mình quy trình interview với ạ
+  - timi ơi, gửi mình quy trình phỏng vấn đi
+  - cho tớ hỏi [công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - gửi cho tớ quy trình interview được ko
+  - cho tớ hỏi có mấy vòng phỏng vấn vậy
+  - ứng viên xin việc phải phỏng vấn bao nhiêu vòng hả
+  - công ty [công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu vòng?
+  - tôi thích công ty quá, làm như thế nào để tớ trở thành nhân viên của [f-tech](work_unit)
+    đây nhỉ
+  - cho tớ hỏi bên mình [f-tech](work_unit) phỏng vấn bao nhiu vòng?
+  - '[f tech](work_unit) [data analyst](position) phỏng vấn bao nhiêu vòng?'
+  - làm như thế nào để vào công ty làm việc đây nhỉ
+  - có bao nhiu vòng phỏng vấn nhỉ
+  - cho mình hỏi [công ty công nghệ và gia đình](work_unit) phỏng vấn mấy vòng?
+  - gửi cho mình quy trình interview được ko
+  - cho tôi hỏi có bao nhiêu vòng phỏng vấn vậy
+  - người xin việc phải phỏng vấn bao nhiu vòng đó
+  - bên mình [f-tech](work_unit) phỏng vấn bao nhiêu vòng?
+  - mình thích công ty quá, làm gì để tớ trở thành nhân viên của [ftech](work_unit)
+    đây
+  - cho tớ hỏi bên mình [f-tech](work_unit) phỏng vấn bao nhiêu vòng?
+  - quy trình nhận resume của công ty thế nào
+  - cần phải phòng vấn mấy vòng ha
+  - '[f-tech](work_unit) [backend](position) phỏng vấn mấy vòng?'
+  - cho tớ hỏi [cty công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - gửi cho tôi quy trình tuyển dụng được không
+  - cho tớ hỏi có bao nhiêu vòng phỏng vấn vậy
+  - người xin việc phải phỏng vấn mấy vòng đó
+  - công ty [công ty công nghệ và gia đình](work_unit) phỏng vấn bao nhiêu vòng?
+  - tôi thích công ty quá, làm như nào để tớ trở thành nhân viên của [ftech](work_unit)
+    đây nhỉ
+  - cho mình hỏi bên mình [f tech](work_unit) phỏng vấn bao nhiu vòng?
+  - '[ftech](work_unit) [game 3d prod](position) phỏng vấn mấy vòng?'
+  - làm thế nào để vào công ty làm việc đây nhể
+  - cho mình hỏi [công nghệ và gia đình](work_unit) phỏng vấn bao nhiu vòng?
+  - gửi tớ quy trình tuyển dụng được ko

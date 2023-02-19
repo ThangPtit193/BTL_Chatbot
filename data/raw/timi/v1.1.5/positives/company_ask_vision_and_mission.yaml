@@ -1,0 +1,373 @@
+positives:
+- intent: company_ask_vision_and_mission
+  examples:
+  - tớ muốn hỏi công ty có tầm nhìn dài hạn như nào
+  - cho tớ hỏi công ty bạn có tầm nhìn là gì
+  - từ khi thành lập công ty có tầm nhìn dài hạn gì trong lĩnh vực cntt
+  - dự tính phát triển trong tương lai xa của [f-tech](work_unit) thế nào
+  - công ty có đặt giới hạn cho mình trong mảng học máy này ko
+  - tôi muốn hỏi công ty có tầm nhìn phát triển như nào
+  - ' tầm nhìn của công ty như thế nào'
+  - công ty mong muốn đạt được hay hoàn thành điều gì
+  - tầm nhìn dài hạn của công ty mình là gì
+  - mày có biết tầm nhìn phát triển của công ty trong 10 năm tới là gì không
+  - tầm nhìn chiến lược của công ty là gì hả
+  - ' tầm nhìn của công ty trong 10 năm tới là gì'
+  - công ty mình có tầm nhìn như thế nào trong 10 năm tới
+  - vision của công ty là gì trong lĩnh vực này
+  - định hướng phát triển của công ty trong tương lai là gì
+  - tầm nhìn phát triển của [phó phòng](bod) là gì trong lĩnh vực AI
+  - bot có biết tầm nhìn của công ty trong tương lai ntn ko
+  - công ty có tầm nhìn phát triển ntn trong 10 năm tới
+  - kế hoạch phát triển của công ty là gì
+  - cty có vision như nào
+  - ' công ty có tầm nhìn dài hạn như nào'
+  - ' công ty bạn có vision là gì'
+  - từ khi thành lập công ty có vision gì trong lĩnh vực cntt
+  - dự tính phát triển trong tương lai gần của [f-tech](work_unit) thế nào
+  - công ty có đặt target cho mình trong mảng trí tuệ nhân tạo này không
+  - ' công ty có tầm nhìn phát triển như nào'
+  - ' vision của công ty từ khi thành lập là gì'
+  - tầm nhìn của công ty mình là gì
+  - bạn có biết tầm nhìn phát triển của công ty trong 5 năm tới là gì ko
+  - tầm nhìn chiến lược của công ty là gì
+  - ' tầm nhìn chiến lược của công ty trong 10 năm tới là gì'
+  - công ty chúng ta có tầm nhìn như thế nào
+  - tầm nhìn dài hạn của công ty là gì vậy trong lĩnh vực AI
+  - tầm nhìn phát triển của chúng ta là gì trong lĩnh vực AI
+  - em có biết tầm nhìn phát triển của công ty ntn không
+  - cty có tầm nhìn chiến lược như nào trong 10 năm tới
+  - công ty có tầm nhìn phát triển ntn
+  - mình muốn hỏi công ty có tầm nhìn phát triển như nào trong lĩnh vực CNTT
+  - tớ muốn hỏi công ty bạn có tầm nhìn chiến lược là gì
+  - từ khi thành lập công ty có tầm nhìn dài hạn gì trong lĩnh vực này
+  - dự tính phát triển trong tương lai xa của [f tech](work_unit) thế nào
+  - công ty có đặt giới hạn cho mình trong lĩnh vực AI này ko
+  - cho tôi hỏi công ty có tầm nhìn phát triển trong lĩnh vực CNTT ntn
+  - cho tớ hỏi tầm nhìn phát triển của công ty là gì
+  - vision của công ty chúng ta là gì
+  - em có biết tầm nhìn dài hạn của công ty trong 10 năm tới là gì ko
+  - tầm nhìn dài hạn của công ty là ntn
+  - tôi muốn hỏi tầm nhìn chiến lược của công ty trong 5 năm tới là gì
+  - cty chúng ta có tầm nhìn như nào trong 5 năm tới
+  - tầm nhìn chiến lược của công ty là gì trong lĩnh vực này
+  - vision của chúng ta là gì trong lĩnh vực cntt
+  - bạn có biết tầm nhìn dài hạn của công ty ntn không
+  - công ty có tầm nhìn phát triển như thế nào trong 10 năm tới
+  - cty có vision là gì
+  - cho tớ hỏi công ty có tầm nhìn dài hạn như nào
+  - cho mình hỏi công ty bạn có vision là gì
+  - từ khi thành lập công ty có tầm nhìn phát triển gì trong lĩnh vực AI
+  - dự tính phát triển trong tương lai xa của [ftech](work_unit) thế nào
+  - công ty có đặt target cho mình trong lĩnh vực ML này ko
+  - mình muốn hỏi công ty có tầm nhìn chiến lược là gì
+  - ' tầm nhìn dài hạn của công ty ntn'
+  - tầm nhìn phát triển của công ty mình là gì
+  - mày có biết tầm nhìn của công ty trong 10 năm tới là gì ko
+  - vision của công ty là gì
+  - tớ muốn hỏi vision của công ty trong 10 năm tới là gì
+  - công ty mình có tầm nhìn ntn trong 5 năm tới
+  - tầm nhìn của công ty là thế nào trong lĩnh vực cntt
+  - tầm nhìn dài hạn của chúng ta là gì trong lĩnh vực AI
+  - mày có biết tầm nhìn dài hạn của công ty như nào không
+  - cty có tầm nhìn ntn trong 10 năm tới
+  - công ty có tầm nhìn dài hạn là gì
+  - ' công ty có tầm nhìn dài hạn như thế nào'
+  - ' công ty bạn có tầm nhìn là gì'
+  - từ khi thành lập công ty có tầm nhìn chiến lược gì trong lĩnh vực AI
+  - dự tính phát triển trong tương lai xa của [f tech](work_unit) như nào
+  - công ty có đặt target cho mình trong lĩnh vực trí tuệ nhân tạo này ko
+  - ' công ty có vision trong tương lai là gì'
+  - tớ muốn hỏi tầm nhìn chiến lược của công ty như nào
+  - vision của cty chúng ta là gì
+  - bạn có biết tầm nhìn phát triển của công ty trong 10 năm tới là gì không
+  - tầm nhìn dài hạn của công ty là gì
+  - ' vision của công ty trong 5 năm tới là gì'
+  - công ty chúng ta có tầm nhìn là gì
+  - tầm nhìn phát triển của công ty là thế nào trong lĩnh vực AI
+  - vision của chúng ta là gì trong lĩnh vực AI
+  - mày có biết tầm nhìn của công ty là gì ko
+  - cty có tầm nhìn phát triển như thế nào trong 5 năm tới
+  - công ty bạn có tầm nhìn dài hạn như nào
+  - cho tớ hỏi công ty có vision như nào từ khi thành lập
+  - mình muốn hỏi công ty bạn có tầm nhìn phát triển là gì
+  - từ khi thành lập công ty có tầm nhìn phát triển gì trong lĩnh vực này
+  - dự tính phát triển trong tương lai xa của [f-tech](work_unit) như nào
+  - công ty có đặt mục tiêu cho mình trong lĩnh vực học máy này ko
+  - ' công ty có tầm nhìn từ khi thành lập như nào'
+  - tớ muốn hỏi tầm nhìn phát triển của công ty ntn
+  - tầm nhìn dài hạn của cty chúng ta là gì
+  - timi có biết tầm nhìn phát triển của công ty trong 10 năm tới là gì ko
+  - tầm nhìn phát triển của công ty là thế nào
+  - ' tầm nhìn chiến lược của công ty trong 5 năm tới là gì'
+  - cty mình có tầm nhìn như nào
+  - vision của công ty là gì trong lĩnh vực AI
+  - tầm nhìn chiến lược của lãnh đạo là gì trong lĩnh vực này
+  - mầy có biết tầm nhìn phát triển của công ty trong tương lai ntn không
+  - cty có tầm nhìn dài hạn như nào trong 10 năm tới
+  - cty bạn có tầm nhìn phát triển như thế nào
+  - tôi muốn hỏi công ty có tầm nhìn phát triển ntn
+  - tôi muốn hỏi công ty bạn có vision là gì
+  - từ khi thành lập công ty có tầm nhìn gì trong lĩnh vực cntt
+  - dự tính phát triển trong tương lai xa của [f tech](work_unit) ntn
+  - công ty có đặt giới hạn cho mình trong mảng trí tuệ nhân tạo này không
+  - cho tôi hỏi công ty có tầm nhìn dài hạn trong lĩnh vực CNTT là gì
+  - ' tầm nhìn dài hạn của công ty trong lĩnh vực CNTT như nào'
+  - tầm nhìn dài hạn của cty mình là gì
+  - timi có biết tầm nhìn phát triển của công ty trong 10 năm tới là gì không
+  - tầm nhìn của công ty là thế nào
+  - tớ muốn hỏi tầm nhìn phát triển của công ty trong 5 năm tới là gì
+  - công ty mình có tầm nhìn như nào
+  - tầm nhìn của công ty là gì trong lĩnh vực cntt
+  - tầm nhìn phát triển của [giám đốc kinh doanh](bod) là gì trong lĩnh vực này
+  - bot có biết tầm nhìn chiến lược của công ty ntn không
+  - công ty có tầm nhìn dài hạn như nào trong 10 năm tới
+  - công ty có tầm nhìn như thế nào
+  - cho mình hỏi công ty có tầm nhìn chiến lược như thế nào trong lĩnh vực AI
+  - cho tớ hỏi công ty bạn có tầm nhìn dài hạn là gì
+  - từ khi thành lập công ty có vision gì trong lĩnh vực này
+  - dự tính phát triển trong tương lai gần của [f tech](work_unit) thế nào
+  - công ty có đặt target cho mình trong lĩnh vực AI này ko
+  - cho mình hỏi công ty có tầm nhìn là gì
+  - ' vision của công ty trong lĩnh vực CNTT như nào'
+  - vision của cty mình là gì
+  - mày có biết tầm nhìn phát triển của công ty trong 10 năm tới là gì ko
+  - vision của công ty là như nào
+  - ' tầm nhìn dài hạn của công ty trong 5 năm tới là gì'
+  - cty mình có tầm nhìn là gì trong 5 năm tới
+  - tầm nhìn của công ty là thế nào trong lĩnh vực này
+  - vision của [phó phòng](bod) là gì trong lĩnh vực này
+  - m có biết tầm nhìn phát triển của công ty trong lĩnh vực AI như thế nào không
+  - cty có tầm nhìn phát triển ntn trong 5 năm tới
+  - cty có tầm nhìn phát triển là gì
+  - cho mình hỏi công ty có tầm nhìn phát triển như nào
+  - ' công ty bạn có tầm nhìn phát triển là gì'
+  - từ khi thành lập công ty có tầm nhìn chiến lược gì trong lĩnh vực này
+  - dự tính phát triển trong tương lai gần của [f tech](work_unit) như thế nào
+  - công ty có đặt mục tiêu cho mình trong mảng ML này ko
+  - ' công ty có tầm nhìn dài hạn ntn'
+  - ' tầm nhìn dài hạn của công ty như nào'
+  - vision của công ty mình là gì
+  - m có biết tầm nhìn dài hạn của công ty trong 5 năm tới là gì không
+  - tầm nhìn chiến lược của công ty là thế nào
+  - tớ muốn hỏi tầm nhìn chiến lược của công ty trong 10 năm tới là gì
+  - công ty chúng ta có tầm nhìn như nào
+  - tầm nhìn của công ty là gì trong lĩnh vực này
+  - tầm nhìn của chúng ta là gì trong lĩnh vực AI
+  - m có biết vision của công ty là gì không
+  - cty có vision như nào trong 10 năm tới
+  - cty bạn có tầm nhìn là gì
+  - ' công ty có tầm nhìn là gì trong lĩnh vực AI'
+  - tớ muốn hỏi công ty bạn có tầm nhìn phát triển là gì
+  - từ khi thành lập công ty có tầm nhìn gì trong lĩnh vực này
+  - dự tính phát triển trong tương lai gần của [f tech](work_unit) như nào
+  - công ty có đặt mục tiêu cho mình trong mảng học máy này ko
+  - cho tôi hỏi công ty có vision trong tương lai ntn
+  - ' tầm nhìn phát triển của công ty như nào'
+  - tầm nhìn chiến lược của cty chúng ta là gì
+  - mầy có biết tầm nhìn dài hạn của công ty trong 5 năm tới là gì không
+  - tầm nhìn của công ty là như nào
+  - cho tớ hỏi tầm nhìn chiến lược của công ty trong 10 năm tới là gì
+  - cty mình có tầm nhìn như thế nào trong 10 năm tới
+  - tầm nhìn phát triển của công ty là thế nào trong lĩnh vực này
+  - tầm nhìn phát triển của chúng ta là gì trong lĩnh vực cntt
+  - m có biết tầm nhìn chiến lược của công ty ntn ko
+  - công ty có tầm nhìn chiến lược là gì trong 5 năm tới
+  - công ty bạn có tầm nhìn dài hạn ntn
+  - tớ muốn hỏi công ty có tầm nhìn như nào
+  - ' công ty bạn có tầm nhìn chiến lược là gì'
+  - từ khi thành lập công ty có tầm nhìn phát triển gì trong lĩnh vực cntt
+  - dự tính phát triển trong tương lai gần của [ftech](work_unit) như thế nào
+  - công ty có đặt giới hạn cho mình trong lĩnh vực học máy này không
+  - cho mình hỏi công ty có vision trong lĩnh vực AI là gì
+  - ' tầm nhìn phát triển của công ty trong lĩnh vực AI như nào'
+  - tầm nhìn dài hạn của công ty chúng ta là gì
+  - mầy có biết vision của công ty trong 10 năm tới là gì ko
+  - tầm nhìn phát triển của công ty là gì hả
+  - cho tớ hỏi tầm nhìn dài hạn của công ty trong 10 năm tới là gì
+  - công ty chúng ta có tầm nhìn ntn
+  - tầm nhìn chiến lược của công ty là như nào trong lĩnh vực AI
+  - tầm nhìn của [phó phòng](bod) là gì trong lĩnh vực AI
+  - bạn có biết tầm nhìn dài hạn của công ty là gì không
+  - công ty có tầm nhìn dài hạn là gì trong 5 năm tới
+  - công ty có tầm nhìn chiến lược như nào
+  - cho tôi hỏi công ty có tầm nhìn phát triển là gì từ khi thành lập
+  - cho tớ hỏi công ty bạn có vision là gì
+  - từ khi thành lập công ty có vision gì trong lĩnh vực AI
+  - dự tính phát triển trong tương lai gần của [ftech](work_unit) thế nào
+  - công ty có đặt mục tiêu cho mình trong lĩnh vực AI này không
+  - mình muốn hỏi công ty có tầm nhìn phát triển ntn
+  - cho tớ hỏi vision của công ty ntn
+  - tầm nhìn phát triển của cty chúng ta là gì
+  - m có biết tầm nhìn của công ty trong 5 năm tới là gì không
+  - tầm nhìn dài hạn của công ty là thế nào
+  - mình muốn hỏi sứ mệnh mà công ty mong muốn là gì
+  - sứ mệnh mà [COO](bod) mong muốn là gì
+  - '[giám đốc bộ phận chăm sóc khách hàng](bod) mong muốn công ty mang sứ mệnh gì'
+  - mày có biết sứ mệnh của công ty là gì không
+  - '[giám đốc tiếp thị](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà [CBO](bod) mong muốn là gì
+  - sứ mệnh của công ty là gì
+  - '[giám đốc stao](bod) mong muốn công ty mang sứ mệnh gì'
+  - cho tớ hỏi sứ mệnh của công ty là gì
+  - tôi muốn hỏi công ty có sứ mệnh là gì
+  - tôi muốn hỏi sứ mệnh của công ty là gì
+  - sứ mệnh mà [giám đốc stao](bod) mong muốn là gì
+  - em có biết sứ mệnh của công ty là gì không
+  - sứ mệnh mà [giám đốc an ninh](bod) mong muốn là gì
+  - '[CEO](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh của công ty mình như thế nào vậy hả
+  - cho mình hỏi sứ mệnh mà công ty mong muốn là gì
+  - '[leader](bod) mong muốn công ty mang sứ mệnh gì'
+  - timi có biết sứ mệnh của công ty ntn không
+  - sứ mệnh mà [BOD](bod) mong muốn là gì
+  - '[phó giám đốc](bod) mong muốn công ty mang sứ mệnh gì'
+  - '[giám đốc sản phẩm](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà [CPO](bod) mong muốn là gì
+  - '[giám đốc nhân sự](bod) mong muốn công ty mang sứ mệnh gì'
+  - '[BOD](bod) mong muốn công ty mang sứ mệnh gì'
+  - '[trưởng team](bod) mong muốn công ty mang sứ mệnh gì'
+  - mày có biết sứ mệnh của công ty ntn không
+  - '[COO](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh của công ty chúng ta ntn vậy hả
+  - sứ mệnh mà [giám đốc marketing](bod) mong muốn là gì
+  - '[CMO](bod) mong muốn công ty mang sứ mệnh gì'
+  - bạn có biết sứ mệnh của công ty là gì không
+  - '[CAIO](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà ban lãnh đạo mong muốn là gì
+  - cho tôi hỏi công ty có sứ mệnh là gì
+  - '[CTO](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà [phó giám đốc](bod) mong muốn là gì
+  - sứ mệnh của công ty mình là gì vậy
+  - m có biết sứ mệnh của công ty là gì không
+  - '[ceo](bod) mong muốn công ty mang sứ mệnh gì'
+  - lãnh đạo mong muốn công ty mang sứ mệnh gì
+  - sứ mệnh mà [CIA](bod) mong muốn là gì
+  - '[giám đốc thường trực](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà [CIAO](bod) mong muốn là gì
+  - cho mình hỏi công ty có sứ mệnh ntn
+  - '[giám đốc marketing](bod) mong muốn công ty mang sứ mệnh gì'
+  - cho mình hỏi công ty có sứ mệnh như thế nào
+  - sứ mệnh mà [giám đốc info](bod) mong muốn là gì
+  - sứ mệnh mà [leader](bod) mong muốn là gì
+  - sứ mệnh của công ty chúng ta là gì
+  - bot có biết sứ mệnh của công ty là gì không
+  - sứ mệnh mà [giám đốc thường trực](bod) mong muốn là gì
+  - '[CIA](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà [giám đốc bộ phận chăm sóc khách hàng](bod) mong muốn là gì
+  - mình muốn hỏi sứ mệnh của công ty ntn
+  - tớ muốn hỏi sứ mệnh của công ty ntn
+  - '[BOM](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà [CFO](bod) mong muốn là gì
+  - '[CCO](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà [giám đốc nhân sự](bod) mong muốn là gì
+  - cho mình hỏi sứ mệnh của công ty là gì
+  - công ty có sứ mệnh là gì
+  - '[phó phòng](bod) mong muốn công ty mang sứ mệnh gì'
+  - mình muốn hỏi công ty có sứ mệnh ntn
+  - cậu có biết sứ mệnh của công ty ntn không
+  - '[giám đốc product](bod) mong muốn công ty mang sứ mệnh gì'
+  - tớ muốn hỏi sứ mệnh của công ty là gì
+  - cho tôi hỏi sứ mệnh của công ty ntn
+  - sứ mệnh của công ty như thế nào
+  - sứ mệnh mà [CAIO](bod) mong muốn là gì
+  - m có biết sứ mệnh của công ty như thế nào không
+  - sứ mệnh mà [CTO](bod) mong muốn là gì
+  - cậu có biết sứ mệnh của công ty như thế nào không
+  - sứ mệnh của công ty mình ntn
+  - sứ mệnh mà [trưởng phòng](bod) mong muốn là gì
+  - sứ mệnh mà [CSO](bod) mong muốn là gì
+  - công ty có sứ mệnh như nào
+  - mình muốn hỏi công ty có sứ mệnh là gì
+  - sứ mệnh mà lãnh đạo mong muốn là gì
+  - m có biết sứ mệnh của công ty ntn không
+  - cho tôi hỏi công ty có sứ mệnh ntn
+  - sứ mệnh của công ty mình là gì vậy hả
+  - '[giám đốc nội chính](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà [giám đốc thông tin](bod) mong muốn là gì
+  - sứ mệnh mà [giám đốc information](bod) mong muốn là gì
+  - '[ciao](bod) mong muốn công ty mang sứ mệnh gì'
+  - bạn có biết sứ mệnh của công ty ntn không
+  - công ty chúng ta sẽ mang lại sứ mệnh gì cho xã hội
+  - tôi muốn hỏi công ty có sứ mệnh như thế nào
+  - sứ mệnh của công ty ntn
+  - '[giám đốc kinh doanh](bod) mong muốn công ty mang sứ mệnh gì'
+  - sứ mệnh mà [cio](bod) mong muốn là gì
+  - mình muốn hỏi sứ mệnh của công ty như thế nào
+  - '[trưởng phòng](bod) mong muốn công ty mang sứ mệnh gì'
+  - ban lãnh đạo mong muốn công ty mang sứ mệnh gì
+  - sứ mệnh của công ty chúng ta như thế nào vậy hả
+  - sứ mệnh mà [HRM](bod) mong muốn là gì
+  - cho tôi hỏi sứ mệnh của công ty như thế nào
+  - sứ mệnh của công ty mình như thế nào
+  - '[cio](bod) mong muốn công ty mang sứ mệnh gì'
+  - tầm nhìn và sứ mệnh của công ty là thế nào hả
+  - tầm nhìn chiến lược và mission của công ty là như nào hả
+  - tầm nhìn phát triển và sứ mệnh của công ty là gì vậy hả
+  - trong tương lai công ty nghĩ mình sẽ đi đến đâu
+  - tầm nhìn và sứ mệnh của công ty là thế nào vậy hả
+  - tầm nhìn và sứ mệnh của công ty là gì hả vậy
+  - vision và sứ mệnh của công ty là thế nào hả
+  - tầm nhìn phát triển và mission của công ty là gì vậy hả vậy hả
+  - vision và sứ mệnh của công ty là như thế nào vậy
+  - '[f tech](work_unit) mang trong mình tầm nhìn phát triển và sứ mệnh nào hả'
+  - tầm nhìn phát triển và sứ mệnh của công ty là gì vậy hả vậy hả
+  - tầm nhìn dài hạn và mission của công ty là như nào vậy
+  - vision và mission của công ty là gì hả
+  - tầm nhìn và mission của công ty là gì vậy
+  - công ty có mision và vision chứ
+  - tầm nhìn và sứ mệnh của công ty là như thế nào hả
+  - tầm nhìn phát triển và sứ mệnh của công ty là ntn vậy hả
+  - tầm nhìn và sứ mệnh của công ty là gì hả vậy hả
+  - vision và mission của công ty là ntn vậy
+  - tầm nhìn và mission của công ty là gì vậy hả hả
+  - công ty có tầm nhìn và sứ mệnh chứ ha
+  - công ty có tầm nhìn dài hạn và sứ mệnh chứ nhể
+  - tầm nhìn dài hạn và sứ mệnh của công ty là gì hả vậy
+  - vision và mission của công ty là ntn hả
+  - tầm nhìn chiến lược và mission của công ty là gì vậy hả vậy
+  - tầm nhìn chiến lược và sứ mệnh của công ty là gì vậy hả hả
+  - tầm nhìn và sứ mệnh của công ty là như thế nào vậy hả
+  - công ty có tầm nhìn dài hạn và mission chứ nhể
+  - tầm nhìn phát triển và mission của công ty là thế nào hả
+  - tầm nhìn và mission của công ty là gì hả vậy
+  - trong tương lai [ftech](work_unit) nghĩ mình sẽ đi đến đâu
+  - tầm nhìn chiến lược và mission của công ty là thế nào vậy hả
+  - tầm nhìn chiến lược và mission của công ty là gì hả vậy
+  - tầm nhìn dài hạn và sứ mệnh của công ty là gì vậy hả vậy
+  - vision và mission của công ty là gì vậy
+  - công ty có vision và sứ mệnh chứ nhỉ
+  - tầm nhìn phát triển và sứ mệnh của công ty là gì vậy hả vậy
+  - vision và sứ mệnh của công ty là thế nào vậy hả
+  - '[f-tech](work_unit) mang trong mình vision và sứ mệnh nào vậy'
+  - công ty có tầm nhìn phát triển và mission chứ nhể
+  - tầm nhìn phát triển và sứ mệnh của công ty là gì vậy hả hả
+  - tầm nhìn phát triển và mission của công ty là gì vậy hả hả
+  - tầm nhìn chiến lược và sứ mệnh của công ty là như nào vậy hả
+  - tầm nhìn dài hạn và sứ mệnh của công ty là như nào hả
+  - tầm nhìn và mission của công ty là như nào vậy
+  - trong tương lai [f tech](work_unit) nghĩ mình sẽ đi đến đâu
+  - tầm nhìn dài hạn và mission của công ty là gì vậy vậy
+  - tầm nhìn dài hạn và sứ mệnh của công ty là như nào vậy hả
+  - tầm nhìn và sứ mệnh của công ty là như nào vậy hả
+  - tầm nhìn dài hạn và sứ mệnh của công ty là như thế nào vậy
+  - tầm nhìn dài hạn và mission của công ty là gì hả vậy hả
+  - công ty có tầm nhìn phát triển và mission chứ ha
+  - tầm nhìn chiến lược và sứ mệnh của công ty là thế nào vậy hả
+  - '[f-tech](work_unit) mang trong mình tầm nhìn và sứ mệnh nào vậy'
+  - công ty có tầm nhìn phát triển và sứ mệnh chứ ha
+  - '[f tech](work_unit) mang trong mình tầm nhìn và sứ mệnh nào vậy'
+  - vision và sứ mệnh của công ty là gì vậy
+  - vision và mission của công ty là gì vậy vậy hả
+  - '[ftech](work_unit) có mision và vision chứ'
+  - vision và sứ mệnh của công ty là gì vậy vậy
+  - tầm nhìn chiến lược và sứ mệnh của công ty là thế nào hả
+  - tầm nhìn dài hạn và sứ mệnh của công ty là ntn hả
+  - vision và sứ mệnh của công ty là gì vậy hả
+  - tầm nhìn và sứ mệnh của công ty là gì vậy
+  - tầm nhìn phát triển và mission của công ty là như nào vậy hả
+  - tầm nhìn chiến lược và mission của công ty là gì vậy vậy
+  - tầm nhìn dài hạn và mission của công ty là như nào hả
+  - tầm nhìn và mission của công ty là thế nào vậy
+  - công ty có tầm nhìn và mission chứ ha
+  - tầm nhìn chiến lược và sứ mệnh của công ty là gì vậy vậy hả

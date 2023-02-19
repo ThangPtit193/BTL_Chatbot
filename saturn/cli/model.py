@@ -97,7 +97,7 @@ def push(model_path, name, replace):
         # Replace _ with - in name and " " by "-"
         name = name.replace("_", "-").replace(" ", "-")
 
-    axiom_wrapper.upload_model(model_name=name, dir_path=model_path, replace=replace)
+    axiom_wrapper.upload_model(model_name=name, model_path=model_path, replace=replace)
 
 
 @model.command()
