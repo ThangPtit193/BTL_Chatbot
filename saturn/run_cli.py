@@ -88,6 +88,7 @@ def release(config):
     ).ask()
     if is_agree_upload:
         # axiom_wrapper.upload_model(model_name=model_name, model_path=model_path, replace=True)
+        _logger.info(f"Uploading model from '{model_path}' with name '{model_name}'")
         ModelHub().upload_model(model_name=model_name, model_path=model_path, replace=True)
     else:
         print("Aborting...")

@@ -116,15 +116,23 @@ class CustomSentenceTransformer(SentenceTransformer):
         if not torch.cuda.is_available():
             device = "cpu"
         model = None
-        print(model_name_or_path)
-        if os.path.isdir(model_name_or_path):
-            _logger.info(f"Loading model from local: '{model_name_or_path}'")
+
+        for name in [
+            model_name_or_path,
+            f"sentence-transformers/{model_name_or_path}"
+        ]:
             try:
-                model = CustomSentenceTransformer(model_name_or_path, device=device)
-            except Exception as e:
-                _logger.error(f"Cannot load pretrained model from {model_name_or_path}, "
-                              f"Because {e}")
-        else:
+                _logger.info(f"Trying to load model from hugging face: '{name}'")
+                model = CustomSentenceTransformer(name, device=device)
+                _logger.info(f"Loaded model successfully from hugging face: '{name}'")
+            except (Exception,):
+                model = None
+                _logger.error(f"Cannot load pretrained model from hugging face: '{name}'")
+
+            if model:
+                break
+
+        if not model:
             _logger.info(f"Loading model from Axiom model Hub: '{model_name_or_path}'")
             model_name_or_path = model_hub.download_model(
                 model_name_or_path, os.path.join(constants.SATURN_DIR_MODEL, model_name_or_path)
