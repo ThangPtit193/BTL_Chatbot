@@ -28,7 +28,3 @@ termcolor~=1.1.0
 setuptools~=58.0.4
 termcolor
 bottleneck
-comet@ https://minio.dev.ftech.ai/lib-packages/comet-7.3.0rc1-py3-none-any.whl?versionId=5de3e2b5-ec3b-436e-aeff-f7e3b5713269
-venus@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/venus-1.2.3rc4-py3-none-any.whl
-vaxiom_client@http://minio.dev.ftech.ai/libs-packages-v0.1-0e4dcd9d/vaxiom_client-0.1.0rc5-py3-none-any.whl
-
