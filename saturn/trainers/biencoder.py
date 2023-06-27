@@ -104,11 +104,11 @@ class BiencoderTrainer:
                     global_step += 1
 
                     if self.args.logging_steps > 0 and global_step % self.args.logging_steps == 0:
-                        print("\nTuning metrics:", self.args.tuning_metric)
+                        logger.info(f"Tuning metrics: {self.args.tuning_metric}")
                         results = self.evaluate("eval")
                         early_stopping(results, self.model, self.args)
                         if early_stopping.early_stop:
-                            print("Early stopping")
+                            logger.info("Early stopping")
                             break
 
                     # if self.args.save_steps > 0 and global_step % self.args.save_steps == 0:

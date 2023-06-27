@@ -50,7 +50,7 @@ def _setup_logger():
     console_handler = logging.StreamHandler()
     console_handler.setFormatter(log_format)
 
-    data_dir = './data/'
+    data_dir = './logs/'
     os.makedirs(data_dir, exist_ok=True)
     file_handler = logging.FileHandler('{}/log.txt'.format(data_dir))
     file_handler.setFormatter(log_format)

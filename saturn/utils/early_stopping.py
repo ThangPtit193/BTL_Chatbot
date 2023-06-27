@@ -3,6 +3,8 @@ import os
 import numpy as np
 import torch
 
+from saturn.utils.utils import logger
+
 
 class EarlyStopping:
     """Early stops the training if validation loss doesn't improve after a given patience."""
@@ -32,7 +34,7 @@ class EarlyStopping:
             self.save_checkpoint(val_loss, model, args)
         elif score < self.best_score:
             self.counter += 1
-            print(f"EarlyStopping counter: {self.counter} out of {self.patience}")
+            logger.info(f"EarlyStopping counter: {self.counter} out of {self.patience}")
             if self.counter >= self.patience:
                 self.early_stop = True
         else:
@@ -44,11 +46,11 @@ class EarlyStopping:
         """Saves model when validation loss decreases or accuracy/f1 increases."""
         if self.verbose:
             if args.tuning_metric == "loss":
-                print(
+                logger.info(
                     f"Validation loss decreased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model ..."
                 )
             else:
-                print(
+                logger.info(
                     f"{args.tuning_metric} increased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model ..."
                 )
         model.save_pretrained(args.model_dir)
