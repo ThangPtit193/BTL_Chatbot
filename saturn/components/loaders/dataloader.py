@@ -84,6 +84,7 @@ def create_data_to_features(
     tokenizer,
     cls_token_segment_id=0,
     pad_token_segment_id=0,
+    sequence_a_segment_id=0,
     mask_padding_with_zero=True,
 ):
     # Setting based on the current model type
@@ -152,8 +153,11 @@ def create_data_to_features(
 
         # Add [SEP] token
         query_tokens += [sep_token]
+        token_type_ids_query = [sequence_a_segment_id] * len(query_tokens)
         document_tokens += [sep_token]
+        token_type_ids_document = [sequence_a_segment_id] * len(document_tokens)
         response_tokens += [sep_token]
+        token_type_ids_response = [sequence_a_segment_id] * len(response_tokens)
 
         # Add [CLS] token
         query_tokens = [cls_token] + query_tokens
@@ -211,7 +215,7 @@ def create_data_to_features(
             len(input_ids_query), args.max_seq_len_query
         )
         assert (
-            len(input_ids_document) == args.max_seq_len_query
+            len(input_ids_document) == args.max_seq_len_document
         ), "Error with input length {} vs {}".format(
             len(input_ids_document), args.max_seq_len_document
         )
@@ -252,12 +256,18 @@ class Processor:
     @classmethod
     def _read_file(cls, input_file, quotechar=None):
         # read jsonline
-        pass
+        _data = []
+        with open(input_file, "r", encoding="utf-8") as f:
+            for line in f:
+                _data.append(
+                    json.loads(line)
+                )
+        return _data
 
     def _create_examples(self, dataset, set_type):
         """Creates examples for the training and dev sets."""
         examples = []
-        for i, datapoint in dataset:
+        for i, datapoint in enumerate(dataset):
             guid = "%s-%s" % (set_type, i)
             # 1. query
             query = datapoint["query"]
@@ -291,7 +301,7 @@ class Processor:
         data_path = os.path.join(self.args.data_dir, mode)
         logger.info("LOOKING AT {}".format(data_path))
         return self._create_examples(
-            dataset=self._read_file(os.path.join(data_path)), set_type=mode
+            dataset=self._read_file(os.path.join(data_path, "data.jsonl")), set_type=mode
         )
 
 
@@ -313,12 +323,12 @@ def load_and_cache_examples(args, tokenizer, mode):
         logger.info("Creating features from dataset file at %s", args.data_dir)
         if mode == "train":
             examples = processor.get_examples("train")
-        elif mode == "dev":
-            examples = processor.get_examples("dev")
+        elif mode == "eval":
+            examples = processor.get_examples("eval")
         elif mode == "test":
             examples = processor.get_examples("test")
         else:
-            raise Exception("For mode, Only train, dev, test is available")
+            raise Exception("For mode, Only train, eval, test is available")
 
         features = create_data_to_features(
             args=args, examples=examples, tokenizer=tokenizer

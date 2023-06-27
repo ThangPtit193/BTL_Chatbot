@@ -10,6 +10,8 @@ from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 import torch
 import os
 
+from tqdm import tqdm
+
 
 class BiencoderTrainer:
     def __init__(self, args, model, train_dataset=None, dev_dataset=None, test_dataset=None):
@@ -23,7 +25,7 @@ class BiencoderTrainer:
 
     def train(self):
         train_sampler = RandomSampler(self.train_dataset)
-        train_dataloader = DataLoader(self.train_dataset, sampler=train_sampler, batch_size=self.args.train_bs)
+        train_dataloader = DataLoader(self.train_dataset, sampler=train_sampler, batch_size=self.args.train_batch_size)
 
         if self.args.max_steps > 0:
             t_total = self.args.max_steps
@@ -73,10 +75,16 @@ class BiencoderTrainer:
 
             for step, batch in enumerate(epoch_iterator):
                 self.model.train()
-                batch = tuple(t.to(self.device) for t in batch)  # GPU or CPU
+                batch = tuple(t.to(self.args.device) for t in batch)  # GPU or CPU
 
                 inputs = {
-                    # TODOLIST
+                    "input_ids_query": batch[0],
+                    "attention_mask_query": batch[1],
+                    "token_type_ids_query": batch[2],
+                    "input_ids_document": batch[3],
+                    "attention_mask_document": batch[4],
+                    "token_type_ids_document": batch[5]
+
                 }
                 outputs = self.model(**inputs)
                 loss = outputs[0]
@@ -97,8 +105,8 @@ class BiencoderTrainer:
 
                     if self.args.logging_steps > 0 and global_step % self.args.logging_steps == 0:
                         print("\nTuning metrics:", self.args.tuning_metric)
-                        results = self.evaluate("dev")
-                        early_stopping(results[self.args.tuning_metric], self.model, self.args)
+                        results = self.evaluate("eval")
+                        early_stopping(results, self.model, self.args)
                         if early_stopping.early_stop:
                             print("Early stopping")
                             break
@@ -116,8 +124,48 @@ class BiencoderTrainer:
         return global_step, tr_loss / global_step
 
 
-    def evaluate(self):
-        pass
+    def evaluate(self, mode):
+        if mode == "test":
+            dataset = self.test_dataset
+        elif mode == "eval":
+            dataset = self.dev_dataset
+        else:
+            raise Exception("Only dev and test dataset available")
+
+        eval_sampler = SequentialSampler(dataset)
+        eval_dataloader = DataLoader(dataset, sampler=eval_sampler, batch_size=self.args.eval_batch_size)
+
+        logger.info("***** Running evaluation on %s dataset *****", mode)
+        logger.info("  Num examples = %d", len(dataset))
+        logger.info("  Batch size = %d", self.args.eval_batch_size)
+
+        eval_loss = 0.0
+        nb_eval_steps = 0
+
+        nb_eval_steps = 0
+
+        self.model.eval()
+
+        for batch in tqdm(eval_dataloader):
+            with torch.no_grad():
+                batch = tuple(t.to(self.args.device) for t in batch)  # GPU or CPU
+
+                inputs = {
+                    "input_ids_query": batch[0],
+                    "attention_mask_query": batch[1],
+                    "token_type_ids_query": batch[2],
+                    "input_ids_document": batch[3],
+                    "attention_mask_document": batch[4],
+                    "token_type_ids_document": batch[5]
+                }
+
+                outputs = self.model(**inputs)
+                contrastive_loss = outputs[0]
+                eval_loss += contrastive_loss.item()
+            
+            nb_eval_steps += 1
+
+        return eval_loss/nb_eval_steps
 
     def save_model(self):
         # Save model checkpoint (Overwrite)

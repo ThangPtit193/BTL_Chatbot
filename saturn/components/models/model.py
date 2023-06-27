@@ -79,7 +79,7 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
         loss = torch.nn.functional.cross_entropy(scores, labels) #TODO label_smoothing
 
         if not return_dict:
-            output = (scores,) + (pooled_output_query + pooled_output_document)
+            output = (scores,) + (pooled_output_query,) + (pooled_output_document,)
             return ((loss,) + output)
 
         return SequenceClassifierOutput(

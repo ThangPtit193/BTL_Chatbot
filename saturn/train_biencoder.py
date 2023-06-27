@@ -17,6 +17,7 @@ from transformers import (
 
 from saturn.utils.utils import load_tokenizer, logger, MODEL_CLASSES, MODEL_PATH_MAP
 from saturn.trainers.biencoder import BiencoderTrainer
+from saturn.components.loaders.dataloader import load_and_cache_examples
 
 def main(args):
     logger.info('Args={}'.format(str(args)))
@@ -51,8 +52,8 @@ def main(args):
 
 
     # Load data
-    train_dataset = None
-    eval_dataset = None
+    train_dataset = load_and_cache_examples(args, tokenizer, "train")
+    eval_dataset = load_and_cache_examples(args, tokenizer, "eval")
 
     trainer = BiencoderTrainer(args, model, train_dataset, eval_dataset)
 
@@ -99,7 +100,13 @@ if __name__ == "__main__":
     parser.add_argument("--train_batch_size", default=32, type=int, help="Batch size for training.")
     parser.add_argument("--eval_batch_size", default=64, type=int, help="Batch size for evaluation.")
     parser.add_argument(
-        "--max_seq_len", default=512, type=int, help="The maximum total input sequence length after tokenization."
+        "--max_seq_len_query", default=64, type=int, help="The maximum total input sequence length after tokenization."
+    )
+    parser.add_argument(
+        "--max_seq_len_document", default=256, type=int, help="The maximum total input sequence length after tokenization."
+    )
+    parser.add_argument(
+        "--max_seq_len_response", default=64, type=int, help="The maximum total input sequence length after tokenization."
     )
     parser.add_argument("--learning_rate", default=1e-5, type=float, help="The initial learning rate for Adam.")
     parser.add_argument(
