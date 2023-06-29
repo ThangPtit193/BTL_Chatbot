@@ -5,9 +5,8 @@ from glob import glob
 
 import torch
 from torch.utils.data import DataLoader, Dataset, TensorDataset
-
-from saturn.utils.normalize import normalize_encode, normalize_word_diacritic
-from saturn.utils.utils import logger
+from utils.normalize import normalize_encode, normalize_word_diacritic
+from utils.utils import logger
 
 
 class InputExample(object):
@@ -259,9 +258,7 @@ class Processor:
         _data = []
         with open(input_file, "r", encoding="utf-8") as f:
             for line in f:
-                _data.append(
-                    json.loads(line)
-                )
+                _data.append(json.loads(line))
         return _data
 
     def _create_examples(self, dataset, set_type):
@@ -301,7 +298,8 @@ class Processor:
         data_path = os.path.join(self.args.data_dir, mode)
         logger.info("LOOKING AT {}".format(data_path))
         return self._create_examples(
-            dataset=self._read_file(os.path.join(data_path, "data.jsonl")), set_type=mode
+            dataset=self._read_file(os.path.join(data_path, "data.jsonl")),
+            set_type=mode,
         )
 
 
@@ -333,8 +331,8 @@ def load_and_cache_examples(args, tokenizer, mode):
         features = create_data_to_features(
             args=args, examples=examples, tokenizer=tokenizer
         )
-        logger.info("Saving features into cached file %s", cached_features_file)
-        torch.save(features, cached_features_file)
+        # logger.info("Saving features into cached file %s", cached_features_file)
+        # torch.save(features, cached_features_file)
 
     # Convert to Tensors and build dataset
     all_input_ids_query = torch.tensor(

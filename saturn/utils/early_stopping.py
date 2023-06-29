@@ -3,7 +3,7 @@ import os
 import numpy as np
 import torch
 
-from saturn.utils.utils import logger
+from utils.utils import logger
 
 
 class EarlyStopping:

@@ -1,20 +1,19 @@
-from saturn.utils.utils import logger
-from saturn.utils.early_stopping import EarlyStopping
-
-from transformers import AdamW
-from transformers import get_linear_schedule_with_warmup
-from tqdm.auto import tqdm, trange
-
-from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
-
-import torch
 import os
 
+import torch
+import wandb
+from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from tqdm import tqdm
+from tqdm.auto import tqdm, trange
+from transformers import AdamW, get_linear_schedule_with_warmup
+from utils.early_stopping import EarlyStopping
+from utils.utils import logger
 
 
 class BiencoderTrainer:
-    def __init__(self, args, model, train_dataset=None, dev_dataset=None, test_dataset=None):
+    def __init__(
+        self, args, model, train_dataset=None, dev_dataset=None, test_dataset=None
+    ):
         self.args = args
         self.train_dataset = train_dataset
         self.dev_dataset = dev_dataset
@@ -22,34 +21,57 @@ class BiencoderTrainer:
 
         self.model = model
 
-
     def train(self):
         train_sampler = RandomSampler(self.train_dataset)
-        train_dataloader = DataLoader(self.train_dataset, sampler=train_sampler, batch_size=self.args.train_batch_size)
+        train_dataloader = DataLoader(
+            self.train_dataset,
+            sampler=train_sampler,
+            batch_size=self.args.train_batch_size,
+        )
 
         if self.args.max_steps > 0:
             t_total = self.args.max_steps
             self.args.num_train_epochs = (
-                self.args.max_steps // (len(train_dataloader) // self.args.gradient_accumulation_steps) + 1
+                self.args.max_steps
+                // (len(train_dataloader) // self.args.gradient_accumulation_steps)
+                + 1
             )
         else:
-            t_total = len(train_dataloader) // self.args.gradient_accumulation_steps * self.args.num_train_epochs
+            t_total = (
+                len(train_dataloader)
+                // self.args.gradient_accumulation_steps
+                * self.args.num_train_epochs
+            )
 
         # Prepare optimizer and schedule (linear warmup and decay)
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_parameters = [
             {
-                "params": [p for n, p in self.model.named_parameters() if not any(nd in n for nd in no_decay)],
+                "params": [
+                    p
+                    for n, p in self.model.named_parameters()
+                    if not any(nd in n for nd in no_decay)
+                ],
                 "weight_decay": self.args.weight_decay,
             },
             {
-                "params": [p for n, p in self.model.named_parameters() if any(nd in n for nd in no_decay)],
+                "params": [
+                    p
+                    for n, p in self.model.named_parameters()
+                    if any(nd in n for nd in no_decay)
+                ],
                 "weight_decay": 0.0,
             },
         ]
-        optimizer = AdamW(optimizer_grouped_parameters, lr=self.args.learning_rate, eps=self.args.adam_epsilon)
+        optimizer = AdamW(
+            optimizer_grouped_parameters,
+            lr=self.args.learning_rate,
+            eps=self.args.adam_epsilon,
+        )
         scheduler = get_linear_schedule_with_warmup(
-            optimizer, num_warmup_steps=self.args.warmup_steps, num_training_steps=t_total
+            optimizer,
+            num_warmup_steps=self.args.warmup_steps,
+            num_training_steps=t_total,
         )
 
         # Train!
@@ -57,7 +79,9 @@ class BiencoderTrainer:
         logger.info("  Num examples = %d", len(self.train_dataset))
         logger.info("  Num Epochs = %d", self.args.num_train_epochs)
         logger.info("  Total train batch size = %d", self.args.train_batch_size)
-        logger.info("  Gradient Accumulation steps = %d", self.args.gradient_accumulation_steps)
+        logger.info(
+            "  Gradient Accumulation steps = %d", self.args.gradient_accumulation_steps
+        )
         logger.info("  Total optimization steps = %d", t_total)
         logger.info("  Logging steps = %d", self.args.logging_steps)
         logger.info("  Save steps = %d", self.args.save_steps)
@@ -70,7 +94,9 @@ class BiencoderTrainer:
         early_stopping = EarlyStopping(patience=self.args.early_stopping, verbose=True)
 
         for _ in train_iterator:
-            epoch_iterator = tqdm(train_dataloader, desc="Iteration", position=0, leave=True)
+            epoch_iterator = tqdm(
+                train_dataloader, desc="Iteration", position=0, leave=True
+            )
             print("\nEpoch", _)
 
             for step, batch in enumerate(epoch_iterator):
@@ -83,11 +109,12 @@ class BiencoderTrainer:
                     "token_type_ids_query": batch[2],
                     "input_ids_document": batch[3],
                     "attention_mask_document": batch[4],
-                    "token_type_ids_document": batch[5]
-
+                    "token_type_ids_document": batch[5],
                 }
                 outputs = self.model(**inputs)
                 loss = outputs[0]
+
+                wandb.log({"Loss train": loss.item()})
 
                 if self.args.gradient_accumulation_steps > 1:
                     loss = loss / self.args.gradient_accumulation_steps
@@ -96,14 +123,19 @@ class BiencoderTrainer:
 
                 tr_loss += loss.item()
                 if (step + 1) % self.args.gradient_accumulation_steps == 0:
-                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.args.max_grad_norm)
+                    torch.nn.utils.clip_grad_norm_(
+                        self.model.parameters(), self.args.max_grad_norm
+                    )
 
                     optimizer.step()
                     scheduler.step()  # Update learning rate schedule
                     self.model.zero_grad()
                     global_step += 1
 
-                    if self.args.logging_steps > 0 and global_step % self.args.logging_steps == 0:
+                    if (
+                        self.args.logging_steps > 0
+                        and global_step % self.args.logging_steps == 0
+                    ):
                         logger.info(f"Tuning metrics: {self.args.tuning_metric}")
                         results = self.evaluate("eval")
                         early_stopping(results, self.model, self.args)
@@ -117,12 +149,11 @@ class BiencoderTrainer:
                 if 0 < self.args.max_steps < global_step:
                     epoch_iterator.close()
                     break
-                
+
             if 0 < self.args.max_steps < global_step or early_stopping.early_stop:
                 train_iterator.close()
                 break
         return global_step, tr_loss / global_step
-
 
     def evaluate(self, mode):
         if mode == "test":
@@ -133,7 +164,9 @@ class BiencoderTrainer:
             raise Exception("Only dev and test dataset available")
 
         eval_sampler = SequentialSampler(dataset)
-        eval_dataloader = DataLoader(dataset, sampler=eval_sampler, batch_size=self.args.eval_batch_size)
+        eval_dataloader = DataLoader(
+            dataset, sampler=eval_sampler, batch_size=self.args.eval_batch_size
+        )
 
         logger.info("***** Running evaluation on %s dataset *****", mode)
         logger.info("  Num examples = %d", len(dataset))
@@ -142,7 +175,6 @@ class BiencoderTrainer:
         eval_loss = 0.0
         nb_eval_steps = 0
 
-        nb_eval_steps = 0
 
         self.model.eval()
 
@@ -156,22 +188,24 @@ class BiencoderTrainer:
                     "token_type_ids_query": batch[2],
                     "input_ids_document": batch[3],
                     "attention_mask_document": batch[4],
-                    "token_type_ids_document": batch[5]
+                    "token_type_ids_document": batch[5],
                 }
 
                 outputs = self.model(**inputs)
                 contrastive_loss = outputs[0]
                 eval_loss += contrastive_loss.item()
-            
+
             nb_eval_steps += 1
 
-        return eval_loss/nb_eval_steps
+        return eval_loss / nb_eval_steps
 
     def save_model(self):
         # Save model checkpoint (Overwrite)
         if not os.path.exists(self.args.model_dir):
             os.makedirs(self.args.model_dir)
-        model_to_save = self.model.module if hasattr(self.model, "module") else self.model
+        model_to_save = (
+            self.model.module if hasattr(self.model, "module") else self.model
+        )
         model_to_save.save_pretrained(self.args.model_dir)
 
         # Save training arguments together with the trained model
@@ -185,9 +219,7 @@ class BiencoderTrainer:
 
         try:
             self.model = self.model_class.from_pretrained(
-                self.args.model_dir,
-                config=self.config,
-                args=self.args
+                self.args.model_dir, config=self.config, args=self.args
             )
             self.model.to(self.device)
             logger.info("***** Model Loaded *****")
