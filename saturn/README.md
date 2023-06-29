@@ -1,4 +1,4 @@
-# generative-model-study
+## Semantic - Similarity
 
 ## News
 <!-- - **[Jun. 29, 2023]** We released code base for reproducing the Semantic Model. -->
@@ -31,8 +31,23 @@ conda activate saturn
 
 #### PreStage: Training Data Development
 
-TBD
+Format data
+```
+{"query": "abc", "document": "xyz"}
+{"query": "abc", "document": "xyz"}
+```
 
+and save it as `data.jsonl` filname
+
+Structure data folders:
+```
+├── data                   # Dataset
+    ├── train              # Training folder
+        ├── data.jsonl     # Training dataset
+    ├── eval               # Eval folder
+        ├── data.jsonl     # Evaluate dataset
+
+```
 #### Stage 1: Training Unsuppervised Model Using Contrastive Learning
 
 
