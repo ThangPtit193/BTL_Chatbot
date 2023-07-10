@@ -19,6 +19,8 @@ from transformers.trainer_callback import PrinterCallback
 from transformers.utils.logging import enable_explicit_format
 from utils.utils import MODEL_CLASSES, MODEL_PATH_MAP, load_tokenizer, logger
 
+from components.loaders.dataloader import OnlineDataset
+
 
 def main(args):
     logger.info("Args={}".format(str(args)))
@@ -45,14 +47,16 @@ def main(args):
     logger.info("Vocab size: {}".format(len(tokenizer)))
 
     # GPU or CPU
-    torch.cuda.set_device(args.gpu_id)
+    # torch.cuda.set_device(args.gpu_id)
     print("GPU ID :", args.gpu_id)
     print("Cuda device:", torch.cuda.current_device())
     model.to(args.device)
 
     # Load data
-    train_dataset = load_and_cache_examples(args, tokenizer, "train")
-    eval_dataset = load_and_cache_examples(args, tokenizer, "eval")
+    # train_dataset = load_and_cache_examples(args, tokenizer, "train")
+    # eval_dataset = load_and_cache_examples(args, tokenizer, "eval")
+    train_dataset = OnlineDataset(args, tokenizer, "train")
+    eval_dataset = OnlineDataset(args, tokenizer, "eval")
 
     trainer = BiencoderTrainer(args, model, train_dataset, eval_dataset)
 
