@@ -11,7 +11,7 @@ import requests
 from pandas import DataFrame
 from tqdm import tqdm
 
-from saturn.utils.reflection import timeit
+from utils.reflection import timeit
 
 
 def load_json(file_path: Text) -> Dict:
@@ -106,3 +106,11 @@ def http_get(url, path):
 
     os.rename(download_filepath, path)
     progress.close()
+
+
+def load_jsonl(file_path: Text) -> List[Dict]:
+    data = []
+    with open(file_path, "r", encoding="utf-8") as f:
+        for line in f:
+            data.append(json.loads(line))
+    return data
