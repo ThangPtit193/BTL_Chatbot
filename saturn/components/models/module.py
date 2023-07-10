@@ -20,21 +20,6 @@ class MLPLayer(nn.Module):
 
         return x
 
-
-class Similarity(nn.Module):
-    """
-    Dot product or cosine similarity
-    """
-
-    def __init__(self, temp=0.05):
-        super().__init__()
-        self.temp = temp
-        self.cos = nn.CosineSimilarity(dim=-1)
-
-    def forward(self, x, y):
-        return self.cos(x, y) / self.temp
-
-
 class Pooler(nn.Module):
     """
     Parameter-free poolers to get the sentence embedding
@@ -85,3 +70,21 @@ class Pooler(nn.Module):
             return pooled_result
         else:
             raise NotImplementedError
+
+class CosineSimilarity(nn.Module):
+    """
+    Dot product or cosine similarity
+    """
+
+    def __init__(self, temp=0.05):
+        super().__init__()
+        self.temp = temp
+        self.cos = nn.CosineSimilarity(dim=-1)
+
+    def forward(self, x, y):
+        return self.cos(x, y) / self.temp
+
+
+class DotProductSimilarity(nn.Module):
+    pass
+

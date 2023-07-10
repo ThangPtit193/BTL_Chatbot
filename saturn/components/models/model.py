@@ -3,7 +3,7 @@ import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
 import transformers
-from components.models.module import Similarity
+from components.models.module import CosineSimilarity
 from transformers import PretrainedConfig, RobertaTokenizer
 from transformers.activations import gelu
 from transformers.file_utils import (
@@ -27,7 +27,7 @@ from transformers.models.roberta.modeling_roberta import (
     RobertaPreTrainedModel,
 )
 
-sim_fn = Similarity()
+sim_fn = CosineSimilarity()
 
 
 class BiencoderRobertaModel(RobertaPreTrainedModel):

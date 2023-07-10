@@ -8,6 +8,8 @@ from torch.utils.data import DataLoader, Dataset, TensorDataset
 from utils.normalize import normalize_encode, normalize_word_diacritic
 from utils.utils import logger
 
+from utils.io import load_jsonl
+
 
 class InputExample(object):
     """
@@ -382,22 +384,143 @@ class OnlineDataset(Dataset):
     def __init__(self, args, tokenizer, mode) -> None:
         super().__init__()
 
-    # Reading corpus
+        self.args = args
+        # Reading corpus
+        file_path = os.path.join(self.args.data_dir, mode, "data.jsonl")
+        logger.info("LOOKING AT {}".format(file_path))
+
+
+        self.data = load_jsonl(file_path)
+        self.tokenizer = tokenizer
+
+
+        self.bos_token = tokenizer.bos_token
+        self.bos_token_id = tokenizer.bos_token_id
+
+        self.eos_token = tokenizer.eos_token
+        self.eos_token_id = tokenizer.eos_token_id
+
+        self.unk_token = tokenizer.unk_token
+        self.unk_token_id = tokenizer.unk_token_id
+
+        self.pad_token = tokenizer.pad_token
+        self.pad_token_id = tokenizer.pad_token_id
+
+        self.cls_token = tokenizer.cls_token
+        self.cls_token_id = tokenizer.cls_token_id
+
+        self.sep_token = tokenizer.sep_token
+        self.sep_token_id = tokenizer.sep_token_id
+
+        # Account for [CLS] and [SEP]
+        self.special_tokens_count = 2
 
     def __len__(self) -> int:
-        return len(self.data)
+        return len(self.data) - 1
 
     def __getitem__(self, index: int):
         # preprocessing data
+        data_point = self.data[index]
 
-        # return
-        # all_input_ids_query,
-        # all_attention_mask_query,
-        # all_token_type_ids_query,
-        # all_input_ids_document,
-        # all_attention_mask_document,
-        # all_token_type_ids_document,
-        # all_input_ids_response,
-        # all_attention_mask_response,
-        # all_token_type_ids_response,
-        pass
+        # 1. query
+        query = data_point["query"]
+        query = normalize_encode(
+            normalize_word_diacritic(query)
+        ).split()  # Some are spaced twice
+
+        # 2. document # Suggest for Text augmentation 
+        document = data_point["document"]
+        document = normalize_encode(
+            normalize_word_diacritic(document)
+        ).split()  # Some are spaced twice
+
+        query_tokens = []
+        for word in query:
+            word_tokens = self.tokenizer.tokenize(word)
+            if not word_tokens:
+                word_tokens = [self.unk_token]  # For handling the bad-encoded word
+            query_tokens.extend(word_tokens)
+
+        # Inverse Cloze Task, Body First Selection, Wiki Link Prediction (asymetric-retrieval-downstream)
+        # Because the data_point has been processed as an inverse cloze task
+        document_tokens = []
+        for word in document:
+            word_tokens = self.tokenizer.tokenize(word)
+            if not word_tokens:
+                word_tokens = [self.unk_token]  # For handling the bad-encoded word
+            document_tokens.extend(word_tokens)
+
+
+        # Truncate data
+        if len(query_tokens) > self.args.max_seq_len_query - self.special_tokens_count:
+            query_tokens = query_tokens[
+                : (self.args.max_seq_len_query - self.special_tokens_count)
+            ]
+        if len(document_tokens) > self.args.max_seq_len_document - self.special_tokens_count:
+            document_tokens = document_tokens[
+                : (self.args.max_seq_len_document - self.special_tokens_count)
+            ]
+
+        # Add [SEP] token
+        query_tokens += [self.sep_token]
+        token_type_ids_query = [0] * len(query_tokens)
+        document_tokens += [self.sep_token]
+        token_type_ids_document = [0] * len(document_tokens)
+
+
+        # Add [CLS] token
+        query_tokens = [self.cls_token] + query_tokens
+        token_type_ids_query = [0] + token_type_ids_query
+        document_tokens = [self.cls_token] + document_tokens
+        token_type_ids_document = [0] + token_type_ids_document
+
+        # Convert tokens to ids
+        input_ids_query = self.tokenizer.convert_tokens_to_ids(query_tokens)
+        attention_mask_query = [1] * len(
+            input_ids_query
+        )
+        input_ids_document = self.tokenizer.convert_tokens_to_ids(document_tokens)
+        attention_mask_document = [1] * len(
+            input_ids_document
+        )
+
+        # Zero-pad up to the sequence length. This is static method padding
+        padding_length = self.args.max_seq_len_query - len(input_ids_query)
+        input_ids_query = input_ids_query + ([self.pad_token_id] * padding_length)
+        attention_mask_query = attention_mask_query + (
+            [0] * padding_length
+        )
+        token_type_ids_query = token_type_ids_query + (
+            [0] * padding_length
+        )
+
+        padding_length = self.args.max_seq_len_document - len(input_ids_document)
+        input_ids_document = input_ids_document + ([self.pad_token_id] * padding_length)
+        attention_mask_document = attention_mask_document + (
+            [0] * padding_length
+        )
+        token_type_ids_document = token_type_ids_document + (
+            [0] * padding_length
+        )
+
+        assert (
+            len(input_ids_query) == self.args.max_seq_len_query
+        ), "Error with input length {} vs {}".format(
+            len(input_ids_query), self.args.max_seq_len_query
+        )
+        assert (
+            len(input_ids_document) == self.args.max_seq_len_document
+        ), "Error with input length {} vs {}".format(
+            len(input_ids_document), self.args.max_seq_len_document
+        )
+
+
+        return (
+            torch.tensor(input_ids_query, dtype=torch.long),
+            torch.tensor(attention_mask_query, dtype=torch.long),
+            torch.tensor(token_type_ids_query, dtype=torch.long),
+            torch.tensor(input_ids_document, dtype=torch.long),
+            torch.tensor(attention_mask_document, dtype=torch.long),
+            torch.tensor(token_type_ids_document, dtype=torch.long),
+        )
+
