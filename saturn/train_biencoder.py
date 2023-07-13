@@ -5,8 +5,8 @@ from typing import Dict
 
 import torch
 import wandb
-from components.loaders.dataloader import load_and_cache_examples
-from trainers.biencoder import BiencoderTrainer
+from saturn.components.loaders.dataloader import load_and_cache_examples
+from saturn.trainers.biencoder import BiencoderTrainer
 from transformers import (
     AutoTokenizer,
     EvalPrediction,
@@ -17,9 +17,9 @@ from transformers import (
 )
 from transformers.trainer_callback import PrinterCallback
 from transformers.utils.logging import enable_explicit_format
-from utils.utils import MODEL_CLASSES, MODEL_PATH_MAP, load_tokenizer, logger
+from saturn.utils.utils import MODEL_CLASSES, MODEL_PATH_MAP, load_tokenizer, logger
 
-from components.loaders.dataloader import OnlineDataset
+from saturn.components.loaders.dataloader import OnlineDataset
 
 
 def main(args):

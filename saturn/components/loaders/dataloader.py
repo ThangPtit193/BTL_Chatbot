@@ -5,10 +5,10 @@ from glob import glob
 
 import torch
 from torch.utils.data import DataLoader, Dataset, TensorDataset
-from utils.normalize import normalize_encode, normalize_word_diacritic
-from utils.utils import logger
+from saturn.utils.normalize import normalize_encode, normalize_word_diacritic
+from saturn.utils.utils import logger
 
-from utils.io import load_jsonl
+from saturn.utils.io import load_jsonl
 
 
 class InputExample(object):

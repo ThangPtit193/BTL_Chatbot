@@ -11,7 +11,7 @@ import requests
 from pandas import DataFrame
 from tqdm import tqdm
 
-from utils.reflection import timeit
+from saturn.utils.reflection import timeit
 
 
 def load_json(file_path: Text) -> Dict:

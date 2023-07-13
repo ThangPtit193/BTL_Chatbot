@@ -1,6 +1,6 @@
 import regex as re
 
-from utils.utils import is_valid_vietnam_word, vowel, vowel_to_idx
+from saturn.utils.utils import is_valid_vietnam_word, vowel, vowel_to_idx
 
 
 def normalize_encode(text):

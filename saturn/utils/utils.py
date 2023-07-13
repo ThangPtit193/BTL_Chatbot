@@ -9,7 +9,7 @@ from transformers import (
     AutoTokenizer,
     RobertaConfig
 )
-from components.models.model import BiencoderRobertaModel
+from saturn.components.models.model import BiencoderRobertaModel
 
 MODEL_CLASSES = {
     "phobert-base": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
