@@ -6,8 +6,8 @@ from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from tqdm import tqdm
 from tqdm.auto import tqdm, trange
 from transformers import AdamW, get_linear_schedule_with_warmup
-from utils.early_stopping import EarlyStopping
-from utils.utils import logger
+from saturn.utils.early_stopping import EarlyStopping
+from saturn.utils.utils import logger
 
 
 class BiencoderTrainer:
@@ -104,12 +104,12 @@ class BiencoderTrainer:
                 batch = tuple(t.to(self.args.device) for t in batch)  # GPU or CPU
 
                 inputs = {
-                    "input_ids_query": batch[0],
-                    "attention_mask_query": batch[1],
-                    "token_type_ids_query": batch[2],
-                    "input_ids_document": batch[3],
-                    "attention_mask_document": batch[4],
-                    "token_type_ids_document": batch[5],
+                    "input_ids": batch[0],
+                    "attention_mask": batch[1],
+                    "token_type_ids": batch[2],
+                    "input_ids_positive": batch[3],
+                    "attention_mask_positive": batch[4],
+                    "token_type_ids_positive": batch[5],
                 }
                 outputs = self.model(**inputs)
                 loss = outputs[0]
@@ -138,6 +138,7 @@ class BiencoderTrainer:
                     ):
                         logger.info(f"Tuning metrics: {self.args.tuning_metric}")
                         results = self.evaluate("eval")
+                        wandb.log({"Loss eval": results})
                         early_stopping(results, self.model, self.args)
                         if early_stopping.early_stop:
                             logger.info("Early stopping")
@@ -183,12 +184,12 @@ class BiencoderTrainer:
                 batch = tuple(t.to(self.args.device) for t in batch)  # GPU or CPU
 
                 inputs = {
-                    "input_ids_query": batch[0],
-                    "attention_mask_query": batch[1],
-                    "token_type_ids_query": batch[2],
-                    "input_ids_document": batch[3],
-                    "attention_mask_document": batch[4],
-                    "token_type_ids_document": batch[5],
+                    "input_ids": batch[0],
+                    "attention_mask": batch[1],
+                    "token_type_ids": batch[2],
+                    "input_ids_positive": batch[3],
+                    "attention_mask_positive": batch[4],
+                    "token_type_ids_positive": batch[5],
                 }
 
                 outputs = self.model(**inputs)

@@ -3,7 +3,7 @@ import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
 import transformers
-from components.models.module import CosineSimilarity
+from saturn.components.models.module import CosineSimilarity
 from transformers import PretrainedConfig, RobertaTokenizer
 from transformers.activations import gelu
 from transformers.file_utils import (
@@ -47,50 +47,54 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
 
     def forward(
         self,
-        input_ids_query=None,
-        attention_mask_query=None,
-        token_type_ids_query=None,
-        input_ids_document=None,
-        attention_mask_document=None,
-        token_type_ids_document=None,
+        input_ids=None,
+        attention_mask=None,
+        token_type_ids=None,
+        input_ids_positive=None,
+        attention_mask_positive=None,
+        token_type_ids_positive=None,
+        is_trainalbe=True,
         return_dict=None,
     ):
-        batch_size = input_ids_query.shape[0]
+        batch_size = input_ids.shape[0]
 
         labels = torch.arange(
-            0, batch_size, dtype=torch.long, device=input_ids_query.device
+            0, batch_size, dtype=torch.long, device=input_ids.device
         )
 
-        outputs_query = self.roberta(
-            input_ids_query,
-            attention_mask=attention_mask_query,
-            token_type_ids=token_type_ids_query,
+        outputs = self.roberta(
+            input_ids,
+            attention_mask=attention_mask,
+            token_type_ids=token_type_ids,
         )  # sequence_output, pooled_output, (hidden_states), (attentions)
-        pooled_output_query = outputs_query[1]  # [CLS]
+        pooled_output = outputs[1]  # [CLS]
 
-        outputs_document = self.roberta(
-            input_ids_document,
-            attention_mask=attention_mask_document,
-            token_type_ids=token_type_ids_document,
+        if not is_trainalbe:
+            return pooled_output
+
+        outputs_positive = self.roberta(
+            input_ids_positive,
+            attention_mask=attention_mask_positive,
+            token_type_ids=token_type_ids_positive,
         )  # sequence_output, pooled_output, (hidden_states), (attentions)
-        pooled_output_document = outputs_document[1]  # [CLS]
+        pooled_output_positive = outputs_positive[1]  # [CLS]
 
         # Contrastive Loss
         scores = sim_fn(
-            pooled_output_query.unsqueeze(1), pooled_output_document.unsqueeze(0)
+            pooled_output.unsqueeze(1), pooled_output_positive.unsqueeze(0)
         )
 
         loss = torch.nn.functional.cross_entropy(scores, labels)  # TODO label_smoothing
 
         if not return_dict:
-            output = (scores,) + (pooled_output_query,) + (pooled_output_document,)
+            output = (scores,) + (pooled_output,) + (pooled_output_positive,)
             return (loss,) + output
 
         return SequenceClassifierOutput(
             loss=loss,
             logits=loss,
-            pooled_output_query=pooled_output_query,
-            pooled_output_document=pooled_output_document,
+            pooled_output=pooled_output,
+            pooled_output_positive=pooled_output_positive,
         )
 
 
