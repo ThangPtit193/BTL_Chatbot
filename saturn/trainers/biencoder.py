@@ -1,6 +1,7 @@
 import os
 
 import torch
+import numpy as np
 import wandb
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from tqdm import tqdm
@@ -9,10 +10,20 @@ from transformers import AdamW, get_linear_schedule_with_warmup
 from saturn.utils.early_stopping import EarlyStopping
 from saturn.utils.utils import logger
 
+from typing import List
+from saturn.utils.normalize import normalize_encode, normalize_word_diacritic
+from saturn.components.models.module import cosine_similarity
+from saturn.utils.io import load_json, load_jsonl
 
 class BiencoderTrainer:
     def __init__(
-        self, args, model, train_dataset=None, dev_dataset=None, test_dataset=None
+        self,
+        args,
+        model,
+        train_dataset=None,
+        dev_dataset=None,
+        test_dataset=None,
+        tokenizer=None
     ):
         self.args = args
         self.train_dataset = train_dataset
@@ -20,6 +31,11 @@ class BiencoderTrainer:
         self.test_dataset = test_dataset
 
         self.model = model
+
+        self.tokenizer = tokenizer
+
+        self.query_and_ground_truth = load_jsonl(self.args.benchmark)
+        self.corpus = load_json(self.args.corpus)
 
     def train(self):
         train_sampler = RandomSampler(self.train_dataset)
@@ -106,10 +122,8 @@ class BiencoderTrainer:
                 inputs = {
                     "input_ids": batch[0],
                     "attention_mask": batch[1],
-                    "token_type_ids": batch[2],
-                    "input_ids_positive": batch[3],
-                    "attention_mask_positive": batch[4],
-                    "token_type_ids_positive": batch[5],
+                    "input_ids_positive": batch[2],
+                    "attention_mask_positive": batch[3],
                 }
                 outputs = self.model(**inputs)
                 loss = outputs[0]
@@ -137,6 +151,8 @@ class BiencoderTrainer:
                         and global_step % self.args.logging_steps == 0
                     ):
                         logger.info(f"Tuning metrics: {self.args.tuning_metric}")
+                        
+                        self.evaluate_on_benchmark(self.query_and_ground_truth, self.corpus)
                         results = self.evaluate("eval")
                         wandb.log({"Loss eval": results})
                         early_stopping(results, self.model, self.args)
@@ -186,10 +202,8 @@ class BiencoderTrainer:
                 inputs = {
                     "input_ids": batch[0],
                     "attention_mask": batch[1],
-                    "token_type_ids": batch[2],
-                    "input_ids_positive": batch[3],
-                    "attention_mask_positive": batch[4],
-                    "token_type_ids_positive": batch[5],
+                    "input_ids_positive": batch[2],
+                    "attention_mask_positive": batch[3],
                 }
 
                 outputs = self.model(**inputs)
@@ -199,6 +213,197 @@ class BiencoderTrainer:
             nb_eval_steps += 1
 
         return eval_loss / nb_eval_steps
+
+    def evaluate_on_benchmark(self, query_and_ground_truth: List[dict], corpus: List[dict]):
+        """
+        Evaluate the performance of the model on a benchmark dataset.
+        Args:
+            query_and_ground_truth (List[dict]): A list of dictionaries containing query and ground truth pairs.
+                Each dictionary has the following keys:
+                    - 'query': The query string.
+                    - 'gt': The ground truth identifier.
+            corpus (List[dict]): A list of dictionaries representing the corpus.
+                Each dictionary has the following keys:
+                    - 'text': The text content of the document.
+                    - 'meta': A dictionary containing metadata information with the following keys:
+                        - 'id': The identifier of the document.
+                        - 'title': The title of the document.
+                        - 'grade': The grade level of the document.
+                        - 'unit': The unit of the document.
+                        - 'section': The section of the document.
+        """
+        
+        # Embdding corpus:
+        embedding_corpus = None
+        ids_corpus = []
+
+        for i in range(0, len(corpus), self.args.eval_batch_size):
+            batch_input_ids = []
+            batch_attention_mask = []
+            batch_token_type_ids = []
+
+            batch_ids = []
+            for document in corpus[i: i+self.args.eval_batch_size]:
+                batch_ids.append(
+                    document['meta']['id']
+                )
+                document = normalize_encode(
+                    normalize_word_diacritic(document['text'])
+                ).split()  # Some are spaced twice
+                document_tokens = []
+                for word in document:
+                    word_tokens = self.tokenizer.tokenize(word)
+                    if not word_tokens:
+                        word_tokens = [self.tokenizer.unk_token]  # For handling the bad-encoded word
+                    document_tokens.extend(word_tokens)
+                if len(document_tokens) > self.args.max_seq_len_document - 2:
+                    document_tokens = document_tokens[
+                        : (self.args.max_seq_len_document - 2)
+                    ]
+                document_tokens += [self.tokenizer.sep_token]
+                token_type_ids_document = [0] * len(document_tokens)
+
+                document_tokens = [self.tokenizer.cls_token] + document_tokens
+                token_type_ids_document = [0] + token_type_ids_document
+
+                input_ids_document = self.tokenizer.convert_tokens_to_ids(document_tokens)
+                attention_mask_document = [1] * len(
+                    input_ids_document
+                )
+
+                padding_length = self.args.max_seq_len_document - len(input_ids_document)
+                input_ids_document = input_ids_document + ([self.tokenizer.pad_token_id] * padding_length)
+                attention_mask_document = attention_mask_document + (
+                    [0] * padding_length
+                )
+                token_type_ids_document = token_type_ids_document + (
+                    [0] * padding_length
+                )
+                
+                batch_input_ids.append(
+                    input_ids_document
+                )
+                batch_attention_mask.append(
+                    attention_mask_document
+                )
+                batch_token_type_ids.append(
+                    token_type_ids_document
+                )
+
+            assert len(batch_input_ids) == len(batch_token_type_ids) == len(batch_attention_mask) == len(batch_ids)
+
+            batch_input_ids = torch.tensor(batch_input_ids, dtype=torch.long).to(self.args.device)
+            batch_token_type_ids = torch.tensor(batch_token_type_ids, dtype=torch.long).to(self.args.device)
+            batch_attention_mask = torch.tensor(batch_attention_mask, dtype=torch.long).to(self.args.device)
+
+            with torch.no_grad():
+                inputs = {
+                        "input_ids": batch_input_ids,
+                        "attention_mask": batch_attention_mask,
+                        "is_trainalbe": False
+                        }
+
+                outputs = self.model(**inputs)
+
+            if embedding_corpus is None:
+                embedding_corpus = outputs.detach().cpu().numpy()
+                ids_corpus.extend(
+                    batch_ids
+                )
+            else:
+                embedding_corpus = np.append(embedding_corpus, outputs.detach().cpu().numpy(), axis=0)
+                ids_corpus.extend(
+                    batch_ids
+                )
+
+        # Embedding query:
+        embedding_query = None
+        ground_truths = []
+
+        for i in range(0, len(query_and_ground_truth), self.args.eval_batch_size):
+            batch_input_ids = []
+            batch_attention_mask = []
+            batch_token_type_ids = []
+
+            batch_gts = []
+            for query in query_and_ground_truth[i: i+self.args.eval_batch_size]:
+                batch_gts.append(
+                    query['gt']
+                )
+                query = normalize_encode(
+                    normalize_word_diacritic(query['query'])
+                ).split()  # Some are spaced twice
+                query_tokens = []
+                for word in query:
+                    word_tokens = self.tokenizer.tokenize(word)
+                    if not word_tokens:
+                        word_tokens = [self.unk_token]  # For handling the bad-encoded word
+                    query_tokens.extend(word_tokens)
+                if len(query_tokens) > self.args.max_seq_len_query - 2:
+                    query_tokens = query_tokens[
+                        : (self.args.max_seq_len_query - 2)
+                    ]
+                query_tokens += [self.tokenizer.sep_token]
+                token_type_ids_query = [0] * len(query_tokens)
+
+                query_tokens = [self.tokenizer.cls_token] + query_tokens
+                token_type_ids_query = [0] + token_type_ids_query
+
+                input_ids_query = self.tokenizer.convert_tokens_to_ids(query_tokens)
+                attention_mask_query = [1] * len(
+                    input_ids_query
+                )
+
+                padding_length = self.args.max_seq_len_query - len(input_ids_query)
+                input_ids_query = input_ids_query + ([self.tokenizer.pad_token_id] * padding_length)
+                attention_mask_query = attention_mask_query + (
+                    [0] * padding_length
+                )
+                token_type_ids_query = token_type_ids_query + (
+                    [0] * padding_length
+                )
+                
+                batch_input_ids.append(
+                    input_ids_query
+                )
+                batch_attention_mask.append(
+                    attention_mask_query
+                )
+                batch_token_type_ids.append(
+                    token_type_ids_query
+                )
+
+            assert len(batch_input_ids) == len(batch_token_type_ids) == len(batch_attention_mask) == len(batch_gts)
+
+            batch_input_ids = torch.tensor(batch_input_ids, dtype=torch.long).to(self.args.device)
+            batch_token_type_ids = torch.tensor(batch_token_type_ids, dtype=torch.long).to(self.args.device)
+            batch_attention_mask = torch.tensor(batch_attention_mask, dtype=torch.long).to(self.args.device)
+
+            with torch.no_grad():
+                inputs = {
+                        "input_ids": batch_input_ids,
+                        "attention_mask": batch_attention_mask,
+                        "is_trainalbe": False
+                        }
+
+                outputs = self.model(**inputs)
+
+            if embedding_query is None:
+                embedding_query = outputs.detach().cpu().numpy()
+                ground_truths.extend(
+                    batch_gts
+                )
+            else:
+                embedding_query = np.append(embedding_query, outputs.detach().cpu().numpy(), axis=0)
+                ground_truths.extend(
+                    batch_gts
+                )
+        
+        scores = cosine_similarity(embedding_query, embedding_corpus)
+        indices = np.argsort(scores, axis=-1)
+
+        # TODO get top k indices in each row and assign them with ids -> get recall scall -> 
+
 
     def save_model(self):
         # Save model checkpoint (Overwrite)

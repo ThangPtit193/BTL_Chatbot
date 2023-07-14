@@ -3,6 +3,8 @@ import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
 
+import numpy as np
+from scipy.spatial.distance import cdist
 
 class MLPLayer(nn.Module):
     """
@@ -88,3 +90,8 @@ class CosineSimilarity(nn.Module):
 class DotProductSimilarity(nn.Module):
     pass
 
+
+def cosine_similarity(array_a, array_b):
+    distance = cdist(array_a, array_b, metric='cosine')
+    similarity = 1 - distance
+    return similarity
