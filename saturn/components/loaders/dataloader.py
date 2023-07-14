@@ -463,16 +463,11 @@ class OnlineDataset(Dataset):
 
         # Add [SEP] token
         query_tokens += [self.sep_token]
-        token_type_ids_query = [0] * len(query_tokens)
         document_tokens += [self.sep_token]
-        token_type_ids_document = [0] * len(document_tokens)
-
 
         # Add [CLS] token
         query_tokens = [self.cls_token] + query_tokens
-        token_type_ids_query = [0] + token_type_ids_query
         document_tokens = [self.cls_token] + document_tokens
-        token_type_ids_document = [0] + token_type_ids_document
 
         # Convert tokens to ids
         input_ids_query = self.tokenizer.convert_tokens_to_ids(query_tokens)
@@ -490,16 +485,10 @@ class OnlineDataset(Dataset):
         attention_mask_query = attention_mask_query + (
             [0] * padding_length
         )
-        token_type_ids_query = token_type_ids_query + (
-            [0] * padding_length
-        )
 
         padding_length = self.args.max_seq_len_document - len(input_ids_document)
         input_ids_document = input_ids_document + ([self.pad_token_id] * padding_length)
         attention_mask_document = attention_mask_document + (
-            [0] * padding_length
-        )
-        token_type_ids_document = token_type_ids_document + (
             [0] * padding_length
         )
 
@@ -518,9 +507,7 @@ class OnlineDataset(Dataset):
         return (
             torch.tensor(input_ids_query, dtype=torch.long),
             torch.tensor(attention_mask_query, dtype=torch.long),
-            torch.tensor(token_type_ids_query, dtype=torch.long),
             torch.tensor(input_ids_document, dtype=torch.long),
             torch.tensor(attention_mask_document, dtype=torch.long),
-            torch.tensor(token_type_ids_document, dtype=torch.long),
         )
 

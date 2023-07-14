@@ -49,10 +49,8 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
         self,
         input_ids=None,
         attention_mask=None,
-        token_type_ids=None,
         input_ids_positive=None,
         attention_mask_positive=None,
-        token_type_ids_positive=None,
         is_trainalbe=True,
         return_dict=None,
     ):
@@ -65,8 +63,9 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
         outputs = self.roberta(
             input_ids,
             attention_mask=attention_mask,
-            token_type_ids=token_type_ids,
+            # token_type_ids=token_type_ids,
         )  # sequence_output, pooled_output, (hidden_states), (attentions)
+        
         pooled_output = outputs[1]  # [CLS]
 
         if not is_trainalbe:
@@ -75,7 +74,7 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
         outputs_positive = self.roberta(
             input_ids_positive,
             attention_mask=attention_mask_positive,
-            token_type_ids=token_type_ids_positive,
+            # token_type_ids=token_type_ids_positive,
         )  # sequence_output, pooled_output, (hidden_states), (attentions)
         pooled_output_positive = outputs_positive[1]  # [CLS]
 
