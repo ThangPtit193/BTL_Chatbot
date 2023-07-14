@@ -1,7 +1,7 @@
 import cohere
 import pprint
 from saturn.evaluation.utils import BaseRetriever
-from saturn.evaluation.schemas import Document
+from saturn.evaluation.schemas import Document, EvalData
 from saturn.evaluation.ir_eval import ir_evaluation
 from typing import Text, List
 import csv
@@ -39,23 +39,27 @@ class CohereRetriever(BaseRetriever):
         return ranked_docs
 
 
-def read_csv_to_dict(filename):
-    result_dict = {}
-    result_list = []
+def read_csv_to_dict(filename) -> List[EvalData]:
+    eval_datasets = []
     with open(filename, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            result_list.append(row)
-    return result_list
+            eval_data = EvalData(
+                query=row['question'],
+                answer=row['answer'],
+                relevant_docs=[Document.from_text(row['context'])],
+            )
+            eval_datasets.append(eval_data)
+    return eval_datasets
 
 
-def eval_history_data():
-    # Load dara from csv file as json
-    import csv
-    import pandas as pd
-    datasets = read_csv_to_dict("data/history/cttgt2_v201.csv")
-    pprint.pprint(datasets)
-    #
+def eval_ir_history_data():
+    eval_datasets = read_csv_to_dict("data/history/cttgt2_v201.csv")
+    output = ir_evaluation(
+        retriever=CohereRetriever(),
+        eval_dataset=eval_datasets,
+        top_k=10
+    )
 
 
 if __name__ == '__main__':
