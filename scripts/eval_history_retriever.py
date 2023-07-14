@@ -74,4 +74,4 @@ if __name__ == '__main__':
     # co_retriever = CohereRetriever()
     # results = co_retriever.rank(query, docs)
     # pprint.pprint(results)
-    eval_history_data()
+    eval_ir_history_data()
