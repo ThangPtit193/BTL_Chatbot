@@ -35,15 +35,28 @@ def main(args):
     config_class, model_class, _ = MODEL_CLASSES[args.model_type]
 
     if args.pretrained:
-        model = model_class.from_pretrained(args.pretrained_path, args=args)
+        model = model_class.from_pretrained(
+            args.pretrained_path, 
+            torch_dtype=torch.bfloat16
+            if args.compute_dtype == torch.bfloat16
+            else torch.float16,
+            args=args
+            )
     else:
         model_config = config_class.from_pretrained(
-            args.model_name_or_path, finetuning_task=args.token_level
+            args.model_name_or_path,
+            finetuning_task=args.token_level
         )
         model = model_class.from_pretrained(
-            args.model_name_or_path, config=model_config, args=args
+            args.model_name_or_path,
+            torch_dtype=torch.bfloat16
+            if args.compute_dtype == torch.bfloat16
+            else torch.float16,
+            config=model_config,
+            args=args
         )
     logger.info(model)
+    logger.info(model.dtype)
     logger.info("Vocab size: {}".format(len(tokenizer)))
 
     # GPU or CPU
@@ -58,13 +71,21 @@ def main(args):
     train_dataset = OnlineDataset(args, tokenizer, "train")
     eval_dataset = OnlineDataset(args, tokenizer, "eval")
 
-    trainer = BiencoderTrainer(args, model, train_dataset, eval_dataset)
-
+    trainer = BiencoderTrainer(
+        args=args, 
+        model=model,
+        train_dataset=train_dataset,
+        dev_dataset=eval_dataset,
+        tokenizer=tokenizer
+    )
+    trainer.evaluate_on_benchmark(trainer.query_and_ground_truth, trainer.corpus)
+    # results = trainer.evaluate("eval")
+    # print(f"Loss eval: {results}")
     if args.do_train:
         trainer.train()
 
     if args.do_eval:
-        trainer.eval()
+        trainer.evaluate_on_benchmark()
 
 
 if __name__ == "__main__":
@@ -79,6 +100,12 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--data_dir", default="./data", type=str, help="The input data dir"
+    )
+    parser.add_argument(
+        "--benchmark", default="./bm/benchmark.json", type=str, help="The path to the benchmark file in JSON format."
+    )
+    parser.add_argument(
+        "--corpus", default="./bm/corpus.json", type=str, help="The path to the corpus file in JSON format."
     )
     parser.add_argument(
         "--data_name", default="corpus.txt", type=str, help="The input data name"
@@ -180,6 +207,16 @@ if __name__ == "__main__":
         type=float,
         help="Total number of training epochs to perform.",
     )
+
+    # Optimizer
+    parser.add_argument(
+        "--compute_dtype",
+        type=torch.dtype,
+        default=torch.float16,
+        help="Used in quantization configs. Do not specify this argument manually.",
+    )
+
+
     parser.add_argument(
         "--weight_decay", default=0.0, type=float, help="Weight decay if we apply some."
     )
