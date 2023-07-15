@@ -1,16 +1,18 @@
-import cohere
-import pprint
-from saturn.evaluation.utils import BaseRetriever
-from saturn.evaluation.schemas import Document, EvalData
-from saturn.evaluation.ir_eval import ir_evaluation
-from typing import Text, List
 import csv
+import os
+from typing import List, Text
+
+import cohere
+
+from saturn.evaluation.ir_eval import ir_evaluation
+from saturn.evaluation.schemas import Document, EvalData
+from saturn.evaluation.utils import BaseRetriever
 
 
 class CohereRetriever(BaseRetriever):
     def __init__(self, **kwargs):
         super().__init__()
-        self.co = cohere.Client("Z16anlQpSDEMDFpTavLPMHJCW4tpIq1q9QnexcNN")
+        self.co = cohere.Client(api_key=os.environ.get("CO_API_KEY"))
         self.model_name = kwargs.get("model_name", "rerank-english-v2.0")
         self.top_k = kwargs.get("top_k", 3)
 
@@ -47,18 +49,20 @@ def read_csv_to_dict(filename) -> List[EvalData]:
             eval_data = EvalData(
                 query=row['question'],
                 answer=row['answer'],
-                relevant_docs=[Document.from_text(row['context'])],
+                relevant_docs=[Document.from_text(text=row['context'], id=row['context_id'])],
             )
             eval_datasets.append(eval_data)
-    return eval_datasets
+    return eval_datasets[:5]
 
 
 def eval_ir_history_data():
     eval_datasets = read_csv_to_dict("data/history/cttgt2_v201.csv")
-    output = ir_evaluation(
+    ir_evaluation(
         retriever=CohereRetriever(),
         eval_dataset=eval_datasets,
-        top_k=10
+        top_k=5,
+        report_dir="reports",
+        model_name="rerank-english-v2.0",
     )
 
 
