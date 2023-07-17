@@ -1,10 +1,10 @@
 import csv
 import os
 from typing import List, Text
-
+import time
 import cohere
-
-from saturn.evaluation.ir_eval import ir_evaluation
+import tqdm
+from saturn.evaluation.ir_eval import ir_evaluation, IREvaluator
 from saturn.evaluation.schemas import Document, EvalData
 from saturn.evaluation.utils import BaseRetriever
 
@@ -12,9 +12,16 @@ from saturn.evaluation.utils import BaseRetriever
 class CohereRetriever(BaseRetriever):
     def __init__(self, **kwargs):
         super().__init__()
-        self.co = cohere.Client(api_key=os.environ.get("CO_API_KEY"))
-        self.model_name = kwargs.get("model_name", "rerank-english-v2.0")
+        self.co = cohere.Client("Z16anlQpSDEMDFpTavLPMHJCW4tpIq1q9QnexcNN")
+        self.model_name = kwargs.get("model_name", "rerank-multilingual-v2.0")
         self.top_k = kwargs.get("top_k", 3)
+        self.keys = [
+            "Z16anlQpSDEMDFpTavLPMHJCW4tpIq1q9QnexcNN",
+            "Ri7sBvVB9rWVls47JtbADFUx2qGBA61xsEguincD",
+            "evz5pLwKkgKuIpGtQQR2kSmsIOc6A1Uy7UxOyQfl",
+            "XF2CeBbVgxB3x9biUStn5ITWJktcFZNDXcStAmgi",
+            "xKRuMCqwaAD6ANi9cK4i2S2SSe8lLJwueQCohtBx"
+        ]
 
     def rank(self, query: Text, documents: List[Document]) -> List[Document]:
         """
@@ -27,8 +34,18 @@ class CohereRetriever(BaseRetriever):
 
         """
         texts = [doc.content for doc in documents]
-        results = self.co.rerank(model="rerank-english-v2.0", query=query, documents=texts, top_n=3)
+        results = None
+        while not results:
 
+            try:
+                results = self.co.rerank(model=self.model_name, query=query, documents=texts, top_n=3)
+            except Exception as e:
+                print(e)
+                self.keys = self.keys[1:] + self.keys[:1]
+                self.co.api_key = self.keys[0]
+                results = None
+                print(f"wait for valid key 2s: {self.co.api_key} ")
+                time.sleep(2)
         # Get index and score from docs
         indices_scores = [(doc.index, doc.relevance_score) for doc in results.results]
 
@@ -52,18 +69,28 @@ def read_csv_to_dict(filename) -> List[EvalData]:
                 relevant_docs=[Document.from_text(text=row['context'], id=row['context_id'])],
             )
             eval_datasets.append(eval_data)
-    return eval_datasets[:5]
+    return eval_datasets[:10]
 
 
 def eval_ir_history_data():
     eval_datasets = read_csv_to_dict("data/history/cttgt2_v201.csv")
-    ir_evaluation(
+    # ir_evaluation(
+    #     retriever=CohereRetriever(),
+    #     eval_dataset=eval_datasets,
+    #     top_k=5,
+    #     report_dir="reports",
+    #     model_name="rerank-english-v2.0",
+    # )
+    evaluator = IREvaluator(
         retriever=CohereRetriever(),
         eval_dataset=eval_datasets,
-        top_k=5,
-        report_dir="reports",
-        model_name="rerank-english-v2.0",
     )
+    evaluator.build_records()
+    evaluator.save_records("tmp")
+    # evaluator.load_records("tmp/records.json")
+
+    # Evaluate
+    evaluator.run_eval()
 
 
 if __name__ == '__main__':
