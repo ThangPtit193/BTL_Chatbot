@@ -1,14 +1,142 @@
 import os
 from pathlib import Path
-from typing import List, Optional, Union
+from typing import *
 
 import pandas as pd
 from loguru import logger
 from pandas import DataFrame
 from xlsxwriter.utility import xl_range_abs
-
+from saturn.utils.io import write_json, load_json
 from saturn.evaluation.schemas import Document, EvalData
 from saturn.evaluation.utils import BaseRetriever
+from saturn.utils import print_utils
+import tqdm
+
+
+class IREvaluator:
+    def __init__(self, retriever: BaseRetriever, eval_dataset: List[EvalData], additional_docs: List[Document] = None):
+        """
+        Evaluates the performance of a retriever on a given dataset, optionally including additional documents.
+
+        Args:
+            retriever (BaseRetriever): An instance of a retriever that implements the `BaseRetriever` interface.
+            eval_dataset (List[EvalData]): A list of `EvalData` objects representing the evaluation dataset.
+            additional_docs (List[Document]): A list of additional `Document` objects to be included in the index.
+                If None, only the documents in the evaluation dataset will be used.
+        """
+        self.retriever = retriever
+        self.eval_dataset = eval_dataset
+        self.additional_docs = additional_docs
+
+        # Other variables
+        self.records = None
+
+    def build_records(self, save_dir: Text = None, max_relevant: int = 100):
+        self.records = []
+        unique_docs = []
+        combine_docs = sum([data.relevant_docs for data in self.eval_dataset], [])
+        for doc in combine_docs:
+            if doc not in unique_docs:
+                unique_docs.append(doc)
+        for sample in tqdm.tqdm(self.eval_dataset, total=len(self.eval_dataset)):
+            top_k_retrieve_documents = [doc for doc in self.retriever(sample.query, unique_docs)][:max_relevant]
+            record = {
+                'query': sample.query,
+                'answer': sample.answer or '',
+                'top_k_relevant': max_relevant,
+                'relevant_docs': [doc.content for doc in sample.relevant_docs],
+                'relevant_scores': [doc.score for doc in top_k_retrieve_documents],
+                'predicted_relevant_docs': [doc.dict() for doc in top_k_retrieve_documents]
+            }
+            self.records.append(record)
+
+        if save_dir:
+            record_path = os.path.join(save_dir, 'records.json')
+            write_json(self.records, record_path)
+
+    def save_records(self, save_dir: Text = None):
+        if not self.records:
+            raise ValueError(
+                'Records not found. Please run `build_records` or `load_records` before running `save_records`.')
+        if save_dir:
+            if not os.path.exists(save_dir):
+                os.makedirs(save_dir, exist_ok=False)
+            record_path = os.path.join(save_dir, 'records.json')
+            write_json(self.records, record_path)
+
+    def load_records(self, record_path: Text):
+        self.records = load_json(record_path)
+
+    def run_eval(
+            self, report_dir: Text = "reports", threshold: float = 0.0, recall_top_k: List[int] = None,
+            file_name: Text = None
+    ):
+        if not recall_top_k:
+            recall_top_k = [5, 10]
+        if not self.records:
+            raise ValueError(
+                'Records not found. Please run `build_records` or `load_records` before running `run_eval`.')
+        reports = []
+        mrr = 0
+        map = 0
+        for record, sample in zip(self.records, self.eval_dataset):
+            top_k_retrieve_documents = [Document(**record) for record in record.pop('predicted_relevant_docs')
+                                        if record['score'] >= threshold]
+
+            # Get predicts id
+            predicted_ids = [doc.id for doc in top_k_retrieve_documents]
+            true_ids = [doc.id for doc in sample.relevant_docs]
+
+            rr_score = 0
+            ap_score = 0
+            ap = 0
+            for id in predicted_ids:
+                if id not in true_ids:
+                    continue
+
+                ap += 1
+                if ap == 1 and rr_score == 0:
+                    rr_score = 1 / int(predicted_ids.index(id) + 1)
+                else:
+                    rr_score = rr_score
+                ap_score += ap / (int(predicted_ids.index(id)) + 1)
+
+                mrr = mrr + (rr_score / len(predicted_ids))
+                map = map + (ap_score / len(predicted_ids))
+
+            # Update reports
+            report = {
+                'rr': round(rr_score / len(predicted_ids), 2),
+                'ap': round(ap_score / len(predicted_ids), 2),
+                "predicted_label": [doc.content for doc in top_k_retrieve_documents],
+                **record,
+            }
+            # Calculate recall
+            for k in recall_top_k:
+                recall = len(set(predicted_ids[:k]).intersection(set(true_ids))) / len(set(true_ids))
+                report.update({f'recall@{k}': round(recall, 2)})
+            reports.append(report)
+        print_utils.print_style_free(
+            f"Mean Reciprocal Rank: {round(mrr / len(self.eval_dataset), 2)}"
+        )
+        print_utils.print_style_free(
+            f"Mean Average Precision: {round(map / len(self.eval_dataset), 2)}"
+        )
+        for k in recall_top_k:
+            print_utils.print_style_free(
+                f"Recall@{k}: {round(sum([report[f'recall@{k}'] for report in reports]) / len(reports), 2)}"
+            )
+        if not reports:
+            return reports
+
+        # Save report as json
+        if report_dir:
+            if not os.path.exists(report_dir):
+                os.makedirs(report_dir)
+            report_path = os.path.join(report_dir,
+                                       f'{file_name or self.retriever.__class__.__name__}_ir_eval_results.json')
+            write_json(reports, report_path)
+        # save_detail_report(reports, report_dir, file_name=self.retriever.__call__.__name__)
 
 
 def ir_evaluation(
@@ -22,7 +150,6 @@ def ir_evaluation(
 ):
     """
     Evaluates the performance of a retriever on a given dataset, optionally including additional documents.
-
 
     Args:
         retriever (BaseRetriever): An instance of a retriever that implements the `BaseRetriever` interface.
@@ -52,7 +179,7 @@ def ir_evaluation(
         if doc not in unique_docs:
             unique_docs.append(doc)
 
-    for sample in eval_dataset:
+    for sample in tqdm.tqdm(eval_dataset, total=len(eval_dataset)):
         if not threshold:
             threshold = 0
         top_k_retrieve_documents = [doc for doc in retriever(sample.query, unique_docs)
@@ -93,19 +220,27 @@ def ir_evaluation(
         f"Mean Reciprocal Rank: {round(mrr / len(eval_dataset), 2)}, Mean Average Precision: {round(map / len(eval_dataset), 2)}")
     if not records:
         return records
-    save_detail_report(records, report_dir, model_name=model_name)
+
+    # Save report as json
+    if report_dir:
+        if not os.path.exists(report_dir):
+            os.makedirs(report_dir)
+        report_path = os.path.join(report_dir, f'{model_name or retriever.__class__.__name__}_ir_eval_results.json')
+        write_json(records, report_path)
+
+    # save_detail_report(records, report_dir, file_name=model_name or retriever.__call__.__name__)
 
 
 def save_detail_report(
         df: Union[DataFrame, List],
         output_dir: Optional[Union[str, Path]] = None,
-        model_name: Optional[str] = None,
+        file_name: Optional[str] = "ir_eval_results"
 ):
     """
     Saves the evaluation result.
     The result of each node is saved in a separate csv with file name {node_name}.csv to the output_dir folder.
 
-    :param model_name: Model name to benchmark
+    :param file_name: Model name to benchmark
     :param df: Evaluation results
     :param output_dir: Path to the target folder the csvs will be saved.
     """
@@ -115,27 +250,28 @@ def save_detail_report(
     if not output_dir.exists():
         output_dir.mkdir(parents=True)
 
-    target_path = output_dir / f"{model_name or 'No Name'}.xlsx"
+    target_path = output_dir / f"{file_name or 'No Name'}.xlsx"
 
     if isinstance(df, list):
         df = pd.DataFrame(df)
 
     # df = pd.DataFrame(df["retriever_docs"])
     df.insert(loc=0, column='index', value=df.index)
-    df.insert(6, 'score', df.pop('relevant_doc_scores'))
-    df.columns = ['index', 'query', 'answer', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
+    # df.insert(6, 'score', df.pop('relevant_doc_scores'))
+    # df.columns = ['index', 'query', 'answer', 'top_k', 'rr', 'ap', 'score', 'relevant_docs', 'predicted_label']
+    df.columns = ['index'] + list(df.columns[1:])
     # explode lists of corpus to row
     df = df.apply(pd.Series.explode)
 
     df_merged = pd.DataFrame(df.to_dict('records'))
-    df_merged.score = df_merged.score.round(decimals=5)
+    df_merged.score = df_merged.relevant_scores.round(decimals=5)
 
     df_merged_wrong_queries = pd.DataFrame(df.to_dict('records'))
     df_merged_wrong_queries = df_merged_wrong_queries[
         (df_merged_wrong_queries['relevant_docs'] != df_merged_wrong_queries['predicted_label'])]
     df_merged_wrong_queries = df_merged_wrong_queries.reset_index()
     df_merged_wrong_queries.pop('level_0')
-    df_merged_wrong_queries.score = df_merged_wrong_queries.score.round(decimals=2)
+    df_merged_wrong_queries.relevant_scores = df_merged_wrong_queries.relevant_scores.round(decimals=2)
 
     writer = pd.ExcelWriter(f'{target_path}', engine='xlsxwriter')
     df_merged.to_excel(writer, sheet_name='Detail_Report', index=False)
@@ -189,17 +325,17 @@ def save_detail_report(
                         i, dt.columns.get_loc('predicted_label'),
                         dt['predicted_label'][i - 1], bg_format_wrong)
                     worksheet.write(
-                        i, dt.columns.get_loc('score'),
-                        dt['score'][i - 1], bg_format_incorrect_label)
+                        i, dt.columns.get_loc('relevant_scores'),
+                        dt['relevant_scores'][i - 1], bg_format_incorrect_label)
                 else:
-                    if float(dt['score'][i - 1]) >= 0.9:
+                    if float(dt['relevant_scores'][i - 1]) >= 0.9:
                         worksheet.write(
                             i, dt.columns.get_loc('score'),
                             dt['score'][i - 1], bg_best_score)
                     else:
                         worksheet.write(
-                            i, dt.columns.get_loc('score'),
-                            dt['score'][i - 1], bg_format_correct_label)
+                            i, dt.columns.get_loc('relevant_scores'),
+                            dt['relevant_scores'][i - 1], bg_format_correct_label)
 
             # column to merge or reformat
             column_index = {
