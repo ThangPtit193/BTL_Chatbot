@@ -1,12 +1,11 @@
-import csv
-import os
 from typing import List, Text
-import time
+
 import cohere
-import tqdm
-from saturn.evaluation.ir_eval import ir_evaluation, IREvaluator
+
+from saturn.evaluation.ir_eval import IREvaluator
 from saturn.evaluation.schemas import Document, EvalData
 from saturn.evaluation.utils import BaseRetriever
+from saturn.utils import io
 
 
 class CohereRetriever(BaseRetriever):
@@ -44,8 +43,8 @@ class CohereRetriever(BaseRetriever):
                 self.keys = self.keys[1:] + self.keys[:1]
                 self.co.api_key = self.keys[0]
                 results = None
-                print(f"wait for valid key 2s: {self.co.api_key} ")
-                time.sleep(2)
+                # print(f"wait for valid key 2s: {self.co.api_key} ")
+                # time.sleep(2)
         # Get index and score from docs
         indices_scores = [(doc.index, doc.relevance_score) for doc in results.results]
 
@@ -58,32 +57,35 @@ class CohereRetriever(BaseRetriever):
         return ranked_docs
 
 
-def read_csv_to_dict(filename) -> List[EvalData]:
+def read_eval_datasets(filename) -> List[EvalData]:
     eval_datasets = []
-    with open(filename, newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            eval_data = EvalData(
-                query=row['question'],
-                answer=row['answer'],
-                relevant_docs=[Document.from_text(text=row['context'], id=row['context_id'])],
-            )
-            eval_datasets.append(eval_data)
-    return eval_datasets[:10]
+    rows = io.load_json(filename)
+    for row in rows:
+        eval_data = EvalData(
+            query=row['question'],
+            # answer=row['answer'],
+            relevant_docs_id=row['relevant_docs_id']
+        )
+        eval_datasets.append(eval_data)
+    return eval_datasets
+
+
+def read_documents(filename: Text) -> List[Document]:
+    docs = []
+    raw_docs = io.load_json(filename)
+    for row in raw_docs:
+        doc = Document.from_text(text=row['context'], id=row['id'])
+        docs.append(doc)
+    return docs
 
 
 def eval_ir_history_data():
-    eval_datasets = read_csv_to_dict("data/history/cttgt2_v201.csv")
-    # ir_evaluation(
-    #     retriever=CohereRetriever(),
-    #     eval_dataset=eval_datasets,
-    #     top_k=5,
-    #     report_dir="reports",
-    #     model_name="rerank-english-v2.0",
-    # )
+    eval_datasets = read_eval_datasets("data/history/full_history_v4.0.0.json")
+    documents = read_documents("data/history/document_history_all_v201.json")
     evaluator = IREvaluator(
         retriever=CohereRetriever(),
         eval_dataset=eval_datasets,
+        documents=documents,
     )
     evaluator.build_records()
     evaluator.save_records("tmp")
@@ -94,15 +96,5 @@ def eval_ir_history_data():
 
 
 if __name__ == '__main__':
-    # query = "What is the capital of the United States?"
-    # docs = [
-    #     "Carson City is the capital city of the American state of Nevada. At the 2010 United States Census, Carson City had a population of 55,274.",
-    #     "The Commonwealth of the Northern Mariana Islands is a group of islands in the Pacific Ocean that are a political division controlled by the United States. Its capital is Saipan.",
-    #     "Charlotte Amalie is the capital and largest city of the United States Virgin Islands. It has about 20,000 people. The city is on the island of Saint Thomas.",
-    #     "Washington, D.C. (also known as simply Washington or D.C., and officially as the District of Columbia) is the capital of the United States. It is a federal district. The President of the USA and many major national government offices are in the territory. This makes it the political center of the United States of America.",
-    #     "Capital punishment (the death penalty) has existed in the United States since before the United States was a country. As of 2017, capital punishment is legal in 30 of the 50 states. The federal government (including the United States military) also uses capital punishment."]
-    # docs = [Document.from_text(doc) for doc in docs]
-    # co_retriever = CohereRetriever()
-    # results = co_retriever.rank(query, docs)
-    # pprint.pprint(results)
     eval_ir_history_data()
+    # read_addition_docs("data/history/document_history_all_v201.json")
