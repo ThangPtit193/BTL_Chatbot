@@ -21,4 +21,4 @@ class Document(BaseModel):
 class EvalData(BaseModel):
     query: Text
     answer: Text = None
-    relevant_docs: List[Document]
+    relevant_docs_id: List[Text]

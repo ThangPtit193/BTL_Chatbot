@@ -14,7 +14,7 @@ import tqdm
 
 
 class IREvaluator:
-    def __init__(self, retriever: BaseRetriever, eval_dataset: List[EvalData], additional_docs: List[Document] = None):
+    def __init__(self, retriever: BaseRetriever, eval_dataset: List[EvalData], documents: List[Document] = None):
         """
         Evaluates the performance of a retriever on a given dataset, optionally including additional documents.
 
@@ -26,25 +26,21 @@ class IREvaluator:
         """
         self.retriever = retriever
         self.eval_dataset = eval_dataset
-        self.additional_docs = additional_docs
-
+        self.documents = documents
+        self.id_to_doc = {doc.id: doc for doc in documents}
         # Other variables
         self.records = None
 
     def build_records(self, save_dir: Text = None, max_relevant: int = 100):
         self.records = []
-        unique_docs = []
-        combine_docs = sum([data.relevant_docs for data in self.eval_dataset], [])
-        for doc in combine_docs:
-            if doc not in unique_docs:
-                unique_docs.append(doc)
+
         for sample in tqdm.tqdm(self.eval_dataset, total=len(self.eval_dataset)):
-            top_k_retrieve_documents = [doc for doc in self.retriever(sample.query, unique_docs)][:max_relevant]
+            top_k_retrieve_documents = [doc for doc in self.retriever(sample.query, self.documents)][:max_relevant]
             record = {
                 'query': sample.query,
                 'answer': sample.answer or '',
                 'top_k_relevant': max_relevant,
-                'relevant_docs': [doc.content for doc in sample.relevant_docs],
+                'relevant_docs': [self.id_to_doc[doc_id].content for doc_id in sample.relevant_docs_id],
                 'relevant_scores': [doc.score for doc in top_k_retrieve_documents],
                 'predicted_relevant_docs': [doc.dict() for doc in top_k_retrieve_documents]
             }
@@ -85,7 +81,7 @@ class IREvaluator:
 
             # Get predicts id
             predicted_ids = [doc.id for doc in top_k_retrieve_documents]
-            true_ids = [doc.id for doc in sample.relevant_docs]
+            true_ids = sample.relevant_docs_id
 
             rr_score = 0
             ap_score = 0
