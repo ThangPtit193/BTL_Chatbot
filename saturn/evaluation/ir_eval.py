@@ -21,7 +21,7 @@ class IREvaluator:
         Args:
             retriever (BaseRetriever): An instance of a retriever that implements the `BaseRetriever` interface.
             eval_dataset (List[EvalData]): A list of `EvalData` objects representing the evaluation dataset.
-            additional_docs (List[Document]): A list of additional `Document` objects to be included in the index.
+            documents (List[Document]): A list of additional `Document` objects to be included in the index.
                 If None, only the documents in the evaluation dataset will be used.
         """
         self.retriever = retriever
@@ -31,33 +31,50 @@ class IREvaluator:
         # Other variables
         self.records = None
 
-    def build_records(self, save_dir: Text = None, max_relevant: int = 100):
+    def build_records(self, save_dir: Text = None, max_relevant: int = 100, batch_size: int = 32, ):
         self.records = []
+        # Loop with batch
+        for i in tqdm.tqdm(range(0, len(self.eval_dataset), batch_size)):
+            batch = self.eval_dataset[i:i + batch_size]
+            texts = [sample.query for sample in batch]
+            batch_retrieve_documents = self.retriever.rank_batch(texts)
+            for sample, top_k_retrieve_document in zip(batch, batch_retrieve_documents):
+                record = {
+                    'query': sample.query,
+                    'answer': sample.answer or '',
+                    'top_k_relevant': max_relevant,
+                    'relevant_docs': [self.id_to_doc[doc_id].content for doc_id in sample.relevant_docs_id],
+                    'relevant_scores': [doc.score for doc in top_k_retrieve_document],
+                    'predicted_relevant_docs': [doc.dict() for doc in top_k_retrieve_document]
+                }
+                self.records.append(record)
 
-        for sample in tqdm.tqdm(self.eval_dataset, total=len(self.eval_dataset)):
-            top_k_retrieve_documents = [doc for doc in self.retriever(sample.query, self.documents)][:max_relevant]
-            record = {
-                'query': sample.query,
-                'answer': sample.answer or '',
-                'top_k_relevant': max_relevant,
-                'relevant_docs': [self.id_to_doc[doc_id].content for doc_id in sample.relevant_docs_id],
-                'relevant_scores': [doc.score for doc in top_k_retrieve_documents],
-                'predicted_relevant_docs': [doc.dict() for doc in top_k_retrieve_documents]
-            }
-            self.records.append(record)
+        # for sample in tqdm.tqdm(self.eval_dataset, total=len(self.eval_dataset), ):
+        #     top_k_retrieve_documents = [doc for doc in self.retriever(sample.query)][:max_relevant]
+        #     record = {
+        #         'query': sample.query,
+        #         'answer': sample.answer or '',
+        #         'top_k_relevant': max_relevant,
+        #         'relevant_docs': [self.id_to_doc[doc_id].content for doc_id in sample.relevant_docs_id],
+        #         'relevant_scores': [doc.score for doc in top_k_retrieve_documents],
+        #         'predicted_relevant_docs': [doc.dict() for doc in top_k_retrieve_documents]
+        #     }
+        #     self.records.append(record)
 
         if save_dir:
             record_path = os.path.join(save_dir, 'records.json')
             write_json(self.records, record_path)
 
-    def save_records(self, save_dir: Text = None):
+    def save_records(self, save_dir: Text = None, file_name: Text = "records.json"):
         if not self.records:
             raise ValueError(
                 'Records not found. Please run `build_records` or `load_records` before running `save_records`.')
+        if not file_name.endswith('.json'):
+            file_name += '.json'
         if save_dir:
             if not os.path.exists(save_dir):
                 os.makedirs(save_dir, exist_ok=False)
-            record_path = os.path.join(save_dir, 'records.json')
+            record_path = os.path.join(save_dir, file_name)
             write_json(self.records, record_path)
 
     def load_records(self, record_path: Text):
@@ -76,6 +93,9 @@ class IREvaluator:
         mrr = 0
         map = 0
         for record, sample in zip(self.records, self.eval_dataset):
+            if not sample.relevant_docs_id:
+                print(f"Relevant for sample is None {sample.relevant_docs_id}")
+                continue
             top_k_retrieve_documents = [Document(**record) for record in record.pop('predicted_relevant_docs')
                                         if record['score'] >= threshold]
 
@@ -133,98 +153,6 @@ class IREvaluator:
                                        f'{file_name or self.retriever.__class__.__name__}_ir_eval_results.json')
             write_json(reports, report_path)
         # save_detail_report(reports, report_dir, file_name=self.retriever.__call__.__name__)
-
-
-def ir_evaluation(
-        retriever: BaseRetriever,
-        eval_dataset: List[EvalData],
-        additional_docs: List[Document] = None,
-        threshold: float = None,
-        top_k: int = None,
-        report_dir: str = None,
-        model_name: Optional[str] = None
-):
-    """
-    Evaluates the performance of a retriever on a given dataset, optionally including additional documents.
-
-    Args:
-        retriever (BaseRetriever): An instance of a retriever that implements the `BaseRetriever` interface.
-        eval_dataset (List[EvalData]): A list of `EvalData` objects representing the evaluation dataset.
-        additional_docs (List[Document]): A list of additional `Document` objects to be included in the index.
-            If None, only the documents in the evaluation dataset will be used.
-        threshold (float): A threshold value for document scores. Only documents with scores greater than or equal to
-            this threshold will be considered relevant.
-        top_k (int): The maximum number of documents to retrieve for each query. If not None, only the top `k` documents
-            will be considered for evaluation.
-        report_dir (str): The directory where evaluation reports will be saved. If None, no reports will be saved.
-    Returns:
-        A dictionary containing the evaluation results.
-    """
-    top_k = top_k or 5
-
-    combine_docs = sum([data.relevant_docs for data in eval_dataset], [])
-    if additional_docs:
-        combine_docs.extend(additional_docs)
-
-    unique_docs = []
-    records = []
-    mrr = 0
-    map = 0
-
-    for doc in combine_docs:
-        if doc not in unique_docs:
-            unique_docs.append(doc)
-
-    for sample in tqdm.tqdm(eval_dataset, total=len(eval_dataset)):
-        if not threshold:
-            threshold = 0
-        top_k_retrieve_documents = [doc for doc in retriever(sample.query, unique_docs)
-                                    if doc.score >= threshold][:top_k]
-        ids = [doc.id for doc in top_k_retrieve_documents]
-        true_ids = [doc.id for doc in sample.relevant_docs]
-
-        rr_score = 0
-        ap_score = 0
-        ap = 0
-        for id in ids:
-            if id not in true_ids:
-                continue
-
-            ap += 1
-            if ap == 1 and rr_score == 0:
-                rr_score = 1 / int(ids.index(id) + 1)
-            else:
-                rr_score = rr_score
-            ap_score += ap / (int(ids.index(id)) + 1)
-
-        record = {
-            'query': sample.query,
-            'answer': sample.answer or '',
-            'top_k_relevant': top_k,
-            'rr_score': round(rr_score / len(ids), 2),
-            'ap_score': round(ap_score / len(ids), 2),
-            'relevant_docs': [doc.content for doc in sample.relevant_docs],
-            'relevant_doc_scores': [doc.score for doc in top_k_retrieve_documents],
-            'predicted_relevant_docs': [doc.content for doc in top_k_retrieve_documents]
-        }
-
-        mrr = mrr + (rr_score / len(ids))
-        map = map + (ap_score / len(ids))
-        records.append(record)
-
-    logger.info(
-        f"Mean Reciprocal Rank: {round(mrr / len(eval_dataset), 2)}, Mean Average Precision: {round(map / len(eval_dataset), 2)}")
-    if not records:
-        return records
-
-    # Save report as json
-    if report_dir:
-        if not os.path.exists(report_dir):
-            os.makedirs(report_dir)
-        report_path = os.path.join(report_dir, f'{model_name or retriever.__class__.__name__}_ir_eval_results.json')
-        write_json(records, report_path)
-
-    # save_detail_report(records, report_dir, file_name=model_name or retriever.__call__.__name__)
 
 
 def save_detail_report(

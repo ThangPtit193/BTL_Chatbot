@@ -1,60 +1,9 @@
 from typing import List, Text
-
-import cohere
-
+import os
+from scripts.retriever import CohereRerankRetriever, CohereEmbeddingRetriever, OpenAIEmbeddingRetriever
 from saturn.evaluation.ir_eval import IREvaluator
 from saturn.evaluation.schemas import Document, EvalData
-from saturn.evaluation.utils import BaseRetriever
 from saturn.utils import io
-
-
-class CohereRetriever(BaseRetriever):
-    def __init__(self, **kwargs):
-        super().__init__()
-        self.co = cohere.Client("Z16anlQpSDEMDFpTavLPMHJCW4tpIq1q9QnexcNN")
-        self.model_name = kwargs.get("model_name", "rerank-multilingual-v2.0")
-        self.top_k = kwargs.get("top_k", 3)
-        self.keys = [
-            "Z16anlQpSDEMDFpTavLPMHJCW4tpIq1q9QnexcNN",
-            "Ri7sBvVB9rWVls47JtbADFUx2qGBA61xsEguincD",
-            "evz5pLwKkgKuIpGtQQR2kSmsIOc6A1Uy7UxOyQfl",
-            "XF2CeBbVgxB3x9biUStn5ITWJktcFZNDXcStAmgi",
-            "xKRuMCqwaAD6ANi9cK4i2S2SSe8lLJwueQCohtBx"
-        ]
-
-    def rank(self, query: Text, documents: List[Document]) -> List[Document]:
-        """
-
-        Args:
-            query:
-            documents:
-
-        Returns:
-
-        """
-        texts = [doc.content for doc in documents]
-        results = None
-        while not results:
-
-            try:
-                results = self.co.rerank(model=self.model_name, query=query, documents=texts, top_n=3)
-            except Exception as e:
-                print(e)
-                self.keys = self.keys[1:] + self.keys[:1]
-                self.co.api_key = self.keys[0]
-                results = None
-                # print(f"wait for valid key 2s: {self.co.api_key} ")
-                # time.sleep(2)
-        # Get index and score from docs
-        indices_scores = [(doc.index, doc.relevance_score) for doc in results.results]
-
-        # final document after ranking
-        ranked_docs = []
-        for index, score in indices_scores:
-            doc = documents[index]
-            doc.score = score
-            ranked_docs.append(doc)
-        return ranked_docs
 
 
 def read_eval_datasets(filename) -> List[EvalData]:
@@ -79,22 +28,77 @@ def read_documents(filename: Text) -> List[Document]:
     return docs
 
 
-def eval_ir_history_data():
-    eval_datasets = read_eval_datasets("data/history/full_history_v4.0.0.json")
+def eval_ir_history_data_rerank():
+    data_file_path = "data/history/cttgt2_v201.json"
+    eval_datasets = read_eval_datasets(data_file_path)
     documents = read_documents("data/history/document_history_all_v201.json")
+    retriever = CohereRerankRetriever(
+        model_name="rerank-multilingual-v2.0",
+        top_k=30
+    )
     evaluator = IREvaluator(
-        retriever=CohereRetriever(),
+        retriever=retriever,
         eval_dataset=eval_datasets,
         documents=documents,
     )
     evaluator.build_records()
-    evaluator.save_records("tmp")
-    # evaluator.load_records("tmp/records.json")
+    evaluator.save_records(save_dir="tmp", file_name="records_" + os.path.basename(data_file_path) + ".json")
+    # evaluator.load_records(f"tmp/records_{os.path.basename(data_file_path)}.json")
 
     # Evaluate
-    evaluator.run_eval()
+    evaluator.run_eval(recall_top_k=[3, 5, 10, 15])
+
+
+def eval_ir_history_data_embedding():
+    # data_file_path = "data/history/cttgt2_v201.json"
+    data_file_path = "data/history/full_history_v4.0.0.json"
+    eval_datasets = read_eval_datasets(data_file_path)
+    documents = read_documents("data/history/document_history_all_v201.json")
+    retriever = CohereEmbeddingRetriever(
+        documents=documents,
+        model_name="embed-multilingual-v2.0",
+        top_k=30
+    )
+    evaluator = IREvaluator(
+        retriever=retriever,
+        eval_dataset=eval_datasets,
+        documents=documents
+    )
+    evaluator.build_records(batch_size=128)
+    evaluator.save_records(
+        save_dir="tmp",
+        file_name=f"records_{retriever.__class__.__name__}_" + os.path.basename(data_file_path) + ".json"
+    )
+    evaluator.load_records(f"tmp/records_{retriever.__class__.__name__}_{os.path.basename(data_file_path)}.json")
+
+    # Evaluate
+    evaluator.run_eval(recall_top_k=[3, 5, 10, 15])
+
+
+def eval_ir_history_data_openai_embedding():
+    # data_file_path = "data/history/cttgt2_v201.json"
+    data_file_path = "data/history/full_history_v4.0.0.json"
+    eval_datasets = read_eval_datasets(data_file_path)
+    documents = read_documents("data/history/document_history_all_v201.json")
+    retriever = OpenAIEmbeddingRetriever(
+        documents=documents,
+        top_k=30
+    )
+    evaluator = IREvaluator(
+        retriever=retriever,
+        eval_dataset=eval_datasets,
+        documents=documents
+    )
+    evaluator.build_records(batch_size=128)
+    evaluator.save_records(
+        save_dir="tmp",
+        file_name=f"records_{retriever.__class__.__name__}_" + os.path.basename(data_file_path) + ".json"
+    )
+    evaluator.load_records(f"tmp/records_{retriever.__class__.__name__}_{os.path.basename(data_file_path)}.json")
+
+    # Evaluate
+    evaluator.run_eval(recall_top_k=[3, 5, 10, 15])
 
 
 if __name__ == '__main__':
-    eval_ir_history_data()
-    # read_addition_docs("data/history/document_history_all_v201.json")
+    eval_ir_history_data_openai_embedding()
