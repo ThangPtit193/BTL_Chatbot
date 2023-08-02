@@ -4,9 +4,10 @@ import torch.nn as nn
 
 class UniformityLoss(nn.Module):
     def __init__(self, t=2):
-        
+        super(UniformityLoss, self).__init__()
+
         self.t = t
-    
+
     def forward(self, embedding):
         """
         Computes the uniform loss for a given tensor embedding, which measures the uniformity of pairwise distances between points.

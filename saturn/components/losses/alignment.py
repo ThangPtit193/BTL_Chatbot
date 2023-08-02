@@ -1,12 +1,12 @@
-import torch
 import torch.nn as nn
 
 
 class AlignmentLoss(nn.Module):
     def __init__(self, alpha=2):
-        
+        super(AlignmentLoss, self).__init__()
+
         self.alpha = alpha
-    
+
     def forward(self, anchor, positive):
         """
         Computes the alignment loss between two tensors, anchor and positive, using the L2 norm with an optional power factor.

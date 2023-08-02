@@ -1,7 +1,8 @@
 import logging
 import os
 import random
-
+import re
+import string
 import numpy as np
 import torch
 from transformers import set_seed
@@ -14,13 +15,15 @@ from saturn.components.models.model import BiencoderRobertaModel
 MODEL_CLASSES = {
     "phobert-base": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
     "phobert-base-v2": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
-    "phobert-large": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer)
+    "phobert-large": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
+    "sim-cse-vietnamese": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
 }
 
 MODEL_PATH_MAP = {
     "phobert-base": "vinai/phobert-base",
     "phobert-base-v2": "/home/vth/backbone/models--vinai--phobert-base-v2/snapshots/5388b8ddc52de647dc81e81bbe174fa1fc37e12c",
-    "phobert-large": "/home/vth/backbone/models--vinai--phobert-large/snapshots/9ce4eafcd8e601d798295b17c75c5f5f1b1509b9"
+    "phobert-large": "/home/vth/backbone/models--vinai--phobert-large/snapshots/9ce4eafcd8e601d798295b17c75c5f5f1b1509b9",
+    "sim-cse-vietnamese": "VoVanPhuc/sup-SimCSE-VietNamese-phobert-base"
 }
 
 vowel = [
@@ -61,6 +64,7 @@ def _setup_logger():
 
     return logger
 
+
 logger = _setup_logger()
 
 
@@ -71,6 +75,7 @@ def set_random_seed(seed):
         np.random.seed(seed)
         torch.manual_seed(seed)
         torch.cuda.manual_seed_all(seed)
+
 
 def is_valid_vietnam_word(word):
     chars = list(word)
@@ -87,5 +92,31 @@ def is_valid_vietnam_word(word):
     return True
 
 
+def preprocessing(text):
+    punctuation = string.punctuation.replace('/', '').replace('-', '')
+
+    text = text.replace('/', '-')
+    # remove punctuation
+    for punc in punctuation:
+        text = text.replace(punc, ' ')
+    text = " ".join(text.strip().split()).lower()
+
+    # remove duplicate space
+    text = re.sub(r"[\s]+", " ", text)
+    text = text.strip("\n ")
+
+    # convert time
+    text = re.sub(r"năm (\d+) đến năm (\d+)", r'\1-\2', text)
+    text = re.sub(r"(\d+) tháng (\d+) năm (\d+)", r'\1-\2-\3', text)
+    text = text.replace(' - ', '-')
+
+    text = " ".join(text.strip().split())
+
+    return text
+
+
 def load_tokenizer(args):
-    return MODEL_CLASSES[args.model_type][2].from_pretrained(args.model_name_or_path)
+    return MODEL_CLASSES[args.model_type][2].from_pretrained(
+        args.model_name_or_path,
+        use_fast=args.use_fast_tokenizer
+    )

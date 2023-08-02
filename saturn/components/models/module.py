@@ -1,10 +1,7 @@
 import torch
-import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
-
 import numpy as np
-from scipy.spatial.distance import cdist
 
 class MLPLayer(nn.Module):
     """
@@ -21,6 +18,7 @@ class MLPLayer(nn.Module):
         x = self.activation(x)
 
         return x
+
 
 class Pooler(nn.Module):
     """
@@ -47,7 +45,6 @@ class Pooler(nn.Module):
 
     def forward(self, attention_mask, outputs):
         last_hidden = outputs.last_hidden_state
-        pooler_output = outputs.pooler_output
         hidden_states = outputs.hidden_states
 
         if self.pooler_type in ["cls_before_pooler", "cls"]:
@@ -73,25 +70,38 @@ class Pooler(nn.Module):
         else:
             raise NotImplementedError
 
-class CosineSimilarity(nn.Module):
+
+def dot_product_scores(compr: torch.Tensor, refer: torch.Tensor) -> torch.Tensor:
+    r = torch.matmul(compr, torch.transpose(refer, 0, 1))
+    return r
+
+
+def cosine_scores(compr: torch.Tensor, refer: torch.Tensor):
+    return F.cosine_similarity(compr, refer, dim=-1)
+
+
+
+def cosine_scores_numpy(compr, refer):
+    compr_norm = np.linalg.norm(compr, axis=1)
+    refer_norm = np.linalg.norm(refer, axis=1)
+    
+    dot_product = np.dot(compr, refer.T)
+    similarity = dot_product / (compr_norm[:, np.newaxis] * refer_norm)
+    
+    return similarity
+
+class SimilarityFunction(nn.Module):
     """
     Dot product or cosine similarity
     """
 
-    def __init__(self, temp=0.05):
+    def __init__(self, name_fn="cosine"):
         super().__init__()
-        self.temp = temp
-        self.cos = nn.CosineSimilarity(dim=-1)
-
+        if name_fn == "cosine":
+            self.fn = dot_product_scores
+        elif name_fn == "dot":
+            self.fn = cosine_scores
+        else:
+            raise ValueError("Invalid value for name_fn. Supported values are 'cosine' and 'dot'.")
     def forward(self, x, y):
-        return self.cos(x, y) / self.temp
-
-
-class DotProductSimilarity(nn.Module):
-    pass
-
-
-def cosine_similarity(array_a, array_b):
-    distance = cdist(array_a, array_b, metric='cosine')
-    similarity = 1 - distance
-    return similarity
+        return self.fn(x, y)

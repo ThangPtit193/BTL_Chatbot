@@ -127,5 +127,5 @@ def normalize_word_diacritic(word):
 #     return " ".join(words)
 
 def remove_punctuation(text):
-    text = re.sub("[!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~]", "", text)
+    text = re.sub("[!\"#$%&'()*+,-./:;<=>?@[\\]^`{|}~]", "", text)
     return text

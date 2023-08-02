@@ -1,101 +1,168 @@
+from typing import Optional
+
 import torch
-import torch.distributed as dist
 import torch.nn as nn
-import torch.nn.functional as F
-import transformers
-from saturn.components.models.module import CosineSimilarity
-from transformers import PretrainedConfig, RobertaTokenizer
-from transformers.activations import gelu
-from transformers.file_utils import (
-    add_code_sample_docstrings,
-    add_start_docstrings,
-    add_start_docstrings_to_model_forward,
-    replace_return_docstrings,
-)
-from transformers.modeling_outputs import (
-    BaseModelOutputWithPoolingAndCrossAttentions,
-    SequenceClassifierOutput,
-)
-from transformers.models.bert.modeling_bert import (
-    BertLMPredictionHead,
-    BertModel,
-    BertPreTrainedModel,
-)
+from transformers import PretrainedConfig
 from transformers.models.roberta.modeling_roberta import (
     RobertaLMHead,
     RobertaModel,
     RobertaPreTrainedModel,
 )
 
-sim_fn = CosineSimilarity()
+from saturn.components.losses import AlignmentLoss, UniformityLoss
+from saturn.components.models.module import Pooler, SimilarityFunction
 
 
 class BiencoderRobertaModel(RobertaPreTrainedModel):
-    def __init__(self, config: PretrainedConfig, args, *inputs, **kwargs):
-        super(BiencoderRobertaModel, self).__init__(config, *inputs, **kwargs)
+    _keys_to_ignore_on_save = [r"lm_head.decoder.weight", r"lm_head.decoder.bias"]
+    _keys_to_ignore_on_load_missing = [
+        r"position_ids",
+        r"lm_head.decoder.weight",
+        r"lm_head.decoder.bias",
+    ]
+    # _keys_to_ignore_on_load_unexpected = [r"pooler"]
+
+    def __init__(self, config: PretrainedConfig, args):
+        super().__init__(config)
 
         self.args = args
-        self.roberta = RobertaModel(config)
 
-        # Other head
+        self.roberta = RobertaModel(config, add_pooling_layer=False)
+        self.lm_head = RobertaLMHead(config)
 
-        # MLM
+        self.pooler = Pooler(self.args.pooler_type)
 
-        # KLD
+        # The LM head weights require special treatment only when they are tied with the word embeddings
+        self.update_keys_to_ignore(config, ["lm_head.decoder.weight"])
 
-        # Harnegative
+        # Initialize weights and apply final processing
+        self.post_init()
 
-    def forward(
+    def get_output_embeddings(self):
+        return self.lm_head.decoder
+
+    def set_output_embeddings(self, new_embeddings):
+        self.lm_head.decoder = new_embeddings
+
+    def get_output(
         self,
-        input_ids=None,
-        attention_mask=None,
-        input_ids_positive=None,
-        attention_mask_positive=None,
-        is_trainalbe=True,
-        return_dict=None,
+        input_ids: Optional[torch.LongTensor] = None,
+        attention_mask: Optional[torch.FloatTensor] = None,
+        **kwargs
     ):
-        batch_size = input_ids.shape[0]
-
-        labels = torch.arange(
-            0, batch_size, dtype=torch.long, device=input_ids.device
-        )
-
         outputs = self.roberta(
             input_ids,
             attention_mask=attention_mask,
-            # token_type_ids=token_type_ids,
         )  # sequence_output, pooled_output, (hidden_states), (attentions)
-        
-        pooled_output = outputs[1]  # [CLS]
+        pooled_output = self.pooler(attention_mask, outputs)
 
-        if not is_trainalbe:
+        return outputs, pooled_output
+
+    def forward(
+        self,
+        input_ids: Optional[torch.LongTensor] = None,
+        attention_mask: Optional[torch.FloatTensor] = None,
+        input_ids_positive: Optional[torch.LongTensor] = None,
+        attention_mask_positive: Optional[torch.FloatTensor] = None,
+        input_ids_negative: Optional[torch.LongTensor] = None,
+        attention_mask_negative: Optional[torch.FloatTensor] = None,
+        **kwargs
+    ):
+        _, pooled_output = self.get_output(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+        )
+
+        if not kwargs.get("is_train", ""):
             return pooled_output
 
-        outputs_positive = self.roberta(
-            input_ids_positive,
+        # init loss
+        total_loss = 0.0
+        loss_ct = 0.0
+        loss_ct_dpi_query = 0.0
+        loss_ct_dpi_positive = 0.0
+        loss_alignment = 0.0
+        loss_uniformity = 0.0
+
+        _, pooled_output_positive = self.get_output(
+            input_ids=input_ids_positive,
             attention_mask=attention_mask_positive,
-            # token_type_ids=token_type_ids_positive,
-        )  # sequence_output, pooled_output, (hidden_states), (attentions)
-        pooled_output_positive = outputs_positive[1]  # [CLS]
-
-        # Contrastive Loss
-        scores = sim_fn(
-            pooled_output.unsqueeze(1), pooled_output_positive.unsqueeze(0)
         )
 
-        loss = torch.nn.functional.cross_entropy(scores, labels)  # TODO label_smoothing
+        sim_fn = SimilarityFunction(self.args.sim_fn)
+        scores = sim_fn(pooled_output, pooled_output_positive)
 
-        if not return_dict:
-            output = (scores,) + (pooled_output,) + (pooled_output_positive,)
-            return (loss,) + output
+        if input_ids_negative and attention_mask_negative:
+            _, pooled_output_negative = self.get_output(
+                input_ids=input_ids_negative,
+                attention_mask=attention_mask_negative,
+            )
+            scores_negative = sim_fn(pooled_output, pooled_output_negative)
+            # hard negative in batch negative
+            scores = torch.cat([scores, scores_negative], 1)
 
-        return SequenceClassifierOutput(
-            loss=loss,
-            logits=loss,
-            pooled_output=pooled_output,
-            pooled_output_positive=pooled_output_positive,
+            weights = torch.tensor(
+                [
+                    [0.0] * (scores.size(-1) - scores_negative.size(-1))
+                    + [0.0] * i
+                    + [self.args.weight_hard_negative]
+                    + [0.0] * (scores_negative.size(-1) - i - 1)
+                    for i in range(scores_negative.size(-1))
+                ]
+            ).to(pooled_output.device)
+            scores = scores + weights
+
+        # Contrastice Learning Stratege - InBatch
+        labels = torch.arange(scores.size(0)).long().to(pooled_output.device)
+        loss_fct = nn.CrossEntropyLoss(label_smoothing=self.args.label_smoothing)
+
+        loss_ct = loss_fct(scores, labels)
+        total_loss += loss_ct
+
+        if self.args.dpi_query:
+            _, pooled_output_dropout = self.get_output(
+                input_ids=input_ids,
+                attention_mask=attention_mask,
+            )
+            scores = sim_fn(pooled_output, pooled_output_dropout)
+
+            labels = torch.arange(scores.size(0)).long().to(pooled_output.device)
+            loss_ct_dpi_query = loss_fct(scores, labels)
+            total_loss += self.args.coff_dpi_query * loss_ct_dpi_query
+
+        if self.args.dpi_positive:
+            _, pooled_output_positive_dropout = self.get_output(
+                input_ids=input_ids_positive,
+                attention_mask=attention_mask_positive,
+            )
+            scores = sim_fn(
+                pooled_output_positive,
+                pooled_output_positive_dropout,
+            )
+
+            labels = (
+                torch.arange(scores.size(0)).long().to(pooled_output_positive.device)
+            )
+            loss_ct_dpi_positive = loss_fct(scores, labels)
+            total_loss += self.args.coff_dpi_positive * loss_ct_dpi_positive
+
+        if self.args.use_align_loss:
+            align_fn = AlignmentLoss()
+            loss_alignment = align_fn(pooled_output, pooled_output_positive)
+            total_loss += self.args.coff_alignment * loss_alignment
+
+        if self.args.use_uniformity_loss:
+            uniformity_fn = UniformityLoss()
+            loss_uniformity = -0.5 * uniformity_fn(
+                pooled_output
+            ) + -0.5 * uniformity_fn(pooled_output_positive)
+            total_loss += self.args.coff_uniformity * loss_uniformity
+
+        return (
+            total_loss,
+            loss_ct,
+            loss_ct_dpi_query,
+            loss_ct_dpi_positive,
+            loss_alignment,
+            loss_uniformity,
         )
-
-
-class BiencoderBertModel(BertPreTrainedModel):
-    pass
