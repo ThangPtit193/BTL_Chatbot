@@ -19,17 +19,16 @@ git checkout 55-training-evaluate-inference-unsupervised-semantic-similarity-pip
 ```
 
 ```script
-cd saturn/saturn/
-```
+cd saturn
 
-1. Install dependencies
-```shell
-conda env create -f environment.yml
-conda activate saturn
+export PYTHONPATH=/absolute/saturn
 ```
-
 
 #### PreStage: Training Data Development
+
+```script
+# download processed data for pretraining
+```
 
 Format data
 ```
@@ -52,11 +51,35 @@ Structure data folders:
 
 
 ```
-bash train_biencoder.sh
+bash scripts/train_biencoder.sh
 ```
 
 
-#### Stage 2: FW
+#### Stage 2: Future Works
+##### 1. Data Sampling
+
+Positive (Self-Supervised/Unsupervised)
+- [x] Inverse Cloze Task
+- [x] Dropout as Positive Instance
+- [ ] Text Augmentation
+- [ ] Recurring Span Retrieval
+- [ ] Others (TBD)
+
+
+Negative
+
+- [x] In-Batch Negative
+- [ ] Hard Negative
+- [ ] Cross Batch Negative
+
+
+##### 2. Auxilaury Task
+- [x] Alignment Task
+- [x] Uniformity Vector Distribution
+- [ ] Masked Language Modeling
+- [ ] SPLADE
+
+##### 3. Optimization
 
 
 ## Model Release
@@ -65,7 +88,7 @@ bash train_biencoder.sh
 ```bibtex
 @article{manred1997,
   title={TBD},
-  author={Ly Dang Huynh Khanh, Hao Nguyen Van, Vu Tran Hoang,
+  author={Ly Dang Huynh Khanh, Hao Nguyen Van, Vu Tran Hoang, Nam Dang Phuong
   journal={},
   year={2023}
 }
