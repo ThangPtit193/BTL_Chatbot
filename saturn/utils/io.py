@@ -106,3 +106,11 @@ def http_get(url, path):
 
     os.rename(download_filepath, path)
     progress.close()
+
+
+def load_jsonl(file_path: Text) -> List[Dict]:
+    data = []
+    with open(file_path, "r", encoding="utf-8") as f:
+        for line in f:
+            data.append(json.loads(line))
+    return data

@@ -49,4 +49,7 @@ coverage.xml
 .reports
 /reports/
 assets
-models
+phobert-base-v2
+MODELBASE
+wandb
+logs
