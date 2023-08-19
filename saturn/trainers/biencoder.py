@@ -1,4 +1,6 @@
-from typing import Optional, List
+import statistics
+from typing import List, Optional
+import bitsandbytes as bnb
 
 import numpy as np
 import torch
@@ -17,7 +19,6 @@ from saturn.utils.early_stopping import EarlyStopping
 from saturn.utils.io import load_json
 from saturn.utils.metrics import recall
 from saturn.utils.utils import logger
-import statistics
 
 
 class BiencoderTrainer:
@@ -44,6 +45,9 @@ class BiencoderTrainer:
             self.train_dataset,
             sampler=train_sampler,
             batch_size=self.args.train_batch_size,
+            drop_last=self.args.dataloader_drop_last,
+            num_workers=self.args.dataloader_num_workers,
+            pin_memory=self.args.dataloader_pin_memory,
         )
 
         if self.args.max_steps > 0:
@@ -162,7 +166,9 @@ class BiencoderTrainer:
                     results.update(self.evaluate())
 
                     wandb.log({"Loss eval": results})
-                    early_stopping(results[self.args.tuning_metric], self.model, self.args)
+                    early_stopping(
+                        results[self.args.tuning_metric], self.model, self.args
+                    )
                     if early_stopping.early_stop:
                         logger.info("Early stopping")
                         break
@@ -183,7 +189,12 @@ class BiencoderTrainer:
         dataset = self.eval_dataset
         eval_sampler = SequentialSampler(dataset)
         eval_dataloader = DataLoader(
-            dataset, sampler=eval_sampler, batch_size=self.args.eval_batch_size
+            dataset,
+            sampler=eval_sampler,
+            batch_size=self.args.eval_batch_size,
+            drop_last=self.args.dataloader_drop_last,
+            num_workers=self.args.dataloader_num_workers,
+            pin_memory=self.args.dataloader_pin_memory,
         )
 
         logger.info("***** Running evaluation on eval dataset *****")
@@ -252,7 +263,7 @@ class BiencoderTrainer:
             "uniformity_loss": eval_uniformity_loss,
         }
 
-    def evaluate_on_benchmark(self, top_k_results: List[int]=[5, 10, 20]):
+    def evaluate_on_benchmark(self, top_k_results: List[int] = [5, 10, 20]):
         """
         Evaluate the performance of the model on a benchmark dataset.
         Args:
@@ -403,9 +414,22 @@ class BiencoderTrainer:
                 "weight_decay": 0.0,
             },
         ]
-        optimizer = AdamW(
-            optimizer_grouped_parameters,
-            lr=self.args.learning_rate,
-            eps=self.args.adam_epsilon,
-        )
+        if self.args.optimizer == "AdamW":
+            optimizer = AdamW(
+                optimizer_grouped_parameters,
+                betas=(self.args.adam_beta1, self.args.adam_beta2),
+                lr=self.args.learning_rate,
+                eps=self.args.adam_epsilon,
+            )
+        elif self.args.optimizer == "8bitAdam":
+            optimizer = bnb.optim.Adam8bit(
+                optimizer_grouped_parameters,
+                betas=(self.args.adam_beta1, self.args.adam_beta2),
+                lr=self.args.learning_rate,
+                eps=self.args.adam_epsilon,
+            )
+        else:
+            raise NotImplementedError(
+                "Support is currently available only for the Adam optimizer.'"
+            )
         return optimizer

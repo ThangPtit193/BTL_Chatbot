@@ -37,6 +37,7 @@ def main(args):
     config_class, model_class, _ = MODEL_CLASSES[args.model_type]
 
     if args.pretrained:
+        print("Loading model ....")
         model = model_class.from_pretrained(
             args.pretrained_path,
             torch_dtype=args.compute_dtype,
@@ -60,12 +61,15 @@ def main(args):
             int(8 * math.ceil(len(tokenizer) / 8.0))
         )  # make the vocab size multiple of 8 # magic number
 
+    if args.gradient_checkpointing:
+        model.gradient_checkpointing_enable()
+
     logger.info(model)
     logger.info(model.dtype)
     logger.info("Vocab size: {}".format(len(tokenizer)))
 
     # Load data
-    train_dataset = OnlineDataset(args, tokenizer, "train")
+    train_dataset = OnlineDataset(args, tokenizer, "data")
     eval_dataset = OnlineDataset(args, tokenizer, "eval")
 
     trainer = BiencoderTrainer(
@@ -75,8 +79,16 @@ def main(args):
         eval_dataset=eval_dataset,
         tokenizer=tokenizer,
     )
+    import statistics
+
+    results = trainer.evaluate_on_benchmark()
+    for k, v in results.items():
+        results[k] = statistics.mean(v)
+    print(results)
+
     if args.do_train:
         trainer.train()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -208,6 +220,24 @@ if __name__ == "__main__":
         type=int,
         help="Batch size used for evaluation.",
     )
+    parser.add_argument(
+        "--dataloader_drop_last",
+        type=bool,
+        default=True,
+        help="Toggle whether to drop the last incomplete batch in the dataloader.",
+    )
+    parser.add_argument(
+        "--dataloader_num_workers",
+        type=int,
+        default=0,
+        help="Number of workers for the dataloader.",
+    )
+    parser.add_argument(
+        "--dataloader_pin_memory",
+        type=bool,
+        default=True,
+        help="Toggle whether to use pinned memory in the dataloader.",
+    )
 
     # Tokenizer Configuration
     parser.add_argument(
@@ -248,6 +278,20 @@ if __name__ == "__main__":
     )
 
     # Optimizer Configuration
+    parser.add_argument(
+        "--gradient_checkpointing",
+        action="store_true",
+        help="Enable gradient checkpointing to reduce memory usage during training. "
+        "When this flag is set, intermediate activations are recomputed during "
+        "backward pass, which can be memory-efficient but might increase "
+        "training time.",
+    )
+    parser.add_argument(
+        "--optimizer",
+        choices=["AdamW", "8bitAdam"],
+        default="AdamW",
+        help="Specify the optimizer to use (choices: AdamW, 8bitAdam).",
+    )
     parser.add_argument(
         "--learning_rate",
         default=1e-5,
