@@ -82,6 +82,18 @@ Negative
 ##### 3. Optimization
 
 
+Few tricks to reduce the memory footprint and speed up training
+
+| Method | Speed | Memory | Implemented |
+| --- | --- | --- | --- |
+| Gradient accumulation | No | Yes | ✅ |
+| Gradient checkpointing | No | Yes | ✅ |
+| Mixed precision training | Yes | (No) | ✅ |
+| Batch size | Yes | Yes | ✅ |
+| Optimizer choice | Yes | Yes | ✅ AdamW, ✅ 8bitAdam|
+| DataLoader | Yes | No | ✅ |
+| DeepSpeed Zero | No | Yes | TODO |
+
 ## Model Release
 
 ## Citation
@@ -189,4 +201,3 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers. -->
-1
