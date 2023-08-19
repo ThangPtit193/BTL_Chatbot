@@ -27,4 +27,6 @@ python3 saturn/train_biencoder.py \
         --coff_uniformity 0.05 \
         --pooler_type cls \
         --pretrained \
-        --pretrained_path /shared/lydhk/models/SIMCSE_UNI_LOSS
+        --pretrained_path /shared/lydhk/models/SIMCSE_UNI_LOSS \
+        --gradient_checkpointing \
+        --optimizer 8bitAdam

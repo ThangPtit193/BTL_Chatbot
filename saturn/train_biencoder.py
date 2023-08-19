@@ -69,7 +69,7 @@ def main(args):
     logger.info("Vocab size: {}".format(len(tokenizer)))
 
     # Load data
-    train_dataset = OnlineDataset(args, tokenizer, "data")
+    train_dataset = OnlineDataset(args, tokenizer, "train")
     eval_dataset = OnlineDataset(args, tokenizer, "eval")
 
     trainer = BiencoderTrainer(
