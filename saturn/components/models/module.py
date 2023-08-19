@@ -77,7 +77,7 @@ def dot_product_scores(compr: torch.Tensor, refer: torch.Tensor) -> torch.Tensor
 
 
 def cosine_scores(compr: torch.Tensor, refer: torch.Tensor):
-    return F.cosine_similarity(compr, refer, dim=-1)
+    return F.cosine_similarity(compr, refer.unsqueeze(1), dim=-1)
 
 
 
@@ -97,9 +97,9 @@ class SimilarityFunction(nn.Module):
 
     def __init__(self, name_fn="cosine"):
         super().__init__()
-        if name_fn == "cosine":
+        if name_fn == "dot":
             self.fn = dot_product_scores
-        elif name_fn == "dot":
+        elif name_fn == "cosine":
             self.fn = cosine_scores
         else:
             raise ValueError("Invalid value for name_fn. Supported values are 'cosine' and 'dot'.")
