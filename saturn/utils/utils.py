@@ -17,13 +17,15 @@ MODEL_CLASSES = {
     "phobert-base-v2": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
     "phobert-large": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
     "sim-cse-vietnamese": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
+    "unsim-cse-vietnamese": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
 }
 
 MODEL_PATH_MAP = {
     "phobert-base": "vinai/phobert-base",
     "phobert-base-v2": "/home/vth/backbone/models--vinai--phobert-base-v2/snapshots/5388b8ddc52de647dc81e81bbe174fa1fc37e12c",
     "phobert-large": "/home/vth/backbone/models--vinai--phobert-large/snapshots/9ce4eafcd8e601d798295b17c75c5f5f1b1509b9",
-    "sim-cse-vietnamese": "VoVanPhuc/sup-SimCSE-VietNamese-phobert-base"
+    "sim-cse-vietnamese": "VoVanPhuc/sup-SimCSE-VietNamese-phobert-base",
+    "unsim-cse-vietnamese": "VoVanPhuc/unsup-SimCSE-VietNamese-phobert-base"
 }
 
 vowel = [
