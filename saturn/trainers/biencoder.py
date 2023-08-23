@@ -1,7 +1,7 @@
 import statistics
 from typing import List, Optional
-import bitsandbytes as bnb
 
+import bitsandbytes as bnb
 import numpy as np
 import torch
 from torch.utils.data import DataLoader, Dataset, RandomSampler, SequentialSampler
@@ -14,7 +14,10 @@ from transformers.trainer_pt_utils import get_parameter_names
 
 import wandb
 from saturn.components.loaders.utils import convert_text_to_features
-from saturn.components.models.module import cosine_scores_numpy
+from saturn.components.models.module import (
+    cosine_scores_numpy,
+    dot_product_scores_numpy,
+)
 from saturn.utils.early_stopping import EarlyStopping
 from saturn.utils.io import load_json
 from saturn.utils.metrics import recall
@@ -163,7 +166,7 @@ class BiencoderTrainer:
                     results = self.evaluate_on_benchmark()
                     for k, v in results.items():
                         results[k] = statistics.mean(v)
-                    results.update(self.evaluate())
+                    # results.update(self.evaluate())
 
                     wandb.log({"Loss eval": results})
                     early_stopping(
@@ -380,7 +383,8 @@ class BiencoderTrainer:
                         embedding_query, embedding.detach().cpu().numpy(), axis=0
                     )
 
-            scores = cosine_scores_numpy(embedding_query, embedding_corpus)
+            # scores = cosine_scores_numpy(embedding_query, embedding_corpus)
+            scores = dot_product_scores_numpy(embedding_query, embedding_corpus)
 
             for score, ground_truth in zip(scores, ground_truths):
                 for k in top_k_results:

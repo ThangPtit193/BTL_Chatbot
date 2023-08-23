@@ -1,7 +1,7 @@
 timestamp=`date "+%Y%0m%0d_%T"`
 model_dir="ckpts/ckpt_$timestamp"
 data_dir="/shared/vuth/semantic-similarity/collections/v1.0.0/"
-wandb_run_name="vuth_avg_005_uniformity"
+wandb_run_name="vuth_cls_dot"
 s="123"
 lr="5e-5"
 
@@ -20,7 +20,7 @@ CUDA_VISIBLE_DEVICES=2 python3 saturn/train_biencoder.py \
         --do_eval \
         --seed $s \
         --num_train_epochs 10 \
-        --train_batch_size 512 \
+        --train_batch_size 1024 \
         --eval_batch_size 32 \
         --max_seq_len_query 64 \
         --max_seq_len_document 256 \
@@ -31,4 +31,6 @@ CUDA_VISIBLE_DEVICES=2 python3 saturn/train_biencoder.py \
         --pooler_type cls \
         --gradient_checkpointing \
         --optimizer 8bitAdam \
-        --sim_fn dot
+        --sim_fn dot \
+        --pretrained \
+        --pretrained_path /home/vth/ckpts

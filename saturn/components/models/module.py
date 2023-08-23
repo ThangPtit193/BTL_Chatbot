@@ -1,7 +1,8 @@
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import numpy as np
+
 
 class MLPLayer(nn.Module):
     """
@@ -80,15 +81,20 @@ def cosine_scores(compr: torch.Tensor, refer: torch.Tensor):
     return F.cosine_similarity(compr, refer.unsqueeze(1), dim=-1)
 
 
+def dot_product_scores_numpy(compr, refer):
+    r = np.matmul(compr, np.transpose(refer, (1, 0)))
+    return r
+
 
 def cosine_scores_numpy(compr, refer):
     compr_norm = np.linalg.norm(compr, axis=1)
     refer_norm = np.linalg.norm(refer, axis=1)
-    
+
     dot_product = np.dot(compr, refer.T)
     similarity = dot_product / (compr_norm[:, np.newaxis] * refer_norm)
-    
+
     return similarity
+
 
 class SimilarityFunction(nn.Module):
     """
@@ -102,6 +108,9 @@ class SimilarityFunction(nn.Module):
         elif name_fn == "cosine":
             self.fn = cosine_scores
         else:
-            raise ValueError("Invalid value for name_fn. Supported values are 'cosine' and 'dot'.")
+            raise ValueError(
+                "Invalid value for name_fn. Supported values are 'cosine' and 'dot'."
+            )
+
     def forward(self, x, y):
         return self.fn(x, y)
