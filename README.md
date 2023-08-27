@@ -1,8 +1,5 @@
 ## Semantic - Similarity
 
-## News
-<!-- - **[Jun. 29, 2023]** We released code base for reproducing the Semantic Model. -->
-
 ## How to Reproduce
 
 First, make sure your Python version is 3.7+, and then install the required packages using the command below:
