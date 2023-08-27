@@ -1,7 +1,7 @@
 import statistics
 from typing import List, Optional
 
-import bitsandbytes as bnb
+# import bitsandbytes as bnb
 import numpy as np
 import torch
 from torch.utils.data import DataLoader, Dataset, RandomSampler, SequentialSampler
@@ -19,19 +19,19 @@ from saturn.components.models.module import (
     dot_product_scores_numpy,
 )
 from saturn.utils.early_stopping import EarlyStopping
-from saturn.utils.io import load_json
+from saturn.utils.io import load_json, load_jsonl
 from saturn.utils.metrics import recall
 from saturn.utils.utils import logger
 
 
 class BiencoderTrainer:
     def __init__(
-        self,
-        args,
-        model: Optional[torch.nn.Module],
-        train_dataset: Optional[Dataset] = None,
-        eval_dataset: Optional[Dataset] = None,
-        tokenizer: Optional[PreTrainedTokenizerBase] = None,
+            self,
+            args,
+            model: Optional[torch.nn.Module],
+            train_dataset: Optional[Dataset] = None,
+            eval_dataset: Optional[Dataset] = None,
+            tokenizer: Optional[PreTrainedTokenizerBase] = None,
     ):
         self.args = args
 
@@ -43,10 +43,10 @@ class BiencoderTrainer:
         self.tokenizer = tokenizer
 
     def train(self):
-        train_sampler = RandomSampler(self.train_dataset)
+        # train_sampler = RandomSampler(self.train_dataset)
         train_dataloader = DataLoader(
             self.train_dataset,
-            sampler=train_sampler,
+            # sampler=train_sampler,
             batch_size=self.args.train_batch_size,
             drop_last=self.args.dataloader_drop_last,
             num_workers=self.args.dataloader_num_workers,
@@ -56,15 +56,15 @@ class BiencoderTrainer:
         if self.args.max_steps > 0:
             t_total = self.args.max_steps
             self.args.num_train_epochs = (
-                self.args.max_steps
-                // (len(train_dataloader) // self.args.gradient_accumulation_steps)
-                + 1
+                    self.args.max_steps
+                    // (len(train_dataloader) // self.args.gradient_accumulation_steps)
+                    + 1
             )
         else:
             t_total = (
-                len(train_dataloader)
-                // self.args.gradient_accumulation_steps
-                * self.args.num_train_epochs
+                    len(train_dataloader)
+                    // self.args.gradient_accumulation_steps
+                    * self.args.num_train_epochs
             )
 
         # Prepare optimizer and schedule (linear warmup and decay)
@@ -117,6 +117,18 @@ class BiencoderTrainer:
                     "attention_mask_positive": batch[3],
                     "is_train": True,
                 }
+
+                if self.args.use_negative:
+                    inputs = {
+                        "input_ids": batch[0],
+                        "attention_mask": batch[1],
+                        "input_ids_positive": batch[2],
+                        "attention_mask_positive": batch[3],
+                        "input_ids_negative": batch[4],
+                        "attention_mask_negative": batch[5],
+                        "is_train": True,
+                    }
+
                 # outputs = self.model(**inputs)
                 with torch.cuda.amp.autocast():
                     (
@@ -158,8 +170,8 @@ class BiencoderTrainer:
                     global_step += 1
 
                 if (
-                    self.args.logging_steps > 0
-                    and global_step % self.args.logging_steps == 0
+                        self.args.logging_steps > 0
+                        and global_step % self.args.logging_steps == 0
                 ):
                     logger.info(f"Tuning metrics: {self.args.tuning_metric}")
 
@@ -168,7 +180,7 @@ class BiencoderTrainer:
                         results[k] = statistics.mean(v)
                     # results.update(self.evaluate())
 
-                    wandb.log({"Loss eval": results})
+                    wandb.log({"Eval": results})
                     early_stopping(
                         results[self.args.tuning_metric], self.model, self.args
                     )
@@ -290,7 +302,7 @@ class BiencoderTrainer:
         for paths in self.args.benchmark_dir:
             (benchmark_path, corpus_path) = paths
             name_benchmark = benchmark_path.split("/")[-1].split(".")[0]
-            benchmark = load_json(benchmark_path)
+            benchmark = load_jsonl(benchmark_path)
             corpus = load_json(corpus_path)
 
             embedding_corpus = None
@@ -300,7 +312,7 @@ class BiencoderTrainer:
                 batch_input_ids = []
                 batch_attention_mask = []
 
-                for doc in corpus[i : i + self.args.eval_batch_size]:
+                for doc in corpus[i: i + self.args.eval_batch_size]:
                     ids_corpus.append(doc["meta"]["id"])
                     document = doc["text"]
                     (
@@ -310,8 +322,6 @@ class BiencoderTrainer:
                         text=document,
                         tokenizer=self.tokenizer,
                         max_seq_len=self.args.max_seq_len_document,
-                        lower_case=self.args.use_lowercase,
-                        remove_punc=self.args.use_remove_punc,
                     )
                     batch_input_ids.append(input_ids_document)
                     batch_attention_mask.append(attention_mask_document)
@@ -345,7 +355,7 @@ class BiencoderTrainer:
                 batch_input_ids = []
                 batch_attention_mask = []
 
-                for query in benchmark[i : i + self.args.eval_batch_size]:
+                for query in benchmark[i: i + self.args.eval_batch_size]:
                     ground_truths.append(query["gt"])
                     query = query["query"]
                     (
@@ -355,8 +365,6 @@ class BiencoderTrainer:
                         text=query,
                         tokenizer=self.tokenizer,
                         max_seq_len=self.args.max_seq_len_query,
-                        lower_case=self.args.use_lowercase,
-                        remove_punc=self.args.use_remove_punc,
                     )
                     batch_input_ids.append(input_ids_document)
                     batch_attention_mask.append(attention_mask_document)
@@ -418,22 +426,10 @@ class BiencoderTrainer:
                 "weight_decay": 0.0,
             },
         ]
-        if self.args.optimizer == "AdamW":
-            optimizer = AdamW(
-                optimizer_grouped_parameters,
-                betas=(self.args.adam_beta1, self.args.adam_beta2),
-                lr=self.args.learning_rate,
-                eps=self.args.adam_epsilon,
-            )
-        elif self.args.optimizer == "8bitAdam":
-            optimizer = bnb.optim.Adam8bit(
-                optimizer_grouped_parameters,
-                betas=(self.args.adam_beta1, self.args.adam_beta2),
-                lr=self.args.learning_rate,
-                eps=self.args.adam_epsilon,
-            )
-        else:
-            raise NotImplementedError(
-                "Support is currently available only for the Adam optimizer.'"
-            )
+        optimizer = AdamW(
+            optimizer_grouped_parameters,
+            betas=(self.args.adam_beta1, self.args.adam_beta2),
+            lr=self.args.learning_rate,
+            eps=self.args.adam_epsilon,
+        )
         return optimizer

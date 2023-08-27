@@ -1,23 +1,21 @@
 timestamp=`date "+%Y%0m%0d_%T"`
-model_dir="ckpts/ckpt_$timestamp"
-data_dir="/shared/vuth/semantic-similarity/collections/v1.0.0/"
-wandb_run_name="vuth_cls_dot"
+model_dir="ckpts_negative/ckpt_$timestamp"
+data_dir="/home/black/saturn/data"
+wandb_run_name="namdp_negative"
 s="123"
 lr="5e-5"
 
-# export WORLD_SIZE=2
-# export CUDA_VISIBLE_DEVICES=1,2
-
-CUDA_VISIBLE_DEVICES=2 python3 saturn/train_biencoder.py \
+CUDA_VISIBLE_DEVICES=1 python3 saturn/train_biencoder.py \
         --model_dir $model_dir \
         --data_dir $data_dir\
         --token_level word-level \
-        --model_type sim-cse-vietnamese \
+        --model_type unsim-cse-vietnamese \
         --logging_steps 200 \
         --save_steps 200 \
         --wandb_run_name $wandb_run_name \
         --do_train \
-        --do_eval \
+        --gpu_id 1\
+        --use_negative \
         --seed $s \
         --num_train_epochs 10 \
         --train_batch_size 1024 \
@@ -25,12 +23,10 @@ CUDA_VISIBLE_DEVICES=2 python3 saturn/train_biencoder.py \
         --max_seq_len_query 64 \
         --max_seq_len_document 256 \
         --learning_rate $lr \
-        --tuning_metric recall_bm-history-v400_5 \
-        --early_stopping 25 \
-        --resize_embedding_model \
-        --pooler_type cls \
+        --tuning_metric recall_bm_history_v400_5 \
+        --early_stopping 10 \
+        --pooler_type avg \
         --gradient_checkpointing \
-        --optimizer 8bitAdam \
-        --sim_fn dot \
+        --sim_fn cosine \
         --pretrained \
-        --pretrained_path /home/vth/ckpts
+        --pretrained_path /home/black/saturn/ckpts/ckpt_20230823_12:26:38

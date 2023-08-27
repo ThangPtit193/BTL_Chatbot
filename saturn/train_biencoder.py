@@ -1,7 +1,6 @@
 import argparse
 import math
 import os
-import sys
 
 import torch
 from transformers import set_seed
@@ -14,9 +13,6 @@ from saturn.utils.utils import MODEL_CLASSES, MODEL_PATH_MAP, load_tokenizer, lo
 
 def main(args):
     logger.info("Args={}".format(str(args)))
-    wandb.init(
-        project=args.wandb_project, name=args.wandb_run_name, config=vars(args)
-    )
 
     set_seed(args.seed)
 
@@ -29,7 +25,7 @@ def main(args):
     if args.ddp:
         args.device_map = {"": int(os.environ.get("LOCAL_RANK") or 0)}
         args.gradient_accumulation_steps = (
-            args.gradient_accumulation_steps // args.world_size
+                args.gradient_accumulation_steps // args.world_size
         )
 
     # Load tokenizer and model
@@ -56,6 +52,9 @@ def main(args):
             args=args,
         )
 
+        for param in model.parameters():
+            param.requires_grad = False
+
     if args.resize_embedding_model:
         model.resize_token_embeddings(
             int(8 * math.ceil(len(tokenizer) / 8.0))
@@ -70,7 +69,7 @@ def main(args):
 
     # Load data
     train_dataset = OnlineDataset(args, tokenizer, "train")
-    eval_dataset = OnlineDataset(args, tokenizer, "eval")
+    eval_dataset = OnlineDataset(args, tokenizer, "train")
 
     trainer = BiencoderTrainer(
         args=args,
@@ -87,6 +86,10 @@ def main(args):
     print(results)
 
     if args.do_train:
+        wandb.init(
+            project=args.wandb_project, name=args.wandb_run_name, config=vars(args)
+        )
+
         trainer.train()
 
 
@@ -164,11 +167,6 @@ if __name__ == "__main__":
         "--do_train",
         action="store_true",
         help="Flag indicating whether to run the training process.",
-    )
-    parser.add_argument(
-        "--do_eval",
-        action="store_true",
-        help="Flag indicating whether to perform evaluation on the test/eval set.",
     )
     parser.add_argument(
         "--pretrained",
@@ -260,18 +258,6 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--use_fast_tokenizer",
-        default=True,
-        type=bool,
-        help="Whether to use the fast tokenizer. If set to True, a faster tokenizer will be used for tokenizing the input data. This can improve the performance of tokenization but may sacrifice some tokenization quality. If set to False, a slower but more accurate tokenizer will be used. Default value is True.",
-    )
-    parser.add_argument(
-        "--use_lowercase",
-        default=False,
-        type=bool,
-        help="Whether to use the fast tokenizer. If set to True, a faster tokenizer will be used for tokenizing the input data. This can improve the performance of tokenization but may sacrifice some tokenization quality. If set to False, a slower but more accurate tokenizer will be used. Default value is True.",
-    )
-    parser.add_argument(
-        "--use_remove_punc",
         default=False,
         type=bool,
         help="Whether to use the fast tokenizer. If set to True, a faster tokenizer will be used for tokenizing the input data. This can improve the performance of tokenization but may sacrifice some tokenization quality. If set to False, a slower but more accurate tokenizer will be used. Default value is True.",
@@ -282,15 +268,9 @@ if __name__ == "__main__":
         "--gradient_checkpointing",
         action="store_true",
         help="Enable gradient checkpointing to reduce memory usage during training. "
-        "When this flag is set, intermediate activations are recomputed during "
-        "backward pass, which can be memory-efficient but might increase "
-        "training time.",
-    )
-    parser.add_argument(
-        "--optimizer",
-        choices=["AdamW", "8bitAdam"],
-        default="AdamW",
-        help="Specify the optimizer to use (choices: AdamW, 8bitAdam).",
+             "When this flag is set, intermediate activations are recomputed during "
+             "backward pass, which can be memory-efficient but might increase "
+             "training time.",
     )
     parser.add_argument(
         "--learning_rate",
@@ -303,7 +283,7 @@ if __name__ == "__main__":
         default="cosine",
         type=str,
         help="Type of learning rate scheduler to use. Available options are: 'cosine', 'step', 'plateau'. "
-        "The default is 'cosine', which uses a cosine annealing schedule. ",
+             "The default is 'cosine', which uses a cosine annealing schedule. ",
     )
     parser.add_argument(
         "--weight_decay", default=0.0, type=float, help="Weight decay if we apply some."
@@ -422,12 +402,22 @@ if __name__ == "__main__":
         type=float,
         help="Coefficient for uniformity loss calculations (default: 0.05).",
     )
+    parser.add_argument(
+        "--use_negative",
+        default=True,
+        action="store_true"
+    )
+    parser.add_argument(
+        "--weight_hard_negative",
+        default=0.2,
+        type=float,
+    )
 
     args = parser.parse_args()
     args.model_name_or_path = MODEL_PATH_MAP[args.model_type]
     # Check if parameter passed or if set within environ
     args.use_wandb = len(args.wandb_project) > 0 or (
-        "WANDB_PROJECT" in os.environ and len(os.environ["WANDB_PROJECT"]) > 0
+            "WANDB_PROJECT" in os.environ and len(os.environ["WANDB_PROJECT"]) > 0
     )
     # Only overwrite environ if wandb param passed
     if len(args.wandb_project) > 0:
@@ -439,20 +429,20 @@ if __name__ == "__main__":
 
     args.benchmark_dir = [
         [
-            "/shared/vuth/semantic-similarity/collections/bm/word/bm-history-v400.json",
-            "/shared/vuth/semantic-similarity/collections/bm/word/corpus-history-10-12.json",
+            "/home/black/data/benchmark_history/bm_history_v400.jsonl",
+            "/home/black/data/benchmark_history/corpus_history.json",
         ],
         [
-            "/shared/vuth/semantic-similarity/collections/bm/word/bm-history-v200.json",
-            "/shared/vuth/semantic-similarity/collections/bm/word/corpus-history-10-12.json",
+            "/home/black/data/benchmark_history/bm_history_v200.jsonl",
+            "/home/black/data/benchmark_history/corpus_history.json",
         ],
         [
-            "/shared/vuth/semantic-similarity/collections/bm/word/bm-history-cttgt2.json",
-            "/shared/vuth/semantic-similarity/collections/bm/word/corpus-history-10-12.json",
+            "/home/black/data/benchmark_history/bm_history_cttgt2.jsonl",
+            "/home/black/data/benchmark_history/corpus_history.json",
         ],
         [
-            "/shared/vuth/semantic-similarity/collections/bm/word/bm-visquad.json",
-            "/shared/vuth/semantic-similarity/collections/bm/word/corpus-visquad.json",
-        ],
+            "/home/black/saturn/data/benchmark/bm_visquad.jsonl",
+            "/home/black/saturn/data/benchmark/corpus_visquad.json"
+        ]
     ]
     main(args)

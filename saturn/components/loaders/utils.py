@@ -5,19 +5,17 @@ from transformers import PreTrainedTokenizer
 from saturn.utils.normalize import (
     normalize_encode,
     normalize_word_diacritic,
-    remove_punctuation,
 )
+from saturn.utils.utils import preprocessing
 
 
 def convert_text_to_features(
-    text: str,
-    tokenizer: PreTrainedTokenizer,
-    max_seq_len: int = 128,
-    special_tokens_count: int = 2,
-    lower_case: bool = False,
-    remove_punc: bool = False,
-    **kwargs
-) -> Tuple[List]:
+        text: str,
+        tokenizer: PreTrainedTokenizer,
+        max_seq_len: int = 128,
+        special_tokens_count: int = 2,
+        **kwargs
+) -> Tuple[List[int], List[int]]:
     unk_token = tokenizer.unk_token
 
     cls_token = tokenizer.cls_token
@@ -27,12 +25,7 @@ def convert_text_to_features(
     pad_token_id = tokenizer.pad_token_id
 
     # Normalize text
-    text = normalize_encode(normalize_word_diacritic(text))
-
-    if lower_case:
-        text = text.lower()
-    if remove_punc:
-        text = remove_punctuation(text)
+    text = normalize_encode(normalize_word_diacritic(preprocessing(text)))
 
     text = text.split()  # Some are spaced twice
 

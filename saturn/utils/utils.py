@@ -1,32 +1,33 @@
-import logging
 import os
-import random
 import re
-import string
-import numpy as np
 import torch
+import random
+import string
+import logging
+import numpy as np
+from bs4 import BeautifulSoup
+from pyvi import ViTokenizer
 from transformers import set_seed
-from transformers import (
-    AutoTokenizer,
-    RobertaConfig
-)
+from transformers import AutoTokenizer, RobertaConfig
+from saturn.utils.io import load_json
 from saturn.components.models.model import BiencoderRobertaModel
 
 MODEL_CLASSES = {
-    "phobert-base": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
-    "phobert-base-v2": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
-    "phobert-large": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
-    "sim-cse-vietnamese": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
     "unsim-cse-vietnamese": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
+    "phobert-base-v2": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
 }
 
 MODEL_PATH_MAP = {
-    "phobert-base": "vinai/phobert-base",
-    "phobert-base-v2": "/home/vth/backbone/models--vinai--phobert-base-v2/snapshots/5388b8ddc52de647dc81e81bbe174fa1fc37e12c",
-    "phobert-large": "/home/vth/backbone/models--vinai--phobert-large/snapshots/9ce4eafcd8e601d798295b17c75c5f5f1b1509b9",
-    "sim-cse-vietnamese": "VoVanPhuc/sup-SimCSE-VietNamese-phobert-base",
-    "unsim-cse-vietnamese": "VoVanPhuc/unsup-SimCSE-VietNamese-phobert-base"
+    "unsim-cse-vietnamese": "VoVanPhuc/unsup-SimCSE-VietNamese-phobert-base",
+    "phobert-base-v2": "vinai/phobert-base-v2"
 }
+
+metadata = load_json(file_path="/home/black/saturn/data/benchmark/metadata.json")
+trans = {}
+
+for data in metadata['history_metadatas']:
+    for word in metadata['history_metadatas'][data]:
+        trans[word.lower()] = data.lower()
 
 vowel = [
     ["a", "à", "á", "ả", "ã", "ạ", "a"],
@@ -94,27 +95,89 @@ def is_valid_vietnam_word(word):
     return True
 
 
-def preprocessing(text):
-    punctuation = string.punctuation.replace('/', '').replace('-', '')
+def remove_html_tags(text):
+    soup = BeautifulSoup(text, 'html.parser')
+    text = soup.get_text(separator=' ')
+    return text
 
-    text = text.replace('/', '-')
-    # remove punctuation
-    for punc in punctuation:
-        text = text.replace(punc, ' ')
-    text = " ".join(text.strip().split()).lower()
+
+def is_word(text):
+    text = list(text)
+    upper, punc = 0, 0
+    for c in text:
+        if c in string.punctuation:
+            punc += 1
+            continue
+        if c.lower() in vowel_to_idx or c.lower() in string.ascii_letters:
+            if 'A' <= c <= 'Z':
+                upper += 1
+            continue
+        return False
+
+    if upper <= 1 and punc <= 1:
+        return True
+
+    return False
+
+
+def is_digits_punc(text):
+    text = list(text)
+    for i in range(len(text) - 1):
+        if text[i] in string.punctuation and text[i + 1] in string.punctuation:
+            return False
+    punc, digits = 0, 0
+    for c in text:
+        if c in "/-.":
+            punc += 1
+        elif c in string.digits:
+            digits += 1
+
+    if punc + digits == len(text):
+        return True
+
+    return False
+
+
+def convert_metadata(text):
+    text = text.replace('_', ' ')
+    text = " ".join(text.split()).strip()
+
+    for key in trans:
+        text = text.replace(key, trans[key])
+
+    text = ViTokenizer.tokenize(text)
+
+    return " ".join(text.split()).strip()
+
+
+def preprocessing(text):
+    text = text.replace('www', '').lower()
+    # text = convert_metadata(text)
+    text = text.replace(' - ', '-').replace(' / ', '/').replace('/', '-')
+    punctuation = "[!\"#$%&'()*+,.:;<=>?@[\\]^`{|}~]“”"
+
+    text = text.translate(str.maketrans(' ', ' ', punctuation))
+    text = text.lower()
 
     # remove duplicate space
     text = re.sub(r"[\s]+", " ", text)
-    text = text.strip("\n ")
-
-    # convert time
-    text = re.sub(r"năm (\d+) đến năm (\d+)", r'\1-\2', text)
-    text = re.sub(r"(\d+) tháng (\d+) năm (\d+)", r'\1-\2-\3', text)
-    text = text.replace(' - ', '-')
-
-    text = " ".join(text.strip().split())
 
     return text
+    # remove html tags
+    # text = remove_html_tags(text)
+    # text = re.sub(r'\d{3}[-.\s]?\d{3}[-.\s]?\d{4}', '', text, flags=re.IGNORECASE)
+    #
+    # text = re.sub('<[^<]+?>', ' ', text)
+    # text = re.sub(r'http\S+|https\S+', ' ', text, flags=re.IGNORECASE)
+    # text = re.sub(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b', ' ', text, flags=re.IGNORECASE)
+    #
+    # # convert time
+    # text = re.sub(r"năm (\d+) đến năm (\d+)", r'\1-\2', text)
+    # text = re.sub(r"(\d+) tháng (\d+) năm (\d+)", r'\1-\2-\3', text)
+    #
+    # text = " ".join(text.strip().split()).strip().strip('\n').strip(punctuation)
+
+    # return text
 
 
 def load_tokenizer(args):

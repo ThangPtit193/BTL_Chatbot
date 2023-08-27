@@ -20,6 +20,7 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
         r"lm_head.decoder.weight",
         r"lm_head.decoder.bias",
     ]
+
     # _keys_to_ignore_on_load_unexpected = [r"pooler"]
 
     def __init__(self, config: PretrainedConfig, args):
@@ -28,7 +29,7 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
         self.args = args
 
         self.roberta = RobertaModel(config, add_pooling_layer=False)
-        self.lm_head = RobertaLMHead(config)
+        # self.lm_head = RobertaLMHead(config)
 
         self.pooler = Pooler(self.args.pooler_type)
 
@@ -38,17 +39,17 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
         # Initialize weights and apply final processing
         self.post_init()
 
-    def get_output_embeddings(self):
-        return self.lm_head.decoder
+    # def get_output_embeddings(self):
+    #     return self.lm_head.decoder
 
-    def set_output_embeddings(self, new_embeddings):
-        self.lm_head.decoder = new_embeddings
+    # def set_output_embeddings(self, new_embeddings):
+    #     self.lm_head.decoder = new_embeddings
 
     def get_output(
-        self,
-        input_ids: Optional[torch.LongTensor] = None,
-        attention_mask: Optional[torch.FloatTensor] = None,
-        **kwargs
+            self,
+            input_ids: Optional[torch.LongTensor] = None,
+            attention_mask: Optional[torch.FloatTensor] = None,
+            **kwargs
     ):
         outputs = self.roberta(
             input_ids,
@@ -59,14 +60,14 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
         return outputs, pooled_output
 
     def forward(
-        self,
-        input_ids: Optional[torch.LongTensor] = None,
-        attention_mask: Optional[torch.FloatTensor] = None,
-        input_ids_positive: Optional[torch.LongTensor] = None,
-        attention_mask_positive: Optional[torch.FloatTensor] = None,
-        input_ids_negative: Optional[torch.LongTensor] = None,
-        attention_mask_negative: Optional[torch.FloatTensor] = None,
-        **kwargs
+            self,
+            input_ids: Optional[torch.LongTensor] = None,
+            attention_mask: Optional[torch.FloatTensor] = None,
+            input_ids_positive: Optional[torch.LongTensor] = None,
+            attention_mask_positive: Optional[torch.FloatTensor] = None,
+            input_ids_negative: Optional[torch.LongTensor] = None,
+            attention_mask_negative: Optional[torch.FloatTensor] = None,
+            **kwargs
     ):
         _, pooled_output = self.get_output(
             input_ids=input_ids,
@@ -92,7 +93,7 @@ class BiencoderRobertaModel(RobertaPreTrainedModel):
         sim_fn = SimilarityFunction(self.args.sim_fn)
         scores = sim_fn(pooled_output, pooled_output_positive)
 
-        if input_ids_negative and attention_mask_negative:
+        if self.args.use_negative:
             _, pooled_output_negative = self.get_output(
                 input_ids=input_ids_negative,
                 attention_mask=attention_mask_negative,

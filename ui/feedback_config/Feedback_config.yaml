@@ -1,6 +1,0 @@
-# Description: Configuration file for feedback service
-SERVICE_ACCOUNT_FILE: ui/feedback_config/knowledge-retrival-9fdb9a7d9f72.json
-SCOPE: https://www.googleapis.com/auth/spreadsheets
-SPREADSHEET_ID: 14dIPHGIQaTOh6vXw2fDCjEy__6B1Ned1rKCvLLsyhgA
-SHEET_NAME: Feedback
-
