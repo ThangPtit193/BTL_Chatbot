@@ -14,11 +14,13 @@ from saturn.components.models.model import BiencoderRobertaModel
 
 MODEL_CLASSES = {
     "unsim-cse-vietnamese": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
+    "sim-cse-vietnamese": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
     "phobert-base-v2": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
 }
 
 MODEL_PATH_MAP = {
     "unsim-cse-vietnamese": "VoVanPhuc/unsup-SimCSE-VietNamese-phobert-base",
+    "sim-cse-vietnamese": "VoVanPhuc/sup-SimCSE-VietNamese-phobert-base",
     "phobert-base-v2": "vinai/phobert-base-v2"
 }
 
