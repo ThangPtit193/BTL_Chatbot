@@ -63,7 +63,6 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--model_type",
-        default="unsim-cse-vietnamese",
         type=str,
         help="Model type selected in the list: " + ", ".join(MODEL_CLASSES.keys()),
     )
@@ -130,31 +129,6 @@ if __name__ == "__main__":
         default=1e-5,
         type=float,
         help="The initial learning rate for Adam.",
-    )
-    parser.add_argument(
-        "--lr_scheduler_type",
-        default="cosine",
-        type=str,
-        help="Type of learning rate scheduler to use. Available options are: 'cosine', 'step', 'plateau'. "
-             "The default is 'cosine', which uses a cosine annealing schedule. ",
-    )
-    parser.add_argument(
-        "--gradient_accumulation_steps",
-        type=int,
-        default=1,
-        help="Number of updates steps to accumulate before performing a backward/update pass.",
-    )
-    parser.add_argument(
-        "--max_grad_norm", default=1.0, type=float, help="Max gradient norm."
-    )
-    parser.add_argument(
-        "--warmup_steps", default=100, type=int, help="Linear warmup over warmup_steps."
-    )
-    parser.add_argument(
-        "--max_steps",
-        default=-1,
-        type=int,
-        help="If > 0: set total number of training steps to perform. Override num_train_epochs.",
     )
     args = parser.parse_args()
     args.model_name_or_path = MODEL_PATH_MAP[args.model_type]
