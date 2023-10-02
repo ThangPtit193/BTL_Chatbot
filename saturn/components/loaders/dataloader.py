@@ -24,9 +24,6 @@ class OnlineDataset(Dataset):
         self.data = load_jsonl(file_path)
         self.tokenizer = tokenizer
 
-    def __len__(self) -> int:
-        return len(self.data) - 1
-
     def __getitem__(self, index: int):
         # preprocessing data
         data_point = self.data[index]
