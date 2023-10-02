@@ -80,52 +80,16 @@ def normalize_word_diacritic(word):
         x, y = vowel_to_idx[chars[index]]
         if x == 4 or x == 8:  # ê, ơ
             chars[index] = vowel[x][diacritic]
-            # for index2 in vowel_index:
-            #     if index2 != index:
-            #         x, y = vowel_to_idx[chars[index]]
-            #         chars[index2] = vowel[x][0]
             return "".join(chars)
 
     if len(vowel_index) == 2:
         if vowel_index[-1] == len(chars) - 1:
             x, y = vowel_to_idx[chars[vowel_index[0]]]
             chars[vowel_index[0]] = vowel[x][diacritic]
-            # x, y = vowel_to_idx[chars[vowel_index[1]]]
-            # chars[vowel_index[1]] = vowel[x][0]
         else:
-            # x, y = vowel_to_idx[chars[vowel_index[0]]]
-            # chars[vowel_index[0]] = vowel[x][0]
             x, y = vowel_to_idx[chars[vowel_index[1]]]
             chars[vowel_index[1]] = vowel[x][diacritic]
     else:
-        # x, y = vowel_to_idx[chars[vowel_index[0]]]
-        # chars[vowel_index[0]] = vowel[x][0]
         x, y = vowel_to_idx[chars[vowel_index[1]]]
         chars[vowel_index[1]] = vowel[x][diacritic]
-        # x, y = vowel_to_idx[chars[vowel_index[2]]]
-        # chars[vowel_index[2]] = vowel[x][0]
     return "".join(chars)
-
-
-# def normalize_diacritic(text):
-#     """
-#     normalize diacritic
-#     params:
-#         crawl text
-#     return:
-#         text normalize
-#     """
-#     sentence = text.lower()
-#     sentence = text
-#     words = sentence.split()
-#     for index, word in enumerate(words):
-#         cw = re.sub(r"(^\p{P}*)([p{L}.]*\p{L}+)(\p{P}*$)", r"\1/\2/\3", word).split("/")
-#         # print(cw)
-#         if len(cw) == 3:
-#             cw[1] = normalize_word_diacritic(cw[1])
-#         words[index] = "".join(cw)
-#     return " ".join(words)
-
-def remove_punctuation(text):
-    text = re.sub("[!\"#$%&'()*+,-./:;<=>?@[\\]^`{|}~]", "", text)
-    return text
