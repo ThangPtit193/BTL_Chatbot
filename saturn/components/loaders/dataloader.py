@@ -1,12 +1,10 @@
 import os
-
 import torch
 from torch.utils.data import Dataset
 from transformers import PreTrainedTokenizer
 
 from saturn.components.loaders.utils import convert_text_to_features
 from saturn.utils.io import load_jsonl
-from saturn.utils.utils import logger
 
 
 # Prepare online dataset for training
@@ -19,7 +17,7 @@ class OnlineDataset(Dataset):
         self.args = args
         # Reading corpus
         file_path = os.path.join(
-            self.args.data_dir, mode, "data_test.jsonl"
+            self.args.data_dir, mode, "data.jsonl"
         )
         logger.info("LOOKING AT {}".format(file_path))
 
@@ -48,24 +46,6 @@ class OnlineDataset(Dataset):
             tokenizer=self.tokenizer,
             max_seq_len=self.args.max_seq_len_document,
         )
-
-        if self.args.use_negative:
-            document_negative = data_point["document_negative"]
-            input_ids_document_negative, attention_mask_document_negative = convert_text_to_features(
-                text=document_negative,
-                tokenizer=self.tokenizer,
-                max_seq_len=self.args.max_seq_len_document,
-            )
-
-            return (
-                torch.tensor(input_ids_query, dtype=torch.long),
-                torch.tensor(attention_mask_query, dtype=torch.long),
-                torch.tensor(input_ids_document, dtype=torch.long),
-                torch.tensor(attention_mask_document, dtype=torch.long),
-                torch.tensor(input_ids_document_negative, dtype=torch.long),
-                torch.tensor(attention_mask_document_negative, dtype=torch.long),
-            )
-
         return (
             torch.tensor(input_ids_query, dtype=torch.long),
             torch.tensor(attention_mask_query, dtype=torch.long),
