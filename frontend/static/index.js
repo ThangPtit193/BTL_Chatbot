@@ -21,7 +21,7 @@ enter_btn.onclick = async function () {
             "desciption": desciption,
         },
         success: function (result) {
-            output.value= result['answer']
+            output.value = result['answer']
         },
         dataType: "json"
     });

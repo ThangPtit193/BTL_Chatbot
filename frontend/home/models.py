@@ -61,8 +61,8 @@ class Chromadb:
         self.documents = load_data(file_path="/u01/os_callbot/hoaf13/namnp/QA_PTIT/data/data.jsonl",
                                    col_meta='document')
 
-        self.tokenizer = AutoTokenizer.from_pretrained("/u01/os_callbot/hoaf13/namnp/QA_PTIT/models")
-        self.model = AutoModel.from_pretrained("/u01/os_callbot/hoaf13/namnp/QA_PTIT/models")
+        self.tokenizer = AutoTokenizer.from_pretrained("VoVanPhuc/sup-SimCSE-VietNamese-phobert-base")
+        self.model = AutoModel.from_pretrained("VoVanPhuc/sup-SimCSE-VietNamese-phobert-base")
 
         self.client = chromadb.Client()
         self.client = self.client.get_or_create_collection(name="chatbot")
