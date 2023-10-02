@@ -33,17 +33,9 @@ class BiencoderTrainer:
         )
         t_total = (
                 len(train_dataloader)
-                // self.args.gradient_accumulation_steps
                 * self.args.num_train_epochs
         )
         optimizer = self.get_optimizer()
-
-        scheduler = get_scheduler(
-            self.args.lr_scheduler_type,
-            optimizer=optimizer,
-            num_warmup_steps=self.args.warmup_steps,
-            num_training_steps=t_total,
-        )
 
         # Train!
         logger.info("***** Running training *****")
@@ -51,7 +43,6 @@ class BiencoderTrainer:
         logger.info("  Num Epochs = %d", self.args.num_train_epochs)
         logger.info("  Total train batch size = %d", self.args.train_batch_size)
     
-        global_step = 0
         tr_loss = 0.0
 
         self.model.zero_grad()
@@ -76,21 +67,12 @@ class BiencoderTrainer:
                     "is_train": True,
                 }
                 
-                with torch.cuda.amp.autocast():
-                    loss = self.model(**inputs)
+                loss = self.model(**inputs)
                     
                 loss.backward()
                 tr_loss += loss.item()
-                if (step + 1) % self.args.gradient_accumulation_steps == 0:
-                    torch.nn.utils.clip_grad_norm_(
-                        self.model.parameters(), self.args.max_grad_norm
-                    )
-
-                    optimizer.step()
-                    scheduler.step()
-
-                    self.model.zero_grad()
-                    global_step += 1
+                optimizer.step()
+                self.model.zero_grad()
         return
 
     def get_optimizer(self):
