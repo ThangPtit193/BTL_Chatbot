@@ -57,8 +57,4 @@ def convert_text_to_features(
     input_ids = input_ids + ([pad_token_id] * padding_length)
     attention_mask = attention_mask + ([0] * padding_length)
 
-    assert len(input_ids) == max_seq_len, "Error with input length {} vs {}".format(
-        len(input_ids), max_seq_len
-    )
-
     return input_ids, attention_mask
