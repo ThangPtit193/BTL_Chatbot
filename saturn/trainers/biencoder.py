@@ -1,4 +1,3 @@
-import numpy as np
 import torch
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
@@ -6,9 +5,7 @@ from lion_pytorch import Lion
 from transformers.optimization import get_scheduler
 from transformers.tokenization_utils_base import PreTrainedTokenizerBase
 from transformers.trainer_pt_utils import get_parameter_names
-
 from saturn.components.loaders.utils import convert_text_to_features
-from saturn.utils.io import load_json, load_jsonl
 
 class BiencoderTrainer:
     def __init__(
