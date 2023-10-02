@@ -2,7 +2,6 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
-from tqdm.auto import tqdm, trange
 from lion_pytorch import Lion
 from transformers.optimization import get_scheduler
 from transformers.tokenization_utils_base import PreTrainedTokenizerBase
@@ -47,7 +46,7 @@ class BiencoderTrainer:
 
         self.model.zero_grad()
 
-        train_iterator = trange(int(self.args.num_train_epochs), desc="Epoch")
+        train_iterator = int(self.args.num_train_epochs)
 
         for _ in train_iterator:
             epoch_iterator = tqdm(
