@@ -5,8 +5,6 @@
 First, make sure your Python version is 3.7+, and then install the required packages using the command below:
 
 ```script
-cd saturn
-
 export PYTHONPATH=/absolute/saturn
 ```
 
@@ -33,7 +31,7 @@ Structure data folders:
         ├── data.jsonl     # Evaluate dataset
 
 ```
-#### Stage 1: Training Unsuppervised Model Using Contrastive Learning
+#### Training Unsuppervised Model Using Contrastive Learning
 
 
 ```
