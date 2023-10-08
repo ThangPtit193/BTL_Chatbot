@@ -8,12 +8,6 @@ First, make sure your Python version is 3.7+, and then install the required pack
 export PYTHONPATH=/absolute/saturn
 ```
 
-#### PreStage: Training Data Development
-
-```script
-# download processed data for pretraining
-```
-
 Format data
 ```
 {"query": "abc", "document": "xyz"}
