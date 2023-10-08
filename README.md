@@ -39,28 +39,3 @@ Structure data folders:
 ```
 bash scripts/train_biencoder.sh
 ```
-
-
-#### Stage 2: Future Works
-##### 1. Data Sampling
-
-Positive (Self-Supervised/Unsupervised)
-- [x] Inverse Cloze Task
-- [x] Dropout as Positive Instance
-- [ ] Text Augmentation
-- [ ] Recurring Span Retrieval
-- [ ] Others (TBD)
-
-
-Negative
-
-- [x] In-Batch Negative
-- [ ] Hard Negative
-- [ ] Cross Batch Negative
-
-
-##### 2. Auxilaury Task
-- [x] Alignment Task
-- [x] Uniformity Vector Distribution
-- [ ] Masked Language Modeling
-- [ ] SPLADE
