@@ -13,12 +13,10 @@ class BiencoderTrainer:
             args,
             model
             train_dataset
-            eval_dataset
             tokenizer
     ):
         self.args = args
         self.train_dataset = train_dataset
-        self.eval_dataset = eval_dataset
         self.model = model
         self.tokenizer = tokenizer
 
