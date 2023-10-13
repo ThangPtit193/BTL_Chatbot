@@ -15,7 +15,7 @@ def main(args):
     tokenizer = load_tokenizer(args)
     config_class, model_class, _ = MODEL_CLASSES[args.model_type]
     model_config = config_class.from_pretrained(
-        args.model_name_or_path, finetuning_task=args.token_level
+        args.model_name_or_path
     )
     model = model_class.from_pretrained(
         args.model_name_or_path,
@@ -26,13 +26,11 @@ def main(args):
     
     # Load data
     train_dataset = OnlineDataset(args, tokenizer, "train")
-    eval_dataset = OnlineDataset(args, tokenizer, "train")
 
     trainer = BiencoderTrainer(
         args=args,
         model=model,
         train_dataset=train_dataset,
-        eval_dataset=eval_dataset,
         tokenizer=tokenizer,
     )
 
@@ -67,12 +65,6 @@ if __name__ == "__main__":
         help="Model type selected in the list: " + ", ".join(MODEL_CLASSES.keys()),
     )
     parser.add_argument(
-        "--logging_steps",
-        type=int,
-        default=200,
-        help="Number of steps between each logging update.",
-    )
-    parser.add_argument(
         "--save_steps",
         type=int,
         default=200,
@@ -82,18 +74,6 @@ if __name__ == "__main__":
         "--do_train",
         action="store_true",
         help="Flag indicating whether to run the training process.",
-    )
-    # CUDA Configuration
-    parser.add_argument(
-        "--no_cuda",
-        action="store_true",
-        help="Flag indicating whether to avoid using CUDA when available.",
-    )
-    parser.add_argument(
-        "--gpu_id",
-        type=int,
-        default=0,
-        help="ID of the GPU to be used for computation.",
     )
 
     # Hyperparameters for training
