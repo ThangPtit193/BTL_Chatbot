@@ -35,14 +35,12 @@ def load_jsonl(file_path):
 
 
 def preprocessing(text):
-    text = text.replace('tui', 'tôi')
-    text = text.replace('lệ phí', 'học phí')
     punctuation = "[\".?!#$%&'()*+,:;<=>@[\\]^`{|}~]“”"
     text = text.translate(str.maketrans(' ', ' ', punctuation))
     text = text.lower()
 
     # remove duplicate space
-    text = re.sub(r"[\s]+", " ", text)
+    text = re.sub(r"\s+", " ", text)
     return text
 
 
@@ -57,12 +55,12 @@ def load_data(file_path, col_meta):
 
 class Chromadb:
     def __init__(self):
-        self.questions = load_data(file_path="/u01/os_callbot/hoaf13/namnp/QA_PTIT/data/data.jsonl", col_meta='query')
-        self.documents = load_data(file_path="/u01/os_callbot/hoaf13/namnp/QA_PTIT/data/data.jsonl",
+        self.questions = load_data(file_path="/data/data.jsonl", col_meta='query')
+        self.documents = load_data(file_path="/data/data.jsonl",
                                    col_meta='document')
 
-        self.tokenizer = AutoTokenizer.from_pretrained("VoVanPhuc/sup-SimCSE-VietNamese-phobert-base")
-        self.model = AutoModel.from_pretrained("VoVanPhuc/sup-SimCSE-VietNamese-phobert-base")
+        self.tokenizer = AutoTokenizer.from_pretrained("models")
+        self.model = AutoModel.from_pretrained("models")
 
         self.client = chromadb.Client()
         self.client = self.client.get_or_create_collection(name="chatbot")
