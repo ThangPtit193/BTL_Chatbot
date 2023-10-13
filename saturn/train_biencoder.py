@@ -61,13 +61,13 @@ if __name__ == "__main__":
     # Hyperparameters for training
     parser.add_argument(
         "--num_train_epochs",
-        default=2.0,
-        type=float,
+        default=10,
+        type=int,
         help="Total number of training epochs to perform.",
     )
     parser.add_argument(
         "--train_batch_size",
-        default=32,
+        default=277,
         type=int,
         help="Batch size used for training.",
     )
