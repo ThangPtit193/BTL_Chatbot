@@ -54,21 +54,9 @@ if __name__ == "__main__":
         help="The input data dir",
     )
     parser.add_argument(
-        "--token_level",
-        type=str,
-        default="word-level",
-        help="Tokens are at syllable level or word level (Vietnamese) [word-level, syllable-level]",
-    )
-    parser.add_argument(
         "--model_type",
         type=str,
         help="Model type selected in the list: " + ", ".join(MODEL_CLASSES.keys()),
-    )
-    parser.add_argument(
-        "--save_steps",
-        type=int,
-        default=200,
-        help="Number of steps between each checkpoint saving.",
     )
     parser.add_argument(
         "--do_train",
