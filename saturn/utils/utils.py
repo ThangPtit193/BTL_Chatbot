@@ -8,11 +8,11 @@ from saturn.utils.io import load_json
 from saturn.components.models.model import BiencoderRobertaModel
 
 MODEL_CLASSES = {
-    "phobert-base-v2": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
+    "GPT-HUST": (RobertaConfig, BiencoderRobertaModel, AutoTokenizer),
 }
 
 MODEL_PATH_MAP = {
-    "phobert-base-v2": "vinai/phobert-base-v2"
+    "GPT-HUST": "NlpHUST/gpt-neo-vi-small"
 }
 
 vowel = [
