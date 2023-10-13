@@ -33,9 +33,8 @@ def main(args):
         train_dataset=train_dataset,
         tokenizer=tokenizer,
     )
-
-    if args.do_train:
-        trainer.train()
+    
+    trainer.train()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -57,11 +56,6 @@ if __name__ == "__main__":
         "--model_type",
         type=str,
         help="Model type selected in the list: " + ", ".join(MODEL_CLASSES.keys()),
-    )
-    parser.add_argument(
-        "--do_train",
-        action="store_true",
-        help="Flag indicating whether to run the training process.",
     )
 
     # Hyperparameters for training
