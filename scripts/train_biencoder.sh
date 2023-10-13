@@ -6,7 +6,6 @@ CUDA_VISIBLE_DEVICES=1 python3 saturn/train_biencoder.py \
         --model_dir $model_dir \
         --data_dir $data_dir\
         --model_type unsim-cse-vietnamese \
-        --save_steps 50 \
         --do_train \
         --num_train_epochs 10 \
         --train_batch_size 1024 \
