@@ -12,7 +12,7 @@ def dot_product_scores_numpy(compr, refer):
     return r
     
 class SimilarityFunction(nn.Module):
-    def __init__(self, name_fn="cosine"):
+    def __init__(self, name_fn="dot"):
         super().__init__()
         self.fn = dot_product_scores
     def forward(self, x, y):
