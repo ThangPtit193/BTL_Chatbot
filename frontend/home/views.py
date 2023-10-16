@@ -19,7 +19,7 @@ class IndexView(View):
 
     def get(self, request):
         context = {
-            'image_url': os.path.join('/static', 'diamond.png')
+            'image_url': os.path.join('/static', 'ptit.png')
         }
         return render(request, self.template_name, context=context)
 
