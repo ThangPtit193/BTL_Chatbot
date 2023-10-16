@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #edeff2;
+    background-color: #ffffff;
     font-family: 'Calibri', 'Roboto', sans-serif;
 }
 
@@ -43,7 +43,7 @@ body {
     list-style: none;
     padding: 20px 10px 0 10px;
     margin: 0;
-    height: 500px;
+    height: 395px;
     overflow: scroll;
 }
 
