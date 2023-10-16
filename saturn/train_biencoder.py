@@ -31,7 +31,6 @@ def main(args):
         args=args,
         model=model,
         train_dataset=train_dataset,
-        tokenizer=tokenizer,
     )
     
     trainer.train()
