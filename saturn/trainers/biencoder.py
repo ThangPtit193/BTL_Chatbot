@@ -34,8 +34,6 @@ class BiencoderTrainer:
         logger.info("  Num examples = %d", len(self.train_dataset))
         logger.info("  Num Epochs = %d", self.args.num_train_epochs)
         logger.info("  Total train batch size = %d", self.args.train_batch_size)
-    
-        tr_loss = 0.0
 
         self.model.zero_grad()
 
@@ -62,7 +60,6 @@ class BiencoderTrainer:
                 loss = self.model(**inputs)
                     
                 loss.backward()
-                tr_loss += loss.item()
                 optimizer.step()
                 self.model.zero_grad()
         return
