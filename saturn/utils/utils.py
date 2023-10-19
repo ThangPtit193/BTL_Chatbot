@@ -1,8 +1,5 @@
 import re
-import torch
 import string
-import numpy as np
-from pyvi import ViTokenizer
 from transformers import AutoTokenizer, RobertaConfig
 from saturn.components.models.model import BiencoderRobertaModel
 
