@@ -27,14 +27,14 @@ def convert_text_to_features(
     # Normalize text
     text = normalize_encode(normalize_word_diacritic(preprocessing(text)))
 
-    text = text.split()  # Some are spaced twice
+    text = text.split()
 
     tokens = []
     # Tokenizer
     for word in text:
         word_tokens = tokenizer.tokenize(word)
         if not word_tokens:
-            word_tokens = [unk_token]  # For handling the bad-encoded word
+            word_tokens = [unk_token]
         tokens.extend(word_tokens)
 
     # Truncate data
@@ -51,8 +51,6 @@ def convert_text_to_features(
     input_ids = tokenizer.convert_tokens_to_ids(tokens)
     attention_mask = [1] * len(input_ids)
 
-    # TODO use smart padding in here
-    # Zero-pad up to the sequence length. This is static method padding
     padding_length = max_seq_len - len(input_ids)
     input_ids = input_ids + ([pad_token_id] * padding_length)
     attention_mask = attention_mask + ([0] * padding_length)
