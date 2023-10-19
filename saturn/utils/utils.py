@@ -4,7 +4,6 @@ import string
 import numpy as np
 from pyvi import ViTokenizer
 from transformers import AutoTokenizer, RobertaConfig
-from saturn.utils.io import load_json
 from saturn.components.models.model import BiencoderRobertaModel
 
 MODEL_CLASSES = {
@@ -55,7 +54,7 @@ def preprocessing(text):
     text = text.lower()
     
     # remove duplicate space
-    text = re.sub(r"[\s]+", " ", text)
+    text = re.sub(r"\s+", " ", text)
 
     return text
 
