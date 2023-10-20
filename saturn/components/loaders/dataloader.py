@@ -9,8 +9,7 @@ from saturn.utils.io import load_jsonl
 
 # Prepare online dataset for training
 class OnlineDataset(Dataset):
-    def __init__(
-            self, args, tokenizer: PreTrainedTokenizer) -> None:
+    def __init__(self, args, tokenizer: PreTrainedTokenizer) -> None:
         super().__init__()
 
         self.args = args
