@@ -25,7 +25,7 @@ def main(args):
     )
     
     # Load data
-    train_dataset = OnlineDataset(args, tokenizer, "train")
+    train_dataset = OnlineDataset(args, tokenizer)
 
     trainer = BiencoderTrainer(
         args=args,
