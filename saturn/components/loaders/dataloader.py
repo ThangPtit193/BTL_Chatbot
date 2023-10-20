@@ -10,14 +10,13 @@ from saturn.utils.io import load_jsonl
 # Prepare online dataset for training
 class OnlineDataset(Dataset):
     def __init__(
-            self, args, tokenizer: PreTrainedTokenizer, mode: str = "train"
-    ) -> None:
+            self, args, tokenizer: PreTrainedTokenizer) -> None:
         super().__init__()
 
         self.args = args
         # Reading corpus
         file_path = os.path.join(
-            self.args.data_dir, mode, "data.jsonl"
+            self.args.data_dir, "data.jsonl"
         )
         logger.info("LOOKING AT {}".format(file_path))
 
