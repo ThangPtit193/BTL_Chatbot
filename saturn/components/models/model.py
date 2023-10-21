@@ -1,17 +1,14 @@
 import torch
 import torch.nn as nn
 from transformers import PretrainedConfig
-from transformers.models.roberta.modeling_roberta import (
-    RobertaModel,
-    RobertaPreTrainedModel,
-)
+from transformers import AutoModel
 from saturn.components.models.module import SimilarityFunction
 
-class BiencoderRobertaModel(RobertaPreTrainedModel):
-    def __init__(self, config: PretrainedConfig, args):
+class BiencoderRobertaModel():
+    def __init__(self, config, args):
         super().__init__(config)
         self.args = args
-        self.roberta = RobertaModel(config)
+        self.roberta = AutoModel.from_pretrained(config)
 
     def get_output(
             self,
