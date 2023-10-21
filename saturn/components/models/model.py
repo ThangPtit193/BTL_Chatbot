@@ -40,7 +40,7 @@ class BiencoderRobertaModel(nn.Module):
         sim_fn = SimilarityFunction(self.args.sim_fn)
         scores = sim_fn(outputs, output_positive)
 
-        labels = torch.arange(scores.size(0)).long().to(pooled_output.device)
+        labels = torch.arange(scores.size(0)).long()
         loss = nn.CrossEntropyLoss()
         loss = loss(scores, labels)
         return loss
