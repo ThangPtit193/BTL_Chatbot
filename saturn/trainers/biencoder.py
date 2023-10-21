@@ -6,7 +6,7 @@ from transformers.trainer_pt_utils import get_parameter_names
 from saturn.components.loaders.utils import convert_text_to_features
 
 class BiencoderTrainer:
-    def __init__(self,args,modeltrain_dataset):
+    def __init__(self,args,model, train_dataset):
         self.args = args
         self.train_dataset = train_dataset
         self.model = model
