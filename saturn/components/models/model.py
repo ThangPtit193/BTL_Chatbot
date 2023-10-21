@@ -4,7 +4,7 @@ from transformers import PretrainedConfig
 from transformers import AutoModel
 from saturn.components.models.module import SimilarityFunction
 
-class BiencoderRobertaModel():
+class BiencoderRobertaModel(nn.Module):
     def __init__(self, config, args):
         super().__init__(config)
         self.args = args
