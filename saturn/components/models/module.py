@@ -6,10 +6,6 @@ import torch.nn.functional as F
 def dot_product_scores(compr, refer):
     r = torch.matmul(compr, torch.transpose(refer, 0, 1))
     return r
-
-def dot_product_scores_numpy(compr, refer):
-    r = np.matmul(compr, np.transpose(refer, (1, 0)))
-    return r
     
 class SimilarityFunction(nn.Module):
     def __init__(self, name_fn="dot"):
