@@ -1,19 +1,12 @@
 import torch
 from torch.utils.data import DataLoader, Dataset
-from tqdm import tqdm
 from lion_pytorch import Lion
 from transformers.optimization import get_scheduler
-from transformers.tokenization_utils_base import PreTrainedTokenizerBase
 from transformers.trainer_pt_utils import get_parameter_names
 from saturn.components.loaders.utils import convert_text_to_features
 
 class BiencoderTrainer:
-    def __init__(
-            self,
-            args,
-            model
-            train_dataset
-    ):
+    def __init__(self,args,modeltrain_dataset):
         self.args = args
         self.train_dataset = train_dataset
         self.model = model
@@ -23,10 +16,7 @@ class BiencoderTrainer:
             self.train_dataset,
             batch_size=self.args.train_batch_size,
         )
-        t_total = (
-                len(train_dataloader)
-                * self.args.num_train_epochs
-        )
+
         optimizer = self.get_optimizer()
 
         # Train!
@@ -40,14 +30,11 @@ class BiencoderTrainer:
         train_iterator = int(self.args.num_train_epochs)
 
         for _ in train_iterator:
-            epoch_iterator = tqdm(
-                train_dataloader, desc="Iteration", position=0, leave=True
-            )
             logger.info(f"Epoch {_}")
 
-            for step, batch in enumerate(epoch_iterator):
+            for step, batch in enumerate(train_dataloader):
                 self.model.train()
-                batch = tuple(t.to(self.model.device) for t in batch)  # GPU or CPU
+                batch = tuple(t.to(self.model.device) for t in batch)
 
                 inputs = {
                     "input_ids": batch[0],
