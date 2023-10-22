@@ -33,7 +33,6 @@ class BiencoderTrainer:
             logger.info(f"Epoch {_}")
 
             for step, batch in enumerate(train_dataloader):
-                self.model.train()
                 batch = tuple(t.to(self.model.device) for t in batch)
 
                 inputs = {
