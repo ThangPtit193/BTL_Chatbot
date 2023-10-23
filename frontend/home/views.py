@@ -1,12 +1,14 @@
 import os
 import re
-from home.models import Chromadb
+from home.models import get_answer
 from django.shortcuts import render
 from django.views import View
 from django.http import JsonResponse
+from transformers import AutoModel, AutoTokenizer
 
-model = Chromadb()
-model.add_document()
+from saturn.components.loaders.utils import convert_text_to_features
+from saturn.utils.utils import preprocessing
+from saturn.utils.normalize import normalize_encode, normalize_word_diacritic
 
 
 # Create your models here.
@@ -15,7 +17,8 @@ class IndexView(View):
 
     def __init__(self, **kwargs):
         super(IndexView).__init__(**kwargs)
-        self.model = model
+        self.model = AutoModel.from_pretrained("models")
+        self.tokenizer = AutoTokenizer.from_pretrained("models")
 
     def get(self, request):
         context = {
@@ -25,16 +28,22 @@ class IndexView(View):
 
     def post(self, request):
         desc = request.POST['desciption']
-        chunk = re.split(r'(?<=[.!?])\s+', desc)
-        answer = ""
-        if len(chunk) == 1:
-            answer = self.model.search(desc)
-        else:
-            for id, sentence in enumerate(chunk):
-                result = self.model.search(sentence)
-                result = f"Câu thứ {id + 1}: " + result + '\n'
-                answer += result
+        
+        input_ids, attention_mask = convert_text_to_features(
+            text=normalize_encode(normalize_word_diacritic(preprocessing(desc))),
+            tokenizer=self.tokenizer,
+            max_seq_len=64
+        )
+        inputs = {
+            "input_ids": input_ids,
+            "attention_mask": attention_mask
+        }
+        
+        with torch.no_grad():
+            outputs = self.model(**inputs)
 
+        answer = get_answer(outputs, self.tokenizer)
+        
         data = {
             'vi_text': desc,
             'answer': answer
