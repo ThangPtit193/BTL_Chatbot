@@ -1,10 +1,6 @@
 import re
 import json
 import torch
-import chromadb
-from pyvi.ViTokenizer import tokenize
-from transformers import AutoModel, AutoTokenizer
-
 vowel = [
     ["a", "à", "á", "ả", "ã", "ạ", "a"],
     ["ă", "ằ", "ắ", "ẳ", "ẵ", "ặ", "aw"],
@@ -51,48 +47,3 @@ def load_data(file_path, col_meta):
         results.append(sentence[col_meta])
 
     return results
-
-
-class Chromadb:
-    def __init__(self):
-        self.questions = load_data(file_path="/data/data.jsonl", col_meta='query')
-        self.documents = load_data(file_path="/data/data.jsonl",
-                                   col_meta='document')
-
-        self.tokenizer = AutoTokenizer.from_pretrained("models")
-        self.model = AutoModel.from_pretrained("models")
-
-        self.client = chromadb.Client()
-        self.client = self.client.get_or_create_collection(name="chatbot")
-
-    def add_document(self):
-        questions = [tokenize(preprocessing(query)) for query in self.questions]
-        inputs = self.tokenizer(questions, padding=True, truncation=True, return_tensors="pt")
-
-        with torch.no_grad():
-            self.embeddings = self.model(**inputs, output_hidden_states=True, return_dict=True).pooler_output
-
-        self.embeddings = [list(embedding) for embedding in self.embeddings]
-        self.embeddings = [list(map(float, embedding)) for embedding in self.embeddings]
-
-        self.client.add(
-            embeddings=self.embeddings,
-            documents=self.documents,
-            ids=[str(i) for i in range(len(self.documents))]
-        )
-
-    def search(self, query):
-        query_embeddings = self.tokenizer(preprocessing(query), padding=True, truncation=True, return_tensors="pt")
-
-        with torch.no_grad():
-            query_embeddings = self.model(**query_embeddings, output_hidden_states=True, return_dict=True).pooler_output
-
-        query_embeddings = list(query_embeddings)
-        query_embeddings = [list(embedding) for embedding in query_embeddings]
-        query_embeddings = [list(map(float, embedding)) for embedding in query_embeddings]
-
-        results = self.client.query(
-            query_embeddings=query_embeddings,
-            n_results=1
-        )
-        return results['documents'][0][0]
